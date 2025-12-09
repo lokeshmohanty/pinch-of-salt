@@ -1,6 +1,6 @@
 # Pinch Of Salt
 
-History with a pinch of salt
+History with a pinch of salt (only english for now)
 
 ## Goals
 
@@ -8,7 +8,30 @@ History with a pinch of salt
 - Highlight conflicts on news sources based on timeline
 - Display current news along with all conflicts with description
 - Add features in the UI to get detailed information on news content
+- Create a timeline of past events from which the news maybe derived
+
+```graph
+
+  news (multiple sources) -> Knowledge base of events
+
+  Applications:
+  Knowledge base -> recent events, information conflicts, ...
+
+```
 
 ## Tasks
 
-- Create a knowledge graph of all past history
+- Pick datasets, sources (rss feeds, websites)
+- Create a simple UI for accessing the news
+- Make a server side api for all the existing features
+- Parse news from multiple sources to identify events
+- Create a knowledge graph of all past history (requires discussion)
+
+## News Sources
+
+- Google News, ...
+
+## Benchmarks
+
+- Perplexity
+- InShorts
