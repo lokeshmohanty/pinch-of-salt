@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News with a pinch of salt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .filter-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .filter-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .filter-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        .filter-label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .article-card.hidden {
+            display: none;
+        }
+        
+        .article-source {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .article-title {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+            color: #333;
+        }
+        
+        .article-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-description {
+            color: #666;
+            margin: 0.75rem 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #999;
+        }
+        
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        
+        .tag {
+            background: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+        }
+        
+        .update-info {
+            text-align: center;
+            color: #999;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧂 News with a pinch of salt</h1>
+        <p>Take everything you read with a healthy dose of skepticism</p>
+    </header>
+    
+    <div class="container">
+        <div class="stats">
+            📊 Showing <strong id="visible-count">{{ARTICLE_COUNT}}</strong> of <strong>{{ARTICLE_COUNT}}</strong> articles
+        </div>
+        
+        <div class="filter-section">
+            <div class="filter-group">
+                <span class="filter-label">🗂️ Filter by Source</span>
+                <div class="filter-buttons" id="source-filters">
+{{SOURCE_FILTERS}}
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <span class="filter-label">🏷️ Filter by Tag</span>
+                <div class="filter-buttons" id="tag-filters">
+{{TAG_FILTERS}}
+                </div>
+            </div>
+        </div>
+        
+        <div class="articles-grid" id="articles">
+{{ARTICLES}}
+        </div>
+        
+        <div class="update-info">
+            <p>Last updated: {{UPDATE_TIME}}</p>
+            <p style="margin-top: 0.5rem;">Remember: verify information from multiple sources before drawing conclusions</p>
+        </div>
+    </div>
+    
+    <script>
+        // Filter state
+        let activeSource = 'all';
+        let activeTag = 'all';
+        
+        const articles = document.querySelectorAll('.article-card');
+        const sourceFilters = document.querySelectorAll('#source-filters .filter-btn');
+        const tagFilters = document.querySelectorAll('#tag-filters .filter-btn');
+        const visibleCountElement = document.getElementById('visible-count');
+        
+        // Filter function
+        function applyFilters() {
+            let visibleCount = 0;
+            
+            articles.forEach(article => {
+                const articleSource = article.dataset.source;
+                const articleTags = article.dataset.tags.split(',');
+                
+                const sourceMatch = activeSource === 'all' || articleSource === activeSource;
+                const tagMatch = activeTag === 'all' || articleTags.includes(activeTag);
+                
+                if (sourceMatch && tagMatch) {
+                    article.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    article.classList.add('hidden');
+                }
+            });
+            
+            visibleCountElement.textContent = visibleCount;
+        }
+        
+        // Source filter event listeners
+        sourceFilters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sourceFilters.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeSource = btn.dataset.value;
+                applyFilters();
+            });
+        });
+        
+        // Tag filter event listeners
+        tagFilters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tagFilters.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeTag = btn.dataset.value;
+                applyFilters();
+            });
+        });
+    </script>
+</body>
+</html>

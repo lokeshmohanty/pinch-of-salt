@@ -1,7 +1,7 @@
 from typing import Union
 from fastapi import FastAPI
 
-from lib.rss import load_feeds_from_yaml, fetch_rss_feeds
+from rss import load_feeds_from_yaml, fetch_rss_feeds
 
 app = FastAPI()
 
