@@ -1,4 +1,4 @@
-# News with a pinch of salt 🧂
+# News with a pinch of salt 🧂 (Static Site)
 
 A static site generator that fetches RSS feeds and creates a beautiful, filterable web page hosted on GitHub Pages. Take everything you read with a healthy dose of skepticism!
 
@@ -10,26 +10,6 @@ A static site generator that fetches RSS feeds and creates a beautiful, filterab
 - 🎨 Modern, responsive design
 - 🤖 Automatic updates via GitHub Actions
 - 🚀 Zero-cost hosting on GitHub Pages
-
-## Project Structure
-
-```
-.
-├── .github/
-│   └── workflows/
-│       └── update-feeds.yml    # GitHub Action for auto-updates
-├── data/
-│   └── feeds.yaml              # RSS feed configuration
-├── lib/
-│   └── rss.py                  # RSS fetching library
-├── src/
-│   └── static.html             # HTML template
-├── docs/                       # Generated static site (GitHub Pages)
-│   └── index.html
-├── generate_site.py            # Main generator script
-├── requirements.txt            # Python dependencies
-└── README.md
-```
 
 ## Setup
 

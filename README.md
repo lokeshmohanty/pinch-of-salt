@@ -27,9 +27,27 @@ History with a pinch of salt (only english for now)
 - Parse news from multiple sources to identify events
 - Create a knowledge graph of all past history (requires discussion)
 
-## News Sources
+## Project Structure
 
-- Google News, ...
+```
+.
+├── .github/
+│   └── workflows/
+│       └── update-feeds.yml    # GitHub Action for auto-update of static site
+├── data/
+│   └── feeds.yaml              # RSS feed sources
+├── src/
+│   ├── rss.py                  # RSS fetching library
+│   ├── api.py                  # API for accessing the library
+    ├── generate_site.py        # Static site generator script
+│   └── static.html             # HTML template for static site
+├── docs/                       # Generated static site (GitHub Pages)
+│   └── index.html
+├── pyproject.toml              # Project details
+└── README.md
+```
+
+- To generate static site go to [README_ui.md](./README_ui.md)
 
 ## Benchmarks
 
