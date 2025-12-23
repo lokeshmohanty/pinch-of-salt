@@ -25,6 +25,7 @@ History with a pinch of salt (only english for now)
 - Create a simple UI for accessing the news
 - Make a server side api for all the existing features
 - Parse news from multiple sources to identify events
+- Design a database for storing the news
 - Create a knowledge graph of all past history (requires discussion)
 
 ## Project Structure
@@ -48,6 +49,9 @@ History with a pinch of salt (only english for now)
 ```
 
 - To generate static site go to [README_ui.md](./README_ui.md)
+
+## Sources
+- Law <https://judgments.ecourts.gov.in/pdfsearch/index.php>, <https://indiankanoon.org>
 
 ## Benchmarks
 
