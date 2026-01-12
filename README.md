@@ -19,15 +19,6 @@ History with a pinch of salt (only english for now)
 
 ```
 
-## Tasks
-
-- Pick datasets, sources (rss feeds, websites)
-- Create a simple UI for accessing the news
-- Make a server side api for all the existing features
-- Parse news from multiple sources to identify events
-- Design a database for storing the news
-- Create a knowledge graph of all past history (requires discussion)
-
 ## Project Structure
 
 ```
