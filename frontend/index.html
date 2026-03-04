@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinch of Salt - Unbiased News & History</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.6.2/sql-wasm.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Pinch of Salt</h1>
+        <p class="subtitle">History-linked news with accurate facts</p>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <button class="filter-btn active" onclick="filterNews('all')">All Events</button>
+            <button class="filter-btn" onclick="filterNews('multi')">Top Clustered</button>
+        </div>
+
+        <div id="news-grid">
+            <!-- Clusters will be injected here -->
+            <div class="loading">Loading news events...</div>
+        </div>
+    </main>
+
+    <!-- Modal for Comparison -->
+    <div id="compare-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News with a pinch of salt</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        
+        .filter-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        
+        .filter-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .filter-group:last-child {
+            margin-bottom: 0;
+        }
+        
+        .filter-label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 0.75rem;
+            display: block;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .filter-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .filter-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+        
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .article-card.hidden {
+            display: none;
+        }
+        
+        .article-source {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+        
+        .article-title {
+            font-size: 1.25rem;
+            margin: 0.5rem 0;
+            color: #333;
+        }
+        
+        .article-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-description {
+            color: #666;
+            margin: 0.75rem 0;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+            font-size: 0.85rem;
+            color: #999;
+        }
+        
+        .article-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem;
+        }
+        
+        .tag {
+            background: #f0f0f0;
+            padding: 0.2rem 0.5rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+        }
+        
+        .update-info {
+            text-align: center;
+            color: #999;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+        
+        .stats {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.75rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-section {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🧂 News with a pinch of salt</h1>
+        <p>Take everything you read with a healthy dose of skepticism</p>
+    </header>
+    
+    <div class="container">
+        <div class="stats">
+            📊 Showing <strong id="visible-count">30</strong> of <strong>30</strong> articles
+        </div>
+        
+        <div class="filter-section">
+            <div class="filter-group">
+                <span class="filter-label">🗂️ Filter by Source</span>
+                <div class="filter-buttons" id="source-filters">
+<button class="filter-btn active" data-type="source" data-value="all">All Sources</button>
+                <button class="filter-btn" data-type="source" data-value="BBC World News">BBC World News</button>
+                <button class="filter-btn" data-type="source" data-value="CNN Top Stories">CNN Top Stories</button>
+                <button class="filter-btn" data-type="source" data-value="Reuters World News">Reuters World News</button>
+                <button class="filter-btn" data-type="source" data-value="The Guardian World">The Guardian World</button>
+                <button class="filter-btn" data-type="source" data-value="Al Jazeera All News">Al Jazeera All News</button>
+                <button class="filter-btn" data-type="source" data-value="Associated Press World">Associated Press World</button>
+                <button class="filter-btn" data-type="source" data-value="NYT World News">NYT World News</button>
+                <button class="filter-btn" data-type="source" data-value="Washington Post World">Washington Post World</button>
+                <button class="filter-btn" data-type="source" data-value="Economist Latest">Economist Latest</button>
+                <button class="filter-btn" data-type="source" data-value="NDTV">NDTV</button>
+                <button class="filter-btn" data-type="source" data-value="Times of India Top Stories">Times of India Top Stories</button>
+                <button class="filter-btn" data-type="source" data-value="Hindustan Times Latest">Hindustan Times Latest</button>
+                <button class="filter-btn" data-type="source" data-value="The Hindu National">The Hindu National</button>
+                <button class="filter-btn" data-type="source" data-value="Indian Express Latest">Indian Express Latest</button>
+                <button class="filter-btn" data-type="source" data-value="LiveMint Latest">LiveMint Latest</button>
+                <button class="filter-btn" data-type="source" data-value="Business Standard Latest">Business Standard Latest</button>
+                <button class="filter-btn" data-type="source" data-value="Deccan Herald Latest">Deccan Herald Latest</button>
+                <button class="filter-btn" data-type="source" data-value="Bloomberg">Bloomberg</button>
+                <button class="filter-btn" data-type="source" data-value="Financial Times World">Financial Times World</button>
+                <button class="filter-btn" data-type="source" data-value="MarketWatch Top Stories">MarketWatch Top Stories</button>
+                <button class="filter-btn" data-type="source" data-value="CNBC Top News">CNBC Top News</button>
+                <button class="filter-btn" data-type="source" data-value="TechCrunch">TechCrunch</button>
+                <button class="filter-btn" data-type="source" data-value="Wired Latest">Wired Latest</button>
+                <button class="filter-btn" data-type="source" data-value="The Verge All Posts">The Verge All Posts</button>
+                <button class="filter-btn" data-type="source" data-value="Ars Technica All">Ars Technica All</button>
+                <button class="filter-btn" data-type="source" data-value="Engadget">Engadget</button>
+                <button class="filter-btn" data-type="source" data-value="MIT Technology Review AI">MIT Technology Review AI</button>
+                <button class="filter-btn" data-type="source" data-value="VentureBeat AI">VentureBeat AI</button>
+                <button class="filter-btn" data-type="source" data-value="Google AI Blog">Google AI Blog</button>
+                <button class="filter-btn" data-type="source" data-value="OpenAI Blog">OpenAI Blog</button>
+                <button class="filter-btn" data-type="source" data-value="DeepMind Blog">DeepMind Blog</button>
+                <button class="filter-btn" data-type="source" data-value="Nature Latest Research">Nature Latest Research</button>
+                <button class="filter-btn" data-type="source" data-value="Science Magazine Current Issue">Science Magazine Current Issue</button>
+                <button class="filter-btn" data-type="source" data-value="arXiv AI">arXiv AI</button>
+                <button class="filter-btn" data-type="source" data-value="arXiv Computer Vision">arXiv Computer Vision</button>
+                <button class="filter-btn" data-type="source" data-value="NASA Breaking News">NASA Breaking News</button>
+
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <span class="filter-label">🏷️ Filter by Tag</span>
+                <div class="filter-buttons" id="tag-filters">
+<button class="filter-btn active" data-type="tag" data-value="all">All Tags</button>
+                <button class="filter-btn" data-type="tag" data-value="Global">Global</button>
+                <button class="filter-btn" data-type="tag" data-value="Science">Science</button>
+                <button class="filter-btn" data-type="tag" data-value="Technology">Technology</button>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="articles-grid" id="articles">
+
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/index.html" target="_blank" rel="noopener noreferrer">
+                        Some on-air claims about Dominion Voting Systems were false, Fox News acknowledges in statement after deal is announced
+                    </a>
+                </h2>
+                <p class="article-description">No description</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Wed, 19 Apr 2023 12:44:51 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/business/live-news/fox-news-dominion-trial-04-18-23/h_8d51e3ae2714edaa0dace837305d03b8" target="_blank" rel="noopener noreferrer">
+                        Dominion still has pending lawsuits against election deniers such as Rudy Giuliani and Sidney Powell
+                    </a>
+                </h2>
+                <p class="article-description">No description</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">No date</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/17/media/dominion-fox-news-allegations/index.html" target="_blank" rel="noopener noreferrer">
+                        Here are the 20 specific Fox broadcasts and tweets Dominion says were defamatory
+                    </a>
+                </h2>
+                <p class="article-description">• Fox-Dominion trial delay 'is not unusual,' judge says
+• Fox News' defamation battle isn't stopping Trump's election lies</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Mon, 17 Apr 2023 16:01:11 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/media/fox-dominion-settlement/index.html" target="_blank" rel="noopener noreferrer">
+                        Judge in Fox News-Dominion defamation trial: 'The parties have resolved their case'
+                    </a>
+                </h2>
+                <p class="article-description">The judge just announced in court that a settlement has been reached in the historic defamation case between Fox News and Dominion Voting Systems.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Wed, 19 Apr 2023 08:28:17 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/videos/politics/2023/04/18/jake-tapper-dominion-lawsuit-settlement-fox-news-statement-lead-vpx.cnn" target="_blank" rel="noopener noreferrer">
+                        'Difficult to say with a straight face': Tapper reacts to Fox News' statement on settlement
+                    </a>
+                </h2>
+                <p class="article-description">A settlement has been reached in Dominion Voting Systems' defamation case against Fox News, the judge for the case announced. The network will pay more than $787 million to Dominion, a lawyer for the company said.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 21:17:44 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/politics/mccarthy-biden-debt-ceiling/index.html" target="_blank" rel="noopener noreferrer">
+                        Millions in the US could face massive consequences unless McCarthy can navigate out of a debt trap he set for Biden
+                    </a>
+                </h2>
+                <p class="article-description">• DeSantis goes to Washington, a place he once despised, looking for support to take on Trump
+• Opinion: For the GOP to win, it must ditch Trump
+• Chris Christie mulling 2024 White House bid
+• Analysis: The fire next time has begun burning in Tenness...</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 20:34:45 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/us/kansas-city-ralph-yarl-shooting-tuesday/index.html" target="_blank" rel="noopener noreferrer">
+                        White homeowner accused of shooting a Black teen who rang his doorbell turns himself in to face criminal charges
+                    </a>
+                </h2>
+                <p class="article-description">• 'A major part of Ralph died': Aunt of teen shot after ringing wrong doorbell speaks
+• 20-year-old woman shot after friend turned into the wrong driveway in upstate New York, officials say</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Wed, 19 Apr 2023 04:29:05 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/videos/us/2023/04/18/jeremy-renner-snowplow-accident-bodycam-nc-melas-contd-vpx.cnn" target="_blank" rel="noopener noreferrer">
+                        Newly released video shows scene of Jeremy Renner's snowplow accident
+                    </a>
+                </h2>
+                <p class="article-description">Newly released body camera footage shows firefighters and sheriff's deputies rushing to help actor Jeremy Renner after a near-fatal snowplow accident in January. The "Avengers" actor broke more than 30 bones and suffered other severe injuries. CNN's ...</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 14:09:43 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/entertainment/jake-gyllenhaal-jamie-lee-curtis-pandemic-living/index.html" target="_blank" rel="noopener noreferrer">
+                        Jake Gyllenhaal and Jamie Lee Curtis spent the Covid-19 lockdown together
+                    </a>
+                </h2>
+                <p class="article-description">It's sourdough bread and handstands for Jake Gyllenhaal and Jamie Lee Curtis.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 14:40:32 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/politics/white-house-toddler/index.html" target="_blank" rel="noopener noreferrer">
+                        Toddler crawls through White House fence, prompts Secret Service response
+                    </a>
+                </h2>
+                <p class="article-description">A tiny intruder infiltrated White House grounds Tuesday, prompting a swift response from the US Secret Service.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 17:38:16 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/17/entertainment/jamie-foxx-remains-hospitalized/index.html" target="_blank" rel="noopener noreferrer">
+                        Jamie Foxx remains hospitalized nearly a week after 'medical complication'
+                    </a>
+                </h2>
+                <p class="article-description">Jamie Foxx remains hospitalized in Georgia nearly a week after his daughter revealed the actor experienced a "medical complication," a source with knowledge of the matter told CNN on Monday.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 00:27:07 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/us/benadryl-tiktok-challenge-teen-death-wellness/index.html" target="_blank" rel="noopener noreferrer">
+                        A 13-year-old dies after participating in a Benadryl TikTok 'challenge'
+                    </a>
+                </h2>
+                <p class="article-description">A 13-year-old in Ohio has died after "he took a bunch of Benadryl," trying a dangerous TikTok challenge that's circulating online, according to a CNN affiliate and a GoFundMe account from his family.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Wed, 19 Apr 2023 15:01:06 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/videos/us/2023/04/18/pizza-guy-trips-perp-moos-cprog-orig-bdk.cnn" target="_blank" rel="noopener noreferrer">
+                        See pizza delivery guy take out suspect fleeing police
+                    </a>
+                </h2>
+                <p class="article-description">Pizza guy delivers more than a pie, taking out a fleeing suspect. CNN's Jeanne Moos shows him putting his best foot forward.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 16:40:22 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/media/netflix-dvd-red-envelopes/index.html" target="_blank" rel="noopener noreferrer">
+                        Netflix is winding down its DVD business after 25 years
+                    </a>
+                </h2>
+                <p class="article-description">Netflix is officially winding down the business that helped make it a household name.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 20:10:51 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="CNN Top Stories" data-tags="Global">
+                <span class="article-source">CNN Top Stories</span>
+                <h2 class="article-title">
+                    <a href="https://www.cnn.com/2023/04/18/tech/lina-khan-ai-warning/index.html" target="_blank" rel="noopener noreferrer">
+                        FTC chair Lina Khan warns AI could 'turbocharge' fraud and scams
+                    </a>
+                </h2>
+                <p class="article-description">Artificial intelligence tools such as ChatGPT could lead to a "turbocharging" of consumer harms including fraud and scams, and the US government has substantial authority to crack down on AI-driven consumer harms under existing law, members of the Fe...</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Global</span></div>
+                    <span class="article-date">Tue, 18 Apr 2023 17:59:38 GMT</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/space/2026/02/nasa-reports-no-significant-leaks-in-artemis-ii-fueling-test-eyes-march-6-launch/" target="_blank" rel="noopener noreferrer">
+                        After fueling test, optimism grows for March launch of Artemis II to the Moon
+                    </a>
+                </h2>
+                <p class="article-description">“We’re now targeting March 6 as our earliest launch attempt ... there is still pending work."</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 23:55:43 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/gaming/2026/02/microsoft-gaming-chief-phil-spencer-steps-down-after-38-years-with-company/" target="_blank" rel="noopener noreferrer">
+                        Microsoft gaming chief Phil Spencer steps down after 38 years with company
+                    </a>
+                </h2>
+                <p class="article-description">Microsoft CoreAI exec Asha Sharma will take over in surprise executive shake-up.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 23:28:21 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/health/2026/02/maha-moms-threaten-to-turn-this-car-around-as-rfk-jr-flips-on-pesticide/" target="_blank" rel="noopener noreferrer">
+                        MAHA moms threaten to turn this car around as RFK Jr. flips on pesticide
+                    </a>
+                </h2>
+                <p class="article-description">MAHA members call movement a "sham" after Kennedy supports glyphosate order.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 23:14:09 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/02/discord-and-persona-end-partnership-after-shady-uk-age-test-sparks-outcry/" target="_blank" rel="noopener noreferrer">
+                        Fury over Discord’s age checks explodes after shady Persona test in UK
+                    </a>
+                </h2>
+                <p class="article-description">Persona confirmed all age-check data from Discord's UK test was deleted.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 22:41:02 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/02/fcc-asks-stations-for-pro-america-programming-like-daily-pledge-of-allegiance/" target="_blank" rel="noopener noreferrer">
+                        FCC asks stations for "pro-America" programming, like daily Pledge of Allegiance
+                    </a>
+                </h2>
+                <p class="article-description">Brendan Carr wants "patriotic" shows for Trump's yearlong America 250 celebration.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 22:00:59 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/gadgets/2026/02/metas-flagship-metaverse-service-leaves-vr-behind/" target="_blank" rel="noopener noreferrer">
+                        Meta's flagship metaverse service leaves VR behind
+                    </a>
+                </h2>
+                <p class="article-description">The company asserts it will continue to make VR headsets, though.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 21:49:22 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/health/2026/02/with-nih-in-chaos-its-controversial-director-is-taking-over-cdc-too/" target="_blank" rel="noopener noreferrer">
+                        Controversial NIH director now in charge of CDC, too, in RFK Jr. shake-up
+                    </a>
+                </h2>
+                <p class="article-description">The unusual dual role has renewed criticism of Bhattacharya's lack of leadership.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 19:44:39 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/02/wikipedia-bans-archive-today-after-site-executed-ddos-and-altered-web-captures/" target="_blank" rel="noopener noreferrer">
+                        Wikipedia blacklists Archive.today, starts removing 695,000 archive links
+                    </a>
+                </h2>
+                <p class="article-description">If DDoSing a blog wasn't bad enough, archive site also tampered with web snapshots.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 18:35:43 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/gaming/2026/02/why-final-fantasy-is-now-targeting-pc-as-its-lead-platform/" target="_blank" rel="noopener noreferrer">
+                        Why Final Fantasy is now targeting PC as its "lead platform"
+                    </a>
+                </h2>
+                <p class="article-description">Director says PC is the "foundation" when targeting "high-end environments first."</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 17:26:59 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/science/2026/02/new-dates-on-chinese-fossils-raise-question-of-how-many-times-we-left-africa/" target="_blank" rel="noopener noreferrer">
+                        "Million-year-old" fossil skulls from China are far older—and not Denisovans
+                    </a>
+                </h2>
+                <p class="article-description">The revised age may help make sense of 2-million-year-old stone tools elsewhere in China.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 17:03:06 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/culture/2026/02/its-outright-war-for-the-iron-throne-in-house-of-the-dragon-s3-teaser/" target="_blank" rel="noopener noreferrer">
+                        It's outright war for the Iron Throne in House of the Dragon S3 teaser
+                    </a>
+                </h2>
+                <p class="article-description">"The king has abdicated his throne. A new line is coming. A new line of unsullied kings."</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 16:40:31 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/gaming/2026/02/pokemon-red-and-greens-gba-remakes-are-getting-re-released-on-switch-for-20-a-pop/" target="_blank" rel="noopener noreferrer">
+                        Nintendo brings GBA-era Pokémon to the Switch, but not Switch Online subscribers
+                    </a>
+                </h2>
+                <p class="article-description">Games appear to be mostly unmodified ports of the well-regarded remakes.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 16:30:21 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/tech-policy/2026/02/supreme-court-blocks-trumps-emergency-tariffs-billions-in-refunds-may-be-owed/" target="_blank" rel="noopener noreferrer">
+                        Supreme Court blocks Trump's emergency tariffs, billions in refunds may be owed
+                    </a>
+                </h2>
+                <p class="article-description">Economists estimated more than $175 billion may need to be refunded.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 15:37:15 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/cars/2026/02/tesla-slashes-cybertruck-prices-as-it-tries-to-move-unpainted-metal/" target="_blank" rel="noopener noreferrer">
+                        Tesla slashes Cybertruck prices as it tries to move (unpainted) metal
+                    </a>
+                </h2>
+                <p class="article-description">The stainless steel pickup truck is Tesla's first real flop.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 14:31:05 +0000</span>
+                </div>
+            </div>
+        
+            <div class="article-card" data-source="Ars Technica All" data-tags="Technology,Science">
+                <span class="article-source">Ars Technica All</span>
+                <h2 class="article-title">
+                    <a href="https://arstechnica.com/ai/2026/02/an-ai-coding-bot-took-down-amazon-web-services/" target="_blank" rel="noopener noreferrer">
+                        An AI coding bot took down Amazon Web Services
+                    </a>
+                </h2>
+                <p class="article-description">Blames "user error, not AI error" for incident in December involving its Kiro tool.</p>
+                <div class="article-meta">
+                    <div class="article-tags"><span class="tag">Technology</span><span class="tag">Science</span></div>
+                    <span class="article-date">Fri, 20 Feb 2026 14:13:32 +0000</span>
+                </div>
+            </div>
+        
+        </div>
+        
+        <div class="update-info">
+            <p>Last updated: 2026-02-21 16:01:41 UTC</p>
+            <p style="margin-top: 0.5rem;">Remember: verify information from multiple sources before drawing conclusions</p>
+        </div>
+    </div>
+    
+    <script>
+        // Filter state
+        let activeSource = 'all';
+        let activeTag = 'all';
+        
+        const articles = document.querySelectorAll('.article-card');
+        const sourceFilters = document.querySelectorAll('#source-filters .filter-btn');
+        const tagFilters = document.querySelectorAll('#tag-filters .filter-btn');
+        const visibleCountElement = document.getElementById('visible-count');
+        
+        // Filter function
+        function applyFilters() {
+            let visibleCount = 0;
+            
+            articles.forEach(article => {
+                const articleSource = article.dataset.source;
+                const articleTags = article.dataset.tags.split(',');
+                
+                const sourceMatch = activeSource === 'all' || articleSource === activeSource;
+                const tagMatch = activeTag === 'all' || articleTags.includes(activeTag);
+                
+                if (sourceMatch && tagMatch) {
+                    article.classList.remove('hidden');
+                    visibleCount++;
+                } else {
+                    article.classList.add('hidden');
+                }
+            });
+            
+            visibleCountElement.textContent = visibleCount;
+        }
+        
+        // Source filter event listeners
+        sourceFilters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                sourceFilters.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeSource = btn.dataset.value;
+                applyFilters();
+            });
+        });
+        
+        // Tag filter event listeners
+        tagFilters.forEach(btn => {
+            btn.addEventListener('click', () => {
+                tagFilters.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                activeTag = btn.dataset.value;
+                applyFilters();
+            });
+        });
+    </script>
+</body>
+</html>

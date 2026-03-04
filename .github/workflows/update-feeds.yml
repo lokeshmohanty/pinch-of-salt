@@ -1,10 +1,9 @@
-name: Update Articles
+name: Update News & Deploy
 
 on:
   schedule:
-    # Run every 6 hours
     - cron: '0 */6 * * *'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
   push:
     branches:
       - main
@@ -13,44 +12,38 @@ permissions:
   contents: write
 
 jobs:
-  update-feeds:
+  build-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Install uv
-        uses: astral-sh/setup-uv@v4
+      - name: Install Rust
+        uses: dtolnay/rust-toolchain@stable
+      
+      - name: Restore cache
+        uses: Swatinem/rust-cache@v2
+      
+      - name: Build and Run Core Engine
+        env:
+          NEWS_PROC_API_KEY: ${{ secrets.NEWS_PROC_API_KEY }}
+        run: |
+          cd core
+          cargo run --release
+      
+      - name: Prepare Deployment
+        run: |
+          mkdir -p deploy/data
+          cp frontend/* deploy/
+          cp data/pinch.db deploy/data/
+          cp data/history_data.json deploy/data/
+          touch deploy/.nojekyll
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          version: "latest"
-      
-      - name: Set up Python and dependencies
-        run: uv sync
-      
-      - name: Generate static site
-        run: |
-          uv run src/generate_site.py
-      
-      - name: Deploy to gh-pages branch
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          
-          # Create gh-pages branch if it doesn't exist
-          git fetch origin gh-pages 2>/dev/null || git checkout --orphan gh-pages
-          git checkout gh-pages 2>/dev/null || true
-          
-          # Remove all files except docs/
-          find . -maxdepth 1 ! -name 'docs' ! -name '.git' ! -name '.' -exec rm -rf {} +
-          
-          # Move contents of docs/ to root
-          if [ -d "docs" ]; then
-            mv docs/* . 2>/dev/null || true
-            mv docs/.nojekyll . 2>/dev/null || true
-            rm -rf docs
-          fi
-          
-          # Add and commit
-          git add .
-          git diff --quiet && git diff --staged --quiet || (git commit -m "🤖 Auto-update RSS feeds - $(date '+%Y-%m-%d %H:%M:%S')" && git push origin gh-pages --force)
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./deploy
+          publish_branch: gh-pages
+          force_orphan: true
