@@ -150,7 +150,26 @@ async function openModal(type, id) {
                 `;
             });
         }
-        body.innerHTML = factsHtml + sourcesHtml;
+
+        // Related Past Events (parent nodes in the DAG)
+        let relatedHtml = '';
+        const parentsRes = db.exec(`SELECT c.id, c.title, c.summary, c.last_updated FROM cluster_links cl JOIN clusters c ON cl.parent_id = c.id WHERE cl.child_id = '${id}'`);
+        if (parentsRes.length > 0 && parentsRes[0].values.length > 0) {
+            relatedHtml = '<h3 style="margin-top: 2rem;">🔗 Related Past Events</h3>';
+            relatedHtml += '<div style="border-left: 3px solid var(--primary); padding-left: 1.5rem; margin-top: 1rem;">';
+            parentsRes[0].values.forEach(v => {
+                relatedHtml += `
+                    <div class="source-item" style="cursor: pointer;" onclick="closeModal(); setTimeout(() => openModal('cluster', '${v[0]}'), 300);">
+                        <h4 style="color: #a5b4fc; margin-bottom: 0.25rem;">${v[1]}</h4>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0.25rem;">${v[2] || ''}</p>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);">${v[3] ? new Date(v[3]).toLocaleDateString() : ''}</span>
+                    </div>
+                `;
+            });
+            relatedHtml += '</div>';
+        }
+
+        body.innerHTML = factsHtml + sourcesHtml + relatedHtml;
     } else {
         const res = db.exec(`SELECT * FROM articles WHERE id = ${id}`);
         const cols = res[0].columns;

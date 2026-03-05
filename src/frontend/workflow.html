@@ -1,72 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>System Workflow - Pinch of Salt</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
     <style>
-        .workflow-step {
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 2rem;
+        .flowchart-wrapper {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 2.5rem;
             margin-bottom: 2rem;
-            position: relative;
+            overflow-x: auto;
         }
-        .step-number {
-            position: absolute;
-            top: -15px;
-            left: 20px;
-            background: var(--accent-primary);
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
+
+        .mermaid {
             display: flex;
-            align-items: center;
             justify-content: center;
-            font-weight: bold;
+        }
+
+        .mermaid svg {
+            max-width: 100%;
+        }
+
+        .legend {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2.5rem;
+        }
+
+        .legend-item {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 16px;
+            padding: 1.5rem;
+        }
+
+        .legend-item h4 {
+            color: #a5b4fc;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .legend-item p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .legend-item code {
+            background: rgba(99, 102, 241, 0.15);
+            padding: 0.15rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: #c4b5fd;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
             <a href="index.html" style="text-decoration: none; color: inherit;">
                 <h1>Pinch of <span>Salt</span></h1>
             </a>
-            <h1>System Workflow</h1>
-            <p>How we process news into a verifiable timeline.</p>
+            <p class="subtitle">System Workflow — How raw feeds become verifiable history</p>
         </header>
 
-        <div class="workflow-step">
-            <div class="step-number">1</div>
-            <h3>RSS Ingestion</h3>
-            <p>The system fetches live feeds from diverse global sources (BBC, NYT, Al Jazeera) using <code>feedparser</code>. We collect titles, descriptions, and publication dates to build a broad base of information.</p>
+        <div class="flowchart-wrapper">
+            <div class="mermaid">
+                flowchart TD
+                A(["🌐 RSS Feeds — BBC · NYT · Al Jazeera"]) -->|feedparser| B(["📰 Raw Articles"])
+                B -->|TF-IDF vectorization| C(["🔢 Feature Vectors"])
+                C -->|DBSCAN clustering| D{{"🗂️ Cluster? — similarity > 0.3"}}
+                D -- "Multi-source" --> E(["🧠 LLM Extraction — Llama 3.2"])
+                D -. "Single article" .-> F(["📝 Standalone Article"])
+                E --> G(["✅ Verified Facts + Classification"])
+                G -->|geography · category| H[("🗄️ SQLite DB")]
+                F -.-> H
+                H -->|parent / child links| I(["🔗 DAG Builder"])
+                I --> J(["📊 Knowledge Graph — vis-network"])
+                H --> K(["🖥️ Dashboard — Filterable UI"])
+
+                style A fill:#312e81,stroke:#818cf8,stroke-width:2px,color:#e0e7ff
+                style B fill:#1e1b4b,stroke:#6366f1,stroke-width:2px,color:#c7d2fe
+                style C fill:#1e1b4b,stroke:#6366f1,stroke-width:2px,color:#c7d2fe
+                style D fill:#3b0764,stroke:#c084fc,stroke-width:2px,color:#f3e8ff
+                style E fill:#312e81,stroke:#818cf8,stroke-width:2px,color:#e0e7ff
+                style F fill:#1e293b,stroke:#475569,stroke-width:1px,color:#94a3b8
+                style G fill:#064e3b,stroke:#34d399,stroke-width:2px,color:#d1fae5
+                style H fill:#1e1b4b,stroke:#a78bfa,stroke-width:2px,color:#ddd6fe
+                style I fill:#312e81,stroke:#818cf8,stroke-width:2px,color:#e0e7ff
+                style J fill:#1e1b4b,stroke:#6366f1,stroke-width:2px,color:#c7d2fe
+                style K fill:#1e1b4b,stroke:#6366f1,stroke-width:2px,color:#c7d2fe
+
+                linkStyle default stroke:#818cf8,stroke-width:2px
+                linkStyle 5 stroke:#475569,stroke-width:1px,stroke-dasharray:6
+                linkStyle 8 stroke:#475569,stroke-width:1px,stroke-dasharray:6
+            </div>
         </div>
 
-        <div class="workflow-step">
-            <div class="step-number">2</div>
-            <h3>Semantic Clustering</h3>
-            <p>Using <code>scikit-learn</code>, we vectorize article text (TF-IDF) and apply <b>DBSCAN</b> clustering. Articles with a cosine similarity > 0.3 are grouped into a single "News Cluster", ensuring we identify different reports of the same event.</p>
-        </div>
-
-        <div class="workflow-step">
-            <div class="step-number">3</div>
-            <h3>LLM Extraction & Classification</h3>
-            <p>Clusters are passed to the <b>Llama-3.2</b> model. It synthesizes a unified title, extracts verified facts, classifies the geography/category, and identifies links to previous events in our database.</p>
-        </div>
-
-        <div class="workflow-step">
-            <div class="step-number">4</div>
-            <h3>DAG Generation</h3>
-            <p>The system stores temporal relationships (parent/child) between events. The <b>Knowledge Graph</b> visualizes these clusters as a Directed Acyclic Graph, showing the historical flow and consequences of events over time.</p>
+        <div class="legend">
+            <div class="legend-item">
+                <h4>1. RSS Ingestion</h4>
+                <p>Fetches live feeds from global sources using <code>feedparser</code>. Collects titles, descriptions,
+                    and publication dates.</p>
+            </div>
+            <div class="legend-item">
+                <h4>2. Semantic Clustering</h4>
+                <p>Vectorizes text with <code>TF-IDF</code> and groups similar articles using <code>DBSCAN</code>
+                    (cosine similarity &gt; 0.3).</p>
+            </div>
+            <div class="legend-item">
+                <h4>3. LLM Extraction</h4>
+                <p>Passes clusters to <code>Llama-3.2</code> to synthesize titles, extract verified facts, and classify
+                    by geography &amp; category.</p>
+            </div>
+            <div class="legend-item">
+                <h4>4. DAG Generation</h4>
+                <p>Links events chronologically (parent → child) and stores them in SQLite. The Knowledge Graph renders
+                    this as a directed, hierarchical timeline.</p>
+            </div>
         </div>
 
         <div style="text-align: center; margin-top: 2rem;">
             <a href="index.html" class="filter-btn">Back to Dashboard</a>
         </div>
     </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: 'dark',
+            themeVariables: {
+                primaryColor: '#312e81',
+                primaryTextColor: '#e0e7ff',
+                primaryBorderColor: '#6366f1',
+                lineColor: '#6366f1',
+                secondaryColor: '#1e1b4b',
+                tertiaryColor: '#0f172a',
+                fontFamily: 'Nunito, sans-serif',
+                fontSize: '14px'
+            },
+            flowchart: {
+                curve: 'basis',
+                padding: 20
+            }
+        });
+    </script>
 </body>
+
 </html>
-抽样 %SAME%
