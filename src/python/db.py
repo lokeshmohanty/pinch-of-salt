@@ -27,7 +27,8 @@ class Database:
                 geography TEXT,
                 category TEXT,
                 first_seen TEXT,
-                last_updated TEXT
+                last_updated TEXT,
+                tags TEXT
             )
         """)
         # We use a 384-dimensional vector (all-MiniLM-L6-v2)
@@ -56,6 +57,7 @@ class Database:
                 source_name TEXT,
                 geography TEXT,
                 category TEXT,
+                tags TEXT,
                 processed_at TEXT DEFAULT CURRENT_TIMESTAMP,
                 FOREIGN KEY(cluster_id) REFERENCES clusters(id)
             )
@@ -69,14 +71,26 @@ class Database:
                 FOREIGN KEY(child_id) REFERENCES clusters(id)
             )
         """)
+        
+        # Migration: Add 'tags' column if it doesn't exist
+        try:
+            cursor.execute("ALTER TABLE clusters ADD COLUMN tags TEXT")
+        except sqlite3.OperationalError:
+            pass # Column likely already exists
+            
+        try:
+            cursor.execute("ALTER TABLE articles ADD COLUMN tags TEXT")
+        except sqlite3.OperationalError:
+            pass # Column likely already exists
+
         self.conn.commit()
 
     def save_cluster(self, cluster: Cluster):
         cursor = self.conn.cursor()
         cursor.execute(
-            "INSERT OR REPLACE INTO clusters (id, title, summary, geography, category, first_seen, last_updated) VALUES (?, ?, ?, ?, ?, ?, ?)",
+            "INSERT OR REPLACE INTO clusters (id, title, summary, geography, category, first_seen, last_updated, tags) VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
             (cluster.id, cluster.title, cluster.summary, cluster.geography, cluster.category,
-             cluster.first_seen.isoformat(), cluster.last_updated.isoformat())
+             cluster.first_seen.isoformat(), cluster.last_updated.isoformat(), json.dumps(cluster.tags))
         )
         rowid = cursor.lastrowid
         
@@ -131,10 +145,10 @@ class Database:
         cursor = self.conn.cursor()
         cursor.execute(
             """INSERT OR REPLACE INTO articles 
-               (cluster_id, title, link, description, published, source_name, geography, category)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
+               (cluster_id, title, link, description, published, source_name, geography, category, tags)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (article.cluster_id, article.title, article.link, 
              article.description, article.published.isoformat() if article.published else None, 
-             article.source_name, article.geography, article.category)
+             article.source_name, article.geography, article.category, json.dumps(article.tags))
         )
         self.conn.commit()

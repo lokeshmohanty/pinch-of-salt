@@ -16,6 +16,7 @@ class Article(BaseModel):
     cluster_id: Optional[str] = None
     geography: Optional[str] = "Global"
     category: Optional[str] = "General"
+    tags: List[str] = Field(default_factory=list)
 
 class Fact(BaseModel):
     statement: str
@@ -28,6 +29,7 @@ class Cluster(BaseModel):
     facts: List[Fact]
     geography: str = "Global"
     category: str = "General"
+    tags: List[str] = Field(default_factory=list)
     parent_cluster_ids: List[str] = Field(default_factory=list)
     embedding: Optional[List[float]] = None
     first_seen: datetime = Field(default_factory=datetime.utcnow)

@@ -6,6 +6,8 @@ Unbiased news with verifiable history. This project uses a Python-powered engine
 - **Python Core**: Modern, fast news processing with `uv` and `scikit-learn`.
 - **Intelligent Clustering**: DBSCAN-based event grouping for high-accuracy analysis.
 - **Fact Extraction**: Verified facts synthesized via Llama-3.2 on HuggingFace.
+- **Intelligent Tagging**: Automated LLM-based thematic tagging and keyword assignment.
+- **Diverse Feeds**: Curated sources across Technical, AI, Research, Medical, and Indian News sectors.
 - **Chronological Knowledge Graph**: An interactive DAG showing the historical flow of events.
 - **Interactive Filters**: Geographic and category-based news exploration.
 
@@ -22,6 +24,8 @@ Visit `/workflow.html` on the local server to see a detailed visual breakdown of
 ## Goals
 
 - Connect recent news with past history with timeline and sources
+- AI-driven Technical, Research, and Regional (India) news aggregation
+- Intelligent thematic tagging for better discovery
 - Highlight conflicts on news sources based on timeline
 - Display current news along with all conflicts with description
 - Add features in the UI to get detailed information on news content
@@ -46,21 +50,15 @@ Visit `/workflow.html` on the local server to see a detailed visual breakdown of
 ├── data/
 │   └── feeds.yaml              # RSS feed sources
 ├── src/
-│   ├── rss.py                  # RSS fetching library
-│   ├── api.py                  # API for accessing the library
-    ├── generate_site.py        # Static site generator script
-│   └── static.html             # HTML template for static site
-├── docs/                       # Generated static site (GitHub Pages)
+│   ├── python/               # Core backend and AI logic
+│   └── frontend/             # Dashboard UI components
+├── docs/                     # Generated static site (GitHub Pages)
 │   └── index.html
-├── pyproject.toml              # Project details
+├── pyproject.toml            # Project details
 └── README.md
 ```
 
-- To generate static site go to [README_ui.md](./README_ui.md)
-
-## Sources
-- Law <https://judgments.ecourts.gov.in/pdfsearch/index.php>, <https://indiankanoon.org>
-
+- To see the previous static site instructions go to [README_ui.md](./README_ui.md)
 ## Benchmarks
 
 - Perplexity

@@ -26,15 +26,19 @@ def main():
     else:
         print("⏳ Database has existing history. Incremental 24-hour fetch mode.")
 
-    sources = [
-        ("BBC News", "http://feeds.bbci.co.uk/news/world/rss.xml"),
-        ("Al Jazeera", "https://www.aljazeera.com/xml/rss/all.xml"),
-        ("NYT World", "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"),
-    ]
+    import yaml
+    
+    with open("data/feeds.yaml", "r") as f:
+        config = yaml.safe_load(f)
+        
+    sources = []
+    for feed in config.get("feeds", []):
+        sources.append((feed["name"], feed["url"]))
     
     # If seeding, explicitly inject an aggressive historical feed for context building
     if seed_mode:
         sources.append(("Google News Global (1 Year)", "https://news.google.com/rss/search?q=when:1y&hl=en-US&gl=US&ceid=US:en"))
+        sources.append(("Google News India (1 Year)", "https://news.google.com/rss/search?q=when:1y+location:India&hl=en-IN&gl=IN&ceid=IN:en"))
 
     all_articles = []
     for name, url in sources:

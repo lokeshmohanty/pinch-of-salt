@@ -6,6 +6,7 @@ A static site generator that fetches RSS feeds and creates a beautiful, filterab
 
 - 📰 Aggregates multiple RSS feeds into one page
 - 🗂️ Filter by source and tag
+- 🏷️ Intelligent LLM-based tagging for all clusters
 - ⏰ Articles sorted by publication date (newest first)
 - 🎨 Modern, responsive design
 - 🤖 Automatic updates via GitHub Actions
