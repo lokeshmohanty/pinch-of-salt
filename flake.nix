@@ -20,6 +20,7 @@
             just
             uv
             python311
+            git-lfs
           ];
 
           shellHook = ''

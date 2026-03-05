@@ -57,40 +57,6 @@ function renderGraph() {
         });
     }
 
-    // 3. Fetch articles that belong to clusters (source connections)
-    const articlesRes = db.exec("SELECT id, cluster_id, title, source_name FROM articles WHERE cluster_id IS NOT NULL");
-    if (articlesRes.length > 0) {
-        articlesRes[0].values.forEach(row => {
-            const articleNodeId = `article_${row[0]}`;
-            if (!nodeIds.has(articleNodeId)) {
-                nodeIds.add(articleNodeId);
-                nodes.push({
-                    id: articleNodeId,
-                    label: row[3] || 'Source',
-                    title: `📰 ${row[2]}\nSource: ${row[3]}`,
-                    font: { size: 11, color: '#94a3b8', face: 'Nunito' },
-                    shape: 'dot',
-                    size: 10,
-                    color: {
-                        background: 'rgba(99, 102, 241, 0.15)',
-                        border: 'rgba(99, 102, 241, 0.4)',
-                        highlight: { background: '#4338ca', border: '#818cf8' }
-                    },
-                    borderWidth: 1
-                });
-            }
-
-            edges.push({
-                from: row[1],  // cluster_id
-                to: articleNodeId,
-                arrows: { to: { enabled: true, scaleFactor: 0.6 } },
-                color: { color: 'rgba(99, 102, 241, 0.2)', highlight: '#6366f1' },
-                width: 1,
-                dashes: [4, 4]
-            });
-        });
-    }
-
     const container = document.getElementById('kg-container');
     const data = { nodes: new vis.DataSet(nodes), edges: new vis.DataSet(edges) };
 

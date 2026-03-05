@@ -1,5 +1,7 @@
 import sqlite3
 import json
+import sqlite_vec
+from sqlite_vec import serialize_float32
 from datetime import datetime
 from typing import List, Optional
 from models import Article, Cluster
@@ -8,6 +10,11 @@ class Database:
     def __init__(self, path: str):
         self.conn = sqlite3.connect(path)
         self.conn.row_factory = sqlite3.Row
+        
+        self.conn.enable_load_extension(True)
+        sqlite_vec.load(self.conn)
+        self.conn.enable_load_extension(False)
+        
         self.init_tables()
 
     def init_tables(self):
@@ -21,6 +28,12 @@ class Database:
                 category TEXT,
                 first_seen TEXT,
                 last_updated TEXT
+            )
+        """)
+        # We use a 384-dimensional vector (all-MiniLM-L6-v2)
+        cursor.execute("""
+            CREATE VIRTUAL TABLE IF NOT EXISTS vec_clusters USING vec0(
+                embedding float[384]
             )
         """)
         cursor.execute("""
@@ -65,6 +78,14 @@ class Database:
             (cluster.id, cluster.title, cluster.summary, cluster.geography, cluster.category,
              cluster.first_seen.isoformat(), cluster.last_updated.isoformat())
         )
+        rowid = cursor.lastrowid
+        
+        # If we have an embedding, save it into the virtual table linked to the cluster's rowid
+        if cluster.embedding:
+            cursor.execute(
+                "INSERT INTO vec_clusters(rowid, embedding) VALUES (?, ?)",
+                (rowid, serialize_float32(cluster.embedding))
+            )
         
         # Save links
         for parent_id in cluster.parent_cluster_ids:
@@ -81,6 +102,30 @@ class Database:
                 (cluster.id, fact.statement, fact.confidence)
             )
         self.conn.commit()
+
+    def search_similar_clusters(self, query_embedding: List[float], limit: int = 5) -> List[dict]:
+        cursor = self.conn.cursor()
+        query_bytes = serialize_float32(query_embedding)
+        
+        # We join the virtual table vec_clusters against the actual clusters via rowid
+        cursor.execute('''
+            SELECT c.id, c.title, c.summary, c.last_updated, v.distance
+            FROM vec_clusters v
+            JOIN clusters c ON v.rowid = c.rowid
+            WHERE v.embedding MATCH ? AND k = ?
+            ORDER BY v.distance
+        ''', (query_bytes, limit))
+        
+        results = []
+        for row in cursor.fetchall():
+            results.append({
+                "id": row["id"],
+                "title": row["title"],
+                "summary": row["summary"],
+                "last_updated": row["last_updated"],
+                "distance": row["distance"]
+            })
+        return results
 
     def save_article(self, article: Article):
         cursor = self.conn.cursor()

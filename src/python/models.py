@@ -29,5 +29,6 @@ class Cluster(BaseModel):
     geography: str = "Global"
     category: str = "General"
     parent_cluster_ids: List[str] = Field(default_factory=list)
+    embedding: Optional[List[float]] = None
     first_seen: datetime = Field(default_factory=datetime.utcnow)
     last_updated: datetime = Field(default_factory=datetime.utcnow)

@@ -18,47 +18,68 @@ class ExtractedCluster(BaseModel):
     def convert_strings_to_facts(cls, v):
         return [Fact(statement=f, confidence=0.95) if isinstance(f, str) else f for f in v]
 
+from sentence_transformers import SentenceTransformer
+
 class Extractor:
-    def __init__(self):
+    def __init__(self, db):
         self.api_key = os.getenv("HF_TOKEN")
         self.base_url = "https://router.huggingface.co/v1"
         self.model = "meta-llama/Llama-3.2-3B-Instruct"
+        self.db = db
+        # Initialize the embedding model (MiniLM is small and fast)
+        self.embedder = SentenceTransformer('all-MiniLM-L6-v2')
 
-    def extract_cluster_info(self, articles: List[Article], existing_events: List[dict] = None) -> Cluster:
+    def extract_cluster_info(self, articles: List[Article]) -> Cluster:
         combined_text = "\n\n---\n\n".join([
             f"Source: {a.source_name}\nTitle: {a.title}\nDescription: {a.description}"
             for a in articles
         ])
-
+        
+        # 1. Generate a preliminary summary vector to find similar past events
+        preliminary_text = " ".join([a.title for a in articles])
+        preliminary_embedding = self.embedder.encode(preliminary_text).tolist()
+        
+        # 2. Query vector database for top-5 most similar past events
+        similar_past_events = self.db.search_similar_clusters(preliminary_embedding, limit=5)
+        
         context_str = ""
-        if existing_events:
+        if similar_past_events:
             context_str = "\n\nExisting recent events for context:\n" + "\n".join([
-                f"- ID: {ev['id']}, Title: {ev['title']}" for ev in existing_events
+                f"- ID: {ev['id']}, Title: {ev['title']}, Summary: {ev['summary']}" 
+                for ev in similar_past_events
             ])
-
+            
         prompt = (
-            "Compare the following news reports from different sources about the same event. "
+            "Compare the following news reports from different sources about the SAME event. "
             "Extract a unified title, a 2-sentence summary, exactly 3-5 verified facts, "
             "the primary geography (e.g., specific country or 'Global'), "
             "and a category (one of: Technical, Geopolitical, Economic, Sports, General). "
-            "Additionally, check the 'Existing recent events' below. If this current event "
-            "is a direct continuation, follow-up, or consequence of any existing events, "
-            "list their IDs in the 'parent_cluster_ids' field."
-            "Return ONLY the requested JSON structure."
+            f"{context_str}\n\n"
+            "CRITICAL INSTRUCTION: Review the 'Existing recent events' carefully. If this current event is related to, "
+            "shares the same narrative, or is a continuation/consequence of ANY of those existing events, "
+            "you MUST include their IDs in the 'parent_cluster_ids' list. Be aggressive in linking related historical events to form a knowledge graph. "
+            "Otherwise leave it empty.\n\n"
+            "Return ONLY the requested JSON structure in EXACTLY this format:\n"
+            "{\n"
+            "  \"title\": \"Unified title\",\n"
+            "  \"summary\": \"2-sentence summary\",\n"
+            "  \"facts\": [\"Fact 1\", \"Fact 2\", \"Fact 3\"],\n"
+            "  \"geography\": \"Global or specific country\",\n"
+            "  \"category\": \"Geopolitical/Technical/etc\",\n"
+            "  \"parent_cluster_ids\": [\"id-1\", \"id-2\", ...]\n"
+            "}"
         )
 
         headers = {"Authorization": f"Bearer {self.api_key}"}
         
-        # Use simple requests with Pydantic parsing if instructor is too heavy or needs setup
-        # For now, let's use a robust raw approach that mimics the Rust logic but is simpler
         payload = {
             "model": self.model,
             "messages": [
-                {"role": "system", "content": "You are a factual news aggregator."},
+                {"role": "system", "content": "You are a factual news aggregator and historian."},
                 {"role": "user", "content": f"{prompt}\n\nReports:\n{combined_text}"}
             ],
             "temperature": 0.1,
-            "max_tokens": 800,
+            "max_tokens": 2000,
             "response_format": {"type": "json_object"}
         }
 
@@ -67,12 +88,43 @@ class Extractor:
         data = response.json()
         
         content = data["choices"][0]["message"]["content"]
-        extracted = ExtractedCluster.model_validate_json(content)
+        
+        # Robustly extract JSON block in case Llama outputs markdown or trailing text
+        start_idx = content.find('{')
+        end_idx = content.rfind('}')
+        if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
+            content = content[start_idx:end_idx+1]
+
+        try:
+            extracted = ExtractedCluster.model_validate_json(content)
+        except Exception as e:
+            print(f"⚠️ JSON parsing failed: {e}. Returning fallback cluster.")
+            # Provide a safe fallback cluster
+            return Cluster(
+                title=articles[0].title,
+                summary=articles[0].description[:200] + "...",
+                facts=["Extraction failed.", "Using fallback data."],
+                geography="Global",
+                category="General",
+                parent_cluster_ids=[],
+                embedding=self.embedder.encode(articles[0].title).tolist()
+            )
+        
+        if extracted.parent_cluster_ids:
+            print(f"    🔗 Linked to past events: {extracted.parent_cluster_ids}")
+        else:
+            print(f"    ⏳ No narrative links found.")
+        
+        # 3. Generate the final high-quality embedding based on the LLM's unified title and summary
+        final_embedding_text = f"{extracted.title}. {extracted.summary}"
+        final_embedding = self.embedder.encode(final_embedding_text).tolist()
 
         return Cluster(
             title=extracted.title,
             summary=extracted.summary,
             facts=extracted.facts,
             geography=extracted.geography,
-            category=extracted.category
+            category=extracted.category,
+            parent_cluster_ids=extracted.parent_cluster_ids,
+            embedding=final_embedding
         )
