@@ -2,7 +2,7 @@ name: Update News & Deploy
 
 on:
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '0 */12 * * *'
   workflow_dispatch:
   push:
     branches:
@@ -19,31 +19,29 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: Install Rust
-        uses: dtolnay/rust-toolchain@stable
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
       
-      - name: Restore cache
-        uses: Swatinem/rust-cache@v2
+      - name: Install uv
+        run: curl -LsSf https://astral.sh/uv/install.sh | sh
       
       - name: Build and Run Core Engine
         env:
-          NEWS_PROC_API_KEY: ${{ secrets.NEWS_PROC_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
-          cd core
-          cargo run --release
+          just run
       
       - name: Prepare Deployment
         run: |
-          mkdir -p deploy/data
-          cp frontend/* deploy/
-          cp data/pinch.db deploy/data/
-          cp data/history_data.json deploy/data/
-          touch deploy/.nojekyll
+          just deploy-prep
+          touch public/.nojekyll
       
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./deploy
+          publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: true

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Workflow - Pinch of Salt</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .workflow-step {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: var(--accent-primary);
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <h1>Pinch of <span>Salt</span></h1>
+            </a>
+            <h1>System Workflow</h1>
+            <p>How we process news into a verifiable timeline.</p>
+        </header>
+
+        <div class="workflow-step">
+            <div class="step-number">1</div>
+            <h3>RSS Ingestion</h3>
+            <p>The system fetches live feeds from diverse global sources (BBC, NYT, Al Jazeera) using <code>feedparser</code>. We collect titles, descriptions, and publication dates to build a broad base of information.</p>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-number">2</div>
+            <h3>Semantic Clustering</h3>
+            <p>Using <code>scikit-learn</code>, we vectorize article text (TF-IDF) and apply <b>DBSCAN</b> clustering. Articles with a cosine similarity > 0.3 are grouped into a single "News Cluster", ensuring we identify different reports of the same event.</p>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-number">3</div>
+            <h3>LLM Extraction & Classification</h3>
+            <p>Clusters are passed to the <b>Llama-3.2</b> model. It synthesizes a unified title, extracts verified facts, classifies the geography/category, and identifies links to previous events in our database.</p>
+        </div>
+
+        <div class="workflow-step">
+            <div class="step-number">4</div>
+            <h3>DAG Generation</h3>
+            <p>The system stores temporal relationships (parent/child) between events. The <b>Knowledge Graph</b> visualizes these clusters as a Directed Acyclic Graph, showing the historical flow and consequences of events over time.</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="filter-btn">Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
+抽样 %SAME%
