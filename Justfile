@@ -1,3 +1,5 @@
+# Set HF_TOKEN in .env or as an environment variable
+
 # Default command
 default:
 	@just --list

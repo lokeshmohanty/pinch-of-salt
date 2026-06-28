@@ -9,7 +9,9 @@ on:
       - main
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -18,8 +20,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          lfs: true
       
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -30,22 +30,10 @@ jobs:
         run: curl -LsSf https://astral.sh/uv/install.sh | sh
       
       - name: Build and Run Core Engine
-        env:
-          HF_TOKEN: ${{ secrets.HF_TOKEN }}
         run: |
           mkdir -p data
           uv run src/python/main.py
       
-      - name: Persist Knowledge Graph (Git LFS)
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git lfs install
-          git add -f data/pinch.db
-          # Only commit if there are changes to avoid failing the job
-          git diff-index --quiet HEAD || git commit -m "chore: persist knowledge graph database [skip ci]"
-          git push
-          
       - name: Prepare Deployment
         run: |
           mkdir -p public/data

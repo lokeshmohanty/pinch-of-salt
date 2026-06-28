@@ -24,14 +24,21 @@ from rag import LawRAG
 
 class Extractor:
     def __init__(self, db):
-        self.api_key = os.getenv("HF_TOKEN")
-        self.base_url = "https://router.huggingface.co/v1"
-        self.model = "meta-llama/Meta-Llama-3-8B-Instruct"
         self.db = db
         # Initialize the embedding model (MiniLM is small and fast)
         # Note: You may see "UNEXPECTED" for 'embeddings.position_ids' in logs.
         self.embedder = SentenceTransformer('all-MiniLM-L6-v2')
         self.law_rag = LawRAG()
+        
+        # Initialize local LLM for extraction
+        from transformers import pipeline
+        print("    🤖 Loading local Qwen 0.6B model from model/ ...")
+        self.pipe = pipeline(
+            "text-generation",
+            model="model/",
+            device_map="auto",
+            trust_remote_code=True
+        )
 
     def extract_cluster_info(self, articles: List[Article]) -> Cluster:
         combined_text = "\n\n---\n\n".join([
@@ -87,28 +94,18 @@ class Extractor:
             "}"
         )
 
-        headers = {"Authorization": f"Bearer {self.api_key}"}
-        
-        payload = {
-            "model": self.model,
-            "messages": [
-                {"role": "system", "content": "You are a factual news aggregator and historian."},
-                {"role": "user", "content": f"{prompt}\n\nReports:\n{combined_text}"}
-            ],
-            "max_tokens": 2000
-        }
+        messages = [
+            {"role": "system", "content": "You are a factual news aggregator and historian."},
+            {"role": "user", "content": f"{prompt}\n\nReports:\n{combined_text}"}
+        ]
 
-        response = requests.post(f"{self.base_url}/chat/completions", headers=headers, json=payload)
-        
-        if response.status_code != 200:
-            print(f"================ ERROR {response.status_code} RESPONSE ===============")
-            print(response.text)
-            print("==================================================")
-            
-        response.raise_for_status()
-        data = response.json()
-        
-        content = data["choices"][0]["message"]["content"]
+        print("    🧠 Generating extraction using local model...")
+        outputs = self.pipe(
+            messages,
+            max_new_tokens=2000,
+            do_sample=False
+        )
+        content = outputs[0]["generated_text"][-1]["content"]
         
         # Robustly extract JSON block in case Llama outputs markdown or trailing text
         start_idx = content.find('{')
