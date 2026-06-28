@@ -1,3 +1,4 @@
+import re
 from typing import List, Union
 import os
 import requests
@@ -32,13 +33,16 @@ class Extractor:
         
         # Initialize local LLM for extraction
         from transformers import pipeline
-        print("    🤖 Loading local Qwen 0.6B model from model/ ...")
+        model_id = "Qwen/Qwen3-0.6B"
+        print(f"    🤖 Loading {model_id} model...")
         self.pipe = pipeline(
             "text-generation",
-            model="model/",
+            model=model_id,
             device_map="auto",
             trust_remote_code=True
         )
+        # Suppress "max_new_tokens vs max_length" warning by clearing the default max_length
+        self.pipe.model.generation_config.max_length = None
 
     def extract_cluster_info(self, articles: List[Article]) -> Cluster:
         combined_text = "\n\n---\n\n".join([
@@ -107,7 +111,10 @@ class Extractor:
         )
         content = outputs[0]["generated_text"][-1]["content"]
         
-        # Robustly extract JSON block in case Llama outputs markdown or trailing text
+        # Strip Qwen3 <think>...</think> reasoning blocks before JSON extraction
+        content = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL).strip()
+        
+        # Robustly extract JSON block in case model outputs markdown or trailing text
         start_idx = content.find('{')
         end_idx = content.rfind('}')
         if start_idx != -1 and end_idx != -1 and end_idx > start_idx:
@@ -121,7 +128,10 @@ class Extractor:
             return Cluster(
                 title=articles[0].title,
                 summary=articles[0].description[:200] + "...",
-                facts=["Extraction failed.", "Using fallback data."],
+                facts=[
+                    Fact(statement="Extraction failed.", confidence=0.0),
+                    Fact(statement="Using fallback data.", confidence=0.0),
+                ],
                 geography="Global",
                 category="General",
                 parent_cluster_ids=[],
