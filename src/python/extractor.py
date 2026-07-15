@@ -106,13 +106,16 @@ class Extractor:
         print("    🧠 Generating extraction using local model...")
         outputs = self.pipe(
             messages,
-            max_new_tokens=2000,
+            max_new_tokens=1024,
+            max_length=None,
             do_sample=False
         )
         content = outputs[0]["generated_text"][-1]["content"]
         
         # Strip Qwen3 <think>...</think> reasoning blocks before JSON extraction
+        # Also handle truncated think blocks where </think> is missing
         content = re.sub(r'<think>.*?</think>', '', content, flags=re.DOTALL).strip()
+        content = re.sub(r'<think>.*', '', content, flags=re.DOTALL).strip()
         
         # Robustly extract JSON block in case model outputs markdown or trailing text
         start_idx = content.find('{')

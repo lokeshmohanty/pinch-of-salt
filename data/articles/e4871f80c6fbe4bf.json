@@ -1,0 +1,13 @@
+{
+  "id": "e4871f80c6fbe4bf",
+  "title": "Feature-Space Guided Diffusion for Realistic Ultrasound Image Synthesis",
+  "link": "https://arxiv.org/abs/2607.11655",
+  "description": "arXiv:2607.11655v1 Announce Type: new \nAbstract: Conditional diffusion models can generate anatomically plausible medical ultrasound (US) images, but anatomical plausibility alone does not ensure realistic B-mode appearance. Most US pipelines adapt standard generative architectures and condition them on anatomical masks, or use guidance mechanisms that reinforce the same anatomical signal. However, B-mode US images are shaped by acquisition-dependent properties such as speckle texture, tissue contrast, and attenuation. Using a frozen US foundation model, we show that standard conditional diffusion baselines remain separated from real images in representation space. In this work, we propose Feature-Space Candidate Guidance (FSCG), a training-free sampling strategy to reduce this gap. At sampling time, FSCG applies local k-NN feature correction and selects the best of multiple stochastic candidates according to their feature-space energy. In this way, the mask defines the anatomy, while FSCG steers samples toward the real US domain. Across three different datasets, FSCG reduces average FID64 by 56\\%, FID192 by 57\\%, and nearest-neighbour feature distance by 47\\% over standard conditional diffusion sampling, outperforming alternative inference-time guidance baselines. The results suggest that domain-aware feature representations can reveal and reduce realism gaps in medical diffusion synthesis without retraining the generator. Our code is available at https://github.com/marinadominguez/FSCG.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

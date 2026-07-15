@@ -9,13 +9,14 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
     
     steps:
       - name: Checkout repository
@@ -31,14 +32,24 @@ jobs:
       
       - name: Build and Run Core Engine
         run: |
-          mkdir -p data
+          mkdir -p data/clusters data/articles
           uv run src/python/main.py
+      
+      - name: Commit new data back to main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/clusters/ data/articles/ data/index.json data/feeds.yaml
+          git diff --cached --quiet || git commit -m "📰 Update news data [skip ci]"
+          git push
       
       - name: Prepare Deployment
         run: |
-          mkdir -p public/data
+          mkdir -p public/data/clusters public/data/articles
           cp -r src/frontend/* public/
-          cp data/pinch.db public/data/
+          cp data/index.json public/data/
+          cp -r data/clusters/ public/data/clusters/
+          cp -r data/articles/ public/data/articles/
           touch public/.nojekyll
       
       - name: Deploy to GitHub Pages
