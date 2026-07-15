@@ -5,11 +5,13 @@ Unbiased news with verifiable history. This project uses a Python-powered engine
 ## Features
 - **Python Core**: Modern, fast news processing with `uv` and `scikit-learn`.
 - **Intelligent Clustering**: DBSCAN-based event grouping for high-accuracy analysis.
-- **Fact Extraction**: Verified facts synthesized via Llama-3.2 on HuggingFace.
-- **Intelligent Tagging**: Automated LLM-based thematic tagging and keyword assignment.
+- **Fact Extraction**: Verified facts synthesized via Qwen3-0.6B (runs locally).
+- **Zettelkasten Storage**: Incremental flat-file JSON per cluster — no database, no Git LFS.
+- **Dedup & Skip**: Already-processed articles are tracked and skipped across runs.
 - **Diverse Feeds**: Curated sources across Technical, AI, Research, Medical, and Indian News sectors.
 - **Chronological Knowledge Graph**: An interactive DAG showing the historical flow of events.
 - **Interactive Filters**: Geographic and category-based news exploration.
+- **Local AI Chat**: In-browser Qwen 0.5B via WebLLM for asking questions about news.
 
 ## Getting Started
 
@@ -46,15 +48,17 @@ Visit `/workflow.html` on the local server to see a detailed visual breakdown of
 .
 ├── .github/
 │   └── workflows/
-│       └── update-feeds.yml    # GitHub Action for auto-update of static site
+│       └── update-feeds.yml    # CI: run engine, commit data, deploy to gh-pages
 ├── data/
-│   └── feeds.yaml              # RSS feed sources
+│   ├── feeds.yaml              # RSS feed sources
+│   ├── clusters/               # One JSON file per news event cluster (ZK nodes)
+│   ├── articles/               # One JSON file per unclustered article
+│   └── index.json              # Frontend index (built by engine)
 ├── src/
-│   ├── python/               # Core backend and AI logic
-│   └── frontend/             # Dashboard UI components
-├── docs/                     # Generated static site (GitHub Pages)
-│   └── index.html
-├── pyproject.toml            # Project details
+│   ├── python/                 # Core backend: scraper, processor, extractor, ZKStore
+│   └── frontend/               # Dashboard UI (vanilla JS, reads JSON)
+├── justfile                    # Dev commands: run, serve, clean
+├── pyproject.toml              # Python dependencies
 └── README.md
 ```
 

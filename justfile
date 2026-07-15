@@ -11,22 +11,24 @@ run:
 
 # Serve the frontend UI locally
 serve:
-        @pkill -f "python3 -m http.server 8000" || true
+        @fuser -k 8000/tcp 2>/dev/null || true
+        @rm -rf public/data/clusters public/data/articles
         @mkdir -p public/data/clusters public/data/articles
         @cp -r src/frontend/* public/
         @cp data/index.json public/data/
-        @cp -r data/clusters/ public/data/clusters/
-        @cp -r data/articles/ public/data/articles/
+        @cp data/clusters/*.json public/data/clusters/ 2>/dev/null || true
+        @cp data/articles/*.json public/data/articles/ 2>/dev/null || true
         @echo "🌍 Serving UI at http://localhost:8000/"
         @python3 -m http.server 8000 --directory public
 
 # Prepare for deployment (used by CI)
 deploy-prep:
+        rm -rf public/data/clusters public/data/articles
         mkdir -p public/data/clusters public/data/articles
         cp -r src/frontend/* public/
         cp data/index.json public/data/
-        cp -r data/clusters/ public/data/clusters/
-        cp -r data/articles/ public/data/articles/
+        cp data/clusters/*.json public/data/clusters/ 2>/dev/null || true
+        cp data/articles/*.json public/data/articles/ 2>/dev/null || true
 
 # Build is NO-OP for Python but kept for compatibility
 build:
