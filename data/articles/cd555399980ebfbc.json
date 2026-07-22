@@ -1,0 +1,14 @@
+{
+  "id": "cd555399980ebfbc",
+  "title": "Aligned Stable Inpainting: Mitigating Unwanted Object Insertion and Preserving Color Consistency",
+  "link": "https://arxiv.org/abs/2601.15368",
+  "description": "arXiv:2601.15368v3 Announce Type: replace \nAbstract: Generative image inpainting can produce realistic results even with large, irregular masks, but existing methods still suffer from two common problems: (1) Unwanted object insertion: hallucinate artifacts that do not match the surrounding context. (2) Color inconsistency: noticeable color shifts that lead to smeared textures. We analyze the causes of these issues and propose Aligned Stable inpainting with UnKnown Areas prior (ASUKA), a post-hoc framework for pre-trained inpainting models. To reduce unwanted object insertion, we use reconstruction-based priors to guide the generative model, suppressing hallucinated objects while preserving generative flexibility. To address color inconsistency, we design a specialized VAE decoder that formulates latent-to-image decoding as a local harmonization task. We implement ASUKA on both U-Net-based and DiT-based inpainting models with lightweight modifications. Experiments on Places2 and MISATO, our proposed benchmark, show that ASUKA effectively suppresses object hallucination and improves color consistency, outperforming existing diffusion- and rectified flow-based inpainting methods. The dataset, models, and code will be released on GitHub.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}
