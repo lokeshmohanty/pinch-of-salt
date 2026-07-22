@@ -37,7 +37,7 @@ class ZKStore:
                 # Track all source links in this cluster
                 for src in data.get('sources', []):
                     if src.get('link'):
-                        self._known_links.add(src['link'])
+                        self._known_links.add(src['link'].strip())
             except (json.JSONDecodeError, KeyError):
                 continue
         
@@ -45,7 +45,7 @@ class ZKStore:
             try:
                 data = json.loads(f.read_text())
                 if data.get('link'):
-                    self._known_links.add(data['link'])
+                    self._known_links.add(data['link'].strip())
             except (json.JSONDecodeError, KeyError):
                 continue
         
@@ -88,7 +88,7 @@ class ZKStore:
         }
         for src in cluster.sources:
             if src.get('link'):
-                self._known_links.add(src['link'])
+                self._known_links.add(src['link'].strip())
     
     def save_article(self, article):
         """Write an unclustered article to its JSON file."""
@@ -109,7 +109,7 @@ class ZKStore:
         }
         
         filepath.write_text(json.dumps(data, indent=2, ensure_ascii=False))
-        self._known_links.add(article.link)
+        self._known_links.add(article.link.strip())
     
     def search_similar_clusters(self, query_embedding: List[float], limit: int = 5) -> List[dict]:
         """In-memory cosine similarity search over cached embeddings."""

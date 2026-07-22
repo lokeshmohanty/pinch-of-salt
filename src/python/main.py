@@ -13,7 +13,16 @@ def main():
     db = ZKStore("data")
     scraper = Scraper()
     processor = Processor()
-    extractor = Extractor(db)
+    
+    # Lazy initialization for Extractor so we don't load heavy LLM models
+    # if there are no new clusters to process.
+    extractor_instance = None
+
+    def get_extractor():
+        nonlocal extractor_instance
+        if extractor_instance is None:
+            extractor_instance = Extractor(db)
+        return extractor_instance
 
     seed_mode = not db.has_clusters()
     if seed_mode:
@@ -45,24 +54,45 @@ def main():
         except Exception as e:
             print(f"  Error fetching from {name}: {e}")
 
-    print(f"Clustering {len(all_articles)} articles...")
-    clusters = processor.cluster_articles(all_articles)
+    # Deduplicate fetched articles by link
+    seen_links = set()
+    unique_articles = []
+    for a in all_articles:
+        normalized_link = a.link.strip() if a.link else ""
+        if normalized_link and normalized_link not in seen_links:
+            seen_links.add(normalized_link)
+            unique_articles.append(a)
+
+    # Filter out articles that have already been processed into db
+    new_articles = [a for a in unique_articles if a.link.strip() not in db._known_links]
+
+    print(f"Fetched {len(unique_articles)} unique articles ({len(new_articles)} new, {len(unique_articles) - len(new_articles)} already processed).")
+
+    if not new_articles:
+        print("✨ No new articles to process. Everything is up to date!")
+        db.build_index()
+        print("✅ Processing complete!")
+        return
+
+    print(f"Clustering {len(new_articles)} new articles...")
+    clusters = processor.cluster_articles(new_articles)
     print(f"Identified {len(clusters)} clusters.")
 
     multi_count = sum(1 for c in clusters if len(c) > 1)
     idx = 0
     skipped = 0
     for cluster_articles in clusters:
+        # Check if ALL articles in this cluster are already processed
+        cluster_links = {a.link.strip() for a in cluster_articles}
+        if cluster_links.issubset(db._known_links):
+            skipped += 1
+            continue
+
         if len(cluster_articles) > 1:
             idx += 1
-            # Skip clusters where ALL articles are already processed
-            cluster_links = {a.link for a in cluster_articles}
-            if cluster_links.issubset(db._known_links):
-                skipped += 1
-                continue
-            print(f'Processing cluster {idx}/{multi_count}... ({len(cluster_links - db._known_links)} new articles)')
+            print(f'Processing cluster {idx}/{multi_count}... ({len(cluster_articles)} new articles)')
             try:
-                cluster_info = extractor.extract_cluster_info(cluster_articles)
+                cluster_info = get_extractor().extract_cluster_info(cluster_articles)
                 # Attach source articles to the cluster
                 cluster_info.sources = [
                     {
@@ -83,10 +113,6 @@ def main():
                 for article in cluster_articles:
                     db.save_article(article)
         else:
-            # Skip standalone articles already known
-            if cluster_articles[0].link in db._known_links:
-                skipped += 1
-                continue
             db.save_article(cluster_articles[0])
 
     if skipped:
