@@ -1,0 +1,14 @@
+{
+  "id": "4f764b1887e6d64e",
+  "title": "CAMeR: Keyword-Gated Hybrid Activation for Adaptive Memory Retention in LLM Agents",
+  "link": "https://arxiv.org/abs/2607.20458",
+  "description": "arXiv:2607.20458v1 Announce Type: cross \nAbstract: Large language model (LLM) agents operating over extended dialogues accumulate vast amounts of information, yet existing memory systems either retain everything indiscriminately or apply uniform forgetting heuristics that fail to distinguish relevant from irrelevant knowledge. We present CAMeR (Context-Activated Memory Reinforcement), a memory retention framework combining keyword-gated hybrid activation -- a joint symbolic (word-level Jaccard) and sub-symbolic (embedding cosine) gating mechanism -- with adaptive weight dynamics. CAMeR computes a hybrid similarity score for each memory-query pair; memories exceeding a threshold receive reinforcement while all memories undergo controlled decay. We introduce CAMeR-Bench, a 76-memory, 100-round benchmark spanning 8 topic clusters with graded activation frequency, designed to test adaptive retention where existing benchmarks (LoCoMO, LongMemEval) cannot. On CAMeR-Bench, CAMeR's keyword gate achieves a 1.6$\\times$ larger retention gap between high-frequency and never-referenced memories compared to embedding-only gating (scissors gap: 0.039 vs. 0.024), while time-driven baselines (Oblivion, SuperLocalMemory) collapse to near-zero weights over 100 rounds. CAMeR's top-5 retrieval saves 83.2\\% tokens versus full-context approaches (39k vs. 231k cumulative) while producing weight signals that improve retrieval precision. Through 8 ablation conditions we establish that the keyword gate -- not learnable decay -- is the primary performance driver at this scale. Our findings demonstrate that hybrid symbolic-neural gating provides a simple yet effective mechanism for adaptive memory retention in LLM agents.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

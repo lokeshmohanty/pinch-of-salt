@@ -1,0 +1,13 @@
+{
+  "id": "422ab8392183ac6a",
+  "title": "PersonaGesture: Single-Reference Co-Speech Gesture Personalization for Unseen Speakers",
+  "link": "https://arxiv.org/abs/2605.06064",
+  "description": "arXiv:2605.06064v2 Announce Type: replace \nAbstract: We propose PersonaGesture, a diffusion-based pipeline for single-reference co-speech gesture personalization of unseen speakers. Given target speech and one motion clip from a new speaker, the model must synthesize gestures that follow the new utterance while retaining speaker-specific pose choices, without per-speaker optimization. This setting is useful for avatars and virtual agents, but it is hard because the reference mixes stable speaker habits with utterance-specific trajectories. PersonaGesture consists of two key components, Adaptive Style Infusion (ASI) and Implicit Distribution Rectification (IDR), to separate temporal identity evidence from residual statistic correction. A Style Perceiver first encodes the variable-length reference into compact speaker-memory tokens. ASI injects these tokens into denoising through zero-initialized residual cross-attention, enabling style evidence to affect motion formation without replacing the pretrained speech-to-motion prior. Building on this, IDR applies a length-aware diagonal affine map in latent space to correct residual channel-wise moments estimated from the same reference. Across BEAT2 and ZeroEGGS, we evaluate quantitative metrics, reference-identity controls, same-audio diagnostics, qualitative comparisons, and human preference. Experiments show that separating denoising-time speaker memory from conservative post-generation moment correction improves unseen-speaker personalization over collapsed style codes, full-reference attention, and one-clip finetuning. Project: https://xiangyue-zhang.github.io/PersonaGesture.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
