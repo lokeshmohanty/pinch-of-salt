@@ -1,0 +1,13 @@
+{
+  "id": "057ddb4cf7b309e5",
+  "title": "MedARC: Training-Free Adaptive Redundancy Compression of Visual Tokens for 3D Medical Vision-Language Models",
+  "link": "https://arxiv.org/abs/2607.26554",
+  "description": "arXiv:2607.26554v1 Announce Type: new \nAbstract: Integrating 3D medical images with vision-language models (VLMs) holds substantial promise for computer-aided diagnosis. However, volumetric images generate prohibitively long visual-token sequences with considerable spatial and inter-slice redundancy. Existing token compression methods typically apply uniform reduction or rely on a single importance signal, increasing the risk of removing regions that are clinically relevant to the query or structurally distinctive. To address this limitation, we propose MedARC, a unified, training-free framework for Adaptive Redundancy Compression of visual tokens in 3D medical VLMs. MedARC estimates token importance by integrating three complementary cues: self-attention from the VLM vision encoder, which reflects the model's intrinsic visual focus; similarity between projected visual tokens and text embeddings, which identifies query-relevant regions; and deviations of local visual foundation model features from the volume-level feature center, which highlight structurally distinctive anatomy. The resulting importance distribution guides a saliency-aware merging strategy that preserves informative tokens while consolidating redundant ones rather than simply discarding them. Experiments on CT-RATE and MR-RATE show that MedARC reduces visual-token overhead and inference time while preserving or improving diagnostic performance. Its multi-cue scoring cost is outweighed by the savings from processing fewer tokens, with greater benefits expected for larger language models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
