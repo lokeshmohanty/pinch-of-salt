@@ -1,0 +1,14 @@
+{
+  "id": "a484dd4c306a2866",
+  "title": "SAFViT: Spatial Attention Fusion Gating for Vision Transformer-Based Nucleus Segmentation and Classification",
+  "link": "https://arxiv.org/abs/2607.27835",
+  "description": "arXiv:2607.27835v1 Announce Type: new \nAbstract: Accurate cell segmentation and classification are foundational to digital pathology, enabling quantitative tissue analysis for diagnosis and treatment planning. Encoder-decoder architectures that fuse multi-scale features through skip connections have become the dominant paradigm for this task, yet standard direct skip connections treat every spatial location equally, which leads to redundant and potentially conflicting information reaching the decoder. To overcome this problem, various gating mechanisms have been introduced, but most of them operate solely on filtering encoder information, neglecting the benefit of global contextual information from the decoder. This study proposes replacing conventional skip connections in a CellViT-based model with a novel Spatial Attention Fusion (SAF) Gating module. Each SAF gate concatenates the encoder skip and upsampled decoder features, compresses them through two pointwise convolutions with an intermediate ReLU, and applies a channel-wise softmax to produce a per-pixel \"heatmap of trust\" that sums to unity at every spatial location, allowing the network to learn where each source is most trustworthy. The resulting fused features improve the model's ability to detect the minority \"Dead\" class, which in turn enhances the multi-class panoptic quality (mPQ) on the PanNuke dataset. SAF Gating is compared against six gating alternatives including no gating, attention gates, squeeze-and-excitation, CBAM, cross-attention, and attentional feature fusion on PanNuke and MoNuSeg datasets. SAF Gating achieves the highest mPQ (0.471), a gain driven primarily by a 14.5-point improvement in Dead-class F1 score compared to ungated CellViT baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}
