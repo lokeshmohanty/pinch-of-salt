@@ -1,0 +1,13 @@
+{
+  "id": "0d8dc61bdcc687e3",
+  "title": "Foveated Probes Recover Localized Binding Information in Vision Foundation Models",
+  "link": "https://arxiv.org/abs/2608.00726",
+  "description": "arXiv:2608.00726v1 Announce Type: new \nAbstract: Frozen vision foundation models are commonly evaluated through a single global image embedding, but this interface can conflate missing information with information lost at readout time. We study this distinction by keeping a pretrained vision encoder frozen and varying only the readout applied to its final patch tokens. We compare standard global readouts against a lightweight foveated readout, which attention-pools patch tokens using a learned or question-conditioned query, and against an oracle readout with access to the annotated target region. We evaluate these interfaces on three localized binding problems: a controlled synthetic color--shape binding task under clutter, a color-free crowded shape-detection variant, and a GQA-derived natural-image task where paired questions ask for the colors of different same-category objects in the same image. Global readouts perform near perfectly when the synthetic target appears alone, but collapse under clutter and counterfactual target edits, whereas the foveated readout recovers most of the oracle-accessible signal. On the GQA-derived task, question-independent global image vectors improve only modestly over question-only priors, while question-conditioned foveation substantially improves paired localized color accuracy. A counterfactual nuisance-to-signal ratio explains the synthetic failures: global pooling dilutes localized label-changing evidence while exposing the probe to nuisance variation from irrelevant objects. These results indicate that apparent spatial blindness in frozen vision models can arise from the global embedding interface rather than from an absence of spatial information in the frozen patch tokens.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

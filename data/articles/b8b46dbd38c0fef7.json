@@ -1,0 +1,13 @@
+{
+  "id": "b8b46dbd38c0fef7",
+  "title": "CORTIVA: Candidate-Score Fusion of Complementary Visual Teachers for EEG- and MEG-to-Image Retrieval",
+  "link": "https://arxiv.org/abs/2608.01355",
+  "description": "arXiv:2608.01355v1 Announce Type: new \nAbstract: Decoding visual experience from non-invasive brain activity is central to neuroscience and brain-computer interfaces. Functional magnetic resonance imaging (fMRI) offers fine spatial detail, but its slow hemodynamics and burdensome acquisition limit temporally resolved decoding. Electroencephalography (EEG) and magnetoencephalography (MEG) provide millisecond resolution, making image retrieval compelling: identify the viewed image from one neural response and a fixed candidate bank. Contrastive alignment to pretrained visual representations enables zero-shot retrieval from EEG and MEG, but most systems collapse heterogeneous visual supervision into a single embedding before ranking. This early consolidation imposes one similarity geometry on every candidate order and removes encoder-specific disagreements from the final ranking. We propose CORTIVA, a candidate-score fusion framework that preserves this complementary evidence. Three decoding routes are aligned to heterogeneous visual targets, score the same indexed candidates independently, and combine only their temperature-scaled score vectors before ranking. On the 200-way THINGS-EEG2 benchmark, CORTIVA reaches 73.5% Top-1 and 95.3% Top-5 across ten participants, exceeding the strongest reported baseline by 10.3 and 5.4 percentage points. With a modality-specific neural encoder, the same fusion principle reaches 42.4% Top-1 on THINGS-MEG. Matched route-removal retraining and four weight controls demonstrate that CORTIVA's gain arises from integrating complementary route scores and persists with uniform weighting, without requiring a specialized weighting rule. Independent DINOv2 analyses further reproduce the local error neighborhoods and posterior neural-visual correspondence. These results establish candidate-score fusion as a simple and testable alternative to embedding-level consolidation for neural image retrieval.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

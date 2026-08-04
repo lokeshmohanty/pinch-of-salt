@@ -1,0 +1,13 @@
+{
+  "id": "b89b7e7e2388fc57",
+  "title": "Learning How Much, Not Just What: Cross-Patient Burden Order for CT Vision-Language Pretraining",
+  "link": "https://arxiv.org/abs/2608.00231",
+  "description": "arXiv:2608.00231v1 Announce Type: new \nAbstract: Volumetric CT vision-language pretraining learns 3D representations from scan-report pairs, but global and anatomy-aware objectives supervise only correspondence: they establish what is present and leave how much unconstrained. Nothing separates a mild from an extensive case of the same finding along a consistent direction, so the graded burden language in reports collapses into a present/absent signal. Longitudinal supervision would supply this order, but patient-matched CT pairs are scarce at scale; cross-sectional cohorts already encode weak burden cues across different patients. We introduce Spectrum, an anatomy-conditioned framework that represents each study at whole-study and organ scopes. For each organ-mapped pathology, a rule-based scorer mines confidence-filtered lower-to-higher pairs of different patients, and Burden-Direction Alignment (BDA) aligns the pathology-conditioned image delta with the report delta at each scope, separating that direction from its reverse. Because the endpoints are different people, a target-conditioned aligner first makes them comparable, so the delta reflects burden rather than between-patient variation. BDA further separates the selected direction from its reverse, anchors it to the observed higher-burden endpoint, and enforces consistency across ordered triplets. Since every pair is drawn within a single pathology, BDA is designed to constrain intra-class structure that image-report contrast alone never touches. Spectrum attains 85.6 zero-shot AUROC on CT-RATE and 72.7 on external RAD-ChestCT, with consistent gains in linear probing and retrieval. Weak cross-patient order is thus a scalable complement to anatomy-aware correspondence, yielding burden-aware CT representations without longitudinal data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

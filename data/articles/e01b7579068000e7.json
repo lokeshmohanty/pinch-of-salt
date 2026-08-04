@@ -1,0 +1,13 @@
+{
+  "id": "e01b7579068000e7",
+  "title": "SecondOpinion: Anatomy-Aware Gated Reasoning for Efficient Medical Image Analysis",
+  "link": "https://arxiv.org/abs/2608.01808",
+  "description": "arXiv:2608.01808v1 Announce Type: new \nAbstract: Deep learning models for medical image analysis typically apply a fixed amount of computation to every input, regardless of case difficulty. Anatomy-guided dual-stream architectures have been shown to improve diagnostic performance, but they evaluate both streams unconditionally, even on cases a single stream could already resolve confidently. We propose SecondOpinion, a framework in which a fast primary stream processes every case, while a second, anatomy-guided stream is invoked only when GateKeeper, a gating mechanism trained explicitly as a binary correctness classifier, judges that the primary stream's prediction needs additional scrutiny, much as a clinician might seek a second opinion on a difficult case. When activated, the two streams are combined through a lightweight cross-attention fusion module. We evaluate SecondOpinion on a unified five-class chest X-ray dataset and a pelvic fracture dataset, the latter including a held-out, harder subset of fractures that are invisible on X-ray but confirmed via CT. SecondOpinion matches or exceeds prior state-of-the-art performance on both tasks, while activating its anatomy-guided stream on only 9.23% of chest X-ray cases, rising to 24.12% on visible fractures and 45.71% on invisible fractures, an activation rate that tracks task difficulty directly. These results suggest that supervising a gating signal toward correctness, rather than relying on unsupervised confidence, allows a model to allocate anatomical reasoning where it is actually needed.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
