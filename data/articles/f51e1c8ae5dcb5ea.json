@@ -1,0 +1,14 @@
+{
+  "id": "f51e1c8ae5dcb5ea",
+  "title": "Just Repair: A Minimal Denoising Network for Time Series Anomaly Detection",
+  "link": "https://arxiv.org/abs/2604.17388",
+  "description": "arXiv:2604.17388v3 Announce Type: replace-cross \nAbstract: Time series anomaly detectors have grown steadily more complex, incorporating attention mechanisms, adversarial training, and stochastic latent variables. Yet, it is unclear how much of this machinery detection actually requires. We test this question with JuRe (Just Repair), a deliberately minimal detector: a single depthwise-separable convolutional residual block trained to repair Gaussian-corrupted, channel-masked windows, scored at inference by a fixed structural discrepancy function with no learned parameters. JuRe ranks second on the TSB-AD multivariate benchmark (AUC-PR 0.404 over 180 series) and second on the UCR univariate archive (AUC-PR 0.201 over 250 series), where it leads all neural baselines. On TSB-AD, JuRe runs roughly $20\\times$ faster than AxonAD, one of the top-ranked methods on that benchmark. Full-benchmark ablations show that removing Gaussian corruption reduces AUC-PR by 0.046, whereas AUC-PR across the evaluated architecture variants spans at most 0.017. A synthetic linear-manifold experiment provides partial evidence for this geometric interpretation: anomaly scores correlate with true off-manifold distance (Pearson $r=0.725$), and repair directions align increasingly with the true projection as anomaly magnitude grows. Wilcoxon signed-rank tests with Holm correction find significant differences against 20 of 25 baselines, although dependence among series limits dataset-level interpretation. Code is available at https://github.com/iis-esslingen/JuRe.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

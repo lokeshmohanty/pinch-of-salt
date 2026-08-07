@@ -1,0 +1,15 @@
+{
+  "id": "a68c692154e9cd1c",
+  "title": "When Modalities Fail to Tango: Conformal Backdoor Detection in Multimodal Contrastive Learning",
+  "link": "https://arxiv.org/abs/2608.04052",
+  "description": "arXiv:2608.04052v1 Announce Type: cross \nAbstract: Backdoor attacks in multimodal contrastive learning (MCL) have garnered growing attention in recent years, as many downstream tasks critically depend on pre-trained MCL models. Existing detection-based defenses predominantly rely on the CLIPScore metric, under the assumption that poisoned pairs exhibit lower semantic similarity between the image and the caption. However, we identify two critical flaws remaining in existing methods: (1) the substantial overlap between CLIPScore distributions of benign and poisoned pairs undermines the reliability of this metric, and (2) fixed-threshold detection cannot provide statistical guarantees for ambiguous samples within overlapping regions. To overcome these limitations, we propose integrating conformal prediction (CP), a statistical framework that quantifies uncertainty through nonconformity scores (NCSs), to establish provable confidence bounds for detecting poisoned image-caption pairs. Building on CP, we introduce CASCADE, a novel two-stage Coarse-to-Fine Conformal Backdoor Detection framework. The coarse-grained stage uses cross-modality consistency to identify high-confidence benign and poisoned pairs. In the fine-grained stage, a reference set is constructed from high-confidence poisoned pairs, and instance-level NCSs based on text-space similarity are computed for each sample in the unidentified subset. These NCSs measure conformity to the poisoning distribution and enable precise identification of latent poisoned pairs within the unidentified subset. Extensive experiments on the large-scale CC3M dataset demonstrate that CASCADE achieves an average FPR of 5.79% at 100% TPR and an average AUROC of 0.9867 across diverse attacks, while remaining effective against adaptive attacks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.CV",
+    "cs.LG"
+  ]
+}
