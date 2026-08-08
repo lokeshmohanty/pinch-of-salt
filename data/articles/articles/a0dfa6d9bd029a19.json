@@ -1,0 +1,13 @@
+{
+  "id": "a0dfa6d9bd029a19",
+  "title": "From Keypoints to Predictive Distributions: Post-Hoc Uncertainty for YOLO-Pose Models",
+  "link": "https://arxiv.org/abs/2607.26921",
+  "description": "arXiv:2607.26921v1 Announce Type: new \nAbstract: YOLO-Pose models provide efficient keypoint localization, but do not quantify the associated spatial uncertainty. We introduce a lightweight post-hoc probabilistic extension that augments a trained YOLO-Pose model with calibrated bivariate predictive distributions over keypoint locations, centered at the model's original predictions. Concretely, we train additional probabilistic heads with an importance-weighted negative log-likelihood to predict an input-dependent $2\\times2$ dispersion matrix for each keypoint, followed by Gaussian calibration for broad downstream compatibility or Student-$t$ calibration for distributional fidelity. Complementing this, we propose an evaluation protocol that combines a suite of distributional calibration diagnostics with average keypoint precision (AKP), a keypoint-level extension of the COCO AP protocol for assessing reliability rankings. Experiments on COCO show that the learned uncertainty estimates enable effective keypoint-level reliability ranking, Student-$t$ calibration best captures the empirical residual distribution, and uncertainty-based pruning removes unreliable keypoints. A central application-level demonstration is vision-based aircraft landing, where calibrated covariances for runway keypoints support uncertainty-aware aircraft position estimation and downstream sensor fusion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

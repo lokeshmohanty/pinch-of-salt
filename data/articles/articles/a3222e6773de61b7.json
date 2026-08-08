@@ -1,0 +1,13 @@
+{
+  "id": "a3222e6773de61b7",
+  "title": "Distill What RGB Can Recover: Privileged 3D Evidence for RGB-Only Vision-Language Models",
+  "link": "https://arxiv.org/abs/2608.00110",
+  "description": "arXiv:2608.00110v1 Announce Type: new \nAbstract: 3D scene understanding requires reasoning about entity existence, spatial layout, and object relations, yet RGB images alone often provide insufficient 3D cues. Existing 3D-VLMs commonly rely on depth or 3D-position-aware inputs at inference time, introducing additional acquisition, reconstruction, or annotation costs that limit RGB-only deployment. We therefore study how training-time 3D evidence can be converted into spatial reasoning capabilities retained under RGB-only inference. We propose a privileged-evidence distillation framework that constructs a distillable teacher through a unified evidence interface and controlled residual injection, and transfers its knowledge to a deployable student receiving only RGB images and questions through logit and structured representation distillation. To avoid imitating teacher signals unsupported by RGB, we further introduce evidence-sensitivity-guided distillation, which uses corrupted evidence to identify highly evidence-dependent targets and down-weight their supervision. We also define a recoverability decomposition based on the matched baseline, teacher, and student, separating privileged gains into RGB-recoverable improvements and residual teacher advantages. Across four benchmarks, the teacher achieves the best result on 7 of 11 reported metrics among the compared methods. The RGB-only student outperforms its matched baseline on all 11 metrics, including gains of 10.4 ScanQA CIDEr and 19.1 Scan2Cap CIDEr@0.5, without additional inference-time inputs. These results validate the effectiveness of training-time privileged 3D evidence distillation for both teacher performance and deployable RGB-only spatial reasoning. Separately, our matched baseline-teacher-student analysis characterizes privileged-gain transfer across evidence types and spatial skills.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

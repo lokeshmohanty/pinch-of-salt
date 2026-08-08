@@ -1,0 +1,13 @@
+{
+  "id": "6ae9f91cd5b73895",
+  "title": "ProgFormer: Hierarchical Voxel Diffusion Transformer for Longitudinal Brain MRI Prediction",
+  "link": "https://arxiv.org/abs/2607.27537",
+  "description": "arXiv:2607.27537v1 Announce Type: new \nAbstract: Predicting future structural MRI of a brain is challenging because longitudinal changes are often subtle and confined to specific anatomical regions, while most subject-specific brain structure remains stable over time. An effective model should therefore preserve global brain structural consistency while remaining sensitive to fine-grained disease progression. Existing latent-space-based methods improve computational efficiency, but suffer from information loss during their compression-reconstruction procedure. In contrast, direct voxel-space methods avoid latent reconstruction but commonly use a unified prediction pathway to model brain structure and progression-related changes. Subtle local changes may therefore be overshadowed by the dominant stable brain structure. To address these challenges, we propose ProgFormer, a hierarchical voxel-space Diffusion Transformer for longitudinal brain MRI prediction. ProgFormer uses a coarse pathway to perform the primary volumetric prediction from 3D patch tokens. This pathway models overall brain structure and longitudinal context. The fine pathway then uses the coarse representations as spatio-temporal grounding for voxel-level refinement within individual patches. The two pathways jointly estimate a velocity field directly in voxel space through conditional flow matching, enabling end-to-end prediction without a separately learned image autoencoder. The predicted future scan is then generated from Gaussian noise by integrating the estimated velocity field over a sequence of Euler steps. Extensive experimental results on three widely used benchmarks, ADNI, AIBL, and OASIS, under both pairwise and trajectory settings demonstrate favourable performance compared against several state-of-the-art methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

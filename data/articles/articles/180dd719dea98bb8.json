@@ -1,0 +1,14 @@
+{
+  "id": "180dd719dea98bb8",
+  "title": "LV-ROVER-MLT: Low-Resource Maltese OCR by Synthetic Fine-Tuning and Multi-Stream Arbitration",
+  "link": "https://arxiv.org/abs/2607.00250",
+  "description": "arXiv:2607.00250v4 Announce Type: replace-cross \nAbstract: Maltese OCR is constrained by the absence of a public, reusable paragraph-scale training corpus. We address this by generating synthetic Maltese line images, fine-tuning the Tesseract 5 LSTM, and combining five deterministic Tesseract configurations through anchor-preserving, lexicon-gated word-level arbitration. The method uses a fixed anchor stream, a longest-stream fallback, a confusion-based anchor corrector, and a Maltese-specific diacritic-restoration gate. Unlike canonical ROVER, candidate streams cannot restructure the anchor through insertions or deletions; they propose only eligible substitutions at aligned anchor positions.\n  On the 422-paragraph development set of the DocEng 2026 Maltese OCR competition, the organizers' fine-tuned Tesseract baseline obtains CER 0.0234. Our pre-convention pipeline reaches CER 0.01317, a 44% reduction. Synthetic fine-tuning provides the largest single gain, while multi-stream arbitration contributes a further material reduction beyond the selected anchor, reaching CER 0.01220 in the current replay with paired-resampling support. A development-tuned label-convention normalization chain further reduces CER to 0.00700. We report recognition gains separately from benchmark-specific quote and dash normalization.\n  We also evaluate portability on Hungarian and Luxembourgish. Luxembourgish improves significantly over our stock baseline, while the Hungarian result is inconclusive. Finally, we release a 36,803-pair Maltese OCR corpus derived from EUR-Lex and Wikipedia. The held-out competition result remains under organizer embargo and is not reported",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.CV"
+  ]
+}

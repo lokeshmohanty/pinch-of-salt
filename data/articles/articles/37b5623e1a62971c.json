@@ -1,0 +1,15 @@
+{
+  "id": "37b5623e1a62971c",
+  "title": "Heterogeneous Decentralized Diffusion Models",
+  "link": "https://arxiv.org/abs/2603.06741",
+  "description": "arXiv:2603.06741v3 Announce Type: replace-cross \nAbstract: Training frontier-scale diffusion models often requires substantial computational resources concentrated in tightly-coupled clusters, limiting participation to well-resourced institutions. While Decentralized Diffusion Models (DDM) enable training multiple experts in isolation, existing approaches require 1176 GPU-days and homogeneous training objectives across all experts. We present an efficient framework that dramatically reduces resource requirements while supporting heterogeneous training objectives. Our approach combines three key contributions: (1) a heterogeneous decentralized training paradigm that allows experts to use different objectives (DDPM and Flow Matching), unified at inference time without any retraining; (2) pretrained checkpoint conversion from ImageNet-DDPM to Flow Matching objectives, accelerating convergence and enabling initialization without objective-specific pretraining; and (3) PixArt-$\\alpha$'s efficient AdaLN-Single architecture, reducing parameters while maintaining quality. Experiments on LAION-Aesthetics show that, relative to the training scale reported for prior DDM work, our approach reduces the compute by 16$\\times$ and data by 14$\\times$. Under aligned inference settings, our heterogeneous configuration achieves better FID and higher intra-prompt diversity than the homogeneous baseline. By eliminating synchronization requirements and enabling mixed DDPM/FM objectives, our framework makes decentralized generative model training accessible to contributors with single GPUs requiring only 24--48GB VRAM.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "6aa6adfde622f1a2",
+  "title": "Context-Dependent Affordance Computation in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2603.04419",
+  "description": "arXiv:2603.04419v2 Announce Type: replace-cross \nAbstract: We characterize the phenomenon of context-dependent affordance computation in vision-language models (VLMs). Our primary study uses Qwen3-VL-30B-A3B ($n = 3{,}213$ scene-context pairs from COCO-2017: 479 images under 7 agentic personas), with a cross-model replication on LLaVA-1.5-13B. We demonstrate substantial affordance drift: mean Jaccard similarity between context conditions is $0.095$ (95% CI $[0.092, 0.097]$ across $N = 479$ images; $9{,}244$ prime pairs; $p < 0.0001$), indicating that more than 90% of lexical scene description is context-dependent; the LLaVA replication reproduces the effect (mean $J = 0.160$, 84% context-dependent). Sentence-level cosine similarity confirms drift at the semantic level (mean $= 0.415$, 58.5% context-dependent). Stochastic baseline experiments ($2{,}384$ inference runs across 4 temperatures and 5 seeds) confirm this reflects genuine context effects rather than generation noise: within-prime variance is substantially lower than cross-prime variance across all conditions. Tucker decomposition with bootstrap stability analysis ($n = 1{,}000$ resamples) reveals stable orthogonal latent factors: a \"Culinary Manifold\" isolated to chef contexts and an \"Access Axis\" spanning child-mobility contrasts. The gap between lexical (90%) and semantic (58.5%) measures indicates that surface vocabulary changes more than underlying meaning under context shifts. These findings suggest a direction for robotics: dynamic, query-dependent ontological projection (JIT Ontology) rather than static world modeling. We do not claim to establish processing order or architectural primacy; such claims require internal representational analysis beyond output behavior.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}
