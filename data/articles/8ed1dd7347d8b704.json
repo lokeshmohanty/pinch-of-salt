@@ -1,0 +1,14 @@
+{
+  "id": "8ed1dd7347d8b704",
+  "title": "Counterfactual Simulation Training for Chain-of-Thought Faithfulness",
+  "link": "https://arxiv.org/abs/2602.20710",
+  "description": "arXiv:2602.20710v2 Announce Type: replace \nAbstract: Inspecting Chain-of-Thought reasoning is among the most common means of understanding why an LLM produced its output. But well-known problems with CoT faithfulness severely limit what insights can be gained from this practice. In this paper, we introduce a training method called Counterfactual Simulation Training (CST), which aims to improve CoT faithfulness by rewarding CoTs that enable a simulator to accurately predict a model's outputs over counterfactual inputs. We apply CST in two settings: (1) CoT monitoring with cue-based counterfactuals, to detect when models rely on spurious features, reward hack, or are sycophantic, and (2) counterfactual simulation over generic model-based counterfactuals, to encourage models to produce more faithful, generalizable reasoning in the CoT. Experiments with models up to 235B parameters show that CST can substantially improve monitor accuracy on cue-based counterfactuals (by 35 accuracy points) as well as simulatability over generic counterfactuals (by 2 points). We further show that: (1) CST outperforms prompting baselines, (2) rewriting unfaithful CoTs with an LLM is 5x more efficient than RL alone, (3) faithfulness improvements do not generalize to dissuading cues (as opposed to persuading cues), and (4) larger models do not show more faithful CoT out of the box, but they do benefit more from CST. These results suggest that CST can improve CoT faithfulness in general, with promising applications for CoT monitoring. Code for experiments in this paper is available at https://github.com/peterbhase/counterfactual-simulation-training",
+  "source_name": "arXiv AI",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}
