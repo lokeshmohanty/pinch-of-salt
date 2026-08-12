@@ -1,0 +1,13 @@
+{
+  "id": "13ed70e0e9d6e805",
+  "title": "Grid-Preserving Knowledge Distillation: Transferring Convolutional Inductive Bias to Vision Transformers under Data Scarcity",
+  "link": "https://arxiv.org/abs/2608.10723",
+  "description": "arXiv:2608.10723v1 Announce Type: new \nAbstract: Vision Transformers underperform convolutional networks when training data is scarce, and distilling convolutional inductive biases from a CNN teacher is an effective remedy that leaves the deployed model unchanged. General-purpose feature distillation, however, transfers little in this setting. The pooling, flattening, and logit-space projections it inherits from CNN to CNN pipelines discard the spatial grid in which locality and translation equivariance are encoded, and unlike a convolutional student, a ViT cannot rebuild that structure on its own. In this paper, we propose iBKD, a distillation framework that preserves the grid along the entire transfer path. Its core module, the Inductive Bias Attention Module, aggregates every student layer onto the teacher grid with learned weights, sharpens structural cues with channel and deformable spatial attention, and injects them through convolutional cross-attention that operates between grids rather than between token sets. The module is used only during training, so the deployed model is an unmodified ViT with no inference overhead. Across seven Transformer backbones and six data-scarce benchmarks, iBKD outperforms both locality-guidance methods and general knowledge distillation baselines, and its margin widens as training data shrinks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
