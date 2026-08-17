@@ -1,0 +1,14 @@
+{
+  "id": "4df9efc6d702271d",
+  "title": "GRASP: Gated Regression-Aware Skill Proposer for Self-Improving LLM Agents",
+  "link": "https://arxiv.org/abs/2605.29668",
+  "description": "arXiv:2605.29668v2 Announce Type: replace \nAbstract: LLM agents acting in structured environments fail in operational rather than conversational ways, and reliability depends on procedural knowledge of the environment. Prior self-improvement methods accumulate natural-language guidance without checking that each new item preserves previously correct behavior, so a note that fixes one trajectory can silently regress another. We introduce GRASP (Gated Regression-Aware Skill Proposer), which treats agent improvement as a sequence of edits to a bounded skill library, admitting each candidate only if it produces a net improvement on a balanced held-out probe under a hard regression budget. We evaluate GRASP across five base models on two FHIR-based clinical benchmarks, which score procedural reliability against FHIR state rather than clinical correctness or patient outcomes. On MedAgentBench, GRASP lifts gpt-oss-120b from 40.6% to 88.8%, exceeds the strongest of five self-improvement baselines by 21.0 points, and improves every other base model by 17.2 to 40.3 points. Ablations attribute the gain to comparative proposal generation, the acceptance gate, and the hard regression budget rather than to skill writing itself, which without validation is no better than using no skills. Granting the same acceptance gate to all five baselines lifts each of them in-domain and none of them out of distribution, isolating the gain to the gate applied to a bounded, editable library rather than to held-out validation itself. The mechanism helps in non-clinical environments where tasks recur with verifiable structure and is flat where the action space is open-ended. Frozen libraries transfer across models and across benchmarks that share a tool-calling convention and degrade under interface mismatch.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}
