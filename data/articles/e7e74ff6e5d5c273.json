@@ -1,0 +1,15 @@
+{
+  "id": "e7e74ff6e5d5c273",
+  "title": "TrojanGYM: A Detector-in-the-Loop LLM for Adaptive RTL Hardware Trojan Insertion",
+  "link": "https://arxiv.org/abs/2601.17178",
+  "description": "arXiv:2601.17178v3 Announce Type: replace-cross \nAbstract: Hardware Trojans (HTs) remain a critical threat because learning-based detectors often overfit to narrow trigger/payload patterns and small, stylized benchmarks. We introduce TrojanGYM, an agentic, LLM-driven framework that automatically curates HT insertions to expose detector blind spots. Given high-level HT specifications, a suite of cooperating LLM agents (instantiated with GPT-4, LLaMA-3.3-70B, Gemini-2.5Pro, and Claude Opus 4.5) proposes and refines RTL modifications that realize diverse triggers and payloads without impacting functionality of both the HT and the design under attack. TrojanGYM implements an agentic loop co-designed with HT detectors, in which constraint-aware syntactic checking, testbench-based functional verification, and GNN-based HT detectors provide feedback that iteratively refines HT specifications and insertion strategies to better surface detector blind spots. We further propose Robust-GNN4TJ, a new implementation of GNN4TJ with improved graph extraction, training robustness, and prediction reliability, especially on LLM-generated HT designs. On the most challenging TrojanGYM-generated benchmarks, Robust-GNN4TJ raises HT detection rates from 0% to 60% relative to prior art. We instantiate TrojanGYM on SRAM, AES-128, UART, and RISC-V designs at RTL, and show that it systematically produces diverse, functionally correct HTs that reach up to 68.75% evasion rates against modern GNN-based detectors, revealing robustness gaps that are not apparent when these detectors are evaluated on existing TrustHub-style benchmarks. We release all codes and artifacts at https://github.com/DfX-NYUAD/TrojanGYM.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.AR"
+  ]
+}
