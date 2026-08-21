@@ -1,0 +1,15 @@
+{
+  "id": "4711ec42d4b33c53",
+  "title": "Teacher-free Latent Self-distillation and Class-separable Representations for Lightweight IoT Attack Detection",
+  "link": "https://arxiv.org/abs/2403.15509",
+  "description": "arXiv:2403.15509v3 Announce Type: replace-cross \nAbstract: Knowledge distillation (KD) has been widely used to improve lightweight AI models by transferring soft-label knowledge from a large teacher model to a student model. However, existing KD methods are primarily designed for the image domain rather than lightweight IoT devices, and they often struggle to maintain well-separated feature representations for different attack types, especially as the number of classes increases and attack behaviors become more diverse. This paper proposes a novel \\textit{teacher-free latent self-distillation framework based on a Twin Autoencoder (TAE)}. Instead of relying on an external teacher, TAE self-learns intrinsic class-wise latent representations, which act as soft labels, similar to KD, but without requiring a teacher model. The decoder then projects the input back into soft labels, enforcing class separation in the decoder output. The resulting decoder representations are used for classification, improving the discrimination between benign and malicious traffic while maintaining a lightweight design suitable for IoT deployment. We theoretically derive conditions for perfect class separation and show that lower empirical risk yields better representations, identifying regimes where TAE achieves strictly lower empirical risk than models using fixed class centers. Extensive experiments on 13 cybersecurity datasets, covering IoT botnets, network intrusion detection, malware, cloud DDoS, and synthetic multi-class data, show that TAE achieves up to 96.1% average accuracy for IoT attack detection and 98.7% for cloud intrusion detection. With a compact model size (1 MB) and ultra-fast inference (0.26 {\\mu}s per sample), TAE offers a practical and scalable solution for real-world cybersecurity and IoT systems.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}
