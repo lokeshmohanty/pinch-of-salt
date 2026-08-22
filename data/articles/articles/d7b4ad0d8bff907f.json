@@ -1,0 +1,13 @@
+{
+  "id": "d7b4ad0d8bff907f",
+  "title": "Autonomous Topology Mutation: Safe Runtime Restructuring for Multi-Agent LLM Systems with Capability, State, and Shadow Invariants",
+  "link": "https://arxiv.org/abs/2607.20488",
+  "description": "arXiv:2607.20488v1 Announce Type: new \nAbstract: Multi-agent LLM frameworks typically fix their team topology at boot time. When an individual agent becomes overloaded at runtime, for example by mixing too many action categories, accumulating tool errors, or queueing behind too many calls, the system has no mechanism to restructure itself. We introduce Autonomous Topology Mutation (ATM), a runtime team-mutation mechanism for multi-agent LLM frameworks. ATM combines telemetry-driven overload detection with three safety invariants that gate each structural change: capability monotonicity, state-routing completeness, and shadow-before-live validation.\n  ATM monitors a six-signal Bottleneck Index that includes queue depth, context thrash, tool-error rate, role entropy, retry-loop rate, and cross-agent wait time. When a warmup-calibrated threshold is breached for multiple consecutive ticks, ATM factorises the overloaded agent into specialised sub-agents and hot-swaps the parent into a coordinator role while preserving its external identity. State transfer is controlled by privacy-level-aware routing: each memory atom is routed only to a permitted child set, or explicitly dropped with a logged reason. No candidate topology receives live traffic until it has passed a shadow validation window.\n  On 720 DeepSeek-V3-driven task runs with deterministic tool stubs across four ablation conditions and three workloads, the ATM factoriser split lifts code-task success from 3.3% to 61.7%. The full rail-and-distillation system reduces detected high-privacy memory exposure under a regex classifier from 2.0 to 0.0 events per task while preserving task quality. The runtime rails carrying ATM's invariants add less than 500 microseconds of p99 latency on the agent hot path. A small live-tool probe with real Python execution is included as an external-validity check. The implementation, benchmark harness, and traces are open-sourced.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

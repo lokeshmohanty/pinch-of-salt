@@ -1,0 +1,14 @@
+{
+  "id": "db2e1ec2102fa923",
+  "title": "BlitzGS: City-Scale Gaussian Splatting at Lightning Speed",
+  "link": "https://arxiv.org/abs/2605.13794",
+  "description": "arXiv:2605.13794v2 Announce Type: replace-cross \nAbstract: Large-scale 3D Gaussian Splatting underpins digital twins, simulation, and aerial mapping, yet city-scale training remains computationally expensive even with multi-GPU execution because every iteration must preprocess, communicate, and rasterize an overly dense set of primitives. At any given step, only a small fraction of these primitives contribute meaningfully to the loss; the rest incur redundant storage, communication, and rasterization costs. Existing approaches improve individual cost factors but do not fully address the underlying question: which Gaussians should be stored on each GPU, rendered for each view, and retained after early geometry formation? We present BlitzGS, a distributed 3DGS framework that reduces the active Gaussian workload at three coupled levels. At the system level, it shards Gaussians across GPUs by index parity rather than spatial blocks, mitigating the cross-block visibility redundancy of spatial partitioning, and distributes each render step through a single cross-GPU exchange that routes projected Gaussians to their tile owners. At the model level, it controls the population from both ends of densification. Scheduled importance-scoring passes prune redundant survivors, and a lightweight spawn gate withholds candidates predicted not to survive. The same importance signal also feeds back into density control. At the view level, a distance-based LOD gate and an importance-based mask trim each camera's active set. On large-scale benchmarks, BlitzGS matches the rendering quality of recent large-scale baselines while delivering nearly an order-of-magnitude speedup, training city-scale scenes in tens of minutes. Our code is available at https://github.com/AkierRaee/BlitzGS.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV"
+  ]
+}

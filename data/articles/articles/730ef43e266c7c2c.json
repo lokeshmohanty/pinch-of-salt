@@ -1,0 +1,16 @@
+{
+  "id": "730ef43e266c7c2c",
+  "title": "GraRe: Grasp Candidate Re-Ranking for Frozen 6-DoF Grasp Detectors",
+  "link": "https://arxiv.org/abs/2608.00946",
+  "description": "arXiv:2608.00946v1 Announce Type: cross \nAbstract: Existing 6-DoF grasp detectors typically rank grasp candidates by detector confidence. However, our analysis on GraspNet-1Billion shows that detector confidence is often poorly aligned with grasp quality, causing successful grasp candidates to be ranked too low during execution. Motivated by this observation, we formulate grasp candidate re-ranking as a separate task for frozen detectors, aiming to improve candidate ordering without changing the detector or its grasp candidates. We propose GraRe, which estimates grasp quality from candidate attributes, shell-stratified local geometry, and object context. Candidate attributes condition the local geometric and object-context representations, and a Transformer fuses all three feature types. The predicted quality is combined with detector confidence to produce the final ranking. Experiments on GraspNet-1Billion with three frozen detectors show consistent improvements, with gains of up to 13.60 points in Average AP. Real-robot experiments further demonstrate robust grasping in cluttered scenes. These results show that improving candidate ranking provides a practical way to enhance frozen 6-DoF grasp detectors.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

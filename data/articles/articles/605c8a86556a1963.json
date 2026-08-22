@@ -1,0 +1,13 @@
+{
+  "id": "605c8a86556a1963",
+  "title": "JADE-GS: Joint Allocation of Deblurring Evidence for Event-Assisted 3D Gaussian Splatting",
+  "link": "https://arxiv.org/abs/2607.14990",
+  "description": "arXiv:2607.14990v2 Announce Type: replace \nAbstract: Neural radiance fields and 3D Gaussian Splatting assume that each training image is a sharp and geometrically consistent observation of the scene. Motion blur violates this assumption because a single exposure integrates a continuous range of camera poses. Exposure integration also removes the temporal information needed to recover the corresponding sharp observation. Event cameras preserve this information at microsecond resolution and therefore provide a natural complement to conventional images. Existing event-assisted reconstruction methods predominantly obtain image supervision through analytical inversion of the Event Double Integral. Learned restoration from frames and events offers a second prior. Although weaker when used alone, it fails in different regions and provides complementary evidence. We present JADE-GS, which formulates the combination of these priors as spatial evidence allocation. A lightweight Spatial Prior Router predicts a pixelwise allocation using only the blurry frame and event stream, then fuses the two fixed restorations into an additional supervision target. The router is trained without a sharp reference using consistency with the scene under reconstruction and the measured exposure, and is removed after optimization. Experiments show that JADE-GS achieves leading perceptual quality on both benchmarks, attains the best fidelity on the real benchmark, and remains competitive on the synthetic one. It requires substantially lower training overhead than diffusion-based alternatives and preserves native 3DGS rendering with no generative decoding at inference.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

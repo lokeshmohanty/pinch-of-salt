@@ -1,0 +1,14 @@
+{
+  "id": "eaa8e2c2561af6f1",
+  "title": "Partial FC: Training 10 Million Identities on a Single Machine",
+  "link": "https://arxiv.org/abs/2010.05222",
+  "description": "arXiv:2010.05222v3 Announce Type: replace \nAbstract: Training face recognition models with millions of identities is challenging because classifier storage, logit memory, and computation grow linearly with the number of classes, eventually making full softmax impractical even when the backbone itself fits comfortably in memory. We present Partial FC (PFC), a scalable approximation to large-class softmax that preserves every positive class center while activating only a sampled subset of negative centers in each mini-batch. This asymmetric treatment retains every target term while avoiding exhaustive interaction with millions of mostly uninformative negatives. Our distributed implementation partitions the classifier across GPUs and samples within each owned shard, so sampling reduces local matrix multiplication and logit storage while sharding eliminates class-gradient synchronization across workers. Together, these properties reduce GPU-resident classifier memory, computation, and class-dependent communication without feature-based hard-negative retrieval. End-to-end system benchmarks demonstrate efficient scaling to massive class spaces, including 64 million classes on a single eight-GPU machine. Across large-scale face-recognition datasets, moderate sampling rates maintain competitive recognition accuracy while substantially improving training efficiency. Our best PFC configurations achieve 97.2\\% TAR on IJB-C at FAR $=10^{-4}$ and 94.0\\% TAR on ICCV21-MFR at FAR $=10^{-6}$. Beyond clean training data, PFC is robust to inter-class conflicts, label noise, and long-tailed identity distributions: under 40\\% label noise, PFC with conflict filtering raises ICCV21-MFR TAR from 43.9\\% to 80.2\\%, while on long-tailed data PFC improves TAR from 87.4\\% to 92.0\\%. These results establish positive-preserving negative sampling as an effective foundation for scalable, accurate, and robust identity classification.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.DC"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f1b36cfb74eced97",
+  "title": "Foreseeing the Invisible: Amodal Reconstruction of Leaf Fossil Images",
+  "link": "https://arxiv.org/abs/2608.04423",
+  "description": "arXiv:2608.04423v1 Announce Type: new \nAbstract: Fossil leaves are rarely preserved whole -- sedimentary rock hides, breaks, and erodes the lamina, yet paleobotany depends on the complete shape and outline of the leaf. We cast the recovery of the missing tissue as amodal reconstruction and present AmodalDINO, a multi-head dense-prediction model that predicts four masks from a single RGB image: visible leaf, amodal complete leaf, amodal main vein, and fine veins. Unlike essentially all prior amodal work, AmodalDINO is given no visible mask. It predicts the visible and amodal regions jointly, so it needs no upstream instance segmenter at runtime. Two simple but effective changes adapt the model to the amodal segmentation task: fully fine-tune a DINOv3 ViT-L/16 at a small learning rate instead of freezing it, and attach auxiliary venation heads alongside the leaf heads. These two changes enable the model to learn the structural shape prior of leaves. Trained only on synthetic leaf fossil images, AmodalDINO reaches 95.0% Dice / 90.5% IoU on the validation set and transfers well to real fossil specimens. Stripped to two heads, the same recipe can run on two benchmark datasets, reaching 85.05 full mIoU / 66.65 occluded mIoU on KINS and 80.90 / 38.15 on COCOA-cls. The model is also practical: by quantizing to 4-bit weights, it runs entirely offline in a browser, matching the original model with an IoU of 0.910. We also add ruler-based calibration to estimate surface area, and a generative visualization of living leaves on local devices.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

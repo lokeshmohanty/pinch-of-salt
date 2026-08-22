@@ -1,0 +1,14 @@
+{
+  "id": "d797df3246d1f5b5",
+  "title": "Gaussian Sculpting: End-to-End Controllable Surface Reconstruction via Field Optimization",
+  "link": "https://arxiv.org/abs/2608.10602",
+  "description": "arXiv:2608.10602v1 Announce Type: new \nAbstract: 3D Gaussian Splatting (3DGS) has recently enabled real-time novel view synthesis with impressive quality. However, it struggles to recover accurate surfaces under limited viewpoints and due to the inherent irregularity of Gaussian primitives. The resulting geometric errors are notoriously difficult to correct manually. To address these issues, we propose Gaussian Sculpting, a fully differentiable end-to-end framework for high-quality surface reconstruction. Our key insight is to anchor Gaussians onto an evolving differentiable surface, allowing them to guide signed distance field (SDF) optimization instead of extracting the surface only during post-processing. To enable stable gradient isolation during joint optimization, we design a bi-level training strategy in which the outer loop optimizes the geometry represented by the SDF, while the inner loop updates the Gaussians with the geometry fixed. We further impose constraints on Gaussian parameters to ensure consistency with the underlying surface, thereby improving both geometric and appearance fidelity during optimization. In addition, we introduce a multi-resolution subdivision scheme based on octree-like partitioning to preserve fine details while reducing memory consumption. Experiments on object-level scenes demonstrate that our method effectively removes redundant surfaces, recovers missing structures caused by limited viewpoints, and achieves strong reconstruction quality even at relatively low resolutions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

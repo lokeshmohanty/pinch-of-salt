@@ -1,0 +1,13 @@
+{
+  "id": "d2f1d58d9453494a",
+  "title": "UniPose9D: Universal Category-Agnostic Object Pose Estimation",
+  "link": "https://arxiv.org/abs/2607.09985",
+  "description": "arXiv:2607.09985v1 Announce Type: new \nAbstract: Object pose estimation is a fundamental problem in 3D vision. Although recent state-of-the-art approaches achieve strong performance, they often overfit to existing benchmarks and exhibit limited generalization to novel categories and unseen scenes. We propose UniPose9D, a category-agnostic foundation model for 9D object pose estimation: given an instance mask/ROI and either an RGB-D observation or an RGB image with predicted depth, the model estimates rotation, translation, and metric size without category labels, CAD models, mean-shape priors, or reference views. Specifically, UniPose9D samples point pairs from the observed object geometry and uses DINOv2 and PointNet features to predict NOCS coordinates for each pair. To improve accuracy, we introduce a point-pair-based RANSAC N-hop Kabsch--Umeyama algorithm with an adaptive threshold. We further employ flow matching to address symmetric ambiguities and construct a large-scale training set by curating and aligning pose annotations from existing public datasets. Experiments across six datasets show that a single unified model can match or surpass specialist methods while generalizing to unseen objects and in-the-wild scenarios. Our code and model are available on https://github.com/qq456cvb/UniPose9D.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

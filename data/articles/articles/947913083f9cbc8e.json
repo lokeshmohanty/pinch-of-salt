@@ -1,0 +1,13 @@
+{
+  "id": "947913083f9cbc8e",
+  "title": "Rethinking Normalization Placement for LLMs: Post-Norm under Curriculum Depth Growing",
+  "link": "https://arxiv.org/abs/2608.13156",
+  "description": "arXiv:2608.13156v1 Announce Type: new \nAbstract: Pre-norm is the standard normalization placement in modern Transformers because it facilitates joint optimization of full-depth models. We ask whether this preference persists when depth is introduced through a curriculum. In curriculum depth growth, each appended block receives the boundary representation produced by a trained prefix, making normalization placement relevant to forward conditioning. We therefore test whether placement and training curriculum interact. In a controlled distillation study with a Qwen3-8B teacher and a nine-layer student, pre-norm and post-norm are indistinguishable under joint training, differing by $0.0004$ validation CE, while post-norm improves over pre-norm by $0.0328$ under curriculum growth, an order of magnitude larger. A post-joint control matched by student active-layer tokens remains worse than post-grow, which rules out compute as the sole explanation. The ranking crosses over during the curriculum: post-norm takes the lead once blocks are appended. Single-block and freeze controls localize the ranking change to block appending rather than shallow-block quality or retraining. Boundary diagnostics associate post-norm with stable residual scales and pre-norm with structural-token scale drift; on a fixed batch, the final pre-grow block is also nearly identity-mapped. Together with the phase-wise crossover, these observations are consistent with boundary-scale conditioning after new blocks are appended. The results motivate treating normalization placement and training curriculum as coupled design choices in this distillation setting.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

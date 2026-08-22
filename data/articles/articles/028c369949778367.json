@@ -1,0 +1,15 @@
+{
+  "id": "028c369949778367",
+  "title": "Binding Drift in Multi-Step Tool-Augmented Agents",
+  "link": "https://arxiv.org/abs/2607.18316",
+  "description": "arXiv:2607.18316v1 Announce Type: cross \nAbstract: Tool-augmented language-model agents execute multi-step workflows over external systems, resolving an entity once and then acting on it across subsequent steps. Prior work shows that in single-step actions, agents select the correct tool but bind it to the wrong entity 24-26% of the time. We study what happens to entity bindings over time: do they stay correct, silently drift to a different entity, or, if wrong from the start, propagate and compound? We formalize binding drift (correct at step 1, wrong later) as distinct from error propagation (wrong at step 1, carried forward), and score them on disjoint workflow sets so the two cannot be conflated. In a controlled multi-step testbed (200 workflows, 580 entity-binding-scored steps, four enterprise domains, eight model backends spanning small to frontier), we find: (1) under controlled error injection, an entity lock (the intuitive \"persist the first binding\" fix) amplifies wrong actions from 907 to 2,746 (3.0x; bootstrap 95% CI [2.8, 3.3]), because it faithfully carries the seeded wrong entity into every later step; (2) the amplification reaches 8.5x on the most affected model (Claude Opus 4.5); (3) a practical LLM-based re-verifier (a single cheap second model call re-reading the original instruction) reduces wrong actions by 79% (0.21x; CI [0.18, 0.25]), closing the gap to within 1 percentage point of an oracle upper-bound (0.20x); and (4) in the natural (non-injected) setting, baseline agents drift on 18% of eligible workflows, with the per-step error rate rising across steps. Persistence and re-verification are not interchangeable: a defense that eliminates drift can worsen propagation, and a practical re-verifier nearly matches oracle recovery.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

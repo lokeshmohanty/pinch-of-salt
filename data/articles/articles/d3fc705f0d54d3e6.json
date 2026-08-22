@@ -1,0 +1,14 @@
+{
+  "id": "d3fc705f0d54d3e6",
+  "title": "Differentiable Proxy Learning for Adaptive Quantization Control in H.264 Video Coding",
+  "link": "https://arxiv.org/abs/2607.10478",
+  "description": "arXiv:2607.10478v1 Announce Type: cross \nAbstract: H.264 has been the most widely used video coding format for the past two decades due to its relative simplicity, efficiency, and wide availability of software and hardware implementations. However, optimizing codec parameters such as the quantization parameter (QP) for specific objectives (e.g., perceptual quality or machine vision tasks) is challenging due to the non-differentiable nature of standard video codecs. While differentiable proxies have recently been used to enable gradient-based optimization around standard codecs, their fidelity to the target codec is rarely explicitly characterized. In this paper, we propose a differentiable proxy learning method for H.264 intra codec to enable adaptive quantization control. Built upon a variable-rate learned compression model, the proposed proxy is made differentiable with respect to codec QP through a soft-indexing mechanism. It is then trained to approximate the rate-distortion behavior of H.264 under two quantization settings: global-QP, which uses one QP per image, and spatial-QP, which assigns QPs at the macroblock level. Using the frozen trained proxy, we develop a proxy-based adaptive quantization (AQ) framework for both perceptual optimization and machine vision tasks. Experimental results demonstrate that the proposed proxies closely approximate the rate-distortion behavior of H.264 intra codec. The resulting proxy-based AQ framework consistently improves rate-task trade-offs over fixed-QP H.264 baselines, achieving BD-rate reduction of up to 17.12% for semantic segmentation and 15.30% for MS-SSIM.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

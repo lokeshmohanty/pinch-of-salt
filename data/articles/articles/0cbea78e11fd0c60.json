@@ -1,0 +1,17 @@
+{
+  "id": "0cbea78e11fd0c60",
+  "title": "Phantoms and Disclosures: A Statistical Framework for Auditing Privacy in Synthetic Data",
+  "link": "https://arxiv.org/abs/2606.16952",
+  "description": "arXiv:2606.16952v2 Announce Type: replace-cross \nAbstract: The rapid adoption of generative AI and Large Language Models (LLMs) has spurred interest in synthetic data as a privacy-preserving alternative to sensitive real-world datasets. However, generating high-utility synthetic data often carries the risk of memorizing and regurgitating private information from the training corpus. In this work, we present a customizable empirical auditing framework designed to detect and explain such data disclosures. Our framework introduces a mechanism to distinguish between \"true disclosures\"-where the system directly reproduces a user's information-and \"phantom disclosures''-where the system incidentally generates a user's data. By partitioning input data into training and holdout sets and applying rigorous statistical hypothesis testing, we determine if observed disclosures are consistent with strict privacy baselines, such as zero-learning or specific Differential Privacy (DP) bounds. Crucially, this approach requires no model access, no canary insertion, and no reference model training -only the synthetic output and a held-out control set. We demonstrate that this framework effectively functions as a membership inference attack, providing empirical lower bounds on privacy leakage that are tighter than prior data-based auditing methods. Our approach is model-agnostic, applies to any synthetic data generation mechanism, and requires orders of magnitude fewer computational resources than shadow-model or canary-based alternatives.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.AP",
+    "stat.ME",
+    "stat.ML"
+  ]
+}

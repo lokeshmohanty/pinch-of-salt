@@ -1,0 +1,13 @@
+{
+  "id": "2d9864d503ae2571",
+  "title": "2.5-D Decomposition for LLM-Based Spatial Construction",
+  "link": "https://arxiv.org/abs/2605.07066",
+  "description": "arXiv:2605.07066v4 Announce Type: replace \nAbstract: Autonomous systems that build structures from natural-language instructions need reliable spatial reasoning, yet large language models (LLMs) make systematic coordinate errors when generating three-dimensional block placements. We present a neuro-symbolic pipeline based on 2.5-D decomposition: the LLM plans in the two-dimensional horizontal plane while a deterministic executor computes all vertical placements from column occupancy, eliminating an entire class of errors. On the Build What I Mean benchmark (160 rounds), GPT-4o-mini with this pipeline achieves 94.6% mean structural accuracy across 12 independent runs, within 3.0 percentage points of the 97.6% ceiling imposed by architect-agent errors that no builder-side improvement can address. This outperforms both GPT-4o at 90.3% and the best competing system at 76.3%. A controlled ablation confirms that 2.5-D decomposition is the dominant contributor, accounting for 28.7 percentage points of accuracy. The pipeline transfers directly to edge hardware: Nemotron-3 120B on an NVIDIA Jetson Thor AGX achieves 96.0% mean structural accuracy with the identical pipeline, slightly exceeding the cloud result. Expanding the system prompt by four targeted examples to exceed the model's 8,320-token prefix cache page size, combined with low-effort reasoning, reduces mean per-request latency by 3X to 19.7 seconds at 95.6% accuracy. The underlying principle, removing deterministic dimensions from the LLM's output space, applies to any autonomous construction or assembly task where gravity or other physical constraints fix one or more degrees of freedom. A transfer experiment on 500 IGLU collaborative building tasks confirms the effect generalizes beyond the primary benchmark.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

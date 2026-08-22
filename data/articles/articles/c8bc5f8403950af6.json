@@ -1,0 +1,14 @@
+{
+  "id": "c8bc5f8403950af6",
+  "title": "M-Net: Integrating Spectral Features and Physical Field Operators into Deep Learning for Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2608.12196",
+  "description": "arXiv:2608.12196v1 Announce Type: cross \nAbstract: Purpose: Deep learning-based medical image segmentation has achieved remarkable success, yet purely data-driven approaches often fail to exploit the rich mathematical structure inherent in medical images. We investigate whether explicit mathematical inductive biases, specifically matrix spectral analysis and vector calculus operators, can enhance segmentation beyond data-driven learning alone. Methods: We propose M-Net (Math-Augmented Network), which integrates three complementary mathematical priors into U-Net: (1) continuous spectral features derived from the condition number of centered local pixel matrices, providing a differentiable measure of texture ill-conditioning; (2) physical field operators (divergence and a discrete curl-like boundary irregularity operator) computed from image gradient fields, capturing focal intensity extrema and edge non-smoothness; and (3) a Math-Attention Gate (MAG) that adaptively fuses mathematical features with CNN-extracted deep features at skip connections. Results: Experiments on three benchmarks (LiTS, KiTS, and BraTS) show that M-Net achieves Dice scores of 78.42%, 76.15%, and 83.67%, outperforming baseline U-Net by 12.37%, 3.52%, and 5.55% on liver, kidney, and brain tumor segmentation, respectively. Ablations reveal that the condition-number feature contributes a 2.14% gain over binary invertibility features, while MAG adds 1.45% over simple concatenation. Conclusion: M-Net establishes that mathematical inductive biases provide effective complementary information for medical image segmentation. The continuous condition-number feature offers superior gradient information over discrete alternatives, and MAG preserves these priors throughout the network. This work opens avenues for integrating linear algebra and vector calculus into deep architectures for medical imaging.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

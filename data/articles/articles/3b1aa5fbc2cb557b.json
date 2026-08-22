@@ -1,0 +1,15 @@
+{
+  "id": "3b1aa5fbc2cb557b",
+  "title": "Kalypso: Relational LLM Serving",
+  "link": "https://arxiv.org/abs/2607.23815",
+  "description": "arXiv:2607.23815v2 Announce Type: replace-cross \nAbstract: Large language models are increasingly used as semantic operators for filtering, extracting, ranking, joining, and transforming unstructured data. Existing semantic query processing systems invoke request-centric LLM serving systems that are unaware of the query plan, leaving substantial performance opportunities unused. This paper introduces relational LLM serving, an abstraction that makes LLM serving aware of semantic query structure while preserving query semantics and output accuracy. The key opportunity is pipelined execution across semantic operators: when intermediate tuples flow directly from one operator to the next, their KV-cache state can be reused instead of recomputed.\n  We present Kalypso, a relational LLM serving system that exposes an API for semantic query plans and executes them using an adaptive, memory-aware scheduling algorithm. Kalypso addresses a new online scheduling problem in which pipelined operator execution is coupled with GPU memory pressure management to reuse KV-cache state in the serving engine before eviction. Its scheduler continuously adjusts memory allocations to balance upstream parallelism, downstream progress, and GPU utilization. Our evaluation shows that Kalypso improves query completion time over baselines using request-centric LLM serving, with speedups up to 4.57x across diverse workloads, demonstrating that query-aware LLM serving can substantially improve the efficiency of semantic query execution.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DB",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

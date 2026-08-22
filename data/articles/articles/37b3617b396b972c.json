@@ -1,0 +1,13 @@
+{
+  "id": "37b3617b396b972c",
+  "title": "Competence, Not Accuracy: A Diagnostic for Reference-Free Judge Gates in Skill Optimization",
+  "link": "https://arxiv.org/abs/2608.18719",
+  "description": "arXiv:2608.18719v1 Announce Type: new \nAbstract: Text-space skill optimization adapts a frozen agent by evolving a natural-language skill document, accepting each candidate through a validation gate. Existing gates rely on verifiable rewards, confining these methods to tasks with an automatic verifier. Replacing the verifier with an LLM-judge gate would lift that restriction, but whether such a gate carries usable signal is untested. We ask a prior question: can we tell, before placing a judge in the loop, whether its scores separate correct from incorrect answers at all? We formalize a reference-free judge as a latent solver -- its verdict rests on agreement with whatever it would itself conclude, so its capacity to evaluate is bounded by its capacity to solve. The model yields a closed-form bound on discriminability (ROC-AUC) in the judge's competence $c$ and answer-space size $k$, a necessary condition $c > 1/k$, and the result that the marginal AUC is confounded by item difficulty while a within-question estimator is not. A non-intervening probe records judge scores on genuine optimization runs without altering any decision. We find discriminability at chance where competence sits near the floor and usable above it; that a judge's benchmark accuracy overstates the competence that matters; and, in a closed-loop study, that the screen predicts which kind of gating error occurs. The result is a cheap pre-deployment diagnostic for judge gates.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

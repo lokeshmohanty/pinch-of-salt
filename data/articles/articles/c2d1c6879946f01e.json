@@ -1,0 +1,13 @@
+{
+  "id": "c2d1c6879946f01e",
+  "title": "GATE-3D: Geometry-Aware Test-time Adaptive Reranking for Open-Set 3D Shape Retrieval",
+  "link": "https://arxiv.org/abs/2607.19111",
+  "description": "arXiv:2607.19111v1 Announce Type: new \nAbstract: Large pretrained vision models have substantially improved appearance-based 3D shape retrieval, but they still confuse shapes that look similar while differing in geometry. Although geometry-aware features can reduce these errors, naive fusion of geometry and appearance may hurt retrieval when the two modalities are already well aligned. We propose GATE-3D, a lightweight query-adaptive reranking method that incorporates geometry without retraining the retrieval backbone. For each query, GATE-3D predicts how much a geometry-aware score should adjust the appearance-based ranking using features that capture disagreement between the two modalities. This selective design lets geometry contribute where it helps and stay silent where it would hurt. Experiments on three open-set 3D retrieval benchmarks show that GATE-3D improves over appearance-only retrieval and is more robust than always-on fusion. On the primary benchmark, it improves mAP@10 by 2.00 points over appearance-only retrieval (p=0.041); it also improves leave-one-category-out generalization and reduces geometric false positives by 10.8%. GATE-3D achieves competitive zero-shot results against DAC-based baselines. We further find that simple linear routing is more effective than a small MLP in the low-data regime, suggesting that cross-modal disagreement features matter more than model capacity for adaptive routing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

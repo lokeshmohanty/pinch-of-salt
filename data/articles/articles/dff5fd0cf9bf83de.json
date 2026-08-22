@@ -1,0 +1,13 @@
+{
+  "id": "dff5fd0cf9bf83de",
+  "title": "Zero-OVCD: Bridging Training-Free Foundation Models and Pseudo-Label Learning for Open-Vocabulary Change Detection",
+  "link": "https://arxiv.org/abs/2608.11663",
+  "description": "arXiv:2608.11663v1 Announce Type: new \nAbstract: Open-vocabulary change detection (OVCD) enables the identification of user-specified land-cover changes in bitemporal remote sensing images, but existing training-free pipelines remain vulnerable to inaccurate candidate masks, ambiguous semantic assignments, and accumulated inference errors. To address these issues, we propose Zero-OVCD, a two-stage framework that requires no pixel-level annotations from the target domain. In the first stage, high-quality change pseudo-labels are generated through complementary candidate-mask refinement, multiscale semantic similarity fusion with margin-based reliability filtering, and response-guided mask correction and completion. These components jointly suppress noisy candidates, enhance mask-level semantic discrimination, and recover missed change regions. In the second stage, a change detector is trained using the generated pseudo-labels, while checkpoint voting and high-agreement sample selection are introduced to mitigate residual pseudo-label noise. On LEVIR-CD, WHU-CD, and S2Looking, Stage I achieves F1 scores of 86.25%, 85.82%, and 50.48%, while Stage II further improves them to 88.65%, 88.85%, and 57.96%, respectively. On SECOND, the macro-average F1 across six category-wise one-vs-rest tasks increases from 47.91% to 50.92%. These results demonstrate that bridging training-free foundation-model inference with noise-aware pseudo-label learning provides an effective solution for open-vocabulary change detection without target-domain pixel-level annotations. Code will be available at https://github.com/1321663019/Zero-OVCD.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

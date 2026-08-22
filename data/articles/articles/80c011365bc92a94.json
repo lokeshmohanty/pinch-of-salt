@@ -1,0 +1,13 @@
+{
+  "id": "80c011365bc92a94",
+  "title": "Localizing to Debias: A Patch-Level Benchmark and Baseline for Weakly Supervised Spatial Anomaly Detection",
+  "link": "https://arxiv.org/abs/2608.12045",
+  "description": "arXiv:2608.12045v1 Announce Type: new \nAbstract: Despite growing interest in weakly supervised video anomaly detection (WSVAD), current methods struggle to bridge the gap between coarse temporal supervision and fine-grained spatial reasoning. A key obstacle is the tendency of temporal detectors to latch onto background and scene-level cues rather than truly discriminative anomaly evidence. This background bias raises ethical concerns: models may inadvertently associate anomalies with societal or environmental context rather than authentic crime-related cues. Without spatial grounding, such biases remain hidden and unauditable. To address this, we propose SST-WSVADL, a sparse spatio-temporal framework that bridges temporal anomaly detection with fine-grained spatial localization. Rather than processing all spatial regions indiscriminately, SST-WSVADL progressively focuses on the most anomaly-relevant spatio-temporal regions through dynamic sparsification, naturally suppressing background dominant content while preserving discriminative evidence. The temporal and spatial branches are coupled end-to-end via motion-aware regularization that guides sparsification toward dynamically informative regions, without relying on external detectors or vision-language prompts. We publicly release frame-level spatial annotations and a method-agnostic evaluation protocol for three public datasets: UCF-Crime, XD-Violence, and MSAD. These resources enable the community to audit spatial biases in WSVAD predictions, supporting progress toward more ethical and accountable anomaly detection. Experiments demonstrate that SST-WSVADL is competitive with prior methods across benchmarks while enabling localization and patch-level auditability of scene bias, providing a reproducible foundation for interpretability-oriented evaluation of WSVAD models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

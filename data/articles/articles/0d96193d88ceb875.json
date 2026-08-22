@@ -1,0 +1,14 @@
+{
+  "id": "0d96193d88ceb875",
+  "title": "Decodable but Not Accessible: Auditing Distance-Based Reliability Estimation on Disentangled Skin-Lesion Representations",
+  "link": "https://arxiv.org/abs/2608.11267",
+  "description": "arXiv:2608.11267v1 Announce Type: cross \nAbstract: Distance-based reliability estimation assumes that a representation's geometry reflects its trustworthiness, yet this assumption is rarely tested under training interventions that reshape geometry directly. We audit this assumption under domain-adversarial representation learning using a disentanglement dose-response ladder. Three checkpoint families share the same architecture and a 16-dimensional representation, differing only in orthogonality strength (lambda = 0, 1, 5). Representation geometry changed substantially with disentanglement strength: the condition number shifted by two orders of magnitude (Kendall tau = 0.84, exact p = 2.8e-5). This change was not accompanied by improved reliability estimation: Mahalanobis-distance AUROC (ISIC-test vs. PAD-UFES) remained flat and below chance (about 0.40) at every level, with no significant association with any of five geometry metrics tested. The same failure was observed for cosine-to-centroid and pooled k-nearest-neighbor scorers, plus three non-distance-based scorers: an energy-based confidence score, Virtual-Logit Matching, and a kernel density estimator. Seven of eight scorers converged on the same result; the energy-based score showed an isolated upward trend that we report but do not treat as evidence against the overall pattern. A supervised probe with no access to the training objective recovered domain membership from the identical embeddings at 0.72-0.81 AUROC across every level, showing that the relevant information was not absent from the representation. These findings indicate that classification performance alone can overlook whether information in a learned representation is organized in a form that downstream reliability estimators can use. Information can remain decodable while becoming largely inaccessible to non-probing reliability estimators.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "91e6a08d6911a44a",
+  "title": "When Two Tracers Disagree: An Investigation of Multimodal Fusion for Clinical PET/CT Segmentation",
+  "link": "https://arxiv.org/abs/2608.19063",
+  "description": "arXiv:2608.19063v1 Announce Type: new \nAbstract: PSMA and FDG PET/CT visualise complementary biological information in prostate cancer. Combining both tracers could capture heterogeneous tumour phenotypes that may be missed by either alone, yet there is no consensus on effective deep learning architectures for fusing these modalities. We evaluated multimodal image-fusion strategies for automatic whole-body PET/CT lesion segmentation to estimate total tumour burden. Using the public DEEP-PSMA Challenge dataset, we trained tracer-specific 3D nnU-Net baselines and compared (i) early fusion with a single encoder and one decoder (OEOD) or two decoders (OETD), and (ii) intermediate fusion via a dual-encoder cross-attention U-Net (DECA-UNet). Tracer-specific baselines performed strongly (PSMA Dice = 0.93; FDG = 0.81). Fusion yielded mixed results: OEOD produced a combined Dice of 0.90 (on an easier, non-tracer-specific task), whilst the tracer-specific fusion models reached PSMA/FDG = 0.69/0.64 (OETD) and 0.76/0.57 (DECA-UNet). Whilst fusion often provided reasonable PSMA segmentation, FDG performance degraded and no strategy consistently exceeded the single-tracer baselines. Under the evaluated setting, tracer-specific models remain the stronger baseline; clinically useful gains from multimodal fusion will likely require architectures that better preserve tracer specific representations. Our code is available at: https://github.com/JackJ3636/DEEP_PSMA_code",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
