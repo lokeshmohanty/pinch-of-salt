@@ -1,0 +1,14 @@
+{
+  "id": "5c700bee74b5def7",
+  "title": "Fidelity Preference, Not Demographic Preference: A Pixel-Level Attribute-Sensitivity Audit of Image Aesthetic/Preference Scorers",
+  "link": "https://arxiv.org/abs/2608.23593",
+  "description": "arXiv:2608.23593v1 Announce Type: cross \nAbstract: Text-to-image systems use learned aesthetic scorers to filter training data and guide generation, but whether these scores encode demographic attributes as objective quality is unclear. We audit four scorers (LAION-Aesthetics, PickScore, ImageReward, HPSv2) using pixel-level interventions on skin tone and body type in synthetic and real images. Our key finding is that along skin-lightness, the dominant effect is fidelity preference: unaltered images score highest, and perturbations in either direction are penalized (inverted-U). Placebo arms show this penalty is not an artifact of the skin operator, as applying the same CIELAB L* shift to non-skin regions yields similar penalty magnitudes. However, the penalty is operator-dependent and holds for all operators only for LAION-Aes. Critically, audits on synthetic images alone are misleading: LAION-Aes shows strong preference for darker skin on synthetic faces, but on 1470 real faces the preference reverses and becomes much smaller, and amplification becomes non-significant. Across scorers, synthetic results do not transfer -- reversing for LAION-Aes and HPSv2, attenuating for PickScore. We contribute a reproducible benchmark with artifact control and synthetic/real cross-validation, and an auditability criterion for pixel-level causal isolation (valid for skin tone, not for body type due to deformation). Population-stratified analysis shows fidelity-penalty asymmetry is not robust across groups after FDR correction except for HPSv2. Our findings show naive synthetic audits misjudge bias direction and magnitude, and only within-image causal isolation on real data can distinguish true demographic bias from fidelity preference.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

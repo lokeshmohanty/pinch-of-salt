@@ -1,0 +1,14 @@
+{
+  "id": "376db26e9b069c2d",
+  "title": "WAVE: Reversing the Guidance Hierarchy for Coarse-to-Fine Guided Depth Super-Resolution",
+  "link": "https://arxiv.org/abs/2608.25302",
+  "description": "arXiv:2608.25302v1 Announce Type: new \nAbstract: Guided depth super-resolution (GDSR) typically extracts RGB guidance features through convolutional hierarchies, inheriting their fine-to-coarse bias. Thus, low-level spatial cues surface in early layers, leaving the deeper layers to suppress those that do not correspond to true depth boundaries, which risks artifacts and blurred edges. The same fine-to-coarse bias persists in semantics-based methods that consume low-level tokens early and global tokens late. We present WAVE, which introduces a multi-level discrete wavelet transform (ML-DWT) as an explicit and interpretable feature-control mechanism, enabling a coarse-to-fine reconstruction by consuming sub-bands and semantic tokens in reverse of their generation order. WAVE further exploits these sub-bands to treat high- and low-frequency content separately, filtering at its source the misleading RGB color and texture cues that often lead to blurred boundaries and artifacts, offering an intuitive alternative to the suppression learned implicitly by an opaque network. WAVE separates structure and detail reconstruction into dedicated modules that: i) model interactions within and across wavelet sub-bands, depth features, and semantic priors, ii) apply semantic gating to the high-frequency bands, and iii) fuse modalities through an invertible coupling mechanism that prevents collapse onto a single modality. Extensive experiments across multiple benchmarks demonstrate that WAVE matches or outperforms existing methods, with the largest gains at high upsampling factors, where low-resolution depth contains the least structure.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "68a0ec24e9ebe45c",
+  "title": "ACE: A Self-Correcting Agentic Canvas Editor for Multi-Slide Presentation Automation",
+  "link": "https://arxiv.org/abs/2608.24103",
+  "description": "arXiv:2608.24103v1 Announce Type: new \nAbstract: Commercial design platforms increasingly edit documents through large language model (LLM) agents, but two practical problems block reliable deployment: legacy document formats expose only \\emph{flat}, absolutely positioned elements, so agents must recompute coordinates and routinely break layouts; and design has no unique ground truth, so diff-against-reference metrics penalize valid-but-different outputs. We present \\textbf{ACE}, an agentic canvas editor over a \\emph{hierarchical scene-graph} with a presentation-specialized action space (98 tools), paired with \\textbf{CARE}, a content-aware router that feeds the agent only the relevant slice of each deck (avg.\\ $\\sim$89\\% input-token reduction), and a \\emph{self-correction} loop driven by a \\emph{ground-truth-free} instruction-following (IF) judge whose natural-language critique is fed back as the next-turn instruction. With a fixed backbone, a scene-graph editor in a \\emph{single turn} already matches a same-backbone \\emph{agentic} HTML pipeline that iterates internally; adding self-correction lifts ACE significantly above it on instruction following (IF 4.23 vs.\\ 3.81 on the full 94-task benchmark, paired $p{=}.010$, replicated by an out-of-loop judge) at 1.75$\\times$ the speed and $\\sim$44\\% lower cost. VQ means are statistically indistinguishable, but 26 blind raters prefer ACE overall (58.7\\% decisive win-rate) and prefer the self-corrected output 81\\% of the time; the ranking is invariant across three judge families, and out-of-loop judges retain two-thirds of the self-correction gain, bounding circularity. 66\\% of cases halt after one pass, and a strict-peak rollback removes every observed regression.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ff55c0ab8797ba0d",
+  "title": "Unsupervised Anatomical Feature Learning via Diffusion Models: Enhanced Medical Image Segmentation with Denoising Diffusion Probabilistic Models",
+  "link": "https://arxiv.org/abs/2608.25693",
+  "description": "arXiv:2608.25693v1 Announce Type: new \nAbstract: Acquiring pixel-level annotations for medical image segmentation is a severe bottleneck. Traditional U-Net architectures, while effective, learn local texture patterns and lack awareness of global anatomical structures, leading to boundary delineation failures in low-data regimes. This research paper proposes utilizing unsupervised Denoising Diffusion Probabilistic Models (DDPMs) to extract anatomical features. We train a DDPM on 21 unlabeled abdominal CT scans to learn structural representations, transferring the encoder weights to a downstream segmentation task evaluated on the BTCV multi-organ dataset. Diffusion pretraining significantly improved liver segmentation: Dice increased from $0.75\\pm0.36$ to $0.93\\pm0.16$ ($p < 5.33\\times10^{-26}$, 0.529 Cohen's d), Average Surface Distance (ASD) decreased by 66%, and 95th-percentile Hausdorff Distance (HD95) reduced by 45%. For kidney segmentation, Dice improved from $0.90\\pm0.19$ to $0.95\\pm0.10$ ($p < 4.01\\times10^{-11}$). Multi-organ pooled performance showed a 68% variance reduction and a 74% improvement in boundary precision (Dice $0.95\\pm0.07$). Crucially, frozen encoder models retained > 80% of fine-tuned performance without exposure to segmentation labels, proving the existence of learned anatomical priors. In low-data scenarios, diffusion-pretrained models maintained robust performance with only 50% (Dice: 0.92 liver, 0.94 kidney), 25%, and even 10% (Dice: 0.89 liver, 0.71 kidney) of labeled data. Using unlabeled images for diffusion-based pretraining successfully embeds robust anatomical features prior to human supervision, transforming U-Nets into anatomy-aware systems.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

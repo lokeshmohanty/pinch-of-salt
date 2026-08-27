@@ -1,0 +1,14 @@
+{
+  "id": "3e01b20c0e455210",
+  "title": "Plans You Can Check: Verifier-Grounded Learning of an Open-Weight Planner for Executable Video-Editing",
+  "link": "https://arxiv.org/abs/2608.25622",
+  "description": "arXiv:2608.25622v1 Announce Type: new \nAbstract: Practical video editing is not only pixel generation: an editor must turn a brief, a clip pool, music metadata, and hard constraints into an executable timeline. We study this decision layer as \\emph{executable video-editing planning} and introduce RefineCut, which, unlike workflow systems that wrap a prompted frontier model, trains a compact open-weight planner for it. The planner edits a typed timeline through structured patches covering clip selection, trimming, ordering, transitions, and duration and music alignment; a deterministic verifier applies each patch and checks it against an explicit constraint ledger. Because editing has no single ground-truth repair, we do not imitate teachers directly: RefineCut replays every multi-teacher branch through the verifier and keeps verifier-best repairs as supervision. A second stage, RefineCut-Evo, lets the student score its own repairs with the verifier and a task rubric and trains on high-margin preference pairs, so the final $8$B planner runs in a closed verifier loop with no teacher calls at inference. On RefineCut-Bench ($3{,}578$ tasks, $7{,}971$ captioned clips, $499$ music tracks, explicit ledgers), verifier-replayed distillation lifts the planner from $0.620$ to $0.858$ on the protocol-specific Video-Editing Score and RefineCut-Evo reaches $0.924$; the gain transfers to Llama-3.1-8B and GLM-4-9B, and in the same closed loop the $8$B planner matches or exceeds its frontier teachers. Code and RefineCut-Bench are publicly released; see the Data Availability statement.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}
