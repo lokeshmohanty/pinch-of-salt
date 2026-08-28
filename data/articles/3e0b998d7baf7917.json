@@ -1,0 +1,13 @@
+{
+  "id": "3e0b998d7baf7917",
+  "title": "DALE-CT: Depth-Aware 2D Slice Encoders Learn an Anatomical World Model of Chest CT",
+  "link": "https://arxiv.org/abs/2606.07775",
+  "description": "arXiv:2606.07775v2 Announce Type: replace \nAbstract: Chest CT is among the highest-volume imaging exams in medicine, yet expert voxel-level annotations are scarce and costly, motivating encoders that learn directly from unlabeled scans. We present DALE-CT, a family of 2D slice-based Vision Transformers trained from scratch on chest CT with the heuristics-free LeJEPA objective. We introduce depth-aware slab sampling, which draws self-supervised views from across a physical $z$-axis slab rather than a single slice, implicitly tasking the 2D encoder with representing how anatomy changes between neighboring slices. The frozen representations trace each scan as a smooth anatomical trajectory, recover cranio-caudal slice ordering without labels, and distinguish slices by the anatomy they contain rather than by position alone. This anatomical world model emerges without any 3D or positional supervision, and an otherwise-identical encoder trained on slices in isolation never develops it. Building on this backbone, we introduce dense auxiliary supervision into the pretraining objective, using anatomical and abnormality masks to supervise patch and slice tokens alongside the self-supervised loss, and we compare the resulting variants against a DINOv2 baseline continually pretrained on CT-RATE. Among nine public and in-house models evaluated under the same protocol, DALE-CT-2S is the strongest 2D model in-domain, reaching 0.825 Macro AUROC on CT-RATE, within 0.024 of COLIPRI-CRM and without any text supervision. We subsequently scale the supervision-free configuration to a $\\sim$287k-scan multi-source pool, to our knowledge the largest reported chest-CT pretraining corpus. The resulting DALE-CT-0-L posts the best 2D external-transfer point estimates, and we release it as our recommended backbone with the full model family, training code, and evaluation pipeline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
