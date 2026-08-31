@@ -1,0 +1,14 @@
+{
+  "id": "fd542c0a3078ed49",
+  "title": "Memory-efficient GPU pipelines for real-time non-line-of-sight reconstruction",
+  "link": "https://arxiv.org/abs/2608.28183",
+  "description": "arXiv:2608.28183v1 Announce Type: cross \nAbstract: Non-line-of-sight (NLOS) imaging reconstructs scenes hidden around a corner from indirect light recorded by a single-photon avalanche diode (SPAD). A single reconstruction is a large inverse problem: billions of photon timestamps must be binned, moved through memory, transformed and inverted. As SPAD arrays raise acquisition throughput, reconstruction becomes the limiting stage. We rebuild the GPU execution of two established wave-based algorithms, f-k migration and phasor-fields, for both streaming and offline processing. On the phasor-fields side we assemble the ring-and-radius kernels of previous work once and offline, using the analytic Fourier transform of a ring, so the propagation kernel never exists in dense form at runtime, reducing the memory and bandwidth. We reorganize the pipeline of both algorithms with fused kernels, warp-level photon binning, batched transforms, CUDA graph replay, and FP16 storage applied only where it reduces the actual bottleneck. Our implementations are up to 42x faster than the reference streaming pipeline and up to 14x faster than the fastest published GPU baseline, all while using a fraction of the memory (down to 2.5%), enabling vastly larger and finer reconstructions on the same hardware, or comparable ones within a much lower memory budget. We report an ablation of each implementation choice and propose three denoising strategies enabled by the resulting frame budget for next-generation NLOS video processing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.CV"
+  ]
+}
