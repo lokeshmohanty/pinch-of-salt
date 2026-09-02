@@ -1,0 +1,14 @@
+{
+  "id": "b9042f7f46ccd416",
+  "title": "MeRoPE: Metric Rotary Position Embedding for Camera-Controlled Video Generation",
+  "link": "https://arxiv.org/abs/2609.01252",
+  "description": "arXiv:2609.01252v1 Announce Type: new \nAbstract: In camera-controlled video generation, geometry-aware positional encodings condition tokens on camera extrinsics and per-token viewing rays. Existing schemes, however, have a scale-dependent failure mode on real-world metric camera trajectories: homogeneous projective encodings cause attention logits and feature norms to grow unbounded with physical translation baselines. We propose MeRoPE (Metric Rotary Position Embedding), a norm-preserving relative camera encoding for attention. MeRoPE encodes relative orientations between calibrated viewing rays with orthogonal rotation blocks, maps raw metric displacements into multi-frequency rotary phases, and adds a disparity-anchored correspondence prior along the epipolar arc. This design strictly preserves feature norms, bounds pre-softmax attention logits regardless of the physical translation scale, and maintains exact invariance to global rigid coordinate changes. Across nuScenes and PanShot, which cover large-baseline trajectories and diverse camera optics, respectively, MeRoPE achieves stronger camera control than prior encodings, with the best consistency between generated camera motion and conditioning poses in both rotation and translation. Code will be made publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

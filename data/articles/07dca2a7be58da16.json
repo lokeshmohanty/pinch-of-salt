@@ -1,0 +1,13 @@
+{
+  "id": "07dca2a7be58da16",
+  "title": "DiverseVAR: Balancing Diversity and Quality of Next-Scale Visual Autoregressive Models",
+  "link": "https://arxiv.org/abs/2511.21415",
+  "description": "arXiv:2511.21415v2 Announce Type: replace \nAbstract: We introduce DiverseVAR, a framework that enhances the diversity of text-conditioned visual autoregressive models (VAR) at test time without requiring retraining, fine-tuning, or substantial computational overhead. While VAR models have recently emerged as strong competitors to diffusion and flow models for image generation, they suffer from a critical limitation in diversity, often producing nearly identical images even for simple prompts. This issue has largely gone unnoticed amid the predominant focus on image quality. We address this limitation at test time in two stages. First, inspired by diversity enhancement techniques in diffusion models, we propose injecting noise into the text embedding. This introduces a trade-off between diversity and image quality: as diversity increases, the image quality sharply declines. To preserve quality, we propose scale-travel: a novel latent refinement technique inspired by time-travel strategies in diffusion models. Specifically, we use a multi-scale autoencoder to extract coarse-scale tokens that enable us to resume generation at intermediate stages. Extensive experiments show that combining text-embedding noise injection with our scale-travel refinement significantly enhances diversity while minimizing image-quality degradation, achieving a new Pareto frontier in the diversity-quality trade-off. Project page: https://diverse-var.github.io",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

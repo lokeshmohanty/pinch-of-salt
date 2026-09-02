@@ -1,0 +1,15 @@
+{
+  "id": "e0bdeb47a59f194e",
+  "title": "Towards Provable and Scalable Training of Quantized Neural Networks with Ising Optimization",
+  "link": "https://arxiv.org/abs/2506.18240",
+  "description": "arXiv:2506.18240v5 Announce Type: replace-cross \nAbstract: Training quantized neural networks remains fundamentally challenging due to non-convex loss landscapes and discrete parameter spaces. We introduce an exact Quadratic Constrained Binary Optimization (QCBO) framework with provable guarantees. We first characterize the stratified topology of network zero-loss level sets: generic interior strata are smooth, yet globally optimal components can remain disconnected even under overparameterization. To address this non-convex obstruction, we compile finite-depth architectures with parameter codebooks and Forward Interval Propagation (FIP)-bounded states into bounded QCBOs, yielding an exact completely positive convex formulation that preserves the global discrete optimum with zero relaxation gap. To overcome monolithic sample scaling, we formulate sample-wise Decomposed Lower-Bound Optimization (DLBO) to reduce each Ising call from dataset to single-sample scale. The DLBO moment hierarchy also forms a Hamiltonian-locality hierarchy, with order two giving an auxiliary-free pairwise QUBO oracle and higher orders trading interaction locality for tighter bounds. Strictly feasible discrete parameters are recovered via Spectral--ADMM and randomized rounding. Experiments on a coherent Ising machine achieve $94.95\\%$ accuracy on binary Fashion-MNIST (coats vs. sandals) at 1.1-bit precision, demonstrating resilience against low-bit representational collapse. Multi-class DLBO evaluations on 3-class Fashion-MNIST, 3-class Wine, and 3-class Digits further validate scalable convergence.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "physics.optics"
+  ]
+}

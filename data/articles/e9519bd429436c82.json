@@ -1,0 +1,13 @@
+{
+  "id": "e9519bd429436c82",
+  "title": "SAM3-LoRA: Parameter-Efficient Adaptation of a Concept-Promptable Foundation Model for Multi-Class Structural Defect Segmentation",
+  "link": "https://arxiv.org/abs/2609.00469",
+  "description": "arXiv:2609.00469v1 Announce Type: new \nAbstract: Promptable segmentation foundation models such as SAM3 accept an open-vocabulary text concept and return every instance matching it, but adapting them to a specialized domain by full fine-tuning is computationally prohibitive for the organizations that would benefit most. This study applies Low-Rank Adaptation (LoRA) to SAM3 for multi-class structural defect segmentation and examines both how such a model can be supervised from conventional annotation and whether the resulting efficiency gain transfers across datasets. Two contributions are methodological. First, we describe a supervision procedure that trains a concept-promptable model directly from COCO-style class-labeled instance segmentation by using the category name itself as the prompt, requiring no prompt templates, no synonym expansion, and no learned class embeddings. Second, we identify and mitigate a failure mode specific to this setting: because a conventional annotation file yields positive prompts exclusively, the model's presence prediction decouples from the text condition and degenerates into responding to any prompt, a collapse that is invisible to every metric computed on positive prompts alone. Exhaustive hard-negative prompting, in which every dataset category absent from an image is issued as a zero-detection query, addresses this at no annotation cost. Two adapter placements were compared under an identical protocol, updating 0.121% and 1.341% of model parameters. On a purpose-built tunnel lining dataset, pixel intersection-over-union improved from 0.017 to 0.338 and instance-level recall from 0.375 to 0.672; on the independent public Structural Defects Dataset, from 0.017 to 0.855 and from 0.574 to 1.000. Improvements were directionally consistent across ten metrics on both datasets, and the largest per-category gains occurred precisely where zero-shot competence was absent.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
