@@ -1,0 +1,14 @@
+{
+  "id": "891055879073f843",
+  "title": "Learning Zero-Shot Subject-Driven Video Generation Using 1% Compute",
+  "link": "https://arxiv.org/abs/2504.17816",
+  "description": "arXiv:2504.17816v4 Announce Type: replace \nAbstract: Subject-driven video generation (SDV-Gen) aims to produce videos of a specific subject by adapting a pretrained video model, enabling personalized and application-driven content creation. To achieve this goal, per-subject tuning methods require approximately 200 A100 GPU hours to generate a customized video, whereas zero-shot methods avoid per-subject tuning but typically rely on millions of subject-video pairs for the supervision, incurring massive network fine-tuning costs (10K-200K A100 GPU hours). We propose a data- and compute-efficient zero-shot SDV-Gen framework that avoids test-time per-subject tuning and the use of large-scale subject-video pairs. Our key idea decomposes SDV-Gen into (i) identity injection learned from subject-image pairs and (ii) motion-awareness preservation maintained by a small set of arbitrary videos. We optimize the two tasks with stochastic switching, using random reference-frame sampling and image-token dropout to prevent trivial first-frame copying. Our gradient analysis shows that the two objectives rapidly evolve toward nearly orthogonal update subspaces, explaining the stable optimization. Using CogVideoX-5B, we adapt a single model with 200K subject-image pairs and 4,000 arbitrary videos in 288 A100 GPU hours. This yields about 1% of compute compared to prior zero-shot baselines (i.e., 0.4% of VACE and 2.8% of Phantom) while using no subject-video pairs, yet remaining competitive in subject fidelity and motion quality. We show that the same recipe transfers to Wan 2.1-1.3B and Wan 2.2-5B.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

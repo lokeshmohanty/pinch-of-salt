@@ -1,0 +1,13 @@
+{
+  "id": "ccba643c25d17133",
+  "title": "TAME: Temporal-Aware Mixture-of-Experts for Text-Video Retrieval",
+  "link": "https://arxiv.org/abs/2609.02204",
+  "description": "arXiv:2609.02204v1 Announce Type: new \nAbstract: Text-Video Retrieval (TVR) retrieves videos that match a natural-language query, but extending image-text models such as CLIP to videos is fundamentally limited by the lack of temporal modeling. Videos exhibit frame-wise heterogeneity in appearance and motion, and compressing all frames into a single representation often obscures temporal structure and semantic transitions. To address this, we propose Temporal-Aware Mixture-of-Experts for Text-Video Retrieval (TAME), a CLIP-based framework that jointly models frame-level structure and temporal relations. First, we integrate sparse Mixture-of-Experts (MoE) layers into both CLIP encoders and apply frame-consistent routing on the vision branch so that experts specialize according to frame-level visual patterns while preserving the original vision-language alignment. Second, we introduce Frame-Temporal (FT) tokens that aggregate global cross-frame information and feed it back to each frame, enabling the visual encoder to capture long-range temporal dependencies without harming local details. Third, we design a Cross-Temporal Interaction and Aggregation (CTIA) module that refines frame-wise sentence-video similarities through staged temporal filtering and fusion. Experiments on standard TVR benchmarks show that TAME consistently improves over CLIP-based baselines. On MSR-VTT, it improves R@1 by 4.0 over CLIP4Clip, and also achieves consistent gains on DiDeMo, MSVD, LSMDC, and ActivityNet. The code is available at https://github.com/sejong-rcv/TAME.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
