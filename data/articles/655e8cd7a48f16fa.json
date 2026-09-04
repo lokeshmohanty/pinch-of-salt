@@ -1,0 +1,16 @@
+{
+  "id": "655e8cd7a48f16fa",
+  "title": "Ask Twice, Look Twice: Prompt Echoing Resolves the Question-First Paradox in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2607.15565",
+  "description": "arXiv:2607.15565v2 Announce Type: replace-cross \nAbstract: Where should the question go in a vision-language model (VLM) prompt: before the image or after it? Intuition says before: knowing what is asked should tell the model where to look. Yet across visual question answering benchmarks, question-first prompting consistently underperforms the image-first ordering recommended for frontier VLMs, a phenomenon we term the question-first paradox. We trace this paradox to a conflict between two stages of VLM computation. Logit-lens and attention probes show that question-first prompting steers perception, shifting image patch representations toward question-relevant concepts. But downstream, stranded behind hundreds of image tokens, the question is barely attended by the answer token, which instead commits to image-driven, often wrong answers. Causal attention knockout confirms that the answer reads the question only when it follows the image. This diagnosis yields a training-free fix: question echoing, restating the question on both sides of the image so one copy steers perception while the other is available at answer time. A similar division of labor appears in a fifty-year-old finding on human 'adjunct questions', where repeating a question before and after a passage improves comprehension. Echoing the image as well brings further gains by restoring the whole-image view otherwise lost by a causal decoder. The paradox holds across five open VLMs, costing up to 17.5 group-accuracy points. Echoed prompts recover most of the gap and, on NaturalBench and Winoground, surpass the best single-pass ordering by up to 19 group-accuracy points on Winoground, with no training, fine-tuning, or architecture change. The paradox reveals a tension between steering what a model sees and preserving access to what it was asked; echoing resolves this through prompt design. Project Page: https://rakshanda-cmu.github.io/ask-twice-look-twice/",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "eess.IV"
+  ]
+}

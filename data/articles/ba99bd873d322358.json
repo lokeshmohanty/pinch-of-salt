@@ -1,0 +1,14 @@
+{
+  "id": "ba99bd873d322358",
+  "title": "F-GRPO: Don't Let Your Policy Learn the Obvious and Forget the Rare",
+  "link": "https://arxiv.org/abs/2602.06717",
+  "description": "arXiv:2602.06717v3 Announce Type: replace-cross \nAbstract: Reinforcement Learning with Verifiable Rewards (RLVR) is commonly based on group sampling to estimate advantages and stabilize policy updates. In practice, computational limits often rule out very large groups, so training proceeds with finite rollout sets that can reinforce only the correct behavior they expose. At practical group sizes, updates can miss rare-correct trajectories while still containing mixed rewards, concentrating probability on more common sampled solutions. We derive the probability of such prompt-local tail-miss events as a function of group size, showing non-monotonic behavior, and in the categorical abstraction characterize how unsampled-correct mass can shrink even as total correct mass grows. Motivated by this analysis, we propose a difficulty-aware scaling coefficient, inspired by Focal loss, that down-weights updates on high-success sampled groups. Empirically, categorical simulation illustrates the same effect in the categorical setting, Maze provides a single-solution test, and LLM experiments include a representative GRPO group-size sweep together with fixed-$N$ transfer across GRPO, DAPO, and CISPO. On Qwen2.5-7B at $N{=}8$, our method improves average math pass@256 from 64.1 $\\rightarrow$ 70.3 (GRPO), 69.3 $\\rightarrow$ 72.5 (DAPO), and 73.2 $\\rightarrow$ 76.8 (CISPO); OOD pass@256 also improves in all three cases, without increasing group size or computational cost.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}
