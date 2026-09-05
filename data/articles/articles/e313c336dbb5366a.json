@@ -1,0 +1,14 @@
+{
+  "id": "e313c336dbb5366a",
+  "title": "Autonomous Agricultural Tractor: Integrated Weed Detection and LiDAR Navigation for Precision Paddy Farming",
+  "link": "https://arxiv.org/abs/2608.19004",
+  "description": "arXiv:2608.19004v1 Announce Type: cross \nAbstract: Site-specific weed management in paddy farming offers substantial reductions in herbicide use over conventional broadcast spraying, but field deployment has been limited by three persistent challenges: robust crop-row navigation under canopy where GNSS degrades, real-time visual discrimination between rice and morphologically diverse weeds, and the asymmetric cost of misclassifying rice as weed, which is irreversible.\n  This paper presents AgriNav, an integrated autonomous tractor system built around four ROS-coupled modules: a custom PyTorch reimplementation of WeedDet for rice detection, a parallel lightweight 1.68M-parameter CNN-FPN variant with asymmetric class weighting, an inverted-logic discrimination module that protects the rice class through a hardcoded confidence-gate veto, and a 6-state constant-velocity-turn-rate Extended Kalman Filter fusing GNSS, IMU, and wheel odometry with three-level outage bridging. Our primary system-level contribution is a four-mechanism LiDAR-camera fusion bridge that uses the navigation LiDAR for region-of-interest constraint, world-coordinate projection, ground-plane filtering, and bidirectional confidence fusion at zero additional hardware cost.\n  Simulation experiments demonstrate continuous position tracking through a 20-second GNSS outage, crop row detection confidence above 0.9 throughout operation, and rice-detection confidences from 0.32 to 0.95 across paddy, aerial, and post-flood imagery. The LiDAR ROI constraint reduces detection inference region by an estimated 30 to 50 percent.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

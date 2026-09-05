@@ -1,0 +1,15 @@
+{
+  "id": "485d70b86d080f53",
+  "title": "AtlasPatch: Scalable Foundation Model-based Tissue Detection and Patch Extraction for Computational Pathology",
+  "link": "https://arxiv.org/abs/2602.03998",
+  "description": "arXiv:2602.03998v3 Announce Type: replace-cross \nAbstract: Whole-slide image (WSI) preprocessing, including tissue detection and patch extraction, is critical computational pathology, yet remains a major bottleneck for large-scale workflows. Existing methods often rely either on threshold-based heuristics that are sensitive to staining variations, tissue fragmentation, and artifacts, or on patch-wise deep learning pipelines with substantially higher computational cost. We present AtlasPatch, a scalable high-throughput WSI preprocessing method built around a foundation-model-based tissue detector that operates at thumbnail resolution: a single thumbnail-level forward pass yields a tissue mask that directly guides patch coordinate generation at the target desired magnification, avoiding repeated patch-level inference. The proposed detector's robustness and efficiency is driven by two coupled contributions: (i) a parameter-efficient adaptation of the SAM2 foundation model that updates only its layer-normalization parameters (0.076% of model weights), and (ii) a curated and semi-manually annotated multi-cohort dataset of 30,000 WSI thumbnail-mask pairs deliberately spanning multiple organs, scanners, tissue appearances, and artifacts. The detector is coupled with pyramid-aware contour mapping from thumbnail to full-resolution slide coordinates, enabling direct patch coordinate generation at the target magnification and parallelized high-throughput patch extraction. AtlasPatch's tissue detection achieves a precision of 0.986 and remains robust across slide variations. Compared with widely used deep-learning preprocessing methods, AtlasPatch is up to 16x faster while preserving downstream multiple-instance learning performance across six slide-level classification tasks. These results position AtlasPatch as a frontier of efficient preprocessing in large-scale computational pathology and pathology foundation models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "q-bio.QM"
+  ]
+}

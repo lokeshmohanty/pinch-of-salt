@@ -1,0 +1,13 @@
+{
+  "id": "1fa1af3196d7e42c",
+  "title": "When Semantics Saturate or Emerge: Adaptation-Conditional Semantic Utility in Source-Free Cross-Domain Few-Shot Learning",
+  "link": "https://arxiv.org/abs/2608.06673",
+  "description": "arXiv:2608.06673v1 Announce Type: new \nAbstract: Language descriptions in source-free cross-domain few-shot learning (SF-CDFSL) are often selected according to zero-shot accuracy obtained with a frozen vision--language model. This paper asks whether that ranking remains valid after target-domain visual adaptation. Under a strictly paired protocol, we compare a generic class-name template with fixed detailed class descriptions before and after visual Low-Rank Adaptation (LoRA) on EuroSAT, CropDisease, ISIC, and ChestX. Let $\\deltazero$ and $\\deltalora$ denote the Detailed-minus-Base accuracy before and after adaptation, respectively. Two recurring regimes emerge. In \\emph{semantic saturation}, $\\deltazero>0$ but $0<\\deltalora\\ll\\deltazero$: on EuroSAT and CropDisease, initial gains of 8.13--21.54 percentage points contract to 0.69--2.96 points after LoRA. In \\emph{semantic emergence}, $\\deltazero\\leq0$ but $\\deltalora>0$: on ISIC and ChestX, detailed descriptions become more useful only after the visual representation is updated. Training trajectories and sample-level decomposition show that saturation is driven mainly by Base-LoRA recovering errors already solved by detailed semantics, whereas emergence is associated with prediction turnover and newly formed Detailed-only correct decisions. Fixed-point-free shuffled-semantic controls, a second CLIP backbone, and multiple random seeds support the broad pattern while identifying ChestX 1-shot as a weak boundary case. These findings establish that zero-shot prompt quality is an incomplete proxy for adaptation-anchor quality and motivate evaluating language on both sides of the adaptation boundary.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

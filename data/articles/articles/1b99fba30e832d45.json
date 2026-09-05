@@ -1,0 +1,14 @@
+{
+  "id": "1b99fba30e832d45",
+  "title": "Coresets Before Score Sets: Evaluation-Unsupervised Prompt Subset Selection for LLM Benchmarks",
+  "link": "https://arxiv.org/abs/2607.09739",
+  "description": "arXiv:2607.09739v1 Announce Type: new \nAbstract: We study LLM benchmark coreset selection: selecting a small subset of prompts over multiple benchmarks whose induced model scores and rankings approximate those obtained from the full benchmark suite. In evaluation-unsupervised benchmark coreset selection (our approach), the selection algorithm uses no model evaluation outcomes, and operates on a fine granularity by producing subsets of prompts over multiple benchmarks rather than producing a sub-collection of entire benchmarks. We use submodular subset selection, and we develop and evaluate many different submodular functions for this purpose, including determinantal point process (DPP) based approaches, submodular mutual information functions, and facility location-based functions. On a new large-scale suite of 35 heterogeneous benchmarks spanning five different capability categories, 18 frontier LLMs, and over 61K prompts, we find that the facility location (FL) function operating exclusively on inexpensive semantic prompt embeddings preserves LLM scores better than twelve separate score-based and diversity-based baselines, across a range of coreset budgets. Moreover, we show our proposed objective is not limited to the evaluation-unsupervised regime: in the setting where only a handful of whole benchmarks must be selected and a large amount of model scores are available, the same objective matches or outperforms state-of-the-art baselines on the MMLU and MTEB leaderboards, while being substantially cheaper to compute. Together, our results suggest that submodularity, in general, is a strong and reliable tool for benchmark compression.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "eb534c790972bede",
+  "title": "The JEPA Predictor: A Transferable Operator for Occluded Feature Completion",
+  "link": "https://arxiv.org/abs/2607.16274",
+  "description": "arXiv:2607.16274v2 Announce Type: replace \nAbstract: Joint-Embedding Predictive Architectures (JEPAs) train a predictor jointly with their encoder, but downstream deployment discards the predictor and reads features from the encoder alone. The predictor is, by construction, a learned operator from visible-context features to features at masked positions, the structure a partial-view classifier needs. We show that this operator is portable across encoder families. We first establish that, at heavy mask, retaining the frozen predictor on a JEPA encoder substantially closes the accuracy gap against the strongest non-JEPA discriminative baselines. We then bolt the frozen predictors of I-JEPA and V-JEPA 2 onto four non-JEPA hosts (CLIP, DINOv3, DINOv2, MAE) through a single linear projection between feature spaces, fit in closed form on 500 ImageNet-1k images. Across both ImageNet-9 and Stanford Dogs and across three mask fractions, the lift over each host's masked-encoder baseline grows monotonically with the mask fraction K in every host-donor pair. CLIP paired with the I-JEPA predictor recovers most of the accuracy that masking removed on ImageNet-9 at heavy occlusion, and lifts fine-grained Stanford Dogs from 15.9% to 52.1% (+36 pp). The mechanism is identifiable: the projection pays a fixed cost on visible patches and the predictor provides a growing benefit on masked patches; the benefit dominates the heavy-occlusion regime. At low K on fine-grained classification the projection cost exceeds the benefit, defining the boundary where the linear bridge breaks down. The frozen JEPA predictor functions as a portable operator for occluded feature completion across encoder families, requiring no retraining of either model while fitting matched linear probes per mask fraction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

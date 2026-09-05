@@ -1,0 +1,13 @@
+{
+  "id": "55d91bf9f4c68eb8",
+  "title": "Weakly Supervised Polar Low Segmentation in Sentinel-1 SAR Imagery",
+  "link": "https://arxiv.org/abs/2608.14366",
+  "description": "arXiv:2608.14366v1 Announce Type: new \nAbstract: Polar lows are intense maritime cyclones that form rapidly at high latitudes. Deep learning can detect them in Synthetic Aperture Radar (SAR) imagery, but pixel-level segmentation remains an open challenge. No pixel-level masks are available for training, and a polar low's extent is inherently subjective, with diffuse boundaries that even experts delineate inconsistently. We propose Constrained Region Erasing with Soft Targets (CREST), a Weakly Supervised Semantic Segmentation (WSSS) framework that generates masks solely from image-level labels. Our approach builds on Adversarial Erasing (AER), which iteratively mines discriminative regions, erases them, and retrains a classifier to reveal complementary cues that become pseudo-labels for segmentation. However, standard AER also collects irrelevant background features, degrading pseudo-label quality. CREST addresses this with (i) a Constrained Ordinal Region Expansion (CORE) module that encodes the spatial-connectedness prior of polar lows, constraining region expansion from a high-confidence seed, and (ii) a Dynamic Bootstrapping (DB) loss that treats the mining order as a proxy for label reliability, attenuating supervision from noisier, later-mined regions. On Sentinel-1 SAR data, CREST follows the cyclone structure more closely than standard AER, and returns a multi-class rather than binary mask whose classes indicate the reliability assigned to each region. We further evaluate on BUS-UCLM breast ultrasound and PASCAL VOC person data, whose targets satisfy the same connectedness prior but come with the dense masks the SAR data lacks. On both datasets, CREST performs better than the equivalent AER pipeline under identical settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

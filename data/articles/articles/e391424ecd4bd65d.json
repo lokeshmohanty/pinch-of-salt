@@ -1,0 +1,14 @@
+{
+  "id": "e391424ecd4bd65d",
+  "title": "Cat-DPO: Category-Adaptive Safety Alignment",
+  "link": "https://arxiv.org/abs/2604.17299",
+  "description": "arXiv:2604.17299v3 Announce Type: replace-cross \nAbstract: Aligning large language models with human preferences must balance two competing goals: responding helpfully to legitimate requests and reliably refusing harmful ones. Most preference-based safety alignment methods collapse safety into a single scalar that is applied uniformly to every preference pair. The result is a model that looks safe on average but stays relatively unsafe on a minority of harm categories. We cast safety alignment as a per-category constrained optimization problem and derive Cat-DPO, a direct-preference-optimization algorithm with a separate adaptive safety margin for each harm category. The margin tightens when the model still produces unsafe responses on a category and relaxes once the model catches up, so the training signal tracks each category's current difficulty rather than averaging under one global rate. Across two LLM backbones and six preference-learning baselines, Cat-DPO improves aggregate helpfulness and harmlessness and compresses per-category safety variance and the best-to-worst gap, offering a drop-in per-category refinement of direct preference safety alignment.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

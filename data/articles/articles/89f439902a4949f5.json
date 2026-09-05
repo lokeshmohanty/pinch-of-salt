@@ -1,0 +1,13 @@
+{
+  "id": "89f439902a4949f5",
+  "title": "Multi-Image Visual Token Pruning in Large Visual Language Models",
+  "link": "https://arxiv.org/abs/2608.26806",
+  "description": "arXiv:2608.26806v1 Announce Type: new \nAbstract: With the growing demand for processing multiple image sequences in real-world applications, various visual token pruning methods have emerged to mitigate the computational and context length constraints faced by Large Vision Language Models (LVLMs). However, most existing pruning approaches rely on static strategies that struggle to adapt across different architectural LVLMs and multi-image scenarios, and are additionally constrained by their dependence on attention computations that are incompatible with efficient techniques like FlashAttention. To address these limitations, we propose a training-free, Adaptive Visual Token Pruning (AVTP) framework, applicable to diverse LVLM architectures. We strategically determine pruning layers based on empirical analysis of visual attention distributions across various LVLMs, and implement adaptive pruning ratios in multi-image contexts where images of higher importance retain proportionally more tokens. We conduct extensive experiments across different LVLMs to demonstrate the effectiveness and robustness of AVTP. Specifically, Qwen3VL-8B achieves 2 times inference speedup while maintaining 96.1\\% of its original accuracy on multiple multi-image benchmarks, InternVL3.5-8B retains 94.1\\% accuracy, and LLaVA-OV-7B even exceeds its original baseline performance. Our code is available at \\href{https://github.com/zry13/AVTP}{this link}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

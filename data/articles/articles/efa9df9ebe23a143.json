@@ -1,0 +1,13 @@
+{
+  "id": "efa9df9ebe23a143",
+  "title": "Lag-aware cross-hand alignment for dual-hand action segmentation",
+  "link": "https://arxiv.org/abs/2607.26215",
+  "description": "arXiv:2607.26215v1 Announce Type: new \nAbstract: Dual-hand action segmentation commonly fuses left- and right-hand representations at identical temporal indices, although coordinated hand transitions may occur with nonzero and time-varying delays. We introduce Lag-Aware Cross-Hand Alignment (LACA), a lightweight module that explicitly estimates directional temporal-offset distributions between hand-specific feature streams. LACA retrieves cross-hand information from the estimated offsets and incorporates a learned null state to suppress transfer when no compatible cross-hand transition is supported. Alignment is supervised using compatibility-aware targets derived automatically from frame-level training annotations, without requiring additional labels. Analysis of the HA-ViD and ATTACH training annotations reveals robust nonzero cross-hand matches for 44.7% and 48.9% of transition anchors, respectively, compared with 18.6% and 21.3% under temporally shifted controls. When integrated into Polyphony, LACA improves the two-hand mean F1@50 from 40.4 to 42.5 and boundary F1 from 56.5 to 59.6 on HA-ViD, and from 19.9 to 21.8 and 44.7 to 47.9, respectively, on ATTACH, relative to our reproduced Polyphony baseline. These gains require only approximately 0.0086 million additional trainable parameters. We further introduce LACA-C, a future-free variant that restricts alignment and the complete inference pipeline to current and past observations. On ATTACH, LACA-C achieves 83.6% transition-cue recall, a seed-averaged median availability delay of 233~ms, 0.72 false cues per minute, and segmentation-stage throughput of 224.9 current-position predictions per second. These results demonstrate that explicit cross-hand temporal alignment improves both action segmentation and boundary localization while supporting timely future-free perception.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

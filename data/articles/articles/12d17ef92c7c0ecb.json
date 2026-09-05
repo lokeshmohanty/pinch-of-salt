@@ -1,0 +1,13 @@
+{
+  "id": "12d17ef92c7c0ecb",
+  "title": "Advanced Pixel Diffusion Model with Guided Sparse Global Refinement",
+  "link": "https://arxiv.org/abs/2609.00798",
+  "description": "arXiv:2609.00798v1 Announce Type: new \nAbstract: Pixel-space diffusion has recently emerged as a promising direction for high-fidelity image generation by modeling images directly in the original pixel domain. However, pixel-space diffusion is computationally demanding due to the extremely high dimensionality of natural images. For efficiency, existing pixel diffusion models either compromise fine details with large-patch tokenization or confine subsequent refinement within individual patches. Such intra-patch refinement inevitably restricts structural continuity across patch boundaries and long-range token interactions, limiting refinement quality. To address these issues, we propose PixSGR, a novel Pixel diffusion framework with Sparse Global Refinement tailored for modeling the distribution of natural images directly in pixel space. PixSGR starts from a supervised low-channel bottleneck to efficiently capture the low-dimensional manifold of natural images. It then progressively expands the channel dimensionality and spatial resolution to recover increasingly fine-grained structures. At the spatial refinement stage, coarse-scale attention maps preselect globally relevant interactions to pre-sparsify fine-scale attention, enabling non-local refinement beyond isolated patches without the quadratic cost of dense attention. Extensive experiments on ImageNet validate the effectiveness of PixSGR. It achieves an FID of 1.51 at 256$\\times$256 and maintains performance when scaled to 512$\\times$512, attaining an FID of 1.60.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "c96719c1d21b3c29",
+  "title": "FormalEvolve: Neuro-Symbolic Evolutionary Search for Diverse Autoformalization",
+  "link": "https://arxiv.org/abs/2603.19828",
+  "description": "arXiv:2603.19828v4 Announce Type: replace \nAbstract: Autoformalization aims to produce formal statements that compile and faithfully preserve the intended meaning of informal mathematics. Yet standard single-output evaluation collapses this many-to-many structure into a single prediction. For downstream proving, this granularity is too coarse: a formal statement is not merely a faithful translation endpoint, but also a prover-facing interface whose structure can alter proof search under a fixed budget. We therefore recast autoformalization as budgeted test-time search: FormalEvolve maintains a compilation-feasible archive for reuse and returns a deduplicated, semantically accepted repertoire for evaluation and downstream proving. It expands the archive with LLM-driven mutation, crossover, bounded patch repair, and symbolic abstract syntax tree (AST) rewrites for structural diversity. Under a generator-call budget of T=100 with a fixed LLM semantic judge, FormalEvolve reaches SH@100 of 58.0% on CombiBench and 84.9% on ProofNet, improving over all no-archive controls while reducing the cross-problem concentration of semantic successes. Under a fixed B=64 prover budget, these repertoires improve theorem-complete proving over the matched no-archive control. Additional stronger-base statement-generation experiments show that archive-search gains persist with stronger seed and repair models.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

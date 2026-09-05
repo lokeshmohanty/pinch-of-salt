@@ -1,0 +1,15 @@
+{
+  "id": "06af21e09a12d958",
+  "title": "Unleashing the Power of LLMs in Dense Retrieval with Query Likelihood Modeling",
+  "link": "https://arxiv.org/abs/2504.05216",
+  "description": "arXiv:2504.05216v5 Announce Type: replace-cross \nAbstract: Dense retrieval is a crucial task in Information Retrieval (IR), serving as the basis for downstream tasks such as re-ranking and augmenting generation. Recently, large language models (LLMs) have demonstrated impressive semantic understanding capabilities, making them attractive to researchers focusing on dense retrieval. While LLMs, as decoder-style generative models, excel in language generation, they often fall short in modeling global information due to a lack of attention to subsequent tokens. Drawing inspiration from the classical word-based language modeling approach for IR, specifically the query likelihood (QL) model, we aim to leverage the generative strengths of LLMs through QL maximization. Rather than employing QL estimation for document ranking, we propose an auxiliary task of QL maximization to enhance the backbone for subsequent contrastive learning of the retriever. We introduce our model, LLM-QL, which incorporates two key components: Attention Block (AB) and Document Corruption (DC). AB blocks the attention of predictive tokens to the document tokens before the document's ending token, while DC corrupts a document by masking a portion of its tokens during prediction. Evaluations on the in-domain (MS MARCO) and out-of-domain dataset (BEIR) indicate LLM-QL's superiority over other LLM-based retrievers. Furthermore, comprehensive analyses also validate the efficacy of LLM-QL and its components.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

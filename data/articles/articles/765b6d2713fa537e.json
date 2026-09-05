@@ -1,0 +1,14 @@
+{
+  "id": "765b6d2713fa537e",
+  "title": "Toward a More Ethical Facial Age Estimation: A Generalized Zero-Shot Benchmark Without Training on Children's Data",
+  "link": "https://arxiv.org/abs/2605.29230",
+  "description": "arXiv:2605.29230v2 Announce Type: replace \nAbstract: Age estimation from facial images typically relies on training data that includes images of minors, a practice that raises ethical, legal, and privacy concerns and that child-data governance frameworks explicitly advise against. While the task remains relevant (e.g., for detecting child sexual abuse imagery), we advocate against using data from minors entirely and quantify what the exclusion costs in accuracy. We formalize age estimation without children's training data as a generalized zero-shot learning (GZSL) problem: age intervals present during training are seen classes and withheld intervals are unseen, with models evaluated jointly on both. The generalized setting, rather than conventional zero-shot evaluation on unseen classes alone, is the appropriate one here because a deployed estimator must operate across the entire lifespan, not only on the interval withheld from it. Revisiting six widely used datasets, we introduce standardized splits with strict age-group separation. For datasets with identity annotations, subject-age-exclusive splits prevent identity leakage across the seen/unseen boundary. Evaluating nine state-of-the-art age estimation methods under this protocol reveals that all of them fail to generalize to unseen age groups, suffering substantial degradation --- on average 46.4%, and up to 52.8% --- relative to the supervised baseline. Moreover, models do not simply degrade: they systematically anchor predictions for unseen ages to nearby seen classes, a manifestation of the well-known seen-class bias in generalized zero-shot learning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

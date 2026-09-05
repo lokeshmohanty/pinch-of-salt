@@ -1,0 +1,13 @@
+{
+  "id": "ca2d6621ae71a0e3",
+  "title": "Ground, Cover, and Refine: Evidence-Centric Frame Selection for Long-Video Question Answering",
+  "link": "https://arxiv.org/abs/2608.01660",
+  "description": "arXiv:2608.01660v1 Announce Type: new \nAbstract: Long-video question answering requires identifying sparse yet critical evidence from videos containing thousands of frames under a constrained visual-token budget. Existing methods either select query-aware frames in a single pass or rely on timestamped text solely as retrieval guidance, leading to two key limitations. First, selected frames tend to cluster around local relevance peaks, and once the budget is exhausted, omitted evidence cannot be recovered. Second, textual and visual evidence remain weakly aligned. We propose GCR, a training-free framework that casts fixed-budget frame selection as a joint evidence curation problem. Ground converts timestamped text into temporal events, selects query-relevant real frame anchors, and renders each event text onto its temporally aligned frame. Cover supplements grounded events with direct visual anchors for complementary visual evidence and applies global maximal marginal relevance to preserve diverse context. Refine revisits omitted temporal regions and replaces the weakest revisable context frame with a real-frame medoid---but only when the medoid offers greater evidence value. GCR maintains a fixed number of chronologically ordered frames and requires no VLM training or architectural modification. Experiments on LongVideoBench and Video-MME, across three 7B backbones and frame budgets of 8, 32, and 64, demonstrate consistent improvements in long-video QA. With the 7B LLaVA-OV backbone and 32 frames, GCR achieves 64.25% and 62.15% on the two benchmarks, outperforming the strongest reproduced baselines by 2.54 and 1.93 percentage points, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

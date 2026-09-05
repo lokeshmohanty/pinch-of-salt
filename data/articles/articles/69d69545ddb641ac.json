@@ -1,0 +1,13 @@
+{
+  "id": "69d69545ddb641ac",
+  "title": "Gated Spatial Redundancy Projection for Pathology Transformer Attentions",
+  "link": "https://arxiv.org/abs/2608.08374",
+  "description": "arXiv:2608.08374v2 Announce Type: replace \nAbstract: Transformer models are increasingly used for whole-slide image analysis in computational pathology. Yet, WSIs differ fundamentally from natural images: neighbouring patches often contain highly similar tissue type, stain, texture, and cellular composition. We identify this local spatial redundancy as a pathology-specific failure mode of self-attention, where dominant neighbourhood features can be repeatedly mixed into patch-tokens and weaken subtle diagnostic or prognostic deviations. We propose Gated Spatial Redundancy Projection (Gated SRP), a lightweight drop-in correction module for self-attention layers. For each patch token and attention head, Gated SRP estimates a local redundancy axis from neighbouring value vectors, projects the attention output onto this axis, and applies a learned signed gate to correct the redundancy-aligned component geometrically. Across five TCGA survival cohorts, Gated SRP obtains the highest mean C-index among the compared attention variants in all cohorts, with an average improvement over the base attention, while adding only +0.02% parameters. Across five slide-level classification datasets, it improves the base attention on 12 of 16 reported metrics and achieves the best AUC on three datasets. Code is publicly available at https://github.com/AtlasAnalyticsLab/GatedSRP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

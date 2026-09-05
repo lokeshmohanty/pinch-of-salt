@@ -1,0 +1,13 @@
+{
+  "id": "a72037f57c67de45",
+  "title": "RECAP-Forcing: Retaining Content Appearances for Long Video Generation",
+  "link": "https://arxiv.org/abs/2608.26671",
+  "description": "arXiv:2608.26671v1 Announce Type: new \nAbstract: Long autoregressive video generation faces a fundamental memory challenge: with a finite attention window, a model must decide which information from an ever-expanding history to retain. Existing methods organize memory temporally, preserving recent frames while compressing or discarding older ones. We instead propose RECAP-Forcing, organizing memory by appearance novelty. A long video is not merely a sequence of frames, but an evolving cast of subjects, objects, and scenes whose identities must remain consistent over time. We organize memory by retaining the KV cache associated with newly appearing content--such as entering subjects, disoccluded regions, and newly introduced scenes--at the moment it first becomes visible, prioritizing novelty over recency. Memory should scale with the amount of newly introduced content, rather than with video length. This appearance-indexed memory makes long-range consistency an explicit property of the memory structure. Our framework unifies two mechanisms under this single principle. At the beginning of a video, when all visible content is novel, an attention sink preserves the initial scene. As the video evolves, an optical-flow-based novelty bank extends the same principle by selectively retaining newly revealed content. As a training-free inference method with no additional learnable parameters, RECAP-Forcing consistently improves visual quality and semantic fidelity across multiple strong baselines and outperforms existing memory methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

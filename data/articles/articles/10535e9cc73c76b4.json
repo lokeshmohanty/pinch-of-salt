@@ -1,0 +1,14 @@
+{
+  "id": "10535e9cc73c76b4",
+  "title": "A Lightweight Multimodal Vision-Language Framework for Early-Stage Anatomical Green Fruit Classification in Commercial Orchards",
+  "link": "https://arxiv.org/abs/2608.24935",
+  "description": "arXiv:2608.24935v1 Announce Type: new \nAbstract: Accurate identification of early-stage apple fruitlet anatomical structures, including the calyx, fruitlet body, and peduncle, is essential for robotic thinning, crop-load management, and other precision orchard operations. This study presents a lightweight multimodal vision-language framework that adapts TinyCLIP for fine-grained fruitlet anatomy classification in complex orchard environments. A dataset of 600 high-resolution RGB images collected from Scilate and Scifresh apple orchards was converted into 224 x 224 image patches and annotated for three anatomical classes. Domain-specific language prompts, such as ``a photo of a class,'' were used to guide multimodal alignment between orchard imagery and horticultural structures. A sliding-window inference strategy with a stride of 112 pixels aggregates patch-level predictions into spatial heatmaps, enabling interpretable whole-image localization of fruitlet components relevant to robotic thinning. Patch-level evaluation on an NVIDIA T4 GPU achieved F1-scores of 0.95 for calyx, 0.98 for fruitlet, and 0.85 for peduncle, with a macro-F1 score of 0.93. Deployment-oriented optimization using ONNX and TensorRT enabled efficient inference on NVIDIA Jetson hardware, preserved accuracy under INT8 quantization, and supported model sizes of approximately 127-137 MB with millisecond-level patch inference. These results demonstrate that lightweight vision-language models can provide interpretable and edge-deployable perception for automated fruitlet analysis and future robotic thinning systems. The source code and implementation details are publicly available at https://github.com/WilliamBu1/A-Lightweight-Vision-Language-Model-for-Early-Stage-Fruitlet-Classification-in-Apple-Orchards.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

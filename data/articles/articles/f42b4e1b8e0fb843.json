@@ -1,0 +1,15 @@
+{
+  "id": "f42b4e1b8e0fb843",
+  "title": "ImpactHO: Importance-Aware KV Cache Transfer for Multi-User Edge LLM Handover",
+  "link": "https://arxiv.org/abs/2608.10545",
+  "description": "arXiv:2608.10545v1 Announce Type: cross \nAbstract: Edge LLMs must preserve inference continuity when a user hands over between edge nodes, requiring key-value (KV) cache transfer to the target node. However, simultaneous handovers saturate the backhaul, preventing full cache delivery within the mobility-imposed transfer window. Rather than allocating bandwidth as if all cache entries were equally valuable, we order each user's KV cache by importance and transmit only its most informative fraction, turning token-level sparsity into communication savings. We cast the transfer as a multi-user backhaul allocation problem that maximizes average accuracy across users. Each user's partial-cache accuracy serves as its utility: a sigmoid that fits measurements on the RULER benchmark with $R^2>0.99$ across models and context lengths. Because importance ordering front-loads the high-value entries, the concave region of the accuracy curve spans nearly the entire cache. Our proposed allocator keeps served users within this region, making each per-slot allocation problem convex. The optimum is derived via a closed-form weighted water-filling solution that generalizes information-theoretic water-filling and enables online scheduling. The proposed allocator attains over 93.7% average accuracy in a 500ms transfer window, within 0.5pp of the full-cache ceiling, and reaches 98.2-99.5% of a clairvoyant upper bound.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NI",
+    "cs.AI",
+    "cs.DC"
+  ]
+}

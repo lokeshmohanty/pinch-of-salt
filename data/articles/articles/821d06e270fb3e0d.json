@@ -1,0 +1,13 @@
+{
+  "id": "821d06e270fb3e0d",
+  "title": "When Should a Network Emit Geometry, and When Should It Detect It? Readout, Reconciliation, and Representation in Floorplan Vectorization",
+  "link": "https://arxiv.org/abs/2608.25608",
+  "description": "arXiv:2608.25608v1 Announce Type: new \nAbstract: A network trained to recover the walls, openings, and rooms of a rasterized floorplan can produce its output in two ways: by emitting the geometry as an autoregressive coordinate sequence, or by detecting it on dense junction and centerline heatmaps and assembling a graph. We compare the two readouts on the same trained network. On real scans (CubiCasa5K) detection is better on every wall measure (+2.7 wall F1 at tolerance 0.05, +5.1 at 0.015; paired bootstrap intervals exclude zero), and reading an opening heatmap the decoder never used raises opening F1 by 2.6x without retraining. Within real scans the readout's advantage grows with plan size and reverses on small plans; on clean vector renders sequence decoding is better by 5 to 8 points where its training covered the render style, while under full domain shift the readout, given calibrated thresholds, stays ahead; neither ink density nor plan size explains the reversal. With matched data and recipe, a room-centric system with a reconciliation step and a wall-first sequence model reach comparable wall quality, so the output representation matters less than is usually assumed. A prior from the other family helps at the output but not at the input: deterministic fusion of the two outputs raises wall F1 by 7 points, whereas conditioning one model on the other's output gives no gain in three forms, including two ground-truth-content controls. We also provide an edit-cost metric that scores a draft by the human work needed to correct it, corrected CubiCasa5K annotations, and ResPlan-FP, a CC BY 4.0 benchmark of 16,998 plans with frozen splits and three baseline tracks. Code, the benchmark, and the corrected annotations are available at https://github.com/Cyprinus12138/fpvec-lab",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

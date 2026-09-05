@@ -1,0 +1,13 @@
+{
+  "id": "69791dfb6a5df252",
+  "title": "ISRS-DETR: Detection-Guided Click Propagation for Remote Sensing Interactive Segmentation",
+  "link": "https://arxiv.org/abs/2608.02468",
+  "description": "arXiv:2608.02468v1 Announce Type: new \nAbstract: Interactive segmentation reduces the prohibitive cost of pixel-level annotation by allowing users to delineate objects with a few clicks. However, applying this paradigm directly to remote sensing imagery is non-trivial: ultra-high resolutions, small object sizes, and sparse spatial distributions all degrade segmentation quality. Recent work has addressed the resolution barrier and achieved competitive results in interactive segmentation for remote sensing (ISRS). However, they treat all instances of a class within an image as a single objective target. Consequently, interactions spent on one object contribute nothing to its same-class neighbours, and satisfactory masks may demand up to 40 clicks per image, hindering the practicality of these frameworks. We observe that remote sensing scenes exhibit markedly strong inter-object correlation, meaning a single clicked object is highly informative about the rest of its category. Building on this, we propose ISRS-DETR, a detection-guided interactive segmentation framework that injects object-level evidence into both training and inference. Our ISRS-DETR employs an RF-DETR decoder with the interactive segmentation backbone to localise co-occurring same-class objects, and introduces a Dynamic Top-K Click Selection strategy that retains only reliable proposals and converts each into a simulated click, so one user interaction propagates across an entire class. Experiments on three standard remote sensing benchmarks show that ISRS-DETR achieves state-of-the-art accuracy while substantially reducing Number of Clicks per Image (NoC-I). All codes and data splits will be released for reproducibility upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

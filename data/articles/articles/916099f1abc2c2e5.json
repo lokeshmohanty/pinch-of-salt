@@ -1,0 +1,14 @@
+{
+  "id": "916099f1abc2c2e5",
+  "title": "Learning to Navigate Efficiently with Only 0.58M Trainable Parameters",
+  "link": "https://arxiv.org/abs/2607.11029",
+  "description": "arXiv:2607.11029v1 Announce Type: cross \nAbstract: Recent progress in visual navigation has largely been driven by scale: end-to-end policies with hundreds of millions of parameters trained on billions of frames or large-scale simulated data. We ask how much of this scale a single task family actually requires, and what structure can substitute for it. We propose a decomposed navigation model in which operations with known closed-form structure, such as projective geometry, occupancy, and coordinate transforms, are computed analytically and serve as interfaces between three small learned modules: an egress predictor that grounds the episode goal as a local subgoal in the current view, a navigation predictor that estimates a goal-conditioned posterior over where trajectories travel, and an endpoint-pinned residual diffusion generator that samples trajectory shapes from this posterior. The system trains only 0.58M out of a total of 22.7M parameters, on 44k frames in under one GPU-hour, yet approaches the performance of state-of-the-art models on navigation tasks across 6060 point-goal episodes and 60 environments, while having 233x fewer trainable parameters, the lowest collision rate among all evaluated methods, and 50 Hz inference speed. The decomposition further transfers to no-goal exploration by retraining only the 123k-parameter egress head, and its failure modes under sensor corruption are transparent and analytically correctable.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

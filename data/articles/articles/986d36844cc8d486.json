@@ -1,0 +1,13 @@
+{
+  "id": "986d36844cc8d486",
+  "title": "Not All Attention Heads Contribute to Critical Visual Token Selection: Head-Aware Pruning Matters More",
+  "link": "https://arxiv.org/abs/2608.25332",
+  "description": "arXiv:2608.25332v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) have exhibited impressive performance across diverse visual scenarios. However, this success comes at the cost of explosive growth in visual tokens, which imposes substantial memory and computational overhead during inference, ultimately increasing latency. To improve VLM inference efficiency, a typical class of visual token pruning methods estimates token importance by aggregating attention scores across all heads in the pruning layer of the Large Language Model (LLM) backbone and prunes tokens based on aggregated scores. However, in this paper, we reveal a compelling phenomenon: the capability to pinpoint critical visual tokens is concentrated within a small fraction of heads. Aggregation exclusively on these heads can improve task performance. Inspired by this observation, we propose ProViP, a training-free progressive visual token pruning framework. ProViP first removes redundant visual tokens based on the embedding similarity of input tokens before reasoning of the LLM backbone, and then further prunes tokens during reasoning via head-aware pruning. Experiments demonstrate that ProViP delivers outstanding task performance and inference efficiency. For instance, when applied to LLaVA-1.5-7B, ProViP retains 95.9% of the original performance and achieves 1.62x inference speedup under an 88.9% pruning ratio.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

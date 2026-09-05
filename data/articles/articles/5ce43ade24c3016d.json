@@ -1,0 +1,13 @@
+{
+  "id": "5ce43ade24c3016d",
+  "title": "ARCOS: Zero-shot Boundary Localization for Corneal Layer Segmentation Across Optical Coherence Tomography Devices",
+  "link": "https://arxiv.org/abs/2609.03668",
+  "description": "arXiv:2609.03668v1 Announce Type: new \nAbstract: Accurate segmentation of corneal layers in optical coherence tomography (OCT) is essential for quantitative assessment of corneal morphology, including layer thickness and structural changes associated with disease or surgery. However, automatic segmentation remains challenging because corneal interfaces are thin, affected by speckle noise, and variable across acquisition devices. In this work, we propose ARCOS, a patch-based zero-shot boundary localization framework for corneal layer segmentation in clinical anterior-segment OCT images. Rather than performing conventional region classification, the method predicts boundary heatmaps for the main corneal interfaces from overlapping native-resolution patches. Patch-level predictions are stitched across the full B-scan and converted into boundary locations to obtain continuous, anatomically ordered layer segmentations. The network combines multi-scale feature fusion with a self-conditioned refinement module that uses intermediate boundary information to improve local heatmap predictions while preserving spatial detail. The method was evaluated on clinical OCT images acquired from multiple devices and compared with representative segmentation baselines using boundary localization and derived thickness metrics. The proposed method achieved an off-by-one boundary localization accuracy of 95.1% and a mean absolute boundary error of 0.514 pixels on the matched-device test set. In zero-shot cross-device evaluation, it maintained an average off-by-one accuracy of 84.3% and a mean absolute boundary error of 0.855 pixels across unseen acquisition devices, outperforming the baseline models. Thickness estimates derived from the predicted boundaries showed low error across corneal regions, supporting the method's use for quantitative corneal OCT analysis.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

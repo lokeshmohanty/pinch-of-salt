@@ -1,0 +1,13 @@
+{
+  "id": "c5f8bede224902ad",
+  "title": "PAST: Prompt-Adaptive Sampling Termination for Efficient Diffusion Model",
+  "link": "https://arxiv.org/abs/2608.06794",
+  "description": "arXiv:2608.06794v1 Announce Type: new \nAbstract: While diffusion models have made significant progress in text-to-image tasks, they still exhibit limitations when directly optimizing downstream objectives. Although Reinforcement Learning (RL) enables targeted optimization, existing methods are generally constrained by low-efficiency fine-tuning and sparse rewards. To address these challenges, we propose PAST, which provides differentiated rewards while adaptively regulating training episode length by jointly perceiving denoising progress and prompt difficulty. Specifically, we design an intrinsic reward paradigm to compensate for sparse extrinsic rewards and guide the model to explore paths that diverge more efficiently from noise patterns. We further provide theoretical justification for intrinsic rewards. Then, PAST dynamically monitors denoising completion and semantic alignment between image structures and prompt semantics. When both metrics satisfy generation requirements, the system adaptively terminates training. This enables appropriate allocation of episode lengths based on prompt difficulty and the current generation process. Finally, based on the predicted residual noise level, we establish a dual adaptive coordination mechanism. Specifically, it not only balances the extrinsic and intrinsic rewards but also balances the exploration and convergence. Experimental results demonstrate that PAST enhances computational efficiency of existing RL fine-tuning methods by up to 66.7%, while improving preference optimization quality by up to 29.5% through its dual adaptive regulation mechanism.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

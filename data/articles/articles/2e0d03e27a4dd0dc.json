@@ -1,0 +1,13 @@
+{
+  "id": "2e0d03e27a4dd0dc",
+  "title": "SpectraDINO: Modality-Conditioned Adaptation of RGB Vision Foundation Models Across Infrared Bands",
+  "link": "https://arxiv.org/abs/2605.02258",
+  "description": "arXiv:2605.02258v2 Announce Type: replace \nAbstract: Vision foundation models (VFMs) pretrained on large-scale RGB data provide strong general-purpose representations, yet infrared perception, which is essential for robotics and driving in low light and adverse weather, still relies on backbones built per sensor. Existing transfer methods bridge the visible-infrared gap for only a single band or a single RGB-IR pair, leaving no unified backbone that spans the infrared spectrum. We present SpectraDINO, a modality-conditioned adaptation of an RGB vision foundation model that supports NIR, SWIR, and LWIR with a single shared ViT. All modality-specific behavior is conditioned on the active sensor via lightweight input stems, learned modality embeddings, and per-modality bottleneck adapters, while the transformer weights remain shared. We propose a staged protocol to distill the frozen DINOv2 teacher into a spectral student via cosine distillation, symmetric contrastive alignment, patch-level correspondence, and a queue-based neighborhood-preservation loss, and then selectively fine-tune the deeper blocks to adapt without forgetting RGB priors. Across seven detection and segmentation benchmarks spanning all three infrared bands, this single conditioned backbone matches or surpasses modality-specific methods, improving mIoU over the best published results by 2.6 points on FMB and 1.4 on SemanticRT, and exceeding identically fine-tuned foundation-model baselines by 2.7 mAP on SWIR detection.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

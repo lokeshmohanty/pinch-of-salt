@@ -1,0 +1,13 @@
+{
+  "id": "1583f75629cddc08",
+  "title": "The Diagnosis a Reporter Leaves Unspoken: Surfacing Frozen Tumor Features for Brain-Tumor MRI Reporting",
+  "link": "https://arxiv.org/abs/2609.02411",
+  "description": "arXiv:2609.02411v1 Announce Type: new \nAbstract: A capable brain-MRI report generator can still be, in effect, diagnostically silent. When a multi-chain chain-of-thought (CoT) reporter built on a medical Mistral-7B backbone is evaluated on held-out cohorts, it names most meningiomas and almost all metastases \"glioma\" (diagnosis recall 0.44/0.07). Yet the answer is not absent from the model: a supervised linear probe applied to its frozen segmentation features recovers the three tumour cohorts at 0.82 macro-F$_1$ (5-fold cross-validation; chance $\\approx$0.33). We introduce NeuroFusion, an assistive reporter that surfaces this latent signal rather than overriding it: discriminative field-classifier heads over per-lesion features condition a fast, single-pass draft-then-review decoder on their committed outputs. Built on the identical Mistral backbone, this restores the diagnosis (meningioma 0.92, metastasis 0.75) and wins 8 of 9 prose-content comparisons across three held-out cohorts (RaTEScore, RadGraph-F$_1$, GREEN; Holm-corrected paired BCa), with no significant loss on the ninth, at 5-6x lower latency ($\\approx$80 vs. 457 s/case). A controlled negative result sharpens the mechanism: a learned diagnosis pin that overrides the decoder instead of merely informing it collapses out-of-distribution metastasis recall to 0.03. Grammar-constrained decoding keeps 92.3% of records schema-valid, making every sentence entailment-checkable (7.5% contradicted vs. 36.8% for the direct baseline). In a blinded nine-case pilot, two board-certified neurologists independently rated NeuroFusion highest in every tumour type, the only system with zero critical errors, and gave it the top-rated sign-off in eight of nine cases (six outright, two ties).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

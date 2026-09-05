@@ -1,0 +1,14 @@
+{
+  "id": "dac2b4f3caddc151",
+  "title": "Beyond Small Patches: Black-Box Detection and Purification of Diverse Backdoor Triggers",
+  "link": "https://arxiv.org/abs/2609.03139",
+  "description": "arXiv:2609.03139v1 Announce Type: new \nAbstract: Deep neural networks (DNNs) are increasingly deployed in real-world vision systems, yet their predictions can be covertly manipulated by backdoor attacks, in which malicious triggers cause targeted misclassification while preserving high clean accuracy. Existing defenses often rely on model internals, training data, or clean validation samples, making them difficult to deploy when only black-box access to a trained model is available. We propose TRIM (Trigger Removal by Identifying Manipulated Regions), a deployment-oriented black-box defense that detects and selectively removes backdoor triggers at inference time without requiring model internals, training data, or clean samples. The key insight behind TRIM is to identify image regions that are responsible for anomalous model behavior and purify only those regions while preserving benign content. TRIM innovates via three key components: (i) region-based segmentation with deep feature representations, (ii) adaptive trigger discovery through inpainting and diffusion-based reconstruction to isolate regions responsible for misclassification---without assumptions about trigger type, shape, or location, and (iii) selective region purification that cleans poisoned regions while retaining benign content. To support practical deployment, TRIM further caches feature embeddings of previously identified triggers, enabling efficient recognition and avoiding redundant detection and purification. Extensive experiments across diverse datasets and backdoor types, including blended, sparse, varying-size, and multiple triggers, show that TRIM consistently outperforms existing black-box defenses, reducing attack success rates (ASR) to as low as 1.16% while preserving clean accuracy of up to 87.87%. These results demonstrate that effective backdoor mitigation is possible at inference time even when the defender has no access to any auxiliary data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR"
+  ]
+}

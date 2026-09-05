@@ -1,0 +1,13 @@
+{
+  "id": "1abbe4aed1dc2f34",
+  "title": "CoANeRV: Coordinate-Aware Token-Space Neural Video Representation",
+  "link": "https://arxiv.org/abs/2608.13938",
+  "description": "arXiv:2608.13938v1 Announce Type: new \nAbstract: Neural representations for videos (NeRV) have shown strong reconstruction fidelity by storing video-specific information in network weights. However, existing formulations typically require either costly per-video optimization or video-specific weight generation, making it difficult to scale to efficient amortized video representation. We propose CoANeRV, a coordinate-aware token-space framework that adapts the broader token-conditioned neural-field paradigm to amortized video representation. CoANeRV forms compact video tokens in one feed-forward pass and uses a shared coordinate-conditioned decoder to reconstruct continuous spatio-temporal queries, avoiding per-video decoder optimization or generation while retaining coordinate-level reconstruction flexibility. To make token-space reconstruction effective, CoANeRV introduces a coordinate-aware decoding architecture that aligns spatio-temporal queries with video tokens through axis-adaptive positional encoding and temperature-modulated cross-attention. Block-wise coordinate querying further reduces peak attention memory, making high-resolution reconstruction practical. Experiments on diverse video datasets show that CoANeRV consistently improves reconstruction quality over prior feed-forward NeRV and INR baselines, reduces peak memory compared with attention-based coordinate decoders, and provides efficient amortized encoding without per-video optimization. These results support the proposed video-specific combination of feed-forward token formation, spatio-temporal coordinate retrieval, and memory-bounded dense querying. The code is available at https://github.com/jialong2023/CoANeRV.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

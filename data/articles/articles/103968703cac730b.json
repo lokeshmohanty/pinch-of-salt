@@ -1,0 +1,14 @@
+{
+  "id": "103968703cac730b",
+  "title": "NICE: Scale-Stable Perturbations for Graph Neural Network Explanations via Noise Corruption",
+  "link": "https://arxiv.org/abs/2608.16038",
+  "description": "arXiv:2608.16038v2 Announce Type: replace-cross \nAbstract: Post-hoc Graph Neural Network (GNN) explainers commonly follow a Perturb-Query paradigm, inferring the importance of graph elements based on queried predictions to perturbed inputs. However, such perturbations often introduce substantial distribution shift, undermining the reliability of the queried predictions used to derive explanations. While existing efforts mainly improve perturbed graphs or stabilize model predictions on them, we revisit the perturbation mechanism itself. We show that the widely used Element-wise Masking(EM) suppresses edge-induced messages toward zero, causing deterministic scale contraction that accumulates across message-passing layers, a phenomenon we term Scale Drift. Consequently, prediction changes under EM may conflate information corruption with deviations in propagation scale. As a scale-stable alternative to EM, we introduce Noise Corruption (NC), which perturbs each message through matched-norm random-direction corruption while preserving the expected squared message norm. Building on NC, we propose NICE, a Noise Corruption-based explanation framework, which learns a Stochastic Restoration Boundary (SRB) under NC-induced uncertainty, balancing target-prediction restoration against compactness. Furthermore, Boundary-Integrated Gradient (BIG) converts this boundary into edge attributions by accumulating each edge's contribution to reducing restoration risk along the restoration path. Experiments across multiple benchmarks demonstrate stronger explanation performance and model faithfulness while confirming that NC substantially reduces the Scale Drift induced by masking.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

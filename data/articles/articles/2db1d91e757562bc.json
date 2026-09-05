@@ -1,0 +1,14 @@
+{
+  "id": "2db1d91e757562bc",
+  "title": "PlantRig - From Bones to Branches: Adaptation of Autoregressive Rigging Models for Plant Skeletal Reconstruction",
+  "link": "https://arxiv.org/abs/2608.01072",
+  "description": "arXiv:2608.01072v1 Announce Type: new \nAbstract: Autoregressive rigging models such as UniRig and SkinTokens perform well on articulated characters, but their ability to generalize to plant structures remains largely unexplored, since plant topologies exhibit highly variable, non-canonical branching patterns that challenge learned skeletal priors. We evaluate these models for plant skeletal reconstruction using synthetic L-system-generated trees and real scanned data spanning monopodial, sympodial, whorled, and vine-like archetypes. Preliminary testing showed UniRig collapsing complex branching into near-linear chains, while SkinTokens preserved topology better but over-segmented branches and produced an unstable output space, so we focused on UniRig for its greater stability. Diagnosis traced the collapse to sampling-level suppression of branch tokens, and further analysis showed the frozen mesh encoder had limited sensitivity to structural variation, pointing to a geometric bottleneck in the tokenization pipeline rather than a purely learned bias. Building on these findings, we applied multi-round fine-tuning over multiple procedurally generated synthetic datasets. Across rounds, the model progressively recovered accurate branching topology and generalized beyond branch-only structures to plants with foliage, a harder case given the zero-thickness, mesh-normal-dependent geometry of leaves. The resulting model generalized well across diverse plant forms without leaf-specific architectural changes, indicating that targeted fine-tuning can substantially close the domain gap between character-rigging priors and plant skeletal structure. As such, our work points toward a viable path for automated plant rigging across both branch topology and foliage type, even those not considered in our findings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "b8c1549b170ce984",
+  "title": "RAFT-DVC: Resolution-Aware Machine Learning-Based Digital Volume Correlation",
+  "link": "https://arxiv.org/abs/2609.01876",
+  "description": "arXiv:2609.01876v1 Announce Type: new \nAbstract: Digital volume correlation (DVC) provides three-dimensional full-field displacement measurements from volumetric images, but how the internal resolution of a machine-learning-based DVC model affects accuracy and operating range remains poorly understood. Here, we present RAFT-DVC, a resolution-aware family of recurrent all-pairs field transforms (RAFT)-based DVC solvers with encoder downsampling factors s = 2, 4, and 8. Using a matched design, we find that the three solvers localize displacement to approximately 0.017 feature-grid voxel, giving an empirical raw-volume error scaling of approximately 0.017s voxel. The solvers exhibit complementary operating regimes governed jointly by displacement reach and volumetric-texture compatibility. Synthetic benchmarks show that RAFT-DVC achieves errors of the same order as tuned classical DVC under fine-texture, small-to-moderate-displacement conditions and becomes competitive or advantageous under coarse-texture, large-displacement conditions. Frequency-swept tests quantify deformation spatial resolution, while tiled inference enables dense estimation on large volumes. Evaluation on confocal volumetric images acquired during indentation illustrates the importance of matching solver operating regime to deformation magnitude and image texture. Tests on micro-CT images of elastomeric foam, despite training only on particle-labeled synthetic data, provide evidence of cross-texture transfer. We also identify coordinate-order inconsistencies in three-dimensional RAFT correlation sampling and introduce a non-cubic impulse test to verify sampler geometry independently of network training. Correcting the sampler improves native-input accuracy and generalization to unseen volume dimensions. Together, these results establish RAFT-DVC as a fast, resolution-aware framework for dense DVC with characterized accuracy and operating regimes.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cond-mat.mtrl-sci"
+  ]
+}

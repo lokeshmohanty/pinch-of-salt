@@ -1,0 +1,13 @@
+{
+  "id": "c75fbc15a2473eb3",
+  "title": "Beyond Language Priors: Diagnosing and Fixing Visual-Origin Hallucinations in Multimodal LLM",
+  "link": "https://arxiv.org/abs/2609.00231",
+  "description": "arXiv:2609.00231v1 Announce Type: new \nAbstract: Existing research on object hallucination in multimodal large language models (MLLMs) predominantly attributes the problem to language priors such as over-reliance on textual co-occurrence statistics. We challenge this view by presenting quantitative evidence for a complementary, under-explored cause: visual-origin hallucination, where hallucinations arise from incorrect visual feature extraction and misalignment between image and text embeddings. Through cosine similarity analysis and Smooth Grad-CAM entropy measurements, we show that hallucinated samples exhibit systematically lower image-text similarity (average 0.158 vs. -0.122) and inverted attention patterns, where attention is dispersed when the target object is present but wrongly concentrated when it is absent. Guided by this diagnosis, we propose Adversarial Contrastive Fine-Tuning (ACFT). ACFT uses an Adversarial Hallucination Attribute Flipping (AHAF) procedure, involving minimal, targeted adversarial perturbations that flip an image's hallucination attribute, to construct perfectly aligned positive-negative pairs, which are then used for contrastive fine-tuning. AHAF simultaneously serves as a diagnostic probe, revealing that MLLM visual representations lie dangerously close to hallucination decision boundaries. Requiring only 0.9% of the COCO dataset and adding zero inference overhead, ACFT achieves state-of-the-art performance on POPE, MME, and four description-level hallucination benchmarks across LLaVA, MiniGPT-4, and Qwen2.5-VL. Code is available at https://github.com/zxp555/ACFT_MM",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

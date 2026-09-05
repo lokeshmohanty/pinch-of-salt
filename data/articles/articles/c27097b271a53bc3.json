@@ -1,0 +1,13 @@
+{
+  "id": "c27097b271a53bc3",
+  "title": "Accuracy and Cost Claims Do Not Survive Re-Execution in Agentic VideoQA",
+  "link": "https://arxiv.org/abs/2607.01469",
+  "description": "arXiv:2607.01469v3 Announce Type: replace \nAbstract: Agentic Video Question Answering (VideoQA) systems produce answers through adaptive reasoning and tool-use trajectories, yet standard practice evaluates each system once and estimates uncertainty only across questions. This leaves a basic question untested: would the measured method effect survive if the evaluation were run again? We show that it need not. Using Static-SAGE and Dynamic-SAGE as a controlled case study, we repeat the paired comparison twice on identical SAGE-Bench question-video pairs, holding configuration, tool library, and scoring protocol fixed. In the first execution, Dynamic-SAGE outperforms Static-SAGE by +7.33 accuracy points; in the second, the effect reverses to -4.05. Both are individually significant under paired analysis, supporting opposite conclusions. The change in the paired effect between executions is highly significant and far larger than within-execution uncertainty. The reversal is consistent across question format, modality, difficulty, and video duration, and both evaluation arms move significantly. Motivated by this failure, we introduce REPAIR (REpeated PAired Inference Reliability), a protocol that repeats the paired comparison and tests whether the method effect changes across executions, separating directional reproducibility from effect-size stability. Applied across accuracy and execution metrics, REPAIR exposes three behaviors-directional reversal, magnitude shift, and effect attenuationand shows that reductions in reasoning turns and visible tool calls do not imply reproducible reductions in primitive computation or latency. The execution-level movement is comparable to, and here larger than, median gain reported by recent agentic VideoQA systems, contextualizing its magnitude without implying those systems are unstable. Significance within a single agentic execution is insufficient evidence that a reported method effect is reproducible.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

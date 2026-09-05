@@ -1,0 +1,14 @@
+{
+  "id": "4cd39107a0fecc3a",
+  "title": "When Repository Labels Are Not Image-Level Truth: A Supervision Auditing Framework for Chest Radiograph AI",
+  "link": "https://arxiv.org/abs/2608.10084",
+  "description": "arXiv:2608.10084v1 Announce Type: cross \nAbstract: Public chest X-ray repositories are widely used to train medical AI systems, yet their labels are typically extracted from radiology reports rather than verified directly on images. As a result, repository labels are often treated as image-level ground truth without validating whether they reflect what is actually visible in the radiograph. We introduce Repository Supervision Auditing (RSA), a framework that evaluates repository-derived labels against expert image-level annotations before model development. Using cardiomegaly in MIMIC-CXR as a case study, RSA compares repository labels with radiologist-reviewed image annotations, characterizes disagreement sources, and builds a curated cohort for deployment-oriented evaluation. Repository-derived cardiomegaly labels showed near-zero agreement with expert image-level assessment, identifying only 1% of expert-confirmed cases. Most discrepancies resulted from non-mention rather than explicit report negation, with expert-confirmed cardiomegaly identified in nearly half of studies assigned a repository-derived No Finding label. Using the resulting expert-curated cohort, a DenseNet121 model achieved a test ROC-AUC of 0.853. These findings show that repository labels may not reliably represent image-level truth and highlight supervision auditing as a critical step for developing trustworthy medical imaging AI.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}
