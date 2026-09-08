@@ -1,0 +1,15 @@
+{
+  "id": "e1564aa37477045d",
+  "title": "Cultural Misalignment in Large Language Models: Detection, Measurement, and Mitigation Through Targeted Fine-Tuning",
+  "link": "https://arxiv.org/abs/2609.04485",
+  "description": "arXiv:2609.04485v1 Announce Type: cross \nAbstract: We evaluate three open-weight LLMs (Gemma3-12B from the USA, Bielik-11B-v3 from Poland, and Qwen3-4B from China) against World Values Survey Wave 7 data for 63 demographic personas across three countries, using normalized Wasserstein distance to quantify distributional misalignment. Contrary to expectations, no model favors its home country: the Chinese-built Qwen3-4B performs worst on its own Chinese population (W1 = 0.436, the highest misalignment in the entire model x country matrix). Targeted LoRA fine-tuning on the five worst-case personas, requiring fewer than 1,200 training pairs and under 15 minutes on a single GPU, reduces bias by 16.8% for Bielik-11B (p_Bonf = 0.002, d = -4.4) with all five targets improving. However, country-level decomposition reveals that fine-tuning redistributes rather than removes bias: Bielik's worst-case personas swap entirely from American to Chinese elderly, with zero overlap between pre- and post-correction sets. To our knowledge, this is the first study to target worst-case demographic personas with LoRA fine-tuning for cross-cultural bias mitigation.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.CY"
+  ]
+}

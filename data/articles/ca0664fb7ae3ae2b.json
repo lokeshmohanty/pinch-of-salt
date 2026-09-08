@@ -1,0 +1,14 @@
+{
+  "id": "ca0664fb7ae3ae2b",
+  "title": "Does the Selected Object Reach the Reader? Auditing Identity Handoffs in Grounded Language-Model Pipelines",
+  "link": "https://arxiv.org/abs/2609.04579",
+  "description": "arXiv:2609.04579v1 Announce Type: new \nAbstract: Grounded language-model pipelines can be divided into three stages: selecting an object, retrieving passages for it, and using that evidence to answer. If the selected object must reach the reader, losing it breaks the handoff. Benchmark recall checks the dataset-linked object, which can differ. We audit 600 HybridQA questions across three selector families. On 1,463 resolvable records where the selected object matches the dataset-traced passage, exact key lookup and exact title matching return the object every time. With every ranked rule given the same decoded selected title, body-only BM25 omits it on 389 records (26.6%) at cutoff five, while hybrid retrieval with reranking omits it on 14 (1.0%). The two identities differ on 329 of 1,792 resolvable records. With original-question rankings, their top-five checks disagree on 106 records (5.9%). Frozen reader comparisons associate the aligned object's presence with 28.6 to 31.0 points higher exact match. In a deliberately selected 64-item cohort, removing that passage sharply lowers exact match, while removing a similar-length comparison passage does not reproduce the drop. We release the Returned-Object Profile (ROP), an executable record of the target, returned-ID field, cutoff, membership rule, and complete expected population, with data and an offline replay.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

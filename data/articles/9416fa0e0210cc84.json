@@ -1,0 +1,13 @@
+{
+  "id": "9416fa0e0210cc84",
+  "title": "Learning 3D Editing without Paired Supervision via Generative Prior Distillation",
+  "link": "https://arxiv.org/abs/2609.04942",
+  "description": "arXiv:2609.04942v1 Announce Type: new \nAbstract: Instruction-guided 3D editing is essential for interactive content creation, yet it faces a significant bottleneck: the severe scarcity of high-quality paired training data. Existing approaches attempt to bypass this by either relying on slow test-time optimization or training on pseudo-pairs constructed via complex pipelines, which often introduce structural drift and geometric artifacts. In this paper, we propose a novel framework that learns feed-forward 3D editing without paired 3D supervision via Generative Prior Distillation. Instead of relying on ground-truth 3D pairs, our core idea is to distill visual, semantic, and geometric knowledge from powerful foundation models directly into a 3D editing model. Specifically, through a differentiable rendering pipeline, we supervise the 3D representation using two complementary signals: a 2D visual prior from an image editing model at the main editing view, and a semantic prior from a Vision-Language Model at novel views to ensure strict instruction following and source identity preservation. Crucially, to address the geometric collapse and multi-view inconsistencies inherent in 2D projection supervision, we introduce a 3D-aware Distribution Matching regularization. Acting as a geometric prior, this term operates in the 3D latent space, constraining the edited output to remain within the manifold of realistic 3D assets defined by a pretrained image to 3D teacher model. Extensive experiments demonstrate that our method achieves superior instruction fidelity and cross-view consistency, significantly outperforming state-of-the-art baselines. Our project is available at: https://github.com/thiamine128/PriorEdit3D.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

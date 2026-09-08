@@ -1,0 +1,13 @@
+{
+  "id": "786855e96957db3a",
+  "title": "Joint Alignment and Distillation for Video Generation via Sample-Guided Distribution Matching",
+  "link": "https://arxiv.org/abs/2609.04283",
+  "description": "arXiv:2609.04283v1 Announce Type: new \nAbstract: Aligning video generative models to human preferences heavily relies on Reinforcement Learning (RL), which suffers from extensive computational overhead. Existing workflows typically treat RL and distillation as disconnected stages: applying RL before distillation incurs prohibitive computational costs, whereas applying RL after distillation frequently leads to model collapse. To overcome these limitations, we propose a unified, single-stage optimization framework grounded in Distribution Matching (DM). In the standard DM framework, distillation updates the model via a gradient direction that minimizes the gap between the real and fake models, guiding generations toward clarity and high fidelity. Building upon this, we introduce DM-Align, which derives a complementary gradient direction to guide the model toward human-preferred samples. Inspired by DPO and GRPO, our method leverages the distributional gap -- formulated from either preference pairs or intra-group exploration -- to directly construct this preference-guided gradient. By synergizing these two gradient directions, our approach eliminates the need for multi-step reward evaluation and complex ODE-SDE conversions inherent in traditional RL. Comprehensive experiments across multiple foundational video models demonstrate that this sample-guided framework robustly enhances both distillation quality and preference alignment, consistently outperforming both standalone variants and sequential two-stage pipelines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "4e57eba22c295f7c",
+  "title": "MCPO: Modality-Contrastive Preference Optimization for Multimodal Chain-of-Thought Compression",
+  "link": "https://arxiv.org/abs/2609.04947",
+  "description": "arXiv:2609.04947v1 Announce Type: cross \nAbstract: Recently, multimodal large-scale reasoning models have demonstrated remarkable capabilities in solving complex tasks through long Chains-of-Thought (M-CoT). However, excessively long reasoning trajectories incur substantial computational costs and significant KV-cache pressure. Existing CoT compression and alignment paradigms mainly rely on static rules or single-dimensional preferences, lacking fine-grained cross-modal constraints; as a result, they are prone to inducing visual laziness and hallucinatory reasoning. To address these issues, we propose Modality-Contrastive Preference Optimization (MCPO), a highly sample-efficient two-stage length-compression method that requires fewer than 900 training samples. In the compression stage, we introduce a step-level Normalized Cross-Modal Mutual Information (NCMI) pruning algorithm, which automatically identifies and removes visual-independent reasoning steps by comparing the reasoning discrepancies between with-image and no-image contexts. This significantly reduces redundancy and hallucinatory content in the reasoning chains. In the alignment stage, the model first undergoes supervised fine-tuning to achieve domain-adaptive initialization, followed by optimization using an asymmetric multimodal length-controlled preference loss. This objective adopts a highly nonlinear odds-ratio formulation that provides steep gradients in the with-image context to reinforce length constraints for preferred trajectories, while applying a scaled, flat-gradient linear difference in the no-image context to maintain modality consistency, thereby achieving stable cross-modal preference alignment. Extensive experiments on mainstream base models such as Qwen3-VL-Thinking show that our method can reduce CoT length by up to 69.5% and achieve up to 3.34x end-to-end inference speedup while preserving original accuracy.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}
