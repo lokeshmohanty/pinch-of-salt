@@ -1,0 +1,15 @@
+{
+  "id": "4333e8b6f3c437ad",
+  "title": "Qwen-MusicAVQA-7B: A Multimodal Model for Music Audio-Visual QA",
+  "link": "https://arxiv.org/abs/2608.11329",
+  "description": "arXiv:2608.11329v1 Announce Type: cross \nAbstract: A common approach to adding audio to a vision-language model is to train or adapt a large omni-modal system. We show that a lightweight alternative can be highly effective for music audio-visual question answering (AVQA). Qwen-MusicAVQA-7B connects a frozen Whisper encoder to Qwen2-VL-7B-Instruct through learned linear projections. The same frozen encoder processes both the video's music track and a TTS-spoken question through separate projectors, while the language model fuses visual frames, music, and question audio through pretrained self-attention, with no task-specific fusion network.\n  On MUSIC-AVQA, our system reaches 96.0% +/- 3.9% accuracy across three independent training seeds on the 7,402-question available-video test subset. Our central finding is that downstream accuracy tracks how much fine-grained local temporal information the audio representation preserves. In a matched 32-token comparison, a stride-pooled Whisper frame sequence outperforms a globally pooled PANNs representation expanded to the same budget by 26 percentage points, even though PANNs sees at least as much audio and uses a far larger projector. The effect is not simply sequence versus vector: within Whisper alone, reducing temporal resolution at a fixed token budget costs a comparable amount.\n  Under matched data and inputs, fine-tuned Qwen2.5-Omni-7B reaches 80.9%, against 95.9% for our 30 s variant; because the systems differ in backbone and adaptation, this is a system-level comparison. Accuracy remains high on sampled head and tail splits of the rephrased MUSIC-AVQA-R benchmark (96.5% and 95.6%). Because both encoders stay frozen and the music features are cached, the entire adaptation is cheap to train: the complete two-stage AVQA run takes approximately 5 hours on a single A100 80GB, and every run reported here fits on that one GPU.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.CV",
+    "cs.MM"
+  ]
+}

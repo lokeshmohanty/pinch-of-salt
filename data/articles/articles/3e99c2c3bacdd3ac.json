@@ -1,0 +1,14 @@
+{
+  "id": "3e99c2c3bacdd3ac",
+  "title": "A Dual Path Framework with Hotspot Guided Fusion for Three Dimensional CT to PET Synthesis in Head and Neck Cancer",
+  "link": "https://arxiv.org/abs/2607.21800",
+  "description": "arXiv:2607.21800v1 Announce Type: cross \nAbstract: 18F-FDG PET/CT plays a central role in staging, treatment planning, and response assessment for head and neck cancer by providing functional information that complements anatomical CT imaging. However, PET acquisition requires radiotracer administration, specialized infrastructure, and additional cost, limiting its availability for repeated imaging. We present a proof of concept deep learning framework for synthesizing PET like images directly from routine CT scans with the goal of providing complementary metabolic information that may support imaging triage and clinical decision support rather than replace diagnostic PET. Forty-four patients from the publicly available QIN-HEADNECK dataset were retrospectively analyzed using five fold cross-validation. We propose a fully three dimensional dual path architecture consisting of (i) a regression U-Net optimized for voxel-wise quantitative SUV estimation and (ii) a conditional generative adversarial network optimized for realistic PET texture. Their outputs are integrated using hotspot guided Laplacian pyramid blending, allowing quantitative information from the regression pathway to be preserved within metabolically active regions while leveraging adversarial texture synthesis elsewhere. The proposed framework achieved a mean absolute error of 0.00395, PSNR of 39.19 dB, and SSIM of 0.9634 on reconstructed three dimensional PET volumes. Qualitative evaluation demonstrated accurate localization of many FDG-avid lesions while producing anatomically realistic background texture. Consistent with previous CT to PET synthesis studies, the principal limitation was systematic underestimation of SUV within highly metabolically active tumor regions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.med-ph",
+    "cs.CV"
+  ]
+}

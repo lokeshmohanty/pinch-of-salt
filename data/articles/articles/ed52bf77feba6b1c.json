@@ -1,0 +1,16 @@
+{
+  "id": "ed52bf77feba6b1c",
+  "title": "TriShieldRAG: 3 Rings, One Blind Spot in Layered Defenses for Retrieval-Augmented Generation",
+  "link": "https://arxiv.org/abs/2607.23838",
+  "description": "arXiv:2607.23838v2 Announce Type: replace-cross \nAbstract: Retrieval-Augmented Generation (RAG) grounds LLM answers in query-time retrieved documents, so reliability depends on what the retriever returns. PoisonedRAG (Zou et al., USENIX Security'25) showed five crafted documents mislead an undefended system in nearly 90% of cases, and that single-stage defenses give limited robustness. We propose TriShieldRAG, a three-layered framework: an Ingest Guard for document-level screening, a Retrieval Scorer for trust-aware re-ranking, and a Cross-LLM Consensus over three diverse models. We reasoned that collectively screening, re-ranking and validating retrieved evidence would give complementary protection, limiting the ability of poisoned documents to succeed through any single failure. We evaluate against non-adaptive and adaptive poisoning. Non-adaptively, on the full 2.68M-passage Natural Questions (NQ) corpus with the original PoisonedRAG attack, it cuts attack success from 79 +/- 1.0% to 1 +/- 0.0%. Adaptive attacks expose fundamental limits of layering. By changing only the document formatting, without modifying the poison text or accessing the retriever, the attacker reduces the Ingest Guard score from 0.500 to 0.000 and bypasses it on all 500 tested documents across three corpora. The remaining layers then give no protection: 62 +/- 0.8% attack success against a 56 +/- 2.5% undefended baseline on NQ, and 85 +/- 0.6% against 86 +/- 0.6% on HotpotQA. Layered defenses relying on the same retrieved evidence fail together: poisoned context misleads both re-ranking and consensus validation. Minority-poison thresholds prove corpus-dependent, at 0.214, 0.251 and 0.558 rather than the derived 0.5; a closed form we proposed for these failed a pre-registered prediction and is retracted. Cross-model agreement is misleading, reaching 0.96 while attack success approaches 99%. We release the framework, the evasion-certification methodology and artifacts.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

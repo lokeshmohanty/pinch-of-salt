@@ -1,0 +1,13 @@
+{
+  "id": "62a2e6da92cc8657",
+  "title": "Diffusion-Encoding Gaussian Field for Joint k-q dMRI Reconstruction",
+  "link": "https://arxiv.org/abs/2609.02288",
+  "description": "arXiv:2609.02288v1 Announce Type: new \nAbstract: Diffusion MRI requires repeated k-space acquisitions over multiple diffusion-encoding directions, making acquisition time dependent on both spatial and angular sampling. Existing joint k-q methods either associate directional parameters with fixed voxels or separate spatial reconstruction from angular completion. However, diffusion-weighted images acquired under different directions share the same anatomical organization, while their local signal intensities vary with diffusion encoding. Existing formulations do not fully exploit the complementarity between shared anatomy and direction-dependent signal variation. Consequently, residual spatial errors may be misinterpreted as genuine angular variation and propagated to unobserved directions.\n  We propose a subject-specific spatial-angular Gaussian field for self-supervised joint k-q dMRI reconstruction. Shared 3D Gaussian primitives provide local spatial support, with each primitive carrying a continuous q-conditioned tensor-residual response. The signal at each location is synthesized from multiple overlapping primitive responses, coupling neighboring spatial regions and diffusion directions. The field is progressively optimized from undersampled k-space measurements of observed directions, without fully sampled targets or held-out-direction supervision.\n  Experiments on three HCP diffusion shells under multiple acceleration settings demonstrated consistent improvements in missing-direction DWI reconstruction, tensor-derived metrics, and principal diffusion orientation estimation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

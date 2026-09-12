@@ -1,0 +1,13 @@
+{
+  "id": "1d099a5d3ccc54ed",
+  "title": "One Ranking, Any Budget: Matryoshka Evidence-to-Context Frame Selection for Long-Video Understanding",
+  "link": "https://arxiv.org/abs/2608.05707",
+  "description": "arXiv:2608.05707v1 Announce Type: new \nAbstract: Frame selection is essential for applying Large Multimodal Models (LMMs) to long videos due to severe frame redundancy and limited context windows. Since the appropriate frame budget varies with the downstream LMM, reasoning demands, and latency constraints, a practical selector should serve multiple budgets. However, existing methods typically optimize an isolated frame subset for each predefined budget: when the budget changes, previously selected evidence may be replaced rather than progressively augmented. Ranking frames by a fixed score would allow prefix reuse across budgets, but it ignores the distinct roles of different ranking positions. In this paper, we formulate long-video frame selection as a Matryoshka ranking problem: constructing a single priority sequence whose small prefixes concentrate query-conditioned evidence, while progressively larger prefixes preserve this evidence and add broader temporal context. Efficiently constructing such a ranking is itself challenging, as densely sampling long videos and evaluating frame-query relevance incurs substantial overhead. We therefore introduce Matryoshka Evidence-to-Context (MEC) Frame Selection, a training-free framework that builds a reusable sparse video index, discovers candidates through sparse probing and local zooming, and greedily constructs a position-adaptive ranking: early positions emphasize evidence; later positions progressively favor temporal coverage while preserving visual diversity. A single ranking can thus be truncated to any target budget without rerunning the selector. Across four benchmarks and six frame budgets, MEC improves average accuracy over uniform sampling by 3.77 percentage points, matches strong state-of-the-art selectors, and reduces end-to-end selection latency by 47.37-51.19%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

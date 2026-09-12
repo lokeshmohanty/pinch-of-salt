@@ -1,0 +1,13 @@
+{
+  "id": "55c0db59851355de",
+  "title": "Region-Constrained Group Relative Policy Optimization for Flow-Based Image Editing",
+  "link": "https://arxiv.org/abs/2604.09386",
+  "description": "arXiv:2604.09386v2 Announce Type: replace \nAbstract: Instruction-guided image editing requires balancing target modification with non-target preservation. Recently, flow-based models have emerged as a strong and increasingly adopted backbone for instruction-guided image editing, thanks to their high fidelity and efficient deterministic ODE sampling. Building on this foundation, GRPO-based reward-driven post-training has been explored to directly optimize editing-specific rewards, improving instruction following and editing consistency. However, existing methods often suffer from noisy credit assignment: global exploration also perturbs non-target regions, inflating within-group reward variance and yielding noisy GRPO advantages. To address this, we propose RC-GRPO-Editing, a region-constrained GRPO post-training framework for flow-based image editing under deterministic ODE sampling. It suppresses background-induced nuisance variance to enable cleaner localized credit assignment, improving editing region instruction adherence while preserving non-target content. Concretely, we localize exploration via region-decoupled initial noise perturbations to reduce background-induced reward variance and stabilize GRPO advantages, and introduce an attention concentration reward that aligns cross-attention with the intended editing region throughout the rollout, reducing unintended changes in non-target regions. Experiments on CompBench show consistent improvements in editing region instruction adherence and non-target preservation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "7660626025764b0b",
+  "title": "ScaleHP: Scale-Mediated Optimization of Coupled Errors for Metric-Space Hand Pose Estimation",
+  "link": "https://arxiv.org/abs/2606.25619",
+  "description": "arXiv:2606.25619v2 Announce Type: replace \nAbstract: In this paper, we present ScaleHP, a unified framework that explicitly represents per-instance metric scale to resolve the coupled errors in calibrated camera-space hand pose estimation. Under the common root-relative-to-global paradigm, camera-space accuracy depends jointly on relative geometry, root localization, and their scale-dependent composition. ScaleHP treats scale as the shared interface among these terms rather than optimizing them in isolation. Its metric-aware 2D-3D Transformer decoder introduces a dedicated scale token that exchanges information with sparse, semantically indexed 2D/3D joint queries, allowing global metric reasoning and local joint geometry to mutually refine one another. A parameter-free calibrated module then recovers root translation from the predicted unit-scale joints, metric scale, and known camera intrinsics. ScaleHP demonstrates state-of-the-art CS-MPJPE on FreiHand (35.8 mm) and, under benchmark-specific training protocols, state-of-the-art PA-MPJPE on FreiHand, DexYCB, and HO3Dv3 (5.0/4.6/5.9 mm), showing that improved global metric localization is attained together with improved local articulation. Ablations further show that scale-pose interaction improves both camera-space accuracy and relative depth geometry.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

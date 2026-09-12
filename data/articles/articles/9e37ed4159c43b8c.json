@@ -1,0 +1,14 @@
+{
+  "id": "9e37ed4159c43b8c",
+  "title": "Protocol generalisation for brain tissue microstructure estimation via hypernetwork-controlled geometric deep learning",
+  "link": "https://arxiv.org/abs/2608.02053",
+  "description": "arXiv:2608.02053v1 Announce Type: cross \nAbstract: Brain tissue microstructure estimation with machine learning provides higher computational efficiency than conventional fitting. However, machine learning still presents important limitations that hamper its clinical utility. Specifically, current models typically lack generalisation across diffusion MRI acquisition protocols and require retraining whenever b-vectors or b-values change. Moreover, the recent machine learning methods that were developed to address protocol generalisation lack rotational equivariance. Particularly suitable for dMRI parameter estimation is a geometric deep learning model known as spherical convolutional neural network (SCNN), which guarantees rotational equivariance and b-vector generalisation. However, this architecture currently does not account for b-values. Therefore, obtaining a model that combines protocol generalisation and rotational equivariance remains an open challenge. In this paper, we directly address this issue by incorporating explicit b-value dependence into an SCNN architecture via a hypernetwork. This new approach is illustrated using NODDI as an example forward model for estimating brain tissue microstructure. To evaluate b-value generalisation, the original and newly proposed SCNN architectures are trained on synthetic data and tested on both synthetic and real data across different b-value pairs. Results demonstrate that the proposed method achieves reduced RMSE and bias on synthetic data, as well as higher agreement with conventional NODDI fitting on real data, indicating improved robustness to unseen b-values and a reduced need for retraining. By combining generalisation across b-values with generalisation across b-vectors and rotational equivariance, the proposed framework enhances the applicability of deep learning to clinical diffusion MRI parameter estimation. Code available at https://github.com/aerdnairo/arXiv\\_generalisedSCNN.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

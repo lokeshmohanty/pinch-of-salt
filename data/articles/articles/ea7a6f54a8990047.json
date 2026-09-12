@@ -1,0 +1,16 @@
+{
+  "id": "ea7a6f54a8990047",
+  "title": "Adaptively Robust LLM Monitoring via Activation Watermarking",
+  "link": "https://arxiv.org/abs/2603.23171",
+  "description": "arXiv:2603.23171v3 Announce Type: replace-cross \nAbstract: Providers monitor deployed large language models (LLMs) to detect misuse that they cannot prevent. LLM monitoring is deterministic and often openly available, so $\\emph{adaptive}$ attackers with a local copy can search offline for prompts that elicit harmful behavior and evade detection. These attacks are especially concerning because providers never observe the misuse and cannot patch their defenses post-hoc. The core challenge is resisting adaptive attackers while preserving detection rates against non-adaptive ones. We propose $\\emph{Activation Watermarking}$ (AWM), which randomizes monitoring through limited fine-tuning that aligns the LLM's hidden states with a secret key-derived direction whenever a response violates a policy. Detection is a similarity test on activations the provider already computes, and attackers who know everything but the key must optimize against differently keyed surrogate detectors. At a matched $1\\%$ false-positive rate, such surrogate-based attacks evade every evaluated baseline at least $79\\%$ of the time, but AWM more than halves this evasion rate. AWM also achieves the lowest evasion rate on three of four non-adaptive jailbreak families at a small drop in utility measured across seven benchmarks. Because random high-dimensional directions are near-orthogonal, assigning one watermark per policy enables attribution. Across 20 monitored policies, AWM identifies the violated policy with $80\\%$ accuracy versus a $5\\%$ chance baseline. AWM is (i) efficient, (ii) substantially more robust against adaptive attackers than related work and (iii) can attribute which policies were violated.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CY",
+    "cs.LG"
+  ]
+}

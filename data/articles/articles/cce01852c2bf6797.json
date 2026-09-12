@@ -1,0 +1,14 @@
+{
+  "id": "cce01852c2bf6797",
+  "title": "SAE-StatSteer: Statistical Consensus Feature Selection for Optimization-Free Activation Steering of Large Language Models",
+  "link": "https://arxiv.org/abs/2607.19364",
+  "description": "arXiv:2607.19364v2 Announce Type: replace \nAbstract: Activation steering adds a residual-stream direction at inference time, providing lightweight behavioral control without fine-tuning. Sparse autoencoders (SAEs) can make such interventions auditable by decomposing dense activations into an approximately monosemantic feature basis. We introduce SAE-StatSteer, a transparent, optimization-free pipeline. It first filters features through six reliability conditions, then ranks the survivors by an unweighted Borda consensus over three statistics, an $F$-test, KSG mutual information, and Cohen's $d$, and finally combines the selected SAE decoder rows using Cohen's-$d$ weights. We evaluate three Gemma-family models across four behavioral domains against seven dense or SAE-based baselines. Our quality-conditioned protocol requires attribute movement while preserving relevance, richness, and coherence. Raw success systematically overstates usable control because strong shifts often degrade generation quality, and effective steering is not governed by a universal layer or strength. SAE-StatSteer remains competitive with optimization-based methods while exposing every selection and weighting decision for audit. These results motivate reporting quality-conditioned success alongside raw behavioral shift. Our code and data are available at https://github.com/Oshayer-Siddique/LLM-Steering-Using-SAE.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

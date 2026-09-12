@@ -1,0 +1,13 @@
+{
+  "id": "50e8ffc4edb50239",
+  "title": "Temporal Feature Distillation for Label-Efficient Precise Event Spotting in Sports Videos",
+  "link": "https://arxiv.org/abs/2607.10998",
+  "description": "arXiv:2607.10998v1 Announce Type: new \nAbstract: Precise Event Spotting (PES) requires distinguishing visually similar yet semantically distinct adjacent frames, making it fundamentally different from image classification and coarse action recognition. Although self-distillation methods such as DINO have shown strong representation learning ability in images, we find that directly applying them to PES is ineffective: without supervised guidance, subtle but crucial motion cues are often suppressed as noise, leading to representations that are insensitive to precise event boundaries. To address this, we propose Temporal Feature Distillation, a semi-supervised objective that aligns temporally informative backbone features, rather than projection-head outputs, to preserve motion-sensitive and boundary-aware cues for frame-level localization. A supervised warm-up with a ramp-up schedule further stabilizes training by ensuring that meaningful event cues are learned before unlabeled distillation begins. We also introduce Transformer Gate Shift, a multi-scale gated shifting module that injects motion-aware temporal information into Vision Transformers. Experiments on four fine-grained sports benchmarks show consistent improvements over fully supervised and semi-supervised baselines. Under 10\\% supervision on FSPerf, our method improves mAP by 4.54 points over the strongest competing approach, and with only 80\\% labeled data, it matches or surpasses the fully supervised 100\\% baseline on two of the four datasets.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

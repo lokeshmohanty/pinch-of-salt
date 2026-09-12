@@ -1,0 +1,15 @@
+{
+  "id": "ad83669ea928d1b0",
+  "title": "ARM: Detector-Agnostic Changepoint Attribution with Finite-Sample Error Control",
+  "link": "https://arxiv.org/abs/2608.01691",
+  "description": "arXiv:2608.01691v1 Announce Type: cross \nAbstract: Detecting a change in a multivariate series answers only the first of two questions; the operational question is which coordinates changed. Existing answers are incomplete. Block-level procedures certify predefined groups of coordinates under an additive union bound, high-dimensional variable-selection methods return interpretable rankings without error guarantees, and the post-detection inference literature controls error along the time axis rather than across coordinates. We propose ARM (Attribution by Rank Maxima), a wrapper that accepts a changepoint located by an arbitrary detector and returns the set of coordinates certified to have changed, each carrying a location or scale type label. ARM scores each coordinate by a max-over-splits rank statistic. Because this statistic dominates the corresponding statistic at the estimated split, the resulting certificate is invariant to the manner, and to the accuracy, of the changepoint estimate. Three finite-sample guarantees follow from within-coordinate ranks alone: per-coordinate validity under any detector; exact family-wise error control through a Westfall--Young joint permutation that preserves cross-coordinate dependence, with a fully distribution-free Holm fallback; and false discovery rate control under arbitrary coordinate dependence in high dimensions through Benjamini--Yekutieli and e-BH. In simulations, naive per-coordinate testing at the estimated changepoint inflates its family-wise error beyond $0.66$ as the dimension grows, whereas ARM maintains the nominal level while retaining validity under heavy tails, power in high dimensions, and accurate type labels. On five financial series surrounding the 2008 collapse, ARM attributes a scale change to every asset class and excludes injected control coordinates.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ME",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

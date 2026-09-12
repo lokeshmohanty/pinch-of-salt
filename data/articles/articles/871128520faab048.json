@@ -1,0 +1,14 @@
+{
+  "id": "871128520faab048",
+  "title": "Physics-Guided Flow Matching for CT Image Reconstruction",
+  "link": "https://arxiv.org/abs/2608.28256",
+  "description": "arXiv:2608.28256v1 Announce Type: cross \nAbstract: Deep generative models have recently emerged as powerful priors for solving ill-posed inverse problems in CT, with diffusion-based approaches achieving state-of-the-art reconstruction performance. However, diffusion models typically rely on stochastic sampling procedures, long inference trajectories, and carefully tuned noise schedules, which can limit computational efficiency and numerical stability, especially at high spatial resolutions. In this work, we investigate Flow Matching as an alternative generative prior for CT reconstruction. We train a high-resolution Rectified Flow Matching model on 256x256 chest images from the Mayo Clinic Low-Dose CT dataset. To mitigate overfitting and limited anatomical variability, we employ a two-stage training strategy consisting of an initial phase with strong, anatomically informed data augmentation, followed by a fine-tuning phase with reduced or no augmentation to refine structural fidelity. The resulting model is capable of generating high-quality and anatomically coherent CT-like images, serving as a strong learned prior. We then evaluate multiple reconstruction methods specifically designed for Flow Matching models, including Plug-and-Play Flow, FlowDPS, Flower, and Flow-Priors (ICTM), and compare them against state-of-the-art diffusion-based reconstruction algorithms such as DDRM, DPS, and DiffPIR. Experimental results across several CT inverse problem settings show that Flow Matching-based approaches consistently outperform diffusion-based methods in terms of PSNR, SSIM, and perceptual quality, while requiring fewer sampling steps. Finally, we publicly release the trained Flow Matching model and accompanying code to facilitate reproducibility and future research. Overall, this work demonstrates that Flow Matching provides a stable, efficient, and effective alternative to diffusion models for high-resolution CT image reconstruction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV"
+  ]
+}

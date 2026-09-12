@@ -1,0 +1,14 @@
+{
+  "id": "e55be1abf5db305b",
+  "title": "DCA-MoE: Spatially Adaptive Cross-Layer Fusion and Density-Routed Experts for Crowd Counting",
+  "link": "https://arxiv.org/abs/2608.15213",
+  "description": "arXiv:2608.15213v2 Announce Type: replace \nAbstract: Crowd counting must recover reliable local density under severe variations in perspective, head scale, occlusion, and background clutter. Although modern counting objectives provide strong spatial supervision, many multi-level decoders still use spatially invariant feature fusion and apply one receptive-field pattern to every location. We propose DCA-MoE, a framework that makes both decisions content dependent while retaining a frozen DINOv3 encoder. Spatially Adaptive Layer Fusion (SALF) predicts position-wise weights over four aligned backbone features, and Density-Routed Multi-Receptive-Field Experts (DR-MoE) assigns each location a soft mixture of local, mid-range, and large-context residual experts. An EBC-style head reconstructs block density, while DMCount supervision and an auxiliary routing-balance term train the decoder without updating the backbone. On the NWPU-Crowd validation split, the strongest paired configuration, based on DINOv3 ViT-L/16, obtains 31.7 MAE and 72.2 RMSE; the matched ViT-B/16 full model obtains a paired 32.2/75.9. Cross-dataset results remain mixed, and several component baselines currently report independently selected minima from a single seed. The evidence therefore supports the feasibility of spatially adaptive fusion and routing, while broader paired and multi-seed evaluation remains necessary for causal attribution.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.IR"
+  ]
+}

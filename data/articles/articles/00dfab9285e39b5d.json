@@ -1,0 +1,13 @@
+{
+  "id": "00dfab9285e39b5d",
+  "title": "Thinking Once Is Enough: Intermediate-Layer Evidence Routing for High-Resolution VQA",
+  "link": "https://arxiv.org/abs/2607.27830",
+  "description": "arXiv:2607.27830v1 Announce Type: new \nAbstract: High-resolution visual question answering (HR-VQA) is often treated as a problem of insufficient evidence acquisition, where failing multimodal large language models must inspect images again through cropping, re-encoding, or multi-round search. We show that this view is incomplete: in many cases, fine-grained evidence has already survived visual encoding and become identifiable and influential within an intermediate-layer routing window, but is later diluted before answer generation. We propose Thinking-Once, a \\textbf{training-free, single-visual-pass} evidence-routing method that reconstructs question-conditioned attention at this window, preserves core entity tokens and compact background context, and routes this evidence to later layers without extra visual encoding. Across five base models, Thinking-Once consistently improves or matches the corresponding base setting, increasing the average scores on V$^*$Bench, HRBench-4K, and HRBench-8K by \\textit{+3.1}, \\textit{+3.0}, and \\textit{+2.7} points while reducing the average peak memory by about 4,GB. On Qwen2.5-VL-7B, it improves the three benchmarks by \\textit{+9.9}, \\textit{+4.6}, and \\textit{+5.5} points, raising the cross-benchmark mean from 72.5 to 79.1. With the ZwZ-8B base model, Thinking-Once reaches a mean score of 82.7. Against 11 open-source HR-VQA baselines, it obtains the best or tied-best score on all three benchmark averages and the best overall mean; for example, compared with DeepScan, it reduces V$^*$Bench inference time by \\textbf{97.2\\%} while improving the cross-benchmark mean from 77.8 to 79.1. These results show that HR-VQA can be improved by routing already encoded evidence rather than repeatedly acquiring new visual inputs. Code is available in the appendix.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

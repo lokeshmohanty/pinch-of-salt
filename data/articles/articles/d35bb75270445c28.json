@@ -1,0 +1,15 @@
+{
+  "id": "d35bb75270445c28",
+  "title": "FedReview: Review and Dispose Poisoned Updates without Validation Datasets or Historic Knowledge",
+  "link": "https://arxiv.org/abs/2402.16934",
+  "description": "arXiv:2402.16934v2 Announce Type: replace-cross \nAbstract: Federated learning has emerged as a decentralized approach for training high-performance models without accessing user data. Despite its effectiveness, it is vulnerable to poisoning attacks, where malicious users manipulate the global model by uploading poisoned updates. In this paper, we propose FedReview, a review-based mechanism to identify and dispose the potential poisoned updates in federated learning. Under FedReview, the server randomly assigns a subset of clients as reviewers to evaluate model updates on their training datasets in each round. The reviewers rank the updates based on evaluation results and estimate the number of low-quality updates as potential poisoned ones. Based on the review reports, the server applies a majority voting mechanism to aggregate rankings, which tolerates wrong rankings from malicious reviewers and guides the removal of suspicious updates during model aggregation. In contrast to prior works such as FLTrust, FedReview does not require a server-side validation dataset or prior knowledge of clients, allowing flexible client participation. Extensive experiments demonstrate that FedReview enables the server to learn a well-performing global model in adversarial environments.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CR"
+  ]
+}

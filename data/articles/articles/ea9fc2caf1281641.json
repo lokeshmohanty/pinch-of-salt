@@ -1,0 +1,14 @@
+{
+  "id": "ea9fc2caf1281641",
+  "title": "Dual-Resolution Attention-Gated Deep Learning with Ordinal Regression for Diabetic Retinopathy Grading: A Quantified Assessment of Cross-Domain Generalization",
+  "link": "https://arxiv.org/abs/2604.17341",
+  "description": "arXiv:2604.17341v2 Announce Type: replace \nAbstract: Diabetic retinopathy (DR) is a leading cause of preventable blindness, and automated grading could extend screening capacity. However, most reported DR models are validated only on the dataset they were trained on, leaving their behaviour under real screening variability unmeasured. This study presents a dual-resolution grading framework and quantifies how far performance falls when the imaging domain shifts. Two EfficientNet backbones process complementary views of each fundus image: B0 receives Ben Graham-normalised input at 224x224, emphasising vascular structure, while B3 receives CLAHE-enhanced input at 300x300, emphasising focal lesions. A learnable attention gate fuses the branches per image, and an ordinal binary-decomposition head models severity as an ordered scale rather than as unordered categories. Training used a combined set of 4,149 images (APTOS 2019, n = 2,929; Messidor-2 training portion, n = 1,220); evaluation used a held-out APTOS split (n = 733) and a Messidor-2 test set (n = 524) excluded from training and from all model selection. Quadratic weighted kappa was 0.882 (95% CI 0.853-0.906) on APTOS and 0.679 (95% CI 0.613-0.735) on Messidor-2 for this run, a significant gap of 0.202 (95% CI 0.142-0.273); across three random seeds the held-out kappa was 0.689 +/- 0.021. Critically, accuracy fell 19.3 points while 93.7% of predictions stayed within one grade of reference: ordering survives domain shift, threshold placement does not. Referable-DR sensitivity fell from 0.879 to 0.620.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

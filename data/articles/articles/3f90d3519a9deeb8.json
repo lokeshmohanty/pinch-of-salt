@@ -1,0 +1,13 @@
+{
+  "id": "3f90d3519a9deeb8",
+  "title": "Training-Free Semantic-Edge Response Decoding of SAM3 for Cross-Domain Infrastructure Crack Segmentation",
+  "link": "https://arxiv.org/abs/2607.12292",
+  "description": "arXiv:2607.12292v2 Announce Type: replace \nAbstract: Cross-project crack segmentation is hindered by variations in materials, imaging conditions, crack morphology, and background interference. Text-promptable foundation models reduce task-specific training, but SAM3's final region proposals may suppress, truncate, or distort weak and fragmented cracks. We propose \\textbf{S}emantic-\\textbf{E}dge \\textbf{R}esponse \\textbf{D}ecoding (\\textbf{SERD}), a training-free method that replaces the proposal interface with the internal language-conditioned response. SERD normalizes this dense response, calibrates it using a fixed Sobel structural prior, and applies a single threshold to generate the crack mask. SAM3 remains frozen, with no target-domain annotation, auxiliary prompting network, or test-time optimization. When CamCrack789 is used only for threshold selection, SERD achieves 58.00\\% average Crack IoU on five unseen datasets, compared with 54.33\\% for native SAM3. Across six rotated source-domain settings, SERD obtains 60.23\\% mean target-domain IoU and 67.18\\% Boundary F1, exceeding SAM3 by 3.27 and 2.70 percentage points. Regional, structural, foreground-area, robustness, and latency analyses show that direct response decoding recovers substantial crack evidence lost during proposal formation, while structural calibration improves precision and boundary localization. The results demonstrate that internal-response decoding provides a simple and transferable interface for cross-domain infrastructure crack segmentation. \\textit{Code is available at: \\href{https://github.com/xauat-liushipeng/SERD}{GitHub}}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

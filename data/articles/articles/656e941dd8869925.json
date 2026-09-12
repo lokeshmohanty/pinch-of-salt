@@ -1,0 +1,13 @@
+{
+  "id": "656e941dd8869925",
+  "title": "Topology-Constrained Quantized nnUNet for Efficient and Anatomically Accurate 3D Tooth Segmentation",
+  "link": "https://arxiv.org/abs/2605.04201",
+  "description": "arXiv:2605.04201v2 Announce Type: replace \nAbstract: We propose a topology-constrained quantized nnUNet framework for efficient and anatomically accurate 3D tooth segmentation, addressing the challenges of spatial distortion introduced by quantization in deep learning models. The proposed method integrates a novel tooth-specific topological loss into quantization-aware training, preserving critical anatomical structures such as tooth count, adjacency relationships, and cavity integrity while maintaining computational efficiency. The system employs an 8-bit quantized nnUNet backbone, where weights and activations are dynamically calibrated to minimize precision loss during inference. Furthermore, the topological loss combines connected-component analysis, adjacency consistency, and hole detection penalties, ensuring anatomical fidelity without modifying the underlying network architecture. The joint optimization objective harmonizes cross-entropy loss, quantization regularization, and topological constraints, enabling end-to-end training with gradient approximations for persistent homology terms. Experiments demonstrate that our approach significantly reduces topological errors compared to conventional quantized models, achieving clinically plausible segmentations on dental CBCT scans. The method retains the hardware efficiency of integer-only inference, making it suitable for deployment in resource-constrained clinical environments. This work bridges the gap between computational efficiency and anatomical precision in medical image segmentation, offering a practical solution for real-world dental applications.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "87b6fa227db7b7c6",
+  "title": "Eulerian Motion Guidance: Robust Image Animation via Bidirectional Geometric Consistency",
+  "link": "https://arxiv.org/abs/2605.06280",
+  "description": "arXiv:2605.06280v5 Announce Type: replace \nAbstract: Recent advancements in image animation have utilized diffusion models to breathe life into static images. However, existing controllable frameworks typically rely on Lagrangian motion guidance, where optical flow is estimated relative to the initial frame. This paper revisits the same optical-flow primitive through a more local supervision design: we use adjacent-frame Eulerian motion fields to guide generation, where the motion signal always describes a short temporal hop. This shift enables parallelized training and provides bounded-error supervision throughout the generation process. To mitigate the drift artifacts common in adjacent frame generation, we introduce a Bidirectional Geometric Consistency mechanism, which computes a forward-backward cycle check to mathematically identify and mask occluded regions, preventing the model from learning incorrect warping objectives. Extensive experiments demonstrate that our approach accelerates training, preserves temporal coherence, and reduces dynamic artifacts compared to reference-based baselines. The code, model, and data have been made available at https://nguyentthong.github.io/eulerian/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

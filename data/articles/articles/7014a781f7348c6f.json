@@ -1,0 +1,14 @@
+{
+  "id": "7014a781f7348c6f",
+  "title": "DynaTokens: Controlling Token Dynamics for Continual Video-Language Understanding",
+  "link": "https://arxiv.org/abs/2603.06662",
+  "description": "arXiv:2603.06662v3 Announce Type: replace \nAbstract: Continual VideoQA with multimodal LLMs remains challenging because sequential adaptation induces task interference, while storing task-specific prompts becomes impractical as task sequences grow. We introduce DynaTokens, a transformer-based token generator that dynamically produces fine-tuning tokens on demand, enabling task-adaptive prompt updates through shared generation weights. To mitigate forgetting, we introduce meta-learning-inspired regularisers that look ahead to avoid task-specific sharp update directions while anchoring the evolving generator to prior-task behaviours. We theoretically connect this objective to sharpness-aware optimisation, showing how it favours flatter cross-task minima and improves retention. DynaTokens combines gradient-free routing based on robust pretrained token and visual embeddings with lightweight auxiliary multimodal supervision, reducing router drift during continual adaptation. Across standard continual VideoQA benchmarks, DynaTokens achieves higher average accuracy and substantially lower forgetting than strong baselines. It also improves zero-shot generalisation and remains effective in longer domain-incremental sequences with extended task shifts. Finally, we introduce a challenging ImageQA->VideoQA protocol and show that DynaTokens enables robust cross-modal continual transfer.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

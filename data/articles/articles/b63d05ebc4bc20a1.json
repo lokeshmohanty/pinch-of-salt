@@ -1,0 +1,13 @@
+{
+  "id": "b63d05ebc4bc20a1",
+  "title": "Cytoarchitecture in Words: Weakly Supervised Vision-Language Modeling for Human Brain Microscopy",
+  "link": "https://arxiv.org/abs/2602.23088",
+  "description": "arXiv:2602.23088v2 Announce Type: replace \nAbstract: Vision foundation models increasingly support interactive scientific workflows, but natural-language interaction requires coupling visual representations to language. Curated image-text pairs for this coupling are scarce in many biomedical domains. This is the case for cell-body-stained histological sections of the human brain, where microscopic image patches encode cytoarchitecture: cellular density, morphology, laminar structure, and areal organization. We propose retrieve-and-enrich supervision, a weakly supervised scheme for training image-conditioned language models without curated image-text pairs. The method retrieves label-level text from the literature via a shared anatomical label, then enriches it with image-specific properties such as cortical layer thickness and cell density. Labels provide training targets only, not model inputs. We use this scheme to couple CytoNet, a cytoarchitectonic vision foundation model, to an open-weight large language model via a lightweight Flamingo-style adapter. Across 57 brain areas, the resulting model produces plausible cytoarchitectonic descriptions, supports open-set use by rejecting out-of-scope areas, and predicts the correct area for in-scope patches with 90.6% accuracy. Removing explicit area names from generated text still leaves descriptions sufficient for a language model to recover the area in an 8-way test with 68.6% accuracy. A second instruction-tuned model trained with image-specific targets recovers cortical layer thickness and cell-densities from individual patches, allowing the model to read out information beyond canonical area descriptions. Our results show that retrieve-and-enrich supervision offers a practical route to vision-language training in specialized imaging domains where labels and expert text exist but image-level captions do not.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

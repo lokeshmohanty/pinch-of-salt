@@ -1,0 +1,13 @@
+{
+  "id": "36738e67b88c3bf0",
+  "title": "Sparse Attention for Dense Open-Vocabulary Prediction in CLIP",
+  "link": "https://arxiv.org/abs/2607.07135",
+  "description": "arXiv:2607.07135v2 Announce Type: replace \nAbstract: Contrastive Language-Image Pre-training (CLIP) relies on softmax-based self-attention, a strictly positive distribution that assigns probability mass to every pair of tokens-even semantically irrelevant ones. While these dense softmax weights are effective for gathering broad context during pre-training, they spread attention across many low-salience tokens, producing noise that obscures the fine-grained, spatially localized cues required for dense, open-vocabulary prediction. We study an inference-time substitution of the row-wise softmax in the final visual self-attention layers with the $\\alpha$-entmax transform, applied across both the standard query-key attention and self-correlation variants. Because entmax applies a data-dependent threshold that maps low scores exactly to zero, it acts as an implicit denoiser, zeroing contextually irrelevant dependencies while redistributing mass onto the most relevant tokens. We evaluate on open-vocabulary tasks-dense semantic segmentation (Pascal VOC, Pascal Context, ADE20K) and fine-grained retrieval (FG-OVD)-and find the gain from attention sparsification is proportional to how much the baseline attention spreads off the target class.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

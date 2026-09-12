@@ -1,0 +1,13 @@
+{
+  "id": "307a94685d70cd5b",
+  "title": "Beyond Recognition: Compact Multi-Domain Arabic Manuscript HTR with Candidate-Selection Analysis and Evidence-Preserving Review",
+  "link": "https://arxiv.org/abs/2608.19385",
+  "description": "arXiv:2608.19385v1 Announce Type: new \nAbstract: Historical Arabic manuscript transcription is not only a recognition problem. A usable scholarly system must cope with shifting hands and layouts, preserve uncertain readings, distinguish visual evidence from linguistic plausibility, and record the researcher's final decision. We present Phoenix, a 4.99-million-parameter CNN-BiLSTM-CTC recognizer, and Athar, an evidence-aware review workflow built around it. Phoenix is adapted across archival, Maghrebi, and historical manuscript domains using document-aware replay, an expanded 81-symbol codec, and forgetting guards that reject checkpoints that improve a new domain at unacceptable cost to previous domains. In a pre-specified held-out comparison against the preceding checkpoint, frozen before evaluation and scored with greedy decoding and raw references, Phoenix reduced CER from 22.12% to 17.86% on 10,594 Agapet lines and from 17.72% to 11.84% on 11,684 Omar lines, while regressing from 10.39% to 10.72% on 164 TariMa lines. Across the two large held-out sets, character-weighted CER fell from 19.98% to 14.93%, a 25.3% relative error reduction. A separate same-protocol development diagnostic found the lowest CER for Phoenix on four of four comparable domains (9.59% unweighted macro CER). An N-best diagnostic revealed a 2.15-point oracle gap between beam decoding and Oracle@25, while neural text rerankers, consensus MBR, CTC-posterior quality estimation, and local pre-CTC hidden-state quality estimation recovered less than 4% of this gap. Athar therefore preserves the visual reading, exposes bounded alternatives, uses local language models conservatively, retrieves source parallels with unique, ambiguous, or abstain states, and exports auditable TEI and PAGE-XML records. The results support evaluating manuscript HTR as auditable evidence management rather than silent text replacement.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "f61626986316b7a5",
+  "title": "PIE-APT: Abductive Planning over Temporal Dynamic Knowledge Graphs via Incremental Reasoning",
+  "link": "https://arxiv.org/abs/2607.27287",
+  "description": "arXiv:2607.27287v2 Announce Type: replace \nAbstract: Planning over Temporal Dynamic Knowledge Graphs (TDKGs) presents theoretical challenges in open-world environments with incomplete information. Existing action formalisms often face decidability issues and the Ramification Problem, while structural abduction requires expansive combinatorial search spaces. We introduce a unified framework with two modules--PIE-Abducer (incremental direct-derivation abduction) and PIE-APT (Abductive Planning for TDKGs)--operating natively on the expressive SROIQ Description Logic. Modeling state transitions as non-monotonic updates to deductively closed DL theories, we represent actions natively in OWL. This leverages an incremental reasoner to preserve decidability and natively bypass the Ramification Problem. To address incomplete knowledge, PIE-Abducer circumvents Minimal Hitting Set (MHS) enumeration. Instead of combinatorial search, it injects the logical negation of a goal into a consistent DL branch and synthesizes missing premises via direct refutation consequences. PIE-APT employs a recursive Generate-and-Test architecture, interleaving backward-chaining A* search with PIE-Abducer to synthesize both action sequences and abductive assumptions. Candidates undergo strict validation via forward-chaining Temporal Projection to evaluate logical trajectories. We evaluate four OWL benchmarks targeting semantic abilities missing from classical planning: parameterized goals with witness search, mid-search DL entailment, open-world assumption injection, and adversarial plan synthesis. Results show qualitative superiority over classical planners and prove our direct-derivation approach significantly outperforms an MHS-faithful baseline in abductive enrichment.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LO"
+  ]
+}

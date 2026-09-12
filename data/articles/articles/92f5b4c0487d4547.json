@@ -1,0 +1,14 @@
+{
+  "id": "92f5b4c0487d4547",
+  "title": "What Will This Copper Look Like Later? Forecasting Surface Appearance and Rendering It as a PBR Material",
+  "link": "https://arxiv.org/abs/2608.28102",
+  "description": "arXiv:2608.28102v1 Announce Type: cross \nAbstract: Digital design requires predicting how a metal surface will look later in its oxidation; this paper presents such a pipeline for copper. Given a fixed-camera observation, the system forecasts appearance 10 accelerated units ahead and converts it into the albedo, normal, roughness and metallic maps a renderer consumes. Forecasting is evaluated as an authoring tool would use it, on a copper specimen the system has not observed: an entire recording is held out, so training and checkpoint selection use one specimen and the test set is the whole of a second, recorded on a different day and condition. Under this protocol a learned spatio-temporal model with a monotone oxidation state, the most accurate forecaster within a single recording, is less accurate than copying the last observed frame on an unseen specimen, in both directions, as are three further trained architectures. The only forecaster that transfers is a closed-form global color extrapolation with no trained parameters, improving on copy-last-frame by 13.4% and 50.6%, with a margin that increases with horizon to +16.7% and +55.5% at t+10. Two controls qualify this: correcting every frame for the photometric drift measured on a non-oxidizing reference region leaves both margins intact, ruling out uncontrolled exposure as their source, and a moving-block bootstrap over the 6 independent windows each recording contains separates the larger margin from zero but leaves the smaller one not individually significant. The mechanism is measured: a learned susceptibility map encodes where corrosion begins on the training specimen and misleads on a new one, whereas the global color trajectory is what specimens share. The pipeline therefore deploys the closed-form forecaster for unseen specimens and the learned model only for continuing one already observed. Code, splits, protocol and leakage audit are released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV"
+  ]
+}

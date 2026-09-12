@@ -1,0 +1,13 @@
+{
+  "id": "90e99203f871846e",
+  "title": "SparseVoxelDet: Fully Sparse Voxel Networks for Efficient Event-Based Drone Detection",
+  "link": "https://arxiv.org/abs/2603.21638",
+  "description": "arXiv:2603.21638v2 Announce Type: replace \nAbstract: Event cameras excel at detecting small, fast drones, but today's detectors give away their key advantage: they convert the sparse event stream into dense grids and pay dense-processing cost on inputs that are almost entirely empty. We present SparseVoxelDet, to our knowledge the first coordinate-sparse 3D event voxel bounding-box detector: backbone, feature pyramid, temporal reduction, and detection head all operate directly on coordinate-indexed features, with no dense spatial grid at any stage. Building it exposed a hidden failure mode we name support inflation: an input filling a median 0.0652% of the voxel lattice inflates stage by stage until standard pyramid fusion leaves the detection head locally near-dense. We answer with two ideas. Expansion-free inverse-convolution fusion provably creates no active sites beyond the stored backbone supports, cutting head occupancy from a median 78.88% to 10.53%; quality-aligned supervision then recovers more accuracy than preserving sparsity costs. The payoff is measured, not assumed: executing the same trained network densely costs a median 27.5x the work and 4.65x the latency across 5,000 paired frames, with no frame cheaper dense, while the 6.22M-parameter detector reaches 87.01 AP50 on the FRED drone benchmark, ahead of matched dense controls, and holds its lead on the held-out test partition evaluated once. Sparsity, preserved by construction and supervised well, delivers the efficiency and the accuracy together.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

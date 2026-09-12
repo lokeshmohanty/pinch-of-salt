@@ -1,0 +1,14 @@
+{
+  "id": "90fe8c33a8575e8f",
+  "title": "Boundary-Continuous Cross-Camera RGB Mapping via Hue-Split Model Trees",
+  "link": "https://arxiv.org/abs/2608.11548",
+  "description": "arXiv:2608.11548v1 Announce Type: cross \nAbstract: We propose a hue-split model-tree method for boundary-continuous cross-camera RGB mapping. Cross-camera RGB mapping aims to produce consistent color representations across cameras whose recorded RGB values differ due to sensor spectral sensitivities and image-signal processing pipelines. A common chart-based remedy is to estimate a single global affine color correction matrix (CCM), but such a global model cannot capture hue-specific discrepancies between cameras. To capture that behavior, we recursively partitions the source-camera color space along a scalar hue coordinate and builds an model tree that stores an affine CCM at every node. For fitting the node CCMs, we utilize a log-domain error objective. To prevent false contours that arise from hard hue splits, we further introduce a boundary-continuous formulation in which the prediction is obtained by blending the log-domain outputs of all node CCMs along the root-to-leaf path. The path-wise blending weights are optimized under a simplex constraint using both a chart-pair fitting loss and an explicit continuity regularizer defined on deterministic boundary prototype pairs placed just on either side of each learned hue threshold. We conducted an experiment on a Canon EOS-1Ds Mark II to Canon EOS 20D mapping using the Middlebury Registered Color Checker dataset. The results show that hue splitting substantially reduces log-RMSE over a single global affine CCM and that the proposed path blending with boundary prototype regularization simultaneously improves accuracy and suppresses chromaticity gaps at the learned hue thresholds across two illuminants and multiple exposure conditions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

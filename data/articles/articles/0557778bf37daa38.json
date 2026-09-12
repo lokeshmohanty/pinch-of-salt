@@ -1,0 +1,13 @@
+{
+  "id": "0557778bf37daa38",
+  "title": "AdvFD: Boosting Visual Generation via Adversarial Fr'echet Distance Loss",
+  "link": "https://arxiv.org/abs/2608.11205",
+  "description": "arXiv:2608.11205v1 Announce Type: new \nAbstract: Fr\\'echet distance has recently emerged as an effective distribution-level objective for generator post-training, complementing the conventional sample-level diffusion and flow-matching losses. However, directly optimizing Fr\\'echet objectives can cause Fr\\'echet hacking. The target metrics keep improving, but visual quality and Fr\\'echet alignment in other feature spaces may stagnate or deteriorate. We attribute this failure to the static pretrained feature spaces used by existing Fr\\'echet losses. These feature spaces provide incomplete and fixed views of the differences between real and generated distributions. To address this limitation, we propose Adversarial Fr\\'echet Distance (AdvFD), which complements the static representation targets in FD-Loss with a calibrated adversarially learned representation. AdvFD augments the original static Fr\\'echet objective with a learnable representation that adversarially maximizes the Fr\\'echet discrepancy between real and generated samples, while the generator minimizes the same discrepancy in the resulting adaptive feature space. To prevent the adversarial representation from trivially increasing the objective through feature amplification, we further introduce real-feature whitening, which normalizes its scale and covariance geometry and stabilizes the min--max optimization. Extensive experiments show that AdvFD consistently improves one-step generator post-training across both JiT and pMF backbones and across different model scales.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "364fadfe6485ad1c",
+  "title": "Innovation-Residual Auditing of Autonomous Analysis Agents: Localization, Detection Limits, Error Control, and Identifiability",
+  "link": "https://arxiv.org/abs/2608.05490",
+  "description": "arXiv:2608.05490v1 Announce Type: new \nAbstract: Autonomous agents now carry out entire data analyses, selecting cohorts, joining tables, and fitting models with little step-by-step supervision. When such an analysis turns out to be wrong, someone must determine which operation caused it. A recent approach does this without any labelled mistakes, learning instead from analyses known to be sound and flagging operations that depart from what that model predicts; how reliable such audits are has not been studied. This paper supplies that analysis. The choice of score determines whether an error can be localized at all. If each operation is scored by how surprising it is given the operation immediately preceding it, then operations that merely inherit an earlier error are indistinguishable from correct ones, so one mistake produces one flag; scores computed against a longer reconstruction of the intended analysis instead spread a single mistake across many operations. We quantify how far they spread, and how to choose the comparison length when an error accumulates gradually rather than at once. We then give procedures that control the proportion of falsely flagged operations within a single audited analysis, requiring only that sound analyses be exchangeable rather than that the fitted model be correct, and we quantify how much the guarantees weaken when the model is imperfect or when the analysis was selected for review in a way that depends on its content. Finally we establish a limit on what any such audit can report: errors below a certain magnitude cannot be attributed at all, being indistinguishable from ordinary variation among sound analyses. This limit falls so slowly as more sound analyses are collected that at the representation sizes now in use a hundredfold increase reduces it by under two percent, so the dimension of the representation rather than the volume of training data is the binding constraint.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG",
+    "stat.ML"
+  ]
+}

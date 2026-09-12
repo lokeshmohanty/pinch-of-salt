@@ -1,0 +1,14 @@
+{
+  "id": "d9bbc0bb3c7053cd",
+  "title": "When Can One Neuron Fix Repetition Loops in LLMs?",
+  "link": "https://arxiv.org/abs/2606.13705",
+  "description": "arXiv:2606.13705v2 Announce Type: replace-cross \nAbstract: The Gemma 4 instruction-tuned models share a reproducible failure: on long factual enumeration prompts, such as TV episodes, the 88 IAU constellations, or the 151 original Pokemon, they collapse into repetition, either a tight verbatim loop or a list whose entries decay onto one answer. These loops reach 87.5% (7/8 generations) and survive prompt rewording and most sampling adjustments. In this paper, we explore whether edits to a few internal model components can directly reduce this failure, without relying on repetition penalties, which can distort valid repetition and degrade task performance. To locate such targets, we combine per-layer ablation with per-neuron or routed-expert attribution, then evaluate weight edits over complete generations. We find that these edits substantially reduce detected loops on the prompts and seeds used to select them; in Gemma 4 E2B, for example, one sign-inverted neuron suffices. Across all four Gemma models, detected loops fall from 46/384 to 12/384 on frozen held-out prompts and seeds, driven mainly by E4B and 31B, while general-purpose benchmarks show no statistically detectable regressions. Our attribution methodology identifies useful candidates, but rankings vary across examples. At longer generation budgets, edits remain effective for E2B and E4B, whereas remaining failures in 26B and 31B shift toward doom looping: non-convergent self-correction over facts the model cannot recall. In exploratory experiments on Qwen3.5 and LFM2.5, sparse edits also reduce repetition, providing preliminary cross-family evidence, although effect strength and selectivity vary. Overall, our results show the promise and limits of targeted, small-scale weight editing: it can suppress specific repetition failures and provide a training-free causal intervention, but does not reveal a universal loop circuit, guarantee clean termination, or supply missing knowledge.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

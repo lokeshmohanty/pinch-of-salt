@@ -1,0 +1,14 @@
+{
+  "id": "f896234a82a03666",
+  "title": "Structured Thoughts For Improved Reasoning And Context Pruning",
+  "link": "https://arxiv.org/abs/2607.10386",
+  "description": "arXiv:2607.10386v1 Announce Type: cross \nAbstract: Large language models (LLMs) excel at generating long chains of thought, but long reasoning traces are often verbose and memory-inefficient. In this work, we introduce Structured Thoughts, a framework that organizes reasoning into alternating  and  blocks:  captures exploratory scratch work, while  contains the distilled conclusion of that step. We construct a dataset of structured thoughts by segmenting reasoning traces into  blocks and prompting an LLM to summarize each step into its corresponding . Fine-tuning pretrained foundation models on this reformatted data produces models that adopt the structured reasoning style, leading to performance gains of up to 8.08\\% on reasoning benchmarks compared to standard SFT. The explicit structure also enables context pruning: after each / pair, the  can be pruned, allowing the model to retain conclusions without keeping the full scratch work in the context. A proof-of-concept pruning implementation achieves an average of 85\\% memory / context savings with an 8.67\\% performance drop across mathematical tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "id": "456ced8303bc3250",
+  "title": "Reinforcement Learning for Heterogeneous Sensor Selection in Maritime Surveillance",
+  "link": "https://arxiv.org/abs/2607.22667",
+  "description": "arXiv:2607.22667v2 Announce Type: replace \nAbstract: This paper presents an information-gain-guided reinforcement-learning sensor-selection framework for single-vessel tracking in heterogeneous maritime sensor networks. The proposed approach is motivated by information-theoretic sensor management: instead of activating all sensors or repeatedly performing computationally expensive online expected-information-gain evaluation, a learned policy selects one tracking-relevant sensor at each decision epoch. A Bayesian sequential Monte Carlo tracker estimates the vessel state from noisy measurements and provides a belief representation for scheduling under nonlinear and non-Gaussian conditions. A Proximal Policy Optimization agent selects one of five sensors in a georeferenced simulation of the CMMI Smart Marina testbed at Ayia Napa Marina, Cyprus. The policy is trained on the testbed's actual five-sensor configuration. The agent observes belief-state, detection-history, coverage, sensor-geometry, and realized-information-gain features. The reward is defined as a realized-information-gain term gated by an observability mask. Final-test simulations compare the proposed framework with random single-sensor selection, always-on sensing using all sensors simultaneously, and the expected-information-gain sensor-selection baseline proposed in our previous work. Results show that the learned policy achieves tracking performance close to always-on sensing while activating only one sensor per decision time step and avoiding the computationally expensive online entropy search required by expected-information-gain selection. Additional zero-shot evaluation without retraining on ten moderately perturbed versions of actual layout configuration showed broadly stable tracking, with any increase in positional tracking error remaining below 1 meter across all perturbations.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.IT",
+    "cs.LG",
+    "cs.RO",
+    "cs.SY",
+    "eess.SP",
+    "eess.SY",
+    "math.IT"
+  ]
+}

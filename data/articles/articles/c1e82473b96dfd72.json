@@ -1,0 +1,15 @@
+{
+  "id": "c1e82473b96dfd72",
+  "title": "Hybrid Retrieval-Augmented Generation with Knowledge Graph Expansion, RRF Fusion, and Per-Chunk Grounded Evaluation for Enterprise Document Search",
+  "link": "https://arxiv.org/abs/2609.01617",
+  "description": "arXiv:2609.01617v1 Announce Type: cross \nAbstract: Getting accurate, grounded answers out of large enterprise document repositories is a difficult problem. Dense vector retrieval alone frequently performs poorly on queries that mix technical terminology, vendor-specific acronyms, or require reasoning across several non-adjacent sections. DocuSearch was built to address exactly this gap - an offline, multi-agent document intelligence system developed and evaluated in a production telecom network operations environment. Rather than relying on a single retrieval signal, DocuSearch pulls together three complementary sources of evidence: semantic search over a Qdrant vector store using BGE-Large embeddings, BM25 full text search over an SQLite FTS5 index, and Knowledge Graph neighbour expansion from a structured edge table. These three ranked lists are merged through Reciprocal Rank Fusion with signal weights of 0.50 for vector search, 0.35 for BM25, and 0.15 for the knowledge graph, using a smoothing constant of 60 to stabilize scores. A cross-encoder then reranks the fused list, and Maximal Marginal Relevance with a balance factor of 0.65 prunes results for relevance and diversity. What makes DocuSearch distinctive is a per-chunk evaluation loop treating each chunk as its own mini-retrieval problem: an LLM decides whether the chunk needs more context, whether it fully answers the query, and whether the answer is grounded in retrieved text. Ungrounded answers are not returned; the system falls back to a multi-chunk merge instead. On a telecom corpus, DocuSearch reaches Precision@10 of 0.69, Recall@10 of 0.79, and a grounding rate of 89.6% - gains of 15, 16, and 18.4 percentage points over a dense-only RAG baseline. Index Terms: retrieval-augmented generation, knowledge graph, reciprocal rank fusion, enterprise document search, agentic evaluation, BM25, cross-encoder reranking, on-premise deployment, LangGraph, telecom AI.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

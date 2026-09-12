@@ -1,0 +1,13 @@
+{
+  "id": "66ddb3875cfb8229",
+  "title": "SelectAnyTree: A Promptable Instance Segmentation Model for 3D Forest LiDAR Point Clouds",
+  "link": "https://arxiv.org/abs/2606.27491",
+  "description": "arXiv:2606.27491v2 Announce Type: replace \nAbstract: Instance segmentation of trees in forest LiDAR point clouds is constrained by label scarcity: A single hectare holds millions of points and hundreds of overlapping tree crowns, making manual annotation laborious, while automatic pre-segmentations offer no interactive refinement. Inspired by the promptable paradigm of foundation segmentation models, we propose SelectAnyTree, which delineates any individual tree in a 3D forest point cloud from a few clicks and is purpose-built for promptable instance segmentation of 3D forest LiDAR scenes. The proposed SelectAnyTree couples three lightweight stages: (1) Sparse voxel scene encoder that embeds the forest once into reusable features, (2) Click-to-query prompt encoder that turns each click into a single content query from its 3D position, positive/negative polarity, and the backbone feature of its nearest voxel, and (3) State-space query decoder that converts this query into one tree mask with linear-time complexity, with a mask feedback that conditions each refinement round on the previous mask. Each additional tree therefore costs only a lightweight prompt-encoding and decoding pass, and the full model requires just 19.4 M parameters, far fewer than prior promptable 3D models. Additionally, we exploit forest-aware information by detecting treetops as local maxima of the Canopy Height Model (CHM) computed from the scene geometry, and associating one with the user's click as a free initial click. Across seven diverse forest regions and an independent held-out dataset, SelectAnyTree segments a target tree to 79.9 Intersection-over-Union (IoU) from a single click, 24.7 points above the strongest promptable baseline, and reaches every accuracy target with the fewest clicks. The source code is available at https://github.com/thanhhff/SelectAnyTree.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

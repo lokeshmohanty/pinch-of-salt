@@ -1,0 +1,15 @@
+{
+  "id": "aa9b3be7bbb3b940",
+  "title": "Tumor-anchored deep feature random forests for out-of-distribution detection in lung cancer segmentation",
+  "link": "https://arxiv.org/abs/2512.08216",
+  "description": "arXiv:2512.08216v4 Announce Type: replace-cross \nAbstract: Accurate segmentation of lung tumors from 3D computed tomography (CT) scans is essential for automated treatment planning and response assessment. Despite self-supervised pretraining on numerous datasets, state-of-the-art transformer backbones remain susceptible to out-of-distribution (OOD) inputs, often producing confidently incorrect segmentations with potential for risk in clinical deployment. Hence, we introduce RF-Deep, a lightweight post-hoc random forests-based framework that leverages deep features trained with limited outlier exposure, requiring as few as 40 labeled scans (20 in-distribution and 20 OOD), to improve scan-level OOD detection. RF-Deep repurposes the hierarchical features from the pretrained-then-finetuned segmentation backbones, aggregating features from multiple regions-of-interest anchored to predicted tumor regions to capture OOD likelihood.\n  We evaluated RF-Deep on 2,232 CT volumes spanning near-OOD (pulmonary embolism, COVID-19 negative) and far-OOD (kidney cancer, healthy pancreas) datasets. RF-Deep achieved AUROC >~93 on the challenging near-OOD datasets, where it outperformed the next best method by 4--7 percentage points, and produced near-perfect detection (AUROC >~99) on far-OOD datasets. The approach also showed transferability to two blinded validation datasets under the ensemble configuration (COVID-19 positive and breast cancer; AUROC >~94). RF-Deep maintained consistent performance across backbones of different depths and pretraining strategies, demonstrating applicability of post-hoc detectors as a safety filter for clinical deployment of tumor segmentation pipelines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "3b1dae2fb1124aee",
+  "title": "Caved or Convinced: Temporal Sampling Gates Claim Deference in Video Large Language Models",
+  "link": "https://arxiv.org/abs/2608.03160",
+  "description": "arXiv:2608.03160v2 Announce Type: replace-cross \nAbstract: When asked which of two events came first, video large language models can fail in two opposite ways: cave to a false claim, or reject a true one. Prior video sycophancy work measures only the first and mitigates it by teaching the model to trust the user less, a fix known in text and image models to worsen the second. In video, both failures come from two causes the literature treats as one: availability, whether the sparse sampled frames contain the two events, and weighting, whether that evidence is trusted over the user. We separate them with two interventions that keep the claim fixed: a frame-preserving reorder that flips the claim's truth, and a sampling-offset shift that captures or misses both events at a fixed frame budget. When the events are missed, the two twins present identical frames, so each of the nine models we evaluate accepts a true and a false claim at the same rate, making Youden's $J=0$ by construction. Availability is necessary but not sufficient. Five of the nine read the order, yet four of those five still cave to the false claim, so their deference hits a weighting ceiling. Since trust cannot be calibrated over evidence that was never sampled, we propose a reversal test that cancels the model's order prior by scoring the sampled frames forward and reversed, then answers, resamples, or abstains without reading the claim. The test raises the order accuracy to 0.92-1.00 on the models that read the order and abstains rather than guesses on those that cannot.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MM",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ae4415bef103e04f",
+  "title": "Can You Trust Frozen Hematology Foundation Models under Acquisition Shift?",
+  "link": "https://arxiv.org/abs/2608.25148",
+  "description": "arXiv:2608.25148v1 Announce Type: new \nAbstract: Frozen hematology foundation-model (FM) embeddings reach near-saturated in-domain white-blood-cell (WBC) accuracy, but clinical deployment demands reliability across scanners, sites, stains and preparation pipelines. We audit 15 frozen encoders (hematology, pathology, and general vision) across four public single-cell acquisition domains along two axes: accuracy robustness and calibration. In-domain linear-probe macro-F1 is saturated (0.98-0.997), yet cross-dataset macro-F1 drops 34-72% and rankings re-order: DinoBloom-L, the in-domain best, falls to 10th of 15 on the most-shifted target (MLL23) at the benchmark's shared 224-px input, behind RedDino and several general and pathology encoders. Rank transfer is probe-dependent: 1-NN retrieval is more stable on average than a source-fitted linear head (median $\\rho$ 0.65 vs 0.45), but neither probe universally predicts target robustness. Calibration also collapses: source-trained probes are nearly calibrated in-domain (expected calibration error, ECE, 0.004) but confidently wrong off-domain (ECE 0.35), and source-fitted temperature scaling transfers poorly. We further audit pretraining exposure and identify MLL23 as DinoBloom's internal cohort; because DinoBloom's only held-out dataset is also our source domain, this benchmark cannot isolate exposure from scanner-associated shift. Label-free adaptation and marginal-entropy-based model selection appear safe under balanced evaluation but fail under realistic WBC class-prior shift. Class-Balanced Re-standardization (CBR), a training-free pseudo-label-balanced feature normalization, improves all evaluated target-prior scenario means and partially improves calibration, although encoder-level exceptions and residual miscalibration remain. Hematology FM benchmarks must therefore jointly audit accuracy, calibration, exposure, and class-prior robustness.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "q-bio.QM"
+  ]
+}

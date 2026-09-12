@@ -1,0 +1,13 @@
+{
+  "id": "d3053cbf291b75f7",
+  "title": "Denoising-Aware Temporal Point Cloud Completion for 3D Crop Architecture Recovery and Phenotypic Trait Extraction",
+  "link": "https://arxiv.org/abs/2608.28343",
+  "description": "arXiv:2608.28343v1 Announce Type: new \nAbstract: High-throughput phenotyping depends on accurate 3D reconstruction of plants across growth stages, yet the development and evaluation of temporal completion methods are limited by the lack of datasets with complete geometric ground truth. To address this challenge, we introduce SynthCrop4D, a procedurally generated synthetic dataset of temporally evolving plant point clouds that provides controllable noise, occlusion, and complete plant geometry for benchmarking reconstruction methods. Using this dataset, we evaluate a two-stage pipeline that combines spatial denoising and temporal point cloud completion. First, a denoising module removes structural artifacts from raw laser-scanned point clouds. The resulting data are then processed by an Adaptive Temporal PoinTr model that reconstructs the current growth stage (t) using information from the previous stage (t-1), enabling recovery of regions missing due to self-occlusion. We evaluate the proposed framework on both SynthCrop4D and the real-world Pheno4D dataset (tomato and maize) under settings with and without denoising. Results show that denoising substantially improves reconstruction quality, with the best configuration achieving a Chamfer Distance of 0.0061 on SynthCrop4D (Temporal PoinTr + Mamba-DG) and an F-Score of 0.2080 on Pheno4D (Vanilla PoinTr + Mamba-DG). We further demonstrate the use of completed point clouds for phenotypic trait extraction, including plant height, canopy width, and convex hull volume, obtaining hull-volume MAEs of 0.021 on synthetic data and 0.343 on real data. Together, SynthCrop4D and the proposed pipeline provide a benchmark and methodology for temporal plant reconstruction and high-throughput crop phenotyping.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

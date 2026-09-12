@@ -1,0 +1,13 @@
+{
+  "id": "03e6b02e838b5df2",
+  "title": "Discovery and Spatial Characterisation of Multiple Shortcut Groups for Auditing Vision Model Bias",
+  "link": "https://arxiv.org/abs/2608.14051",
+  "description": "arXiv:2608.14051v1 Announce Type: new \nAbstract: Deep learning models trained on datasets with spurious correlations can achieve high average accuracy whilst relying on shortcut features that do not generalise out of distribution. Whilst out-of-distribution testing highlights subgroup performance disparities arising from shortcut learning, it does not localise the regions within images that are associated with it. Existing research mostly uses attribution maps from interpretability methods to understand the spatial nature of spurious correlations. For example, conditional alignment methods separate task-relevant evidence from evidence tied to spurious correlations by comparing attribution maps from a task model, a sensitive attribute model, and a bias-reduced reference model. This yields shortcut-aligned and task-aligned contribution maps for each image. However, existing methods aggregate these maps across the dataset, potentially masking recurring spatial shortcut patterns that occur only in subsets of images. We address this limitation by grouping per-image shortcut and task contribution maps into recurring spatial patterns using K-means and non-negative matrix factorisation, and visualising the resulting shortcut groups through contribution maps and representative examples. Across CelebA, CheXpert, Waterbirds, Camelyon17, and ISIC2019, and across ResNet and ViT models, the discovered shortcut groups reveal both shared and distinct spatial patterns of shortcut and task contribution, with varying subgroup composition and error rates, enabling targeted inspection of image subsets with higher error rates. We perform input occlusion and internal test-time interventions to show that masking or suppressing task contribution regions substantially degrades the model classification performance and propose a combined shortcut suppression and task amplification feature intervention approach which generally reduces performance disparities.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

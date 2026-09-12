@@ -1,0 +1,14 @@
+{
+  "id": "d1ed70c2cb92ca11",
+  "title": "Edit2Restore:Few-Shot Image Restoration via Parameter-Efficient Adaptation of Pre-trained Editing Models",
+  "link": "https://arxiv.org/abs/2601.03391",
+  "description": "arXiv:2601.03391v3 Announce Type: replace-cross \nAbstract: Image restoration has traditionally required training specialized models on thousands of paired examples per degradation type. Large pre-trained text-conditioned image editing models encode rich priors about image structure, quality, and degradation, yet we find that this knowledge does not, on its own, make them restorers: state-of-the-art editing models largely fail at restoration in the zero-shot regime. We show that what these priors lack is not capability but direction, and that a small amount of parameter-efficient adaptation supplies it. Fine-tuning LoRA adapters on FLUX.1 Kontext, a 12B-parameter flow matching model for image-to-image translation, with only 32--128 paired images per task and guided by simple text prompts, we turn a mediocre zero-shot editor into a competitive restorer. A single unified adapter, conditioned on task-specific prompts, handles five diverse degradations. Despite using three to four orders of magnitude less data, our few-shot model surpasses a recent restoration baseline trained on over a million curated pairs on the majority of perceptual and distribution-level metrics, on which we evaluate in keeping with our focus on perceptual rather than pixel-fidelity quality. Through comprehensive studies, we analyze the impact of training-set size, the trade-off between task-specific and unified multi-task adapters, the effect of text encoder adaptation, and zero-shot baseline performance, establishing pre-trained editing models as a compelling, data-efficient foundation for few-shot, prompt-guided image restoration.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

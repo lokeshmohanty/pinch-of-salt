@@ -1,0 +1,13 @@
+{
+  "id": "45f292aa6ac3b68e",
+  "title": "Self-Evolving Code-with-Image Reasoning",
+  "link": "https://arxiv.org/abs/2608.11292",
+  "description": "arXiv:2608.11292v1 Announce Type: new \nAbstract: Multimodal models increasingly reach for tools when solving visual tasks (crop, zoom, rotate, brighten), a paradigm known as thinking-with-images. The central challenge is one of perception: tools mostly serve to expose visual evidence, reasoning over that evidence stays in language, and most targets are ones a human could in principle determine by inspection. Some visual questions, however, are not bottlenecked by perception: recovering their answers requires executing a multi-step visual algorithm over the pixels. On such questions a model often names the correct algorithm at once yet still answers wrong, because language can describe an algorithm without being able to run one. Code-with-Image crosses that line: given nothing but a Python interpreter, the model must implement a genuine visual algorithm in code to solve the task; the program itself becomes the reasoning. The bottleneck then shifts from executing code to deciding which algorithm to implement. So we let the model teach itself: a training-free reflection loop studies its own failed programs, tests repairs against constructive ground truth, and keeps what survives as portable skills. On our Code-with-Image Bench (CwI-Bench), thirty task families induced by hidden visual computations with disjoint learning and evaluation splits, even GPT-5.6-luna stays below 30% with tool-free chain of thought; given a bare interpreter it reaches 43%, and with skills evolved through its own executable reflection, 67%. The open 27B model climbs the same ladder (9% $\\rightarrow$ 33% $\\rightarrow$ 56%), and the skills are plain text, transferable across scales and families. When code carries the reasoning, debugging code becomes debugging reasoning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

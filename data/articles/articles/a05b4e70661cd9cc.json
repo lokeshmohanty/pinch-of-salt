@@ -1,0 +1,13 @@
+{
+  "id": "a05b4e70661cd9cc",
+  "title": "Evaluator-Dependent Patient-Adaptive ECG Lead-Channel Allocation",
+  "link": "https://arxiv.org/abs/2608.26827",
+  "description": "arXiv:2608.26827v1 Announce Type: new \nAbstract: Patient-conditioned acquisition policies for ECG lead-channel selection can outperform population-wide fixed protocols by tailoring the channel budget to each patient's observed cardiac state. However, the value of acquiring any given channel is defined relative to a downstream diagnostic evaluator, so marginal utilities learned under one evaluator need not transfer when the evaluator is replaced. We study this evaluator dependence empirically on PTB-XL by freezing two policies (ECG-on-Demand and MGA) trained with a controlled arbitrary-mask logistic evaluator, then scoring their unchanged acquisition trajectories with a more predictive masked raw-waveform ResNet1D. Exhaustive search provides metric-matched population-wide fixed comparators separately for each evaluator, enabling a clean interaction contrast. At budget $k=4$ on a held-out evaluation fold, ECG-on-Demand shifts from $D_\\mathrm{C}=-0.011$ (favoring adaptive under the controlled evaluator) to $D_\\mathrm{S}=+0.029$ (favoring fixed under the strong evaluator), yielding an NLL interaction of $+0.041$ (95% CI $[+0.030, +0.050]$). Across two policies, five budgets, and three probabilistic metrics, all 30 interaction estimates are positive with paired confidence intervals excluding zero. Three post-hoc sensitivity analyses -- common-reference scoring, training the strong evaluator on a mixture of policy-generated and random masks, and evaluator-aligned Strong-MGA policy training -- each preserve a positive interaction interval, making reference-choice and mask-distribution artifacts less plausible explanations. Evaluator-aligned training reduces but does not eliminate the gap. These results indicate that adaptive ECG channel allocation should be developed and validated jointly with its intended diagnostic backbone, and that jointly optimized sensing-diagnosis systems remain an open problem.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

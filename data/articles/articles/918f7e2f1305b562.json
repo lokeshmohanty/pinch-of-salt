@@ -1,0 +1,13 @@
+{
+  "id": "918f7e2f1305b562",
+  "title": "Eddeep: a deep-learning framework for fast eddy-current distortion correction in diffusion MRI",
+  "link": "https://arxiv.org/abs/2607.26292",
+  "description": "arXiv:2607.26292v1 Announce Type: new \nAbstract: Diffusion MRI (dMRI) relies on diffusion-weighted echo-planar imaging, which is highly susceptible to eddy-current-induced geometric distortions. These distortions vary across diffusion volumes according to gradient strength and direction, causing between-volume misalignment that can bias downstream microstructural analyses. Current state-of-the-art correction methods, such as FSL Eddy, achieve high-quality correction through iterative prediction-correction schemes but are computationally expensive. We propose Eddeep, a deep-learning framework for fast eddy-current distortion correction in dMRI. Eddeep decomposes the problem into two stages. First, a supervised image translation network standardises the appearance of diffusion-weighted and b=0 images, removing contrast differences that hinder reliable registration. Second, an unsupervised registration network estimates both eddy-current distortion and between-volume head motion parameters under a physics-constrained quadratic distortion model, enabling correction in a single forward pass. The method was trained on UK Biobank data and evaluated on both in-domain (UK Biobank) and out-of-domain (Memodyn) datasets. Across a range of complementary metrics, including between-volume jitter, diffusion kurtosis imaging residuals, signal irregularity, and mutual information, Eddeep achieved correction quality comparable to that of FSL Eddy while substantially reducing inference time. These results demonstrate that deep learning can provide accurate and efficient eddy-current distortion correction without relying on iterative optimisation, supporting the development of faster diffusion MRI processing pipelines for large-scale studies and clinical deployment. The code is available at: https://github.com/CIG-UCL/eddeep.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

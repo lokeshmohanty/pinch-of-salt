@@ -1,0 +1,15 @@
+{
+  "id": "32830791c6d10c22",
+  "title": "Blended Chart Surfaces: A Seamless Explicit Representation for Smooth Surface Fitting",
+  "link": "https://arxiv.org/abs/2606.18069",
+  "description": "arXiv:2606.18069v2 Announce Type: replace-cross \nAbstract: A surface representation suitable for geometry processing should be compact and explicit, provide global smoothness guarantees, support a wide range of surface topologies, and offer reliable access to differential quantities such as normals and surface energies, while remaining compatible with modern differentiable optimization. Existing neural representations typically sacrifice one or more of these properties: implicit fields typically require iso-surfacing for downstream use, while explicit neural maps are constrained by canonical-domain parametrizations or exhibit seam artifacts between local charts. We introduce Blended Chart Surfaces, a compact, network-free, explicit representation that is smooth by construction and anchored to user-provided topology. Given a coarse proxy mesh encoding the intended surface topology and approximate geometry, Blended Chart Surfaces jointly optimize for a polynomial map at each proxy vertex using an off-the-shelf optimizer to fit to an implicit target shape, avoiding the need for an input parametrization. Neighboring maps are fused using a smooth 'one-ring coordinate' blending scheme, decoupling topology and coarse geometry (carried by the proxy) from geometric details (carried by the local patches). The surface is globally smooth, fully differentiable, and enables stable evaluation of derivatives, making differential quantities and surface energies directly accessible. Additionally, our construction is equivariant to rigid motions and scaling of the proxy mesh. We evaluate Blended Chart Surfaces on various topologies and geometric complexity, and compare against explicit alternatives including interpolating-function baselines and mesh-displacement MLPs. Across these, Blended Chart Surfaces achieve a favorable trade-off among compactness, simplicity, access to differential quantities, and expressivity while remaining smooth across patch boundaries.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CG",
+    "cs.CV"
+  ]
+}

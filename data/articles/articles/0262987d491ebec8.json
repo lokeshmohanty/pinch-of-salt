@@ -1,0 +1,13 @@
+{
+  "id": "0262987d491ebec8",
+  "title": "DuET: Dual Expert Trajectories for Diffusion Image Editing",
+  "link": "https://arxiv.org/abs/2606.13303",
+  "description": "arXiv:2606.13303v2 Announce Type: replace \nAbstract: Recent diffusion editors perform diverse instruction-based edits while conditioning on the source image at every denoising step. Yet persistent source-image conditioning can limit how fully an edit is executed and how natural the result appears, especially when the target scene diverges substantially from the input. We introduce DuET (Dual Expert Trajectories), a training-free inference method that temporarily relaxes source-image conditioning by transitioning through a text-to-image phase before returning to edit mode ($\\mathrm{E}\\to\\mathrm{T2I}\\to\\mathrm{E}$), allowing the denoising trajectory to move toward the target distribution while retaining the structural benefits of image-conditioned editing. Without modifying model weights or increasing sampling cost, DuET consistently improves instruction relevance, semantic fidelity, and perceptual quality across diverse models and benchmarks. Fixed switching schedules obtain these gains at a modest, predictable cost in source-image preservation; we show this cost is not fundamental. A per-edit variant, Selective DuET, routes on lightweight attention-probe signals read from the edit trajectory and improves fidelity, naturalness, and artifact scores while keeping source preservation perceptually indistinguishable from the baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

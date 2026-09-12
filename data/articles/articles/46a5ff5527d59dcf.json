@@ -1,0 +1,13 @@
+{
+  "id": "46a5ff5527d59dcf",
+  "title": "Strength-Parity Ensembling with Parameter-Isolated Experts for Multi-Task Affect Recognition",
+  "link": "https://arxiv.org/abs/2607.16290",
+  "description": "arXiv:2607.16290v2 Announce Type: replace \nAbstract: Leading entries on the multi-task track of the 11th ABAW challenge rely on heavy ensembling, yet which member is worth adding to an already strong ensemble is rarely made explicit. We study this question for joint valence-arousal estimation, 8-way expression recognition, and 12-way action-unit detection from a single unconstrained face, under partial, long-tailed labels and a rule that forbids pretraining on Aff-Wild2. Building on a shared affect-latent that marginalizes the missing labels across two affect-supervised backbones, we propose a strength-parity rule: an added member lowers the ensemble error only when it is both decorrelated from the current members and a near-peer of them in individual accuracy. The rule exposes a concrete obstacle, as on a single backbone re-seeding and even distinct fine-tuning curricula re-converge to a prediction correlation of 0.98 and add no diversity. Parameter-isolation removes it: confining each adaptation to a disjoint low-rank subspace of a shared backbone yields experts that stay decorrelated at 0.91 while remaining near-peers, the strongest of them an AffectNet-adapted expert. The resulting system raises the overall validation score to 1.6949, against the organizers ConvNeXt-with-MixAugment baseline of 0.45; with per-AU calibration and by pooling the shared-latent heads valence-arousal byproduct as a further near-peer, the strongest configuration reaches 1.7259. Source code are available at https://github.com/cprl-team/MTL-ABAW-11th.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

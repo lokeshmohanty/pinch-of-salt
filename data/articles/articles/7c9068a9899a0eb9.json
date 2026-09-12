@@ -1,0 +1,15 @@
+{
+  "id": "7c9068a9899a0eb9",
+  "title": "Learning Latency-Aware Orchestration for Multi-Agent Systems",
+  "link": "https://arxiv.org/abs/2601.10560",
+  "description": "arXiv:2601.10560v2 Announce Type: replace-cross \nAbstract: Multi-agent systems (MAS) coordinate multiple LLM-powered agents through structured workflows, gaining reasoning power but incurring high inference latency from multi-step execution and repeated model invocations. Existing orchestration methods primarily optimize task performance and inference cost, leaving latency largely unaddressed. In MAS, end-to-end latency is governed by the \\textit{critical execution path}, so reducing total cost alone does not reliably reduce latency. Moreover, optimizing latency while preserving accuracy remains non-trivial: naive latency optimization can misassign operator-level credit and degrade task accuracy. To address this gap, we propose \\textbf{L}atency-\\textbf{A}ware \\textbf{M}ulti-\\textbf{a}gent \\textbf{S}ystem (\\textbf{LAMaS}), a latency-aware orchestration framework for learning-based multi-agent systems. LAMaS addresses this challenge at two levels: at \\emph{training time}, it learns latency-aware execution graphs through constrained optimization with critical-path-aware credit assignment; at \\emph{inference time}, since a graph committed at training time cannot exploit runtime evidence, it complements graph construction with a lightweight controller that adaptively eliminates redundant future agent interactions as execution unfolds. Experiments on four benchmarks show that LAMaS achieves the best latency among evaluated learning-based MAS baselines, reducing end-to-end latency by over 50% while maintaining competitive or better accuracy. LAMaS is also modular and transfers to other MAS with minimal changes, consistently yielding latency reductions.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MA",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

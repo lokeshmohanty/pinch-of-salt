@@ -1,0 +1,13 @@
+{
+  "id": "1788c256475cef54",
+  "title": "From Errors to Rules: Iterative Prompt Optimization for Text Classification",
+  "link": "https://arxiv.org/abs/2607.20497",
+  "description": "arXiv:2607.20497v1 Announce Type: new \nAbstract: Prompt optimization for text classification spans diverse approaches, from demonstration selection to exploration-based search to error-driven diagnosis, each with known but incompletely characterized strengths and limitations. We conduct a comprehensive empirical study across diverse classification benchmarks (2 to 150 classes) comparing these paradigms through both quantitative evaluation and qualitative analysis of optimization traces, revealing that each paradigm excels on structurally different task types and that no single method dominates. Guided by these insights, we propose Error-Guided Optimization (ERGO), an error-driven method that iterates over the full training set in non-overlapping batches, diagnoses classification failures, and generates targeted decision rules through a diagnose-prescribe-rewrite feedback loop. ERGO achieves the best accuracy on tasks where errors concentrate in specific confused label pairs (which we term boundary-learnable tasks): TREC: 90.0%, CLINC150: 94.4%, converges in 3-5 iterations, and produces interpretable decision rules. While ERGO does not achieve the highest overall average, it fills a complementary role: demonstration-based ICL wins on coverage-dependent tasks, exploration-based search wins on many-class intent, and ERGO wins where decision boundaries are learnable from error patterns. We provide a complementarity framework linking task characteristics to optimal paradigm selection, offering practical guidance for practitioners.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

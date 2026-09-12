@@ -1,0 +1,13 @@
+{
+  "id": "896f99079efed1cd",
+  "title": "UCBound-Net: Uncertainty-Guided Boundary-Aware Continual Learning for Domain-Incremental Ultrasound Segmentation",
+  "link": "https://arxiv.org/abs/2608.01518",
+  "description": "arXiv:2608.01518v1 Announce Type: new \nAbstract: Continual learning in clinical imaging faces a dual challenge: a model must assimilate knowledge from new anatomical domains while retaining representations learned from prior tasks, a problem known as catastrophic forgetting. Existing mitigation strategies, including regularization and knowledge distillation, treat all spatial regions equally, ignoring the fact that prediction uncertainty is strongly correlated with the propensity for forgetting. We introduce UCBound-Net, a continual segmentation framework that exploits Monte Carlo (MC) Dropout uncertainty as a spatial proxy for forgetting risk. Our method contributes three synergistic components: (i) uncertainty-weighted boundary distillation, which amplifies the knowledge transfer signal at high-entropy regions of the frozen teacher; (ii) uncertainty-calibration regularization, which explicitly penalizes overconfident erroneous predictions; and (iii) uncertainty-guided exemplar selection, a memory buffer that preferentially stores samples whose boundary regions exhibit the highest predictive entropy. Evaluated on a sequential domain-incremental benchmark comprising breast ultrasound (BUSI, Task 1) followed by thyroid ultrasound (TN3K, Task 2), UCBound-Net reduces forgetting relative to naive fine-tuning, achieving a backward transfer (BWT) of -0.098 compared with -0.173, while obtaining an average Dice Similarity Coefficient (DSC) of 0.755 across both tasks. The proposed framework outperforms baseline methods without requiring task-boundary supervision. An ablation study further demonstrates that each component contributes independently to forgetting mitigation, providing a practical pathway toward uncertainty-aware continual learning for clinical image segmentation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

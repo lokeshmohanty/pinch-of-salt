@@ -1,0 +1,15 @@
+{
+  "id": "2c9050e171c53b60",
+  "title": "Isolating LLM Alignment from Regex: Zero Coverage and Metric-Dependent Divergence Under Adversarial Mutation",
+  "link": "https://arxiv.org/abs/2607.20494",
+  "description": "arXiv:2607.20494v1 Announce Type: new \nAbstract: Production LLM applications commonly stack a regex filter in front of model-side alignment; prior work found no measurable coverage gain from adding a live Gemini backend behind an active regex filter. We ask whether that ceiling holds when the corpus is \\emph{designed to bypass the regex}. We introduce $L_5$-no-regex -- identical to $L_4$-real (Gemini-2.5-flash, token-budget cap, rate limit, output scrub) but with the nine-pattern filter disabled -- and evaluate it against $N{=}45$ adversarial probes across three sub-corpora (carry-forward, regex-bypass, alignment-isolate), amplified by Gemini paraphrase and PAIR to ${\\sim}1{,}555$ probe-run pairs over $N{=}5$ replications. Under the primary substring classifier, H1 is refuted: $L_5$ block rate is $0,%$ across all five OWASP LLM Top-10 categories ($\\Delta\\text{pp}{=}0$ vs.\\ $L_0$, $p{=}1.00$; Wilson upper bound ${<}5,%$). A secondary LLM-judge metric on PAIR variants shows $56$--$100,%$ block rates ($p{<}0.01$), revealing alignment does respond to adversarially-framed probes -- but produces refusals too nuanced for substring matching. The sub-corpus differential prediction is not supported ($p{=}1.00$). Alignment's contribution is \\emph{metric-dependent}: on natural-language harmful-request probes, it adds zero observed coverage beyond the regex; on adversarially-framed variants, an LLM judge detects refusals the substring classifier misses. The locked corpus, mutation artifacts, and export scripts are released for replication.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CR",
+    "cs.LG"
+  ]
+}

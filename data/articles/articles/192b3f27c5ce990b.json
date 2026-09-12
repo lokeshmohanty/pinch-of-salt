@@ -1,0 +1,13 @@
+{
+  "id": "192b3f27c5ce990b",
+  "title": "Structured-Prior-Guided Diffusion Inpainting with Physical Consistency for Traffic Sign Augmentation",
+  "link": "https://arxiv.org/abs/2609.02348",
+  "description": "arXiv:2609.02348v1 Announce Type: new \nAbstract: Traffic sign detection faces a long-tailed data distribution. Many rare signs matter as much as common ones from a regulatory standpoint, yet they have very few samples. Generative data augmentation is one way out. General-purpose inpainting models, however, distort digits, deform geometry and perspective, and shift colours when applied directly to sign regions. We trace this to a single gap: the conditioning signal is too abstract for the physical composition of a sign. We propose a structured-prior-guided diffusion inpainting framework with physical consistency. It injects the semantic, appearance and geometric priors of a sign through three orthogonal pathways: a JSON-formatted text prompt, a front-view vector template rendered with measured dominant colours (via IP-Adapter), and an affine-aligned vector template (via ControlNet). Two physical consistency losses constrain colour with a CIELAB chromaticity $L_1$ term and edge structure with a Sobel gradient term. We train by self-supervised reconstruction on a large set of images collected in-house at AMAP, then evaluate zero-shot on the public TT100K-2021 dataset, a different source. Our method uses a Stable Diffusion 1.5 backbone of about 1.4B parameters. It beats seven representative competitors on every metric of reconstruction fidelity, physical consistency and semantic controllability. Its OCR exact-match rate reaches 91.1\\%, against 44.2\\% for the 12B industrial model FLUX.1 Fill [dev], and it needs only $1/14$ of that model's inference time. Leave-one-out ablations confirm that each of the three prior pathways and both loss terms contribute on their own. In downstream detection, the synthetic data raises the group-pooled AP50 of rare classes by $1.23\\times$ to $7.40\\times$ over a real-data-only baseline. Code and pre-trained models are available at https://github.com/52hz-whale/TrafficSignInpaint.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

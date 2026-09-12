@@ -1,0 +1,13 @@
+{
+  "id": "f4493a9da285cde9",
+  "title": "SARATR-X-v2: Scale-Aware Structural Pre-Training for SAR Foundation Models",
+  "link": "https://arxiv.org/abs/2607.23238",
+  "description": "arXiv:2607.23238v2 Announce Type: replace \nAbstract: Masked image modeling has become a dominant paradigm for SAR pre-training, yet the design of the reconstruction target remains fundamentally unsettled. This article argues that a SAR pre-training target should satisfy two conditions to produce transferable representations: (i) physics-grounded stability, i.e., approximate invariance of the target operator to multiplicative speckle inherent in coherent imaging; and (ii) semantic scale compatibility, i.e., coverage of the heterogeneous spatial scales that downstream tasks demand. These two conditions are individually achievable but jointly difficult: physics-grounded stability favors fixed operators, while semantic scale compatibility favors data-driven composition. To this end, SARATR-X-v2 reconciles both within a single design. The target is constructed through fixed structural extractors spanning six receptive fields, from blind-spot local aggregation to directional log-ratio region contrast, and fused via learnable weights into one unified supervision signal for masked reconstruction. On twelve SAR benchmarks across classification, detection, and segmentation, SARATR-X-v2 achieves state-of-the-art transfer performance. Under synthetic speckle variation, the proposed target reduces perturbation drift in the learned representation by nearly two orders of magnitude relative to pixel-space supervision. Taken together, these results establish physics-grounded stability and semantic scale compatibility as a principled framework for pre-training target design under coherent imaging, and suggest that effective SAR pre-training is not about reconstructing more signal, but about reconstructing the right structural target.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
