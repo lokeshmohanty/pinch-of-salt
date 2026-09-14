@@ -1,0 +1,14 @@
+{
+  "id": "52b0c080406edd45",
+  "title": "Hybrid Token Compression for Vision-Language Models",
+  "link": "https://arxiv.org/abs/2512.08240",
+  "description": "arXiv:2512.08240v2 Announce Type: replace-cross \nAbstract: Vision-language models (VLMs) rely on hundreds of visual tokens, leading to high computational and memory costs. Existing compression methods face a trade-off: continuous compression can weaken high-level semantics, while discrete quantization may lose fine-grained appearance details. We introduce HTC-VLM, a hybrid visual token compression framework that disentangles semantics and appearance through two complementary pathways. A continuous pathway preserves detailed ViT patch features, while a discrete pathway provides semantic anchors using MGVQ quantization represented by four tokens. The two pathways are fused into a 580-token hybrid sequence and compressed into a single token using a disentanglement attention mask and a  bottleneck. Under the same one-token output budget, HTC-VLM achieves 87.2% average performance retention across seven benchmarks (GQA, VQAv2, MMBench, MME, POPE, SEED-Bench, and ScienceQA-Image), outperforming the leading continuous baseline at 81.0%. Attention analysis shows that the compressed token prioritizes discrete anchors, supporting their role as semantic guidance. We further study token-budget scaling, cross-architecture generalization, inference efficiency, robustness to codebook and masking variations, and the information-theoretic properties of the hybrid bottleneck. These results show that combining continuous appearance features with discrete semantic anchors enables effective extreme visual token compression for efficient VLMs.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

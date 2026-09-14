@@ -1,0 +1,13 @@
+{
+  "id": "65da42ea7b1d8aa3",
+  "title": "Training-Free Interaction-Aligned Visual Token Pruning for Efficient Embodied Manipulation",
+  "link": "https://arxiv.org/abs/2603.22991",
+  "description": "arXiv:2603.22991v2 Announce Type: replace \nAbstract: Efficient visual representation is a central image-processing challenge in embodied manipulation, where policies repeatedly process dense visual-token sequences during closed-loop control. Existing methods rank or prune tokens using semantic relevance, VLM attention, cross-frame redundancy, or motion in the action space. These signals may discard task-relevant regions when instruction-related appearance and observed image motion are not yet spatially aligned. We introduce Interaction-Aligned Pruning (IAprune), a training-free method that treats per-frame budget setting and within-budget token selection as two linked decisions. Semantic--motion spatial agreement guides the choice between Conservative and Aggressive coverage, and the resulting region size is mapped to a calibrated dynamic budget. Continuous semantic and motion responses rank the existing tokens, while geometric residual correction redirects fixed selection slots toward under-represented boundaries without increasing the sequence length. Across four embodied manipulation policies, three simulation benchmarks, and a real-robot platform, IAprune provides a favorable accuracy--efficiency trade-off, matching the unpruned policy on LIBERO with a \\(1.54\\times\\) speedup and reaching \\(1.48\\times\\) acceleration on a real robot. Phase-wise analysis shows that retention gains are largest under tight budgets early in an episode, while fixed-budget analysis confirms that geometry replaces low-priority tokens with boundary and contact-region evidence rather than retaining more tokens. Our project website is: \\href{https://chengjt1999.github.io/VLA-IAP.github.io/}{IAprune.com}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

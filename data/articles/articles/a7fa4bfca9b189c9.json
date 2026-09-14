@@ -1,0 +1,15 @@
+{
+  "id": "a7fa4bfca9b189c9",
+  "title": "Multi-scale Image Representation Compression",
+  "link": "https://arxiv.org/abs/2609.04274",
+  "description": "arXiv:2609.04274v1 Announce Type: cross \nAbstract: Overfitted codecs have demonstrated promising performance for image and video compression. In particular, for image compression, the Cool-chic family of models has shown competitive performance against scene-agnostic models, with orders of magnitude lower decoding complexity at the cost of a longer overfitting process. However, these overfitted image codecs are not fully optimized toward the rate-distortion objective: their network weights remain in full precision during training, and the associated quantization parameters are selected in a separate post-training stage. Furthermore, their synthesis operates at a single scale, which overlooks cross-scale redundancy. In this paper, we propose MIRC, an overfitted image codec in which every coded component, including the latents, the synthesis network, and the entropy models, is quantized and entropy coded under a single rate-distortion objective, adopting the end-to-end compression pipeline of the neural video representation codec NVRC. We further introduce a multi-scale representation with cross-stage parameter sharing, which improves coding efficiency at a small transmitted overhead. On the CLIC2020 professional validation set, MIRC achieves a 10.5% BD-rate saving against VVC (VTM 22.0). Moreover, MIRC offers a family of configurations spanning 1.2 to 2.9 kMAC per pixel, so the decoding budget can be selected to match the deployment target.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.MM"
+  ]
+}

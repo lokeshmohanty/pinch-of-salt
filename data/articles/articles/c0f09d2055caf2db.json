@@ -1,0 +1,14 @@
+{
+  "id": "c0f09d2055caf2db",
+  "title": "OSMDA: OpenStreetMap-based Domain Adaptation for Remote Sensing VLMs",
+  "link": "https://arxiv.org/abs/2603.11804",
+  "description": "arXiv:2603.11804v3 Announce Type: replace \nAbstract: Vision-Language Models (VLMs) adapted to remote sensing rely heavily on domain-specific image-text supervision, yet high-quality annotations for satellite and aerial imagery remain scarce and expensive to produce. Prevailing pseudo-labeling pipelines address this gap by distilling knowledge from large frontier models, but this dependence on large teachers is costly, limits scalability, and caps achievable performance at the ceiling of the teacher. We propose OSMDA: a self-contained domain adaptation framework that eliminates this dependency. Our key insight is that a capable base VLM can serve as its own annotation engine: by pairing aerial images with rendered OpenStreetMap (OSM) tiles, we leverage optical character recognition and chart comprehension capabilities of the model to generate captions enriched by OSM's vast auxiliary metadata. The model is then fine-tuned on the resulting corpus with satellite imagery alone, yielding OSMDA-VLM, a domain-adapted VLM that requires no manual labeling and no stronger external VLM teacher. We conduct exhaustive evaluations spanning six zero-shot and five in-distribution benchmarks across vision-language tasks, where OSMDA leads to substantial improvement. We further compare against nine competitive baselines, demonstrating that our method achieves superior overall performance, while being substantially cheaper to train than teacher-dependent alternatives. These results suggest that, given a strong foundation model, alignment with crowd-sourced geographic data is a practical and scalable path towards remote sensing domain adaptation. Dataset and model weights will be made publicly available upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

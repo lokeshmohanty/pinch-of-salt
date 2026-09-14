@@ -1,0 +1,14 @@
+{
+  "id": "bde91ffdfc429950",
+  "title": "EvoSQL: Memory-Augmented Critic-Generator Co-Evolution for Text-to-SQL",
+  "link": "https://arxiv.org/abs/2607.20489",
+  "description": "arXiv:2607.20489v1 Announce Type: new \nAbstract: Text-to-SQL has advanced rapidly with large language models, but complex database queries still require reasoning beyond one-shot generation, including multi-step decomposition, execution-based diagnosis, and targeted correction. We present EvoSQL, a co-evolution framework that formulates SQL synthesis as an iterative interaction between a generator and a critic. EvoSQL maintains a contextualized candidate memory, verifies SQL candidates with both execution signals and LLM-based critique, and updates its memory through utility-guided aggregation. To strengthen the underlying generator-critic pair, we further introduce a Self-Distillation Policy Optimization (SDPO) fine-tuning stage that injects execution-aware supervision into modern coding LLM backbones. Experiments on Spider and BIRD show that EvoSQL consistently improves open-source models over Maj@16 baselines, with particularly large gains on BIRD-Dev, ranging from +1.37% for Qwen3-4B to +9.19% for Qwen2.5-Coder-3B. SDPO initialization further improves selected backbones on Spider-Test and BIRD-Dev. These results suggest that memory-grounded co-evolution is an effective path toward more reliable and generalizable Text-to-SQL systems. Code is available at https://github.com/valleysprings/EvoSQL.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.DB"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "86240af639eac551",
+  "title": "How Do VLMs Fail? Vision-Operation Misalignment in Compositional VQA",
+  "link": "https://arxiv.org/abs/2607.16094",
+  "description": "arXiv:2607.16094v2 Announce Type: replace \nAbstract: Compositional visual question answering requires Vision-Language Models (VLMs) to execute multiple reasoning operations like object selection, spatial relation resolution, and attribute verification. Despite strong aggregate performance, the mechanistic basis of VLM failures on this task remains underexplored. To address this gap, we analyze vision-operation misalignment in VLMs by examining how failures relate to specific reasoning operations and the internal computational pathways through which they arise and propagate. We introduce an Operation-centric mechanistic framework that decomposes VLM failures by both the reasoning operation where they originate and the internal computational pathway through which they propagate. Our analysis reveals four dominant failure modes: grounding failure, reasoning failure, attribute extraction failure, and language-prior dominance, each characterized by a distinct relationship between visual grounding strength and answer correctness. Through three complementary causal interventions applied across all transformer layers, we find that object-selection failures are associated primarily with feedforward computation, multi-step relational failures with late-layer direct attention, and attribute-extraction failures with answer-position feedforward computation. Validation on VSR further shows that single-step spatial failures are concentrated at object-position encoding, distinguishing them from multi-step relational composition. These findings reveal distinct computational bottlenecks across operation types and provide a principled basis for targeted diagnosis of VLM failures in multimedia reasoning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

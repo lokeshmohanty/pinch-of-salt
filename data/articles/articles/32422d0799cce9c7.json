@@ -1,0 +1,13 @@
+{
+  "id": "32422d0799cce9c7",
+  "title": "Revisiting Shape and Texture Reliance with Category-Separability-Calibrated Suppression",
+  "link": "https://arxiv.org/abs/2607.16298",
+  "description": "arXiv:2607.16298v2 Announce Type: replace \nAbstract: Feature-suppression evaluations infer model reliance on shape or texture from the accuracy loss caused by attenuating each type of information. Such losses, however, conflate feature reliance with the amount of category-relevant information removed by the corresponding transformation. Because shape and texture are suppressed using different operators, their effects are not directly comparable. We introduce the Semantic Degradation Index (SDI), which quantifies the suppression-induced reduction in category separability relative to clean images in a fixed clean-reference discriminative space constructed from handcrafted features. On an ImageNet16-like benchmark, we use SDI to compare Gaussian blur for texture suppression with grid distortion for shape suppression over their overlapping degradation range. At comparable SDI values, all five evaluated ImageNet-trained convolutional neural networks (CNNs) retain less accuracy under Gaussian blur than under grid distortion. This results supports stronger texture than shape reliance under the evaluated operators, contrasting with the shape-dominant conclusion obtained from unmatched suppression conditions. The evaluated Vision Transformers (ViTs) also generally retain more accuracy than CNNs under both operators. To determine whether this advantage extends beyond classification, We evaluate fixed brain-encoding models using clean and suppressed images from the Natural Scenes Dataset. Under both operators, ViT features show smaller suppression-induced decreases in noise-ceiling-normalized explained variance than CNN features. These findings establish category separability as an important reference for interpreting suppression-based feature reliance and show that the CNN-ViT robustness difference extends to model representations predictive of human visual cortical responses.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

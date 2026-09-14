@@ -1,0 +1,13 @@
+{
+  "id": "6a9398f892d4e942",
+  "title": "Predicting Spatiotemporal Mobile Sensing-Based PM2.5 Concentrations Using Low-Rank Adapted Spatially Attentive Graph Neural Network",
+  "link": "https://arxiv.org/abs/2609.04693",
+  "description": "arXiv:2609.04693v1 Announce Type: new \nAbstract: Urban air quality can vary significantly along transit corridors, necessitating high-resolution monitoring. This work introduces a novel mobile-sensing dataset from Surat, Gujarat, India, comprising PM$*{2.5}$ concentrations, meteorological variables (temperature, humidity, wind speed, wind direction), and land-use features. To represent the spatiotemporal data as a graph, two node-definition strategies were used: (i) uniform segmentation (200--400~m intervals) and (ii) DBSCAN clustering to adaptively group dense observations. For each node, rolling mean and standard deviation of meteorological variables were computed. To model this high-dimensional data, we propose a SA-GNN for fine-grained, short-term PM$*{2.5}$ forecasting and hotspot identification. We compared SA-GNN with LSTM, RNN, GRU, and ANN models. These models performed well on low-resolution data but had difficulty capturing rapidly changing patterns in urban air quality. SA-GNN employs cluster-specific GRUs to capture localized temporal dependencies and a Graph Attention Network to learn spatial heterogeneity. This hybrid architecture effectively models rapid fluctuations and complex spatial interactions. On our dataset, SA-GNN achieved $R^2 = 0.95$, RMSE $= 6.8$, and MAE $= 4.2~\\si{\\micro\\gram\\per\\meter\\cubed}$, outperforming all baseline models. Combining spatial clustering with adaptive attention significantly improves forecasting, enabling real-time, fine-grained monitoring and supporting personalized exposure tracking and timely alerts for healthier cities.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

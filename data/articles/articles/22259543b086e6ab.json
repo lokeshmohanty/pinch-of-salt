@@ -1,0 +1,15 @@
+{
+  "id": "22259543b086e6ab",
+  "title": "MagViT: Interpretable Multi-Magnification Transformers with Patient-Level Model Selection for Breast Histopathology",
+  "link": "https://arxiv.org/abs/2608.16959",
+  "description": "arXiv:2608.16959v1 Announce Type: cross \nAbstract: Breast cancer is one of the most common types of cancer among women around the world. Rapid detection and early treatment can hinder its progress to more complex stages and can impede its spread to other parts of the body. Histopathological image classification is the most common task in cancer detection due to its robustness in analyzing cellular data. Breast histopathology classification requires handling both multi-scale tissue morphology and clinically relevant generalization beyond the source domain. This paper presents MagViT, an interpretable multi-magnification transformer framework with scale-gated fusion and patient-level model selection. The model uses four BreakHis magnifications (40X, 100X, 200X, 400X) and extracts per-scale representations with a ViT backbone, and combines them via a learnable gate that masks missing scales. Patient-level five-fold cross-validation with a fixed seed has been run and compared with three architectural branches. The most accurate branch is then selected as the final model due to the strongest patient-level accuracy while retaining the simplest fusion pathway. On BreakHis, our architecture achieves a mean image accuracy of 0.9191, a mean patient accuracy of 0.9643, and a mean macro-F1 of 0.9042. External transfer experiments provide preliminary evidence of cross-dataset generalization under controlled adaptation settings on BUSI (image accuracy 0.8306, macro-F1 0.7480, patient accuracy 0.8291) and IDC (image accuracy 0.8577, macro-F1 0.8191, patient accuracy 0.8372). Grad-CAM visualization indicates that the model focuses on diagnostically significant and meaningful regions across magnifications. Relative to prior ViT-centered BreakHis work, this study emphasizes patient-level selection and cross-dataset robustness under a reproducible protocol.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

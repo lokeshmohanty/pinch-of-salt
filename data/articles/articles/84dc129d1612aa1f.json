@@ -1,0 +1,13 @@
+{
+  "id": "84dc129d1612aa1f",
+  "title": "FSPGD: Rethinking Black-box Attacks on Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2502.01262",
+  "description": "arXiv:2502.01262v3 Announce Type: replace \nAbstract: Black-box adversarial attacks on semantic segmentation remain a challenging problem, particularly in the black-box transfer attack setting where perturbations crafted on a surrogate model are expected to mislead unseen target models. Existing methods typically operate only on output logits and thus fail to account for the spatial structure and class-wise feature relationships that are crucial for dense prediction. To address this limitation, we propose Feature Similarity Projected Gradient Descent (FSPGD), a feature-space black-box attack that explicitly disrupts intermediate representations. FSPGD employs a dual loss design: an external loss that enforces discrepancy between clean and adversarial features to weaken cross-model alignment, and an internal loss that reduces feature consistency among spatially separated instances of the same class. Comprehensive experiments on Pascal VOC 2012 and Cityscapes across both CNN-based and Transformer-based backbones demonstrate that FSPGD achieves state-of-the-art transferability, consistently outperforming conventional logit-level methods as well as recent segmentation-specific baselines such as SegPGD, CosPGD, and RP-PGD. Moreover, adversarial training with FSPGD examples enhances robustness against unseen attacks across multiple architectures, further validating the effectiveness of our design. These findings establish FSPGD as a principled and practical framework for advancing black-box adversarial attacks in semantic segmentation. Code is available at https://github.com/KU-AIVS/FSPGD.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

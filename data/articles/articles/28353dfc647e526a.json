@@ -1,0 +1,16 @@
+{
+  "id": "28353dfc647e526a",
+  "title": "SSPO: Structure-Aware Similarity-Weighted Preference Optimization for Neural Combinatorial Optimization",
+  "link": "https://arxiv.org/abs/2608.12443",
+  "description": "arXiv:2608.12443v1 Announce Type: cross \nAbstract: Neural combinatorial optimization (NCO) relies on parallel solution sampling for training, yet existing methods fail to fully exploit the rich information latent in a co-sampled solution group. Preference-optimization methods anchor on the single best solution and discard fine-grained quality and structural signal from all other peers-a failure we term gradient signal polarization. Mean-based baselines instead weight peers uniformly, so structurally near-identical peers flood the baseline with redundant information and keep gradient variance high-a failure we term baseline redundancy. We propose SSPO (Structure-Aware Similarity-Weighted Preference Optimization), which scores all $B$ sampled solutions jointly through a dissimilarity-weighted leave-one-out baseline: structurally distinct peers receive higher weight, resolving both failures in a single mechanism. The baseline uses zero-parameter, problem-adaptive solution embeddings built from the encoder's existing node representations. Experiments on TSP, EFL, and JSP benchmarks show consistent gains over prior best-anchor and uniform-weight baselines. A direct comparison against uniform RLOO on TSP and EFL confirms that structure-aware weighting is the primary driver of improvement. The SSPO-trained EFL policy has been deployed in a production facility-location system at JD$\\mathord{.}$com, confirming practical viability at scale.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ML",
+    "cs.AI",
+    "cs.LG",
+    "math.OC"
+  ]
+}

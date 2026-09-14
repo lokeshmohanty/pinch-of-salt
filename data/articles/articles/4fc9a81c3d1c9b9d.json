@@ -1,0 +1,14 @@
+{
+  "id": "4fc9a81c3d1c9b9d",
+  "title": "Riverbank Erosion Analysis in Bangladesh Using Spatiotemporal Segmentation",
+  "link": "https://arxiv.org/abs/2510.17198",
+  "description": "arXiv:2510.17198v2 Announce Type: replace \nAbstract: Riverbank erosion is a serious environmental problem in Bangladesh, causing land loss, damage to infrastructure, and displacement of local communities. Manual analysis of satellite images is often slow and difficult to apply consistently across large river networks. This study uses a parameter-efficient adaptation of the Segment Anything Model (SAM) to detect and measure riverbank erosion from historical Google Earth images. A dataset of 500 image pairs from 2003 to 2025 was prepared from erosion-prone areas, including Mokterer Char, Kedarpur, and Chowhali Upazila, with pixel-level labels for river, stable land, and eroded regions. During training, the ViT-H image encoder and prompt encoder were kept frozen, while only the lightweight mask decoder was fine-tuned for riverine segmentation. The adapted model achieved an erosion-class IoU of 0.867 and an F1-score of 0.928 on the primary held-out test set. Evaluation on unseen riverbank regions also showed that the model could generalize to new geographic areas, although detecting accreted land from RGB-only images remained difficult. The estimated erosion area differed from the ground truth by only 0.17%, showing that the model can produce reliable area measurements. Overall, this study demonstrates that adapted foundation segmentation models can support faster and more consistent riverbank erosion monitoring, with future scope for using multi-modal remote sensing data in broader environmental assessment.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c3da54fd111408c0",
+  "title": "JUMP: Single-Pass Membership Inference on Fine-Tuned Diffusion Language Models",
+  "link": "https://arxiv.org/abs/2607.16207",
+  "description": "arXiv:2607.16207v2 Announce Type: replace \nAbstract: Public open-weight language models are often fine-tuned on private or domain-specific data before deployment, creating a need to audit whether individual records were used during adaptation. We study this problem for discrete diffusion language models (dLLMs), using the pre-fine-tuning checkpoint as a reference. Unlike autoregressive models, dLLMs allow arbitrary mask sets and return predictions for all masked positions in parallel. SAMA averages reconstruction signals over many random masks, which can dilute informative positions and requires repeated model evaluations. We propose JUMP (Joint Uncertainty-Guided Mask Probing), which selects low-reference-confidence positions, masks them jointly, and aggregates clipped target-reference reconstruction gaps from one scoring query per model. Across six MIMIR domains, JUMP raises mean ROC-AUC from 0.819 to 0.902 on LLaDA-8B-Base and from 0.851 to 0.942 on Dream-v0-Base-7B, while using three model forwards per sample versus 32 for SAMA.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CR"
+  ]
+}

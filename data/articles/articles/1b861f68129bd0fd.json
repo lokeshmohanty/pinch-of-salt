@@ -1,0 +1,13 @@
+{
+  "id": "1b861f68129bd0fd",
+  "title": "A Controlled Audit of Architectural Complexity in Uncertainty-Aware Multi-Organ Ultrasound Classification",
+  "link": "https://arxiv.org/abs/2608.28063",
+  "description": "arXiv:2608.28063v1 Announce Type: new \nAbstract: Multi-organ ultrasound classifiers increasingly combine attention, mixture-of-experts routing, uncertainty gating, and evidential deep learning (EDL) objectives to address heterogeneous anatomy and acquisition. Yet a plausible design rationale does not by itself establish that an added component improves the trained system. We contribute a controlled complexity-audit framework, applied to the deployment decision between the maximal evidential candidate Full-EDL and simpler alternatives. Six candidates were evaluated on the primary dataset and three in an internal replication, using ten matched seeds, frozen image-level partitions, capacity- and optimisation-aware comparisons, symmetric temperature scaling, paired decision rules, and a separate out-of-distribution (OOD) veto. Retaining Full-EDL did not establish a reliable macro-F1 gain on either dataset, while the simplified alternatives remained inconclusive under the non-inferiority margin. Simple cross-entropy with temperature scaling (Simple-CE+TS) met the calibrated negative log-likelihood criterion on both datasets and showed favourable selective-risk ordering. The raw calibration advantage of evidential training disappeared after temperature scaling and did not recur on the second dataset. The gate had negligible observable influence at the audited checkpoints, and deleting the Full-only chain revealed no stable task or calibrated-loss benefit. Simple-CE nevertheless triggered the OOD veto against the fetal probe but not the lung probe, precluding an unconditional OOD-safety claim. We therefore selected Simple-CE+TS for the evaluated in-distribution objective while retaining Full-EDL as the maximal reference. Components should earn retention through functional and retraining-based evidence, and calibration and distribution-shift reliability should be evaluated separately.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

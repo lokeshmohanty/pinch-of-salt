@@ -1,0 +1,13 @@
+{
+  "id": "a63b9788e3ae49c1",
+  "title": "HazeSpikeMamba: Coupling Spiking-Inspired and State-Space Features for Self-Supervised Real-World Dehazing",
+  "link": "https://arxiv.org/abs/2608.06886",
+  "description": "arXiv:2608.06886v1 Announce Type: new \nAbstract: Dehazing networks are commonly trained on synthetic hazy-clear pairs, but their performance often drops on real photographs. Synthetic haze generated using the atmospheric scattering model does not fully capture the variability of real haze, and paired real hazy-clear images are scarce. In this work, we propose HazeSpikeMamba, a compact dehazing framework that combines a spiking-inspired local path and an attentive state-space global path in a multi-scale U-Net. The local path uses TPCNNSpike, a new spike-emission scheme inspired by the neighborhood coupling of Pulse-Coupled Neural Network (PCNN). Unlike grouped directional scanning, TPCNNSpike updates all neurons in parallel using the previous firing states of their Gaussian-weighted neighborhoods. The global path adapts the Attentive State-Space Module of MambaIRv2, retaining semantic prompting and sequence reordering while removing the window self-attention branch. Its state-space processing models long-range dependencies with complexity linear in sequence length. For target-domain adaptation, a frozen degradation network, pretrained on paired NH-HAZE data, re-synthesizes haze from the dehazed prediction. The reconstruction error updates only the final restoration layers of HazeSpikeMamba without haze-free labels during adaptation. A shared checkpoint is adapted once on each complete unlabeled target set, making the evaluation dataset-level and transductive rather than zero-shot or per-image optimization. The forward network contains 2.02M active parameters and requires 13.27G nominal MACs (measured with thop at 256x256 input). This adaptation consistently improves BRISQUE and NIMA on RTTS, URHI, and HSTS. On RTTS, BRISQUE decreases from 30.13 to 27.72 and NIMA increases from 4.13 to 4.87. Under this transductive protocol, the adapted model also achieves the best BRISQUE and NIMA on URHI and HSTS among the compared methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

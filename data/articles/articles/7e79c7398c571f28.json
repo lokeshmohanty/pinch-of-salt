@@ -1,0 +1,13 @@
+{
+  "id": "7e79c7398c571f28",
+  "title": "FlexPath: Adapting Learned Connectivity Guidance to Path Preferences",
+  "link": "https://arxiv.org/abs/2606.10167",
+  "description": "arXiv:2606.10167v2 Announce Type: replace \nAbstract: Recent learning-based path planners use neural networks to process occupancy representations and approximate heuristics for classical search algorithms, yielding near-optimal paths with reduced search effort. However, these methods are tied to a fixed objective, usually the shortest-path objective, implicit in their supervision. This limits their flexibility to accommodate alternative criteria. We introduce $\\textbf{FlexPath}$, a two-stage learned search-guidance framework that first learns a recall-oriented connectivity prior initialized from shortest-path planner demonstrations and then refines this prior using differentiable path-shape objectives, thereby separating demonstration-based learning of $\\textbf{connectivity-biased guidance}$ from subsequent $\\textbf{objective specific refinement}$. Beyond enabling adaptation to new routing preferences, the two-stage procedure improves standard shortest-path planning itself: on TMP, FlexPath improves optimal-path recovery from 75.0\\% to 88.6\\% over TransPath while reducing search expansions by 13.8\\%. Ablations show that neither prior learning nor objective fine-tuning alone matches the full pipeline; their combination yields the strongest path cost and search efficiency. We further demonstrate the preference adaptation by adapting guidance to non-shortest-path objectives such as obstacle clearance, class-conditioned obstacle clearance and waypoint following. For clearance with $d_{\\min}=2$, FlexPath achieves 96.2\\% full clearance satisfaction on feasible instances while maintaining low search effort, and it reaches 98.4\\% waypoint-following success.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

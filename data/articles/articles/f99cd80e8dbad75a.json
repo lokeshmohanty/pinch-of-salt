@@ -1,0 +1,13 @@
+{
+  "id": "f99cd80e8dbad75a",
+  "title": "Topology-Aware Training and Spatial Diagnostics for Fiber Bundle Segmentation in Tracer Histology",
+  "link": "https://arxiv.org/abs/2609.04454",
+  "description": "arXiv:2609.04454v1 Announce Type: new \nAbstract: Anatomic tracer studies reveal how axon bundles project from an injection site, branch into smaller groups of axons, and course through the brain to reach their destinations. Histological data from such studies provide anatomical reference information for validating diffusion MRI tractography. However, manual annotation of the histological data is very labor-intensive, and although automated segmentation methods have been proposed, they rely mainly on pixel-overlap losses such as BCE and Dice; topology-aware loss functions have not been studied for this task. We compare BCE-Dice, clDice, Betti matching, and Topograph for fiber bundle segmentation in macaque tracer histology using a frozen DINOv3 backbone. To our knowledge, this is the first exploration of foundation-model features for this task. BCE-Dice achieved the highest Dice, while clDice achieved the highest bundle recall but poor mask overlap. Topograph had similar Dice to BCE-Dice, the lowest $\\beta_0$ error, and fewer false positives than BCE-Dice and Betti matching. Fiber bundle segmentation methods are typically evaluated with a permissive rule that counts a bundle as detected given any overlap with the prediction. We show this rule does not capture oversegmentation, and that per-section TPR can be inflated by empty sections assigned perfect recall. To quantify this, we introduce Excess32, a spatial diagnostic measuring predicted pixels outside a 32-pixel tolerance band around annotated bundles. In validation, a Betti-Topograph union raises sparse-bundle TPR from 0.818 to 0.933, but worsens FDR from 0.296 to 0.509, Excess32 from 0.108 to 0.466, and area ratio from 0.94 to 3.34. These results show detection metrics alone are insufficient to characterize segmentation quality.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

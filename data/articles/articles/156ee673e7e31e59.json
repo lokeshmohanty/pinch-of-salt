@@ -1,0 +1,15 @@
+{
+  "id": "156ee673e7e31e59",
+  "title": "Rescene: band-limited stochastic forcing turns a frozen neural weather operator into a climate emulator",
+  "link": "https://arxiv.org/abs/2608.09971",
+  "description": "arXiv:2608.09971v1 Announce Type: cross \nAbstract: Over the past few years, the rapid development of machine learning (ML) models for weather forecasting has produced deterministic models whose medium-range skill matches or exceeds that of the European Centre for Medium-Range Weather Forecasts (ECMWF)'s high-resolution forecast (HRES). However, when these models are integrated freely beyond the horizon they were trained for, they blow up, drift, or lose their seasonal cycle, and retraining them for stability is expensive. We therefore ask what can be recovered from a strictly frozen backbone. We present Rescene, a 0.4 M-parameter wrapper around a frozen 1.5 degree, 6-hourly vision-transformer operator, developed using ERA5 reanalysis data and comprising a deterministic \"slow clock\" (0.33 M) that blends the forecast toward a lead-aware day-of-year climatology and a generative head (0.06 M) that adds a spectrally shaped stochastic perturbation at every step. The performance evaluation demonstrates that the deterministic wrapper alone is stable for decades but collapses daily variability to 40% of ERA5. Adding the generative head restores 126% (Z500) and 130% (MSLP) of the observed daily variability with pattern correlations of 0.89 and 0.92, recovers 82% of the observed blocking frequency, keeps the ensemble calibrated (spread-skill ratio 0.78-0.97 from day 7 to day 90), and integrates for 100 years with no detectable drift (+0.008 +/- 0.014 K per century). Moreover, because the perturbation is band-limited to total wavenumber $k \\le 20$, the small scales are never forced, yet realistic $k \\ge 20$ power is sustained: a direct decomposition of the 6-hourly energy budget shows that the frozen operator supplies 28 times more energy than the perturbation at $k \\ge 40$, with a fractional growth rate 247 times larger at the grid scale than at planetary scales.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.ao-ph",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

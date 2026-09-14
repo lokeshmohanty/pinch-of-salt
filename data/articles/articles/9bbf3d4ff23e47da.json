@@ -1,0 +1,13 @@
+{
+  "id": "9bbf3d4ff23e47da",
+  "title": "CoCA: Step-level Reward for Free in RL-based T2I Diffusion Model Fine-tuning",
+  "link": "https://arxiv.org/abs/2505.19196",
+  "description": "arXiv:2505.19196v2 Announce Type: replace \nAbstract: Recent advances in text-to-image (T2I) diffusion model fine-tuning leverage reinforcement learning (RL) to align generated images with learnable reward functions. The existing approaches reformulate denoising as a Markov decision process for RL-driven optimization. However, they suffer from reward sparsity, receiving only a single delayed reward per generated trajectory. This flaw hinders precise step-level attribution of denoising actions, undermines training efficiency. To address this, we propose a simple yet effective credit assignment framework that dynamically distributes dense rewards across denoising steps. Specifically, we track changes in cosine similarity between intermediate and final images to quantify each step's contribution on progressively reducing the distance to the final image. Our approach avoids additional auxiliary neural networks for step-level preference modeling and instead uses reward shaping to highlight denoising phases that have a greater impact on image quality. Our method achieves 1.25 to 2 times higher sample efficiency and better generalization across four human preference reward functions, without compromising the original optimal policy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
