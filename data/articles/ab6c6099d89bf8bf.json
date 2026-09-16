@@ -1,0 +1,15 @@
+{
+  "id": "ab6c6099d89bf8bf",
+  "title": "Balancing Trial and Reorder: A Hybrid Sequential Transformer-GBDT Ranker for On-Demand Delivery",
+  "link": "https://arxiv.org/abs/2609.16407",
+  "description": "arXiv:2609.16407v1 Announce Type: cross \nAbstract: On a delivery platform, personalized store ranking greatly influences what users find and order. Unlike digital-only domains, candidate stores are local and bound by real-time availability and delivery operations. One central modeling tension is between surfacing new stores for trial and preserving ranking quality for sessions with reorder intent. We present Universal Venue Ranker (UVR), a production system deployed at Wolt that pairs a bidirectional transformer encoder for sequential user modeling with a GBDT ranker integrating contextual, user, and store features. Trained across all stores and domains of a country while enforcing local delivery constraints at inference, UVR replaces four previously separate ranking models (three for restaurants, one for retail) with a single unified system. Label smoothing and trial-biased sample weighting steer the model toward new stores, lifting offline trial MRR by +12% to +30% over production while regressing reorder MRR in five of six countries. These regressions leave Global CVR, our core online metric, which blends trial and reorder sessions, statistically unchanged. We validate UVR in three consecutive A/B tests, the first two across Wolt's largest operating markets and the third spanning all operating countries and both domains. UVR V1 delivers +5.5% Merchant Trial Rate and +0.16% Global CVR over the previous production ranker; V2 adds a further +0.45% Merchant Trial Rate on top; and V3, our cross-domain unification of the restaurant and retail rankers, adds a further +1.31% Retail Merchant Trial Rate, together accounting for substantial incremental gross order value and a materially simplified serving stack.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

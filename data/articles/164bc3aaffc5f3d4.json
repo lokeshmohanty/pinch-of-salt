@@ -1,0 +1,13 @@
+{
+  "id": "164bc3aaffc5f3d4",
+  "title": "InfoTaxa: Information-Calibrated Label-Free Clustering for Fine-Grained Visual Taxonomy",
+  "link": "https://arxiv.org/abs/2609.17218",
+  "description": "arXiv:2609.17218v1 Announce Type: new \nAbstract: Label-free clustering of frozen pretrained visual embeddings offers a scalable route to biodiversity monitoring, but image-only fine-grained taxonomy exhibits a consistent coarse-to-fine failure mode: clusters recover broad taxonomic structure yet plateau at species level. We study this behaviour on BIOSCAN-5M through an information-calibrated clustering analysis. BioCLIP~2 features with UMAP and HDBSCAN reach $0.79$ AMI at family and $0.67$ at genus, substantially improving over the prior image baseline and remaining competitive with oracle-$K$, graph-based, and learned clustering heads on the same frozen features. To diagnose whether the remaining plateau is method-limited or information-limited, we introduce InfoTaxa, which combines clustering efficiency---the fraction of probe-estimated image information recovered by an unsupervised partition---with paired DNA as an audit signal only, not an inference input. The density pipeline recovers approximately $0.90$ and $0.81$ of the image-available information at order and family, respectively. Held-out late-fusion probes show that adding DNA to the image embedding reduces species-level prediction error by approximately two bits. Robustness analyses cover multiple image encoders, described-species and rare-class subsets, probe diagnostics, and held-out-species coarse-rank generalisation and same-species retrieval. Thus, in the tested setting, species-level label-free clustering is both clustering-limited and representation-limited: improved clustering may recover additional image-exposed structure, but cannot close the DNA-audited information gap alone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

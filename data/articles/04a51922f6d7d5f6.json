@@ -1,0 +1,14 @@
+{
+  "id": "04a51922f6d7d5f6",
+  "title": "Can Knowledge Transfer Parameters Be Learned? LePoKet for Efficient Robotic Vision",
+  "link": "https://arxiv.org/abs/2609.16637",
+  "description": "arXiv:2609.16637v1 Announce Type: new \nAbstract: Efficient perception is central to robotic systems operating under constrained computation, memory, and latency budgets. Knowledge transfer from larger pretrained models offers a practical route to stronger compact perception networks, but existing approaches commonly rely on fixed distillation objectives or manually designed interaction mechanisms. Building on Hereditary Knowledge Transfer (HKT), we propose LePoKet (Learnable Parameter Optimization for Knowledge Transfer), a structural transfer framework that embeds knowledge inheritance directly into the forward computation. LePoKet introduces a block-wise Extract-Transform-Mix interface whose interaction parameters are optimized jointly with the child network through a Learnable Genetic Attention (LGA) operator, without auxiliary distillation losses or temperature scaling. We first characterize the mechanism on CIFAR-10 and CIFAR-100 using ResNet parent-child pairs, obtaining relative error reductions of 24.57% and 25.1%, respectively, over standard child training. We then evaluate LePoKet for dense motion estimation by integrating it into a compact RAFT-based optical-flow model trained only on FlyingChairs and FlyingThings3D. LePoKet improves the compact RAFT baseline from 2.21 to 1.92 EPE on Sintel Clean, from 3.35 to 3.01 on Sintel Final, and from 7.51 to 6.39 on KITTI. A direct comparison with HKT further shows that LePoKet improves CIFAR-10 accuracy from 92.40% to 93.40% while achieving the best Sintel Final and KITTI errors among the evaluated compact transfer variants, with comparable performance on Sintel Clean. These results demonstrate that learnable structural transfer generalizes across recognition and motion perception tasks and provides a promising approach for efficient robotic vision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

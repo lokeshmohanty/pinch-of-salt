@@ -1,0 +1,14 @@
+{
+  "id": "6f7dd39cb0be26c0",
+  "title": "Conditioning noise is a free regularizer for LoRA fine-tuning: no pathology encoder required for diffusion-based artifact detection in histopathology",
+  "link": "https://arxiv.org/abs/2609.16032",
+  "description": "arXiv:2609.16032v1 Announce Type: cross \nAbstract: Diffusion-based artifact detectors score whole-slide image patches by reconstruction error under a model fine-tuned on clean tissue. We show that conditioning this fine-tuning on random Gaussian embeddings -- resampled at every step from approx. 200 KB of precomputed embedding statistics, with no encoder, no cache, and no change to inference -- consistently widens the clean/artifact separation. A four-step ablation chain shows the benefit requires neither content (shuffled real embeddings), provenance (synthetic Gaussians), a tuned intensity (flat across an 8x variance range), nor per-patch identity (fresh per-step noise); a LoRA-dropout control shows the conditioning pathway specifically, not generic weight perturbation, carries the effect. Patch-level gains of +0.25-0.48 Cohen's d replicate across nine trainings; honest leave-one-slide-out evaluation clears a pre-registered bar in 2/2 seeds; and two pre-registered external endpoints on a 281-case set confirm pooled Delta F1 = +0.0073 (95% CI) and +0.0129 (97.5% CI, two-look corrected). We release the full evaluation protocol, including measured seed noise and selection-optimism pricing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}
