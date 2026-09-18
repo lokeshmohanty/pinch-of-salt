@@ -1,0 +1,14 @@
+{
+  "id": "b986063e41b90cc7",
+  "title": "STRADAViT: Self-Supervised Domain Adaptation of Vision Transformer Backbones for Radio Astronomy",
+  "link": "https://arxiv.org/abs/2603.29660",
+  "description": "arXiv:2603.29660v4 Announce Type: replace-cross \nAbstract: Next-generation radio astronomy surveys are delivering millions of resolved sources, yet scalable morphology analysis remains difficult across heterogeneous telescopes and imaging pipelines. We present STRADAViT, a self-supervised continued-pretraining framework for learning transferable radio-astronomy encoders from Vision Transformer (ViT) backbones. It combines mixed-survey data curation, radio astronomy-aware training-view generation, and a ViT-MAE-initialized encoder family with optional register tokens. It supports reconstruction-only, contrastive-only, and two-stage branches. Our pretraining dataset comprises 512x512 radio astronomy cutouts drawn from four complementary sources (MeerKAT, ASKAP, LOFAR/LoTSS, and SKA SDC1 simulated data). We evaluate transfer with linear probing (LP) and fine-tuning (FT) on three morphology benchmarks spanning binary and multi-class settings (MiraBest, LoTSS DR2, and Radio Galaxy Zoo). An exploratory three-fold ablation grid guides selection of a register-based two-stage checkpoint using a fixed cross-dataset criterion. Across subsequent 15-seed paired downstream evaluations on fixed partitions, this checkpoint improves linear-probe Macro-F1 over its ViT-MAE initialization on all three benchmarks and improves fine-tuning on MiraBest and RGZ DR1, while LoTSS DR2 fine-tuning declines; all six differences remain statistically supported after Holm correction. A parallel DINOv2 experiment yields mixed adaptation effects: the procedure transfers, but the benefit is not uniform. STRADAViT thus improves frozen ViT representations while retaining clear dataset-dependent limitations and remaining below task-specialized methods on standard MiraBest classification.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "astro-ph.IM",
+    "cs.CV"
+  ]
+}

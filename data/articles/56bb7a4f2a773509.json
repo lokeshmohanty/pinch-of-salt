@@ -1,0 +1,13 @@
+{
+  "id": "56bb7a4f2a773509",
+  "title": "Adaptive Temporal Gating of Longitudinal Magnetic Resonance Imaging for Dementia Prediction",
+  "link": "https://arxiv.org/abs/2605.28397",
+  "description": "arXiv:2605.28397v2 Announce Type: replace \nAbstract: Predicting which people with mild cognitive impairment will develop dementia matters for early treatment. Yet structural imaging models have relied almost entirely on a single scan, so the value of measuring anatomical change over time is largely untested. We ask what a second scan adds, under a strict evaluation: conversion is defined from recorded clinical diagnoses rather than enrolment category, the pretraining pool shares no participants with the evaluation cohort, a test partition is kept out of model development, and uncertainty is estimated by resampling participants, not scans. We introduce a temporal fusion network that combines paired scans in three ways (anatomical difference, cross-temporal attention, and joint context) and mixes the three with a learned per-patient gate. We compare it with single-scan and longitudinal baselines. A follow-up scan improves discrimination substantially, and a model with an unrelated architecture gains the same, so the benefit comes from temporal information, not from a particular design. How the scans are combined still matters: simple subtraction is no better than a single scan, while learned fusion recovers the full benefit. Two results count against the proposed method. It does not beat a simpler recurrent baseline in a comparison able to detect a small difference, and its adaptive gate, meant to explain individual predictions, is unstable across independently trained models and largely restates the prediction itself. Most of the improvement comes from the pretrained encoder, not the second timepoint, which points to a ceiling on what paired structural imaging can offer. The usual 0.5 threshold is also unsuitable at this prevalence: validation-chosen operating points change how clinically useful every model appears without changing any model. Further gains are more likely to come from richer inputs than from more elaborate fusion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

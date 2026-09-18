@@ -1,0 +1,14 @@
+{
+  "id": "f8246266e699ab24",
+  "title": "Look Less, Hear Better: Jointly Rewarded GRPO for Streaming ASR",
+  "link": "https://arxiv.org/abs/2609.18333",
+  "description": "arXiv:2609.18333v1 Announce Type: cross \nAbstract: Streaming automatic speech recognition (ASR) must be judged jointly on what it transcribes and on how quickly it commits each word. Delayed streams modeling (DSM) has become the dominant paradigm for streaming large audio-language models, exposing a structural delay $\\tau$ that bounds the decoder's lookahead. We show that $\\tau$ is a poor proxy for user-perceived latency, and that the alignment-based supervision of DSM leaves latency on the table: the same forced-aligned transcript is used at every $\\tau$, forcing the model to withhold words it could already commit. We introduce AWED, a word-level emission-delay metric defined relative to the acoustic end of each word, and post-train a DSM recognizer with GRPO under a reward that scores transcription accuracy and measured delay jointly. Trained at a single operating point ($\\tau=6$ frames), our model dominates both its supervised fine-tuning initialization and the Voxtral Realtime backbone across all evaluated lookahead budgets: it cuts WER by 30.8\\% relative at an 80\\,ms structural delay, and by 5.7\\% relative at 480\\,ms while lowering median AWED from 1.17\\,s to 1.04\\,s. Latency-rewarded post-training thus advances the accuracy--latency Pareto frontier of streaming ASR without architectural change.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.AI"
+  ]
+}

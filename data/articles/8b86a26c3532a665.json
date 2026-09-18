@@ -1,0 +1,13 @@
+{
+  "id": "8b86a26c3532a665",
+  "title": "DualCount: Structurally Consistent Density and Point Modeling for Zero-Shot Object Counting",
+  "link": "https://arxiv.org/abs/2609.17613",
+  "description": "arXiv:2609.17613v1 Announce Type: new \nAbstract: Zero-shot object counting aims to estimate the number of objects specified by a text query without category-specific training. Recent approaches primarily rely on density regression or detection-style instance prediction. While effective, density-based models often suffer from spatial ambiguity and background leakage due to weakly regulated mass allocation, leading to fragmented or part-biased representations that increase counting error in complex scenes. In this work, we propose an instance-aware dual-decoder framework that structurally couples density and point representations for zero-shot object counting. Instead of treating density estimation as independent pixel-wise regression, we interpret it as a structured mass allocation problem over a latent set of object instances. Predicted instance centers induce a soft instance-wise decomposition of the density map, upon which we enforce two geometric constraints: (1) per-instance mass conservation, ensuring each object contributes approximately one unit of density mass, and (2) center-of-mass alignment, encouraging each density component to concentrate around its corresponding predicted center. These constraints introduce instance-level geometric consistency and lead to more accurate mass allocation, thereby reducing counting error. Extensive experiments on FSC-147, PUCPR+, and CARPK show that our approach consistently reduces counting error and establishes new state-of-the-art performance in zero-shot object counting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

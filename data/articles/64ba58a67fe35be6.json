@@ -1,0 +1,14 @@
+{
+  "id": "64ba58a67fe35be6",
+  "title": "Suppressed, Not Erased: A Representational Trace of Edited Facts Survives Even Weight-Free Knowledge Editing",
+  "link": "https://arxiv.org/abs/2609.18985",
+  "description": "arXiv:2609.18985v1 Announce Type: new \nAbstract: Knowledge-editing benchmarks certify local correctness, whether an edited model produces the new fact on near-edit prompts but not how much of the original fact remains decodable inside the model. We study residual knowledge directly with a linear trace probe: after editing a fact, we ask whether the original object is still recoverable from the model's hidden states. On GPT-2-XL, across three mechanistically distinct editors applied to 50 CounterFact edits, the original object remains linearly decodable well above chance after a successful edit (probe accuracy 0.96 for ROME, 0.86 for constrained fine-tuning, and 0.79 for the memory-based editor GRACE, against a chance level of 0.50; all edits reach 100% generation-based success). The GRACE result is the most informative: GRACE changes zero base-model weights, overriding the fact through an external memory, yet the original object is still decodable from the underlying network, so the residual trace cannot be attributed to an incomplete weight update. We read this as evidence that editing, even when behaviorally successful, suppresses rather than erases the original association in representational space. We also report a relearning-savings instrument that did not behave reliably in our setting and discuss why; we treat it as a negative methodological result rather than evidence. Code and data are released.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}
