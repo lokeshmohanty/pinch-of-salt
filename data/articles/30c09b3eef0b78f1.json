@@ -1,0 +1,14 @@
+{
+  "id": "30c09b3eef0b78f1",
+  "title": "Effective and Efficient Threat Hunting with Small Language Models",
+  "link": "https://arxiv.org/abs/2512.06660",
+  "description": "arXiv:2512.06660v3 Announce Type: replace-cross \nAbstract: Analysts in Security Operations Centers query massive telemetry streams using Kusto Query Language (KQL), but writing correct KQL demands specialized expertise that bottlenecks scaling security teams. We investigate how Small Language Models (SLMs) can enable accurate, cost-effective translation from natural language queries (NLQs) to KQL. We propose a three-knob framework spanning prompting, fine-tuning, and architecture. First, we adapt NL2KQL for SLMs with lightweight retrieval and introduce error-aware prompting that targets common parser failures with a handful of mined tips, at a fraction of the tokens KQL's full rule set would require. Second, we apply LoRA fine-tuning with rationale distillation augmenting each NLQ-KQL pair with a brief chain-of-thought to transfer teacher reasoning. This yields an informative negative result, as neither variant surpasses targeted prompting. Third, we propose a two-stage architecture pairing an SLM drafter with a low-cost LLM judge for schema-aware refinement. We evaluate nine models (five SLMs, four LLMs) on syntax correctness, semantic accuracy, table selection, filter precision, latency, and token cost. On Microsoft's NL2KQL Defender Evaluation dataset, our two-stage approach reaches 0.987 syntax and 0.906 schema-valid (\"semantic\") accuracy, exceeding every baseline we run under equivalent infrastructure, and it generalizes to independently authored queries over the same schema (0.964 syntax, 0.831 schema-valid). The only baselines within 0.05 schema-valid are NL2KQL+GPT-4o (0.878) and NL2KQL+GPT-5 (0.861), which cost USD 2.998 and USD 2.018 for 230 queries against USD 0.213 for ours, a 9.5-14x reduction at matched accuracy. These results establish SLMs as a practical foundation for natural-language querying in security operations.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

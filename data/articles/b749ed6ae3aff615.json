@@ -1,0 +1,14 @@
+{
+  "id": "b749ed6ae3aff615",
+  "title": "AIREP: A Protocol for Per-Decision Evidence in AI Runtime Governance",
+  "link": "https://arxiv.org/abs/2608.21363",
+  "description": "arXiv:2608.21363v2 Announce Type: replace \nAbstract: Runtime-governance evidence often collapses materially different events into one audit record: a decision may be made, an instruction dispatched or received, an action may or may not execute, and a resulting state may or may not be observed. This paper presents AIREP, a vendor- and model-independent protocol for per-decision AI runtime evidence. Its current wire model separates evidence into four artifact families: Decision, Control, Execution, and Effect. Artifacts use closed core schemas, explicit identities and digests, declared scope limits, RFC 8785 canonical JSON, domain-separated SHA-256 hashing, and pure Ed25519 signatures. A three-level assurance model distinguishes structural/hash consistency (AIREP-Core), verifier-accepted authorship (AIREP-Authenticated), and independently anchored chain-head freshness and non-truncation relative to an accepted witness (AIREP-Witnessed); these classes do not establish event truth. A structured reconciler preserves failure, missing evidence, unevaluated prerequisites, and indeterminate outcomes as distinct states. The released beta includes a four-family first-party producer, Python and Node reference-verification paths, adversarial/lifecycle corpora, and reproducible validation. Post-release first-party Hermes and LightEval integration exercises preserve explicit evidence boundaries without claiming adoption or interoperability. Independent implementation evidence exists separately for a v0.1.2 producer and a v0.2 consumer/verifier; because they target different frozen versions, they do not establish same-version producer-to-consumer interoperability. AIREP remains experimental.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CR"
+  ]
+}

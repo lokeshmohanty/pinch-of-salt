@@ -1,0 +1,14 @@
+{
+  "id": "50bfe35a8b18ce8e",
+  "title": "Labeled Incidence Structures for Native Transformer Modeling of Text, Knowledge Graphs, and Hypergraphs",
+  "link": "https://arxiv.org/abs/2609.20278",
+  "description": "arXiv:2609.20278v1 Announce Type: cross \nAbstract: Text, knowledge graphs, and hypergraphs all have elements that play distinct roles within relation instances, structure that is lost when data is flattened into token sequences. We introduce labeled incidence structures (LIS), a uniform representation that encodes each endpoint as $(x_d, s, e)$: content $x_d$, a role or slot $s$, and the relation instance $e$ in which that role appears. Because every data type maps to the same $(x_d, s, e)$ representation without flattening, a single standard transformer can process them all natively, structural differences are carried entirely by the operators, not the architecture.\n  LIS assigns a structural address to each endpoint by composing a slot operator and an instance operator, $A(s,e) = R_s R_e$. We characterize when this factorization gives every token a unique, path-independent address. When it does, the natural operator comparing endpoint $j$ to endpoint $i$ is the relative transport $P_{j\\to i} = A_i^{-1} A_j$, which gives attention a role- and relation-aware inductive bias without imposing an arbitrary sequence order.\n  Additive encodings of the form \"position term plus relation term\" can miss information that depends jointly on $s$ and $e$. We prove this in a controlled example family: when the journey operator is approximated by the sum of a position-only term and a relation-only term, the approximation cannot capture how position and relation combine, only their separate effects.\n  We also analyze persistent knowledge repositories. Identifiers tied to storage locations make models sensitive to storage order, while freely learned identifiers can become harder to control as the repository size $M$ grows relative to the sample size $n$. Computing relation-instance operators from content avoids this storage-order issue and yields a capacity bound independent of $M$, under fixed architectural and Lipschitz assumptions.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

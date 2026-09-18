@@ -1,0 +1,14 @@
+{
+  "id": "4bb48205676ed615",
+  "title": "When Do Language-Grounded Explanations Help? A Graph-Bottleneck for Farm Monitoring Interpretable Sheep Facial Pain",
+  "link": "https://arxiv.org/abs/2609.20427",
+  "description": "arXiv:2609.20427v1 Announce Type: cross \nAbstract: Automated pain recognition from facial expression could make continuous welfare assessment practical in sheep, but adoption depends on trust: a stockperson cannot act on a score that arrives without justification. We ground a model in the Sheep Pain Facial Expression Scale (SPFES) by letting each detected facial region attend over text embeddings of the clinical descriptors and then test whether the resulting explanations mean anything. They do not. Ablating an entire descriptor changes the predicted logit by about $10^{-4}$, and the most-attended cue agrees with the predicted pain level in only $32.6\\%$ of regions, although the attention maps, the learned gate, and the generated text all proposed otherwise. We therefore remove the appearance bypass with a concept bottleneck whose classifier reads only SPFES concept scores, supervised by per-region state annotations that image-level pipelines discard. This costs $0.05$--$0.10$ in Cohen's $\\kappa$ but yields concepts that are demonstrably learned: minority pain-indicating states are recovered at $3.5$--$8.3\\times$ their base rates, and the ear and eye severity orderings emerge without severity supervision. Removing the supervision alone leaves $\\kappa$ unchanged while concept accuracy falls to $0.109$, showing that architectural necessity does not imply semantic validity. We also show that pooled concept accuracy is misleading under clinical imbalance and provide a cross-validated, protocol-matched benchmark of seven methods on this dataset.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e0a7b6d2a8b191d9",
+  "title": "QCPruner: Query-Conditioned Population Coverage for Visual Token Pruning",
+  "link": "https://arxiv.org/abs/2609.19990",
+  "description": "arXiv:2609.19990v1 Announce Type: new \nAbstract: The high visual-token load in multimodal large language models (MLLMs) motivates training-free pruning to reduce later-layer computation, but under a fixed budget, pruning must preserve query-relevant evidence while avoiding redundancy. Existing methods rank tokens, diversify selected subsets, or optimize coverage without using a shared per-visual query utility to weight both visual targets and candidate representatives. We introduce QCPruner, which makes both roles query-conditioned through bilateral utility weighting. Using keyword-matched query anchors, QCPruner fuses two cross-modal cues into utility and applies it to both visual targets and candidate representatives within visual-affinity-based coverage. The resulting nonnegative facility-location objective is monotone and submodular, retains the standard (1-1/e) greedy guarantee, and requires no model training or parameter updates. Across LLaVA-1.5, LLaVA-NeXT, LLaVA-Video, and Qwen2.5-VL, QCPruner achieves the highest average relative performance among evaluated complete-system pruning methods at every reported token budget. At 32 of 576 tokens on LLaVA-1.5-7B, it retains 96.1% of unpruned performance, versus 93.9% for the strongest evaluated baseline. At 256 of 1296 tokens on Qwen2.5-VL-7B, the corresponding values are 96.7% and 92.5%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
