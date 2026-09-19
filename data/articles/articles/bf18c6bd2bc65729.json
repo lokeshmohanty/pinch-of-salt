@@ -1,0 +1,13 @@
+{
+  "id": "bf18c6bd2bc65729",
+  "title": "Refuse, Decompose, Refresh: A Claim-Safe Protocol for Closed-Loop AI Evaluation",
+  "link": "https://arxiv.org/abs/2609.20538",
+  "description": "arXiv:2609.20538v1 Announce Type: new \nAbstract: An AI evaluation can be perfectly reproducible and still support the wrong claim. This risk is acute in closed-loop systems: policy determines visited states, observable components, and which failures leave a measurable trace. We propose a claim-safe protocol with three actions. Refuse: abstain when a clean reference stream or matched runtime comparison lacks support. Decompose: report protocol execution, operational false admission, and structural hypotheses separately rather than as one PASS/FAIL label. Refresh: treat distribution-shift alarms as requests to invalidate and recompute a reference map, not as fault evidence. We instantiate the protocol in an aggregate-only simulator with 24 policy components, three demand regimes, two fault-mask families, and independent development and heldout seeds. The preregistered heldout contains 1,440 cases and 21,600 partition rows. Only 55/72 regime-component units were reference-admitted and 54/55 remained runtime-admitted, making abstention part of the result. Stable false admission was 0/20 represented components, with a one-sided exact 95% upper bound of 0.1391 under a frozen 0.20 rule. Within admitted units, affected clean traffic outpredicted nominal fault-cell fraction: across 540 unit-arm rows nested in 20 component clusters, the cell-minus-traffic negative-log-likelihood difference was 0.1264 nats per row, with a 95% component-cluster interval of [0.0593, 0.1918]. A drift log shows why \"null\" must be reference-relative: clean fault-null streams triggered 15/15, 0/15, and 14/15 alarms across three regimes, while only the middle regime matched the frozen detector reference. Rather than a universal threshold, we contribute an executable contract linking observable support, statistical calibration, and justified claims.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "30ed70d6e744e193",
+  "title": "Intersectional Disentangling of Temporal and Acquisition Bias in Fetal Ultrasound",
+  "link": "https://arxiv.org/abs/2605.02942",
+  "description": "arXiv:2605.02942v2 Announce Type: replace-cross \nAbstract: Fairness studies of medical imaging AI often explain subgroup performance gaps through under-representation in the training data. We show that intersectional analysis can disentangle fairness and performance gaps arising from clinical and acquisition confounders that co-vary with the target. As a case, we study scan-time fetal weight estimation from obstetric ultrasound, analyzing two models: a state-of-the-art deep learning (DL) model and the clinical gold-standard Hadlock formula. Using unsupervised slice discovery, we find that high-error subgroups share extreme in the image-acquisition pixel spacing (PS) and in the scan-to-delivery (STD) interval. Of these, PS is an acquisition parameter that can be optimized, while STD is a potential confounder for both PS and our bias diagnostics. Subgroup inspection alone cannot separate them. We disentangle the factors using a model-agnostic analysis with identical metadata partitions and partial regression. Holding STD fixed, the apparent PS effect collapses to a small residual (standardized coefficient $\\beta=-0.17$), whereas holding PS fixed, STD dominates error ($\\beta=+0.56$). Both models degrade with increasing STD, including the biometric formula, indicating much of the error is intrinsic to the prediction target rather than imaging. The DL model is $\\sim$1.5$\\times$ more sensitive to STD than Hadlock, though it remains more accurate in every subgroup. We conclude that fairness analyses need to carefully analyze potential confounds, or risk attributing an effect such as temporal or acquisition-related dependency to demographics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "eess.IV"
+  ]
+}

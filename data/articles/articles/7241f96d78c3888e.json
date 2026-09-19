@@ -1,0 +1,13 @@
+{
+  "id": "7241f96d78c3888e",
+  "title": "VIG: Visual Information Gain as a Reward Signal for Multimodal Chain-of-Thought Compression",
+  "link": "https://arxiv.org/abs/2608.21883",
+  "description": "arXiv:2608.21883v2 Announce Type: replace \nAbstract: Multimodal large reasoning models often rely on long Chain-of-Thought (CoT) traces in which a substantial fraction of tokens, such as repeated visual descriptions, self-reflection, and other visually-disengaged filler, inflate inference cost without contributing to the answer. Existing CoT compression methods optimize output length but never measure whether a reasoning token is actually grounded in the image. We propose \\textbf{VIG} (Visual Information Gain), an information-theoretic GRPO reward that scores each reasoning token by how much the image reduces its predictive uncertainty. VIG is computed online from two forward passes of the same policy, one with and one without the image, so no reference chains, external annotations, or auxiliary reward models are needed. Across six main multimodal reasoning benchmarks and three Qwen3-VL-Thinking model sizes (2B/4B/8B), plus an additional R1-Onevision-Bench evaluation on 8B, VIG consistently improves the accuracy--efficiency trade-off, supporting our central claim: \\emph{efficient multimodal reasoning emerges from raising visual information density, where every reasoning token earns its place by anchoring to the image, rather than from imposing a length budget.} Our source code is available at https://github.com/chaser682/vig.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

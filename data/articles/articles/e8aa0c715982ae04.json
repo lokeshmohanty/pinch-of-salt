@@ -1,0 +1,13 @@
+{
+  "id": "e8aa0c715982ae04",
+  "title": "Geometry-Guided Representations for Coherent Lane and Traffic Topology Reasoning in Driving Scenes",
+  "link": "https://arxiv.org/abs/2506.13553",
+  "description": "arXiv:2506.13553v4 Announce Type: replace \nAbstract: Road topology reasoning is fundamental for autonomous driving, requiring both accurate perception of road elements and understanding of their complex connectivity, including lane connectivity (Lane-to-Lane, L2L) and traffic regulation (Lane-to-Traffic signs, L2T). However, existing methods typically treat perception and topology reasoning as fragmented tasks, ignoring their potential for mutual enhancement. Crucially, while topology is inherently relational, prior works often overlook geometric relationships during feature extraction, relying instead on brittle post-processing or coordinate-based heuristics applied only at inference time. To bridge this gap, we propose CoPo (Coherent Perception and toPology), a unified framework that integrates geometry-guided relational modeling across three levels: 1) Perception-level: We introduce a relation-aware lane detector that utilizes geometry-biased self-attention and curve-guided cross-attention to enrich lane representations with structural priors; 2) Reasoning-level: We design relation-enhanced topology heads, including a geometry-enhanced L2L head and a cross-view L2T head, which effectively align features to infer connectivity; and 3) Supervision-level: We implement a contrastive InfoNCE strategy to regularize relational embeddings, pulling connected pairs closer in the latent space. This coherent multi-level design enables end-to-end joint optimization of perception and reasoning. Extensive experiments on OpenLane-V2 demonstrate that CoPo significantly outperforms existing methods, achieving gains of {\\textbf{+3.1}} in DET$_l$, {\\textbf{+5.3}} in TOP$_{ll}$, {\\textbf{+4.9}} in TOP$_{lt}$, and {\\textbf{+4.4}} overall in OLS, setting a new state-of-the-art.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

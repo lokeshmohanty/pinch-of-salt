@@ -1,0 +1,13 @@
+{
+  "id": "ed2a9c01e26564aa",
+  "title": "QueryFormer: Winning Solution for KDD Cup 2026 Tencent UniRec Challenge",
+  "link": "https://arxiv.org/abs/2609.16548",
+  "description": "arXiv:2609.16548v1 Announce Type: new \nAbstract: Post-click conversion rate (pCVR) prediction requires jointly modeling feature interactions and sequential user behaviors. The KDD Cup 2026 Tencent UniRec Challenge calls for a unified architecture addressing both. We observe that existing unified architectures often generate query tokens---the central information hub---with projection-based multi-layer perceptrons (MLPs), without explicit token-to-query attention for refining the query side. We propose QueryFormer, centered on a stackable unified field--sequence block that bridges non-sequential multi-field features and behavioral sequences, and provide a latency-aware scaling study over view width $H$, model width, depth, data, and compute. The block generates queries through cross-attention and packs sequence queries into shared-parameter attention. QueryFormer secured 1st place in the Industrial Track, achieving an official test area under the ROC curve (AUC) of 0.83254; a modest post-competition scale-up reached 0.832713. Within our grid, $H$-scaling improves validation AUC from 0.84540 to 0.84615 and beats HyFormer at comparable budgets. Ablation identifies query generation as the largest contributor. Packed shared-parameter cross-attention keeps H=8 inference latency to only 1.89x that of H=1, positioning the bridge as an efficient stackable unified block.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "204600bea90d1cc4",
+  "title": "Moral Hazard in Multi-Agent Language Models",
+  "link": "https://arxiv.org/abs/2607.23982",
+  "description": "arXiv:2607.23982v4 Announce Type: replace-cross \nAbstract: Cooperation can fail when socially valuable effort is costly, hard to observe, and benefits mainly someone else. Building on Holmstr\\\"om's model of moral hazard in teams, we introduce the Dialogue Moral Hazard Game, a theory-grounded controlled experimental paradigm that instantiates this hidden-action structure as a textual environment for language agents. In each episode, an agent chooses between keeping an immediate local reward and paying a query cost to reveal a hidden safety fact that primarily helps another agent's downstream decision. We evaluate eleven open-weight language models and three frontier API models, decomposing behavior into query rate, realized information transfer, local-reward preservation, unsafe choice, format validity, and team success. The frontier policies differ sharply: Fable 5 moves from querying toward local reward as cost rises and back toward querying as team reward rises, yet remains query-saturated under controlled private-share isolation; Muse Spark 1.1 responds to query cost, team reward, and private team share; and GPT-5.6 Sol reaches ceiling behavior in the primary setting. In a 3,015-decision incentive-isolation experiment, Sol tracks the Holmstr\\\"om-derived private-share boundary across nine query costs with a mean absolute error of 0.013. We then apply supervised fine-tuning, RLOO, sequential SFT+RLOO, and GEPA prompt optimization as diagnostic update mechanisms wherever model access permits. Their effects are heterogeneous: SmolLM3-3B and OLMo-7B show the clearest mechanism-consistent, weight-level gains, whereas GEPA sometimes raises team success while reducing or eliminating costly queries. Optimization can therefore lift aggregate reward without restoring the designated cooperative mechanism, motivating evaluations that report mechanism-level behavior rather than team success alone.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MA",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "246e511ca2cd32f2",
+  "title": "Rethinking Zero-Shot Time Series Classification: From Task-specific Classifiers to In-Context Inference",
+  "link": "https://arxiv.org/abs/2602.00620",
+  "description": "arXiv:2602.00620v2 Announce Type: replace-cross \nAbstract: The zero-shot evaluation of time series foundation models (TSFMs) for classification typically uses a frozen encoder followed by a task-specific classifier. However, this practice violates the training-free premise of zero-shot deployment and introduces evaluation bias due to classifier-dependent training choices. To address this issue, we propose TIC-FM, an in-context learning framework that treats the labeled training set as context and predicts labels for all test instances in a single forward pass, without parameter updates. TIC-FM pairs a time series encoder and a lightweight projection adapter with a split-masked latent memory Transformer. We further provide theoretical justification that in-context inference can subsume trained classifiers and can emulate gradient-based classifier training within a single forward pass. Experiments on 128 UCR datasets show strong accuracy, with consistent gains in the extreme low-label situation, highlighting training-free transfer for time series classification.The source code is publicly available at https://github.com/fangjuntao/TIC-FM.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

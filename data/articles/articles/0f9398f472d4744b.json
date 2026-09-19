@@ -1,0 +1,13 @@
+{
+  "id": "0f9398f472d4744b",
+  "title": "Test-Time Adaptation via Cache Personalization for Facial Expression Recognition in Videos",
+  "link": "https://arxiv.org/abs/2603.21309",
+  "description": "arXiv:2603.21309v4 Announce Type: replace \nAbstract: Facial expression recognition (FER) in videos requires model personalization to capture considerable variation across subjects. Vision-language models (VLMs) offer strong transfer through image-text alignment, but their performance can degrade under inter-subject distribution shifts. Test-time adaptation (TTA) can mitigate this challenge, yet most state-of-the-art methods rely on unsupervised parameter optimization, introducing computational overhead that limits real-world deployment. This paper introduces TTA through Cache Personalization (TTA-CaP), a gradient-free, cache-based method for cost-effective personalization of VLMs in video FER. Unlike prior cache-based TTA methods that rely solely on dynamic memories of test samples and may drift because of noisy pseudo-labels, TTA-CaP employs three complementary caches: a personalized static cache constructed through feature-statistics matching, a positive target cache containing reliable subject-specific samples, and a negative target cache containing low-confidence cases as negative evidence. A tri-gate mechanism prevents cache corruption by controlling updates according to temporal stability, confidence, and consistency with the personalized static cache. The caches jointly provide subject-matched positive and negative evidence for robust personalization. TTA-CaP further refines predictions through embedding fusion, supporting temporally stable video-level predictions. Experiments on BioVid, StressID, and BAH show that TTA-CaP outperforms state-of-the-art TTA methods under subject-specific and environmental shifts while maintaining low computational and memory overhead. Our code is publicly available at https://github.com/MasoumehSharafi/TTA-CaP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "76d1600c3707e0ad",
+  "title": "RASR: Range-Aware Scale Recovery for Metric UAV Navigation",
+  "link": "https://arxiv.org/abs/2607.09815",
+  "description": "arXiv:2607.09815v1 Announce Type: cross \nAbstract: Under Global Navigation Satellite System (GNSS) denial, a UAV controller still needs a distance and heading command it can execute, making accurate metric last-meter navigation essential. Dense pair-geometry foundation models transfer relative structure well, yet the distance scale of their raw metric outputs remains poorly calibrated. Under the relative error metric of PairUAV, correcting only the average scale can still leave costly, distance-dependent residuals near the goal. To address this scale mismatch, Range-Aware Scale Recovery (RASR) separates a transferable scale-recovery core from a protocol-specific calibration module in a per-pair system fixed at inference. The core compresses frozen Matching And Stereo 3D Reconstruction (MASt3R)-style geometry into a compact descriptor and uses global calibration to recover the dominant metric signal. Range-bucket residual correction and command-grid alignment stay inside the calibration module, so they match the command format and evaluation protocol of PairUAV. On the UAVs in Multimedia 2026 PairUAV online evaluation, RASR reaches a total score of 0.003189. Under the PairUAV protocol, frozen pair geometry thus yields stable per-pair distance and heading estimates, while every protocol-specific adjustment stays confined to a calibration module fixed before inference. Code and materials are available at https://github.com/lht-research/rasr-pairuav.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

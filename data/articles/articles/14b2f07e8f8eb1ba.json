@@ -1,0 +1,13 @@
+{
+  "id": "14b2f07e8f8eb1ba",
+  "title": "ShiftSplit-AD: Separating Domain Shift from Defects in Foundation-Feature Visual Anomaly Detection",
+  "link": "https://arxiv.org/abs/2608.27610",
+  "description": "arXiv:2608.27610v1 Announce Type: new \nAbstract: Visual anomaly detectors based on frozen foundation-model features commonly score distances from test patches to a memory of normal features. Benign acquisition changes can also enlarge these distances, confounding domain variation with defects. We investigate whether structured decomposition of nearest-normal DINOv2 residuals can suppress shift-induced evidence while retaining unseen defects. ShiftSplit-AD decomposes the patch residual matrix into low-rank and row-sparse components and scores the sparse component, with an optional low-rank/sparse fusion. The experiments expose a central trade-off rather than a universal separation: genuine defects can contain correlated, low-dimensional structure, so filtering broad residual activity may also remove defect information. On AeBAD-S, using settings fixed after Bottle development, sparse-only scoring improves image AUROC from 0.6780 to 0.7294 and AUPRC from 0.8052 to 0.8465. Paired bootstrap 95% intervals for the improvements are [0.0238, 0.0808] and [0.0170, 0.0650], respectively. However, sparse-only scoring reduces mean clean AUROC from 0.9890 to 0.9133 on four held-out MVTec categories and degrades Bottle localization. These findings show that residual decomposition can help when domain shift strongly contaminates anomaly evidence, but preserving defect structure remains the limiting problem.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e447ad3a1b54fb4c",
+  "title": "SciTrek: Evaluating and Improving Long-Context Numerical Reasoning over Scientific Articles",
+  "link": "https://arxiv.org/abs/2509.21028",
+  "description": "arXiv:2509.21028v5 Announce Type: replace \nAbstract: We introduce SciTrek, a synthetic question-answering dataset for assessing and improving long-context numerical reasoning in large language models (LLMs). Existing long-context datasets with inputs beyond 64K tokens either target simple information retrieval or, when they do involve reasoning, rely on artificial contexts, while numerical reasoning remains largely overlooked in both cases. SciTrek addresses these limitations with questions that require numerical operations (e.g., counting, sorting, aggregation, and comparison) over collections of full-text scientific articles. Questions are generated automatically by formulating them as SQL queries over a database of article metadata (titles, authors, and references), and ground-truth answers are obtained by executing these queries. The underlying SQL provides a transparent, verifiable specification of the reasoning each question requires, enabling fine-grained error analysis. Furthermore, the proposed fully automated pipeline scales to arbitrary context lengths and dataset sizes with minimal human supervision, mitigating data contamination and supplying abundant data for post-training. Extensive experiments show that frontier open-weight and proprietary LLMs struggle even with ostensibly simple questions: the best-performing model achieves only 46.5% exact match at 128K tokens, and performance degrades steadily as contexts grow. Fine-grained analysis reveals systematic weaknesses on citation-related questions and on compound logical conditions, particularly those involving negation. Finally, post-training open-weight models on SciTrek improves their numerical reasoning in ways that generalise to out-of-domain long-context tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

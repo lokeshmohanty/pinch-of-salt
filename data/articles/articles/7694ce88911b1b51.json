@@ -1,0 +1,17 @@
+{
+  "id": "7694ce88911b1b51",
+  "title": "CBW: Towards Dataset Ownership Verification for Speaker Verification via Clustering-based Backdoor Watermarking",
+  "link": "https://arxiv.org/abs/2503.05794",
+  "description": "arXiv:2503.05794v4 Announce Type: replace-cross \nAbstract: Speaker verification models are trained on large-scale public datasets whose licenses usually prohibit unauthorized commercial use, yet such infringement is difficult to detect or deter. Dataset ownership verification (DOV) is the mainstream countermeasure: it can watermark a dataset with backdoor attacks so that models trained on it exhibit owner-specified behaviors. However, existing DOV methods presuppose a closed label space fixed at watermarking time, whereas in open-set speaker verification the identities that a deployed model accepts are enrolled by third parties after release and are never observed by the dataset owner. We show that straightforward adaptations fail in two characteristic modes, and accordingly distill three requirements for an effective watermark, namely identity agnosticism, coverage, and fidelity, together with an intrinsic tension between the latter two. Our clustering-based backdoor watermark (CBW) resolves this tension by partitioning training speakers into clusters by feature similarity and implanting a distinct trigger for each cluster, so that each trigger covers one region of the speaker embedding space while the trigger set is designed to jointly cover it. We further develop paired hypothesis tests for ownership verification under both the similarity-available and the decision-only black-box settings at the 1-to-1 and 1-to-$N$ enrollment scales, and theoretically characterize when the audit succeeds, including an exact small-sample certificate and the effect of the enrollment size. Extensive experiments on benchmark datasets and representative models verify the effectiveness of our CBW, its resistance to watermark-removal attacks, and its transferability across model structures. Code is at https://github.com/Radiant0726/CBW/tree/master.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG",
+    "cs.SD",
+    "eess.AS"
+  ]
+}

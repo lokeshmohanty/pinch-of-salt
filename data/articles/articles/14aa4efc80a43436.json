@@ -1,0 +1,13 @@
+{
+  "id": "14aa4efc80a43436",
+  "title": "Model the Edit, Not the Image: Visual Autoregressive Editing from a Source-Centric Perspective",
+  "link": "https://arxiv.org/abs/2608.09057",
+  "description": "arXiv:2608.09057v2 Announce Type: replace \nAbstract: Next-scale visual autoregressive models (VARs) have emerged as a powerful generative paradigm, producing high-quality images through efficient coarse-to-fine prediction. However, their potential for text-guided image editing remains largely underexplored. Existing training-free VAR editing approaches often formulate editing as target-conditioned regeneration guided or constrained by the source image, and may rely on inversion, test-time optimization, attention control, or user-provided masks. This generation-centric formulation does not fully exploit the multiscale source representations provided by VARs and may introduce additional computation or intervention. We instead take a source-centric perspective on VAR editing, in which the encoded source image tokens serve as the primary visual state and the editing process focuses on condition-induced changes. Based on this perspective, we propose \\textbf{EditMod}, which compares source- and target-conditioned predictions under a shared autoregressive context, treats their difference as a scale-wise editing direction, and applies it as a residual update to source tokens at selected scales. Experiments show that EditMod achieves leading source-image fidelity while maintaining strong text alignment, and completes end-to-end editing of a 1K image in only 1.57 seconds on a single A100 GPU without per-image preparation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

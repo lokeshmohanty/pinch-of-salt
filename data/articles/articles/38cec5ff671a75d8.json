@@ -1,0 +1,13 @@
+{
+  "id": "38cec5ff671a75d8",
+  "title": "FlashAR: Efficient Post-Training Acceleration for Autoregressive Image Generation",
+  "link": "https://arxiv.org/abs/2605.09430",
+  "description": "arXiv:2605.09430v3 Announce Type: replace \nAbstract: Large-scale autoregressive models have demonstrated remarkable capabilities in image generation. However, their sequential raster-scan decoding relies on strictly next-token prediction, making inference prohibitively expensive. Existing acceleration methods typically either introduce entirely new generation paradigms that necessitate costly pre-training from scratch, or enable parallel generation at the expense of a training-inference gap or altered prediction objectives. In this paper, we introduce FlashAR, a lightweight post-training adaptation framework that efficiently adapts a pre-trained raster-scan autoregressive model into a highly parallel generator based on two-way next-token prediction. Our key insight is that effective adaptation should minimize modifications to the pre-trained model's original training objective to preserve its learned prior. Accordingly, we retain the original AR head as a horizontal head for row-wise prediction and introduce a complementary, lightweight vertical head for column-wise prediction. To facilitate efficient adaptation, we branch the vertical head from an intermediate layer rather than the final layer, bypassing the inherent horizontal head bias. Moreover, since horizontal and vertical predictions capture complementary dependencies whose relative importance varies across target positions, we employ a learnable fusion gate to dynamically combine the two predictions at each position. To further reduce adaptation cost, we propose a two-stage adaptation pipeline: the vertical head is first initialized through adaptation from the pre-trained autoregressive model before jointly fine-tuned with backbone to adapt to the new decoding paradigm. Extensive experiments on LlamaGen and Emu3.5 show that FlashAR achieves up to a 22.9x speedup for 512x512 image generation through a lightweight post-training with merely 0.05% of the original training data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

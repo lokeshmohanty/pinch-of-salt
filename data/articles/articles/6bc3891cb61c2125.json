@@ -1,0 +1,13 @@
+{
+  "id": "6bc3891cb61c2125",
+  "title": "From Visual Cues to Spoken Narration: Rethinking Audio Description",
+  "link": "https://arxiv.org/abs/2609.01725",
+  "description": "arXiv:2609.01725v1 Announce Type: new \nAbstract: Audio Description (AD) provides spoken narration of visual events during dialogue gaps, making movies accessible to visually impaired audiences. The problem requires determining both what (which visual event) and when (position for inserting the AD) to narrate, to achieve the best user experience. Prior work has largely reduced the problem to video captioning of pre-segmented video clips, i.e., what is largely predefined and when is ignored entirely. We propose Cue2Narrate, a two-stage pipeline that jointly predicts what and when to narrate in longer untrimmed movie clips. A dual-head audio-visual localizer predicts two temporally distinct windows per AD utterance: a visual cue window and a spoken narration window. A LoRA-adapted VLM then generates concise ADs from the predicted visual evidence, trained with a Description Ranking Loss that ranks captions (negative samples) of the same frames lower than the GT AD. To benchmark this new problem statement, we introduce the LongLSMDC benchmark with up to 8-min movie clips (~6.5min on average). On LongLSMDC, Cue2Narrate outperforms video-only and audio-only localization baselines by 5--12 points in avg. mAP. Under both predicted- and GT-window evaluation, Cue2Narrate improves AD generation over the corresponding fine-tuned base VLM. These results establish the first benchmark for multi-segment AD generation on long-form clips. Data & Code: https://github.com/multimodal-ai-lab/Cue2Narrate",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "75aa63c06ac580f4",
+  "title": "SpatialAfford: Teaching Compact VLMs Where to Look and Where to Ground for Affordance",
+  "link": "https://arxiv.org/abs/2608.00502",
+  "description": "arXiv:2608.00502v1 Announce Type: new \nAbstract: Affordance grounding aims to localize the functional region for interaction, such as the handle to grasp or the button to press, rather than the whole object. This makes it more challenging than generic visual grounding because the target region is smaller, more ambiguous, and more dependent on task context, especially for compact vision-language models (VLMs) used in embodied settings. Recent sequence-level supervision and reinforcement learning improve coordinate prediction quality, yet compact autoregressive VLMs still lack reliable affordance-aware visual focus before coordinate generation: the model can produce better coordinate tokens while its cross-modal attention remains diffuse and weakly anchored to the true affordance evidence. To address it, we propose SpatialAfford, a two-stage framework that first aligns attention to the ground-truth affordance region through Spatial Attention Alignment (SAA), then refines coordinate prediction with Spatial-Aware GRPO. By explicitly teaching the model where to look before optimizing where to ground, SpatialAfford turns affordance grounding from a purely output-constrained objective into attention-grounded spatial reasoning. Across ShareRobot-Bench, ReasonAff, and PartAfford, SpatialAfford consistently improves affordance grounding, with a compact 4B model outperforming stronger 7B+ baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

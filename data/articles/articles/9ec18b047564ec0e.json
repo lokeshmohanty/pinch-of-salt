@@ -1,0 +1,15 @@
+{
+  "id": "9ec18b047564ec0e",
+  "title": "FTU-Seek: Foundation Model-Guided Hard-Negative Learning for Sparse Functional Tissue Unit Segmentation",
+  "link": "https://arxiv.org/abs/2609.00704",
+  "description": "arXiv:2609.00704v1 Announce Type: new \nAbstract: Functional tissue units (FTUs), including tertiary lymphoid structures (TLSs), blood vessels, and glands, encode localized immune, vascular, and epithelial organization in histopathology. Accurate quantification of these structures is important for studying tissue architecture and disease-associated tissue organization. However, FTUs are frequently sparse, heterogeneous, and surrounded by large amounts of morphologically similar background tissue, making automated segmentation in whole-slide images (WSIs) challenging. We therefore developed FTU-Seek, a pathology foundation model-guided framework that treats morphology-aware negative-patch selection as a key component of sparse FTU segmentation. FTU-Seek uses frozen multi-depth features from the UNI pathology foundation model to train a patch-level classifier that distinguishes FTU-containing from FTU-absent tissue. Target-absent patches are subsequently ranked according to their predicted target-containing probabilities, and the highest-scoring hard negatives are selected through a static Top$K$ strategy to construct compact segmentation training sets. The framework was evaluated using five-fold cross-validation and internal test cohorts across TLS, blood-vessel, and gland segmentation tasks, with an additional independent 30-WSI held-out cohort for TLS. Positive-only, all-tissue, random-negative, and matched random Top$K$ sampling strategies served as comparators. Segmentation-derived phenotypes were further explored in external TCGA cohorts.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.NA",
+    "math.NA"
+  ]
+}

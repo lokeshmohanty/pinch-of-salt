@@ -1,0 +1,16 @@
+{
+  "id": "03a8cbefcd5fdbc4",
+  "title": "Sionna RT: Technical Report",
+  "link": "https://arxiv.org/abs/2504.21719",
+  "description": "arXiv:2504.21719v3 Announce Type: replace-cross \nAbstract: Sionna is an open-source, GPU-accelerated library that, as of version 0.14, incorporates a ray tracer, Sionna RT, for simulating radio wave propagation. A unique feature of Sionna RT is differentiability, enabling the calculation of gradients for the channel impulse responses (CIRs), radio maps, and other related metrics with respect to system and environmental parameters, such as material properties, antenna patterns, and array geometries. The release of Sionna 1.0 provided a complete overhaul of the ray tracer, significantly improving its speed, memory efficiency, and extensibility. This document details the algorithms employed by Sionna RT to simulate radio wave propagation efficiently, while also addressing their current limitations. Given that the computation of CIRs and radio maps requires distinct algorithms, these are detailed in separate sections. For CIRs, Sionna RT integrates shooting and bouncing of rays (SBR) with the image method and uses a hashing-based mechanism to efficiently eliminate duplicate paths. Radio maps are computed using a purely SBR-based approach for the non-diffracted component, complemented by a stage for diffracted paths.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IT",
+    "cs.AI",
+    "eess.SP",
+    "math.IT"
+  ]
+}

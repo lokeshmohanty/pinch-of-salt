@@ -1,0 +1,13 @@
+{
+  "id": "5508efb0d5bcee1e",
+  "title": "DODR: Deterministic Operator-Driven Reasoning in Latent Space",
+  "link": "https://arxiv.org/abs/2609.04782",
+  "description": "arXiv:2609.04782v1 Announce Type: new \nAbstract: Autoregressive (AR) large language models formulate reasoning as token-level probabilistic sampling, which induces three fundamental defects in complex logical reasoning: error accumulation, probability substituting necessity, and the linear-chain information bottleneck. This paper proposes the Deterministic Operator-Driven Reasoning in Latent Space architecture (DODR), which reconstructs reasoning as reasoning-graph computation in a high-dimensional linear-algebraic space. Reasoning states are represented as snapshot vectors whose primitives are semantic units (phrases or sentences) rather than tokens, and each inference step is a deterministic matrix operation with no token sampling. Peirce's three inference types are formalized as three trainable matrix operators: a rank-deficient deduction operator (information collapse), a full-rank induction operator (information expansion), and an abduction operator defined as the Moore-Penrose pseudo-inverse of deduction (information hypothesizing). We prove that the operator set is minimal and complete given Peirce's trichotomy, that no single \"super-operator\" can realize all three types (a rank obstruction), and that reasoning graphs are Turing-complete with contractive backflow converging by Banach's fixed-point theorem. Experiments on 503 sample records (420 deduplicated samples) across dedicated and end-to-end settings show: deduction loss converges to 1.40e-05; induction achieves 0.9996 generalization coverage with 20/20 hard vetoes on counterexamples; abduction solutions exceed the random baseline by 28x with judgment accuracies of 72.5% (58/80, Wilson 95% CI [61.9%, 81.1%]) and 81.7% (49/60, CI [70.1%, 89.4%]); frozen operators attain 100% (60/60) on unseen cross-domain deduction. The architecture provides a structural zero-hallucination guarantee and a three-layer continual-learning mechanism. All data and code are released.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

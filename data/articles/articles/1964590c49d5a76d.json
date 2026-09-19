@@ -1,0 +1,15 @@
+{
+  "id": "1964590c49d5a76d",
+  "title": "UDT: Reconciling U-Nets and Diffusion Transformers with Data-Adaptive Token Reduction",
+  "link": "https://arxiv.org/abs/2608.01298",
+  "description": "arXiv:2608.01298v1 Announce Type: new \nAbstract: Diffusion Transformers (DiTs) have emerged as a core architecture in generative modeling due to their scalability and adaptability to multimodal tasks. DiTs comprise isotropic transformer blocks, and learn representations progressively across depth, where the denoising objective drives later layers to focus on fine-detail reconstruction. This results in degraded representation quality and an imbalanced encoder-decoder behavior. Prior approaches such as representation alignment (REPA) mitigate this by encouraging stronger early representations via training regularization. Alternatively, U-Net-style DiT architectures introduce explicit multi-scale encoder-decoder structures for improved convergence. But they build on standard U-Net wisdom via learnable operators for spatial downsampling, which are not well-suited to transformer architectures, introducing inefficiencies and compatibility issues with components such as cross-attention and representation regularization. In this work, we propose UDT, a U-Net diffusion transformer that combines the representation power of DiTs with the encoding-decoding benefits of U-Nets, through data-adaptive token merging for downsampling and upsampling, while preserving the DiT token dimension. Our baseline UDT architecture outperforms existing U-Net DiTs and achieves performance comparable to REPA across all model sizes. Furthermore, using architectural optimization and REPA, UDT outperforms SiT's 7.9 FID at 1400 epochs (w/o CFG) within 40 epochs (~ 40x faster convergence) for XL model size on 256x256 ImageNet. Finally, it achieves strong image generation performance with CFG, reaching FID of 1.38 (320 epochs) with SD-VAE and 1.35 (500 epochs) with VA-VAE, providing a new backbone for DiTs with strong empirical benefits.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "6e07970fee150e1a",
+  "title": "IBoxCLA: Towards Robust Box-supervised Segmentation of Polyp via Improved Box-dice and Contrastive Latent-anchors",
+  "link": "https://arxiv.org/abs/2310.07248",
+  "description": "arXiv:2310.07248v5 Announce Type: replace \nAbstract: Box-supervised polyp segmentation attracts increasing attention for its cost-effective potential. Existing solutions often rely on learning-free methods or pretrained models to laboriously generate pseudo masks, triggering Dice constraint subsequently. In this paper, we found that a model guided by the simplest box-filled masks can accurately predict polyp locations/sizes, but suffers from shape collapsing. In response, we propose two innovative learning fashions, Improved Box-dice (IBox) and Contrastive Latent-Anchors (CLA), and combine them to train a robust box-supervised model IBoxCLA. The core idea behind IBoxCLA is to decouple the learning of location/size and shape, allowing for focused constraints on each of them. Specifically, IBox transforms the segmentation map into a proxy map using shape decoupling and confusion-region swapping sequentially. Within the proxy map, shapes are disentangled, while locations/sizes are encoded as box-like responses. By constraining the proxy map instead of the raw prediction, the box-filled mask can well supervise IBoxCLA without misleading its shape learning. Furthermore, CLA contributes to shape learning by generating two types of latent anchors, which are learned and updated using momentum and segmented polyps to steadily represent polyp and background features. The latent anchors facilitate IBoxCLA to capture discriminative features within and outside boxes in a contrastive manner, yielding clearer boundaries. We benchmark IBoxCLA on five public polyp datasets. The experimental results demonstrate the competitive performance of IBoxCLA compared to recent fully-supervised polyp segmentation methods, and its superiority over other box-supervised state-of-the-arts with a relative increase of overall mDice and mIoU by at least 6.5% and 7.5%, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

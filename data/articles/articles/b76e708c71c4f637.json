@@ -1,0 +1,14 @@
+{
+  "id": "b76e708c71c4f637",
+  "title": "JEPA-WAM: Connecting Generated Visual Instructions to World Action Models through JEPA Latent Representations",
+  "link": "https://arxiv.org/abs/2609.20277",
+  "description": "arXiv:2609.20277v1 Announce Type: new \nAbstract: World Action Models (WAMs) have demonstrated strong robotic manipulation capabilities by augmenting pretrained video generative models with action experts. However, current WAMs still show limited instruction-following ability when conditioned solely on text instructions. We argue that this limitation stems in part from a structural imbalance in robot-learning data: rich visual-action trajectories are often paired with sparse and repetitive language annotations, allowing policies to identify tasks from visual context and motion regularities rather than grounding the instruction itself. To address this limitation, we introduce JEPA-WAM, which augments each text instruction with a bank of stochastically generated visual instructions, providing diverse visual cues for instruction following. Specifically, JEPA-WAM uses an off-the-shelf text-to-image generator to sample multiple task-completion images conditioned on the text instruction, without training the generator. Although these generated images may differ from the current visual scene in appearance and layout, they remain semantically aligned with the instruction and serve as visual goal references. To focus on task-level semantics beyond appearance, we encode these references with a frozen V-JEPA 2.1 encoder. The resulting dense goal representations are compressed into compact goal tokens that condition both the video and action experts through cross-attention. We further construct a real-robot instruction-following benchmark covering in-distribution, out-of-distribution scene, and out-of-distribution instruction settings. On this benchmark, JEPA-WAM achieves success rates of 87.3%, 74.5%, and 80.9% in these three settings, outperforming {\\pi}0 and Fast-WAM by at least 10.0, 27.3, and 14.5 percentage points, respectively.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.RO"
+  ]
+}

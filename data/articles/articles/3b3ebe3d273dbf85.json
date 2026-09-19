@@ -1,0 +1,14 @@
+{
+  "id": "3b3ebe3d273dbf85",
+  "title": "COLORA: Efficient Fine-Tuning for Convolutional Models with a Study Case on Optical Coherence Tomography Image Classification",
+  "link": "https://arxiv.org/abs/2505.18315",
+  "description": "arXiv:2505.18315v3 Announce Type: replace-cross \nAbstract: We introduce \\textbf{CoLoRA} (Convolutional Low-Rank Adaptation), a parameter-efficient fine-tuning method for convolutional neural networks (CNNs). CoLoRA extends LoRA to convolutional layers by decomposing kernel updates into lightweight depthwise and pointwise components. This design reduces the number of trainable convolutional-update parameters by over 80\\% compared with full convolutional fine-tuning, while allowing the learned updates to be merged into the pretrained convolutional kernels, thereby preserving the original model size and inference complexity. Experiments on MedMNIST datasets, particularly OCTMNISTv2, demonstrate that CoLoRA applied to VGG16 and ResNet50 achieves competitive classification performance while substantially reducing the number of trainable parameters. Comparisons with transfer learning, adapters, BitFit, and convolutional LoRA variants further characterize the trade-offs among predictive performance, trainable parameters, and training cost. Additional experiments on CIFAR-100 and Cats vs. Dogs provide preliminary evidence that the proposed adaptation strategy also transfers to non-medical image-classification tasks. Peak GPU-memory measurements further show that parameter efficiency does not translate directly into proportional training-memory savings, with memory consumption depending strongly on the placement of the adapted convolutional layers. Overall, CoLoRA provides a parameter-efficient and deployment-efficient alternative to full fine-tuning for convolutional models.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

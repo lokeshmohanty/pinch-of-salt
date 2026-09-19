@@ -1,0 +1,14 @@
+{
+  "id": "5862b03496e61593",
+  "title": "HyperBones: Realtime Bone-driven Neural Garment Simulation with Hypernetwork Conditioning",
+  "link": "https://arxiv.org/abs/2605.20460",
+  "description": "arXiv:2605.20460v4 Announce Type: replace-cross \nAbstract: Recent advances in cloth simulation have led to accurate garment physics, but the methods are computationally expensive for real-time applications. In contrast, Linear Blend Skinning (LBS) is efficient, but cannot capture the complex dynamics of loose-fitting garments, leading to unrealistic motion and visual artifacts. Neural methods offer a promising alternative, yet they still struggle to animate loose clothing plausibly under strict runtime constraints. We present a fast and physically-informed framework for dynamic garment simulation, consisting of a reduced-space neural dynamics simulator with independent coarse and fine-level components. At the coarse level, the garment is driven by virtual bones integrated with a lightweight neural network for predicting corrections over LBS. Fine-scale wrinkle details are then recovered using a convolutional MLP defined in UV space. By decoupling identity-specific computation from shape conditioning via hypernetwork, our neural framework offers high performance, trained using an effective physics-based self-supervised training paradigm without relying on an offline simulator. Experiments show that our method produces physically plausible garment dynamics, generalizes across diverse motions and unseen body shapes, and delivers over 30x speedup compared to state-of-the-art autoregressive neural simulators, achieving interactive inference at ~1 ms per frame on a consumer GPU.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV"
+  ]
+}
