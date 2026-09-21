@@ -1,0 +1,13 @@
+{
+  "id": "717d18ed5a5ed519",
+  "title": "LLM-Generated Feature Pools for Time Series Anomaly Detection",
+  "link": "https://arxiv.org/abs/2609.21801",
+  "description": "arXiv:2609.21801v1 Announce Type: new \nAbstract: We study how far a simple statistical pipeline can go on univariate time series anomaly detection under a strict selection protocol. The method extracts a small pool of statistics over sliding windows, scores each window with a transductive robust (MAD) model, and selects a feature subset per domain on a held-out tuning split. On TSB-AD-U it reaches $0.529$ per-series VUS-PR, above the best neural ($0.45$) and statistical ($0.44$) entries on the public leaderboard and within $0.06$ of the strongest pretrained foundation model, several of which use more supervision than ours. Ablations locate the cause: across three selection strategies and a hindsight oracle the score moves by $0.031$, and across the aggregation grid by $0.096$, while changing the candidate pool moves it by $0.226$. The candidate pool sets the ceiling; the search over it is second-order. We therefore generate a pool per domain by prompting a multimodal LLM with in-context example windows from that domain. The generated pools match the hand-crafted one under matched selection, and the two cover different domains: selecting over their union improves on the generated pool in all twelve generator-seed pairs and lifts the pipeline to $0.588$, matching the performance of the best entry on the leaderboard.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

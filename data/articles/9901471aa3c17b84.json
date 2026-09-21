@@ -1,0 +1,13 @@
+{
+  "id": "9901471aa3c17b84",
+  "title": "GUARD: Natural Forgetting in Large Reasoning Models via Guided Answer-Reasoning Distillation",
+  "link": "https://arxiv.org/abs/2609.21677",
+  "description": "arXiv:2609.21677v1 Announce Type: new \nAbstract: Recent advances in large reasoning models (LRMs) have made machine unlearning more challenging, as protected facts or unsafe rationales may surface in intermediate chain-of-thought (CoT) traces before the final answer is produced. Existing unlearning objectives typically suppress the target content or redirect internal representations, but they never specify how the post-forgetting trajectory should continue, which can lead to hallucinated substitutes, malformed boundaries, or repetitive outputs. We argue that LRM unlearning should instead learn a natural forgetting trajectory: a coherent non-disclosing CoT followed by a stable refusal-style answer that replace the original disclosure. To this end, we propose Guided Answer-Reasoning Distillation (GUARD), which converts model-generated unsafe disclosures into safe-exit trajectories, aligns a frozen LRM via guidance tokens, and distills the guided behavior into model parameters.To address the lack of metrics for replacement quality beyond leakage, we further introduce Natural Forgetting Reasoning Score (NFRS), which captures structural stability, fluency, and unsupported substitutes in forgotten outputs. Extensive experiments on R-TOFU and a STAR-1-derived harmful-intent setting show that GUARD substantially reduces unsafe and privacy disclosures across two widely adopted distilled LRMs while preserving reasoning utility. Codes are available at https://github.com/zeyu-Yan/GUARD",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}
