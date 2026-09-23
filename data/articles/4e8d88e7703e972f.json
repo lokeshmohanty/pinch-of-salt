@@ -1,0 +1,15 @@
+{
+  "id": "4e8d88e7703e972f",
+  "title": "Correcting Learning-based Perception for Safety",
+  "link": "https://arxiv.org/abs/2609.22108",
+  "description": "arXiv:2609.22108v1 Announce Type: cross \nAbstract: Learning-enabled perception is important in many autonomous systems. Unlike traditional sensors, the boundary where ML perception does or does not work is poorly characterized. Incorrect perception can lead to unsafe or overtly conservative downstream control actions. In this paper, we propose a two-step strategy for correcting ML-based state estimation. First, an offline computation is used to characterize the uncertainties resulting from the ML module's state estimation, using preimages of perception contracts. Second, at runtime, a risk heuristic is used to choose particular states from the uncertain estimates to drive the control decisions. We perform extensive simulation-based evaluation of this runtime perception correction strategy on different vision-based adaptive cruise controllers (ACC modules), in different weather conditions, and road scenarios. Out of 45 ACC scenarios where the original perception-based control system using Yolo and LaneNet led to safety violations, in 73% of the scenarios, our runtime perception correction preserved safety; our method wouldn't be able to recover 27% of the scenarios where the construction of the preimages of perception contracts is not fully conformant. Further, our runtime perception correction strategy is not overly conservative---on the average only a 2.8% increase in completion time is experienced in the corrected scenarios, with mild interventions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "cs.RO"
+  ]
+}

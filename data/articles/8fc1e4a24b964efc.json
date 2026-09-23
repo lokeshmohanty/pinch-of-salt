@@ -1,0 +1,13 @@
+{
+  "id": "8fc1e4a24b964efc",
+  "title": "Confidence-Aware Teacher-Student Distillation for 3D Medical Segmentation",
+  "link": "https://arxiv.org/abs/2609.23815",
+  "description": "arXiv:2609.23815v1 Announce Type: new \nAbstract: Medical image segmentation models typically rely on large amounts of densely annotated volumetric data, limiting their scalability across tasks and imaging modalities. This work addresses the challenge of predicting entire 3D anatomical structures from extreme annotation sparsity. An annotation-efficient student-teacher framework is proposed for automatic 3D medical segmentation that requires only a set of point prompts on a single 2D slice per volume, as input. A foundation model serves as an offline teacher, utilizing the provided point prompts from the selected slice to full-volume pseudo-annotations alongside their corresponding spatial confidence scores prior to student training. To mitigate the error propagation of noisy pseudo-annotations, a task-specific 3D student network is trained using a confidence-aware optimization strategy. By leveraging the teacher's pre-computed confidence scores, this strategy explicitly excludes statically uncertain regions of the pseudo-annotations from the loss calculation, while simultaneously emphasizing regions with higher confidence. Evaluated on 3D cardiac MRI datasets, our framework outperforms state-of-the-art semi-supervised methods, improving segmentation performance by up to 43.6%. Furthermore, it drastically reduces the manual annotation burden to just a few positive point prompts per volume, while improving surface boundary precision by up to 14.7% over the teacher and successfully recovering up to 34.1% of the performance gap toward the fully supervised upper bound.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

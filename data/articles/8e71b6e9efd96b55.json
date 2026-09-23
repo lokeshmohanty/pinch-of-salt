@@ -1,0 +1,14 @@
+{
+  "id": "8e71b6e9efd96b55",
+  "title": "A Lightweight Convolutional Neural Network for Real-Time Recognition of Hand-Drawn Geometric Shapes",
+  "link": "https://arxiv.org/abs/2609.24384",
+  "description": "arXiv:2609.24384v1 Announce Type: new \nAbstract: Recognizing hand-drawn geometric shapes is a foundational sub-problem of sketch recognition, with applications in education, human-computer interaction, and diagram digitization. This paper presents the design, implementation, and evaluation of a desktop application that recognizes four basic hand-drawn geometric shapes, circle, square, rectangle, and triangle using a compact Convolutional Neural Network (CNN). A dataset of 2,000 labeled 28x28-pixel shape images was collected independently and released publicly. The classifier consists of three convolutional blocks (16, 32, and 64 filters) with max-pooling, an in-model data-augmentation stage (random horizontal flip, rotation, and zoom), a dropout-regularized dense layer of 128 units, and a 4-way linear output layer, totaling 97{,}956 trainable parameters. The network is trained with the Adam optimizer on a sparse categorical cross-entropy objective computed directly on logits. On an 80/20 train-validation split, the model achieves 94.80% training accuracy and 96.01% validation accuracy with a validation loss of 0.1437. A Tkinter-based graphical interface allows a user to draw a shape with the mouse and receive an immediate class prediction with a confidence score. We situate this system within the broader sketch and shape-recognition literature, compare its accuracy against related hand-drawn shape classification studies, and discuss the limitations inherent to a small, single-contributor dataset. The complete source code, trained model, and per-class datasets are released publicly to support reproducibility.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

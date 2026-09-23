@@ -1,0 +1,14 @@
+{
+  "id": "97edc7f02a8b00a5",
+  "title": "Look Where It Counts: A Free, Label-Free Visual Evidence Signal for Fine-Grained Vision-Language Reasoning",
+  "link": "https://arxiv.org/abs/2609.24244",
+  "description": "arXiv:2609.24244v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) fail at fine-grained visual questions less because they cannot reason than because they never see the evidence: high-resolution images are downsampled before encoding, so the model answers from linguistic priors. The standard remedies are expensive: annotated answers (SFT), hand-engineered verifiers (RLVR), or a large external teacher (on-policy distillation). We ask whether the visual evidence itself can supply the signal for free. We formalize the contrastive evidence gap, the per-token log-likelihood ratio that a model assigns to its own output when conditioned on a question-relevant region versus an irrelevant one, and study it across Qwen2.5-VL-7B, Qwen3-VL-8B, and Qwen3-VL-30B-A3B on V*Bench. Our main positive result is training-free: selecting the candidate crop under which the model's answer distribution is most peaked, using a single-view, label-free criterion, discovers the answer-bearing region with no bounding boxes, training, or labels. It localizes the target 4.4 to 5.1 times better than chance and raises fine-grained accuracy from 70 percent to 85 percent at inference. We further show that the gap is complementary to the model's own confidence. Combining them predicts correctness better than either alone, with AUC up to 0.99, and flags confidently wrong answers, with AUC ranging from 0.97 to 1.00 within the high-confidence subset. All effects concentrate on perception-bottleneck questions and vanish on a global-context control. Finally, we report an honest negative result: converting the same signal into a training method, gated self-distillation (SEG-Distill), does not outperform the base model at pilot scale across three gate designs, while more aggressive gating degrades accuracy. The signal is real, but converting it into training gains remains an open problem.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

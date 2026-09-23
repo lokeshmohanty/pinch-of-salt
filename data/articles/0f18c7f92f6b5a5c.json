@@ -1,0 +1,16 @@
+{
+  "id": "0f18c7f92f6b5a5c",
+  "title": "If You Hear It, Help Find It: Orthogonal Knowledge Distillation for Open-Vocabulary Audio-Visual Event Localization",
+  "link": "https://arxiv.org/abs/2609.23376",
+  "description": "arXiv:2609.23376v1 Announce Type: cross \nAbstract: Open-vocabulary audio-visual event localization (OV-AVEL) grounds a text-queried event in time from video, audio, and language. The supervision sources available to this task can differ in temporal-boundary reliability: on OV-AVEBench, our configured visual teacher gives more reliable boundary cues than the configured audio teacher, although the latter is a strong pretrained audio model and remains semantically informative. This is a setting-specific diagnostic rather than a universal ranking of vision and audio. We formulate the resulting challenge as supervision placement: which teacher signals may shape the localization decision, and which should remain auxiliary. Based on this view, we propose OV-OrthKD, a reliability-aware asymmetric distillation framework. Visual feature transfer shapes a decision-aligned representation, audio feature transfer enriches a complementary auxiliary subspace, a text prototype anchors seen/unseen category semantics, and an orthogonality loss limits directional overlap between the two teacher-specific projections. The student continues to use both modalities through query-aware fusion at inference, while the default training recipe keeps audio-teacher supervision off the segment-logit path. On OV-AVEBench, OV-OrthKD achieves 0.816 segment AP and improves F1@0.5 over the official fine-tuning baseline by 2.7 points overall and 3.4 points on unseen categories. Path-assignment, role-swap, corruption, and transfer analyses consistently support supervision placement as a task-specific design axis for OV-AVEL.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MM",
+    "cs.CV",
+    "cs.LG",
+    "cs.SD"
+  ]
+}

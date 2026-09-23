@@ -1,0 +1,14 @@
+{
+  "id": "463d15f320c20c69",
+  "title": "Algebraic Consistency Alone Does Not Certify Temporal Structure in Latent Action Models",
+  "link": "https://arxiv.org/abs/2609.23478",
+  "description": "arXiv:2609.23478v1 Announce Type: new \nAbstract: Latent action models infer a code for the transition between two frames of action-free video. Recent methods regularise this code to compose additively and reverse antisymmetrically, and report order-of-magnitude reductions in the resulting errors as a label-free certificate that the code has captured temporal structure. We show that this conclusion does not follow. Reconstruction drives the decoded transition toward a difference of state features, for which both identities hold for any pairing, a solution the metric cannot distinguish from one encoding nuisance state or a coordinate convention. Across five source domains, a trained but unconstrained counterpart already achieves 83-97% of the reduction relative to an untrained anchor. The residual fold is governed as much by the decoder family as by what is learned. A constrained model retrained after its temporal pairing is destroyed still reaches, in each domain, a lower error than the unconstrained model on real data. Downstream, preserving the temporal pairing yields no consistent advantage on LIBERO-GOAL or LIBERO-SPATIAL, and across the tested arms the code's mean linear action decodability falls as the algebraic error improves. We also test the most direct repair, a violation-contrastive objective that requires the algebra to fail on destroyed pairings: in the tested configurations it yields only a marginal separation within the reconstruction budget, on training and test triples alike. We recommend a validation protocol that these methods currently lack: a baseline-corrected metric, retraining on destroyed pairings, and a seed-budget analysis.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}
