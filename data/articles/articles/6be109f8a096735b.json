@@ -1,0 +1,13 @@
+{
+  "id": "6be109f8a096735b",
+  "title": "When More Foundation Models Means Less: Diagnosing and Addressing Multi-View Fusion Failure",
+  "link": "https://arxiv.org/abs/2608.17490",
+  "description": "arXiv:2608.17490v1 Announce Type: new \nAbstract: Foundation-model hubs turn multi-view fusion into a selection problem: from a large heterogeneous encoder pool, which views should be fused, and how many? We show that downstream performance is non-monotonic in the number of fused encoders; later views can be redundant or task-misaligned, causing accuracy to saturate or decline. We formalise this setting as view-set composition and propose KAGES (Kernel-Alignment Greedy Encoder Selector), a label-aware method that orders frozen encoders by their marginal gain in centred kernel-target alignment. KAGES requires no downstream classifier training during selection, evaluates each candidate in $\\mathcal{O}(n^2)$ time independent of encoder dimension, and admits a conditional $(1-e^{-\\gamma})$ prefix-wise guarantee under monotonicity and a positive submodularity ratio. Across five recognition regimes and low-shot, larger-pool, and full-data protocols, KAGES improves average AULC over full fusion by 3.9, 5.8, and 3.3 points, respectively, and exceeds DPP and facility-location selection in average AULC. Image retrieval exhibits later, task-dependent saturation along the KAGES ordering, while peak-then-decline reproduces in frozen-LLM fusion. These results show that effective large-pool fusion depends on selecting a compact, task-aligned set of views rather than indiscriminately fusing more encoders.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

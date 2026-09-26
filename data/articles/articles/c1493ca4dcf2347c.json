@@ -1,0 +1,13 @@
+{
+  "id": "c1493ca4dcf2347c",
+  "title": "Exploiting Stability-Plasticity Asymmetry in Pretrained Detectors for Incremental Object Detection",
+  "link": "https://arxiv.org/abs/2504.10214",
+  "description": "arXiv:2504.10214v2 Announce Type: replace \nAbstract: Pretrained model-based incremental object detection (PTMIOD) leverages the rich detection priors of pretrained detectors to learn new categories incrementally while preserving detection ability on previously learned ones. Existing methods mainly exploit pretrained detectors as a whole, without explicitly distinguishing which components should remain stable and which require plastic adaptation. In this paper, we revisit PTMIOD from a component-wise stability-plasticity perspective. Our analysis of pretrained DETR-based detectors reveals a clear asymmetry: localization heads preserve transferable geometric priors across tasks, whereas classification-related representations require greater plasticity to handle new categories, especially in cross-domain scenarios where downstream data deviate from the pretraining domain. Based on this finding, we propose a selective adaptation and retention framework that freezes explicit localization heads to preserve localization stability, while adapting transformer representations with parameter-efficient fine-tuning and updating classification heads for classification-oriented plasticity. To alleviate classification-side forgetting, we pioneer the use of pseudo-feature replay in PTMIOD and design Quality-aware Gaussian Feature Replay, which estimates reliable class-wise feature distributions from high-quality matched object features and replays sampled pseudo features to maintain old-class decision boundaries. Since continual adaptation can shift the feature space and undermine replayed distributions, we further develop Two-stage Consistent Distillation to align teacher and student representations at both proposal generation and refinement stages.Extensive experiments on COCO, VOC, and TT100K show that our method achieves state-of-the-art performance, demonstrating a favorable balance between old-class retention and new-class adaptation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

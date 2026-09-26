@@ -1,0 +1,15 @@
+{
+  "id": "20c05cd1eaf4e92d",
+  "title": "Cross-Branch Conflict as a Shield: Safeguarding Facial Identities in Unified Multimodal Image Editing",
+  "link": "https://arxiv.org/abs/2607.16898",
+  "description": "arXiv:2607.16898v2 Announce Type: replace \nAbstract: Unified multimodal models (UMMs) have recently demonstrated powerful instruction-based image editing capabilities, while also raising serious concerns about the unauthorized manipulation of personal portraits. We investigate a novel and practical problem: protecting facial identities against unauthorized editing of UMMs. Existing diffusion-based and VLM-based protection methods often become ineffective because they typically disrupt only a single visual branch. To understand this limitation, we conduct a feature-level analysis of the understanding and generation branches in unified image editing models. Our observations show that the structural agreement between these two branches is closely related to successful image editing. When only one branch is distorted, the model may still recover identity information from the other branch. Based on this, we propose Cross-Branch Conflict as a Shield (CCS), a unified adversarial protection framework. CCS jointly drives the ViT and VAE representations away from their clean counterparts. It also uses a linear Centered Kernel Alignment (CKA) objective to disrupt the structural consistency between the two branches. By degrading reliable identity information in both visual pathways and inducing incompatible cross-branch representations, CCS effectively prevents UMMs from recovering consistent facial identity cues during editing. Extensive experiments suggest that CCS consistently provides stronger protection in suppressing identity-preserving edits. Codes are in the supplementary material.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL",
+    "cs.CR"
+  ]
+}

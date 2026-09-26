@@ -1,0 +1,13 @@
+{
+  "id": "aeeb20d8bd441200",
+  "title": "TQD-Track: Temporal Query Denoising for 3D Multi-Object Tracking",
+  "link": "https://arxiv.org/abs/2504.03258",
+  "description": "arXiv:2504.03258v2 Announce Type: replace \nAbstract: Query denoising has become a standard training strategy for DETR-based detectors. Denoising queries, initialized by perturbing ground truths, share similarities with track queries in a typical DETR-based Multi-Object Tracking (MOT) method, warranting exploration of their potential synergy. However, query denoising in existing MOT methods is performed only within a single frame, preventing trackers from learning inter-frame temporal association from the denoising process. To address this issue, we propose TQD-Track, a Temporal Query Denoising (TQD) method tailored for MOT. In our method, denoising queries are initialized from ground truths in the previous frame and then propagated into the current frame in the same way as track queries, serving as additional independent data association candidates. These denoising queries carry temporal information and instance-specific feature representations, effectively emulating and augmenting track queries. Moreover, to simulate various real-world MOT challenges for robust tracking, we introduce several corresponding noise types to generate diverse denoising queries. We analyze the impact of our temporal query denoising for two tracking paradigms, tracking-by-attention and alternating detection and association, demonstrating its generalization. Extensive experiments on the nuScenes and Argoverse~2 datasets demonstrate that our approach consistently enhances different MOT baselines, requiring only modifications in the training process. Code and models are available at https://github.com/yutongy98/TQD-Track.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

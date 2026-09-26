@@ -1,0 +1,15 @@
+{
+  "id": "c5d51daa60f8793f",
+  "title": "HoloAegis: Frozen Representation, Topological Inference --- Minimally Parametric Safety Manifolds and Their Capability Boundaries for LLM Guardrails",
+  "link": "https://arxiv.org/abs/2608.08485",
+  "description": "arXiv:2608.08485v2 Announce Type: replace \nAbstract: Current LLM safety guardrails face a fundamental tension: fine-tuning distorts pre-trained representations while generative judges incur prohibitive inference costs. We ask a complementary question: how far can safety be achieved through pure geometric reasoning over frozen representations, and where does it fail? We present HoloAegis, a minimally parametric topological inference framework that decouples representation from reasoning: an un-fine-tuned encoder maps text to the unit sphere S^{d-1}, and all decisions reduce to Gibbs-Boltzmann free-energy differences over pre-computed anchor centroids. We contribute a boundary-mapping study rather than a leaderboard claim. On a frozen three-benchmark protocol, HoloAegis (3.2 MB) statistically matches WildGuard-7B (14 GB) on toxicity (0.96 vs. 0.96), exceeds it on harmful behaviors (0.99 vs. 0.79), and cedes oversafety detection (0.62 vs. 0.98) -- while ShieldGemma-2B fails on indirect harms (0.34). These failure modes are complementary and mechanistically traceable: potential-difference scoring senses manifold clustering, whereas policy-conditioned LLM judging requires explicit taxonomy matching. We restate our Topological Boundary Stability conjecture in ratio form and validate it via reference-set bootstrap: anchor banks reduce score variance 4-15x and boundary displacement to approximately 0.44 + 0.23 sqrt(k/K) of the full-space estimator. Per-domain analysis further reveals that geometric separability tracks within-domain semantic homogeneity. Our results chart where geometric guardrails substitute for, and where they must defer to, LLM judges.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

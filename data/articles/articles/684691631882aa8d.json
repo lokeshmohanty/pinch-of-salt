@@ -1,0 +1,14 @@
+{
+  "id": "684691631882aa8d",
+  "title": "BiScale-GTR: Fragment-Aware Graph Transformers for Multi-Scale Molecular Representation Learning",
+  "link": "https://arxiv.org/abs/2604.06336",
+  "description": "arXiv:2604.06336v2 Announce Type: replace-cross \nAbstract: Fragment-level representations provide a natural way to capture recurring molecular substructures and reuse their learned representations across molecules. However, a shared fragment identity alone may not fully describe how a fragment is instantiated in a particular molecule, since the same fragment can exhibit different chemical behavior depending on its surrounding atomic environment. Effective fragment-based molecular learning therefore requires representations that are both reusable across molecules and sensitive to local atomic context. We introduce BiScale-GTR, a self-supervised molecular representation framework built around context-grounded shared fragment tokens. BiScale-GTR constructs a reusable graph Byte Pair Encoding (graph-BPE) vocabulary using Weisfeiler-Lehman (WL)-based fragment identity, chemical validity filtering, and recursive out-of-vocabulary (OOV) decomposition. Each shared fragment token is then grounded with atom-level GNN representations through atom-to-fragment pooling and gated fusion, allowing the same fragment identity to acquire context-dependent representations in different molecular environments. A structure-aware fragment Transformer performs global reasoning over these atom-grounded tokens, capturing reusable substructure identity, local chemical context, and long-range molecular dependencies. Experiments on MoleculeNet, PharmaBench, and the Long Range Graph Benchmark demonstrate strong performance across classification and regression tasks. Attribution analysis further shows that BiScale-GTR highlights chemically meaningful recurring motifs, providing interpretable links between molecular structure and predicted properties.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

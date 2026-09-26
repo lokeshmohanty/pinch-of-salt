@@ -1,0 +1,13 @@
+{
+  "id": "1c87b6cddff5d606",
+  "title": "LISA-3D: Lifting Language-Image Segmentation to 3D via Multi-View Consistency",
+  "link": "https://arxiv.org/abs/2512.01008",
+  "description": "arXiv:2512.01008v2 Announce Type: replace \nAbstract: Text-driven 3D reconstruction requires masks that understand free-form instructions and remain stable under viewpoint changes. We present LISA-3D, a two-stage framework that adapts the instruction-following segmenter LISA with geometry-aware Low-Rank Adaptation (LoRA) layers while keeping the SAM-3D reconstructor frozen. During training, paired RGB-D frames and camera poses define a differentiable reprojection loss that enforces cross-view agreement without additional 3D-text annotations. At deployment, the adapted segmenter can produce an RGBA prompt for SAM-3D from one RGB image; when registered RGB-D views are available, optional logit fusion further improves the prompt. On ScanRefer and Nr3D, geometry-aware tuning improves both 2D masks and lifted 3D reconstructions while updating only 11.6M parameters. Our results separate geometry-aware training gains from optional multi-view inference gains, providing a modular route from language grounding to object-centric 3D reconstruction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

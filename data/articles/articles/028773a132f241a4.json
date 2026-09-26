@@ -1,0 +1,14 @@
+{
+  "id": "028773a132f241a4",
+  "title": "MICA: Multi-granularity Intertemporal Credit Assignment for Long-Horizon Emotional Support Dialogue",
+  "link": "https://arxiv.org/abs/2603.06194",
+  "description": "arXiv:2603.06194v3 Announce Type: replace-cross \nAbstract: Reinforcement learning (RL) for large language models (LLMs) has shown strong performance in single-turn tasks, but extending it to multi-turn interaction remains challenging due to sparse rewards and poor per-turn credit assignment. In emotional support dialogues, responses shape future user states, so matched-state step-wise comparison is unavailable, while trajectory-level supervision is insufficient. We propose MICA (Multi-granularity Intertemporal Credit Assignment), a critic-free RL framework for multi-turn emotional support tasks. MICA derives both immediate and delayed credit from a shared potential function over the user's structured support state. Incremental Distance Reward measures the per-turn decrease in residual distance to the target state, while its Monte Carlo return captures delayed effects. After scope-specific normalization, the two signals form a mixed advantage for stable per-turn optimization without matched-state comparisons, rollout trees, or a learned critic. On EMPA, EQ-Bench, and EmoBench with Qwen2.5-7B-Instruct and Qwen3-8B/14B/32B, MICA consistently outperforms GRPO and REINFORCE++, achieving up to +42.5 on EMPA, while adding no rollout cost and remaining robust to reward judges. These results show that turn-aware credit assignment enables effective and practical multi-turn RL for interactive LLMs.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

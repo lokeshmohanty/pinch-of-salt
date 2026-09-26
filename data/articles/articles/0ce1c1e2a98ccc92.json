@@ -1,0 +1,16 @@
+{
+  "id": "0ce1c1e2a98ccc92",
+  "title": "dSTAR: Straggler Tolerant and Byzantine Resilient Distributed SGD",
+  "link": "https://arxiv.org/abs/2412.07151",
+  "description": "arXiv:2412.07151v1 Announce Type: cross \nAbstract: Distributed model training needs to be adapted to challenges such as the straggler effect and Byzantine attacks. When coordinating the training process with multiple computing nodes, ensuring timely and reliable gradient aggregation amidst network and system malfunctions is essential. To tackle these issues, we propose \\textit{dSTAR}, a lightweight and efficient approach for distributed stochastic gradient descent (SGD) that enhances robustness and convergence. \\textit{dSTAR} selectively aggregates gradients by collecting updates from the first \\(k\\) workers to respond, filtering them based on deviations calculated using an ensemble median. This method not only mitigates the impact of stragglers but also fortifies the model against Byzantine adversaries. We theoretically establish that \\textit{dSTAR} is (\\(\\alpha, f\\))-Byzantine resilient and achieves a linear convergence rate. Empirical evaluations across various scenarios demonstrate that \\textit{dSTAR} consistently maintains high accuracy, outperforming other Byzantine-resilient methods that often suffer up to a 40-50\\% accuracy drop under attack. Our results highlight \\textit{dSTAR} as a robust solution for training models in distributed environments prone to both straggler delays and Byzantine faults.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI",
+    "cs.CR",
+    "cs.LG"
+  ]
+}

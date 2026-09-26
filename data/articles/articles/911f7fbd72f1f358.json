@@ -1,0 +1,13 @@
+{
+  "id": "911f7fbd72f1f358",
+  "title": "Concept Unlearning by Modeling Key Steps of Diffusion Process",
+  "link": "https://arxiv.org/abs/2507.06526",
+  "description": "arXiv:2507.06526v4 Announce Type: replace \nAbstract: Text-to-image diffusion models remain susceptible to generating undesirable or harmful content. Although concept unlearning mitigates this risk, existing methods struggle with a critical optimization dilemma: thorough semantic erasure frequently induces the catastrophic forgetting of unrelated generative capabilities. To overcome this challenge, we propose Key Step Concept Unlearning (KSCU). Serving as an integrated methodological refinement deeply motivated by information theory, KSCU explores the profound impact of step scheduling order and reveals that traditional randomized timestep sampling severely disrupts trajectory dependency. We demonstrate that indiscriminately targeting the entire diffusion process is inefficient, as the optimal step range for unlearning inherently varies across different concepts. Rather than globally fine-tuning all timesteps, KSCU explicitly integrates a sequential-scheduling-based Key Step Table, CFG-aware leakage compensation, and prompt augmentation to dynamically isolate optimization to a concept-specific active region. This localized strategy successfully eradicates the target concept while preventing the structural collapse caused by early-step over-optimization. Consequently, KSCU significantly reduces computational overhead and establishes a state-of-the-art trade-off between concept erasure and utility retention. Comprehensive evaluations demonstrate that KSCU consistently delivers superior performance across diverse unlearning tasks, including nudity, style, object classes, and mass instance concepts. For example, in nudity removal, KSCU yields a 96.5% unlearning accuracy alongside a state-of-the-art FID of 14.1.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

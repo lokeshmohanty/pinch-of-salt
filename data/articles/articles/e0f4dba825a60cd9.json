@@ -1,0 +1,14 @@
+{
+  "id": "e0f4dba825a60cd9",
+  "title": "AntiGrounding: Executable Robot Trajectories as Visual Prompts for VLM-Guided Manipulation",
+  "link": "https://arxiv.org/abs/2506.12374",
+  "description": "arXiv:2506.12374v3 Announce Type: replace-cross \nAbstract: Natural-language manipulation instructions specify the task goal but leave the underlying robot trajectory unspecified. We present AntiGrounding, a visual action-selection framework built around a dual geometric-visual trajectory interface. After feasibility filtering, each retained short trajectory is both an explicit motion plan for execution and a rendered prompt for instruction-conditioned vision-language model (VLM) evaluation. Structured multi-view visual question answering (VQA) scores safety, task alignment, efficiency, and physical plausibility; weighted view fusion aggregates the trajectory scores. These scores guide subsequent translational trajectory proposals; separate orientation and gripper controls coordinate interaction. An initialized digital twin provides the planning state and validates selected segments before the real robot executes the same waypoint sequences. Across eight real-world manipulation tasks, AntiGrounding with a single GPT-6 Astra evaluator achieves 71.25% overall success, compared with 50.00% for pi0.5 and 47.50% for a PIVOT-style visual proposal-selection baseline using the same evaluator under the reported deployment protocol. Component ablations and evaluator-sensitivity analyses examine trajectory evaluation, proposal search, orientation control, and evaluator choice. The interface connects general-purpose multimodal reasoning to executable trajectories, with performance bounded by digital-twin fidelity and physical interaction.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "19e674c9f2578fcb",
+  "title": "TRW: TRACE-RealWorld---An Auditable Consistency Contract for World Models as Materialized Views",
+  "link": "https://arxiv.org/abs/2607.21910",
+  "description": "arXiv:2607.21910v2 Announce Type: replace \nAbstract: World models let agents plan against predicted physical state, but that state drifts; re-observation is costly and delayed, and repair can fail. We present TRACE-RealWorld (TRW), to our knowledge the first commitment-level consistency contract for world models. TRW treats predicted state as a materialized view and a physical commitment as a read whose authorization can expire. Typed, calibrated claims specify consequence-conditioned freshness and priced verification. Adaptive refresh generalizes dual-Kalman synchronization to consult the world when evidence could change a decision; dependency-scoped SagaLLM compensation repairs reversible commitments invalidated after authorization. Under an event-aligned risk oracle and recovery-liveness assumptions, we prove that synchronization and compensation are insufficient alone, whereas their composition gives a conditional consistency guarantee. Otherwise, the argument yields an auditable decomposition of violations into named debts. We implement TRW in Flood-SAR, a search-and-rescue simulator over real geography, and test six preregistered questions at frozen operating points on held-out seeds. Adaptive refresh reduces stale execution but does not dominate fixed refresh on cost, coverage, or rescue outcomes. Localized repair reduces repair work by 9.56 units per mission and restoration latency by 80.7 seconds relative to global recovery; the observed residual-violation difference is zero without establishing equivalence. Detection coverage is 0.83-0.89, and 10 of 97 invoked restorations are incomplete by mission end. The campaign treats empirical slack as sensitivity inputs rather than discharging the theorem's assumptions or providing a simultaneous population certificate. Exact replay reconstructs a disputed dispatch. TRW thus makes a world model an auditable predictive interface rather than a self-validating source of truth.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.DB"
+  ]
+}

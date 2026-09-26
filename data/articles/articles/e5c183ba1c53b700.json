@@ -1,0 +1,15 @@
+{
+  "id": "e5c183ba1c53b700",
+  "title": "A Unified Conditional Flow for Motion Generation, Editing, and Intra-Structural Retargeting",
+  "link": "https://arxiv.org/abs/2604.13427",
+  "description": "arXiv:2604.13427v2 Announce Type: replace-cross \nAbstract: Text-driven motion editing and intra-structural retargeting, where skeletons share topology but may differ in bone lengths and rest pose, are traditionally handled by fragmented pipelines with incompatible inputs and representations: editing relies on specialized generative steering, while retargeting is deferred to geometric post-processing. We present a unified conditional-flow framework that casts generation, semantic editing, and intra-structural retargeting as condition-modulated transport within one text- and skeleton-conditioned rectified-flow model. Under this formulation, editing changes the semantic condition while preserving skeletal structure, whereas retargeting changes the skeletal condition while preserving motion semantics. This makes FlowEdit-style transport a unified inference rule for motion manipulation rather than a task-specific editor. To instantiate this for articulated 3D motion, we develop a text- and skeleton-conditioned rectified-flow transformer. The model uses per-joint tokenization and explicit joint self-attention to capture spatial kinematic dependencies. We further inject text conditions at both joint and frame levels, while residual multi-condition classifier-free guidance balances text adherence and skeletal conformity. Experiments on SnapMoGen and a multi-character Mixamo subset show that one trained model supports text-to-motion generation, zero-shot editing, and zero-shot intra-structural retargeting without task-specific fine-tuning. This unified framework replaces separate pipelines with a single conditional motion transport model while keeping the same-topology retargeting scope explicit.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

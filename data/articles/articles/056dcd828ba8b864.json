@@ -1,0 +1,13 @@
+{
+  "id": "056dcd828ba8b864",
+  "title": "Rad-JEPA 3D: Radiology Joint-Embedding Predictive Model for 3D Computed Tomography",
+  "link": "https://arxiv.org/abs/2607.26196",
+  "description": "arXiv:2607.26196v1 Announce Type: new \nAbstract: Self-supervised pretraining is central to 3D medical image analysis, where unlabeled CT volumes are abundant but expert annotations are scarce. Yet existing volumetric encoders often fail to preserve the coarse spatial and geometric structure that downstream reasoning depends on, limiting their performance on organ disentanglement, abnormality detection, and spatial understanding when paired with language models. We introduce Rad-JEPA 3D, a joint-embedding predictive framework that learns volumetric CT representations by predicting the latent features of a complete scan from a masked view. At its core is a hybrid H-Mamba encoder that fuses a Mamba state-space branch, which models inter-slice continuity through sequential scanning, with a grouped-query attention branch, which captures cross-plane spatial context, combined through a lightweight per-token router. To improve the quality of intermediate representations, we further propose Hidden States Orthogonal Regularization (HSOR), which aligns student-teacher hidden states and reduces feature redundancy throughout the encoder. This layer-wise regularization produces more consistent and discriminative volumetric representations, leading to improved performance on organ recognition and spatial reasoning tasks. Pretrained on approximately 120,000 CT scans, Rad-JEPA 3D attains state-of-the-art results despite its compact size: with only 4.0B total parameters, it achieves competitive results with state-of-the-art on closed-ended VQA and the best average spatial-reasoning score on the Spatial-Med benchmark. Ablation studies confirm that the hybrid block and HSOR contribute complementary gains, and that the induced spatial structure can substitute for raw language-model scale on volumetric reasoning tasks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

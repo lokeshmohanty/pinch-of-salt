@@ -1,0 +1,15 @@
+{
+  "id": "77db739081220cad",
+  "title": "Thinking Deeper, Not Longer: Memory-Efficient Test-Time Reasoning with Depth-Recurrent Transformers for Compositional Generalization",
+  "link": "https://arxiv.org/abs/2603.21676",
+  "description": "arXiv:2603.21676v2 Announce Type: replace-cross \nAbstract: Standard Transformers have a fixed computational depth, limiting their ability to generalize to tasks that require variable-depth reasoning. The usual remedy, Chain-of-Thought (CoT), spends tokens to reason, inflating the key--value cache and making latency grow with the step count, so memory becomes the limiting cost when reasoning is served over large query batches. We study a depth-recurrent Transformer that decouples computational depth from parameter count by iterating a shared-weight block, so that each added reasoning step costs flat memory and linear latency, with no token generation. Three ingredients keep the recurrence stable for 20+ thinking steps: a silent thinking objective that supervises only the final output, LayerScale initialization, and an identity-biased gate that opens a gradient highway across steps. We characterize it on three compositional domains with decreasing structural bias: graph reachability (adjacency masking), nested boolean logic (relative positioning), and unstructured relational text (no positional cue). We find a \\emph{computational frontier}: accuracy climbs once the thinking-step count meets the task's complexity, reaching near-perfect performance on the two structured tasks and a lower plateau on unstructured text. How it climbs depends on the structural bias---abruptly from chance on the graph task, gradually on the other two. Depth recurrence extrapolates beyond the training range: it succeeds on the graph task where fixed-depth models barely extrapolate, and on the two sequence tasks comes within two points of fixed-depth Transformers that use $4$--$6.4\\times$ more parameters. On the graph task, whose adjacency mask makes propagation depth verifiable, intermediate per-step supervision---a standard recipe for deep iterative models---consistently \\emph{harms} this extrapolation. We release the code for reproducibility.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

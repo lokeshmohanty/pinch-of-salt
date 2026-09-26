@@ -1,0 +1,15 @@
+{
+  "id": "59556e1716ebab4e",
+  "title": "Adversarial Pragmatics for AI Safety Evaluation: A Diagnostic Framework and Seed Benchmark for Language-Mediated Control",
+  "link": "https://arxiv.org/abs/2607.01153",
+  "description": "arXiv:2607.01153v3 Announce Type: replace-cross \nAbstract: Safety evaluations for language models increasingly depend on judgments about ambiguous natural-language behaviour: whether a model followed an instruction, refused appropriately, complied with a policy, or misreported progress in an agentic task. Existing benchmarks compress these into pass/fail labels, obscuring whether failures reflect capability limits, policy ambiguity, instruction conflict, scaffold failure, or unstable evaluator judgments. Adversarial pragmatics is safety-relevant model behaviour under instruction conflict, embedded commands, quotation, scope ambiguity, deixis, and indirect speech acts. It's designed to extend to multi-turn agent transcripts, but the seed set represents that family with a single-turn tool-result contrast. This paper introduces a diagnostic framework, an 18-item seed benchmark, a 54-row pilot, and a six-cell LLM-judge assessment, with a protocol keeping task success, policy compliance, risk, refusal, attribution, and confidence analytically separate. The benchmark separates four inference targets a single label can conceal: the regime-relative reference, configured-system behaviour, evaluator-output interpretation, and taxonomic assignment. Its intended use is diagnosis, not deployment certification, vendor ranking, or a general safety score. A first LLM judge that graded its own outputs with the expected answer visible missed the safety-relevant minority classes. Item-clustered intervals leave four of six chance-corrected agreement statistics unable to rule out a constant labeller, and hierarchical pooling shrinks the one eye-catching rubric effect toward the group mean and widens its interval through zero. Rejudging the objects across three judge models and two information conditions leaves the pattern intact: no cell recovers more than two of eleven partial successes, and the strongest cell's edge comes partly from never using that label.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.SE"
+  ]
+}

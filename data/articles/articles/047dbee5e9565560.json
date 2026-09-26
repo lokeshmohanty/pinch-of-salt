@@ -1,0 +1,14 @@
+{
+  "id": "047dbee5e9565560",
+  "title": "Is the Geometry Doing the Work? An Operating-Point Audit of Hierarchy in Hyperbolic Vision-Language Models",
+  "link": "https://arxiv.org/abs/2607.05268",
+  "description": "arXiv:2607.05268v2 Announce Type: replace \nAbstract: Whether a hyperbolic representation model uses its geometry cannot be inferred from curvature alone: what matters is the dimensionless operating point $\\sqrt{c}\\rho$ and whether the radial and cone mechanisms are operational there. We develop necessary-condition diagnostics and audit three published hyperbolic vision-language families -- MERU, HyCoCLIP, and PHyCLIP -- across released checkpoints and matched interventions. All converged checkpoints remain near-Euclidean ($H(u)\\approx1$; none reaches $\\sqrt{c}\\rho>1$), and releasing the curvature floor changes $c$ and norms without leaving this regime or substantially degrading downstream performance. Entailment cones are inactive or saturated, and graded traversal fails under controlled readouts, including the models' native distance metrics. External parent-child ordering shows no shuffle-controlled pair-specific radial signal at quantified sensitivity; the only surviving pair-specific signal, a statistically detectable but small residual on the GRIT box-to-full-caption relation, remains non-operative under the evaluated readouts. Taxonomy correlations show no detectable norm contribution beyond cosine, and coarse-retrieval gains co-vary with box/compositional supervision without establishing an active radial mechanism. Gradient diagnostics expose a low-curvature, wide-cone shortcut in the entailment objective. A closed-form aperture identity places the saturation edge at $\\sqrt{c}\\rho\\le2K$: with the floor released, all trained relation-level parent means lie at or below this edge, leaving the parent cones fully or nearly saturated. Entailment-off runs pass the edge and continue contracting. The shortcut is the dominant accelerator of collapse, not its sole cause. These audited formulations do not show an operative radial/cone mechanism under our diagnostics. We distill the audit into a five-number geometry report for hierarchy claims.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

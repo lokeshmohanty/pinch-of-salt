@@ -1,0 +1,14 @@
+{
+  "id": "0bf579e6208b3fd9",
+  "title": "SomaNet: Weakly Supervised Learning for Instance Soma Segmentation in 3D Electron Microscopy with Partial Annotations",
+  "link": "https://arxiv.org/abs/2609.23019",
+  "description": "arXiv:2609.23019v1 Announce Type: cross \nAbstract: Soma instance segmentation, i.e., identifying and delineating individual cell somas as distinct instances, is crucial for cellular analysis and connectomic reconstruction. Three-dimensional electron microscopy (3D EM) provides nanometer-scale resolution for capturing fine-grained soma morphology. However, dense instance-level manual annotation is prohibitively costly, limiting the scalability of fully supervised methods. To address this challenge, we propose SomaNet, a weakly supervised framework for 3D EM soma instance segmentation under partial annotation constraints. SomaNet adopts a teacher--student learning paradigm tailored to partial labels. The teacher is trained using partially annotated data to generate pseudo-labels, while the student jointly learns from the partial ground-truth annotations and the generated pseudo-labels, progressively recovering dense instance segmentations. To accurately delineate cell somas under limited supervision with varying instance counts, SomaNet incorporates affinity learning, which encourages high similarity within instances and low similarity across instance boundaries. Semantic-guided affinity decoding and 2D-to-3D reconstruction then produce volumetrically consistent 3D soma instances while preserving the large receptive fields of 2D backbones. The framework is architecture-flexible and supports diverse backbones, including vision transformers and foundation models, enabling direct transfer of pretrained visual representations to volumetric EM segmentation. Experiments on 3D EM brain datasets demonstrate that SomaNet achieves accurate and robust soma instance segmentation across regions with diverse soma morphologies under partial annotation. Code is available at https://github.com/mkhateri/SomaNet.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

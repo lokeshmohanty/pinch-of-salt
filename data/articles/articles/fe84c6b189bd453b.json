@@ -1,0 +1,13 @@
+{
+  "id": "fe84c6b189bd453b",
+  "title": "Combining Object Detection with Geometry-Aware Clustering to Distinguish Overlapping Plants in UAV Imagery",
+  "link": "https://arxiv.org/abs/2609.21304",
+  "description": "arXiv:2609.21304v1 Announce Type: new \nAbstract: Reliable plant-level information from unmanned aerial vehicle (UAV) imagery is important for automated crop monitoring. However, in dense crop canopies, adjacent plants frequently overlap and are detected as a single object, reducing the reliability of plant-level measurements. This study presents a geometry-aware post-detection framework for resolving overlapping plant instances using standard RGB UAV imagery.\n  The framework combines object detection with geometric clustering of plant components. Leaves or branches detected within each bush-level region are represented using two complementary geometric features: component centroids and radial intersection points (RIPs) derived from detected plant structures. K-means and Gaussian mixture models determine whether a detected region contains a single plant or two overlapping plants. Density filtering suppresses spurious radial intersections, and a post-pipeline ensemble combines spatial and directional geometric information.\n  The framework was evaluated using UAV imagery of eggplant and tomato crops under field conditions. Centroid-based clustering achieved an F1-score of 0.89 for eggplant, while the combined centroid-RIP approach achieved the best tomato performance, with an accuracy of 0.80, precision of 1.00, and F1-score of 0.75 using K-means. Density filtering substantially improved RIP-based clustering for tomato.\n  The proposed approach provides a lightweight, modular engineering solution that can be integrated with existing RGB UAV monitoring pipelines without additional depth sensors, pixel-level segmentation, three-dimensional reconstruction, or retraining of the primary bush detector. The results demonstrate that geometric reasoning applied to existing detector outputs can complement deep-learning-based object detection and improve plant-level interpretation in dense agricultural canopies.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

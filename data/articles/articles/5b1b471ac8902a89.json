@@ -1,0 +1,13 @@
+{
+  "id": "5b1b471ac8902a89",
+  "title": "Physics-Aligned Self-Supervised Learning for Scientific Imaging",
+  "link": "https://arxiv.org/abs/2607.28868",
+  "description": "arXiv:2607.28868v1 Announce Type: new \nAbstract: Data augmentations define the invariances learned by self-supervised learning (SSL). Standard augmentation pipelines were designed for natural images, yet scientific imaging modalities are governed by physical measurement processes with distinct symmetry and acquisition constraints. Enforcing invariances that contradict these constraints can distort learned representations and limit downstream performance, but practitioners moving from machine learning into a new scientific modality currently have little guidance beyond transferring natural-image pipelines unexamined. We address this gap with a principled, reproducible procedure for augmentation design in scientific SSL: we formalise the physics-aligned augmentation set as a union of measurement-consistent symmetries and acquisition-driven perturbations, and we give a concrete, largely label-free workflow---enumerate candidates, label each by the measurement operator, validate with representation-geometry diagnostics, and confirm by single-factor ablation---for selecting them. We instantiate the procedure for real-space electron microscopy and reciprocal-space 4D-STEM diffraction, and evaluate it across five SSL paradigms (DINOv2, SimCLR, MAE, VICRegL, I-JEPA) on classification and crystal-orientation regression. Physics-aligned augmentations substantially improve downstream performance for objectives relying on cross-view consistency, reduce geodesic error and improve robustness under realistic acquisition variability (detector gain, resolution loss), and systematically reshape representation geometry. While our experiments use electron microscopy, the procedure is modality-agnostic and applies to other measurement-driven domains such as medical and remote-sensing imaging. These results position augmentation design as a primary, and controllable, source of inductive bias in scientific self-supervised learning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "4181b4c3d95848a1",
+  "title": "Reliability analysis for BraTS-GoAT segmentation: a controlled robustness study of deep-ensemble uncertainty",
+  "link": "https://arxiv.org/abs/2608.13223",
+  "description": "arXiv:2608.13223v1 Announce Type: new \nAbstract: Deep networks segment brain tumours accurately in-distribution, but can fail silently when the input differs from their training data. That risk is central to clinical deployment and is the premise of the BraTS-GoAT generalizability task. We ask not only how well a model segments, but whether its uncertainty knows when it is wrong. On BraTS-GoAT (Task 3) we train a 5-fold cross-validated nnU-Net baseline (one held-out prediction per case) and a 3-seed deep ensemble. Both are evaluated for calibration and error detection on a per-region relevant mask, aggregated per case. In-distribution the 3-seed ensemble improves modestly over the already strong single model on the same held-out split, with the clearest gain in calibration. The separation appears under shift. In a controlled robustness study using graded synthetic corruptions as a proxy for acquisition shift, the single model's confidence stays flat while its accuracy and calibration degrade. Inter-member disagreement instead rises steeply, about a quarter to a third above the clean condition, several times the single model's response. On the official validation leaderboard the 5-fold ensemble of those folds attains whole-tumour Dice 0.87. The generalization gap is concentrated on the harder regions, with a characteristic failure of missing small, satellite lesions on unseen cohorts. In the synthetic study, disagreement among the 3-seed members is a more sensitive case-level indicator of acquisition shift than single-model confidence. Its per-voxel error localisation weakens as severity grows. The contribution is a rigorous, honest reliability comparison rather than a claim that any one uncertainty method dominates.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

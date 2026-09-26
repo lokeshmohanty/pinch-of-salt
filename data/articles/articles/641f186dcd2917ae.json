@@ -1,0 +1,16 @@
+{
+  "id": "641f186dcd2917ae",
+  "title": "FMT$^{\\mathrm{X}}$: Lazy Wavefront Search for Dynamic Replanning",
+  "link": "https://arxiv.org/abs/2509.08521",
+  "description": "arXiv:2509.08521v2 Announce Type: replace-cross \nAbstract: FMT$^{*}$ plans efficiently in static worlds by expanding a cost-ordered wavefront and collision-checking lazily, but its single-pass unvisited rule cannot revise paths when obstacles change. We present FMT$^{\\mathrm{X}}$, an anytime, asymptotically optimal generalization of that wavefront for dynamic replanning. A cost-improvement test replaces the unvisited set, allowing a node to be revisited for best-parent selection whenever a lower-cost potential connection is found. This induces implicit rewiring within the wavefront while preserving lazy collision checking. FMT$^{\\mathrm{X}}$ retains the online densification of RRT$^{*}$ but defers its eager neighborhood rewiring to the cost-ordered wavefront, so a node is revisited only when the expansion reaches it. Obstacle updates orphan the affected subtree and reseed the wavefront. A direct cost push from each parent to its children propagates cost improvements through validated tree edges, thereby preserving descendant cost consistency, a property not guaranteed by implicit rewiring alone. We compare a fixed-graph batch variant, Dynamic FMT$^{*}$ (D-FMT$^{*}$), with D$^{*}$ Lite on identical PRM$^{*}$ graphs, and FMT$^{\\mathrm{X}}$ with eager RRT$^{\\mathrm{X}}$ and path-centric LLPT$^{*}$ in geometric and kinodynamic scenes, including partial observability. D-FMT$^{*}$ stays close on path quality at far fewer collision checks. FMT$^{\\mathrm{X}}$ lies between LLPT$^{*}$ and RRT$^{\\mathrm{X}}$ on repair effort while tracking the reliability and trajectory quality of eager RRT$^{\\mathrm{X}}$. The study shows that collision-checking policy affects median repair latency, repair-time tails, and executed trajectory quality.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

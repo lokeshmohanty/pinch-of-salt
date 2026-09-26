@@ -1,0 +1,13 @@
+{
+  "id": "6ade737620b49bc4",
+  "title": "CALM-AH: An ABAW11-Calibrated Multimodal Ensemble with Reliability-Gated Multi-Expert Consensus for Video-Level Ambivalence and Hesitancy Recognition",
+  "link": "https://arxiv.org/abs/2607.29310",
+  "description": "arXiv:2607.29310v1 Announce Type: new \nAbstract: Ambivalence and hesitancy (A/H) are subtle behavioural states that may be expressed through language, voice, facial activity, and other non-verbal cues. The ABAW11 A/H Video Recognition Challenge asks systems to assign a binary A/H label to each naturalistic interview video. Performance is measured using Macro-F1 so that recognition of both A/H and No-A/H samples receives equal importance. We present CALM-AH, a multimodal ensemble that combines textual, acoustic, visual, and derived behavioural-statistical features. We construct 15 non-empty combinations of these feature branches. For each combination, we select the best of three classifier families using validation binary cross-entropy and optimise its decision threshold for validation Macro-F1. The resulting binary decisions are combined using fixed hard-voting weights transferred from BROTHER. We further introduce Reliability-Gated Multi-Expert Consensus(RG-MEC), an anchor-preserving decision-level ensemble that combines an initial prediction with three complementary correction experts: CALM-AH, AffectGPT, and a GPT-based semantic verifier. The initial system provides the default prediction. Its label is overridden only when all three correction experts unanimously support the same alternative class; otherwise, the anchor prediction is retained. This unanimity-gated design limits the influence of isolated expert errors while permitting bidirectional correction when task-specific, multimodal-affective, and semantic-pragmatic evidence are fully consistent. On the participant-disjoint ABAW11 dataset, CALM-AH achieves a Macro-F1 of 0.7525, and the complete RG-MEC system achieves 0.7771.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

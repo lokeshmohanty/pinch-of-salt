@@ -1,0 +1,13 @@
+{
+  "id": "95b90ee19da702f9",
+  "title": "CLUIE: Clustering-Aware Recurrent Propagation with Local Structural Compensation for Underwater Image Enhancement",
+  "link": "https://arxiv.org/abs/2607.21467",
+  "description": "arXiv:2607.21467v1 Announce Type: new \nAbstract: Underwater image enhancement remains challenging due to wavelength-dependent light absorption, scattering, and backscattering, which jointly cause color distortion, contrast degradation, and detail loss. Since these degradations vary with scene depth and imaging conditions, different regions within the same image often exhibit heterogeneous degradation patterns and thus require region-adaptive restoration. Although visual RWKV models offer an efficient linear-complexity solution for long-range dependency modeling, their predefined scanning orders are content-agnostic and therefore fail to adapt recurrent state propagation to spatially non-uniform restoration demands. To address this limitation, we propose a Clustering-aware RWKV framework, termed CRWKV, which reformulates the fixed recurrent propagation path of conventional RWKV into a content-adaptive token trajectory. Specifically, we introduce Clustering-aware Semantic Dynamic Reordering (CSDR), which groups tokens according to semantic feature similarity and derives a dynamic traversal order from inter-cluster contextual relations. This design enables WKV states to be accumulated along semantically correlated regions rather than fixed spatial or spectral orders. Since dynamic reordering may disrupt the local continuity of original spatial neighborhoods, we further propose Dark-response Modulated Local Propagation (DMLP), which extracts local structural responses via depth-wise convolution and adaptively modulates their propagation strength using a neighborhood-aware pseudo-dark response map. In this way, local structural cues are compensated before recurrent aggregation while preserving content-adaptive long-range modeling. Extensive experiments on multiple underwater image enhancement benchmarks demonstrate that CRWKV achieves state-of-the-art quantitative performance and superior visual quality.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

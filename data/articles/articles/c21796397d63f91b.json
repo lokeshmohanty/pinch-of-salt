@@ -1,0 +1,14 @@
+{
+  "id": "c21796397d63f91b",
+  "title": "The Mask Is Not the Model: Auditing Prefix Invariance in Attention, State-Space, and Hybrid Sequence Models",
+  "link": "https://arxiv.org/abs/2608.22876",
+  "description": "arXiv:2608.22876v2 Announce Type: replace-cross \nAbstract: Hybrid sequence models must satisfy prefix invariance: representations at position t must not depend on future inputs, yet this is rarely verified.\n  We formalize prefix invariance and give a lightweight audit, two forward passes, no training or gradients, yielding a per-layer score localizing where causality breaks.\n  Attention-mask inspection, the field's default check, is incomplete: causality is a graph-level property, and leaks can occur via scans, aggregations, or normalization despite correct masks. Across 192 injected-fault trials on eight checkpoints, mask inspection detected none, while our audit localized all 192/192 to the exact layer.\n  Static/dynamic analysis of chunked-scan code in transformers found the same defect in Zamba2 and Nemotron-H, an inter-chunk axis error fixed via the reference implementation.\n  The method fits on one page and runs in seconds.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

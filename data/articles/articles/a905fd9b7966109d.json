@@ -1,0 +1,14 @@
+{
+  "id": "a905fd9b7966109d",
+  "title": "SegTME-UNI2: A Foundation Model-Based Framework for Generalisable Multiclass Cell Segmentation and LLM-Driven Tumour Microenvironment Characterisation in Histopathology",
+  "link": "https://arxiv.org/abs/2606.17702",
+  "description": "arXiv:2606.17702v3 Announce Type: replace-cross \nAbstract: Characterising the TME from routine H&amp;E-stained histology images requires simultaneous cell segmentation, biological feature extraction, and interpretable clinical reporting. We present SegTME-UNI2, a unified framework addressing all three requirements end-to-end: a segmentation backbone that converts raw H\\&amp;E patches into per-nucleus class labels, a structured feature-extraction pipeline that turns those labels into quantitative TME descriptors, and a language-model narrative generator that turns those descriptors into clinician-readable text. At its core is UNI2-UperHoVer, a dual-head multiscale segmentation model that pairs UNI2 with two parallel UperNet decoders: one for six-class semantic segmentation and one for HV gradient regression enabling watershed-based nuclear instance separation. It is trained via a three-stage progressive pseudo-label curriculum, scaling from PanNuke (Stage 1, 0.25um/pixel) to TCGA-UT Scale-0 (Stage 2, 0.5um/pixel) and full 1.6M-patch, six-scale TCGA-UT (Stage 3, 0.5 to 1.0um/pixel). TCGA-UT's coarser, broader per-patch context than PanNuke's also permits a larger tile stride during whole-slide inference. This pipeline computes 22 per-patch compositional, morphological, spatial-entropy, and intercellular-distance metrics and translates them into six categorical phenotype labels and a standardised biological-token vocabulary, fine-tuned via NVIDIA BioNeMo that converts into clinically grounded narratives whose individual claims can be spot-checked directly against the underlying features. Qualitative validation on IGNITE NSCLC tiles shows the pipeline produces biologically coherent phenotype classifications and narratives despite inter-institutional stain variability and imperfect segmentation. The pseudo-labelled TCGA-UT dataset and UNI2-UperHoVer checkpoints are publicly released to support large-scale TME profiling and spatial biology research.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

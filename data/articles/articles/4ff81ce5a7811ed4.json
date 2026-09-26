@@ -1,0 +1,13 @@
+{
+  "id": "4ff81ce5a7811ed4",
+  "title": "Mask IPL: Noise-Free Intrinsic Position Learning via Computation Graph Clipping for Event-Based Spike-Driven Tracking",
+  "link": "https://arxiv.org/abs/2609.18716",
+  "description": "arXiv:2609.18716v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) match the event-driven nature of event cameras and naturally extract spatiotemporal features. These properties have motivated a series of recent studies on event-based tracking with SNNs. Intrinsic Position Learning (IPL) acquires strong position information without introducing additional parameters, making it a mainstream approach for position encoding in event-based spike-driven tracking. However, the mechanism behind its effectiveness lacks systematic theoretical analysis. Moreover, our analysis reveals that IPL introduces noise in both forward and backward propagation. The former increases inference error, while the latter prevents parameters from converging to better solutions. This paper presents a systematic analysis of IPL and demonstrates that its effectiveness stems from the synergy between IPL and multi-stage convolution. The zero blocks in the joint tensor act as zero padding for convolution, and the resulting boundary effect propagates layer by layer through multi-stage convolution. Every parameter update is therefore driven by a gradient that perceives the relative displacement between template and search frames. Positional encoding added after the convolutional stage cannot provide this information. We further propose a simple Computation Graph Clipping method that applies a validity mask determined by the layout to the operations of every layer, making invalid regions equivalent to zero padding in both forward and backward propagation. This eliminates the noise without introducing additional parameters and makes the actual gradient coincide with the ideal gradient. We name the improved method Mask IPL. Without increasing parameters or computational cost, Mask IPL improves the AUC of the Tiny-scale tracker on FE108, FELT, and VisEvent, and consistently improves the Base-scale tracker as well.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

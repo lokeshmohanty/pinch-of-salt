@@ -1,0 +1,13 @@
+{
+  "id": "2d463cfbd15d61c7",
+  "title": "RefAM: Attention Magnets for Zero-Shot Referral Segmentation",
+  "link": "https://arxiv.org/abs/2509.22650",
+  "description": "arXiv:2509.22650v3 Announce Type: replace \nAbstract: Most existing approaches to referring segmentation achieve strong performance only through fine-tuning or by composing multiple pre-trained models, often at the cost of additional training and architectural modifications. Meanwhile, large-scale generative diffusion models encode rich semantic information, making them attractive as general-purpose feature extractors. In this work, we introduce a new method that directly exploits features (attention scores) from diffusion transformers for downstream tasks, requiring neither architectural modifications nor additional training. To systematically evaluate these features, we extend benchmarks with vision-language grounding tasks spanning both images and videos. Our key insight is that stop words act as attention magnets: they accumulate surplus attention and can be filtered to reduce noise. Moreover, we identify global attention sinks (GAS) emerging in deeper layers and show that they can be safely suppressed or redirected onto auxiliary tokens, leading to sharper and more accurate grounding maps. We further propose an attention redistribution strategy, where appended stop words partition background activations into smaller clusters, yielding sharper and more localized heatmaps. Building on these findings, we develop RefAM, a simple training-free grounding framework that combines cross-attention maps, GAS handling, and redistribution. Across zero-shot referring image and video segmentation benchmarks, our approach achieves strong performance and surpasses prior methods on most datasets, establishing a new state of the art among training-free methods, without task-specific training or architectural modification. For video, we localize the referent from the spatio-temporal features of a video diffusion transformer via a first-frame query that is then propagated; we therefore do not explicitly resolve temporal (which-frame) expressions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

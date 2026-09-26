@@ -1,0 +1,13 @@
+{
+  "id": "ee58f8d2e93b38e8",
+  "title": "DWM: Separating World Effects from Actions in Latent World Models",
+  "link": "https://arxiv.org/abs/2607.18715",
+  "description": "arXiv:2607.18715v1 Announce Type: new \nAbstract: Latent world models underpin much of modern model-based control, yet current action-conditioned formulations supervise\n  the next-latent transition with a single, undifferentiated target, forcing a monolithic learning signal to absorb every\n  source of state change. In real world, however, transitions arise from two heterogeneous sources: an action-driven\n  component induced by the agent, and an action-invariant world effect -- the change that would still occur under a null\n  action, dictated by the environment's intrinsic dynamics (e.g., gravity-driven sliding, inertia, contact rebound, and\n  persistent drift). Fusing them into a single target entangles the two inside the latent transition, prevents the model\n  from attributing observed changes to their underlying causes, and undermines the transferability of the learned\n  dynamics. We introduce DWM (Decomposed World Model), a supervision-level framework that operationalizes this\n  decomposition. DWM augments the predictor of a latent world model with an auxiliary world head, regularized by a\n  normalized world-contrastive objective to be action-invariant, while the original pred head is coupled to it via an\n  orthogonality constraint; together, the two signals induce an explicit additive decomposition of the predicted\n  transition into an action-invariant and a complementary action-driven component, without altering the underlying\n  architecture or inference pipeline. To evaluate DWM under persistent world effects, we construct W-variants of three\n  standard control benchmarks -- PushT-W, Reacher-W, and TwoRoom-W -- each instantiating a distinct action-invariant\n  dynamic. DWM matches strong baselines on the flat counterparts and delivers a mean absolute improvement of 13.1% in CEM\n  planning success across the W-variants.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

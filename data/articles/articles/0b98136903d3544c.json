@@ -1,0 +1,13 @@
+{
+  "id": "0b98136903d3544c",
+  "title": "Long Horizon Transformer Quantile Fault Prediction for Multi Site Industrial Predictive Maintenance",
+  "link": "https://arxiv.org/abs/2609.04840",
+  "description": "arXiv:2609.04840v1 Announce Type: new \nAbstract: Long-horizon predictive maintenance requires models to distinguish slowly evolving degradation from normal operating-regime variation over planning windows measured in days rather than hours. This paper evaluates whether an explicit conditional-quantile representation provides an informative classifier interface for this problem. The proposed TQRNN30d framework combines a dual-stage quantile regression neural network (QRNN) feature extractor with a multi-stream temporal fusion classifier. Each hourly word of 81-channel machine behaviour is mapped to a 324-dimensional quantile-state representation, and 720 ordered hourly words form the 30-day document supplied to the long-horizon model. The classifier fuses quantile states with dynamic covariates, channel-level static metadata, and a 168-hour latent-history stream using gated residual processing, causal recurrent encoding, and metadata-conditioned cross-modal attention. A bounded instability-aware signal derived from sustained one-word-ahead prediction-error divergence provides auxiliary memory modulation at the longest horizon. Evaluation uses a machine-disjoint 43/14/15 train/validation/test allocation across 72 machines in nine manufacturing facilities. At 30 days, TQRNN30d achieves 79.97% F1, 80.18% recall, 81.82% precision, 82.39% accuracy, and 0.820 ROC-AUC. It leads all 18 evaluated baselines at the 7-, 14-, and 30-day fixed-threshold comparisons, with the largest F1 advantage at 14 days. The results support held-out-machine performance within the observed homogeneous nine-facility fleet, but do not establish unseen-site, cross-equipment, or cross-sector generalisation.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

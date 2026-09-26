@@ -1,0 +1,14 @@
+{
+  "id": "ef26ccc61caa5c8b",
+  "title": "Think Sparse, Predict Dense: Continuous Thought Machines for Image Super-Resolution",
+  "link": "https://arxiv.org/abs/2607.18856",
+  "description": "arXiv:2607.18856v1 Announce Type: new \nAbstract: Continuous Thought Machines introduce an internal temporal dimension in which neuron-level histories and synchronization-derived representations evolve over a sequence of thought ticks. Extending this mechanism to dense visual prediction is non-trivial, because tasks such as image super-resolution require spatial evidence to remain available at every output location rather than being compressed into a single global representation. In the proposed window-level use of CTM, the thought dynamics produce a compact summary representation for each local window. DQ-CTM transforms this compact thought representation into window-aligned dense queries through a structured low-rank, parameter-efficient compact-to-dense query mechanism. Each position within a window receives its own query, while shared thought dynamics progressively refine the dense representation across ticks. In its super-resolution instantiation, termed ThinkSR, encoded feature maps are partitioned into local visual windows without token pooling, restored to the original feature field after shared refinement, and decoded into a high-resolution image. Preliminary experiments under a fixed four-tick training horizon reveal a progressive reconstruction trajectory. PSNR-Y increases from 28.1045 dB at $T=0$ to 30.2817 dB at $T=4$, while PSNR-RGB increases from 26.6271 dB to 28.7781 dB and the mean $\\ell_1$ error decreases from 0.034602 to 0.023545. All 100 evaluated images improve from $T=1$ to $T=4$. These initial results establish the feasibility of sparse latent thought for dense spatial reconstruction and motivate broader continuous-thought architectures for dense vision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}
