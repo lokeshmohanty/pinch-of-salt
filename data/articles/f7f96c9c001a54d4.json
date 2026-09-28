@@ -1,0 +1,14 @@
+{
+  "id": "f7f96c9c001a54d4",
+  "title": "Latent Generative Solvers for Generalizable Long-Term Physics Simulation",
+  "link": "https://arxiv.org/abs/2602.11229",
+  "description": "arXiv:2602.11229v3 Announce Type: replace \nAbstract: Reliable physics simulation demands two capabilities that today's neural PDE solvers do not deliver together: generalization across heterogeneous PDE families, and stability under long autoregressive rollouts. Deterministic operators accumulate error geometrically, while existing probabilistic solvers are confined to a single PDE family or short horizons. We close this gap with the \\textbf{Latent Generative Solver} (LGS), three coupled components: (i) a Physics VAE (PhyVAE) compressing twelve PDE families into a shared latent manifold; (ii) a Pyramidal Flow-Forcing Transformer (PFlowFT) that generates the next latent by flow matching, conditioned on a per-trajectory context updated on the model's own predictions; and (iii) input noising during training, for which we derive a sufficient-condition contraction bound explaining the observed long-horizon stability. Pretrained on a 2.5\\,M-trajectory, 16-system corpus at $128^2$, LGS matches the strongest deterministic baseline at one step, wins on 15/16 systems at both 5- and 10-step rollout, cuts 20-step L2RE from $56.1\\%$ to $\\mathbf{30.2\\%}$, and uses $\\mathbf{13}$--$\\mathbf{77\\times}$ less recurrent dynamics-step compute. It also adapts efficiently to a $256^2$ Kolmogorov flow held out from the pretraining corpus, dropping 1-step L2RE from $0.398$ to $0.129$ in five finetune epochs against U-AFNO's $0.653{\\to}0.343$. These empirical claims are limited to the evaluated 2D regular-grid systems and discrete horizons.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

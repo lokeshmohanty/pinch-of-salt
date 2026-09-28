@@ -1,0 +1,13 @@
+{
+  "id": "14b7f09ec5a82269",
+  "title": "Forensic Twins: Self-Supervised Residual Learning for AI-Generated Image Forensics",
+  "link": "https://arxiv.org/abs/2609.31514",
+  "description": "arXiv:2609.31514v1 Announce Type: new \nAbstract: Detectors of AI-generated images are typically trained using samples from all Generative AI architectures they must catch, and struggle as soon as a new architecture emerges. Recent approaches have explored self-supervised pre-training as an alternative solution, yet standard frameworks work against the forensic task, e.g., their augmentations overwrite the micro-statistics of image formation. This paper introduces Forensic Twins, a Self-Supervised Residual Learning (SSRL) framework whose pretext task suppresses macroscopic content availability. Each image is mapped through a frozen, off-the-shelf forensic residual extractor, from which two spatially disjoint crops are drawn. Sharing no pixel, the two views retain minimal semantic structure to align, leaving a redundancy-reduction objective with a predominant common signal: the stationary fingerprint of the image acquisition pipeline. Additionally, Forensic Twins is trained exclusively on real images; no AI-generated image is observed at any stage. Experiments show that Forensic Twins attributes AI generator sources with 56.61% accuracy, i.e., 6.13% above the previous state-of-the-art zero-shot method at 375x lower latency. We also demonstrate that fitting a Gaussian Mixture Model (GMM) offline using only the real image embeddings extracted from Forensic Twins turns it into a state-of-the-art zero-shot detector, reaching 97.99% AUC across 27 unseen AI generators, including GANs, diffusion models and commercial systems. Code, weights and exact splits will be made publicly available",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
