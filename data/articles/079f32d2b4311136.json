@@ -1,0 +1,14 @@
+{
+  "id": "079f32d2b4311136",
+  "title": "The Camera Inside the Editor: Reading the Implicit Camera of Image Editors with Painted Calibration Patterns",
+  "link": "https://arxiv.org/abs/2609.37732",
+  "description": "arXiv:2609.37732v1 Announce Type: new \nAbstract: Instruction-based image editors insert objects, restyle scenes and render new viewpoints, but it is unknown which camera they assume when they paint into a photograph. Asked to cover the floor with a checkerboard, an editor paints projective structure from which classical vanishing-point geometry reads pitch, roll, focal length, yaw and, on renders, the principal point, without any training. Unlike a calibrator such as GeoCalib, which estimates the camera of an image, this isolates the camera under which the editor paints. On 120 rendered cameras with exact ground truth, Qwen-Image-Edit-2511 paints tile edges that meet their vanishing points within 0.26 degrees, and its implicit camera matches the true one to 0.8 degrees in pitch and 6% in focal length, more accurately than GeoCalib except in roll. Asked to draw the horizon or mark a vanishing point instead, the editor fails, so this knowledge is revealed by painting and not by the explicit tasks we tried. The implicit camera has two priors: roll is pulled towards level (slope 0.71), and telephoto perspective towards a default of about 30 mm, which roughly matches the camera the models paint without any scene. For Qwen, the priors do not grow when blur removes four fifths of the line evidence. They are stronger on real photographs, and on NYUv2 a shorter wording of the task removes the difference for roll. On photographs from a 24--240 mm zoom lens the painted perspective grows with only 0.62 of the lens's slope, while GeoCalib and MoGe-2 saturate at about 52 and 42 mm. FLUX.1 Kontext and LongCat-Image-Edit are pulled much harder. Finally, from a level camera a camera-control LoRA executes pose commands at only 50--70% of their strength, and a board painted into its output agrees with the camera it produced.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

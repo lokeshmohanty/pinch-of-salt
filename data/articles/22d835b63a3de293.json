@@ -1,0 +1,13 @@
+{
+  "id": "22d835b63a3de293",
+  "title": "UHR-Micro: Diagnosing and Mitigating the Resolution Illusion in Earth Observation VLMs",
+  "link": "https://arxiv.org/abs/2605.12237",
+  "description": "arXiv:2605.12237v2 Announce Type: replace \nAbstract: Vision-Language Models (VLMs) are increasingly used to analyze ultra-high-resolution (UHR) Earth observation imagery, yet they face a severe scale mismatch between broad scene context and micro-scale targets. We refer to this phenomenon as a \"resolution illusion\": higher input resolution provides access to more visual detail, but does not necessarily translate into reliable perception of task-relevant micro-evidence. To benchmark this challenge, we introduce UHR-Micro, a benchmark comprising 11,072 instructions grounded in 1,212 UHR images, designed to evaluate VLMs on micro-scale evidence in native-resolution Earth observation imagery. UHR-Micro spans diverse target scales, task families, and visual conditions, with each sample having an objectively verifiable target. Experiments with representative high-resolution VLMs show substantial failures in localizing and interpreting task-relevant evidence, despite access to high-resolution inputs. Further analysis shows that model scaling alone is insufficient, while localized evidence substantially improves performance, pointing to evidence access as a major bottleneck. Motivated by this finding, we propose Micro-evidence Active Perception (MAP), which constructs a spatially grounded evidence state from localized observations and supplements it when the current evidence is insufficient. Across two backbone VLMs, MAP improves UHR-Micro performance by 8.65 percentage points on average. UHR-Micro and MAP provide a framework for diagnosing and improving high-resolution reasoning in Earth observation VLMs. Datasets and source code were released at https://github.com/MiliLab/UHR-Micro.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1b364fd4aa5553db",
+  "title": "Mutually Adversarial Self-Training with Evolving Data for Unified Multimodal Models",
+  "link": "https://arxiv.org/abs/2609.36224",
+  "description": "arXiv:2609.36224v1 Announce Type: cross \nAbstract: Unified multimodal models (UMMs) combine image generation and visual understanding in a shared backbone. Since generation and understanding are inverse tasks, recent studies self-train UMMs by letting the two branches cooperatively supervise each other. We introduce MATE (Mutually Adversarial self-Training with Evolving data), a reinforcement-learning-based post-training framework in which the two branches instead challenge each other, and the challenges evolve as the model trains. MATE lets generation and understanding take turns to be challenger and solver. Given an image, the understanding branch proposes several candidate descriptions that the generation branch must turn back into similar images, and vice versa. The candidates are screened for consistency with the image or prompt they were proposed from, and the solver is trained on the candidate it handles worst. The adversary thus comes from the model's own outputs, and no separate adversary is trained. Moreover, the candidates that defeat one branch become the sources of the next challenges to the other in the next epoch, which keeps the challenges evolving with the model and turns the training into self-play in data space. On Janus-Pro-1B, MATE improves GenEval by 2.4 points, DPG-Bench by 1.7 points, and the average over nine understanding benchmarks by 0.7 points, while strengthening consistency across repeated image-text cycles.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

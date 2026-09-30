@@ -1,0 +1,13 @@
+{
+  "id": "e9161041c409eabc",
+  "title": "SCCM: Spherically Consistent Coarse Matching for ERP Dense Feature Correspondence",
+  "link": "https://arxiv.org/abs/2609.36545",
+  "description": "arXiv:2609.36545v1 Announce Type: new \nAbstract: Equirectangular projection (ERP) is the standard representation for 360$^\\circ$ imagery, and robust dense feature matching on ERP underpins panoramic stereo, view synthesis, and omnidirectional SLAM. Dense matchers trained on flat images degrade systematically on ERP because the chart introduces three coupled distortions -- topological, metric, and area -- that standard coarse matching and visibility estimation do not explicitly model. We show that correcting the three distortions at the coarse-stage interfaces where they arise -- pairwise distortions in attention, per-pixel distortion in covisibility gating -- improves PCK@$1^\\circ$ from 0.229 to 0.275 on Matterport3D under a fixed coarse scaffold, with the refiner architecture unchanged -- our central result. Concretely, SCCM (Spherically Consistent Coarse Matching) augments a chart-naive cross-attention/dual-softmax coarse matcher with two sphere-derived priors: Spherical Positional Attention (SPA) pairs a yaw-periodic RoPE (topology) with a tangent-plane bias (metric), and Area-Aware Covisibility (AAC) applies a pre-sigmoid log-area correction (area). The chart-naive scaffold serves as a controlled reference, separating the scaffold-replacement effect from the spherical-prior effect. Instantiated in the RoMa V1 framework with the same frozen encoder, refiner architecture, and loss, SCCM also outperforms the ERP-native EDM (0.163) and an ERP-retrained RoMa V1 (0.198) under a unified ERP dense matching protocol, while perspective-trained matchers largely fail on ERP. It further transfers zero-shot to Stanford2D3D and, when trained on outdoor Holo360D, leads there as well.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

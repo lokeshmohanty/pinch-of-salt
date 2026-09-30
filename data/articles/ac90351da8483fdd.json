@@ -1,0 +1,13 @@
+{
+  "id": "ac90351da8483fdd",
+  "title": "PGL-3D: Towards Progressive Geometric Learning for 3D Visual Query Localization",
+  "link": "https://arxiv.org/abs/2609.33558",
+  "description": "arXiv:2609.33558v2 Announce Type: replace \nAbstract: 3D Visual Query Localization (3DVQL) retrieves the latest contiguous occurrence of a queried object in an RGB--point-cloud sequence and predicts a 9-DoF cuboid for every response frame. The query is captured independently of the search sequence, so its annotated pose may differ from how the object appears in the search frames. The benchmark baseline predicts cuboids after feature modeling, leaving their geometry unused for subsequent feature refinement. We investigate whether complete intermediate cuboids can improve query and proposal representations before final decoding. We introduce Progressive Geometric Learning for 3DVQL (PGL-3D), a predict--select--refine--re-predict framework that uses intermediate cuboids to guide the aggregation of search evidence and update query and proposal representations. A shared head first predicts a complete cuboid for every proposal. Query--Tube--Memory (QTM) then selects reference observations by combining proposal association, cuboid quality, frame response, and target absence, since association confidence alone establishes neither target presence nor geometric accuracy. The center, size, and orientation of each selected cuboid define soft pooling weights over query-conditioned proposal features. The pooled memory updates the query and proposal representations, and the head re-predicts from the updated features. A training-only objective, ST-D9O, supervises cuboid geometry at every stage by adding boundary, signed-distance, and soft-overlap terms to parameter regression. PGL-3D achieves a mean stAP of $0.270 \\pm 0.004$ on 3DVQL, compared with $0.044$ reported for LaF. Ablations support the benefits of geometry-guided feature updates, while stage-wise analyses show improved cuboid accuracy. Replacing the geometry objective in our PROT3D reproduction with ST-D9O improves mAO on GSOT3D from $21.63\\%$ to $25.78\\%$. Our code and models will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
