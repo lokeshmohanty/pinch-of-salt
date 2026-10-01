@@ -1,0 +1,16 @@
+{
+  "id": "80b2fec4b1002d88",
+  "title": "EHR2Trace: Auditable EHR Data Infrastructure for Patient World Models and Clinical Agents",
+  "link": "https://arxiv.org/abs/2609.38193",
+  "description": "arXiv:2609.38193v1 Announce Type: cross \nAbstract: Patient world models and clinical agents aim to predict changes in patients' health and support clinical work. Developing these systems requires reliable histories of patient conditions, treatments, and the information available at each decision. Electronic health records (EHRs) contain these histories, but differences in how events are recorded make them difficult to use consistently. We present EHR2Trace, a system that converts EHRs from different sources into traceable patient events for model training and evaluation. It links events to source records, separates event time from information availability, and distinguishes medication orders, dispensing, and administration. A shared event representation supports both OMOP and MEDS exports, with automated validation and reproducible builds. Across three clinical datasets, EHR2Trace converted 846.4 million events, with every applicable check passing except one unit-consistency check on MIMIC-IV, and detected all 28 injected faults. A controlled prediction experiment showed that assigning later diagnoses to admission time substantially inflated measured performance, and that a model trained on such data lost accuracy when deployed on histories filtered by availability. EHR2Trace provides a reusable data foundation for patient world models and clinical agents, helping researchers inspect patient histories, check conversion decisions, and evaluate models with explicit data rules.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.DB",
+    "q-bio.QM"
+  ]
+}

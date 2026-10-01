@@ -1,0 +1,13 @@
+{
+  "id": "b3ef20e1c1a837e2",
+  "title": "Frame Differential On-Policy Self-Distillation for Video Reasoning",
+  "link": "https://arxiv.org/abs/2609.39021",
+  "description": "arXiv:2609.39021v1 Announce Type: new \nAbstract: Reinforcement learning (RL) has substantially improved the reasoning ability of multimodal language models through verifiable rewards and increasingly fine-grainedvisual or temporal credit assignment. In video reasoning, however, current RL methods typically train with a fixed sparse frame budget: increasing the number of frames makes autoregressive rollouts expensive, while too few frames may miss temporally localized events and fine-grained visual details. We present \\textbf{Frame Differential On-Policy Self-Distillation (FD-OPSD)}, which transfers the useful evidence of dense frame observations to a sparse frame policy during RL training. FD-OPSD compares the policy's token level preferences for the same sampled response under sparse and dense views, and distills the resulting frame differential signal without an external teacher or dense autoregressive rollout. The method preserves sparse-frame rollouts and leaves inference unchanged. Across Qwen2.5-VL-7B and Qwen3-VL-4B on six video reasoning benchmarks, FD-OPSD yields higher overall average performance than the strongest corresponding GRPO, T-GRPO, or Video-KTR baselines across the 16, 32, and 64 frame evaluation settings. These results show that dense visual evidence can be transferred selectively during training through token level self-distillation while retaining sparse frame rollouts and unchanged inference.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

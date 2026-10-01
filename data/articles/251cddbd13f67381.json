@@ -1,0 +1,14 @@
+{
+  "id": "251cddbd13f67381",
+  "title": "ReDiF: Resource-Efficient Few-Step Diffusion Distillation via Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2512.22802",
+  "description": "arXiv:2512.22802v2 Announce Type: replace-cross \nAbstract: Step distillation accelerates diffusion sampling by training a few-step student to imitate a many-step teacher, but distillation itself remains expensive. Typically, this requires thousands of GPU-hours and a large pre-generated trajectory dataset. We introduce ReDiF, which casts step distillation as terminal-reward policy optimization rather than step-wise regression. The student is optimized against a reward computed on the terminal sample, measuring alignment with the teacher's output, instead of matching the teacher's intermediate trajectory under a reconstruction or consistency loss. Because the reward need not be differentiable or trajectory-aligned, ReDiF admits non-differentiable objectives, multi-objective combinations, and preferences the teacher does not express, while exploration lets the student find sampling paths matched to its own step schedule. ReDiF converges in 400 policy updates with 3200 rollouts on a single A100 GPU with 1,000 noise-class pairs and no paired dataset: about 4 GPU-hours, against roughly 336 A100-hours reported for DMD2 on the same EDM teacher. At 8 steps on ImageNet-64, it achieves an FID 3.64 points better than the strongest retrained distillation baseline in the low-training regime under the same single-GPU budget. The formulation is also orthogonal to existing distillation objectives: added to the DMD2 loss, it further improves DMD2's FID by 4.4.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}
