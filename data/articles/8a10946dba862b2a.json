@@ -1,0 +1,14 @@
+{
+  "id": "8a10946dba862b2a",
+  "title": "OR for AI That Does OR: Routing LLMs up the Escalator inside the OSCAR Framework",
+  "link": "https://arxiv.org/abs/2610.00912",
+  "description": "arXiv:2610.00912v1 Announce Type: new \nAbstract: Large language models can translate business descriptions into optimization models, but executable code may misrepresent constraints or objectives. A solver can then return an optimal solution to the wrong problem. Even when the solution satisfies the intended operating rules, a better plan may exist. For organizations that repeatedly use optimization modeling, an LLM-based framework should produce accurate formulations at low cost and, ideally, run locally. We study how to verify improvements and allocate attempts across LLMs that differ in price and capability. We develop OSCAR (Optimization modeling by Simulator, Coder, And Reviewer), which uses an offline Simulator certified against labeled decision examples to compare candidates and continues searching beyond feasibility. We model the search for the next certified improvement as sequential decisions under unobserved difficulty: which LLMs to call and when to stop. In a simplified known-prior setting, we give conditions under which cost-ordered escalation is optimal. For general menus, we derive a prior-free competitive guarantee. On five benchmark problems, OSCAR achieves 95% to 100% accuracy at the reported settings using two small open-weight LLMs, each deployable locally on a single GPU. Their single-attempt accuracies average 29% and 48%. In five runs per problem, Codex and Claude Code incur average token costs 3.1 and 5.8 times OSCAR's, respectively. OSCAR supports open-weight models locally or in the cloud, depending on budget and confidentiality requirements. Firms should maintain labeled decision examples of feasible and infeasible decisions to clarify plain-language operating rules. OSCAR follows these labels when an LLM's interpretation conflicts with them. As LLM capabilities and prices change, OSCAR's simple operating rules and adjustable settings help firms adapt their model choices and benefit from these advances.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "math.OC"
+  ]
+}

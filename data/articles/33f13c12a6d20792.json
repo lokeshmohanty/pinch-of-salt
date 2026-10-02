@@ -1,0 +1,13 @@
+{
+  "id": "33f13c12a6d20792",
+  "title": "Oneira: From Open-Ended Generation to Open-World Interaction in Video World Models",
+  "link": "https://arxiv.org/abs/2610.01614",
+  "description": "arXiv:2610.01614v1 Announce Type: new \nAbstract: Generative video world models can now synthesize open-ended environments that agents can navigate and interact with in simple ways. Yet open-ended generation does not imply full interaction: as a generated world expands, newly created content through navigation should expand what the agent can act upon, and as the agent changes the world, those changes should become persistent parts of the environment rather than transient visual effects. We characterize these two requirements as Open-World Interactivity, where newly generated or encountered entities are incorporated into the actionable world, and Persistent State, where interaction outcomes are committed to the world state and continue to influence subsequent observations and interactions. We present Oneira, an interactive video world model that closes the loop between generation and interaction through an explicit, extensible world state managed by a coding agent. Given the current observation and an action or high-level goal, the agent reads the world state, grounds the relevant entities, plans the interaction, and writes its outcome back into a world state table. When exploration reveals new objects, the agent incorporates them from generated observations, allowing the interaction space to expand with the generated world. Meanwhile, previously induced state changes are carried across video segments, making the consequences of interaction persistent parts of subsequent world evolution. The updated world state is rendered along the camera action trajectory into a coarse conditioning video, from which a video generator fills in the appearance, motion, and interaction details not represented in the state. Experiments show that Oneira enables direct and consistent interaction with newly generated objects, while preserving the effects of prior interactions over long horizons. Project page: https://madaoer.github.io/projects/oneira",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

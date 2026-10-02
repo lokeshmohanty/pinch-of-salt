@@ -1,0 +1,14 @@
+{
+  "id": "5e68f4695d17ecdf",
+  "title": "Optimal Transport Reweighting for Robust Learning under Spurious Correlations and Label Noise",
+  "link": "https://arxiv.org/abs/2610.01028",
+  "description": "arXiv:2610.01028v1 Announce Type: cross \nAbstract: Machine learning models often suffer performance degradation under subpopulation shift, particularly when spurious correlations cause models to rely on shortcut features that fail to generalize across subgroups. A recent line of work mitigates this issue by using loss-based signals to identify informative samples, but these signals can become severely distorted under label noise: mislabeled samples may also incur large losses and contaminate subsequent reweighting or retraining. Despite its practical importance, this intersection remains largely underexplored. We propose POTER, a reweighting framework based on optimal transport that derives sample importance from the transport geometry between the training distribution and a reference distribution constructed from limited validation group annotations. By measuring alignment at the individual-sample level rather than relying on loss, POTER downweights mislabeled or strongly bias-aligned samples while assigning higher importance to samples better aligned with the reference distribution. In addition, POTER requires only a single ERM training stage, moving beyond the retraining paradigm common in recent work. Across standard benchmarks and noisy-label settings, POTER achieves state-of-the-art worst-group accuracy, including cases where label corruption is concentrated within minority subgroups.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

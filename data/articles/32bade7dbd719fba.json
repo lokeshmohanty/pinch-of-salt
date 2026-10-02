@@ -1,0 +1,15 @@
+{
+  "id": "32bade7dbd719fba",
+  "title": "LensBridge: Frequency-Guided Compound Degradation Adaptation for Lens Aberration Correction and Veiling Glare Removal",
+  "link": "https://arxiv.org/abs/2610.00318",
+  "description": "arXiv:2610.00318v1 Announce Type: cross \nAbstract: Simplified optical systems often exhibit residual lens aberrations and Veiling Glare (VG), resulting in spatially varying blur and contrast reduction. Large-scale Lens Libraries (LensLib) enable reusable aberration correction models by covering diverse Point Spread Functions (PSFs), but their aberration-only training distribution does not include target-specific veiling glare. Extending such foundations to compound degradation is challenging because realistic target-system compound pairs are difficult to obtain. To address this challenge, we propose LensBridge, a two-stage framework that first establishes a reusable aberration correction foundation and then adapts it to compound optical degradation using only a few unpaired target observations. In Stage I, we build a PSF-aware one-step diffusion foundation by constructing discrete degradation priors from LensLib PSFs and learning to retrieve them directly from aberrated images, enabling PSF-aware correction without requiring explicit PSF at inference. In Stage II, we adapt this foundation to compound degradation through frequency-domain guidance. At the data level, Frequency-guided Degradation Completion (FDC) transfers target low-frequency characteristics to LensLib aberrated images while preserving aberration structures to synthesize compound training pairs; at the model level, Frequency-guided Pseudo Decomposition (FPD) forms aberration- and VG-dominant pseudo observations to condition separate adaptation branches. Extensive experiments across multiple optical systems demonstrate that LensBridge effectively extends reusable aberration correction foundations to joint aberration correction and veiling glare removal without target-system paired supervision. All code will be available at https://github.com/XiaolongQian/LensBridge.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "physics.optics"
+  ]
+}

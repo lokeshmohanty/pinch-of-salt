@@ -1,0 +1,14 @@
+{
+  "id": "bd133fa488b7257d",
+  "title": "Signed Lexical Confidence for Risk-Calibrated Intent Routing",
+  "link": "https://arxiv.org/abs/2610.00262",
+  "description": "arXiv:2610.00262v1 Announce Type: cross \nAbstract: Selective intent routing allows an assistant to act on reliable predictions while deferring uncertain requests. Standard confidence scores primarily reflect the base model's representation, leaving an opportunity to incorporate complementary evidence without changing its decisions. We introduce a signed lexical gate that combines a sentence classifier's logit margin with a sparse lexical model's support for the classifier's predicted intent. By assigning positive evidence to lexical agreement and negative evidence to a lexically favored competing intent, the gate retains more information than either unsigned lexical confidence or a hard agreement rule. An independent binomial calibration stage selects an operating threshold for a specified risk target. Across ten runs on BANKING77, CLINC150, and HWU64, the proposed score reduces area under the risk-coverage curve by 15.8%, 15.1%, and 11.8% relative to a learned semantic-only gate. At a nominal 5% error target, it increases accepted coverage by 1.83 and 5.14 percentage points on BANKING77 and HWU64, while CLINC150 is already near full coverage. At a stricter 2% target, the simultaneous binomial procedure yields a nonempty policy in all 30 dataset-run combinations at the available calibration budgets. Matched controls show that the proposed feature improves average error ranking over the tested unsigned lexical-confidence feature, with dataset-dependent gains over binary agreement. The resulting two-feature gate provides a compact, interpretable confidence enhancement for risk-calibrated intent routing while preserving the base classifier's predictions.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

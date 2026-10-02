@@ -1,0 +1,14 @@
+{
+  "id": "0c9206b8a4201c5e",
+  "title": "FedCKA: Representation-Guided Layer Personalization for Federated 3D Perception Across Driving Domains",
+  "link": "https://arxiv.org/abs/2610.01510",
+  "description": "arXiv:2610.01510v1 Announce Type: new \nAbstract: Robust perception in intelligent vehicles demands 3D object detectors that remain dependable under domain shifts, such as changes in time of day, location, or weather. However, due to costly annotation and rare shifts, some environments lack sufficient data to train a standalone detector. Federated learning offers a privacy-preserving framework for collaborative model training, enabling clients to benefit from shared learning across diverse environments. Yet, this framework traditionally relies on a single global consensus model, which struggles to perform across heterogeneous local data distributions. Local conditions are better captured by adapting a subset of the model, but many personalization approaches rely on predefined layer partitions or fixed personalization ratios, thereby limiting adaptation to client-specific divergence. To reduce this rigidity, we propose FedCKA, a Centered Kernel Alignment (CKA)-based strategy that dynamically handles the personalization-globalization trade-off. Specifically, FedCKA computes layer-wise feature similarities between local client models and the global consensus model during training. By converting layer-wise similarity scores into client-specific aggregation masks, FedCKA selectively shares representation-consistent layers. Evaluation on a unified multi-domain benchmark based on nuScenes shows that FedCKA outperforms established federated baselines, including FedBN, FedRep, and FedSelect, improving average NDS by 7 percentage points over the strongest baseline. The findings offer both a comparative benchmark and a promising direction for robust federated 3D perception across shifts in location, weather, and illumination. Code is available at https://github.com/j-verhoog/FedCKA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

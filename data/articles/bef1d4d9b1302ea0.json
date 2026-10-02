@@ -1,0 +1,14 @@
+{
+  "id": "bef1d4d9b1302ea0",
+  "title": "Reshape and Recur: Improving SSMs with Input Reshaping and Depth Recurrence",
+  "link": "https://arxiv.org/abs/2605.16048",
+  "description": "arXiv:2605.16048v2 Announce Type: replace-cross \nAbstract: State Space Models (SSMs) are increasingly deployed in the Edge because they offer, at comparable performance, a smaller memory/training/inference footprint, compared to Large Language Models (LLMs). These three advantages are a direct consequence of the time recurrence inherent in the SSMs architecture. Here, we further improve this recurrent architecture by positively answering two previously underexplored, orthogonal questions: (1) Can we reduce SSMs memory-footprint without any performance penalty, by also employing depth recurrence? (2) Can we increase SSMs performance by using a fixed and consistent time-granularity across all tasks? The first question is somewhat unexpected, given that SSMs are already recurrent. However, the orthogonal depth recurrence further decreases SSMs memory footprint. We show that a looped SSM with $k$ parameters adaptively iterated $M$ times, achieves a performance comparable to a standard SSM with $k \\cdot L$ independent parameters, where $M \\leq L$. The second question is also unexpected given the time-recurrent nature of the SSMs architecture. However, it makes perfect sense for the time-parallel training of SSMs on the entire input sequence. We show that concatenating time steps for lower-dimensional sequence elements, or flattening and re-chunking the joint feature-time dimension for high-dimensional ones, can improve the baseline by enhancing the way information is presented to the model. Our results for both extensions lead to consistent benefits across four representative SSM architectures: LRU, S5, LinOSS, LrcSSM.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

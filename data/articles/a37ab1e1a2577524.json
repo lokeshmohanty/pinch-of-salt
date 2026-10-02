@@ -1,0 +1,13 @@
+{
+  "id": "a37ab1e1a2577524",
+  "title": "The COTe score: A decomposable framework for evaluating Document Layout Analysis models",
+  "link": "https://arxiv.org/abs/2603.12718",
+  "description": "arXiv:2603.12718v3 Announce Type: replace \nAbstract: Document Layout Analysis (DLA) is the process by which a page is parsed into meaningful elements, often using machine learning models. Typically, the quality of a model is judged using general machine vision metrics such as IoU, F1 or mAP. However, these metrics are designed for images that are 2D projections of 3D space, not for the natively 2D imagery of printed media. This discrepancy can result in misleading or uninformative interpretation of model performance. To encourage more robust, comparable, and nuanced DLA, we introduce: The Structural Semantic Unit (SSU), a relational labelling approach that shifts the focus from the physical to the semantic structure of the content; and the Coverage, Overlap, Trespass, and Excess (COTe) score, a decomposable metric for measuring page parsing quality. We demonstrate the value of these methods through case studies and by evaluating 5 common DLA models on 3 DLA datasets. We show that the COTe score is more informative than traditional metrics and reveals distinct failure modes across models, such as breaching semantic boundaries or repeatedly parsing the same region. We find that, under granularity differences between model and ground truth, the COTe score is substantially more robust than the F1. Even in the worst case, comparing character-level predictions against paragraph-level ground truth with otherwise perfect parsing, COTe returns 0.68 where F1 returns 0. Notably, we find that, on real datasets, the COTe's granularity robustness largely holds even without explicit SSU labelling, reducing the barrier to entry. Finally, we release an SSU labelled dataset and a Python library for applying COTe in DLA projects.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

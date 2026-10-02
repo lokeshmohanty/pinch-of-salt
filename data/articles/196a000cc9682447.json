@@ -1,0 +1,14 @@
+{
+  "id": "196a000cc9682447",
+  "title": "ReForge: Refining Merged Models with Anchor-Regularized Regression",
+  "link": "https://arxiv.org/abs/2605.12843",
+  "description": "arXiv:2605.12843v2 Announce Type: replace-cross \nAbstract: Model merging aims to combine multiple task-specific expert models into a single model without joint retraining, offering a practical alternative to multi-task learning when data access or computational budget is limited. Existing model merging methods rarely exploit strong merged models as priors for further improvement. To address this limitation, we propose ReForge, a bilevel optimization framework that formulates module-wise refinement as Bayesian linear regression with an anchor-centered prior. The inner level yields a closed-form MAP estimate from unlabeled calibration activations. The outer level uses Bayesian optimization to jointly select heterogeneous regularization strengths and assembly scales using held-out validation data. Furthermore, we develop a data-free variant of ReForge that replaces activation statistics with task-vector Grams, eliminating the need for calibration examples. Across extensive benchmarks, including up to 20-task merging in vision and 5-task merging in language, ReForge consistently outperforms all evaluated plug-and-play anchor baselines (e.g., TA, WUDI-Merging, and TSV). On 20-task ViT-B/32, ReForge improves the strongest evaluated baseline, ISO-CTS, from 77.6% to 82.8% in the data-assisted setting and to 81.5% in the data-free setting. On eight-task ViT-L/14, the data-assisted variant achieves 95.1% mean accuracy, compared with 95.8% for the individual task experts. Our source code will be released soon.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

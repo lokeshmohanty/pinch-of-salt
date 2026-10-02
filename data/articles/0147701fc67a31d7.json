@@ -1,0 +1,13 @@
+{
+  "id": "0147701fc67a31d7",
+  "title": "FloodDiffusion 2: Efficient and Path Controllable Streaming Motion Generation",
+  "link": "https://arxiv.org/abs/2609.33167",
+  "description": "arXiv:2609.33167v2 Announce Type: replace \nAbstract: We present FloodDiffusion 2 (FD2), an efficient and controllable framework that builds upon FloodDiffusion (FD1), a state-of-the-art streaming motion generation model. While FD1 produces plausible motion, it suffers from low efficiency and limited controllability, as its attention design requires repeated computation over the entire history, and it lacks precise trajectory control for real-world applications. To address these limitations and improve generation quality, FD2 introduces three advances. First, Partial Attention makes finalized history representations independent of the active window, enabling KV-cached inference and shared-history packing for efficient training. Second, we establish a necessary-and-sufficient Bregman criterion for regression losses to preserve diffusion's conditional-mean velocity field. This criterion guides an FK-induced quadratic loss that incorporates motion geometry without online FK evaluation. Third, FD2 introduces precise path conditioning to control the character's root trajectory while preserving natural body motion. Experiments show that FD2 reduces training computation by 4.6$\\times$ and accelerates denoising by 11.29$\\times$, reaching 2.303 ms per update on long sequences. Alongside these efficiency gains, FD2 improves motion quality over FD1 and achieves state-of-the-art FID scores among streaming methods, with 0.048 on SEED and 0.053 on HumanML3D.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

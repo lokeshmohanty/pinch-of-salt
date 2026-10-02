@@ -1,0 +1,14 @@
+{
+  "id": "47a7e31abbac55c8",
+  "title": "Right In-Place (RiP) Convolution: A Simple, General, and Near-Optimal Strategy for Memory-Efficient CNN Inference",
+  "link": "https://arxiv.org/abs/2610.00586",
+  "description": "arXiv:2610.00586v1 Announce Type: cross \nAbstract: Activation memory, not compute, limits CNN inference on constrained hardware such as microcontrollers. Direct in-place convolution removes the dual-buffer cost, but the memory-optimal formulation of Gural and Murmann assumes valid padding, unit stride, unit dilation, and odd square kernels, and needs a non-sequential traversal costing $2\\times$ inference time in transposes. We identify two regimes in which their published closed form does not hold: (1) an under-allocation of exactly $(k-1)C_{in} \\bmod (C_{out}-C_{in})$ scalars, active on every convolutional layer of their own deployed network and manifesting as a silent corruption of still-live input; (2) an unbounded overestimate, up to $2{,}432\\times$, once the critical leg leaves the output grid. We correct both and generalize to arbitrary stride, dilation, padding, and rectangular kernels. We then propose Right In-Place (RiP) convolution, a bit-identical operation in which every layer reads its input right-aligned in a shared workspace and writes its output left-aligned from index zero. The debt is piecewise affine in the output pixel index, so evaluating its breakpoints in $O(1)$ yields the minimum safe gap without enumerating the output grid, with row-major access preserved. Across $10{,}000$ random layers RiP produced no corruption, and across 84 convolutional layers from 25 architectures it matches the herringbone workspace exactly on 58 and within 5% on 81, using 24.8% less memory than dual buffering on average. Written into TinyEngine's kernels and deployed to a Raspberry Pi Pico 1 and Pico 2, it cuts peak activation memory across eleven MCUNet models by 12.5 to 33.3% at unchanged cycle counts and bit-identical outputs, raising the number of models that fit the Pico 1's 256 KB SRAM from six to nine.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

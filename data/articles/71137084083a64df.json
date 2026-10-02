@@ -1,0 +1,14 @@
+{
+  "id": "71137084083a64df",
+  "title": "Curvature Under Attack in hZACH-ViT: Gauge Symmetry, Boundary Saturation, and Adversarial Failure",
+  "link": "https://arxiv.org/abs/2610.00680",
+  "description": "arXiv:2610.00680v1 Announce Type: cross \nAbstract: Curvature is often treated as an intrinsic property of a representation, although its empirical effect also depends on coordinate scale, learned logit temperature, and numerical safeguards. We study this interaction in hZACH-ViT, a compact Vision Transformer with Euclidean, Poincare, and spherical prototype heads. The backbone architecture, seed-specific initialization, 50-per-class training subset, and optimization protocol are matched across three MedMNIST datasets and five seeds. At the fixed comparison curvature $c=1$, Poincare has the lowest class-macro PGD attack-success rate in all 12 dataset-budget cells and under a stronger CE+DLR multi-restart attack on all three datasets, but it also has the lowest clean MacroF1. An end-to-end curvature intervention changes the interpretation. Reducing Poincare curvature to $c=0.1$ improves clean MacroF1 in every one of the 15 paired seed-dataset comparisons and removes hard boundary clipping, yet on OrganAMNIST it increases strong attack success from $89.7\\%$ to $99.3\\%$ (paired difference $+9.57$ points; 95\\% hierarchical bootstrap CI $[+5.52,+14.03]$). At $c=1$, $40$-$47\\%$ of clean Poincare features are hard-clipped, the radial Jacobian of the inherited map is nearly zero, and dimensionless attack trajectories are unusually long and inefficient. The spherical head provides a control: its curvature change is an exact scale gauge to floating-point precision and produces much smaller attack differences. These results do not establish intrinsic hyperbolic robustness. They identify an implementation-sensitive regime in which curvature, scale, and proximity to the Poincare boundary jointly organize clean recognition and adversarial representation motion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}
