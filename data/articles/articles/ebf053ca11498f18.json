@@ -1,0 +1,13 @@
+{
+  "id": "ebf053ca11498f18",
+  "title": "Depth Anything in $360^\\circ$: Towards Scale Invariance in the Wild",
+  "link": "https://arxiv.org/abs/2512.22819",
+  "description": "arXiv:2512.22819v2 Announce Type: replace \nAbstract: Panoramic depth estimation captures the complete 360$^\\circ$ scene geometry, being essential for robotics and AR/VR applications. While perspective depth models have achieved remarkable zero-shot generalization via large-scale training, panoramic methods lag behind, especially for open-world scenes, due to data scarcity. To bridge this gap, we introduce DA360, a panoramic-adapted version of Depth Anything V2. Our key insight is that the base DAV2 model, trained on perspective images to predict affine-invariant disparity, already exhibits good zero-shot performance on panoramas. Building on this, we design a lightweight adaptation framework that (i) learns a per-image shift from the ViT class token with scale-invariant supervision, transforming affine-invariant disparity into scale-invariant disparity that directly yields well-formed 3D point clouds, and (ii) integrates circular padding into the DPT decoder to eliminate seam artifacts, ensuring spatial coherence. Fine-tuned on a combination of synthetic indoor and outdoor panoramic data, DA360 is evaluated on standard real-world indoor benchmarks and our newly curated outdoor dataset, Metropolis. Results show that DA360 not only outperforms the original DAV2 by over 50\\% and 12\\% relative error reduction indoors and outdoors, but also surpasses prior specialized methods like PanDA by about 25--35\\% across all tests, establishing state-of-the-art zero-shot panoramic depth estimation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "b8bc289966838c02",
+  "title": "RED: Reconstruction Evolution Dynamics for Generalizable AI-Generated Image Detection",
+  "link": "https://arxiv.org/abs/2609.36822",
+  "description": "arXiv:2609.36822v1 Announce Type: new \nAbstract: The rapid evolution of image generators calls for forensic cues that generalize beyond known generation mechanisms. Existing detectors often rely on static image representations or endpoint reconstruction discrepancies, leaving the evolution of intermediate reconstruction stages underexplored. We observe that the relative token predictability of real and generated images can reverse across reconstruction scales, suggesting that intermediate stages may expose forensic evidence overlooked by endpoint comparisons. Motivated by this observation, we propose RED (Reconstruction Evolution Dynamics), a framework that captures transferable forensic cues from coarse-to-fine reconstruction evolution. To our knowledge, RED is the first framework to use scale-wise token predictability to guide forensic evidence aggregation across intermediate reconstruction states. It represents the reconstruction trajectory produced by a frozen multiscale VQ-VAE in the shared feature space of a frozen CLIP encoder. To connect the observed predictability variations with visual evidence, RED learns image-adaptive stage weights from scale-wise token negative log-likelihoods provided by a frozen VAR model. A cross-stage evidence aggregation module then jointly models the original-image representation and the weighted reconstruction features, capturing complementary forensic cues through interactions along the reconstruction trajectory. Experiments on six diverse benchmarks demonstrate that RED achieves the highest average accuracy of 92.5\\% and average precision of 97.5\\% among the evaluated methods. Further evaluations show strong robustness to common image degradations, supporting the value of reconstruction evolution for generalizable AI-generated image detection. The code will be made publicly available upon acceptance of this paper.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ec8af32428524dd3",
+  "title": "Improving Clinical Target Volume Segmentation Accuracy using Anatomical Priors and Active Learning for the AGITG TOPGEAR Clinical Trial",
+  "link": "https://arxiv.org/abs/2609.03186",
+  "description": "arXiv:2609.03186v1 Announce Type: cross \nAbstract: Training deep learning-based medical image segmentation models is challenging with limited curated datasets. For AGITG TOPGEAR, a gastric cancer trial, the Clinical Target Volume (CTV) is complex and defined by multiple anatomical landmarks, making upfront training data preparation difficult for an automated contour QA segmentation model. We investigate anatomical priors, derived from surrounding organ segmentations, to provide spatial context and improve TOPGEAR CTV segmentation accuracy. We also evaluate active learning, iteratively expanding the training dataset by selecting cases expected to improve performance.\n  One hundred TOPGEAR CT scans were retrospectively analyzed. An initial set of 10 expert-contoured cases was used to train an nnU-Net model. TotalSegmentator generated a voxel-wise anatomical prior map from surrounding structures as an additional input channel. Active learning was simulated over four iterations, selecting cases by model uncertainty and segmentation performance. All models used five-fold cross-validation for an ensemble uncertainty measure. Evaluation used a hold-out testing set of 50 cases.\n  The anatomical prior improved CTV segmentation accuracy, increasing mean Dice Similarity Coefficient (DSC) from 0.84 to 0.86. Active learning similarly improved performance to 0.86, with greatest benefit in the final round. Combining the anatomical prior with active learning achieved the highest accuracy, with a DSC of 0.87. Model uncertainty correlated with DSC, supporting its use in identifying suboptimal predictions and guiding active learning.\n  Anatomical priors and active learning each improved CTV segmentation accuracy and generalizability, with their combination achieving the best performance, supporting integration into segmentation model development for automated contour QA in radiotherapy clinical trials.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.med-ph",
+    "cs.CV"
+  ]
+}

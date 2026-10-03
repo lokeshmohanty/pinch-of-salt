@@ -1,0 +1,14 @@
+{
+  "id": "41b19547bb778a5e",
+  "title": "Reliability Testing of Medical Model Performance under Distributed Deployment",
+  "link": "https://arxiv.org/abs/2609.36525",
+  "description": "arXiv:2609.36525v1 Announce Type: cross \nAbstract: Distributed inference has become an indispensable part of deploying medical models under practical latency, memory, and throughput constraints. Although modern frameworks improve serving efficiency through tensor parallelism, mixed precision, kernel fusion, and multi-device communication, they are generally assumed to preserve the behavior observed during centralized HuggingFace evaluation. This assumption creates an evaluation-deployment mismatch: a model may pass offline evaluation but produce a different output after the execution stack changes. To address this mismatch, we propose a testing framework and an improved, distributed-execution-sensitive medical-model benchmark that evaluates the same checkpoint and input under a centralized HuggingFace reference and matched distributed deployments. Extensive experiments across language, vision, and multimodal medical models show that execution changes can produce measurable output disagreements. Across supported visual settings, the test success rate ranges from 0.21 to 0.43 for single-modality models and from 0.32 to 0.98 for multimodal models. The benchmark is aimed at extending medical-model evaluation from capability and security to evaluation-deployment consistency.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.AI"
+  ]
+}

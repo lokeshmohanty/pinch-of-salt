@@ -1,0 +1,14 @@
+{
+  "id": "99bcc100f872832e",
+  "title": "Efficient Nash Equilibrium Computation for Cybersecurity Games",
+  "link": "https://arxiv.org/abs/2609.19399",
+  "description": "arXiv:2609.19399v1 Announce Type: cross \nAbstract: Computing Nash equilibria of simulation-based cybersecurity games with policy-space response oracles (PSRO) is bottlenecked by payoff estimation: every payoff-matrix entry costs Monte-Carlo rollouts of a slow simulator, while policies and restricted-game solves are cheap. We introduce Regret-Weighted Payoff Sampling (RWPS), a budgeted estimator that simulates only the cells an equilibrium is sensitive to and fills the rest with a surrogate trained on every entry simulated earlier in the run. The sup-norm error bound cannot evaluate such an estimator, because it is set by the cells left deliberately inaccurate. We prove an instance-dependent bound that weights error by the opponent's equilibrium mixture, a certificate computable from simulation data alone, and a coverage result showing that once the deviation-relevant set is simulated, surrogate error cannot affect either player's regret. On three 21x21 general-sum games, two synthetic and an asymmetric Colonel Blotto, the refined bounds are four to six times tighter on the estimator's own output, and the coverage result predicts in advance which games are cheap: 18% of the matrix for small-support games against 82% for Blotto. In growing-pool PSRO, RWPS reaches lower exploitability than minimum-regret-first search, information-gain search, and progressive sampling at a matched budget, and on the CyGym and ANSG cyber simulators it is lowest at the smallest budgets.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GT",
+    "cs.AI"
+  ]
+}

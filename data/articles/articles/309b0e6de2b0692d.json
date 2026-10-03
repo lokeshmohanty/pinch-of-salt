@@ -1,0 +1,13 @@
+{
+  "id": "309b0e6de2b0692d",
+  "title": "Astrolabe: Spherical-Map Guidance Across Diffusion Pipelines for Full-Body Capture from Unconstrained Images",
+  "link": "https://arxiv.org/abs/2608.01276",
+  "description": "arXiv:2608.01276v1 Announce Type: new \nAbstract: Full-body capture from unconstrained photographs requires global correspondence across arbitrary views, poses, crops, and occlusions. Yet pose, geometry, and foundation features estimated in this setting are too unreliable for dense matching or appearance transfer, while diffusion rectifiers and optimization pipelines expose no common interface for consuming such uncertain correspondence. Our insight is that correspondence need not be locally accurate: its coarse viewpoint and body layout can still organize how a diffusion prior adapts and guides reconstruction. We introduce \\emph{Astrolabe}, a host-portable adapter built on frozen viewpoint-guided spherical maps (SPH). A fixed bounded transform converts SPH into a spatial noise shift, which is matched during prior adaptation and reused during downstream denoising or score-distillation guidance in both pipeline categories. When a rectifier exposes a reference router, the same target/reference SPH additionally supplies coarse compatibility scores to select native appearance features; router-free optimization uses only the shared shift path. Astrolabe therefore follows one SPH--shift--adapt--guide process without dense warping or a learned control branch. Across Puzzle-IOI and 4D-Dress, it improves all reported image metrics in both hosts and all paired Puzzle-IOI geometry metrics; image gains extend to rear views, while 4D-Dress geometry remains stable overall.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

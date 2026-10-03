@@ -1,0 +1,14 @@
+{
+  "id": "926d37aaec8e73f4",
+  "title": "Lesion-Gated Hybrid Synthesis for Virtual Contrast-Enhanced Breast MRI: A MAMA-SYNTH Challenge Solution",
+  "link": "https://arxiv.org/abs/2609.22397",
+  "description": "arXiv:2609.22397v1 Announce Type: cross \nAbstract: Purpose: Contrast-enhanced breast MRI depends on intravenous gadolinium-based contrast agents, motivating methods that synthesise post-contrast appearance from pre-contrast images alone. The MAMA-SYNTH Challenge (MICCAI 2026 Deep-Breath Workshop) evaluates such synthesis across four metric groups: image fidelity, tumour region of interest, downstream classification, and downstream segmentation. The four group ranks are averaged, so optimising a single objective is insufficient.\n  Materials and Methods: We developed a lesion-gated hybrid synthesis pipeline. A lesion probability map, estimated from the pre-contrast slice alone by an ensemble of pre-contrast-only segmentation networks, spatially coordinates a tumour-focused regression pathway and a background-focused Pix2PixHD synthesis pathway, followed by a region-dependent calibration of the predicted enhancement. Training used the public MAMA-MIA collection with a patient-level split. Inference consumes a single pre-contrast 2D slice, with no mask, no post-contrast image, and no auxiliary metadata beyond image geometry.\n  Results: On internal validation (n = 120 patients) the method reached MSE 0.523, LPIPS 0.185, and tumour-region SSIM 0.495. It was submitted to the hidden external 300-case test cohort as a self-contained inference container. The method ranked sixth in the official MAMA-SYNTH Challenge leaderboard.\n  Conclusion: A test-compatible lesion probability map derived from the pre-contrast image can coordinate complementary tumour-focused regression and background-focused perceptual synthesis, enabling balanced virtual contrast enhancement under a multi-metric challenge setting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

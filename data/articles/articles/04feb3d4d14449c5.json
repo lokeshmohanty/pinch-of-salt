@@ -1,0 +1,13 @@
+{
+  "id": "04feb3d4d14449c5",
+  "title": "Comparative Approaches to Agent Retrieval over Large Skill Libraries",
+  "link": "https://arxiv.org/abs/2608.06196",
+  "description": "arXiv:2608.06196v1 Announce Type: new \nAbstract: Agents backed by large skill libraries must decide which skills to load and in what order. Loading the entire library into context is expensive and provides no structure for autonomous sequencing. We study two systems for this problem over a corpus of 690 skills: a hybrid ranker combining lexical and dense-embedding retrieval for sparse, on-demand loading, and a typed knowledge graph encoding workflow relations such as prerequisites, data flow, and ordering. On a set of 117 realistic, non-echoing queries, the hybrid ranker retrieves the correct skill within the top five in 73.5% +/- 8.0 of cases, leaving roughly a quarter of queries unserved. When used as the design intended (substituting graph neighbours for additional ranked results at matched token budget), the graph is significantly worse (-11.2 points, p = 0.0007). Its LLM-generated edge layer adds nothing over neighbours obtained free from a local embedding pass, and 73% of the queries the ranker misses are not reachable through the graph at all. We attribute this to a pre-filter topology bound. Because the graph's candidate edges are drawn from the same embedding neighbourhood the ranker already searches, 98.6% of typed edges connect skills the ranker had already surfaced together. The graph can enrich relation semantics but cannot extend retrieval reach. We further show that evaluating on author-written queries overstates hit@5 by up to 44 points, which would have hidden these results entirely. Our contribution is a mechanistic account of why added structure does not improve retrieval over a strong ranker, and identify the conditions under which adding structural interdependence into the retrieval is optimal.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

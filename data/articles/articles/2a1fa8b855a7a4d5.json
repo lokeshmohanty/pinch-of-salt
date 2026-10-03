@@ -1,0 +1,13 @@
+{
+  "id": "2a1fa8b855a7a4d5",
+  "title": "Structure-Detail Decoupled Autoregressive Generation for Fast and High-Fidelity Virtual Try-On",
+  "link": "https://arxiv.org/abs/2607.11233",
+  "description": "arXiv:2607.11233v1 Announce Type: new \nAbstract: Virtual try-on (VTON) is a bi-conditional image generation problem that requires not only accurate person preservation but also faithful garment deformation and detail synthesis. Diffusion-based VTON methods can jointly model these factors in a compressed latent space, but suffer from high-frequency detail loss due to inherent latent compression, even with costly multi-step denoising. Recent visual autoregressive (VAR) models offer a promising alternative for high-quality generation with faster inference, yet remain unexplored for VTON due to the lack of effective bi-conditioning mechanisms. To bridge this gap, we first introduce VAR-VTON, a VAR-based VTON model that incorporates garment conditioning and structural guidance for efficient latent-space VTON. Despite its efficacy, latent-space generation still struggles to preserve fine-grained garment details. We argue that different VTON sub-tasks should be addressed in different representation spaces: structural synthesis such as garment warping and person layout is suited to the latent space, whereas fine-grained detail recovery should be tackled in the pixel space. Motivated by this insight, we further propose STAR-VTON, a Two-Stage AutoRegressive framework that builds upon VAR-VTON by decoupling latent-space structural synthesis from pixel-space detail recovery. Our idea is to resort to a matching-informed refiner to establish dense correspondences between the stage-one generation and the source garment to directly map fine-grained pixel-space details. Extensive experiments show that STAR-VTON achieves an impressive efficiency-fidelity trade-off: VAR-VTON runs at least $4\\times$ faster than diffusion-based counterparts without degrading quality, and the pixel-space refiner effectively restores fine details and acts as a plug-and-play module that can benefit existing VTON approaches.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

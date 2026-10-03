@@ -1,0 +1,13 @@
+{
+  "id": "6ef4f013c58079ed",
+  "title": "MoCRA: Mixture of Compositional Rank-1 Atoms for 4K All-in-One Video Restoration",
+  "link": "https://arxiv.org/abs/2608.01829",
+  "description": "arXiv:2608.01829v1 Announce Type: new \nAbstract: Real-world video arrives hazy, rainy, dark, or noisy, and a deployable restorer faces three demands at once: no degradation label, native 4K output, and stability in playback. Existing methods answer them separately and break on the joint problem, because per-frame degradation readings flip between frames, downsampled proxies erase the rain and noise they are meant to remove, and dense temporal alignment does not fit 4K memory. No paired benchmark even poses that problem, so we build one. UHV-4K-AIO renders physically modeled haze, rain, sensor noise, and low light over the same 100 clean 4K clips with shared depth and motion, and its construction exposes the split MoCRA is built on: haze and low light survive aggressive downsampling, while rain and noise exist only at native scale. Band-matched compositional conditioning follows, spending conditioning capacity, computation, and supervision in the band where each degradation lives. One dictionary of rank-1 atoms, recomposed sparsely per frame, conditions both a once-per-clip coarse branch and a shallow native-resolution refiner, in 3.6M parameters and with no optical flow. Trained once for all four tasks, MoCRA takes the best task-mean PSNR of eleven retrained image and video baselines, holds warping error at the level of the flow-based video models while never estimating motion, and restores native 4K in under half a second, against 1.7 seconds for the fastest baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

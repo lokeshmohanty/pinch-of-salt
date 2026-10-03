@@ -1,0 +1,13 @@
+{
+  "id": "597e646e926a67d2",
+  "title": "The Geometric Observability Index: Influence, Fisher Information, and Weak Observability in $\\SE$ Pose Estimation",
+  "link": "https://arxiv.org/abs/2602.05582",
+  "description": "arXiv:2602.05582v3 Announce Type: replace \nAbstract: We introduce the Geometric Observability Index (GOI), a per-feature sensitivity measure for pose estimation on SE(3): the metric norm of the pose perturbation that a single measurement induces through the (possibly rank-deficient) Gauss-Newton curvature, restricted to the observable subspace. We prove that GOI equals the norm of the M-estimator influence function, that the underlying curvature operator coincides with the Fisher information, and that its smallest observable eigenvalue governs both the worst-case amplification of a measurement's effect and a finite-sample stability radius O(sigma/sqrt(n*lambda_min)). Operationally the theory cuts both ways. GOI is the exact per-measurement attribution, predicting the true leave-one-out pose shift with log-correlation r = 1.00; yet the influence standardized by its inlier null covariance collapses exactly to the classical chi-square residual statistic. Residual gating is thus the leverage-corrected influence test -- a first-principles explanation of its robustness -- while raw-influence gating conflates a measurement's information with its harm and is predicted to over-reject high-leverage inliers in weakly observable geometry. Controlled synthetic experiments validate every quantitative claim, and studies on five TUM RGB-D sequences (four dynamic, one static control) and two KITTI odometry sequences confirm the prediction: parity of the two criteria under well-conditioned geometry, and significant degradation of raw-influence gating at cond(H) of order 10^4. All code is released for reproducibility.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

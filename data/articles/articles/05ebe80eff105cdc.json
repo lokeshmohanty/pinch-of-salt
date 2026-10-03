@@ -1,0 +1,15 @@
+{
+  "id": "05ebe80eff105cdc",
+  "title": "Beyond Missing Rates: Rethinking Incomplete Multi-View Clustering with Protocol Divergence",
+  "link": "https://arxiv.org/abs/2606.04857",
+  "description": "arXiv:2606.04857v3 Announce Type: cross \nAbstract: Incomplete multi-view clustering (IMVC) is typically evaluated by retraining separate models under different missing-view configurations. Evaluations indexed only by nominal missing rate can overlook differences in observation structure across missing-view protocols. We show that missing-data protocols with identical nominal missing rates can induce substantially different learning regimes, differing by approximately 50-fold in the proportion of fully observed samples. We formalize this phenomenon as protocol divergence, which quantifies structural disparities among missing-view protocols beyond marginal missing rates. Furthermore, we analyze support-gated reconstruction mechanisms and show that their optimization contribution is inherently limited by the frequency of eligible observations under explicit normalization and optimization conditions. Based on these observations, we propose CRAFT (Co-occurrence-free Robust Attention-masked Fusion Transformer), a train-once framework that combines representation learning with an architecture designed to process missing-view inputs. CRAFT combines (i) per-sample forward computation using each sample's observed views and shared parameters, and (ii) mask-aware fusion over nonempty observed-view subsets. The deployment evaluation starts from training data with all views available and reuses one final checkpoint per dataset and seed across missing-view protocols without retraining. Experiments on CUB and MultiFashion show that CRAFT achieves the strongest performance in 12 out of 13 information-matched settings. Additional deployment experiments across seven benchmarks and sixteen missing configurations demonstrate substantial computational savings through checkpoint reuse while maintaining competitive clustering performance. Code and evaluation tools: https://github.com/dk23lhl/CRAFT and https://github.com/dk23lhl/imvc-audit.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "cs.NE"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "b7c9f1f23f3f1b98",
+  "title": "Level, Sharpness, and Corpus: Why Zero-Shot OOD Detector Rankings Do Not Transfer",
+  "link": "https://arxiv.org/abs/2607.26582",
+  "description": "arXiv:2607.26582v1 Announce Type: new \nAbstract: Selecting a zero-shot out-of-distribution (OOD) detector for a new deployment is typically based on benchmark rankings, implicitly assuming that the highest-ranked detector will transfer across domains. We show that this assumption does not hold. Through a controlled portability audit across seventeen in-distribution datasets, three vision-language models, and seven representative zero-shot OOD detectors, we find that detector rankings reverse across deployments, every detector exceeds $80\\%$ FPR95 on at least one domain, and the preferred detector depends on both the in-distribution data and the underlying VLM. We trace these reversals to complementary evidence channels in vision-language logits. Corpus-free detectors rely on different combinations of absolute match level and relative or spatial sharpness, while WordNet-based methods additionally depend on external semantic coverage. A simple proposition shows that level and sharpness cannot generally be recovered from one another, explaining why no single detector transfers reliably across deployments. Motivated by this diagnosis, we introduce the Complementary Evidence Guard (CEG), a detector-agnostic wrapper that preserves complementary evidence through a non-compensatory fusion of the base detector, level, and sharpness using only empirical in-distribution percentiles. Controls replacing these channels with entropy, logit variance, or random noise do not reproduce the gains. Without OOD samples, auxiliary corpora, or learned fusion, CEG reduces detector sensitivity and improves GL-MCM from $38.1$ to $28.8$ and MCM from $42.6$ to $30.5$ family-balanced FPR95.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

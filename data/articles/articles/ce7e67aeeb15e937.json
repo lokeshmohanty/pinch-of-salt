@@ -1,0 +1,14 @@
+{
+  "id": "ce7e67aeeb15e937",
+  "title": "FORGE: Forensic Reasoning with Grounded Evidence",
+  "link": "https://arxiv.org/abs/2503.15867",
+  "description": "arXiv:2503.15867v4 Announce Type: replace-cross \nAbstract: Forensic deepfake analysis demands more than binary classification: investigators need region-grounded natural language explanations they can verify against the image. Multimodal large language models (MLLMs) are a natural fit, but pretrained MLLMs fail systematically, producing globally coherent text that misses the small localized cues defining manipulations. We argue this is an inductive bias problem rather than a capacity issue: the image-text contrastive objective training MLLM visual encoders optimizes for whole-image semantic summaries, not patch-level forensic detail. The same mismatch explains why prior deepfake reasoning methods target either face manipulation or fully AI-generated content, never both.\n  We propose FORGE, which addresses the mismatch by routing a second visual stream into the language model from a Vision-Only Model (VOM) trained on dense patch prediction rather than image-text alignment. The MLLM's native encoder and the VOM operate on a shared patch grid, which lets us interleave their tokens with preserved spatial correspondence; we show this beats naive concatenation. A two-stage adapter training protocol (generic image-caption alignment, then joint task-specific optimization) prevents the localized stream from overfitting to training-domain manipulations. Across face-manipulated and fully synthetic content, FORGE produces region-referential explanations answering fine-grained attribute queries (\"Does the eyes/nose/mouth look real or fake?\") and substantially outperforms in-domain baselines on cross-domain evaluations; region-specific evaluation and human studies confirm explanation faithfulness.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

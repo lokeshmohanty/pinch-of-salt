@@ -1,0 +1,13 @@
+{
+  "id": "baaa4c0731b96880",
+  "title": "PixelSR: Efficient Screen Content Super-Resolution via Pixel Classification",
+  "link": "https://arxiv.org/abs/2608.00646",
+  "description": "arXiv:2608.00646v1 Announce Type: new \nAbstract: Screen content images are generally composed of texts and graphics. Compared to natural images, these man-made images contain a large quantity of sharp but repetitive structures. However, existing works in screen content super-resolution underutilize the special characteristics of screen content, leaving a large room to improve model performance and speed up. In this paper, we propose PixelSR, a simple yet effective method to improve super-resolution performance but with faster inference speed. To improve model performance, we classify pixels via pixel binning to compute content attention in the training phase. Specifically, after binning pixels into content-dependent groups, content attention is aggregated from pixel features within each group to introduce a content-dependent and non-local receptive field for every pixel. In the testing phase, we utilize the properties of self-repetitiveness and redundancy in screen content to speed up inference without the loss of model performance. We divide targeted high-resolution pixels into three types, which are unique pixels, repeated pixels, and background pixels for each test image. We conduct conventional network processing on unique pixels and cache their predictions in the on-the-fly lookup table. For repeated pixels which have appeared in unique pixels, we directly retrieve prediction results from the lookup table without network processing. For background pixels, we use the nearest neighbor algorithm to generate high-resolution pixels. The on-the-fly lookup table is cleaned and repeats the procedure above for the next test image. Experiments show our PixelSR achieves state-of-the-art performance with shorter inference time in screen content super-resolution.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

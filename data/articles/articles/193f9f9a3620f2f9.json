@@ -1,0 +1,13 @@
+{
+  "id": "193f9f9a3620f2f9",
+  "title": "Beyond Domain-Level Adaptation: Margin-Oriented Semantic-Appearance Interaction Correction for Personalized Federated Vision-Language Models",
+  "link": "https://arxiv.org/abs/2610.01625",
+  "description": "arXiv:2610.01625v1 Announce Type: new \nAbstract: Federated parameter-efficient fine-tuning enables distributed clients to adapt pretrained vision-language models without sharing raw data or updating the full backbone. Its effectiveness, however, is limited by domain heterogeneity across clients. Existing personalized methods separate globally shared knowledge from client-specific style, but they largely treat each domain as a class-agnostic transformation. We show that this abstraction is insufficient: the cross-domain displacement associated with a fixed domain varies across semantic classes, and only a subset of these class-domain residuals damages the image-text decision margin. We therefore propose Margin-Oriented Semantic-Appearance Interaction Correction (MOSAIC), which first constructs a decision-aware harmfulness score that measures whether a training-derived class-domain residual favors a competing text prototype over the true class. It then models fine-grained class-domain interactions with a low-rank residual adapter whose class factors and residual basis are globally shared while domain factors remain client-private. An image-conditioned gate further controls candidate-wise correction, and harmful-pair-aware reweighting prioritizes decision-relevant residuals during local optimization. Extensive experiments on Office31, OfficeHome, and DomainNet100 demonstrate that MOSAIC consistently improves macro-client top-1 accuracy across all evaluated domain-shift and joint domain-label-shift settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

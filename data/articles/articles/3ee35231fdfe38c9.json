@@ -1,0 +1,13 @@
+{
+  "id": "3ee35231fdfe38c9",
+  "title": "Exploring Instruction Data Quality for Explainable Image Quality Assessment",
+  "link": "https://arxiv.org/abs/2510.03880",
+  "description": "arXiv:2510.03880v2 Announce Type: replace \nAbstract: In recent years, with the rapid development of large multimodal models (LMMs), explainable image quality assessment (IQA) has attracted increasing attention, aiming to understand the perceptual quality problems of images. Existing studies typically construct large-scale instruction tuning datasets to enhance the quality perception capabilities of LMMs, following the data scaling law. However, as the fundamental capabilities of LMMs continue to improve, existing instruction tuning datasets may contain redundant and less challenging samples, resulting in substantial computational costs. In this paper, we investigate whether data quantity remains the dominant factor in LMM instruction tuning for explainable IQA. Based on a strong pre-trained LMM, we observe that randomly selecting a properly sized subset of training data can outperform full-data fine-tuning, indicating substantial redundancy in existing instruction tuning datasets. Motivated by this observation, we propose Q-Selector, a clustering-based data selection framework consisting of three stages: hierarchical LMM-based clustering feature extraction, cluster quota allocation through density and transferability, and SVD-based cluster sampling strategy. Specifically, Q-Selector extracts multi-layer features from the vision encoder, text encoder, and large language model components of LMMs as clustering features. It then determines the sampling quota for each cluster based on inter-cluster transferability and intra-cluster density. Finally, Q-Selector employs a Singular Value Decomposition (SVD)-based sampling strategy to select high-quality instruction data. Experimental results demonstrate that Q-Selector achieves 102.1% and 103.7% of the performance of full-data fine-tuning using only 10% of the training data on explainable IQA and image aesthetics assessment tasks, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

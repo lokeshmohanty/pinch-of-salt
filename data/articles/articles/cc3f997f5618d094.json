@@ -1,0 +1,14 @@
+{
+  "id": "cc3f997f5618d094",
+  "title": "Data-Free Pruning of Self-Attention Layers in LLMs",
+  "link": "https://arxiv.org/abs/2512.20636",
+  "description": "arXiv:2512.20636v2 Announce Type: replace-cross \nAbstract: Many self-attention sublayers in large language models (LLMs) can be removed with little to no loss. We attribute this to the Attention Suppression Hypothesis: during pre-training, some deep attention layers learn to mute their own contribution, leaving the residual stream and the MLP to carry the representation. We propose Gate-Norm, a one-shot, weight-only criterion that ranks attention sublayers by query-key coupling and removes the least coupled ones, requiring no calibration data, no forward passes, no fine-tuning, and no specialized kernels. On 40-layer, 13B-parameter LLaMA models, Gate-Norm prunes the model in under a second. Pruning 8-16 attention sublayers yields up to $1.30\\times$ higher inference throughput while keeping average zero-shot accuracy within 1.5 percentage points of the unpruned baseline across BoolQ, RTE, HellaSwag, WinoGrande, ARC-Easy/Challenge, and OpenBookQA. Across these settings, Gate-Norm matches data-driven pruning methods in accuracy while being $\\sim 1000\\times$ faster to score layers, enabling practical, data-free compression of LLMs.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

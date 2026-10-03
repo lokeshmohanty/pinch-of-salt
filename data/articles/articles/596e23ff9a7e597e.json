@@ -1,0 +1,14 @@
+{
+  "id": "596e23ff9a7e597e",
+  "title": "Improving Cross-Site Whole-Heart Segmentation",
+  "link": "https://arxiv.org/abs/2608.25109",
+  "description": "arXiv:2608.25109v1 Announce Type: cross \nAbstract: Whole-heart segmentation from CT and MRI is essential for quantitative cardiac image analysis, but remains challenging under multi-center and multi-modality distribution shift. In the CARE whole-heart segmentation task, models must generalize from limited labeled sites to unseen acquisition distributions, where variation in spacing, intensity, reconstruction texture, and anatomy can degrade out-of-distribution performance. We propose a modality-routed 3D cardiac segmentation pipeline that combines TotalSegmentator-initialized nnU-Netv2 models with site-characterized, label-preserving appearance augmentation. We first characterize the available sites using measurable image properties and use this analysis to motivate candidate data-space generalization routes. The final retained recipe applies Bias Field + Bezier appearance augmentation, combining smooth spatial intensity perturbation with nonlinear intensity remapping, followed by lightweight class-wise largest-connected-component cleanup. On the primary held-out-site validation splits, the final configuration improves CT mean Dice from 0.8350 to 0.9135 and MRI mean Dice from 0.7695 to 0.7830, while also reducing HD95. These results suggest that site-motivated appearance augmentation is a practical strategy for improving cross-site robustness in limited-data whole-heart segmentation. Our code can be found in https://github.com/Purdue-M2/Improving-Cross-Site-Whole-Heart-Segmentation",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

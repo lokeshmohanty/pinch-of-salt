@@ -1,0 +1,14 @@
+{
+  "id": "008010d01f4dab0e",
+  "title": "LiteViLNet: Lightweight Vision-LiDAR Fusion Network for Efficient Road Segmentation",
+  "link": "https://arxiv.org/abs/2605.21007",
+  "description": "arXiv:2605.21007v3 Announce Type: replace \nAbstract: Road segmentation is a fundamental perception task for autonomous driving and mobile robotics, where both appearance and geometric cues must be processed under edge-computing constraints. Existing multi-modal approaches often improve accuracy with large encoders or expensive global interaction, which limits their use on embedded platforms. We present \\textbf{LiteViLNet}, a lightweight RGB-geometry fusion network that combines a MobileNetV3 RGB encoder with a 0.12M-parameter depth-wise-separable geometry encoder. A multi-scale feature fusion module performs modality-specific enhancement, global-query cross-modal interaction, and adaptive gating, while a depth-wise large-kernel bridge enlarges the contextual support of the deepest representation with low overhead. The resulting U-Net-style decoder uses deep supervision only during training. On the KITTI Road benchmark, the 14.04M-parameter full model obtains $97.23\\pm0.15\\%$ MaxF. On the held-out ORFD test set under the released OFF-Net evaluation protocol, the full model achieves $96.74\\pm0.09\\%$ F-score and $93.68\\pm0.18\\%$ IoU. On a Jetson Orin NX, model-only PyTorch FP16 inference reaches $22.18\\pm0.21$ FPS; a separate TensorRT FP16 measurement reaches $68.73\\pm0.06$ FPS on the Jetson. Camera-depth adaptations and perception-and-control demonstrations on three heterogeneous robot platforms further illustrate the portability of the dual-stream design.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

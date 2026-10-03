@@ -1,0 +1,15 @@
+{
+  "id": "089316add85ea3b3",
+  "title": "Why $\\beta_1 = \\beta_2$ Is Dynamically Special in Adam",
+  "link": "https://arxiv.org/abs/2601.21739",
+  "description": "arXiv:2601.21739v3 Announce Type: replace-cross \nAbstract: Adam has been at the core of large-scale training for almost a decade, yet the role of its two momentum parameters remains poorly understood. Recent work shows that tying $\\beta_{1}=\\beta_{2}$ can preserve Adam's strong performance despite collapsing two memory scales into one, raising a basic question: what becomes dynamically special when the memories are tied? We identify a concrete mechanism. In the continuous-time limit, each normalized-update coordinate decomposes into a sign component, an explicit magnitude-lag term proportional to the difference between the two memory times, and additional transition, curvature, and nonlinear ratio terms. This lag channel vanishes exactly when $\\beta_{1}=\\beta_{2}$, making the diagonal the unique regime in which this mismatch-induced response is structurally absent. A full-history discrete decomposition on real training gradients recovers this change in composition: tied updates are sign-dominated, whereas the lag term becomes substantial off the diagonal and leaves a comparatively small residual. Across six vision and language tasks, tied configurations also typically exhibit smoother update-norm trajectories. Overall, our results identify memory-scale mismatch as a concrete source of magnitude sensitivity in Adam and provide a mechanistic account of why tied momentum is dynamically distinctive.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

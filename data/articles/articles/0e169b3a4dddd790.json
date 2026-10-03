@@ -1,0 +1,14 @@
+{
+  "id": "0e169b3a4dddd790",
+  "title": "Altitude-Adaptive Vision-Only Geo-Localization for UAVs in GPS-Denied Environments",
+  "link": "https://arxiv.org/abs/2602.23872",
+  "description": "arXiv:2602.23872v4 Announce Type: replace \nAbstract: Matching downward-looking unmanned aerial vehicle (UAV) images to georeferenced satellite or aerial map tiles supports local earth observation, map-based interpretation, and coarse geo-initialization when direct positioning signals are degraded or unavailable. A major difficulty in this cross-platform matching task is the scale mismatch caused by large variations in UAV altitude. To address this problem, we propose an altitude-adaptive aerial visual place recognition framework. The method first estimates relative altitude from a single downward-looking image by transforming the input into the frequency domain and formulating altitude estimation as a regression-as-classification problem. The estimated altitude is then used to crop the query image to a canonical scale, after which a classification-then-retrieval visual place recognition module performs coarse map localization. To improve retrieval robustness under varying image quality, we further introduce a quality-adaptive margin classifier and refine the final location by weighted coordinate estimation over the top retrieved candidates. Experiments on two synthetic datasets and two real-flight datasets show that the relative altitude estimation module improves downstream retrieval performance under substantial altitude changes. With our visual place recognition module, altitude adaptation improves average R@1 and R@5 by 41.50 and 56.83 percentage points, respectively, compared with using the same retrieval pipeline without altitude normalization, and the main retrieval pipeline runs at 13.3 frames/s on the workstation used for evaluation. These results indicate that relative altitude estimation provides a useful scale prior for cross-altitude UAV-to-map image matching using georeferenced remote sensing imagery.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

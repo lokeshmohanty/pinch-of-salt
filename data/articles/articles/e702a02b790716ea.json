@@ -1,0 +1,13 @@
+{
+  "id": "e702a02b790716ea",
+  "title": "From Image Latent Space to Fuzzy Rules: Interpretable Analysis of Gastrointestinal Foundation Model",
+  "link": "https://arxiv.org/abs/2610.00414",
+  "description": "arXiv:2610.00414v1 Announce Type: new \nAbstract: Foundation models pretrained on large-scale datasets demonstrate strong transferability to medical imaging tasks. However, understanding how their latent representations encode clinically relevant information remains an open challenge in safety-critical domains. This study proposes a prototype-based fuzzy-rule framework that interprets the patch-level features produced by the inner layers of pretrained foundation models, without any fine-tuning. Class-specific prototypes are learned by clustering in the feature space, yielding compact visual patterns. Patch features are then expressed as prototype similarities and classified by fuzzy rules with linguistic IF-THEN conditions that are human readable. The framework is applied across the final two blocks of ViT-S/16 backbones pretrained on ImageNet-1K and GastroNet-5M, and benchmarked against k-nearest neighbours, kernel SVM, and linear probing under identical frozen features, on wireless capsule endoscopy classification, gastrointestinal endoscopy classification, and colonic polyp segmentation. The experimental analysis shows that the proposed method, without backbone fine-tuning, reaches accuracy comparable to these black-box classifiers, and that domain-specific pretraining yields features that are both discriminative and symbolically compressible. Because the resulting rules are extracted from real data and expressed in interpretable terms, they are further used as an instrument to investigate synthetic medical images, providing a human-readable account of which real prototypes and rules a generator reproduces or fails to reproduce, localising where a synthetic image departs from real tissue rather than summarising it with a single score. The framework thus offers a transparent, depth-resolved view of how foundation models organise clinically relevant structure, together with a practical downstream use of the extracted rules.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

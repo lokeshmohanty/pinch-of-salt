@@ -1,0 +1,15 @@
+{
+  "id": "a962058d7a8303c9",
+  "title": "Calibrating One-Round Membership Inference with Neighbors",
+  "link": "https://arxiv.org/abs/2609.36331",
+  "description": "arXiv:2609.36331v1 Announce Type: cross \nAbstract: The state-of-the-art Membership Inference (MI) methods calibrate their signal separately for each example using reference models, auxiliary models trained to exclude the target. This paradigm scales poorly to modern large models, however, whose training is too expensive to replicate. This has motivated one-round settings, where only a single trained model is available; but without reference models the per-example calibration that drives the strongest attacks can no longer be estimated, leaving the membership signal weak. We ask whether neighbors of the target point can recover this calibration without training any additional model. Our key observation is that reference models serve only to reveal how an example behaves under models not trained on it, and that querying the target model on nearby samples yields the same information. We propose two complementary ways to obtain such neighbors, and show that querying them against an early training checkpoint further sharpens the signal. We evaluate across three image classification datasets and three training setups, showing that neighbors yield strong membership signals and competitive attack performance at no additional training cost.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

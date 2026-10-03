@@ -1,0 +1,13 @@
+{
+  "id": "2286baee874d37f1",
+  "title": "LegoQ: Density-Matrix Representation Learning with Spectral-Spatial State Transitions for Hyperspectral Classification",
+  "link": "https://arxiv.org/abs/2607.28970",
+  "description": "arXiv:2607.28970v1 Announce Type: new \nAbstract: Hyperspectral image classification is complicated by mixed pixels, spectral ambiguity, class imbalance, and limited annotations. Most current classifiers encode a pixel or patch as a deterministic vector and apply a linear or multilayer softmax head. Although effective for discrimination, this representation does not directly expose how mixed or uncertain a sample is. This paper presents \\method, a classical density-matrix representation learning framework for hyperspectral images. The spectral bands are divided into groups and each group is mapped to a positive semi-definite, Hermitian, trace-normalized matrix state. A composable stack of spectral, spatial, and inter-group transitions then updates the states while repeatedly projecting them back to the valid state set. Instead of flattening the final features, \\method\\ aggregates the group states and compares them with learnable class-prototype density matrices through Uhlmann fidelity. The normalized eigenspectrum, von Neumann entropy, purity, and prototype fidelity provide sample-level diagnostics that are unavailable from a conventional vector head. On Indian Pines, ten runs yield an overall accuracy of $96.20\\pm0.70\\%$, an average accuracy of $95.57\\pm1.29\\%$, and a kappa coefficient of $95.66\\pm0.80\\%$. On WHU-Hi-LongKou, the best of ten runs reaches $97.52\\%$ overall accuracy. Classification maps and feature projections show that the transition stack produces compact and better separated class structures. The results support constrained matrix-state learning as a practical alternative to vector-only hyperspectral classification without requiring quantum hardware.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

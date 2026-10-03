@@ -1,0 +1,14 @@
+{
+  "id": "2539527029f29080",
+  "title": "Tissue Detection Determines False Positives in Diffusion-Based Histopathology Artifact Detection",
+  "link": "https://arxiv.org/abs/2609.40083",
+  "description": "arXiv:2609.40083v1 Announce Type: cross \nAbstract: One-class artifact detectors for whole-slide images learn normal tissue from a clean training pool and flag departures from it. The pool is built by a preprocessing pipeline whose tissue-detection step is usually treated as neutral. We tested whether it is. On 16 annotated TCGA slides, we rebuilt the clean pool of a diffusion-based detector with different tissue detection methods and compared the resulting models in a four-fold cross-validation. Per-slide saturation-Otsu detection excluded normal tissue, chiefly tissue with large clear spaces such as adipose tissue and alveolar parenchyma, and on slides with thick marker ink kept the ink while excluding ordinary tissue. Replacing it with entropy-based detection reduced the false-positive fraction on held-out clean slides from 0.102 to 0.016, in every fold and with a second training seed, without loss of sensitivity; the gain came from the composition of the pool, not its size. Across three tissue detection methods, false positives followed the fraction of such clear-space tissue in the pool, a statistic that needs no labels or training (0.103, 0.016 and 0.009). The effect did not carry over at the same size to a nearest-neighbour detector on foundation-model features. On an external cohort, the curated pool lowered clean-control false positives by about 20%, far less than within TCGA, and the remaining cross-center loss was not explained by stain differences. For one-class quality control, tissue detection decides what the model learns as normal and should be chosen and reported accordingly.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

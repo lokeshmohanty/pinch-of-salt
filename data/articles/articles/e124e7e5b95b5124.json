@@ -1,0 +1,13 @@
+{
+  "id": "e124e7e5b95b5124",
+  "title": "Event-based Scene Synthesis via Inter-Frame Residual Alignment",
+  "link": "https://arxiv.org/abs/2512.17323",
+  "description": "arXiv:2512.17323v2 Announce Type: replace \nAbstract: Event-based scene synthesis reconstructs target RGB frames from sparse image observations and asynchronous event streams, encompassing both video frame prediction and interpolation. Existing event-based synthesis methods commonly estimate optical flow to warp the observed frames toward the target time, but are vulnerable to inaccurate flow under large motion and occlusion and often rely on flow supervision or pretrained estimators. In this work, we propose EvFRA, an Event-based scene synthesis framework based on inter-Frame Residual Alignment. We identify a structural correspondence between event measurements and frame-to-frame scene changes, and exploit this correspondence for target frame synthesis. Our training pipeline consists of two stages: 1) an Event-to-Residual Alignment Variational Autoencoder (ER-VAE) aligns the event frame captured between the anchor and target frames with the corresponding inter-frame residual, and 2) a ControlNet-conditioned diffusion model is fine-tuned to denoise the residual latent using event data. Our method outperforms state-of-the-art methods by up to 2.61 dB and 1.85 dB in PSNR for frame prediction and interpolation, respectively, with consistent SSIM improvements. Code is available at https://github.com/jiyun-kong/EvFRA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

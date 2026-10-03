@@ -1,0 +1,14 @@
+{
+  "id": "2687f4e469cfbdb8",
+  "title": "Adaptive Graph-of-Islands Evolution for Automatic Feature Engineering with LLMs",
+  "link": "https://arxiv.org/abs/2607.23286",
+  "description": "arXiv:2607.23286v2 Announce Type: replace \nAbstract: Automatic feature engineering (AutoFE) for tabular data requires discovering informative transformations from a large program space. Existing approaches suffer from three limitations: classical methods rely on fixed operator libraries with limited expressivity, LLM-based methods generate proposals from static prompts without retaining search experience, and evolutionary methods use fixed migration policies that ignore task-specific cross-family transfer utility. We introduce TOPOFE, a framework that formulates AutoFE as graph-structured multi-island evolutionary program search. The transformation space is partitioned into semantically coherent families, each explored by an island through LLM-guided mutation and crossover. Each island maintains a Prompt Adaptation Memory that accumulates accept/reject feedback to steer proposals toward productive regions without parameter updates. To coordinate global exploration, TOPOFE dynamically learns a directed topology graph whose edge weights encode transfer utility between transformation families. Cross-island transfer is triggered by adaptive saturation detection and performed through LLM-mediated hybrid synthesis, enabling discovery of compositional feature programs that cannot emerge from isolated local search. Experiments on 29 tabular datasets show that TOPOFE consistently outperforms most state-of-the-art AutoFE methods on classification and regression tasks. Beyond predictive performance, TOPOFE produces feature sets with lower redundancy and higher representational coverage, while the learned topology graph acquires meaningful task-specific transfer structure correlated with downstream gains. The discovered feature programs transfer reliably across diverse predictors and LLM backbones, demonstrating that improvements arise from TOPOFE's structured search and adaptive coordination rather than backbone-specific generation capability.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

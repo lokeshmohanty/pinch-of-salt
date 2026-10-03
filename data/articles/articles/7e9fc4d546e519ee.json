@@ -1,0 +1,13 @@
+{
+  "id": "7e9fc4d546e519ee",
+  "title": "Evaluating Transformation Models for pCLE Mosaic Registration",
+  "link": "https://arxiv.org/abs/2609.24560",
+  "description": "arXiv:2609.24560v1 Announce Type: new \nAbstract: Confocal Laser Endomicroscopy (CLE) provides real-time, cellular-resolution optical biopsy but has a narrow field of view, which image mosaicing can extend to provide anatomical context. Because of line-by-line acquisition, probe motion, and probe-tissue interaction, frame alignment generally requires a non-linear transformation whose accuracy is difficult to quantify: flexible transformation models can fit intensity features and noise, so appearance-based metrics such as Normalized Cross-Correlation (NCC) can improve without a genuine gain in geometric accuracy. We therefore establish a dataset of 132 frame pairs across fourteen pCLE sequences from 4 patients with manually annotated landmark correspondences, so that Target Registration Error (TRE) can serve as a geometrically grounded complement to NCC. We assess the effect of progressively increasing the transformation model's degrees of freedom, from translation to Thin Plate Spline (TPS), and of six feature-matching backends spanning classical (Shi-Tomasi, Lucas-Kanade) and learned (SuperPoint, SuperGlue, LightGlue, LoFTR, RoMa) approaches. Translation and rigid models prove insufficient under tissue deformation, while TPS with random sampling achieves the strongest landmark-derived alignment of the evaluated configurations; among the learned matchers, used without fine-tuning, only RoMa offers a robust, if modest, advantage over other methods. At the sequence level, pairwise registration quality proved an unreliable predictor of final mosaic quality, so mosaic quality must be evaluated directly rather than inferred from pairwise metrics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "9dae5e6444a8b6fc",
+  "title": "Neural Prior Estimation: Learning Class Priors from Latent Representations",
+  "link": "https://arxiv.org/abs/2602.17853",
+  "description": "arXiv:2602.17853v2 Announce Type: replace-cross \nAbstract: Logit adjustment corrects class imbalance using the empirical class prior. We study whether a comparable class-frequency signal can instead be learned from the network representation, without explicitly supplying class counts to the correction rule. We introduce the Neural Prior Estimator (NPE), which attaches one or more lightweight Prior Estimation Modules (PEMs) to the latent representation. Each PEM is trained with a one-way logistic objective on the ground-truth coordinate. The resulting frequency-dependent outputs are combined into an NPE estimate and used as a learned logit correction, forming NPE-LA. In a simplified scalar model, the optimum of the PEM objective is monotone in the class count and grows asymptotically as $\\log N_c$, up to a slower $\\log \\log N_c$ term. Experiments on long-tailed CIFAR-10 and CIFAR-100 show that NPE-LA is competitive with standard logit adjustment and improves minority-class performance over CE and cRT in the reported settings. Experiments on STARE and ADE20K further show that the same idea can be used as a lightweight recalibration mechanism for dense prediction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c005ecbd56848d6e",
+  "title": "ResidualAuth: What Authorization State Must Language Agents Preserve under Revocable Delegation?",
+  "link": "https://arxiv.org/abs/2609.08062",
+  "description": "arXiv:2609.08062v2 Announce Type: replace \nAbstract: With revocable delegation, two histories can yield identical current permissions yet require opposite decisions for the same query after the same revocation. We introduce ResidualAuth, a theory-grounded framework characterizing the authorization state agent systems must preserve and evaluating its maintenance and use. Its formal core, residual authorization state, equates histories exactly when every future sequence of grants, revocations, and uses is valid after both or neither. We prove that exponentially many distinct residual states can nevertheless agree on who can reach whom through delegation paths. The analysis also yields exact or tight memory bounds as delegation redundancy varies and an average decision-error lower bound under an explicit bound on retained information. ResidualAuth evaluates information access, online state maintenance, and information use through a restricted executable benchmark and separate diagnostics. The benchmark pairs episodes differing in authorization-relevant history and requiring opposite decisions; pair accuracy requires both answers to be correct. To test use of supplied decisions, four open-weight models received trusted current-query Allow/Deny decisions alongside deterministic 256-token event extracts, achieving 15-16/16 correct pairs versus 0-2/16 with extracts alone. Memory diagnostics identified invalid reconstructions; models also answered incorrectly from valid memories that passed fixed future authorization tests. Together, these results distinguish what future authorization requires a system to retain from whether agents can access relevant information, maintain state across updates, and use available information to make correct decisions.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CR"
+  ]
+}

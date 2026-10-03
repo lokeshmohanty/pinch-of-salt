@@ -1,0 +1,13 @@
+{
+  "id": "e26baf92836202fd",
+  "title": "RED-Sphere: Hyperspherical Residual Edge Debiasing for Cross-Population Fundus Disease Domain Generalization",
+  "link": "https://arxiv.org/abs/2607.10777",
+  "description": "arXiv:2607.10777v1 Announce Type: new \nAbstract: Medical image classifiers are often trained within one source population, yet clinical deployment requires robustness to patients whose appearance, acquisition style, and disease prevalence differ from the source cohort. Existing fairness and robustness methods often require group supervision or treat appearance variation as an undifferentiated nuisance, which is insufficient when population-correlated low-level cues and lesion evidence share edge and texture structure. We study a strict source-only cross-population setting, where external populations are unseen during optimization, validation, scheduling, hyperparameter and model selection. We propose RED-Sphere, a plug-and-play robustness framework for image classification under unseen population shifts. It estimates shortcut-sensitive nuisance responses with an edge and feature energy prior, attenuates dominant responses through residual soft gating, regularizes masked nuisance views with counterfactual-inspired consistency and separation losses, and predicts labels with normalized spherical prototypes. It favours angular semantic evidence over source-correlated activation magnitude while preserving lesion structure. Although demonstrated on 2D Scanning Laser Ophthalmoscopy (SLO) fundus classification for Age-Related Macular Degeneration (AMD) and Diabetic Retinopathy (DR), RED-Sphere is not tied to retinal anatomy: the same principle can be adapted with modality-specific nuisance priors wherever appearance shortcuts and semantic evidence are entangled. Under a strict White-only Harvard-FairVision protocol, RED-Sphere improves held-out macro-F1 across all 20 task and backbone comparisons, with average gains of 1.28 and 2.98 F1 points on AMD and DR. Gains in AUC and PR-AUC, visual diagnostics, ablations, and sensitivity analyses further support stronger external semantic alignment and more stable angular disease geometry.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

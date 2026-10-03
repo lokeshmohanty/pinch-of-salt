@@ -1,0 +1,13 @@
+{
+  "id": "523bb46b6e0a6c19",
+  "title": "From Hindsight to Foresight: Self-Encouraged Hindsight Distillation for Knowledge-based Visual Question Answering",
+  "link": "https://arxiv.org/abs/2511.11132",
+  "description": "arXiv:2511.11132v3 Announce Type: replace \nAbstract: Knowledge-based Visual Question Answering (KBVQA) necessitates external knowledge incorporation beyond cross-modal understanding. Existing KBVQA methods either utilize implicit knowledge in multimodal large language models (MLLMs) via in-context learning or explicit knowledge via retrieval augmented generation. However, their reasoning processes remain implicit, without explicit multi-step trajectories from MLLMs. To address this gap, we provide a Hindsight Distilled Reasoning (HinD) framework with Knowledge Encouragement Preference Optimization, aiming at self-encouraging the knowledge reasoning ability inside the MLLM. First, we construct the Hindsight Teacher by prompting the MLLM to complete the reasoning process with knowing the right answer, obtaining Hindsight-Zero training data. Then, the Foresight Student, without knowing the answer, learns the golden trajectories from Hindsight: (1) Hindsight Distillation Fine-Tuning (HDFT) to self-distill the Hindsight-Zero into a modularized Chain-of-Thought (CoT) Generator and a Knowledge Generator for sequential steps and discrete facts generation, respectively; (2) Knowledge Encouragement Preference Optimization (KEPO) to encourage the under-confident but relevant knowledge inside the MLLM and suppress the over-confident but irrelevant one. Experiments on OK-VQA and A-OKVQA validate the effectiveness of HinD, showing that HinD with 7-8B MLLM achieves superior performance without commercial model APIs or retrieved knowledge.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

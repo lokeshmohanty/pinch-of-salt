@@ -1,0 +1,14 @@
+{
+  "id": "26eeef00835c407e",
+  "title": "Prompt Compression in Diffusion Large Language Models: Evaluating LLMLingua-2 on LLaDA",
+  "link": "https://arxiv.org/abs/2605.17932",
+  "description": "arXiv:2605.17932v2 Announce Type: replace-cross \nAbstract: Prompt compression reduces inference cost and context length in large language models, but prior evaluations focus mainly on autoregressive architectures. This study examines whether LLMLingua-2 transfers effectively to diffusion large language models (DLLMs), specifically LLaDA-8B-Instruct. We evaluate GSM8K, DUC2004, and ShareGPT using 250 prompts per dataset at an approximate 50\\% compression ratio, covering mathematical reasoning, prompt reconstruction, and summarization. Outputs from original, compressed, and reconstructed prompts are compared using exact-match accuracy, BLEU, ROUGE, and BERTScore. Results show that high semantic preservation does not necessarily ensure stable downstream behavior in diffusion models. Summarization remains relatively robust, while mathematical reasoning degrades substantially despite high semantic similarity. Reconstruction further shows that semantically similar prompts may omit reasoning-critical information needed for stable denoising. Overall, compression failures are mainly driven by information omission rather than semantic drift, suggesting that autoregressive prompt compression methods may not transfer uniformly to DLLMs. These findings motivate diffusion-aware compression strategies.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

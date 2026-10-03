@@ -1,0 +1,16 @@
+{
+  "id": "e4c7fb45b06b94f2",
+  "title": "From Paper to Program: Knowledge Externalization and Bottleneck Diagnosis in AI-Assisted Quantum Many-Body Programming",
+  "link": "https://arxiv.org/abs/2604.04089",
+  "description": "arXiv:2604.04089v5 Announce Type: replace-cross \nAbstract: Large language models can write scientific code, but direct paper-to-program translation remains fragile when correctness depends on tacit conventions rather than explicit equations. We frame this as a knowledge-externalization problem: index choices, gauges, fermionic signs, contraction order, validation gates, and scaling constraints must be made explicit before code generation. We evaluate a multi-stage, human-in-the-loop workflow on two quantum many-body tasks. DMRG from Schollwoeck's pedagogical review serves as calibration: specification-guided implementations pass in all 16 model pairings, compared with 6/13 direct attempts, and a prose-specification ablation shows that externalized content, not LaTeX form, is the active ingredient. Pfaffian conversion of HFB states to MPS from the five-page Letter by Jin et al. serves as the stress test: the archived runs use a closed-world NumPy/SciPy/Matplotlib protocol, with no TeNPy, TeMFpy, or external implementation code supplied to the agents, so success depends on reconstructing tacit sign, gauge, ordering, and scalability conventions within a restricted dependency setting. Here the workflow yields 11/26 audited passes, while direct prompting yields none. Cross-specification transfer is asymmetric: non-GPT specifications implemented by GPT 5.5 pass 4/4, whereas GPT 5.5 specifications implemented by the tested non-GPT models fail 4/4. The contrast supports a two-bottleneck picture. Externalization resolves the first bottleneck -- paper-to-code ambiguity -- well enough to make DMRG reproducible and Pfaffian-MPS auditable. The remaining failures expose a second bottleneck in implementation-model capability. Iterative meta-specification moves this boundary but does not eliminate it. The resulting Paper-to-Program Many-Body skill is both a reusable implementation protocol and a diagnostic instrument for AI-assisted many-body programming.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.comp-ph",
+    "cond-mat.str-el",
+    "cs.AI",
+    "cs.HC"
+  ]
+}

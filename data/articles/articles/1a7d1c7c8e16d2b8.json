@@ -1,0 +1,13 @@
+{
+  "id": "1a7d1c7c8e16d2b8",
+  "title": "SewFusion: Tailored Generation of Topology and Panel-Level Geometry for Sewing Patterns",
+  "link": "https://arxiv.org/abs/2609.23548",
+  "description": "arXiv:2609.23548v1 Announce Type: new \nAbstract: Generating sewing patterns from images and text requires modeling a heterogeneous representation composed of discrete topology and continuous geometry. Existing methods mainly follow two paradigms: diffusion-based methods enable holistic geometry generation by converting the entire pattern into a continuous representation, but weaken discrete topology modeling; in contrast, autoregressive methods preserve discrete topology through next-token prediction, but tie continuous geometry regression to token-level hidden states with limited panel-level context. To bridge this gap, we propose SewFusion, a unified autoregressive framework that adopts tailored generation mechanisms for discrete topology and panel-level continuous geometry, using next-token prediction for the former and flow matching for the latter. To support panel-level continuous geometry generation, we introduce a Panel Geometry VAE that learns a fixed-size latent space for variable-length panel geometry, together with Panel Geometry Flow for latent generation. We further propose Panel-Forcing to reduce the training--inference mismatch in topology context and improve robustness to topology prediction errors. Extensive experiments on SewFactory and GCD-MM demonstrate that SewFusion consistently outperforms previous state-of-the-art methods across various settings, achieving +6.36% Panel Accuracy, +11.30% Stitch Accuracy, and -1.90 Vertex L2 error in the image-text-based generation setting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

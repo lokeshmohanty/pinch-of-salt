@@ -1,0 +1,13 @@
+{
+  "id": "c4f6352e1a22c617",
+  "title": "CloudDiffusion: Diffusion-Based Scene Completion in the Point Cloud Domain",
+  "link": "https://arxiv.org/abs/2606.16048",
+  "description": "arXiv:2606.16048v3 Announce Type: replace \nAbstract: Reconstructing dense 3D scenes from sparse LiDAR point clouds (LiDAR scene completion) is a fundamental challenge in autonomous driving, where diffusion models offer a promising solution. However, existing approaches rely on object-level autoencoders that collapse into unstable global representations at outdoor scale, and suffer from ground truth data corrupted by odometry drift that systematically degrades supervision quality. Furthermore, multi-step diffusion inference incurs prohibitive latency for real-time deployment. We present CloudDiffusion, addressing these issues with three independent components. First, a multi-token Gaussian VAE with cross-attention pooling provides stable scene-scale LiDAR compression as a standalone reconstruction module, avoiding the global-pooling and codebook-collapse failure modes of prior point-cloud autoencoders. Second, an anchor-based ICP ground truth refinement pipeline eliminates drift-induced noise from training supervision, reducing our single-step x0 diffusion teacher's squared Chamfer distance by approximately 16x on SemanticKITTI seq. 08 (0.396 to 0.024 m^2) with no model change (partly aided by the denser, more compact refined references). Third, the same teacher completes scenes in a single x0 step, operating directly in coordinate space, not in the VAE latent. It runs in near real time at 209ms/frame, 65-138x lower inference latency than iterative diffusion baselines. Our results indicate that data quality dominates model design in this regime, and suggest that multi-token latent spaces could serve as a stable first stage for future latent diffusion-based scene completion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

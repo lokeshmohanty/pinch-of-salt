@@ -1,0 +1,13 @@
+{
+  "id": "f2ed9c02dca6cc63",
+  "title": "Face-Trace: Open-Set Attribution and Progressive Discovery of Synthetic Face Generators",
+  "link": "https://arxiv.org/abs/2607.07545",
+  "description": "arXiv:2607.07545v2 Announce Type: replace \nAbstract: Recent advances in generative Artificial Intelligence have made synthetic face images increasingly realistic, creating new challenges for multimedia forensics. Source attribution methods should identify the generator of an image when the source is known, but also handle samples produced by unseen models. Most existing approaches, however, address synthetic face attribution in a closed-set setting, assuming that test samples can only originate from generators observed during training. This assumption does not hold in real-world scenarios, where new generators continuously appear and detecting an image as unknown is not sufficient, since rejected samples should also be organized according to their underlying sources. We introduce Face-Trace, a pipeline for open-set synthetic face source attribution that combines known generator classification, energy-based rejection, and unknown generator discovery. A classifier trained on frozen I-JEPA embeddings attributes known generators, while rejected samples are represented by combining projected I-JEPA features with complementary forensic traces and grouped to identify coherent sets of samples produced by unknown generators. We also extend the discovery stage to an incremental scenario, where rejected samples arrive over time. Experiments on the WILD dataset show 96.73% closed-set attribution accuracy, while rejection reaches 71.25% balanced accuracy and rejected samples are clustered into meaningful unknown-generator groups, with an Adjusted Rand Index of 0.81, a Normalized Mutual Information of 0.90, and an overall purity of 87.74%. In the incremental setting, the discovered generator space is progressively extended while maintaining a final purity of 99.23%, and cross-dataset experiments suggest that the pipeline can operate beyond the original data distribution.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

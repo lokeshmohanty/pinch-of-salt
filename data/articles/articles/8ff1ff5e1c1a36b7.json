@@ -1,0 +1,13 @@
+{
+  "id": "8ff1ff5e1c1a36b7",
+  "title": "UniACE: A Unified Framework for Evaluating LLM Agentic Capabilities",
+  "link": "https://arxiv.org/abs/2605.27898",
+  "description": "arXiv:2605.27898v3 Announce Type: replace \nAbstract: Agent benchmarks are increasingly used to compare large language models (LLMs) across domains, yet a reported score reflects a complete model--harness--environment configuration rather than the model alone. Benchmark packages couple native tasks with specific prompts, tool protocols, orchestration logic, and sometimes dynamic external resources, making cross-benchmark comparisons sensitive to implementation and resource conditions. We present UniACE, a unified framework for model-centric evaluation under an explicit, common execution condition. UniACE represents each benchmark as an instruction--tool--environment triplet, executes LLMs through a shared, task-agnostic harness in isolated per-task runtimes, and preserves native success criteria. For tasks that rely on dynamic resources, an optional offline mode replaces live access with fixed, pre-collected snapshots. Its evaluation protocol further standardizes efficiency measurement, execution records, and trace-based failure attribution. We migrate 7 benchmarks spanning 24 domains and evaluate 15 models in more than 400K rollouts consuming 5B tokens. Comparisons with source implementations show large bidirectional score changes and model-ranking reversals, while matched online and offline runs reveal substantial sensitivity to accessible evidence and its representation. Under the shared UniACE configuration, efficiency and failure profiles expose task-dependent model behaviors hidden by task-success scores alone. These findings motivate reporting agent benchmark outcomes as properties of an explicit evaluation configuration, enabling more interpretable and reproducible cross-benchmark comparisons. Codes and benchmarks at are available at https://github.com/whfeLingYu/A-Unified-Framework-for-the-Evaluation-of-LLM-Agentic-Capabilities, https://huggingface.co/datasets/whfeLingYu/Unified_Agent_Framework.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

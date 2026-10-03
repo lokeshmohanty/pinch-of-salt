@@ -1,0 +1,13 @@
+{
+  "id": "4019129ef478ec13",
+  "title": "PixelART: Image-to-Layer Decomposition without Latents or Text-to-Image Pretraining",
+  "link": "https://arxiv.org/abs/2609.22789",
+  "description": "arXiv:2609.22789v1 Announce Type: new \nAbstract: Image-to-layer decomposition converts a flattened image into editable RGBA layers, enabling element-level editing in design workflows. Existing diffusion-based systems typically adapt large pretrained text-to-image (T2I) models and introduce RGBA autoencoders or variable-layer architectural modules. We revisit this design choice and ask whether layer decomposition truly requires these heavyweight components. We introduce PixelART, a pixel-space rectified-flow Transformer trained from scratch for image-to-layer (I2L) decomposition. PixelART directly denoises regional RGBA pixel patches using a single-stream multi-modal diffusion Transformer, avoiding RGBA-VAEs, pretrained T2I backbones, and layer-specific decoders. We identify a key property of the task: high-noise timesteps determine layer assignment and coarse layer organization, while low-noise timesteps mainly refine color, alpha, texture, and boundaries. Based on this observation, we propose a terminal-boosted timestep sampling strategy to increase training coverage in the high-noise layer assignment regime. Trained on 4M multi-layer design templates, PixelART achieves state-of-the-art layer decomposition and composite reconstruction on Design-Multi-Layer-Bench and LICA with over 80% fewer parameters, 98% lower latency, and 85% lower memory than the recent Qwen-Image-Layered model. Ablation experiments show that pixel-space $\\mathbf{x}$-prediction, terminal-boosted timestep sampling, and data/model scaling are critical, while T2I pretraining brings marginal benefits to the I2L task.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

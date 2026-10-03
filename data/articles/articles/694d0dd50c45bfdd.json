@@ -1,0 +1,14 @@
+{
+  "id": "694d0dd50c45bfdd",
+  "title": "The Active Ingredient in Muon's Grokking",
+  "link": "https://arxiv.org/abs/2607.20512",
+  "description": "arXiv:2607.20512v1 Announce Type: cross \nAbstract: The Muon optimizer reaches the grokking threshold on modular arithmetic faster than AdamW. Prior work attributes this to \"spectral-norm constraints plus orthogonalized momentum\" but does not isolate which mechanism matters. To better understand Moun's behavior, we run multi-seed and multi-learning-rate sweeps to decompose and stress-test the effect. First, an ablation shows the speedup comes from orthogonalization (the Newton-Schulz iteration): orthogonalize-only matches full Muon, whereas spectral-only is no faster than AdamW and is unreliable, and this verdict holds across learning rates. Second, a mechanistic analysis finds that orthogonalizing optimizers reach generalization at roughly 3x lower spectral norm and, controlling for how much the embedding actually moves, settle into a lower-norm solution rather than simply perturbing the embedding less. Third, reducing the Newton-Schulz iteration count from five to one accelerates reaching the threshold but makes the grokked solution fragile, prone to transient collapse, with fragility that grows with learning rate; a single iteration is fast and stable only at small learning rate, while the canonical five iterations are the learning-rate-robust choice. We also show spectral scaling can be dropped at no measured cost. A methodological thread runs throughout: under a stability-aware metric, \"faster\" claims about grokking optimizers can invert, so we report both first-crossing and sustained-grok times. To support reproducibility, we release our full training and analysis code at https://github.com/louiswang524/muon-grokking-frontier",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

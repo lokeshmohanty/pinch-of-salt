@@ -1,0 +1,13 @@
+{
+  "id": "e82c91abb5acfe04",
+  "title": "Authoring for Living Worlds: Tool-Constrained LLM Agents for Executable Multi-Actor Scenarios",
+  "link": "https://arxiv.org/abs/2604.10383",
+  "description": "arXiv:2604.10383v3 Announce Type: replace \nAbstract: Authoring a multi-actor scenario for a living 3D world, where every action changes its state, and each action's validity depends on the state accumulated before it, demands the freedom of storytelling and the rigor of simulation at once. We author such scenarios with LLM agents, as Graphs of Events in Space and Time (GESTs) that a simulation engine executes deterministically into narrative videos with per-frame spatial, temporal, and semantic ground truth. A staged pipeline driving a flagship LLM, the standard design in video generation, failed outright: the model violates rules stated verbatim in its prompt, and cannot track the dynamic world state. We answer with a constraint-enforcing tool layer: our Director and Scene Builder agents explore the world's capabilities page by page and build every scene through operations checked against simulator state, so every specification they emit is valid by construction. Because we generate each seed text from an existing scenario graph, we can measure reconstruction: the agent authors its own graph from the text alone, yet matches the original at 0.83 F1 on its events, each action with its participants (0.55 for a random scenario of the same kind), and 0.77 on their ordering (0.43 random). End to end: the standard staged pipeline produced 0 executable specifications in 50 attempts; our agents, driving a budget model, execute 20 of 25 (80%), and are, to our knowledge, the first to exercise the full expressive capacity of GEST.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

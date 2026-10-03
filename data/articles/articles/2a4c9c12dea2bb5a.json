@@ -1,0 +1,13 @@
+{
+  "id": "2a4c9c12dea2bb5a",
+  "title": "Teacher-Feature Drifting: One-Step Diffusion Distillation with Pretrained Diffusion Representations",
+  "link": "https://arxiv.org/abs/2605.07327",
+  "description": "arXiv:2605.07327v2 Announce Type: replace \nAbstract: Sampling from pretrained diffusion and flow-matching models typically requires many forward passes to generate diverse and high-fidelity images. Existing distillation methods often rely on multiple auxiliary networks, carefully designed training stages, or complex optimization pipelines. In this work, we revisit the recently proposed Drifting Model objective and show that a single drifting loss can be directly used to simplify one step distillation. A key observation is that the pretrained diffusion teacher itself already provides a strong representation space. Unlike the original Drifting Model, which relies on an additional pretrained feature extractor, we use intermediate hidden states of the pretrained teacher model as the feature representation. This removes the need for training or introducing an extra representation network while preserving a semantically meaningful feature geometry for drifting. Furthermore, we introduce a lightweight mode coverage loss to mitigate mode collapse during distillation and encourage the student generator to cover diverse teacher-supported regions. Extensive experiments on ImageNet and SDXL demonstrate that our method achieves efficient one step generation with competitive image quality and diversity, achieving FID scores of 1.58 on ImageNet-64$\\times$64 and 18.4 on SDXL, while substantially simplifying the overall distillation framework.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

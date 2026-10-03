@@ -1,0 +1,13 @@
+{
+  "id": "f56cd137da76617f",
+  "title": "Emotion2Skill: Model-Internal Emotion Signals for Adaptive Skill Selection and Evolution",
+  "link": "https://arxiv.org/abs/2608.09248",
+  "description": "arXiv:2608.09248v2 Announce Type: replace \nAbstract: Skill-based LLM agents select reusable procedures from an external library to solve complex tasks, yet their routing decisions rely entirely on text-level signals such as task descriptions, verbal reflections, and experience-derived rules, while the model's own internal representational state remains unobserved. Recent interpretability work has shown that LLMs maintain linear emotion representations that causally influence behavior; however, these representations have been exploited only for post-hoc analysis or direct output steering, and have not been used to inform agent-level decision-making. We propose Emotion2Skill, a framework that extracts LLM-internal emotion vectors and incorporates them into both skill selection and skill evolution. At each decision step, a 27-dimensional emotion state is extracted from the residual stream and mapped to a confidence-gated summary injected into the routing prompt. Beyond online selection, emotion trajectories are analyzed for abrupt internal-state shifts to pinpoint problematic skill invocations, guiding targeted SOP rewriting that replaces the coarse binary outcome signal of prior methods. On WebShop and ALFWorld, Emotion2Skill with Qwen3-8B improves over the Zero-Shot baseline by +26.9% success rate and +25.5% average success respectively, outperforming all baselines on both benchmarks with consistent gains on Qwen3-14B. Co-activation analysis further reveals semantically coherent emotion--skill pairings, confirming that the routing improvements reflect meaningful internal-state signals rather than opaque statistical correlations. These results establish LLM-internal emotion representations as an effective decision-level signal for orchestrating agent skill systems, extending their utility beyond interpretability and output steering. The code is available at https://github.com/BoHan-LIN04/Emotion2Skill.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

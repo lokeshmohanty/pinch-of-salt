@@ -1,0 +1,13 @@
+{
+  "id": "cba58d207eb48f13",
+  "title": "PAPT++: Risk-Aware Adversarial Tuning and Generation for Single Domain Generalization",
+  "link": "https://arxiv.org/abs/2609.04837",
+  "description": "arXiv:2609.04837v1 Announce Type: new \nAbstract: Single domain generalization (SDG) aims to learn a model from one labeled source domain that generalizes to unseen target domains. A common strategy is to enrich the source distribution with augmented or generated samples, and recent text-to-image (T2I) diffusion models provide a strong generative prior for this purpose. However, diversity alone is insufficient for robust generalization, because useful generated samples should also capture variations that the current classifier finds difficult. Motivated by distributionally robust optimization (DRO), we define a semantic ambiguity set in the class-conditional generative space of a pretrained T2I model and search it for samples with high classification loss under the current classifier. To this end, we introduce PAPT++, a risk-aware adversarial generation-training framework for SDG. PAPT++ first learns diverse semantic reference images for each class through image-text alignment and intra-class diversity regularization. These references then serve as denoising targets during classifier-guided diffusion synthesis, reducing semantic drift while guiding generation toward challenging variations. The generated samples are combined with the source data to update the classifier, and the updated classifier guides the next synthesis round in return. In this way, PAPT++ progressively exposes the classifier to challenging yet semantically consistent variations. Extensive experiments on standard SDG benchmarks demonstrate the superiority of the proposed PAPT++ method and the effectiveness of its main components.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

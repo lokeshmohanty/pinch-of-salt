@@ -1,0 +1,13 @@
+{
+  "id": "e73c768bfc06c5a1",
+  "title": "Category Level 6D Object Pose Estimation from a Single RGB Image using Diffusion",
+  "link": "https://arxiv.org/abs/2412.11420",
+  "description": "arXiv:2412.11420v2 Announce Type: replace \nAbstract: Estimating the 6D pose and 3D size of an object from visual data is a fundamental task in computer vision. Although single-view geometry is a deeply established domain, contemporary category-level methods frequently rely on rigid prerequisites such as precise object models, ground truth depth, or multi-modal LiDAR integration to achieve robust results. In this work, we introduce a unified generative framework that addresses both single-view category-level pose estimation and temporal sequence tracking using only RGB input. Our method leverages score-based diffusion models to generate a rich multi-hypothesis pose distribution, inherently capturing spatial and geometric uncertainties. While existing diffusion-based estimators typically rely on computationally expensive likelihood models to prune outliers, we propose an efficient alternative utilising Mean Shift to directly isolate the distribution's mode as the final pose estimate. Our approach establishes a new state-of-the-art baseline on the challenging REAL275 benchmark among two-stage, crop-based estimators. Furthermore, by decoupling object detection from pose estimation, our generative framework explicitly avoids the catastrophic domain overfitting inherent to end-to-end single-stage detectors, achieving highly robust zero-shot generalisation on the unseen Wild6D dataset. Finally, we demonstrate that the iterative nature of our score-based sampler enables a seamless transition to video sequences by preserving and propagating the multi-hypothesis distribution across time as a coherent temporal prior.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

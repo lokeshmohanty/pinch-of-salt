@@ -1,0 +1,13 @@
+{
+  "id": "942da9e32af63449",
+  "title": "Understanding Why Foundation Models Work for Diffusion-Generated Image Detection",
+  "link": "https://arxiv.org/abs/2608.12155",
+  "description": "arXiv:2608.12155v1 Announce Type: new \nAbstract: Vision foundation models have recently emerged as powerful feature extractors for detecting AI-generated images, achieving strong generalization across generators and robustness to common image degradations. However, the reason behind their effectiveness is poorly understood. In this work, we investigate what cues are exploited by foundation-model-based detectors to distinguish real images from diffusion-generated ones. To this end, we design an ad hoc analysis protocol based on DDIM inversion. Given a real image we generate a sequence of synthetic copies by changing the depth of DDIM inversion. Even though most copies are semantically identical to the real reference, the detector score varies significantly across them due to subtle traces introduced by the diffusion synthesis, showing that its decision is not primarily driven by semantic failures. Through a frequency-swapping analysis, we further reveal that the discriminative cues exploited by the detectors are mainly localized in the low-to-mid frequency range, rather than only in the high-frequency range, as is the case for artifacts commonly associated with generative models. Finally, a latent-space analysis shows that regenerated images exhibit reduced variance and effective dimensionality, indicating that diffusion models do not fully reproduce the variability of real data. Overall, our results suggest that foundation-model-based detectors succeed by capturing non-semantic low-to-mid frequency distributional discrepancies between real and diffusion-generated images. These findings provide new insight into the robustness and generalization of such detectors and suggest directions for more interpretable forensic methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

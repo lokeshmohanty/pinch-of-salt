@@ -1,0 +1,13 @@
+{
+  "id": "b4532b5b9b431dde",
+  "title": "DishSeg24k: A Large-Scale Benchmark for Food Segmentation with Stochastic Expert Decoding",
+  "link": "https://arxiv.org/abs/2607.23070",
+  "description": "arXiv:2607.23070v2 Announce Type: replace \nAbstract: Food segmentation is essential for applications such as intelligent catering, dietary assessment, and recommendation. However, existing benchmarks fail to capture the complexity of real-world dining scenes. The challenges of dense inter-dish overlap, fine-grained class similarity, and extreme long-tail class distributions exceed the fidelity of current datasets. To fill this gap, we introduce \\textbf{DishSeg24k}, a large-scale dish-level segmentation benchmark with 24,096 images, 112,281 instances, and 278 fine-grained categories in real-world dining environments. Based on DishSeg24k, we further propose \\textbf{Food Expert-Adaptive Segmentation Transformers (FEAST)} to address these challenges. FEAST models query-based decoding as a Markov Decision Process (MDP), where each decoder layer update is treated as a sequential decision step that explores uncertainty along dish boundaries. We further redesign the decoder with a reinforcement learning (RL)-guided Mixture-of-Experts (MoE) module, in which a dual-critic decoupled optimization scheme separates task-oriented query refinement from structure-aware expert routing. This design promotes expert specialization and prevents expert collapse under long-tail category distributions. Finally, extensive experiments on DishSeg24k demonstrate the state-of-the-art performance of FEAST, which outperforms previous methods by {+3.21\\%} mIoU, {+3.68\\%} mDice, and {+4.00\\%} mAcc, respectively. We further validate the effectiveness of FEAST on FoodSeg103. The dataset and code will be publicly released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

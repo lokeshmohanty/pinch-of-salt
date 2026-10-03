@@ -1,0 +1,13 @@
+{
+  "id": "192655128e3b9a61",
+  "title": "More Rejective, Not More Discriminative: The Unit of Verification in Pre-Execution LLM Oversight",
+  "link": "https://arxiv.org/abs/2608.23941",
+  "description": "arXiv:2608.23941v1 Announce Type: new \nAbstract: Pre-execution oversight is core to trusted monitoring in AI control: a fallible LLM monitor vets planned actions before irreversible execution. Over-blocking forfeits usefulness and pressures deployers to disable it. Every protocol must fix a unit of verification: how many actions one call reviews. Existing designs take the unit as given; its effect on fallible monitors is unmeasured. Natural traces cannot isolate it: review length co-varies with error type and position. Catch alone misleads: rejecting everything catches everything. Measuring this needs boundary variation alone and a matched clean control. We introduce the twin-prefix framework, which supplies both. Each gold plan yields a prefix with one injected, environment-accepted error and a clean twin differing in one write. Judging each pair at five nested lengths ties verdict changes to the unit alone. Discrimination is scored by pre-registered informedness, catch minus false rejection. Longer review raises catch; false rejection climbs in lockstep. Informedness peaks at one or two actions for all six judges in both domains: longer windows make zero-shot monitors more rejective, not more discriminative. Replaying withheld observations traces the failure largely to observation deprivation. Safety cases should state the unit and co-report the clean series. Our framework is the first controlled, pre-registered instrument for this choice and never reads catch alone. Our calibrated short unit recovers up to 0.95 informedness over eight-action review, and no tested label-blind policy consistently beats it.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

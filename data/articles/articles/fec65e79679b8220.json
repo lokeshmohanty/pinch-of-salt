@@ -1,0 +1,13 @@
+{
+  "id": "fec65e79679b8220",
+  "title": "CoDiR: Confidence-Guided Diffusion Refinement for Semi-Supervised Histopathology Segmentation",
+  "link": "https://arxiv.org/abs/2608.11807",
+  "description": "arXiv:2608.11807v1 Announce Type: new \nAbstract: Semi-supervised histopathology segmentation is challenging due to scarce annotations and unreliable pseudo-labels in ambiguous gland regions. To address this problem, we propose Confidence-Guided Diffusion Refinement (CoDiR), a semi-supervised framework that combines a Mean Teacher segmentation model with diffusion-based pseudo-label refinement. Given an unlabeled image, the teacher first produces a soft prediction, and only low-confidence regions are refined by a conditional diffusion model trained to capture plausible mask structures from labeled data. The refined mask is then fused with reliable teacher predictions and used to train the student with confidence weighting and consistency regularization. On the GlaS and CRAG datasets CoDiR reaches 88.09\\% and 89.83\\% mDice with 10\\% labeled data, and 89.19\\% and 90.29\\% mDice with 20\\%, matching or exceeding the strongest published method on seven of the eight benchmark metrics. Ablations attribute the largest single contribution to the refinement module, which adds +6.36\\% mDice over the Mean Teacher baseline. The implementation code is publicly available at: https://github.com/vongla345/codir",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "4d508be6daaa1974",
+  "title": "Context without Commitment: Robust Dense Correspondence under Non-Rigid Deformation",
+  "link": "https://arxiv.org/abs/2609.37071",
+  "description": "arXiv:2609.37071v1 Announce Type: new \nAbstract: Non-rigid point-cloud registration aims to find the corresponding target point for each point on a deforming source surface. Point-level matching keeps the full target cloud available, but correspondence becomes ambiguous when different regions have similar local geometry. Regional or coarse-to-fine methods provide broader spatial context, but an incorrect regional match can exclude the correct correspondence before dense matching. We propose CoCo-Reg, which uses regional patches to enrich dense point features without allowing patch predictions to restrict the final point-level search. CoCo-Reg constructs farthest-point-sampled patches, exchanges geometric information within and between source and target, supervises patch similarity using identity-corrected point overlap, and projects the resulting regional information back to dense point features. The final registration stage still scores the full target cloud before global point-level candidate selection. On 726 held-out ModelNet10 objects across nine deformation levels, two established learning-based baselines obtain mean correspondence errors of 0.1993 and 0.1921, whereas CoCo-Reg obtains 0.0547. Relative to its point-level baseline, this is a 72.6\\% reduction. CoCo-Reg achieves lower correspondence error on 92.3\\% of paired test objects and reduces the mean fraction of points with error above 0.1 from 47.3\\% to 17.3\\%. Chamfer distance and HD95 decrease in the same direction, and CoCo-Reg remains lower across all tested deformation levels. These results support using regional context for dense non-rigid correspondence without imposing a hard patch-level restriction on the final search. Because evaluation uses one checkpoint per method, the reported gains characterize the complete systems rather than the isolated causal contribution of an individual component. Code will be made publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "59b32e2c4a4a51f9",
+  "title": "CLSP-REQA: A Real-Time Quality-Aware Closed-Loop Seizure Prediction Framework with Mamba-BiLSTM and Confidence-Gated Intervention",
+  "link": "https://arxiv.org/abs/2606.00074",
+  "description": "arXiv:2606.00074v2 Announce Type: replace-cross \nAbstract: Reliable seizure prediction is a prerequisite for closed-loop neurostimulation therapy, yet existing methods rarely account for the variability in EEG signal quality encountered in real-world deployment, and the overwhelming majority adopt non-strict evaluation protocols that overestimate generalisation performance. We propose CLSP-REQA (Closed-Loop Seizure Prediction with Real-time EEG Quality Assessment), a unified framework that embeds a lightweight signal quality estimator directly within the prediction pipeline. A Real-time EEG Quality Assessment (REQA) module runs in parallel with a Mamba-BiLSTM backbone, producing a scalar quality score q in [0,1] that modulates output confidence through a tiered non-linear fusion function (ECLO). Under strict cross-patient evaluation on the CHB-MIT Scalp EEG Database (n = 23 subjects, 198 seizures), CLSP-REQA achieves an AUC-ROC of 0.7426 +- 0.0199, outperforming the unadapted cross-patient baseline of 0.69 reported by Jemal et al., using only 16 EEG channels compared to 23 in prior work, and without requiring any target-patient data or domain adaptation. On the SIENA Scalp EEG Database (n = 14 subjects, 47 seizures), CLSP-REQA achieves AUC 0.7012 +- 0.0249, substantially surpassing the best domain-adapted cross-patient result of 0.61 on the same dataset, demonstrating strong cross-dataset generalisation. The framework outputs a structured four-tuple (p, q, c, Phi_SHAP) directly compatible with closed-loop neurostimulator interfaces.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.SP",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

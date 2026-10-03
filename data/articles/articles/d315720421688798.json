@@ -1,0 +1,13 @@
+{
+  "id": "d315720421688798",
+  "title": "SARe: Structure-Aware Generative 3D Fragment Reassembly",
+  "link": "https://arxiv.org/abs/2603.21611",
+  "description": "arXiv:2603.21611v2 Announce Type: replace \nAbstract: 3D fragment reassembly estimates the rigid pose of each fragment to recover a complete object from unordered point clouds or meshes. The task becomes increasingly challenging as the fragment count grows, since irregular fragments provide weak semantic cues and admit rapidly increasing numbers of plausible contact relations and global configurations. We propose Structure-Aware Reassembly (SARe), a generative framework that integrates query-aligned local geometry and task-native structural supervision into point-flow assembly. SARe-Gen conditions each transported surface query on a local latent and jointly supervises intermediate flow tokens with query-level fracture-region and fragment-level contact targets. Because these heads are optimized together with flow matching, structural supervision directly shapes the representations that drive coordinate transport, without requiring additional reassembly-specific pretraining or a separate teacher-alignment stage. At inference time, SARe-Refine geometrically verifies predicted relations and uses reliable local subassemblies to guide a second sampling pass, reinforcing consistent regions while resampling uncertain fragments. We evaluate SARe across three settings, including synthetic fractures, simulated fractures from scanned real objects, and scans of physically fractured objects. The results demonstrate state-of-the-art performance, with higher part accuracy and more graceful degradation in challenging many-fragment settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

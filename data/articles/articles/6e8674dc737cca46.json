@@ -1,0 +1,14 @@
+{
+  "id": "6e8674dc737cca46",
+  "title": "MABPD: Multi-Agent Bias Probing & Detection via Structured Argument Debate",
+  "link": "https://arxiv.org/abs/2609.04841",
+  "description": "arXiv:2609.04841v1 Announce Type: cross \nAbstract: Media bias in news articles operates through subtle linguistic cues---loaded language, selective framing, and strategic omission---that resist single-model detection and have traditionally required large annotated corpora for supervised training. We ask whether structured multi-agent deliberation can serve as a principled, training-free alternative to supervised classification for this task. We introduce MABPD (Multi-Agent Bias Probing & Detection), a pipeline in which three specialized LLM agents analyze an article from complementary perspectives and resolve disagreements through a Structured Argument Debate (SAD) protocol. SAD implements a domain-motivated asymmetric burden of proof---biased claims without grounded textual evidence carry zero weight---combined with role-weighted voting and post-consensus verification, replacing task-specific supervised decision boundaries with explicit deliberative structure. Ablation confirms that this structured deliberation, not mere agent parallelism, drives performance: removing the debate module reduces F1 by up to 10.6 points. On the BABE benchmark (4,121 expert-annotated sentences), MABPD achieves 83.4% macro F1 on the held-out test split---within 0.7 percentage points (pp) of the supervised SOTA (MAGPIE, 84.1% macro F1; Horych et al., 2024)---without any task-specific training or threshold tuning on annotated data. Cross-dataset evaluation on the SemEval 2019 HyperPartisan corpus (644 articles) yields 75.0% zero-shot accuracy, within 7.2 pp of the supervised SOTA accuracy (82.2%; Kiesel et al. 2019), confirming transfer across annotation regimes. We release the full pipeline and evaluation code.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

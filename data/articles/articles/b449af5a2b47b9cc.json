@@ -1,0 +1,16 @@
+{
+  "id": "b449af5a2b47b9cc",
+  "title": "Perceptual Refinement of an End-to-End Video Streaming Pipeline via Generative AI Layers",
+  "link": "https://arxiv.org/abs/2609.19215",
+  "description": "arXiv:2609.19215v1 Announce Type: cross \nAbstract: Traditional codecs treat every region of a frame alike; a generative layer can instead degrade the regions a viewer attends to least and reconstruct them at the client. We present PRESLEY, which extends the prior conference work ELVIS by replacing destructive block removal with adaptive in-place degradation under a removability mask, signaling per-block strength in a bit-packed side channel, and restoring via generative backbones conditioned on transmitted visual priors rather than unconditioned in-painting. We separate the problem into three goals: choosing which blocks to degrade, degrading them so the encoder spends fewer bits, and restoring them. Against its predecessor at matched rate, PRESLEY achieves a decisive mean -56.4% BD-rate reduction on delivered background quality across 13 rate ladders spanning multiple codecs and dataset families. Against pristine baselines, PRESLEY defines the operating regime of generative transport: delivering substantial bitrate savings (up to -29.4% BD-rate) and superior background quality (17/23 sequences) in the target bit-starved regime, while maintaining foreground fidelity bit-exact. We further map where the theoretical headroom in this class of architecture lies. Using an exact leave-one-superblock-out combinatorial oracle as an additive empirical bound, we show that existing complexity heuristics already capture 83.3% of bit-cost savings, bounding remaining cost-axis headroom at about 5% of total bitrate. We then identify and model the primary unaddressed axis -- post-restoration damage -- which disperses widely (4.9-8.4 dB). We prove that this damage is predictable before transmission (held-out rho = +0.400), establishing the feasibility of transmit-time restorability modeling and defining the roadmap for joint rate-distortion-restoration selection rules.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.AI",
+    "cs.CV",
+    "cs.MM"
+  ]
+}

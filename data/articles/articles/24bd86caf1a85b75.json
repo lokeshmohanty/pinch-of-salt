@@ -1,0 +1,13 @@
+{
+  "id": "24bd86caf1a85b75",
+  "title": "SSD: Spatially Speculative Decoding Accelerates Autoregressive Image Generation",
+  "link": "https://arxiv.org/abs/2606.20543",
+  "description": "arXiv:2606.20543v2 Announce Type: replace \nAbstract: Autoregressive image models treat images as 1D token sequences, inheriting the next-token factorization of language models. This flattening discards a useful property of images: nearby tokens are correlated in two dimensions, not one. We introduce Spatially Speculative Decoding (SSD), an inference-time decoding framework that exploits this spatial structure. Rather than speculating only along the flattened sequence, SSD predicts both the adjacent horizontal token and the token directly below it, allowing multiple spatial directions to advance in parallel. This reduces the number of backbone forward evaluations and alleviates the memory bottleneck of autoregressive decoding. SSD accelerates image generation by up to 11.03x in wall-clock time while maintaining generation quality on DPG-Bench and GenEval. These results show that spatial structure provides a simple and effective source of parallelism for autoregressive image generation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

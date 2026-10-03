@@ -1,0 +1,13 @@
+{
+  "id": "c23887a480c7075f",
+  "title": "YOLO26-RD: An End-to-End Road Damage Detection Network With Learnable Contrast Enhancement and Edge-Guided Downsampling",
+  "link": "https://arxiv.org/abs/2608.15713",
+  "description": "arXiv:2608.15713v2 Announce Type: replace \nAbstract: Pavement distress detectors are conventionally specialised for small objects, typically by adding a stride-4 detection head and replacing strided convolution with space-to-depth downsampling. This paper tests that premise against the annotation geometry of region level survey imagery and finds it fails: 1.28% of instances are small at 640 resolution while 70.37% are large, yet a stride-4 level would claim 75.3% of anchors, and complete misses rather than localisation errors dominate baseline failures. YOLO26-RD therefore reallocates the anchor budget, retaining the stride-4 branch as neck features but carrying no detection level there, and adds LearnableContrast, a 494 parameter per tile correction learned from the detection loss and active at inference, and EdgeSPD, a lossless space-to-depth downsampler gated by a fixed Sobel prior. Fifteen models were trained from scratch under one recipe, five scales each of YOLO26-RD and of matched YOLO26 and YOLOv12 families. Averaged over scales YOLO26-RD returns 0.790 mAP50 and 0.482 mAP50-95 against 0.776 and 0.471 for YOLO26 and 0.755 and 0.468 for YOLOv12; it exceeds both on mAP50 at every scale from s upward, and at m, l and x it leads on both metrics, twelve pairwise comparisons decided without exception. YOLO26-RD-l is the best of the fifteen at 0.809 mAP50 and 0.497 mAP50-95, improving on the YOLO26 reference by 0.031 and 0.030 and leading all six per class entries; every arm of a module ablation also exceeds that reference. The margin is thus a property of the architecture rather than of one tuned configuration, though three of the twelve margins lie inside the dataset 0.015 resolution limit and the held out split reproduces the ordering against YOLO26 but not YOLOv12 at scale x. As a TensorRT FP16 engine the released model sustains 98 frames per second on an entry level accelerator, against the 21 needed at 100 km/h.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

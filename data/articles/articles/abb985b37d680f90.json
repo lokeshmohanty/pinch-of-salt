@@ -1,0 +1,13 @@
+{
+  "id": "abb985b37d680f90",
+  "title": "Ensemble Deep Learning Approaches for AI-Altered Video Detection",
+  "link": "https://arxiv.org/abs/2607.06872",
+  "description": "arXiv:2607.06872v2 Announce Type: replace \nAbstract: The increasing accessibility of artificial intelligence has led to a rapid rise in AI-generated videos, making it more difficult to distinguish between real and manipulated content. Many existing detection methods rely on a single model and often struggle to generalize across different types of deepfakes. In this work, we developed a multimodal deepfake detection system that combines both audio and visual analysis using an ensemble of models. The system includes AASIST for audio-based detection, and EfficientNet, XceptionNet, and MesoNet for analyzing visual features in video frames. The pipeline takes a video as input, separates the audio, and extracts face frames using MTCNN. Each model produces a score indicating the likelihood of the input being fake. These scores are then combined using ensemble strategies, including mean averaging and stacking. Mean fusion provides a simple and stable baseline, while stacking uses a trained meta-model to learn how to combine predictions more effectively. Results show that while individual models perform well on the datasets they were trained on, their performance drops when tested on more diverse datasets. The ensemble approach helps improve overall robustness by combining predictions from multiple models, leading to more consistent performance across different types of deepfakes. This suggests that using both audio and visual information together is a more reliable approach for deepfake detection. Our results highlight generalization to unseen manipulations as the central open challenge, with average accuracy around 70%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

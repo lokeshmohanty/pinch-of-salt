@@ -1,0 +1,17 @@
+{
+  "id": "0f82fa75f281138d",
+  "title": "The $\\mathbf{P}$-Completeness of Inverted Index Traversal: On the Complexity of Evaluating Boolean Query DAGs",
+  "link": "https://arxiv.org/abs/2601.18747",
+  "description": "arXiv:2601.18747v3 Announce Type: replace-cross \nAbstract: Modern AI agents increasingly rely on search infrastructure to execute complex, neuro-symbolic reasoning workflows. These workflows often compile into deeply nested, non-monotonic Boolean queries over text fields. However, standard query evaluation strategies over inverted indices face severe theoretical limits when handling these structures. Stateful iterator models (Document-at-a-Time) are structurally bounded by $\\text{NC}^1$ formula evaluation, suffering a worst-case $O(2^{|Q|})$ exponential blowup in query complexity when unrolling re-convergent logic. Conversely, recursive materialization models (Term-at-a-Time) incur an $\\Omega(|U|)$ space complexity penalty (the Universal Scan) when evaluating logical negation over the document universe.\n  In this paper, we establish the theoretical boundaries of executing complex logic natively over an inverted index. We formalize a retrieval language ($\\mathcal{L}_R$) based on Directed Acyclic Graphs (DAGs) and prove that its evaluation problem is strictly \\textbf{$\\mathbf{P}$-Complete}. To make evaluation tractable, we introduce \\texttt{ComputePN}, a deterministic, sparsity-aware evaluation algorithm. By decoupling logical negation from universe-scale materialization via a novel Positive-Negative dual representation, and utilizing native DAG memoization, \\texttt{ComputePN} strictly bounds evaluation time to $O(|Q| \\cdot |U_{\\mathit{active}}|)$. This approach successfully evaluates $\\mathbf{P}$-Complete queries natively over the index, avoiding both the combinatorial tree-expansion bottleneck and the universal scan penalty, laying the formal foundation for computational retrieval.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.CC",
+    "cs.CL",
+    "cs.DB"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3ed321b45b8d17ec",
+  "title": "Diffusion Large Language Models for Visual Speech Recognition",
+  "link": "https://arxiv.org/abs/2605.28456",
+  "description": "arXiv:2605.28456v2 Announce Type: replace \nAbstract: Existing Visual Speech Recognition (VSR) systems commonly rely on left-to-right autoregressive decoding, which can force premature decisions on visually ambiguous tokens before sufficient context is available. We propose DLLM-VSR, to the best of our knowledge, the first Diffusion Large Language Model (DLLM)-based VSR framework, formulating transcription as iterative masked denoising with flexible-order decoding. With confidence-based unmasking, DLLM-VSR commits high-confidence positions early and uses the committed tokens as bidirectional context to refine ambiguous ones. To adapt DLLMs to VSR, we introduce a two-stage masked-denoising training strategy that separates visual-to-text content alignment from length modeling. We further observe a performance gap compared with an upper-bound setting where the ground-truth transcript length is provided at inference, allowing the model to focus on transcript content decoding. To reduce this gap, we develop length-guided candidate decoding, which uses video duration to construct plausible transcript-length hypotheses and reranks the decoded candidates using length plausibility and decoding confidence. The proposed method achieves a 19.4% word error rate on LRS3, establishing state-of-the-art performance among methods using only LRS3 as labeled training data.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV",
+    "eess.AS"
+  ]
+}

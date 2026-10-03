@@ -1,0 +1,13 @@
+{
+  "id": "9b6947027f2a28c4",
+  "title": "T-LoopFormer: Token-Level Elastic-Depth Looped Transformers for Latent Reasoning with Dynamic Routing",
+  "link": "https://arxiv.org/abs/2609.15160",
+  "description": "arXiv:2609.15160v2 Announce Type: replace \nAbstract: Looped Transformers have recently demonstrated strong performance in both reasoning and language tasks by reusing a shared set of parameters across multiple iterations, achieving parameter efficiency without sacrificing representational power. Besides, looped Transformers perform inference directly in the latent space (latent reasoning) to reduce the number of tokens consumed during inference, thereby achieving improved sample efficiency. However, these models typically apply a fixed recursion depth uniformly to every token, leading to suboptimal compute allocation and leaving significant efficiency gains on the table. In this work, we propose dynamic token-choice routing for looped transformers, enabling each token to adaptively determine its own number of loop iterations based on its hidden state, which can improve the token generation accuracy. Moreover, we further introduce recursion-wise KV cache, which maintains an independent key-value cache for each recursion loop, this design ensures that tokens at different depths only attend to their corresponding cached states, effectively enabling faster autoregressive decoding. Extensive experiments show that T-LoopFormer achieves robust performance on language modeling and zero-shot reasoning tasks and our model can reach the lowest decoding latency, which validate the effectiveness of token-choice router and recursion-wise KV cache. Code is available at https://github.com/YuMingQian1234/T-LoopFormer",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

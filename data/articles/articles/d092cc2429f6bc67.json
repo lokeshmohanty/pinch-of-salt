@@ -1,0 +1,13 @@
+{
+  "id": "d092cc2429f6bc67",
+  "title": "Same Semantics, Different Paths: Self-Improving Alignment for Vision-Text Compression",
+  "link": "https://arxiv.org/abs/2608.02109",
+  "description": "arXiv:2608.02109v1 Announce Type: new \nAbstract: Vision-Text Compression (VTC) renders long texts into images and encodes them through the vision encoder (ViT), compressing thousands of text tokens into far fewer visual tokens. However, since the ViT is pretrained predominantly on natural images, it captures visual attributes (glyphs, font sizes, layout) rather than linguistic semantics, causing rendered-image representations to diverge from native-text representations. We term this cross-path inconsistency and show, via rendering perturbation experiments, that it is a critical yet overlooked bottleneck of VTC. We propose SPIRAL (Self-improving Path Integration and Realignment), a self-supervised alignment framework that closes this gap using only the model's own text-path behavior as supervision, requiring no external teachers or additional annotations. SPIRAL operates at two complementary granularities: token-level on-policy distillation (OPD) for local faithfulness, and sequence-level preference optimization (DPO) for global coherence. On VTCBench, SPIRAL improves the overall score of Qwen3-VL-8B from 35.10 to 54.02, approaching the native text-input performance (55.60) and outperforming models up to 30x larger. The two granularities exhibit complementary strengths: OPD excels at retrieval and is sample-efficient, while DPO is stronger on reasoning and memory and scales better with data. SPIRAL's benefits also generalize to out-of-domain benchmarks, confirming that effective VTC hinges on aligning rendered-image representations back to native-text semantics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

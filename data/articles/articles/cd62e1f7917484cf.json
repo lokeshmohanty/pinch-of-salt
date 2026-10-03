@@ -1,0 +1,13 @@
+{
+  "id": "cd62e1f7917484cf",
+  "title": "evMLP: An Efficient Event-Driven MLP Architecture for Vision",
+  "link": "https://arxiv.org/abs/2507.01927",
+  "description": "arXiv:2507.01927v3 Announce Type: replace \nAbstract: While CNNs and ViTs dominate vision architectures, all-MLP models offer a structurally simpler alternative whose patch-independent processing is naturally suited to exploiting temporal redundancy in video. We present evMLP, an all-MLP architecture that processes image patches independently, enabling an event-driven local update mechanism for video processing: by defining inter-frame changes as \"events\" and processing only the patches where events occur, evMLP avoids redundant computation on unchanged regions. Because each patch is processed independently, skipping an unchanged patch leaves all other outputs unaffected; at an event threshold of zero, the mechanism produces outputs identical to the dense baseline rather than an approximation. On ImageNet, evMLP achieves 73.5% top-1 accuracy at 1.03 GMACs (rising to 77.0% with knowledge distillation and an extended training schedule). On multiple video datasets, the event-driven mechanism reduces computational cost by 8.4%-26.8% while maintaining output consistency with the dense baseline. Wall-clock measurements confirm that these savings translate into actual speedup under compute-bound conditions, and that stream-level parallelism is the effective deployment strategy for multi-core systems. The code and pre-trained models are available at https://github.com/i-evi/evMLP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

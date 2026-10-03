@@ -1,0 +1,13 @@
+{
+  "id": "dc1b8dfb484066cd",
+  "title": "Detail Continuation over a Trustworthy Coarse Scale for Autoregressive Super-Resolution",
+  "link": "https://arxiv.org/abs/2608.01823",
+  "description": "arXiv:2608.01823v1 Announce Type: new \nAbstract: Hallucination remains a persistent challenge in generative super-resolution (GSR), where reconstructed results may contain visually plausible yet weakly supported content, structural deviations, or unnatural textures with respect to the low-resolution (LR) input. Existing GSR methods have extensively explored the trade-off between perceptual realism and reconstruction fidelity, but the division between preserving reliable coarse-scale information and restoring more uncertain fine details is often handled implicitly within the overall restoration process. Visual autoregressive (VAR) modeling provides a natural opportunity to revisit this issue, as its coarse-to-fine next-scale prediction offers an explicit scale-wise generation interface. However, existing VAR-based SR methods still inherit the original full 1-to-$N$ autoregressive generation path, even though, for super-resolution, coarse-scale information in LR is often relatively more reliable, while long autoregressive chains may accumulate prediction errors. Motivated by these observations, we propose \\textbf{K2N}, which reformulates VAR-based SR from full-path generation into a $k$-to-$N$ detail continuation process. Specifically, early coarse-scale states are established directly from LR, while only the remaining finer scales are restored autoregressively. Experimental results show that K2N remains competitive with the VARSR baseline on standard SR metrics, while exhibiting clearer advantages on hallucination-focused evaluation. These findings suggest that explicitly rethinking the generation path in a scale-wise manner can be a promising direction for improving the reliability of generative super-resolution. Our code will be released soon at https://github.com/BRL-SYSU/K2NSR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e55e066e6bb84b46",
+  "title": "Unsupervised Detection of Entry and Exit Regions from Vehicle Trajectories for Camera-Agnostic Turning Movement Counts",
+  "link": "https://arxiv.org/abs/2607.10949",
+  "description": "arXiv:2607.10949v1 Announce Type: new \nAbstract: Turning movement counts are essential for intersection-level traffic management, yet their collection remains predominantly manual due to the cost of per-camera region annotation. This paper presents an unsupervised pipeline that identifies entry and exit regions directly from raw vehicle trajectories extracted via object detection and multi-object tracking, requiring no manual annotation, camera calibration, or prior knowledge of intersection geometry. Unlike trajectory clustering methods that classify individual trajectories using pairwise similarity and must be re-executed on every new batch, the proposed pipeline clusters initial and terminal point locations to produce persistent spatial region polygons that classify future trajectories by point-in-polygon containment at linear cost. The pipeline comprises six sequential steps, each with configurable parameters evaluated through a systematic statistical analysis spanning 19,152 pipeline executions across 25 surveillance cameras capturing dense heterogeneous traffic in Bengaluru, India, and 10 sequences from the UA-DETRAC benchmark dataset. Both parametric and nonparametric testing frameworks identify three consistently significant parameters and yield an empirically grounded recommended configuration. Under this configuration, the pipeline achieves a median classification error of approximately 3% across all 25 cameras, including 16 held-out locations, with GEH values within accepted engineering thresholds. Compared with two trajectory clustering baselines, the proposed pipeline exhibits greater stability across camera views and lower computational cost, at the expense of higher median error. Extended evaluation demonstrates that calibration clips of at least 60 minutes and peak-traffic selection further improve region estimation quality.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

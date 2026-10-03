@@ -1,0 +1,14 @@
+{
+  "id": "a0e25931894a3885",
+  "title": "MAGIC: Marginal-Guided Compression with Optimal Transport for Efficient Visual Document Retrieval",
+  "link": "https://arxiv.org/abs/2609.21018",
+  "description": "arXiv:2609.21018v1 Announce Type: new \nAbstract: Recent visual document retrieval (VDR) systems such as ColPali use multi-vector page embeddings, in which patch-level vectors enable fine-grained evidence matching but incur substantial index storage and MaxSim scoring overhead. Post-hoc merging offers a practical route to efficient VDR by reducing this cost without retraining the retriever, but its uniform reconstruction objectives are poorly aligned with the sparse, non-uniform patch usage induced by late-interaction retrieval. Under aggressive compression, this misalignment can preserve rarely used patches while concentrating retrieval activity on too few retained representatives. To address this misalignment, we propose Marginal-Guided Compression with Optimal Transport (MAGIC), a training-free post-hoc compressor for efficient retrieval with frozen multi-vector embeddings. MAGIC derives a MaxSim-induced compression surrogate and optimizes it through a two-marginal entropic optimal-transport formulation, where a retrieval-demand source marginal prioritizes high-use patches and a balanced target marginal regularizes retained-facet usage. Across ViDoRe benchmarks, keep ratios, and retrieval backbones, MAGIC consistently outperforms strong post-hoc compressors, with particularly large gains in the aggressive-compression regime; component ablations verify the complementary effects of its two marginals. We release the code at: https://github.com/xandery-geek/MAGIC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.IR"
+  ]
+}
