@@ -1,0 +1,13 @@
+{
+  "id": "aa2043a56041807b",
+  "title": "Behavior Pack Optimization for Video MLLM Post-Training",
+  "link": "https://arxiv.org/abs/2610.03141",
+  "description": "arXiv:2610.03141v1 Announce Type: new \nAbstract: Video multimodal large language models (MLLMs) keep climbing video question answering benchmarks, yet shuffling the frames, masking the segment that supports the answer, or occluding the target object barely changes their predictions. The accuracy rests on appearance and language priors, not on the temporal evidence the question asks for. We trace this to the unit of post-training: rewards are computed on a single response to the original clip, so the model is never asked to behave consistently across views. We propose Behavior Pack Optimization (BPO), which replaces the single response with a behavior pack of outputs across counterfactual views chosen by question type, scored jointly. The pack reward asks for stability when the intervention is irrelevant, sensitivity when key evidence is removed, and abstention when no evidence remains. To keep this objective stable at small pack sizes, BPO uses an anchor-relative advantage: the response on the original view serves as a per-prompt reference instead of a group mean over mixed views. On TempCompass, MVBench, and NExT-QA, BPO improves the macro accuracy of Qwen2.5-VL-7B-Instruct by 4.7 pp, the temporal-hard subset by 7.8 pp, and abstention F1 by 20.0 pp over a budget-matched vanilla GRPO baseline from the same SFT checkpoint. The gains transfer to Video-MME, LongVideoBench, and to LLaVA-Video-7B; ablations confirm they follow the view sets, not the rollout count. We hope this pack-level perspective offers a useful starting point for the video MLLM and multimodal post-training community as the field moves toward evidence-grounded video reasoning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

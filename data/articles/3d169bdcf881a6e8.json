@@ -1,0 +1,13 @@
+{
+  "id": "3d169bdcf881a6e8",
+  "title": "Custom Forcing: Training-Free Subject Customization for Autoregressive Video Generation",
+  "link": "https://arxiv.org/abs/2610.02914",
+  "description": "arXiv:2610.02914v1 Announce Type: new \nAbstract: Autoregressive video models can generate minute-long videos in real time, but they produce generic subjects from text rather than specific subjects from user-provided images. Existing customization methods either require costly per-subject optimization or use pretrained conditioning networks that jointly process all video frames with bidirectional attention. Neither approach is designed for causal streaming. We present Custom Forcing, a training-free method that stores reference-based anchor frames in the persistent KV cache of a frozen autoregressive video model. However, fixed anchors face two limitations: simple conditioning allows identity to drift, and the text prompt continues to favor a generic subject. To address these problems, drift-adaptive value amplification (DVA) scales reference influence with the degree of identity drift, while anchor contrast guidance (ACG) steers generation away from the generic class prior. Over two-minute rollouts, fixed anchors fall from 0.58 to 0.42 in DINO-I, while Custom Forcing keeps it between 0.58 and 0.62 without reducing motion. Custom Forcing also achieves higher subject similarity than bidirectional customization methods and better preserves identity over 30s than causal image-to-video and reference-to-video models, while generating each frame 9.5--28.5 times faster than these long-video baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

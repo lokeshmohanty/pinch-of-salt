@@ -1,0 +1,13 @@
+{
+  "id": "7144a86854776c82",
+  "title": "OuroReward: Sequential Reward Scheduling for Reinforcement Learning in Text-to-3D Generation",
+  "link": "https://arxiv.org/abs/2610.03423",
+  "description": "arXiv:2610.03423v1 Announce Type: new \nAbstract: Reinforcement learning (RL) for Text-to-3D (T23D) generation requires optimization across multiple quality dimensions such as semantic alignment and texture clarity. Existing methods typically optimize these dimensions simultaneously through multiple reward aggregation, without explicitly modeling inter-dimension dependencies. This can cause imbalanced optimization and persistent interference among conflicting dimensions. To address this limitation, we propose OuroReward, an interference-aware sequential reward scheduling strategy for T23D RL. OuroReward first estimates pairwise dependencies among dimensions and constructs a cyclic optimization path that minimizes cumulative interference. By incorporating the tail-to-head dependency, the cycle captures global compatibility across the entire schedule. Then, OuroReward converts the cycle into a one-pass sequence, and starts optimization from the dimension with the lowest aggregate interference. Rather than assigning a fixed optimization budget to each dimension-wise reward, training adaptively determines when to advance to the next reward according to the remaining optimization headroom of the current one. We further introduce AdaSelect, an adaptive prompt selection strategy that identifies reliable and informative prompts aligned with the model's current capability. By focusing policy updates on these prompts, AdaSelect effectively improves training stability. Extensive experiments across different T23D models and RL algorithms demonstrate that our framework consistently improves generation quality across multiple dimensions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

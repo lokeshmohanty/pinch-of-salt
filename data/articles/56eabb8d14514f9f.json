@@ -1,0 +1,14 @@
+{
+  "id": "56eabb8d14514f9f",
+  "title": "OptiSelect: How does the Optimizer Shape Data Curriculum?",
+  "link": "https://arxiv.org/abs/2610.03432",
+  "description": "arXiv:2610.03432v1 Announce Type: cross \nAbstract: Online data selection has demonstrated substantial efficiency gains for LLM pretraining by training on the most valuable candidates within each batch. Since a candidate's value is realized through its effective model update, principled selection should account for the optimizer step, which reshapes the raw gradient before it updates model parameters. We formalize this optimizer-aware selection paradigm as OptiSelect and present the first systematic study of how the optimizer shapes data selection. Our theory establishes a selection gain principle in which the advantage of online selection is governed by the discriminability of the optimizer-induced utility scores. We prove that sign-based and polar-tangential preconditioners of Lion and Muon would suffer from a discriminability collapse which caps attainable gains from OptiSelect, whereas diagonal-adaptive optimizers such as AdamW and Sophia admit strictly better upper bounds. The proposed principle also yields a quantitative derivation of the optimal candidate oversampling ratio. Pretraining experiments on 124M and 720M models are consistent with our theoretical analysis and show that AdamW's diagonal-adaptive scoring geometry remains the strongest scoring geometry even with Muon as optimizer. We further demonstrate that OptiSelect retains its benefits under data rephrasing, a technique used in modern data processing pipelines. Our findings provide theoretical foundations and practical guidance for co-designing optimizers and data selection in LLM pretraining.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

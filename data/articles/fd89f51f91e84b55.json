@@ -1,0 +1,13 @@
+{
+  "id": "fd89f51f91e84b55",
+  "title": "Safeguarding Mutual Correction in Source-Free Domain Adaptation via Cut Statistics",
+  "link": "https://arxiv.org/abs/2610.02981",
+  "description": "arXiv:2610.02981v1 Announce Type: new \nAbstract: Source-Free Domain Adaptation (SFDA) aims to adapt a source-pretrained model to an unlabeled target domain without access to the original source domain. While early single-model approaches rely on self-refinement, they are inherently susceptible to confirmation bias and struggle to correct their own systematic errors. To overcome this limitation, recent methods introduce Vision-Language (ViL) models as external knowledge sources. However, these approaches operate in a largely unidirectional paradigm, using the ViL model primarily to supervise the source-pretrained model. This overlooks a key structural property: the two models exhibit distinct failure modes -- where one produces an incorrect prediction, the other may produce a correct one, creating a natural opportunity for mutual correction within the target domain. Yet, without ground-truth labels, identifying which model is correct on any given sample is non-trivial, and naively exchanging predictions risks propagating errors across models. To address this challenge, we propose SafeCut, a novel approach that leverages the cut statistic as a label-free measure of prediction reliability to gate cross-model supervision. Our approach dynamically controls both the direction and strength of supervision based on relative reliability, selectively amplifying true corrections while suppressing miscorrections on a per-sample basis. We further provide theoretical justification showing that this reliability-gated mechanism guarantees a net-positive correction signal. Extensive experiments across diverse SFDA benchmarks demonstrate that SafeCut achieves state-of-the-art performance, highlighting the effectiveness of safeguarding mutual correction in SFDA via cut statistics.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}
