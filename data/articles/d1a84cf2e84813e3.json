@@ -1,0 +1,14 @@
+{
+  "id": "d1a84cf2e84813e3",
+  "title": "HGPTrans: Hierarchical Graph-Pooling Transolver for Automotive Aerodynamic Drag Coefficient Prediction",
+  "link": "https://arxiv.org/abs/2609.31765",
+  "description": "arXiv:2609.31765v2 Announce Type: replace \nAbstract: Accurate and rapid prediction of the aerodynamic drag coefficient ($C_D$) is essential for vehicle design, particularly during early-stage design, where many candidate geometries must be evaluated. Although computational fluid dynamics (CFD) provides reliable aerodynamic estimates, its high computational cost limits large-scale design exploration. This paper proposes the hierarchical graph-pooling Transolver (HGPTrans), which combines hierarchical graph pooling with Transolver-based attention to directly predict $C_D$ from vehicle surface meshes. Motivated by the fact that vehicle aerodynamics depends on both local geometric features and long-range interactions among spatially distant surface regions, HGPTrans integrates three complementary components. Graph isomorphism convolutions encode discriminative local geometry, Transolver-style slice attention captures global interactions with linear computational complexity, and information-redundancy-aware hierarchical pooling progressively removes redundant nodes while preserving informative geometric structures. The model is trained and evaluated on the large-scale DrivAerNet and DrivAerNet++ datasets, where it achieves the lowest mean absolute error and mean squared error among the evaluated baselines. Its generalization capability is further assessed through transfer learning on a real-vehicle dataset containing both sedans and sport utility vehicles (SUVs), achieving relative $L_1$ errors of 1.56\\% (sedans) and 2.12\\% (SUVs) with an inference time of approximately $0.293$ s per vehicle. This corresponds to an acceleration of several orders of magnitude relative to high-fidelity CFD while keeping the predicted drag coefficients within a few percent of the CFD reference. Ablation studies confirm each component's contribution and reveal the effects of depth and pooling ratio.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "physics.flu-dyn"
+  ]
+}

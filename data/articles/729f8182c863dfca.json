@@ -1,0 +1,13 @@
+{
+  "id": "729f8182c863dfca",
+  "title": "Unified Multi-plane Autoregressive Diffusion for 3D Multi-contrast MRI Synthesis",
+  "link": "https://arxiv.org/abs/2610.09376",
+  "description": "arXiv:2610.09376v1 Announce Type: new \nAbstract: Acquiring a complete set of magnetic resonance imaging (MRI) contrasts is time-intensive and uncomfortable for patients, despite the diagnostic value of multi-contrast imaging. This motivates synthesizing missing contrasts from those already acquired, which is an inherently 3D problem requiring anatomical coherence across axial, sagittal, and coronal planes. However, fully 3D generative models are often impracti- cal under computational resources that scale cubically with volume size. We propose a unified Multi-Plane Autoregressive Diffusion (MPAD), a latent diffusion framework that achieves full-volume 3D synthesis using efficient plane-wise 2D operations while preserving volumetric coherence. A 3D autoencoder first compresses MRI scans into an isotropic 3D la- tent representation. A 2D diffusion model is then trained to reconstruct masked latent slices of the target contrast, conditioned on both source- contrast slices and unmasked target-contrast slices. During inference, we introduce plane-wise autoregressive synthesis with inter-plane priors. Slices are generated autoregressively in random order within one plane orientation to maintain intra-plane continuity, then propagated as con- ditioning priors to orthogonal plane orientations to enforce inter-plane consistency. Compared to 3D latent diffusion baselines, MPAD reduces training and inference FLOPs by 7x and 3x, respectively, while also lowering inference time and peak memory consumption. Experiments on multiple datasets demonstrate that MPAD achieves superior perfor- mance, generating high-fidelity 3D volumes and supporting one-to-many translation within a single unified model.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

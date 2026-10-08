@@ -1,0 +1,13 @@
+{
+  "id": "774f1d0d0086a5aa",
+  "title": "Shape-Bayes: Bayesian Inference of Structured Shapes under Visual Ambiguity",
+  "link": "https://arxiv.org/abs/2610.09032",
+  "description": "arXiv:2610.09032v1 Announce Type: new \nAbstract: Perceiving structured shapes, such as human faces, from pixels is an inherently ambiguous task in real-world conditions. Yet, shape inference is largely posed as a deterministic regression task predicting fixed spatial coordinates. We find that deterministic regression is brittle when visual evidence is ambiguous or incomplete; under severe occlusions deterministic models exhibit structural collapse, predicting incoherent shapes or reverting to generic averages. To address this, we introduce Shape-Bayes, a probabilistic framework that couples uncertainty-aware visual perception with Bayesian shape reasoning. Rather than forcing point estimates, Shape-Bayes dynamically weights visual evidence against geometric priors to infer a structurally valid shape posterior. Demonstrated on human face shape regression, a rigorous testbed featuring complex non-rigid deformations and strict anatomical constraints, Shape-Bayes comprises: (1) a base model predicting noisy landmarks alongside distilled aleatoric uncertainties; (2) a lightweight Transformer encoding these observations into an adaptive prior over a PCA shape manifold; and (3) a differentiable Bayesian solver computing closed-form posteriors by balancing the noisy predictions against this prior. By guaranteeing complete structural integrity, Shape-Bayes achieves an absolute improvement of up to ~34% IDR over state-of-the-art deterministic models. Simultaneously, it yields highly calibrated uncertainty bounds and reduces relative error by up to 12.5%, establishing a new state-of-the-art for robust 2D face shape regression under severe occlusion. The project page is at https://shape-bayes.github.io.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

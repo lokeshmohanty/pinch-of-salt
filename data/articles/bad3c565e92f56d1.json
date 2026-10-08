@@ -1,0 +1,13 @@
+{
+  "id": "bad3c565e92f56d1",
+  "title": "Do Image Editors Follow Depth-Dependent Blur and Aperture Response? A Rendered-Ground-Truth Pilot Audit",
+  "link": "https://arxiv.org/abs/2610.09344",
+  "description": "arXiv:2610.09344v1 Announce Type: new \nAbstract: General image editors are asked to make a photo look as if it were taken at f/1.4, yet it is rarely checked whether the blur they add follows thin-lens optics. A physical aperture edit spreads blur across depth in thin-lens proportions and changes the blur when the aperture changes; prior evaluations check blur monotonicity, sharpness-trend correlation, effective-aperture error, or vision-language judgments, and none we found reports the two properties separately at known depths. In this pilot audit of two editors (Gemini~3.1 Flash Image and GPT-image-2.5) we compare against a rendered oracle: Blender Cycles scenes with true thin-lens depth of field, one blur-width estimator applied identically to oracle and editor outputs, and preregistered depth and aperture indices. In 24 texture scenes rendered in one three-panel geometry, accepted and measurable panels show f/1.4-to-f/2.8 width ratios, $\\bar\\sigma_{1.4}/\\bar\\sigma_{2.8}$, of 0.99--1.18 against 1.98--2.13 for the oracle, and ratios of pooled median Gaussian-equivalent near/far blur widths of about 1.18--1.25 (Gemini) and 0.97--1.05 (GPT-image) against 1.69--1.82. Preregistered black-box interventions show that qualitative wording changes blur strength by roughly 2--10 times, whereas a request for 2 versus 6 px changes it 1.1--1.3 times and no tested wording of the f-number meets the registered ``followed'' criterion. The depth compression appears in the original and reversed centre-focus layouts; with the focus on the near panel, the available-panel depth index reaches the registered threshold, and the aperture response stays attenuated in every layout tested. Scalar metrics adapted from published ones give oracle-like scores to synthetic editors whose proportions are compressed.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

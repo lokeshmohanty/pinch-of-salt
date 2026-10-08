@@ -1,0 +1,13 @@
+{
+  "id": "dcea5160da3489c1",
+  "title": "MSU Team at the Explainable Deepfake Detection Challenge 2026: Grounded Artifact Evidence for Deepfake Detection",
+  "link": "https://arxiv.org/abs/2610.09952",
+  "description": "arXiv:2610.09952v1 Announce Type: new \nAbstract: Recent advances in generative image models have made many manipulated images highly realistic, raising the need for detectors that are not only accurate but also able to provide visual evidence for their decisions. In this paper, we present our solution to the Explainable Deepfake Detection Challenge [2] on the XPlainVerse dataset [1], where systems are required to predict whether an image is real or fake and generate both complex and simple explanations grounded in visible forensic cues. Our method follows a modular detection-and-explanation design. For the real/fake decision, we build a multi-backbone detector that combines several DINOv3 models with Mesorch manipulation-localization features, bringing together pretrained visual representations, DCT-aware cues, and multi-scale forensic information. To inject explanation evidence into the detector, we use a Grounding-DINO-based pseudo-mask generation pipeline that converts local artifact descriptions from training explanations into weak patch- level supervision for an Artifact Evidence Map. We further introduce a local patch-level contrastive objective that separates artifact and authenticity evidence in the detector feature space without requiring paired images or pixel-level manipulation masks. For language output, we use class-conditional Qwen3-VL models to generate complex explanations for fake and real predictions, followed by a GRPO-optimized text simplification model. The proposed methods were trained and evaluated on the challenge subset of XPlainVerse. On the full test split, our submission achieves 0.9349 detection accuracy, 0.5571 explanation score, and a 0.7456 final challenge score.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
