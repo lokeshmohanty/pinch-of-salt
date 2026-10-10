@@ -1,0 +1,13 @@
+{
+  "id": "1d056aac3193d5f9",
+  "title": "Automated Maize Ear Phenotyping Using 3D Reconstructions",
+  "link": "https://arxiv.org/abs/2609.01921",
+  "description": "arXiv:2609.01921v1 Announce Type: new \nAbstract: Maize kernel traits such as row number, kernels per row, and kernel size vary largely for genetic reasons and are consistently associated with regions of the genome that influence yield. Manual measurement of these traits, however, cannot keep pace with the volume of maize generated in a breeding program. To address this, we developed and validated a fully automated pipeline for extracting these traits from 3D point clouds of corn ears, built on a recently developed video-to-point-cloud platform. Raw video frames are processed through COLMAP and NeRF, the ear is isolated via density-based separation, and the point cloud is distance-calibrated to physical units. The calibrated ear point cloud was Z-axis aligned via PCA and cylindrically unwrapped to a 2D image. We enhanced contrast and performed zero-fine-tuning instance segmentation using Cellpose-SAM. A triple-juxtaposed unwrap strategy was used to prevent double-counting at the seam. The pipeline achieved kernel count R^2 = 0.921 (MAPE = 10.33%) and kernel row number within +-2 rows for 95.2% of ears (MAE = 0.75 rows) on a 168-ear held-out set from the 268-ear labeled dataset. The resulting multi-trait dataset has known genotype identity for each ear, positioning it for phenotype-to-genotype association analyses.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

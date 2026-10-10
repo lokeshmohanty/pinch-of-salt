@@ -1,0 +1,13 @@
+{
+  "id": "977fc378205c8c96",
+  "title": "Beyond Edge Maps: Wavelet-Domain Conditioning for Multi-Adapter Map-to-Satellite Diffusion",
+  "link": "https://arxiv.org/abs/2608.00083",
+  "description": "arXiv:2608.00083v1 Announce Type: new \nAbstract: Commercial mapping partnerships are often unavailable in low-resource regions, leaving satellite basemaps stale and motivating synthesis of satellite imagery from independently maintained cartographic data. Existing ControlNet-based diffusion methods typically condition on structural signals like edges or segmentation extracted from the target image itself, assuming the imagery already exists and limiting their use exactly where synthesis matters most. Map-conditioned alternatives add cues like edge detection but omit frequency-domain structure. We propose a ControlNet-based diffusion framework conditioned only on cartographic sources obtainable independently of the target imagery: OpenStreetMap (OSM) raster maps and their stationary wavelet transform (SWT) subbands, a conditioning signal previously unexplored for map-to-satellite diffusion. Two ControlNet adapters, trained separately on the map and wavelet representations atop a frozen Stable Diffusion backbone, are fused via MultiControlNet, jointly drawing on spatial structure and frequency detail without retraining a multi-input model. We evaluate on a new paired map-satellite dataset curated for Nepal, a data-scarce, topographically diverse region, alongside the Pix2Pix maps-satellite benchmark. Combined conditioning wins six of eight metric-dataset comparisons -- SSIM and PSNR on both datasets, plus LPIPS (both Alex and VGG backbones) on ours and ties map-only on both Pix2Pix LPIPS backbones while still edging past wavelet-only there. Wavelet-only takes the lowest FID on both datasets, matching the tradeoff between per-image fidelity and distributional realism. We treat this gap cautiously given our modest test-set sizes and FID's known small-sample bias.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "f0fe4b0027240689",
+  "title": "Otter: A Time-Aware, History-Conditioned Human Chess AI",
+  "link": "https://arxiv.org/abs/2608.05206",
+  "description": "arXiv:2608.05206v1 Announce Type: new \nAbstract: Otter is a 15.3M-parameter human chess AI that predicts human move selection by modeling play as a time-aware, sequential process rather than treating each position in isolation. It combines two conditioning signals: (1) a move history encoder that conditions predictions on the last 20 moves, capturing opening preferences, positional drift, and intra-game behavioral tendencies; and (2) a time control module that modulates predictions based on clock pressure. Otter is trained on 6.1 billion positions from 117 million Lichess rapid games over 30 days on a single T4 GPU.\n  Otter achieves 55.23% top-1 and 90.95% top-5 move-prediction accuracy, surpassing the prior state-of-the-art human chess model, Maia 2, with far fewer parameters and less training data. Across 11 Elo brackets (<1100 to >=2000), accuracy peaks at 57.38% in the 1900-1999 bracket. These results show that modeling chess as a time-aware, sequential activity yields more human-accurate move prediction than position-only approaches, using a smaller model. Code, trained models, and complete training logs are publicly released.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

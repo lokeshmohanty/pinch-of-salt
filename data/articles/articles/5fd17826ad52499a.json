@@ -1,0 +1,16 @@
+{
+  "id": "5fd17826ad52499a",
+  "title": "Nova: An End-to-End MLIR Compiler for Deep Learning",
+  "link": "https://arxiv.org/abs/2608.00029",
+  "description": "arXiv:2608.00029v3 Announce Type: replace \nAbstract: The performance of deep learning models at scale relies heavily on how effectively high-level mathematical operations are mapped to underlying physical hardware. While high-level tensor frameworks provide flexible abstractions, their execution models inherently lack the whole-graph visibility required to maximize hardware utilization, often forcing a reliance on opaque, hand-written kernel libraries for complex operations like Attention. To bridge this gap, we present the next iteration of Nova, an automated end-to-end JIT compiler that achieves absolute control over hardware mapping by synthesizing fine-grained kernels directly from the computation's structure. In this work, we extend Nova's compilation pipeline to natively support full Transformer architectures. By capturing eager executions and unifying forward and backward passes into a single value-semantic dialect, Nova unlocks aggressive whole-graph optimizations. Rather than relying on rigid, pre-compiled library calls, Nova focuses on extensive cross-operator fusions, collapsing complex causal attention sub-graphs, element-wise operations, and memory-bound normalizations directly into single fused kernels to drastically reduce global memory roundtrips. In our evaluations training a full GPT-2 architecture on Ada 6000 GPUs, Nova demonstrates superior end-to-end throughput, averaging 441K tokens/second compared to 406K for our own eager execution and 405K for torch.compile. By drastically reducing memory-bound overheads through compiler-native fusion, Nova enables efficient full LLM compilation on modern hardware while strictly maintaining numerical parity.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.AR",
+    "cs.LG",
+    "cs.PL"
+  ]
+}

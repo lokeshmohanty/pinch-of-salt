@@ -1,0 +1,13 @@
+{
+  "id": "3e99291c42feb46f",
+  "title": "IMVS: Interactive Medical Volume Segmentation with Test-Time Adaptation - A New Method for Annotating Radiology Datasets",
+  "link": "https://arxiv.org/abs/2609.16775",
+  "description": "arXiv:2609.16775v1 Announce Type: new \nAbstract: Annotating large radiology datasets is bottlenecked by the manual effort of delineating structures slice-by-slice in 3D volumes. Interactive methods reduce this effort but stay interaction-inefficient: slice-wise methods (including many foundation models) ignore inter-slice continuity, while 3D and video-based methods propagate a prompt with a \\emph{fixed} propagator that never adapts to the target volume, so it drifts on low-contrast or pathological structures and must be re-prompted. We present IMVS, a human-in-the-loop annotation framework that composes three components into a closed loop rather than a new segmentation primitive: a lightweight 2D Slice Mask Adapter (SMA) fine-tuned online from user scribbles, a frozen Volume Mask Tracker (VMT) that propagates corrected masks across adjacent slices, and a soft teacher--student alignment that limits forgetting. The SMA is backbone-agnostic (UNet++, DeepLabV3, TransUNet). Across 8 public CT/MRI datasets, IMVS matches strong interactive baselines in quality while sharply cutting annotation effort: $14.4\\times$ faster than a proficient copy-based manual workflow ($22.3\\times$ over naive manual), $4.6\\times$ over slice-wise and $1.9\\times$ over 3D interactive methods. MedSAM2 and ScribblePrompt stay competitive or stronger on well-delineated organs; IMVS's advantage is largest on challenging targets and on interaction efficiency. Source code and Demo Video: https://github.com/AbhilakshSinghReen/imvs.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

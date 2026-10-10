@@ -1,0 +1,13 @@
+{
+  "id": "84f68da5d27c99f8",
+  "title": "AdaptiveCDM: Source-Free Few-Shot Domain Adaptation for Cell Detection in Microscopic Images",
+  "link": "https://arxiv.org/abs/2503.03370",
+  "description": "arXiv:2503.03370v3 Announce Type: replace \nAbstract: Cross-domain cell detection for microscopic images suffers from performance degradation due to distribution shifts across imaging domains. Unsupervised Domain Adaptation (UDA) strategies, attempt to overcome domain sift without requiring annotated data from target. However, requirement of availability of annotated data from the source domain and large-size data from target domain are both challenging limitations for realistic scenarios. This is especially true in medical imaging, where privacy requirements might prevent access to annotated source data, and costly data acquisition restricts extensive sampling of the target domain. To address these challenges, we propose AdaptiveCDM, a modular framework for Source-Free Few-Shot Domain Adaptive Object Detection (SF-FSDAOD) setting, that adapts a pretrained source model using only few labeled target images without accessing source data. AdaptiveCDM combines Resolution-Aware Augmentation (RAug) and Category-Aware Representation Learning (CARL). RAug alleviates the scarcity and class imbalance by augmenting instance balanced training examples, while preserving the scale fidelity and morphological properties of cellular structures. CARL enhances discriminative representation learning by encouraging class-consistent proposals, improving both localization and classification. We also introduce two competitive baselines for proposed setting: Faster-FreeShot and MT-FreeShot. Our approach achieves 40.4/43.4 mAP0.5 on M5 and 67.1/75.5 mAP0.5 on Raabin-WBC under 2-/5-shot adaptation. Despite using only a few labeled target images and no source data, AdaptiveCDM achieves competitive or superior performance compared with SOTA methods under their respective supervision settings. Ablations and qualitative analyses further substantiate the contribution of each component and the effectiveness of AdaptiveCDM in low-data regimes. Code/models will be available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "bf5213ed8cf1f7b3",
+  "title": "Lang3DSeg: Annotation-Free Open-Vocabulary 3D Segmentation with Point Transformers",
+  "link": "https://arxiv.org/abs/2610.00855",
+  "description": "arXiv:2610.00855v1 Announce Type: new \nAbstract: Accurate 3D semantic perception is critical for safe autonomous navigation. However, supervised LiDAR segmentation remains tied to closed taxonomies and to the cost of point-wise manual annotation. Open-vocabulary methods avoid that cost by projecting the output of 2D vision-language models onto LiDAR and distilling it into a 3D network. These methods rely almost exclusively on voxel-based sparse convolutions, and point transformers have so far been limited to indoor environments, where 3D data is dense and bounded. We present Lang3DSeg, which establishes a point transformer as the backbone for annotation-free open-vocabulary segmentation of outdoor 3D LiDAR, and is trained from scratch without geometric pre-training. This training paradigm necessitates addressing the inherent noise in 2D-to-3D label projections; specifically, naive projection often suffers from depth ambiguity, where points behind an object are erroneously assigned its semantic label. We therefore composite masks using an explicit class-priority rule and truncate each projected instance at the first gap in its depth distribution, correcting the projection error directly rather than averaging it over registered sequences. Lang3DSeg achieves 52.8% mIoU on nuScenes validation and 41.4% on SemanticKITTI, the highest among published annotation-free methods on both benchmarks. Every 3D semantic segmentation is on a single LiDAR sweep, and inference operates in real-time without running vision-language models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

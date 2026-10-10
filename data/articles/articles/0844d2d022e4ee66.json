@@ -1,0 +1,13 @@
+{
+  "id": "0844d2d022e4ee66",
+  "title": "Learnable Burst Quantization for Expressive and Efficient Spiking Neural Networks",
+  "link": "https://arxiv.org/abs/2604.25688",
+  "description": "arXiv:2604.25688v2 Announce Type: replace \nAbstract: Binary spikes provide only two neuronal output states per timestep, limiting the response capacity of spiking neural networks (SNNs) under short simulation horizons. Burst neurons expand this response space, but their threshold spacing is typically fixed before training, leaving layer-specific burst resolution outside end-to-end optimization. We propose Learnable Burst Quantization (LBQ), which formulates burst emission as saturated uniform quantization with a positive, layer-wise learnable step. ReLSG-ET, a rectified-linear surrogate gradient with exponential tails, provides gradient support throughout and beyond the active burst range, thereby enabling joint optimization of synaptic weights and burst resolution. At inference, LBQ absorbs each learned step into downstream weights and decomposes integer burst levels into binary bit planes, accumulating only the non-zero planes. This changes the synaptic accumulation count for a level $S$ from $S$ to $\\operatorname{popcount}(S)$. At two timesteps, LBQ achieves 97.45\\% on CIFAR-10 and 82.82\\% on CIFAR-100 with ResNet-20, and 73.67\\% on ImageNet-1K with ResNet-34. On CIFAR-10, it comes within 0.07 percentage points of the 97.52\\% ResNet-20 ANN reference; at $N_{\\max}=5$, bit-plane execution reduces unary-equivalent synaptic accumulations by 40.52\\% relative to unary execution. Controlled ablations isolate the benefits of learned quantization and ReLSG-ET, while layer-wise analyses reveal selective burst allocation across network depth. Results on CIFAR10-DVS and DVS128-Gesture extend the evidence to event-driven recognition. LBQ therefore couples adaptive burst resolution and accurate inference with an algebraically equivalent bit-sparse synaptic execution path.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

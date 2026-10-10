@@ -1,0 +1,15 @@
+{
+  "id": "766a93e0146dbec5",
+  "title": "Certified Mechanistic Edits: Behavioral Guarantees for Skill Removal and Preservation",
+  "link": "https://arxiv.org/abs/2610.03502",
+  "description": "arXiv:2610.03502v1 Announce Type: cross \nAbstract: Mechanistic edits (ablations, weight edits, activation steering) are the standard tools for unlearning a harmful capability from a neural network while preserving useful ones. Current approaches validate their effects only by testing, which can never cover an entire continuous region of inputs. Prior work at the interpretability-verification boundary certifies descriptions of a model: what a circuit computes, or whether it faithfully explains the whole. We instead certify the behavioral effect of an edit: that disabling a circuit removes one skill and provably preserves another, for every input in a region; a feature non-interference guarantee in the information-flow-security sense. We demonstrate such certified edits from toy ReLU networks up to a standard softmax + LayerNorm transformer, proving removal and preservation over continuous embedding-space regions and reaching roughly 9x the input-perturbation dimension an exact solver can handle by switching to sound bound propagation. Furthermore, we prove that no finite deterministic black-box test can certify removal, exhibiting an edit that passes exhaustive testing yet provably fails on a survivor pocket that can be made arbitrarily small. Guarantees hold on small, standard-architecture networks and, like any removal claim, presuppose that the target skill admits a decidable specification, a property which real-world harms may not have.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CR"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "83e2f18d4e8cf0f2",
+  "title": "COMPASS: Finding Where Reasoning Lives in Language Models",
+  "link": "https://arxiv.org/abs/2610.07469",
+  "description": "arXiv:2610.07469v2 Announce Type: new \nAbstract: Explicitly eliciting reasoning substantially improves LLM performance. Existing approaches require a predefined characterization of reasoning, whether through CoT prompt design, contrastive CoT directions, or via SAE derived reasoning features. For mathematical reasoning with verifiable answers, we show that a much simpler signal suffices, which is the correctness of the model's own direct answer attempts. This signal yields a latent direction that elicits reasoning. This direction is decodable within the activations of most attention heads, but only a small subset of them can be effectively intervened. We introduce COMPASS, an inference-time steering method that identifies these heads using a logit-space attribution score and steers their activations along the correctness direction, requiring only per-head activation statistics. Across three model families and multiple math benchmarks, COMPASS outperforms the activation-steering baselines we compare against, improves GSM8K accuracy by 16 percentage points on average, and approaches CoT accuracy with 20-70\\% fewer generated tokens. Interventions transfer without re-fitting to unseen benchmarks, and ablations show that both the correctness direction and the small set of heads carrying it are necessary, with the effect concentrated in remarkably few heads.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

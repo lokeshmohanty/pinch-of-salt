@@ -1,0 +1,13 @@
+{
+  "id": "2614ddb06d577db5",
+  "title": "NAST: Improving Negation Handling in Medical Vision-Language Models through Negation-Aware Selective Training",
+  "link": "https://arxiv.org/abs/2602.12498",
+  "description": "arXiv:2602.12498v2 Announce Type: replace \nAbstract: Negation is a fundamental linguistic operation in clinical reporting, yet vision-language models (VLMs) frequently fail to distinguish affirmative from negated medical statements. To systematically characterize this limitation, we introduce a radiology-specific diagnostic benchmark that evaluates polarity sensitivity under controlled clinical conditions, revealing that common medical VLMs consistently confuse negated and non-negated findings. To enable learning beyond simple condition absence, we further construct a contextual clinical negation dataset that encodes structured claims and supports attribute-level negations involving location and severity. Building on these resources, we propose Negation-Aware Selective Training (NAST), an interpretability-guided adaptation method that uses causal tracing effects (CTEs) to modulate layer-wise gradient updates during fine-tuning. Rather than applying uniform learning rates, NAST scales each layer's update according to its causal contribution to negation processing, transforming mechanistic interpretability signals into a principled optimization rule. Experiments demonstrate improved discrimination of affirmative and negated clinical statements without degrading general vision-language alignment, highlighting the value of causal interpretability for targeted model adaptation in safety-critical medical settings. Code and resources are available at https://github.com/healthylaife/NAST.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

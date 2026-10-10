@@ -1,0 +1,14 @@
+{
+  "id": "d011c54ace6c5d34",
+  "title": "TreeFI: Value-Aware Statistical Fault Injection for Deep Neural Networks",
+  "link": "https://arxiv.org/abs/2609.04912",
+  "description": "arXiv:2609.04912v1 Announce Type: cross \nAbstract: Reliability evaluation of deep neural networks under hardware faults commonly relies on fault injection, but exhaustive campaigns are intractable for modern models and datasets. Statistical fault injection reduces this cost, yet existing approaches still require large injection budgets because they do not explicitly exploit a key property of floating-point faults: the effect of a bit flip depends strongly on the value being corrupted. We propose TreeFI, a value-aware statistical fault-injection methodology for FP32 single-bit faults in DNN activations and weights. TreeFI partitions each layer's value distribution into intervals with similar expected bit-flip behavior, learned using regression trees, and allocates injections across these intervals according to their relevance for failure-rate estimation. This stratified allocation preserves the target confidence and error margin while avoiding unnecessary injections in low-impact regions of the fault space. We validate TreeFI on CNN and Transformer models using CIFAR-10 and ImageNet. On ResNet8, where exhaustive activation fault injection is feasible, TreeFI provides more accurate estimates than state-of-the-art statistical FI baselines under the same campaign setting. Across the evaluated models, TreeFI reduces the required injection budget by up to 72.1x, with average reductions of 44.9x for activation faults and 11.2x for the executed weight campaigns.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.AI"
+  ]
+}

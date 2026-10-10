@@ -1,0 +1,14 @@
+{
+  "id": "13cacc8b3c192571",
+  "title": "Learning to See Locally and Align Clinically with Pathology Semantics for Radiology Report Generation",
+  "link": "https://arxiv.org/abs/2608.00279",
+  "description": "arXiv:2608.00279v1 Announce Type: cross \nAbstract: Recent radiology-adapted vision-language models have achieved strong performance on standard report generation benchmarks, yet their robustness and generalization remain constrained by imperfect alignment and correlation between visual and textual features. Existing methods connect image and text either implicitly through autoregressive report supervision or explicitly through contrastive learning. However, autoregressive supervision alone is insufficient to establish reliable image-text alignment, while contrastive learning can push apart unpaired reports that describe related pathologies simply because they are not paired with the same image. This is problematic in radiology, where different reports may share compatible pathology semantics rather than being true negatives. As a result, the learned representation may fail to organize images and reports around shared pathology concepts, causing the decoder to rely on pretrained language priors and generate clinically plausible reports that are not fully supported by radiographic evidence. To address this issue, we propose PALM, a pathology-aware alignment framework for radiology report generation. Instead of directly matching each image-report pair while separating all others, PALM aligns visual and textual features through shared pathology prototypes. These prototypes provide a clinically meaningful bridge between radiographic evidence and textual findings, allowing cases with similar pathology semantics to move toward common concepts without separating compatible cases. In addition, we introduce Masked Evidence Modeling to strengthen the image encoder sensitivity to local radiographic evidence by learning semantic changes caused by masked image regions. Experiments on MIMIC-CXR, IU X-Ray, and MIMIC-ABN show that PALM consistently improves both report generation and abnormality-focused robustness.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

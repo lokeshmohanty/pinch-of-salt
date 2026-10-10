@@ -1,0 +1,13 @@
+{
+  "id": "bdee5b2ab2cce3ae",
+  "title": "The Communication Bottleneck: A Round-Trip Study of Tree-Structured Expression Serialization in Language Models",
+  "link": "https://arxiv.org/abs/2609.21509",
+  "description": "arXiv:2609.21509v1 Announce Type: new \nAbstract: When language models reason in chain-of-thought or exchange free-text intermediates, they serialize structured information into natural language. How much tree-structured compositional content survives this bottleneck? We propose a round-trip protocol that answers this question empirically for tree-structured expressions. A generator converts a procedurally generated arithmetic expression into a word problem, a separate extractor recovers the expression from the word problem alone, and symbolic equivalence provides an exact oracle. Evaluating all pairwise combinations of sixteen models yields a communication matrix whose marginals separate generation quality from extraction quality. Three main findings emerge. First, the channel is lossy and asymmetric: swapping which model generates and which extracts shifts accuracy by up to 60.4 points, and the best pair reaches 92.9% by combining different models on each end rather than the same model on both. Second, at least 73.6% of round-trip failures originate at generation, and difficulty is driven by tree structure (operator count, depth, right-branching) rather than model family. Third, the channel is trainable: ~3600 fine-tuning examples that share the evaluation's operators and tree shapes lift every open-weight model above untrained Gemini-3.1-Pro, an upper bound under matched semantics. A disjoint-domain regime with new operators and vocabulary also raises every open-weight model, confirming the gain is not an artifact of matched semantics, though a gap to the frontier remains. Together these results identify tree-structured expression serialization as a primary limiting factor when models communicate hierarchical structure through natural language.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

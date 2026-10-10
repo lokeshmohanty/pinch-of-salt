@@ -1,0 +1,14 @@
+{
+  "id": "3ab479b80e63e86e",
+  "title": "AsymFeX: A Symmetry-Driven Framework for Ischemic Stroke Segmentation Across Imaging Modalities and Stroke Stages",
+  "link": "https://arxiv.org/abs/2608.19769",
+  "description": "arXiv:2608.19769v1 Announce Type: cross \nAbstract: Fast and accurate segmentation of Acute Ischemic Stroke (AIS) lesions is essential for stroke prognosis and treatment planning. Non-contrast CT (NCCT), the first-line imaging modality for diagnosing ischemic infarcts, exhibits subtle infarct contrast, making manual delineation slow and labor-intensive. Motivated by this, and by the clinical practice of comparing brain hemispheres to localize infarcts, we propose a two-stage, nnU-Net-compatible 3D segmentation method. The first stage corrects head tilt to align each scan to its true anatomical mid-sagittal plane; the second applies a novel Asymmetric Feature Extraction (AsymFeX) module, comparing each voxel to its true contralateral counterpart within a local 3 x 3 x 3 neighborhood via cross-hemispheric attention, feature disparity estimation, and dual-scale gating to capture both large and small infarcts. On AISD, our method achieves 0.6796 Dice, 23.53 mm HD95, and 7.69 mL AVD, significantly outperforming existing state-of-the-art methods, with clinically relevant volumetric analysis at the 70 mL thrombolysis-eligibility threshold. Proof-of-concept evaluation on ATLAS v2.1 and ISLES'24 demonstrates that the same symmetry-driven design generalizes across imaging modalities and stroke time points without architectural changes, further supported by an uncertainty analysis assessing reliability under clinical deployment. Code is publicly available at https://github.com/biomedia-lab/AIS-detection.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

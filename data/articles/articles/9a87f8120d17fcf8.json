@@ -1,0 +1,15 @@
+{
+  "id": "9a87f8120d17fcf8",
+  "title": "VPWEM: Non-Markovian Visuomotor Policy with Working and Episodic Memory",
+  "link": "https://arxiv.org/abs/2603.04910",
+  "description": "arXiv:2603.04910v2 Announce Type: replace-cross \nAbstract: Imitation learning from human demonstrations has achieved significant success in robotic control, yet most visuomotor policies still condition on single-step observations or short-context histories, making them struggle with non-Markovian tasks that require long-term memory. Simply enlarging the context window incurs substantial computational and memory costs and encourages overfitting to spurious correlations, leading to catastrophic failures under distribution shift and violating real-time constraints in robotic systems. By contrast, humans can compress important past experiences into long-term memories and exploit them to solve tasks throughout their lifetime. In this paper, we propose VPWEM, a non-Markovian visuomotor policy equipped with working and episodic memories. VPWEM retains a sliding window of recent observation embeddings as short-term working memory, and introduces a Transformer-based contextual memory compressor that recursively converts out-of-window observations into a fixed number of episodic memory embeddings. The compressor uses self-attention over a cache of past summary embeddings and cross-attention over a cache of historical observations, and is trained jointly with the policy. We instantiate VPWEM on diffusion policies to exploit both short-term and episode-wide information for action generation with nearly constant memory and computation per step. Experiments demonstrate that VPWEM outperforms state-of-the-art baselines including diffusion policies and vision-language-action (VLA) models by more than 20\\% on the memory-intensive manipulation tasks in MIKASA and achieves an average 5\\% improvement on the mobile manipulation benchmark MoMaRT. Code is available at https://github.com/HarryLui98/code_vpwem.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

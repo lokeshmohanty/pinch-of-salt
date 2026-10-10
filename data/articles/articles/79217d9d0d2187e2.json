@@ -1,0 +1,14 @@
+{
+  "id": "79217d9d0d2187e2",
+  "title": "Anatomy-Change-Aware Bidirectional Selective State-Space Memory for Clinically Deployed Thoracic Radiotherapy Auto-Contouring",
+  "link": "https://arxiv.org/abs/2609.16036",
+  "description": "arXiv:2609.16036v1 Announce Type: cross \nAbstract: We developed DAMM-Net++, a 2.5D architecture for thoracic OAR and target volume segmentation that addresses three persistent challenges in radiotherapy auto-contouring: inter-slice surface incoherence, systematic failure on small low-contrast targets, and the absence of per-case reliability signals. The central component is an anatomy-change-aware bidirectional selective state-space memory that models through-plane anatomical change and selectively propagates context along the axial slice sequence. A boundary-aware decoder sharpens near-surface predictions, and an uncertainty head provides calibrated per-voxel confidence for clinical triage. We evaluated 2,146 patients across four centers, an independent external cohort of 112 patients, and a multicenter reader study involving 17 radiation oncologists on 150 cases. The model achieves a mean Dice of 0.955 and HD95 of 3.78 mm, with the largest gains on low-contrast organs-at-risk (OARs) and target volumes where through-plane context is most critical. The uncertainty head is well-calibrated and supports case-level triage. In the reader study, AI assistance reduced contouring time by 75-80 percent across experience levels and raised junior-reader IoU from 0.861 to 0.925, matching the unedited model. External validation showed a modest internal-to-external drop (less than 5 percent) with calibrated uncertainty transferring without recalibration. The complete deployment pipeline from DICOM ingestion to TPS-compatible RTSTRUCT export has been integrated into the clinical workflow at a partner hospital, where it is used to assist with contouring. These results suggest that anatomically motivated inter-slice memory, paired with uncertainty-guided review, offers a clinically viable path for thoracic auto-contouring.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

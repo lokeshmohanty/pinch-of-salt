@@ -1,0 +1,13 @@
+{
+  "id": "3b6948ca44bea88a",
+  "title": "BindCLIP: One Balanced Coupling For Compositional Vision Language Scoring",
+  "link": "https://arxiv.org/abs/2609.23717",
+  "description": "arXiv:2609.23717v1 Announce Type: new \nAbstract: Global vision--language similarities compress an image and a caption into one vector, preserving semantics but not which word corresponds to which region or how those regions are arranged; a model can recognize every word and object yet prefer a compositionally incorrect caption. We argue that a frozen encoder retains this association structure, so the problem is to read it rather than to rebuild it beside the pretrained similarity. We introduce BindCLIP, a pairwise scorer built on one latent object: a balanced token--patch--depth optimal-transport coupling that places both candidate captions and several visual depths in a single plan. Semantic, entity, order, and spatial evidence are read as energies of this state, and exchanging the candidates permutes the plan, making the score exactly antisymmetric. A geometric refinement inside the coupling contracts moves that the candidates and the visual depths do not support. No task label, parser, relation inventory, or detector is used. One checkpoint and one inference path improve the official What'sUp, ARO, and SugarCrepe benchmarks over frozen global CLIP, with the strongest transfer on the relation splits. Controls rule out patch access and caption-length shortcuts, and an inference-time lesion localizes spatial arrangement to the coupling.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

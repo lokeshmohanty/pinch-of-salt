@@ -1,0 +1,13 @@
+{
+  "id": "a8bbf2865d13b89c",
+  "title": "MeshCarve: Artisan Mesh Generation with Flow Matching in Compact Latent Spaces",
+  "link": "https://arxiv.org/abs/2610.09723",
+  "description": "arXiv:2610.09723v1 Announce Type: new \nAbstract: Prior artisan mesh generation works largely predict face tokens autoregressively, which makes inference slow. Recent methods instead flow match continuous latents built by Variational AutoEncoders (VAEs), but reconstruction quality drops significantly when geometry and topology are jointly encoded, and further when the latent space is compressed. We present MeshCarve, a flow matching method that generates entirely in compact latent spaces, generating vertex positions and edge connections separately and sidestepping the difficulty of a joint compact latent. To shorten the token sequence, we propose a hierarchical sparse transformer backbone, instantiated as VertexVAE and EdgeVAE. Instead of encoding fields over the surface voxels, both VAEs anchor on discrete vertices in their latent spaces, which drastically reduces the token sequence length, and our spatial-aware compression shortens it further without costing reconstruction. VertexVAE directly encodes vertex occupancy. For connectivity, we propose vertex-link encoding, which turns arbitrary connectivity between vertices into fixed-length continuous per-vertex embeddings and recovers complex artistic topology faithfully. MeshCarve combines these VAEs with an anchor generator and flow matches on the shortened token sequences. It shows advantages over state-of-the-art autoregressive and flow matching methods on Objaverse and generalizes to Toys4K. To the best of our knowledge, it is among the first artisan mesh generation methods whose every generative stage runs in a spatially compressed latent, with a token sequence only a fraction of the most compressed previous autoregressive and flow matching works.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

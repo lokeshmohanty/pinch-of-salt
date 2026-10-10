@@ -1,0 +1,15 @@
+{
+  "id": "5b409a1e1f8240ef",
+  "title": "The Scissors Effect: When Resize-Based Input Diversity Helps or Hurts Transfer Attacks",
+  "link": "https://arxiv.org/abs/2606.22516",
+  "description": "arXiv:2606.22516v2 Announce Type: replace-cross \nAbstract: Input Diversity (DI), a random resize and pad applied at each attack iteration, is a near-default ingredient of transfer-based attacks, widely assumed to improve transferability. We show this assumption is regime-dependent and, for adversarially trained surrogates, often reversed. Holding the attack fixed and varying only the surrogate, raising the DI probability improves transfer from standard surrogates but degrades it from robust ones: the two response curves separate like a pair of scissors, a pattern we call the Scissors Effect. On ImageNet, blind DI costs a robust source 10.3 percentage points of attack success across four architecturally diverse targets; the effect is several times smaller at 32x32. Direct measurement supports a bias-variance account: DI displaces the gradient by a comparable amount on both groups but reduces its variance only where the gradient is noisy, and robust surrogates have little noise left to average away. A gradient-consistency probe, frozen and hashed before the runs, predicts the sign of the effect on seven unseen surrogates, and we report where it fails alongside where it works. The practical consequence holds independently of the mechanism: leaving DI enabled by default understates the attack a robust surrogate can mount, and so overstates the robustness of the model being evaluated. Code: https://github.com/Avalon-S/ScissorsEffect.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CR",
+    "cs.CV"
+  ]
+}

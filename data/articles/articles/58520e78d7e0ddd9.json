@@ -1,0 +1,13 @@
+{
+  "id": "58520e78d7e0ddd9",
+  "title": "OSEF: One-Step Evidence Fusion for Cross-Video Scene Procedure Planning",
+  "link": "https://arxiv.org/abs/2607.29401",
+  "description": "arXiv:2607.29401v1 Announce Type: new \nAbstract: Video Scene Procedure Planning (VSPP) supplies the target start-goal observations in advance, leaving open how a planner should act when the evidence must itself be retrieved. We introduce Cross-Video Scene Procedure Planning (CVSPP): given an answer-redacted start-goal query and K candidate videos, a model must retrieve the supporting video, localize the relevant window, and predict the action sequence. Two obstacles couple here. Same-task demonstrations share stages and windows, and an early hard selection passes the wrong scene chain to the planner. We build an eleven-source benchmark with typed negative roles, a fail-closed answer-leakage gate, and separate Evidence- and Plan-axis metrics. On its 14 source-horizon cells we adapt nine planner families against a majority-sequence floor. We then present One-Step Evidence Fusion (OSEF), which scores a query-conditioned cell-and-span lattice over all candidates and feeds the full soft lattice to the planner through a token-global adapter, cropping no window beforehand. OSEF ranks first on all six cells the benchmark certifies as method-rankable. On four matched same-task COIN and CrossTask cells it improves exact-video-and-plan success by 2.9-10.7 points over an enhanced hard-selection SOTA, and a component study assigns the largest single increment to the token-global interface. Five converted-source cells sit at or near the majority-sequence floor, the benchmark's remaining headroom. The supplementary package includes model constructors and evaluation code.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

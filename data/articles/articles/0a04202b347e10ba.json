@@ -1,0 +1,13 @@
+{
+  "id": "0a04202b347e10ba",
+  "title": "RoLA: Rotary-Positioned Low-Rank Linear Attention for Efficient Diffusion Transformers",
+  "link": "https://arxiv.org/abs/2609.06712",
+  "description": "arXiv:2609.06712v3 Announce Type: replace \nAbstract: Diffusion Transformers (DiTs) achieve strong video generation quality, but their dense spatiotemporal self-attention scales quadratically with sequence length and quickly becomes the dominant inference bottleneck. Sparse low-rank hybrids alleviate this cost by combining a local sparse branch with a global compressed branch. In video DiTs equipped with 3D Rotary Position Embeddings (RoPE), the global branch faces a structural compatibility issue: when RoPE is applied before a nonlinear feature map, the rotation and nonlinearity generally do not commute, making it difficult to keep a query-independent linear summary while preserving relative rotary geometry. Existing work often sidesteps this issue by replacing genuine cross-token global aggregation with coordinate-conditioned surrogates or learnable absolute positional modules. These compromises can be effective, but they approximate relative decay from absolute coordinates and introduce extra positional parameters. We propose \\textbf{RoLA}, a rotary-positioned low-rank linear-attention branch that keeps genuine cross-token aggregation while remaining compatible with a reusable linear summary. The design applies RoPE \\emph{outside} the nonlinear low-rank feature map and reuses a truncated subset of the pre-trained rotary schedule matched to the low-rank bottleneck.\n  This yields a linear-time low-rank global branch with relative positional behavior by design and no additional positional parameters; the full sparse--low-rank module still includes the fixed-sparsity sparse branch. Experiments on open-source video DiTs show that the resulting method remains competitive in generation quality at 90\\% sparsity while achieving 2.63$\\times$ end-to-end inference speedup on Wan2.1-14B (720p, 81 frames, measured on an NVIDIA H100 GPU).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cd6ff1cc2e64263c",
+  "title": "StarWM: Self-Supervised Trained Attention Routing for Robust World Models",
+  "link": "https://arxiv.org/abs/2609.30667",
+  "description": "arXiv:2609.30667v1 Announce Type: new \nAbstract: A robust world model must strike the balance between faithfully capturing environmental dynamics and abstracting away from irrelevant content. While reconstruction-based world models ensure faithful supervision, they misallocate representational capacity by pixel area rather than dynamics relevance for visual tasks, which can cause task-irrelevant content to dominate the learned representation. Alternatively, reconstruction-free methods avoid this bias but risk discarding possibly relevant information. We propose StarWM, which uses a cross-attention module trained on self-supervised dynamics to decide where reconstruction applies. A dual-stream decoder then restricts reconstruction to the attended regions, with stop-gradient barriers preventing interference between the two objectives. These components allows reconstruction to supervise the visual content of attended regions without contaminating the latent with non-predictive information. On DeepMind Control with dynamic video backgrounds, default (reward-free) StarWM achieves the strongest performance under random-frame distractors and substantially outperforms reconstruction-based baselines under sequential video. In addition, its reward-augmented variant matches or exceeds reconstruction-free methods on sequential video, achieving the highest overall return across all distractor regimes. Mechanistic probing confirms StarWM preserves state attributes with near-perfect fidelity through long-horizon imagination while systematically discarding distractors.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

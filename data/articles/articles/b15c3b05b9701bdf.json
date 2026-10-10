@@ -1,0 +1,14 @@
+{
+  "id": "b15c3b05b9701bdf",
+  "title": "What Makes a Good Medical Image Tokenizer? Rethinking Reconstruction and Generation in Medical Image Tokenization",
+  "link": "https://arxiv.org/abs/2609.24691",
+  "description": "arXiv:2609.24691v1 Announce Type: new \nAbstract: Latent diffusion models now dominate medical image generation, and every such pipeline rests on a \\emph{tokenizer} that compresses images into the latent codes for image generation to operate on. Thereby, the tokenizer choice bounds every downstream task from reconstruction fidelity and generation quality to the representations available for downstream analysis. Yet, medical imaging pipelines routinely utilize tokenizers from natural imaging on the hypothesis that their behavior carries over. However, this is an assumption never tested in the medical imaging regime, where datasets are orders of magnitude smaller and images exhibit far lower inter-sample variance. We present a systematic evaluation of medical image tokenizers evaluating thirty configurations across ten model families on twelve datasets at three compression factors, spanning reconstruction, generation, latent geometry, downstream classification, and memorization. We find that (1) performance on image reconstruction and generation strongly correlate, unlike prior reports on natural images; (2) modern tokenizers use nearly all of their codebook entries, but still leave most of the latent space unused; (3) training-set memorization is mild and is further suppressed by stronger latent space compression; and (4) discrete quantization can largely preserve downstream classification, with lookup-free schemes being the main exception.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

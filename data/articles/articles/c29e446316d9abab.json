@@ -1,0 +1,15 @@
+{
+  "id": "c29e446316d9abab",
+  "title": "A-3PO: Accelerating Asynchronous LLM Training with Staleness-aware Proximal Policy Approximation",
+  "link": "https://arxiv.org/abs/2512.06547",
+  "description": "arXiv:2512.06547v4 Announce Type: replace-cross \nAbstract: Decoupled PPO has been a successful reinforcement learning (RL) algorithm to deal with the high data staleness under the asynchronous RL setting. Decoupled loss used in decoupled PPO improves coupled-loss style of algorithms' (e.g., standard PPO, GRPO) learning stability by introducing a proximal policy to decouple the off-policy correction (importance weight) from the policy update constraint (trust region). However, the proximal policy requires an extra forward pass through the model at each training step, creating a computational overhead for large language models training. We observe that since the proximal policy only serves as a trust region anchor between the behavior and target policies, we can approximate it through simple interpolation without explicit computation. We call this approach A-3PO (APproximated Proximal Policy Optimization). A-3PO eliminates this overhead, accelerating training by 1.8x speedup while maintaining comparable performance. Code \\& off-the-shelf example are contributed to the open-source RL training system AReaL at: https://github.com/areal-project/AReaL/blob/v1.0.0.rc1/docs/algorithms/prox_approx.md",
+  "source_name": "arXiv AI",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.DC"
+  ]
+}

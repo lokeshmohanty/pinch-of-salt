@@ -1,0 +1,13 @@
+{
+  "id": "39abb1dbb2e5b4aa",
+  "title": "IRIS: Visual-Semantic Binding for Forgery-Resistant Watermarking of Diffusion Images",
+  "link": "https://arxiv.org/abs/2608.03539",
+  "description": "arXiv:2608.03539v2 Announce Type: replace \nAbstract: Most in-generation diffusion watermarks embed patterns independent of the image that carries them, and attackers transplant the marks onto images the generator did not produce, resulting in forgery. Binding the mark to visual semantics prevents such transplantation, yet existing bindings anchor to a proxy image rather than the image they mark. Realizing visual-semantic binding inside generation faces two challenges. The mark derives from the image itself yet enters the sampling trajectory before that image exists, and may itself shift the semantics it binds. The binding also meets opposite sensitivity demands, breaking under semantic change while holding through common processing. We present IRIS, a training-free watermarking scheme that embeds an Intrinsic Ring Identifier from Semantics. IRIS reads a content code from the non-watermarked generated image, derives a one-time ring from the code and a secret key, returns to the final low-noise steps of the same trajectory and blends the ring in, after the semantics it binds are settled. To meet the opposite sensitivity demands, the code is read through a canonicalization shared between embedding and detection, holding through common distortions and mild regeneration while flipping under semantic change. Detection recomputes the ring from the query image and the key alone, and the mark therefore fails on a foreign or spliced image, with acceptance tracking semantic displacement. On three prompt datasets IRIS detects reliably and stays close to its same-seed non-watermarked counterpart, a fidelity prior in-generation marks do not reach. While forgeries transfer fixed-pattern marks and regeneration strips post-hoc marks, IRIS alone among the compared marks withstands both.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

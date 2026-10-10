@@ -1,0 +1,14 @@
+{
+  "id": "91df6c246d6a30d8",
+  "title": "SPECTRA: Band-Routed Embedding and Stage-Wise LoRA for Cross-Sensor Fine-Tuning of Geospatial Foundation Models",
+  "link": "https://arxiv.org/abs/2608.01751",
+  "description": "arXiv:2608.01751v1 Announce Type: new \nAbstract: Geospatial foundation models (GeoFMs), pretrained on large-scale geospatial data such as Earth observation (EO), climate, and weather data, have shown promising performance when fine-tuned on diverse downstream tasks. However, there are two challenges of adapting EO-pretrained GeoFMs to practical downstream datasets. The first challenge is how to handle spectral mismatch: pretrained patch embeddings expect a fixed set of input bands, whereas downstream sensors may provide different channels. The second challenge is how to reduce fine-tuning cost and make it efficient. While existing work has made efforts on these challenges individually, jointly improving fine-tuning performance under spectral mismatch while reducing adaptation cost remains underexplored. We propose SPECTRA, a parameter-efficient fine-tuning framework that addresses both spectral mismatch and adaptation cost. To handle spectral mismatch, SPECTRA introduces Band-Routed Embedding (BRE), which maps all available downstream bands into the band space expected by the pretrained GeoFM. By using BRE, all available bands in the downstream dataset are utilized to improve the selected-band input without changing the pretrained patch embedding interface. To reduce adaptation cost, SPECTRA further introduces a Stage-wise Transferability-aware LoRA (ST-LoRA) fine-tuning. ST-LoRA estimates stage-wise transferability before fine-tuning and assigns stage-specific LoRA ranks, concentrating trainable parameters on the stages with high transferability for the target task. Across three EO-pretrained GeoFMs and four downstream segmentation datasets, experiments show that BRE improves performance by utilizing all spectral bands, while ST-LoRA reduces trainable parameters compared with full fine-tuning and standard LoRA. Code is available at https://github.com/big-data-lab-umbc/SPECTRA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

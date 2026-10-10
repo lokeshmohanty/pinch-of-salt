@@ -1,0 +1,14 @@
+{
+  "id": "ca8cfb510bc24ad4",
+  "title": "RPL-UIE: Reliable Prior Learning for Underwater Image Enhancement",
+  "link": "https://arxiv.org/abs/2608.00137",
+  "description": "arXiv:2608.00137v1 Announce Type: cross \nAbstract: Underwater image enhancement (UIE) aims to recover clear images from observations affected by wavelength-dependent absorption, scattering, and spatially nonuniform degradation. Although existing generative methods can handle complex degradations, severe information loss may lead to semantic drift in the restored results. To address this issue, we propose RPL-UIE, a two-stage teacher--student framework for reliable prior learning. In the teacher stage, the network learns reliable and complementary spatial priors characterizing appearance and photometric properties from paired degraded and reference images. In the student stage, the network takes only degraded images as input and learns to emulate the teacher's prior extraction capability, thereby providing more reliable restoration guidance for the enhancement process without requiring reference images at inference. To reduce the prior-learning discrepancy between the teacher and student models, we further develop Residual Prior Refinement Diffusion (RPRD) and Frequency-Aware Prior Residual Calibration (FPRC). RPRD uses the coarse priors as anchors and progressively predicts the necessary corrections in the residual space. FPRC retains stable low-frequency residual components and selectively modulates high-frequency detail residuals, producing calibrated priors to support high-quality reconstruction. Experiments on multiple UIE benchmarks demonstrate competitive restoration performance. Downstream underwater object detection and instance segmentation experiments further demonstrate the improved utility of enhanced images for visual perception, while tests on real-world data captured by a remotely operated vehicle (ROV) support the practical applicability of RPL-UIE.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

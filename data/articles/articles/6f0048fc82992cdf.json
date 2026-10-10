@@ -1,0 +1,14 @@
+{
+  "id": "6f0048fc82992cdf",
+  "title": "Evaluating Agents Across Runtime Contracts: When Mismatch Costs Efficiency or Quality",
+  "link": "https://arxiv.org/abs/2603.01209",
+  "description": "arXiv:2603.01209v3 Announce Type: replace \nAbstract: In CodeAct, language-model agents write Python that calls tools and use execution feedback to choose actions. Persistent runtimes preserve Python variables between actions; stateless runtimes clear them without resetting task progress. Training traces demonstrate task-solving strategies and runtime-specific ways to store and recover intermediate results. We study runtime transfer: whether agents trained under one contract remain effective under the other, a dependence that fixed-runtime evaluations can conceal. Across three tasks requiring a working record built from tool feedback, we fine-tune separate Qwen3-8B agents per task and runtime on instance-paired persistent and stateless traces and evaluate all four training-deployment combinations. We vary the per-turn tool-call cap: how many calls one Python action may execute. In our primary task, agents inspect hidden item attributes and select a high-value subset under a weight limit. At 80 calls per turn, a persistent-trained agent deployed statelessly scores 0.61 of optimal value against 0.77 under matched persistent deployment, but uses 4.4 times as many tokens rebuilding its record. Tightening the cap to 25 reduces mismatched quality to 0.07 while matched quality remains 0.66. Trace replay shows that the cap interrupts inspection, the reset erases the partial record, and rebuilding consumes calls needed for progress. The widening gap replicates across training seeds, a second rollout, and two additional base models. Across the settings studied, cap tightening produces a mismatch-specific collapse only where interruptions are frequent and matched execution resumes while mismatched execution restarts. Evaluations of trace-fine-tuned agents should specify episode limits, test runtime transfer across caps, and report cost alongside quality; otherwise, the same mismatch may appear as redundant computation or near-total quality loss.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

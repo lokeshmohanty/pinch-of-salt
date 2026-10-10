@@ -1,0 +1,13 @@
+{
+  "id": "b5e065b19c86d901",
+  "title": "MapLightning: Online Vectorized HD Map Construction with 1D Map Tokens",
+  "link": "https://arxiv.org/abs/2610.01905",
+  "description": "arXiv:2610.01905v1 Announce Type: new \nAbstract: Online vectorized HD map construction is essential for scaling safe autonomous driving and requires accurate, real-time inference. Prior methods typically rely on dense bird's-eye-view (BEV) grids as the intermediate representation. We propose \\textit{MapLightning}, which replaces the dense BEV grid with a compact set of 1D learnable map tokens. To construct map tokens from image features, we choose self-attention over vanilla cross-attention because it enables joint interactions and contextual aggregation among image and map tokens. Our transformer-based mapper concatenates map and image tokens, applies full self-attention, discards the image tokens, and retains the updated map tokens for decoding. This design offers three advantages. First, our representation is efficient, using fewer tokens, consuming less memory, and running faster. Second, the lightweight design allows the map decoder to use full rather than deformable cross-attention for better global context. Third, unlike BEV-based methods, our network does not use camera projection parameters, making it robust to camera-extrinsic perturbations. MapLightning uses up to 16.7$\\times$ fewer intermediate tokens than dense BEV-based methods and achieves state-of-the-art accuracy and efficiency on nuScenes and Argoverse~2. Its lightweight variant surpasses MapTRv2 by +10.1 mAP on nuScenes and +16.2 mAP on Argoverse~2, while delivering 1.73$\\times$ faster inference (40+ FPS) with 53\\% less memory. We further show improvements on uncertainty-aware map construction and downstream trajectory prediction. Code and models will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

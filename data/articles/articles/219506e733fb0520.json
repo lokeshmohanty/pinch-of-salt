@@ -1,0 +1,13 @@
+{
+  "id": "219506e733fb0520",
+  "title": "APTER: Adaptive Post-Training with Expert-Grounded Rubrics",
+  "link": "https://arxiv.org/abs/2608.14212",
+  "description": "arXiv:2608.14212v1 Announce Type: new \nAbstract: As large language models enter professional domains, they must satisfy domain constraints, include critical evidence, and provide complete reasoning rather than merely produce fluent responses. Existing post-training methods often rely on holistic preferences or outcome-level verification, while recent rubric-based methods usually generate rubrics independently for each query. In specialized domains, such unconstrained rubrics may omit critical requirements and vary across samples, hindering the diagnosis and targeted repair of persistent capability deficiencies. We propose APTER (Adaptive Post-Training with Expert-Grounded Rubrics), a framework that integrates structured domain knowledge into fine-grained evaluation, optimization, and diagnosis for specialized complex reasoning. First, expert-grounded rubric construction starts from an expert criteria framework built by domain experts, where each criterion represents a stable professional capability. For each query, APTER selects relevant criteria and instantiates them into query-level rubrics linked to their source criteria, turning reusable expert criteria into executable query-level supervision without reference answers. Second, adaptive post-training uses rubric verdicts as both optimization and criterion-level diagnostic signals. Aggregating low-scoring verdicts by criterion ID reveals persistent deficiencies and triggers targeted supervised fine-tuning updates during reinforcement learning. Experiments on mathematical reasoning and medical question answering show consistent gains across both domains. Across three model generations, APTER improves the mathematics and medical averages over the corresponding base models by up to 15.86 and 8.04 points, respectively. Code and rubric datasets are available at https://github.com/AntDT-APTER/APTER.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

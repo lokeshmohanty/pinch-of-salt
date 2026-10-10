@@ -1,0 +1,13 @@
+{
+  "id": "6e0c892eac349f94",
+  "title": "LUMIN: Lightweight Universal Manufacturing Inspection Network for Anomaly Detection",
+  "link": "https://arxiv.org/abs/2609.04775",
+  "description": "arXiv:2609.04775v1 Announce Type: new \nAbstract: Industrial anomaly detection faces two engineering bottlenecks: memory bank construction latency and inference efficiency. Traditional sampling algorithms (Farthest Point Sampling, K-Means, etc.) rely on numerous backbone forward passes and iterative distance computations, with construction times ranging from minutes to hours; heavy computation components such as multi-scale feature extraction struggle to meet the millisecond-level real-time requirements of production lines. This paper focuses on sampling efficiency and inference optimization for industrial deployment with two core contributions: (1) PSP (Plugin Sampler Pipeline)---a four-stage adaptive memory bank sampling pipeline based on 18-dimensional pixel metadata and five complementary visual plugins. PSP completes all sampling with zero backbone forward passes; coarse filtering is sub-second numerical sorting, and metadata extraction is a one-time offline cost. PSP supports progressive deployment and incremental updates. (2) Two engineering optimization strategies---parallel memory bank similarity computation (reducing inference memory and latency by over 95\\%) and stratified pixel sampling for large-scale evaluation (reducing computation time by 20$\\times$ while keeping metrics stable). As a vehicle for validation, we introduce LUMIN (Lightweight Universal Manufacturing Inspection Network) with extreme segmentation-head compression, systematically exploring the accuracy-efficiency frontier against strong baselines. Experiments on five benchmarks demonstrate that PSP matches state-of-the-art sampling accuracy at near-random construction cost (341$\\times$ faster than FPS), while inference optimizations reduce evaluation time by 20$\\times$ with negligible accuracy loss.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

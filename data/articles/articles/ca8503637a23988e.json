@@ -1,0 +1,14 @@
+{
+  "id": "ca8503637a23988e",
+  "title": "Beyond Direct Access: Resource Hijacking in LLM Agents",
+  "link": "https://arxiv.org/abs/2608.15108",
+  "description": "arXiv:2608.15108v2 Announce Type: replace-cross \nAbstract: Large language model agents are increasingly connected to high-value resources, including external APIs, GPUs and servers, and workflows such as deployment and approval. Existing agent security research mainly focuses on attacks against information and agent behavior, while high-value resources have received less attention as attack targets themselves. To our knowledge, we are the first to identify and systematically study agent resource hijacking, in which attackers induce agents to use high-value resources for their own goals without directly obtaining those resources or their credentials. We introduce ResourceHijackBench, an executable benchmark and automated case-generation pipeline that covers six categories of high-value resources. It contains 300 attack scenarios and 900 attack prompts, and each case runs in an isolated local environment that records actual resource use. Resource hijacking remains effective across four model backends, with average attack success rates of 70.0% to 89.6%, and it also appears across two agent harnesses, with average ASRs of 84.1% on OpenClaw and 72.3% on Codex. In paired comparisons, resource hijacking achieves ASRs 62.4 to 84.0 percentage points higher than direct resource acquisition across the four model backends. Real-world experiments also demonstrate the practical effectiveness of resource hijacking. Among the three existing defenses we evaluate, the lowest average ASR is still 55.1%. We further propose ResGate, a pre-execution resource authorization defense that combines model-based resource-use extraction with deterministic policy enforcement based on trusted requester identity metadata, reducing the average ASR on OpenClaw to 23.6%. These results show that preventing direct access alone is not enough to protect resources that agents can still use on an attacker's behalf, and that explicit resource authorization can help reduce this risk.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

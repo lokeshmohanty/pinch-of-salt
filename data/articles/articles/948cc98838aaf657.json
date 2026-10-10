@@ -1,0 +1,13 @@
+{
+  "id": "948cc98838aaf657",
+  "title": "Solving the Needle-in-a-Haystack Problem in Mammography Vision-Language Model with Differentiable Subset Sampling",
+  "link": "https://arxiv.org/abs/2609.03085",
+  "description": "arXiv:2609.03085v1 Announce Type: new \nAbstract: There is growing interest in adopting CLIP-style vision--language model (VLM) pretraining for mammography. However, models that directly employ the standard CLIP architecture and training objective exhibit limited zero-shot performance in clinically important tasks such as cancer, finding-type, and BI-RADS predictions. We argue that this underwhelming performance is due to neglecting two characteristics of mammography data: (1) its high-res nature, and (2) homogeneity of radiology reports, largely driven by a predominance of negative/benign findings on examinations. We propose TopKSigLIP, a VLM designed to address these two limitations through a novel architecture and learning objectives. Instead of downscaling high-res mammography images to satisfy GPU memory constraints, TopKSigLIP introduces TopK-Patch module that learns to sample a sparse set of high-res patches likely to contain lesions, sidestepping the resolution--batch size tradeoff of VLM training. The sampled patch locations additionally serve as a built-in localization tool. To address report homogeneity, we replace the contrastive loss, which falsely repels semantically similar pairs, with a Sup-sigmoid loss. Sup-sigmoid loss extends the sigmoid loss from SigLIP with soft labels derived from structured data. TopKSigLIP outperforms existing open-source mammography and general medical VLMs on both internal and external benchmarks on density assessment, BI-RADS classification, finding subtyping, and cancer prediction under zero-shot evaluation. TopKSigLIP remains competitive under linear probing despite using a significantly smaller vision encoder and smaller training batches than baselines. The TopK-Patch module additionally achieves superior lesion localization over post-hoc Grad-CAM. Code and weights are made public:https://github.com/Youngseok0001/TopKSigLIP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

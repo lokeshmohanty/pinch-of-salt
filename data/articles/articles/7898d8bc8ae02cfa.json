@@ -1,0 +1,13 @@
+{
+  "id": "7898d8bc8ae02cfa",
+  "title": "Deep Learning Segmentation of Diffusion-Weighted MRI Acute Ischaemic Stroke: A Pragmatic Evaluation Across Three Datasets",
+  "link": "https://arxiv.org/abs/2608.25675",
+  "description": "arXiv:2608.25675v1 Announce Type: new \nAbstract: Objective: Diffusion-weighted MRI (DWI-MRI) is the gold standard for visualizing and quantifying acute ischaemic stroke (AIS). Although deep learning methods can accurately segment AIS lesions, the optimal image inputs and model architecture remain uncertain. We evaluated whether accurate AIS lesion segmentation can be achieved using a pragmatic deep learning approach with minimal preprocessing and clinically feasible inference times.\n  Materials and Methods: Self-configured nnU-Net models were trained on 1,744 DWI cases from local, national, and open-access datasets and tested on 436 cases. Four experimental conditions were evaluated using five-fold cross-validation: with or without brain extraction and using either DWI alone or DWI plus apparent diffusion coefficient (ADC) images as inputs. Two architectures were compared: the baseline nnU-Net (base) and a residual encoder nnU-Net (ResEnc). Performance was benchmarked against the DeepISLES ensemble model from the 2022 ISLES challenge.\n  Results: In the test set (n=436), the base model achieved a median (IQR) Dice similarity coefficient (DSC) of 0.84 (0.19). For the base model, only two of six pairwise comparisons between input configurations showed significant differences. ResEnc produced small but significant improvements in DSC compared with the base model for DWI, DWI+brain extraction, and DWI+ADC inputs (all p<0.02), but not for DWI+ADC+brain extraction (p>0.50). The base model significantly outperformed DeepISLES, particularly in patients with smaller infarct volumes (signed-rank test, p<0.01).\n  Conclusions: A baseline nnU-Net trained on DWI alone, without preprocessing, enabled fast and accurate AIS lesion segmentation. This streamlined approach may facilitate clinical research and support acute stroke imaging workflows",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

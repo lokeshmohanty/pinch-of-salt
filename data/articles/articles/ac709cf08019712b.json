@@ -1,0 +1,13 @@
+{
+  "id": "ac709cf08019712b",
+  "title": "GeoGAT: Bidirectional Temporal Sampling Meets Hierarchical Graph Attention for Global Video Geo-localization",
+  "link": "https://arxiv.org/abs/2609.39128",
+  "description": "arXiv:2609.39128v1 Announce Type: new \nAbstract: Global video geo-localization aims to infer the geographic location of a video worldwide, evaluating performance across four geographic hierarchies: city, state/province, country, and continent. Existing methods typically employ one-way uniform sampling to process video frames and train independent classifiers for each hierarchy, which leads to the loss of key geographic cues and prediction conflicts between hierarchies, especially for complex multi-shot edited videos. To address these limitations, we propose GeoGAT, which integrates bidirectional temporal sampling with graph attention networks (GATs). Specifically, GeoGAT extracts forward and offset-reversed frame sequences to construct complementary spatiotemporal features. These fused features are then fed into a predefined geographical hierarchy graph, where GATs perform structure-aware message passing, while a dual-constraint mechanism prunes predictions to eliminate cross-hierarchy conflicts. We construct GeoGAT10k, comprising 9,720 multi-shot edited videos from 166 cities worldwide, specifically to benchmark generalization ability on complex video structures. Experimental results on CityGuessr68k and GeoGAT10k demonstrate that GeoGAT eliminates hierarchical conflicts entirely and achieves state-of-the-art performance across all four geographic hierarchies. On CityGuessr68k, GeoGAT outperforms the strongest baseline, evaluated under both classification and retrieval protocols, by 2.6 percentage points at the city level. On the more challenging GeoGAT10k with multi-shot edited videos, the accuracy improvement exceeds 24 percentage points, validating strong generalization to complex real-world scenarios.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

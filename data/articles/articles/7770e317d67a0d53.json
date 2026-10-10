@@ -1,0 +1,13 @@
+{
+  "id": "7770e317d67a0d53",
+  "title": "Seeing Abnormal from Normal: Glomerular Abnormality in Representations of Normal Renal Morphology",
+  "link": "https://arxiv.org/abs/2609.19444",
+  "description": "arXiv:2609.19444v1 Announce Type: new \nAbstract: Fine-grained evaluation of glomerular pathology must distinguish normal glomeruli from abnormalities such as global and segmental glomerulosclerosis, obsolescent, ischemic, solidified, disappearing, and atubular glomeruli. Supervised classification requires labeled examples of every category, which is impractical when subtypes are rare or absent from the training cohort. One-class anomaly detection offers an alternative by modeling normal data and scoring deviations, allowing previously unseen abnormalities to be detected. We use the frozen residual U-Net backbone of Omni-Seg, pretrained to segment structurally normal renal primitives without abnormal-subtype labels. We propose NoRDeC (Normal-Reference Detection and Characterization), a framework combining Mahalanobis normal-reference scoring with layer-wise representation analysis to determine whether and where glomerular pathology is encoded, how spatial aggregation affects detection, and whether abnormalities alter inter-layer relationships differently. Using glomerular images from two institutions, we evaluate backbone layers and aggregation strategies, compare NoRDeC with PaDiM and PatchCore, and analyze representations using centered kernel alignment (CKA). Layer 4 with Center-70 aggregation achieved a pooled AUROC of $0.926\\pm0.013$. NoRDeC achieved the highest AUROC in six of seven abnormality categories and in the pooled analysis, while CKA suggested subtype-dependent changes in inter-layer relationships not captured by anomaly scores alone. The normal-reference model is fitted using only normal glomeruli; abnormality labels are used for configuration selection, evaluation, and grouping in the representation analysis. These results show that a frozen renal feature extractor can support both detection and representation-level characterization of glomerular abnormalities without using abnormal examples to fit the detector.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "50b0a53382b14bf3",
+  "title": "Online Adaptation of Visual Odometry Frontends with Image-Conditioned Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2603.21785",
+  "description": "arXiv:2603.21785v2 Announce Type: replace \nAbstract: Visual odometry (VO) frontends are typically tuned offline by domain experts on pre-recorded datasets and then deployed with fixed hyperparameters. Yet a configuration that performs best on a benchmark is not guaranteed to remain best when texture, illumination, motion blur, sensor noise, or computational conditions change at deployment. We propose a frontend that instead adapts its parameters automatically and continuously. We formulate frontend tuning as a sequential decision-making problem and introduce an image-conditioned reinforcement-learning policy that combines a lightweight embedding of the current image with a compact set of frontend statistics. At each decision step, the policy selects the FAST detection threshold, KLT patch size, and RANSAC rejection threshold; a privileged critic provides additional context only during training. Trained on synthetic TartanAirV2 data, the policy transfers zero-shot to a monocular-inertial OpenVINS pipeline on EuRoC, TUM-VI, and UZH-FPV. On synthetic test sequences, the learned policy improves the tracking-computation trade-off over an optimized static parameter configuration. On the three real-world benchmarks, it reduces mean ATE by up to 8% and runtime by up to 57% relative to static parameters baseline. These results show that image-conditioned online adaptation can improve the accuracy-computation trade-off beyond a single configuration selected offline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

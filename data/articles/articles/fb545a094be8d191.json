@@ -1,0 +1,14 @@
+{
+  "id": "fb545a094be8d191",
+  "title": "A Unified Score Matching Paradigm for Video Anomaly Detection and Anticipation",
+  "link": "https://arxiv.org/abs/2610.11149",
+  "description": "arXiv:2610.11149v1 Announce Type: new \nAbstract: Video anomaly detection (VAD) is a fundamental and safety-critical task in computer vision. Recent generative approaches detect anomalies from a distributional perspective, but remain limited by local anomaly modes. Meanwhile, video anomaly anticipation (VAA), as a proactive extension beyond post-hoc detection, introduces additional challenges. In particular, the contrastive inference paradigm in VAD, which relies on ground-truth frames, is not applicable to VAA, hindering its development. To address these challenges, we propose a unified score-driven framework, termed Uni-DSM, based on denoising score matching (DSM), which models anomaly patterns through likelihood estimation and score functions over the learned data distribution. Within this unified framework, we adopt a shared noise-conditioned score transformer backbone with scene-dependent embeddings and motion-aware weighting for distribution-level modeling. Instead of introducing separate architectures, Uni-DSM unifies VAD and VAA through different inference and supervision paradigms built upon the same score-based formulation. For VAD, we instantiate an autoregressive denoising score matching (ADSM) mechanism, which progressively accumulates anomalous evidence via autoregressive denoising, enabling enhanced perception of local modes beyond visual cues. For VAA, we extend the same architecture by incorporating a lightweight auxiliary decoder and a novel self-distilled denoising score matching (SDSM) mechanism. By constructing supervision from output discrepancies instead of relying on unavailable future ground truth, our method achieves efficient training suitable or early anomaly anticipation. Extensive experiments on multiple benchmark datasets demonstrate state-of-the-art performance in both VAD and VAA while maintaining high efficiency, establishing a unified and scalable pipeline from anomaly detection to anticipation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

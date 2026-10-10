@@ -1,0 +1,14 @@
+{
+  "id": "13875dbf4fa23cc0",
+  "title": "Uncertainty-driven training for three-dimensional calibrated lung nodule classification",
+  "link": "https://arxiv.org/abs/2609.20905",
+  "description": "arXiv:2609.20905v1 Announce Type: cross \nAbstract: In this work, we present an uncertainty-driven training framework for three-dimensional computed tomography (CT) lung nodule classification, where validation-based uncertainty estimates guide loss reweighting to enhance predictive performance and probability calibration. Two Uncertainty Quantification (UQ) methods are considered: Monte Carlo Dropout (MCD) and Evidential Deep Learning (EDL). Both provide per-class uncertainty estimates that modulate the loss and encourage focus on hard or unreliable classes. The framework is evaluated with ResNet, DenseNet, EfficientNet, Vision Transformer (ViT), and Swin Transformer backbones on two datasets: the clinical LIDC-IDRI cohort and the NoduleMNIST3D benchmark. Uncertainty-driven training achieves classification performance similar to conventional training while substantially improving calibration, with an expected calibration error (ECE) reduced by up to 65% on LIDC-IDRI. EDL attains competitive performance on shallower architectures with single-pass inference, whereas MCD is more robust on deeper networks. Analysis across architectural families reveals that uncertainty-driven training benefits convolutional backbones more consistently than transformer-based architectures: EDL in particular degrades on ViT, suggesting that the Dirichlet evidence parameterisation may interact unfavourably with attention-based architectures at lower input resolutions. A posteriori temperature scaling proves highly effective across all configurations, indicating that a simple scalar calibration can be competitive even without explicit uncertainty-aware training. Our results indicate that integrating UQ into the training loop can significantly improve probabilistic calibration and support more trustworthy deployment of three-dimensional medical imaging models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

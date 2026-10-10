@@ -1,0 +1,13 @@
+{
+  "id": "9d8d1ee9a43bfbb3",
+  "title": "PromptPack: Scaling LLM Annotation Agents for Online Recommendation",
+  "link": "https://arxiv.org/abs/2607.20528",
+  "description": "arXiv:2607.20528v1 Announce Type: new \nAbstract: Online recommendation platforms increasingly use Large Language Models (LLMs) to extract structured features from ad creatives. While deploying a single-call LLM annotation agent yields significant Click-Through Rate (CTR) improvements in our live production environment, per-creative prompting is prohibitively expensive to scale. The redundant system instructions sent in every request account for 94% of billed input tokens. To break this cost bottleneck, we introduce PromptPack, a scalable, high-throughput LLM annotation agent. PromptPack achieves this scale via in-context batching, combining a shared system prompt, a strict XML structural envelope, and an output correction layer to ensure deterministic, pipeline-ready feature extraction across multiple creatives simultaneously. We evaluate PromptPack via an offline retrieval benchmark using a downstream logistic-regression ranker. To deeply profile the agent's behavior, we measure AUC and introduce Volume-Weighted Absolute Lift (VWAL), a novel metric capturing the signal quality of the generated features. Compared to our live, unbatched production baseline, PromptPack at batch size 20 cuts our LLM costs by 89% and accelerates throughput by 2.5x while fully preserving AUC.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

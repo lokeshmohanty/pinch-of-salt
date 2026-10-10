@@ -1,0 +1,13 @@
+{
+  "id": "b993773deb3bdf7c",
+  "title": "DirtyMoCap: Robust Motion Capture from Unconstrained Markers",
+  "link": "https://arxiv.org/abs/2609.19927",
+  "description": "arXiv:2609.19927v1 Announce Type: new \nAbstract: Optical motion capture delivers high-fidelity human motion, but its reliance on strict marker layouts and clean trajectories severely limits its real-world applicability. In practice, tracking systems frequently output unconstrained markers: sparse, noisy, and unordered point clouds with unknown or varying configurations. To bridge the gap between corrupted raw markers and parametric human models, we introduce DirtyMoCap, a robust, marker-layout-free framework. Our core insight is to map unordered marker observations to a fixed set of \"proxy anchors\" comprising skeletal joints and body surface points, which serve as a stable intermediate representation. We first initialize and track these anchors over long sequences using a recurrent sliding-window architecture. Then, a custom differentiable Gauss-Newton solver fits the SMPL-H model to the tracked anchors to recover full-body pose, translation, and shape. By explicitly deriving geometric residuals, our solver learns adaptive observation confidence, smoothness, and prior weights end-to-end, adapting dynamically to the reliability of the input data. Extensive experiments on diverse, noisy marker configurations demonstrate that DirtyMoCap successfully generalizes across arbitrary layouts using only a single trained model. It consistently outperforms state-of-the-art configuration-specific baselines in both joint and vertex reconstruction accuracy, while our custom CUDA solver achieves up to a 100x speedup over standard PyTorch implementations. We further apply DirtyMoCap to heterogeneous raw optical MoCap recordings of traditional Chinese martial arts, yielding a Kung Fu motion dataset of temporally coherent SMPL-H reconstructions. Code and data are available at https://wanglongzju.github.io/DirtyMoCap-Project-Page.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

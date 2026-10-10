@@ -1,0 +1,18 @@
+{
+  "id": "3ec7bcfbe30820c2",
+  "title": "DynaMark: A Reinforcement Learning Framework for Dynamic Watermarking in Industrial Machine Tool Controllers",
+  "link": "https://arxiv.org/abs/2508.21797",
+  "description": "arXiv:2508.21797v2 Announce Type: replace-cross \nAbstract: Industry 4.0's highly networked Machine Tool Controllers (MTCs) are prime targets for replay attacks that use outdated sensor data to manipulate actuators. Dynamic watermarking can reveal such tampering, but current schemes assume linear-Gaussian dynamics and use constant watermark statistics, making them vulnerable to the time-varying, partly proprietary behavior of MTCs. We close this gap with DynaMark, a reinforcement learning framework that models dynamic watermarking as a Markov decision process (MDP). It learns an adaptive policy online that dynamically adapts the covariance of a zero-mean Gaussian watermark using available measurements and detector feedback, without needing system knowledge. DynaMark maximizes a unique reward function balancing control performance, energy consumption, and detection confidence dynamically. We develop a Bayesian belief updating mechanism for real-time detection confidence in linear systems. This approach, independent of specific system assumptions, underpins the MDP for systems with linear dynamics. On a Siemens Sinumerik 828D controller digital twin, DynaMark achieves a reduction in watermark energy by 70% while preserving the nominal trajectory, compared to constant variance baselines. It also maintains an average detection delay equivalent to one sampling interval. A physical stepper-motor testbed validates these findings, rapidly triggering alarms with less control performance decline and exceeding existing benchmarks.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.SY",
+    "cs.AI",
+    "cs.CR",
+    "cs.LG",
+    "cs.SY",
+    "stat.AP"
+  ]
+}

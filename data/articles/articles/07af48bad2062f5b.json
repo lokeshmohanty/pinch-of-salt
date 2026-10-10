@@ -1,0 +1,14 @@
+{
+  "id": "07af48bad2062f5b",
+  "title": "Compiling Learning Problems into Adaptation Programs for Language Models",
+  "link": "https://arxiv.org/abs/2609.37371",
+  "description": "arXiv:2609.37371v1 Announce Type: cross \nAbstract: Model adaptation is typically governed by a fixed recipe, even though different update programs can produce substantially different behavioral outcomes. We introduce adaptation compilation, which reframes where, how, and to what extent a model should adapt as a joint prediction and decision problem. Rather than searching over candidate programs anew for each learning episode, a compiler learns from prior adaptations to predict a vector-valued counterfactual response surface over candidate programs---their expected effects on acquisition, transfer, boundedness, and preservation---and selects a program before adaptation begins. Because this predicted geometry captures multiple behavioral consequences rather than a single winner or scalar score, it can be reused under different downstream priorities without retraining. Across five learning types, preferred programs vary meaningfully across episodes, and this variation is predictable from pre-adaptation information. On Llama-3.1-8B, compiler-selected programs approach exhaustive search while outperforming global and objective-specific defaults. Replication on Gemma-2-9B preserves program heterogeneity and selection headroom, but shows that exploiting this headroom requires accounting for uncertainty when departing from strong defaults. Together, these results show that adaptation search can be amortized across related learning problems, turning prior adaptation experience into a basis for deciding how future learning should occur.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

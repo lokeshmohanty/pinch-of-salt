@@ -1,0 +1,14 @@
+{
+  "id": "9187f51037c78e43",
+  "title": "OctoPipe: Reducing Pipeline Bubbles for Heterogeneous Models via Co-Optimizing Partitioning, Placement, and Scheduling",
+  "link": "https://arxiv.org/abs/2509.23722",
+  "description": "arXiv:2509.23722v3 Announce Type: replace-cross \nAbstract: Pipeline parallelism is widely used to train large language models (LLMs). However, increasing heterogeneity in model architectures exacerbates pipeline bubbles, thereby reducing training efficiency. Prior approaches typically optimize a single phase of the pipeline schedule (i.e., partitioning, placement, or scheduling), leaving substantial pipeline bubbles. While promising, co-optimization poses three key challenges: (1) complex performance modeling, (2) a combinatorial search space, and (3) irregular execution orders. To address these challenges, we propose OctoPipe, a pipeline parallelism system to jointly optimize partitioning, placement, and scheduling. First, we build a graph-based pipeline simulator to model heterogeneous pipeline execution for co-optimization. Second, on top of the simulator, we develop an iterative bubble-aware tuner to efficiently explore the combinatorial search space. Third, we implement a unified pipeline executor that dynamically orchestrates computation and communication to support irregular execution orders without deadlocks while maximizing communication-computation overlap. Experiments show that OctoPipe achieves 1.09--1.49$\\times$ throughput improvement over the state-of-the-art pipeline parallelism approaches across various heterogeneous model configurations and GPU cluster scales.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI"
+  ]
+}

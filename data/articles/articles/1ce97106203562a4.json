@@ -1,0 +1,13 @@
+{
+  "id": "1ce97106203562a4",
+  "title": "Domain shift-robust object detection with GenAI image editing",
+  "link": "https://arxiv.org/abs/2609.02299",
+  "description": "arXiv:2609.02299v1 Announce Type: new \nAbstract: Object detectors often degrade under domain shifts such as changes in lighting, weather, or occlusion. These shifts alter object appearance and expose a reliance on visual shortcuts learned from the training distribution that do not generalize across domains. Acquiring sufficient real-world samples to capture such domain variation is particularly difficult in specialized, low-data settings. Recent advances in diffusion-based generative image editing have shown promise for improving the in-domain performance of object detectors through synthetic data augmentation. However, their potential to improve out-of-domain robustness remains largely unexplored. We hypothesize that generative image editing can simulate a controlled domain shift in training data, effectively bridging the gap between source and target domains. To test this, we studied camouflaged military vehicle detection as a challenging domain shift scenario. Detectors trained on uncamouflaged data demonstrate substantial degradation on real test imagery containing foliage, netting, and multi-spectral camouflage across 15 vehicle classes in close-up, ground-level imagery. We used two diffusion-based editing models, Qwen Image Edit 2509 and Flux.2 Dev, to synthetically add camouflage to the training data, alongside a LoRA fine-tuned version of Qwen. A non-generative black-bar occlusion baseline served as a lower bound on augmentation quality. Using a GroundingDINO detector trained on real and synthetic data, generative camouflage augmentation yielded substantial mAP improvements for foliage (+20.1) and netting (+14.4) camouflage. Generating multi-spectral camouflage proved more challenging, but LoRA fine-tuning improved performance by 4.4 mAP over the uncamouflaged baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

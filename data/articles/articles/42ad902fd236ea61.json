@@ -1,0 +1,14 @@
+{
+  "id": "42ad902fd236ea61",
+  "title": "Spectral Rendering Without a Spectral Renderer: Learned Spectral Codes for RGB Pipelines",
+  "link": "https://arxiv.org/abs/2602.18741",
+  "description": "arXiv:2602.18741v3 Announce Type: replace-cross \nAbstract: Spectral rendering reproduces the wavelength-dependent appearance that RGB rendering cannot: metamerism, colour shifts under spectrally rich illumination, coloured glass, metallic reflection and subsurface scattering. It requires a spectrally aware renderer, but the rendering ecosystem is predominantly RGB: game engines, cloud render farms, GPU rasterisers and most offline renderers consume RGB alone, with no access to the internal wavelength propagation that spectral rendering relies on.\n  We introduce learned spectral codes, a compact linear representation that enables general spectral rendering through unmodified RGB pipelines. A trained encoder compresses any visible-range spectral quantity into a small latent vector; the codes are packed as RGB triplets and processed by an off-the-shelf RGB renderer. The codec preserves the arithmetic of light transport, exactly for scaling and addition and approximately for element-wise products, so two standard RGB passes suffice to produce results closely matching a full spectral rendering. The same codec handles reflectance, illumination, coloured glass, conductors, and participating media: one pipeline across material classes, with no per-material modification to the renderer.\n  Where spectral asset data is unavailable, lightweight neural upsamplers bridge legacy RGB inputs to the latent space. Across diverse materials and illumination, the method yields substantial quality improvements on the cases where RGB rendering fails most visibly, at rendering cost comparable to efficient spectral-sampling techniques and with no changes to the renderer.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV"
+  ]
+}

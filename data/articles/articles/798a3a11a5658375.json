@@ -1,0 +1,13 @@
+{
+  "id": "798a3a11a5658375",
+  "title": "FiSeR: Fine-Grained Source Representations for Cross-Domain AI Image Detection",
+  "link": "https://arxiv.org/abs/2606.00606",
+  "description": "arXiv:2606.00606v2 Announce Type: replace \nAbstract: Real-world synthetic image detectors often generalize poorly under domain shift despite strong in-domain performance. Using unsupervised UMAP projections, we find that natural and synthetic features remain partially separable on unseen datasets, yet performance still drops, suggesting that the classification head overfits to training-domain artifacts. Therefore, the key is to learn more transferable representations so that the decision criterion is more stable and robust to domain shifts. Based on the structural fact that synthetic images are produced by diverse generators, we propose a hierarchical contrastive learning framework that improves the separability between natural and synthetic images while preserving generator identity information. It jointly optimizes (i) a coarse contrastive objective between natural and synthetic images and (ii) a fine contrastive objective among synthetic images using generator identities. Trained on WildFake, our method achieves an average AUROC gain of +10.22 on cross-domain evaluation over Chameleon, AIGIBench, Community Forensics, and GenImage under the same settings as the strong baseline DIRE. For few-shot adaptation, we freeze the backbone and fit an SVM head on 10 labeled samples per class, improving AUROC by +10.64 on AIGIBench and +17.41 on Chameleon, averaged over 12 widely used detectors. Our code is publicly available at: https://github.com/heyongxin233/FiSeR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

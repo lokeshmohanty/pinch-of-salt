@@ -1,0 +1,14 @@
+{
+  "id": "cea52c2092218942",
+  "title": "ZAGNet: Zone-Aware Graph Aggregation Network for Patient-Level Lung Ultrasound Diagnosis",
+  "link": "https://arxiv.org/abs/2610.02263",
+  "description": "arXiv:2610.02263v1 Announce Type: cross \nAbstract: Patient-level lung ultrasound (LUS) diagnosis requires integrating findings acquired across multiple anatomical zones, yet clinical examinations frequently involve variable and incomplete scanning protocols with missing zones. Existing diagnostic AI methods primarily analyze individual frames or video loops, relying on heuristic aggregation strategies such as max or mean pooling that ignore inter-zone relationships for patient-level inference. This paper presents ZAGNet, a Zone- Aware Graph Neural Network that represents temporally tracked pathology findings as graph nodes connected by anatomical zone adjacency. A graph transformer network propagates contextual information across neighboring lung regions, while a virtual global node aggregates graph-level features to predict patientlevel consolidation and pleural effusion using only patient-level supervision. ZAGNet accommodates missing zones by computing on a graph structure without fixed input format or size. We evaluate ZAGNet on a multicenter dataset of 714 subjects (20,256 LUS video loops) with exams varying from 4 to 16 zones across anterior, posterior, and lateral thoracic regions. For consolidation diagnosis, ZAGNet achieved an AUC of 0.803 compared to 0.677 (max pooling) and 0.674 (mean pooling). For pleural effusion, AUC increased to 0.893 from 0.804 (max pooling) and 0.815 (mean pooling). These represent improvements of up to 19% and 11% for consolidation and pleural effusion respectively. The results demonstrate that graph-based inter-zone reasoning provides an effective and clinically consistent framework for automated patient-level LUS assessment.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

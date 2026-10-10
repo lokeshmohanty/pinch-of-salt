@@ -1,0 +1,13 @@
+{
+  "id": "fd92fb1c6b63e5a4",
+  "title": "iFAN: Inference-Aware Learning for Plain Mask Transformers",
+  "link": "https://arxiv.org/abs/2608.03216",
+  "description": "arXiv:2608.03216v2 Announce Type: replace \nAbstract: Query-based mask transformers assemble segmentation outputs through pixel-wise competition among query predictions of the final layer, yet this inference process is not explicitly optimized during training. We identify two key mismatches: the query with the highest probability-mask score does not necessarily produce the most accurate mask, and final-layer decoding may discard superior predictions from intermediate layers. To address these issues, we propose Inference-Aware Learning (iFAN), a general training framework for plain mask transformers. iFAN introduces Adjusted Probability-Mask Ranking (APMR), which aligns query competition with predicted mask quality and suppresses high-confidence but inaccurate competitors. We further employ Cross-Layer Self-Distillation (CLSD) to transfer stronger intermediate predictions to the final layer. The ranking and distillation objectives are training-only, while inference retains efficient final-layer decoding. Experiments on COCO, ADE20K, and Cityscapes demonstrate consistent improvements across panoptic, instance, and semantic segmentation, as well as across different architectures, backbone scales, and input resolutions. Overall, iFAN improves performance by an average of 1.20 PQ, 1.30 AP, and 0.63 mIoU, with negligible additional parameters, FLOPs and inference latency.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

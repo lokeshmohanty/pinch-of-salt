@@ -1,0 +1,13 @@
+{
+  "id": "c1fb40113b894c08",
+  "title": "Which Pretext Task Transfers? Self-Supervised Pretraining Objectives for Lung Ultrasound",
+  "link": "https://arxiv.org/abs/2609.16551",
+  "description": "arXiv:2609.16551v1 Announce Type: new \nAbstract: Self-supervised learning (SSL) can reduce the need for labelled medical images, but the choice of pretext objective remains unclear for lung ultrasound (LUS). Contrastive learning, masked reconstruction, and joint-embedding predictive architectures (JEPA) differ in the space in which their targets are defined, yet existing ultrasound studies compare them under different corpora, backbones, and evaluation protocols. We compare these three objective families using the same encoder backbone, pretraining corpus, optimisation schedule, and frozen-evaluation protocol. Encoders are pretrained on COVID-BLUeS LUS videos and evaluated with linear, $k$NN, and attentive probes at 5\\%, 10\\%, 50\\%, and 100\\% label budgets. Evaluation is performed on POCUS using patient-level five-fold cross-validation and on the independently acquired Mendeley-Uganda dataset, which is excluded from both pretraining and probe fitting. At the full label budget under linear probing, VideoMAE and V-JEPA achieve $66.5 \\pm 13.1$ and $65.4 \\pm 11.7$ balanced accuracy on POCUS, while MoCo achieves $42.1 \\pm 1.2$. On Mendeley-Uganda, the ranking reverses: MoCo performs best at $62.7 \\pm 1.0$, followed by VideoMAE at $53.8 \\pm 2.8$, while V-JEPA falls near chance at $35.1 \\pm 4.9$. These results show that POCUS probe accuracy alone does not identify the objective that transfers best across datasets. We also outline planned representation-level analyses to examine this reversal. Code is publicly available at https://github.com/moeinheidari7829/LUSVideoSSL.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fe9d5946c2685c96",
+  "title": "DISTA-Net++: Rethinking Infrared Small Target Unmixing Beyond Sub-Pixel Separation",
+  "link": "https://arxiv.org/abs/2609.18773",
+  "description": "arXiv:2609.18773v1 Announce Type: new \nAbstract: Long-range infrared imaging frequently confronts dense target clusters whose diffraction-limited signatures merge into a single indistinguishable blob, concealing the number, sub-pixel positions, and radiant intensities of the underlying sources. While deep learning has advanced general object detection, resolving such Closely-Spaced Infrared Small Targets (CSIST) remains largely unexplored, owing to a systemic infrastructure void and a fundamental paradigm mismatch. The dominant formulation, which reduces unmixing to a blind, discrete sub-pixel separation, is inherently insufficient: without semantic guidance, the ill-posed inverse problem admits ambiguous solutions plagued by false and missed detections, while grid-based discretization locks predictions onto fixed lattice centers, chaining precision to prohibitively expensive grid refinement. We argue that CSIST unmixing should instead be informed and continuous. To ground this paradigm shift, we establish the first comprehensive open-source ecosystem for the field, comprising the large-scale CSIST-100K benchmark, a tailored metric suite, and the GrokCSO toolkit. Upon this foundation, we propose DISTA-Net++, which anchors a dynamic deep unfolding backbone with two synergistic mechanisms: a Count-Guided Prior that injects the global target count as an explicit semantic constraint to regularize the solution space, and a Continuous Coordinate Rectification that regresses off-grid offsets to decouple localization accuracy from grid resolution. Extensive experiments validate our paradigm: even under the most economical 3x division, DISTA-Net++ surpasses 7x-division state-of-the-art methods by 16.15% in CSO-mAP and 62.96% in count accuracy at merely one-sixth of their computation, demonstrating that unmixing precision need not be purchased with finer discretization. The complete ecosystem is available at https://github.com/GrokCV/GrokDet.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

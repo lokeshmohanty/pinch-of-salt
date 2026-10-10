@@ -1,0 +1,14 @@
+{
+  "id": "d4277e6d53818572",
+  "title": "What Does a ProcGen Generalization Gap Measure? Action Rules, Residual Entropy, and the Missing Random Floor",
+  "link": "https://arxiv.org/abs/2609.32532",
+  "description": "arXiv:2609.32532v2 Announce Type: replace-cross \nAbstract: A generalization gap in reinforcement learning, return on training levels minus return on held-out levels, is usually reported without a reference point. We argue that it should be read against a measured random floor: the return of a uniform-random policy on the same levels under the same evaluation harness. On eight ProcGen environments with PPO at a compute-limited budget (8M steps, 16 parallel environments; three games extended to 25M), the floor changes what standard numbers mean. The test-time action rule decides which policy is measured: in miner, the sampled policy scores 5.1x the floor on held-out levels while its argmax scores below it in every run, and greedy evaluation places two environments significantly below the floor. Used as a convergence diagnostic, raw policy entropy flags six of eight environments, but 32-66% of that entropy lies on actions with identical effects; against the floor, five of eight sampled policies are clearly above it on held-out levels and heist's is not distinguishable from it. An audit of twelve ProcGen codebases finds that nine sample test-time actions with no explicit choice at the evaluation call site. We recommend that every reported gap state its action rule, seed its evaluation and specify its tests before analysis, and report the floor on both level sets.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

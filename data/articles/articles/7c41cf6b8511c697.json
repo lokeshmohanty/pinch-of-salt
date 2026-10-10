@@ -1,0 +1,14 @@
+{
+  "id": "7c41cf6b8511c697",
+  "title": "On Asymmetric Optimization of Reasoning and Perception in Vision-Language Model Post-Training",
+  "link": "https://arxiv.org/abs/2605.29496",
+  "description": "arXiv:2605.29496v2 Announce Type: replace-cross \nAbstract: Post-training has greatly improved reasoning in frontier vision-language models, yet its gains for perception remain comparatively limited, creating a bottleneck for end-to-end visual reasoning. To investigate this gap, we introduce a controlled diagnostic framework with two synthetic tasks that disentangle perception from reasoning. Our analysis reveals a consistent perception-reasoning asymmetry: post-training improves reasoning more substantially than perception, though the underlying mechanism differs across training paradigms. For supervised fine-tuning (SFT), this asymmetry stems from token imbalance, with perception occupying a smaller fraction of tokens in chain-of-thought supervision. Reweighting the loss boosts end-to-end performance by up to 18.2 points. For reinforcement learning (RL), the asymmetry instead arises from reward coupling, as outcome rewards correlate more strongly with reasoning than perception. Adding a perception-aware reward improves end-to-end accuracy by up to 6.0 points; when ground-truth perception rewards are unavailable, a reliable surrogate provides useful signal, yielding gains of 2.2 points. Beyond the controlled setting, these strategies also improve real-world visual reasoning, with gains of up to 3.3 points across three benchmarks. Overall, we diagnose the causes of asymmetric optimization and provide actionable guidance that benefits both synthetic and realistic settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.CV"
+  ]
+}

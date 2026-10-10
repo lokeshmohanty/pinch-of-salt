@@ -1,0 +1,13 @@
+{
+  "id": "bb99b2430d8e6be3",
+  "title": "TecoPrompt: Temporal-Conservative Prompt Learning for Vision-Language Models",
+  "link": "https://arxiv.org/abs/2609.16858",
+  "description": "arXiv:2609.16858v1 Announce Type: new \nAbstract: Prompt learning adapts vision-language models, such as CLIP, by adjusting a small set of context tokens. However, under few-shot supervision, even moderate label noise can disrupt prompt optimization. To address this issue, we propose TecoPrompt, a closed-loop robust prompt-learning framework that revisits optimal transport (OT) pseudo-labeling from a temporal perspective. TecoPrompt employs an entropic OT plan in the CLIP semantic space to obtain globally consistent label candidates. It verifies the reliability of these candidates by examining trajectory stability: a noisy label is only rewritten if the OT candidate remains unchanged within a K-epoch temporal stability window and passes a confidence gate based on Exponential Moving Average (EMA). This approach helps reduce confirmation bias. The rewritten labels are then integrated back into prompt training using a tri-group objective that includes three loss functions aligned with clean, mid, and noisy subsets. Experiments on seven datasets with synthetic symmetric and asymmetric noise, as well as Food101N, demonstrate significant performance improvements. For example, on the OxfordPets dataset, with 50% asymmetric noise, TecoPrompt achieves an accuracy of 0.843, up from 0.775.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

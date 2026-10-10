@@ -1,0 +1,14 @@
+{
+  "id": "c803f2aae5d3d577",
+  "title": "MolWorld: Molecule World Models for Actionable Molecular Optimization",
+  "link": "https://arxiv.org/abs/2605.08954",
+  "description": "arXiv:2605.08954v2 Announce Type: replace-cross \nAbstract: Molecular optimization in drug discovery aims to discover molecules with improved target properties, but practical lead optimization often requires more than high predicted scores. A useful candidate should also be actionable: it should be reachable from known molecules through a sequence of local structural modifications, providing explicit structural references for interpreting property changes within an evolving chemical series. Existing de novo and single-molecule optimization methods do not explicitly model such reachability, especially when both the target molecules and the intermediate molecules connecting them to known compounds are unknown. In this work, we formulate actionable molecular optimization as iterative expansion of a molecule-transfer graph, where nodes are molecules and edges encode matched molecular pair (MMP) relations representing localized structural differences. We propose MolWorld, a molecule world model-guided framework that uses connected local subgraphs as anchor contexts for graph expansion. Given the current graph and a candidate context, a latent molecule world model predicts the resulting local structural expansion. A context-conditioned generator then uses the molecular structures and MMP relations within selected contexts to propose candidates, learning from local graph-completion tasks. Candidates are evaluated, and those connected through verified MMP relations are incorporated into the graph, preserving reachability from the initial set. The updated graph serves as the state for subsequent optimization. Experiments on property optimization and docking-based tasks show that MolWorld discovers high-property molecules while maintaining stronger structural connectivity, supporting actionable and sequential molecular design.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

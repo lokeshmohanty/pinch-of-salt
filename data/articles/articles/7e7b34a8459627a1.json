@@ -1,0 +1,13 @@
+{
+  "id": "7e7b34a8459627a1",
+  "title": "CurvSpec: Adaptive Multi-Curvature Learning for Partial Relevant Video Retrieval",
+  "link": "https://arxiv.org/abs/2609.36815",
+  "description": "arXiv:2609.36815v1 Announce Type: new \nAbstract: Partially Relevant Video Retrieval (PRVR) seeks to retrieve untrim-med videos containing a moment that matches a text query, without temporal annotations. The relevant moment may last only seconds within a video spanning several minutes, creating an extremely low signal-to-noise ratio that makes PRVR more challenging than standard full-video retrieval. This task presents two intertwined challenges: (1) signal dilution, where coarse global representations blur the brief relevant signal into the dominant irrelevant surroundings;(2) curvature rigidity, where embedding all videos in the same fixed-geometry space distorts representations for videos that range from flat atomic events to deep compositional hierarchies. Existing PRVR methods have improved moment selection and cross-modal matching, but they still typically encode all videos in a single fixed-curvature retrieval space, limiting their ability to model diverse video structures. To address both challenges, we propose CurvSpec, a framework that learns content-adaptive curvature for video retrieval representations rather than imposing a fixed geometric prior. CurvSpec processes features through parallel Euclidean and hyperbolic attention layers, with independently learned curvatures assigned to the hyperbolic layers, and a content-aware fusion mechanism routes each input to its most suitable geometric regime. To further suppress signal dilution, CurvSpec represents each video with semantic centroids whose number is determined by the video's content complexity, projects them onto the learned manifold, and matches each query against its nearest centroid by geodesic distance. Experiments on ActivityNet Captions, TVR, and Charades-STA demonstrate state-of-the-art retrieval performance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

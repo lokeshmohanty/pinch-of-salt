@@ -1,0 +1,13 @@
+{
+  "id": "cd599ee9cc527cbb",
+  "title": "Source-Agnostic Image Translation Based on Latent Aware Adaptive Masking",
+  "link": "https://arxiv.org/abs/2608.14046",
+  "description": "arXiv:2608.14046v1 Announce Type: new \nAbstract: In this work, we propose a source-agnostic framework that dynamically refines a binary mask throughout the reverse diffusion process by computing the discrepancies of a pretrained diffusion model's prediction for each latent time step. Rather than relying on a fixed threshold, our method introduces a time-dependent statistical thresholding scheme derived from the empirical mean and standard deviation of prediction discrepancies across the latent noisy images from the target distribution. This allows the mask to adapt to the model's varying predictive confidence at different noise levels, effectively isolating domain-specific regions while preserving global structural coherence. Experimental results on the AFHQ and Celeba-HQ datasets demonstrate that our approach outperforms state-of-the-art unsupervised Image-to-Image methods in both realism (FID, KID) and faithfulness (SSIM, LPIPS). By requiring only a pretrained model of the target domain, our approach enables precise, automated localization and seamless translation across diverse source distributions without any specialized training. The project source code is available at: https://github.com/dtoma95/PM-Edit",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

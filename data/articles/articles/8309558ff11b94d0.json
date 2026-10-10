@@ -1,0 +1,13 @@
+{
+  "id": "8309558ff11b94d0",
+  "title": "When Does Visual Token Pruning Improve Calibration? The Role of Evidence Coverage in MLLMs",
+  "link": "https://arxiv.org/abs/2604.12035",
+  "description": "arXiv:2604.12035v3 Announce Type: replace \nAbstract: Visual token pruning is widely used to reduce the inference cost of multimodal large language models (MLLMs), but it is usually evaluated only by accuracy. We study how pruning affects calibration, defined as the agreement between confidence and correctness, and show that the selection rule matters more than the token budget alone. On POPE with LLaVA-1.5, coverage-based pruning from 576 to 128 tokens reduces expected calibration error from 0.041 to 0.016 without a statistically significant accuracy loss. In contrast, attention-based selection preserves confidence while accuracy deteriorates, becoming less calibrated than random pruning at aggressive budgets. Across pruning conditions, kept-set coverage is strongly associated with accuracy (Spearman $\\rho=+0.89$) but not with mean confidence ($\\rho=-0.03$), producing a strong inverse relation with overconfidence ($\\rho=-0.92$); controlled kept-set interventions support this evidence-coverage account. Two boundaries limit it: query-conditioned FastV is more overconfident than its coverage predicts, and on language-prior-dominated ScienceQA, coverage ceases to order calibration. The selector ordering otherwise generalizes to GQA and LLaVA-NeXT, and coverage beats random on Qwen2-VL, although the calibration gain over the unpruned model is task- and model-dependent. We also identify an evaluation pitfall in FastV: zeroing rather than removing pruned tokens can reduce accuracy to chance. Visual token pruning therefore changes confidence quality as well as efficiency, and calibration should be evaluated alongside accuracy when comparing pruning methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

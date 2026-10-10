@@ -1,0 +1,13 @@
+{
+  "id": "6b4c947d392181ef",
+  "title": "Where Compute Matters: Heterogeneous Attention for Efficient Video Diffusion",
+  "link": "https://arxiv.org/abs/2609.31050",
+  "description": "arXiv:2609.31050v1 Announce Type: new \nAbstract: Efficient video generation requires reducing the quadratic cost of self-attention over long spatio-temporal token sequences. Existing efficient-attention methods typically apply the same computation pattern to every token, even though denoising difficulty varies substantially across video regions and evolves throughout the generation process. We introduce HetA-DiT, a heterogeneous attention mechanism that adaptively allocates computation according to token difficulty. A lightweight uncertainty branch predicts a token-wise estimate of denoising difficulty, which is used to route uncertain tokens through dense global attention while processing more reliable tokens with efficient local attention. The resulting routing is content- and timestep-adaptive, retains global context where it matters most, and provides a single parameter for controlling the quality-efficiency trade-off. HetA-DiT is compatible with few-step distribution-matching distillation and introduces no additional Transformer evaluation at inference time by reusing uncertainty estimates from the preceding denoising step. We evaluate the method on DMD-distilled Wan2.2-5B and Wan2.1-1.3B models. Across VBench, VBench-2.0, and human preference evaluation, HetA-DiT maintains competitive generation quality while routing only approximately 20% of tokens through dense attention.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

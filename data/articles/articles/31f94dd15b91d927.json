@@ -1,0 +1,14 @@
+{
+  "id": "31f94dd15b91d927",
+  "title": "Teaching MLLMs to Say No: Generalized Referring Expression Comprehension via Refusal Calibrated GRPO",
+  "link": "https://arxiv.org/abs/2608.04698",
+  "description": "arXiv:2608.04698v1 Announce Type: cross \nAbstract: We tackle the challenging yet underexplored task of Generalized Referring Expression Comprehension (GREC), which requires a model to localize the object described by a textual expression when it exists (positive sample) and to refuse output when it does not (negative sample). Although Multimodal Large Language Models (MLLMs) excel at localizing existing objects, they often fail to reject nonexistent ones due to the absence of negative samples during training, producing hallucinated bounding boxes. Existing post-training approaches such as supervised fine-tuning (SFT) and reinforcement learning (RL) enhance refusal behavior but usually degrade localization accuracy on positive samples, undermining the model's core competence. To address this, we propose Refusal-Calibrated Group Relative Policy Optimization (RC-GRPO), a calibrated RL strategy that strengthens the refusal ability of MLLMs while preserving localization performance. It enforces \"None\" outputs in rollouts for valid advantage estimation on negative samples and applies a penalty to prevent over-refusal on positives, achieving a balanced trade-off between accuracy and reliability. A second-stage reasoning reinforcement further consolidates causal understanding and interpretability. Experiments on three GREC benchmarks demonstrate that RC-GRPO attains superior localization accuracy while maintaining strong refusal capability.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

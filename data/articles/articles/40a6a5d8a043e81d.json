@@ -1,0 +1,13 @@
+{
+  "id": "40a6a5d8a043e81d",
+  "title": "Lesion Detection in CT with Frozen Self-Distilled Features: SALT, a Spatially Adaptive Label-Guided Temperature",
+  "link": "https://arxiv.org/abs/2608.05100",
+  "description": "arXiv:2608.05100v1 Announce Type: new \nAbstract: Self-supervised pretraining objectives are spatially uniform: the teacher temperature and the per-patch loss weight are identical everywhere in the image, so a lesion a few patches wide contributes no more to the training signal than the surrounding parenchyma. Prior work biases the views toward annotated regions, which changes what the model sees but adds no pressure on the objective. We instead condition the targets of self-distillation, a method we call SALT (Spatially Adaptive Label-guided Temperature). Weak, box-derived labels, available only during pretraining, define a compact region on the encoder's patch grid, inside which the teacher's softmax temperature is sharpened and the masked-patch loss is up-weighted. The objectives, the masking policy and the centering statistics are otherwise unchanged, and at every downstream use the encoder is a plain feature extractor with no labels and no conditioning. We evaluate by freezing the encoder and training only a lightweight multi-depth CenterNet-style head, detecting lesions in 3D on four CT cohorts, and we isolate the mechanism against a backbone identical in architecture, pretraining data, schedule and label-guided cropping but with no target conditioning. We report patch-level separability, 3D detection stratified by cohort and by lesion size, box quality, and a detector-free probe in which a single frozen patch embedding re-identifies a lesion in a follow-up scan without registration, masks or fine-tuning. Because the conditioning is expressed through a spatial indicator rather than through label semantics, the formulation admits any weak spatial annotation; we instantiate and validate it for lesions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

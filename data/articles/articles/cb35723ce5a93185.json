@@ -1,0 +1,13 @@
+{
+  "id": "cb35723ce5a93185",
+  "title": "SliceBridge: context-consistent repair of corrupted slice intervals in T1-weighted MRI",
+  "link": "https://arxiv.org/abs/2609.01827",
+  "description": "arXiv:2609.01827v1 Announce Type: new \nAbstract: Structural magnetic resonance imaging (MRI) images are sometimes corrupted over a contiguous set of slices, where acquisition, motion, hardware, or reconstruction effects leave a single slice or short interval inconsistent with its neighbors while the rest of the image remains usable. Such localized corruption can bias downstream morphometric analysis, yet discarding or reacquiring an otherwise usable image is costly. We formulate this as an image restoration problem: given the location of the affected interval, reconstruct those slices from the surrounding anatomical and imaging context. We propose SliceBridge, a framework for restoring corrupted slice intervals in T1-weighted MRI using rectified flow matching conditioned on the surrounding intact slices and their relative slice positions. Through-plane consistency is encouraged by coupling the slices within the interval through interval-correlated initial noise, a shared flow time, and synchronized sampling. The restored interval is then inserted back, leaving all other slices unchanged. We trained and validated the model on 9,877 T1-weighted brain MRI volumes from four datasets and evaluated it on 581 external subjects using clean interval withholding and controlled corruptions. Compared with a matched model that reconstructed target slices independently, SliceBridge reduced error in slice-to-slice changes within repaired intervals by 32.9%-41.3% across interval lengths and achieved higher SSIM at every interval length. In controlled-corruption cases, SliceBridge reduced the median error in regional brain volume estimates produced by a downstream segmentation model from 1.95% in corrupted volumes to 1.05%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

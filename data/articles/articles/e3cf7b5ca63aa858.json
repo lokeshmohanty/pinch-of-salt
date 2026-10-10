@@ -1,0 +1,13 @@
+{
+  "id": "e3cf7b5ca63aa858",
+  "title": "Beyond Token-Level Cross-Entropy: Fr\\'echet Distributional Post-Training for Autoregressive Image Generation",
+  "link": "https://arxiv.org/abs/2608.00562",
+  "description": "arXiv:2608.00562v1 Announce Type: new \nAbstract: Autoregressive image generators are commonly pretrained with token-level cross-entropy under teacher forcing, yet evaluated by the distributional quality of decoded images. This creates an objective mismatch, because categorical errors have unequal image-level consequences, and a context mismatch, because inference conditions on model-generated histories. We introduce FD-loss post-training, which adapts a pretrained discrete generator using representation-space Fr\\'echet distance as the sole objective. A dual-pass scheme first constructs detached rollout contexts through gradient-free generation under the model's native inference configuration, then performs differentiable replay with a probability-level straight-through estimator (STE) that preserves hard argmax decoding in the forward pass while propagating image-level gradients through temperature-scaled probabilities. Only the generator is updated, while the tokenizer and feature extractors remain frozen. Across eight completed configurations from four generator families on class-conditional ImageNet at $256\\times256$, FD-loss post-training reduces FID and $\\mathrm{FD}_{r6}$ by 41.4% and 52.0% on average. The strongest FID result improves from 2.42 to 1.43 without adding parameters or inference steps.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

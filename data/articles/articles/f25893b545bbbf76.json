@@ -1,0 +1,13 @@
+{
+  "id": "f25893b545bbbf76",
+  "title": "AlphaSchema: Exploring the Space of Trading Semantics for LLM-Based Alpha Mining",
+  "link": "https://arxiv.org/abs/2607.26642",
+  "description": "arXiv:2607.26642v1 Announce Type: new \nAbstract: Automated alpha mining has increasingly adopted large language model (LLM) agents for factor generation and iterative discovery. However, existing LLM-based systems often delegate both factor construction and search decisions to the agent itself, without an explicit exploration space or a principled mechanism for navigating that space. As a result, exploration remains largely implicit and difficult to control or optimize systematically. We introduce AlphaSchema, which constructs and explores a structured space of trading semantics for alpha mining. Each point in this space is a schema plan composed of Event, Context, Qualities, Direction, and Output, specifying the semantics of a candidate factor before implementation. AlphaSchema decouples exploration from implementation: an LLM translates selected schema plans into executable factors, while evaluated rewards are accumulated to learn a surrogate model over the semantic space. An iterative selection mechanism uses this model to balance global exploration, surrogate-guided exploitation, and local mutation. Experiments on the Chinese stock market show that AlphaSchema discovers factor pools with strong predictive and portfolio performance. Further analyses show that the semantic search process navigates diverse regions while increasingly allocating evaluations toward high-reward regions, and that implementations of the same schema plans by different LLMs exhibit comparable predictive quality, suggesting that alpha mining quality is largely robust to the choice of LLM within our framework.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "a700f8fa9c689f25",
+  "title": "CARVE: Cross-Slice Anisotropic Reallocation of Visual Evidence for Efficient 3D Medical Volume Understanding",
+  "link": "https://arxiv.org/abs/2608.04515",
+  "description": "arXiv:2608.04515v1 Announce Type: cross \nAbstract: Slice-based MLLMs leverage mature 2D encoders by representing 3D volumes as sequences of 2D slices. However, this slice-wise formulation produces thousands of visual tokens that burden the LLM backbone, many of which capture overlapping visual evidence across adjacent slices. To understand how effectively a growing visual token budget improves performance, we perform scaling analyses on two 3D medical VQA benchmarks and find diminishing returns: cost keeps rising while accuracy saturates, and improving in-plane resolution is more effective than adding slices at comparable budgets. The budget should therefore be allocated more selectively rather than simply enlarged, yet most token compression methods are designed for 2D images or videos, where redundancy arises from spatial layout or temporal motion rather than from near-duplicate content along the depth axis. We present CARVE, a training-free framework that compresses visual tokens prior to LLM inference and casts token reduction as budget-constrained 2.5D allocation. CARVE partitions the depth axis into coherent windows and allocates tokens non-uniformly according to normalized cross-slice evidence. Under a shared budget, CARVE builds spatial anchors on representative slices and retrieves locally varying evidence from the full volume, then merges remaining eligible tokens into nearby anchors within each window. Removing roughly 80% of the visual tokens on Hulu-Med-7B, CARVE leads all compression baselines on every AMOS-MM report-generation metric, with 6.2 points higher retention of full-token quality than the strongest baseline, and preserves 98.1% of full-token performance across three VQA benchmarks.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

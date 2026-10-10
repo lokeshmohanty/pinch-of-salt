@@ -1,0 +1,13 @@
+{
+  "id": "3738e92d7c43dbf1",
+  "title": "MAGIC: Learning from Visibility Asymmetry for Unsupervised Stereo Matching",
+  "link": "https://arxiv.org/abs/2508.10838",
+  "description": "arXiv:2508.10838v3 Announce Type: replace \nAbstract: Learning disparity in occluded regions remains difficult for unsupervised stereo matching. Photometric supervision lacks valid target-view correspondences in these regions, while the teacher and student in conventional binocular self-training share the same target view and therefore the same occlusions. Even when supervision is available, the small proportion of occluded pixels limits their contribution to training. We propose MAGIC, a multi-baseline geometric consistency framework for reliable and effective occlusion supervision. The teacher and student share a reference image but use different target views, allowing the teacher to observe correspondences that are occluded from the student. After aligning disparities across baselines, MAGIC uses predictions from teacher-visible regions to supervise student-occluded regions. An occlusion-aware weighting strategy strengthens supervision on teacher-visible but student-occluded pixels, preventing their training signal from being overwhelmed by non-occluded regions. We also introduce MBS20K, a synthetic multi-baseline stereo dataset spanning diverse scenes, weather, and lighting. Pre-trained on MBS20K, MAGIC generalizes to real-world datasets with consistently fewer occluded-region outliers. On KITTI, the pre-trained model already outperforms several fine-tuned unsupervised methods. Fine-tuning this model on standard binocular pairs achieves state-of-the-art unsupervised performance on KITTI 2015 and 2012. Incorporating synthesized multi-baseline views during fine-tuning further improves performance. Our code and dataset will be released upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "a6ad959cb574025c",
+  "title": "Agent Tools Orchestration Leaks More: Dataset, Benchmark, and Mitigation",
+  "link": "https://arxiv.org/abs/2512.16310",
+  "description": "arXiv:2512.16310v4 Announce Type: replace-cross \nAbstract: LLM agents can combine individually non-revealing tool returns and disclose a sensitive conclusion, creating Tools Orchestration Privacy Risk (TOP-R). We formalize TOP-R through three conditions: conclusion sensitivity, single-source non-inferability, and compositional inferability. We introduce Library-Grounded Reverse-Inference Seed Expansion (LRSE), a four-library reverse-construction pipeline, and use it to build TOP-Bench, a 1,000-instance benchmark evaluated under a controlled two-stage tool-use protocol. Across six LLM agents, average task completion, leakage, and H-score are 98.0 percent, 88.6 percent, and 20.4. With native reasoning enabled, four models average 81.4 percent final-response leakage and 82.4 percent reasoning-trace leakage. With reasoning disabled, three prompt-only safeguards improve H-score by an average of about 3.4 points on TOP-Bench. We further propose TOP-Align, an SFT+DPO method for learning safer task-completion boundaries. On a separate post-training evaluation set, TOP-Align improves H-score by 16.2 points over the base model, versus a 5.0-point average gain from prompt-only mitigation on the same set. These results show that TOP-R requires defenses beyond prompting alone. Dataset and code are available at https://github.com/1Ponder/TOP-R.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

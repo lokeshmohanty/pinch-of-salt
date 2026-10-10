@@ -1,0 +1,13 @@
+{
+  "id": "c2a314faa57d1898",
+  "title": "FORTE: Adaptive Scoring and Exact Keyframe Selection for Long-Video Question Answering",
+  "link": "https://arxiv.org/abs/2610.00573",
+  "description": "arXiv:2610.00573v1 Announce Type: new \nAbstract: Query-aware keyframe selection enables multimodal large language models (MLLMs) to process long videos using only a small set of question-relevant frames. Existing score-based methods, however, typically search within a fixed, uniformly sampled candidate pool, preventing evidence outside this pool from ever being selected. Given a limited relevance-scoring budget, the key challenge is to allocate evaluations adaptively to promising frames while continuing to explore underrepresented temporal regions. We introduce FORTE, a training-free framework that addresses this challenge through two stages: adaptive relevance scoring and global keyframe optimization. Starting from sparse, uniformly distributed observations, our efficient Gaussian-process relevance predictor estimates relevance for unscored frames, exploiting temporal locality and the approximately banded kernel structure to reduce the core computation from cubic to linear time in the number of frames for fixed bandwidth. The scoring stage then selects which frames to score next by balancing predicted relevance with temporal coverage, prioritizing promising regions while also exploring less-represented parts of the video. The optimization stage selects the final keyframes by maximizing an objective that jointly captures measured relevance and temporal coverage. We derive an exact algorithm that leverages the logarithmic coverage structure to identify the optimal subset of the scored candidate pool in time linear in the pool size, for a fixed final-frame budget. Experiments on four long-video question-answering benchmarks show that FORTE achieves the highest observed mean accuracy among the compared selectors under every tested scoring budget. Further evaluations demonstrate its consistent effectiveness across different relevance scorers and downstream MLLMs.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

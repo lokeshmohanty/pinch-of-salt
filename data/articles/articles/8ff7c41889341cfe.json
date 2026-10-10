@@ -1,0 +1,14 @@
+{
+  "id": "8ff7c41889341cfe",
+  "title": "Thread-Efficient Decoding for Neural Texture Compression",
+  "link": "https://arxiv.org/abs/2608.27888",
+  "description": "arXiv:2608.27888v1 Announce Type: new \nAbstract: Neural texture compression (NTC) achieves higher compression ratios than BCn formats but suffers from GPU thread divergence, which significantly reduces runtime performance. In this work, we propose a shared decoder MLP architecture -- trained with a gradual decoder freezing schedule -- combined with texture clustering to reduce thread divergence by 25%-52% while preserving rendering quality. We evaluate our method on over 500 textures and multiple real rendering scenes, demonstrating up to 8.48x speedup on the Radeon RX 9070 XT GPU compared to non-shared baselines. Our key contributions include: (1) a unified shared decoder architecture that reduces divergence by grouping textures; (2) a training recipe with gradual decoder freezing that improves stability and reconstruction accuracy; (3) a semantic clustering strategy using CLIP embeddings that groups similar textures for effective decoder sharing; and (4) comprehensive performance and ablation studies validating our approach.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

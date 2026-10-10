@@ -1,0 +1,14 @@
+{
+  "id": "4b664c87b12ef1ee",
+  "title": "Analyzing and Improving Fine-grained Preference Optimization in Medical LVLMs",
+  "link": "https://arxiv.org/abs/2606.12590",
+  "description": "arXiv:2606.12590v2 Announce Type: replace-cross \nAbstract: Preference optimization is increasingly used to post-train medical large vision-language models (LVLMs), yet it operates at a much coarser granularity than the one that defines clinical correctness. Whether one response is clinically better than another usually comes down to a few decisive phrases, such as an anatomical laterality or a lesion attribute, and to whether each is supported by the image region the question concerns. Direct Preference Optimization (DPO) and its variants, by contrast, reduce the comparison to a single response-level scalar, an objective structurally unable to represent which tokens carry clinical meaning. We show that this mismatch is costly: of the objectives we compare, response-level DPO places the least reward on the phrases that decide clinical correctness, and substituting supervised references for preferred responses opens a stylistic gap that the model exploits as a reward-hacking shortcut, raising preference accuracy but not clinical accuracy. To capture the full feedback in a clinical comparison, we propose Fine-grained Regularized Medical Preference Optimization (FiRe-MPO). Preference pairs are built by minimally editing the model's own generations, so that preferred and rejected responses differ only on clinically decisive spans, and each is paired with a lesion-corrupted image withholding the supporting visual evidence. Because span-localized rewards are sparse, we stabilize optimization with a bidirectional token-wise KL regularizer. Across medical visual question answering and report generation, FiRe-MPO outperforms DPO, RRPO, and competing fine-grained objectives on two popular LVLMs, one medical and one general-purpose, while strengthening visual grounding and placing more reward on the medical phrases than the alternatives.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

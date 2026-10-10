@@ -1,0 +1,14 @@
+{
+  "id": "e1bd32ef48391ced",
+  "title": "Permutation-Robust Decision Modeling with Candidate-Independent Block-Causal Attention",
+  "link": "https://arxiv.org/abs/2610.01601",
+  "description": "arXiv:2610.01601v1 Announce Type: cross \nAbstract: Decision models often score a variable-sized set of candidate actions encoded in a single sequence. This setting is increasingly relevant for System 1 components inside generative systems, where candidates may be proposed or ordered differently across runs. Standard causal cross-encoding is expressive, but it can make a candidate's score depend on serialization order rather than on the underlying decision problem. We introduce candidate-independent block-causal attention, which preserves causal computation within the shared context and each candidate while blocking cross-candidate information flow and resetting candidate positions. We compare this architecture with standard causal attention and complementary invariant baselines across Gemma 3 1B, Qwen3 1.7B, and Qwen3 4B backbones. Candidate-independent attention consistently reduces permutation sensitivity while retaining competitive decision quality; ablations indicate that candidate isolation is the primary source of the effect, with position resetting completing the intended symmetry. A larger Qwen3-4B study further examines the behavior of the proposed architecture with substantially more training data. Code is available at the \\href{https://github.com/guyAmit/ci-decision-models}{\\textcolor{blue}{project repository}}, and the \\href{https://huggingface.co/Guy-Amit/qwen3-4b-ci-decision-4096-poc}{\\textcolor{blue}{Qwen3-4B model artifact}} is available on Hugging Face.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f9eebbb8c69104e4",
+  "title": "Understanding Affective Adaptation in Multimodal Foundation Models: Emergent Functional Specialization",
+  "link": "https://arxiv.org/abs/2601.15906",
+  "description": "arXiv:2601.15906v2 Announce Type: replace \nAbstract: Despite rapid progress in multimodal affective foundation models, how affective capabilities emerge within their internal architectures remains poorly understood. A critical open question is whether affective fine-tuning induces diffuse changes across the model or organizes computation into functionally specialized pathways. We systematically investigate this question through a broad module-level analysis of 13 affective model instances spanning nine model designs, multiple scales, tasks, and training paradigms, complemented by controlled functional analyses on representative models. We find that affective adaptation exhibits a consistent yet non-exclusive functional organization. Under matched trainable-parameter budgets, adapting only the feed-forward network (FFN) consistently outperforms adapting only the attention modules across all evaluated settings and, on average, nearly matches the performance obtained by tuning all major Transformer projections, identifying the FFN as a particularly efficient adaptation substrate. More strikingly, although the gate, up, and down projections exhibit comparable standalone adaptation capacity, their learned functional contributions become differentiated after joint optimization. Module recovery and targeted interventions identify \\texttt{gate\\_proj} as a particularly prominent pathway, while checkpoint analysis shows that this differentiation develops over the course of training. We characterize this phenomenon as emergent functional specialization: distinct pathway-level roles are not fully explained by standalone adaptation capacity, but arise through joint affective adaptation. Building on this finding, Gate-Focused Efficient Tuning (GET) retains 96.2-98.0\\% of the performance obtained by tuning all major Transformer projections while using only 19.3-24.5\\% as many trainable parameters.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

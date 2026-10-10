@@ -1,0 +1,13 @@
+{
+  "id": "27e173753a94adce",
+  "title": "Decoupling Multi-Contrast Super-Resolution: Self-Supervised Implicit Re-Representation for Unpaired Cross-Modal Synthesis",
+  "link": "https://arxiv.org/abs/2505.05855",
+  "description": "arXiv:2505.05855v4 Announce Type: replace \nAbstract: Multi-contrast super-resolution (MCSR) is crucial for enhancing MRI but current deep learning methods are limited. They typically require large, paired low- and high-resolution (LR/HR) training datasets, which are scarce, and are trained for fixed upsampling scales. While recent self-supervised methods remove the paired data requirement, they fail to leverage valuable population-level priors. In this work, we propose a novel, decoupled MCSR framework that resolves both limitations. We reformulate MCSR into two stages: (1) an unpaired cross-modal synthesis (uCMS) module, trained once on unpaired population data to learn a robust anatomical prior; and (2) a lightweight, patient-specific implicit re-representation (IrR) module. This IrR module is optimized in a self-supervised manner to fuse the population prior with the subject's own LR target data. This design uniquely fuses population-level knowledge with patient-specific fidelity without requiring paired target-domain LR/HR training data or paired cross-modal HR reference-target training data. Here, 'unpaired' refers to the population-level training setting; at subject-specific inference, as in standard MCSR, the method uses a matched HR reference image from another contrast together with the subject's LR target image. By building the IrR module on an implicit neural representation, our framework is also inherently scale-agnostic. Our method demonstrates superior quantitative performance on different datasets, with exceptional robustness at extreme scales (16x, 32x), a regime where competing methods fail. Our work presents a data-efficient, flexible, and computationally lightweight paradigm for MCSR, enabling high-fidelity, arbitrary-scale reconstruction without the need for paired population-level supervision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

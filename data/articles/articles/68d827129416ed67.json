@@ -1,0 +1,13 @@
+{
+  "id": "68d827129416ed67",
+  "title": "Location-Aware Fine-Grained Representation Learning for Medical Vision Foundation Models",
+  "link": "https://arxiv.org/abs/2608.00976",
+  "description": "arXiv:2608.00976v1 Announce Type: new \nAbstract: Fine-grained visual representations are essential for medical image analysis, particularly when diagnostically relevant evidence is subtle and spatially localized. Modern transformer-based medical vision encoders must therefore learn patch-level representations that are both clinically meaningful and spatially consistent. Without these properties, large vision-language models (LVLMs) operate on an ambiguous visual foundation, limiting their ability to generate clinically reliable and spatially grounded responses. However, existing training strategies for medical vision encoders rarely achieve both objectives. Image-text alignment provides clinically meaningful supervision primarily at the image level, leaving the spatial localization of diagnostic evidence weakly constrained. In contrast, self-supervised learning promotes spatial consistency but lacks the semantic supervision needed to distinguish visually similar yet clinically distinct regions. To address this gap, we present LoFi, a medical vision foundation model built on location-aware fine-grained representation learning. LoFi trains a vision encoder with a lightweight large language model under grounding and grounded captioning objectives. Because these objectives require predicting location from clinical text and vice versa, spatial consistency emerges without any explicit patch-level regularization. To enable training at scale, we construct MedG, a large-scale medical grounding dataset of 4.48M image-text-box triplets curated from 84 datasets spanning 7 modalities. Across phrase grounding, visual question answering, and region-based organ classification under perturbations, LoFi consistently outperforms general-purpose and medical vision foundation models as well as state-of-the-art LVLMs. Code is available at https://github.com/myeongkyunkang/lofi-medg.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

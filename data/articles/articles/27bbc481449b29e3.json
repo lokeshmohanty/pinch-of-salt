@@ -1,0 +1,13 @@
+{
+  "id": "27bbc481449b29e3",
+  "title": "PALATE: Personalized Aesthetic Learning through Adaptive Taste Evolution for Multi-User Portrait Retouching",
+  "link": "https://arxiv.org/abs/2608.18622",
+  "description": "arXiv:2608.18622v1 Announce Type: new \nAbstract: Automatic portrait retouching has advanced rapidly, yet its objective is inherently subjective: the same portrait admits multiple professionally valid results, and users disagree about which one is best. Most existing methods optimize a population-level aesthetic standard and therefore cannot capture individual taste, while fine-tuning a separate editing model for every user incurs prohibitive training, storage, and data costs. We propose PALATE, a shared reward-evolution framework that keeps the image editor fixed and instead personalizes the selection among retouched candidates of the same source portrait. PALATE decomposes the reward for each user into a global backbone shared by all users, category-level residuals shared by aesthetically similar users, and a lightweight user adapter, with anti-collapse regularizers keeping the three levels complementary.A cyclic dual-level distillation scheme first distills user-specific preferences into category rewards and then consolidates the resulting category-level knowledge into the global backbone, which is redistributed to initialize the next evolution round. In this way, the shared initialization improves progressively across rounds, enabling unseen users to be calibrated from only a few rankings. On expert-retouched candidates from PPR10K with held-out users and held-out images, PALATE attains 72.83% pairwise preference-prediction accuracy, surpassing all reward, aesthetic, and image-quality baselines, of which the strongest, PickScore, reaches 58.06%. Each new user costs only 512 bytes of user-specific parameters and millisecond-level scoring.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

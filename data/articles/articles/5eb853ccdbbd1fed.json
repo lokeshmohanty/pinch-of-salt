@@ -1,0 +1,13 @@
+{
+  "id": "5eb853ccdbbd1fed",
+  "title": "MegaAvatar: Controllable Talking Avatar Generation",
+  "link": "https://arxiv.org/abs/2609.39273",
+  "description": "arXiv:2609.39273v1 Announce Type: new \nAbstract: This report presents \\textbf{MegaAvatar}, a controllable talking avatar generation framework built on top of the Wan2.2-TI2V-5B model. Compared with previous talking-avatar methods that mainly rely on audio or reference-image conditioning, we introduce additional SMPL-X-derived 3D guidance, enabling global control over body pose and head motion. Specifically, we render the driving SMPL-X sequence into dense mesh frames and encode them with a lightweight 3D convolutional encoder, whose outputs are injected into the latent tokens to provide overall motion control. Furthermore, we extend Wan2.2-TI2V-5B with additional audio and face cross-attention modules to enable fine-grained expression control and preserve the input identity, respectively. In addition, we implement an audio-to-SMPL-X model to predict an SMPL-X sequence conditioned on the reference image and input audio, allowing MegaAvatar to support audio-driven inference without user-provided SMPL-X frames. Experiments show that MegaAvatar achieves high-quality talking avatar generation with controllable body and head motion, speech-synchronized facial expressions, and consistent identity preservation. MegaAvatar also supports inference with flexible resolutions and video lengths. Codes, dataset, models will be avaliable in https://github.com/Jeoyal/MegaAvatar",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d394d2c266737e64",
+  "title": "BAG: Budget-Aware Gating for Diffusion Caching",
+  "link": "https://arxiv.org/abs/2608.09231",
+  "description": "arXiv:2608.09231v2 Announce Type: replace \nAbstract: Diffusion caching is a lightweight strategy that accelerates Diffusion Transformers (DiTs) by reusing intermediate features across denoising steps, but existing paradigms face a fundamental trade-off: online heuristics lack global budget awareness, whereas static schedules lack instance adaptivity and fail to flexibly adapt to varying runtime budget constraints. To bridge this gap, we present BAG (Budget-Aware Gating), a novel caching policy that unifies global budget pacing with dynamic, instance-adaptive feature reuse. Rather than relying on hand-crafted rules, BAG employs a lightweight gating network that dynamically decides whether to execute a full computation or reuse cached features at each step by jointly conditioning on the budget state and local trajectory feedback. We train this policy via offline-to-online schedule distillation, transferring the decision-making of offline-searched schedules into a compact online gate. Extensive experiments on FLUX.1-dev, Wan2.1, and Qwen-Image-2512 demonstrate that BAG consistently outperforms state-of-the-art caching methods across various speedup tiers while remaining robust across different resolutions, seeds, and guidance scales. Code will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

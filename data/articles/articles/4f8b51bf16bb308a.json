@@ -1,0 +1,13 @@
+{
+  "id": "4f8b51bf16bb308a",
+  "title": "Optical-Flow Wingbeat Counting in MuJoCo: A Comparison of Convolutional, Spiking, and Attention-Based Temporal Models",
+  "link": "https://arxiv.org/abs/2609.17308",
+  "description": "arXiv:2609.17308v1 Announce Type: new \nAbstract: Visual monitoring of flapping-wing vehicles requires distinguishing individual wingbeats from motion strength and average frequency. This paper presents a controlled MuJoCo evaluation of wingbeat counting from signed optical flow observed by virtual cameras mounted on Crazyflie vehicles. Three flapping-wing models were recorded at optical distances of 1.5 and 3.0 m, producing 1,440 clips from 240 paired scene configurations with a scene-level 3:1 training-test split. A common spatial convolutional encoder was combined with a causal temporal convolutional network, a recurrent leaky integrate-and-fire spiking network, or causal self-attention. Each model predicted phase and activity, followed by the same directed-crossing event counter. The six existing convolutional models were retained, and all twelve new models were frozen before their test predictions were generated. Exact-count accuracies at 1.5 m were 96.67%, 95.00%, and 96.67%, respectively; at 3.0 m they were 94.44%, 92.22%, and 95.00%. All paired scene-bootstrap intervals for differences in exact-count accuracy included zero. Seven far-distance spiking-model clips had correct totals despite event-timing mismatches, demonstrating why total-count and event-level measurements must be reported together. The results support the feasibility of causal optical-flow counting in the tested setting and identify boundary-sensitive errors. They do not establish an architecture ranking across repeated training, real-flight robustness, or hardware efficiency.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

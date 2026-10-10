@@ -1,0 +1,15 @@
+{
+  "id": "9dd3b032f457ebf5",
+  "title": "Concept Unlearning via Cross-Attention Activation Projection for Diffusion Models",
+  "link": "https://arxiv.org/abs/2605.25765",
+  "description": "arXiv:2605.25765v2 Announce Type: replace-cross \nAbstract: Existing closed-form methods for concept unlearning in text-to-image diffusion models typically derive editing directions from fixed text embeddings, which may not fully capture how concepts are expressed across latent states, timesteps, and layers. To capture this variation, we investigate cross-attention activations collected during denoising. In controlled probing experiments using the same anchor prompts, activation-derived bases achieve approximately five times the recall of text-derived bases on held-out prompts expressing the target concepts. Based on this finding, we propose Cross-Attention Subspace Erasure (CASE), a closed-form method that constructs layer-specific forget and retain subspaces from cross-attention activations. These subspaces define a retain-constrained linear operator incorporated directly into cross-attention weights, requiring no gradient-based fine-tuning or additional inference-time computation. Across ten concepts spanning four categories, CASE achieves the highest harmonic-mean score among evaluated baselines in all four categories, balancing suppression, retention, adversarial robustness, and generation quality. Further experiments demonstrate robustness to recovery attacks and a favorable suppression-retention trade-off when jointly unlearning up to 100 artistic styles. The benefits of activation-derived editing also extend to larger diffusion models, including SDXL and FLUX.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

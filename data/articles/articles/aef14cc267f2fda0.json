@@ -1,0 +1,14 @@
+{
+  "id": "aef14cc267f2fda0",
+  "title": "LINGO: Latent Initialization and Gradient Optimization for Sparse-view X-ray Novel View Synthesis and CT Reconstruction with 3D Gaussian Splatting",
+  "link": "https://arxiv.org/abs/2609.22849",
+  "description": "arXiv:2609.22849v1 Announce Type: new \nAbstract: In novel view synthesis and Computed Tomography (CT) reconstruction with sparse-view X-ray imaging, insufficient angular coverage leads to structural ambiguity and accumulated noise. Integrating 3D Gaussian Splatting (3DGS) with X-ray absorption physics can achieve promising results, but it suffers from noisy initialization, positional insensitivity, and weak gradients in low-density regions. In this paper, we propose a unified Latent Initialization and Gradient Optimization (LINGO) framework to address these issues. LINGO combines latent mask-space initialization with dynamic gradient optimization to improve point cloud structural completeness while accelerating training. It constructs voxel-level 3D filters from X-ray masks to robustly suppress background noise and provide reliable geometric priors. By employing an adaptive voxel scaling strategy and dynamically scaling loss, LINGO can adjust spatial resolution and explicitly amplify gradients in low-density structures. To evaluate the quality of initialization, we introduce the Initialization Point Cloud Structural Deviation (IPSD) metric. Experiments on the X3D dataset indicate that for the novel view synthesis task, LINGO improves the Peak Signal-to-Noise Ratio (PSNR) and Structural Similarity Index (SSIM) by an average of 0.72 and 0.0039, respectively, over baselines under identical sparse-view settings, achieving comparable reconstruction quality within 5k steps to state-of-the-art models typically trained with 30k iterations. For the CT reconstruction task, LINGO also demonstrates consistent improvements, with average PSNR and SSIM gains of 0.36 and 0.0134. These results highlight LINGO's effectiveness in both accelerating training and enhancing reconstruction quality across different sparse-view imaging scenarios.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

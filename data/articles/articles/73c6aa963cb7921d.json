@@ -1,0 +1,13 @@
+{
+  "id": "73c6aa963cb7921d",
+  "title": "Beyond Legibility: Benchmarking Visual Text Rendering and In-Place Editing in Unified Video Generation",
+  "link": "https://arxiv.org/abs/2609.36598",
+  "description": "arXiv:2609.36598v1 Announce Type: new \nAbstract: A video can exhibit convincing motion and photorealism yet fail immediately when visual text collapses. Unlike generic scene content, visual text is unforgiving in video generation: minor stroke corruption, temporal instability, or editing errors instantly break legibility and realism. Existing benchmarks overlook this challenge by treating text as incidental or using static OCR metrics that ignore temporal dynamics. We introduce VidScribe, a unified diagnostic benchmark spanning four generation regimes: writing from language (T2V), transferring text identity from a reference (R2V), sustaining text under dynamics (I2V), and localized text editing (V2V). VidScribe contains 803 human-verified samples across a 12-axis conditionally orthogonal factor space covering Intrinsic Text Properties, Physical Imaging Conditions, and Temporal Behavior. For reliable evaluation, we build a track-grounded, gated suite with 11 shared metrics and 2 task-specific probes under strict measurability conditions. Benchmarking 11 commercial and open-source systems shows that video text capability is non-monolithic, with content recognition decoupled from stroke-level glyph correctness. Performance is highly task-asymmetric: I2V sustains text most reliably, whereas V2V editing is the primary bottleneck. Counter-intuitively, degradation concentrates on a small subset of text-centric structural and temporal factors rather than adverse imaging conditions. Further probes show that visual references improve glyph and typographic fidelity rather than content accuracy, while localized editing fails to isolate target text without corrupting undeclared source text. Beyond evaluation, VidScribe also provides an actionable training signal, where benchmark-aligned preference optimization measurably improves visual text generation. https://huggingface.co/datasets/Vicky0720/VidScribe.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

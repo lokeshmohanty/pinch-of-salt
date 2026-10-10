@@ -1,0 +1,13 @@
+{
+  "id": "adad5e8cd2c5de94",
+  "title": "Tissue-Mixture Entropy-Weighted Reconstruction for Partial-Volume-Aware Brain MRI Super-Resolution",
+  "link": "https://arxiv.org/abs/2608.26647",
+  "description": "arXiv:2608.26647v1 Announce Type: new \nAbstract: Full-image objectives in brain magnetic resonance imaging (MRI) super-resolution (SR) can underweight tissue-transition regions affected by the partial-volume effect (PVE), as these regions occupy only a small fraction of the image. Binary boundaries also do not capture the continuous mixture of cerebrospinal fluid, gray matter, and white matter within a voxel. We propose Anatomy-Guided Gaussian-Parameter Warping with PVE-Balanced Reconstruction (AGW-PBR), which combines a low-resolution (LR)-only reconstruction backbone with a training-time objective that emphasizes tissue transitions. The backbone integrates LR-derived Sobel guidance, soft latent-basis assignment, and bounded grid-anchored residual warping. Fixed, quality-controlled tissue fractions derived from registered T1/T2/PD IXI images are converted into tissue-mixture entropy, which defines mean-normalized reconstruction weights within validated PVE support. These sidecars are used only during training, and inference requires only the LR image. AGW-PBR is evaluated on T2-weighted IXI images at 2x, 4x, and 6x using three seeds and subject-level paired analyses. At 4x, test-only SynthSeg masks independently assess reconstruction in tissue-interface and non-interface regions. Targeted ablations examine valid-support supervision, spatially aligned entropy weighting, and soft latent assignment. The AGW-backbone is also trained from scratch on fastMRI at 4x without PVE supervision. AGW-PBR improves full-image reconstruction across the tested IXI scales and regional fidelity at 4x, while the PVE-free backbone retains strong performance on fastMRI. These findings support tissue-mixture entropy weighting for partial-volume-aware brain MRI SR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

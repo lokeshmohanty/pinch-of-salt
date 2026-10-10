@@ -1,0 +1,13 @@
+{
+  "id": "9d221fb794dbad17",
+  "title": "RefDiT: Local Attribute Guidance in Reference-Based Image Generation",
+  "link": "https://arxiv.org/abs/2609.04976",
+  "description": "arXiv:2609.04976v1 Announce Type: new \nAbstract: Personalization models generate new images guided by a few subject references, while style transfer methods aim to produce images aligned with a global style derived from a reference image. Recent approaches perform well when the reference image contains a single object, effectively capturing a global style that encompasses all implicit attributes. However, when applied to complex real-world scenes containing multiple objects with distinct attribute characteristics, these methods, due to their global-level guidance, fail to localize relevant elements in the reference image. The global guidance restricts their ability to generate new images based on the local attributes in the reference image. Moreover, existing methods typically employ a single identifier token to capture all details from the reference, resulting in a lack of individual, attribute-level control. Motivated by these limitations, we propose RefDiT, a novel framework for reference-guided image generation. RefDiT takes as input a reference image, a text prompt, and an optional user-provided guidance context. RefDiT employs local region guidance using the attributes of local elements. It constructs an attribute-aware conditioning signal from the reference image by performing attribute-level decomposition of the identifier token and performs context adjustment in the inference prompt to train low-rank adapter (LoRA) blocks of a diffusion transformer (DiT)-based generative model. RefDiT learns the correspondence between identifier tokens and local regions in the reference image, enabling more effective local guidance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
