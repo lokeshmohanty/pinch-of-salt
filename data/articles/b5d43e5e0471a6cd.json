@@ -1,0 +1,13 @@
+{
+  "id": "b5d43e5e0471a6cd",
+  "title": "Learning How to Search for Plans with Exponentially Less Space",
+  "link": "https://arxiv.org/abs/2610.10954",
+  "description": "arXiv:2610.10954v1 Announce Type: new \nAbstract: Heuristic search for a plan can store exponentially many states, even when its heuristic is almost perfect. We instead learn search control, one specification per domain, written as an indexical policy: a generalized policy with registers that hold objects and modes that sequence its rules. We add the choose rule, which loads an object into a register and marks a backtracking point, where one candidate suffices; every other rule must work for all of its outcomes and needs no search. Our main result is that structural termination, which rules out infinite executions, also bounds every execution by a polynomial in the number of objects. A depth-first procedure then finds a plan in polynomial space, however large the state space, with no list of visited states. The cost is time, exponential only in the choice depth, the number of real choices along an execution. Any class that such a policy solves therefore lies in NP, and in P at constant choice depth. We learn these policies with a language model in a counterexample-guided loop that certifies termination, verifies the training tasks, and keeps the choice depth small. With the learned policies, the procedure solves 1,709 of 1,890 test tasks of the IPC 2023 Learning Track and the Autoscale Agile suite, more than LAMA, BFWS, and Levitron, and most of them within one second and 100 MiB.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

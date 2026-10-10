@@ -1,0 +1,13 @@
+{
+  "id": "a2be1835e3b74e80",
+  "title": "Look Back, Think Ahead: Visual Memory on Demand for Efficient Multimodal Reasoning",
+  "link": "https://arxiv.org/abs/2610.12060",
+  "description": "arXiv:2610.12060v1 Announce Type: new \nAbstract: Processing long visual token sequences from high-resolution images makes multi-step reasoning computationally expensive for multimodal Large Language Models (MLLMs). Existing one-shot pruning and aggregation methods compress visual tokens into a fixed context before decoding. However, visual evidence needs can shift as reasoning unfolds, making it difficult for a fixed compressed context to retain all the details needed across stages. To address this challenge, we propose ViMoD, a lightweight framework that maintains a compact visual context while preserving access to original fine-grained evidence as reasoning needs evolve. Deformable Aggregation of Region-wise Tokens (DART) learns content-adaptive groups and aggregation capacities, constructing compact Coarse representations linked to recoverable original Fine tokens. Temporal Routing for Adaptive Contextual Evidence (TRACE) integrates decoding history to anticipate upcoming evidence needs and select, retain, or replace active Fine-token groups. Selected Fine tokens augment the persistent Coarse context in the frozen backbone, enabling stage-specific evidence access without continuously attending to all visual tokens. On Qwen3-VL-4B, ViMoD outperforms all evaluated baselines on all eight reasoning benchmarks at a 20% target visual token budget, improving the mean normalized score by 39.0% over the strongest evaluated one-shot baseline. These gains are achieved with only 0.0546% additional trainable parameters relative to the frozen backbone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

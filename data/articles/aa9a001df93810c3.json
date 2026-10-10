@@ -1,0 +1,15 @@
+{
+  "id": "aa9a001df93810c3",
+  "title": "Trust Region Q Adjoint Matching",
+  "link": "https://arxiv.org/abs/2605.27079",
+  "description": "arXiv:2605.27079v2 Announce Type: replace-cross \nAbstract: Off-policy reinforcement learning of pretrained flow policies remains challenging due to the instability of optimization arising from the multi-step sampling process. Recently, Q-learning with Adjoint Matching (QAM) addressed this by recasting policy improvement as a stochastic optimal control (SOC) problem guided by a learned critic. However, QAM inherits a fundamental fragility of critic-guided improvement, since small critic errors can be exponentially amplified and often lead to performance collapse. This paper introduces Trust Region Q Adjoint Matching (TRQAM), a stable off-policy fine-tuning algorithm that adaptively controls the path-space KL between the fine-tuned and pretrained policies through projected dual descent. Specifically, we adapt a trust-region parameter $\\lambda$ inside the sampling process of the flow policy and prove that $\\lambda$ exactly weights the path-space KL in the SOC objective. As a result, our method can tightly control the deviation from the pretrained policy within a prescribed KL budget, achieving stable off-policy RL. Through experiments on 50 OGBench tasks, TRQAM consistently outperforms prior methods in both offline RL and offline-to-online RL. In particular, TRQAM achieves an overall success rate of 68% in offline RL, substantially improving over the strongest baseline at 46%.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.RO"
+  ]
+}

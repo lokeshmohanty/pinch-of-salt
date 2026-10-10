@@ -1,0 +1,13 @@
+{
+  "id": "8c4d9d794bec69ca",
+  "title": "Where to Adapt Matters: Layer-Selective Fine-Tuning for Capability Retention",
+  "link": "https://arxiv.org/abs/2610.11620",
+  "description": "arXiv:2610.11620v1 Announce Type: new \nAbstract: Parameter-efficient fine-tuning (PEFT) enables large language models (LLMs) to adapt to specialized tasks, but often at the cost of degrading general capabilities acquired during pretraining. Existing approaches primarily mitigate this trade-off through data replay or regularization, relying on additional data or explicit optimization constraints. We instead focus on a different question: where should adaptation be applied? We find that fine-tuning different Transformer layers produces different target-task gains and degrees of capability degradation, suggesting that not all layers are equally suitable for adaptation. To characterize this difference, we use layer-wise empirical Fisher information to measure target-task sensitivity. However, computing Fisher scores requires backward computation and becomes increasingly expensive for large models. We therefore introduce input--output cosine similarity as a lightweight, forward-only proxy for ranking layer sensitivity. Across models and tasks, layers with lower input--output similarity consistently exhibit higher empirical Fisher scores. Building on this observation, we propose Layer-Selective LoRA (LS-LoRA), which places trainable LoRA adapters only in layers with low input--output similarity. Experiments on mathematical reasoning and code generation show that LS-LoRA improves average target-task performance while retaining substantially more commonsense reasoning capability than standard all-layer LoRA, demonstrating that carefully choosing where to adapt can provide a simple and effective way to balance target-task adaptation and general capability retention.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

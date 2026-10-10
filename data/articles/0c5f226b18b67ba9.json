@@ -1,0 +1,15 @@
+{
+  "id": "0c5f226b18b67ba9",
+  "title": "Code Understanding is a Bottleneck for Coding Agents",
+  "link": "https://arxiv.org/abs/2610.10610",
+  "description": "arXiv:2610.10610v1 Announce Type: cross \nAbstract: Repository benchmarks (e.g., SWE-bench) for coding agents often assume that lines of code edited can predict task difficulty, but such datasets' poor control over code and task types makes it hard to know which abilities truly drive agent errors. We present CABRA: a Coding Ability Blueprint for Rigorous Agent evaluation. CABRA builds tasks from scratch as call graph transformations and scales difficulty via a task size parameter on four axes: function traversal, search, runtime resolution, and instruction following. We run eight LLMs and six coding agents on 6,840 CABRA tasks to show: 1) LLM accuracy falls as task size~grows, but agents stay near-perfect by offloading work to tools (e.g., grep); 2) Larger CABRA tasks elicit more tool calls for reading and analysis, while a separate study on SWE-bench Verified shows these tool call counts predict agents' accuracy better than lines of code edited, suggesting task difficulty for agents can lie in understanding code to edit, not just in making edits; 3) Extending CABRA to an intense understanding task where models analyze divergent logic across two classes backs this finding, as agent accuracy finally falls. More broadly, we argue for synthetic evaluations like CABRA to unmask LLM weaknesses trivialized by tools (e.g., needle-in-a-haystack) and abilities beyond just editing (e.g., understanding) that coding agents still find difficult, pairing SWE-bench-style tasks with controlled diagnosis.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.PL"
+  ]
+}

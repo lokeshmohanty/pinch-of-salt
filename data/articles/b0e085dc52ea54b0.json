@@ -1,0 +1,15 @@
+{
+  "id": "b0e085dc52ea54b0",
+  "title": "WAM-Cache: Staleness-Bounded KV Reuse for Efficient World Action Models",
+  "link": "https://arxiv.org/abs/2610.11401",
+  "description": "arXiv:2610.11401v1 Announce Type: cross \nAbstract: World Action Models (WAMs) enable generalist robot manipulation by conditioning an action expert on representations from a pretrained video Diffusion Transformer (DiT). In closed-loop control, the video DiT runs at every chunk to encode the current observation into layerwise key-value (KV) pairs that the action expert queries. This prefill dominates the per-chunk computational cost, yet existing training-free accelerations leave it fully dense. We present WAM-Cache, a training-free framework that retains layerwise key-value representations across chunks and recomputes only a sparse refresh set of tokens. Crucially, we find that the intuitive heuristic of refreshing visually drifted tokens plateaus far below the dense baseline, even with an oracle predicting ground-truth KV drift. Downstream action accuracy is instead governed by where the action expert attends, not by what moved. WAM-Cache therefore selects the refresh set by uniting the action expert's cross-attention with visual latent surprise, complemented by a strict age bound that suppresses compounding error. On Fast-WAM, WAM-Cache cuts video DiT prefill FLOPs by 32-42% across RoboTwin 2.0, LIBERO, and real-world experiments, while staying within 0.7-1.8 percentage points of the dense policy in simulation and 2.5 points on a real robot.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV",
+    "cs.LG"
+  ]
+}
