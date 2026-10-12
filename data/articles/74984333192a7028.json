@@ -1,0 +1,13 @@
+{
+  "id": "74984333192a7028",
+  "title": "ForcingBooster: Adaptive Patch-wise Denoising for Fast Autoregressive Video Diffusion",
+  "link": "https://arxiv.org/abs/2610.12625",
+  "description": "arXiv:2610.12625v1 Announce Type: new \nAbstract: Autoregressive video diffusion models have become a leading approach to real-time interactive video generation and video world modeling. However, existing methods typically allocate computation uniformly across space when generating the next video chunk, updating all patches with the same denoising schedule and number of function evaluations. This ignores the spatial heterogeneity of video content: static, simple, or recurring regions are often easier to denoise, while other regions require further refinement or additional context. A uniform budget thus leads to redundant computation on easy patches, whereas reducing the fixed step count can leave difficult patches insufficiently refined. We introduce \\methodname{}, a general framework that dynamically allocates denoising steps to individual patches: easy patches stop early to improve efficiency, while difficult patches receive more refinement steps. This design accelerates generation with negligible quality degradation. Our method is compatible with most existing few-step autoregressive diffusion models, requiring only a lightweight routing module with modest training. Experiments demonstrate that \\methodname{} reduces the total number of denoising steps applied across video patches by about 50\\% while maintaining visual quality comparable to the four-step baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

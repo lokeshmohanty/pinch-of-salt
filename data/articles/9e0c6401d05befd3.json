@@ -1,0 +1,15 @@
+{
+  "id": "9e0c6401d05befd3",
+  "title": "Work While They Sleep: Exploiting Evaluation Latency for Fully Bayesian Optimization",
+  "link": "https://arxiv.org/abs/2610.08969",
+  "description": "arXiv:2610.08969v2 Announce Type: replace-cross \nAbstract: Black-box optimization problems are ubiquitous across science and engineering, often dealing with expensive objective functions. This objective latency has two consequences during optimization: (i) the objective evaluation dominates execution time, and (ii) sample-efficient algorithms are crucial to accelerate development and avoid wasting resources. Bayesian optimization (BO) methods are the \\textit{de facto} choice of planners for suggesting the next point to try. Standard BO fits the surrogate model's hyperparameters with a point estimate. Alternatively, a fully Bayesian approach uses model averaging to account for uncertainty over the hyperparameters, leading to better uncertainty estimates---useful in the low-data regime that is pervasive in BO. However, it is often prohibitively expensive and thus rarely used. In this work, we propose ELF-BO, an algorithm that uses the objective evaluation latency to headstart the computation of the next suggestion, allowing for fully Bayesian optimization without incurring substantial decision-time costs. This is done by sampling from the hyperparameter posterior \\emph{while} the objective is being evaluated, only requiring reweighting of the samples once the objective value is observed. Across synthetic functions and real-world applications, we show that ELF-BO matches the performance of fully Bayesian methods while only incurring decision latency on par with or better than standard BO. Thus, ELF-BO makes fully Bayesian optimization practical in real-world use cases.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

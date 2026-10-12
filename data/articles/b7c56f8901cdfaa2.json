@@ -1,0 +1,13 @@
+{
+  "id": "b7c56f8901cdfaa2",
+  "title": "High-Throughput Generative Video Super-Resolution on a Single Consumer GPU",
+  "link": "https://arxiv.org/abs/2610.13179",
+  "description": "arXiv:2610.13179v1 Announce Type: new \nAbstract: Generative video super-resolution (VSR) can recover visually compelling high-frequency detail by leveraging diffusion priors, but iterative sampling and heavy spatio-temporal coupling make practical deployments difficult. We study a different operating point: practical HD generative VSR on a single high-end consumer GPU without end-to-end retraining. To this end, we present a zero-shot framework built entirely from pretrained components.\n  The proposed system decouples spatial enhancement from temporal stabilization. A time-distilled one-step diffusion backbone handles spatial upscaling, while temporal coherence is promoted by a lightweight pretrained flow-based interpolator that synthesizes intermediate frames between super-resolved keyframes. To further improve scalability, we introduce a resolution-aware hybrid attention scheme that, in a zero-shot manner, replaces selected high-resolution global-attention layers with neighborhood attention while preserving global attention in semantically critical low-resolution layers, while also improving temporal consistency.\n  Experiments show that the proposed framework reaches up to ~32 FPS at 720p resolution under interleaved inference on a single NVIDIA RTX 4090. At 4K, the proposed attention substitution can yield up to a 44% speedup over the original attention implementation. Across standard VSR benchmarks, the method consistently shifts the speed-quality trade-off decisively toward runtime efficiency, trading reconstruction fidelity for strong no-reference perceptual quality, while remaining reasonably competitive against generative approaches in temporal consistency. It also exposes clear limitations in handling more challenging motion, which a simple motion gate partially mitigates. Code will be released upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

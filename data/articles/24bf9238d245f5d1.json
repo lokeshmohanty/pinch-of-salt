@@ -1,0 +1,14 @@
+{
+  "id": "24bf9238d245f5d1",
+  "title": "Chronos Policy: Learning Robot Policies on Physical Time",
+  "link": "https://arxiv.org/abs/2610.13929",
+  "description": "arXiv:2610.13929v1 Announce Type: cross \nAbstract: Robot policies often convert sensing and control into fixed-rate observation-action sequences, leaving physical time implicit in sequence position. This assumption breaks when observation rates or delays vary, or when inference latency changes. We introduce Chronos Policy, which makes physical time explicit by conditioning on observation capture times and desired action execution times. We study two ways to incorporate time into a diffusion transformer: adding timestamp embeddings to token features, or encoding physical time in positional encoding through time-aware rotary positional encodings (time-aware RoPE). We find that time-aware RoPE is more robust, allowing attention to depend directly on physical time while keeping token content unchanged. During training, we temporally randomize which observations are sampled and when the action chunk begins, exposing the policy to a wider range of sensing and execution schedules that may occur during deployments. This also enables learning from asynchronous, multi-rate data without forcing all measurements onto a fixed temporal grid. Across simulation and real-world experiments, Chronos Policy improves performance on dynamic tasks, where observation-to-action timing is critical, and on multisensory tasks, where the relative timing between observations matters. On standard quasi-static tasks, it preserves nominal performance while improving robustness to changes in sensing and inference timing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

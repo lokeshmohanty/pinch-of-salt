@@ -1,0 +1,13 @@
+{
+  "id": "f7637667d6fd3fed",
+  "title": "LapMerge: Differentiable Exact-Budget Token Merging in Linear Time",
+  "link": "https://arxiv.org/abs/2610.13858",
+  "description": "arXiv:2610.13858v1 Announce Type: new \nAbstract: Modern vision and language models process ever longer token sequences, and reducing them is the main lever on downstream cost. Token compression, however, faces a fundamental trade-off: selecting tokens discards information, while existing merging methods preserve it only through pairwise token-to-token matching or $MN$ token-to-output interactions. We introduce LapMerge, a differentiable merging operator that resolves this trade-off for ordered sequences: a learned mass distribution partitions the sequence into exactly $N$ equal-mass segments under a Laplace-kernel density, and prefix/suffix scans aggregate each segment, so both the forward and the backward pass run in $\\mathcal{O}(M+N)$ time. This combination - an exact output budget, end-to-end differentiability, and linear cost - is precisely what previous reducers trade off against one another. The budget can be changed without changing operator parameters, and the learned mass doubles as a token-level map of where the budget is allocated. Across vision and vision-language tasks, LapMerge matches or improves on strong token reducers while being up to two orders of magnitude faster at large sequence lengths; it is particularly effective when token order reflects spatial or temporal locality, and works both as a drop-in reduction module and as a trainable architectural component.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
