@@ -1,0 +1,14 @@
+{
+  "id": "d7c5457ada6f2878",
+  "title": "Learning When to Translate for Multilingual Reasoning",
+  "link": "https://arxiv.org/abs/2606.02465",
+  "description": "arXiv:2606.02465v2 Announce Type: replace-cross \nAbstract: Reasoning language models (RLMs) achieve strong performance on complex reasoning tasks, but still exhibit substantial multilingual reasoning gaps, largely due to language-understanding failures when interpreting non-English inputs. Translation into English can mitigate these failures by expressing non-English inputs in a form that RLMs can more reliably interpret, yet translating every input incurs unnecessary inference cost when the model can reason reliably from the original query. To address this challenge, we propose Luar, a Language Understanding Boundary-aware Reinforcement Learning framework that trains RLMs to selectively invoke translation when their direct understanding is unreliable. Luar trains the model to either solve the original input directly or reason over its English translation, encouraging translation only when translator-augmented reasoning is expected to substantially outperform direct reasoning. Across multilingual reasoning benchmarks, Luar outperforms training-based baselines, with particularly large gains on low-resource languages. On Qwen3-4B, it improves average accuracy by 8.4 percentage points over standard GRPO. Further analysis shows that Luar concentrates translator calls on queries where translation benefits reasoning, helping to reduce inference cost. The project will be made publicly available at https://github.com/deokhk/LUAR.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

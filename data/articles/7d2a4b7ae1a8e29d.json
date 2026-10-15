@@ -1,0 +1,14 @@
+{
+  "id": "7d2a4b7ae1a8e29d",
+  "title": "AdaGamma: State-Dependent Discounting for Temporal Adaptation in Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2605.06149",
+  "description": "arXiv:2605.06149v2 Announce Type: replace-cross \nAbstract: The discount factor in reinforcement learning controls both the effective planning horizon and the strength of bootstrapping, yet most deep RL methods use a single fixed value across all states. State-dependent discounting is a natural way to adapt temporal credit assignment to local state structure, but naively learning a discount function inside deep actor--critic methods creates a self-referential target: the learned discount scales the same bootstrap term against which it is trained. Consequently, TD-error-based objectives can admit a degenerate shortcut, reducing target dependence on downstream value estimates instead of learning meaningful temporal structure. We propose \\textbf{AdaGamma}, a practical framework for state-dependent discounting in deep actor--critic reinforcement learning. AdaGamma learns a bounded discount function \\(\\gamma_\\phi(s)\\) and trains it using a return-consistency objective that matches a one-step adaptive bootstrap to a multi-step return computed with a lagged, stop-gradient reference discount. This removes the direct target manipulation path and encourages the discount to encode state-dependent value propagation. We analyze the Bellman operator induced by a fixed state-dependent discount in finite tabular MDPs, proving contraction, exact soft policy iteration, and Lipschitz sensitivity under standard boundedness assumptions. Empirically, AdaGamma integrates into SAC and PPO, avoids TD-collapse, improves continuous-control benchmarks, and achieves statistically significant gains in a four-week online A/B test on the JD Logistics platform.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "49ed9ef7fc929f40",
+  "title": "Ember: A Kilobyte-State Optimizer for Token Interfaces",
+  "link": "https://arxiv.org/abs/2607.01455",
+  "description": "arXiv:2607.01455v4 Announce Type: replace-cross \nAbstract: Language models learn continuous programs over discrete symbols, with the embedding table and LM-head acting as the read/write interface between them. We show that this interface has gradient geometry distinct from dense hidden weights which can be exploited to improve the Pareto frontier across supervised finetuning, RL, and pretraining, while only utilizing kilobytes of optimizer state. We introduce Ember, a lightweight optimizer for embedding and LM-head matrices that utilizes $\\mathcal{O}(V + D)$ optimizer VRAM, instead of Adam's $\\mathcal{O}(2VD)$, and forgoes the need to shard both token table optimizer states. On 50k-step pretraining across two datasets and three paired seeds, Ember lowers val loss by 0.08-0.09 nats relative to tuned AdamW; we also provide empirical evidence that Ember scales across batch size and parameter count. Finally, we provide a distributed Ember implementation that merges cleanly with existing ZeRO/FSDP setups.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

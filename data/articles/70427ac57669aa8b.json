@@ -1,0 +1,13 @@
+{
+  "id": "70427ac57669aa8b",
+  "title": "REA: From Correct LLM Judgments to Safe Decision Delivery",
+  "link": "https://arxiv.org/abs/2610.17473",
+  "description": "arXiv:2610.17473v1 Announce Type: new \nAbstract: Generative safety guards must classify requests correctly and return outputs that applications can parse. Reasoning guards can improve classification accuracy while producing outputs that applications cannot parse. When applications cannot extract a correct prediction, fallback handling can allow harmful requests or block safe ones. We introduce Resolve--Express--Act (REA), a framework that traces judgments through parsing and fallback to application actions. Experiments on classifiers and safety guards show that correct predictions can appear in incorrectly formatted outputs. Parsing the safety verdict preserves the reasoning guard's accuracy advantage, while stricter explanation requirements reject additional correct predictions. Accepting formatting variations recovers most rejected correct predictions. Held-out tests confirm that output requirements and generation limits affect whether correct predictions can be parsed. In our fail-open replay, matching the parser to the output and fixing formatting reduced the fraction of harmful requests allowed despite correct guard judgments from 95.5% to 0%. A fixed-output comparison shows that model-based extraction can preserve guard verdicts, but is not automatically reliable; deterministic normalization already repairs the observed native-format failures. Fallback replay shows that the same correct prediction can lead to different safety actions depending on the parser and fallback policy, including allowing requests the guard correctly identifies as harmful.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

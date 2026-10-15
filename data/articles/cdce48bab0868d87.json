@@ -1,0 +1,13 @@
+{
+  "id": "cdce48bab0868d87",
+  "title": "KiToke: Distribution-Aware Token Compression for Video Large Language Models",
+  "link": "https://arxiv.org/abs/2604.03414",
+  "description": "arXiv:2604.03414v2 Announce Type: replace \nAbstract: Video Large Language Models (Video LLMs) achieve strong performance on video understanding tasks but suffer from high inference costs due to the large number of visual tokens. We study training-free, query-agnostic video token compression, where heuristic importance rules can over-represent large redundant visual groups and miss less frequent visual patterns, particularly under aggressive token budgets. We propose KiToke, a distribution-aware compression framework that treats visual tokens as samples from the video's spatiotemporal token distribution. KiToke uses global embedding density as a proxy for representational redundancy and inverse-density sampling to balance token allocation across visual patterns of different frequencies. It further aggregates unselected tokens into retained anchors within detected temporal intervals to reduce cross-transition mixing. Across evaluated backbones, KiToke achieves the highest average accuracy among compared training-free methods and remains robust down to 1% retention, where most evaluated baselines underperform uniform random token sampling. On LLaVA-OneVision, it preserves 98.5% and 89.2% of the uncompressed model's four-benchmark mean accuracy at 10% and 1% token retention, with 6.8x and 12.5x prefill speedups, respectively, including compression overhead.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "9827cb59b912cabd",
+  "title": "GDBA-Net: A Gated Dual-Branch Adaptation of SAM2 for Robust Cross-Domain Nuclei Segmentation",
+  "link": "https://arxiv.org/abs/2610.20073",
+  "description": "arXiv:2610.20073v1 Announce Type: new \nAbstract: Accurate nuclei segmentation underpins quantitative computational pathology, yet remains challenging due to morphological variability, weak boundaries, nuclear crowding, and pronounced domain shifts arising from differences in tissue preparation, staining, and acquisition. While deep learning and recent foundation models have improved segmentation performance under matched distributions with the original training data, their generalization across heterogeneous histopathology domains remains limited. We introduce GDBA-Net, a parameter-efficient nuclei segmentation framework built around the proposed Gated Dual-Branch Adapter (GDBA). GDBA-Net adapts a frozen SAM2 encoder by integrating pretrained semantic representations with explicit frequency-derived structural priors. The complementary representations are independently transformed through Grid MLP branches and dynamically integrated using sample-adaptive channel-wise gating, selectively emphasizing structural cues relevant to nuclear delineation. Despite using only 4.3 million trainable parameters, GDBA-Net achieves state-of-the-art in-dataset performance and consistently superior cross-dataset generalization across six diverse nuclei segmentation benchmarks under fully supervised, cross-dataset, and five-shot adaptation protocols, outperforming competing CNN-, transformer-, and foundation model based methods. Comprehensive ablations confirm that these gains arise from the coordinated design of semantic-frequency complementarity and adaptive gating rather than increased model capacity. By uniting transferable semantic representations with explicit structural priors, GDBA-Net provides a robust, annotation-efficient solution to domain variability in nuclei segmentation. https://github.com/biplabpoudel25/GDBA_Net",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

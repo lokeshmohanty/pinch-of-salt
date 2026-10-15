@@ -1,0 +1,13 @@
+{
+  "id": "2145d96b61c2fd79",
+  "title": "Generalizable field of view extension for diffusion MRI via conditional flow matching",
+  "link": "https://arxiv.org/abs/2610.17401",
+  "description": "arXiv:2610.17401v1 Announce Type: new \nAbstract: Incomplete field-of-view (FOV) diffusion MRI (dMRI) acquisitions compromise whole-brain white matter analysis by excluding brain regions from tractography and connectivity studies. While deep generative models for dMRI FOV extension have been proposed, their generalizability remains limited by the acquisition-dependent nature of dMRI, where signal intensity varies with b-value, gradient direction, and scanner protocol, and the inherent 4D complexity of the data, making it difficult to train models that transfer across sites or acquisition schemes without retraining. We propose a flow-matching generative model that extends the dMRI FOV in both the superior and inferior directions by predicting apparent diffusion coefficients (ADC) in six directions, conditioned on the two nearest acquired slices and the full-FOV T1w image to enforce both local diffusion continuity and anatomical consistency. The ADC representation decouples the model from acquisition-specific b-values and gradient directions, providing a middle-ground across protocols. The model was trained on 3,103 subjects (5,105 sessions) across five different datasets spanning diverse acquisition schemes (b = 500 and 1000 s/mm$^2$; 21--192 gradient directions), four single-shell (b = 1000) and one multi-shell (b = 500/1000). Evaluated on 299 subjects across five independent datasets spanning b = 750--1500 s/mm$^2$ and 32--90 gradient directions, with single- and multi-shell schemes unseen during training, the proposed method achieves significantly improved bundle Dice score on downstream tractography (p < 0.01).",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

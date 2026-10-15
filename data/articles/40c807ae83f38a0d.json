@@ -1,0 +1,14 @@
+{
+  "id": "40c807ae83f38a0d",
+  "title": "GeoBridge: Evolving Transferable Decoder Topologies for Geometric Vision",
+  "link": "https://arxiv.org/abs/2610.15280",
+  "description": "arXiv:2610.15280v1 Announce Type: cross \nAbstract: Depth estimation and Gaussian reconstruction share a need for multi-scale feature processing, yet use different prediction interfaces and training objectives. Whether a decoder's internal computation can be optimized once and reused across these systems remains a structural design question. Search over primitive configurations alone leaves the organization of transformations fixed. To address this gap, we propose GeoBridge, an evolutionary framework for transferable decoder topologies. First, GeoBridge makes stage-internal topology searchable through residual, sequential, and parallel composition of configurable primitives. Shape-preserving composition retains the stage interfaces of a fixed multi-scale scaffold. Second, a functional-tree encoding supports stage-aware crossover and hierarchical mutation, while a gradient sensitivity-alignment proxy evaluates candidates without training. Multi-objective evolution balances this proxy with computation and parameter cost. Third, selected topologies are instantiated and trained in target systems with task-specific prediction interfaces. A single source search takes approximately 12 GPU hours. GeoBridgeNet-A3 achieves the best depth accuracy among four adapted decoder baselines under a common encoder and training protocol on NYU Depth V2 and KITTI. The same topology reaches 27.11 dB PSNR in Gaussian novel-view synthesis on RealEstate10K, and its refined representations support open-vocabulary segmentation on LERF. These results support decoder topology as a reusable design object across the evaluated geometric vision systems. Code and pretrained weights are available at https://github.com/EMI-Group/GeoBridge-NAS.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

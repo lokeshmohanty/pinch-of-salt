@@ -1,0 +1,16 @@
+{
+  "id": "47a83f5141963dad",
+  "title": "Reflected Proximal Dynamics for Accelerated High-Accuracy Log-Concave Sampling",
+  "link": "https://arxiv.org/abs/2610.16248",
+  "description": "arXiv:2610.16248v1 Announce Type: cross \nAbstract: We study sampling from $\\pi(x)\\propto\\mathrm{e}^{-V(x)}$ on $\\mathbb{R}^d$, where $V$ is $\\alpha$-strongly convex and $\\beta$-smooth with condition number $\\kappa=\\beta/\\alpha$. For this problem, the proximal sampler preserves the target exactly and recovers overdamped Langevin dynamics in the small-step limit, but its Gaussian resampling step discards directional information. Underdamped Langevin dynamics retains such information through momentum to accelerate exploration, motivating a proximal construction that combines target preservation with directional persistence. We introduce \\textit{reflected proximal dynamics}, which combines proximal sampling with an exact reflection of the auxiliary variable, conditional kinetic motion, and controlled refreshment. We develop two realizations: a flux-resampled underdamped half-turn and a persistent-momentum quarter-turn. From a warm start with constant $\\chi^2$ divergence, both methods achieve total variation error $\\varepsilon$ using $\\widetilde O(\\sqrt{\\kappa}d^{1/4})$ expected oracle queries. We further remove the supplied warm-start assumption by combining either sampler with existing posterior samplers in a proximal initialization stage with an optimized coarse step size. Accounting for both initialization and sampling yields $\\widetilde O(\\kappa^{6/7}d^{1/4})$ expected oracle queries. In both regimes, the dependence on the target accuracy $\\varepsilon$ is $\\mathrm{polylog}(1/\\varepsilon)$, making reflected proximal dynamics a promising framework for accelerated high-accuracy log-concave sampling.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "math.ST",
+    "stat.TH"
+  ]
+}

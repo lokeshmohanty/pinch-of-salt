@@ -1,0 +1,14 @@
+{
+  "id": "3d0c5e38dd37568e",
+  "title": "Compute-optimal data scaling for neural surrogates via multi-fidelity training",
+  "link": "https://arxiv.org/abs/2610.17221",
+  "description": "arXiv:2610.17221v1 Announce Type: cross \nAbstract: Neural surrogates for Partial Differential Equations (PDEs) are usually trained on synthetic data from numerical simulators. As models grow and scaling laws demand larger datasets, the cost of data generation often outweighs the training cost and becomes the bottleneck in the scaling quest. Unlike data in other domains, however, each PDE sample has a tunable cost that depends on its numerical fidelity, with the resulting cost-accuracy trade-off governed by known convergence rates. We exploit this property by formalizing neural surrogate training as a function of both data quantity and fidelity under a fixed data generation compute budget, treating fidelity as a fine-grained discrete spectrum rather than a binary distinction. Building on this, we show that multi-fidelity training enables Pareto-optimal error scaling against data generation compute. By using simulations at lower fidelities as an additional training signal, training on the optimal fidelity mixture matches the accuracy of high-fidelity-only training, with up to $6.3\\times$ less data generation compute across our settings. We validate these findings across six PDE problems spanning structured grids and unstructured meshes, two distinct error sources (discretization and iterative-solver error), and four surrogate architectures, totaling over 7,000 training runs.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

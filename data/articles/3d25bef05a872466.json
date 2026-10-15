@@ -1,0 +1,13 @@
+{
+  "id": "3d25bef05a872466",
+  "title": "MultiFlow: Vision-Driven Multimodal fMRI Encoding via Stimulus-Informed Source Flow Matching",
+  "link": "https://arxiv.org/abs/2610.15339",
+  "description": "arXiv:2610.15339v1 Announce Type: new \nAbstract: Current fMRI encoding models frame prediction as deterministic regression, yet identical stimuli evoke a distribution of neural responses (arising from physiological noise, hemodynamic variability, and cognitive fluctuations) that a single point estimate cannot capture. This work introduces MultiFlow, a generative fMRI encoding framework based on Conditional Flow Matching (CFM) and a formulation termed Stimulus-Informed Source Flow Matching (SISFM). SISFM generalises CFM by conditioning the source distribution on the stimulus: a learnable temporal convolution shapes the source mean with an HRF-length receptive field, while a variance head shrinks its scale, shortening the expected transport path. SISFM is instantiated with a Diffusion Transformer (DiT-X) decoder parameterising the velocity field, with sub-layer Attention Residuals, heterogeneous fusion of ten frozen vision, audio, language, and audiovisual backbones, and per-subject Yeo-network heads. On the Algonauts 2025 dataset, a single MultiFlow checkpoint recovers most of the benefit of large deterministic ensembles: it trails the 1000-model TRIBE ensemble in-distribution by 0.003 PCC (0.3163 vs. 0.3195), and the strongest in- and out-of-distribution ensembles (VIBE-20, MedARC-50) by 0.010 and 0.009 PCC, using a single trained model rather than an ensemble of 20-1000. The same checkpoint also provides stimulus-conditioned uncertainty estimates and sample-based diversity.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}
