@@ -1,0 +1,13 @@
+{
+  "id": "def372901f35c7e7",
+  "title": "QREF: Improving DeepSearch Agents by Aligning Search with Reasoning via Query Refinement and Evidence Filtering",
+  "link": "https://arxiv.org/abs/2610.21512",
+  "description": "arXiv:2610.21512v1 Announce Type: new \nAbstract: DeepSearch agents achieve strong performance on complex information-seeking tasks through iterative search and reasoning. However, they often issue intent-misaligned, under-constrained, or redundant search queries, resulting in poor evidence coverage and accumulating retrieval noise. To mitigate these limitations, we propose QREF, a plug-and-play Query Refiner and Evidence Filter. Specifically, the Query Refiner rewrites search queries according to the current reasoning intent while ensuring complementary coverage across each search batch. The Evidence Filter retains evidence relevant to both the current search batch and the reasoning objective, reducing distracting retrieval results. We initialize the Query Refiner with supervised fine-tuning and optimize it through reinforcement learning based on interactions with a real-world web search environment, reducing ineffective queries. Comprehensive experiments demonstrate that our approach improves the performance of DeepSearch agents across four challenging benchmarks, achieving average relative Pass@1 improvements of 33.55% on WebSailor and 11.04% on TongyiDeepResearch without modifying architectures or retraining their reasoning policies. Compared with the original DeepSearch backbone without QREF, the RL-trained refiner reduces the fraction of query batches that lack discriminative retrieval anchors by 95%. Compared with the SFT-trained refiner, it also lowers the filter-based ineffective query ratio.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

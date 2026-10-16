@@ -1,0 +1,13 @@
+{
+  "id": "f955184094c2a1cb",
+  "title": "ReState: Noise-Level-Aware State Correction for Training-Free Object Removal in Few-Step Diffusion Models",
+  "link": "https://arxiv.org/abs/2610.21287",
+  "description": "arXiv:2610.21287v1 Announce Type: new \nAbstract: Training-free object removal commonly redirects self-attention away from the target region, but on few-step distilled diffusion models this often leaves object-shaped residuals. We identify a temporal mismatch: a structured prediction forms inside the mask at the first forward, and the short trajectory offers few later chances to revise it, while attention rerouting acts mainly in later steps. Across four distilled backbones, magnitude-matched single-forward interventions show that background-directed state correction affects the final result more than attention rerouting. We therefore propose ReState, which corrects the masked clean prediction toward background evidence retrieved from the input using a noise-level-aware weight that vanishes at the final forward. ReState retains object-excluding attention as a complementary constraint and adds no denoiser evaluations. Across two paired benchmarks and two few-step backbones, ReState achieves the best masked PSNR, SSIM, and LPIPS among training-free methods, improving PSNR by 3.17 dB on average over the strongest baseline. On OBER-Test, it also outperforms the 50-step attention-forcing reference on all three metrics at 6.7x lower latency. The same configuration transfers to two additional distilled backbones without retuning. Project page: https://tdrlee.github.io/ReState",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
