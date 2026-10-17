@@ -1,0 +1,13 @@
+{
+  "id": "27e54e2a8b5ae417",
+  "title": "ControlRef: Efficient Layout-Guided Multi-Instance Generation via Anchored 4D-RoPE",
+  "link": "https://arxiv.org/abs/2608.06878",
+  "description": "arXiv:2608.06878v1 Announce Type: new \nAbstract: Layout-guided multi-instance generation is essential for controllable image synthesis in Multi-Modal Diffusion Transformers (MM-DiTs). However, integrating this capability into unified architectures remains challenging. Prior frameworks rely on redundant full-resolution canvas padding and Shifted-RoPE to manage multiple reference images. This mechanism drastically inflates computational overhead for sparse layouts and disrupts critical low-frequency RoPE features, creating a severe spatial-frequency compromise that blurs absolute spatial correspondence. To overcome these limitations, we propose ControlRef, a highly efficient and precise multi-instance synthesis framework. ControlRef utilizes a Unified Instance-Layout Control (UILC) attention mask to strictly decouple inter-instance semantic interactions and enforce precise regional binding. To further promote region-level spatial alignment, we introduce Anchored 4D-RoPE, a novel positional encoding mechanism that directly anchors tokens to their absolute geometric centers. By pre-aligning reference images to their corresponding bounding box resolutions, physically anchoring both layout and reference tokens to their absolute geometric centers, and stacking the references along the z-axis, Anchored 4D-RoPE natively preserves spatial priors and mitigates the spatial-frequency compromise without lossy shifting. Extensive experiments demonstrate that ControlRef achieves state-of-the-art visual fidelity and localization accuracy, while concurrently slashing inference latency by over 80% in sparse layouts and reducing memory overhead by 50% in dense scenarios.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

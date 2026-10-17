@@ -1,0 +1,13 @@
+{
+  "id": "869cd81f9b668d23",
+  "title": "Counterfactual Bias Testing for Application Tracking System",
+  "link": "https://arxiv.org/abs/2608.26899",
+  "description": "arXiv:2608.26899v1 Announce Type: new \nAbstract: Automated candidate-job matching systems are increasingly classified as high-risk AI under emerging regulation, yet auditing them for demographic bias is expensive: classical correspondence-audit studies require hand-crafted resumes and manual submission, which does not scale to fast pipeline retraining cycles. This paper presents a general, reusable methodology that (1) uses task-specialized LLM agents to synthesize identity-neutral base resumes and inject controlled demographic treatments across five protected-characteristic axes (sex/gender, age, residence, language, disability), producing a K x (1+N) correspondence-audit matrix; (2) qualitatively flags inferred protected characteristics per an EU AI Act-aligned prompt; (3) ranks candidates against a job description via a fine-tuned sentence-embedding model and cosine similarity; and (4) computes a nine-metric fairness suite spanning counterfactual (score delta, mean absolute rank change, flip rate), group-fairness (top-K retention, four-fifths/impact ratio), and merit-aware (Recall@K, nDCG@K, equal opportunity, equalized odds) families, each with bootstrap confidence intervals, significance tests, and Benjamini-Hochberg correction, culminating in an automated PASS/INVESTIGATE/FAIL report with a composite risk score. On an example corpus of 5 job orders, 100 base candidates, and 10 demographic treatments (90 metric x variant evaluations): score shifts, top-K retention, and merit-aware rate gaps stay within tolerance for every treatment, but a rank-stability metric (MARC) and nDCG@K each surface borderline findings - including one on the neutral baseline itself - that a score- or retention-only view would miss. The results argue for multi-metric, multi-family auditing over any single aggregate score, and for LLM-agent-generated audits as a practical, low-cost complement to human-curated audits for any candidate-job matching pipeline.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

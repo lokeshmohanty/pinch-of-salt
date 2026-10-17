@@ -1,0 +1,13 @@
+{
+  "id": "d774c0fc21b6adfa",
+  "title": "Measuring Epistemic Humility in Multimodal Large Language Models",
+  "link": "https://arxiv.org/abs/2509.09658",
+  "description": "arXiv:2509.09658v3 Announce Type: replace \nAbstract: Hallucinations in multimodal large language models (MLLMs), where a model generates content inconsistent with the input image, pose significant risks in real-world applications. Existing hallucination benchmarks primarily test recognition, i.e., whether a model can select the correct answer among distractors. They overlook another capability that is essential for trustworthy AI: recognizing when none of the provided options is supported by the image and declining to commit to a false choice. We present HumbleBench, a hallucination benchmark that evaluates this false-option rejection behavior, a directly observable facet of epistemic humility, through multiple-choice questions that always include a \"None of the above\" (NOTA) option. HumbleBench is built from the Panoptic Scene Graph dataset: its object and relation annotations, together with candidate attribute cues, are used to prompt GPT-4-Turbo to generate questions, which are then manually verified, yielding 22,831 questions on object, relation, and attribute hallucinations. We evaluate 27 MLLMs, including general-purpose, reasoning-oriented, and proprietary models, and complement standard accuracy with NOTA-aware metrics, diagnostic stress tests, and a human evaluation. Even the strongest models select NOTA for only about half of the questions in which it is correct, cautious prompting shifts models toward NOTA without improving their ability to detect unsupported options, and humans reject unsupported options considerably more reliably than all evaluated models. These results show that recognition accuracy alone is insufficient for assessing hallucination robustness. Our code and dataset are publicly available at https://github.com/maifoundations/HumbleBench.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

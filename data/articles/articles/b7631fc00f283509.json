@@ -1,0 +1,16 @@
+{
+  "id": "b7631fc00f283509",
+  "title": "Mechanisms of Multimodal Synchronization: Insights from Decoder-Based Video-Text-to-Speech Synthesis",
+  "link": "https://arxiv.org/abs/2411.17690",
+  "description": "arXiv:2411.17690v4 Announce Type: replace-cross \nAbstract: Unified decoder-only transformers have shown promise for multimodal generation, yet how sequence design affects synchronization across modalities with heterogeneous sampling rates remains underexplored. We investigate this through video-text-to-speech (VTTS) synthesis, a controlled task requiring fine-grained temporal alignment between sparse text, video, and continuous speech. Using Visatronic, a unified decoder-only transformer trained on VoxCeleb2, we examine complementary modality contributions, positional encoding strategies, the effects of modality ordering on in-domain performance and cross-domain transfer, and phoneme-level timing errors. Global sequential indexing, which assigns position IDs in concatenation order, and co-temporal ordered indexing, which assigns identical IDs to temporally corresponding video and speech tokens, achieve comparable in-domain synchronization. Under domain shift, however, synchronization depends on the interaction between token ordering and position-ID design. Text-first co-temporal indexing transfers most robustly among the evaluated variants without requiring explicit timestamp metadata. Text and video provide complementary signals: text supports intelligibility, while video contributes temporal cues and emotional expressiveness. Modality ordering also introduces a trade-off: video-first ordering achieves stronger in-domain performance, whereas text-first ordering generalizes more robustly among the timestamp-informed prefix variants. Training on diverse, in-the-wild data is associated with more transferable behavior, although isolating its contribution requires targeted ablations. We introduce TimeSync, a phoneme-level synchronization metric that reveals temporal misalignments overlooked by frame-level metrics. Together, these findings establish VTTS as a testbed for understanding temporal synchronization in unified multimodal decoders.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MM",
+    "cs.CV",
+    "cs.SD",
+    "eess.AS"
+  ]
+}

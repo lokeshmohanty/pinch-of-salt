@@ -1,0 +1,14 @@
+{
+  "id": "7e48f366343e1744",
+  "title": "Obscuring Data Contamination Through Translation: Evidence from Arabic Corpora",
+  "link": "https://arxiv.org/abs/2601.14994",
+  "description": "arXiv:2601.14994v2 Announce Type: replace-cross \nAbstract: Data contamination can invalidate benchmark evaluation when a model benefits from memorized evaluation content rather than genuine generalization. Yet contamination is difficult to audit when the exposed content differs in language from the evaluation benchmark. We study this failure mode by deliberately exposing four open-weight instruction-tuned LLMs to Arabic translations of MMLU and XQuAD evaluation items at increasing exposure levels, then evaluating them on the original English tasks. This controlled setup is a proxy for contamination rather than a reconstruction of real-world pretraining leakage. We first test two English-centric post-hoc probes, TS-Guessing and Min-K%++, and find that their signals largely disappear under translated exposure: TS-Guessing remains weak except for model-specific positional recall on MMLU, while Min-K%++ stays at or below chance. At the same time, English MMLU performance increases with Arabic exposure, showing that the absence of an English contamination signal does not imply the absence of an exposure effect. We then introduce Translation-Aware Contamination Detection (TACD), a training-data-free diagnostic based on cross-lingual prediction consistency and choice reordering. Cross-lingual consistency is substantially higher than an independence baseline and generally increases relative to the clean condition, although its magnitude is model-dependent and not strictly monotonic. These results show that translation can conceal contamination-related effects from English-only probes and motivate multilingual diagnostics that are explicitly framed as evidence of contamination-consistent behavior rather than definitive membership tests.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "f34a668db46a67c0",
+  "title": "Multi-Axis Max@K Reinforcement Learning for Representative Diversity in Text-to-Image Generation",
+  "link": "https://arxiv.org/abs/2607.14962",
+  "description": "arXiv:2607.14962v2 Announce Type: replace-cross \nAbstract: Text-to-image (T2I) models can synthesize realistic, prompt-aligned images, yet samples generated for the same prompt often cover only a small subset of visually distinct modes. This limits diversity and, for person-centric prompts, can reflect or amplify demographic skew. We formalize this problem as target-mode coverage, the coverage of a predefined set of semantically specified modes, and propose multi-axis max@K, a group-based reinforcement learning objective for improving it in diffusion-based T2I models. Given a group of samples and one score per target mode, multi-axis max@K first takes the maximum score across samples for each mode and then sums these per-mode maxima. The resulting credit assignment gives a sample positive weight on a mode only when it raises that mode's group maximum, so different samples can contribute to different modes. We validate the credit-assignment mechanism on a synthetic mixture and on SD3.5-M with deterministic pixel-based color rewards, and then apply the same objective to perceived-appearance fairness. On held-out prompts, multi-axis max@K improves the Fairness Score by 0.23-0.36 over the base model under three automatic evaluators, while maintaining image quality and text alignment. Code is available at https://github.com/KuOnoda/multi-axis-maxk.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

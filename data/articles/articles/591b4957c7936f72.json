@@ -1,0 +1,15 @@
+{
+  "id": "591b4957c7936f72",
+  "title": "PACT: Privileged Trace Co-Training for Multi-Turn Tool-Use Agents",
+  "link": "https://arxiv.org/abs/2606.16215",
+  "description": "arXiv:2606.16215v2 Announce Type: replace-cross \nAbstract: Multi-turn tool-use agents must reason, call tools, and adapt to observations across several interaction turns. Post-training such agents is challenging, as reinforcement learning often suffers from sparse rewards and weak credit assignment despite matching the prompt-only inference setting, while supervised fine-tuning on expert traces provides dense process supervision but can over-constrain the model to fixed trajectories. To tackle this, we propose PACT, a Privileged trAce Co-Training framework for multi-turn tool-use agents. The key idea is to use expert traces only as training-time optimization signals rather than rollout-time hints. PACT keeps rollout generation prompt-only, then uses expert traces to guide optimization through two complementary signals: a trace-conditioned RL surrogate that evaluates prompt-only rollouts under expert-trace context, and a component-aware SFT loss that provides annealed process supervision over reasoning and tool-call components. To reduce over-reliance on the training-only trace context, PACT incorporates prompt-only anchoring with standard prompt-only RL updates. Experiments on FTRL, BFCL, and ToolHop show that PACT consistently outperforms strong SFT- and RL-based baselines. Further analyses support the complementarity of the two training objectives and the benefits of component-aware supervision and prompt-only anchoring. These results highlight the effectiveness of privileged trace co-training for multi-turn tool-use learning. The project page is available at https://zhenbangdu.github.io/pact-project-page.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

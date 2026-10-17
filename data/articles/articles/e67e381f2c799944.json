@@ -1,0 +1,13 @@
+{
+  "id": "e67e381f2c799944",
+  "title": "CANN Bench: Benchmarking Agent Generated Kernels against Real NPU and Algorithmic Limits",
+  "link": "https://arxiv.org/abs/2607.20518",
+  "description": "arXiv:2607.20518v1 Announce Type: new \nAbstract: AI agents are now capable of writing, compiling, and iteratively optimizing low-level operator kernels on different hardware platforms. Existing benchmarks, however, focus almost exclusively on CUDA and Triton, leaving hardware ecosystems with less-exposed programming models without a common evaluation baseline. We present CANN Bench, an open benchmark for AI-generated operator code on Huawei's Ascend NPU. The current release covers 53 operators and 1060 test cases organized into four difficulty tiers -- from simple elementwise primitives to MoE dispatch and FlashAttention kernels -- spanning FP16, BF16, FP32, and INT8 precision formats. Evaluation adopts a \\textbf{three-dimensional weighted composite score} that treats compilation, functional correctness, and performance as independent axes, providing a principled reward signal for kernel-generation agents. Performance is graded against an out-of-the-box PyTorch-on-Ascend baseline and an analytical per-case Hardware-Anchored Performance (HAP) limit on real NPU hardware, ensuring scores reflect genuine optimization headroom rather than measurement artifacts. The evaluation harness is designed to resist reward hacking from the ground up. CANN Bench is versioned within the official CANN repository and is designed for long-term community co-construction, providing the Ascend ecosystem with a quantitative, reproducible, and sustainably maintained yardstick for AI operator-authoring capability.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

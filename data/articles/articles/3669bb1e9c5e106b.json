@@ -1,0 +1,14 @@
+{
+  "id": "3669bb1e9c5e106b",
+  "title": "Screwtape: Adversarial Transcript Editing for Monitor Red-Teaming",
+  "link": "https://arxiv.org/abs/2610.20941",
+  "description": "arXiv:2610.20941v1 Announce Type: cross \nAbstract: We present Screwtape, a pipeline that converts real agent transcripts into attacks that evade action-only monitors. An LLM attacker edits a transcript so that the agent causes a specified harm, such as leaking an API key or spawning an unmonitored agent. The edited actions are never executed, so we use an LLM verifier to reject attacks that are inconsistent with the original transcript or below a severity bar. The attacker revises the edit until the monitor no longer flags it. We applied Screwtape to 94 Claude Code and Codex transcripts from Redwood Research staff, optimizing against our own monitors. Across 252 runs, it produced 35 attacks that passed the verifier and evaded these monitors. Six of them, confirmed valid by human review, also evaded a held-out monitor provided by a frontier developer. We therefore demonstrate that a red-teamer without access to a developer's infrastructure can find confirmed failures of the developer's monitor. We expect to find more attacks when the pipeline runs inside the developer's infrastructure, with frontier attacker models that lack refusal safeguards and direct optimization against the production monitor. Developers can use these attacks to fix monitor blind spots, and evaluators can use them as counterexamples to safety claims about the monitor.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

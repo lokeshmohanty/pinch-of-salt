@@ -1,0 +1,13 @@
+{
+  "id": "c6c7d0db2e34f780",
+  "title": "What Does Multi-Harness RL Learn? Credit Assignment and Portability in Coding Agents",
+  "link": "https://arxiv.org/abs/2609.04518",
+  "description": "arXiv:2609.04518v1 Announce Type: new \nAbstract: Agent reinforcement learning (RL) increasingly runs through full execution harnesses, and a multi-harness recipe mixes two choices: exposing the policy to several harnesses, and comparing their rewards inside one relative-advantage group. We isolate the second choice in repository-level coding. From one Qwen3-8B supervised warm start we replay the same frozen task-harness records from Aider, OpenHands, Qwen Code, and SWE-agent, with the same number of updates, under two rules for group-relative policy optimization (GRPO), Within (one group per task-harness pair) and Cross (harnesses pooled within a task), and score every checkpoint with a sealed SWE-bench Verified oracle on four source harnesses and a minimal harness held out of training. The evaluation harness is the dominant variable: across 24,000 sealed evaluations it moves the mean solve rate from 2.14\\% to 9.27\\%, a factor of 4.3, where the training recipe moves it by 1.16. The grouping rule is not. On the held-out harness, Cross minus Within is +0.25 pp, 95\\% confidence interval [-0.48, +1.02], at eight attempts per task, and +0.16 [-0.41, +0.72] pooled over three training seeds whose individual estimates change sign. Each rule's own seed range, 0.42 to 0.45 pp, exceeds the difference between them. Both rules place their largest gains on the same source harness. The pooled advantage carries the harness: an out-of-fold classifier recovers the generating harness from Cross's advantage +4.48 pp above the shuffled-label baseline and from Within's not at all, and the two rules still reach the same held-out score and action distribution inside each harness. Re-collecting half the training data on-policy does not change this. Cross-harness credit yields configuration adaptation and no more portable capability than within-harness credit. Multi-harness RL reports should state the grouping boundary and test under an unseen harness.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

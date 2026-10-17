@@ -1,0 +1,13 @@
+{
+  "id": "59aa95b304c19a74",
+  "title": "LAMP: 3D Source-Aware Lighting Estimation at Multiple Points",
+  "link": "https://arxiv.org/abs/2610.19266",
+  "description": "arXiv:2610.19266v1 Announce Type: new \nAbstract: Existing illumination estimation methods primarily recover lighting distributions for rendering, but typically leave the contributions of individual physical light sources at specific scene locations implicit. We address this gap by leveraging the scene understanding capabilities of vision-language models (VLMs) to connect local illumination with its physical sources. We introduce LAMP, a framework for point-conditioned, source-aware illumination reasoning from a single RGB image with marked query points. LAMP constructs a shared inventory of active light sources, ranks contributing sources for each query, and predicts their 3D query-to-source directions. We supervise these relationships using procedurally controlled indoor scenes, reusing independently rendered source responses to derive contribution targets across lighting configurations and obtaining exact directions from source and query positions. On the Infinigen test set, fine-tuning Qwen3-VL-8B increases dominant-source 3D PCK@0.5m from 0% to 70.6%, with 94.5% of directions within 12.5 degrees of ground truth among correctly localized sources. Combined with a lightweight network predicting dense RGB irradiance, LAMP achieves probe-rendering quality comparable to prior lighting-estimation methods while additionally localizing individual physical sources in 3D and explicitly attributing local illumination to them.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

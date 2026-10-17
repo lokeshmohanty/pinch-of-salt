@@ -1,0 +1,14 @@
+{
+  "id": "6511b98ebeafd803",
+  "title": "MyoCodec: A Streaming Neural Codec for Electromyography",
+  "link": "https://arxiv.org/abs/2609.36687",
+  "description": "arXiv:2609.36687v1 Announce Type: cross \nAbstract: Neural codecs encode continuous signals into compact sequences of discrete tokens, providing an interface for efficient transmission, storage, and token-based sequence modeling. This paradigm has been widely adopted in modern speech and audio frameworks; however, the biosignal domain still lacks a neural codec designed specifically for low-bitrate streaming and generalization across diverse downstream tasks. We present MyoCodec, a streaming neural codec designed for electromyography (EMG). Inspired by recent neural audio codecs, MyoCodec combines causal Transformers with residual vector quantization to encode continuous EMG signals into different levels of EMG representations spanning from continuous latent features to discrete tokens operating at 50 Hz. Trained on twelve public EMG datasets, MyoCodec achieves favorable performance in both intrinsic codec quality and representative downstream tasks, including typing (emg2qwerty), hand-pose (emg2pose), speech decoding (emg2speech), and speech-to-EMG synthesis (speech2emg). Across these tasks, MyoCodec exhibits strong performance against prior models while providing a compact and causal EMG representation. During streaming inference, it requires compute time of only 0.482 ms for each 20 ms frame, enabling real-time streaming. Also, the discrete token representation provided by MyoCodec has the potential to support integration into language-model based approaches, creating a path toward LLM-based interactive systems, where tokenized EMG representations are directly processed into such language or speech models. Code and model weights are released.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.SP",
+    "cs.AI"
+  ]
+}

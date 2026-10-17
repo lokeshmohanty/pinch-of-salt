@@ -1,0 +1,13 @@
+{
+  "id": "a7c17f7d35612e23",
+  "title": "CoVA: Composing VAE Representations for Generative Learning",
+  "link": "https://arxiv.org/abs/2610.13322",
+  "description": "arXiv:2610.13322v1 Announce Type: new \nAbstract: Representation alignment with pretrained visual encoders improves diffusion transformer training but requires auxiliary encoders and extra training overhead. Recent approaches instead exploit representations from the generative model's own variational autoencoder (VAE). However, reconstruction-oriented VAE features are not optimized for the semantic discrimination and spatial structure needed for generative learning. We introduce \\textbf{CoVA} (\\textbf{Co}mposed \\textbf{VA}E Representations), a lightweight framework that composes VAE features online into stage-wise guidance for flow-matching training. A small latent composer is jointly trained with class supervision, masked latent reconstruction, and horizontal-flip consistency, yielding semantically discriminative, spatially structured dense features and sample-dependent class posteriors. CoVA aligns intermediate SiT features with the composed representations early in training, then removes the increasingly detrimental alignment and reuses detached composer posteriors for sample-dependent soft label conditioning. We further uncover a hidden confound in soft label conditioning: averaging class embeddings attenuates their magnitude, coupling semantic interpolation with conditioning strength. This attenuation alone can substantially improve FID while degrading Recall, revealing a non-semantic source of the apparent gain. CoVA corrects this confound by restoring the hard-label magnitude, isolating posterior-dependent directional semantics. CoVA adds only 8.5M training-only auxiliary parameters (1.3\\% of SiT-XL/2) and introduces no inference-time overhead. On ImageNet 256$\\times$256, CoVA reduces SiT-XL/2 FID from 17.2 to 7.4 (\\textbf{57\\%}) in 400K steps. With classifier-free guidance, it achieves an FID of \\textbf{2.03} in only 400 epochs, versus 2.06 after 1,400 epochs for vanilla SiT-XL/2.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

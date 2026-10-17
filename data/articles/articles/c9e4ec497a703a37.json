@@ -1,0 +1,14 @@
+{
+  "id": "c9e4ec497a703a37",
+  "title": "CaST-POI: Candidate-Conditioned Spatiotemporal Modeling for Next POI Recommendation",
+  "link": "https://arxiv.org/abs/2604.20845",
+  "description": "arXiv:2604.20845v2 Announce Type: replace-cross \nAbstract: Next Point-of-Interest (POI) recommendation ranks a user's likely next location based on check-in history. Most recent rankers compress the trajectory into a single user vector and score every candidate through the same representation, ignoring that every candidate carries geographic coordinates and that the relevance of a past visit depends on where the candidate is located. Target attention from click-through-rate prediction conditions the user representation on the scored item, but its operator was developed for web items without geometry. This paper proposes CaST-POI, a candidate-conditioned POI ranker that keeps a standard target-attention reader and adds two bucketised biases to the attention logits: one for the recency of each past visit and another for its distance to the candidate being scored. Different candidates therefore read the same trajectory with different attention weights, grounded in real geographic distance rather than inferred from item embeddings. Comparing against seven sequential recommenders trained with the same split on three datasets NYC, TKY and CA under per-user leave-one-out with full-vocabulary ranking, CaST-POI improves MRR over the strongest baseline by 5.1%, 7.6% and 14.5%. Holm-corrected paired tests confirm the gains on TKY and CA. Ablation study locates the gain in the explicit revisit gate and the candidate-relative spatial bias, whereas the candidate-independent temporal bias has no measurable effect on all datasets. Code is available at https://github.com/YuZhenyuLindy/CaST-POI.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI"
+  ]
+}

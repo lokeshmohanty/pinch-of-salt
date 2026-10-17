@@ -1,0 +1,14 @@
+{
+  "id": "41e7e12b801f518e",
+  "title": "PBT-Bench: Benchmarking AI Agents on Property-Based Testing",
+  "link": "https://arxiv.org/abs/2605.15229",
+  "description": "arXiv:2605.15229v4 Announce Type: replace-cross \nAbstract: Existing code benchmarks measure whether an agent can produce any test that reproduces a known bug, or whether it can produce a\n  patch that fixes a described issue. Neither isolates the distinct skill of property-based testing: deriving a semantic invariant\n  from documentation, and then constructing an input-generation strategy precise enough to make a random search reveal the violation.\n  We introduce PBT-Bench, a benchmark of 100 curated property-based testing problems across 40 real Python libraries. Each problem\n  injects one or more semantic bugs (365 in total, mean 3.65 per problem) designed so that default-strategy random inputs almost\n  never trigger them; the agent must read the library's documentation, identify the relevant invariant, and specify a Hypothesis\n  @given strategy that concentrates mass in the trigger region. Bugs are stratified across three difficulty levels (L1-L3) spanning\n  single-constraint boundary bugs to stateful, cross-function protocol violations. We evaluate eight contemporary LLMs under two\n  prompting regimes (open-ended baseline vs. explicit Hypothesis scaffolding) for three independent runs per configuration. Bug\n  recall under the PBT-guided prompt ranges from 42.1% to 83.4% across models; under the open-ended baseline, from 31.4% to 76.7%.\n  Hypothesis scaffolding lifts mid-capability models by over 20 percentage points, but yields smaller gains for the strongest models,\n  with two exceptions showing degradation, suggesting the structured prompt can interfere with certain model behaviours rather than\n  complementing them. The hardest bugs prove model-specific: different architectures fail on different problems, leaving persistent\n  gaps that no single model closes. We release the benchmark, harness, and full evaluation corpus to support downstream work on\n  documentation-grounded semantic reasoning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

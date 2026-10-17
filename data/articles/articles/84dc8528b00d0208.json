@@ -1,0 +1,13 @@
+{
+  "id": "84dc8528b00d0208",
+  "title": "Attention Without Grounding: Causal Evaluation of Visual Explanations in Medical VLMs",
+  "link": "https://arxiv.org/abs/2607.18577",
+  "description": "arXiv:2607.18577v1 Announce Type: new \nAbstract: Attention and saliency heatmaps are widely used to explain medical Vision-Language Model (VLM) outputs on chest X-rays, yet whether they truly highlight the image evidence driving predictions has not been causally tested. We audit faithfulness via overlap with radiologist bounding boxes on PadChest (n=637), attribution mass within radiologist masks on CheXlocalize (n=643), and 16x16 patch-occlusion maps that record which regions, when hidden, change the answer. We study three MedGemma-4B variants, cross-family probes on LLaVA-RAD and Qwen3-VL-8B-Instruct, and the specialist CheXagent-2-3b, with two CXR-trained classifiers (DenseNet121, ResNet50) as positive controls. A heatmap is faithful only if the model uses the image and attention concentrates on regions whose occlusion alters the prediction. No evaluated VLM meets both criteria. MedGemma and Qwen3-VL use the image, but attention anti-correlates with patch-occlusion importance (rho < 0 with 95% bootstrap CIs below zero). LLaVA-RAD's attention correlates positively, but the model is almost text-only (99.1% text-only agreement, near-zero causal mass), so correlation ties two near-zero signals. Attention also misses annotated anatomy: overlap with true regions never beats shifted or random controls, and no method places more than 22% of its mass inside radiologist masks. The two CXR classifiers pass all metrics, indicating the failure is specific to VLM heatmaps, not the evaluation. These heatmaps are visually reassuring but not faithful; clinical explanations require controlled localization metrics and causal perturbation, not visual inspection alone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "0d2c5ec78e0aeae8",
+  "title": "Sentence-Level Context Sensitivity as a Training-Free Detector of Unsupported Content, Evaluated Against Trained Verifiers",
+  "link": "https://arxiv.org/abs/2607.04223",
+  "description": "arXiv:2607.04223v2 Announce Type: replace-cross \nAbstract: Retrieval-augmented generation (RAG) assistants summarize records in clinical and legal work, where one unsupported sentence can mislead a reader. The contrast between an output's likelihood with and without its source is an established faithfulness score for whole summaries and answers, but it has not been measured as a detector of the individual unsupported sentence in multi-passage RAG answers, against trained verifiers, or for its cost. We implement it as a training-free detector that re-scores a fixed answer under the full context, no context, and each chunk removed, and returns the chunk whose removal lowers a sentence's likelihood most as a candidate supporting passage. We evaluate it on RAGTruth, TofuEval, and RAGBench with six scorers and against five verifiers, up to a large language model (LLM) judge, on identical inputs under a source-level split. Scoring per sentence ranks unsupported sentences better than the answer-level form of the same signal on all three benchmarks, by 0.033 to 0.071 in the area under the receiver operating characteristic curve (AUC). On RAGTruth the training-free score reaches an AUC of 0.717 to 0.745 across scorers and 0.773 with a classifier, above entailment and attribution baselines and level with per-chunk fact-checkers, at about one forty-seventh of the LLM judge's compute on a 1.5B scorer, while a full-context fact-checker and the judge are more accurate and are not improved by it. The signal is weakest on short-answer question answering, where the scorer can answer from memory.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

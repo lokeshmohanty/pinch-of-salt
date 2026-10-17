@@ -1,0 +1,14 @@
+{
+  "id": "85d2a4e9310ef00b",
+  "title": "Lightweight and Resource-Efficient Perception for Robotic Guide Dogs",
+  "link": "https://arxiv.org/abs/2610.03187",
+  "description": "arXiv:2610.03187v1 Announce Type: cross \nAbstract: Multi-camera streaming perception is increasingly deployed on heterogeneous edge platforms shared with co-resident workloads, yet accelerator placement is often evaluated using isolated single-stream experiments and mean streaming average precision (sAP). Using two end-to-end pipelines on a single GPU--NPU platform, we show that isolated evaluation can mis-rank deployment-time placement. Although the GPU pipeline is preferred in isolation, GPU-localized contention introduces deadline misses that make detections stale and can reverse the preferred placement before full GPU saturation. The NPU pipeline is less accurate than the GPU pipeline on small and medium objects in isolation, but nearly matches it on large objects. The largest absolute sAP losses in our latency and contention experiments occur for large objects. In our four-stream experiments, the preferred placement depends on which path becomes stale, and increasing GPU-side contention shifts the best placement from All-GPU to All-NPU. Under a GPU-saturating vision--language co-tenant, All-NPU achieves $5.2\\times$ the worst-stream sAP of All-GPU. Because mean sAP can hide severe single-stream degradation, evaluation should report contention sweeps, deadline-miss rates on both paths, and worst-stream sAP alongside mean sAP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.CV"
+  ]
+}

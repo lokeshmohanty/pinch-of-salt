@@ -1,0 +1,13 @@
+{
+  "id": "fd79acfda3390fe3",
+  "title": "CopyCat: Improving Fine-Grained Subject Consistency in Subject-to-Image Models within Seconds",
+  "link": "https://arxiv.org/abs/2608.00674",
+  "description": "arXiv:2608.00674v1 Announce Type: new \nAbstract: Recent subject-to-image models have achieved impressive progress in personalized image generation, yet they still struggle to preserve fine-grained subject-specific details. A major reason is the lack of high-quality fine-grained identity supervision: real paired data are expensive to collect, while synthesized training pairs often preserve only coarse subject appearance and fail to capture subtle subject-specific details. In this work, we propose CopyCat, a lightweight model-refinement framework that improves fine-grained subject consistency within only a few seconds. CopyCat performs a one-time refinement of a pretrained subject-to-image model by attaching a lightweight Fine-grained Consistency LoRA (FCLoRA) and optimizing it using a single proxy image, which is used as both the conditioning image and the reconstruction target. This exact self-reconstruction objective substantially simplifies the optimization task, enabling effective fine-grained refinement within only a few seconds. The refinement is performed only once; the resulting model can be directly applied to diverse unseen reference subjects and prompts without further subject-specific optimization. We further revisit subject-to-image LoRA training in double-stream diffusion transformers and find that adapting only the visual stream consistently improves subject consistency. Extensive experiments on DreamBench and XVerseBench demonstrate consistent improvements in fine-grained subject consistency across representative subject-to-image models under both single- and multi-subject settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

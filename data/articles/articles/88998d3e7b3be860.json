@@ -1,0 +1,14 @@
+{
+  "id": "88998d3e7b3be860",
+  "title": "At-the-Roofline Sparse Tensor Contractions on Vector Processors for Transformer Inference",
+  "link": "https://arxiv.org/abs/2607.25504",
+  "description": "arXiv:2607.25504v1 Announce Type: cross \nAbstract: Fine-grained weight pruning and activation sparsification have emerged as effective approaches for reducing the compute and memory cost of inference for Transformer models. In the moderate-sparsity regime, Gustavson's dataflow provides a natural execution model for exploiting both activation and weight sparsity on vector processors through metadata-driven indexed accumulation. However, existing RVV architectures lack native support for this pattern, forcing kernels to rely on software index decoding and L1-backed indexed memory operations that keep sparse tensor contractions far below their roofline performance bound. We present Ventaglio, a runtime-configurable sparse execution unit coupled with RVV ISA extensions that drives sparse tensor contractions toward their roofline through indexed gather-accumulate-scatter support. Integrated into an open-source vector processing cluster and implemented in 12nm FinFET, Ventaglio accelerates sparse tensor contraction kernels by $6.9\\text{--}7.4\\times$ over optimized RVV baselines, with only $3.1\\%$ area overhead for a cluster of tightly-L1 coupled vector processing elements. We build a performance-accurate instruction-level model of the Ventaglio extension, calibrate it against RTL implementation, and leverage it for scale-out performance analysis on a large $4\\times4$ multi-cluster system. Using a DuoGPT-pruned LLaMA-3-8B model with practical $40\\text{--}60\\%$ dual sparsity, Ventaglio achieves $2.40\\text{--}5.25\\times$ and $2.06\\text{--}3.16\\times$ speedup over dense baselines during prefill and autoregressive decoding, respectively.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.AI"
+  ]
+}

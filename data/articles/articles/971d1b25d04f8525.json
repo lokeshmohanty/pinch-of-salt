@@ -1,0 +1,13 @@
+{
+  "id": "971d1b25d04f8525",
+  "title": "Enabling Validation for Robust Few-Shot Recognition",
+  "link": "https://arxiv.org/abs/2506.04713",
+  "description": "arXiv:2506.04713v4 Announce Type: replace \nAbstract: A key challenge in Few-Shot Recognition (FSR) is the scarcity of labeled task-specific data for training. Contemporary methods mitigate this challenge by exploiting pretrained Vision-Language Models (VLMs) for their learned transferable features. Some recent ones augment the scarce data by retrieving relevant yet out-of-distribution (OOD) examples from external data sources. However, they largely overlook an equally fundamental challenge: the absence of validation data for model selection and hyperparameter tuning. As a result, the adapted VLMs overfit the few-shot training data and generalize poorly to OOD test data. We show that retrieved data provide a natural source of validation, but their direct use creates a fundamental paradox. Since the retrieved samples are inherently OOD w.r.t the few-shot ID training data, adapting a VLM to the ID data constantly degrades its performance on the retrieved data. Consequently, conventional validation relying on the accuracy of retrieved data favors no adaptation and prevents improved generalization. To resolve this dilemma, we formulate validation as a multi-objective optimization (MOO) problem between performance gains on the few-shot ID data and the performance preservation on the retrieved data. We introduce a simple yet effective validation strategy by choosing an operating point on the Pareto front of the MOO problem. This strategy enables hyperparameter tuning, which had been unrealistically done by using test data, thereby mitigating overfitting and improving generalization. We integrate it into a stage-wise finetuning pipeline, termed Validation-Enabled Stage-wise Tuning (VEST). Extensive experiments on five established benchmarks show that VEST consistently outperforms existing approaches on both ID and OOD test data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

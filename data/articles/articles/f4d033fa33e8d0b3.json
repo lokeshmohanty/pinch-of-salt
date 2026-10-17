@@ -1,0 +1,15 @@
+{
+  "id": "f4d033fa33e8d0b3",
+  "title": "TTSR: Test-Time Self-Evolving via Reflection",
+  "link": "https://arxiv.org/abs/2603.03297",
+  "description": "arXiv:2603.03297v3 Announce Type: replace-cross \nAbstract: Test-time training (TTT) adapts large language models (LLMs) during inference using only unlabeled test inputs. Existing methods, however, face two major bottlenecks on hard reasoning tasks: (1) \\emph{lack of learnable samples}, as self-generated pseudo-labels on difficult questions are often noisy and yield unstable rewards; and (2) \\emph{inefficient exploration}, as performance gains depend on repeatedly sampling many rollouts without explicit diagnosis of why previous attempts fail. We propose \\textbf{TTSR} (\\textbf{T}est-\\textbf{T}ime \\textbf{S}elf-\\textbf{R}eflection), a self-evolving framework based on a \\emph{reflect-then-synthesize} paradigm. A single pretrained model alternates between a \\textit{Student} role and a \\textit{Teacher} role: the Student solves test questions and updates, while the Teacher analyzes failed trajectories and synthesizes targeted variant questions closer to the Student's capability frontier. TTSR further maintains a cross-iteration \\textit{weakness memory} and compiles persistent weaknesses into a lightweight \\textit{strategy note} prepended to subsequent Student inputs, so diagnostic knowledge can guide exploration and gradually fade as weaknesses are resolved. Experiments on challenging mathematical reasoning benchmarks show consistent test-time improvements, strong cross-backbone generalization, and transfer to general-domain reasoning tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

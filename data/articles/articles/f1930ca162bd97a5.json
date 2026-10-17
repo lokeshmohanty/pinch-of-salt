@@ -1,0 +1,13 @@
+{
+  "id": "f1930ca162bd97a5",
+  "title": "Instance Segmentation and Fine-grained Classification for Urban Buildings with Adaptive Region Dividing and Spatially-Supervised Contrastive Learning",
+  "link": "https://arxiv.org/abs/2609.19631",
+  "description": "arXiv:2609.19631v1 Announce Type: new \nAbstract: Accurate instance-level and functional understanding of urban buildings in large-scale point clouds is essential for digital city modeling and urban analysis. However, the extensive spatial coverage of urban scenes leads most existing methods to rely on predefined blocks for training and evaluation, although such partitions are rarely available in real-world applications and introduce additional preprocessing while fragmenting complete building structures. To address this issue, we propose an adaptive region-dividing strategy with unified scene-level evaluation. Specifically, the 3D point cloud is projected onto a bird's-eye-view (BEV) plane, where a pretrained segmentation model is used to detect building regions. The detected bounding boxes are then back-projected to the original point cloud to construct structure-aligned adaptive training blocks, enabling semantically guided dynamic partitioning without manual design. Furthermore, beyond instance-level understanding, few methods have explored fine-grained classification for urban buildings, and thus we also put forward a fine-grained classification model for urban buildings with a spatially-supervised contrastive loss. First, for each segmented building, a point transformer classifier jointly encodes its body and local context using geometric, color, and core-context information. Then, the class-balanced weighted cross-entropy is used to alleviate severe class imbalance. The proposed spatially-supervised contrastive loss further enhances inter-class discriminability by assigning greater weight to spatially proximate, same-category buildings, encouraging compact functional representations while separating easily confused categories. Extensive experiments on UrbanBIS and STPLS3D demonstrate the advantages of the proposed method in building instance segmentation and fine-grained classification compared to existing SOTA methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

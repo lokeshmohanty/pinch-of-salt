@@ -1,0 +1,15 @@
+{
+  "id": "8a21d270b759c5c9",
+  "title": "SalQ-VLM: Fine-Grained Saliency-Guided Quantization for Vision-Language Models",
+  "link": "https://arxiv.org/abs/2508.03351",
+  "description": "arXiv:2508.03351v3 Announce Type: replace \nAbstract: Large language models (LLMs) have demonstrated remarkable capabilities across diverse language tasks, motivating their extension to vision-language models (VLMs) for multimodal understanding. However, billion-parameter VLMs incur substantial memory and computational costs that hinder deployment in resource-constrained settings. Post-training quantization (PTQ) compresses models and accelerates inference without retraining, yet remains underexplored for VLMs. We identify two intrinsic VLM activation properties in PTQ: (1) visual over-representation, where vision tokens are excessive and often redundant, and (2) the modality gap separating text and vision tokens in the latent feature space. Prior methods largely overlook these properties, leading to quantization performance degradation. To address this mismatch, we propose SalQ-VLM, an importance-aware PTQ framework that prioritizes salient tokens and suppresses redundant vision tokens during calibration. We derive a gradient-driven importance factor that captures token-level importance variance and is theoretically grounded in the relationship among loss perturbation, activation errors, and output gradients. SalQ-VLM obtains this factor through a single lightweight block-wise gradient-caching pass and incorporates it into the layer-wise reconstruction objective. Because SalQ-VLM modifies only calibration, it adds no inference-time operations and remains compatible with existing high-performance kernels. Extensive evaluations across benchmarks and backbones show that SalQ-VLM consistently outperforms strong PTQ baselines, especially under ultra-low-bit quantization. Notably, it improves MME-RealWorld accuracy by 16.45% under INT2g128 quantization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

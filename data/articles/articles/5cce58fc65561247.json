@@ -1,0 +1,14 @@
+{
+  "id": "5cce58fc65561247",
+  "title": "CoRELoop: Parameter-Efficient Controlled Recurrent Refinement for Audio Deepfake Detection",
+  "link": "https://arxiv.org/abs/2609.19818",
+  "description": "arXiv:2609.19818v1 Announce Type: cross \nAbstract: Generalizing to unseen attacks remains challenging for audio deepfake detectors, and collecting training data covering all potential attacks is impractical. We explore recurrent refinement in an already-trained SSL-based detector without additional data or changes to its original parameters. However, directly recycling encoder outputs as inputs degrades detection in our diagnostic. We propose CoReLoop, which makes this reuse effective by adapting recurrent inputs to the frozen encoder, controlling state updates, and aligning refined outputs with the frozen classifier. By training only lightweight refinement modules and loop-specific low-rank adapters on the original data, CoReLoop enables additional refinement while preserving the detector's original first-pass prediction. On 14 cross-domain test sets, the 24-layer model reduces pooled equal error rate (EER) from 4.85% to 3.74% with two passes, with approximately 10M trainable parameters out of 598M. To selectively apply this refinement, an optional halting head chooses the depth for each utterance, achieving 3.73% pooled EER with an average of 1.18 passes.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.AI"
+  ]
+}

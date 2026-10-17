@@ -1,0 +1,14 @@
+{
+  "id": "6fad574b1e3ac4a5",
+  "title": "LearnActCoder: Role-Aware Error Memory for Adaptive Clinical Coding Agents",
+  "link": "https://arxiv.org/abs/2609.19721",
+  "description": "arXiv:2609.19721v1 Announce Type: new \nAbstract: Clinical coding agents repeatedly encounter the same failure modes, including unsupported codes, missed documented conditions, specificity errors, and procedure-coding convention mismatches. We introduce Learn-Then-Act, an inference-time adaptation framework that converts errors from a small labeled LEARN batch into a structured Mistake Knowledge Database (MistakeKDB). False-negative lessons are routed to a recall-oriented Coder, while false-positive lessons are routed to a precision-oriented Judge. We instantiate the framework in LearnActCoder, a Coder-Judge clinical coding pipeline with lookup-table grounding where available. On 150 matched MIMIC-III notes, structured MistakeKDB improves CPT F1 by 5.9 percentage points, while raw-example and reflection-style memories remain near the no-memory baseline; the ICD-9 improvement is not significant. On a matched MIMIC-IV cohort, memory shifts ICD-10 coding toward higher precision at a recall cost, leaving F1 statistically unchanged. Applying the same memory to 1,000 held-out MIMIC-III notes maintains a stable ICD operating point, providing scale/stability evidence. Overall, the results are consistent with structured, feedback-derived error memory being useful for adapting clinical coding behavior across cases without weight updates or changes to the underlying workflow. Absolute CPT/HCPCS performance remains low, and the system is evaluated retrospectively rather than in clinical deployment.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.MA"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "0d9e0d159e00e535",
+  "title": "Incremental Optimal Assignment for Real-Time Crowd Tracking",
+  "link": "https://arxiv.org/abs/2607.21368",
+  "description": "arXiv:2607.21368v1 Announce Type: new \nAbstract: Multi-object tracking in dense crowds requires solving a bipartite assignment problem between detections and trajectories at every video frame. The classical Hungarian algorithm solves this in $O(N^3)$ time, which becomes a bottleneck for large scenes with hundreds of people. We propose an \\emph{incremental} assignment algorithm that exploits the block-sparse structure of crowd tracking cost matrices --- dense within each crowd cluster, near-zero between clusters. We compute the exact same optimal $N \\times N$ assignment as the Hungarian algorithm, but via an incremental strategy: we add one person at a time, exploiting the fact that after step $n-1$ the dual potentials are \\emph{exactly optimal} for the $(n-1)\\times(n-1)$ subproblem --- a strictly stronger condition than the intermediate feasibility maintained by the Hungarian algorithm during its $N$ outer iterations. Each new step therefore requires only a single augmenting path search from a certified optimal starting point. This avoids repeated full-matrix scans while guaranteeing an identical globally optimal result. A diagonal-reordering invariant keeps the data structure compact and cache-friendly. On realistic crowd benchmarks with $N \\in [200, 5000]$ people organised into dense clusters, our algorithm achieves \\textbf{3.7--6.5$\\times$ speedup} over the Hungarian baseline while producing provably optimal matchings identical to those of Hungarian. The speedup grows with $N$ and remains stable beyond $N=3000$, making the method especially attractive for large-scale crowd scenes such as stadium exits and mass public events.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.DS"
+  ]
+}

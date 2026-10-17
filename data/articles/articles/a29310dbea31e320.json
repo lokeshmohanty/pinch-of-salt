@@ -1,0 +1,15 @@
+{
+  "id": "a29310dbea31e320",
+  "title": "UniTrackPLA: Unified Panorama-Language-Action Model for Instruction-Guided Navigation and Dynamic Person Tracking",
+  "link": "https://arxiv.org/abs/2610.00878",
+  "description": "arXiv:2610.00878v1 Announce Type: cross \nAbstract: General-purpose embodied robots should support both navigation toward language-specified destinations and dynamic person tracking under arbitrary initial target azimuths. However, existing methods typically rely on forward-facing observations and address these tasks with separate policies, limiting omnidirectional perception and unified closed-loop control. We present UniTrackPLA, a unified panorama-language-action model for instruction-guided navigation and dynamic person tracking. Its Panoramic-Aware Encoding (PAE) preserves the temporal and azimuthal structure of perspective views projected from each panorama, enabling perspective-pretrained visual encoders to process omnidirectional observations. A shared vision-language backbone grounds instructions in the panoramic context and predicts continuous robot-centric waypoint chunks for both tasks. World-Action Consistency (WAC) further predicts action-conditioned future visual states and verifies waypoint prefixes online, allowing reliable actions to be reused while triggering replanning upon inconsistency. We also introduce OmniTrackNav-Bench, comprising 5,000 simulated tracking trajectories, 10,000 simulated VLN routes, and 96 verified real-world routes, providing 919,978 waypoint-supervision instances. UniTrackPLA improves overall tracking SR from 23.50% to 35.00% and Omni-VLN SR/SPL from 13.00%/12.77% to 19.75%/19.29%. Incorporating 76 real-world routes further improves held-out EP@0.2m from 42.92% to 92.08%. Closed-loop experiments on a Go2-W robot demonstrate unified panoramic tracking and navigation across indoor and outdoor environments. The project page is at https://tw5775.github.io/UniTrackPLA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV",
+    "eess.IV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "7394c04a4382ba58",
+  "title": "Auditing Frame-Level AUC in Weakly Supervised Video Anomaly Detection: Granularity, Resolution, and Scene Bias",
+  "link": "https://arxiv.org/abs/2608.11985",
+  "description": "arXiv:2608.11985v1 Announce Type: new \nAbstract: Frame-level area under the ROC curve (AUC) is the dominant evaluation metric for weakly supervised video anomaly detection (WSVAD). Its standard form measures whether an anomalous frame outranks a normal frame drawn from anywhere in the test set. We refer to this comparison as pooled AUC, since it aggregates frame pairs across test videos regardless of source. Pooled AUC therefore credits both event localization and differences between video sources. We audit this protocol on UCF-Crime across recent state-of-the-art models spanning different backbone families. Holding each model's frame scores fixed, we read them under three pairing granularities: global, per anomaly category, and within each video, then repeat the same three-granularity readout on zero-shot scores computed from the models' internal representations. We assess ranking reliability with a paired video bootstrap. Three findings follow. First, pooled AUC does not reliably predict within-video anomaly localization: models with similar pooled scores exhibit large localization differences and rank reversals under stricter granularities. Second, at the benchmark's test-split size, pooled AUC lacks the resolution to support state-of-the-art margins reported in the field. Within each backbone family, it resolves no comparison at those margins, while within-video AUC resolves several over identical predictions. Learned representations further reveal that within-video anomaly structure and detector localization are decoupled. Third, on normal footage alone, every model we examine separates videos by recording properties, such as resolution and color encoding, indicating that scene sensitivity is shared across the setting rather than specific to any architecture. We publicly release a granularity-aware protocol computable from existing predictions and scene-factor annotations for UCF-Crime.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

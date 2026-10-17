@@ -1,0 +1,13 @@
+{
+  "id": "1b33070a0c89303b",
+  "title": "COBICount: Separating Object and Background Responses for Remote Sensing Object Counting Without Training on Target Data",
+  "link": "https://arxiv.org/abs/2609.39366",
+  "description": "arXiv:2609.39366v1 Announce Type: new \nAbstract: Remote sensing object counting estimates how many buildings, vehicles, or ships appear in overhead images. Most supervised counters predict a density map, whose sum gives the object count, and assume similar categories, sizes, and backgrounds. Applying them across regions, sensors, or categories often requires target data or further training, which may be costly or unavailable. We study source-only counting. Training for the counting task and model selection use one group of images that shares an object category and similar imaging conditions, with one point marking each object. Target images and information remain unavailable until the model is fixed. This reduces data preparation but makes transfer harder. A model trained on one source may place high density values, called responses, on real objects and repeated background structures. Road edges, parking grids, roof boundaries, and water boundaries may then be counted as objects, creating candidate origin ambiguity. COBICount separates response generation, acceptance, and background suppression. Candidate Evidence (CE) generates possible responses. Candidate Acceptance (CA) keeps compact responses centered on objects. Bias Isolation (BI) reduces responses associated with repeated background structures. Their outputs form the final density map. Trained on RSOC Building and evaluated directly on DOTA Large Vehicle, Small Vehicle, and Ship, COBICount achieves the lowest mean absolute error (MAE) averaged over the target domains among the compared methods, 174.132. It uses 5.07 million parameters and 17.41 billion floating point operations for a 512x512 input. COBICount improves transfer without target data or training for each target. The code will be available at: https://github.com/yixuxi22/COBICount.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

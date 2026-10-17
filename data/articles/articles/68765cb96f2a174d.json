@@ -1,0 +1,13 @@
+{
+  "id": "68765cb96f2a174d",
+  "title": "Neural Voxel Dynamics: Learning Volumetric Feature Advection for 3D Physics in V-JEPA Latent Space",
+  "link": "https://arxiv.org/abs/2606.26410",
+  "description": "arXiv:2606.26410v3 Announce Type: replace \nAbstract: We present Neural Voxel Dynamics, a self-supervised framework for learning 3D latent dynamics from monocular video. While generative video models now produce visually compelling motion, their predominantly 2D representations provide limited geometric structure for modeling and controlling physical interactions. Instead, we learn dynamics in a lifted volumetric latent space. Specifically, we unproject semantic Video Joint-Embedding Predictive Architecture (V-JEPA) features into a voxel grid using monocular depth priors, producing a geometrically grounded representation that retains rich video features. We then introduce Volumetric Feature Advection, an action-conditioned transition model that predicts the evolution of these latent features directly in 3D. Unlike hybrid approaches that assume access to privileged physics-engine states or explicit simulation during training and/or inference, we learn only using video-derived supervision and, if available, actions, allowing a single latent dynamics model to represent heterogeneous material-dependent phenomena, unifying rigid-body and fluid dynamics. We evaluate across multiple datasets (synthetic and real) and unseen scenarios (e.g., new boundary conditions, OOD generalization), measuring both predictive fidelity and 3D geometric consistency. We report physical plausibility with Physics-IQ using videos decoded from predicted latent states and videos generated from predicted optical flow. Our results show that geometrically lifting pretrained video latent representations provides a scalable route toward dynamic world models that learn structured 3D physical dynamics without access to privileged simulator state.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

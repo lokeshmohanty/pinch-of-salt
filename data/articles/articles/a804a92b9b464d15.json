@@ -1,0 +1,13 @@
+{
+  "id": "a804a92b9b464d15",
+  "title": "Anatomy-Decomposed Chest Computed Tomography (CT) Projections as Scalable Supervision for Bone Suppression in Chest Radiographs",
+  "link": "https://arxiv.org/abs/2609.24937",
+  "description": "arXiv:2609.24937v1 Announce Type: new \nAbstract: Bone overlap can obscure abnormalities in chest radiographs, while scarce paired training data limit supervised bone suppression. We address this challenge with a digitally reconstructed radiograph (DRR) framework that converts chest computed tomography (CT) into paired supervision for component suppression. A novel bone segmentation algorithm enables CT decomposition into bone, non-lung soft-tissue, and lung components, which are projected separately. Their weighted combination yields synthetic radiographs with pixel-registered component images that sum exactly to the full DRR. Models trained on these data suppress bone or lung components by predicting the target component and recovering the remainder by subtraction, transferring to real radiographs without real paired training data. As an extension, their outputs on real radiographs provide target domains for unpaired, component-wise DRR translation, reducing the appearance gap while retaining anatomical details. Across multiple public datasets, downstream detection experiments demonstrate the utility of bone suppression, with gains concentrated on abnormalities with substantial bone overlap. Compared with open-source DRR engines applied to the same CTs, our unmodified DRRs achieve comparable realism and preservation of label-relevant anatomy, while translated DRRs achieve the best Fr\\'echet inception distance (FID), lung-field sharpness, and agreement with source-CT anatomy among the evaluated methods. Models and inference code: https://huggingface.co/qureaiorg/bone-suppression; Translated projections: https://huggingface.co/datasets/qureaiorg/ct2xr-projections.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

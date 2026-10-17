@@ -1,0 +1,13 @@
+{
+  "id": "6bd0dbb068a92d88",
+  "title": "MemEvo: Automatic Discovery of Streaming Video Memory Mechanisms",
+  "link": "https://arxiv.org/abs/2609.36581",
+  "description": "arXiv:2609.36581v1 Announce Type: new \nAbstract: Query-agnostic streaming video understanding requires vision-language models to continuously compress an indefinitely growing visual stream into a bounded memory before future queries are known. The performance depends critically on the memory mechanism--what observations to preserve, how to represent and consolidate them, and what information to retrieve when a query eventually arrives. Rather than designing a single memory architecture by hand, we formulate memory design as a search problem over executable memory programs. We introduce a lightweight domain-specific language that expresses memory mechanisms through structured primitives for representation, admission, retention, consolidation, budgeting, and retrieval, while enforcing causal and bounded-memory constraints. Although structured, the derived program space remains large and contains heterogeneous, conditionally dependent design choices whose effects can only be assessed via downstream execution. We therefore propose MemEvo, an LLM-driven auto-research framework that uses pretrained LLM as a semantics-aware proposal model to iteratively generate and refine candidate memory programs based on accumulated experimental feedback. At runtime, a deterministic evaluation pipeline validates and evaluates each candidate, while the underlying vision-language model remains frozen throughout discovery. We finally produce a training-free, bounded-memory mechanism. Extensive experiments on StreamingBench and OVO-Bench demonstrate strong streaming video understanding performance together with substantial context and inference efficiency.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

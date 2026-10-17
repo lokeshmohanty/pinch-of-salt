@@ -1,0 +1,14 @@
+{
+  "id": "57bb389462d522fa",
+  "title": "SyzHarness: Patch-Based Kernel Bug Reproduction with LLM-Synthesized Fuzzing Harnesses",
+  "link": "https://arxiv.org/abs/2609.23889",
+  "description": "arXiv:2609.23889v3 Announce Type: replace-cross \nAbstract: Automated kernel vulnerability reproduction is essential for bug triage, patch validation, and regression testing, but still lacks an effective and efficient solution. The core challenge is twofold: a reproducer must first recover the trigger scaffold needed to reach the vulnerable state and determine the precise concrete values that actually trigger the bug. Existing directed fuzzing approaches are ineffective at recovering the necessary trigger scaffold, while LLM-only generation is brittle because it struggles with concrete-value discovery and runtime nondeterminism. We design SyzHarness, a framework that combines LLM reasoning with coverage-guided fuzzing for patch-based Linux kernel vulnerability reproduction. Given a patch, SyzHarness uses an LLM agent grounded by code navigation tools to synthesize a parameterized fuzzing harness that fixes the prerequisite setup logic while exposing only uncertain, bug-critical input parameters to be mutated by Syzkaller. SyzHarness then translates this harness into a Syzkaller compatible interface and iteratively refines it using hierarchical reachability feedback. We evaluate SyzHarness on multiple datasets of triggerable real-world Linux kernel vulnerabilities. On 100 KernelCTF cases, SyzHarness achieves a 78% bug reproduction success rate. On the SyzDirect benchmark, SyzHarness achieves a 73% bug reproduction success rate, substantially outperforming prior directed greybox fuzzing. On 50 recent, known-triggerable syzbot bugs fixed after March 2026, SyzHarness reproduces 40/50 (80%) using only the fix commits as input.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "71d8c51c5d5f03b0",
+  "title": "FineSID: Scalable and Efficient Semantic Identifier Learning for Generative Recommendation",
+  "link": "https://arxiv.org/abs/2609.36670",
+  "description": "arXiv:2609.36670v1 Announce Type: new \nAbstract: A critical prerequisite of generative recommendation is designing semantic identifiers (SIDs) that are both scalable to large item sets and efficiently learnable. Existing SID learning methods fundamentally rely on Top-1 hard assignment during vector quantization. While heuristic strategies -- such as clustering-based initialization or forced post-hoc collision resolution -- can artificially inflate codebook coverage, they often disrupt end-to-end semantic alignment and fail to address the underlying optimization bottleneck: sparse gradient propagation. In standard Top-1 assignment, gradients concentrate on a narrow subset of frequently selected codewords, leaving the majority inherently under-trained and causing severe SID collisions. To overcome this limitation natively without relying on complex initialization priors, we propose FineSID, a unified quantization framework that moves beyond Top-1 assignment by enabling fine-grained gradient propagation across the entire codebook. Instead of updating only a single selected codeword, FineSID distributes learning signals to all codewords in a soft, differentiable manner. This design promotes globally balanced codebook optimization while strictly preserving semantic consistency, effectively alleviating SID collisions and stabilizing training in large, high-dimensional codebooks. Extensive experiments on multiple public benchmarks demonstrate that FineSID is robust to initialization configurations and consistently improves both codebook utilization and recommendation accuracy. Our work provides a principled, initialization-agnostic solution for semantic identifier learning, advancing the practicality of generative recommendation.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

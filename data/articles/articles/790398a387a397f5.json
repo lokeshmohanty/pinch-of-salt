@@ -1,0 +1,14 @@
+{
+  "id": "790398a387a397f5",
+  "title": "Topology-Guided Modular Actor-Critic Learning for Continuous Systems under Temporal Objectives",
+  "link": "https://arxiv.org/abs/2304.10041",
+  "description": "arXiv:2304.10041v3 Announce Type: replace \nAbstract: This work investigates formal policy synthesis for continuous-state stochastic dynamic systems subject to high-level specifications expressed in linear temporal logic. To learn an optimal policy that maximizes the satisfaction probability, we compose the dynamic system with the automaton translated from the specification and solve an optimal planning problem on the resulting product system. Because the product system has a hybrid state space, rewards are sparse. To mitigate this sparsity, we introduce a generalized optimal backup order, defined in reverse to the topological order, that guides value backups and accelerates learning, and we prove that planning under this order preserves optimality. We further present an actor-critic reinforcement learning algorithm that applies whenever a topological order exists. The algorithm evaluates policies by solving a constrained optimization problem with the augmented Lagrangian method, which endows it with hyperparameter self-tuning, and we prove its optimality and convergence in the tabular case. Neural networks approximate the value and policy functions over the hybrid state space. Since encoding automaton states as integers imposes a spurious ordinal relationship on the learned functions, we dedicate an individual neural network to the value (policy) function of each automaton state, a scheme we term modular learning. Two experiments validate the approach: on the classic control task CartPole, our algorithm matches or outperforms standard baselines, and a motion-planning case study of a Dubins car under a temporal specification demonstrates the efficacy of the overall synthesis framework.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "math.OC"
+  ]
+}

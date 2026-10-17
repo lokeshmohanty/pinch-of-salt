@@ -1,0 +1,14 @@
+{
+  "id": "9195646b461caf97",
+  "title": "Runnable Commit Untangling for Coding Agents",
+  "link": "https://arxiv.org/abs/2610.11593",
+  "description": "arXiv:2610.11593v1 Announce Type: cross \nAbstract: Coding agents produce large, tangled patches that mix multiple development purposes, making the code hard to review and maintain. Commit untangling offers the promise of organizing such large patches into untangled, manageable commits. This paper emphasizes two important limitations in existing commit untangling studies. First, they do not consider that untangled commits are ordered and should leave the code runnable. In practice, maintainers are unlikely to accept commits that prevent the code from running. Second, existing studies claim that commit untangling helps software maintenance. However, they conduct syntactic comparisons between the untangled commits and developers' original commits without directly showing the claimed maintenance benefits. To address these gaps, this paper makes two novel contributions: (1) RucTangle, the first agentic method that untangles commits while keeping the code runnable after each commit; and (2) TangleEval, the first evaluation framework that quantifies how untangled, manageable commit histories help coding agents repair bugs. We compare RucTangle against four untangling methods on 131 agent-generated patches. All histories produced by RucTangle are runnable, while baselines produce 20.6%-37.4% unrunnable commit histories. We further collect 453 agent-generated patches that introduce regressions (i.e., causing previously passing tests to fail) and ask two other coding agents to repair regressions. Augmenting agent context with RucTangle-produced histories yields 5.2% absolute improvement in pass@1. We also analyze agent trajectories to learn how they use untangled commits to navigate and fix bugs. Our findings demonstrate the value of adopting established software engineering practices in the era of coding agents, which broaden the future research agenda: how can agents actively use software history to make better development decisions?",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

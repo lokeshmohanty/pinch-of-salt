@@ -1,0 +1,13 @@
+{
+  "id": "dc4a89e80ce0f373",
+  "title": "FTB Graph: Determining and Validating First-token Broadcasters and Language-Identity Head Circuits in Multilingual Language Models",
+  "link": "https://arxiv.org/abs/2609.30954",
+  "description": "arXiv:2609.30954v1 Announce Type: new \nAbstract: Large language models operating in multilingual contexts must resolve target response languages early in generation, yet the causal circuitry governing first-token language identity decisions remains poorly mapped. We present an end-to-end structural circuit analysis across six model architectures spanning four families: GPT-2, BLOOM-560M, Pythia-1B/2.8B, and Qwen2.5-1.5B Base/Instruct. Using Edge Attribution Patching (EAP) with FP16 active clamping, followed by exact activation patching verification with a 2,000-candidate-edge search ceiling, we extract directed acyclic graphs driving first-token language broadcasting. Across the standalone models, we observe deep or mid-to-deep broadcasting hubs, though the evidence is strongest for Pythia-2.8B and BLOOM-560M because GPT-2 and Pythia-1B leave few out-of-graph heads for comparison, while both Qwen2.5-1.5B variants invert the necessity check. Scaling from Pythia-1B to 2.8B expands node participation while maintaining a similar verified edge budget, producing sparser topology. The Qwen2.5-1.5B base and instruct circuits retain 84.7% Jaccard similarity, including the Layer 27 hub, indicating that first-token routing is largely established during pretraining and preserved by instruction tuning. Finally, EAP scores correlate weakly with exact patching deltas across most models, showing that linear gradient approximations can diverge from causal interventions in FP16 and motivating exact-patching verification for reliable circuit discovery.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

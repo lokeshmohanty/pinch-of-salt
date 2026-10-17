@@ -1,0 +1,14 @@
+{
+  "id": "06c66c4b653f6024",
+  "title": "SPARC: Reliable Spatial Annotations from Robot Demonstrations at Scale",
+  "link": "https://arxiv.org/abs/2606.13497",
+  "description": "arXiv:2606.13497v2 Announce Type: replace-cross \nAbstract: This work introduces Spatial Annotations from Robot Demonstrations with Reliability Calibration (SPARC), a risk-aware framework that automatically labels robot demonstrations with structured spatial annotations and assigns each annotation a reliability score. Structured spatial annotations, such as bounding boxes, object trajectories, and manipulation phase labels, benefit a broad range of robotics applications from training grounded robot policies and embodied foundation models to motion planning and hierarchical task composition. Existing automated pipelines generate such annotations at scale but provide no reliable quality signal: detector confidence is poorly calibrated for annotation correctness, forcing a choice between accepting noisy labels or discarding useful samples. In contrast to existing automated pipelines, SPARC leverages the spatio-temporal structure inherent to robot tasks to generate a reliability signal, reducing noisy labels and retaining more useful samples. We further introduce Interaction-Aware Bench (IA-Bench), a benchmark that measures model accuracy in grounding the locations of interacted objects in robot demonstrations. On 1.7k human-annotated demonstrations spanning diverse embodiments and scenarios, SPARC significantly outperforms detection-only baselines in localization accuracy while retaining three times more samples at high-precision operating points. Our experiments demonstrate that models finetuned on our annotations achieve state-of-the-art results on object-grounding and pointing benchmarks among similarly sized models, while remaining competitive on broader spatial-reasoning suites without manually verified or annotated training data. Furthermore, policies trained on SPARC-generated annotations outperform baselines in cluttered, visually ambiguous real-world scenes. Code, data, and models are available at intuitive-robots.github.io/sparc-labeling.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

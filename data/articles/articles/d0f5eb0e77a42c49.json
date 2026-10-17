@@ -1,0 +1,13 @@
+{
+  "id": "d0f5eb0e77a42c49",
+  "title": "Interpretable Image-Level Acne Severity Grading via EfficientNet-B0 Transfer Learning and Grad-CAM",
+  "link": "https://arxiv.org/abs/2607.26461",
+  "description": "arXiv:2607.26461v1 Announce Type: new \nAbstract: Acne vulgaris affects most adolescents and many adults. Accurate severity grading guides treatment, monitoring, and clinical trial endpoints, but manual assessment using the Investigator's Global Assessment or Hayashi criteria is limited by inter-rater variability and inconsistent imaging conditions. We developed a four-class acne severity classifier based on the Hayashi criteria using transfer learning with an ImageNet-pretrained EfficientNet-B0 model. The model was fine-tuned on the public ACNE04 dataset of 2,983 labeled images using AdamW optimization, geometric and photometric augmentation, and checkpoint selection based on validation macro-F1. On a held-out stratified 15 percent test set, the classifier achieved 93.5 percent accuracy and 94.4 percent macro-F1, with per-class F1 scores from 0.92 to 0.97. Eighty-three percent of errors occurred between adjacent grades. Quadratic-weighted Cohen's kappa was 0.956, with a 95 percent confidence interval of 0.935 to 0.973. Bootstrap confidence intervals indicated stable performance. Grad-CAM visualizations from the final convolutional block focused on clinically relevant facial regions, including the forehead, cheeks, and chin. The complete pipeline is provided as functionally equivalent open-source implementations in Python using PyTorch and timm, and in MATLAB R2026a. The software includes a clinician-facing inference interface and a fallback backbone option that supports operation without specialized pretrained-weight packages. These results show that lightweight transfer learning can provide accurate, balanced, and interpretable acne severity grading while offering a reproducible cross-platform reference for future prospective and device-stratified clinical validation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

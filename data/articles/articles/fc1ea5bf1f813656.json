@@ -1,0 +1,14 @@
+{
+  "id": "fc1ea5bf1f813656",
+  "title": "Do LLMs Benefit From Their Own Words?",
+  "link": "https://arxiv.org/abs/2602.24287",
+  "description": "arXiv:2602.24287v2 Announce Type: replace-cross \nAbstract: In multi-turn conversations, large language models typically condition on the full conversation history: both past user prompts and assistant responses. We revisit this design choice by comparing full-context prompting to four alternative, substantially-reduced context configurations. Analyzing in-the-wild multi-turn conversations across three open reasoning and one state-of-the-art model, we find that response quality is largely preserved under aggressive context filtering: replacing all prior assistant turns with one-sentence summaries or keeping only the most recent user--assistant exchange often matches storing full context in performance while using roughly 8x less context. To understand this result, we observe that a substantial fraction of user turns (36.4%) in multi-turn conversations are self-contained and that many follow-up turns can be addressed by seeing only the immediately preceding user--assistant exchange. Furthermore, we find that when models condition on their own past responses, this can lead to context pollution, a phenomenon in which reasoning errors, hallucinations, or stylistic artifacts propagate across turns. Motivated by these findings, we design a context-filtering approach that selectively omits the assistant-side history. Taken together, these findings suggest moving away from storing full dialogue transcripts and instead retaining only what is relevant.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

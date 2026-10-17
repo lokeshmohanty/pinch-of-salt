@@ -1,0 +1,13 @@
+{
+  "id": "f2c5d930bcc6b2f8",
+  "title": "Matilda: Engine-Agnostic Search with Human Policy Guidance",
+  "link": "https://arxiv.org/abs/2606.25176",
+  "description": "arXiv:2606.25176v3 Announce Type: replace \nAbstract: Chess engines have evolved from search-based systems optimized for strength to neural policies optimized for predicting human decisions. Existing approaches largely separate these goals: search engines achieve superhuman strength but poorly model humans, while models such as Maia-3 capture rating-conditioned behavior yet degrade at elite levels. We present Matilda, a modular residual re-ranking architecture that decouples behavioral priors from tactical search, combining a frozen human policy with an engine-agnostic search backend through a lightweight residual model. Matilda learns residual corrections over the full legal-move distribution from frozen policy context, time control, player-style embeddings, and search-derived candidate features. A zero-initialized residual head exactly recovers the frozen policy before training while optimization minimizes negative log-likelihood (NLL). Instantiated with Maia-3 and Stockfish, Matilda reduces human-move prediction NLL by 18.5% and raises top-1 accuracy from 60.1% to 66.1% on temporally held-out verified-human 3000+ Elo Lichess blitz games, with player-style embeddings contributing a further 1.8% and +0.2 percentage points (pp) respectively. Seed-paired ablations attribute these gains to search rather than additional data; the findings are replicated in Go -- decomposing expert play into recognition and verified calculation. Below 2500 Elo, where search annotations are unavailable, Matilda preserves Maia-3's performance.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

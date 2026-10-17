@@ -1,0 +1,14 @@
+{
+  "id": "2f24e986f94cdbab",
+  "title": "Phase Transition Frequency as a Training Time Predictor of Test Accuracy in ResNets",
+  "link": "https://arxiv.org/abs/2609.05194",
+  "description": "arXiv:2609.05194v1 Announce Type: cross \nAbstract: The number of discrete class-separability jumps observed during ResNet finetuning is examined empirically as a predictor of final test accuracy. Across 75 experiments spanning four benchmarks (CIFAR-10, CIFAR-100, TinyImageNet, and CIFAR-10-C) and three architectures (ResNet-18, ResNet-50, and ResNet-101), with five to ten seeds per configuration, a strong within-dataset negative correlation is obtained on standard i.i.d. classification benchmarks: \\(r = -0.84\\) on CIFAR-10 (\\(p < 10^{-8}\\), \\(n = 30\\)) and \\(r = -0.87\\) on CIFAR-100 (\\(p < 10^{-5}\\), \\(n = 15\\)). Under distributional stress, the relationship attenuates: TinyImageNet yields \\(r = -0.45\\), and the CIFAR-10-C corruption benchmark yields \\(r = -0.19\\). Two additional analyses discipline the empirical claim. A partial correlation controlling for architecture depth, treated as a linear covariate, shows that on CIFAR-100 the transition count retains statistically significant predictive power (\\(r_{\\mathrm{partial}} = -0.69\\), \\(p = 0.007\\)); the corresponding result under the stricter categorical conditioning is not established at \\(n = 15\\). A comparison against six alternative training-curve signals shows that transition count achieved the strongest correlation among the evaluated signals on CIFAR-100 and one of the strongest on CIFAR-10, but is dominated by other signals on the two stressed benchmarks. The comparison is restricted to training-curve-level signals; comparisons against effective rank, Hessian sharpness, Fisher information, margin, and neural-collapse measures, which are the strongest competitors in the current literature, are not part of the present study and remain open. The observation is presented as an in-distribution training-quality probe among a family of candidate probes, and an inexpensive detection procedure suitable for logging alongside a standard training loop is provided.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

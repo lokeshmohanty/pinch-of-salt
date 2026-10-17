@@ -1,0 +1,13 @@
+{
+  "id": "18a74db833c56d2d",
+  "title": "Efficient Unified Multimodal Understanding (EUMU): Winning Solution for the MUMU Track at the 8th LSVOS Challenge",
+  "link": "https://arxiv.org/abs/2609.19451",
+  "description": "arXiv:2609.19451v1 Announce Type: new \nAbstract: The Mobile Unified Multimodal Understanding (MUMU) Challenge requires a single efficient model to jointly perform multi-concept image tagging, open-vocabulary object detection, and image captioning. We present Efficient Unified Multimodal Understanding (EUMU), the winning solution for the MUMU Track of the 8th LSVOS Challenge. EUMU builds on a shared pretrained multimodal model, using its prompt-based capabilities for detection and captioning and training lightweight heads on shared visual features to predict quality, scene, and event tags. Rather than treating the three tasks independently, EUMU applies task-aware inference refinement by reusing task outputs as cross-task cues. For detection, caption cues help recover objects missed by the initial detection. For captioning, detection cues help refine the caption to better reflect the detected objects. For tagging, image statistics refine quality predictions, while caption and detection cues refine scene and event predictions. This design unifies all three tasks within a single model while satisfying the challenge's resource constraints. EUMU contains 239.169M parameters, requires 23.947 GFLOPs, uses 4.5 GB of peak inference memory, and achieves a final challenge score of 17.3409. Code and models are available at https://github.com/Dayoung-Kil/EUMU.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

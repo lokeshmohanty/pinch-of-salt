@@ -1,0 +1,13 @@
+{
+  "id": "d97ae611dfde6c39",
+  "title": "Streaming-Aware Diffusion for Real-Time Video Super-Resolution via Cross-Step Attention",
+  "link": "https://arxiv.org/abs/2610.11746",
+  "description": "arXiv:2610.11746v1 Announce Type: new \nAbstract: Real-time video super-resolution requires high spatio-temporal fidelity under strict latency constraints, challenging diffusion models due to their iterative sampling cost and limited temporal coordination. We propose a streaming-aware framework that adapts pretrained single-image latent diffusion models for efficient video super-resolution (VSR) by exploiting the sequential structure of video streams. Our Cross-Step Attention mechanism reuses intermediate denoising features across adjacent frames and diffusion steps, enabling temporal information exchange without explicit temporal modeling. We further introduce Trajectory-Coupled Diffusion Scheduling, which aligns adjacent diffusion states and provides cleaner intermediate representations for cross-step conditioning, improving temporal coherence. These components are integrated into a streaming inference pipeline that incrementally propagates latent states across frames, reducing the effective computational complexity from $O(N \\cdot S)$ to $O(N + S)$ for $N$ frames and $S$ diffusion steps. Experiments on REDS4 and YouHQ40-Test demonstrate improved perceptual quality and temporal realism while maintaining frame-wise stability. Our method achieves over 40 FPS at $512 \\times 512$ resolution after cold start, enabling real-time VSR without explicit temporal modeling.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

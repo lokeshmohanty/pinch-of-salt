@@ -1,0 +1,15 @@
+{
+  "id": "a603e0d99451cd7d",
+  "title": "Attention Calibration for Position-Fair Dense Retrieval",
+  "link": "https://arxiv.org/abs/2606.02737",
+  "description": "arXiv:2606.02737v3 Announce Type: replace-cross \nAbstract: Dense retrieval compresses a passage into a single vector, but this compression is positionally skewed: early content dominates the embedding, and retrieval degrades when the relevant span appears later. Prior work proposed an inference-time method that counteracts this skew by equalizing the pooling token's attention across passage segments. However, (i) it redistributes attention at a fixed strength, (ii) it forces the pooling token's attention to itself to a fixed basket-level mass despite substantial variation across layers and architectures, and (iii) its effect on retrieval has not been evaluated. We introduce a strength coefficient that interpolates between uncalibrated and fully equalized attention, together with an efficient implementation that reduces peak calibration memory overhead from 5-7 GiB to under 1 MiB. Across three embedding models and two pooling schemes, moderate calibration provides a better retrieval trade-off than full equalization. We introduce a variant that preserves the pooling token's self-attention mass and redistributes only the remaining mass. On a position-aware retrieval benchmark spanning 10 languages and 31 domains, a configuration selected on English FineWeb-PosQ and transferred without tuning reduces position sensitivity in all 16 evaluated length-quartile, model, and retrieval-setting combinations, by up to 43% relative, while improving nDCG@10 by up to 4.8% relative and leaving general retrieval effectiveness on NanoBEIR essentially unchanged. Calibration runs at indexing time, adding no query-time latency. We release our code at github.com/impresso/fair-sentence-transformers",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

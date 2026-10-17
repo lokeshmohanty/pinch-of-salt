@@ -1,0 +1,16 @@
+{
+  "id": "a562e25da9f3bee1",
+  "title": "Mesh-Native Tokenisation: Retrofitting Foundation Models to Unstructured Data",
+  "link": "https://arxiv.org/abs/2610.12618",
+  "description": "arXiv:2610.12618v1 Announce Type: cross \nAbstract: Physics foundation models are an increasingly popular approach for building versatile emulators for spatiotemporal systems. They require tokenisation layers that lift physical field data into a latent representation suitable for dynamic processing. A typical choice for this layer is a convolutional encoder, which lifts field information in a locality-aware way and can be trained very efficiently. However, this choice cannot be applied to a large class of scientific computing problems where data are represented on unstructured meshes, for example simulations on domains with curved boundaries. Such data typically require graph neural network architectures, which are more expensive to train and, in the form currently used, encode information differently from their CNN counterparts, thus limiting the portability of physics emulators between these data regimes. In this work we introduce Mesh-Native Convolution (MNC), a locality-aware tokenisation layer that encodes unstructured mesh-based data in a way that is analogous to CNNs. This approach leads to models that can be trained once on mesh data and then deployed to arbitrary unstructured meshes, even if these are irregular, with minimal retraining. We show that this tokenisation approach can be used to retrofit grid-pretrained foundation models efficiently on unstructured meshes and provide theoretical results to confirm the consistency of this approach with classical CNN encoders. We demonstrate the favourable performance of this retrofitting approach, which in many cases reaches acceptable accuracy even in zero-shot deployment, and outperforms existing baselines after only a few epochs of fine-tuning, thus providing an efficient bridge between the two data regimes.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CE",
+    "cs.AI",
+    "cs.NA",
+    "math.NA"
+  ]
+}

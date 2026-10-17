@@ -1,0 +1,14 @@
+{
+  "id": "e24ab95499d70b7b",
+  "title": "Dual Randomized Smoothing: Beyond Global Noise Variance",
+  "link": "https://arxiv.org/abs/2512.01782",
+  "description": "arXiv:2512.01782v4 Announce Type: replace-cross \nAbstract: Randomized Smoothing (RS) is a prominent technique for certifying the robustness of neural networks against adversarial perturbations. With RS, achieving high accuracy at small radii requires a small noise variance, while achieving high accuracy at large radii requires a large noise variance. However, the global noise variance used in the standard RS formulation leads to a fundamental limitation: there exists no global noise variance that simultaneously achieves strong performance at both small and large radii. To break through the global variance limitation, we propose a dual RS framework which enables input-dependent noise variances. To achieve that, we first prove that RS remains valid with input-dependent noise variances, provided the variance is locally constant around each input. Building on this result, we introduce two components: (i) a variance estimator predicts an optimal noise variance for each input, (ii) this estimated variance is then used by a standard RS classifier. The variance estimator is independently smoothed via RS to ensure local constancy, enabling flexible design. We also introduce training strategies to iteratively optimize the two components. Experiments on CIFAR-10 demonstrate that our dual RS method provides strong performance for both small and large radii-unattainable with global noise variance-while incurring only a 60% computational overhead at inference. Moreover, it outperforms prior input-dependent noise approaches across most radii, with gains at radii 0.5, 0.75, and 1.0 of 15.6%, 20.0%, and 15.7%. On ImageNet, dual RS remains effective across all radii, with advantages of 8.6%, 17.1%, and 9.1% at radii 0.5, 1.0, and 1.5. Additionally, the dual RS framework provides a routing perspective for certified robustness, improving the accuracy-robustness trade-off with off-the-shelf expert RS models.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

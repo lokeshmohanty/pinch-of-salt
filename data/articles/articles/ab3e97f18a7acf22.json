@@ -1,0 +1,14 @@
+{
+  "id": "ab3e97f18a7acf22",
+  "title": "The Evidence Anchoring Boundary: Where Visual Interventions Matter and When They Help in Multimodal LLMs",
+  "link": "https://arxiv.org/abs/2610.12981",
+  "description": "arXiv:2610.12981v1 Announce Type: cross \nAbstract: Visual interventions provide a training-free way to reduce hallucinations in multimodal large language models. However, an intervention may have little leverage at some layers and may damage a correct answer even when it changes the output. We investigate where visual interventions retain leverage and when they improve predictions. First, we apply the same visual-residual edit at successive decoder layers, matching its RMS strength across depth. Across six checkpoints from three model families, we observe a persistent drop in intervention effect and define its operational onset for this edit as the \\textbf{Evidence Anchoring Boundary (EAB)}. With boundaries fixed on calibration queries, held-out effects on disjoint evaluation queries before EAB are $13.78\\times$--$26.10\\times$ larger than those after it. Comparison with intermediate readouts shows that the edit can lose leverage before answer preferences stabilize. Second, we compare counterfactual subtraction across presence, attribute, and relation questions. Subtraction can correct a misleading preference, leave a decision unchanged, or remove a preference supporting the correct answer. Based on these observations, we develop calibrated selective routing, which preserves the original prediction unless calibration supports an intervention for the question type. It improves full-set attribute accuracy by $1.56$--$1.81$ percentage points across three checkpoints, while universal subtraction is neutral or harmful.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1f92245b4bc28082",
+  "title": "Online Multi-Camera 3D Tracking via ID Prediction over Recurrent Sparse Queries",
+  "link": "https://arxiv.org/abs/2609.18363",
+  "description": "arXiv:2609.18363v1 Announce Type: new \nAbstract: Online multi camera 3D tracking must maintain scene global identities across synchronized views, yet query-based trackers carry these identities only implicitly in the instance bank, where they fragment upon query interruption. We present an online architecture that recovers association accuracy by predicting IDs explicitly over recurrent sparse queries. An outside-in Sparse4D detector fuses calibrated views into world frame 3D detections while propagating a sparse query bank, and a causal MOTIP ID decoder associates detections against a finite trajectory memory. We adapt MOTIP's relative-ID prediction and recycled slot runtime to globally fused 3D observations, and introduce metric spatial gating and proximity based newborn recovery. On the official 2026 AI City Challenge Track 1 test set, our method raises HOTA from 29.63 with native instance bank identities to 38.01, primarily through an AssA increase from 20.83 to 31.10, and ranks third on the public leaderboard. Full-sequence validation over all 9,000 frames of each scene shows that decoupled ID training improves HOTA over native identities, whereas continuing detector training alongside the detached ID objective produces scene-dependent gains and losses.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5419a1351004e7cf",
+  "title": "Frequency-Aware Model Parameter Explorer: A new attribution method for improving explainability",
+  "link": "https://arxiv.org/abs/2510.03245",
+  "description": "arXiv:2510.03245v3 Announce Type: replace-cross \nAbstract: State-of-the-art attribution methods such as AttEXplore rely on adversarial sample generation that applies an all-pass filter across the frequency spectrum: they perturb all frequencies of the input image alike, from the low frequencies that carry coarse shape to the high frequencies that carry edges and textures. However, models rely on low and high frequencies to different degrees, and such an all-pass perturbation cannot adapt to the model being explained, which limits the faithfulness of the resulting attribution maps. We propose FAMPE (Frequency-Aware Model Parameter Explorer), an attribution method that overcomes this limitation by perturbing the low- and high-frequency bands of the input independently, so that the perturbation can be shifted toward the band that matters for the model. The boundary between the two bands is set for each image automatically from its spectral energy. On ImageNet with five convolutional neural network and Vision Transformer architectures, FAMPE significantly improves the Insertion Score over the strongest baseline, AttEXplore, on four of them, by up to 15.4%, at essentially the same computational cost. How the perturbed frequency bands are weighted matters: the best and the worst balance between them differ by 19-36% in Insertion Score, and the best balance depends on the architecture. Choosing the balance for each image with a probe that needs no ground truth raises the Insertion Score significantly further on all five architectures, reaching up to 24.4% above AttEXplore. Controlling which frequency band is perturbed is therefore a simple, low-cost way to improve attribution faithfulness.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

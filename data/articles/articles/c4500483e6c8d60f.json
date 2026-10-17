@@ -1,0 +1,13 @@
+{
+  "id": "c4500483e6c8d60f",
+  "title": "Cryo-Bench: Benchmarking Foundation Models for Cryosphere Mapping",
+  "link": "https://arxiv.org/abs/2603.01576",
+  "description": "arXiv:2603.01576v4 Announce Type: replace \nAbstract: Geo-Foundation Models (GFMs) have been evaluated across diverse Earth observation tasks and domains, showing strong potential to produce reliable maps even with sparse labels. However, systematic benchmarking of GFMs for Cryosphere applications remains limited, primarily because suitable evaluation datasets are scarce. We address this gap by introducing Cryo-Bench, a benchmark comprising six semantic segmentation datasets covering five cryospheric components: supraglacial debris, glacial lakes under two sensing configurations, sea ice, calving fronts and Antarctic ice-shelf extent. The benchmark includes multispectral, RGB, and synthetic aperture radar observations from regions underrepresented in existing pretraining archives. We evaluate thirteen GFMs alongside U-Net and Vision Transformer baselines trained from scratch under a unified evaluation protocol. With frozen encoders, the U-Net achieves the highest six-dataset average mean intersection over union (mIoU) of 68.22\\%, slightly exceeding TerraMind (67.86\\%). However, the paired difference of 0.36 percentage points has a 95\\% confidence interval of [-0.15, +0.89], indicating that the observed ordering is not statistically significant. Fine-tuning with a fixed learning rate produces mixed outcomes, with leading models such as TerraMind and DOFA experiencing declines in average mIoU (-1.2 and -1.7). In contrast, learning-rate optimization substantially improves fine-tuning performance: DOFA reaches 93.97\\% mIoU on the RGB glacial lake task, ranking the U-Net fourth, while Scale-MAE and GFM-Swin surpass U-Net on calving fronts. In the few-shot setting, five GFMs outperform U-Net, retaining 91.1\\% of their full-label accuracy compared with 86.1\\% for U-Net.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

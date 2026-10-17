@@ -1,0 +1,13 @@
+{
+  "id": "cde0b022229dbe6f",
+  "title": "Token Radius Attention for Efficient Video Generation",
+  "link": "https://arxiv.org/abs/2608.02504",
+  "description": "arXiv:2608.02504v1 Announce Type: new \nAbstract: Video Diffusion Transformers (VDiTs) enable high-fidelity generation but incur quadratic cost from dense 3D self-attention. Existing head- and block-level sparse methods share computation budgets across queries, overlooking token-specific attention demand. We observe that retained density varies across queries yet correlates log-linearly with attention entropy, while dominant interactions form query-centered neighborhoods with token-dependent radii. Based on these findings, we propose Token Radius Attention (TRA), a training-free framework that maps query entropy to an analytic token budget and converts it into a temporally decayed radius without explicit key ranking. Fused entropy extraction, warm-up reuse, and block-sparse mask construction further reduce overhead. Across seven Wan2.1, Wan2.2, and HunyuanVideo T2V/I2V configurations, TRA retains only 9-19% of attention interactions and achieves 1.56x-2.05x speedup with competitive generation quality. Code is available at https://github.com/IF-LAB-PKU/Token-Radius-Attention.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

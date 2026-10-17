@@ -1,0 +1,13 @@
+{
+  "id": "a8ed6bb108cd8f24",
+  "title": "Data-free Multistep Diffusion Distillation",
+  "link": "https://arxiv.org/abs/2610.19305",
+  "description": "arXiv:2610.19305v1 Announce Type: new \nAbstract: One-step diffusion distillation achieves strong performance on small datasets but remains insufficient for high-resolution or complex text-to-image settings. Extending to multistep distillation often requires training data, suffers from early-step degradation, inconsistent outputs across sampling budgets, and incurs high computational cost. We identify that these limitations stem from simultaneous training, where a single adapted network approximates multiple score functions of different student distributions at once, causing biased distribution matching and unstable optimization. Therefore, we propose Progressive Multistep Data-free Distillation (PMDD), which assigns a dedicated adapted network per student distribution while avoiding the memory overhead of maintaining multiple adapted networks. Combined with a stage-wise unforget loss to preserve earlier-step generations, PMDD reduces optimization bias in the student, provides faster convergence, and a single unified model that supports multiple inference budgets. Extensive experiments show that PMDD matches or outperforms data-free few-step baselines at every multistep budget, reaches FID 1.99 on ImageNet 64x64 in two steps, below its 512-NFE teacher (2.32), and achieves FID 7.76 on zero-shot COCO 512x512, while requiring 4-5x less training compute than data-free DMDv2 to support three inference budgets.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "61242d84fc33b660",
+  "title": "Enabling Preference-driven Unlearning in Few-step Distilled Text-to-Image Diffusion Models",
+  "link": "https://arxiv.org/abs/2610.10859",
+  "description": "arXiv:2610.10859v1 Announce Type: new \nAbstract: Text-to-image diffusion models are increasingly distilled into few-step variants and being deployed to enable fast inference. However, their ability to generate harmful or undesired content poses significant safety risks. Data-driven unlearning methods suppress targeted generations by fine-tuning model weights using specialized unlearning objectives. Crucially, these objectives implicitly rely on multi-step denoising dynamics, an assumption that breaks down for few-step distilled (FSD) models, resulting in ineffective forgetting. Furthermore, performing unlearning on the non-distilled base model and subsequently re-distilling it to obtain an unlearned FSD model incurs substantial computational and time overhead, making it impractical in many settings. Hence, we address this limitation with a preference-driven unlearning framework that revisits Direct Preference Optimization (DPO) for diffusion models. We show that standard DPO and its unlearning derivatives, formulated around noise-prediction error, transfer poorly to FSD models due to their altered generation dynamics. To overcome this, we introduce a modified preference optimization formulation explicitly aligned with the few-step generation properties, enabling direct concept removal in FSD models while preserving few-step efficiency and maintaining strong retention of desirable (non-targeted) capabilities. We evaluate our framework primarily on identity and NSFW (nudity) removal tasks and also extend our method to object-level unlearning. Extensive experiments demonstrate consistent and effective forgetting, and strong retention performance, establishing our method as a practical and principled solution for unlearning in FSD models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

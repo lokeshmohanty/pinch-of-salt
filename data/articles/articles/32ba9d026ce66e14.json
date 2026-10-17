@@ -1,0 +1,14 @@
+{
+  "id": "32ba9d026ce66e14",
+  "title": "SpreadMark: Robust Image Watermarking via Spread-Spectrum Embedding",
+  "link": "https://arxiv.org/abs/2608.03165",
+  "description": "arXiv:2608.03165v2 Announce Type: replace-cross \nAbstract: Invisible image watermarks are increasingly used for deepfake detection and provenance tracking, where they must survive not only incidental distortions but also deliberate removal. We revisit spread-spectrum embedding, a classical watermarking principle, inside a modern neural post-hoc watermarking architecture. Our starting point is a measurement: in existing encoder-decoder schemes each message bit occupies only a small fraction of the image, a shared contributing factor to their fragility, since removal then need only disturb the region a bit occupies. SpreadMark instead spreads each bit as a dense pseudo-random codeword over the whole image and recovers it by matched-filtering a learned cover-suppressed chip representation, with a parallel convolutional decoding path and sparsification-aware training. A conditional chip-space analysis shows that, under a codeword-independent perturbation model, dense spreading increases the budget required to disrupt matched-filter recovery. Evaluated on COCO and DIV2K against nine schemes, SpreadMark is the only evaluated method retaining high detection under both the regeneration and the latent-space sparsification settings we test, with competitive JPEG and additive-noise robustness. It keeps the embedded watermark imperceptible, maintaining high perceptual quality on both COCO and DIV2K.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.CV"
+  ]
+}

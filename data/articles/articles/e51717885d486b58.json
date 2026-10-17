@@ -1,0 +1,13 @@
+{
+  "id": "e51717885d486b58",
+  "title": "RASSG: Repair-Aware Semantic Survival Gating for Streaming Tool Execution",
+  "link": "https://arxiv.org/abs/2610.14659",
+  "description": "arXiv:2610.14659v1 Announce Type: new \nAbstract: Streaming speech assistants can launch tools before users finish speaking, overlapping execution with incoming speech to reduce user waiting time. However, subsequent self-corrections can invalidate apparently stable arguments, causing stale execution whose irreversible effects persist even after the final call is corrected. We propose Repair-Aware Semantic Survival Gating (RASSG) to jointly control tool launch and cancellation during streaming speech. RASSG launches a tool when three consecutive speech recognition results arrive with identical nonempty arguments, then combines calibrated argument invalidity risk with execution costs to decide cancellation at the last feasible opportunity before effects become irreversible. Evaluation on ReCAST, FDB-v3, and Audio2Tool uses a controlled execution clock with fixed tool runtimes and cancellation parameters. On ReCAST's prospective-repair subset, RASSG reduces the stale execution rate from LocalAgreement-2's 50.00% to 3.15%, with a mean delay of 3.676s across successful trajectories. The stale reduction also holds against every early-execution baseline on both public speech datasets. Ablations with identical initial launches support active cancellation, showing the value of controlling ongoing calls before their effects become irreversible. Code and data are available at https://github.com/daijinhu/RASSG.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

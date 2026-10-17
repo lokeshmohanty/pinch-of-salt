@@ -1,0 +1,15 @@
+{
+  "id": "35fdc37fcd162b31",
+  "title": "Space Over Statistic, Retraining Over Ranking: Auditing Training Labels Under Label-Only Backdoors",
+  "link": "https://arxiv.org/abs/2610.13051",
+  "description": "arXiv:2610.13051v1 Announce Type: cross \nAbstract: Some backdoor attacks never touch an image. FLIP only changes labels: on CIFAR-10, flipping 3% of them makes a ResNet-32 send 99.7% of triggered source-class images to the attacker's class. The usual defenses look for the poison inside a model trained on those same labels. So when they struggle, is the problem the test they run, or the space they run it in?\n  We answer with a controlled swap: we keep the test, the labels and the metric fixed, change only the feature space, and judge each defense by retraining the victim on what it keeps. The space decides. On dog$\\to$cat the same nearest-neighbor check scores AUROC 0.546 on the poisoned model's features, 0.967 on frozen DINOv2 features that never saw a label, and 0.995 on the same network trained on clean labels, an oracle control rather than a defense. We reproduce SPECTRE, the defense FLIP's authors recommend, to 90.94 / 0.97 against its published 91.47 / 1.7, then price it: on truck$\\to$deer it deletes 20% of every class, while a prototype audit on the frozen features deletes 6% for higher clean accuracy and lower attack success. On three harder pairs that audit leaves about a quarter of the attack standing. A count read off encoder geometry and clean labels, before any attack is run, separates the pair where the audit removes the attack from those where it only partly does, though on a single zero-count pair.\n  Three results warn against the easy story. A better detection score does not mean a safer model: on two of four pairs Confident Learning scores the higher AUROC, and on dog$\\to$cat leaves 2.6 times the attack success. The prototype family, our best static performer, is the first an adaptive attacker slips past. And past a point, catching more poisons stops reducing attack success. Check labels in a space that never learned them, and judge a defense by the retrained model, not by its detection score.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

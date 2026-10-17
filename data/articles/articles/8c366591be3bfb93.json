@@ -1,0 +1,13 @@
+{
+  "id": "8c366591be3bfb93",
+  "title": "SlowFast-SCI: Slow-Fast Deep Unfolding Learning for Spectral Compressive Imaging",
+  "link": "https://arxiv.org/abs/2509.16509",
+  "description": "arXiv:2509.16509v3 Announce Type: replace \nAbstract: Humans learn in two complementary ways: a slow, cumulative process that builds broad, general knowledge, and a fast, on-the-fly process that captures specific experiences. Existing deep-unfolding methods for spectral compressive imaging (SCI) mirror only the slow component-relying on heavy pre-training with many unfolding stages-yet they lack the rapid adaptation needed to handle new optical configurations. As a result, they falter on out-of-distribution cameras, especially in bespoke spectral setups unseen during training. This depth also incurs heavy computation and slow inference. To bridge this gap, we introduce SlowFast-SCI, a dual-speed framework seamlessly integrated into any deep unfolding network beyond SCI systems. During slow learning, we pre-train or reuse a priors-based backbone and distill it via imaging guidance into a compact fast-unfolding model. In the fast learning stage, lightweight adaptation modules are embedded within each stage and fine-turned self-supervised at test time via a self-supervised loss-without retraining the backbone. To the best of our knowledge, SlowFast-SCI is the first testtime adaptation-driven deep unfolding framework for efficient, self-adaptive spectral reconstruction. Its dual-stage design unites offline robustness with on-the-fly per-sample calibration-yielding over 70% reduction in parameters and FLOPs, up to 5.79 dB PSNR improvement on out-of-distribution data, preserved cross-domain adaptability, and a 4x faster adaptation speed. In addition, its modularity integrates with any deep-unfolding network, paving the way for self-adaptive, field-deployable imaging and expanded computational imaging modalities. Code is available in Supplementary Material. The models, datasets, and code are available at https://github.com/XuanLu11/SlowFast-SCI.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

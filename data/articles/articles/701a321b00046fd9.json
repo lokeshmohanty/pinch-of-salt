@@ -1,0 +1,13 @@
+{
+  "id": "701a321b00046fd9",
+  "title": "From Glance to Focus: Mitigating Recognition Laziness in MLLMs for Fine-Grained Recognition",
+  "link": "https://arxiv.org/abs/2610.13154",
+  "description": "arXiv:2610.13154v1 Announce Type: new \nAbstract: Multimodal Large Language Models (MLLMs) generally fall short of expectations in Fine-Grained Visual Recognition (FGVR), although they exhibit promising FGVR foundations, i.e., visual perception and broad category knowledge. Most existing studies seek to remedy this deficiency by adopting domain-specific post-training, at the risk of compromising generalization to unseen domains. Different from these efforts, in this paper, we revisit the FGVR mechanism underlying MLLMs from both the empirical and theoretical perspectives and uncover an inference-time phenomenon termed FGVR Laziness. In brief, FGVR Laziness refers to the insufficient association between visual cues and category concepts under certain candidate category lists and recognition guidance, leaving the FGVR foundations of MLLMs largely under-utilized. To mitigate FGVR Laziness, we propose Laziness-resIstant Visual rEcognition (LIVE), a training-free framework which jointly refines candidate lists and recognition guidance to elicit the latent FGVR capability of MLLMs. Specifically, LIVE first performs query-adaptive candidate inference to derive a compact yet reliable candidate list. Meanwhile, LIVE constructs category-specific FGVR skills by mining the intra-category characteristics and inter-category differences. Finally, LIVE selectively invokes detailed skill guidance according to recognition uncertainty and category confusion, shifting MLLM-based FGVR from a cursory glance to a focus on associating discriminative visual cues with category concepts. Extensive experiments on 13 benchmarks against 24 state-of-the-art methods spanning fine-grained category recognition, action recognition, and general category recognition, verify the effectiveness and generalizability of LIVE across different MLLM backbones. The code will be released upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

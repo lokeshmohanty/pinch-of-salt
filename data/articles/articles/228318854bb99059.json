@@ -1,0 +1,14 @@
+{
+  "id": "228318854bb99059",
+  "title": "Beyond aggregate scores: Deployment-aware and non-compensatory benchmarking of vision-based eye-state recognition models for driver monitoring",
+  "link": "https://arxiv.org/abs/2606.08123",
+  "description": "arXiv:2606.08123v2 Announce Type: replace-cross \nAbstract: Model selection for safety-relevant visual recognition is often based on clean aggregate performance, although robustness, transfer, embedded latency, and explanation faithfulness may produce different preferences. This study presents a Human-Centered Benchmarking Framework (HCBF) that separates multidimensional evidence from non-compensatory operational eligibility. Six compact convolutional and transformer-oriented eye-state recognition models were evaluated using a subject-disjoint MRL Eye protocol, deterministic image corruptions, zero-shot transfer and participant-safe target-domain training with out-of-fold evaluation on RT-BENE, TensorRT FP32 inference on an NVIDIA Jetson Nano, and black-box RISE faithfulness. Clean MRL Macro-F1 ranged from 0.9566 to 0.9794, whereas zero-shot RT-BENE Macro-F1 ranged from 0.2066 to 0.7771. Matched target-domain effects varied from -0.0406 to 0.4807 and redistributed the two directional errors differently across architectures. Only MobileNetV3-Large and ShuffleNetV2 met the 33.333-ms binocular-pair latency deadline, while neither passed the predefined safety-related screen. The remaining four models failed both requirements, yielding an empty eligible set. Normalized deletion AUC ranged from 0.5826 to 0.9113, while normalized insertion coverage varied from 17.6% to 88.6%. Model ordering changed across clean prediction, corruption robustness, transfer, deployment, faithfulness, and historical score sensitivity. These findings show that relative ranking, multidimensional preference, and operational eligibility are distinct decisions. Deployment-aware benchmarking should preserve directional failures and uncertainty and should allow no model to be selected when mandatory requirements are unmet.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

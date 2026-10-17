@@ -1,0 +1,13 @@
+{
+  "id": "9365773c40064e66",
+  "title": "TraceICL: Thread-Resolved Demonstration Curation with Consistency Calibration for Robust Multimodal In-Context Learning",
+  "link": "https://arxiv.org/abs/2610.12516",
+  "description": "arXiv:2610.12516v1 Announce Type: new \nAbstract: Interleaved multimodal in-context learning (ICL) lets frozen large vision-language models (LVLMs) acquire new tasks from a handful of image-text-answer demonstrations, yet it remains fragile: demonstrations bind to the wrong images, redundant exemplars crowd out informative ones, and noisy answers are copied verbatim into predictions. We present AVA, a training-free framework that organizes the demonstration pipeline of multimodal ICL into three composable stages. A Thread-Resolved Decomposer (TRD) segments the interleaved context into per-sample threads and re-stitches them with explicit boundaries, restoring image-text binding. An Influence-scored Demonstration Selector (IDS) estimates each candidate's marginal influence with one extra forward pass, removes redundancy, and orders the survivors by descending value. A Weak-to-Strong Consistency Calibration (WSC) module scores each demonstration by a weak sibling model's reconstruction confidence and softly reweights its contribution during decoding. On five vision-language benchmarks with interleaved 4-shot prompts, AVA improves the strongest same-setting baseline by +1.7 points on average, with gains of up to +2.4 points on VizWiz, shrinks the require-visual performance gap on ScienceQA-IMG, and retains most of its gain under 30% noisy demonstrations, at a 26% latency overhead that an offline cache amortizes. No gradients are ever computed; the LVLM stays frozen.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

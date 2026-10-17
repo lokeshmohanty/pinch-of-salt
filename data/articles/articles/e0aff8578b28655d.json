@@ -1,0 +1,13 @@
+{
+  "id": "e0aff8578b28655d",
+  "title": "Efficient Tuning Before Low-Bit Post-Training Quantization for Stochastic Gradient Descent-optimized Models",
+  "link": "https://arxiv.org/abs/2607.11359",
+  "description": "arXiv:2607.11359v1 Announce Type: new \nAbstract: Post-training quantization (PTQ) compresses deep neural networks for deployment under limited memory and computational budgets. However, low-bit (i.e., 2-bit or 4-bit) PTQ often suffers from substantial performance degradation. Most existing PTQ methods operate on an unconstrained full-precision (FP) model and primarily address quantization errors through post-hoc reconstruction. We argue that low-bit PTQ accuracy is limited not only by post-quantization error minimization, but also by the quantization-error tolerance of a FP model itself. In this paper, we propose Efficient Tuning Before Quantization (ETBQ), a pre-conditioning tuning stage for Stochastic Gradient Descent (SGD)-optimized models before PTQ. During tuning, the FP model is optimized under perturbations sampled from the error distributions of weight and activation quantization, guiding the model toward a loss-landscape region that is less sensitive to the subsequent PTQ. Unlike QAT, ETBQ does not train a fake-quantized deployment model, which is computationally and memory intensive. Instead, ETBQ outputs a FP model that can be used by any PTQ backend. Experiments on CIFAR-100, Tiny-ImageNet, ImageNet, and Cityscapes provide consistent evidence that ETBQ improves low-bit PTQ across diverse tasks. Under W2A4 settings, e.g., ETBQ improves over naive PTQ by 2.14\\% top-1 accuracy on Tiny-ImageNet and by 5.80\\% mIoU on Cityscapes. Code is available at https://github.com/xpxpxp2001xpxpxp/ETBQ.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

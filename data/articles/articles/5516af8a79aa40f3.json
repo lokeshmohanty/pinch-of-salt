@@ -1,0 +1,14 @@
+{
+  "id": "5516af8a79aa40f3",
+  "title": "Exploring a Layer-Wise Design Space for KV Cache Eviction",
+  "link": "https://arxiv.org/abs/2606.15157",
+  "description": "arXiv:2606.15157v2 Announce Type: replace-cross \nAbstract: KV cache eviction methods typically use a single retention-rule family throughout a model, making eviction-method identity a model-level design choice. Yet Transformer layers differ substantially in their attention behavior, representations, and sensitivity to compression, suggesting that a uniform rule may overlook useful layer-wise structure. This raises a basic question: should eviction methods themselves vary across layers? We investigate this question by composing existing eviction methods across Transformer layers and systematically exploring the resulting layer-wise design space. Using simple offline profiles, we construct fixed routes and study how their quality varies with method placement and cache budget. On LongBench, heterogeneous routing improves performance on a majority of tasks over homogeneous policies at the same cache budget. Even when method counts are held fixed, the profile-guided placement ranks second among 100 evaluated assignments, demonstrating that routing quality depends strongly on where methods are placed. Moreover, the same fixed route outperforms the best of nine standalone baselines across all five tested cache budgets. Together, these results establish layer-wise method composition as an exploitable, placement-sensitive design dimension for KV cache compression.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

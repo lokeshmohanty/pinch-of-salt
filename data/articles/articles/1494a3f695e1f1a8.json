@@ -1,0 +1,15 @@
+{
+  "id": "1494a3f695e1f1a8",
+  "title": "Measuring Browser Webcam Gaze Honestly: A Capture-Clock Methodology and Open Reference Implementation",
+  "link": "https://arxiv.org/abs/2608.11566",
+  "description": "arXiv:2608.11566v1 Announce Type: cross \nAbstract: Browser-based webcam gaze trackers are increasingly used for crowd-scale data collection and in clinical settings where lab eye trackers are impractical, but the reported latency numbers may not represent real world functionality. The common practice of timestamping each gaze sample when it is emitted, rather than when its source frame was captured, makes the measured inference latency read about $0\\,$ms no matter how slow the engine really is. We show how to measure it honestly, recovering a per-frame capture clock from the browser's \\texttt{re\\-quest\\-Video\\-Frame\\-Call\\-back} (rVFC) API (\\texttt{captureTime} where the browser exposes it for local camera streams, else \\texttt{presentationTime}, in which case every recovered latency is a verifiable lower bound): exact source-frame pairing through a per-frame queue for engines that expose their inference pipeline, and a further lower bound for engines that do not, such as WebGazer. We release an open TypeScript implementation and benchmark harness, demonstrated on two interchangeable engines: WebGazer and a new FaceMesh+KRR pipeline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.HC",
+    "cs.CV",
+    "eess.SP"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "c09f64fb2e728627",
+  "title": "Breaking the Geometric Bottleneck: Contrastive Expansion in Asymmetric Cross-Modal Distillation",
+  "link": "https://arxiv.org/abs/2603.06698",
+  "description": "arXiv:2603.06698v3 Announce Type: replace \nAbstract: Knowledge distillation between asymmetric architectures often induces severe geometric constraints on the learned representation space. We investigate dimensional collapse when distilling global Vision Transformers into capacity-constrained, local-receptive-field CNNs (0.5M-8.0M parameters). Using strictly centered SVD and Shannon Entropy Effective Rank, we confirm capacity-agnostic collapse under cosine distillation: a CLIP ViT-B/32 Teacher exhibits Effective Rank 88.68 on CIFAR-10, while all cosine-distilled students collapse to ~17 regardless of parameter count. An auxiliary InfoNCE objective expands this to ~41 dimensions. Critically, we ask whether this expansion is functionally useful. Multi-seed linear-probe evaluation shows InfoNCE expansion degrades downstream accuracy by 15-18 points relative to the collapsed baseline, despite more than doubling Effective Rank. A class-structure decomposition traces this to signal dilution: InfoNCE's class-blind uniformity pressure weakens class-discriminative structure in the original dimensions while adding only weakly relevant structure elsewhere. We then test a label-aware alternative, Supervised Contrastive distillation. On CIFAR-100, where we swept student capacity directly, its Effective Rank is invariant to capacity; on CIFAR-10, at a single tested width, it settles to a lower rank while matching baseline accuracy. Sweeping temperature instead of capacity, rank and downstream accuracy increase together monotonically. These results show Effective Rank alone is not a reliable proxy for representation quality: whether expansion helps or harms downstream performance depends on whether the driving objective is label-aware, not the magnitude of expansion itself.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

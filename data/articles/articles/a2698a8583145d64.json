@@ -1,0 +1,16 @@
+{
+  "id": "a2698a8583145d64",
+  "title": "Self-State Attacks on Self-Hosted AI Agents: How Far Can OS Defenses Go?",
+  "link": "https://arxiv.org/abs/2607.17986",
+  "description": "arXiv:2607.17986v2 Announce Type: replace-cross \nAbstract: Self-hosted AI agents maintain persistent memory, instructions, and configuration that influence their future behavior. If an agent is compromised, an attacker can exploit the agent's legitimate write permissions to corrupt this self-state, making malicious and benign updates difficult to distinguish at the operating system (OS) level. We investigate how far existing OS mechanisms can prevent, detect, and recover from such self-state attacks. We formalize an attack space and evaluate representative OS defenses using four agent workloads and a Linux telemetry pipeline. Our results show a consistent limitation across defense dimensions. File-level controls either leave alternative mutation paths open or, when complete over the tested operations, also block corresponding legitimate updates. Detectors flag a substantial part of legitimate activity, while more selective methods cover only part of the attack space. Finally, protected backups successfully restore corrupted state, but require a trusted recovery point and may incur rollback cost. Overall, our results show that the main limitation is not OS observability. Indeed, the OS can enforce, observe, attribute, and recover self-state changes. Yet, generic OS defenses lack the decision context needed to combine broad operation coverage with selective decisions. Effective protection therefore requires self-state-aware mechanisms that exploit additional context beyond generic file and syscall behavior.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CL",
+    "cs.MA"
+  ]
+}

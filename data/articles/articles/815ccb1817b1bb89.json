@@ -1,0 +1,13 @@
+{
+  "id": "815ccb1817b1bb89",
+  "title": "ReLoop-UME: Recurrent Depth with Learnable Retrieval Registers for Universal Multimodal Embedding",
+  "link": "https://arxiv.org/abs/2607.28751",
+  "description": "arXiv:2607.28751v1 Announce Type: new \nAbstract: Universal multimodal embedding (UME) maps heterogeneous multimodal inputs into a shared embedding space. Existing UME models either form embeddings through single forward encoding or add computation through explicit rationale tokens and latent autoregressive states. Although token expansion can improve complex matching, serial generation increases retrieval latency and makes the final embedding depend on generated intermediate states. This raises a different question: can useful computation be expanded along model depth while keeping the token workspace fixed? We analyze positive-negative similarity separation at every layer of independently trained UME models and observe a shared progression: early layers contextualize multimodal inputs, a contiguous middle-to-late stage forms retrieval-discriminative features, and the final layers map them into the embedding space. Based on this finding, we propose ReLoop-UME, which executes the early layers once, recurrently reuses a parameter-shared retrieval-forming block, and applies the final mapping layers after the last loop. Learnable Retrieval Registers provide persistent retrieval-specific states that accumulate and exchange evidence across loops, with the final register serving as the embedding readout. On MMEB-V2 and MRMR, ReLoop-UME consistently improves retrieval across different backbones while running 44.9x faster than UME-R1 and 1.5x faster than PLUME.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

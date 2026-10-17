@@ -1,0 +1,13 @@
+{
+  "id": "fafe658cc829e94a",
+  "title": "Teaching Vision-Language Models to Use the Scale They Are Given: Label-Free Equivariance Training for Metric Physical Reasoning",
+  "link": "https://arxiv.org/abs/2609.00658",
+  "description": "arXiv:2609.00658v1 Announce Type: new \nAbstract: Metric questions about video require vision-language models to use supplied real-world references to convert visual measurements into physical units. Yet we find that current models use this scale information only partially. When every world-space quantity in a prompt is rescaled by a common factor, the video remains equally valid and the correct answer changes by exactly that factor, but model predictions move only part of the way and accuracy remains concentrated near the familiar scale of the depicted objects. Across eight vision-language models, this under-response persists over four orders of magnitude. The same models recover the correct closed-form scaling laws when the identical physics is asked in a scale-free form, indicating that the main deficit lies in metric grounding rather than physical mechanism knowledge. We use this exact scaling relation as supervision without requiring metric annotations. Under a common rescaling of the supplied world-space quantities, the correct metric answer must change by the same factor. EquiSD exploits this constraint by projecting a model's own prediction onto the scale-equivariant family and fine-tuning the model on the resulting targets. It requires no ground-truth answers and only one model query per training video. On held-out simulated videos, EquiSD increases a 3B model's median response slope from 0.66 to 0.94 and improves mean relative accuracy by 9.2 points across scales. The learned relation generalizes to unseen world scales and transfers without adaptation to real QuantiPhy videos, where accuracy increases by 6.4 points. These results show that an exact physical symmetry can provide label-free supervision for improving metric grounding in vision-language models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

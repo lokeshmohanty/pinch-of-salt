@@ -1,0 +1,14 @@
+{
+  "id": "1c4a9d3551dde736",
+  "title": "Hard-Gate Candidacy in a Deployed Validator Suite",
+  "link": "https://arxiv.org/abs/2609.39037",
+  "description": "arXiv:2609.39037v1 Announce Type: cross \nAbstract: Before a validator can be promoted to a hard gate on a deployment pipeline, it has to be shown that its firing separates outputs that reach users in working order from those that do not. We run that screen on 13 validators in a deployed generative agent, against 550 runtime and 350 static builds labelled by downstream outcome, and report each check's marginal separation $J=\\mathrm{TPR}-\\mathrm{FPR}$ with Newcombe intervals and Fisher exact tests. Two checks survive correction for multiple comparisons, two more are nominal only, and the remaining nine are not distinguishable from zero, three of them because they never fired on any sampled build. Execution itself is not random with respect to the property being gated, and this replicates: across four runs covering 1,867 builds and ten distinct runtime checks, probes were skipped on 144 of 895 broken builds and 1 of 972 acceptable builds (per-run rates 15.6% to 16.6% against at most 0.3%), every skip carrying the same unsafe-to-probe reason. Because a skipped check is recorded as a pass, this imposes a ceiling that no check quality can lift: a check that needs a live artifact cannot operationally detect more than about 84% of broken builds in this harness. For the one check with construct-specific labels, a detector built for blank output fires on 0 of 90 human-labelled blank builds (95% upper bound on sensitivity 3.3%), and the global frame statistic it approximates separates the classes only weakly (AUC 0.59), so the gap is not a threshold that needs tuning. The same gap appears one layer up: on a census of tens of thousands of judge-scored builds, 32.5% of rejections carry no recorded issue at all. We argue that evaluation records must distinguish a check that ran and passed from one that did not run, must carry the evidence for a rejection, and that an inventory of checks is not evidence about a gate.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "d3b8a51b49fef01f",
+  "title": "The Predictability Bias of Joint-Embedding Predictive Learning in Medical Imaging",
+  "link": "https://arxiv.org/abs/2610.13237",
+  "description": "arXiv:2610.13237v1 Announce Type: cross \nAbstract: Joint-embedding predictive architectures (JEPAs) learn by predicting teacher representations of masked regions from visible context. Point prediction summarizes the conditional target distribution and cannot reproduce variation that the context does not resolve. We call this constraint predictability bias. In computed tomography (CT), recurrent anatomy is predictable from context, whereas the sporadic, localized pathology that determines clinical interpretation often is not. We introduce TAP-JEPA, a ViT-B/3D trained on 113,611 CT volumes that is competitive with state-of-the-art encoders (COLIPRI, Merlin, VoxelFM) in scan-level classification. We then audit the learned predictive pathway by replaying the exact masking, teacher, and predictor computations used during training. Prediction lowers the mean Skill (prevalence-normalized average precision) from 0.388 to 0.271 for pathology, but only from 0.921 to 0.873 for anatomy. Along the teacher direction, separating pathology from matched control regions in the same organ, prediction moves pathology 34.7% toward the controls and controls 13.6% toward pathology, with larger shifts farther from visible context. Replacing visible matched-control representations increases surrounding-target prediction loss more than fully replacing pathology representations across four pathology categories. Downstream, removing all final-layer pathology tokens reduces the decision margin by at most 0.45% in four of seven scan-level probes. Together, these results show that contextual predictability is not a sufficient proxy for clinical relevance in medical representation learning. Training objectives should therefore retain diagnostic features regardless of their predictability from surrounding anatomy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ec0f152240165480",
+  "title": "MeEvo: Metacognitive Evolution Combined with Natural Evolution for Automatic Heuristic Design",
+  "link": "https://arxiv.org/abs/2606.14202",
+  "description": "arXiv:2606.14202v5 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) have advanced Automatic Heuristic Design (AHD) by enabling heuristic generation through reasoning and code synthesis. In LLM-based AHD, the LLM reasons about algorithm design and generates executable heuristic code. Existing architectures adopt two main paradigms: Natural Evolution applies crossover and mutation to this code to explore diverse strategies, but discards the reasoning traces behind the design decisions, weakening knowledge retention; Metacognitive Evolution retains these reasoning traces and refines them through reflection, but lacks population-level recombination, limiting exploration. These limitations reduce search efficiency, stability, and solution quality on complex problems. To address this gap, we propose MeEvo, an AHD framework that cyclically couples Natural Evolution and Metacognitive Evolution with operator balance that shifts from exploration to exploitation. Natural Evolution explores heuristic code while recording LLM-generated reasoning traces, fitness values, errors and best heuristic into a shared history; Metacognitive Evolution then reflects on this history to generate improved heuristics that feed into the next Natural Evolution cycle. This design enables population-driven exploration and reflection-driven refinement to reinforce each other. Experiments on five optimization problems show that MeEvo achieves stronger performance and lower variance than tested LLM-based AHD architectures, especially on complex constrained tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NE",
+    "cs.AI"
+  ]
+}

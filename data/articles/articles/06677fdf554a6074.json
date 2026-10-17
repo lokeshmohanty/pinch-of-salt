@@ -1,0 +1,13 @@
+{
+  "id": "06677fdf554a6074",
+  "title": "Masked Feature Encoding for Large-Scale Whole Slide Image Representation",
+  "link": "https://arxiv.org/abs/2610.10225",
+  "description": "arXiv:2610.10225v1 Announce Type: new \nAbstract: Whole slide image (WSI) analysis in computational pathology follows a multiple instance learning (MIL) pipeline where patch embeddings are extracted independently and aggregated for slide-level prediction, but within-slide variance from staining, scanner, and local texture can overwhelm the discriminative signal. We propose Masked Feature Encoding for Multiple Instance Learning (MFE-MIL), a feature-space masking framework that trains a lightweight MLP adapter jointly with a window-based masked reconstruction branch and a MIL classification head. The two objectives are complementary. Classification guides the adapter to suppress within-slide patch variance, while window-based masked reconstruction provides an auxiliary regularizer for the adapted features without using patch coordinates, coordinate graphs, or segmentation preprocessing. The raster patch-extraction order is used only as a weak implicit prior. At inference, the decoder is removed, leaving only the adapter and MIL head. Across CAMELYON16/17, PANDA, and TCGA-BRCA with four diverse encoders, MFE-MIL improves ACC/F1 for nearly all tested aggregator-encoder settings and AUC in most, outperforms coordinate-based spatial methods (CAMIL), and achieves higher AUC than 2DMamba on three of four datasets (UNI). On five TCGA survival cohorts it improves the average concordance index for every aggregator tested, its most consistent gain. Code is available at https://github.com/AtlasAnalyticsLab/MFE-MIL.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

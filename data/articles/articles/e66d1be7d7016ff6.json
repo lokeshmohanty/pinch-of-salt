@@ -1,0 +1,14 @@
+{
+  "id": "e66d1be7d7016ff6",
+  "title": "Do Vision Transformers Need All-to-All Attention? Global Communication Through Elastic Learned Cores",
+  "link": "https://arxiv.org/abs/2605.12491",
+  "description": "arXiv:2605.12491v2 Announce Type: replace \nAbstract: Vision Transformers (ViTs) learn rich visual-semantic representations through all-to-all self-attention among patch tokens. However, this design implicitly assumes that direct pairwise patch interactions are necessary for effective representation learning. In this work, we challenge this assumption and show that representations supporting both global recognition and dense prediction can be learned without direct patch-to-patch interaction. We propose VECA (Visual Elastic-Core Attention), a vision transformer with core-periphery structured attention mediated by a small set of learned cores. Patch tokens exchange global information exclusively through these cores, while the full set of dense patches are preserved and iteratively updated across layers. This reduces attention complexity from $O(N^2)$ to $O(N)$, linear in the number of patches $N$ for a fixed core budget $C$. Unlike prior latent-token cross-attention architectures, VECA facilitates sparse global communication without compressing the spatial representation itself. Nested training along the core axis further enables a single model to elastically trade off computation and accuracy at inference time without retraining. Across image classification and dense prediction tasks, VECA remains competitive with full-attention backbones and outperforms the evaluated linear-complexity alternatives on most benchmarks. Moreover, without explicit supervision, these cores develop semantically organized structures that support object-label transfer across video frames. These results show that effective visual representations can be learned without direct all-to-all patch interaction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "06b88098da5a7552",
+  "title": "CoDAT: Collaborative Dual-Attention Transformer with Low-Cost Temporal Modeling for Efficient Edge Action Recognition",
+  "link": "https://arxiv.org/abs/2608.06691",
+  "description": "arXiv:2608.06691v1 Announce Type: new \nAbstract: Real-time human action recognition on Internet-of-Things (IoT) edge devices requires models that capture rich spatio-temporal cues within strict latency, memory, and power envelopes. Current 3D CNNs, video transformers, and shift-based ViT deliver high accuracy but come at computational costs that preclude edge IoT deployment. This paper proposes CoDAT, a Collaborative Dual-Attention Transformer that replaces conventional multi-head attention with a lightweight dual-branch module: Spatial Convolutional Attention (SCA) for local aggregation and Strided Single-Head Attention (SSHA) for global context. SSHA jointly compresses the spatial resolution and channel dimensions of the query, key, and value tensors via stride-based sparse projection, then fuses the resulting global and local features at a markedly reduced cost. To enable temporal communication across frames, a parameter-free TShift module is embedded in each block. Extensive experiments on Jetson AGX Orin and Raspberry Pi 5 demonstrate that CoDAT achieves an energy-accuracy balance in both image and action recognition. On ImageNet-1K, CoDAT-M runs 2x faster than EfficientViT384 and FastViT-S12 at comparable accuracy, and CoDAT-L matches ViT-S with 3x fewer parameters at 2x higher throughput. On Kinetics-400 and MA-52, CoDAT achieves competitive Top-1 accuracy against state-of-the-art CNN, transformer, and hybrid baselines while running up to 2.9x faster than VSwin-T, 2x faster than ViT-Temporal-Shift variants, and 5x faster than UniFormer-B. On UCF-101, CoDAT-S384 matches TokShift and LAPS while being 6x faster and requiring up to 13x fewer FLOPs, establishing an efficiency-accuracy balance for real-time action recognition in edge IoT perception systems. Code is available at https://github.com/novendrastywn/CoDAT .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
