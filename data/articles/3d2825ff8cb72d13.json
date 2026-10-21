@@ -1,0 +1,14 @@
+{
+  "id": "3d2825ff8cb72d13",
+  "title": "MOSS: A Production Framework for Monitoring and Diagnosing Semantic Failures in Search and Recommendation Systems",
+  "link": "https://arxiv.org/abs/2610.26902",
+  "description": "arXiv:2610.26902v1 Announce Type: cross \nAbstract: Detecting semantic failures in production recommendation and search systems is hard: behavioral metrics lag by days, manual review does not scale, and most LLM evaluation frameworks are designed for offline, fixed datasets rather than continuous operational monitoring. We present Model Sanity Service (MOSS), a production framework that addresses this operational gap by embedding LLM-based relevance scoring into a recurring monitoring loop with targeted sampling, strategy-aware prompting, structured alerting, and diagnostic follow-up prompting that categorizes failures into actionable root causes.\n  MOSS has been running in production at a large U.S. retailer for over six months across recommendation, search, and offer surfaces, and has surfaced two confirmed serving defects. For one of these, a backfill blending defect, MOSS quantified the impact of the proposed fix offline as a 76.4\\% relative reduction in alert rate. On a 498-pair human-annotated recommendation benchmark, frontier LLM judges achieve higher F1 and AUC point estimates than non-LLM baselines (internal production embeddings and SBERT), with the largest gains on strategy-dependent tasks requiring intent-level relational reasoning. The same judge, score scale, and threshold transfer to a 466-pair search benchmark spanning 21 queries with only a surface-specific prompt adaptation, achieving strong F1 and AUC without retuning. These results show that a single LLM monitoring framework can provide useful, actionable quality signals across multiple product discovery surfaces in a large-scale e-commerce setting.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI"
+  ]
+}

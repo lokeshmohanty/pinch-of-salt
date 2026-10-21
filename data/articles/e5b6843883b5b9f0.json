@@ -1,0 +1,13 @@
+{
+  "id": "e5b6843883b5b9f0",
+  "title": "CILA: Confusion-based Instance-wise Logit Adjustment for Long-Tailed Recognition",
+  "link": "https://arxiv.org/abs/2610.27728",
+  "description": "arXiv:2610.27728v1 Announce Type: new \nAbstract: Real-world datasets are inherently class-imbalanced, leading models to favor majority classes and struggle with minority ones. Existing logit adjustment methods address this by modifying logits based on class frequencies, but their class-wise adjustments ignore instance-wise confusion and often suppress informative signals from confusing non-target classes. This results in insufficient learning of such classes, increased prediction uncertainty, and limited generalization.\n  To address this, we propose two complementary methods. First, \\textbf{Confusion-based Instance-wise Logit Adjustment (CILA)} adaptively adjusts logits based on instance-wise confusion between the target and non-target classes, restoring informative gradients that class-wise adjustment suppresses. Second, \\textbf{Batch-adaptation Noise-Injection (BNI)} perturbs the target logit during training, extending the confusion-aware update to correctly classified but near-boundary samples that the penalty alone cannot reach. CILA is a loss-agnostic plug-in module that can be seamlessly integrated into existing long-tailed learning methods, and consistently improves performance across multiple benchmarks. Our code will be available at https://github.com/maya0395/CILA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

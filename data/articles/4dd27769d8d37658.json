@@ -1,0 +1,13 @@
+{
+  "id": "4dd27769d8d37658",
+  "title": "Look Before You Reason: Implicit Visual Thinking for Efficient Multimodal Reasoning",
+  "link": "https://arxiv.org/abs/2610.27341",
+  "description": "arXiv:2610.27341v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have advanced rapidly in multimodal reasoning, yet they remain limited on tasks requiring fine-grained understanding of small or easily overlooked image regions. Recent thinking with images approaches mitigate this limitation by allowing models to inspect images through operations such as zooming, cropping, or code execution. While effective, their multi-turn interactions with VLMs introduce redundant token computation and slow inference, and separate region inspection from the reasoning step that depends on it. To address these issues, we propose Look Before You Reason (LoRe), an implicit visual thinking framework for efficient visual reasoning within a single-turn VLM interaction. Given an image and a question, LoRe predicts the most relevant image region, aligns it with the corresponding image patch features, and strengthens the associated key-value (KV) cache entries, enabling subsequent decoding to directly exploit the selected visual cues without additional visual inputs or explicit tool calls. We further employ reinforcement learning to guide the VLM toward identifying informative image regions and leveraging them during reasoning. To support fine-grained evaluation of multimodal reasoning, we introduce COCO-ObjQA, a large-scale benchmark for object-centric multimodal reasoning. Experiments on three challenging multimodal benchmarks demonstrate that LoRe consistently improves VLM reasoning performance with low additional inference overhead.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

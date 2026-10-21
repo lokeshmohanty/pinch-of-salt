@@ -1,0 +1,13 @@
+{
+  "id": "7408fbe44363491f",
+  "title": "AGGR-Mamba: Mamba-based Network with Attention-Guided Gated Residual Refinement for Undersampled MRI Reconstruction",
+  "link": "https://arxiv.org/abs/2610.28291",
+  "description": "arXiv:2610.28291v1 Announce Type: new \nAbstract: Undersampled magnetic resonance imaging (MRI) reconstruction aims to recover high-quality images from partially acquired k-space data, thereby reducing scan time. However, missing frequency-domain measurements often lead to residual aliasing artifacts, blurred edges, and loss of local structural details. In this paper, we propose AGGR-Mamba, a lightweight output-stage residual refinement method built upon a Mamba backbone for undersampled brain MRI reconstruction. The Mamba backbone first produces an initial reconstruction, and the proposed refinement modules then correct the remaining local errors and high-frequency artifacts in a controlled residual manner. Specifically, an Attention Refine Head is introduced to recalibrate local anatomical structures, edge textures, and residual-error regions through channel and spatial attention. In addition, a GDFN-style gated residual refinement branch is designed to selectively preserve informative residual features while suppressing redundant or unstable responses. By combining attention-based recalibration with gated residual selection, AGGR-Mamba improves local structure recovery without substantially disturbing the backbone reconstruction. Experiments are conducted on the IXI brain MRI dataset with T1- and T2-weighted images under acceleration factors of R=4 and R=8. The results show that AGGR-Mamba achieves competitive PSNR and SSIM performance across different reconstruction settings, demonstrating the effectiveness of the proposed output-stage refinement strategy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
