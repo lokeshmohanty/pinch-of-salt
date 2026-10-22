@@ -1,0 +1,14 @@
+{
+  "id": "e277959452691a83",
+  "title": "Align, Don't Blend: Orthogonal Supervision Disentanglement As the Key to Generalizable AI-Generated Image Detection",
+  "link": "https://arxiv.org/abs/2512.06746",
+  "description": "arXiv:2512.06746v3 Announce Type: replace \nAbstract: Recent advances in AI-Generated Image (AIGI) detection have largely focused on model architectures, loss design, and training strategies, while overlooking a more fundamental factor: how supervision is structured. Existing detectors typically train on benchmark-defined data that implicitly blends semantic and artifact signals, leaving supervision design unexplored. In this paper, we examine supervision structure through controlled experiments and show that such blended supervision is not merely suboptimal but fundamentally counterproductive. Replacing it with disentangled, orthogonal supervision - paired with inductively matched models - suffices to achieve strong cross-generator generalization. We formalize this as Orthogonal Supervision Disentanglement and instantiate it in AlignGemini, a two-branch detector in which a VLM receives purely semantic supervision and a vision expert receives purely artifact supervision. With disentangled supervision coupled with inductively matched models, even the simplest training recipe achieves a significant improvement of 9.5% across five in-the-wild benchmarks - trained on images from only two generators, without complex training strategies or diverse generator coverage. We further introduce AIGI-Now, a diagnostic benchmark covering eight contemporary generators, including five closed-source commercial models, with disentangled semantic and pixel evaluation subsets for fine-grained analysis of detector capabilities. Our code is publicly available at https://github.com/GzZning/Align-Don-t-Blend.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

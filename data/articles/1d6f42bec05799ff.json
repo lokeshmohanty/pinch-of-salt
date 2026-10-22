@@ -1,0 +1,13 @@
+{
+  "id": "1d6f42bec05799ff",
+  "title": "APED-CXR: Adaptive Privileged Evidence Distillation for Chest X-Ray Grounding with Image-Only Inference",
+  "link": "https://arxiv.org/abs/2610.29740",
+  "description": "arXiv:2610.29740v1 Announce Type: new \nAbstract: Compact chest X-ray (CXR) models that localize findings suit deployment, but box annotations are limited and report-aware multimodal models are expensive at inference. We introduce APED-CXR, which distills report-informed spatial evidence from a frozen multimodal teacher into a student with 11.1M parameters that predicts diseases and boxes from shared evidence maps and requires the image alone at test time. During training, the teacher uses the radiograph, report, and queried class to evaluate regions proposed from the student's current evidence maps, and its support scores serve as training targets for the student's pooled evidence scores within these regions. Trained on PadChest and evaluated on held-out PadChest-GR, refreshing the student's proposals for teacher evaluation improves box-level localization F1 from 0.302 with fixed warm-up proposals to 0.338 (IoU >= 0.5; gain 0.036, 95% CI [0.022, 0.049]), while maintaining diagnostic AUC. This gain depends on the teacher checking current proposals: with equally many random boxes, a fixed dense box set, teacher-generated boxes, or report rules instead of the teacher, F1 stays near the fixed-proposal level, and proposals two refreshes old recover only part of the gain. On NIH ChestX-ray14, a secondary test set, box recall also rises from 0.423 to 0.447.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
