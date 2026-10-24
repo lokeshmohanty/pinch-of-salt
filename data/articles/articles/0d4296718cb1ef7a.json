@@ -1,0 +1,13 @@
+{
+  "id": "0d4296718cb1ef7a",
+  "title": "EchoPath: Execution-Level Replayable Memory for GUI Agents",
+  "link": "https://arxiv.org/abs/2609.16635",
+  "description": "arXiv:2609.16635v1 Announce Type: new \nAbstract: Computer-use agents increasingly operate browsers, software, and desktop applications via CLI or API portals, but graphical user interface (GUI) still plays an important role in common industrial production scenarios. GUI agents commonly employ fresh observe-plan-ground-act loops, which is inefficient for enterprise tasks that repeatedly update records, process forms, configure tools, and export reports. We introduce EchoPath, a model-agnostic harness that converts artifact-validated GUI trajectories into standardized, parameter-controlled callable memories, analogous to Model Context Protocol (MCP)-style tool calls rather than unstructured experience records. Each memory stores task-intent keys, application and state preconditions, flexible input parameters, GUI evidence, validation provenance, and lifecycle state, so the host agent invokes a targeted procedure only when it can be deterministically replayed in the current runtime. The core mechanism enabling replay is an image-based target-reaiming algorithm that treats stored coordinates as visual evidence, matches the remembered GUI target against the current screen, and emits corrected operation coordinates before execution. During replay, EchoPath rebinds only declared modifiable inputs and rejects ambiguous or incompatible steps to bounded grounding repair or fresh planning. In experiments with real computer-use tasks, EchoPath reduced median token cost by more than 90% and median execution time by about 60%. These results support a bounded form of enterprise GUI memory: validated execution experience can become a controllable callable asset for recurrent work rather than only context for another reasoning pass.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "166ae6169fe4788c",
+  "title": "Rate as a Feature, Not a Nuisance: Curriculum FiLM Training for Event-Based Graph Neural Networks",
+  "link": "https://arxiv.org/abs/2610.26933",
+  "description": "arXiv:2610.26933v1 Announce Type: new \nAbstract: An event camera emits events at a rate given by the scene motion, object texture, illumination, its own contrast thresholds, and other settings. Across the N-Caltech101 dataset, recorded by a single event camera, the event rate varies by roughly 26x. Standard event-based Graph Neural Network GNN pipelines do not make use of the variable event rate. They either normalize each event's timestamp into a fixed window or train the network to be invariant to the event rate. We argue that both choices lose information that could instead be used to improve the performance of a pipeline. Per-recording normalization is non-invertible, incurring about 6pp (percentage points) of natural-rate accuracy loss in our setting. And invariance training trades accuracy for robustness to shifts in the event rate. We instead take a different path and condition on the event rate directly. We add a per-recording log-rate scalar that modulates every stage of a PointNet++ backbone through Feature-wise Linear Modulation (FiLM), initialized to identity, so that training begins at the unmodified baseline. A two-stage curriculum (natural event rates first, then rate-augmented fine-tuning) reaches 67.2% on N-Caltech101 (+6.3pp) and 82.5% on DVS128 Gesture (+14.0pp) with an additional ~0.2M parameters. A matched-capacity control experiment shows that the gain is not from the increase in model capacity but from the rate conditioning. We will make the implementation publicly available upon acceptance of this work.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

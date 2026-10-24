@@ -1,0 +1,14 @@
+{
+  "id": "4dd3d404a212f96f",
+  "title": "Kinship Data Benchmark for Multi-hop Reasoning",
+  "link": "https://arxiv.org/abs/2601.07794",
+  "description": "arXiv:2601.07794v3 Announce Type: replace-cross \nAbstract: Multi-hop kinship reasoning is a natural testbed for LLM compositionality, but existing benchmarks (notably CLUTRR) cover only the descriptive Eskimo system. We introduce KinshipQA, a procedurally-generated benchmark covering seven anthropologically-documented kinship systems (Eskimo, Sudanese, Hawaiian, Iroquois, Dravidian, Crow, Omaha) and up to six reasoning hops, with a tunable simulator horizon that eliminates exact-instance pretraining overlap. Evaluating six LLMs, we find a 40.9% accuracy drop when reasoning shifts from biological multi-hop to culturally-marked classification on the five non-descriptive systems. The drop holds for every non-descriptive system and is largest for the two skewing systems (Crow, Omaha), persists under chain-of-thought and few-shot prompting, and compounds with depth: at 5--6 hops cultural override falls to 10.6% while biological composition over the same chains remains at 58.6%. Under identical rule access humans reach 89.0% versus 50.7% for LLMs, so the questions are reliably solvable once the rule is supplied. Two follow-up experiments suggest distinct contributors. A fictional-rule control swapping system labels and kin terms for invented strings raises accuracy by 6.1%, implicating familiar English surface forms. An in-context-rule probe prepending the override rule helps skewing systems (+17.1%) but hurts non-skewing systems whose baseline already exceeds about 60% (-13.4%), consistent with a missing skewing prior alongside rule interference where the model already has a working approximation. Our code and data are publicly available on GitHub.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

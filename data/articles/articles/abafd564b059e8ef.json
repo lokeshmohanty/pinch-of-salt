@@ -1,0 +1,14 @@
+{
+  "id": "abafd564b059e8ef",
+  "title": "Which Terrain Is Better? Preference Learning with VLM Prototypes for Off-Road Traversability Ranking",
+  "link": "https://arxiv.org/abs/2609.23673",
+  "description": "arXiv:2609.23673v1 Announce Type: new \nAbstract: In vision-based off-road navigation, a robot needs to know not only which obstacles to avoid but also which terrain is better. The first is handled by freespace detection or semantic segmentation. The second is usually answered with a traversability score, but no universal ground truth exists for such a score, so perception falls back on a predefined value per semantic class or a freespace confidence. These scores say what a region is, not which region a robot should prefer. We therefore formulate this preference as visual traversability ranking, an ordering of visible terrain that can be supervised by comparisons between two regions. Standard annotations do not label preference, but they imply its direction. We present TravPro, which converts these annotations into ordered region pairs and fits a small readout on frozen vision--language model (VLM) patch tokens to these pairs. The tokens are clustered once into a fixed prototype bank, and the readout learns a preference score per prototype. The readout is then applied to every patch and serves as a teacher that turns sparse comparisons into dense preference pseudo-labels without pixel-wise annotation. An RGB student distills these maps into a dense terrain-preference map together with a non-ground mask that excludes obstacles and background from the ranking. On five unseen domains, TravPro reaches a mean pairwise accuracy of 0.915 against 0.783 for the strongest baseline, producing an ordering sensitive to surface condition that a per-class value cannot represent. The same VLM and the same supervision yield no such ordering when the VLM is prompted and the supervision is used as dense targets; what matters is how they are used.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

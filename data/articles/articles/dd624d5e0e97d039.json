@@ -1,0 +1,14 @@
+{
+  "id": "dd624d5e0e97d039",
+  "title": "GeoBalance: Geometry-Aware Monitoring and Reconstruction with Asymmetric Optimization for Balanced Multimodal Learning",
+  "link": "https://arxiv.org/abs/2609.23533",
+  "description": "arXiv:2609.23533v1 Announce Type: new \nAbstract: Multimodal classifiers can converge to modality-dominant solutions in which one modality dominates the joint prediction, suppressing the learning of others. Existing balancing methods mainly adjust losses, gradients, or modality contributions, largely treating modality imbalance as an optimization problem while implicitly treating the weak modality as under-optimized but representationally intact. In this work, we find that this assumption does not always hold, as persistent modality dominance can induce a representation-level collapse of the weak modality, which we term \\emph{manifold modality collapse} (MMC). MMC manifests as a coupled geometric degradation in which weak-modality representations collapse onto fewer directions within each class and become less separable across classes. Motivated by this observation, we propose \\emph{GeoBalance}, a geometry-aware framework that monitors these two geometric properties and reconstructs the weak modality representation only when it exhibits signs of MMC. Once triggered, GeoBalance uses a fixed Simplex-ETF class scaffold and spectral regularization to restore class separation while preventing collapse onto a few feature directions. To preserve reconstruction during joint training, asymmetric gradient projection removes the joint-gradient component conflicting with reconstruction, leaving non-conflicting optimization unchanged. Extensive experiments across six multimodal benchmarks demonstrate great improvements over competitive balancing methods, validating its effectiveness.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM"
+  ]
+}

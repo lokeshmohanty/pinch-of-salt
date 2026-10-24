@@ -1,0 +1,14 @@
+{
+  "id": "8c7f71c1e5dc274d",
+  "title": "TalkMatrix: Generating Character Dialogue that is Both Consistent and Diverse",
+  "link": "https://arxiv.org/abs/2609.19022",
+  "description": "arXiv:2609.19022v1 Announce Type: cross \nAbstract: Candidate-based decoding typically selects a completion for each prompt independently, but many applications require a collection of outputs that satisfies global, non-decomposable requirements. We formulate this setting as structured multi-prompt, multi-completion selection: given a candidate pool for every prompt, select one completion per prompt to optimize a collection-level objective. We instantiate the problem in character dialogue, where each character should remain consistent across situations, each line should fit its situation, and characters and situations should remain distinguishable. Our method, TalkMatrix, generates multiple candidates for every character--situation pair and jointly selects a complete matrix using four embedding-based consistency and diversity objectives. Because a weighted sum can improve some dimensions by sacrificing another, TalkMatrix maximizes the worst-performing objective through a two-level minimax formulation. We approximately optimize the resulting discrete objective with multi-start coordinate ascent, and compare it with local, partial-matrix, and generic combinatorial search baselines. We run experiments on $50$ synthetic role-playing scenarios and $25$ curated board game scenarios where multiple characters interact in predefined situations. An LLM-as-a-judge rates matrix-level selection higher than random and independent cell-level selection baselines. These results show the value of structured selection for globally controlled dialogue generation, while our empirical validation remains specific to role-playing scenarios.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f25fa3af2ab2cf96",
+  "title": "4DGS-Fixer: Generative Sparse-View 4D Gaussian Splatting with Iterative Refinement Guided by Video Diffusion Priors",
+  "link": "https://arxiv.org/abs/2609.21176",
+  "description": "arXiv:2609.21176v1 Announce Type: new \nAbstract: This paper addresses the challenges of dynamic scene synthesis from sparse-view videos. Existing methods employ geometric priors, adaptive optimization, or density-control strategies to improve 4D Gaussian modeling under sparse observations. However, they cannot fundamentally resolve the ill-posed problem caused by insufficient observations and missing scene information. Moreover, sparse-view 4D Gaussian Splatting (4DGS) often suffers from poor geometric initialization: with only a few input views, COLMAP typically reconstructs sparse and incomplete point clouds, leaving large scene regions without sufficient Gaussian support and making them difficult to recover through subsequent optimization. To address these limitations, we propose a novel iterative refinement framework based on a video diffusion model to improve the completeness and consistency of dynamic 4D scenes. Specifically, we first estimate multi-view depth maps and fuse them into dense point clouds to provide more complete geometric initialization for a dynamic 4DGS representation. We then employ a pretrained video restoration model to refine sequences rendered along novel camera trajectories at different time steps. The restored sequences serve as pseudo-supervision to regularize and iteratively refine the 4DGS representation. Experiments on a widely used benchmark dataset demonstrate that our method substantially outperforms existing baselines, achieving nearly a 2 dB PSNR improvement over the previous best-performing method.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

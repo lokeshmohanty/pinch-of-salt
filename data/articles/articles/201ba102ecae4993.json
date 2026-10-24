@@ -1,0 +1,13 @@
+{
+  "id": "201ba102ecae4993",
+  "title": "Bridging Reconstruction and Generation: A Latent Distribution Perspective on Evaluation and Improvement",
+  "link": "https://arxiv.org/abs/2609.24088",
+  "description": "arXiv:2609.24088v1 Announce Type: new \nAbstract: In latent generative models, reconstruction quality is often assumed to correlate with generative performance. However, reconstruction FID (rFID) can exhibit weak or even negative correlation with generation FID (gFID). We attribute this discrepancy to a latent distribution mismatch: reconstruction evaluates the decoder on encoder-induced latents, whereas generation uses the same decoder on latents produced by the generative model. To characterize this shift, we introduce generation-aware reconstruction (GAR), which constructs a continuous trajectory from standard reconstruction toward generation by perturbing encoder latents with noise and denoising them through the generative model before decoding. GAR probes the decoder behavior along this trajectory, making the transition from encoder to generation-time latent distributions observable and diagnosable. The resulting trajectory-based diagnostic, GAR-FID, exhibits strong empirical correlation with gFID across diverse tokenizers and scales. Importantly, intermediate GAR latents become more generation-aware while preserving correspondence with their source images, thereby retaining paired supervision that is absent for fully generated latents. This correspondence enables decoder adaptation on intermediate GAR latents, consistently improving generative quality across model scales. Overall, latent distribution mismatch provides a useful perspective for evaluating and improving latent generative models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "17fabaadd126ad90",
+  "title": "Repair the Core, Not the Symptom: Planning-Graph Repair for Long-Horizon Agents",
+  "link": "https://arxiv.org/abs/2607.01767",
+  "description": "arXiv:2607.01767v3 Announce Type: replace \nAbstract: Long-horizon language agents make interdependent decisions across multiple rounds, forming growing planning graphs in which later decisions depend on earlier states, observations, and tool outputs. Errors in these graphs can therefore propagate through subsequent decisions and amplify over long rollouts. Correcting the most visible failure may therefore fix a symptom while leaving the core that drives downstream errors unchanged. Replaying the entire planning graph provides the opposite extreme, but becomes increasingly expensive as the graph grows and forces an LLM to reason over substantial irrelevant context. We study planning-graph repair: given a failed rollout, the goal is to identify and correct the compact core responsible for continued error propagation while preserving the remainder of the graph. We first evaluate a range of practical engineering repair strategies, including single-error and TopK repair, temporal windows, neighborhood expansion, cascade-aware repair, and full-graph LLM correction. We then propose ReCore (Repair the Core), which models the coupled propagation of node and edge errors to identify the core of a failed planning graph. Rather than repairing the largest observed errors or expanding a fixed local neighborhood, ReCore selects a connected core whose correction maximally reduces residual error amplification, and exposes only this core to the LLM for diagnosis and repair. We also theoretically establish a bound on long-horizon planning regret. Extensive experiments on synthetic Agent Calling-Tree graphs and the Who\\&amp;When attribution benchmark show that ReCore improves long-horizon stabilization and root-cause localization by targeting high-amplification repair regions, matching full-context recovery with up to $7.4\\times$ fewer tokens for every successful repair.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

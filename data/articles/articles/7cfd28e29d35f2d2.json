@@ -1,0 +1,14 @@
+{
+  "id": "7cfd28e29d35f2d2",
+  "title": "One Model to Translate Them All? A Journey to Mount Doom for Multilingual Model Merging",
+  "link": "https://arxiv.org/abs/2604.02881",
+  "description": "arXiv:2604.02881v2 Announce Type: replace-cross \nAbstract: Weight-space model merging combines independently fine-tuned checkpoints without access to the original training data. While merging has shown promise in multitask settings, its behavior in multilingual generative systems remains underexplored. We systematically study weight-space merging for multilingual machine translation by fully fine-tuning language models on large-scale bilingual corpora and evaluating representative merging strategies across shared-source, shared-target, and bidirectional consolidation settings. Our experiments reveal a strong directional asymmetry. Merging is comparatively more effective when models share a target language, improving multilingual coverage over the base model, but it still fails to preserve the peak performance of language-specific checkpoints. In contrast, when target languages differ, performance degrades sharply, especially in shared-source and bidirectional settings. To explain this behavior, we analyze internal representations and find that fine-tuning does not create disjoint language-specific sub-networks. Instead, independently fine-tuned models activate largely overlapping neurons while reshaping upper-layer target-generation representations into incompatible geometries. These findings suggest that multilingual merging failures arise from target-side geometric misalignment within shared computational units, challenging the assumptions underlying standard weight-space merging for multilingual translation. We make the code publicly available at https://github.com/babangain/mt-model-merging",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d0bed997fef1e3c6",
+  "title": "Sphinx: Efficiently Serving Novel View Synthesis using Regression-Guided Selective Refinement",
+  "link": "https://arxiv.org/abs/2511.18672",
+  "description": "arXiv:2511.18672v2 Announce Type: replace \nAbstract: Novel View Synthesis (NVS) generates novel views of a scene from a sparse set of input images and is a key component in applications such as immersive rendering and 3D content generation. Existing NVS approaches broadly exhibit an efficiency--quality tradeoff: regression-based models generate novel views with relatively low latency but can struggle with perceptual quality, particularly in challenging regions or regions not visible in the input views (disoccluded regions), while diffusion-based models produce higher-quality and temporally consistent views at substantially greater computational cost. This motivates a hybrid approach that leverages the complementary strengths of regression and diffusion to bridge this efficiency--quality gap.\n  We present Sphinx, a training-free hybrid inference and serving system for NVS that combines regression-level efficiency with diffusion-level quality. Sphinx first uses fast regression-based NVS to generate coarse novel views, which provide a strong initialization for diffusion and avoid expensive generation from pure noise. It then selectively applies diffusion refinement where additional computation is needed, reducing the denoising workload while preserving the quality benefits of diffusion-based NVS. To efficiently serve the resulting heterogeneous requests, Sphinx further introduces an SLO-aware serving framework that dynamically allocates GPU resources based on each request's remaining computation and urgency. Evaluated across diverse NVS models, datasets, and serving configurations, Sphinx achieves an average 2.3 times inference speedup (up to 2.7 times) with less than 10% perceptual degradation, while its SLO-aware scheduler achieves up to 10 times higher SLO attainment than FCFS scheduling across hardware platforms.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

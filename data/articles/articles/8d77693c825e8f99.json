@@ -1,0 +1,13 @@
+{
+  "id": "8d77693c825e8f99",
+  "title": "Focus on What Matters: Constraining Spatial-Temporal Attention via Action-Units for Noise-Resilient AQA",
+  "link": "https://arxiv.org/abs/2511.05611",
+  "description": "arXiv:2511.05611v2 Announce Type: replace \nAbstract: The core challenge in Action Quality Assessment (AQA) lies in extracting fine-grained motion features from redundant and complex video backgrounds. Existing global feature learning methods are constrained by extremely low \"signal-to-noise ratios\", making it difficult to distinguish intrinsic actions from background clutter. To address this, we propose a Pose-Guided Intrinsic Motion Distillation Framework that explicitly enforces physical constraints to focus on motion subjects and decouple motion execution from environmental outcomes. First, we design an Action-Unit Parser that constructs dynamic regions of interest (ROIs) using human pose topology as prior knowledge. This functions as a spatial hard-attention filter that physically removes background noise at the input stage, forcing the model to learn appearance and geometric features only from pure body regions. Second, to resolve factor entanglement, we introduce a dual-stream decoupling mechanism: the Motion Parser focuses on capturing purified joint motion details, while the Condition Parser independently processes non-body-related environmental feedback (e.g., splash in diving) to create two orthogonal evaluation dimensions in feature space. Finally, adaptive weight modules integrate these decoupled features to generate final scores. Experimental results on large-scale datasets including FineDiving, FineDiving-HM, and MTL-AQA demonstrate that this method achieves state-of-the-art (SOTA) performance in both action segmentation and scoring accuracy, validating the effectiveness of \"noise suppression focusing\" and \"motion disentanglement\" strategies in fine-grained action evaluation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

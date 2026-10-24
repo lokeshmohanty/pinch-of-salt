@@ -1,0 +1,13 @@
+{
+  "id": "2db417b4075bf571",
+  "title": "Adversarially Robust Few-Shot Anomaly Detection with Vision Foundation Models",
+  "link": "https://arxiv.org/abs/2510.13643",
+  "description": "arXiv:2510.13643v3 Announce Type: replace \nAbstract: Vision foundation models such as DINOv2 enable strong few-shot anomaly detection (FSAD) through simple non-parametric k-nearest-neighbor (k-NN) scoring over frozen patch features. Existing robust anomaly detection methods assume large normal-class training sets and adversarial training of the feature extractor. The few-shot regime, where the detector consists of a frozen backbone and a non-parametric scorer, has remained unaddressed despite its widespread deployment. We develop a white-box attack framework adapted to k-NN memory-bank detectors and introduce an adversarially robust FSAD method which is training-free with respect to the backbone. We introduce the DistanceProbe (DP), a lightweight MLP trained by regression to predict per-patch k-NN distance directly from frozen features, providing the differentiable proxy required for gradient-based attacks against non-parametric scorers. We further propose a two-level combined defense that operates using only the normal reference support set images. At the input level, PatchShift (PS) applies random pixel shifts to exploit the misalignment of adversarial perturbations with the encoder's patch grid, aggregating scores across multiple shifted views via element-wise median pooling. At the feature level we employ the FeaturePurifier (FP), a lightweight residual MLP trained on clean and adversarially augmented support features to project perturbed representations back toward the clean feature manifold. Through comprehensive experiments under various adversarial settings, we show that our method exhibits robust detection and localization with performance gains of ~27% image-level AUROC and ~51% pixel-level PRO over the undefended attacked baseline across MVTec-AD, VisA, and MPDD at k=4 shots, while preserving clean accuracy within 3%, matching full-shot adversarially-trained baselines on pixel-level AUROC, and holding under adaptive attack.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

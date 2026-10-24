@@ -1,0 +1,13 @@
+{
+  "id": "28f9aa7db86de4a7",
+  "title": "An End-to-End Automated Pipeline for Controllable Crack Data Synthesis",
+  "link": "https://arxiv.org/abs/2609.12431",
+  "description": "arXiv:2609.12431v2 Announce Type: replace \nAbstract: Vision-based crack inspection depends on segmentation networks whose reliability depends on the quantity, diversity and label quality of their training data. Pixel-level annotations are costly, and crack images of specific structures are scarce. Generative augmentation can supply additional data, but existing methods address isolated steps. They reuse annotated masks, offer limited control over crack geometry, and adopt the conditioning mask as the label without checking it. This paper presents an end-to-end pipeline that produces labelled crack data without manual annotation and assesses the reliability of these data and of the detectors trained on them. Procedurally sampled B\\'ezier skeletons with guaranteed geometric properties are converted into crack masks by a generative adversarial network (GAN). A dual-ControlNet Stable Diffusion model renders the masks as crack images, either on text-described surfaces or on user-provided backgrounds. An ensemble of segmentation networks trained on real images combines its agreement with the inherited label and its internal disagreement into a pixel-wise label confidence. This confidence weights the training loss instead of removing samples with a threshold. The trained detectors are evaluated with image-space probability of detection (POD) and calibration analyses. On CRACK500 and CrackTree200, the pipeline improves five segmentation networks over conventional, diffusion-based and flow-matching-based augmentation, and on CRACK500 confidence weighting yields a higher accuracy than threshold filtering at every tested threshold. On CRACK500, the crack width that U-Net detects with 90\\% probability at 95\\% confidence decreases from 8.0 to 4.3 pixels, and the expected calibration error decreases from 14.2\\% to 9.6\\%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

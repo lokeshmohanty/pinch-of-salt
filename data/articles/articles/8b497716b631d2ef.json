@@ -1,0 +1,14 @@
+{
+  "id": "8b497716b631d2ef",
+  "title": "Using Set Learning to Improve Set-Valued Classifiers on Long-tailed Data",
+  "link": "https://arxiv.org/abs/2610.27443",
+  "description": "arXiv:2610.27443v1 Announce Type: cross \nAbstract: Set-valued classification (SVC) offers a practical approach to communicating uncertainty while maintaining accuracy by predicting variable-sized sets per input rather than fixed-sized sets (e.g. top-1 or top-5). However, set-valued classifiers (SVCs) exhibit significantly degraded performance on long-tailed and imbalanced datasets, a setting for which they are ostensibly well-suited. This becomes apparent under macro-average evaluation, which weighs all classes equally. SVCs are typically formed during a post-hoc calibration stage, so little is known about how training dynamics affect their behaviour. In this work, we investigate how different neural network training strategies and loss functions impact downstream SVC performance on highly imbalanced data. In addition to methods such as label smoothing and class-balancing, we investigate whether loss functions that operate over sets of examples in a batch, rather than treating all examples as independent, lead to better downstream SVCs. We adapt the recently proposed odd-K-out (OKO) loss function, which learns from sets of training samples, improving its sample efficiency whilst introducing algorithmic modifications that reduce its computational overhead from 3.2x to just 1.36x that of standard cross-entropy training. Experiments on highly long-tailed datasets demonstrate our modified OKO approach significantly improves macro-accuracy across multiple SVC methods - including top-k, average-k, and conformal prediction - while maintaining competitive micro-accuracy. This improved performance on minority classes occurs without substantially increasing prediction set sizes, suggesting that carefully constructed set-based training can produce networks better suited to imbalanced data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

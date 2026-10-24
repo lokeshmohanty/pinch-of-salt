@@ -1,0 +1,14 @@
+{
+  "id": "e216b75501816535",
+  "title": "ExecuGraph: A Multi-Agent, Execution-Grounded Framework for Reliable Backend Code Synthesis with Large Language Models",
+  "link": "https://arxiv.org/abs/2607.20499",
+  "description": "arXiv:2607.20499v1 Announce Type: new \nAbstract: Large Language Models generate plausible backend code, but a single-pass paradigm provides no guarantee of correctness or runtime reliability. We present ExecuGraph, a multi-agent framework that places execution-based validation at the center of backend code synthesis. Six specialized agents (Planner, Code Generator, Logical Reviewer, Evaluator, Optimizer, and Explainer) are coordinated by a typed directed workflow with a bounded retry budget, implemented on LangGraph with locally hosted models (Ollama) and an optional retrieval layer for algorithmic technique recall. A subprocess-isolated sandbox with a wall-clock timeout guards every evaluation. We evaluate on a curated 30-problem DSA suite (internal-30), HumanEval (n=64), and an APPS-introductory subset, contrasting ExecuGraph against a single-agent one-shot baseline and a single-agent execution-retry baseline (a Reflexion-style ablation that isolates the contribution of multi-agent decomposition). On internal-30, the three conditions are statistically indistinguishable (n=30; paired Wilcoxon p=0.59 MF vs. SO, p=0.08 SR vs. SO); 95% bootstrap confidence intervals on all pairwise mean differences include zero. On HumanEval, multi-full edges ahead by +3.1 pp. The strongest signal is cross-model: with DeepSeekCoder V2 Lite, graph-category accuracy improves from 57.5% (oneshot) to 80.0% (multi-full), a +22.5 pp jump that supports a scaling hypothesis: the value of multi-agent decomposition grows with base-model capability. The framework's primary contribution is methodological: a single codebase that collapses by configuration into one-shot, execution-retry, and per-agent ablation conditions, enabling controlled measurement of each lever's marginal contribution. A per-agent ablation, retry-budget sweep, error-class taxonomy, and test-source audit are reported.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.SE"
+  ]
+}

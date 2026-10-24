@@ -1,0 +1,13 @@
+{
+  "id": "96e291c1a8d78ba8",
+  "title": "Towards Physics-Faithful Generation of Scientific Diagrams",
+  "link": "https://arxiv.org/abs/2608.13112",
+  "description": "arXiv:2608.13112v1 Announce Type: new \nAbstract: Text-to-image generation has reached photorealistic quality, yet state-of-the-art systems remain unreliable at producing scientific diagrams, whose value depends not on appearance but on physical faithfulness: correct force directions, valid coordinate systems, consistent thermodynamic states, and equations matching the depicted scenario. Trained on web imagery with physically shallow captions, generic models produce diagrams that look plausible but are physically wrong, harmful in education and scientific communication. We present Princigram, a physics-faithful scientific-diagram generator, and its data pipeline. Our central advance is Structured Physical Chain-of-Thought (SP-CoT): a per-subdiscipline schema that decomposes a physics diagram into an explicit multi-step reasoning chain across six subdisciplines, from scene identification through force or process analysis to governing laws and synthesis. Unlike free-form chain-of-thought, SP-CoT follows a fixed schema with strict fidelity rules that separate visually grounded facts from physically inferred reasoning and type all mathematics symbolically; it serves both as dense training supervision and, at inference, as a structured \"thinking\" prompt. With it we curate and structurally annotate 4.3 million physics images, of which 115,037 carry expert-level annotation, and adapt a unified multimodal backbone. We further introduce VeriphyT2IBench, whose questions are derived from each held-out diagram's own structured annotation: each diagram becomes an item-specific bank of binary questions about its objects, forces, and states, so a judge model's score decomposes into named physical facts rather than one holistic number. On the physics subset of GenExam and on VeriphyT2IBench, Princigram shows that explicit physics-structured supervision improves the physical faithfulness of generated scientific diagrams.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

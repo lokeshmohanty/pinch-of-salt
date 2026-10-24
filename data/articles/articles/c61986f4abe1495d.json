@@ -1,0 +1,13 @@
+{
+  "id": "c61986f4abe1495d",
+  "title": "SearchMaster: Grounded and Regulated Self-Play for Search Agents",
+  "link": "https://arxiv.org/abs/2608.01822",
+  "description": "arXiv:2608.01822v2 Announce Type: replace \nAbstract: Training LLM-based search agents requires high-quality search data: tasks that demand genuine multi-hop retrieval and trajectories that use search tools effectively. Existing pipelines often depend on human-written tasks, expert demonstrations, or stronger teacher models. We present SearchMaster, a self-play framework that trains a shared LLM policy from search tasks it generates, solves, and verifies in a local search environment. The key challenge is that self-generated tasks and rollouts can yield misleading signals: pseudo multi-hop questions, success-rate difficulty estimates that ignore search depth, and rollouts with excessive opening but little targeted evidence acquisition. SearchMaster addresses these failure modes with three controls. An Evidence-Chain Generator (ECG) grounds task generation in explicit cross-document evidence chains to reduce pseudo multi-hop questions. A Search-Depth Reward (SDR) scores task difficulty by the search depth of successful rollouts rather than success rate alone, keeping retained tasks search-intensive. An Over-Opening Penalty (OOP) regulates tool use by discouraging excessive document opening, avoiding long but shallow browsing. Verified Proposer and Solver rollouts are then jointly optimized with GRPO. Across six deep-search benchmarks, SearchMaster raises average accuracy from 38.19% to 51.52% with a Qwen3.5-9B backbone and from 51.25% to 62.54% with a Qwen3.5-27B backbone. On BrowseComp-Plus, the corresponding gains are 30.1 and 17.8 percentage points. These results show that grounded and regulated self-play provides effective search-agent training data across model scales, without human-labeled QA pairs or expert demonstrations. The code is available at https://github.com/WentaoTan/SearchMaster.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

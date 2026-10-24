@@ -1,0 +1,13 @@
+{
+  "id": "36637ae009bfe24b",
+  "title": "Hierarchical Feature-level Reverse Propagation for Post-Training Neural Networks",
+  "link": "https://arxiv.org/abs/2506.07188",
+  "description": "arXiv:2506.07188v2 Announce Type: replace \nAbstract: End-to-end neural networks have become a dominant paradigm in autonomous driving, where reliable deployment requires controllable post-training adaptation and improved transparency of model updates. In this paper, we propose Feature-level Reverse Propagation for Post-Training (FR-PT), a hierarchical framework that provides explicit intermediate supervision for upstream modules by reconstructing label-conditioned features backward through frozen downstream networks. For the first time, we formulate feature reconstruction via the Computation Consistency Principle (CCP) and Minimum Deviation Principle (MDP), and develop efficient operator-specific reverse computation algorithms with MDP-centered Tikhonov regularization to handle numerically unstable inverse problems. Specifically, FR-PT incorporates circular convolution theorem-based solvers for scalable convolutional reconstruction, nearest embedding for constructing continuous output targets from categorical labels, and iterative reverse propagation for composite residual and Transformer-style blocks. Extensive experiments on image classification and autonomous driving tasks demonstrate effective and stable adaptation across diverse architectures. Among 85 post-training settings, FR-PT achieves statistically significant improvements over task-level baselines in 63 cases, while the matched backpropagation reference outperforms reconstruction-supervised configurations in only 4 cases. Additional efficiency, conditioning, and favorable-condition analyses characterize the reliability and limitations of reconstructed targets, while feature-response analyses further demonstrate their diagnostic value. Code is available at https://github.com/Dingni2000/FR-PT .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

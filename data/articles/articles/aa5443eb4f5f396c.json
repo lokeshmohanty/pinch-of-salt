@@ -1,0 +1,13 @@
+{
+  "id": "aa5443eb4f5f396c",
+  "title": "Beyond Spatial-Domain Supervision: A Relation Constrained Space for Multi-Modal Image Fusion",
+  "link": "https://arxiv.org/abs/2609.38968",
+  "description": "arXiv:2609.38968v1 Announce Type: new \nAbstract: Multi-modal image fusion (MMIF) aims to form a single image by integrating shared information, preserving complementary cues, and coordinating cross-modal conflicts across modalities. However, due to the absence of ground-truth fused images, existing MMIF supervision commonly uses spatial-domain sources or gradient variants as surrogate ground truth, making the supervision mechanism inherently misaligned with the goal of MMIF and causing pixel-level compromise or modality bias. To address this, we propose a relation-constrained supervision paradigm that moves fusion supervision from the spatial domain to a learned relation space. Rather than relying solely on direct source approximation, we further leverage frozen pretrained representation models as information providers and design a learnable feature adapter to align heterogeneous DINO and CLIP features into a unified supervision space. The adapter infers three relation parameters, namely sharedness, dominance, and coordination radius, which define three losses corresponding to the MMIF's goal. To make this space reliable, we devise a self-supervised contrastive ranking objective tailored to the adapter and couple it with the fusion network through alternating optimization. Extensive experiments show that the proposed supervision space yields significant gains regardless of which mainstream backbone the fusion network adopts, offering a supervision paradigm better aligned with the goal of MMIF. Code: github.com/GMY628/RCS-Fusion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

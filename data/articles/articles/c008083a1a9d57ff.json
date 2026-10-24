@@ -1,0 +1,17 @@
+{
+  "id": "c008083a1a9d57ff",
+  "title": "BenchShield: Formal Model-Backed Instrumentation for Reward Integrity in LLM-Agent Evaluation Infrastructure",
+  "link": "https://arxiv.org/abs/2609.11028",
+  "description": "arXiv:2609.11028v1 Announce Type: cross \nAbstract: LM-agent benchmarks increasingly function as interactive evaluation infrastructure. Agents observe state, call tools, modify workspaces,\n  submit artifacts, and receive rewards from outcome procedures. This interactivity makes evaluations vulnerable to reward hacking: an agent\n  improves its measured score by exploiting the reward-relevant trajectory instead of solving the intended task. Existing defenses rely largely\n  on task-specific patches, prompt instructions, or post-hoc detectors. They do not provide reusable evidence that a concrete run remained\n  within its intended evaluation boundary. This paper presents BenchShield, a model-backed instrumentation layer for reward integrity in\n  LLM-agent evaluation. BenchShield grounds detection in a finite lifecycle model of an evaluation's reward-relevant events. Within the\n  benchmark infrastructure, two complementary analyses operate over this model. A static, phase-aware taint analysis exposes reward-hacking\n  paths before a run. Its runtime counterpart uses infrastructure-side evidence to attribute concrete agent use and emit evidence-backed claims.\n  We construct BenchShield Trajectories, a human-labeled corpus of 456 adjudicated trajectories from more than 31,000 public agent runs across\n  three benchmarks. Compared with an agentic hackability scanner baseline on the same tasks and model, BenchShield improves full-chain recall\n  from 23-94% to 77-100%, same-vector coverage from 16-56% to 43-78%, and reduces per-task cost by up to 65%. Its runtime analysis achieves 96%\n  accuracy in detecting reward hacking from infrastructure-side evidence.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.SE",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

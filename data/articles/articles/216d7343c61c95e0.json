@@ -1,0 +1,13 @@
+{
+  "id": "216d7343c61c95e0",
+  "title": "Counterfactual Route Optimization for Gaussian Head Avatar Modeling",
+  "link": "https://arxiv.org/abs/2610.09791",
+  "description": "arXiv:2610.09791v1 Announce Type: new \nAbstract: Head avatar modeling requires jointly optimizing multiple objectives with different dominant effects on geometry, appearance, and cross-view consistency. However, their relative effectiveness varies across training states, while existing pipelines typically rely on fixed loss weights or handcrafted stage-wise schedules. A central challenge is therefore to identify which optimization direction is more beneficial at each training state. We propose a counterfactual route optimization framework for Gaussian head avatar modeling, which characterizes state-dependent optimization preference from the realized effects of alternative updates rather than predefined heuristic weighting. Starting from the same training state, we perform short-horizon route-restricted lookahead over geometry, appearance, and joint update routes and evaluate their outcomes under a unified utility. The resulting counterfactual evidence is factorized into a geometry--appearance preference and a residual joint advantage, separately capturing the relative preference between individual update directions and the additional benefit of coordinated optimization. We further amortize this offline evidence into a lightweight controller that directly estimates the current optimization preference and applies bounded modulation to the training objectives during full avatar optimization. Experiments on the NeRSemble dataset validate the effectiveness of the proposed design, consistently outperforming existing methods while preserving clearer local facial structures and finer details.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

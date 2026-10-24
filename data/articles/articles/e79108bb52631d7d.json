@@ -1,0 +1,15 @@
+{
+  "id": "e79108bb52631d7d",
+  "title": "The Value of Spike Timing: A Leakage-Resistant Benchmark of SNN Design Choices for Network Intrusion Detection",
+  "link": "https://arxiv.org/abs/2606.01442",
+  "description": "arXiv:2606.01442v3 Announce Type: replace-cross \nAbstract: Spiking neural networks (SNNs) are increasingly studied for network intrusion detection, but comparative evidence on how neuron models and spike encodings affect performance remains limited. Evaluation choices can further influence the observed results when preprocessing, capture structure, or scenario information crosses the train-test boundary. We evaluate nine snnTorch neuron families with three spike encodings, yielding 27 SNN configurations across four intrusion-detection benchmarks. We first screen the complete design space and then repeat the evaluation using train-only transforms, seed-independent partitions, and capture- or scenario-aware separation. At the shared operating point, LeakyParallel/latency achieved the lowest mean rank in both sweeps but was not statistically separated from Leaky/latency; their screening order reversed when CTU-13 was excluded. Overall, screening and confirmation retained substantial rank agreement despite changes in measured performance.\n  We then examine what latency coding contributes by holding the active spike set fixed and changing only its temporal organization. At the main T=25 operating point, mapping feature magnitude to spike time improved macro-F1 on all five confirmation protocols, while spreading the same spikes through time without that mapping could either improve or reduce performance. Latency coding thus combines informative spike timing with temporal network dynamics. Sparse input encoding does not directly imply sparse internal activity, although latency coding requires fewer fanout-weighted operations than rate coding in the evaluated models. These findings motivate separate assessment of SNN design, evaluation protocol, spike timing, and computational activity for static network-flow data.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.NE"
+  ]
+}

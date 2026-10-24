@@ -1,0 +1,15 @@
+{
+  "id": "a10bb9a8886c6eb5",
+  "title": "Risk-Controlled Selective LLM Answering by Pricing Label-Free Checks",
+  "link": "https://arxiv.org/abs/2609.37493",
+  "description": "arXiv:2609.37493v1 Announce Type: cross \nAbstract: Serving an answer from a large language model requires deciding when to abstain, yet a verifier's ranking accuracy alone does not determine the error rate among served answers. We introduce PriceCheck, which builds a compact family of decision rules from label-free checks such as re-solving a problem. Each check has a price: its agreement rates on correct and incorrect answers and its cost per run. Prices fitted on a small, class-enriched labelled set compose into predictions of a schedule's coverage and cost, guiding which checks to run and when to stop. A calibration test then selects a schedule at a stated selective-risk target. In mathematics, the selected schedules serve 76.1% of answers on average and keep held-out selective risk below 1.5% on all 15 splits. Under the shared testing protocol, PriceCheck serves more answers at that target than reward models, a prompted judge, the generator's confidence and a trained correctness classifier. At matched coverage, it keeps the fewest wrong answers among these scorers. Across 118 diagnostic schedules, price-based coverage predictions have a rank correlation of 0.97 with observed coverage. These results show that choosing how checks are combined and stopped matters alongside how well a verifier ranks answers. Code is available at https://github.com/js-lee-AI/PriceCheck.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

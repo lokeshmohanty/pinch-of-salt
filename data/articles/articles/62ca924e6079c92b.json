@@ -1,0 +1,16 @@
+{
+  "id": "62ca924e6079c92b",
+  "title": "PanoDiff-SR: Synthesizing Dental Panoramic Radiographs using Diffusion and Super-resolution",
+  "link": "https://arxiv.org/abs/2507.09227",
+  "description": "arXiv:2507.09227v2 Announce Type: replace-cross \nAbstract: Interest in generating realistic synthetic medical images has grown in recent years. Such datasets can mitigate the scarcity of public data for artificial intelligence research and support education. Work on synthesizing dental panoramic radiographs (PRs) has so far relied almost exclusively on generative adversarial networks (GANs), and three limitations recur: the synthesized field of view is often restricted to a cropped dentoalveolar region rather than a complete PR; observer studies of GAN-generated PRs report that clinicians still identify synthetic images with accuracies of roughly 78-82%, implying persistent visible giveaways; and adversarial training remains sensitive to instability and mode collapse. Generating a full-size PR directly at diagnostic resolution with a diffusion model is an alternative, but sampling at that resolution is costly. We therefore present PanoDiff-SR, an end-to-end two-stage pipeline developed and evaluated specifically for panoramic radiography: a denoising diffusion implicit model (PanoDiff) generates a low-resolution (LR) seed PR ($256\\times128$), which a fine-tuned hybrid attention transformer (HAT) super-resolution (SR) stage upscales to a high-resolution (HR) PR of $1024\\times512$. Decoupling the expensive generative step from the resolution step yields complete, full-arch PRs at diagnostic resolution on a single 47 GB GPU. The Fr\\'echet inception distance between 7243 real and synthetic HR images is 40.5. Inception scores were 2.68, 2.38, 2.90 and 2.98 for real HR, synthetic HR, real LR and synthetic LR images, respectively. Six clinical experts, each evaluating 100 synthetic and 100 real PRs under a time limit, distinguished real from synthetic images with an average accuracy of 68.5% (50% corresponds to random guessing), substantially closer to chance than reported for GAN-based studies. Project page: https://s4nyam.github.io/panodiff/",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "2e5e3819f45b087c",
+  "title": "$\\mathrm{R}{\\scriptstyle\\mathrm{EAL}}\\mathrm{G}{\\scriptstyle\\mathrm{UARD}}$: Reliable, Efficient, and Auditable LLM Safeguards via Latent Reasoning",
+  "link": "https://arxiv.org/abs/2608.03838",
+  "description": "arXiv:2608.03838v2 Announce Type: replace \nAbstract: Reasoning-based large language model (LLM) safeguards improve safety classification accuracy by generating explicit rationales before making decisions. However, generating explicit rationales adds substantial decoding overhead to every safety decision, while readable explanations are needed only for on-demand audits. This mismatch motivates $\\mathrm{R}{\\scriptstyle\\mathrm{EAL}}\\mathrm{G}{\\scriptstyle\\mathrm{UARD}}$, a reliable, efficient, and auditable framework for LLM safeguards that decouples safety reasoning from rationale generation via latent reasoning. During training, a task-aligned curriculum progressively replaces explicit rationales with continuous latent reasoning under supervision from the remaining rationale text and final safety labels. In parallel, a lightweight audit decoder is trained to generate explanations conditioned on interaction text and latent states under supervision from condensed task-level rationales. At inference, the guard model makes safety decisions through continuous latent reasoning with adaptive stopping, while the audit decoder generates concise explanations when needed. Evaluations of 1B, 3B, and 8B models show that $\\mathrm{R}{\\scriptstyle\\mathrm{EAL}}\\mathrm{G}{\\scriptstyle\\mathrm{UARD}}$ improves mean F1 score by up to 1.76 points over GuardReasoner, with up to 15.7$\\times$ speedups and up to 166.7$\\times$ reductions in reasoning token usage during routine safety classification, while its audit decoder achieves up to 87.73% explanation acceptability under LLM-based evaluation.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

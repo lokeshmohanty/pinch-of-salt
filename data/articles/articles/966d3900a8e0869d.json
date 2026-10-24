@@ -1,0 +1,13 @@
+{
+  "id": "966d3900a8e0869d",
+  "title": "SkillCycle: Co-Evolving Agent Policies and Skill Banks",
+  "link": "https://arxiv.org/abs/2610.09430",
+  "description": "arXiv:2610.09430v1 Announce Type: new \nAbstract: Internalizing external skills changes a language agent's capabilities and, with them, the value of its remaining guidance: rules can become redundant, misleading, or insufficient for newly encountered decisions. This creates a coupled problem of learning from skills and adapting the skills that supervise further learning. We introduce SkillCycle, a framework for co-evolving agent policies and skill banks through a feedback loop between skill internalization and rule revision. Our central contribution is to give distillation feedback a second role: token-level contextual differences help locate rules for inspection, while interaction outcomes guide edits to their content and applicability. SkillCycle alternates between two phases: policy learning with a fixed skill bank and router, and rule revision with a frozen policy. Candidate edits undergo rule-level and whole-bank environment comparisons before they guide the next learning cycle. On WebShop, SkillCycle with a 3B model achieves a success rate of 74.74% and a score of 88.37 without inference-time skill inputs, representing relative improvements of 0.73% and 3.96% over the state-of-the-art (SOTA) model, respectively. In Cycle 3 ablations on ALFWorld and WebShop, SkillCycle's no-skill success rates improve by 10.18% and 18.11% relative to a static skill bank, and by 2.41% and 2.50% relative to a single bank update, respectively. These results show that continually revising skill guidance as the agent's capabilities change helps transform external skills into policy capabilities that require no skill inputs at inference. We will release code, configurations, skill banks, and evaluation protocols.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "c4e25f21c7a5e28e",
+  "title": "Agentic Critical Training",
+  "link": "https://arxiv.org/abs/2603.08706",
+  "description": "arXiv:2603.08706v2 Announce Type: replace \nAbstract: Imitation learning (IL) teaches language-model agents to reproduce expert actions but not to distinguish them from plausible mistakes. Self-reflection methods expose models to alternatives yet use supervised fine-tuning (SFT) to imitate fixed rationales and actions. We introduce Agentic Critical Training (ACT), which uses reinforcement learning with verifiable rewards (RLVR) to train models to judge actions directly. At each expert-trajectory state, ACT pairs an expert action with an alternative sampled from the initial policy and randomizes their order. The model generates its own reasoning but is rewarded only for selecting the expert action. ACT reuses demonstrations, requires no reference rationales, and allows pair reuse across model sizes. ACT is a warm-up before IL, optionally followed by RL; inference requires no candidate comparison. Across Qwen3-8B and Olmo-3-7B-Instruct on ALFWorld-ID, WebShop, and ScienceWorld, ACT yields average gains of 5.85 points over IL and 4.12 points over IL$\\to$RL without ACT, while also improving ALFWorld-OOD. With Olmo on ScienceWorld, the full pipeline gains 15.36 points over CoT prompting and 9.23 points over IL$\\to$RL without ACT. Both ACT$\\to$IL and the full pipeline outperform supervised reflection baselines. Controls with fixed pairs or matched training durations show that the gains stem from the ACT objective rather than additional data or training. Without reasoning-specific post-training, the standalone ACT checkpoint achieves the highest mean among evaluated models on MATH-500 and GPQA-Diamond, showing that action comparison complements generation.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

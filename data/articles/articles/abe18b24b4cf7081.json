@@ -1,0 +1,13 @@
+{
+  "id": "abe18b24b4cf7081",
+  "title": "DAPEVO: Deep Adaptive Patch Frame-Event Visual Odometry",
+  "link": "https://arxiv.org/abs/2609.30947",
+  "description": "arXiv:2609.30947v1 Announce Type: new \nAbstract: Visual odometry is essential for autonomous navigation in GPS-denied environments, yet RGB-based methods remain vulnerable to motion blur, challenging illumination, and dropped frames. Event cameras complement conventional cameras with high temporal resolution and dynamic range, but their asynchronous measurements complicate reliable correspondence estimation. We present DAPEVO, a learned visual odometry system that estimates image and event correspondences independently at shared patch locations and fuses their correlation evidence before motion refinement. Each tracked patch maintains image and event descriptors, and a learned scalar gate combines modality-specific correlation embeddings for each patch--frame edge before a shared recurrent refinement and bundle-adjustment update. DAPEVO also supports event-only observations, enabling continued tracking when RGB frames are sparse or unavailable, while modality-aware keyframe culling preserves scarce frame constraints. On UZH-FPV, when retaining only one in six RGB frames, DAPEVO's mean absolute trajectory error (ATE) increases by only 36%, from 1.00 to 1.36m, whereas the ATE of DPVO and RAMP-VO rises by factors of $3.7\\times$ and $3.1\\times$, respectively. On TartanEvent, DAPEVO similarly remains below 1m ATE at 3Hz RGB input, while DPVO and RAMP-VO exceed 9m. Under degraded RGB input on TartanEvent, DAPEVO achieves an ATE of 0.60m, compared with more than 4m for both DPVO and RAMP-VO, while also outperforming event-only DEVO at 0.87m.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

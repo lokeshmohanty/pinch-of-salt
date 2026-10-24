@@ -1,0 +1,15 @@
+{
+  "id": "d66a3ade5a8eb84e",
+  "title": "STAMP: Symmetric Temporal Averaging Message Passing for Domain Adaptation in Chronologically Split Graphs",
+  "link": "https://arxiv.org/abs/2411.10957",
+  "description": "arXiv:2411.10957v2 Announce Type: replace-cross \nAbstract: This paper addresses domain adaptation in graph-structured data under chronological splits. We consider transductive semi-supervised node classification (SSNC), in which labels of historical nodes are used to predict labels of more recent nodes. Temporal dependencies in graph connectivity induce distribution shifts across time, often degrading the performance of models trained on past nodes. Despite its practical relevance, domain adaptation under chronological graph splits remains relatively underexplored. We propose Symmetric Temporal Averaging Message Passing (STAMP), a timestamp-balanced operator that replaces standard neighborhood aggregation with temporally aligned propagation. We call its specialized variant for the heterogeneous ogbn-mag dataset STAMP-mag, reserving STAMP for the general formulation. By balancing messages across timestamps, STAMP enforces first-moment invariance across temporal domains while remaining scalable and easy to implement. Unlike many existing domain adaptation methods, whose assumptions are difficult to verify on graphs, STAMP relies on transparent, practically checkable conditions and is supported by theoretical analysis. Empirically, STAMP and STAMP-mag improve accuracy across all evaluated temporal graph benchmarks. STAMP achieves state-of-the-art performance on ogbn-arxiv, while STAMP-mag does so on ogbn-mag. For temporal-split Pokec, where no established benchmark exists, applying STAMP to the state-of-the-art model for the original dataset consistently improves performance under our chronological split. These results demonstrate that timestamp-balanced propagation is an effective and practical approach to mitigating temporal distribution shift in graph learning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "a1c82cad23e56ac2",
+  "title": "PEAK: Precise and Persistent Concept Erasure via k-Sparse Autoencoders",
+  "link": "https://arxiv.org/abs/2608.10985",
+  "description": "arXiv:2608.10985v1 Announce Type: new \nAbstract: Erasing concepts from large-scale text-to-image (T2I) diffusion models has become increasingly crucial due to the growing concerns over copyright infringement, privacy violations, and offensive content. Existing approaches struggle to achieve both precise and persistent concept erasure: inaccurate localization of concept-related representations may cause unintended semantic interference, while incomplete removal of the underlying concept knowledge allows adversarial recovery. To address this dilemma, we propose PEAK, a \\textbf{\\textit{precise}} and \\textbf{\\textit{persistent}} concept erasure framework via k-Sparse Autoencoders (kSAEs). PEAK first trains a kSAE on internal activations of the diffusion denoising network to decompose dense representations into interpretable sparse features. By contrasting sparse activations induced by target and non-target prompts, PEAK identifies a compact set of target-specific features according to both activation strength and frequency. These localized features are then used for parameter optimization, where PEAK selectively suppresses target-related activations while preserving complementary non-target ones towards the original model. This feature-guided optimization embeds concept erasure directly into diffusion parameters, eliminating the need for additional inference-time intervention and facilitating effective persistence against adversarial attacks. Extensive experiments demonstrate that PEAK achieves effective and robust concept erasure. On the I2P benchmark, PEAK reduces NudeNet detections from 582 to 6, lowers the average attack success rate (ASR) from 96.52\\% to 5.63\\%, and preserves general generation quality on MS-COCO with a near-zero KID. Our code and models are available at: https://github.com/manmanTAT/PEAK",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

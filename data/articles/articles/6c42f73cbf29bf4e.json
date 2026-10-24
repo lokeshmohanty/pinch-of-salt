@@ -1,0 +1,16 @@
+{
+  "id": "6c42f73cbf29bf4e",
+  "title": "Single-stage joint diffusion of sky images and clear-sky index for ultra-short-term irradiance forecasting: what the frame-to-irradiance stage discards",
+  "link": "https://arxiv.org/abs/2610.21795",
+  "description": "arXiv:2610.21795v1 Announce Type: new \nAbstract: Sky-image irradiance forecasting is dominated by a two-stage design: a video-prediction model forecasts future sky frames, and a separately trained regressor maps those frames to irradiance. We propose a single-stage alternative that co-denoises the future sky-image and clear-sky-index sequences in one diffusion process, with an irradiance head that reads a denoised preview of the future sky rather than the noised diffusion state. The forecaster needs no regression stage and runs from sky images and deterministic covariates alone, with no measured irradiance at its input --- the situation at a site with a camera but no pyranometer. On 2023 SIRTA data the model reaches a pooled RMSE of $104.1$~W\\,m$^{-2}$ and a skill score of $+0.34$ on the continuous ranked probability score (CRPS) against smart persistence, higher than any of twelve baseline configurations, and retains that skill when retrained on 2021--2022. On the model's own generated frames, a separately trained regressor reaches $150.6$~W\\,m$^{-2}$ against the joint head's $104.1$: roughly $46$~W\\,m$^{-2}$ that joint training recovers and a cascade discards. Point accuracy is competitive but not best: a deterministic network that also reads measured irradiance attains $97.6$~W\\,m$^{-2}$. The model's CRPS skill leads that network's in every sky-condition tertile, by $0.26$ to $0.30$.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

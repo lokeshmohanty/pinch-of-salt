@@ -1,0 +1,13 @@
+{
+  "id": "3afda4edaeef648b",
+  "title": "When Agents Commit Too Soon: Diagnosing Premature Commitment in LLM Agents",
+  "link": "https://arxiv.org/abs/2606.22936",
+  "description": "arXiv:2606.22936v2 Announce Type: replace \nAbstract: Tool-using LLM agents make early choices about what to search for, which evidence to trust, and what to do next. A wrong early choice can steer every later tool call, so an agent may produce a coherent but incorrect result. Existing evaluation does not reveal this process: final-answer scoring comes only after completion, and agreement across runs can be high even when every run is wrong. We ask whether hidden states reveal that repeated runs have already settled into stable behavior. Our contributions are threefold. First, we introduce representational commitment, which measures hidden-state similarity across repeated runs at the same step. On Llama-3.1-70B running ReAct on HotpotQA, we show that higher step-4 similarity is associated with lower whole-trajectory variability (r = -0.35); we find the same pattern in action sequences and replicate it on two other models and StrategyQA. This provides an internal measure for studying when agent behavior stabilizes. Second, we establish the measure's scope. Shared evidence explains much of the observed association, the HotpotQA result disappears on hard questions, and correct and confidently wrong questions overlap. We therefore show that the measure detects stability, not correctness, and cannot by itself establish that commitment was premature. Third, we evaluate monitoring and intervention. A monitor built from three partial runs predicts whole-trajectory variability (mean AUROC 0.81). A commitment prompt reduces variability by 28% relative to a token-matched filler, but not significantly relative to the standard agent after correction, and it does not improve accuracy. Together, these contributions provide a measurement and evaluation framework for studying how agent trajectories stabilize and for testing when additional evidence, sampling, or review may be useful.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

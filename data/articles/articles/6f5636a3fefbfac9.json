@@ -1,0 +1,14 @@
+{
+  "id": "6f5636a3fefbfac9",
+  "title": "Scepsy: Serving Agentic Workflows Using Aggregate LLM Pipelines",
+  "link": "https://arxiv.org/abs/2604.15186",
+  "description": "arXiv:2604.15186v2 Announce Type: replace-cross \nAbstract: Agentic workflows carry out complex tasks by orchestrating multiple large language models (LLMs) and tools. Serving them at a target throughput with low latency is hard because they are written in arbitrary agentic frameworks and their execution times are unpredictable: execution branches, fans out, or recurs in data-dependent ways. Since their LLMs often outnumber the available GPUs, they also oversubscribe GPUs.\n  We describe Scepsy, a serving system that schedules arbitrary multi-LLM agentic workflows onto a GPU cluster. Scepsy exploits the insight that, while the end-to-end latency of an agentic workflow is unpredictable, each LLM's fraction of execution time is comparatively stable across requests. Scepsy profiles each LLM under different parallelism degrees and combines the profiles with these fractions into an Aggregate LLM Pipeline, a lightweight throughput and latency predictor for allocations. To minimize latency at a target throughput, Scepsy uses the Aggregate LLM Pipeline to search over fractional GPU shares, tensor parallelism degrees, and replica counts. A hierarchical heuristic then places the chosen allocation onto the cluster, minimizing fragmentation and respecting network topology. On realistic agentic workflows, Scepsy achieves up to 2.5x higher throughput before saturation and 1.0-3.3x lower latency than systems that optimize LLMs independently or rely on user-specified allocations.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI"
+  ]
+}

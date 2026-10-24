@@ -1,0 +1,13 @@
+{
+  "id": "a5aae859b278a5d0",
+  "title": "Robust Critics: Defending LLMs Against Multi-Turn Attacks",
+  "link": "https://arxiv.org/abs/2607.20472",
+  "description": "arXiv:2607.20472v1 Announce Type: new \nAbstract: When a user asks a language model something harmful, is it a genuine attack or a misunderstood but well-meaning question? This ambiguity is one of the central challenges of LLM safety. A model that assumes the worst harms legitimate users; one that assumes the best is easily exploited. The problem is compounded in multi-turn dialogue, where an attacker's true intent may only reveal itself gradually across many exchanges, yet existing safety frameworks apply a contextual bandit treatment, ignoring the trajectory of the conversation.\n  To that end, we propose Dialogue Critic Guided Sampling (DCGS), a framework that addresses this by inferring user intent at every turn of dialogue. Instead of applying a fixed rule about what is or is not safe, DCGS learns what the user's intent is likely to be based on the full conversational history and generates responses accordingly. Formally, we model adversarial dialogue as a Markov Decision Process and learn value and regret-based critics at both the individual token and utterance (full response) levels, scoring candidate responses via an action-value critic. We prove that this inference-time reweighting approximates exponential tilting of the base policy, guaranteeing improvement in expected return for any finite candidate pool, a property that group-relative objectives do not exhibit. Evaluated on CARES-18k, WildJailbreak, Redbench, and Harmbench, DCGS outperforms strong robust baselines and frontier models on adversarial dialogue tasks. DCGS also transfers to frontier models, improving their robustness without fine-tuning.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

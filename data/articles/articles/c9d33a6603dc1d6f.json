@@ -1,0 +1,13 @@
+{
+  "id": "c9d33a6603dc1d6f",
+  "title": "Query Independent Variable Rate Visual Token Coding",
+  "link": "https://arxiv.org/abs/2610.00204",
+  "description": "arXiv:2610.00204v1 Announce Type: new \nAbstract: Visual-token compression for vision--language models is posed almost entirely as a selection problem: decide which tokens to keep and discard the rest. The criteria that work best rank tokens by the attention the language model pays them, which makes the ranking a function of the question being asked. That is invisible in a single-turn benchmark and decisive whenever a compressed representation is written once and read many times, as when it is cached across the turns of a conversation or transmitted between a device and a server. We take the other half of the classical transform-coding toolkit instead: keep every token and vary its rate. A transform code exposes each token's measured distortion--rate curve, and a fixed bit budget is distributed across tokens by exact integer rate--distortion optimisation on those curves. No text enters the pipeline, so one compressed representation serves any query. At equal bit budgets, on two datasets and two capacities, it preserves the model's output distribution and its answers better than uniform-rate coding, the closed-form water-fill and distortion-ranked pruning. It matches attention-ranked pruning on the question pruning was tuned for, and overtakes it once the compressed image must answer a different question about the same image.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "94ded462247b90f9",
+  "title": "Move What Matters: Parameter-Efficient Domain Adaptation via Optimal Transport Flow for Collaborative Perception",
+  "link": "https://arxiv.org/abs/2602.11565",
+  "description": "arXiv:2602.11565v5 Announce Type: replace \nAbstract: Efficient domain adaptation remains a fundamental challenge for deploying multi-agent systems across diverse environments in Vehicle-to-Everything (V2X) collaborative perception. Despite the success of Parameter-Efficient Fine-Tuning (PEFT) in natural language processing and conventional vision tasks, directly applying PEFT to collaborative perception recovers only a limited portion of the performance lost to domain shift. In this work, we identify two complementary bottlenecks that limit this recovery: (i) inter-frame redundancy within a collaborative sequence, which makes the effectiveness of scarce labels sensitive to frame selection, and (ii) foreground cues that become less linearly decodable in deeper-stage representations of a frozen backbone. To address these issues, we propose FlowAdapt, a parameter-efficient framework grounded in optimal transport. Wasserstein Greedy Sampling casts frame selection as minimizing the $W_{\\infty}$ distance from the sequence to the retained subset, which equals its covering radius, so a farthest first traversal returns a subset provably within twice the optimum. Progressive Knowledge Transfer then routes compressed early-stage features into the deeper stages, gating each stage-local correction by that early evidence. Extensive experiments across target domains and fusion architectures show that FlowAdapt achieves state-of-the-art adaptation performance with about 1\\% trainable parameters, and maintains this lead under localization noise.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

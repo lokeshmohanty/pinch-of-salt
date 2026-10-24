@@ -1,0 +1,13 @@
+{
+  "id": "01d020840aa98e88",
+  "title": "MZ-Rain: Moisture-Budget-Guided Zero-Inflated Model for Station-Level Precipitation Nowcasting",
+  "link": "https://arxiv.org/abs/2609.04864",
+  "description": "arXiv:2609.04864v1 Announce Type: new \nAbstract: Accurate station-level precipitation nowcasting is critical for agriculture, water resource management, and disaster prevention, which typically is formulated as a time series forecasting problem. However, conventional time-series modeling techniques face two major challenges in addressing station-level precipitation nowcasting: (1) Lack of Physics-Guided Modeling}, where meteorological variables are treated as a homogeneous set without accounting for their distinct roles in precipitation formation, leads to predictions that deviate from the physical processes governing precipitation. (2) Severe zero inflation in precipitation, where dry intervals dominate the dataset, obscuring meaningful precipitation patterns and complicating the predictive modeling. To address these challenges, we propose \\textbf{MZ-Rain}, a moisture-budget-guided zero-inflated sLSTM framework for station-level precipitation nowcasting. Guided by the moisture budget equation, MZ-Rain decomposes the precipitation formation process into process-specific pathways corresponding to moisture storage, moisture transport, surface evaporation, and precipitation persistence, and captures their temporal evolution through dedicated sLSTM branches. To account for the zero-inflated nature of precipitation, MZ-Rain introduces an adaptive Tweedie modeling strategy that adaptively modulates the rainfall mean while jointly learning precipitation occurrence as an auxiliary task, enabling the model to better balance dry-wet discrimination and quantitative precipitation estimation. Extensive experiments across diverse geographical and climatic regimes demonstrate that MZ-Rain consistently outperforms strong baselines on multiple evaluation metrics, including CSI, FAR, MSE, and MAE. In particular, the model exhibits superior skill in forecasting heavy precipitation events, while benefiting from physically grounded process modeling.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

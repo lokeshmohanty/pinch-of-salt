@@ -1,0 +1,13 @@
+{
+  "id": "ba637501eac07592",
+  "title": "Just Align $\\bm{x}$: Aligning Predictions, Not Representations",
+  "link": "https://arxiv.org/abs/2610.00600",
+  "description": "arXiv:2610.00600v1 Announce Type: new \nAbstract: Representation alignment has become an effective way to accelerate diffusion training, but its benefits do not transfer reliably to pixel-space clean-image prediction. In JiT, we find that auxiliary feature alignment can improve access to semantic features while reducing access to image variation needed for clean-image prediction, creating a mismatch between the auxiliary objective and the denoising task. This suggests a different principle: auxiliary supervision should improve the prediction target itself rather than impose a separate representation target. We introduce JAx (Just Align x), a prediction-supervision method that aligns clean-image predictions across noise levels. JAx couples a noisier student observation with a cleaner observation through a Markov degradation that preserves the original JiT input distribution. Under this coupling, the oracle prediction from the cleaner state has the same conditional mean as the optimal JiT target, while its conditional target covariance is no greater. Thus, oracle prediction alignment preserves the population JiT objective up to a constant while providing a lower-variance training target. To make this construction practical with an imperfect EMA teacher, JAx combines ground-truth supervision with a reliability-gated coupling band that selects nearby teacher states based on prediction risk. On ImageNet 256x256, JAx consistently improves FID and accelerates convergence across JiT-B/16, L/16, and H/16, without an external encoder or changes to the architecture or sampling procedure. Gradient diagnostics further show reduced minibatch gradient variance, while ablations demonstrate that the gains cannot be explained by time reweighting alone. These results show that prediction-space supervision provides a simple and principled alternative to representation alignment for pixel-space generative models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

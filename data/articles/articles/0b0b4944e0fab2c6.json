@@ -1,0 +1,13 @@
+{
+  "id": "0b0b4944e0fab2c6",
+  "title": "Ada3Drift: Adaptive Training-Time Drifting for One-Step 3D Visuomotor Robotic Manipulation",
+  "link": "https://arxiv.org/abs/2603.11984",
+  "description": "arXiv:2603.11984v2 Announce Type: replace \nAbstract: Diffusion-based visuomotor policies model complex action distributions through iterative denoising, but repeated inference adds latency to robotic control. One-step generators reduce this cost, motivating training objectives that retain useful action structure with few demonstrations. We present Ada3Drift, a point-cloud-conditioned policy that builds on Drifting Models to perform distribution refinement during training and generate action chunks in one forward pass. Our central design is a regression-to-drifting curriculum: paired action regression first emphasizes observation--action correspondence, while a sigmoid schedule progressively increases a batch-level action-distribution regularizer. The drifting term combines attraction to demonstrated actions and repulsion among generated samples using inherited multi-temperature aggregation. A timestep-free generator preserves single-step inference throughout. On Adroit, Meta-World, RoboTwin, and five real-world tasks, Ada3Drift achieves the highest reported average success rates among the evaluated baselines with 1 NFE, compared with 10 NFE for the diffusion baselines. Controlled ablations favor sigmoid scheduling at matched demonstration budgets. We will release our code and pretrained model weights.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

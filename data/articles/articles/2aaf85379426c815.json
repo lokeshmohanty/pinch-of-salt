@@ -1,0 +1,15 @@
+{
+  "id": "2aaf85379426c815",
+  "title": "Sparse Data Augmentation for Optimization with Provable Guarantees",
+  "link": "https://arxiv.org/abs/2609.08133",
+  "description": "arXiv:2609.08133v2 Announce Type: replace-cross \nAbstract: In nonconvex optimization problems arising in geometric machine learning, data augmentation is commonly used to promote invariance by averaging empirical losses over transformations of the data. Computing the fully augmented objective, however, requires access to every element of the transformation group $G$, which may be prohibitively expensive when $G$ is large or accessible only through sampling. We study whether full augmentation can instead be approximated using a small, fixed sample of transformations acquired before optimization and reused thereafter. Under suitable regularity conditions, we show that, with probability at least $1-\\delta$, gradient descent (GD) on the resulting sparsely augmented objective returns an $\\varepsilon$-stationary point of the fully augmented objective using $\\mathcal{O}\\bigl((\\log |G|+\\log(1/\\delta))/\\varepsilon^2\\bigr)$ group-transformation-oracle queries. By comparison, standard group stochastic gradient descent (group-SGD), which samples a fresh transformation at every iteration, uses $\\mathcal{O}(1/\\varepsilon^4)$ transformation queries. Therefore, gradient descent with fixed sparse augmentation requires fewer transformation queries than both GD applied to the fully augmented objective and group-SGD. Our proof techniques, which may be of independent interest, establish a uniform approximation of the full group-averaged gradient field by a random group average using spectral properties of group-induced operators and tools from representation theory.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "math.OC"
+  ]
+}

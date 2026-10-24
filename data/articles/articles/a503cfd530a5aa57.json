@@ -1,0 +1,14 @@
+{
+  "id": "a503cfd530a5aa57",
+  "title": "Latent Video Prediction for World Modeling: An Evaluation Uncovering Intriguing Favorable Evidence",
+  "link": "https://arxiv.org/abs/2605.15618",
+  "description": "arXiv:2605.15618v2 Announce Type: replace-cross \nAbstract: Self-supervised video models are increasingly framed as world models, yet they are still evaluated almost entirely on clean video and reported as a final task score, obscuring how their representations behave under the degraded and ambiguous conditions a deployed world model must handle. We present the first systematic study of this component, analyzing four matched-capacity frontier self-supervised learning models that are strong candidates for world-model encoders -- V-JEPA 2.1, V-JEPA 2, VideoPrism, and VideoMAEv2 -- across five robustness axes relevant to their deployment as video world models: feature discriminability, corruption robustness, fine-grained discrimination, occlusion robustness, and sensitivity to temporal direction. We run the study on Something-Something-v2 and repeat every axis that ports on the egocentric EGTEA Gaze+, where the model ordering is unchanged. Our results reveal a distinct and consistent profile for latent-prediction models across all five axes. They degrade more gracefully under pixel corruption, preserve usable class structure rather than mere geometric stability under occlusion, capture fine-grained physical contact cues without reconstructing pixels, and uniquely encode the arrow of time. We finally test whether these representation-level differences matter for downstream world modeling, pairing each frozen encoder with an identical action-conditioned predictor and planner in a simulated manipulation environment. Only latent prediction yields near-complete task success, remains effective under degraded observations, and transfers to a manipulation task for which the predictor was never trained. Our results provide concrete new evidence that latent prediction is a promising foundation for robust world modeling.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

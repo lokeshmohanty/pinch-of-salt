@@ -1,0 +1,13 @@
+{
+  "id": "331d126b4c07e261",
+  "title": "Reasoning with Evidence, Not Merely Rationales: Verifiable Preference Proofs for LLM-Based Recommendation",
+  "link": "https://arxiv.org/abs/2610.02968",
+  "description": "arXiv:2610.02968v1 Announce Type: new \nAbstract: Large language models (LLMs) can infer user preferences from interaction histories and reviews, yet the rationales they generate may not reflect the information actually used for recommendation. A preference claim may be weakly supported by its selected evidence, or may have little effect on the final ranking. We refer to these two failures as the grounding-influence gap. We introduce PROVE-REC, a general framework for verifiable preference reasoning in LLM-based recommendation. Pass A converts the complete pre-target history into a compact preference proof consisting of positive and avoidance claims linked to selected evidence entries. Pass B predicts the next item using only the proof and its selected evidence, preventing the recommender from bypassing the reasoning path. To verify evidence-to-proof grounding, we compare the effect of masking selected evidence with masking a comparable control entry. To verify proof-to-recommendation influence, we remove a preference claim and measure the resulting decrease in the target item's ranking margin. A ranking-preservation objective further retains useful information from the complete history. Comprehensive experiments on wide-ranging real-world datasets demonstrate that PROVE-REC consistently outperforms strong sequential, generative, and LLM-enhanced baselines, with improvements of up to 7.45%. Controlled ablations confirm the effectiveness of the two-pass architecture and verification objectives. Moreover, PROVE-REC produces claims that are more strongly grounded in historical evidence and more influential to recommendation while preserving ranking quality.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

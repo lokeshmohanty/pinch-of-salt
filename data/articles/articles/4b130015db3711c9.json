@@ -1,0 +1,14 @@
+{
+  "id": "4b130015db3711c9",
+  "title": "Regime Boundary Alignment for Evidence-Gated Question Answering",
+  "link": "https://arxiv.org/abs/2609.37491",
+  "description": "arXiv:2609.37491v1 Announce Type: cross \nAbstract: Retrieval-augmented language models are expected to answer from the retrieved evidence, but in practice they often keep answering when that evidence is missing. We trace this behavior to the training signal: answer-focused fine-tuning assigns no target to unsupported contexts, so it cannot distinguish a reader that abstains from one that guesses, and unsupported answering stays near 100% even as supported accuracy improves. We introduce Regime Boundary Alignment (RBA), which trains a single reader on matched variants of the same question and gold answer. The reader is trained to produce the gold answer when the context supports it, including when conflicting evidence is also present, and to abstain when the correct support is removed; inference is ordinary decoding, with no verifier, threshold, or regime label. On three multi-hop QA datasets across three seeds, RBA reduces the unsupported-answer rate by more than sixty percentage points relative to conflict-focused training while matching its supported accuracy. On a held-out TriviaQA retrieval-miss slice, the same reader reduces unsupported answering from 100% to below 1% while also improving supported accuracy. These results indicate that evidence-gated answering must be learned on both sides of the support boundary.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

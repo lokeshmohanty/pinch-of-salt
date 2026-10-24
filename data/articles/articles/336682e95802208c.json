@@ -1,0 +1,13 @@
+{
+  "id": "336682e95802208c",
+  "title": "Spectrum Matching: a Unified Perspective for Superior Diffusability in Latent Diffusion",
+  "link": "https://arxiv.org/abs/2603.14645",
+  "description": "arXiv:2603.14645v2 Announce Type: replace \nAbstract: In this paper, we study the diffusability (learnability) of variational autoencoders (VAEs) in latent diffusion. We first derive distribution-free bounds on the maximum achievable reduction in pixel-space denoising loss. Under a power-law power spectral density (PSD), these bounds establish an ordering between sufficiently separated frequencies, with larger achievable reductions at lower frequencies. Motivated by this analysis and measurements of a trained pixel diffusion model, we seek to make low-frequency denoising gains useful for generating perceptually meaningful semantic content in latent diffusion. We propose the Spectrum Matching Hypothesis: latents with superior diffusability should (i) follow a flattened power-law PSD (Encoding Spectrum Matching, ESM) and (ii) preserve frequency-to-frequency semantic correspondence through the decoder (Decoding Spectrum Matching, DSM). In practice, we apply ESM by matching the PSD between images and latents, and DSM via shared spectral masking with frequency-aligned reconstruction. Importantly, Spectrum Matching clarifies prior observations of over-noisy or over-smoothed latents and provides a unified spectral interpretation of prior methods, including VA-VAE and EQ-VAE. Experiments suggest that Spectrum Matching yields superior diffusion generation on CelebA and ImageNet datasets, and outperforms prior approaches. Finally, we extend the spectral view to representation alignment (REPA): we show that the directional spectral energy of the target representation is crucial for REPA, and propose a DoG-based method to further improve the performance of REPA. Our code is available at https://github.com/forever208/SpectrumMatching.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

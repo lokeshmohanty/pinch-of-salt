@@ -1,0 +1,13 @@
+{
+  "id": "39a8173b52f51ded",
+  "title": "SenseAlign: Understanding Vision and Touch through Language at Test Time",
+  "link": "https://arxiv.org/abs/2610.28511",
+  "description": "arXiv:2610.28511v1 Announce Type: new \nAbstract: Tactile-visual-language models combine vision and touch through a shared language space to recognize objects and materials. In real-world deployment, changes in lighting, contact quality or sensor hardware can shift visual or tactile inputs and degrade recognition performance. When both modalities contribute to a prediction, an unreliable modality can override correct evidence from the other. Since labeled data are generally unavailable during deployment, test-time adaptation offers a way to recover recognition performance from unlabeled observations. In this setting, we find that comparing accumulated observations with the text embeddings of candidate classes reveals modality reliability differences that confidence can miss. Refining features against competing classes also improves recognition beyond geometric alignment alone. These findings motivate SenseAlign, which uses a common semantic reference for test-time modality weighting and feature correction. Alignment Trust weights each modality according to its support for shared predicted classes. Anchor Realignment uses the same class text embeddings to fit a shared feature correction that separates predicted classes from alternatives. Both modules use the same unlabeled history while keeping all encoders frozen. Extensive experiments across diverse datasets demonstrate strong recognition performance under both natural shifts and controlled corruptions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

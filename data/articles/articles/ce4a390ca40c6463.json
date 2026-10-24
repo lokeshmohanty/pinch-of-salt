@@ -1,0 +1,14 @@
+{
+  "id": "ce4a390ca40c6463",
+  "title": "The Geometry of Contextual Relations: Language Models Address Facts by Order of Mention",
+  "link": "https://arxiv.org/abs/2610.00910",
+  "description": "arXiv:2610.00910v1 Announce Type: cross \nAbstract: Human reasoning depends on how objects are related within propositions. \\textit{How do relations organize the language representations of contextual contents?} We give an LLM a list of facts in its context (e.g., \\emph{Alice eats an apple. Bob eats a pear.}) and measure how its hidden state changes when the question switches from what Alice eats to what Bob eats. Averaged over many lists, this change is a steering vector, which we call the \\emph{ordinal vector}. It points to a fact by its \\emph{order of mention}, the order in which the facts were stated in the context. We find that LLMs represent the fact a question asks about by its order of mention, not by the name the question contains. We state this as the \\textit{ordinal addressing hypothesis}: each order of mention has a \\emph{fact address} in the model's state, shared by all contexts, and a question moves the state to the fact address of the fact it asks about, while the context supplies what that fact says. Across Qwen, Gemma, and Llama, fact addresses are (1) \\emph{ordered by mention}: query states are organized by the order of facts, not of names, even when one fact has multiple subjects; (2) \\emph{steerable}: added to a question about the first fact of a new list, the ordinal vector makes the model answer with the second fact of that list; (3) \\emph{low-rank}: they span a low-rank subspace in which the first-mentioned fact is the easiest to reach, surprisingly similar to human recall; and (4) \\emph{emergent}: they are shared in late-middle layers, hold from 1.5B to 32B parameters, and form early in pretraining. Language models reach a stated fact by where it was mentioned, deepening our understanding of LLM reasoning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

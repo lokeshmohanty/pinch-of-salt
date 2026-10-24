@@ -1,0 +1,13 @@
+{
+  "id": "3b0bd0247a066d87",
+  "title": "PARSEE-VAD: Efficient Training-Free Online Video Anomaly Detection via Proposition-Aware Reasoning and Streaming Evidence Escalation",
+  "link": "https://arxiv.org/abs/2609.33236",
+  "description": "arXiv:2609.33236v2 Announce Type: replace \nAbstract: Training-free online video anomaly detection (VAD) with frozen multimodal language models faces two coupled challenges: extracting reliable current-window semantics under causal and computational constraints, and maintaining temporal continuity without repeatedly transmitting high-dimensional history. Encoding history through text can compress visual evidence and introduce semantic bias, whereas retaining visual history expands multimodal context. We introduce PARSEE-VAD, a two-module framework that separates semantic evidence acquisition from score-state evolution. Proposition-Aware Reasoning (PAR) extracts structured propositional evidence from the current causal window and conditionally activates more specific queries when coarse evidence warrants further refinement. By sharing a reusable causal visual prefix across queries, PAR reduces redundant computation through selective execution. Streaming Evidence Escalation (SEE) maps the acquired proposition evidence into a compact score-domain event state through current evidence escalation, then propagates only the resulting bounded state across decisions to support temporal continuity. Experiments on four benchmarks demonstrate strong training-free online performance while selective routing reduces specialist computation and score-state propagation remains sparse. These results support a current-first principle for streaming multimodal inference: resolve present semantics first, then use compact historical state only to repair residual continuity gaps.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

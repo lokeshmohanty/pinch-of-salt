@@ -1,0 +1,13 @@
+{
+  "id": "dcb9322a1a5dfee7",
+  "title": "CoSeP: Complementary Separability Pruning via Class-Separability Clustering",
+  "link": "https://arxiv.org/abs/2505.13225",
+  "description": "arXiv:2505.13225v3 Announce Type: replace \nAbstract: Neural network pruning aims to compress models for efficient deployment, yet two fundamental challenges remain. First, many methods rely on per-component importance scores, selecting filters or neurons independently and ignoring redundancy: the retained set may include multiple components capturing similar discriminative patterns while missing others entirely. Second, determining per-layer pruning ratios typically requires manual, architecture-specific tuning with no principled stopping criterion. We propose CoSeP (Complementary Separability Pruning) to address both issues. Rather than scoring components in isolation, CoSeP represents each component by its class-separability profile across all class pairs, computed via Jeffries--Matusita distances. This defines a separability space in which nearby components are potentially redundant and distant components capture complementary information. CoSeP selects a compact set of representatives in this space: components are grouped via k-medoids clustering, candidate subset sizes are evaluated using the Mean Simplified Silhouette, and a knee-detection criterion automatically determines how many components to retain. Across CIFAR-10, CIFAR-100, and ImageNet-1K, on ResNet, VGG, MobileNet, and DenseNet architectures, CoSeP matches or improves accuracy while reducing FLOPs, with measured wall-clock inference-time reductions of up to 20%. For example, it achieves a +0.66% top-1 accuracy gain with 2.30x FLOPs reduction on ResNet-50/ImageNet-1K, and a 0.37% gain with 2.59x FLOPs reduction on VGG-16/CIFAR-10. These results demonstrate that modeling complementarity in class-separability space provides an effective and principled approach to pruning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

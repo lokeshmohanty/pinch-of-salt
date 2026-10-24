@@ -1,0 +1,14 @@
+{
+  "id": "fccba0d32e05d930",
+  "title": "Efficient Pairwise Difference Learning: A Comparative Study of Encoding Strategies and Training Pair Selection",
+  "link": "https://arxiv.org/abs/2610.21644",
+  "description": "arXiv:2610.21644v1 Announce Type: cross \nAbstract: Pairwise Difference Learning for Classification (PDC) enhances supervised learning in low-data regimes by training a binary similarity classifier on pairs of instances rather than individual samples, effectively inflating the training set from $n$ to $O(n^2)$ examples. However, the PDC framework leaves critical implementation choices underspecified, particularly regarding input representation and pair selection strategies. This work systematically investigates these design decisions through extensive empirical evaluation. We compare four feature encoders (paired features, triplet with relative difference, absolute difference, and a novel triplet with absolute difference) alongside four pair selection strategies ranging from exhaustive to kernel-thinning-based schemes. Experiments across nearly 200 benchmark classification datasets using Decision Tree, Multilayer Perceptron, Gaussian Naive Bayes, and Support Vector Classifier as base models reveal that the proposed triplet with absolute difference encoder ($\\phi_{\\mathrm{3dabs}}$) achieves the highest average F1 scores. More notably, restricting training to upper-triangle pairs reduces computational time by approximately 40% with negligible accuracy loss. Kernel thinning-based selection provided no accuracy benefits while substantially increasing computational overhead. Overall, PDC configurations outperformed base models in 94% of tested cases, though no single configuration dominated universally, suggesting dataset-specific optimization remains an open challenge.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1d406cd1b269bf7e",
+  "title": "Negative Advantages Is a Double-Edged Sword: Calibrating advantages in GRPO for Search Agents",
+  "link": "https://arxiv.org/abs/2604.18235",
+  "description": "arXiv:2604.18235v3 Announce Type: replace-cross \nAbstract: Search agents achieve strong question-answering performance through multi-turn interactions with search engines, with Group Relative Policy Optimization (GRPO) being a widely used training algorithm. However, GRPO-style algorithms still face several challenges in multi-hop search settings. First, correct intermediate steps are often penalized when the final answer is wrong. Second, training is highly unstable, often causing degradation of natural language ability or even catastrophic training collapse. Our analysis attributes these issues to coarse-grained advantage assignment and an imbalance between positive and negative advantages. To address these problems, we propose CalibAdv, an advantage calibration method specifically designed for search agents that enables more accurate and more stable modeling of penalties and rewards. Specifically, CalibAdv leverages the correctness of intermediate steps to downscale excessive negative advantages at a fine-grained level. It then further rebalances positive and negative advantages to improve training stability. Importantly, CalibAdv adopts a lightweight design that calibrates advantages from standard rollout signals, making it simple and easy to deploy. Extensive experiments across three models and seven benchmarks demonstrate that CalibAdv improves both model performance and training stability. Our code is available at https://github.com/wujwyi/CalibAdv.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

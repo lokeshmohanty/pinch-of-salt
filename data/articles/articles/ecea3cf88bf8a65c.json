@@ -1,0 +1,14 @@
+{
+  "id": "ecea3cf88bf8a65c",
+  "title": "Stabilizing Illumination Conditioning in SSM-Based Low-Light Image Enhancement with Bottleneck Prompt Sidecars",
+  "link": "https://arxiv.org/abs/2610.22958",
+  "description": "arXiv:2610.22958v1 Announce Type: cross \nAbstract: Low-light image enhancement (LLIE) requires more than brightness amplification because real low-light images often exhibit spatially varying illumination, amplified noise, color distortion, and local detail loss. Recent SSM- and Mamba-based restorers provide efficient long-range modeling, yet the route for introducing illumination priors into such backbones remains insufficiently studied. This study addresses safe illumination conditioning for SSM-based LLIE through a bottleneck-side PromptAdapter. A lightweight illumination estimator first predicts a single-channel illumination map, which is then converted into prompt tokens and injected through a residual sidecar adapter at the bottleneck, thereby avoiding direct modification of the state-space core. Under a locked three-seed evaluation protocol on LOL-v1, LOLv2-Real, and LOLv2-Synthetic, the PromptAdapter improves over the Base model by 0.94 dB, 1.24 dB, and 0.93 dB in PSNR, respectively, while also improving SSIM, LPIPS, and masked dark-region metrics. The clearest real-data evidence appears on LOLv2-Real. A Learned-Fixed control on LOL-v1 indicates that the present results support the utility of the sidecar conditioning pathway more strongly than a strict claim of illumination-conditioned superiority, and the LOLv2-Synthetic result remains stability-conditioned. These findings suggest that, in SSM-based LLIE, conditioning design can be as important as the conditioning signal itself.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

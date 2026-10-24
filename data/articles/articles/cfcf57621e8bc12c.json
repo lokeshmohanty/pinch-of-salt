@@ -1,0 +1,13 @@
+{
+  "id": "cfcf57621e8bc12c",
+  "title": "SQL-Zero: Self-Evolving Text-to-SQL",
+  "link": "https://arxiv.org/abs/2609.04697",
+  "description": "arXiv:2609.04697v1 Announce Type: new \nAbstract: Training a competitive Text-to-SQL agent usually depends on human-annotated natural-language/SQL pairs, which are expensive, domain-specific, and a bottleneck for scaling to new databases. We show it is possible to train a competitive solver with zero annotated pairs. We introduce SQL-Zero, a proposer-solver self-play in which a challenger and a solver start from the same base LLM and the only ground truth is execution against the database itself. The challenger generates SQL pairs calibrated to the solver's current difficulty (targeting \"hard but solvable\"), and both roles are updated with GRPO in alternating turns, with a template-level repetition penalty on the challenger to prevent diversity collapse. Training on BIRD databases with no labels, self-play improves over the zero-shot base on BIRD dev by 6.6 points at 3B and 7.3 points at 7B. It also scores higher than a matched control trained under the same recipe on human BIRD gold over the same databases, although an exact paired test does not resolve that margin. Transfer depends on scale: at 3B every iteration outperforms the base on unseen Spider databases and under lexical perturbation (Spider-Syn), where it also degrades less than the matched BIRD-gold control, whereas at 7B only the first iteration preserves transfer.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e9e788778ad70c42",
+  "title": "LightLoc++: Sensor-Robust Representation Learning for Efficient Outdoor LiDAR Localization",
+  "link": "https://arxiv.org/abs/2608.15317",
+  "description": "arXiv:2608.15317v2 Announce Type: replace \nAbstract: Scene coordinate regression (SCR) achieves strong performance in outdoor LiDAR localization, but it usually requires scene-specific training that can take days, limiting practical deployment. Recent works improve training efficiency by decoupling SCR into a scene-agnostic backbone and scene-specific prediction heads, where the backbone is pretrained on source datasets and frozen for new scenes, and only lightweight heads are optimized. However, we find that this paradigm heavily depends on the pretrained backbone. Existing decoupled methods can match conventional SCR methods fully optimized for each new scene when LiDAR configurations are similar to those used during backbone pretraining, but their accuracy drops noticeably on datasets collected with different LiDAR sensors. This suggests that efficient LiDAR localization requires representations that capture stable scene geometry across LiDAR configurations. Motivated by this observation, we propose LightLoc++, a sensor-robust and efficient outdoor LiDAR localization framework. To support sensor-robust representation learning, we introduce SULID, a synchronized urban multi-LiDAR dataset with representative 32-, 64-, and 128-beam rotating LiDARs, extensive cross-sensor overlap, and diverse urban scenes. Using SULID, we pretrain a sensor-robust backbone through cross-sensor consistency learning. LightLoc++ further preserves efficient new-scene learning by incorporating sample classification guidance and redundant sample downsampling, which reduce regression ambiguity and computational redundancy in large-scale outdoor scenes. Extensive experiments on multiple outdoor LiDAR localization benchmarks demonstrate that LightLoc++ achieves state-of-the-art localization performance with the lowest new-scene training cost among compared methods. Code and dataset will be made available at https://github.com/liw95/LightLoc-PlusPlus.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

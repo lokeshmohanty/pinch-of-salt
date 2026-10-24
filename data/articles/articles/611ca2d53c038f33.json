@@ -1,0 +1,13 @@
+{
+  "id": "611ca2d53c038f33",
+  "title": "LaSeD: Label-Semantic Self-Distillation for Visual-Only Surgical Phase Recognition",
+  "link": "https://arxiv.org/abs/2609.18971",
+  "description": "arXiv:2609.18971v1 Announce Type: new \nAbstract: Surgical phase recognition maps each video frame to a clinically meaningful workflow phase, supporting context-aware assistance, documentation, and postoperative analysis. Most methods treat phase annotations only as class IDs, whereas recent surgical vision-language models often require additional video--text data, captions, or instruction tuning. We propose \\emph{LaSeD}, a label-semantic self-distillation framework that uses phase names as privileged training-time context while retaining visual-only deployment without a ground-truth phase-name hint. LaSeD initializes a frozen teacher and a student from the same pretrained VLM checkpoint. The teacher receives the frame, a fixed task prompt, and the ground-truth phase-name hint; the student receives the same frame and prompt without the hint, and only its visual encoder is optimized. Training combines hard phase-token supervision with feature-level distillation from cached teacher representations. At inference, the teacher and hint are removed, and the student predicts one of the seven Cholec80 phases through constrained digit-token logits without an additional classifier head. On the Cholec80 evaluation split, LaSeD achieves 86.20\\% accuracy, 77.75\\% macro recall, 78.13\\% macro precision, and 64.15\\% macro Jaccard. Under the identical protocol, it improves a visual-only Qwen3-VL-4B baseline by 9.45, 9.42, 11.93, and 12.22 percentage points, respectively. Visual-only means that the image is the only sample-specific inference input, while all frames share the same fixed task prompt. These results suggest that phase names provide a useful low-cost signal for adapting VLMs to surgical workflow analysis. (The code will be published soon.)",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "34abbb0c726c174f",
+  "title": "FedVideoMAE: Efficient Federated Video Moderation with Differential Privacy and Secure Aggregation",
+  "link": "https://arxiv.org/abs/2512.18809",
+  "description": "arXiv:2512.18809v3 Announce Type: replace-cross \nAbstract: Short-form video moderation is increasingly pushed toward edge and privacy-sensitive settings, where users may intend videos for a limited audience, such as friends or private groups, but sending raw clips to a central server can broaden exposure, consume bandwidth, and add moderation latency. Federated learning can keep videos on device, but unprotected model updates may still leak information, and full-video backbones are expensive to communicate. We present FedVideoMAE, a privacy-preserving federated framework for violence detection that adapts a frozen VideoMAE backbone with lightweight LoRA and prompt parameters. Each training round combines self-supervised masked video reconstruction with client-side differential privacy and pairwise masked aggregation (SA) of adapter updates. Violence labels are held out from federation and used only for downstream evaluation, separating private representation learning from supervised assessment. On RWF-2000, exchanging 5,518,848 trainable parameters instead of the 156,371,328-parameter instantiated pretraining state gives a 28.3x model-state payload ratio. FedVideoMAE reaches 77.25% test accuracy without DP or SA, while accuracy under DP+SA remains in the 65.25-66.00% range. Transfer experiments on RLVS and binary UCF-Crime show similar behavior. These results characterize the privacy-utility trade-off for edge video moderation. Code is available at: https://github.com/zyt-599/FedVideoMAE",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.MM"
+  ]
+}

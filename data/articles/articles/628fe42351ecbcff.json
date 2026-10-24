@@ -1,0 +1,14 @@
+{
+  "id": "628fe42351ecbcff",
+  "title": "RoboCloth: A Large-Scale Real Cloth Material Dataset for Neural Reflectance Reconstruction",
+  "link": "https://arxiv.org/abs/2610.21090",
+  "description": "arXiv:2610.21090v1 Announce Type: new \nAbstract: We present RoboCloth, a dataset of 500 real cloth materials captured under flexible, calibrated camera and lighting configurations, where both are robotically controlled during acquisition. Each material is imaged in approximately 580 high-dynamic range frames spanning a wide view-light hemisphere; camera poses are refined via structure-from-motion and aligned to the robot frame, yielding per-material sparse surface geometry and structured per-point reflectance observations ready for neural material training. We demonstrate the value of this data through a two-stage neural reconstruction pipeline: Stage 1 trains a shared MLP decoder on our corpus to learn cloth material priors; Stage 2 then freezes the decoder and fits a dense 2048x2048 latent texture to each target material. Evaluating on held-out materials from our own dataset and on the independent UBO2014 benchmark, we show that a decoder trained on our captures outperforms decoders trained on existing measured reflectance datasets and analytic PBR fitting, transferring to unseen acquisition systems without modification. The dataset, calibration files, observation tensors, and train/test splits are released under CC BY 4.0 on the Hugging Face Hub.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "0dfb387b4fc377a8",
+  "title": "ORDER: Task-Conditioned Routing for Retrieval-Augmented Generation",
+  "link": "https://arxiv.org/abs/2609.17012",
+  "description": "arXiv:2609.17012v1 Announce Type: new \nAbstract: Retrieval-Augmented Generation (RAG) pipelines typically rely on a fixed indexing and retrieval configuration determined at preprocessing time. This one-size-fits-all design is ill-suited to domain-expert settings, where heterogeneous queries require different chunking granularities, metadata constraints, and source-selection strategies. As a result, configurations that are effective for one family of queries often perform poorly for others. In this paper, we introduce ORDER (Optimal Routing for Dynamic Evidence Retrieval), a query-conditioned RAG framework that jointly adapts indexing and retrieval to the incoming query. Our approach first discovers semantic clusters over a given set of questions associated to a corpus and learns, for each cluster, a chunking strategy together with a suited metadata filtering and reranking configuration. At inference time, queries are routed to the appropriate pre-built index through nearest-centroid assignment. To further improve retrieval, we propose a supervised query router (QRe) that predicts which collections are most likely to contain relevant evidence, coupled with a Uniform Multi-source Sampler (UMS) that allocates the retrieval budget evenly across the selected sources. We evaluate our framework on large-scale, heterogeneous historical archives and show that conditioning both indexing and retrieval on the query consistently outperforms both naive baselines and strong state-of-the-art RAG systems in complex expert-domain environments.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "cda0520710f0d1ca",
+  "title": "MCIR: A Feature Dependence-Aware Explainability Method with Reliability Guarantees",
+  "link": "https://arxiv.org/abs/2610.01641",
+  "description": "arXiv:2610.01641v1 Announce Type: cross \nAbstract: Modern machine-learning models often contain strongly dependent or redundant features, making feature attribution difficult because shared predictive information can be distributed across correlated predictors. Existing methods such as SHAP, LIME, HSIC, MI/CMI, and SAGE may therefore produce unstable rankings under multicollinearity or near-duplicate predictors. We propose the Mutual Correlation Impact Ratio Method (MCIR-M), a dependence-aware global feature-importance approach that quantifies the unique predictive information contributed by each feature beyond a selected dependence neighbourhood. MCIR-M introduces the Mutual Correlation Impact Ratio (MCIR), which conditions each feature on strongly dependent neighbours and computes a normalized ratio of conditional to block-level information. The population score lies in [0,1] and equals zero under exact conditional redundancy. We also introduce a lightweight estimation procedure that computes MCIR using a fraction of the available data and evaluates agreement with full-data explanations. Across controlled synthetic redundancy experiments and the UCI HAR benchmark, MCIR shows dependence-aware ranking behaviour, with its clearest advantage under injected near-duplicate predictors. Comparisons with independent and conditional SHAP, SAGE, HSIC, MI-based scores, and CIR-family baselines are mixed across real-data criteria. Reduced explanation samples lower computational burden in the evaluated configurations, while agreement with full-data explanations is assessed separately through ranking, head-set, and faithfulness diagnostics. Overall, MCIR-M provides a practical dependence-aware diagnostic for global explanation under strong feature dependence.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.CO"
+  ]
+}

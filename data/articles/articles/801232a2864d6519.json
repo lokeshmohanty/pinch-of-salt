@@ -1,0 +1,16 @@
+{
+  "id": "801232a2864d6519",
+  "title": "ThinkNet: Evolutionary Deep Ensembles for Efficient Motor-Imagery EEG Classification",
+  "link": "https://arxiv.org/abs/2609.33967",
+  "description": "arXiv:2609.33967v2 Announce Type: replace-cross \nAbstract: Practical assistive and rehabilitative brain--computer interfaces require subject-independent motor-imagery EEG (MI-EEG) decoders that generalize to new users under limited target-user data and constrained compute. However, held-out-subject performance can be overstated when test-subject information influences preprocessing, model selection, or ensemble selection. We present \\textit{ThinkNet}, a validation-controlled framework that combines train-only normalization, validation-guided evolutionary search, and validation-gated inference to identify compact decoders and inference policies for held-out subjects. We evaluate four-class BCI Competition IV-2a (session T) decoding with nine Leave-One-Subject-Out (LOSO) folds, three seeds, seven fixed decoder entries, and a broader search over ten representative decoder families; the held-out subject is never used for normalization, hyperparameter, architecture, or ensemble-policy selection. In the fixed benchmark, the validation-selected compact decoder achieved 44.35$\\pm$15.41\\% accuracy with 4.9K parameters, 19 KB FP32 weights, and 0.99 ms batch-1 Orin CUDA inference. Across the broader search, compact models ($\\leq$25K parameters) achieved higher mean held-out accuracy than mid-size and large alternatives after selected retraining (40.10\\% vs. 35.09\\% and 34.78\\%). Validation-gated ensembling improved over validation-selected single-model inference, reaching 43.98$\\pm$16.25\\% in the fixed benchmark and 43.31$\\pm$15.88\\% for the compact six-family ensemble. A non-deployable oracle analysis revealed a 6.1-point family-selection gap and near-zero validation--test correlation, showing that validation reliability remains a key bottleneck under subject shift. Thus, ThinkNet is a validation-controlled framework for compact MI-EEG model and inference-policy selection, rather than a single-architecture benchmark.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.HC",
+    "cs.AI",
+    "cs.LG",
+    "eess.SP"
+  ]
+}

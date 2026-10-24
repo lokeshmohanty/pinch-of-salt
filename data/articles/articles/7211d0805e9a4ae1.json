@@ -1,0 +1,13 @@
+{
+  "id": "7211d0805e9a4ae1",
+  "title": "Surfsvr: 2D Surface Priors as 3D Geometric Regularizers for Sparse Voxel Reconstruction",
+  "link": "https://arxiv.org/abs/2608.11938",
+  "description": "arXiv:2608.11938v1 Announce Type: new \nAbstract: Sparse voxel reconstruction offers an efficient representation for high-fidelity 3D modeling, yet its geometry is commonly optimized from local photometric evidence and discrete visibility statistics. This often leads to fragmented surfaces, excessive subdivision, and floating artifacts, particularly in weakly textured or sparsely observed regions. We introduce SurfSVR, a novel sparse voxel reconstruction paradigm that treats 2D surface priors as explicit 3D geometric regularizers. Instead of directly lifting noisy pixel-wise depth predictions, SurfSVR first organizes each image into coherent surface regions by jointly reasoning over appearance, monocular depth, normals and cross-view geometry. Each region is then represented by an adaptively selected planar or quadratic surface model based on fitting reliability and geometric complexity, while cross-model agreement distinguishes reliable geometry from ambiguous predictions. These structured 2D priors are lifted into 3D and integrated throughout the reconstruction pipeline. They guide surface-adaptive voxel subdivision, provide region-level depth and normal supervision during optimization, enhance geometrically reliable sparse-observed surfaces in voxel pruning, and suppress off-surface floaters during post-refinement training. This unified design converts semantic and geometric coherence in image space into persistent structural constraints in 3D. Extensive experiments on 3 public benchmarks demonstrate that SurfSVR consistently improves sparse voxel reconstruction across scenes with substantially different visibility and geometry characteristics, achieving state-of-the-art reconstruction quality. Codes and models will be released soon.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "6516733a98ed0477",
+  "title": "Counterfactual Rollout Replay: Forkable Environments as Free Process Rewards for Software Engineering Agents",
+  "link": "https://arxiv.org/abs/2609.33875",
+  "description": "arXiv:2609.33875v2 Announce Type: replace-cross \nAbstract: Outcome-only reinforcement learning gives software engineering (SWE) agents a terminal success signal but little direct guidance about intermediate decisions. We introduce Counterfactual Rollout Replay (CRR), a training-time procedure that uses forkable executable environments to obtain step-level return contrasts. CRR selects a small set of decision points, restores each state, samples an alternative action, and rolls the branch forward under the policy. It retains the realised training trajectory and replaces the advantage at selected steps with the difference between its terminal return and the sampled counterfactual return. The method needs no human process labels or learned process reward model; free refers to those supervision costs, not replay compute. With a 14B policy, CRR improves pass@1 on SWE-bench Verified, SWE-bench Live, and SWE-rebench, and combines with process-reward and trajectory-search methods. On SWE-bench Verified, an equal-wall-clock comparison on the same hardware yields 41.7% versus 36.7% for extended outcome-only GRPO, a 5.0-point gain with fork overhead included. These results apply to environments with affordable, reliable state restoration; stochastic continuations and expensive or imperfect replay remain limitations.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

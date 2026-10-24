@@ -1,0 +1,14 @@
+{
+  "id": "df12bb6e40e17c16",
+  "title": "IFCLoRA: Topology-Aware Rank Allocation for Parameter-Efficient Fine-Tuning",
+  "link": "https://arxiv.org/abs/2607.22251",
+  "description": "arXiv:2607.22251v2 Announce Type: replace-cross \nAbstract: Low-Rank Adaptation (LoRA) is a widely used approach to parameter-efficient fine-tuning (PEFT) of LLMs whose effectiveness depends on rank allocation. Existing adaptive LoRA methods derive ranks from local gradient, activation, or matrix statistics collected before or during fine-tuning; training-time variants add overhead, and local signals reveal little about each module's structural role in information propagation, giving weak global grounding for scarce-capacity allocation. We propose IFCLoRA, a topology-aware method for pre-fine-tuning rank allocation and adapter initialization. Using a small calibration set, IFCLoRA performs intervention tracing on the frozen model and constructs a sparse task-conditioned interaction graph over LoRA target modules. From this graph it extracts a global information-flow topology prior and fuses it with each node's local gradient sensitivity to form a topology-dominant Information-Flow Centrality (IFC) score, measuring participation in task-conditioned multi-hop propagation. The IFC scores then serve as module-level routing signals for one-shot discrete rank allocation under a rank-budget constraint. Reusing response vectors from tracing, IFCLoRA constructs a function-preserving flow-response subspace initialization, giving adapters task-relevant output subspaces. Across all settings, IFCLoRA achieves higher mean scores than standard LoRA with comparable fine-tuning time and peak memory; it requires a one-time offline calibration stage. On GSM8K, IFCLoRA attains the highest mean accuracy among compared PEFT methods on both base models, exceeding standard LoRA by 4.75 percentage points on LLaMA-3.1-8B. Resulting rank allocations are non-uniform and vary across tasks and base models, suggesting that task-conditioned global information-flow topology can serve as a useful structural prior for rank allocation in low-budget PEFT.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

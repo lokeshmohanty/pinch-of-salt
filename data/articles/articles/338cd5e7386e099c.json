@@ -1,0 +1,14 @@
+{
+  "id": "338cd5e7386e099c",
+  "title": "Rethinking Latency Denial-of-Service: Attacking the LLM Serving Framework, Not the Model",
+  "link": "https://arxiv.org/abs/2602.07878",
+  "description": "arXiv:2602.07878v2 Announce Type: replace-cross \nAbstract: LLM inference is inherently expensive, even a modest slowdown can translate into substantial operating costs and severe availability risks. Recently, a growing body of research known as latency attacks focuses on crafting inputs to trigger worst-case output lengths. However, we report a contrary finding that these algorithmic-level latency attacks are largely ineffective against modern LLM serving systems. We reveal that system-level optimization such as continuous batching provides a logical isolation to mitigate contagious latency impact on co-located users. Thus, in this paper, we shift our focus from the algorithm to the system layer, and introduce a new Fill and Squeeze attack strategy targeting the state transition of the scheduler. ``Fill'' first exhausts the global KV cache to induce Head-of-Line blocking, while ``Squeeze'' forces the system into repetitive preemption. By manipulating output lengths using different attack prompts, and leveraging side-channel probing of memory status, we demonstrate that the attack can succeed in a practical black-box setting with much less cost. Extensive evaluations on vLLM indicate up to $75-742\\times$ TTFT degradation relative to benign baselines and $1.5-4\\times$ average slowdown on Time Per Output Token compared to existing attacks with 30-40% lower attack cost. Code: https://github.com/Phil-Fan/FS-attack",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

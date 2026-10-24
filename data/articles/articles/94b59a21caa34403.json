@@ -1,0 +1,13 @@
+{
+  "id": "94b59a21caa34403",
+  "title": "Complexity-Calibrated Reconstruction Discrepancy for No-Reference Point Cloud Quality Assessment",
+  "link": "https://arxiv.org/abs/2610.13219",
+  "description": "arXiv:2610.13219v1 Announce Type: new \nAbstract: The discrepancy induced by surface reconstruction in a distorted point cloud is jointly influenced by its intrinsic structural complexity and signal degradation. This observation motivates a referencefree point cloud quality assessment (PCQA) strategy that estimates and compensates for the complexity-induced component. We implement this strategy through successive reconstruction. Specifically, reconstructing the distorted point cloud produces an input-toreconstruction discrepancy that combines the effects of signal degradation and content complexity. Reapplying the reconstruction operator with stronger smoothing produces a discrepancy between successive reconstructions, which serves as a proxy for the complexityinduced component. This proxy is then used to calibrate the inputto-reconstruction discrepancy. We apply the same strategy to 3D geometry patches and their aligned 2D regions, enabling local comparison of the resulting discrepancies. The calibrated geometric and projected-view discrepancies are then fused into a final degradation score. For both branches, the discrepancies are measured using frozen pretrained perceptual representations. Our method does not require PCQA-specific training or fine-tuning. Experiments on three public databases show that the proposed method consistently outperforms most generic baselines and achieves performance comparable to several full-reference metrics.The code is available at https://github.com/HC-W-whc/CCRD-NR-PCQA.git.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

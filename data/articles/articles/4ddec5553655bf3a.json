@@ -1,0 +1,13 @@
+{
+  "id": "4ddec5553655bf3a",
+  "title": "Flash EQ-Linear: Accelerating Equivariant Linear Layers via Group-wise Discrete Fourier Transform",
+  "link": "https://arxiv.org/abs/2607.21271",
+  "description": "arXiv:2607.21271v1 Announce Type: new \nAbstract: Equivariant networks embed geometric symmetries as structural priors through weight sharing, achieving remarkable parameter efficiency across vision tasks. However, this parameter efficiency does not translate into compute efficiency: existing implementations unroll the structured weights into dense matrices and dispatch them to generic dense kernels, so the FLOPs of an equivariant layer are no smaller than those of a non-equivariant counterpart. In this paper, we observe that the equivariant linear (EQ-Linear) layer---the most fundamental and frequently used module in modern equivariant architectures---is essentially a circular convolution along the group dimension composed with a linear transform along the channel dimension. Building on this observation, we propose Flash EQ-Linear, an exact acceleration algorithm that reduces the complexity from $\\mathcal{O}(NDC)$ to $\\mathcal{O}(NDC/T)$ by combining the Fourier convolution theorem along the group dimension with the conjugate symmetry of the real DFT. We further provide dedicated CUDA kernels for Flash EQ-Linear, covering both forward and backward passes and both FP32 and FP16 precision. At the operator level, Flash EQ-Linear achieves up to ${2\\times}$ forward speedup over PyTorch's F.linear; at the network level, Flash EQ-ViT and Flash EQ-Swin achieve up to ${1.7\\times}$ end-to-end speedup over both equivariant and non-equivariant baselines. To our knowledge, this is the first time equivariant networks strictly dominate their non-equivariant counterparts along all three axes simultaneously: accuracy, parameter efficiency, and inference speed.Code is available at https://github.com/zhongchenzhao/FlashEQLinear.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "9c6263a98beb3da2",
+  "title": "SignBind-LLM: Multi-Stage Modality Fusion for Sign Language Translation",
+  "link": "https://arxiv.org/abs/2509.00030",
+  "description": "arXiv:2509.00030v4 Announce Type: replace-cross \nAbstract: Current sign language translation (SLT) systems attempt to learn all aspects of signing---manual gestures, high-speed fingerspelling, and asynchronous non-manual facial cues---within a single end-to-end network. Learning multiple tasks without detailed supervision leads to poor recognition of fingerspelled proper nouns and technical terms, and leaves rich disambiguating information from lip movements largely unexploited. We introduce SignBind-LLM, a modular framework that addresses these limitations through three dedicated expert streams: one for continuous signing, one for fingerspelling, and one for lipreading. Each expert is pre-trained independently using CTC on approximately two million automatically generated pseudo-gloss sequences, removing the need for manual gloss annotation. A lightweight transformer with learned temporal alignment fuses the expert outputs, and a pre-trained language model translates the resulting pseudo-gloss sequences into fluent spoken English. At matched decoder scale (250M parameters), our architecture already surpasses all prior methods, confirming that the gains are architectural rather than a consequence of scaling the language model. Scaling to a larger decoder sets a new state-of-the-art across How2Sign: 23.1, BOBSL: 7.0, and ChicagoFSWild+: 73.6%, while requiring significantly lower training cost than prior approaches.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.CV"
+  ]
+}

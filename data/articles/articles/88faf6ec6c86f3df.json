@@ -1,0 +1,15 @@
+{
+  "id": "88faf6ec6c86f3df",
+  "title": "FairLint-DL: An IDE-Native Tool for Fairness Debugging of Deep Learning Software",
+  "link": "https://arxiv.org/abs/2609.16321",
+  "description": "arXiv:2609.16321v1 Announce Type: cross \nAbstract: Existing fairness analysis tools predominantly operate as post-training evaluation frameworks, requiring practitioners to complete the full model development lifecycle before assessing bias. We present FairLint-DL, a Visual Studio Code extension that implements a shift-left approach to fairness testing by enabling pre-training, IDE-native bias detection directly on tabular datasets. FairLint-DL trains a configurable deep neural network as a proxy model and applies information-theoretic Quantitative Individual Discrimination (QID) metrics. Grounded in Shannon and min-entropy, QID quantifies the causal influence of protected attributes on predictions. The system implements a two-phase gradient-guided search algorithm for discovering discriminatory instances, a causal debugging pipeline that localizes bias to specific network layers and neurons via sensitivity analysis, and dual explainability engines using SHAP and LIME for feature-level attribution. Evaluation on three tabular benchmarks (Adult Census Income, German Credit, and Bank Marketing) reveals fairness concerns that vary widely across datasets: on Adult, 96.0% of analyzed instances exhibit QID above the 0.1-bit significance threshold, with a mean QID of 0.619 bits and a disparate impact ratio of 0.581, violating the four-fifths legal rule. FairLint-DL produces these results within 12 seconds on cached models, demonstrating the feasibility of integrating fairness analysis into the developer workflow without significant overhead.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

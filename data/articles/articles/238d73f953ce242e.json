@@ -1,0 +1,14 @@
+{
+  "id": "238d73f953ce242e",
+  "title": "Consist-Retinex: One-Step Noise-Emphasized Consistency Training Accelerates High-Quality Retinex Enhancement",
+  "link": "https://arxiv.org/abs/2512.08982",
+  "description": "arXiv:2512.08982v4 Announce Type: replace-cross \nAbstract: Retinex-based low-light image enhancement benefits from separating reflectance and illumination, yet recent generative approaches often rely on iterative sampling and are difficult to deploy under strict latency budgets. Consistency models offer a natural route to one-step restoration, but direct adaptation to Retinex-factorized enhancement is unstable: one-step inference is evaluated at the high-noise endpoint, whereas standard training schedules provide little supervision there, and temporal self-consistency alone does not determine the correct conditional target. We propose Consist-Retinex, which first uses a Retinex Transformer Decomposition Network (TDN) to obtain paired reflectance and illumination maps, then trains two conditional consistency models with a Retinex-aware dual objective and adaptive noise-emphasized fixed-point sampling. The dual objective combines trajectory consistency with paired ground-truth component alignment, while the sampling rule concentrates supervision near the inference endpoint without discarding full-range noise coverage. We further provide an endpoint error bound, an anchoring-propagation result, and a high-noise sample-allocation analysis that explain why endpoint supervision and temporal consistency are complementary for one-step Retinex enhancement. Experiments on paired and unpaired low-light benchmarks show that Consist-Retinex obtains the best VE-LOL-L scores among the compared methods under one-step inference and remains competitive on LOL, with substantially reduced sampling and consistency-stage training cost in the reported setup.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

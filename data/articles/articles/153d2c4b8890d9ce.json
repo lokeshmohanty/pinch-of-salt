@@ -1,0 +1,13 @@
+{
+  "id": "153d2c4b8890d9ce",
+  "title": "Open-vocabulary 3D object detection with promptable segmentation",
+  "link": "https://arxiv.org/abs/2609.19358",
+  "description": "arXiv:2609.19358v1 Announce Type: new \nAbstract: Three-dimensional object detection for autonomous driving is dominated by detectors trained on large corpora of human-annotated 3D boxes. Such a detector learns a fixed category list, and everything outside it is invisible. This paper asks whether the task can be solved training-free and open-vocabulary. A promptable segmentation model (SAM3), queried with class names as text prompts, supplies instance masks in the vehicle's six surround-view cameras, and the masks are turned into metric 3D boxes using the geometry of the scene. The core is a controlled three-stage comparison on nuScenes in which 2D detection is held fixed and only the source of 3D geometry changes. Geometry predicted from images alone reaches 0.183 mean average precision (mAP) under the official protocol; fitting boxes from raw LiDAR points inside the same masks with training-free rules reaches 0.298 mAP / 0.348 nuScenes detection score (NDS) at zero labeling cost; borrowing supervised box geometry at inference time lifts the same detections to 0.413 mAP / 0.555 NDS, which locates the pipeline's largest deficit in measurement precision rather than 2D detection, while class confusion and confidence calibration survive that substitution. Reversing the direction, a three-state camera-witness rule built from the same masks improves a supervised LiDAR-only detector from 0.596 to 0.630 mAP, roughly half the gain of fully supervised camera fusion, with no training. A coverage analysis shows that SAM3 finds 84% of in-range objects with a correctly named mask; the classes that fail in the official metric are misnamed or geometrically unforgiving, not unseen.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

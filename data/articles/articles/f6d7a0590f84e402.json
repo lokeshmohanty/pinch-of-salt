@@ -1,0 +1,13 @@
+{
+  "id": "f6d7a0590f84e402",
+  "title": "From Patches to Evidence Balls: Class-Conditioned Evidence Retrieval for Few-Shot Whole Slide Image Classification",
+  "link": "https://arxiv.org/abs/2608.01104",
+  "description": "arXiv:2608.01104v1 Announce Type: new \nAbstract: Whole slide image (WSI) classification is an evidence-driven task, where diagnostic cues are often sparse, spatially organized, and class-dependent. Existing MIL and vision-language methods aggregate a large pool of patch features into a single global slide representation. Under few-shot supervision, limited slide-level labels make it difficult to learn a reliable aggregation mechanism that organizes sparse local cues into compact and coherent diagnostic evidence. Moreover, a shared slide representation compresses evidence supporting a candidate class and its alternatives into the same feature, limiting class-specific reasoning and interpretability. To address these issues, we propose EviBall, a class-conditioned evidence retrieval framework for few-shot WSI classification. EviBall organizes local patches into Evidence Balls through semantic-spatial assignment and center refinement, yielding compact and spatially coherent evidence units under weak supervision. It then uses task-specific class queries, including language-guided queries for morphology-oriented tasks and molecular-guided queries for molecular endpoint prediction, to retrieve supporting evidence balls and produce class-conditioned evidence representations for direct class-wise prediction. By introducing structured evidence units and task-relevant semantic guidance, EviBall reduces the reliance on learning an unconstrained global aggregation mechanism from scarce slide-level labels. It therefore reformulates few-shot WSI classification as structured evidence retrieval and competition among candidate classes. Extensive experiments across four morphology-oriented and molecular endpoint WSI tasks demonstrate that EviBall consistently outperforms conventional and vision-language MIL baselines under diverse few-shot settings, while providing spatially localized and class-specific evidence for each prediction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
