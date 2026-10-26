@@ -1,0 +1,15 @@
+{
+  "id": "6b771939fc11946c",
+  "title": "RADIANT: Object-Centric Feed-Forward Global Illumination",
+  "link": "https://arxiv.org/abs/2610.32075",
+  "description": "arXiv:2610.32075v1 Announce Type: new \nAbstract: Feed-forward neural renderers synthesize global illumination across novel 3D scenes without per-scene optimization or runtime ray tracing. Existing transformer-based renderers tokenize individual triangles, so self-attention scales quadratically with mesh resolution. Yet macroscopic radiative transport is governed by the underlying surface geometry and object arrangements rather than a particular mesh discretization; finer tessellation can thus inflate token counts without changing the underlying transport physics, motivating a discretization-agnostic and object-centric representation. We introduce RADIANT (RADiance-based Inter-Actor Neural Transformer), an object-centric architecture for feed-forward global illumination from point inputs. By representing each object with a compact budget of 32 surface-patch tokens, RADIANT decouples attention sequence length from polygon counts. In a single network, an inter-object scene transformer models 3D radiative exchange and a view decoder renders images at target camera poses. To capture light transport without materializing O(N^2) bias matrices, invariant form-factor attention embeds geometric distances and surface orientations directly into query-key dot products as SE(3)-invariant inner products weighted by learned area and material gains. For primary visibility without mesh connectivity, camera rays cross-attend scene tokens guided by depth-tested point splats in a shared spherical frame. Across a 1.03M-scene benchmark under matched model capacity, RADIANT reaches 25 dB tone-mapped PSNR in 5x fewer training steps than RenderFormer, and achieves 32.2 dB at 600k steps (+3.3 dB over RenderFormer and +7.6 dB over RenderFormer-V2). We further demonstrate the scalability of RADIANT, which completes a 512x512 forward pass of a 500-object scene in 0.83 s, with computational cost scaling with the number of objects rather than polygons.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR",
+    "cs.LG"
+  ]
+}

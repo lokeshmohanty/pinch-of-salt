@@ -1,0 +1,14 @@
+{
+  "id": "f7c26d1ba451edf5",
+  "title": "SREdit: Scene Response Guided Appearance Editing for Projection Mapping",
+  "link": "https://arxiv.org/abs/2610.32792",
+  "description": "arXiv:2610.32792v1 Announce Type: new \nAbstract: Projection-based appearance editing changes selected visual attributes of a physical object through projection mapping (PM). To display a desired appearance, PM typically uses projector compensation, which computes a projector input that counteracts the geometric and photometric distortions of the scene. Compensation can only approximate this appearance within the available projection range, and it cannot revise the appearance itself. Pretrained LLM-based image editors provide a direct way to produce the desired appearance from a text prompt or reference image; projector compensation can then attempt to reproduce the edited result through projection. However, these editors do not have an accurate measure of the scene geometry or scene response. Therefore, their outputs may contain geometric misalignment, inconsistent shading, or changes outside the available projection range, which downstream projector compensation cannot correct. To address this problem, we introduce SREdit, an efficient response-guided framework for projection-based appearance editing. SREdit estimates a scene response map from the reconstructed scene that reflects how strongly projected illumination can affect different surface regions. SREdit uses the source appearance to constrain the early sampling process and preserve registration with the fixed physical object, while the scene response map adapts the amount of editing across surface regions. Experiments across two pretrained image editors show that SREdit improves projected appearance quality and reproduction fidelity. It adds less than one second per image with negligible VRAM overhead. Participants also consistently preferred the results produced with SREdit in our user study.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM"
+  ]
+}

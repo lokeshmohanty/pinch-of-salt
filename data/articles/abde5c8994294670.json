@@ -1,0 +1,14 @@
+{
+  "id": "abde5c8994294670",
+  "title": "MAGIC: Margin-gated Contrastive Debiasing with Evidence Restoration for VLM Test-time Robustness Scaling",
+  "link": "https://arxiv.org/abs/2610.32013",
+  "description": "arXiv:2610.32013v1 Announce Type: new \nAbstract: This paper studies the problem of test-time robustness scaling for large vision-language models (LVLMs), which aims to mitigate language bias during inference. Existing approaches typically adopt test-time scaling techniques such as contrastive decoding to improve inference performance. Despite the progress, the performance of these approaches is far from satisfactory due to intentional evidence removal during perturbations and redundant inference cost. Towards this end, we propose a novel approach named Margin-gated Contrastive Debiasing with Evidence Restoration (MAGIC). The core of our MAGIC is to evaluate the decision margins of LVLMs to selectively activate textual and visual perturbation branches for efficient debiased inference. In particular, our MAGIC first measures the prediction margins of crucial tokens, and applies a gating function to identify low-confidence responses that are susceptible to language biases. For selected samples, we integrate the token logits from multiple textual and image perturbation branches with the original ones for debiased decision. More importantly, we selectively restore the most informative corrupted views with sharp prediction distributions for ambiguous samples after debiasing, enabling evidence recovery for discriminative decision-making. We further utilize a calibration dataset to actively identify and prune ineffective branches during contrastive debiasing for cost reduction. Extensive experiments on benchmark datasets validate the effectiveness of the proposed MAGIC in comparison with extensive baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

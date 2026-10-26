@@ -1,0 +1,14 @@
+{
+  "id": "b63ba7b0c466ce90",
+  "title": "RigPAPR: Rig-Based Animation of Static Neural Point Clouds from a Fixed-Viewpoint Video",
+  "link": "https://arxiv.org/abs/2606.06685",
+  "description": "arXiv:2606.06685v2 Announce Type: replace \nAbstract: Static neural point reconstructions capture a subject at high fidelity from posed images. Given such a reconstruction, we aim to animate it to follow a monocular fixed-viewpoint driving video of the subject, whether captured or produced by image-to-video (I2V) generation, and to recover a rigged, re-posable 3D asset. Existing methods deform Gaussian splats through direct linear blend skinning (LBS) or mesh proxies, both of which are prone to joint-boundary artifacts under articulation, even with per-primitive corrections. We trace the artifact to the representation: each splat carries an individual shape calibrated in the canonical pose to tile with its neighbours. Under LBS each splat can be moved, rotated, or rescaled but never bent, so the canonical tiling comes apart at joint boundaries. Proximity attention point rendering (PAPR) instead carries no per-primitive shape; each pixel is recomposed at render time from the deformed primitives' positions, so the surface re-forms naturally with the articulation. We present RigPAPR, which auto-rigs a static PAPR cloud and drives it under direct LBS from a single fixed-viewpoint video, without a category template or a pose-dependent correction network. RigPAPR is competitive with the strongest baseline at the supervised view and outperforms splatting-based and mesh-based baselines at novel views, by 3~dB PSNR on synthetic subjects and about 2~dB on real-world subjects, with cleaner joint-boundary renderings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

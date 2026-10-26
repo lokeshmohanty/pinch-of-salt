@@ -1,0 +1,13 @@
+{
+  "id": "9a8f9d88b6cad4a3",
+  "title": "Vorch-Human: Unified Multi-Task Human-Centric Generation via Long-Horizon Continuation",
+  "link": "https://arxiv.org/abs/2609.26117",
+  "description": "arXiv:2609.26117v2 Announce Type: replace \nAbstract: Human-centric audio-visual generation spans several closely related tasks: animating a person from driving speech, jointly generating speech and video from a voice reference, and synthesizing a scene from paired appearance and voice references. Existing systems commonly solve these tasks with separate models, even though they share the same target modalities and differ mainly in which observations are provided as conditions. We present Vorch-Human, a unified human-centric generation framework built on a dual-stream audio-video diffusion transformer. Vorch-Human augments the conventional noisy audio/noisy video interface with clean condition-audio and condition-video token groups. Per-token task embeddings, temporal position types, condition masks, and a shared multimodal prompt encoder allow driving speech, timbre examples, first frames, and subject images to be expressed within one model. To supply the supervision required by this interface, we develop a two-level data pipeline. Level 1 analyzes each clip with speech recognition, vocal separation, face detection and tracking, active-speaker and synchronization models, audio/visual speaker clustering, and multimodal caption correction; it produces subject-indexed speech, appearance, and timbre annotations. Level 2 links the same person across clips from a common source video and mines identity- and outfit-consistent reference images after face, body, quality, pose, and vision-language verification. Finally, we adapt Vorch-Human to long-form audio-driven generation by training with clean latent prefixes and using the same frozen-prefix recurrence at inference. Each segment contributes only its newly generated suffix, reducing boundary discontinuity and long-horizon identity drift. Experiments on short and five-minute generation demonstrate strong identity preservation, audio-visual synchronization, and temporal stability.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

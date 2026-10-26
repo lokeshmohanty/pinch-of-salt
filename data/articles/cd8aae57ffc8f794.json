@@ -1,0 +1,14 @@
+{
+  "id": "cd8aae57ffc8f794",
+  "title": "StemBind: When MLLMs Get Lost Between Rules and Instances in Abstract Visual Reasoning",
+  "link": "https://arxiv.org/abs/2606.00148",
+  "description": "arXiv:2606.00148v2 Announce Type: replace-cross \nAbstract: Multimodal large language models (MLLMs) often know the rule but pick the wrong answer: on abstract visual reasoning (AVR) tasks, a model can describe what it sees and name the underlying pattern, yet still fail to choose the matching candidate. Existing AVR benchmarks cannot detect this because they collapse perception, rule induction, and answer selection into a single right-or-wrong signal. We introduce StemBind, a shared-stem diagnostic benchmark that probes the same visual stem with three aligned questions: Perception (what is in the image), Rule (what pattern governs it), and Full (which option completes it), so a final-answer error can be attributed to a specific sub-step on the same evidence. StemBind contains 2,298 curated knowledge-light stems across nine auditable visual operations, totaling 19,533 P/R/F tasks, with each full item annotated by Sternberg's four reasoning stages (S1 Encode, S2 Infer, S3 Map, S4 Apply). Evaluating 24 frontier MLLM configurations yields four findings. (i) The R-F chasm: rule accuracy exceeds full-item accuracy on 22 of 24 models, so most failures happen after the rule is identified. (ii) A persistent binding gap: even when P and R are both correct on the same stem, models still answer F incorrectly 51.2% of the time. (iii) The bottleneck is S3: process diagnostics and Stage-wise Stimulus Augmentation localize the dominant failure to rule-to-instance mapping. (iv) Scaling and thinking do not help: neither larger models nor explicit thinking mode reliably closes the gap, and thinking even lowers rule and full-item accuracy. StemBind reframes AVR evaluation from final-answer ranking to locating where abstract visual reasoning breaks down, identifying rule-to-instance binding as a concrete next target for vision-grounded reasoning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "612f406012f8ea17",
+  "title": "Real-Time Localisation of Dorsal Anatomical Regions on Dairy Cows in Commercial Rotary Parlours from RGB-D",
+  "link": "https://arxiv.org/abs/2610.32174",
+  "description": "arXiv:2610.32174v1 Announce Type: new \nAbstract: Automated monitoring of dairy cows increasingly measures one part of the body, such as the rump for temperature or the back for posture, yet the region itself is usually placed by hand. Existing systems either score the cow as a whole or detect sparse keypoints, often in controlled walkways, and neither yields the named region masks that such measurements need on a crowded commercial rotary platform. We present a perception front end that finds the target cow, ten bony landmarks and four named dorsal regions (withers, back, rump and tail-head) in a single forward pass over a whole RGB-D frame from a commercial rotary parlour. Two encoders, one for colour and one for depth, are fused late and share one decoder with three heads. On an anatomical region dataset that we built on public rotary-parlour RGB-D images (538 annotated frames, cow-disjoint test set), the network reaches PCK@10 0.905 for landmarks and region IoU 0.70 to 0.91, and runs end to end in 26.4 ms per frame on a T4 GPU, against an 11 fps camera. Dense region supervision is what makes the landmarks accurate: removing the region head costs 0.15 PCK@10. Agreement between the two heads flags unreliable frames without labels. On our own rig at the largest dairy farm in Western Australia, the model transfers with ten labelled frames (PCK@10 0.84), and its regions are carried through depth into a radiometric thermal camera, giving one repeatable temperature per region and cow.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

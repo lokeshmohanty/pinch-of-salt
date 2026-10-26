@@ -1,0 +1,16 @@
+{
+  "id": "ff5e976567728107",
+  "title": "Efficient Benchmarking Is Just Feature Selection and Multiple Regression",
+  "link": "https://arxiv.org/abs/2605.25773",
+  "description": "arXiv:2605.25773v3 Announce Type: replace-cross \nAbstract: Efficient benchmarking techniques aim to lower the computational cost of evaluating LLMs by predicting full benchmark scores using only a subset of a benchmark's questions. By reframing this problem as an instance of multiple regression with feature selection, we find that existing efficient benchmarking methods can be greatly improved by simply using kernel ridge regression at the prediction stage. Additionally, using an information-theoretic feature-selection algorithm called minimum redundancy maximum relevance (mRMR), we can further improve upon these methods by selecting question subsets that will be maximally useful for prediction. Except in very data-poor settings, these approaches consistently achieve smaller prediction errors (in both MAE and RMSE), and greater ranking correlation between predicted and true scores (in both Spearman $\\rho$ and Kendall $\\tau$) across a range of benchmarks using both binary and continuous metrics. Furthermore, mRMR subsampling is much faster than competitor methods (which often involve fitting probabilistic models or running clustering algorithms), and is more likely to select the same questions under different random seeds or training data splits. Tutorial code can be found at https://github.com/sambowyer/mrmr_eval .",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ML",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "b3a0bec00eb019fe",
+  "title": "Feature-Space Smoothing: Certified Robustness of Deep Representations",
+  "link": "https://arxiv.org/abs/2601.16200",
+  "description": "arXiv:2601.16200v4 Announce Type: replace-cross \nAbstract: Modern deep learning models exhibit strong capabilities across diverse applications, yet remain vulnerable to malicious inputs that induce erroneous predictions via feature-space distortion. To address that, we propose Feature-Space Smoothing (FS), a representation-level certification framework built upon Gaussian randomized smoothing. We show that FS converts a given feature encoder into a smoothed variant that is guaranteed to maintain a certified lower bound on the cosine similarity between clean and adversarial features under l_2-bounded perturbations. We then establish that this Feature Cosine Similarity Bound (FCSB) can be extended to the prediction-wise certification under the cosine similarity measure, and the value of FCSB is determined by the encoder intrinsic Gaussian robustness score. Building on those insights, we introduce the Gaussian Smoothness Booster (GSB), a plug-and-play module to improve the encoder Gaussian robustness score. Specifically, the GSB module is plugged to enhance the feature-space consistency and maintain the feature utility for downstream tasks under Gaussian perturbations. This design enables seamless integration of FS on the protected model, e.g., Multimodal Large Language Models (MLLMs), without additional model retraining or alignment, improving its robustness while preserving the performance for downstream task-oriented decoding. Extensive experiments demonstrate that integrating FS consistently provides non-trivial certified robustness and significantly improves task-oriented performance under strong white-box adversarial attacks across diverse models and applications.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}
