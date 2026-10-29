@@ -1,0 +1,13 @@
+{
+  "id": "311b865497090104",
+  "title": "Hierarchical Sparse Graph for Multi-dimensional Assignment in Event-based Tracking",
+  "link": "https://arxiv.org/abs/2610.37321",
+  "description": "arXiv:2610.37321v1 Announce Type: new \nAbstract: Existing event-based tracking methods typically operate in an online manner, associating tracklets across adjacent batches. However, this limited temporal window often leads to failures in challenging scenarios, such as long-term occlusions or missed detections, where broader temporal context should be incorporated for high-precision tracking. To achieve robust and accurate tracking, this paper concentrates on the event-based multi-dimensional assignment that associates tracklets across multiple batches simultaneously. Unlike image-based detectors, event-based detectors can generate multiple correct yet spatially distinct tracklets for a single object per batch. This violates the one-to-one rule in classic data association, making event-based association an underdetermined many-to-many matching problem. To the best of our knowledge, this is the first work to tackle this NP-hard problem. To address its underdetermined nature, we formulate the assignment problem via fuzzy logic, where pairwise tracklet correlations are quantified through multiple long-range kinematic metrics. This fuzzy design eliminates the need for hard tracking thresholds and enables multiple heterogeneous metrics to be integrated into a unified correlation. By treating tracklets as nodes and their fuzzy correlations as edges, we construct a Hierarchical Sparse Graph (HSG). Building upon the HSG, we pose assignment as a graph partition task, and employ a heuristic solution that measures vertex affinity for partitioning adaptively. The entire pipeline is training-free. Comprehensive experiments on two challenging event datasets, eTram and Ev-UAV, show that our method outperforms existing event-based and most image-based association models. Particularly, it achieves over 2$\\times$ the performance of OC-SORT across all metrics in the many-to-many association scenario.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

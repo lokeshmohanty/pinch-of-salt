@@ -1,0 +1,13 @@
+{
+  "id": "9eab37d0351096ba",
+  "title": "TRUCO: A Scalable Lock-Free Algorithm for Parallel Contour Extraction",
+  "link": "https://arxiv.org/abs/2610.37297",
+  "description": "arXiv:2610.37297v1 Announce Type: new \nAbstract: Transforming binary masks into geometric contours remains a critical step in many computer vision pipelines, particularly for post-processing high-resolution segmentation outputs. Yet, standard algorithms such as the Suzuki-Abe method are limited by their sequential nature and the overhead of building topological hierarchies. As modern applications transition to high-resolution imaging, there is a critical need for contour extraction that leverages multi-core CPU architectures without the complexity of tile stitching or heavy synchronization.\n  This paper presents TRUCO (Threaded Raster Unrestricted Contour Ownership), a lock-free parallel algorithm designed for high-performance geometric boundary extraction. TRUCO introduces a start-point ownership rule, combined with a speculative tracing model, in which threads trace contours downward into adjacent regions and use an upward-termination logic to ensure each contour is processed exactly once.\n  Experimental results on synthetic and real-world datasets, conducted on both consumer and server-grade CPUs, demonstrate that TRUCO significantly outperforms existing baselines. The method achieves speedups of over an order of magnitude compared to the industry standard while maintaining robust scalability on high-resolution scenes across diverse hardware architectures.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

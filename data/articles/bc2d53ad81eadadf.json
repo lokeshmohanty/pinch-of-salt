@@ -1,0 +1,14 @@
+{
+  "id": "bc2d53ad81eadadf",
+  "title": "HiAP: A Multi-Granular Stochastic Auto-Pruning Framework for Vision Transformers",
+  "link": "https://arxiv.org/abs/2603.12222",
+  "description": "arXiv:2603.12222v4 Announce Type: replace \nAbstract: Vision Transformers require significant computational resources and memory bandwidth, severely limiting their deployment on resource-constrained hardware. Most structured pruning methods reduce theoretical cost effectively, yet they typically operate at a single structural granularity and depend on multi-stage pipelines with importance ranking, auxiliary solvers or post-hoc magnitude thresholding, followed by a separate fine-tuning phase to recover accuracy. We propose Hierarchical Auto-Pruning (HiAP), which casts ViT pruning as a single budget-aware learning problem and jointly allocates sparsity across four granularities in one end-to-end phase. HiAP introduces stochastic Gumbel-Sigmoid gates at macro level (attention heads and FFN blocks) and micro level (intra-head dimensions and FFN neurons), and trains them against the task loss together with an analytical MAC cost term. Two penalty weights set how much compute is removed, while the gates gradually harden into a dense, smaller sub-network at convergence. It does not require importance heuristics, ranking metrics, auxiliary solvers or secondary fine-tuning. On ImageNet, HiAP compresses DeiT-Base to 7.4G MACs at 80.88% top-1 80.40% at 7.8G without distillation and DeiT-Small to 3.1G at 79.33%, competitive with substantially more complex pipelines at matched compute. The structurally pruned network can be accelerated natively on stock kernels, and more than 90% of the theoretical MAC reduction is realized as measured throughput at batch 256 on an A100.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

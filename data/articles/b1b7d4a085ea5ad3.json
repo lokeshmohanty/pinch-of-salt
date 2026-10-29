@@ -1,0 +1,13 @@
+{
+  "id": "b1b7d4a085ea5ad3",
+  "title": "LoBE-GS: Load-Balanced and Efficient 3D Gaussian Splatting for Large-Scale Scene Reconstruction",
+  "link": "https://arxiv.org/abs/2510.01767",
+  "description": "arXiv:2510.01767v3 Announce Type: replace \nAbstract: 3D Gaussian Splatting (3DGS) has established itself as an efficient representation for real-time, high-fidelity 3D scene reconstruction. However, scaling 3DGS to large and unbounded scenes such as city blocks remains difficult. Existing divide-and-conquer methods alleviate memory pressure by partitioning the scene into blocks and training on multiple, non-communicating GPUs, but introduce new bottlenecks: (i) partitions suffer from severe load imbalance since uniform or heuristic splits do not reflect actual computational demands, and (ii) coarse-to-fine pipelines fail to exploit the coarse stage efficiently, often reloading the entire model and incurring high overhead. In this work, we introduce LoBE-GS, a Load-Balanced and Efficient 3D Gaussian Splatting framework, that re-engineers the large-scale 3DGS pipeline. Specifically, LoBE-GS introduces a load-balanced KD-tree scene partitioning scheme with optimized cutlines that balance per-block camera counts. To accelerate preprocessing, it employs depth-based back-projection for fast camera assignment, reducing processing time from hours to minutes. It further reduces training cost through two lightweight techniques: visibility cropping and selective densification. On large-scale urban and outdoor datasets, LoBE-GS reduces scene-partitioning time by up to an order of magnitude and worst-block fine-training time by up to $3.2\\times$ relative to CityGaussian. It also substantially reduces end-to-end and post-coarse training time under matched GPU budgets while maintaining competitive reconstruction quality. LoBE-GS thus provides a communication-free alternative with favorable quality-efficiency trade-offs. The associated code is available at: https://github.com/Sunnyhong0326/lobe-gs",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
