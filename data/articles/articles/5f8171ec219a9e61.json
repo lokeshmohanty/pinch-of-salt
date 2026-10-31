@@ -1,0 +1,13 @@
+{
+  "id": "5f8171ec219a9e61",
+  "title": "Not All Preferences Deserve Gradients: Understanding Gradient Utility in Offline Reasoning Alignment",
+  "link": "https://arxiv.org/abs/2602.01207",
+  "description": "arXiv:2602.01207v2 Announce Type: replace \nAbstract: Offline preference optimization aligns reasoning models from fixed chosen--rejected pairs, yet standard methods apply gradient updates from every pair regardless of its training value under the current policy. We argue that this uniform treatment is wasteful and potentially harmful. From the perspective of gradient utility, we show that a pair's contribution depends jointly on informativeness and stability. Pair utility drifts as the policy evolves, high-gradient samples can coincide with high-curvature regions, leading to noisy and destabilizing updates, and the most effective supervision comes from stable confident errors where the model is reliably wrong yet curvature remains low. These findings motivate SAGE (Stability-Aware Gradient Efficiency), which maintains difficulty-stratified candidate pools refreshed during training and selects pairs within each pool by a forward-pass signal-to-curvature score. Only pairs with high current utility receive gradient computation; the rest are excluded from backpropagation. On mathematical reasoning benchmarks across multiple model scales, SAGE outperforms full-data and size-matched baselines while producing substantially smoother optimization trajectories.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

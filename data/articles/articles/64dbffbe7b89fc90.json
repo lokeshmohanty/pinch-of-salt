@@ -1,0 +1,13 @@
+{
+  "id": "64dbffbe7b89fc90",
+  "title": "HoloRecon: Incremental Reconstruction of Long-Range Panoramas with Global Consistency",
+  "link": "https://arxiv.org/abs/2610.36876",
+  "description": "arXiv:2610.36876v1 Announce Type: new \nAbstract: Long-sequence panoramic reconstruction requires detailed scene geometry and globally consistent camera poses across distant revisits. Panoramic SLAM and incremental SfM rely on feature correspondences, but repeated, similar structures and small partial overlap make reliable long-range connections difficult to establish, leaving accumulated drift unresolved. Feed-forward models offer detailed local geometry, but their high computational costs limit inference window size, necessitating additional constraints for global consistency. This motivates combining continuous feature-based tracking and sparse mapping with rapid, high-quality local reconstruction from feed-forward models to achieve accurate localization and globally consistent dense mapping over long sequences. We therefore propose a panoramic reconstruction framework that couples an ORB-based sparse panoramic mapping frontend with a fine-tuned feed-forward model. Our key insight is that predicted local geometry enables 3D verification of feature matches across distant revisits, yielding long-range camera constraints even between regions. We calibrate predicted depths with sparse landmarks and use verified connections to optimize the global pose graph, updating dense geometry with the corrected camera poses. We also introduce PanoRecon, a seven-scene benchmark with repetitive architecture, large and small loops, and reference camera poses and LiDAR geometry for evaluating global consistency. Our method achieves the lowest mean absolute trajectory error and high F-1 Score among the evaluated methods. Project Page:https://zhuoxiaoli.github.io/HoloRecon_page/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

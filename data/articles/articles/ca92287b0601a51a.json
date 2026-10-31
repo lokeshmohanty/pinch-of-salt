@@ -1,0 +1,13 @@
+{
+  "id": "ca92287b0601a51a",
+  "title": "SDFlow: Similarity-Driven Flow Matching for Time Series Generation",
+  "link": "https://arxiv.org/abs/2605.05736",
+  "description": "arXiv:2605.05736v3 Announce Type: replace \nAbstract: Vector quantization (VQ) with autoregressive (AR) token modeling is a widely adopted and highly competitive paradigm for time-series generation. However, such models are fundamentally limited by exposure bias: during inference, errors can accumulate across sequential predictions, leading to pronounced quality degradation in long-horizon generation. To address this, we propose SDFlow ($\\textbf{S}$imilarity-$\\textbf{D}$riven $\\textbf{Flow}$ Matching), a non-autoregressive framework that operates entirely in the frozen VQ latent space and enables parallel sequence generation via flow matching. We tackle three key challenges in making this transition: (1) eliminating exposure bias by replacing step-wise token prediction with a global transport map; (2) mitigating the high-dimensionality of VQ token spaces via a low-rank manifold decomposition with a learned anchor prior over the latent manifold; and (3) incorporating discrete supervision into continuous transport dynamics by introducing a categorical posterior over codebook indices within a variational flow-matching formulation. Extensive experiments show that SDFlow achieves state-of-the-art performance, improving Discriminative Score and substantially reducing Context-FID, particularly for challenging long-sequence generation. Moreover, SDFlow provides significant inference speedups over autoregressive baselines, offering both high fidelity and computational efficiency. Code is available at https://github.com/William-Liwei/SDFlow",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

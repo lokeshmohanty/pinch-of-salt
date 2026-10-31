@@ -1,0 +1,13 @@
+{
+  "id": "d7034b2a5cf91081",
+  "title": "Comparative Performance and Parameter-Efficient Adaptation of DINOv2 for Active Trachoma Classification",
+  "link": "https://arxiv.org/abs/2609.23832",
+  "description": "arXiv:2609.23832v1 Announce Type: new \nAbstract: Automated grading of conjunctival photographs could reduce the cost and variability of trachoma prevalence surveys, but the relative value of modern pretrained visual representations, lightweight feature adaptation, and training-objective design has not been established under a common protocol. This study presents a controlled evaluation for binary classification of Trachomatous Inflammation-Follicular (TF) versus Normal using 1,546 images from the public UCSF/Lietman collection. Images are processed using the OPTED pipeline for zero-shot tarsal-conjunctiva segmentation, alignment, cropping, and standardization. We first compare six pretrained backbones using a common classification pipeline and then evaluate four lightweight adaptation mechanisms on DINOv2 ViT-B/14. Under stratified five-fold cross-validation, DINOv2 with Efficient Channel Attention (ECA) and focal-plus-center loss achieved 91.66 +/- 0.97% accuracy, 90.69 +/- 1.10% macro-F1, and 96.06 +/- 0.71% AUC. ECA introduces only five learnable parameters while matching the performance of substantially larger alternatives. Objective ablation further showed that ECA did not consistently improve plain DINOv2 across loss functions; the lowest-variance 91.66% accuracy was obtained with cross-entropy plus center loss. Overall, the fine-tuned DINOv2 representation provided most of the predictive performance, while ECA offered a highly parameter-efficient refinement whose effect depended on the training objective. The resulting workflow provides a reproducible benchmark for active trachoma image classification.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

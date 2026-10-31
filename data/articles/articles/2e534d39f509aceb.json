@@ -1,0 +1,14 @@
+{
+  "id": "2e534d39f509aceb",
+  "title": "Predict Before You Deploy: Offline Prediction of Quantization-Induced Task Degradation for World Action Models",
+  "link": "https://arxiv.org/abs/2609.19441",
+  "description": "arXiv:2609.19441v1 Announce Type: cross \nAbstract: World action models (WAMs) rely on video-generation backbones, requiring substantial memory and compute for deployment. Post-training quantization reduces memory and can accelerate inference, but bit width, grouping, and quantizer choice define a large configuration space. Identifying configurations that preserve task performance through exhaustive closed-loop evaluation is costly. We propose PreDE (Predict Before You Deploy), a policy-calibrated framework for predicting quantization-induced task degradation from offline action deviations. Using closed-loop outcomes from a small development set, PreDE calibrates two thresholds and accepts, rejects, or defers new configurations using a fixed observation log. Under a within-setting label-ordering hypothesis, the rule issues decisions where all thresholds consistent with the development labels agree. Across five WAMs and four benchmark settings, quantization produces configuration-dependent task losses that cannot be explained by bit width alone or a shared deviation threshold. Across 28 held-out configurations from two policies, PreDE issued 21 decisions before observing closed-loop outcomes (75% coverage), all matching the observed acceptable or degraded labels. Deferred candidates included both acceptable outcomes and a 33-percentage-point loss. In 450 Franka Research 3 trials across two independently fine-tuned policies, all configurations assigned to high-deviation groups before testing showed significant degradation, while low-deviation comparisons showed no statistically significant degradation. On the real robot, W4A4 achieved a 1.37x action-query speedup and approximately 44% lower peak memory. These results support policy-specific behavioral calibration for quantization configuration selection while identifying candidates that require closed-loop evaluation. The code is available at https://github.com/jiuyixu25/PreDE.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

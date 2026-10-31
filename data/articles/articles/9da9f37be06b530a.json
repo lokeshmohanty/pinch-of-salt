@@ -1,0 +1,14 @@
+{
+  "id": "9da9f37be06b530a",
+  "title": "KuaiRP Series Role-playing Models Technical Report",
+  "link": "https://arxiv.org/abs/2609.11127",
+  "description": "arXiv:2609.11127v1 Announce Type: new \nAbstract: This paper introduces the complete technical solution for the KuaiRP series of role-playing models. We aim to achieve four core objectives for a dedicated role-playing model: simplified prompt engineering, highly stable output quality, built-in domain world knowledge, and high-efficiency deployment with a small parameter size. However, effectively injecting deep domain knowledge often leads to a severe catastrophic forgetting of the model's general agent capabilities. To overcome this trade-off, we propose a multi-stage training pipeline. First, we design a standardized character template and construct an SFT data pipeline based on user behavior simulation and reverse profile filtering. Next, we utilize a rule-based composite reward function during the Reinforcement Learning (RL) phase to eliminate common degradation phenomena like length expansion and repetitive generation. Finally, to recover the general capabilities compromised during SFT and RL, we propose a novel self-distillation paradigm using Two-stage On-Policy Distillation (OPD) equipped with Cumulative-Divergence Decay (CDD). By using the domain-adapted model as the teacher and the original base model as the student, we effectively balance deep domain knowledge injection with the preservation of general agent capabilities. Experimental results demonstrate that the KuaiRP models not only match the current state-of-the-art proprietary models in role-playing fidelity within our target domains, but also successfully recover general agent capabilities, maintaining extremely low deployment costs.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

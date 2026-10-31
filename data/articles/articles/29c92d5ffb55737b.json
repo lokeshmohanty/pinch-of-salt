@@ -1,0 +1,14 @@
+{
+  "id": "29c92d5ffb55737b",
+  "title": "A Minimal Optical-Flow Representation for Vision-Based Tactile Rotation Classification in Robotic Manipulation Across Gravity Domains",
+  "link": "https://arxiv.org/abs/2610.12073",
+  "description": "arXiv:2610.12073v1 Announce Type: cross \nAbstract: Vision-based tactile sensors provide rich contact information, but processing high-resolution images can be costly for resource-constrained platforms such as space robots. This work investigates whether a compact representation of tactile motion can classify object rotation across different gravity conditions. Dense optical flow from a simulated GelSight Mini is aggregated over a 7x9 grid into 126 features and used to classify the direction of load-induced rotation under Earth, Mars, Moon, and orbital gravity. Gravity causes a small but significant shift in these features, accounting for 1.6% of their variance (R2 = 0.016). Despite its small magnitude, this shift affects models trained only on Earth data: XGBoost accuracy decreases from 94.4% on Earth to 75.9% in orbit. In contrast, a single model trained across all four gravity domains achieves 96.3% overall accuracy and 95.1%-97.0% across individual domains, without using gravity as an input. The representation can also be reduced to 40 features while retaining 95.7% accuracy, with XGBoost requiring only 0.14 ms per inference. These findings show that Earth-gravity performance alone is insufficient to establish the transferability of tactile perception for space robotic manipulation, highlighting the need to account for gravity-induced domain shifts during training and validation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

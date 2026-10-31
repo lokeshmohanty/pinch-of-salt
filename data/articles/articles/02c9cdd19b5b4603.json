@@ -1,0 +1,16 @@
+{
+  "id": "02c9cdd19b5b4603",
+  "title": "Not All Nodes Are Created Equal: Homophily-Aware Stratification for Stable GNN Evaluation",
+  "link": "https://arxiv.org/abs/2609.19210",
+  "description": "arXiv:2609.19210v1 Announce Type: cross \nAbstract: Graph neural networks are widely used for transductive node classification, with accuracy typically measured on randomly drawn train/validation/test splits. Reported accuracy has been shown to shift substantially across different random splits of the same dataset, making published comparisons between architectures unreliable. The classical remedy in non-graph settings is stratified $k$-fold cross-validation, which ensures each test fold reflects the full class distribution of the dataset. We argue that class stratification alone is insufficient for graphs: nodes are not isolated but connected, and folds that differ in their distribution of local neighbourhood homophily expose the model to systematically different relational conditions that directly affect message-passing behaviour. The resulting cross-fold variation reflects the homophily composition of each split, inflating reported variance beyond what model behaviour alone would produce. To address this, we propose \\hp{}, a topology-aware stratification procedure that treats node homophily as the primary stratification axis, aligning folds with respect to local relational consistency alongside the class marginal that standard stratification already controls. Stratifying on homophily alone does not guarantee class balance, so \\hp{} incorporates class label as a secondary axis, preserving class representativeness as a natural consequence of the procedure. We evaluate \\hp{} on a broad benchmark suite comprising 15 node-classification datasets spanning the full homophily spectrum and 7 GNN architectures. \\hp{} achieves a mean stability rank of 1.49 compared to 2.31 for random $k$-fold, achieving the lowest mean stability rank on 13 of 15 datasets while preserving class balance close to class-stratified splits and substantially better than random. We argue that homophily-aware split construction merits broader adoption for GNN evaluation.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SI",
+    "cs.AI",
+    "cs.LG",
+    "stat.ML"
+  ]
+}

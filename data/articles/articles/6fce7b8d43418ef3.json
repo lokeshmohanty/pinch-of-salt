@@ -1,0 +1,14 @@
+{
+  "id": "6fce7b8d43418ef3",
+  "title": "Token-Efficient Multi-Agent Collaboration via System One-Guided Computational Division of Labor",
+  "link": "https://arxiv.org/abs/2610.08155",
+  "description": "arXiv:2610.08155v1 Announce Type: cross \nAbstract: Large language model (LLM)-based multi-agent systems (MAS) have become a promising paradigm for complex information-seeking and reasoning tasks by enabling collaborative problem solving among specialized agents. However, existing MAS frameworks tightly couple task reasoning with coordination operations, including task selection, role assignment, message routing, and context management. As interactions grow, using powerful LLMs for these bounded control decisions introduces substantial token overhead and latency, limiting the scalability of agentic Web services. In this paper, we investigate whether coordination can be decoupled from expensive reasoning without compromising collaborative performance. We propose S1-MAS, a token-efficient multi-agent framework based on System One-guided computational division of labor. S1-MAS assigns bounded coordination decisions to lightweight System One models while reserving open-ended reasoning for capable LLM workers. Specifically, a lightweight controller selects inspection conditions, chooses subsequent tasks, and determines termination, while a compact reader retrieves condition-relevant evidence from authorized sources to support these decisions. Through a decision-evidence loop, selected tasks dynamically determine worker roles and source access, enabling adaptive collaboration without task-specific training. Extensive experiments on seven diverse benchmarks demonstrate that S1-MAS achieves superior accuracy while substantially reducing the inference cost. Across individual comparisons with AgentVerse, DyLAN, and SelfOrg on seven benchmarks, S1-MAS reduces GPT-4o token consumption by 44.9%-97.2% and measured end-to-end latency by 37.8%-93.0%. These results highlight its potential for scalable and cost-effective agentic Web applications.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MA",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "544dd707ae44ca64",
+  "title": "PEARL: Process-Experience Aware Reinforcement Learning for Multi-Turn Agents",
+  "link": "https://arxiv.org/abs/2610.14636",
+  "description": "arXiv:2610.14636v1 Announce Type: new \nAbstract: Terminal rewards make multi-turn agents trainable without step-level annotations, but group-relative advantages provide little guidance about which intermediate decisions to adjust. Failed trajectories also contain reasonable actions, while unfavorable decision patterns can recur as training proceeds. We introduce PEARL (Process-Experience Aware Reinforcement Learning), which improves local credit assignment without an additional critic. Given two continuations from the same history with different outcomes, PEARL locates their first divergence and builds a feature representation of each branch's local decision. It clusters these decision features in recent failure and success memories to identify recurring local patterns. Using this pattern memory, PEARL selectively strengthens negative advantages at lower-reward decisions, while leaving positive advantages and the base policy optimizer unchanged. On AppWorld, PEARL improves over ARPO on Normal and Challenge tasks at both 4B and 8B scales. On ALFWorld, it achieves 97.9% mean success at 4B, 2.7 points above the strongest baseline, while remaining competitive at 8B. Ablations of shaping location, success-bank filtering, and memory window support the value of selective, recurring-pattern-based updates.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e4c634a7359ef6e8",
+  "title": "DTKDP: A Dual Teacher Knowledge Distillation and Pruning Framework for Lightweight Oriented SAR Ship Detection",
+  "link": "https://arxiv.org/abs/2609.24872",
+  "description": "arXiv:2609.24872v1 Announce Type: new \nAbstract: Two-stage oriented detectors achieve high localization accuracy in synthetic aperture radar (SAR) ship detection, but their large backbones, feature pyramids, proposal modules, and heavy region of interest (RoI) heads hinder deployment. Existing lightweight SAR ship detectors typically use one-stage frameworks that lack proposal-level refinement for precise rotated localization. This paper presents a dual-teacher knowledge distillation and pruning (DTKDP) framework for lightweight oriented SAR ship detection. DTKDP introduces learnable gates into convolutional, normalization, and linear layers to prune convolutional channels and RoI-head neurons. Rotated proposal alignment (RPA) distills teacher and student predictions in a shared teacher-generated rotated proposal space, while a dual-teacher scheme combines classification and regression guidance from a homogeneous main teacher with complementary classification cues from a heterogeneous auxiliary teacher. Experiments on the SAR Ship Detection Dataset (SSDD) and Rotated Ship Detection Dataset in SAR Images (RSDD-SAR) show that DTKDP reduces the parameters of Oriented Region-based Convolutional Neural Network (Oriented R-CNN) and RoI Transformer equipped with ResNet-50 backbones by 87.5-91.8% and their floating-point operations (FLOPs) by 75.6-79.9%. In terms of average precision (AP) and mean average precision (mAP), the resulting Oriented R-CNN-slim and RoI Transformer-slim retain accuracy close to their full-scale counterparts. Relative changes across $\\mathrm{AP}_{50}$, $\\mathrm{AP}_{75}$, $\\mathrm{mAP}_{50:75}$, and $\\mathrm{mAP}_{50:95}$ range from a 2.38% decrease to a 0.65% improvement. Compared with RTMDet-tiny, they improve all four metrics on both datasets by 0.52-27.55% and consistently surpass representative distillation methods, demonstrating a favorable accuracy-efficiency trade-off.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

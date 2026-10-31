@@ -1,0 +1,13 @@
+{
+  "id": "7616b189970cac72",
+  "title": "SlerpFlow: Spherical Trajectory Correction for Rectified Flow Inversion",
+  "link": "https://arxiv.org/abs/2607.21326",
+  "description": "arXiv:2607.21326v1 Announce Type: new \nAbstract: Rectified-flow-based diffusion transformers, particularly FLUX, have demonstrated outstanding performance in high-quality image generation. However, achieving fast and accurate inversion--transforming images back to latent noise for faithful reconstruction and editing--remains a challenging bottleneck due to the discretization errors of linear solvers. This paper introduces SlerpFlow, a straightforward yet highly effective zero-shot approach that unlocks the full potential of FLUX for high-fidelity inversion and editing. Unlike existing approaches (e.g., RF-Solver) that rely on complex numerical approximations such as high-order Taylor expansions to correct trajectory errors, we present a geometric view based on the Manifold Hypothesis: the empirically observed trajectory curvature is not a numerical artifact, but rather serves as a necessary \"centripetal force\" that constrains the flow to remain on the data manifold. Guided by this insight, SlerpFlow integrates Spherical Linear Interpolation (Slerp) to rectify flow velocity directions on the hypersphere, strictly adhering to the intrinsic curvature of the latent space. Crucially, by caching the corrected velocity for subsequent steps, SlerpFlow achieves high-precision inversion while maintaining the computational efficiency of a first-order Euler solver. Extensive experiments on FLUX-based reconstruction and editing tasks demonstrate that SlerpFlow improves reconstruction fidelity and achieves stronger semantic alignment in editing without requiring additional training. Code is available at https://github.com/0answer0/SlerpFlow.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

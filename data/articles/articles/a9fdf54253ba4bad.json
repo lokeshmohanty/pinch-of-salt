@@ -1,0 +1,15 @@
+{
+  "id": "a9fdf54253ba4bad",
+  "title": "VETO: Video Efficient Token Optimization for Vision Language Models",
+  "link": "https://arxiv.org/abs/2610.01785",
+  "description": "arXiv:2610.01785v1 Announce Type: cross \nAbstract: Processing long videos with Vision-Language Models (VLMs) is bottlenecked by the quadratic cost of visual tokens, making long-form inference prohibitively expensive. While single-axis compression methods mitigate this, they hit a hard efficiency floor because they treat spatial and temporal redundancy independently. We present VETO (Video Efficient Token Optimization for Vision-Language Models), a training-optional plug-in that eliminates this bottleneck through dual-axis compression: (i) an intra-frame compressor that merges semantically similar tokens within each frame via optimal-transport inspired matching, and (ii) an inter-frame compressor that identifies and merges temporally redundant frames. The key design insight is hierarchical ordering: by first compressing spatial dimensions, VETO drastically reduces the cost of subsequent global temporal matching, bypassing the efficiency wall of single-axis approaches, with an advantage that grows with modern fully-fused attention infrastructure. Empirically, VETO achieves up to 45% faster inference (e.g., on LLaVA-OneVision-7B) while preserving or improving accuracy. Under extreme token starvation (10% budget), VETO outperforms VFlowOpt (54.9%), VisionZip (52.6%), and FastV (47.9%) with 55.7% accuracy. We demonstrate universal applicability across LLaVA-OneVision, InternVL-2.5, and LongVA, with zero-shot accuracy preserved or improved in all cases.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

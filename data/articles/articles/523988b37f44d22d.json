@@ -1,0 +1,13 @@
+{
+  "id": "523988b37f44d22d",
+  "title": "UniBuild: Unified Building Mapping From Multi-Source Optical Remote Sensing Imagery With Detail Decoding and Geometry Regularization",
+  "link": "https://arxiv.org/abs/2609.37031",
+  "description": "arXiv:2609.37031v1 Announce Type: new \nAbstract: Building extraction from optical remote sensing (RS) imagery is fundamental to urban mapping, yet existing methods are often dataset-specific and generalize poorly to unseen domains. Their practical use is also limited by insufficient detail recovery and weak geometric regularization, leading to blurred boundaries, irregular shapes, and merged adjacent buildings. To address these issues, we propose UniBuild, a unified building extraction framework for multi-source RGB optical RS imagery. First, a unified multi-dataset training scheme is constructed over heterogeneous RGB optical datasets to learn transferable building representations across sensors and resolutions. Second, a novel detail-preserving HR-DPT decoder is designed to integrate high-level semantic features with high-resolution spatial features, enhancing building detail recovery. Third, geometry-aware regularization is introduced through a structure-tensor-based direction-aware loss for boundary direction consistency and a saddle-aware loss for suppressing false activations in narrow inter-building gaps under low-resolution conditions. We train and evaluate UniBuild on multi-source RGB optical datasets, including 10 public high-resolution datasets and two self-collected low-resolution datasets. Experiments show that UniBuild consistently improves building-region accuracy, boundary sharpness, and adjacent-building separation across diverse datasets. It also generalizes well to unseen domains and supports practical building extraction from RGB optical RS imagery up to 10\\,m resolution. The predicted masks can be further converted into GIS-compatible building footprints through simple polygonization. The trained model and inference code are released at https://github.com/zhu-xlab/UniBuild.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

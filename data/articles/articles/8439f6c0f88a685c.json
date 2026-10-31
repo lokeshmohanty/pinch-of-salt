@@ -1,0 +1,13 @@
+{
+  "id": "8439f6c0f88a685c",
+  "title": "Video Evidence Indexing: Learning Where to Look from Video Previews for Token-Budgeted Long-Video Question Answering",
+  "link": "https://arxiv.org/abs/2610.00757",
+  "description": "arXiv:2610.00757v1 Announce Type: new \nAbstract: Long-video question answering is limited by the high cost of visual tokens and by the fixed context width of current VLMs. A long-video question may require broad temporal coverage, but the answer is often supported by only a compact set of moments. To locate these moments efficiently, we propose token-budgeted Video Evidence Indexing (VEI): given a dense low-resolution Video Preview, the model constructs a compact high-resolution Evidence Set for final reasoning. We treat VEI as a policy that must jointly solve \\textit{evidence localization}, which finds question-relevant moments, and \\textit{budget planning}, which decides where to spend the limited high-resolution frame budget. We implement this idea with an inference pipeline: the Video Preview provides cheap global coverage, Video Evidence Indexing constructs the Evidence Set, and Answer Generation combines both inputs for final VQA. To address missing frame-level supervision, we adopt privileged self-distillation, where an answer-aware teacher guides the normal test-time policy on student-generated indexing traces. We explore previews at 1, 6, 12, and 24 visual tokens per frame, training a single policy that supports all four resolutions. Experiments show that Video Evidence Indexing improves accuracy under limited visual budgets, and self-distillation further improves both QA accuracy and temporal evidence localization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

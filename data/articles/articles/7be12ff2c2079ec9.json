@@ -1,0 +1,14 @@
+{
+  "id": "7be12ff2c2079ec9",
+  "title": "Beyond Random Partitioning: Unsupervised Spatio-Temporal Stratification for Cohort Balancing in Longitudinal Medical Imaging",
+  "link": "https://arxiv.org/abs/2608.00073",
+  "description": "arXiv:2608.00073v1 Announce Type: new \nAbstract: Rigorous dataset partitioning is a foundational, yet frequently overlooked, prerequisite for reliable deep learning in longitudinal medical imaging. Naively shuffling small clinical cohorts routinely introduces covariate shifts and temporal sampling imbalances across training, validation, and test subsets, exposing downstream models to out-of-distribution evaluation. We address this vulnerability with an auditable Tripartite Dataset Analytics Framework that systematically characterizes spatial grid integrity, multi-parametric intensity fingerprints, and longitudinal temporal trajectories, quantifying the heavy-tailed feature dispersion and irregular, episodic sampling intervals typical of real-world clinical cohorts. Building on this characterization, we formalize an unsupervised spatio-temporal cohort-balancing standard operating procedure (SOP) that combines elbow-optimized K-means clustering over a standardized, six-dimensional joint intensity-temporal feature space with intra-cluster proportionate stratified sampling. On a longitudinal, contrast-enhanced $T1$-weighted brain MRI cohort (N=149), the protocol reduces the maximum cross-subset intensity bias from 34.1% under conventional random shuffling to under 2.1%, while aligning longitudinal follow-up intervals closely around the population mean. Monte Carlo stress testing across ten random seeds and three split configurations confirms that this alignment remains tightly bounded, in clear contrast to the substantial variability of random partitioning. The resulting protocol offers a reproducible, generalizable procedure for cohort engineering in variable-length longitudinal clinical imaging workflows.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

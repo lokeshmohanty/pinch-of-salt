@@ -1,0 +1,13 @@
+{
+  "id": "c7e9bd90397d704b",
+  "title": "BlindPSNR: A No-Reference Fidelity Predictor for Low-Light Image Enhancement",
+  "link": "https://arxiv.org/abs/2607.27628",
+  "description": "arXiv:2607.27628v1 Announce Type: new \nAbstract: Low-light image enhancement (LLIE) methods involve tunable parameters that are typically fixed, often leading to performance degradation when applied across scenes. Manually selecting the best configuration, however, can be time-consuming and not always practical. Peak signal-to-noise ratio (PSNR) is the natural fidelity criterion for automating parameter selection, yet it requires a ground-truth reference that is typically unavailable. To our knowledge, no learning-based method addresses no-reference PSNR prediction for low-light image enhancement; the natural surrogate, no-reference image quality assessment (NR-IQA), targets perceptual quality rather than signal fidelity, and all seven baselines we test achieve 0% top-1 selection accuracy on our benchmark. With paired training data, the ground-truth PSNR is analytically computable, providing exact supervision without a separate teacher network. Building on this, we propose BlindPSNR, a lightweight no-reference network that fuses the enhanced image with the degraded low-light input via windowed cross-attention and estimates PSNR through heteroscedastic regression. While a scalar-regression baseline achieves top-1 accuracy of 54.4%, BlindPSNR raises this to 89.5% with regret dropping from 1.62 dB to 0.026 dB, and generalizes to unseen datasets (SRCC = 0.61-0.67).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

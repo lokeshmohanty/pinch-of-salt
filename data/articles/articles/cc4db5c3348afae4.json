@@ -1,0 +1,14 @@
+{
+  "id": "cc4db5c3348afae4",
+  "title": "Coco: An Agentic Copilot for the Hardware--Software Co-Design Lifecycle",
+  "link": "https://arxiv.org/abs/2610.02376",
+  "description": "arXiv:2610.02376v1 Announce Type: cross \nAbstract: Co-designing ML models and the accelerators that run them is an unusual reasoning task: architects must draw confident, high-stakes conclusions about systems that do not yet exist, and the pace of both model evolution and hardware cadence means the analysis burden grows every quarter. The evidence behind each decision--hundreds of gigabytes of fresh simulation sweeps over novel design points--is by construction absent from any LLM's pretraining corpus, and there is no external literature to retrieve; naive \"chat-with-your-data\" approaches hallucinate exactly where correctness matters most. We present Coco (Copilot for Codesign), an agentic platform deployed with TPU architects that accelerates the co-design lifecycle of setting up experiments, sweeping simulators, and deriving insights. Coco is built as four layers: (i) a datastore that automatically registers every simulation sweep into a normalized relational schema, so agents ground every number in a SQL query rather than scraping heterogeneous files; (ii) a library of tools with typed APIs that agents compose without human orchestration; (iii) agents that encode recurring analysis workflows--most notably iso-execution analysis, which compares systems at matched execution configurations, including swept-but-dominated points off the Pareto frontier; and (iv) a platform UX whose navigation state doubles as agent context. We report early deployment experience toward a reduction in time-to-simulation and time-to-insight, and argue that co-design is a distinct agentic domain: its data must be retrieved rather than memorized, its workflows are recurring but context-dependent, and expert adoption hinges on UX that balances IDE-style control with interactive exploration.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.PL",
+    "cs.AI"
+  ]
+}

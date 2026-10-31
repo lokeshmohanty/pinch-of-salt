@@ -1,0 +1,14 @@
+{
+  "id": "745d8862b75588a6",
+  "title": "SWIM: Learning What Matters from Behaviors for JEPA World Models",
+  "link": "https://arxiv.org/abs/2610.36662",
+  "description": "arXiv:2610.36662v1 Announce Type: cross \nAbstract: Joint-embedding predictive architectures (JEPAs) enable world models to plan from images by predicting future embeddings. However, their visual prediction objectives do not explicitly incorporate task-relevant state information, so the physical state that determines task progress may not be reliably captured in the latent space. Supervising world models with simulator state can make planning more informative, but it requires deciding which state features matter. Features are typically selected by hand or weighted uniformly, and a uniform weighting gives every standardized state feature equal influence, so redundant coordinates can overcount the same variation, while irrelevant ones can obscure task-relevant differences. To address this limitation, we propose SWIM (State Weighting with Inverse-Dynamics Model), which learns state weights from offline trajectories by predicting recorded actions from current states and observed future displacements. The learned weights quantify each feature's contribution to action prediction and define a weighted state metric for state-supervised training, which we demonstrate by aligning latent and state distances. The inverse-dynamics model is used only during training, so the resulting world model plans from images with no additional planning-time computation. Across five simulated robotic manipulation tasks, SWIM consistently improves planning success over uniform state weighting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

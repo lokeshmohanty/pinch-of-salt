@@ -1,0 +1,14 @@
+{
+  "id": "af001ce6a4d161ff",
+  "title": "Task-Driven Subspace Decomposition for Knowledge Sharing and Isolation in LoRA-based Continual Learning",
+  "link": "https://arxiv.org/abs/2603.00191",
+  "description": "arXiv:2603.00191v5 Announce Type: replace-cross \nAbstract: Continual Learning (CL) requires models to sequentially adapt to new tasks without forgetting old knowledge. Recently, Low-Rank Adaptation (LoRA), a representative Parameter-Efficient Fine-Tuning (PEFT) method, has gained increasing attention in CL. Several LoRA-based CL methods reduce interference across tasks by separating their update spaces, typically building the new space from the estimated null space of past tasks. However, they (i) overlook task-shared directions, which suppresses knowledge transfer, and (ii) fail to capture truly effective task-specific directions since these ``null bases\" of old tasks can remain nearly inactive for new task under correlated tasks. To address this, we study LoRA learning capability from a projection energy perspective, and propose Low-rank Decomposition and Adaptation (LoDA). It performs a task-driven decomposition to build general and truly task-specific LoRA subspaces by solving two energy-based objectives, decoupling directions for knowledge sharing and isolation. LoDA fixes LoRA down-projections on two subspaces and learns robust up-projections via a Gradient-Aligned Optimization (GAO) approach. After each task, before integrating the LoRA updates into the backbone, LoDA derives a closed-form recalibration for the general update, approximating a feature-level joint optimum along this task-shared direction. Experiments indicate that LoDA outperforms existing CL methods. Our code is available at https://github.com/HHHLF/LoDA_ICML2026.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

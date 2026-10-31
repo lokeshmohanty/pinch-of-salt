@@ -1,0 +1,15 @@
+{
+  "id": "6f7a7783faf81bdd",
+  "title": "Right Answer, Wrong Tokens: Tail-Aware Credit Calibration for RLVR",
+  "link": "https://arxiv.org/abs/2607.07976",
+  "description": "arXiv:2607.07976v2 Announce Type: replace-cross \nAbstract: Although reinforcement learning (RL) improves the reasoning capabilities of large language models (LLMs), GRPO-style methods can suffer from a positive-credit contamination failure mode. Specifically, uniform credit assignment can reinforce locally erroneous tail tokens alongside useful tokens within successful trajectories. To address this problem, we propose Tail-Aware Credit calibratiOn (TACO), which calibrates the positive credit assigned to such tokens without token-level error labels. To this end, TACO lets the policy serve as its own reference, assessing each sampled token's rarity relative to the policy's local expectations to compute a tail-risk score. Using this score as a proxy for potential local errors, TACO softly reduces positive credit for high tail-risk tokens while retaining nonzero weights, limiting their reinforcement without eliminating opportunities to learn useful rare patterns. Experiments across four LLMs and eight reasoning benchmarks show that TACO consistently improves over GRPO-style baselines. Notably, TACO also improves training stability, supporting sustained performance gains in long-horizon RL. The source code is available at: https://github.com/xiuyilou/TACO.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

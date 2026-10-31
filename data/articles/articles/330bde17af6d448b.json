@@ -1,0 +1,13 @@
+{
+  "id": "330bde17af6d448b",
+  "title": "Segmentation of the aorta in 4D flow MRI using 4D convolutional kernels and learning from sparse annotations",
+  "link": "https://arxiv.org/abs/2609.04439",
+  "description": "arXiv:2609.04439v1 Announce Type: new \nAbstract: Automated aortic segmentation in 4D flow MRI is essential for reproducible hemodynamic assessment but is limited by scarce dense annotations and high computational demands. We developed a fully automated 4D (3D+time) U-Net for segmenting the ascending aorta, arch, and proximal descending aorta, using a parameter-efficient hybrid 4D kernel to capture temporal context and sparse 4D labels derived from existing 2D expert contours and centerlines, thereby avoiding the need for dense 4D annotations. Training comprised 268 scans from 8 centers and 2 vendors, with evaluation on an internal test set (32 scans) and an external post-contrast set (30 scans; different site, protocol, and annotator), compared against frame-wise 3D networks and two semi-automatic references. Against time-resolved annotations, the 4D U-Net achieved Dice scores of 0.927 (internal) and 0.911 (external), versus 0.919/0.847 for the 3D U-Net, 0.893 for static PC-MRA, and 0.808 for registration-based propagation; differences were small in systole but pronounced in diastole. Agreement with expert contours for peak velocity, net flow, axial and circumferential wall shear stress, and diameters was excellent (ICC >=0.954 internal, >=0.980 external), while semi-automatic references performed worse. The method thus provides reproducible, time-resolved aortic segmentation for automated hemodynamic analysis and generalizes across multicenter, multivendor, and independent post-contrast data. The model is publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "05649663724c5582",
+  "title": "Subspace Clifford Networks",
+  "link": "https://arxiv.org/abs/2610.37226",
+  "description": "arXiv:2610.37226v1 Announce Type: new \nAbstract: In this work, we propose Subspace Clifford Networks, a reformulation that replaces global cyclic rolling with grouped subspace interactions. Instead of sampling sparse cyclic diagonals across the entire $D$-dimensional channel space, we project the features into an aligned space $\\R^{\\tilde{D}} = \\bigoplus_{g=1}^{G} V_g$ partitioned into $G$ low-dimensional groups $V_g \\cong \\R^k$ with $k \\in \\{2, 3, 4\\}$. Within each $k$-dimensional group, we compute all $\\binom{k}{2}$ wedge coordinates and concatenate them with $\\operatorname{SiLU}$-activated coordinate-wise products, while sandwiching the grouped interaction between learnable $1\\times 1$ linear projections to enable cross-group channel mixing. This design reduces intermediate feature expansion from $2|\\mathcal{S}|D$ (typically $10D$ for 5 shifts) down to $1.5\\tilde{D}$ ($k=2$), $2.0\\tilde{D}$ ($k=3$), or $2.5\\tilde{D}$ ($k=4$). Furthermore, exploiting the small, fixed group size $k \\in \\{2, 3, 4\\}$, we implement a fused CUDA kernel that evaluates the forward interaction and a recomputation-based analytical backward pass using thread-local variables without allocating global-memory buffers for elementwise intermediates. Finally, we extend the backbone from an isotropic columnar layout to a multi-resolution Hierarchical Clifford Network with configurable per-stage subspace dimensions. Experiments on CIFAR-100 show that the proposed models substantially reduce parameter count and training time across both regimes, while the hierarchical variants also improve classification accuracy over the evaluated shift-based hierarchical baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

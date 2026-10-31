@@ -1,0 +1,13 @@
+{
+  "id": "f4cf10babe395f28",
+  "title": "Benchmark Designers Should \"Train on the Test Set\" to Expose Exploitable Non-Visual Shortcuts",
+  "link": "https://arxiv.org/abs/2511.04655",
+  "description": "arXiv:2511.04655v2 Announce Type: replace \nAbstract: Multimodal LLMs can answer many questions in vision-centric benchmarks without looking at the image, using linguistic priors and skewed answer distributions. Blind evaluation shows what a model already answers this way, but not what it could learn from the test set's own regularities. Extending partial-input auditing (e.g., hypothesis-only baselines in natural language inference), we argue that benchmark designers should \"train on the test set\": probe the artifact they release for exploitable patterns. Our Test-set Stress-Test (TsT) cross-validates a text-only Qwen2-7B on the test set's questions and answer options, yielding a benchmark-level score and a per-question bias score s(x); a random forest on hand-crafted features adds a fast, interpretable audit. On the template-based VSI-Bench and CV-Bench, the held-out score is 17.9 and 13.1 points above the model's own zero-shot score. On MMMU it learns little, even though GPT-4o correctly answers 52.3% of its multiple-choice questions without the image, so blind success there reflects pretrained knowledge rather than learnable test-set patterns. Iterative Bias Pruning (IBP) removes the questions with the highest s(x) and re-diagnoses; on VSI-Bench it widens a fine-tuned model's vision-blind gap more than random removal at the same rate. We also release VSI-Bench-Debiased, which lowers a fine-tuned model's blind score from 44.7 to 32.0 while its vision score falls only from 57.1 to 48.7.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

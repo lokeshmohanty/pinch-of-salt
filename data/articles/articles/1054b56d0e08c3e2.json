@@ -1,0 +1,14 @@
+{
+  "id": "1054b56d0e08c3e2",
+  "title": "VerNav: Verifier-First Low-Latency Vision-and-Language Navigation",
+  "link": "https://arxiv.org/abs/2609.00920",
+  "description": "arXiv:2609.00920v1 Announce Type: cross \nAbstract: Vision-and-Language Navigation (VLN) requires an agent to navigate through unseen 3D environments according to natural-language instructions. Explicit reasoning can improve instruction understanding and semantic grounding, but autoregressive generation at every step accumulates large decision-stage latency over multi-step navigation. We propose VerNav, a verifier-first framework for low-latency LLM-based VLN. The verifier reduces decision-stage latency by replacing per-step autoregressive generation with batched action verification, while an entropy-based adaptive generator is invoked only for uncertain decisions to produce compact state evidence. To further improve navigation performance with the verifier, we introduce a two-stage alignment scheme: (i) VPO improves local action-preference alignment in static verifier training, and (ii) step-level reinforcement fine-tuning provides dense progress rewards over multi-step navigation rollouts during dynamic task execution. Experiments on the Room-to-Room (R2R) benchmark show that the verifier-only decision path of VerNav achieves competitive navigation performance among representative LLM-based VLN agents while reducing average decision-stage LLM latency per step by more than $10\\times$ compared with autoregressive methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

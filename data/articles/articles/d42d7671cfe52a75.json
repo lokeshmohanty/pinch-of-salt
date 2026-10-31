@@ -1,0 +1,13 @@
+{
+  "id": "d42d7671cfe52a75",
+  "title": "Intrinsic Temporal Adaptation of CLIP for Partially Relevant Video Retrieval",
+  "link": "https://arxiv.org/abs/2609.04800",
+  "description": "arXiv:2609.04800v1 Announce Type: new \nAbstract: Partially Relevant Video Retrieval (PRVR) aims to retrieve untrimmed videos that contain moments relevant to a text query. Since the target moment occupies only a portion of the video, PRVR requires retrieval based on fine-grained understanding beyond coarse video-level matching. However, existing methods often rely on frozen CLIP frame features, which lack temporal understanding. Even with recent progress in parameter-efficient CLIP adaptation, video-level predictions can still be supported by imprecise frame-level evidence. In this paper, we propose an Intrinsic Temporal Adaptation (ITA) framework for PRVR. First, our Backbone-Internal Temporal Adaptation allows the last few visual transformer layers to attend over groups of neighboring frames. This provides temporally aware frame embeddings while keeping CLIP frozen and training only adaptation parameters. Second, we introduce Affinity-Weighted Gradient Propagation to address the weakly supervised nature of PRVR, softly aggregating top-$k$ frames based on text-frame affinities and propagating learning signals to multiple query-relevant frames. Our method achieves state-of-the-art performance on PRVR benchmarks, demonstrates robust cross-dataset transfer, and retrieves substantially more accurate frame-level evidence within ground-truth query-relevant moments. Our code is available at github.com/hynnsk/ITA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

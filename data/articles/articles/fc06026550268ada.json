@@ -1,0 +1,13 @@
+{
+  "id": "fc06026550268ada",
+  "title": "RISED: RubrIcs for agentic multi-environment Selection and sElf-Distillation",
+  "link": "https://arxiv.org/abs/2610.00979",
+  "description": "arXiv:2610.00979v1 Announce Type: new \nAbstract: Training a single LLM agent jointly across diverse interactive environments has attracted increasing attention as a route to generalist agents. Existing curriculum and data-selection strategies often allocate training at the environment level or prioritize local reward-based signals, without explicitly considering relationships between current rollouts across environments for prompt-group selection. Meanwhile, as environments are learned at different rates, all-failure and all-success rollout groups can coexist within a batch, leaving those data without group-relative reward signals. Both challenges highlight limitations of relying solely on scalar rewards in multi-environment RL: they provide limited information about cross-environment relationships and no within-group reward contrast when rewards are identical. This motivates richer textual feedback, such as rubrics describing rollout behaviours, to guide learning. Beyond rubrics' usage as reward, we repurpose rubrics to guide both online data selection and policy supervision. An LLM judge tags each rollout using a predefined rubric vocabulary shared across environments. The resulting profiles guide the selection of data that aligns with the overall behavioural composition of the mixed-environment batch while limiting overlap with already-selected data. Available positive rubrics (describing desired behaviours) provide privileged context for an on-policy self-distillation teacher, supplying additional token-level supervision, while negative rubrics (describing undesired behaviours) guide subsequent rollout generation away from recurring failure modes. Together, these components form RISED. Across model backbones, RISED achieves the highest mean pass rate across environments and ranks first or second in every individual environment. Rubric-based analysis of RISED can further characterize the behavioural changes accompanying these gains.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

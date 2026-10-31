@@ -1,0 +1,16 @@
+{
+  "id": "f797a8b26d4ab697",
+  "title": "VideoMM: Adaptive Macro-Micro Inference for Efficient Video MLLMs",
+  "link": "https://arxiv.org/abs/2609.16722",
+  "description": "arXiv:2609.16722v1 Announce Type: new \nAbstract: Scaling Multimodal Large Language Models (MLLMs) to long-form video understanding is bottlenecked by the explosion of visual tokens, which saturates context windows and incurs prohibitive costs. Current solutions predominantly rely on auxiliary models for token reduction but face a fundamental dilemma: lightweight encoder-driven approaches often overlook critical semantic information, whereas heavyweight MLLM-driven reduction negates the efficiency gains. {In this work, we identify a more fundamental inefficiency underlying this dilemma: while fine-grained visual details are essential for detailed understanding, they are largely redundant for the preliminary task of selecting semantically relevant regions. } Motivated by this, we introduce \\textbf{VideoMM}, which marks a paradigm shift from model-centric downsizing to adaptive perceptual granularity. Specifically, our framework {decouples selection from reasoning} by executing semantic filtering on a cost-effective \\textit{Macro Proxy} (derived from downscaled frames), and projecting the selected regions onto high-fidelity \\textit{Micro Tokens} for detailed understanding only when necessary. Extensive evaluations show that VideoMM significantly outperforms existing solutions. It achieves a 6.13$\\times$ speedup and a 7.4\\% accuracy gain over full-context baselines on LongVideoBench, and further accelerates inference by 2.73$\\times$ over current leading methods, establishing a highly scalable paradigm for long-video understanding. Our code is available at: https://github.com/adfh917k/VideoMM.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.CV",
+    "cs.MM"
+  ]
+}

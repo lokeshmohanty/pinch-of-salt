@@ -1,0 +1,13 @@
+{
+  "id": "a1b0b37d8ecb746f",
+  "title": "Uniformity First: Uniformity-aware Test-time Adaptation of Vision-language Models against Image Corruption",
+  "link": "https://arxiv.org/abs/2505.12912",
+  "description": "arXiv:2505.12912v2 Announce Type: replace \nAbstract: Pre-trained vision-language models, such as contrastive language-image pre-training (CLIP), have demonstrated a remarkable generalizability, enabling a wide range of applications, including zero-shot classification. However, vision-language models still struggle to handle distribution shifts, where input samples have large gaps from training ones. We found that CLIP is especially vulnerable to image corruption, a type of realistic distribution shift caused by sensor conditions such as weather, light, or noise. Collecting a new dataset from a test distribution for fine-tuning is highly costly since image corruption occurs unexpectedly and has a wide variety of types. Thus, we investigate test-time adaptation (TTA) of zero-shot classification, which enables on-the-fly adaptation to the test distribution with unlabeled test data. Existing TTA methods for CLIP mainly focus on modifying image and text embeddings or predictions to address distribution shifts. Although these methods can adapt to domain shifts, such as out-of-distribution or different renditions in input images, they fail to adapt to distribution shifts beyond domain shifts, e.g., image corruption. We found that uniformity of image embeddings, which is related to the amount of information, is a key factor that differentiates domain shifts and other distribution shifts. To enable adaptation to image corruption, we propose a novel method called uniformity-aware information-balanced TTA (UnInfo). To address distribution shifts, we introduce uniformity-aware confidence maximization, information-aware loss balancing, and knowledge distillation from the exponential moving average (EMA) teacher. Through experiments, we demonstrate that our UnInfo improves accuracy under image corruption by retaining information in terms of uniformity. The code is available at https://github.com/kzkadc/uninfo.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

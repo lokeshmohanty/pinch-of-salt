@@ -1,0 +1,13 @@
+{
+  "id": "fe616c17255339c6",
+  "title": "Allocate Before You Embed: Adaptive Visual Input Allocation for Video Embeddings",
+  "link": "https://arxiv.org/abs/2609.01778",
+  "description": "arXiv:2609.01778v1 Announce Type: new \nAbstract: Large-scale video retrieval requires embedding models to encode long and diverse videos under tight visual-input and inference budgets. Existing methods typically sample a small, fixed set of frames at their original resolution, limiting temporal coverage and ignoring frame importance. Our empirical analysis shows that expanding temporal coverage improves retrieval even under a fixed visual-input budget. Gains are larger when the original per-frame resolution is preserved, highlighting the complementary roles of temporal coverage and spatial fidelity. Motivated by this finding, we propose AllocEmbed, an allocate-then-embed framework that reallocates a fixed visual-input budget across more frames. A lightweight allocator uses low-cost previews to assign frame-wise resolutions before the embedding backbone, preserving more detail where it most benefits retrieval while reducing visual cost elsewhere. We further introduce Retrieval-Driven Policy Optimization (RDPO), which learns the allocator directly from retrieval feedback using a rank-validated similarity gap and a confidence-guided efficiency incentive. Operating entirely before the backbone, AllocEmbed integrates with existing retrieval systems without modifying the embedding model or downstream pipeline. Experiments on the MMEB-V2 V-QA and V-RET tasks and our LongRet benchmark show that AllocEmbed achieves the best overall retrieval performance among the evaluated budget-matched methods and transfers across embedding backbones. Our code is publicly available at https://github.com/jinsong8/AllocEmbed.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

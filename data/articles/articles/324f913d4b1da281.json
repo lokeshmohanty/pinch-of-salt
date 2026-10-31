@@ -1,0 +1,13 @@
+{
+  "id": "324f913d4b1da281",
+  "title": "Perception or Reasoning? Diagnosing and Tackling Reinforcement Learning Bottlenecks in VLMs",
+  "link": "https://arxiv.org/abs/2610.21380",
+  "description": "arXiv:2610.21380v1 Announce Type: new \nAbstract: Reinforcement learning has brought strong gains to language model reasoning, but its improvements on visual tasks remain less consistent. One difficulty is that visual task failures can arise from different sources: the same benchmark may be limited by perception for one model and by reasoning for another. We introduce Perception and Reasoning Attribution (PARA), which measures the remaining perceptual and reasoning headroom of each model--benchmark pair by comparing how many current errors are recovered with more accurate visual information versus a stronger reasoner. Across 4 vision-language models and 17 multimodal benchmarks, PARA broadly agrees with the expected characteristics of existing benchmarks while revealing substantial model-specific variation. More importantly, it shows that RL gains become smaller as perceptual headroom increases, but larger when reasoning explains more of the recoverable errors, suggesting that current RL exploits reasoning headroom more effectively than perceptual headroom. Motivated by this gap, we analyze how existing RL objectives affect visual perception and find that reward- and token-level signals influence visual attention only indirectly. We therefore propose GRAD, a group-relative attention distillation objective that uses the best rollout in each group to directly guide the visual attention of weaker rollouts. GRAD consistently improves performance across two model scales and seven benchmarks, and further complements existing RL methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

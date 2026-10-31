@@ -1,0 +1,13 @@
+{
+  "id": "248e4605d23e7c1a",
+  "title": "Lesion-centered 3D mapping of colonoscopy procedures: validation of a hierarchical ensemble pipeline on public benchmark videos",
+  "link": "https://arxiv.org/abs/2609.16672",
+  "description": "arXiv:2609.16672v1 Announce Type: new \nAbstract: Background and Objective: Colonoscopy recording practice preserves text reports and still photographs, while the spatial information already present in the recorded video - where the scope traveled, where a lesion was observed, and whether the same lesion was seen again - is discarded when the procedure ends. This study determines whether a lesion-centered spatial record can be assembled and validated without full-colon 3D reconstruction. Methods: A four-layer hierarchical pipeline was assembled - (1) a global topological map, (2) lesion-level spatio-temporal tracks, (3) on-demand local 3D reconstruction, and (4) persistent lesion identity across repeated observations - and ran end to end on four public videos (two C3VDv2 sequences with ground-truth depth and two full REAL-Colon procedures; 40,245 frames). All components are published, individually validated methods; the contribution is their lesion-centered assembly, linking rules, and evaluation. Results: Revisits, impossible under forward-only mapping by construction, were detected by entry-map Bayesian localization: 5,614 and 4,043 revisit events (56 and 68 distinct nodes) in the two full procedures. Lesion-identity merging at the adopted threshold 0.5 maintained ground-truth purity 1.0 while auto-merging 20 of 231 candidate pairs. The endoscopy-specific geometry engine outperformed a general-purpose foundation model on all metrics (overall absolute relative error (AbsRel) 0.2276 vs. 0.3523). Conclusions: The results are partial but establish a concrete near-term path: revisit detection, lesion identity, and local 3D each returned quantitative, reproducible output without waiting for complete geometric reconstruction; validating the record on clinical data is the next step.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

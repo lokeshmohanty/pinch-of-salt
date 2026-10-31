@@ -1,0 +1,13 @@
+{
+  "id": "adf1b0c13e46b55d",
+  "title": "RSure-Agent: Reliable Use of Tool Observations for Remote Sensing Agents",
+  "link": "https://arxiv.org/abs/2610.04836",
+  "description": "arXiv:2610.04836v2 Announce Type: replace \nAbstract: Remote sensing agents rely on perception, measurement, and raster analysis tools to solve Earth observation tasks. We refer to their judgments and quantitative results about ground objects as tool observations. However, these observations are subject to uncertainty and may be incorrect even when tools execute successfully. When agents accept incorrect observations, the errors can propagate through subsequent reasoning and cause task failure. We analyze 1,229 execution trajectories across three remote sensing agent benchmarks. On each benchmark, at least 88.1 percent of tasks depend on tool observations. Among these tasks, at least 22.7 percent contain incorrect observations despite successful tool execution. These errors propagate to the final answer in at least 82.0 percent of affected tasks on each benchmark. To address this problem, we propose RSure-Agent, a framework for verifying tool observations and limiting error propagation. We introduce a verifiable observation protocol that requires tools to return process evidence for the agent to verify their observations. We construct a task-tool reliability prior from offline task feedback. The prior summarizes each tool configuration's past performance across task types and provides a task-specific reference for verification. Using process evidence and this prior, RSure-Agent decides whether to accept an observation, request additional evidence, or reject it. We evaluate RSure-Agent on EarthBench, ThinkGeo, TerraLogic, and CHOICE-420. Across three agent benchmarks, RSure-Agent reduces the error propagation rate by 21.3 to 25.9 percentage points relative to the base configuration with verification and the prior disabled. On CHOICE-420, it improves overall accuracy over direct answering by 5.71 percentage points on average across 11 backbone models. On EarthBench, it reduces the tool-call ratio by 25.9 percent relative to Earth-Agent.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

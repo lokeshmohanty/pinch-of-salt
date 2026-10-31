@@ -1,0 +1,13 @@
+{
+  "id": "d2197ce4883d43d9",
+  "title": "R-CNN-Based Chess Position Recognition",
+  "link": "https://arxiv.org/abs/2610.09191",
+  "description": "arXiv:2610.09191v1 Announce Type: new \nAbstract: Performing chess game position recognition solely from a single image of a three-dimensional board requires predicting the position and orientation of the board relative to the camera, the occupancy of squares and the piece type, which includes its colour. We propose an R-CNN-based framework with independent components for piece recognition and board geometry estimation, whose predictions are combined to reconstruct the position. For piece recognition, we adapt Faster R-CNN using a class-weighted objective and a deeper classification head. The detector operates directly on the input image, retaining alternative piece hypotheses that are subsequently refined using constraints on piece counts and square occupancy. For board detection, we introduce an octagonal arrangement of eight labelled boundary keypoints, predicted using the keypoint head of Mask R-CNN. These provide redundant correspondences for homography estimation and encode board orientation. The estimated homography maps representative points from the piece boxes to an 8x8 grid. On a synthetic dataset, the modifications to piece detection increase mean average precision from 61.59% to 90.14%. Of the predicted board keypoints, 97.11% are within 1% of the image diagonal of their labelled targets. Using ground-truth piece boxes with the predicted homographies gives correct square assignments for every test position. The complete framework recovers 76.61% of test positions exactly and 96.49% with at most one incorrect square.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

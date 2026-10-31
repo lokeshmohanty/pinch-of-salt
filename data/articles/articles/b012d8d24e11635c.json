@@ -1,0 +1,15 @@
+{
+  "id": "b012d8d24e11635c",
+  "title": "Easier Said Than Done: Unpacking Intent-Behavior Gap in Jailbreaking LLM-Based Robots",
+  "link": "https://arxiv.org/abs/2412.16633",
+  "description": "arXiv:2412.16633v5 Announce Type: replace-cross \nAbstract: LLM-based robots use Large Language Models (LLMs) as planners to translate natural language instructions into policies such as grasp(), move_to(), and open_gripper(). Jailbreak attacks on these robots extend the threat from generating malicious content to executing harmful behaviors. However, we find that existing jailbreak attempts against LLM-based robots that produce malicious-looking policies (intent jailbreaks) often fail to induce harmful physical actions by robots (behavior jailbreaks), due to robot-specific constraints, such as logical errors and hallucinated control APIs.\n  In this paper, we demystify the intent-behavior gap and investigate its root causes to inform effective defenses. Our measurement study finds that current LLM jailbreak methods overlook robot-specific syntax constraints (e.g., executable control APIs) and physical feasibility (e.g., ordering of policies and hardware/kinematic constraints). To bridge the gap, we introduce POEF (POlicy EFfective Jailbreak), an automated red-teaming framework that takes into account the robot-specific constraints during both the optimization and evaluation processes. Specifically, POEF employs the hidden-layer gradients from an unaligned LLM to guide the jailbreak prompt optimization and uses a multi-agent evaluator to assess the feasibility of the generated policies. Experiments on commercial robots, including the Unitree G1, the Franka robotic arm, and simulators, show that POEF achieves an 80% behavior jailbreak success rate and transfers across various LLMs. In addition, we propose two defense strategies that mitigate the behavior jailbreak risks. Our findings indicate an urgent need for stronger countermeasures before LLM-based robots are deployed at scale. The homepage is available at https://zjushine.github.io/poef.github.io/.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CY"
+  ]
+}

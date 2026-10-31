@@ -1,0 +1,13 @@
+{
+  "id": "4ea0d4b56e9d9ded",
+  "title": "Amortized Set Prediction for Inverse IFS Reconstruction from Density Maps",
+  "link": "https://arxiv.org/abs/2608.24175",
+  "description": "arXiv:2608.24175v2 Announce Type: replace \nAbstract: Iterated Function Systems (IFS) generate self-similar fractals from a few contractive affine maps. The forward map from parameters to images is inexpensive and well understood, whereas the inverse problem is difficult and is typically solved by per-image optimization. We replace this loop with a single forward pass of a learned estimator that predicts the affine-map set directly from a visit-frequency density map, thereby amortizing the inverse problem. The design follows two constraints. First, density maps do not uniquely identify IFS parameters, so we evaluate by reconstruction rather than parameter recovery and handle unordered map sets by Hungarian matching. Training nevertheless matches the ground-truth parameters: reconstruction-only training gives a better one-shot output, but refinement from its predictions converges to poorer minima, whereas refinement from parameter-matched predictions keeps improving. Second, the fully known forward model lets us generate exact synthetic training pairs and supports image-only test-time refinement. On in-distribution tests, amortized initialization plus a few refinement steps gives a better quality-speed trade-off than equal-budget random-start optimization, and over 1000 steps it reaches high-quality reconstructions more often. It is robust to the sampling settings of the observation, and on an external benchmark outside its training prior it matches the mean accuracy of a recent hour-long optimizer within a minute. On real images (MNIST and Fashion-MNIST), it improves density metrics on average over a published per-image optimizer while being roughly 2 to 500 times faster per image.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

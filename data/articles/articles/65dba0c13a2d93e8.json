@@ -1,0 +1,14 @@
+{
+  "id": "65dba0c13a2d93e8",
+  "title": "Search-Based Testing of Modality Sensitivity in Vision Language Models",
+  "link": "https://arxiv.org/abs/2610.32360",
+  "description": "arXiv:2610.32360v1 Announce Type: new \nAbstract: Vision-language models (VLMs) process images and text jointly, yet robustness evaluations often perturb these inputs separately or assess only predefined corruption levels. Such evaluations provide limited evidence of which modality is more susceptible to perturbations and whether smaller changes across both modalities can jointly expose failures. We present MoST, a black-box testing framework that characterizes modality sensitivity by comparing image-only, text-only, and joint perturbations. MoST uses multi-objective search to select and combine perturbations and adjust their severity, seeking prediction degradation while limiting changes to images and prompts. We evaluate MoST on four VLMs performing object localization on ImageNet and driving images. The models exhibit distinct sensitivities: textual perturbations dominate for some, whereas others are susceptible across both modalities. In several configurations, joint perturbations match or exceed the effectiveness of single-modality perturbations with smaller modifications to each input. In a human study, 60-76% of assessments across models judge the perturbed inputs sufficiently understandable to perform the task, and human localization is more accurate than that of the corresponding VLMs. These results show that evaluating modalities separately can overlook failure-inducing combinations and that modality sensitivity provides a more detailed account of VLM robustness than aggregate failure rates alone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.SE"
+  ]
+}

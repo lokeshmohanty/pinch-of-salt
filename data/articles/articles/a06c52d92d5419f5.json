@@ -1,0 +1,14 @@
+{
+  "id": "a06c52d92d5419f5",
+  "title": "FedeRICo: Federated Region-Influenced Coupling for Traffic Flow Prediction",
+  "link": "https://arxiv.org/abs/2609.20026",
+  "description": "arXiv:2609.20026v1 Announce Type: new \nAbstract: Urban traffic forecasting often relies on information distributed across stakeholders who may be unable to share raw data due to privacy or commercial constraints, motivating federated spatial-temporal approaches. In such federated settings, each client observes traffic over a distinct sensor subgraph with its own spatial topology and temporal dynamics, leading to significant heterogeneity across clients. Existing federated spatial-temporal methods typically rely on model parameter aggregation and provide limited mechanisms for recovering spatial dependencies across client boundaries. This introduces two key limitations. Specifically, parameter aggregation across heterogeneous graph domains tends to dilute client-specific representations, while road network partitioning breaks the propagation of traffic dynamics across client boundaries. To address these challenges, we propose FedeRICo, a federated traffic forecasting framework that combines gradient-level collaboration with boundary-aware residual communication. FedeRICo employs a dual-branch forecasting architecture in which a globally guided branch captures transferable forecasting structure, while a private residual branch preserves client-specific corrections and incorporates boundary residual signals. The global branch is coordinated through gradient alignment across all clients, enabling collaborative optimisation without destructive parameter interference. To recover cross-client spatial dependencies, boundary messages are extracted through a trend-residual decomposition that suppresses periodic structure and communicates only transient spatial-temporal residual signals between physically adjacent clients. Experiments across four real-world traffic forecasting benchmarks demonstrate that FedeRICo consistently outperforms state-of-the-art federated spatial-temporal baselines while maintaining competitive training runtime.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.DC"
+  ]
+}

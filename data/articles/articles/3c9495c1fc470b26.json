@@ -1,0 +1,15 @@
+{
+  "id": "3c9495c1fc470b26",
+  "title": "SVRepair: Structured Visual Reasoning for Automated Program Repair",
+  "link": "https://arxiv.org/abs/2602.06090",
+  "description": "arXiv:2602.06090v2 Announce Type: replace-cross \nAbstract: Large language models (LLMs) have recently been applied to Automated Program Repair (APR), yet most existing approaches remain unimodal and fail to use diagnostic signals contained in visual artifacts such as screenshots and control-flow graphs. In practice, many bug reports convey critical information visually (e.g., layout breakage or missing widgets), but directly using such dense visual inputs often causes context loss and noise, making it difficult for MLLMs to ground visual observations into precise fault localization and executable patches. To bridge this semantic gap, we propose \\textbf{SVRepair}, a multimodal APR framework with Structured Visual Representation (SVR). SVRepair first fine-tunes a vision-language model, SVR, to uniformly transform heterogeneous visual artifacts into a \\emph{semantic scene graph} that captures GUI elements and their structural relations (e.g., hierarchy), providing normalized, code-relevant context for downstream repair. Building on the graph, SVRepair drives a coding agent to localize faults and synthesize patches, and further introduces an iterative visual-artifact segmentation strategy that progressively narrows the input to bug-centered regions to suppress irrelevant context and reduce hallucinations. Across primary repository-level APR benchmarks, SVRepair resolves \\textbf{186/517} SWE-Bench M instances (\\textbf{35.98\\%} over all instances; \\textbf{36.47\\%} over submitted runs) and \\textbf{4/19} visual OmniGIRL instances (\\textbf{21.05\\%}). On supplementary structured multimodal code reasoning benchmarks, SVRepair reaches \\textbf{38.02\\%} on MMCode and \\textbf{95.73\\%} on CodeVision. Code is available at https://github.com/codefuse-ai/CodeFuse-SVR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

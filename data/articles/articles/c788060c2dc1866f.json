@@ -1,0 +1,19 @@
+{
+  "id": "c788060c2dc1866f",
+  "title": "EMODY Flow: Emotion-Aware Audio-Driven Full-Body Motion Generation",
+  "link": "https://arxiv.org/abs/2609.16011",
+  "description": "arXiv:2609.16011v1 Announce Type: cross \nAbstract: Embodied conversational agents require synchronized full-body motion (body gestures and facial expressions) that aligns with speech and emotional state. Omni-modal large language models excel at multimodal understanding but produce only linguistic outputs, leaving a critical gap in embodied response generation. We identify and address a failure of emotion conditioning: like other conditional generators that under-use weak conditioning signals, a flow-matching model given both a rich audio embedding and a discrete emotion label suppresses the emotion, generating near-identical motion regardless of the specified emotion. We present EMODY Flow, a lightweight (around 35M parameters) flow-matching framework that attaches to a frozen Qwen-3 Omni model and reuses its internal Mimi audio-codecs to condition two parallel DiT generators - one for SMPL-X body pose, one for FLAME facial expressions. A training-time auxiliary emotion classifier restores emotion sensitivity by forcing generated motion to be emotion-identifiable. EMODY Flow sets a new state of the art on BEAT2 gesture quality, with FGD 0.302, Beat Correlation 0.853, and Diversity 24.62 - improving over the best prior results by 26%, 5%, and 62% respectively - and transfers to zero-shot facial animation on TFHP without domain-specific fine-tuning. Beyond these quantitative gains, the classifier yields clearly emotion-separated motion, which we demonstrate qualitatively through a multidimensional-scaling analysis of the generated gestures.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV",
+    "cs.LG",
+    "cs.MM",
+    "cs.RO",
+    "cs.SD",
+    "eess.AS"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "a9e5758036c5522c",
+  "title": "Confidence Scores in Open-Vocabulary Detection Are a Biased Mixture of Scale and Semantics",
+  "link": "https://arxiv.org/abs/2607.10993",
+  "description": "arXiv:2607.10993v1 Announce Type: new \nAbstract: Foundation models such as CLIP have enabled open-vocabulary object detectors that generalise to novel categories via vision-language similarity. However, the confidence scores these detectors produce are not reliable localization probability estimates: they conflate visual scale and semantic query specificity with the true detection signal. Through controlled experiments on COCO across three foundation-model-based detectors (GroundingDINO, OWL-ViT, YOLO-World), with the scale-bias finding further replicated on LVIS (1,203 categories) using GroundingDINO, we show that s=cos(v,t) is a biased mixture of two effects. Scale bias (alpha = +0.064, r = 0.579, p = 1.29 x 10^-58) systematically inflates scores for large objects. Semantic bias (beta = -0.705, p = 5.23 x 10^-41) suppresses scores for generic queries. Both biases are structurally inevitable from CLIP's image-level pretraining. Threshold adjustment cannot remove them: oracle per-scale thresholding yields Delta F1 = +0.001 for small objects versus +0.102 for large. A parameter-free temperature scaling correction improves small-object Recall@10 by 19.6% (p < 0.01) without retraining. This comes at a modest, measurable cost to pooled-ranking precision, so the bias is partially, not freely, reversible at inference time. These findings reveal a fundamental limitation of adapting image-level foundation models to region-level detection tasks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

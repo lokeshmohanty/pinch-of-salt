@@ -1,0 +1,14 @@
+{
+  "id": "7127c6672a5b26cc",
+  "title": "MERIT: Multimodal Evidence Reasoning over Image Tables",
+  "link": "https://arxiv.org/abs/2610.17937",
+  "description": "arXiv:2610.17937v1 Announce Type: cross \nAbstract: Table reasoning with language models typically assumes access to clean textual tables. In practice, tables are often serialized into text, which can corrupt cell contents, distort structural relationships, and discard visual cues, leaving the model to reason over incomplete evidence. In contrast, table images retain this information, but using it requires both accurate perception and reasoning grounded in the relevant cells. To address this, we propose MERIT (Multimodal Evidence Reasoning over Image Tables), a three-stage framework for learning to reason over table images, with serialized tables serving as optional auxiliary inputs (if provided). Our analysis identifies visual evidence acquisition as a bottleneck, motivating table-specific encoder adaptation through reconstruction, localization, and color-conditioned supervision. Building on the adapted representations, supervised fine-tuning teaches explicit evidence selection and reasoning using verified trajectories. Finally, reinforcement learning refines the policy with separate rewards for evidence correctness, calculation, final answers, and output format. By providing feedback on intermediate steps, the framework targets retrieval and computational errors that final-answer supervision alone does not distinguish. We evaluate the approach on table question answering and fact verification, analyze the contributions of visual inputs and training components, and assess generalization to additional datasets with different table structures and visual presentations.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "10f85231a65581dc",
+  "title": "When Does Delegation Beat Majority? A Delegation-Based Aggregator for Multi-Sample LLM Inference",
+  "link": "https://arxiv.org/abs/2606.08098",
+  "description": "arXiv:2606.08098v3 Announce Type: replace \nAbstract: Majority voting is the default unsupervised aggregator for multi-sample LLM inference, but it discards two signals: within-group answer entropy and between-group reasoning geometry. We aggregate by delegation instead (Propagational Proxy Voting, PPV): each group of samples keeps weight on its own answer in proportion to its entropy-based confidence (When) and routes the rest to peers by reasoning-embedding similarity (Whom); the stationary distribution of the resulting delegation matrix picks the consensus answer. This requires neither gold labels nor training. On MMLU-Pro with 128 samples per question, delegation beats majority by +1.5 pp overall and +2.24 pp on non-trivial questions (McNemar p ~ 1.0e-14, n = 8,099), overturning wrong majorities whose answer cluster is geometrically incoherent while the correct minority is tight. We then characterize exactly when delegation overturns majority: a two-option model gives a closed-form flip condition on each option's confidence and the weight it routes to the other, with a do-no-harm corollary for near-unanimous questions. The condition calls the realized winner on 96.5% of non-trivial questions, and its predicted mass gap tracks the realized gap at r = 0.97. We did not find any other unsupervised ensemble methods that close the oracle gap.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

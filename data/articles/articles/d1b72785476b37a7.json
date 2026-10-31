@@ -1,0 +1,13 @@
+{
+  "id": "d1b72785476b37a7",
+  "title": "Beyond Pairwise Repulsion: Collective Diversity via Determinant Maximization in Diffusion Sampling",
+  "link": "https://arxiv.org/abs/2610.22267",
+  "description": "arXiv:2610.22267v1 Announce Type: new \nAbstract: Strong guidance in text-to-image (T2I) diffusion models concentrates sampling toward high-density modes of the conditional distribution, collapsing independently sampled noise vectors onto nearly identical visual prototypes. This limits utility for tasks that demand distributional breadth, most critically synthetic data augmentation. Diversity, however, is a collective property of the whole batch: a set can preserve every pairwise distance yet still collapse onto a low-dimensional subspace. Existing sum-of-pairwise noise-optimization and repulsion objectives respond only weakly to this higher-order failure. We propose DetNO (Determinant Noise Optimization), which formulates diverse generation as RKHS volume maximization on the initial noise, maximizing the log-determinant of an RBF Gram matrix over one-step Tweedie predictions. This set-level functional equals the squared batch volume; its repulsion is strongest when the batch is most collapsed and self-attenuates as diversity is achieved. An anchor-based fidelity term keeps the optimized noises near plausible regions, and Lagrangian relaxation gives a two-term objective with a single hyperparameter $\\lambda$ governing the diversity-quality trade-off, without training or sampler modification. Across three backbones (SD1.5, SDXL, SD3), DetNO achieves leading intra-batch diversity in VendiScore and Mean Self-Similarity, and a downstream few-shot classification experiment confirms that broader mode coverage brings statistically significant accuracy gains for synthetic data augmentation in the low-shot regime. Fixing the pipeline and varying only the batch objective, both RBF-based aggregators outperform InfoNCE, and the log-determinant attains the best downstream accuracy on both benchmarks. Its diversity advantage over InfoNCE widens as the batch grows. Code is available at https://github.com/mobled37/DetNO.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

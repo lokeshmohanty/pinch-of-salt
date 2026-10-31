@@ -1,0 +1,15 @@
+{
+  "id": "67618e6b52f6670b",
+  "title": "Hardware-Native Joint Sparse-Quantization for Trillion-Scale Mixture-of-Experts",
+  "link": "https://arxiv.org/abs/2610.02241",
+  "description": "arXiv:2610.02241v1 Announce Type: cross \nAbstract: Mixture-of-Experts (MoE) architectures allow frontier language models to scale to trillions of parameters, but their deployment is constrained by massive memory footprints and memory-bandwidth limitations. Although modern accelerators provide Sparse Tensor Cores (SpTCs) that reduce weight storage and increase throughput through low-precision semi-structured sparsity, exploiting them for MoEs remains challenging because of substantial model-quality degradation and the lack of grouped sparse GEMM primitives. We present an end-to-end hardware-software co-design framework that compresses expert weights into hardware-native, low-precision sparse representations and accelerates their execution on SpTCs. Algorithmically, our framework relaxes discrete semi-structured support selection through continuous reparameterization, enabling differentiable joint optimization with quantized weights under a router-weighted reconstruction objective and scalable expert-parallel compression. Systemically, we develop a custom grouped sparse GEMM kernel tailored to low-precision sparse MoE inference on SpTCs. Across MoE models ranging from 30 billion to one trillion parameters, our framework improves state-of-the-art joint sparse-quantization accuracy by up to 4.35 percentage points while preserving 96.09% of the original model's performance. On NVIDIA B200 GPUs, our kernel outperforms the vendor baseline by up to $1.65\\times$, increasing serving throughput by $1.18\\times$ and reducing end-to-end latency by up to $4.03\\times$. These results establish hardware-software co-design as a practical path toward scalable and efficient MoE deployment.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "141e4319be28958b",
+  "title": "Tensorion: A Tensor-Aware Generalization of the Muon Optimizer",
+  "link": "https://arxiv.org/abs/2606.25975",
+  "description": "arXiv:2606.25975v2 Announce Type: replace-cross \nAbstract: Common first-order optimizers, such as Adam, implicitly treat each parameter block as an unstructured vector, which disregards the multilinear weight structure present in many modern machine learning models. Recent work has shown that exploiting matrix structure can improve optimization dynamics. A notable example is Muon, which performs steepest descent under the spectral norm constraint. We take the next step and introduce Tensorion, a tensor-aware optimizer that extends Muon's constrained optimization perspective from matrices to higher-order tensors. Tensorion is built around a linear minimization oracle (LMO) over a tensor norm ball. The norm is carefully chosen to balance two objectives: tightly bounding the tensor spectral norm, while still keeping the LMO tractable. This LMO becomes computable because it reduces to operations on adaptively selected unfolding matrices. Notably, when restricted to order-2 tensors (i.e., matrices), Tensorion recovers Muon exactly. Experiments on tensor-based computer vision problems suggest that Tensorion can offer improved convergence behavior and more stable gradient updates compared with Adam-based and existing tensor-aware baselines in the evaluated settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "cs.NA",
+    "math.NA"
+  ]
+}

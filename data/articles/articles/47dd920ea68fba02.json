@@ -1,0 +1,13 @@
+{
+  "id": "47dd920ea68fba02",
+  "title": "Extended KAFR: A kinematic-adaptive paradigm for the efficient analysis of surgical video",
+  "link": "https://arxiv.org/abs/2608.01058",
+  "description": "arXiv:2608.01058v1 Announce Type: new \nAbstract: Artificial Intelligence is increasingly applied to surgical video analysis for phase segmentation, skill assessment, and workflow optimization. A key challenge is the length of surgical recordings, often one to several hours, creating substantial computational burden. We previously developed Kinematics-Adaptive Frame Recognition (KAFR) for robotic surgery, showing that tracking tool motion effectively identifies informative frames while filtering redundant content. However, laparoscopic surgery introduces additional challenges: manual camera control causes frequent motion artifacts, and image quality is generally lower than robotic systems. This study evaluates whether KAFR generalizes to laparoscopic surgery using the Cholec80 benchmark, comprising 80 laparoscopic cholecystectomy procedures annotated for seven surgical phases. KAFR operates in three stages: a fine-tuned YOLO model detects and segments surgical tools; frames are adaptively selected based on tool displacement or velocity variation; and an X3D model classifies selected frames into surgical phases. KAFR achieved a 91.0\\% F1 score using only 0.58\\% of frames for phase classification, representing an approximately seven-fold reduction compared to typical 4\\% frame sampling, while maintaining performance comparable to LoViT (90.2\\%) and Trans-SVNet (89.7\\%). These results demonstrate that kinematics-based frame selection transfers effectively to the challenging laparoscopic environment.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

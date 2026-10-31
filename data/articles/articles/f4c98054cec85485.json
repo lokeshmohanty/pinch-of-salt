@@ -1,0 +1,13 @@
+{
+  "id": "f4c98054cec85485",
+  "title": "GridVAD: Open-Set Video Anomaly Detection via Spatial Reasoning over Stratified Frame Grids",
+  "link": "https://arxiv.org/abs/2603.25467",
+  "description": "arXiv:2603.25467v3 Announce Type: replace \nAbstract: Vision-Language Models (VLMs) are powerful open-set reasoners, yet their direct use as anomaly detectors in video surveillance is fragile: without calibrated anomaly priors, they alternate between missed detections and hallucinated false alarms. We argue the problem is not the VLM itself but how it is used. VLMs should function as anomaly proposers, generating open-set candidate descriptions that are then grounded and tracked by purpose-built spatial and temporal modules. We instantiate this propose-ground-propagate principle in GridVAD, a training-free pipeline that produces pixel-level anomaly masks without any domain-specific training. A VLM reasons over stratified grid representations of video clips to generate natural-language anomaly proposals. Self-Consistency Consolidation (SCC) filters hallucinations by retaining only proposals that recur across multiple independent samplings. Grounding DINO anchors each surviving proposal to a bounding box, and SAM2 propagates it as a dense mask through the anomaly interval. The per-clip model budget is fixed at M+1 calls regardless of video length, where M can be set according to the proposals needed. On UCSD Ped2, GridVAD achieves the highest Pixel-AUROC (77.59) among all compared methods, surpassing even the partially fine-tuned TAO (75.11) and outperforms other zero-shot approaches on object-level RBDC by over 5x. Ablations reveal that SCC provides a controllable precision-recall tradeoff: filtering improves all pixel level metrics at a modest cost in object-level recall. Efficiency experiments show GridVAD is 2.7x more call-efficient than uniform per-frame VLM querying while additionally producing dense segmentation masks.Code and qualitative video results are available at https://gridvad.github.io.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

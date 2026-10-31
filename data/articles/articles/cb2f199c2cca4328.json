@@ -1,0 +1,14 @@
+{
+  "id": "cb2f199c2cca4328",
+  "title": "Collapse, Not Complexity: Failure-Conditioned Decomposition Repair for End-to-End Document Parsing",
+  "link": "https://arxiv.org/abs/2609.23592",
+  "description": "arXiv:2609.23592v1 Announce Type: new \nAbstract: End-to-end document parsers increasingly offer an optional reasoning mode for complex pages. On a 180-page entropy-stratified discovery sample with one frozen 4B checkpoint, complexity is the wrong decision variable. Reasoning lowers mean quality by 2.21 Overall at 1.54x tokens; a preregistered input-only model cannot predict its signed benefit (held-out AUROC 0.47, indistinguishable from chance). The benefit concentrates on pages whose ordinary pass has already collapsed, and they do not look complex: shared collapses have lower layout entropy than healthy ones yet consume 19x the tokens as degenerate repetition that doubling the budget does not cure. Switching modes rarely repairs them: 83% recur under reasoning. We instead detect collapse from the ordinary-pass trace, decompose the page by projection, and re-parse each region. Repair gains 1.40 Overall (95% CI [0.68, 2.16]) at 1.13x tokens, replicates across three checkpoints, and, with all parameters frozen, gains 2.41 (CI [1.64, 3.46]) on the remaining 1,175 benchmark pages.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}

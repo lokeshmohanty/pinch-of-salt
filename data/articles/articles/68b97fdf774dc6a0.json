@@ -1,0 +1,14 @@
+{
+  "id": "68b97fdf774dc6a0",
+  "title": "Transferable Above-Ground Biomass (AGB) Estimation Model from Multi-Sensor Data with Sparse Field Calibration",
+  "link": "https://arxiv.org/abs/2608.11638",
+  "description": "arXiv:2608.11638v1 Announce Type: cross \nAbstract: Spatially continuous quantification of forest above-ground biomass (AGB) is what makes carbon accounting credible and mitigation strategies actionable. While field inventories provide high localized accuracy, they are spatially sparse; conversely, spaceborne LiDAR from the Global Ecosystem Dynamics Investigation (GEDI) offers broad biomass samples but lacks spatial continuity and systematic underestimation of high-biomass forests. This paper presents an operational framework centered on a single globally trained convolutional neural network (CNN) that is seamlessly adapted to each new landscape through a lightweight empirical field-calibration workflow. The global model combines optical (Sentinel-2), C-band SAR (Sentinel-1), L-band SAR (ALOS-2 PALSAR-2), and terrain (DEM) data. It is trained once against GEDI Level-4A biomass reference data spanning multiple regions and both wet and dry seasons so that it learns the persistent woody-structure rather than a single-date appearance. To avoid retraining for every landscape, the framework applies a small number of local field plots to fit a scale-and-bias correction that aligns the global prediction with ground truth in each region. The pipeline harmonizes sensor data onto a shared 10 m grid, derives vegetation indices and polarimetric ratios, computes per-band normalization stats, and trains the CNN with a hybrid log-domain SmoothL1 with RMSE loss for skewed biomass distribution. On held-out validation the global GEDI-based model achieved R^2 approximately 0.78 and RMSE approximately 22 Mg/ha. A subsequent field calibration combining Random Forest fine-tuning under a 10-fold cross-validation eliminates localized regional biases. This improves local validation performance to R^2 approximately 0.82 and reduces RMSE to approximately 15 Mg/ha, outperforming both the uncalibrated global model and the ESA CCI Biomass product against field plots.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

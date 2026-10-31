@@ -1,0 +1,13 @@
+{
+  "id": "c927bb4bf2da5afb",
+  "title": "Video-MemComp: Taylor-Guided Sensitivity-Aware Memory Management for Streaming Video Understanding",
+  "link": "https://arxiv.org/abs/2610.32784",
+  "description": "arXiv:2610.32784v1 Announce Type: new \nAbstract: The rapid growth of video data has created an urgent need for efficient video understanding systems that can handle long and continuous visual inputs, posing significant challenges for Multimodal Large Language Models (MLLMs) due to severe memory bottlenecks. Moreover, existing compression methods often overlook the explosive accumulation of approximation errors. To address this issue, we propose Video-MemComp, a training-free and sensitivity-aware context management framework for memory-constrained streaming video understanding. Our method theoretically decomposes compression error into orthogonal local approximation error and layer-wise structural sensitivity via a first-order Taylor expansion. To minimize local approximation error, we perform token aggregation in a pre-RoPE safe zone with an attention-conserving logit bias, mitigating geometric distortions caused by RoPE rotations. To manage layer-wise structural sensitivity, we dynamically allocate the KV cache budget based on offline gradient priors and online context entropy, prioritizing high-sensitivity layers. Video-MemComp outperforms or achieves performance comparable to full-cache and state-of-the-art compression methods on benchmarks including MLVU, VideoMME, and EgoSchema. Notably, it improves the overall accuracy of Qwen2.5-VL-3B from 62.3% to 64.1% while reducing the KV cache to an equivalent of 6,000 tokens per layer, saving over 90% of KV memory.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

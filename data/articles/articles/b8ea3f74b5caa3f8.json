@@ -1,0 +1,13 @@
+{
+  "id": "b8ea3f74b5caa3f8",
+  "title": "No Corners Cut: State-Grounded Transitions for Mid-Stream Prompt Switches in Video Generation",
+  "link": "https://arxiv.org/abs/2609.38691",
+  "description": "arXiv:2609.38691v1 Announce Type: new \nAbstract: Streaming video generators allow users to dynamically modulate video synthesis via mid-stream prompt switching. Existing streaming methods can respond to the updated instruction while still cutting corners, prematurely realizing goals or taking heuristic shortcuts that bypass necessary intermediate state changes needed for a plausible transition. In this study, we present SEGUE, a novel framework that makes this process explicit and trains the generator to execute these transitions faithfully. At each switch, a training-free planner parses the latest frame and prompts, writes a few segue prompts with roles and durations, and then hands control back to the user's prompt. Furthermore, to address the inherent difficulty of training causal models on short-lived temporal schedules without corrupting preparatory supervision, we introduce SPANDMD, which evaluates each active prompt using the full rollout as temporal context while retaining its DMD residual only within the prompt's assigned span. On OpenTrans-360, a benchmark of 1,800 switches that scores how the old state exits and the new one begins, SEGUE ranks first on all eight transition metrics and raises the overall score over the strongest baseline from 0.866 to 0.887. It also ranks first on four of six instruction-response metrics of StreamAV-Bench, while the planner transfers to frozen autoregressive generators without retraining.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

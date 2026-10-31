@@ -1,0 +1,15 @@
+{
+  "id": "a2cbc630fefc6573",
+  "title": "FUSEye: Training-Light Fisheye Detection with Overlapping Views and Zero-Initialized Adapters",
+  "link": "https://arxiv.org/abs/2610.02799",
+  "description": "arXiv:2610.02799v1 Announce Type: new \nAbstract: Fisheye cameras give mobile robots a single-sensor, low-cost view of their surroundings, yet the COCO-pretrained detectors that practitioners routinely reuse fail on them: strong radial distortion warps local image structure, while boundary compression shrinks objects to near-invisible sizes. Full fine-tuning closes much of the gap but requires abundant fisheye labels and compute. We present FUSEye, a training-light framework that turns a frozen-backbone COCO-pretrained extra-large YOLO26 detector (YOLO26-x) into a fisheye detector. FUSEye adds roughly 227k new parameters while updating the inserted modules and the pretrained detection head. It addresses the transfer gap at three causally linked levels. At the input level, overlapping grid view generation and box remapping (GridViews) enlarge compressed boundary regions. At the feature level, zero-initialized residual adapters (Z-Adapters) correct distortion-induced feature misalignment. At the decision level, learned cross-projection agreement fusion (AgreeFusion) promotes low-confidence detections only when they are supported by consistent evidence across multiple views. On the WoodScape surround-view fisheye benchmark, FUSEye raises YOLO26-x from 0.148 to 0.266 mAP50 and retains 84.3% fully fine-tuned accuracy. Moreover, randomly using only 25% of the labeled training images, FUSEye achieves 0.2597 mAP50, retaining 97.6% of its full-label performance. FUSEye also consistently improves YOLOv8-11 detectors, showing that the recipe is architecture-agnostic. Source code will be available at https://github.com/Su-wenya/FUSEye.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO",
+    "eess.IV"
+  ]
+}

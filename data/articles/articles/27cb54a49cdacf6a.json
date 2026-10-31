@@ -1,0 +1,13 @@
+{
+  "id": "27cb54a49cdacf6a",
+  "title": "LILAC: Layer-Wise Independent LoRAs and Cascaded Conditioning for Multi-Concept Customization of Diffusion Models",
+  "link": "https://arxiv.org/abs/2607.04801",
+  "description": "arXiv:2607.04801v2 Announce Type: replace \nAbstract: Personalizing text-to-image diffusion models to render several specific subjects in a coherent image remains challenging: the model must preserve each subject's identity while keeping the scene spatially and visually coherent. Methods that fuse independently trained concept adapters in a shared weight space (via federated averaging, gradient fusion, or orthogonality constraints) suffer from identity confusion and style bleeding. In this work, we show that composing concepts as separate image layers, instead of merging their adapters in a shared weight space, avoids parameter-level interference. We introduce LILAC, a framework that composes independently trained low-rank adapters at inference time: each subject is conditioned on the frozen composite of previously placed subjects, with exactly one adapter active at a time, therefore identities never interfere at the parameter level. LILAC composes the adapters without joint training, scales linearly with the number of concepts, and is backbone-agnostic. Under the Orthogonal Adaptation protocol, LILAC applied on Qwen-Image-Edit+Qwen-Image-Layered reaches an ArcFace detection rate of 0.861. Code is available at https://github.com/marianlupascu/LILAC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

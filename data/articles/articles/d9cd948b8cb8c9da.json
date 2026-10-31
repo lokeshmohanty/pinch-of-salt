@@ -1,0 +1,14 @@
+{
+  "id": "d9cd948b8cb8c9da",
+  "title": "AI Appeals Processor: A Deep Learning Approach to Automated Classification of Citizen Appeals in Government Services",
+  "link": "https://arxiv.org/abs/2604.03672",
+  "description": "arXiv:2604.03672v2 Announce Type: replace-cross \nAbstract: Government agencies must register, classify and route every citizen appeal within statutory time limits, and much of this work is still done by hand. We describe AI Appeals Processor, a classification and routing component deployed in a CPU-only government environment, and report what its evaluation and deployment taught us. On 10,000 real Russian-language appeals from a cross-domain dataset, we compare Bag-of-Words and TF-IDF with SVM, fastText, Word2Vec+LSTM and multilingual BERT on a three-way appeal-type task. On a held-out test set of 1,500 appeals, BERT reaches 82% accuracy and Word2Vec+LSTM 78%, against 67% for individual operators measured on an expert-adjudicated gold standard. We deployed the LSTM: in a workflow where an operator verifies every prediction, its lower training cost made frequent retraining on operator-verified labels practical, while the four-point accuracy gap did not change the operator's task. End-to-end handling time fell by 53-56% across four appeal-length bands (unweighted mean 22.5 to 10.25 minutes); model inference takes under two seconds of this. Most residual errors trace to the label taxonomy rather than the model: the statutory definitions of complaints and applications overlap, and many appeals carry two intents. A post-deployment audit of production classifications, made after several retraining cycles by operators who saw the assigned category, judged more than 95% correct; we explain why this figure is not comparable with the test-set result.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

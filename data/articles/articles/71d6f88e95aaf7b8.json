@@ -1,0 +1,14 @@
+{
+  "id": "71d6f88e95aaf7b8",
+  "title": "Potential-Guided Particle Steering for Negation-Constrained Dexterous Grasping",
+  "link": "https://arxiv.org/abs/2609.00555",
+  "description": "arXiv:2609.00555v1 Announce Type: cross \nAbstract: Language-driven dexterous grasp models, such as DextER, perform well when instructions specify where to grasp, but we find they fail systematically when an instruction also specifies where not to grasp (e.g., \"grasp the handle but avoid the body\"). Existing training corpora, DexGYSNet among them, contain virtually no avoidance instructions, and collecting examples for every possible constraint is impractical. Moreover, because every part mentioned during training denotes a contact target, models may interpret a forbidden part as another region to grasp rather than one to avoid. We therefore introduce an inference-time framework for negation-constrained dexterous grasping that requires no negation-specific training examples. Combining Sequential Monte Carlo with classifier-free guidance, our method guides sampling toward the instructed part while pruning candidates headed for the forbidden region, without any negation examples during training. A frozen 3D part-grounding model localizes the forbidden region from the language instruction. To evaluate this setting, we construct NegGrasp, a benchmark of paired positive/negative instructions with constraint-aware metrics that credit a grasp only if it both accomplishes the task and respects the stated constraint. On NegGrasp, our method reduces the violation rate of the strongest baseline from 57.9% to 17.2% while improving both constraint-aware and physical success.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

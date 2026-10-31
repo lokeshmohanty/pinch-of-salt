@@ -1,0 +1,14 @@
+{
+  "id": "0ddec81730dcac27",
+  "title": "Trajectory Learnability for Offline On-Policy Distillation with Imperfect Teachers",
+  "link": "https://arxiv.org/abs/2609.18321",
+  "description": "arXiv:2609.18321v1 Announce Type: cross \nAbstract: Offline on-policy distillation gains efficiency by collecting student trajectories and teacher supervision once and reusing them throughout optimization. The same reuse makes imperfect supervision persistent. Since even strong teachers can fail, we ask \\emph{what remains learnable from imperfect teacher supervision?} Teacher failure is only a coarse problem-level signal and does not imply that all supervision along the associated student trajectory is unhelpful. A natural alternative is to estimate teacher recoverability along the trajectory, but repeated continuations largely erase the efficiency advantage of offline distillation. We instead use teacher-successful problems to define a cheap reference for what the student can learn. We train on teacher-successful problems and measure how the likelihood of each observed token in trajectories from teacher-failed problems changes. We use these signed likelihood changes as an operational \\emph{learnability signal}: larger increases indicate behavior more strongly promoted by successful-only learning. We aggregate this signal into trajectory-level weights for the original distillation loss. Unlike continuation-based estimates, our learnability requires no additional generation and can be computed once from stored trajectories and model checkpoints. Across mathematical reasoning and code generation, our method improves an offline OPD baseline by up to 2.7 percentage points and matches or outperforms online OPD variants on multiple benchmarks. Despite the additional successful-only distillation stage, it uses 2 GPUs and about 22 GPU hours, compared with 3 GPUs and 36--48 GPU hours for representative online OPD methods.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

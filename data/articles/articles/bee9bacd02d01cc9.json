@@ -1,0 +1,14 @@
+{
+  "id": "bee9bacd02d01cc9",
+  "title": "Beyond Unsafe Detection: Counterfactually Anchored Evidence Attribution for Multi-Turn LLM Safety Failures",
+  "link": "https://arxiv.org/abs/2609.27773",
+  "description": "arXiv:2609.27773v2 Announce Type: replace-cross \nAbstract: As Large Language Models (LLMs) move from conversational assistants to advanced agentic systems, guardrail failures can convert adversarial intents into harmful executions. However, most evaluation frameworks focus only on whether a user request is unsafe. This is insufficient for multi-turn failures, where adversarial intent may be distributed across turns and emerge only from accumulated context. This motivates us to go beyond detection to localize the evidence that pushes the conversation toward unsafe trajectories. We introduce MTAG-Bench, a multi-turn guardrail attribution dataset with behavioral validation and counterfactual supervision containing 4,167 conversations. We also introduce MTAG-Probe, a hierarchical attribution model for turn- and span-level evidence localization with conversation-level safety detection. MTAG-Probe improves turn-level F1 by 28.1 and 24.1 points (79.0% and 61.0% relative) over self-attribution by the model that produced the unsafe response and the LLM safety-judge attribution, respectively. Removing MTAG-Probe's top-ranked evidence within budgets of 15% and 20% of user words per conversation changes 50.6% and 60.8% of Llama Guard decisions on Geometry from unsafe to safe, respectively. In full-trajectory replay, MTAG-Probe converts 84.3% of eligible unsafe final responses to safe. These results show that MTAG-Probe can provide evidence-level explanations as a practical complement to safety detection.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

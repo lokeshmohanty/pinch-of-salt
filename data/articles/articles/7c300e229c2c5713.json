@@ -1,0 +1,13 @@
+{
+  "id": "7c300e229c2c5713",
+  "title": "HierDoc: Hierarchical Page-to-Region Evidence Routing for Long-Document Visual Question Answering",
+  "link": "https://arxiv.org/abs/2607.29638",
+  "description": "arXiv:2607.29638v1 Announce Type: new \nAbstract: Multi-page document visual question answering requires locating sparse evidence at both the page and region levels. Existing approaches typically emphasize one level over the other: page-centric methods focus on page acquisition, with region operations serving mainly as navigation aids, whereas region-centric methods assume that the relevant pages have already been supplied. Consequently, page and region selection remain disconnected rather than forming successive evidence decisions. We propose HierDoc, a hierarchical evidence-routing framework that formulates long-document evidence acquisition as two-stage set prediction from pages to regions. A page policy selects evidence pages from the full document; these pages are then parsed for semantic elements, after which a region policy selects the elements passed to a downstream answer model. Both answer-agnostic policies are optimized with stage-wise GRPO using granularity-specific structured-set rewards. The answer model receives selected full pages together with selected region crops and OCR or table text, preserving global context while emphasizing fine-grained evidence. Across the evaluated benchmarks, HierDoc achieves state-of-the-art or competitive performance among open-weight systems, improving LongDocURL by 16.87% relative to the strongest reported open-weight baseline. Controlled ablations further show that selected regional evidence improves the page-only system in accuracy and F1 by 5.51% and 4.82%, respectively. These results demonstrate the benefit of organizing coarse page routing and fine-grained region routing as successive, separately optimized stages of a unified evidence-acquisition process.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

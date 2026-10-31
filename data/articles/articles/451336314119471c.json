@@ -1,0 +1,13 @@
+{
+  "id": "451336314119471c",
+  "title": "Standing on Open Shoulders: Regional Fine-Tuning of Open-Weight Camera-Trap Models for UK Wildlife with Modest Data and Compute",
+  "link": "https://arxiv.org/abs/2610.32573",
+  "description": "arXiv:2610.32573v1 Announce Type: new \nAbstract: Camera-trap species classification is dominated by large models from well-resourced organisations, which often lack the species-level distinctions regional conservation needs, such as native red versus invasive grey squirrels in the UK. We ask whether open weights let a small team with a modest dataset and a single GPU take a real part in AI development. We fine-tuned the open DeepFaune classifier on 28 UK classes, paired it with the unmodified MegaDetector v6, and compared the resulting DeepFaune-UK v1.2 with DeepFaune v1.5.0 and SpeciesNet on 20,212 hand-verified MammalWeb citizen-science images, after removing sequences sharing any of 1,039 images with our training archive. DeepFaune-UK achieved a strict image-level accuracy of 88.8%, including empty frames, against 56.5% and 59.0% for the baselines, but at DeepFaune's coarser label resolution DeepFaune v1.5.0 was more accurate, though not significantly under contributor resampling (91.4% vs. 88.8%). As DeepFaune v1.5.0 uses a newer DINOv3-based classifier, we applied the identical recipe, without new data, to that classifier. The resulting DeepFaune-UK v1.3 reached 90.6% strict accuracy, narrowed the like-for-like gap to 0.8 points and reduced roe deer misclassified as fallow deer by 69%. On 1,850 images from the 26 contributors with no overlapping images, the three DeepFaune-based models did not differ significantly (90.5%, 90.6%, 89.9% like-for-like). Fine-tuning on 10% of the training crops (about 150 per class) gave out-of-distribution accuracy similar to using all of them, and a DINOv2 run on this subset took about 22 minutes with under 4 GB of GPU memory. Open weights thus make regional model development feasible for small teams, but the largest like-for-like gain came from a newer base model trained by others, so this democratisation depends on large actors continuing to release open weights, under licences that may change.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

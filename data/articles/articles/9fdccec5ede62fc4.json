@@ -1,0 +1,14 @@
+{
+  "id": "9fdccec5ede62fc4",
+  "title": "GeoLEON-CLIP: Graph-Anchored Multimodal Contrastive Learning for Geographic Region Representation",
+  "link": "https://arxiv.org/abs/2610.32311",
+  "description": "arXiv:2610.32311v1 Announce Type: new \nAbstract: Geographic regions are multimodal: satellite imagery captures visual morphology, text conveys human-interpretable semantics, and map structures describe urban context. Existing geospatial contrastive methods typically align image-text or image-location pairs, underusing structured map data. We introduce GeoLEON-CLIP, a graph-anchored contrastive framework that aligns three views of each H3-indexed region: an OpenStreetMap-derived graph embedding, a satellite image crop, and a textual description. Frozen pretrained LEON graph embeddings provide a semantic anchor between vision and language. Frozen graph, image, and text encoders are connected by trainable residual projection heads and trained with a symmetric tri-modal contrastive objective. Experiments show strong graph-image and graph-text alignment; graph-image retrieval achieves the best cross-modal performance in a mixed-resolution pool. To evaluate the anchoring hypothesis, we propose chained cross-modal recall $\\mathrm{R}@A@B$, which routes retrieval through the graph modality and compares it with direct retrieval under a matched candidate budget. At $\\mathrm{R}@1@1$, image$\\rightarrow$graph$\\rightarrow$text and text$\\rightarrow$graph$\\rightarrow$image outperform direct image-text retrieval by 4.8 and 4.4 points, respectively, despite using a single intermediate cell. Downstream probes show task-dependent gains, with the largest improvements on Airbnb and Beijing housing. These results indicate that OpenStreetMap graph structure can anchor multimodal representations combining maps, imagery, and language.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

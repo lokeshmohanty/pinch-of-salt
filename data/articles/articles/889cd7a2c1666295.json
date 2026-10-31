@@ -1,0 +1,16 @@
+{
+  "id": "889cd7a2c1666295",
+  "title": "Riemannian--Lorentz Fusion of Vision Transformers and State-Space Models",
+  "link": "https://arxiv.org/abs/2609.19384",
+  "description": "arXiv:2609.19384v1 Announce Type: cross \nAbstract: Scaling deep learning faces critical bottlenecks: data exhaustion, exponential training costs, and resource concentration. Model merging combines pre-trained checkpoints without gradient descent, offering orders-of-magnitude savings versus retraining. Combining independently trained vision models is difficult when their architectures and parameter shapes differ. Existing weight-space merging methods generally assume aligned, shape-compatible checkpoints, whereas a Vision Transformer (ViT) and a state-space model (SSM) implement token mixing with different operators. We study a hybrid Heterogeneous merging setting that retains both architectures while aligning parameter groups by semantic role. Our proposed Riemannian--Lorentz Parameter Fusion (RLPF) method projects aligned groups to common coordinates, lifts selected coordinates to the Lorentz hyperboloid model of hyperbolic space, computes a regularized geodesic barycenter, and decodes the result into the two branches. A learned gate then combines branch logits for each input. Component groups use fixed curvature values, with normalization parameters treated as Euclidean. In the results available in this manuscript, the fine-tuned system obtains 82.37\\% on CIFAR-10, 75.04\\% on Oxford-IIIT Pet, and 78.58\\% top-1 accuracy on ImageNet-1K; the corresponding best-parent accuracies are 76.54\\%, 71.42\\%, and 76.42\\%. On ImageNet-1K, the reported pre-fine-tuning initialization reaches 77.80\\%. These results support further study of geometry-aware heterogeneous fusion, but not a training-free single-checkpoint merge: RLPF is a two-branch hybrid whose gate and reported final models are trained.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL",
+    "cs.MM"
+  ]
+}

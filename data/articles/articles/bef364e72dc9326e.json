@@ -1,0 +1,14 @@
+{
+  "id": "bef364e72dc9326e",
+  "title": "Towards Accurate State Estimation: Motion Dynamics Kalman Filter for 3D Multi-Object Tracking",
+  "link": "https://arxiv.org/abs/2505.07254",
+  "description": "arXiv:2505.07254v4 Announce Type: replace \nAbstract: Robust 3D state estimation in multi-object tracking is crucial for object localization in self-driving vehicles. Misalignment between the Kalman filter (KF) motion model and an object's motion can cause state drift, particularly in distant and occlusion cases. The static motion model assumption in the conventional KF is widely used in 3D MOT due to its low latency; however, its estimation accuracy degrades as the object's motion disaligns with the chosen model due to traffic. Although recent work introduces a multimodel KF that runs multiple motion models simultaneously to improve state robustness, it incurs significant computational overhead, so many studies still favor the constant-motion KF to maintain efficiency. This work addresses this trade-off by introducing a motion dynamics Kalman filter (MD-KF) that accounts for motion variation through temporal modeling of object motion and adaptively scales the contribution of the motion components in the motion model to correct state-prediction drift caused by this variation, while maintaining computational efficiency by retaining a single-model structure. Evaluations on KITTI and the Waymo Open Dataset, complemented by vehicle experiments, show that MD-KF achieves tracking performance comparable to multimodel KF with an average 1.72x speedup, while outperforming it in handling highly distant and prolonged occluded objects.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d5e8bac161d4c85c",
+  "title": "Anti-Shortcut Distillation via Temporal Negative Knowledge Transfer",
+  "link": "https://arxiv.org/abs/2608.11789",
+  "description": "arXiv:2608.11789v1 Announce Type: new \nAbstract: Knowledge distillation (KD) trains a compact student by attracting it towards a converged teacher. It is silent about which directions the teacher itself learned to suppress: repulsive and bias-aware objectives exist, but none exploits the teacher's own trajectory to identify what the student should avoid. We observe that the missing signal is already encoded in the teacher's optimization trajectory: features that an early-stage teacher emphasizes but that a converged teacher attenuates are precisely the shortcut directions worth pushing the student away from. We instantiate this observation as \\textbf{A}nti-\\textbf{S}hortcut \\textbf{D}istillation (ASD), a push--pull KD framework that treats the converged teacher $\\Tfinal$ as a positive semantic anchor and an early-checkpoint teacher $\\Tearly$ as a temporal negative reference. ASD couples two losses: a temporal contrastive loss ($\\Ltc$) that places the early-teacher feature as a same-sample negative against in-batch and memory-bank final-teacher features in an InfoNCE objective; and a shortcut suppression loss ($\\Lss$) that penalizes student projection onto the top eigenvectors of $\\E[\\Dh\\Dh^{\\top}]$, the uncentered second-moment matrix of early-to-final feature displacements. Across 13 teacher--student pairs on CIFAR-100, ImageNet-100, and TinyImageNet, ASD attains the highest clean top-1 accuracy on more than 10 pairs and outperforms standard KD on 12. On CIFAR-100-C corruption robustness, ASD obtains the lowest mean Corruption Error ($86.1$\\,mCE) on the most challenging cross-architecture pair (WRN-40-2$\\to$ShuffleNet-V2). Mechanistic diagnostics confirm the intended geometry: the ASD student is systematically anti-aligned with the shortcut direction, while its projection onto the robust subspace is substantially larger ($0.45$ vs.\\ $0.12$).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

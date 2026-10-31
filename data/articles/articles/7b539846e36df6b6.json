@@ -1,0 +1,14 @@
+{
+  "id": "7b539846e36df6b6",
+  "title": "Region-Level Black-Box Defense Against Stealthy Embedding-Space Backdoors in CLIP",
+  "link": "https://arxiv.org/abs/2609.31558",
+  "description": "arXiv:2609.31558v1 Announce Type: new \nAbstract: Contrastive Language--Image Pretraining (CLIP) has emerged as a dominant vision backbone due to its strong transferability and zero-shot capabilities. However, recent studies reveal a critical vulnerability: embedding-space backdoor attacks. By poisoning only a tiny fraction of image--text pairs, adversaries can implant stealthy triggers that induce targeted shifts in CLIP's joint embedding space. Unlike conventional backdoors that manipulate classifier logits, these attacks corrupt representations directly, making them highly effective under extremely low poisoning ratios and difficult to detect. Existing defenses require access to model parameters, gradients, logits, or clean validation data---assumptions that rarely hold in realistic black-box deployments. Moreover, current black-box methods struggle to accurately localize small or out-of-distribution triggers. We propose CLIPGuard, a lightweight and fully black-box defense specifically designed to mitigate embedding-space backdoors in CLIP encoders. CLIPGuard identifies malicious regions by measuring segment-wise embedding perturbations and selectively purifies only suspicious segments via semantic inpainting, preserving benign visual content and alignment quality. Extensive experiments on STL-10, ImageNet, and diverse trigger families---including BadCLIP, BadNets, blended, patch-based, and typographic attacks---demonstrate that CLIPGuard reduces attack success rates to as low as 1.05% while maintaining clean accuracy up to 86.34%, consistently outperforming existing black-box defenses, including CleanCLIP and CleanerCLIP. Our code is available https://github.com/wsu-cyber-security-lab-ai/CLIPGuard.git",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR"
+  ]
+}

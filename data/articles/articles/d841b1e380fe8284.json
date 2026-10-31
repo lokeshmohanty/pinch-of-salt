@@ -1,0 +1,15 @@
+{
+  "id": "d841b1e380fe8284",
+  "title": "From Debate to Decision: Conformal Social Choice for Safe Multi-Agent Deliberation",
+  "link": "https://arxiv.org/abs/2604.07667",
+  "description": "arXiv:2604.07667v2 Announce Type: replace \nAbstract: Multi-agent debate improves LLM reasoning, yet agreement is not evidence of correctness. When agents converge on a wrong answer through social reinforcement, consensus stopping commits that error to automated action with no recourse. We introduce Conformal Social Choice, a post-hoc layer that converts debate outputs into calibrated act-versus-escalate decisions. Verbalized probability distributions from heterogeneous agents are aggregated via a linear opinion pool and calibrated with split conformal prediction, yielding fixed-round marginal coverage: at any pre-specified round, the correct answer is included with probability ${\\geq}\\,1{-}\\alpha$, without assumptions on individual model calibration. A hierarchical action policy maps singletons to autonomous action and larger sets to human escalation. Across eight MMLU-Pro domains and two additional benchmarks, fixed-round coverage stays close to target. The key finding is not that debate becomes more accurate, but that the conformal layer makes its failures actionable: at the final round, 81.9\\% of wrong-consensus cases are flagged by non-singleton sets at $\\alpha{=}0.05$. Separately, among cases that reach a singleton before the final round, accuracy reaches 90.0--96.8\\% on MMLU-Pro (up to 22.1pp above consensus stopping): a selection effect, not a reasoning improvement. Simple probability- and entropy-threshold rules attain comparable interception; conformal's distinct value is a finite-sample fixed-round coverage guarantee together with explicit candidate sets for escalation. Adaptive first-singleton stopping is evaluated empirically and not covered by this guarantee.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.MA",
+    "cs.SI"
+  ]
+}

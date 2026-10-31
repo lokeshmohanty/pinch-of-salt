@@ -1,0 +1,15 @@
+{
+  "id": "4ab047259fa6fd92",
+  "title": "PaGNet: A Panel-Aware GBDT--Neural Network for Multi-Target Corporate Tax Avoidance Proxy Forecasting",
+  "link": "https://arxiv.org/abs/2609.20177",
+  "description": "arXiv:2609.20177v1 Announce Type: new \nAbstract: Forecasting corporate tax avoidance proxies from firm--year panel data is challenging because predictive signals are distributed across short firm histories and related targets, while screening-oriented use requires transparent model behavior. We propose PaGNet (Panel-Aware GBDT--Neural Network), a two-branch hybrid that combines a LightGBM branch using panel-temporal summaries with a Panel-MLP branch using attention-pooled temporal aggregation and shared-trunk multi-task learning. A per-target validation-optimal blender produces both the final prediction and a compact branch-reliance diagnostic without trainable fusion parameters. On the KoTaP panel of 1{,}754 Korean listed firms from 2011--2024, PaGNet is evaluated under a leakage-free, shared-hyperparameter protocol across four feature regimes. In the direct-proxy-lag-excluded FS1 regime and the tax-history-augmented FS2 regime, accrual targets (TSTA, TSDA) route stably to the LightGBM branch, where PaGNet raises explained variance over the strongest of six baselines by roughly $0.08$--$0.11$ on the primary split. GETR often leans toward the neural branch, while CETR exposes a validation--test branch-selection mismatch rather than a stable branch assignment. A panel-flatten control shows that most accrual gains come from observed multi-year base-panel values, with PaGNet's panel-aware representation adding a smaller but directionally consistent refinement. Rolling-origin analysis confirms stable accrual routing, bounds ETR diagnostics to split-specific behavior, and identifies a far-horizon split where supervised models underperform naive persistence. PaGNet is therefore best viewed not as a universally superior tabular learner, but as a proxy-aware panel model that combines competitive forecasting with explicit per-target branch-reliance reporting.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CE",
+    "cs.LG"
+  ]
+}

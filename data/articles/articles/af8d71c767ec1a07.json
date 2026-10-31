@@ -1,0 +1,14 @@
+{
+  "id": "af8d71c767ec1a07",
+  "title": "Neural Disjunctive Normal Forms for Learning Exact Rank Filters",
+  "link": "https://arxiv.org/abs/2610.32203",
+  "description": "arXiv:2610.32203v1 Announce Type: new \nAbstract: Gradient-based learning of morphological operators is hindered by locally sparse derivatives with respect to the structuring elements. We develop a method for learning rank filters that retains exact operator evaluation while distributing the derivatives across the window. Using threshold decomposition, we construct a neural disjunctive normal form representation and establish a sufficient condition for exactness with integer-valued images and structuring elements. We then derive a smooth surrogate from the unique root of a smooth threshold equation. Implicit differentiation gives closed-form derivatives with normalised local weights, whose distribution is controlled by a smoothing parameter. These derivatives are used in a straight-through procedure: the forward pass evaluates the exact rank filter, while the backward pass uses the surrogate. For fixed ranks, the procedure learns real-valued structuring elements of any rank filter, including the median, and extends to compositions, infima, and suprema of rank filters. Experiments on image denoising using MNIST and Fashion-MNIST and retinal vessel segmentation show that, starting from a generic random initialisation, the proposed approach consistently improves performance over training with exact subgradients in every setting. In image denoising, our best network also outperforms smooth morphological networks in all settings. On vessel segmentation, the learned erosions recover structuring elements that fit the vessels, as theoretically expected, whereas most of those trained with exact subgradients remain close to their initialisation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "e4761eaf5412cd30",
+  "title": "Task-Aware Hybrid QUBO Optimization for Structured Neural Network Pruning",
+  "link": "https://arxiv.org/abs/2609.22238",
+  "description": "arXiv:2609.22238v1 Announce Type: cross \nAbstract: Neural network pruning can be formulated as a combinatorial optimization problem, yet many existing approaches rely on independent filter-importance scores or simplified objective functions. In this work, we propose a Hybrid Quadratic Unconstrained Binary Optimization (QUBO) framework for structured filter pruning that combines task-aware sensitivity information with interactions between candidate filters. The formulation incorporates first-order Taylor sensitivity and Weight-Fisher sensitivity into the linear component of the objective and can additionally incorporate activation similarity into the quadratic interactions. To control the target pruning cardinality without introducing an explicit quadratic cardinality penalty, we use a binary search over the capacity incentive to identify a coefficient that empirically yields the target pruning cardinality. We further investigate a two-stage QUBO--Tensor-Train refinement strategy in which the QUBO solution initializes gradient-free probabilistic black-box optimization to search for improved pruning masks using the downstream metric. Experiments on the SIDD image denoising task and a Half-UNet model show that the Hybrid QUBO achieves higher PSNR and SSIM than the evaluated Taylor and L1-based QUBO baselines at the studied pruning target. Multi-seed experiments under a fixed dataset protocol are used to assess robustness, while controlled sub-problem experiments demonstrate that Tensor-Train refinement becomes increasingly valuable as the combinatorial problem size grows. The results support Hybrid QUBO as a task-aware structured pruning framework for the evaluated setting, while also highlighting the computational and deployment limitations of mask-based pruning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d151da600b4c8cf0",
+  "title": "Active Sampling for Ultra-Low-Bit-Rate Video Compression via Conditional Controlled Diffusion",
+  "link": "https://arxiv.org/abs/2605.02849",
+  "description": "arXiv:2605.02849v3 Announce Type: replace \nAbstract: Diffusion models provide a powerful generative prior for perceptual reconstruction at ultra-low bitrates, but effective video compression requires controlling the generative process using highly compact conditioning signals. In this work, we present ActDiff-VC, a diffusion-based video compression framework for the ultra-low-bitrate regime. Our method partitions videos into variable-length segments, transmits keyframes only when needed, and summarizes temporal dynamics using a compact set of tracked point trajectories. Conditioned on these sparse signals, a conditional diffusion decoder synthesizes the remaining frames, enabling perceptually realistic reconstruction under severe rate constraints. To support this design, we introduce two mechanisms: content-adaptive keyframe selection and budget-aware sparse trajectory selection, which together enable compact yet effective conditioning for generative reconstruction. ActDiff-VC has an asymmetric computational profile: on a single NVIDIA A100 GPU, encoding requires 109 ms per frame, while the adopted 20-step diffusion decoder requires 2311 ms per frame, making the framework particularly suitable for ultra-low-bitrate applications such as cloud-assisted reconstruction, archival storage, and offline content distribution, where lightweight encoding and perceptual reconstruction quality are prioritized. Experiments on the UVG and MCL-JCV benchmarks show that ActDiff-VC achieves up to 64.6\\% bitrate reduction at matched NIQE, improves KID by up to 64.6% and FID by up to 37.7% at comparable bitrates against strong learned codecs, and delivers favorable perceptual rate--distortion trade-offs relative to learned and generative baselines in the ultra-low-bitrate regime. A human study with 147 participants further supports these perceptual gains, with ActDiff-VC preferred over DCVC-FM in 62.6% of pairwise comparisons.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

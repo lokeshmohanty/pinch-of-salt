@@ -1,0 +1,13 @@
+{
+  "id": "a19d3fa8e8ae1902",
+  "title": "RFMSR: Residual Flow Matching for Image Super-Resolution",
+  "link": "https://arxiv.org/abs/2607.12753",
+  "description": "arXiv:2607.12753v2 Announce Type: replace \nAbstract: Image super-resolution (ISR) has witnessed remarkable progress with diffusion models and flow matching. The dominant text-to-image (T2I) based approaches leverage large-scale foundation models as generative priors, achieving impressive perceptual quality but at the cost of massive model sizes and prohibitive training expenses. Recent flow-matching-based vision-only approaches have made significant strides; however, they adopt standard flow formulations that transport from a pure Gaussian prior to the data distribution, discarding the rich structural information already present in the low-quality (LQ) input. Furthermore, existing single-step acceleration techniques often forfeit the model's multi-step inference capability. In this paper, we propose Residual Flow Matching for Image Super-Resolution (RFMSR), a vision-only framework that centers the source distribution at the LQ latent, reducing transport distance and preserving structural priors throughout the flow trajectory. We further introduce a two-phase training strategy: Phase I pretrains the velocity field via conditional flow matching, while Phase II applies end-to-end supervision to the single-step prediction while retaining the velocity loss across all timesteps, achieving high-quality single-step generation without sacrificing multi-step refinement. Extensive experiments demonstrate that RFMSR achieves comparable or even superior perceptual quality compared to state-of-the-art (SOTA) methods. The source code is available at https://github.com/Faze-Hsw/RFMSR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "3b44b78f016a7f6e",
+  "title": "Observation-Conditioned Latent Energy Priors for Sparse Implicit Neural Shape Completion",
+  "link": "https://arxiv.org/abs/2609.03694",
+  "description": "arXiv:2609.03694v1 Announce Type: new \nAbstract: Implicit neural representations (INRs) can model continuous 3D shapes with a shared coordinate decoder and per-instance latent codes. At test time, autodecoder-style models commonly freeze the decoder and optimize a new latent code from sparse off-grid SDF samples. When these samples underconstrain inference, the latent can drift toward regions that fit the observations but decode implausible unobserved geometry. We propose a post-hoc observation-conditioned latent energy prior for frozen INR decoders. The energy scores standardized latents conditioned on a permutation-invariant encoding of the sparse observation set and is used as a residual expert alongside an L2 latent prior selected on validation data. We evaluate on a controlled cell-nucleus SDF dataset and a public MedShapeNet-derived SDF completion dataset. The proposed L2 objective augmented with conditional energy improves consistently over a validation-selected L2 baseline in the sparsest cell-nucleus regimes and, on MedShapeNet, outperforms both L2 and a six-component GMM latent-density prior across all reported readouts. A shuffled-context ablation is consistently weaker than matched context, supporting an observation-specific contribution. These results suggest that lightweight conditional energies can make pretrained INR decoders more observation-aware without retraining.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

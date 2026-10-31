@@ -1,0 +1,15 @@
+{
+  "id": "f191dc66b7412fc5",
+  "title": "VIGOR: Zero-Shot Visual Generalization via Latent-Space Consistency in Model-Based Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2610.02801",
+  "description": "arXiv:2610.02801v1 Announce Type: new \nAbstract: Model-based reinforcement learning (MBRL) achieves strong sample efficiency by planning within learned latent dynamics, yet its performance degrades substantially under unseen visual distractions such as background variations, lighting changes, or camera shifts. Unlike model-free RL, where encoder perturbations affect only single-step predictions, MBRL suffers from a two-level vulnerability: visual distractions first push encoder outputs out of distribution, and these errors then compound through recursive latent rollouts over the planning horizon. We propose visual generalization via latent-space consistency in model-based RL (VIGOR), a framework that enables zero-shot generalization to unseen visual distractions while retaining the sample efficiency of its MBRL backbone. VIGOR integrates three interdependent components: (i) asymmetric weak-to-strong augmentation, which pairs weak-only and weak-to-strong latent views within a single batch; (ii) dynamics-level consistency, which enforces augmentation-invariant transition predictions through direct latent regression; and (iii) encoder-level stabilization, which prevents encoder drift under the cross-augmentation supervision imposed by dynamics-level consistency. Evaluations on the DeepMind Control Suite (DMC) and Robosuite show that VIGOR outperforms state-of-the-art model-free and model-based baselines, surpassing the second-best baseline by 3.4% on DMC and 43.6% on Robosuite. Ablations further show that VIGOR's robustness is augmentation-agnostic: replacing the default augmentation with alternatives from distinct perturbation families preserves strong generalization, confirming that latent-space consistency, not the augmentation choice, drives robustness.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ]
+}

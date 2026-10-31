@@ -1,0 +1,13 @@
+{
+  "id": "825863ca8d851424",
+  "title": "Measured Sliders: Learning Continuous Controls from Differentiable Image Measurements",
+  "link": "https://arxiv.org/abs/2609.05234",
+  "description": "arXiv:2609.05234v1 Announce Type: new \nAbstract: Continuous sliders are useful only when coefficient changes produce predictable image changes. Yet most diffusion sliders derive their axes from text or learned representations, leaving their scales disconnected from observable image properties. Consequently, we cannot tell in advance which attributes are learnable, compare control strengths directly, or anticipate interference when multiple controls are combined. We propose Measured Sliders, a framework that defines continuous controls through closed-form differentiable image measurements. A common measurement space unifies the pipeline. Before training, an observability test identifies usable supervision. During training, a measurement-guided objective learns target movement while suppressing non-target changes. After training, decoded calibration expresses controls in comparable units of realized image change. Multiple LoRA branches are stored in one checkpoint and composed without training on joint activations. Across SDXL and FLUX.1-dev, the resulting controls are ordered, selective, and composable. On 553 prompts, lighting direction reaches rho = 0.995 and 98.9% monotone sweeps. A five-attribute checkpoint achieves average selectivity 2.59, compared with 1.50 for the strongest baseline, and preserves every requested direction in 96.7% of pair and 86.1% of triple compositions. The observability test also separates every subsequently successful measurement from the failed candidate. Overall, image-space measurement provides a common basis for learning, diagnosing, calibrating, and composing continuous generative controls.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

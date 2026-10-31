@@ -1,0 +1,14 @@
+{
+  "id": "74b7a097dbff7f84",
+  "title": "Independent Samples, Correlated Variance A Learnable Cross-View Cue in Path-Traced Stereo Data",
+  "link": "https://arxiv.org/abs/2606.25483",
+  "description": "arXiv:2606.25483v2 Announce Type: replace \nAbstract: Path-traced synthetic stereo is a primary training substrate for disparity networks, and the pipelines that consume it assume Monte~Carlo (MC) rendering noise is independent across the two views. The assumption is correct at the level it is stated---individual samples---but silent about the object a network actually sees. We show that the per-pixel MC \\emph{variance fields}, though built from independent samples, are strongly correlated once aligned by the ground-truth disparity, and that a network can learn to match with that correlation. Across 20 indoor scenes the warped correlation is $0.754\\pm0.016$ against $0.360$ unwarped; it replicates on a second renderer with a different sampler and sample budget ($0.743\\pm0.044$), and a seed-count analysis puts the population value near $0.85$, making the measurement a lower bound. The effect is field-level, not sample-level: at the warp correspondence the signed per-seed residual correlation is $-0.0004$ while the residual envelope correlates at $0.38$. A capacity-limited siamese probe given nothing but variance-field patches reaches $78.8\\%$ two-alternative forced-choice accuracy on held-out scenes and falls to chance once the alignment is destroyed; under the ordinary single-render condition, decorrelation still costs $2.40$ percentage points in a difference-in-differences design, positive in all six held-out scenes. A real sensor's variance is fixed by its own signal rather than by transport difficulty, so across views it is redundant with intensity: the cue is specific to rendered data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

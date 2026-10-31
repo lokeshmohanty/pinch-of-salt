@@ -1,0 +1,14 @@
+{
+  "id": "0d1bde7887416c0f",
+  "title": "DyJR: Preserving Diversity in Reinforcement Learning with Verifiable Rewards via Dynamic Jensen-Shannon Replay",
+  "link": "https://arxiv.org/abs/2603.16157",
+  "description": "arXiv:2603.16157v2 Announce Type: replace-cross \nAbstract: While Reinforcement Learning (RL) enhances Large Language Model reasoning, on-policy algorithms like GRPO are sample-inefficient as they discard past rollouts. Existing experience replay methods address this by reusing accurate samples for direct policy updates, but this can incur additional storage costs and concentrate the policy on a narrow set of solutions. We argue that historical data should prioritize sustaining local policy plasticity rather than simply reinforcing accuracy. We define local policy plasticity as a persistent ability to remain backtrackable and switchable with respect to recent successful trajectories: throughout training, the policy maintains non-negligible support on recently reachable alternatives, so it can smoothly reallocate probability mass when needed without being locked into a single dominant path. To this end, we propose Dynamic Jensen-Shannon Replay (DyJR), a simple yet effective regularization framework using a dynamic reference distribution from recent trajectories. DyJR introduces two innovations: (1) A Time-Sensitive Dynamic Buffer that uses FIFO and adaptive sizing to retain only temporally proximal samples, synchronizing with model evolution; and (2) Jensen-Shannon Divergence Regularization, which replaces direct replay policy-gradient updates with a regularization signal that discourages premature over-commitment to a single Rank-1 trajectory. Experiments on mathematical reasoning, Text-to-SQL, and coding benchmarks demonstrate that DyJR improves over GRPO as well as baselines such as RLEP and Ex-GRPO, while maintaining training efficiency comparable to the original GRPO. Furthermore, Rank-k token probability evolution and semantic-mode analyses show reduced concentration and greater retention of alternative continuations. Matched admission-objective comparisons and repeated runs provide additional evidence for the roles of DyJR's components.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

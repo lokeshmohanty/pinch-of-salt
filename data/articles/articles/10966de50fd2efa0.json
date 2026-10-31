@@ -1,0 +1,15 @@
+{
+  "id": "10966de50fd2efa0",
+  "title": "SARATHI: Decoupled Data-Free Probing and Adaptive Reconstruction for Structured LLM Pruning",
+  "link": "https://arxiv.org/abs/2610.15514",
+  "description": "arXiv:2610.15514v1 Announce Type: cross \nAbstract: Structured pruning reduces the inference cost of large language models (LLMs) by permanently removing neurons and weight rows, yielding dense, hardware-agnostic speedup. Existing post-training methods couple neuron selection and weight reconstruction through a shared calibration dataset, introducing domain bias and out-of-memory failures at high sparsity. We propose SARATHI, a framework that decouples these two stages. A data-free \\emph{NMF Residual Subspace Probe} scores neurons using intrinsic weight geometry, without accessing any calibration data, and carries a formal connection to Robust PCA. \\emph{Adaptive OBS} then reconstructs the pruned weights with a localized calibration batch, operating in $\\mathcal{O}(d^2)$ peak memory per layer and eliminating the global memory bottleneck of coupled methods. A \\emph{Bias Shift Compensation} step corrects systematic activation drift in post-LayerNorm architectures that would otherwise cause perplexity collapse at high sparsity. Experiments across six models from two architecture families (gated and non-gated FFN) at 15--40\\% sparsity show that SARATHI achieves competitive perplexity and matches or exceeds existing structured pruning baselines on zero-shot accuracy.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1cc11b8d69f21ce3",
+  "title": "Next-Frequency Autoregressive Modeling for Remote Sensing Change Detection",
+  "link": "https://arxiv.org/abs/2607.25815",
+  "description": "arXiv:2607.25815v2 Announce Type: replace \nAbstract: Remote sensing change detection identifies land-cover changes from bi-temporal images. Most existing methods follow a one-shot dense prediction paradigm, directly regressing a change mask from fused features, but overlook the intrinsic frequency characteristics of change patterns. We propose Freq-RemoteVAR, a frequency autoregressive framework that reformulates change detection as structured generation in the frequency domain. Instead of predicting the change mask in one step, we introduce next-frequency prediction, where change information is progressively generated from coarse to fine. We design a frequency-aware mask tokenization strategy that decomposes change supervision into multi-frequency token targets via Fourier transformation and quantization. Based on this representation, we develop a Frequency VAR Transformer, which performs causal autoregressive modeling over frequency tokens. Starting from learned mask queries, it progressively predicts frequency-level tokens conditioned on previously generated tokens and bi-temporal image features, capturing long-range dependencies across frequency scales. We further introduce Scale-Aligned RoPE Cross Attention (SRCA), which aligns frequency-domain mask queries with spatial-domain bi-temporal features under a unified coordinate system, enhancing spatial-frequency consistency. To mitigate unreliable signals, a Change-quality Control module adaptively modulates generation through dynamic normalization, attention biasing, and spatial offset adjustment, suppressing pseudo-change responses and improving robustness. Experiments on CDD, GZ-CD, and LEVIR-CD show that Freq-RemoteVAR consistently outperforms existing methods, especially in challenging scenarios with complex appearance variations and noisy disturbances.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

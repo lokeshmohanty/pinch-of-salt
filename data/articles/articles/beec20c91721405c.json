@@ -1,0 +1,13 @@
+{
+  "id": "beec20c91721405c",
+  "title": "Spatiotemporal Hyperedges for EEG Seizure Detection and Prediction",
+  "link": "https://arxiv.org/abs/2609.37730",
+  "description": "arXiv:2609.37730v1 Announce Type: new \nAbstract: Seizure detection and prediction from EEG are clinically important but challenging because seizures are rare, temporally localized, and propagate as coordinated events across multiple channels. Recent dynamic graph neural networks model this by running a temporal model over a sequence of per-time-step pairwise channel edges. However, this pairwise construction misses the spatiotemporal coupling that constitutes a seizure, at substantial training cost. We propose HyBrain, which summarizes spatiotemporal EEG evidence through a small set of soft hyperedges rather than pairwise edges. A per-channel Mamba backbone produces one token per (channel, second), and a spatiotemporal hyperedge block pools these tokens into E_h shared group embeddings through soft memberships and broadcasts them back. The same encoder serves three downstream tasks: window-based detection, one-second point-wise detection, and preictal seizure prediction. On TUSZ and CHB-MIT, HyBrain achieves the best AUROC on every reported setting against ten baselines, with the largest gap on long-clip preictal prediction. It also matches the most efficient baselines in training time and peak GPU memory. A qualitative analysis shows that even a single learned hyperedge cleanly captures the preictal -> ictal -> postictal trajectory on a real seizure clip.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

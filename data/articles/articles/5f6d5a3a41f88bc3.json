@@ -1,0 +1,13 @@
+{
+  "id": "5f6d5a3a41f88bc3",
+  "title": "Orthogonal Polynomial Approximation for Matrix Log Normalization in Global Covariance Pooling",
+  "link": "https://arxiv.org/abs/2608.19021",
+  "description": "arXiv:2608.19021v1 Announce Type: new \nAbstract: Global Covariance Pooling (GCP) improves deep networks by capturing second-order feature statistics, and is especially effective for fine-grained recognition. Because covariance matrices live on the Symmetric Positive Definite (SPD) manifold, a normalization step is required before the Euclidean classifier. The faithful choice is the matrix logarithm (MLN-COV), which maps the SPD manifold to its tangent space; in practice it was abandoned in favour of the matrix square root because its eigendecomposition-based gradient is numerically unstable. We show that this instability is an artifact of computing the logarithm spectrally, not of the logarithm itself. Approximating the logarithm with finite polynomials in the covariance matrix removes the eigendecomposition from both passes: every operation becomes a General Matrix Multiplication (GEMM), the gradient stays bounded on the spectral support of the pre-normalized covariance, and the unstable 1/(lambda_i-lambda_j) term never appears. The key ingredient is a mean-eigenvalue pre-normalization that centres the spectrum near 1, away from the singularity of log, with a scalar post-compensation that returns the singular part of log(A) in closed form. Our recommended normalizer is a degree-8 Chebyshev expansion evaluated by a three-term matrix recurrence, with a matching reverse recurrence for the backward pass; Legendre, Laguerre, Taylor and Pade expansions are studied as controls that isolate the roles of the basis and of the target function. On three fine-grained benchmarks and ImageNet-1k the decomposition-free logarithm is both faster and more accurate than the spectral logarithm and than the square-root approximations it replaces, and at matched basis and degree the log target beats the square-root target, confirming that the gain comes from the faithful Riemannian map rather than from a better polynomial family.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

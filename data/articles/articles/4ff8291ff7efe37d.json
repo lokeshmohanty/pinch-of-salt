@@ -1,0 +1,14 @@
+{
+  "id": "4ff8291ff7efe37d",
+  "title": "ECMR: Evidence-Aware Deliberation Control for Multi-Agent LLM Reasoning",
+  "link": "https://arxiv.org/abs/2610.17869",
+  "description": "arXiv:2610.17869v1 Announce Type: new \nAbstract: Multi-agent Large Language Model (LLM) systems typically commit to a deliberation protocol before inference. A fixed protocol cannot allocate computation differently to resolved and unresolved instances, and it may mistake repeated support for independent confirmation. We study this failure as semantic false consensus: a confident group answer supported by narrow, duplicated, or correlated rationales. We introduce ECMR, an evidence-aware controller over frozen role-conditioned LLMs. At each step, ECMR summarizes answer concentration, support diversity and independence, contradictions, role behavior, verification history, and remaining budget, then selects whether to propose, challenge, verify, arbitrate, diversify, correct a role, or stop. We formulate this decision as finite-horizon budgeted control and derive sufficient conditions under which state conditioning, risk-triggered verification, and role correction improve cost-adjusted utility. Across a declared held-out evaluation of 9,000 records from MedQA, CaseHOLD, and FinQA, ECMR-Full increases pooled accuracy from 62.1% to 84.9%, reduces false-consensus rate from 40.7% to 17.0%, and raises evidence-support rate from 58.0% to 88.7%. State shuffling loses 11.7 accuracy points with only 0.7 fewer rounds, while harder traces shift from early stopping toward arbitration. ECMR-Full uses the largest token budget, yielding the strongest absolute reliability rather than uniformly superior token efficiency.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.MA"
+  ]
+}

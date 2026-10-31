@@ -1,0 +1,15 @@
+{
+  "id": "fc241f2ee3db4541",
+  "title": "A Unified Evaluation Framework of Physical Adversarial Robustness in the Edge VLM Era",
+  "link": "https://arxiv.org/abs/2610.29196",
+  "description": "arXiv:2610.29196v1 Announce Type: new \nAbstract: Recent advancements in Vision-Language Models (VLMs) enable end-to-end visual grounding via language prompts and generative decoding, demonstrating largely improved zero-shot and open-vocabulary detection capabilities. As a result, VLMs are rapidly being deployed at the edge in safety-critical real-world systems. However, the physical adversarial robustness of edge VLMs has not been systematically studied, and the fundamental differences in output with modern object detectors create methodological challenges for fair evaluation. To compare the two families directly, we evaluate every selected representative model on one outcome: whether an adversarial patch worn on a person evades detection of the model. We report this by introducing a unified metric, conditional attack success rate (cASR), counted only on images the model still localizes under a matched gray occluder, and partition every failure into omission (no box), substitution (a box on the patch), and displacement (a box on neither). We benchmark the physical adversarial vulnerability of compact grounding VLMs against a range of object detectors, and find that the VLMs can be as vulnerable as the detectors. We disclose that failure mode is largely associated with the output format of a model rather than its architecture family. Of the three, only omission is visible to a downstream system; displacement and substitution return confident, well-formed boxes, making them potentially more dangerous failures. Further, we find that, under distribution shift, VLMs that primarily failed by omission instead shift to failing more by displacement/substitution. Thus, a grounding VLM can inherit the detector's vulnerability while showing the possibility to adopt more dangerous failure modes. Our code and data are available at https://github.com/ericliang1/physical-adversarial-robustness.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR",
+    "cs.LG"
+  ]
+}

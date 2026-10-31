@@ -1,0 +1,13 @@
+{
+  "id": "a89a87f113fbbac5",
+  "title": "OmniSelect: Dynamic Modality-Aware Token Compression for Efficient Omni-modal Large Language Models",
+  "link": "https://arxiv.org/abs/2605.18041",
+  "description": "arXiv:2605.18041v2 Announce Type: replace \nAbstract: Omnimodal large language models (OmniLLMs) have recently gained increasing attention for unified audio-video understanding. However, processing long multimodal token sequences introduces substantial computational overhead, making efficient token compression crucial. Existing methods typically rely on fixed, modality-specific guidance, which fails to account for the varying importance of modalities across different queries. To address this limitation, we propose $\\textbf{OmniSelect}$, a training-free, modality-adaptive token pruning framework that dynamically selects appropriate compression strategies for multimodal inputs. Specifically, we leverage a lightweight AudioCLIP model to estimate cross-modal relevance and categorize each input into three pruning regimes: Audio-Centric, Video-Centric, and Uniform pruning. Based on these relevance scores, OmniSelect further performs fine-grained token pruning within each temporal group, adaptively allocating pruning ratios to preserve informative tokens across modalities. By explicitly modeling modality preference and enabling dynamic strategy selection, OmniSelect effectively avoids the pitfalls of one-size-fits-all compression. Extensive experiments demonstrate that our method achieves efficient multimodal token reduction while maintaining strong performance, without requiring any additional training.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

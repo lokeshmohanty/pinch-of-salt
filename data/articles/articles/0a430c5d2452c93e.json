@@ -1,0 +1,13 @@
+{
+  "id": "0a430c5d2452c93e",
+  "title": "StateTape: Action-Conditioned Evidence Lifecycle Modeling for Long-Horizon Coding Agents",
+  "link": "https://arxiv.org/abs/2609.36319",
+  "description": "arXiv:2609.36319v1 Announce Type: new \nAbstract: Despite the recent success of coding agents built on large language models, it remains challenging to run them over long horizons, since every observation is appended to the context and the context grows with each one. History-based maintenance is a common remedy, which masks or summarizes old observations, or prunes what a model reads as useless, and bounds the context at little cost. However, it decides from the text of the history alone and sees nothing of how the code is connected. Since a coding agent edits code many times over a single task, and each write can change what code elsewhere means, such maintenance may keep records a write has falsified, drop ones that still hold, and miss code the agent needs next. To overcome these challenges, this paper proposes StateTape, a novel and scalable framework that rewrites a coding agent's context as the repository changes rather than as the context grows. The key idea of StateTape is to model the repository as a symbol-level code graph, whose dependencies and language rules expose which symbols a write can affect. Upon this graph, a tape marks the symbols each write changed, which turns staleness from an inference about text into an observation of the agent's writes. We propose a per-write procedure in which the tape nominates the records a write could have falsified while a small manager model settles what the write log cannot, and further provide a theoretical analysis and TraceBench, a benchmark that labels what an agent is holding against what is actually needed. Empirically, we demonstrate that StateTape can effectively clear falsified records and retrieve what is needed, and thus achieve a higher resolve rate in all experiments spanned by six coding agents and three edit-heavy benchmarks with little computational overhead.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

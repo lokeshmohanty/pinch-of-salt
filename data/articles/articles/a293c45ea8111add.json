@@ -1,0 +1,15 @@
+{
+  "id": "a293c45ea8111add",
+  "title": "Attention-space Contrastive Guidance for Efficient Hallucination Mitigation in LVLMs",
+  "link": "https://arxiv.org/abs/2601.13707",
+  "description": "arXiv:2601.13707v3 Announce Type: replace-cross \nAbstract: Hallucinations in large vision--language models (LVLMs) often arise when language priors dominate over visual evidence, leading to object misidentification and visually inconsistent descriptions. We address this problem by framing hallucination mitigation as contrastive guidance that steers generation toward visually grounded and semantically faithful text. We propose Attention-space Contrastive Guidance (ACG), a training-free, single-pass method that operates directly in self-attention layers, where hallucination-inducing cross-modal biases emerge. ACG constructs both image-conditioned and approximate text-only attention paths within a single forward pass, enabling efficient guidance before errors accumulate at the output layer. Because this masking-based surrogate can introduce approximation bias, we further apply a lightweight orthogonal projection that suppresses components aligned with the text-only path, yielding a more visually grounded correction. Experiments on CHAIR and POPE show that ACG improves faithfulness over existing training-free baselines while maintaining caption quality, reducing latency by up to $2\\times$ compared to multi-pass contrastive decoding methods.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "2df3186bb35b9324",
+  "title": "MOTIP2: Spatial Priors for End-to-End Multi-Object Tracking",
+  "link": "https://arxiv.org/abs/2610.10391",
+  "description": "arXiv:2610.10391v1 Announce Type: new \nAbstract: End-to-end multi-object trackers have narrowed the gap with classical tracking-by-detection on association-difficult benchmarks. Yet they still make spatially implausible errors no classical tracker would, such as assigning one identity to objects on opposite sides of the frame. A model could learn to avoid them, but tracking annotations are scarce, so we encode spatial priors explicitly instead, while keeping inference fully end-to-end with no post-hoc association.\n  We propose three spatial priors, at the data, loss, and representation stages. Spatial ID Switches bias trajectory permutations toward spatially overlapping objects, reducing the mismatch between training and inference confusions. Spatial ID Loss scales each identity's penalty by its box distance, so a distant switch costs more than a nearby one. Spatial Anchor gives each track token its frame position, an explicit spatial cue for attention.\n  We instantiate the three priors in MOTIP2, a tracker adapted from MOTIP and built on the real-time DEIM detection transformer. Trained without extra data, its main model, MOTIP2-L, sets a new state of the art: 73.4 HOTA on DanceTrack, 76.0 on SportsMOT, and 71.1 IDF1 on PersonPath22. MOTIP2 is a family of models spanning the speed-accuracy trade-off: a lighter model, MOTIP2-S, matches the original MOTIP at over 3x the speed, and MOTIP2-X reaches 74.8 HOTA on DanceTrack.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "01a4aa9ba642da75",
+  "title": "Diffusion Meta-Prompting and Steering for Generalizable Foundation Model Adaptation",
+  "link": "https://arxiv.org/abs/2610.11067",
+  "description": "arXiv:2610.11067v1 Announce Type: new \nAbstract: Prompt learning is a popular method for adapting foundation models, but learned prompts are typically task-specific and fail to generalize to new classes, domains, or compositions of tasks. In this paper, we introduce a Diffusion Meta-Prompt (DMP) model , a framework that models the distribution of learned prompts using diffusion models. Given a repository of previously learned prompts, DMP is trained and sampled without access to the original task examples or task losses, and synthesizes new prompts conditioned on natural language task descriptions. To improve the sampling stability, we introduce a test-time steering strategy for DMP, which uses the best training-selected prompt in the repository as a latent anchor during diffusion sampling, without retraining the DMP or accessing test classes. DMP improves generalization across classification, retrieval and text-to-image generation tasks, supports concept composition and negative prompting without explicit training. It reduces storage and inference costs by over 90% compared to prompt retrieval methods. For composite classification, DMP achieves upto 2.0% average gain over prior meta-learning methods across 55 pairs of datasets with gains as high as 8.5% on specific pairs such as Eurosat and Flowers. DMP also enhances cross-task generalization with ~2-9% improvement for hierarchical classification task. We further provide a theoretical guarantee bounding the expected task loss of prompts sampled from a DMP. Code is available: https://github.com/DeepakSridhar/dmp",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

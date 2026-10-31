@@ -1,0 +1,13 @@
+{
+  "id": "c9464deb84a125a8",
+  "title": "Efficient Dataset Distillation for Pre-Trained Self-Supervised Models via Statistical Flow Matching",
+  "link": "https://arxiv.org/abs/2602.05391",
+  "description": "arXiv:2602.05391v3 Announce Type: replace \nAbstract: Dataset distillation seeks to synthesize a compact surrogate dataset that enables performance comparable to training on the original dataset for downstream tasks. For the scenario where pre-trained self-supervised models serve as priors, traditional Linear Gradient Matching optimizes synthetic images by encouraging them to mimic the gradient updates induced by real images on the linear probe. However, this batch-level formulation requires loading thousands of real images and applying multiple differentiable augmentations to synthetic images at each distillation step, leading to substantial computational and memory overheads. In this paper, we revisit the linear gradient and theoretically derive that it is essentially a local relative distribution directed from target class centers toward non-target class centers, which we term flow. This property causes suboptimality and instability, often necessitating expensive multiple augmentations to compensate. To address this, we introduce Statistical Flow Matching, an optimal, stable, and efficient supervised learning framework that optimizes synthetic images by aligning global statistical flows in the original data. Our approach loads raw statistics only once and performs a single augmentation pass on the synthetic data, achieving performance comparable to or better than the state-of-the-art method with 10x less GPU memory usage and 4x faster distillation time. Moreover, increasing the number of augmentations for our method yields further performance gains while incurring lower additional cost. Our code is publicly available at https://github.com/einsteinxia/SFM.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

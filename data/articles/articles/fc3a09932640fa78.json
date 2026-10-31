@@ -1,0 +1,15 @@
+{
+  "id": "fc3a09932640fa78",
+  "title": "DeepFedNAS: Efficient Hardware-Aware Architecture Adaptation for Heterogeneous IoT Federations via Pareto-Guided Supernet Training",
+  "link": "https://arxiv.org/abs/2601.15127",
+  "description": "arXiv:2601.15127v4 Announce Type: replace-cross \nAbstract: Deploying federated learning across heterogeneous IoT device fleets requires tailored neural network architectures for each device class, yet existing Federated Neural Architecture Search (FedNAS) methods suffer from unguided supernet training and prohibitively costly post-training search pipelines that validate thousands of subnets to construct learned accuracy predictors. We introduce DeepFedNAS, a two-phase framework built on a multi-objective fitness function that synthesizes information-theoretic network metrics with architectural heuristics. In the first phase, Federated Pareto Optimal Supernet Training replaces random subnet sampling with a pre-computed cache of elite, high-fitness architectures, yielding a superior supernet. In the second phase, a Predictor-Free Search uses the structural fitness function as an accuracy proxy without constructing a learned subnet-accuracy predictor. In our CIFAR-10 benchmark, preparing the baseline predictor requires evaluating 10,000 subnets over the 5,000-image validation split, totaling 50 million image-level forward evaluations. DeepFedNAS eliminates these evaluations and selects a hardware-optimized architecture in $\\sim$20 seconds on a CPU. Experiments on CIFAR-10, CIFAR-100, and CINIC-10 demonstrate state-of-the-art accuracy and robust performance under extreme non-IID conditions ($\\alpha=0.1$). On CIFAR-100, DeepFedNAS provides an average 2.12-percentage-point gain across the four computation-budget intervals. Under the lowest evaluated computation budget, its mean result exceeds SuperFedNAS's best mean accuracy while using $2.95\\times$ fewer parameters. These results make DeepFedNAS practical for scalable, communication-constrained IoT federations. Source code: https://github.com/bostankhan6/DeepFedNAS",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "cs.DC"
+  ]
+}

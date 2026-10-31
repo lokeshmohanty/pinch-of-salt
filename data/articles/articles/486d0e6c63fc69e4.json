@@ -1,0 +1,14 @@
+{
+  "id": "486d0e6c63fc69e4",
+  "title": "Understanding Scattered Forest Search: A Version-Space Perspective on Multi-Turn Program Correction",
+  "link": "https://arxiv.org/abs/2604.23989",
+  "description": "arXiv:2604.23989v3 Announce Type: replace-cross \nAbstract: In multi-turn program correction, the state-of-the-art method Scattered Forest Search (SFS) has been proposed, employing Monte Carlo Tree Search (MCTS) with carefully crafted initial seeds and text-based optimization. However, since SFS integrates multiple components, the effects of each component on performance and the overall behavior of SFS have not been sufficiently analyzed. In this work, we theoretically analyze the refinement process of SFS from the perspective of version spaces in learning theory and clarify its behavior. First, as a basis for the theoretical analysis, we introduce a sequential self-refinement method (Line), which starts from an initial program and repeatedly refines the resulting program. Furthermore, while Line progresses the refinement process in the depth direction, we introduce Iterative Refinement of Repair Instructions (IRRI) to capture the refinement process in the width direction, which fixes initial programs and iteratively refines repair instructions. We then analyze Line and IRRI and conduct a theoretical analysis of SFS by positioning it as an intermediate method between the two. Our theoretical analysis reveals that SFS exhibits behavior closer to IRRI than to Line, and this theoretical characteristic is also confirmed experimentally. Considering computational resources and methodological simplicity, these results suggest that a simpler method, IRRI, may achieve a similar refinement process without relying on the complex correction mechanism of SFS.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

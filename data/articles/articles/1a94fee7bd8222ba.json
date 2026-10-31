@@ -1,0 +1,13 @@
+{
+  "id": "1a94fee7bd8222ba",
+  "title": "Efficient Training with Foresight: Multi-Token Auxiliary Supervision for Autoregressive Image Generation",
+  "link": "https://arxiv.org/abs/2608.25386",
+  "description": "arXiv:2608.25386v1 Announce Type: new \nAbstract: Autoregressive (AR) image generation has shown strong potential for scalable high-fidelity synthesis by modeling images as discrete token sequences. However, traditional next token prediction (NTP) continues to suffer from sparse and myopic supervision, insufficiently discriminative representations, and high training cost caused by dense computation over the full token sequence. To address these issues, we propose multi-token autoregressive (MTAR), a unified training framework that improves autoregressive image generation from three aspects: prediction objectives, representation regularization, and training efficiency. Specifically, MTAR introduces multi-token prediction (MTP) to alleviate the sparsity and myopia of traditional NTP by imposing joint supervision on multiple future tokens; employs token-level contrastive regularization (TCR) to explicitly enhance the separability of sampled token representations and thereby improve representation discriminability; and incorporates semantic dropping (SD) as a semantics-aware training acceleration strategy to reduce redundant computation on low-information tokens while preserving informative learning signals. All three components are applied only during training and introduce no additional overhead during autoregressive inference. On ImageNet, MTAR achieves a better balance between generation quality and training efficiency. Compared with LlamaGen, MTAR achieves up to 0.95 lower FID and 39\\% faster training. Moreover, even with only 1/3 of the training iterations, it still attains performance comparable to or better than the baseline, substantially reducing training time.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

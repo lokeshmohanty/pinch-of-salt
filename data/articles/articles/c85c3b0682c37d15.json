@@ -1,0 +1,13 @@
+{
+  "id": "c85c3b0682c37d15",
+  "title": "LOCI: Localized Continuous Control for Multi-Subject Image Editing",
+  "link": "https://arxiv.org/abs/2610.31950",
+  "description": "arXiv:2610.31950v1 Announce Type: new \nAbstract: Recent instruction-following image editors such as Flux.1-Kontext enable text-driven editing but lack fine-grained control over where and how much an edit is applied. Existing approaches provide either continuous but global control or spatially localized editing at a fixed strength. To our knowledge, none jointly supports explicit spatial localization, continuous per-region strength, and independent simultaneous control of multiple subjects. We present LOCI (LOcalized Continuous control for multi- subject Image editing). Given a multi-subject image with per-subject regions and instructions, LOCI edits each subject at an independently chosen, continuously adjustable strength, for instance gradually aging one person while adding a beard to another with minimal cross-region leakage. LOCI pairs subject-level attention binding for spatial isolation with a Regional LoRA layer that replaces the LoRA's scalar coefficient with a per-token scaling vector aligned to the spatial layout. A single adapter is trained at one suppression point, and continuous edit strengths follow by rescaling its regional residual at inference. Experiments on multi-subject scenes demonstrate that LOCI achieves strong edit fidelity with significantly reduced cross-region interference compared to baselines, while maintaining continuous control over edit strength",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

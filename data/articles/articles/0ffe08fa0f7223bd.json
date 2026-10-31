@@ -1,0 +1,13 @@
+{
+  "id": "0ffe08fa0f7223bd",
+  "title": "Counterfactual Attention Policy Distillation for Temporal Video Grounding",
+  "link": "https://arxiv.org/abs/2609.34581",
+  "description": "arXiv:2609.34581v2 Announce Type: replace \nAbstract: Temporal video grounding is a key capability of advanced Multimodal Large Language Models (MLLMs) for the thorough understanding of video events, which is however often limited by repeated actions and visually similar contexts in long videos. In this paper, we study this issue from the perspective of On-policy distillation (OPD) and propose a new training regime for MLLMs termed Counterfactual Attention Policy Distillation (CAPD). In particular, OPD is a viable solution for MLLMs via providing dense teacher supervision on student-generated trajectories. But its next-token based teacher-student distillation is hard to identify the specific video segments supporting each predicted timestamp, which is critical for temporal grounding. In this case, CAPD measures how masking each temporal group changes the teacher's output distribution. The resulting counterfactual influence calibrates the teacher's attention and weights token-level distillation, allowing the student to learn the temporal evidence that affects boundary prediction. To validate CAPD, we trained it on Qwen3-VL-8B-Instruct using only 2,500 samples for one epoch, and evaluated it on the TimeLens and multiple general video benchmarks. Experimental results show that CAPD improves average recall by 12.0% relative to GRPO on TimeLens while preserving general video understanding, achieving comparable accuracy to the base model.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

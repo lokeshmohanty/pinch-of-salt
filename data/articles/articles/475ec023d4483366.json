@@ -1,0 +1,13 @@
+{
+  "id": "475ec023d4483366",
+  "title": "AlignPoison: Conditional Targeted Poisoning of Generative Recommenders via Decoding-Aligned Prefixes",
+  "link": "https://arxiv.org/abs/2610.14487",
+  "description": "arXiv:2610.14487v1 Announce Type: new \nAbstract: Generative recommendation models based on autoregressive decoding have been adopted as alternatives to classical ranking-based systems. While their modeling flexibility has been widely studied, their resilience to data poisoning remains largely unexplored. In this work, we ask: how susceptible are generative recommenders to conditional targeted poisoning? Under a realistic setting where an adversary can inject limited malicious interactions and query a recommendation API as a black box, our empirical study shows that generative recommenders are vulnerable: injecting fewer than 1% synthetic interactions significantly increases the likelihood of promoting malicious targets under the trigger. To characterize this vulnerability, we analyze the synthesis of malicious interactions from two perspectives: (i) decoding alignment and (ii) prefix popularity. We observe that short, context-aligned prefixes that are both common under the model's induced transition dynamics and strongly linked to a frequent trigger consistently amplify targeted promotion. Motivated by this analysis, we develop AlignPoison, a black-box framework that discovers and samples context-aligned prefixes from API outputs. We conduct experiments on benchmarks in unimodal and multimodal generative recommendation settings. Results show that these prefixes outperform competitive baselines, improving ASR lift by up to 16.3 percentage points and highlighting a decoding-dependent, context-sensitive poisoning vulnerability in generative recommendation models.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "83da868a2b410daf",
+  "title": "AnchorFlow: Learning Anchor Placement for Faithful and Editable SVG Reconstruction",
+  "link": "https://arxiv.org/abs/2605.19551",
+  "description": "arXiv:2605.19551v2 Announce Type: replace-cross \nAbstract: Raster-to-SVG reconstruction requires faithful geometry and a compact control structure for editing. A central challenge is deciding where to place anchors: raster appearance alone does not determine how a contour should be divided into B\\'ezier segments. We present AnchorFlow, which learns anchor placement from designer-authored SVGs to reconstruct accurate curves with sparse controls. Our key idea is a sparse anchor field that jointly encodes contour geometry and reference segment junctions, including those along smooth contours. An anchor decoder predicts explicit anchor proposals from features learned under field supervision. These proposals guide boundary-constrained fitting and local refinement to recover cubic B\\'ezier paths. On clean single-path inputs, AnchorFlow achieves 99.52% mean IoU while using 56.6% fewer anchors on average than AdaVec, with lower boundary error and closer agreement with source-SVG anchor layouts. Under boundary perturbations, it maintains high fidelity with limited anchor growth. Integrated into a component-based pipeline, the same path module also produces compact, faithful full-image reconstructions. On four local-editing tasks, our outputs require less median active time and fewer actions than AdaVec and LIVE while retaining high target-shape accuracy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV"
+  ]
+}

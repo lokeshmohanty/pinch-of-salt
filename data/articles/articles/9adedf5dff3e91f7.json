@@ -1,0 +1,14 @@
+{
+  "id": "9adedf5dff3e91f7",
+  "title": "SERA: Scale-Equalized Rollout Allocation for Maximum Likelihood Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2609.36552",
+  "description": "arXiv:2609.36552v1 Announce Type: cross \nAbstract: Maximum Likelihood Reinforcement Learning (MaxRL) targets prompt-wise log-success and has shown strong performance on reasoning tasks. Under finite rollout budgets, however, the estimator used by MaxRL attenuates each prompt's likelihood gradient by a factor that depends on its success probability and rollout count. Under uniform rollout allocation, the common rollout count fails to compensate for success-dependent attenuation, leaving low-success prompts more strongly attenuated and distorting their relative contributions to the expected aggregate gradient. We introduce SERA (Scale-Equalized Rollout Allocation), which redistributes a fixed rollout budget to approximately equalize these finite-rollout scaling factors. Building on our theoretical analysis of how finite rollouts distort prompt-wise likelihood gradients, we formulate the allocation as a fixed-budget max--min problem, derive a waterline solution to its continuous relaxation, and introduce a multiplicity correction to remove the additional prompt weighting induced by heterogeneous rollout counts. Experiments show stronger alignment with exact likelihood gradients in a controlled ImageNet setting and improved multi-sample solution coverage over MaxRL on maze navigation and mathematical reasoning under matched training rollout budgets.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "6d738a5c6185123a",
+  "title": "TopoField: Technical Report for ECCV 2026 SceneFun3D Challenge",
+  "link": "https://arxiv.org/abs/2610.37218",
+  "description": "arXiv:2610.37218v1 Announce Type: new \nAbstract: Functional segmentation requires locating small interactive parts, such as knobs, buttons, and sockets, in indoor point clouds and returning confidence-ranked instance masks. A point-wise semantic predictor produces a continuous probability field, whereas the benchmark evaluates a discrete set of scored instances. This creates a substantial field-to-instance gap. We present TopoField, a deterministic decoder built on top of VOLT. TopoField first converts 13 test-time forward passes into a semantic consensus field, then decodes instance candidates from the consensus geometry, and finally ranks the candidates in a class-aware manner. The augmentation stage retains the processed-point identity of every fragment prediction, accumulates probabilities in a common point array, normalizes by coverage count, and fuses the resulting caches. The decoding stage separates high-confidence cores from broader support regions, constructs a symmetric radius-pruned point graph, and uses a multi-source graph-geodesic partition to split support regions that contain multiple seeds. On 561 ground-truth instances across 30 validation scenes, an IoU-0.5-valid candidate exists for 67.2% of instances, and top-1 coverage is 20.0%. These complementary measurements motivate joint attention to candidate construction and ranking. TopoField achieves 28.286% AP, 41.383% AP50, and 47.558% AP25. TopoField achieved second place on the ECCV 2026 SceneFun3D Challenge.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

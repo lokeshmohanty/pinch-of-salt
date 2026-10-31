@@ -1,0 +1,13 @@
+{
+  "id": "b9c58ac71f3cd6e2",
+  "title": "MetaRank: Task-Aware Metric Selection for Model Transferability Estimation",
+  "link": "https://arxiv.org/abs/2511.21007",
+  "description": "arXiv:2511.21007v2 Announce Type: replace \nAbstract: Selecting an appropriate pre-trained source model is a critical, yet computationally expensive, task in transfer learning. Model Transferability Estimation (MTE) methods address this by providing efficient proxy metrics to rank models without full fine-tuning. In practice, the choice of which MTE metric to use is often ad hoc or guided simply by a metric's average historical performance. However, we observe that the effectiveness of MTE metrics is highly task-dependent and no single metric is universally optimal across all target datasets. To address this gap, we introduce MetaRank, a meta-learning framework for automatic, task-aware MTE metric selection. MetaRank adopts a retrieve-and-rerank cascade. A lightweight retrieval stage first narrows the metric pool using performance observed on similar meta-training datasets. To address the heterogeneous definitions and scales of MTE scores, the reranking stage represents each retrieved metric through the pairwise source-model ordering it induces on the target dataset. A product-kernel regressor combines dataset and ordering similarities to refine the ranking, enabling cross-metric transfer from historical metrics with similar ordering behavior. MetaRank then ranks the retrieved metrics and selects the most appropriate one to guide source-model selection on an unseen target dataset. Extensive experiments across 11 pre-trained models, 13 candidate MTE metrics, and 14 target datasets demonstrate that MetaRank significantly outperforms all compared baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5c1e422a59312839",
+  "title": "Revisiting Reinforcement Learning with Verifiable Rewards from a Contrastive Perspective",
+  "link": "https://arxiv.org/abs/2605.12969",
+  "description": "arXiv:2605.12969v5 Announce Type: replace-cross \nAbstract: Group Relative Policy Optimization (GRPO) is one of the most widely adopted RLVR algorithms for post-training large language models on reasoning tasks. We first show that GRPO admits an equivalent discriminative reformulation, in which policy optimization maximizes the expected score gap between verified positive and negative rollouts. This reformulation reveals two objective-level limitations: likelihood-misaligned surrogate scores, in which clipped ratio-based scores are optimized rather than the sequence likelihoods that govern generation, and score-insensitive credit assignment, in which rollout-level credit does not reflect the current score gaps between positive and negative rollouts. To address these limitations, we propose ConSPO, a Contrastive Sequence-level Policy Optimization method that uses length-normalized sequence log-probabilities as rollout scores and contrasts verified positive rollouts against negative distractors within the same group. ConSPO optimizes a group-wise InfoNCE-style objective to adaptively strengthen updates for poorly separated positives and high-scoring negatives, together with a curriculum-scheduled margin that preserves separation pressure as training progresses. Experiments across diverse settings show that ConSPO outperforms strong baselines on challenging reasoning benchmarks.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

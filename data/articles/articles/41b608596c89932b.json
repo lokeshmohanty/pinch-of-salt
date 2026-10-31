@@ -1,0 +1,13 @@
+{
+  "id": "41b608596c89932b",
+  "title": "Feedforward Novel View Synthesis for Heterogeneous Cameras",
+  "link": "https://arxiv.org/abs/2610.03522",
+  "description": "arXiv:2610.03522v1 Announce Type: new \nAbstract: Feed-forward novel view synthesis has recently shown promising results from sparse posed images, but most existing methods assume that context and target views share a fixed camera family. This homogeneous-camera assumption breaks in practical multi-sensor systems, where perspective, fisheye, and panoramic cameras may coexist and where the target projection may be unseen during training. We study feed-forward NVS across heterogeneous central cameras and identify a key ambiguity introduced by tokenization: a visual token aggregates a projection-dependent bundle of pixel rays, while existing camera encodings mainly expose absolute rays or token-center relations. To address this, we combine token-center relative Camera Positional Encodings and proposed local raymaps, a token-level representation that explicitly describes the intra-patch ray distribution summarized by each token. We further propose projection-aware 2D RoPE, which replaces raw image-grid coordinates with ray-induced angular coordinates so that relative positional reasoning is aligned across camera projections. Together, these components treat diverse cameras as calibrated samplings of a shared ray space rather than separate visual domains. On ScanNet++ with heterogeneous-camera system, our method improves over camera-conditioned baselines under mixed-camera evaluation and demonstrates zero-shot generalization to panoramic views.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

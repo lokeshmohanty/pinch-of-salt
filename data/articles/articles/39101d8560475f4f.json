@@ -1,0 +1,13 @@
+{
+  "id": "39101d8560475f4f",
+  "title": "Rethinking Detection Calibration: A Coordinate and Direction Perspective",
+  "link": "https://arxiv.org/abs/2607.29040",
+  "description": "arXiv:2607.29040v1 Announce Type: new \nAbstract: Deep learning based object detectors require trustworthiness beyond competitive detection performance, but deep neural networks are prone to overconfident predictions, assigning high confidence scores to predictions that are likely to be inaccurate. To improve the alignment between confidence scores and prediction accuracy, existing methods calibrate confidence scores based on box-level localization, such as precision or intersection over union with the ground truth bounding box. However, box-level localization reflects only a measure of agreement between the predicted box and the ground truth, resulting in calibrated confidence scores for box-level accuracy failing to capture the localization accuracy of coordinates of box. To tackle this issue, we propose a novel post-hoc calibration framework, rethinking detection calibration (ReDC), which provides reliable coordinate-level confidence scores, including directional information. The proposed framework defines coordinate-wise alignment and deviation direction between predictions and ground truth. Based on the alignment measure, confidence re-encoding produces reliable coordinate-level confidence scores, while directional displacement estimation predicts coordinate-wise deviation directions. Extensive experiments under in-domain and out-domain scenarios demonstrate that the proposed approach expresses the coordinate-wise localization of detected objects more precisely than existing methods. Furthermore, our method covers the representational scope of prior calibration approaches by aggregating coordinate-level confidence scores into box-level localization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

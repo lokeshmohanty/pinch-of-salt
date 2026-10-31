@@ -1,0 +1,15 @@
+{
+  "id": "059a3801ae5b3df2",
+  "title": "Kernelized Parameter Sensitivity Atlases for Amortized Conditional Interpretability",
+  "link": "https://arxiv.org/abs/2610.12737",
+  "description": "arXiv:2610.12737v1 Announce Type: cross \nAbstract: Gradient-based attribution provides input-specific information about model parameters, but computing it via backpropagation for many samples is expensive, while static importance scores discard input dependence. We derive KPSA (Kernelized Parameter Sensitivity Atlas) from a block decomposition of the empirical neural tangent kernel. It measures normalized parameter-group sensitivity, embeds those sources in an explicit query space, and uses a lightweight kernel to estimate sensitivities for unseen inputs. We derive bounds that separate finite-source from irreducible representation error and give margin-based top-$k$ recovery. This paper studies two interpretability applications. Firstly, KPSA identifies parameter groups with high susceptibility to perturbations across vision, forecasting, and protein-modeling setups. Across a fivefold range of parameter budgets ($0.02$-$0.1\\%$), its selected groups attain $39$-$85\\%$ of the perturbation susceptibility of a first-order backpropagation oracle. In vision and forecasting, these parameter groups form sparse sensitivity circuits that extend across depth and vary systematically with the input. Secondly, we use KPSA on an activation-attribution problem for MLP features in transformers. It retains $81\\%$ of the gap between a backpropagation oracle and a constant-sensitivity baseline on vision while increasing batched query-time throughput from 551 to 2,041 images/s and reducing peak GPU memory from 4.55 to 0.44GB. On the protein-modeling task, it recovers $68\\%$ of this gap. An ablation of KPSA's kernel aggregation shows that nearest-neighbor retrieval in KPSA space can remain competitive. The empirics show that compact kernel atlases can store useful input-dependent parameter sensitivity while amortizing repeated gradient attribution, a step toward scalable conditional interpretability. Code can be found at https://github.com/Axym-Labs/kpsa .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "stat.ML"
+  ]
+}

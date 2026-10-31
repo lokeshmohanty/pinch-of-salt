@@ -1,0 +1,15 @@
+{
+  "id": "8f5b3daba3c85f51",
+  "title": "Seeing Isn't Knowing: Do VLMs Know When Not to Answer Spatial Questions (and Why)?",
+  "link": "https://arxiv.org/abs/2605.30557",
+  "description": "arXiv:2605.30557v2 Announce Type: replace-cross \nAbstract: Spatial reasoning benchmarks typically evaluate whether vision-language models can derive the correct answer from a visual observation. Yet in real 3D environments, the observation itself may be unreliable: occlusion can remove task-relevant evidence, while perspective can make visible geometry misleading. Reliable spatial reasoning therefore requires more than answering a question correctly. A model must also assess whether its current observation provides sufficient and trustworthy evidence for that answer. We introduce SPATIALUNCERTAIN, a controlled evaluation framework for studying viewpoint-dependent observational uncertainty. We study two complementary failure modes: missing evidence caused by occlusion and misleading evidence caused by perspective. We further evaluate whether models can recognize when the current view is unreliable and identify a more informative observation. Across eight open- and closed-source vision-language models, we find that model behavior does not track the reliability of visual evidence. Models do not reliably become more cautious as evidence disappears, and under perspective conflict, their judgments increasingly follow projected appearance rather than the unchanged physical 3D relation. Internal analysis suggests a corresponding representational asymmetry: projected 2D relations are readily available, whereas the underlying physical 3D relation is barely decodable. Moreover, models that can identify an informative viewpoint when explicitly asked often fail to recognize when such an additional view is needed. These failures are not fully resolved by prompting or fine-tuning, and providing a better viewpoint is substantially more effective than adding depth information to the same misleading observation. Our results identify assessing the reliability of visual observations as a distinct and missing component of current spatial reasoning evaluation.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

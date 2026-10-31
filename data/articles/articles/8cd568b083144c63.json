@@ -1,0 +1,13 @@
+{
+  "id": "8cd568b083144c63",
+  "title": "Why DiT Models Underperform as Representation Learners without Long Skip Connections",
+  "link": "https://arxiv.org/abs/2610.13344",
+  "description": "arXiv:2610.13344v1 Announce Type: new \nAbstract: Diffusion feature, i.e., intermediate activations extracted from diffusion model backbones, has emerged as a promising approach for unifying generation and vision understanding (discrimination). Despite the advancement of diffusion backbones into Diffusion Transformers (DiT), it has been found in previous literature that DiT models tend to yield weaker features despite their stronger generation capability. This poses a threat to good generation-understanding unification. In this work, we show via controlled from-scratch training that long skip connections (LSCs) affect feature quality: a DiT with LSCs can produce better features. Furthermore, through detailed diagnosis, we reveal the mechanism causing this effect. Specifically, the input to a diffusion backbone contains both the latent image and the diffusion noise, where the diffusion noise, though appearing in the form of noises, actually reflects the information of the diffusion trajectory. To make the final prediction of a noisy variable ($v$ or $\\epsilon$), the diffusion backbone needs both signals. However, carrying both signals through the main backbone effectively \"pollutes\" the image signal with noises, leading to poor feature quality. In comparison, LSCs can shortcut diffusion noises directly to where they are needed, leaving much weaker noise signals in the main backbone, thus improving feature quality. To name the broader impact, this reveals that LSCs are not a mere trick but closely related to the diffusion objective. The code is at https://github.com/Darkbblue/dit-lsc.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
