@@ -1,0 +1,14 @@
+{
+  "id": "044f359dd6ba1b73",
+  "title": "inkGround: Benchmarking Fine-grained Visual Grounding Capabilities of Vision-Language Models for Cursive Handwriting in the Wild",
+  "link": "https://arxiv.org/abs/2610.38720",
+  "description": "arXiv:2610.38720v1 Announce Type: cross \nAbstract: Human handwriting is produced as an ordered sequence of pen movements, but an offline image keeps only the final ink. Handwriting trajectory recovery aims to restore the ordered stroke points and their pen-up/pen-down transitions. Existing image-trajectory pair datasets are recorded with digitizing tablets under controlled conditions, which limits writer coverage and stylistic diversity. Moreover, there is no benchmark that measures the visual grounding capabilities of general-purpose Vision-Language Models (VLMs) for the stroke trajectory recovery task. In this work, we introduce inkGround, a benchmark for stroke trajectory recovery from full-page, camera-captured handwriting. inkGround pairs 537 page images (~18.7k words, ~163k strokes) with reference trajectories produced by a pretrained offline-to-online model, filtered by OCR agreement, and verified by human raters. Because these references are pseudo-labels that represent one plausible pen trajectory, we also evaluate VLMs on the IAM-OnDB dataset, which provides recorded pen trajectories. We cast the task as text-conditioned point grounding: given a page image and a target word, the model must locate the word and output its ordered stroke points. Outputs are scored by trajectory fidelity (DTW, Chamfer distance), readability of the rendered strokes (Accurate Rate, Correct Rate), and style similarity. We benchmark four open-source and three frontier closed-source VLMs with a shared in-context prompt. Closed-source models, notably Gemini-3.1-Pro, produce legible trajectories close to the reference, and this ranking also holds on IAM-OnDB.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

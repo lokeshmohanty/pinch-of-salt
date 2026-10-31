@@ -1,0 +1,13 @@
+{
+  "id": "616e5ab543ddbe8e",
+  "title": "INFRAMIND: Infrastructure-Aware Multi-Agent Orchestration",
+  "link": "https://arxiv.org/abs/2606.11440",
+  "description": "arXiv:2606.11440v2 Announce Type: replace \nAbstract: Multi-agent LLM systems spend additional computation on reasoning and collaboration, but shared serving queues can prevent that computation from producing answers before a deadline. This creates a coupled decision: the reasoning workflow determines the load, while changing load determines which reasoning choices remain affordable. We introduce INFRAMIND, a hierarchical policy that adapts workflow planning and execution to serving conditions. At arrival, a planner selects the collaboration graph using task information, load and the time budget. Before each agent call, an executor jointly selects the model and reasoning strategy using refreshed telemetry and remaining time. A shared latency penalty connects the two policies. Our analysis characterizes why observing load matters when congestion reverses the preferred computation. Across five benchmarks on a shared five-model deployment, INFRAMIND improves low-load accuracy by up to 7.6 percentage points over the strongest evaluated baseline. On 500 MATH questions with matched EDF scheduling and per-request deadlines of 10-300 s, it increases correct, on-time answers from 20.4% to 33.8%. With 15 models and Azure timings replayed on the same benchmark and deadline tiers, this fraction rises from 11.6% to 54.8% over MasRouter. These results support adapting reasoning decisions to the serving capacity available throughout a workflow.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}
