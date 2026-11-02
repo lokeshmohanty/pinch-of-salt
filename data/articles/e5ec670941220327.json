@@ -1,0 +1,13 @@
+{
+  "id": "e5ec670941220327",
+  "title": "FlexReader: Towards Adaptive Decoding Paths for Efficient Arbitrary-Length Scene Text Recognition",
+  "link": "https://arxiv.org/abs/2610.41426",
+  "description": "arXiv:2610.41426v1 Announce Type: new \nAbstract: Existing Scene Text Recognition (STR) models are inherently coupled with a specific decoding strategy by their training paradigms, limiting their flexibility in deployment across diverse recognition scenarios. In this paper, we propose FlexReader, an STR model that supports multiple decoding strides, enabling a single model to achieve an optimal accuracy-efficiency trade-off across different datasets. Specifically, we first introduce a Sub-string Perception module to perceive the target sub-string from visual features, followed by multiple parallel decoding blocks that independently decode each character in the sub-string. During inference, FlexReader supports decoding with arbitrary strides within the perceived sub-string range. Furthermore, we propose Adaptive Prefix Decoding, which adaptively selects the decoding stride at each step based on the model's confidence in the decoded characters, thereby identifying the optimal decoding path for each input. Experimental results demonstrate that FlexReader exhibits robust recognition capability across a diverse range of benchmarks, including those featuring long text, curved text, and occlusions. It consistently outperforms existing decoding strategies in recognition accuracy while achieving up to 6-flod decoding speedup over autoregressive decoding.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
