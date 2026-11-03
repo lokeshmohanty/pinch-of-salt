@@ -1,0 +1,15 @@
+{
+  "id": "7af5af3ebfc75667",
+  "title": "SparseGDN: Chunk Sparse in Linear Attention",
+  "link": "https://arxiv.org/abs/2610.41420",
+  "description": "arXiv:2610.41420v1 Announce Type: cross \nAbstract: Gated Delta Networks (GDNs) offer linear-time sequence modeling, yet long-context prefill remains costly due to dense intra-chunk computation, recurrent-state updates, and intermediate state storage. We introduce SparseGDN, a hardware-aware framework that combines structured intra-chunk approximation with input-dependent recurrent-event selection while producing outputs for every token. A block-adjacent solver reduces local Delta-solve computation, while a dynamic selector allocates recurrent-update budgets across head pairs. The GPU implementation materializes updates only for selected events and reconstructs token outputs using compact state snapshots and group-local interactions, reducing computation and memory traffic. We evaluate SparseGDN on Qwen3.5-4B and Qwen3.5-9B across RULER tasks and context lengths from 4K to 128K. Retaining approximately 29% of recurrent events on average, SparseGDN achieves 1.50-1.94x GDN-core prefill speedups over native FLA kernels, including online selection overhead.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-03T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

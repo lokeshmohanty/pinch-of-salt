@@ -1,0 +1,13 @@
+{
+  "id": "a8cae330e6984a8c",
+  "title": "LazyAgent: Demand-Driven Materialization and Physical Optimization of Agentic Programs",
+  "link": "https://arxiv.org/abs/2609.23058",
+  "description": "arXiv:2609.23058v2 Announce Type: replace \nAbstract: Agent runtimes that plan before acting run every step as soon as it is ready. Neither these runtimes nor their benchmarks distinguish a step that is ready from a step the request needs, and the difference is large: across 303 requests on 154 production workflows, an eager runtime that stops once the goal is met spends 62.2% of its CPU on work the request never needed. LazyAgent is, to our knowledge, the first complete formulation of demand-driven execution for agent runtimes. Its rule: run a ready step only if the current request needs it, and keep that answer exact as the plan changes. A demanded set derived from the program decides, in one traversal with no model calls, so LazyAgent spends nothing outside the request. Because demand is defined exactly, its behavior is proved: builders know before any run where demand must save and where it must tie. The bill is known before a plan runs, so LazyAgent can act as a query optimizer to choose among candidate workflows. Measured live against that eager runtime, LazyAgent saves 51.7% and 52.1% of container time on release gates where a frontier LLM writes the patches, 12.8% of tokens on DataSciBench plans at matched quality, and 24.0% of dollars inside a live LangGraph application, with no losses. When the LLM re-plans after real code failures, it solves every solvable goal with 11.7% fewer tokens per goal. On the production workflows it saves 42.0% of CPU, ties exactly where a request needs the whole graph, and adds at most 0.43% overhead. The same set steers every physical operation: projection saves 80-89% of a shared CI step, where the identical eager control saves 0.0%. Public agent benchmarks are designed the same way as eager runtimes, so they cannot show this difference. We compose our test programs from their tasks and call on industry to build benchmarks that measure how efficiently agent workflows run.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-03T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}
