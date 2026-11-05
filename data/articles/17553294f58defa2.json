@@ -1,0 +1,14 @@
+{
+  "id": "17553294f58defa2",
+  "title": "AutoEnergyDesign: An LLM-Driven Agent for Automatic Energy System Design Optimization",
+  "link": "https://arxiv.org/abs/2610.35160",
+  "description": "arXiv:2610.35160v2 Announce Type: replace \nAbstract: The design optimization of building energy systems represents a complex, high-dimensional search problem involving discrete technology selections, continuous sizing parameters, and intricate economic trade-offs in which every candidate must be evaluated by a year-long simulation. This paper presents AutoEnergyDesign, in which a Large Language Model (LLM) agent reasons over past simulation results, proposes configuration changes and learns in context from each outcome, while a git-based mechanism reverts changes that do not improve the design. The agent couples a reasoning model with explicit memories, a constrained action interface, and an environment-grounded keep/revert feedback signal. The simulator covers eight technologies and computes the 25-year Net Present Cost (NPC). On a case study with measured building loads, the agent, instantiated with three Claude models (Haiku 5.5, Sonnet 5.5 and Opus 5.5; ten runs of 50 simulations each), is compared with random search, Tree-structured Parzen Estimator (TPE) Bayesian optimization and a (1+1) evolution strategy that shares the agent's acceptance rule (ten seeds of 300 evaluations). With all three models the agent reaches an NPC of 3.53MEUR, 1.20% and 0.23% below the best results of TPE and of the evolution strategy, and comes within 1% of it after a median of 18 to 27.5 simulations; among the baselines, only the evolution strategy does so, after a median of 192 evaluations. Every decision is recorded, making the search auditable.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "stat.ML"
+  ]
+}

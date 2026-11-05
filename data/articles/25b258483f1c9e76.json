@@ -1,0 +1,15 @@
+{
+  "id": "25b258483f1c9e76",
+  "title": "When Reviews Are Scarce: Structure-Aware Review Imputation for Recommendation in Realistic Sparse Review Settings",
+  "link": "https://arxiv.org/abs/2508.01128",
+  "description": "arXiv:2508.01128v2 Announce Type: replace-cross \nAbstract: Textual reviews enrich recommender systems with fine-grained preference signals and enhanced explainability. However, in real-world scenarios, users rarely leave reviews, resulting in severe sparsity that undermines the effectiveness of review-aware recommenders under partial observability. A natural remedy is to synthesize the missing reviews to restore the textual signal these recommenders rely on. Yet, conventional imputation techniques, such as matrix completion and LLM-based augmentation, either lose contextualized semantics by embedding texts into vectors or overlook structural dependencies on the user-item graph. To address these shortcomings, we propose TWISTER (ToWards Imputation on Sparsity with Textual Edge Graph Representation), a unified framework for sparse-text recommendation that synthesizes missing reviews by jointly modeling semantic and structural signals. Specifically, we represent user-item interactions as a Textual-Edge Graph (TEG), treating reviews as edge attributes. To capture relational context, we construct line-graph views and employ an LLM as a graph-aware aggregator. For each interaction lacking a textual review, our model aggregates natural-language representations from neighboring interactions to generate a coherent and personalized review. Experiments on multiple datasets show that TWISTER consistently outperforms traditional numeric, graph-based, and LLM baselines, delivering higher-quality imputed reviews and, more importantly, improved downstream recommendation. In summary, TWISTER is a drop-in, structure-aware imputer that recovers the textual signal that review-aware recommenders need when reviews are scarce.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

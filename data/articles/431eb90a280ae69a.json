@@ -1,0 +1,17 @@
+{
+  "id": "431eb90a280ae69a",
+  "title": "Variable Bound Tightening for Nash Equilibrium Computation in Multiplayer Imperfect-Information Games",
+  "link": "https://arxiv.org/abs/2606.25997",
+  "description": "arXiv:2606.25997v3 Announce Type: replace-cross \nAbstract: There has been significant recent progress in algorithms for approximation of Nash equilibrium in large two-player zero-sum imperfect-information games and exact computation of Nash equilibrium in multiplayer strategic-form games. While counterfactual regret minimization and fictitious play are scalable to large games and have convergence guarantees in two-player zero-sum games, they do not guarantee convergence to Nash equilibrium in multiplayer games. Recently, an approach has been presented for exact computation of Nash equilibrium in multiplayer imperfect-information games that solves a quadratically constrained program based on a nonlinear complementarity problem formulation derived from the sequence-form game representation. This formulation was solved using Gurobi's nonconvex quadratic solver, which employs spatial branch-and-bound to iteratively refine variable bounds by solving convex relaxations of bilinear terms. During presolve, Gurobi introduces auxiliary variables and, in some cases, binary variables, leading to an internal mixed-integer quadratically constrained program. This approach was demonstrated to outperform prior algorithms from the Gambit software suite and quickly solve three-player Kuhn poker after removal of dominated actions; however, the algorithm was not able to solve the full version of the game within 24 hours. In this paper, we derive finite bounds on slack and multiplier variables in the nonlinear complementarity formulation. These bounds can strengthen the convex relaxations used within spatial branch-and-bound. We compare uniform corollary bounds with finer proposition-based bounds on full three-player Kuhn poker. All eight bounded configurations return numerically verified equilibria in under 17 seconds, while the unbounded formulation finds no feasible solution within 300 seconds. The finest bounds do not consistently yield the fastest computation.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GT",
+    "cs.AI",
+    "cs.MA",
+    "econ.TH",
+    "math.OC"
+  ]
+}
