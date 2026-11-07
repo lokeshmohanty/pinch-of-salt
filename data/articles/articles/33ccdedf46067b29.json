@@ -1,0 +1,13 @@
+{
+  "id": "33ccdedf46067b29",
+  "title": "PredErase: Training-Free Object-and-Effect Removal with Predictive Latent Guidance",
+  "link": "https://arxiv.org/abs/2609.00956",
+  "description": "arXiv:2609.00956v1 Announce Type: new \nAbstract: Removing an object is not the same as filling its mask. Cast shadows and contact shading usually lie outside the user-provided instance mask M_obj, so a frozen Fill model that edits only that mask leaves the object's photometric footprint on nearby surfaces. Supervised removers learn this joint erasure from paired clean plates. Training-free editors freeze pretrained weights, yet most still treat M_obj as the entire editable support and steer sampling with CLIP or DINO energies that do not predict the occluded scene. We present PredErase, a training-free inference procedure on frozen FLUX.2 and I-JEPA. The method separates where Fill may rewrite pixels from what structure should occupy the hole. A contact-band expansion M_flux of M_obj exposes local residuals on the supporting plane. I-JEPA, pretrained for masked token prediction, supplies a context-conditioned hole target in representation space; sparse projected gradients align decoded Fill completions with that target inside the instance, while coordinates outside the packed support stay locked. Under instance-only masks on RemovalBench, RORD-Val, and DEFACTO-Val, PredErase improves the native FLUX.2 backbone. Supervised removers remain stronger on several full-image appearance metrics; the supported claim is training-free object-and-effect editing of frozen Fill, not replacement of paired-data erasers.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

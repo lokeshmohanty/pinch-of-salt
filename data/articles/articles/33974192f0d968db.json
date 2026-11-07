@@ -1,0 +1,14 @@
+{
+  "id": "33974192f0d968db",
+  "title": "Automatic weld seam segmentation for industrial quality control: a comparison of RGB and polarimetric imaging with CNN and transformer architectures",
+  "link": "https://arxiv.org/abs/2608.25465",
+  "description": "arXiv:2608.25465v1 Announce Type: new \nAbstract: Visual inspection of welded assemblies remains one of the least automated stages in many industrial production processes, still depending largely on the experience of human operators and thus subject to inter-operator variability; the manufacturing of special-purpose machinery cabins, the setting of this study, is one representative case. This work evaluates the feasibility of automatic weld seam segmentation from RGB and polarimetric imagery, comparing controlled laboratory acquisitions with images captured under real, uncontrolled conditions. Convolutional neural network (CNN) architectures and transformer-based architectures are benchmarked under a unified, threshold-independent protocol, training each CNN with three random seeds to separate genuine effects from seed noise. In controlled RGB conditions, CNN models reach a mean mask mAP50 of up to 0.87, but drop to 0.22-0.48 under uncontrolled acquisition, showing that the acquisition setup is a first-order component of the inspection system. Polarimetric imaging with alignment-preserving geometric augmentation localizes previously unseen welds with a mean mask mAP50 up to 0.93: on par with, rather than ahead of, the best controlled-RGB result, but reaching that accuracy on uncontrolled RGB without requiring acquisition control. The clearest architectural finding concerns viewpoint robustness. In-distribution, transformers and CNNs are broadly comparable; but under a test-time viewpoint shift, the transformer models, and RF-DETR in particular, retain high accuracy while every CNN collapses. The gap holds across three seeds and a resolution-matched control, pointing to architecture rather than training resolution. Within the CNN family, capacity brings no reliable in-distribution gain once seed variance is accounted for: small CNNs suffice for fixed viewpoints, transformers for variable ones.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

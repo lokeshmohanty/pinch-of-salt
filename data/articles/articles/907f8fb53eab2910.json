@@ -1,0 +1,13 @@
+{
+  "id": "907f8fb53eab2910",
+  "title": "mbariml: a curation pipeline for turning deep-sea imagery and video into object-detection training data",
+  "link": "https://arxiv.org/abs/2609.25500",
+  "description": "arXiv:2609.25500v2 Announce Type: replace \nAbstract: Training data quantity and quality greatly affect object detection model performance, regardless of model architecture. For object detection in deep-sea video and imagery, where the objects of interest (primarily organisms) are sparse, faint, and hard to identify, incremental improvements to detector performance may require an iterative approach to data labeling and management. This paper presents mbariml, a Python-based video and image analysis pipeline built around the data labeling and management process. mbariml uses an Ultralytics YOLO detection model, runs it over still images or video, stores every detection as a reviewable region of interest, groups those regions by visual similarity so that a human can accept or reject them in bulk, and exports the result as training data, statistics, image sidecars, and additional metadata. Existing YOLO and Pascal VOC datasets can be imported into the same database, so a legacy training set can be reviewed, extended, and re-exported alongside new detections. The human review stage is the center of the design: an annotator can validate, relabel, resize, delete, and draw entirely new localizations, optionally assisted by the SAM3 segmentation model, and every one of those edits is written back to the same database the detector wrote to. Video receives particular attention: the software treats each tracker-produced track as a provisional observation and selects one representative frame instead of retaining every detection in the track. We describe the pipeline stage by stage, including how each track's representative frame is chosen (from a user-selected third of the track, the middle by default), which we examine on 684 tracks from seafloor video.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

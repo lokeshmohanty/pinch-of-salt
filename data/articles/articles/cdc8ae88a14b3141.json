@@ -1,0 +1,13 @@
+{
+  "id": "cdc8ae88a14b3141",
+  "title": "VCS-SLAM: Visibility-Consistent Semantic Fusion for 3D Gaussian SLAM",
+  "link": "https://arxiv.org/abs/2606.29494",
+  "description": "arXiv:2606.29494v3 Announce Type: replace \nAbstract: Semantic 3D Gaussian SLAM commonly fuses 2D semantic priors into a persistent 3D map using uniform optimization weights. However, such priors are not equally reliable in online mapping: occlusions, unsupported semantic boundaries, and ambiguous ray geometry introduce persistent semantic artifacts into the global Gaussian map. We propose VCS-SLAM, a visibility-consistent semantic fusion framework for RGB-D 3D Gaussian SLAM. Instead of treating all semantic priors as uniformly valid signals, VCS-SLAM evaluates their geometric reliability through visibility consistency, surface-supported boundary evidence, and ray-level conflict uncertainty. The resulting reliability-aware objective suppresses occluded semantic updates, reduces unsupported semantic bleeding, and delays premature label assignment in ambiguous regions. Experiments on Replica show improved semantic consistency, boundary preservation, and reconstruction quality, while ScanNet results confirm competitive tracking under real RGB-D input. Under structured corruption of the 2D priors, VCS-SLAM degrades at little more than half the rate of a comparable semantic Gaussian SLAM baseline and outperforms naive gating, smoothness, and entropy-weighting variants of its own modules, indicating that the gains follow from the specific formulation rather than from reweighting alone. Code is available at \\textit{https://github.com/jhakrraman/VCS-SLAM}",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

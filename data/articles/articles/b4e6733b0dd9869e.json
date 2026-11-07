@@ -1,0 +1,14 @@
+{
+  "id": "b4e6733b0dd9869e",
+  "title": "ChronoScribe: Semantic-Numerical Specialization for Instruction-Driven Time Series Forecasting",
+  "link": "https://arxiv.org/abs/2610.16345",
+  "description": "arXiv:2610.16345v1 Announce Type: new \nAbstract: Recent advances in instruction-driven time series forecasting highlight a fundamental tension: systems must simultaneously master natural-language instruction following and precise numerical prediction. Current approaches often force a compromise. Large language models (LLMs) can interpret unstructured requests but may be inaccurate when asked to produce forecast values directly, whereas time series foundation models (TSFMs) provide numerical forecasts but typically require structured inputs specifying the target series, context window, and horizon. We present ChronoScribe, which applies semantic-numerical specialization to this workflow. A LoRA-adapted LLM proposes an execution path and context length; deterministic rules resolve the executable configuration. On the specialist path, a frozen TSFM produces quantile trajectories for the task-specified horizon. Deterministic trajectory summaries condition the response, while the LLM neither generates nor revises predicted values. We evaluate a Qwen3.5-9B--Chronos-2 implementation across 23 evaluation dimensions and 30 public datasets against eleven proprietary direct LLMs and three open TSFMs. ChronoScribe has the lowest error on sMAPE, MASE, WAPE, RMSE, and MAE among all evaluated systems, including fixed-context controls. Across these metrics, even the lowest direct-LLM error remains 2.0--2.7 times the corresponding ChronoScribe error. At the system level, ChronoScribe achieves a Task-Level Score (TLS) of 65.5, 10.6 points above the strongest direct-LLM baseline. The results support ChronoScribe's division of labor, in which the LLM handles interpretation, configuration, and communication while the TSFM handles numerical forecasting.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

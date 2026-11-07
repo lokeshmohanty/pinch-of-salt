@@ -1,0 +1,14 @@
+{
+  "id": "620c70e542d61e88",
+  "title": "Graph Convolutional Attention: A Spectral Perspective on Graph Denoising and Diffusion",
+  "link": "https://arxiv.org/abs/2607.06546",
+  "description": "arXiv:2607.06546v2 Announce Type: replace-cross \nAbstract: Denoising graphs is a fundamental problem in graph learning and the core operation of graph diffusion models. Attention-based architectures such as graph transformers have shown promise for this task, yet the mechanisms through which attention denoises graphs remain poorly understood. We show that, under a graph denoising objective, standard attention scores learn an average spectral denoising filter across the training distribution and are suboptimal when the graph spectra vary. To address this limitation, we introduce spectral attention scores, which are attention scores that depend on the input graph spectrum. We characterize the improvement over standard attention scores in terms of the spectral diversity of the graph distribution. We then propose graph convolutional attention (GCA), a practical realization of spectral attention that uses graph-filtered queries and keys. For asymptotically large stochastic block models, we show that GCA matches the optimal denoising loss of spectral attention under suitable conditions. We also show that softmax can further reduce denoising error by approximately projecting noisy eigenvectors onto the clean eigenspace. Across synthetic and real datasets, replacing standard query--key projections with GCA improves graph denoising and diffusion, with denoising gains correlated with spectral diversity. Furthermore, replacing the DiGress architecture with a GCA-based architecture within the DiGress generative framework yields comparable generation quality with significantly faster inference.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

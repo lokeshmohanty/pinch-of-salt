@@ -1,0 +1,13 @@
+{
+  "id": "244b404f97ef908b",
+  "title": "Robust Online Aero-Engine Blade Defect Detection via Dual-Alignment Test-Time Adaptation",
+  "link": "https://arxiv.org/abs/2610.00067",
+  "description": "arXiv:2610.00067v1 Announce Type: new \nAbstract: Reliable visual inspection is essential for quality assurance in aero-engine blade manufacturing, where defect appearance may vary across production lines, imaging conditions, blade poses, and surface backgrounds. Such domain shifts cause a mismatch between training and deployment data and degrade the reliability of deep defect detectors in online inspection. This problem is particularly challenging because aero-engine blade images usually contain sparse defects, making pseudolabel-based adaptation vulnerable to noisy or missing predictions. To address this issue, we propose Aero-engine Blade Defect Detector (ABDD), an online adaptive detection framework based on test-time adaptation. ABDD introduces a Dual-Alignment Strategy to jointly adapt global visual style and local defect morphology by combining feature-statistics alignment with pseudo-box alignment. To reduce error accumulation from unreliable pseudo labels, an Uncertainty-aware Box Filtering mechanism evaluates pseudo boxes using classification confidence, classification entropy, and localization entropy. In addition, a lightweight Sparse Dilated Mona module enables parameter-efficient delta tuning while limiting source-domain forgetting. ABDD is evaluated on CD-AeBD and HD-AeBD under multiple domain-shift scenarios, with TTA strategies compared under a unified RT-DETR + Swin-T architecture. Experiments show that ABDD consistently improves detection robustness under domain shifts, and its practicality is further validated on an industrial inspection platform.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

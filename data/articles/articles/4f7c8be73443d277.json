@@ -1,0 +1,13 @@
+{
+  "id": "4f7c8be73443d277",
+  "title": "Learning Anatomy-Grounded CT Vision-Language Representations with Organ-Hierarchical Report Knowledge",
+  "link": "https://arxiv.org/abs/2607.10953",
+  "description": "arXiv:2607.10953v1 Announce Type: new \nAbstract: Medical vision-language pretraining (VLP) from paired CT images and radiology reports enables scalable representation learning, but most existing methods align either whole scans with entire reports or local image regions with text fragments. These formulations underuse a key property of radiology reports: findings are organized around anatomical structures, with abnormalities described by organs, disease concepts, locations, and severity-related attributes. We propose OKA-CT, an organ-hierarchical knowledge-augmented framework for CT-report VLP. OKA-CT first converts free-text reports into organ-conditioned knowledge using radiology report parsing and LLM-assisted semantic structuring. The extracted hierarchy is used across two learning stages. Stage~1 injects anatomy-grounded evidence into the CT visual representation through fine-grained organ-conditioned supervision, while Stage~2 uses organ-specific report evidence to guide structured report-CT contrastive learning, where hierarchy-derived semantic soft targets treat non-paired cases with shared organ-level findings as weak semantic positives rather than uniform negatives. A lightweight query-based global branch further aggregates disease-relevant volumetric evidence for whole-scan representation. On CT-RATE and RAD-ChestCT datasets, OKA-CT achieves zero-shot abnormality diagnosis AUROCs of 84.9 and 72.2, outperforming prior CT VLP baselines. Retrieval and patch-occlusion analyses further show improved report-image alignment and stronger sensitivity to disease-associated anatomical regions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

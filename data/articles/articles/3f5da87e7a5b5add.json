@@ -1,0 +1,13 @@
+{
+  "id": "3f5da87e7a5b5add",
+  "title": "Team MSU GenText-Forensics Challenge 2026 Technical Report",
+  "link": "https://arxiv.org/abs/2609.38391",
+  "description": "arXiv:2609.38391v1 Announce Type: new \nAbstract: Document text forgery has evolved beyond simple pixel-level manipulation: modern attacks alter not only the appearance of a document but also its meaning, and increasingly target the OCR & LLM pipelines that consume such documents. The ACM MM 2026 GenText-Forensics challenge therefore requires systems that not only decide whether a multilingual text image is forged, but also localize the point of manipulation, identify the attack type, and produce a human-readable forensic report with supporting evidence. We present our solution, a decomposed chain-of-thought (CoT) pipeline that combines a document tampering detector (DTD) with two Qwen3-VL-32B vision-language models, each LoRA-adapted to a distinct sub-task. DTD produces tampering probability maps that are converted into numbered candidate regions; a first model (the Filterer) validates these regions and assigns a preliminary forgery type, while a second model (the Semantic Detective) merges and re-grounds the surviving regions, searches for purely semantic anomalies that are invisible to pixel-level detectors, and writes the final report. Both models are trained by distilling chain-of-thought traces from a privileged Qwen3-VL-235B teacher that has access to ground-truth masks and reports. Our approach secured third place in the ACM MM 2026 GenText-Forensics challenge. We describe the data preparation, test-time augmentation, region rendering, distillation protocol, and training configuration in detail, and report ablations over detector thresholds, prompt designs, and pipeline decompositions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

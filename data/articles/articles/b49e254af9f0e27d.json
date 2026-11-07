@@ -1,0 +1,14 @@
+{
+  "id": "b49e254af9f0e27d",
+  "title": "BRIDGE: Bridging Reasoning In Distillation Gap Elimination via Structure-Aware Masking",
+  "link": "https://arxiv.org/abs/2602.17686",
+  "description": "arXiv:2602.17686v5 Announce Type: replace-cross \nAbstract: Chain-of-Thought (CoT) reasoning has significantly improved LLMs' mathematical problem-solving capabilities, but distilling such capabilities into smaller models remains challenging due to the capacity mismatch between verbose teachers and compact students. Directly copying teachers' lengthy reasoning chains causes capacity overload, resulting in truncated outputs or repetitive failure. Existing remedies each sacrifice a critical property of CoT: implicit reasoning methods (e.g., compressing reasoning into hidden states) trade away interpretability and verifiability, while heuristic compression strategies (e.g., random step pruning) destroy logical integrity. To address this, we propose BRIDGE, a curriculum framework that first establishes structural understanding via masked reconstruction, then uses GRPO-based reinforcement learning to guide students in self-discovering the optimal balance between accuracy and brevity, and finally internalizes complex reasoning through teacher-guided rewriting on failure cases. On GSM8K, BRIDGE enables Qwen2.5-3B to achieve 11.29% accuracy improvement and 27.4% token reduction over the original model, outperforming instruction-tuned variants and distillation baselines. Zero-shot transfer experiments on SVAMP and MATH-500 further confirm the generalization of internalized reasoning. Our code and model checkpoints are publicly available at https://github.com/Applied-Machine-Learning-Lab/SDM2026_BRIDGE and https://huggingface.co/bowen0815/BRIDGE.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

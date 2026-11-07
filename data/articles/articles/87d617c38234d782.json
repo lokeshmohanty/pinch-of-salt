@@ -1,0 +1,16 @@
+{
+  "id": "87d617c38234d782",
+  "title": "KOSMOS: Self-scheduling Persistent Kernels for Communication-Compute Overlap",
+  "link": "https://arxiv.org/abs/2611.07477",
+  "description": "arXiv:2611.07477v1 Announce Type: cross \nAbstract: Tensor and sequence parallelism (TP+SP) and expert parallelism (EP) put collectives on the critical path of transformer layers. State-of-the-art fused kernels mitigate this with fixed roles or schedules, but this rigidity leaves large idle windows. Predicting a communication-computation split does not remove them either; a predetermined split cannot follow data readiness. We present KOSMOS, a library for self-scheduling persistent kernels whose workgroups use queues ordered by consumer demand to switch between communication and computation roles as data become ready, with no scheduler, per-call cost model, or tuned split. KOSMOS fuses every TP+SP collective of a transformer layer with its GEMM, and runs an entire expert layer, from router to fold, in one launch per direction. Evaluated on AMD Instinct MI350X and AMD Instinct MI355X GPUs, KOSMOS speeds up TP+SP end-to-end training in Megatron-LM by 1.10-1.28x in BF16 and 1.10-1.25x in MXFP8. KOSMOS accelerates end-to-end training of DeepSeek-V3 and Qwen3-235B proxies by 1.29-1.83x over DeepEP.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI",
+    "cs.LG",
+    "cs.PF"
+  ]
+}

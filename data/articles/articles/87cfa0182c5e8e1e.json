@@ -1,0 +1,14 @@
+{
+  "id": "87cfa0182c5e8e1e",
+  "title": "Systematic Morphometric Brain Autoencoding for Representation Learning in Neurodegenerative Diseases",
+  "link": "https://arxiv.org/abs/2610.37074",
+  "description": "arXiv:2610.37074v1 Announce Type: new \nAbstract: Early identification of neurodegenerative disorders using structural T1-weighted MRI is essential for timely clinical intervention, yet supervised deep learning models often struggle to generalize due to limited annotations and scanner-induced distribution shift. Self-supervised learning offers a promising alternative; however, existing approaches are largely adapted from natural image paradigms, relying on contrastive objectives or generic masked reconstruction with voxel-wise losses, which may not fully capture the distributed morphometric patterns associated with neurodegeneration.\n  We introduce SYMBA (SYstematic Morphometric Brain Autoencoding), a self-supervised pretraining framework specifically designed for structural brain MRI. SYMBA integrates anatomically constrained masking, a multi-scale structural similarity (MS-SSIM) reconstruction objective, and a progressive curriculum that transitions from local anatomical detail to global brain morphology. These components explicitly incorporate neuroanatomical structure into the self-supervised objective rather than relying on generic image priors.\n  Pretrained on 6,953 T1-weighted MRI scans from nine heterogeneous cohorts, SYMBA is evaluated using frozen linear probing on two independent unseen datasets, enabling a strict assessment of out-of-distribution generalization. Across multiple clinical tasks, SYMBA consistently outperforms recent neuroimaging foundation models, achieving 0.930 AUROC for Alzheimer's disease classification, 0.772 for mild cognitive impairment conversion prediction, and strong performance in amyloid status prediction. In low-label regimes, SYMBA demonstrates high sample efficiency, reaching approximately 0.90 AUROC for AD/CN classification using only six labeled subjects.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

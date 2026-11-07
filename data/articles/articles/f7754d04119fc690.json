@@ -1,0 +1,13 @@
+{
+  "id": "f7754d04119fc690",
+  "title": "Curvature-Aware Zeroth-Order Optimization for Memory-Efficient Test-Time Adaptation",
+  "link": "https://arxiv.org/abs/2608.12279",
+  "description": "arXiv:2608.12279v1 Announce Type: new \nAbstract: Test-time adaptation (TTA) aims to enhance the cross-domain performance of pre-trained models by adapting to unlabeled test data. While most existing TTA methods rely on backpropagation (BP) for finetuning, BP-free methods such as zeroth-order (ZO) methods are more desired in practical on-device scenarios. ZO methods rely only on forward computation, which can largely reduce the complexity and memory overhead of on-device deployment. However, ZO methods suffer from much higher variance compared with first-order methods in estimating the gradient. To address this, we propose an improved ZO method to substantially boost the performance of ZO optimization based TTA. First, we provide an observation to reveal the persistent low-rank Hessian structure of the loss during the adaptation process. Based on this insight, we then propose a loss-landscape curvature-aware zeroth-order (CAZO) method, which leverages a sliding-average estimation of the diagonal Hessian to construct a covariance matrix for anisotropic perturbation sampling. CAZO operates by freezing pretrained weights and optimizing minimal adapter parameters via forward-only passes based gradient estimation, which can substantially reduce the memory overhead compared to BP-based methods. Extensive experiments demonstrate that CAZO significantly outperforms existing TTA methods, achieving state-of-the-art performance while maintaining an excellent balance between accuracy and memory efficiency. Code is available at https://github.com/Hollyming/CAZO.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

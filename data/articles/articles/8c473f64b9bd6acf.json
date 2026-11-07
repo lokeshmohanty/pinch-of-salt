@@ -1,0 +1,13 @@
+{
+  "id": "8c473f64b9bd6acf",
+  "title": "P-PatchDiff: Progressive Patch Diffusion Models for Low-light Image Enhancement",
+  "link": "https://arxiv.org/abs/2609.01123",
+  "description": "arXiv:2609.01123v1 Announce Type: new \nAbstract: Recent advancements in low-light image enhancement have leveraged diffusion models for their strong ability to generate perceptually realistic, detailed images. Patch diffusion models further offer a promising solution to size-agnostic image restoration while improving efficiency. However, existing methods typically rely on small, fixed patches (e.g., 64$\\times$64) that cannot capture image-level brightness context, whereas enlarging the receptive field improves brightness and colour estimation but substantially increases computational cost. Moreover, low-light images often exhibit uneven brightness across regions, making it necessary to ensure that locally enhanced patches remain visually coherent when combined into the full image. To address these limitations, we propose P-PatchDiff, a scalable progressive patch diffusion framework for low-light image enhancement that dynamically adjusts patch size throughout the denoising process, enabling a gradual shift from local to global views. A Multi-Patch Alignment strategy is also introduced to normalise features across varying patch scales using an estimated global brightness proxy. Rather than pursuing pixel-level reconstruction accuracy, P-PatchDiff focuses on scalability and coherent brightness across the whole image, allowing the model to perceive multi-scale information and better enhance regions with varying brightness. We empirically demonstrate that P-PatchDiff effectively enhances images ranging from 400 $\\times$ 600 to 4K and is 80$\\times$ faster than existing patch diffusion models while using less than 9GB of memory. The code is available at https://github.com/RuoyuGuo/P-PatchDiff.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "05c6f1d791ff3945",
+  "title": "LoRCA: LoRA Cycle Adaptation for Histology to HiP-CT Translation with DINOv3",
+  "link": "https://arxiv.org/abs/2608.10002",
+  "description": "arXiv:2608.10002v1 Announce Type: cross \nAbstract: Hierarchical Phase-Contrast Tomography (HiP-CT) is a synchrotron based X-ray imaging technique that enables non-destructive, volumetric imaging of intact organs with multi-resolutions bridging 20 $\\mu m$/voxel for whole organs to near-cellular resolution ($\\sim$0.8 $\\mu m$/voxel) in local regions. This offers the opportunity to bring volumetric whole-organ context to histology. However, nonlinear registration between H\\&amp;E histology and HiP-CT volumes is challenging due to the differences in feature representations of different colour spaces. Synthesis-before-registration methods have shown strong results in histology-to-MRI and histology-to-CT alignment. However, existing approaches either rely on manual anatomical contours or are trained from scratch without semantic constraints, limiting their generalisability to soft tissue organs and novel modalities. We propose LoRCA (LoRA Cycle Adaptation), a cycle consistent style translation framework built on a shared frozen DINOv3 with modality-specific LoRA adapters, learning modality-specific representations that are decoded and adversarially trained. LoRCA enables structure-preserving translation without requiring paired training data. The frozen backbone is intended to be a structural anchor that prevents content drift by preserving pretrained semantic-extraction capability. We evaluate translation quality using Fr\\'echet Inception Distance (FID) and structural fidelity via mutual information and Canny edge preservation. LoRCA outperforms CycleGAN in both translation quality and structural consistency. As a preliminary indicator of downstream registration utility, we find that style-translated images yield increased feature correspondences under MatchAnything on manually aligned HiP-CT and histology test pairs, suggesting that LoRCA-style translation is a promising step towards 2D histological sections to 3D HiP-CT volumes registration.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

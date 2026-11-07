@@ -1,0 +1,13 @@
+{
+  "id": "e83a374f91815ec1",
+  "title": "Test-Time Adaptation with Online Personalized Energy-Based Cache for Fine-Grained Video Expression Recognition",
+  "link": "https://arxiv.org/abs/2608.06467",
+  "description": "arXiv:2608.06467v1 Announce Type: new \nAbstract: Facial expression recognition (FER) in videos is challenging because models must identify subtle, temporally evolving affective states that vary across individuals. Although vision-language models provide transferable visual-semantic representations, models trained on subject-independent data often degrade under subject-specific distribution shifts at inference time. Existing test-time adaptation (TTA) methods commonly update model parameters during inference, increasing computational cost and latency. Cache-based methods avoid parameter updates, but they usually require enough target samples to form reliable class prototypes, which is difficult early in adaptation and for rarely observed classes. We introduce Energy-Based Cache Personalization (EB-CaP), a subject-based online TTA method for video FER that generates class-specific prototypes personalized to each target video. EB-CaP uses a lightweight energy-based model to sample prototypes from the current unlabeled video and populate a personalized cache online, without accumulating large amounts of target data or storing diverse source prototypes. Its energy function relies only on pretrained CLIP: similarities between the target video embedding and class text embeddings guide prototype sampling. In parallel, positive and negative caches store reliable and uncertain target embeddings. An adaptive entropy gate controls cache updates according to the evolving confidence distribution, while a diversity gate limits redundant samples. Final predictions combine cache-derived scores with the current CLIP scores. Experiments on BioVid, StressID, and BAH show that EB-CaP outperforms state-of-the-art TTA methods while maintaining low computational and memory overhead. Code is available at https://github.com/MasoumehSharafi/EB-CaP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

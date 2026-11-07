@@ -1,0 +1,13 @@
+{
+  "id": "adb3e4f3cadecf45",
+  "title": "SAR-TS-BERT: Physics-Guided Self-Supervised Pre-Training With Polarimetric Features for SAR Time-Series Crop Classification",
+  "link": "https://arxiv.org/abs/2610.41728",
+  "description": "arXiv:2610.41728v1 Announce Type: new \nAbstract: Multitemporal synthetic aperture radar (SAR) imagery provides continuous, cloud-free observations of crop phenology for agricultural monitoring in cloudy and rainy regions, yet high-accuracy classification typically requires extensive labeled samples. Although self-supervised pre-training mitigates label dependency in remote sensing, existing frameworks primarily target optical imagery or generic spatial SAR scenes, underutilizing temporal backscatter dynamics and polarimetric scattering mechanisms. We propose SAR-TS-BERT, a physics-guided BERT-style self-supervised pre-training framework for SAR time-series crop classification. SAR-TS-BERT integrates backscatter intensities and polarimetric ratio features (VV, VH, and VV/VH) with dual-polarimetric Cloude-Pottier decomposition parameters ($H/\\alpha/A$) into a six-band input representation through two core designs: 1) a physics-guided span masking strategy (SpanPhysics) that adaptively selects contiguous masked spans based on temporal backscatter change rates to prioritize key phenological transitions; and 2) a dual-branch cross-modal fusion encoder that models backscatter and polarimetric decomposition features through separate Transformer branches followed by bidirectional cross-attention fusion. On independent test sets in Estonia (EuroCropsML) and the USA (California CDL), SAR-TS-BERT achieves overall accuracies (OAs) of 96.78% and 87.29%, respectively, and attains a mean monthly OA of 99.37% on Chongming Island, Shanghai. On the Estonia benchmark, pre-training improves OA and Macro F1 by 1.17 and 1.59 percentage points over training from scratch under full supervision, and by 2.58 and 5.19 percentage points using only 1% labeled data. Incorporating SAR scattering physics into temporal self-supervised pre-training effectively enhances crop classification accuracy, parcel-level mapping consistency, and few-shot transferability.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

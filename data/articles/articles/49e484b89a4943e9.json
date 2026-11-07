@@ -1,0 +1,13 @@
+{
+  "id": "49e484b89a4943e9",
+  "title": "Label-Efficient Time Series Classification at Scale: A Dual-Stream OSSE-LSTM with Counterfactual Attribution",
+  "link": "https://arxiv.org/abs/2610.02704",
+  "description": "arXiv:2610.02704v1 Announce Type: new \nAbstract: Time series are produced continuously at enormous scale by industrial equipment, wearables, power grids, and clinical monitors, yet annotation remains manual, expensive, and expert-dependent. The binding constraint in large-scale time series analytics is therefore not data volume but label volume, and the question facing a practitioner is concrete: how many examples per class must be labeled before a classifier becomes usable? We study this question directly, in a regime where the label space is fixed and known in advance and the decision rule must be constructed from only K labeled examples per class. We propose Dual-Stream OSSE-LSTM, an episodic metric-learning framework that pairs an Omni-Scale CNN with Squeeze-and-Excitation recalibration, for multi-scale motif extraction without per-dataset kernel tuning, with a Bidirectional LSTM for global temporal context. The two streams are independently normalized and fused into a prototype-oriented embedding. Because decisions taken from a few labels must also be explainable, we introduce Counterfactual Integrated Gradients (C-IG), which attributes the prototype margin between target and opposing classes rather than an isolated classifier logit, and reuses the resulting maps as soft masks for test-time prototype refinement without updating the encoder. On 19 univariate UCR datasets, OSSE-LSTM attains the highest average accuracy and per-dataset win count at every support size, and its accuracy remains within a 0.36-point band (96.36-96.72%) across that range. Its weakest configuration still exceeding the best result any compared baseline achieves at any K (93.99%).",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

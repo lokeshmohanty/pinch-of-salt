@@ -1,0 +1,14 @@
+{
+  "id": "219ce9a478bbf83b",
+  "title": "Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine Thresholds in Agent Systems",
+  "link": "https://arxiv.org/abs/2608.10216",
+  "description": "arXiv:2608.10216v1 Announce Type: cross \nAbstract: Agent frameworks ship quality gates that compare text blocks by embedding-cosine similarity and decide at a fixed cutoff. Deduplication filters, semantic caches, drift guards, and answer grader gates deploy to answer the question: \"Does this text still mean the same thing?\" But the score answers a different question: \"How much did the wording change?\" We audit this gate class as a measurement instrument. In the cases these gates exist to catch, the two can run in opposite ways. Many times, reversing an instruction is a single word edit, while agreement often rephrases a sentence. The consequence is a safety check that fires backwards. The production drift guard we audited caught 0 of 56 meaning-breaking mutations, and one approved item, \"withhold the study drug\" -> \"administer the study drug\", came in at cosine 0.9608. We observed five shipped operating points, and balanced accuracy across 90 configuration-threshold-task cells never exceeded 0.700 (median 0.525). The same confounder also corrupted evaluations. A naively built corpus inherits this confounder and can return an inverted verdict, with a decision AUROC exactly 0.000 in 13 of 18 configuration-task cells (at most 0.040 in all 18) against 0.440-0.815 for the same nine configurations under a balanced 2x2 design. Twice in the effort it captured our own headline claims. Obvious repairs fail: an encoder swap and an overlap-conditioned gate (0.750 in-sample, 0.533 held-out) land at chance on separately authored held-out data, and an NLI drop-in did no better. Embeddings do still bear hope here, as the strongest two of nine configurations separated reversal from paraphrase at matched overlap (AUROC 0.79-0.90), but only a matched-pair audit reveals the deployment regime. We release the corpus method, harness, and frozen results, and contend that scores gated this way measure the wrong thing. We believe a valid instrument is buildable.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

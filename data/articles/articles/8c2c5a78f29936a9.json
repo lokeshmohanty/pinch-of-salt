@@ -1,0 +1,13 @@
+{
+  "id": "8c2c5a78f29936a9",
+  "title": "Now You Have My Healthy Attention: A U-DiT for Brain-MRI Inpainting",
+  "link": "https://arxiv.org/abs/2607.27974",
+  "description": "arXiv:2607.27974v1 Announce Type: new \nAbstract: The ASNR-MICCAI BraTS Local Synthesis (Inpainting) task asks for the anatomically plausible completion of healthy brain tissue within a masked region of a T1-weighted MRI, providing a tumor-free anatomical reference for downstream analysis. As the task is scored by distortion metrics (SSIM, PSNR, MSE), we build a deterministic regression model and focus on giving it inductive biases tailored to inpainting. Our network follows the U-DiT principle of performing self-attention on a downsampled token grid: a volumetric encoder-decoder imports long-range context through a downsampled global self-attention block with three-dimensional rotary position embeddings, while convolutions and skip connections preserve high-frequency detail. Two ideas drive our results. First, we constrain the attention so that occluded (\"void\") tokens attend only to known-healthy tokens of the same volume, with a learned bias toward each query's contralateral homologue, forcing the completion to be inferred from observed anatomy rather than from other unknown regions. Second, we add a contralateral-symmetry input that supplies the mirrored healthy hemisphere as a patient-specific prior; since the brain is approximately bilaterally symmetric and lesions are typically unilateral, this prior improves the distortion metrics at matched structural similarity. On the official BraTS-2026 validation leaderboard our submission reaches a mean healthy-region SSIM of $0.864$, PSNR of $24.7$\\,dB and MSE of $4.6{\\times}10^{-3}$ over $219$ cases. We further analyse the residual smoothness inherent to distortion-optimal regression and discuss its implications for anatomical realism.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

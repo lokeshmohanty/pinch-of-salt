@@ -1,0 +1,13 @@
+{
+  "id": "20bb41423a4a465a",
+  "title": "The Shape of Events: Edge-Based Inductive Biases via Cross-Domain Distillation",
+  "link": "https://arxiv.org/abs/2609.30478",
+  "description": "arXiv:2609.30478v1 Announce Type: new \nAbstract: Convolutional neural networks trained on ImageNet are known to exhibit a strong preference for local high-frequency texture, an inductive bias that translates into fragile robustness against distribution shifts in real-world environments. Event cameras, in contrast, record only changes in scene brightness and are therefore well suited to capturing contour information; however, due to the absence of diagnostic benchmarks in the event domain, the inductive bias that event-camera data instills in vision models has remained underexplored. In this work, we use knowledge distillation from the event domain to the RGB domain so as to exploit the rich evaluation toolkit available in the RGB domain and systematically dissect this inductive bias. Our experiments show that distillation from the event domain induces, in the RGB domain, color invariance, shape bias, and robustness to high-frequency noise. We identify the underlying mechanism as the model suppressing its dependence on high-frequency texture while acquiring a stronger dependence on edge-based object shape. This hypothesis is supported by changes in how color and spatial information are processed at the early layers, together with a spectral trade-off in which robustness to the absence of high-frequency components coexists with vulnerability to contamination of the relied-upon frequency bands and to disruption of geometric structure. We further show that this inductive bias differs from existing robustification methods and that it functions as a useful prior for diverse downstream tasks in which shape and contour information contribute alongside other cues. The code is available at https://github.com/snskysk/event2rgb-distillation .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

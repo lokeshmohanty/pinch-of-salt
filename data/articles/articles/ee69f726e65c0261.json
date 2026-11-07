@@ -1,0 +1,13 @@
+{
+  "id": "ee69f726e65c0261",
+  "title": "RotateAttention: RoPE-Aware Rotation and Range Rectification for INT4 Quantized Attention in Video Generation",
+  "link": "https://arxiv.org/abs/2607.02584",
+  "description": "arXiv:2607.02584v2 Announce Type: replace \nAbstract: In $\\textbf{DiT-based video generation models equipped with 3D Rotary Position Embeddings (3D RoPE)}$, the attention mechanism remains a primary computational bottleneck due to its quadratic complexity with respect to sequence length. While quantized $\\textbf{FlashAttention}$ offers a promising path toward hardware acceleration, existing low-bit quantization methods overlook two critical challenges in this setting: $\\textbf{1)}$ applying online rotation matrices -- a widely used technique for mitigating outliers in Queries ($Q$) and Keys ($K$) -- is difficult to reconcile with $\\textbf{RoPE}$; and $\\textbf{2)}$ the non-negative attention matrix $P = \\exp(QK - \\max(QK))$ makes symmetric quantization waste half of the 4-bit dynamic range. In this work, we observe that the outlier distributions of $Q$ and $K$ are strongly affected by the dimensional partitioning of $\\textbf{3D RoPE}$. Based on this finding, we propose $\\textbf{RotateAttention}$, an efficient $\\textbf{mixed-precision INT4 FlashAttention}$ framework tailored for $\\textbf{DiT-based video generation models with 3D RoPE}$, using selective $\\textbf{FP16 fallback}$ for accuracy-sensitive attention blocks and denoising steps. RotateAttention introduces two core techniques: $\\textbf{1) RoPE-aware Rotation}$, which employs either mergeable rotation matrices that can be fused into RoPE or negligible-overhead matrices to mitigate RoPE-induced outliers in $Q$ and $K$; and $\\textbf{2) Range-optimized $P$ Quantization}$, which uses fixed scales and zero-points to fully exploit the $\\textbf{INT4 numerical range}$ with minimal computational overhead. Experiments show that $\\textbf{RotateAttention}$ preserves video generation quality nearly identical to full-precision baselines while achieving up to 1.68$\\times$ end-to-end speedup and 2.2$\\times$ kernel-level acceleration.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "8c926b8ad4abaa31",
+  "title": "BRACE: Anchored Bellman-Residual Correction for Stale Critics in Asynchronous RL",
+  "link": "https://arxiv.org/abs/2609.09783",
+  "description": "arXiv:2609.09783v2 Announce Type: replace-cross \nAbstract: Asynchronous reinforcement learning has become the standard way to scale training for large language models (LLM), but the resulting policy lag biases the critic toward the stale behavior policy. Existing work on asynchronous LLM training corrects the actor and leaves this bias unaddressed, while the off-policy value correction of classical RL does not carry over to long-horizon agentic tasks, since a short correction horizon leaves the regression target free of the reward and a long one lets the product of importance ratios drift exponentially with the trajectory length. We propose BRACE, an anchored Bellman-residual correction for stale value models. BRACE bounds the correction horizon to a prefix of policy tokens and anchors a constant-weight Monte-Carlo tail beyond it, which separates policy correction from reward propagation. BRACE delivers a $9.8\\%$ relative improvement in mean@1 on BrowseComp-Plus over the strongest baseline, runs $2.46\\times$ faster per step than synchronous training, and remains stable $50$ updates off-policy.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

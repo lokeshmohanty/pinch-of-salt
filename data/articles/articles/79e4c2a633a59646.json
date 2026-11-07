@@ -1,0 +1,13 @@
+{
+  "id": "79e4c2a633a59646",
+  "title": "How Language Models Organize Task Information",
+  "link": "https://arxiv.org/abs/2610.27724",
+  "description": "arXiv:2610.27724v1 Announce Type: new \nAbstract: Dense linear probes assess task readability from language model (LM) representations, but do not directly reveal how many features suffice for prediction. We measure readout sparsity with \\(k^*\\), the smallest feature count found by a fixed search protocol that recovers 95% of dense-probe AUROC above chance. We evaluate 19 LMs from five labs on 14 core tasks. Ten base models give the nine reliably readable tasks similar feature counts and nearly the same order. This agreement extends to the selected features themselves, which on three tasks show cross-model response correspondence beyond class-mean differences and a label-correlation-matched null. Instruction-tuned deployment selectively reduces \\(k^*\\), with both weights and input format contributing. In controlled synthetic experiments across 20 models, successfully learned targets admit single-feature readouts, whereas readable controls require tens of features. Reference-model \\(k^*\\) is associated with label requirements across eight students, following an empirical scaling of \\(N^*\\propto(k^*)^{0.65}\\). After continual learning, saved heads can fail while linear readability remains high, and recovery requires fewer labels than initial task learning under the tested procedures. Pruning reduces linear readability, with wider pre-pruning readouts generally associated with larger losses. These findings distinguish task readability from readout sparsity and establish their complementary value for predicting learning requirements and diagnosing LM changes.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

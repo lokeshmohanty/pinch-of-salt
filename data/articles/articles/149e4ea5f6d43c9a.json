@@ -1,0 +1,13 @@
+{
+  "id": "149e4ea5f6d43c9a",
+  "title": "point2vec for Self-Supervised Representation Learning on Point Clouds",
+  "link": "https://arxiv.org/abs/2303.16570",
+  "description": "arXiv:2303.16570v3 Announce Type: replace \nAbstract: We present point2vec, a self-supervised method for learning point cloud representations through masked prediction of a teacher network's latent features. Building on data2vec, we investigate a limitation of applying this approach to point clouds: positional information associated with masked patches reveals the overall object shape to the student, weakening the learning task even under heavy masking. point2vec addresses this issue by passing only visible patches to the student encoder and introducing a shallow decoder to predict representations for masked patches. The teacher processes the complete point cloud to provide contextualized training targets. These targets capture global context through the teacher's self-attention, providing supervision beyond the local geometry of individual patches. This design conceals masked-patch positions from the student and reduces its computational cost during pre-training. Our ablations show that the decoder alone provides only part of the improvement; concealing positional information is key. After pre-training on ShapeNet, point2vec outperforms the evaluated self-supervised baselines on shape classification on ModelNet40 and ScanObjectNN and few-shot classification on ModelNet40, while achieving competitive part segmentation results on ShapeNetPart.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

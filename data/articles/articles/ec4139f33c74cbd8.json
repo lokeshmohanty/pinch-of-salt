@@ -1,0 +1,13 @@
+{
+  "id": "ec4139f33c74cbd8",
+  "title": "The Right Future for Action: Learning Action-Relevant Predictive States in World Action Models",
+  "link": "https://arxiv.org/abs/2609.23369",
+  "description": "arXiv:2609.23369v1 Announce Type: new \nAbstract: Generation-free world action models (WAMs) retain future-video prediction during training but act from internal video features at inference, leaving unclear what these features should preserve for control. Our representation diagnostics show that representations with more predictable future changes need not make linear action decoding easier. Observed future changes provide additional action information beyond the present, and linearly readable action information is spatially concentrated. These findings motivate Action-Relevant Predictive States (ARPS), a compact predictive interface between the video and action experts. ARPS uses a horizon-conditioned state predictor to aggregate intermediate video features into a compact state that supplies all visual context to the action expert. Future-representation supervision trains different parts of this state to predict visual representations at different future times, together with their changes relative to the present. At inference, the supervision branch is removed, and the action expert only uses the learned predictive state computed from current observations. Controlled ablations show that future supervision substantially improves generalization under distribution shift. ARPS achieves 99.2% success on LIBERO and transfers to LIBERO-Plus without adaptation, reaching 87.3% and exceeding Fast-WAM by 39.2 percentage points.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

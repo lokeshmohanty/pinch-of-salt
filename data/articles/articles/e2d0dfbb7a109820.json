@@ -1,0 +1,13 @@
+{
+  "id": "e2d0dfbb7a109820",
+  "title": "HEDGE: A Calibrated Ensemble for A/H Recognition",
+  "link": "https://arxiv.org/abs/2607.12176",
+  "description": "arXiv:2607.12176v2 Announce Type: replace \nAbstract: Ambivalence and hesitancy (A/H) undermine digital behaviour-change interventions, and recognizing them automatically from video is the goal of the ABAW A/H challenge on the BAH dataset. We describe HEDGE (Hesitancy/Ambivalence Estimation via Distribution-aware, Generalized Ensembling), our system for the 11th edition of the challenge: a calibrated, equal-weight ensemble of three fusion models over frozen face, audio, text, and pose embeddings, which reaches 0.7358 macro-F1 on the public test set. We also submitted four variants of this system to this year's private test (30 new participants): a fixed-threshold version, a single individual model, and an ensemble with cache-personalization test-time adaptation (TTA). The plain calibrated ensemble scored 0.7361 macro-F1 on the private test, closely matching our public-test estimate, and the TTA variant scored highest of all five at 0.7367 macro-F1, our official challenge result (team AIWELL, rank 5 of 12), even though TTA showed no benefit on the public test. The single individual model dropped to 0.6759, far more than any ensemble variant. We explain both results: TTA only has distribution shift to correct on the private test, which the public test lacks, and a text-only linear probe reaches 0.716 macro-F1 (within noise of the full system, correlated at 0.91 in its errors), so the ensemble's robustness to new participants comes from the same modality redundancy that makes single, less-diversified models comparatively brittle. We additionally report a systematic study of more than 60 further controlled experiments (modality, backbone, loss, and adaptation ablations) that did not improve on this system, and an explainability analysis showing the transcript's delivery style dominates the signal while the extractable non-verbal ceiling saturates near 0.60 macro-F1.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

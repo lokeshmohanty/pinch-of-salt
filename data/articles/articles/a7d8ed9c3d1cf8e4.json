@@ -1,0 +1,13 @@
+{
+  "id": "a7d8ed9c3d1cf8e4",
+  "title": "MontageFlow: Physically Valid High Fidelity EEG Generation",
+  "link": "https://arxiv.org/abs/2610.14507",
+  "description": "arXiv:2610.14507v1 Announce Type: new \nAbstract: Generative modeling offers a promising solution to the scarcity of labeled clinical electroencephalography (EEG) data under strict privacy constraints. Although recent generative models report substantial improvements in generation fidelity, we show that these gains conceal a categorical failure. EEG is not an arbitrary multichannel signal: each channel records the voltage difference between two scalp electrodes. So, real recordings satisfy exact linear identities among their channels. Current generators invariably violate these identities, yet this has gone unnoticed. We therefore propose MontageFlow, a flow-matching model that enforces these identities by restricting its output to signals that satisfy them. We find that ensuring validity improves fidelity too. Furthermore, to retain the EEG characteristics that oversmoothing washes out, we also condition the model on a physiological state vector encoded from the whole EEG window. For generation, this vector is drawn from a prior fitted in latent space. Across 3 large-scale benchmarks, our model improves TS-FID by 1.6-3.6$\\times$ over the closest rival while ensuring validity.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

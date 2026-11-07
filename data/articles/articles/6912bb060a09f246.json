@@ -1,0 +1,13 @@
+{
+  "id": "6912bb060a09f246",
+  "title": "Evidential Deep Learning for Multi-Modal Anti-UAV Detection",
+  "link": "https://arxiv.org/abs/2609.01742",
+  "description": "arXiv:2609.01742v1 Announce Type: new \nAbstract: Anti-UAV systems increasingly fuse multiple sensors, yet their detection heads provide no per-modality reliability signal. This study evaluates whether evidential deep learning (EDL) heads, Dempster-Shafer (DS) evidence fusion, and uncertainty-driven temporal sensor gating improve anti-UAV detection through a controlled ablation on three benchmarks: thermal tracking (AntiUAV600), RGB-audio-RF classification (TRIDENT), and RGB-IR tracking (MM-UAV). The EDL training objective improves accuracy over retrained sigmoid baselines (+5.9 percentage points in accuracy and a tripled tracker-on-absent rate in E1; +4.8 percentage points in classification accuracy in E2, surviving a clip-clustered bootstrap, p = 0.011) and ranks classification errors substantially better (entropy UAUC approximately 0.94 vs. 0.51). The remaining components do not support their respective hypotheses. DS fusion does not outperform simple probability averaging. Dirichlet vacuity adds no ranking power beyond predictive entropy and inverts at the detection level, where extreme background imbalance causes it to encode class membership rather than error likelihood, a failure also observed for entropy and sigmoid confidence. Temporal gating preserves accuracy only when nearly inactive and yields no realised latency saving on shared-backbone hardware. The benefit of evidential learning therefore arises primarily from its training objective rather than its uncertainty estimate; a crop-level control further localises the detection-level breakdown to anchor-level evaluation rather than the learned representation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

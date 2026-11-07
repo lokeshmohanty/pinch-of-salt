@@ -1,0 +1,13 @@
+{
+  "id": "e88e6dfb179fe1fc",
+  "title": "Identity-Duplication Auditing in National-Scale Neuroimaging Repositories",
+  "link": "https://arxiv.org/abs/2610.09614",
+  "description": "arXiv:2610.09614v1 Announce Type: new \nAbstract: National-scale magnetic resonance imaging (MRI) repositories increasingly integrate data from different studies and institutions. However, subject identifiers that are valid only within individual datasets are no longer guaranteed to remain globally unique after aggregation, making it possible for the same subject to be assigned multiple identifiers, which we define as identity duplication. Such duplication can create leakage between training and test data and inflate apparent performance in downstream biomedical studies. Existing methods do not provide an end-to-end, image-based workflow for auditing this problem at repository scale. In this work, we present HAPPEN, a human-in-the-loop pipeline for auditing identity duplication in T1-weighted brain MRI repositories. It combines SHA-256 fingerprinting for exact-duplicate detection with supervised contrastive retrieval of non-identical scans that may originate from the same person. Retrieved pairs are reviewed as candidates in a locally hosted interface rather than automatically classified as duplicates. We deployed the workflow in a 95,129-scan aggregated repository and assessed end-to-end recovery using 54 genetic-reference pairs. Transferability was assessed by locally deploying the same workflow on 22,386 scans at an independent institution without model retraining or image transfer. Deployment in the study repository identified 1,316 exact-duplicate scan groups and 1,275 reviewer-supported near-duplicate subject groups. Of these groups, 56% and 82%, respectively, crossed dataset boundaries. All 54 genetic-reference pairs were recovered. The external team independently completed the full workflow using a locally selected operating threshold and review standard.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "eaf2b04fe2302f49",
+  "title": "PREM: Prefix-Steered Recurrent Memory for Long-Video Understanding",
+  "link": "https://arxiv.org/abs/2609.23601",
+  "description": "arXiv:2609.23601v1 Announce Type: new \nAbstract: Long-video understanding must capture transient visual evidence under strict token budgets, yet existing methods compress frames, append memory tokens, or alter internal key-value (KV) caches. We introduce Prefix-Steered Recurrent Memory (PREM), a memory-token-free framework for frozen vision-language models (VLMs). PREM separates video ingestion from query answering: a recurrent writer distills visual streams into a compact 256 KiB multi-slot associative state, while a question-conditioned readout adds memory-derived key/value (K/V) steering modulations to existing non-visual prompt prefixes during prefill. This enables write-once, query-many inference without extra prompt tokens or decoding recurrence. Across six long-video benchmarks in offline and streaming end-of-stream settings, PREM consistently outperforms frozen baselines at every evaluated visual budget. Under a constrained budget of 16 frames, PREM improves macro-average accuracy by 3.06% on Qwen2.5-VL-3B, with gains of 11.0% on action antonym identification and 9.9% on localized needle retrieval. These gains require tuning 0.24% of backbone parameters at 0.03 GiB of peak GPU memory overhead.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

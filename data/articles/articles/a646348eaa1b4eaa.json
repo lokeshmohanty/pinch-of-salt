@@ -1,0 +1,14 @@
+{
+  "id": "a646348eaa1b4eaa",
+  "title": "When Vision Overrides Language: Evaluating and Mitigating Counterfactual Failures in VLAs",
+  "link": "https://arxiv.org/abs/2602.17659",
+  "description": "arXiv:2602.17659v3 Announce Type: replace \nAbstract: Vision-Language-Action models (VLAs) promise to ground language instructions in robot control, yet in practice often fail to follow language faithfully. When presented with instructions that lack strong scene-specific supervision, VLAs suffer from counterfactual failures: they act based on vision shortcuts induced by dataset biases, repeatedly executing well-learned behaviors and selecting objects frequently seen during training regardless of language intent. To support systematic study, we introduce LIBERO-CF, the first counterfactual benchmark for VLAs that evaluates language following capability by assigning alternative, feasible task instructions under the same LIBERO scene layouts. Our evaluation reveals that counterfactual failures are prevalent yet underexplored across state-of-the-art VLAs. To mitigate these failures, we propose Counterfactual Action Guidance (CAG), a simple yet effective dual-branch inference scheme that explicitly strengthens language conditioning in VLAs. CAG combines a standard VLA policy with a parallel language-unconditioned branch, amplifying the difference between their action predictions induced by language instructions. This design reduces reliance on vision shortcuts, improves robustness on counterfactual tasks, and requires neither additional demonstrations nor modifications to the base VLA architecture or its pretrained weights. Extensive experiments demonstrate consistent improvements across diverse VLAs. On LIBERO-CF, our training-free variant, TF-CAG, improves $\\pi_{0.5}$ by 9.7% in language grounding and 3.6% in task success. When using a separate Vision-Action (VA) module, VA-CAG achieves larger gains of 15.5% and 8.5%, respectively. In real-world evaluations, VA-CAG improves language grounding by 9.4% and task success by 17.2% on average.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

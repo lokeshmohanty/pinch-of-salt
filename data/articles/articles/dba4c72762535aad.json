@@ -1,0 +1,13 @@
+{
+  "id": "dba4c72762535aad",
+  "title": "PrePARE: Pre-AA Token Pruning for Frozen Multi-View Geometry Transformers",
+  "link": "https://arxiv.org/abs/2605.08371",
+  "description": "arXiv:2605.08371v2 Announce Type: replace \nAbstract: Multi-view geometry transformers are feed-forward 3D foundation models that jointly predict depth maps, point maps, and camera poses for N images in a single forward pass. Most of them build on an alternating-attention (AA) stack whose cross-view attention runs over the patch tokens of all N views in every block, so its cost grows quadratically in N: on 300-frame ScanNetv2 clips, VGGT peaks at 72.3 GiB, and MapAnything does not fit on a 93 GiB card. Existing methods reduce tokens or attention inside the AA stack, so the full patch grid still enters it, and the pre-AA interface, where the encoder hands its tokens to the first AA block, has been overlooked. We propose PrePARE, which prunes patch tokens once at the pre-AA interface and restores the dense grid once after the last AA block. Every block of the frozen AA stack then runs on the reduced tokens, while the prediction heads receive the full grid. A Token Scorer, supervised by how the unpruned AA stack uses each token, and a Feature-guided Restoration module are the only trained parts. The Token Routing module is rule-based. On ScanNetv2 at N = 300, PrePARE reduces the peak memory of VGGT by 80%, from 72.3 to 14.4 GiB, below every in-AA method we ran, and runs 5.4 times faster, while its per-scene Chamfer distance is lower than the unpruned model's on 34 of 50 scenes (sign test p = 0.015). On pi^3 and Depth Anything 3 it saves 15% and 20% of peak memory, where the in-AA methods save at most 9%, and at 1000 frames it is the only method we ran that fits Depth Anything 3 and MapAnything on one GPU.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

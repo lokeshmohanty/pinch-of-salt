@@ -1,0 +1,14 @@
+{
+  "id": "835af90868d12c56",
+  "title": "MarUco: A Markerless 6D Pose Estimation Framework for Closed-Loop Control of Surgical Continuum Manipulators",
+  "link": "https://arxiv.org/abs/2602.16365",
+  "description": "arXiv:2602.16365v2 Announce Type: replace-cross \nAbstract: Flexible endoscopic continuum manipulators offer high dexterity and access to complex anatomy, but nonlinear hysteresis limits feedforward control accuracy. Closed-loop control can compensate for these errors but requires accurate six-degree-of-freedom (6D) end-effector pose feedback. We present MarUco, a markerless 6D pose estimation framework for closed-loop control using only stereo vision during operation. A photorealistic pseudo-rigid-body simulation pipeline generates large-scale annotated training data without manual labeling. A multifeature fusion network integrates masks, keypoints, heatmaps, and bounding boxes from both stereo views to estimate an initial pose, followed by a learned single-pass render-and-compare module that refines the pose without iterative optimization. Kinematics-free hand-eye calibration estimates camera-to-robot-base extrinsics, and self-supervised adaptation uses unlabeled real stereo pairs to mitigate sim-to-real pose error. Across 1,000 real samples, MarUco achieves translation and rotation errors of 0.78 $\\pm$ 0.50 mm and 3.07 $\\pm$ 1.25{\\deg}, respectively, with a total processing time of 52.4 ms per stereo pair. In closed-loop experiments over eight reference paths, MarUco achieves a mean terminal translation error of 1.8 mm, an 88% reduction relative to uncompensated open-loop control. To the best of our knowledge, this is the first markerless position-based visual servoing framework for continuum manipulators.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "fd4edcc1c7a6da1e",
+  "title": "ActiveSAM: Fast and Accurate Open-Vocabulary Semantic Segmentation with Frozen SAM 3",
+  "link": "https://arxiv.org/abs/2606.16996",
+  "description": "arXiv:2606.16996v2 Announce Type: replace-cross \nAbstract: Segment Anything Model 3 (SAM 3) provides a strong frozen backbone for concept-prompted segmentation, but applying it directly to open-vocabulary semantic segmentation (OVSS) is inefficient: full-resolution decoding is typically run over the entire dataset vocabulary, whereas each image contains only a small active subset of classes. We introduce ActiveSAM, a training-free inference framework that turns SAM 3 into an active-vocabulary segmenter. ActiveSAM first canonicalizes and expands class prompts, then uses evidence-proportional grounding to estimate an image-conditioned active set from a low-resolution presence preview. Only retained prompts receive full-resolution mask prediction, using bucketed prompt multiplexing with the frozen SAM 3 decoder. The preview stage uses only class-presence evidence and skips unnecessary segmentation-head computation. To resolve overlapping concept responses, exclusive concept decoding compares each pixel's joint score vector with class signatures estimated once per vocabulary from unlabeled images. ActiveSAM requires no weight updates, no oracle class-presence labels and no per-dataset hyperparameter tuning. Across eight OVSS benchmarks, ActiveSAM improves the speed-accuracy tradeoff of training-free open-vocabulary semantic segmentation, outperforming the current state-of-the-art SegEarth-OV3 by +2.1 mIoU on average while running much faster, with 7.3-12.2x speedups on large-vocabulary datasets. ActiveSAM also achieves the highest accuracy under image corruptions that simulate real-world distribution shift, making it well-suited for deployment in noisy-input domains such as autonomous driving and embodied AI. Code is available at https://github.com/VILA-Lab/ActiveSAM",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "227f7c9d67520df7",
+  "title": "Comparing Classification and Feature Learning by Analyzing Their Loss Functions in Normalized Spaces with Different Scale Factors",
+  "link": "https://arxiv.org/abs/2611.07741",
+  "description": "arXiv:2611.07741v1 Announce Type: cross \nAbstract: Classification and feature learning are two closely interrelated fundamental tasks. Feature learning in supervised settings is typically achieved by training classification models, under the common assumption that higher classification accuracy implies better feature quality. In this paper, we first point out that classification accuracy reflects the sample-wise local properties of a model on a dataset, whereas feature learning aims to learn features with good dataset-level global properties, such as intra-class compactness and inter-class separability. From the first principle of feature learning, we redesign the binary cross-entropy (BCE) loss, a counterpart of the cross-entropy (CE) loss used in classification. Then, in normalized feature space, we analyze the minima of the BCE and CE losses and show that both can lead to neural collapse, where sample features from different classes become maximally compact and maximally separated. More importantly, by investigating the convergence behaviors of the two losses as the scale factor $\\gamma$ varies in the normalized space, we reveal how classification accuracy and feature quality change differently across spaces of different sizes. Under a fixed training strategy, a very large $\\gamma$ achieves perfect classification accuracy but slows convergence toward the ideal feature geometry, whereas a very small $\\gamma$ makes classification highly sensitive to small perturbations. A moderate $\\gamma$ is therefore necessary for simultaneously achieving reliable classification and well-structured features. Extensive experiments validate these findings and demonstrate that BCE loss exhibits advantages in long-tail and open-set recognitions, as it better aligns with the global requirements of feature learning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "b4816396e6492f4a",
+  "title": "CXR-Retrieve: Compositional Text-to-Image Retrieval in Chest Radiography",
+  "link": "https://arxiv.org/abs/2607.27779",
+  "description": "arXiv:2607.27779v1 Announce Type: new \nAbstract: Large chest radiography archives are difficult to search because most studies are paired only with free-text reports rather than structured clinical annotations. Vision-language models offer a natural interface for text-to-image retrieval, but current biomedical models are primarily optimized for report-to-image matching rather than for satisfying short clinical search queries. This creates an objective mismatch: a model may retrieve images related to words in the query while failing to satisfy the full clinical constraint, especially for conjunctions and negations such as ``atelectasis and no pneumonia.''\n  We introduce CXR-Retrieve, a structured benchmark for compositional chest X-ray text-to-image retrieval. The benchmark contains 5,159 test images from the official test-split of MIMIC-CXR-JPG and 145 textual queries spanning single and conjunction findings, both positive and negative. Relevance is defined by whether a retrieved image satisfies all asserted pathology constraints, rather than by whether it matches a paired report.\n  We further propose a label-aware contrastive fine-tuning objective for clinical retrieval. Our method attracts image-text pairs with compatible asserted pathology constraints, including shared confirmed absences, while explicitly repelling contradictory pairs. Starting from the in-domain CXR-CLIP checkpoint, our method improves Precision@5 over CXR-CLIP by 8.5 percentage points on two-pathology conjunctions and by 22.0 percentage points on negation queries. These results show that reliable chest X-ray retrieval requires training objectives that model not only which findings are mentioned, but also how they are clinically asserted.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

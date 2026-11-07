@@ -1,0 +1,15 @@
+{
+  "id": "b67066a31908b083",
+  "title": "Spatial Atlas: Compute-Grounded Reasoning for Spatial-Aware Research Agent Benchmarks",
+  "link": "https://arxiv.org/abs/2604.12102",
+  "description": "arXiv:2604.12102v3 Announce Type: replace \nAbstract: We describe compute-grounded reasoning (CGR), a design pattern in which code computes selected sub-problems from explicit intermediate representations before a language model answers. Spatial Atlas implements CGR as an Agent2Agent (A2A) server with a spatial question-answering handler and a machine-learning engineering handler. The spatial handler asks a language model to extract a scene graph, and code then fills in missing distances and checks the extracted safety rules. A separate benchmark driver can also run a strict metric bridge. It computes the gap for horizontal-gap questions from segmentation masks and a reconstructed point map, and it passes that gap to the answering model as a fact. The bridge returns a fixed unavailable answer when an evidence check fails, and it never falls back to model-estimated coordinates. The ML-engineering handler generates pipeline code, parses validation scores, and caps the number of repair and refinement passes. Its code execution is off by default. The repository also provides four run modes that can write label-free journals, a shuffled-image control mapping, and journal validators that reject label-bearing fields. We report one private label-free operational run in which four paths each wrote eight prediction rows with zero retries. Labels stayed sealed, and no score was computed, so this run establishes operational integrity only. We report no FieldWorkArena result because the benchmark data were not accessible. We also omit every performance, latency, and resource-use number that lacks a reproducible run artifact.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

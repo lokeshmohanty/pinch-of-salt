@@ -1,0 +1,13 @@
+{
+  "id": "96293fe02ede83ab",
+  "title": "OWLET: On-Policy Weighted Learning via Evidence Transfer for Video Large Language Model Post-Training",
+  "link": "https://arxiv.org/abs/2610.13272",
+  "description": "arXiv:2610.13272v1 Announce Type: new \nAbstract: Post-training has become a key stage for eliciting reasoning capabilities in Video Large Language Models (Video-LLMs). Existing post-training methods mainly follow two paradigms: reinforcement learning (RL) and on-policy distillation (OPD). However, they do not fully exploit visual evidence for effective training. RL supervises the policy with a single trajectory-level reward, which is too coarse-grained for video reasoning: the same response-level advantage is applied to every generated token, disregarding that the tokens of a video response are grounded in the visual stream to very different degrees. OPD provides token-level supervision through output-distribution matching, but lacks direct supervision of the spatiotemporal representations that produce those outputs. We observe across extensive experiments that the same model reasons more accurately when its video view combines global temporal context with question-relevant details. Comparing the same student-generated response under this view and uniform sampling reveals changes in token likelihoods and internal representations, providing a training signal for evidence use. Building on this observation, we propose OWLET, an evidence-privileged RL method that derives training signals from a richer teacher view. This view couples uniform global context with question-conditioned local windows, providing visual evidence without requiring a larger model. To better exploit this privileged visual evidence, OWLET introduces (i) \\textbf{evidence-aware credit redistribution}, which compares token likelihoods across the two views and redistributes positive response-level advantages according to their relative evidence support; and (ii) \\textbf{spatiotemporal state alignment}, which aligns the two views' hidden states on verifier-accepted responses.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

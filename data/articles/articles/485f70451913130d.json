@@ -1,0 +1,13 @@
+{
+  "id": "485f70451913130d",
+  "title": "SAM-DCE: Decoupled Context Enhancement for Prompt-Free Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2509.16886",
+  "description": "arXiv:2509.16886v3 Announce Type: replace \nAbstract: The Segment Anything Model (SAM) is a promising foundation model for medical image segmentation, but its prompt-driven design is not directly suitable for fully automatic multi-class anatomical segmentation. Without manual point, box, or mask prompts, SAM faces a dual over-smoothing problem: deep image features may lose fine local structural evidence, while mask tokens may become semantically ambiguous. We propose SAM-DCE, a decoupled context enhancement framework for prompt-free medical image segmentation. SAM-DCE introduces Spatial Representation Compensation (SRC) to recover anatomical evidence from intermediate ViT features and Semantic Token Calibration (STC) to improve the category consistency of foreground mask tokens. Rather than replacing the pretrained decoder or fusing output masks, SAM-DCE refines the spatial and semantic representations before recombining them through SAM's original token-to-mask mechanism. On the Synapse multi-organ CT segmentation dataset, SAM-DCE achieved a mean Dice score of 83.86\\% and an HD95 of 16.04 mm, outperforming the representative CNN-, Transformer-, and SAM-based baselines evaluated here. Ablation experiments further showed that SRC and STC provide complementary improvements, supporting the proposed spatial--semantic factorization for prompt-free SAM adaptation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

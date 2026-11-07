@@ -1,0 +1,14 @@
+{
+  "id": "6d299afdf7be576d",
+  "title": "Lev-3B: A Data Recipe for Compact Probabilistic Log Decision Models",
+  "link": "https://arxiv.org/abs/2610.38915",
+  "description": "arXiv:2610.38915v1 Announce Type: cross \nAbstract: Many log-analysis tasks involve choosing among known options, such as detecting anomalous sessions or identifying attack techniques, and benefit from calibrated probabilities. We present Lev-3B, an open 3B-parameter decision model built on Granite-4.1-3B-Base with a shared pointer readout, and study its training recipe. The recipe has two key parts. First, training follows a curriculum: the model learns bounded natural-language decisions, using no log data, before it sees any logs. Second, the log stage mixes the target tasks with general log data spanning 35 auxiliary tasks unrelated to either evaluation task. We evaluate one shared checkpoint on sources seen in training and on sources excluded from training, calibration and model selection. The two-stage recipe transfers substantially better than training on log data alone. Adding general log data improves performance on excluded sources. At a fraction of their serving cost, Lev-3B outperforms prompted frontier models on anomaly detection, including on an excluded logging system, but trails them on attack-technique classification. Its probabilities are well calibrated on familiar sources, but on the excluded logging system it confidently misses anomalies. We release the checkpoint, recipe, data manifests, and prediction-level artifacts.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "28d3cf75fdfa2503",
+  "title": "When LLM Routers Overpay: The Cost of Strong-Model Preference",
+  "link": "https://arxiv.org/abs/2602.03478",
+  "description": "arXiv:2602.03478v2 Announce Type: replace \nAbstract: LLM routing aims to reduce inference costs by assigning easy queries to less expensive models and reserving stronger models for cases in which they are needed. However, we find that existing routers often violate this principle under loose cost budgets: as the budget increases, they increasingly select the strongest and most expensive model even when less expensive feasible candidates provide comparable or identical utility. We refer to this behavior as strong-model over-selection under loose budgets. Our analysis shows that ambiguity alone does not explain this phenomenon. Substantial overpayment can arise when differently priced models offer equivalent or near-equivalent utility and the router retains a persistent model-level preference for costly models; budget relaxation exposes this preference by making premium candidates feasible. Motivated by this diagnosis, we propose EquiRouter, a decision-aligned router that learns query-dependent model rankings, preserves meaningful utility differences, and explicitly prefers lower-cost models among equivalent candidates through a Cost-Aware Ranking Objective and a lightweight Query--Model Interaction Representation. Experiments across diverse text, multimodal, continuous-utility, and large-model-pool settings show that EquiRouter consistently improves cost efficiency while maintaining competitive peak and whole-curve performance. Code is available at https://github.com/LAMDA-Model-Reuse/EquiRouter.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

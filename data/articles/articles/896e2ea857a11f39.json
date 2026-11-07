@@ -1,0 +1,13 @@
+{
+  "id": "896e2ea857a11f39",
+  "title": "Activation Boundary Matching: Task-Informed Initialization for Low-Rank Adaptation",
+  "link": "https://arxiv.org/abs/2511.19145",
+  "description": "arXiv:2511.19145v4 Announce Type: replace \nAbstract: Low-Rank Adaptation (LoRA) is highly sensitive to initialization, yet existing schemes construct the initial subspace from statistics at the pretrained point, capturing pre-adaptation geometry rather than how the adapter must move during learning. We examine the early adaptation trajectory and uncover a temporal asymmetry: task-induced activation boundaries---the signs of layer-wise pre-activations---recover markedly faster than activation values or effective low-rank updates and become reusable well before the probe adapter converges. Motivated by this, we propose Activation Boundary Matching for LoRA (ABM-LoRA), which briefly trains a standard adapter as an early task probe, then uses its pre-activation signs as layer-wise targets for a fresh adapter under a margin-based hinge objective. Both are discarded before otherwise unchanged downstream fine-tuning. We show that this boundary-supervision lifting can expose LoRA directions attenuated or locally unobservable through the downstream Jacobian, and that what transfers is the boundary side---not the exact activation value or the output-level signal. Because a partial boundary trace suffices, ABM-LoRA recovers most of the benefit of a fully trained reference at a fraction of the overhead, requiring only probe forward passes. It improves over standard LoRA on T5-base/GLUE, ConvNeXt-T and Swin-T fine-grained classification, and instruction tuning with Qwen2.5-1.5B and LLaMA2-7B, and matches or surpasses SVD- and gradient-based initializers without their preprocessing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

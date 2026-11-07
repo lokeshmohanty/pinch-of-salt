@@ -1,0 +1,14 @@
+{
+  "id": "f28448e883263b3d",
+  "title": "PrT-Flow: Probability-Tractable Flow Matching for Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2610.17667",
+  "description": "arXiv:2610.17667v1 Announce Type: cross \nAbstract: Diffusion models and Flow Matching can represent flexible distributions over robot actions, but many reinforcement learning algorithms also require the probability of each action. We introduce PrT-Flow (Probability-Tractable Flow Matching), which computes probability density while retaining multimodal, multi-step action generation. Its Jacobian-Tractable Transformer (JTT) makes each sampling step invertible and enables efficient computation of its Jacobian determinant. We train these finite steps with Conditional Euler-step Training (CET), which supervises their displacement over one step during sampling rather than their instantaneous velocity. We prove that, under certain assumptions, CET has the same minimizers as fitting the Euler-solver updates of Flow Matching. PrT-Flow achieves 96% success on Robomimic Lift after 300 epochs of imitation learning, matching the diffusion policy reference, and 96% success on OGBench Cube-Triple after 600k online steps. These results demonstrate that invertible networks with tractable probability densities can learn effective robot policies and support SAC-style actor-critic training. Our code is available at https://github.com/Sunlight-zero/PrT-Flow .",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

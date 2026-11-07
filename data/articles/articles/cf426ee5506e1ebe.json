@@ -1,0 +1,14 @@
+{
+  "id": "cf426ee5506e1ebe",
+  "title": "Hop-Decayed Influence: New Vulnerabilities of Structural Auxiliary Indexing in GraphRAG Pipelines with LLM",
+  "link": "https://arxiv.org/abs/2610.02373",
+  "description": "arXiv:2610.02373v1 Announce Type: cross \nAbstract: GraphRAG pipelines construct auxiliary structures during offline indexing--semantic summaries, hierarchical edges, and pre-computed scores--that determine how retrieval is prioritised at query time. Prior attacks target only instance-level components (nodes, edges, triples), overlooking these schema-level structures. We formalise Auxiliary Schema-Level Entity as a novel attack surface and propose the 3S Framework (Semantics, Structure, Scoring) for its systematic exploitation. Our Hop-Decayed Influence (HDI) attack identifies high-impact targets through query-aware influence propagation and corrupts their auxiliary structures post-indexing. Across two benchmarks (HotpotQA, 2WikiMultiHopQA) and two architectures (Microsoft GraphRAG, HippoRAG2), HDI achieves 88-94% attack success rate while modifying as few as 0.016% of auxiliary structures. Each modification affects up to 6.00 queries (Schema Leverage Ratio), demonstrating 1:N amplification unavailable to instance-level attacks. Manipulated structures evade perplexity and paraphrase defenses with over 99% evasion rate, as they remain linguistically coherent system-generated artifacts. These results reveal that auxiliary schema-level entities receive implicit trust without runtime validation, constituting a structural blind spot in current GraphRAG defenses. https://github.com/Jisung-Pacific/HDI-GraphRAG-Attack.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

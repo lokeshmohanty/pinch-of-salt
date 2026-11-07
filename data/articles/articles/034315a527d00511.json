@@ -1,0 +1,13 @@
+{
+  "id": "034315a527d00511",
+  "title": "DeepMine-Mamba: Mitigating Information Dilution in Mamba-Based State Space Models for Document Image Binarization",
+  "link": "https://arxiv.org/abs/2606.08781",
+  "description": "arXiv:2606.08781v3 Announce Type: replace \nAbstract: Document image binarization must preserve thin, broken, and low-contrast strokes against degraded backgrounds; Mamba-based state space models have so far been explored only preliminarily for it. We measure what state-space propagation does to document features and find that it does not attenuate foreground responses: every region gains amplitude, but the background gain is 1.8 times the stroke gain, compressing the foreground-background amplitude contrast from 1.86 to 1.03. This compression scales monotonically with the effective receptive field, suggesting it is not specific to state space models. Guided by this, we propose DeepMine-Mamba, whose Anti-Dilution Gate computes its modulation from the propagation-induced feature difference and confines it to stroke regions by a learned stroke prior. Under a strict leave-one-year-out protocol on DIBCO/H-DIBCO with no external training data it is competitive with recent transformer- and gated-convolution baselines; because published protocols differ and are often unstated, we report protocol-controlled evidence separately from cross-paper comparison. Ablations under a fixed objective show that the gate recovers stroke-background discriminability and improves all four metrics, including the two absent from the objective.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

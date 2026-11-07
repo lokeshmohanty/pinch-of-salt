@@ -1,0 +1,13 @@
+{
+  "id": "fad3a76801406086",
+  "title": "Compute Has Shape: Self-Morphing the Internal Computation of Frozen LLMs",
+  "link": "https://arxiv.org/abs/2610.38382",
+  "description": "arXiv:2610.38382v1 Announce Type: new \nAbstract: Test-time scaling improves large language models through additional computation, but how to adapt the topology of internal computation to individual inputs remains underexplored. Existing approaches largely fix recurrent or parallel architectures during training, or reconfigure frozen models along a single structural axis. We introduce SelfMorph, which makes computational shape an input-dependent inference-time decision. It unifies the original forward path (BASE), serial reuse of a layer span (REPEAT), and local branching and merging of perturbed hidden states (BRANCH) in a unified space parameterized by type, location, and intensity. Since they offer complementary benefits rather than uniform dominance, we use a lightweight selector that reads the backbone's depth-wise hidden state trajectory on the prompt to choose a morphology before response generation. We train the selector by distilling utility-based distribution from offline morphing that jointly account for task performance and computational cost. Evaluated on three LLMs spanning 4B-27B, SelfMorph achieves a 8.06% mean relative improvement on five in-distribution benchmarks and 4.45% on four unseen benchmarks. It achieves the strongest performance in 24 of 27 settings. These findings identify input-adaptive computational topology as a complementary axis of test-time scaling beyond generating more tokens. Our code is available at https://github.com/creator-xi/SelfMorph.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

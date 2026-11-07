@@ -1,0 +1,13 @@
+{
+  "id": "e7af213537e14859",
+  "title": "Imagine Before You Draw: Visual Prompt Engineering for Image Generation",
+  "link": "https://arxiv.org/abs/2606.04457",
+  "description": "arXiv:2606.04457v2 Announce Type: replace \nAbstract: Incorporating visual semantic representations as an intermediate step before image generation can reduce the modeling difficulty between text and images, thereby improving generation quality. Recent works such as X-Omni and BLIP3o-Next have explored this direction, but they typically use a two-stage external pipeline: a separate autoregressive model first generates semantic tokens, which are then fed as conditioning to an independent diffusion decoder. When the decoder is conditioned only on the compressed semantic plan, it cannot directly access the original input, which introduces an information bottleneck that limits detail preservation in downstream tasks such as editing. Internal architectures such as Transfusion, BAGEL, and Show-o2 avoid this bottleneck by enabling cross-modal interaction within a single model, but they still face the difficult text-to-pixel modeling gap without intermediate semantic guidance. We propose Visual Prompt Engineering (VPE), which can be seamlessly integrated into such internal frameworks. Specifically, the model first autoregressively generates visual semantic tokens ($e.g.$, SigLIP 2) as \"visual prompts\" that capture the semantic layout, then generates the full image tokens conditioned on this plan. We validate VPE across class-conditional generation, text-to-image generation, and image editing, covering various token types and model architectures. Results show that VPE can accelerate convergence, raise quality ceilings, and through internal integration, achieve substantially better editing preservation (PSNR: $26.76$ vs. $19.92$) than a matched external pipeline with semantic-only decoder conditioning, while maintaining competitive editing responsiveness.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "88ef9cd51d1cce41",
+  "title": "EvoGuard: An Extensible Agentic RL-based Framework for Practical and Evolving AI-Generated Image Detection",
+  "link": "https://arxiv.org/abs/2603.17343",
+  "description": "arXiv:2603.17343v2 Announce Type: replace \nAbstract: The rapid proliferation of AI-Generated Images (AIGIs) poses severe misinformation risks, making AIGI detection critical yet challenging. Traditional detection paradigms mainly rely on low-level features, whereas recent research increasingly focuses on leveraging the general understanding ability of Multimodal Large Language Models (MLLMs) to achieve better generalization, yet it still suffers from limited extensibility and expensive data annotations. Instead of building yet another detector, we recast AIGI detection as learned, reasoning-based evidence synthesis over a pool of heterogeneous off-the-shelf detectors, realized through EvoGuard, a novel agentic framework. A capability-aware selection mechanism profiles each detector and gathers complementary evidence per sample; a dynamic orchestration mechanism then reasons over heterogeneous outputs across multiple rounds, cross-validating conflicting or low-confidence signals before concluding. This design exploits the complementary strengths among heterogeneous detectors, transcending the limits of any single model. Furthermore, optimized by a GRPO-based Agentic Reinforcement Learning algorithm using only low-cost binary labels, it eliminates the reliance on fine-grained annotations. Extensive experiments demonstrate that this learned reasoning paradigm outperforms single-detector and static ensembling, achieving SOTA accuracy while mitigating the bias between positive and negative samples. More importantly, it allows the plug-and-play integration of new detectors to boost overall performance in a train-free manner, offering a highly practical, long-term solution to ever-evolving AIGI threats. Source code will be publicly available upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

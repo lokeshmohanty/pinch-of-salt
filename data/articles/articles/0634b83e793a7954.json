@@ -1,0 +1,14 @@
+{
+  "id": "0634b83e793a7954",
+  "title": "How Intervention History Changes AI Agent Sabotage on Subsequent Tasks",
+  "link": "https://arxiv.org/abs/2610.26935",
+  "description": "arXiv:2610.26935v1 Announce Type: cross \nAbstract: AI control evaluations often reset agents' memory between tasks, although deployed agents may retain records of prior interventions. We ask whether learning that an earlier attack was caught changes an agent's ability to evade defer-to-trusted (DtT), a protocol that replaces suspicious work with a trusted model's solution. Herein, we study cross-episode adaptation: whether intervention history changes attack behavior on a subsequent task with different objectives and a fresh environment. We evaluate this using ControlArena's Infrastructure-as-Code (IaC) and SHADE-Arena as testbeds, where agents must complete a main task while covertly pursuing a harmful side objective. For each successor task, we pair a history-conditioned attempt with the model's no-history attempt. The retained history either states that the previous submission was replaced or additionally includes the trusted model's replacement. For Claude Opus 4.8 on IaC, intervention history reduces successful sabotage. Completion of both the main and side objectives falls from 77% to 12% when the agent is told about the replacement and to 38% when it is also shown the trusted model's replacement, while main task success remains essentially unchanged. Condensing the history weakens this effect, suggesting that the retained context matters and limiting attribution to intervention feedback alone. GPT-5.4 shows no significant change in successful sabotage on the same IaC benchmark. On SHADE-Arena, GPT-5's successful sabotage rate decreases, but the reduction is not significant. Across the tested models, history conditions, and deferral thresholds, intervention history never increases the rate of successful sabotage that survives DtT. These results show that intervention history can change subsequent attack behavior, but its effect depends on both the model and the retained context.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

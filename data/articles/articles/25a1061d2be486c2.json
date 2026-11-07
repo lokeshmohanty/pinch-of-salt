@@ -1,0 +1,15 @@
+{
+  "id": "25a1061d2be486c2",
+  "title": "When LLM Reward Design Fails: Diagnostic-Driven Refinement for Sparse Structured RL",
+  "link": "https://arxiv.org/abs/2605.28918",
+  "description": "arXiv:2605.28918v2 Announce Type: replace-cross \nAbstract: For sparse, structured reinforcement-learning tasks with semantic reward-function interfaces, LLM-generated reward shaping is better framed as debugging than one-shot generation. We study PPO-trained agents using MiniGrid as core evaluation and MuJoCo reaching/locomotion as boundary stress tests. Our qualitative audit finds two recurring one-shot failure modes -- reward flooding and semantic/API misunderstanding -- and a rarer, less reliably distinguished weak-shaping case. We propose diagnostic-driven iterative refinement, using training diagnostics and a failure-mode taxonomy to guide reward-function revision. On sparse structured tasks with diagnosable reward failures, refinement improves DoorKey-8x8 from 2.3% success without shaping to 97.6%, and KeyCorridor from 31.2% one-shot to 86.7% with high seed-to-seed variance. Controls show these gains are not from generic retrying or extra training alone: metrics-only re-prompting causes large drops, while a static-vocabulary control recovers much of the gap. Thus taxonomy prompting is a major mechanism, with only partially isolated incremental evidence for dynamic labels. In prompt-matched comparisons across Haiku 4.5, Opus 5, and DeepSeek V4 Pro, effects depend on task and model; none of the six contrasts survives family-wise correction. A four-call, episode-budget-matched population control is also competitive. Component-removal and sensitivity tests reveal calibration limits. In continuous control, success-based diagnostics can misfire in dense-reward locomotion; return-trend feedback removes one false-positive mechanism without robust locomotion gains. The method is bounded to sparse structured tasks with reliable structured interfaces under PPO training.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.IR"
+  ]
+}

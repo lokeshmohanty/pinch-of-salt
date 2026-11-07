@@ -1,0 +1,13 @@
+{
+  "id": "870e9d3812a83c08",
+  "title": "SpineContextResUNet: A Computationally Efficient Residual UNet for Spine CT Segmentation",
+  "link": "https://arxiv.org/abs/2605.20760",
+  "description": "arXiv:2605.20760v2 Announce Type: replace \nAbstract: Automated segmentation of the vertebral column in Computed Tomography (CT) scans is a prerequisite for pathological assessment and surgical planning. However, state-of-the-art methods, particularly those based on Transformers or large-scale ensembles, demand substantial GPU resources, creating a barrier for clinical adoption in resource-constrained environments or on edge devices. To address this, we introduce SpineContextResUNet, a computationally efficient 3D Residual U-Net designed for rapid spinal localization. Our architecture integrates a lightweight Context Block that employs parallel multi-dilated convolutions to capture long-range anatomical dependencies without the high latency of Recurrent Neural Networks (RNNs) or the memory overhead of Self-Attention mechanisms. Extensive validation on two public benchmarks, VerSe2020 and CTSpine1K, demonstrates that our model achieves a Dice score of 88.17% and 88.13% respectively. To evaluate performance under strict hardware constraints, we compared our model against a bottlenecked SwinUNETR scaled to match our ~1.7M hardware footprint. While the constrained Transformer suffers severe performance degradation due to a lack of spatial inductive biases in a limited-data regime, our CNN-based approach successfully maintains high accuracy. Crucially, heavy baselines like TotalSegmentator fail due to memory exhaustion on commodity hardware (Intel Core i5, 8GB RAM), our model performs robust inference, making it a viable solution for point-of-care diagnostics and deployment on edge platforms like the Nvidia Jetson Orin Nano.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

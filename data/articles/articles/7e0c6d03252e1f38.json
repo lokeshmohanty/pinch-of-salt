@@ -1,0 +1,13 @@
+{
+  "id": "7e0c6d03252e1f38",
+  "title": "PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents",
+  "link": "https://arxiv.org/abs/2606.12329",
+  "description": "arXiv:2606.12329v2 Announce Type: replace \nAbstract: AI coding agents often lose project-specific rationale across sessions and may repeat approaches that previously failed. The bottleneck is often not model capability but missing coding agent memory: a durable record of what was decided, tried, and ruled out. We present projectmem, an open-source, local-first memory and judgment layer for AI coding agents, which records development as an append-only, plain-text log of typed events (issues, attempts, fixes, decisions, and notes) and deterministically projects it into compact summaries served through the Model Context Protocol (MCP). When invoked before an edit, a file-scoped advisory precheck returns recorded failures, open issues, and churn for the target file, a design point we call Memory-as-Governance. We evaluate feasibility through an author-run, six-month self-study on two machines, a controlled latency benchmark, and client-compatibility tests. The study contains 3,228 unique events from 27 projects; 56% are issue-lifecycle events, and 86 of 427 distinct issues closed by a recorded fix had at least one failed attempt before the first fix in event-log order. These histories are candidates for later warnings, not evidence that warnings prevented failures. On a synthetic repository, the median analysis time for a 1,500-event log decreased from 42.0 seconds to 79.3 milliseconds, while git subprocesses per check decreased from 1,500 to two and the tested warning output was preserved. The results establish the feasibility of persistent project memory for AI coding agents and motivate a controlled repeat-failure benchmark for measuring whether coding-agent memory prevents repeated failures. Source code is available at https://github.com/riponcm/projectmem.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

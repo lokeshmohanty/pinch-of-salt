@@ -1,0 +1,14 @@
+{
+  "id": "f57bfe9079b670c3",
+  "title": "Understanding the Benefits of Scaffolds through Computational Separations",
+  "link": "https://arxiv.org/abs/2610.27157",
+  "description": "arXiv:2610.27157v1 Announce Type: cross \nAbstract: Inference-time harnesses, i.e., external procedures that call a model many times and keep state across calls, can substantially improve model capabilities. In this paper, we investigate the benefits of using such harnesses and the extent to which these benefits can be internalized through training. More precisely, we conceptualize a harness $\\mathcal{A}$ as an arbitrary wrapper around a base model $M$ and attempt to distill a student model from the harness's traces. Empirically we find that, even with simple scaffolds and small models, the inference-time harness significantly outperforms a distilled student. We then prove that such a gap is due to a fundamental representational limitation: inference-time harnesses can compute a closure of their per-call primitive that is $\\NL$-complete even when the primitive is a trivial $\\AC^0$ lookup, and that no fixed-depth forward pass can represent under the widely believed conjecture that $\\NL\\not\\subseteq\\TC^0$. Our theory suggests that expanding the representational capacity of the student relative to the task at hand, e.g., by enlarging the model, making the task easier, or lengthening its chain-of-thought, is necessary to close the gap, which we verify empirically. Finally, we scale to an agentic harness on competition math, where the same gap reappears. Overall, our results show that a harness confers on the base model a profound gain in representational power, one that training a same-class student on its traces cannot transfer back into the weights.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

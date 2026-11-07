@@ -1,0 +1,14 @@
+{
+  "id": "aad2439e7d2b458f",
+  "title": "VAttnPO: Visual Attention-Guided Policy Optimization",
+  "link": "https://arxiv.org/abs/2610.16735",
+  "description": "arXiv:2610.16735v1 Announce Type: cross \nAbstract: Multimodal reinforcement learning with verifiable rewards commonly assigns one sequence advantage to an entire response. This outcome-level signal distinguishes overall response quality but leaves changes in visual-evidence use across generated tokens implicit. We introduce VAttnPO (Visual Attention-Guided Policy Optimization), which uses answer-conditioned visual attention to refine token-level credit while preserving the verifier-derived trajectory-mean advantage. A frozen old policy constructs a visual reference by teacher forcing the known correct answer and produces a visual distribution for each rollout token. VAttnPO measures their agreement in visual-attention space using Jensen--Shannon divergence, rather than reading guidance from teacher output-token distributions or introducing an attention-matching objective. Trajectory centering, relative-position weighting, and credit balancing turn this agreement into a zero-mean, position-aware correction to the GRPO sequence advantage. Token intervention, visual-index permutation, and trajectory analysis provide diagnostic evidence linking this signal to model behavior, visual correspondence, and generation position. On Qwen3-VL-8B-Instruct, VAttnPO raises six-task image AVE from 70.97 with GRPO to 73.50 and scores higher on every reported structured, video, and MME metric. Gains over GRPO also hold on Qwen2.5-VL-7B-Instruct and InternVL3-8B-Instruct.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

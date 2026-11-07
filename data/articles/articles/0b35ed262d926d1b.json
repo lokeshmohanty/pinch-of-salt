@@ -1,0 +1,13 @@
+{
+  "id": "0b35ed262d926d1b",
+  "title": "Expanding the Quality-Coverage Frontier with Competitive Flow Matching",
+  "link": "https://arxiv.org/abs/2611.07055",
+  "description": "arXiv:2611.07055v1 Announce Type: new \nAbstract: Flow matching (FM) generators often face a quality-coverage tradeoff. Inference-time techniques such as classifier-free guidance raise quality, but at the cost of coverage. We hypothesize this limitation stems from a basic property of the objective: an intermediate noisy image could correspond to many clean images, yet the model can only predict a single velocity, at best averaging over the multiple possibilities. To mitigate this, we introduce competition among predictions during training. We achieve this by augmenting the predictor with a randomly drawn low-dimensional conditioning code $z$. For each training example, we sample $K$ values of $z$ to produce $K$ candidate velocities that compete to explain the target, and apply the loss only to the best-matching candidate. This winner-take-all objective allows different modes to shape different predictions, rather than being averaged into a single compromise. Furthermore, this term naturally enables a new form of guidance, auxiliary conditioning scaling, which complements traditional guidance methods. Together, these two guidance mechanisms show that our method substantially improves the quality-coverage frontier. We validate on ImageNet-256, using two different testbeds, SiT and RAEv2. Given less than 3% of the original SiT pretraining compute for post-training, at the 67% Recall point, our method reduces $\\mathrm{FD}_{r,6}$ from 19.22 to 5.91. On RAEv2, at the 70% Recall point, it reduces $\\mathrm{FD}_{r,6}$ from 16.83 to 3.18.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "17657e66ee3a3e2e",
+  "title": "Single-Image Food Mass Estimators Do Not Transfer Their Gram Scale Across Datasets",
+  "link": "https://arxiv.org/abs/2610.29025",
+  "description": "arXiv:2610.29025v1 Announce Type: new \nAbstract: Estimating food mass from a photograph is central to image-based dietary assessment, but whether trained models transfer to new cameras and foods is unclear. We fine-tuned DINOv2-base on 2,253 weighed Nutrition5k dishes to predict mass from one RGB photograph and compared it with a zero-shot vision-language model, Qwen3-VL-32B, on Nutrition5k and three external datasets: ASA24 studio portions, ECUSTFD whole foods and Food Portion Benchmark meal trays. In domain, the fine-tuned model's mean absolute error was 24.8 g, less than half of Qwen's. On external datasets it did not beat Qwen. For a food it had never seen, it ranked portions by size, but no better than a count of food pixels. Its gram scale was wrong in two ways: it changed with how much of the scene the photograph showed, and it was off by a different factor for each food. Training on other foods or trays from the tested dataset cut the external error by 38 to 65%. DINOv2-large, a larger backbone trained on the same dishes, did not reduce the external error. One labeled photograph of the same food cut the model's ASA24 error to 28.3 g, better than that photograph achieved alone. Prediction intervals that held the true mass for 90% of Nutrition5k dishes held it for at most half of external photographs. Nutrition5k often photographed the same plate several times, so a random test split shared near-identical photographs with training and overstated accuracy. Single-image mass estimators therefore need labeled photographs from the setting where they are used.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d2f9434c16285d0d",
+  "title": "MemMux: Runtime Verification and Honest Resource Attribution for Fleets of Parallel Coding Agents",
+  "link": "https://arxiv.org/abs/2610.07257",
+  "description": "arXiv:2610.07257v1 Announce Type: new \nAbstract: Developers increasingly run a fleet of coding agents side by side on one workstation. The tools they reach for, terminal multiplexers like tmux and a new generation of agent managers, were built to arrange windows, not to govern memory. When ten agents each spawn language servers, test runners, and browsers, no standard tool can say how much memory belongs to which agent, confirm that a terminated agent's descendants are gone, notice a child that has escaped its agent, or keep the machine off the swap cliff when an OOM kill would silently discard uncommitted work. We treat these as runtime-verification problems: an agent-hosting substrate should continuously emit observable signals an operator or auditor can check while agents run. We present MemMux, a local runtime that turns resource governance into checkable signals (per-agent attribution, complete reclamation, escaped-process visibility, bounded footprint under overcommit, and monitoring overhead), with a claims-disciplined benchmark against tmux, a purpose-built agent multiplexer, and a raw-process baseline on identical workloads. Under a binding memory budget on a Linux host, MemMux keeps the fleet under budget (7.5 GiB) with zero swap by admitting a subset and reclaiming under pressure, while the ungoverned tools run every agent, pin the machine at its RAM ceiling (2x over budget), and spill about 2 GiB into swap. MemMux reclaims 100% of a terminated agent's process subtree where the raw baseline strands half of it, and it alone surfaces escaped children (10 of 10 detected). We report the cost: the 1 Hz attribution scan runs near 0.6% CPU at one agent but 2.7% at ten, above our 2% target. Running the harness on real Claude Code sessions shows 100% attribution and low overhead carry over to live agent trees. We release the engine, benchmark, and a one-command reproducer.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

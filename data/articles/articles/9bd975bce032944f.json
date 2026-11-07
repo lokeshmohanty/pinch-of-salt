@@ -1,0 +1,13 @@
+{
+  "id": "9bd975bce032944f",
+  "title": "Test Time Adaptation Methods for Point Cloud Registration in Laparoscopic Surgery",
+  "link": "https://arxiv.org/abs/2608.02883",
+  "description": "arXiv:2608.02883v2 Announce Type: replace \nAbstract: 3D point cloud registration in laparoscopic surgery estimates the transformation between an intraoperative organ reconstructed from video and its preoperative mesh. Because ground-truth transformations are unavailable for real data, supervised networks are trained on synthetic organ pairs. At test time, real reconstructions differ from synthetic data and are noisy, sparse, and occluded, which degrades correspondence estimation. Test-time adaptation (TTA) can reduce this domain shift, but existing methods mainly rely on logits, entropy, class prototypes, or cache memories unavailable in registration. Registration also involves paired inputs with an asymmetric shift that primarily affects the intraoperative cloud. We analyse and modify state-of-the-art TTA methods from three families to 3D registration: model, normalization, and input adaptation. We analyze four representative approaches based on auxiliary-task model updates, backpropagation-free token purging, feature alignment, and layer-normalization calibration. We modify them to handle asymmetric shifts between preoperative and intraoperative point clouds and replace classification-based entropy objectives. Using a correspondence-based model trained on clean synthetic source data, we evaluate adaptation to corrupted synthetic and real target data on P2P and P2ILReg. For synthetic targets, we apply eight corruptions, including uniform noise and global density reduction, at five severity levels. All methods improve registration on P2P, whereas on P2ILReg only input adaptation reduces the error, while normalization adaptation degrades it. Considering the computational overhead of backpropagation-based adaptation, input adaptation is the most promising option for laparoscopic surgery, providing low inference latency and consistent error reductions across datasets. Code: https://github.com/ninaa-git/survey_pc_registration_tta",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

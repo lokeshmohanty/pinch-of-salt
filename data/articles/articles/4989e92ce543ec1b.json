@@ -1,0 +1,13 @@
+{
+  "id": "4989e92ce543ec1b",
+  "title": "What Can Low Resource Languages Learn From Each Other?",
+  "link": "https://arxiv.org/abs/2608.27753",
+  "description": "arXiv:2608.27753v1 Announce Type: new \nAbstract: Despite the rapid advancement of Vision-Language Models (VLMs), their linguistic reach remains largely confined to high-resource languages, leaving the majority of the world's 7,000+ living languages on the wrong side of a growing digital divide. This disparity is especially pronounced in Optical Character Recognition (OCR), where low-resource scripts lack the massive datasets required for traditional scaling laws. We investigate OCR adaptation in extreme data-scarce regimes (<10K real and <250K synthetic images), demonstrating that conventional fine-tuning strategies often reach a performance ceiling. Our key finding reveals a structural inefficiency in language-specific adaptation: while higher layers of specialized models diverge to capture unique script nuances, the lower layers learn redundant, highly similar features. Motivated by this observation, we propose PSMC (Pre-train, Specialize, Merge, and Co-train), a data-efficient framework that capitalizes on a cross-script \"transfer effect\". Our approach first derives language-specific experts from a high-resource base model, then employs task arithmetic to fuse these experts into a unified, high-performance multilingual back- bone. Extensive evaluation across 10 Indian scripts (supporting 20+ languages) shows that PSMC achieves a ~2% average improvement in Word Recognition Rate (WRR) over individual specialist models without increasing parameter count. Our results indicate that joint training in the merged latent space facilitates a constructive knowledge transfer that benefits all constituent scripts, providing a scalable pathway for inclusive VLM development. Source code and datasets will be released post publication.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

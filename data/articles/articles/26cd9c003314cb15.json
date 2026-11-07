@@ -1,0 +1,16 @@
+{
+  "id": "26cd9c003314cb15",
+  "title": "Depth-Dependent Safety Geometry in Vision-Language Models: Layer-Wise Localization and Bidirectional Refusal Control",
+  "link": "https://arxiv.org/abs/2610.32182",
+  "description": "arXiv:2610.32182v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) are widely deployed, yet the internal mechanisms behind their safety behavior remain poorly understood. We present a lightweight inference-time framework for localizing and manipulating safety-sensitive representations in frozen VLMs, without retraining or modifying parameters. On Qwen3-VL-4B, layer-wise activation divergence analysis reveals non-uniform safety geometry across depth. Causal interventions show that early vision layers support strong bidirectional refusal control through activation steering along a learned safety direction, with unsafe rejection spanning 6%-96%, whereas later layers respond more to activation magnitude scaling and exhibit a substantial safety-selectivity trade-off. Deeper layers remain well separated along the safety direction yet are largely insensitive to steering, distinguishing representational separability from causal controllability. InternVL2.5-4B shows qualitatively similar depth-dependent activation geometry despite differences in layer location and magnitude. Our results expose a white-box, representation-level refusal-bypass attack surface in VLM vision encoders and motivate inference-time stabilization of safety-sensitive representations.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL",
+    "cs.CR",
+    "cs.LG"
+  ]
+}

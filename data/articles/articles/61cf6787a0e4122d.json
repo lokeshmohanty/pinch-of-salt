@@ -1,0 +1,14 @@
+{
+  "id": "61cf6787a0e4122d",
+  "title": "MANAS-2: Constrained Reconstruction for EEG Foundation Models",
+  "link": "https://arxiv.org/abs/2609.13717",
+  "description": "arXiv:2609.13717v2 Announce Type: replace \nAbstract: Masked reconstruction is widely used for EEG foundation models, but optimizing reconstruction on low-SNR waveforms does not necessarily produce the most useful latent representation. We introduce MANAS-2, a new EEG foundation model that combines a Raw-Band Hybrid (RBH) masked autoencoder with Constrained Reconstruction (ConRec), a physics-motivated regularizer. RBH jointly reconstructs temporal waveform patches and compact spectral-band targets, while ConRec acts only on the temporal decoder output, penalizing differences in RMS energy between adjacent short windows of the reconstructed waveform. ConRec is intended to shape the encoder by biasing it toward the organization of oscillatory-envelope information. Across seven held-out EEG datasets, adding ConRec to an otherwise identical RBH model increases frozen ridge recovery of six-band spectral power from mean R^2=0.860 to 0.906 and recovery of inter-patch band-energy dynamics from R^2=0.283 to 0.354, while temporal waveform information remains highly recoverable from the frozen latents. Applied to a temporal-only masked autoencoder, ConRec also improves frozen downstream transfer and frequency-dependent latent geometry despite receiving no spectral targets: i.e., the effects of ConRec are architecture-independent. MANAS-2 also outperforms leading EEG Foundation Models on most downstream knowledge-transfer tasks. From the effects of ConRec, we see that a physically motivated constraint imposed through the decoder can make for a more spectrally organized and transferable latent space. MANAS-2 therefore provides a new EEG foundation model built around constrained reconstruction as a mechanism for shaping representation--rather than reconstruction--quality.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

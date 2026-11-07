@@ -1,0 +1,14 @@
+{
+  "id": "f0b89b9f0562a606",
+  "title": "TensorHub: Scalable and Elastic Weight Transfer for LLM RL Training",
+  "link": "https://arxiv.org/abs/2604.09107",
+  "description": "arXiv:2604.09107v2 Announce Type: replace-cross \nAbstract: Modern LLM reinforcement learning (RL) workloads require a high-performance weight transfer system to scale training across heterogeneous compute resources. However, efficiently transferring terabyte-scale model weights across thousands of GPUs remains challenging because the system must accommodate clusters that dynamically scale up and down while keeping coordination, data movement, and storage overhead low.\n  We introduce Reference-Oriented Storage (ROS), a new storage abstraction for RL weight transfer that exploits highly replicated model weights in place. ROS presents the illusion that certain versions of the model weights are stored and can be fetched on demand. Underneath, ROS does not physically store any copies of the weights; instead, it tracks the workers that hold these weights on GPUs for inference. Upon request, ROS directly uses them to serve reads. We build TensorHub, a production-quality system that instantiates the ROS idea with topology-aware transfer, model-parallel consistency, and fault tolerance. Evaluation shows that TensorHub saturates RDMA bandwidth and adapts to three distinct rollout workloads with minimal engineering effort. Specifically, TensorHub reduces total GPU stall time by up to 6.7x for standalone rollouts, accelerates weight updates for elastic rollouts by up to 4.8x, and cuts cross-datacenter rollout stall time by up to 19x. TensorHub has been deployed in ByteDance production to support cutting-edge RL training.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI"
+  ]
+}

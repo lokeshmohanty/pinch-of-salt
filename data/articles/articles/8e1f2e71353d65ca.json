@@ -1,0 +1,14 @@
+{
+  "id": "8e1f2e71353d65ca",
+  "title": "On-the-Fly Homographies Calibration for Multi-Camera Tracking",
+  "link": "https://arxiv.org/abs/2609.18582",
+  "description": "arXiv:2609.18582v1 Announce Type: cross \nAbstract: Precise multi-camera tracking traditionally relies on rigorous 3D site calibration, yet this requirement is often operationally impossible in large-scale deployments. Privacy regulations frequently prohibit recording video for offline calibration; limited bandwidth precludes synchronizing high-resolution streams from hundreds of cameras; and covering immense physical sites with calibration targets is logistically infeasible. We present a multi-camera homography calibration system designed to overcome these barriers through \"on-the-fly\" geometric refinement. Starting from coarse manual homographies, we introduce a centroid-based projection optimization (PO) that continuously aligns the ground-plane geometry using live detection streams. Because PO operates asynchronously on already-transmitted, lightweight metadata, it adds zero computational latency to the real-time tracker. This allows the system to adapt automatically to camera movements or environmental changes without human intervention. This optimized geometry feeds a multi-camera bird's-eye-view (BEV) tracker that fuses detections and unifies trajectories across zones. Crucially, by operating strictly on live anonymous metadata, our solution ensures a privacy-safe, zero-overhead, and resilient tracking pipeline that maintains global consistency in dynamic environments where static, recorded-video calibration is impossible.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

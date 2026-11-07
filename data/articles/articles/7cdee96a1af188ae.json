@@ -1,0 +1,14 @@
+{
+  "id": "7cdee96a1af188ae",
+  "title": "Adaptive Bidirectional Task Interaction for Joint Segmentation and Classification of Breast Ultrasound",
+  "link": "https://arxiv.org/abs/2603.01295",
+  "description": "arXiv:2603.01295v2 Announce Type: replace-cross \nAbstract: Joint lesion segmentation and tissue classification in breast ultrasound are usually trained with a shared encoder, so the two branches stop exchanging information once their decoders separate. That is exactly where boundary detail and semantic evidence are most complementary. The proposed method restores this exchange during decoding and, because its value differs between images, lets the network decide per image how much to keep. A Task Interaction Module (TIM) at each of four decoder levels passes pooled boundary context into the classification representation and modulates decoder channels with class-conditioned priors. An Adaptive Interaction Weighting (AIW) unit then blends interacted and original features with a coefficient computed for each image and level. On BUSI the model reaches 74.19% IoU and 90.60% accuracy, and on BUSI-WHU 86.40% IoU and 95.00% accuracy, ahead of encoder-sharing multi-task, transformer segmentation and decoder-interaction baselines evaluated under the same protocol. The ablation shows that multi-scale context and cross-task exchange are not independent: applied separately they contribute 4.00 points of IoU in total, applied together 6.76. Adding the adaptive blend to task interaction alone raises AUC from 94.41% to 97.31%, indicating that the blend acts primarily on the classification branch. Code: https://github.com/C-loud-Nine/Adaptive-Task-Interaction-BUS.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

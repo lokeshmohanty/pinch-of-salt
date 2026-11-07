@@ -1,0 +1,14 @@
+{
+  "id": "3b54fdaefe271bee",
+  "title": "ALER: Adaptive Learnable Experience Rewriting for Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2610.00592",
+  "description": "arXiv:2610.00592v1 Announce Type: cross \nAbstract: In partially observable reinforcement learning (RL), a later observation can make stored information obsolete or change what it implies for the next decision. Memory architectures and benchmarks for RL mostly test retention, the ability to keep information unchanged until it is needed. We formalize two further requirements. Rewriting sets the decision-relevant content to a value independent of the old one, and experience fusion transforms the old content by a rule that a later observation specifies. For tasks built from such updates, we count the memory states that a solution needs, and several baselines reach their lowest success rates on compositions that need more states. We introduce ALER (Adaptive Learnable Experience Rewriting), an agent that pairs an LSTM with a slot memory. An independently addressed Gumbel-Softmax write that concentrates its weight on one slot overwrites that slot, and a learned gate fuses the retrieved content with the recurrent state before the policy and value heads. We also introduce Rune-Mazes, three environments in which rune observations invert, cancel, reset, or repeat updates of a hidden cue under vector and pixel observations. Against seven baselines, ALER reaches a success rate of at least $0.82$ in all sixteen Endless T-Maze configurations and at least $0.99$ on all five Rune T-Maze compositions, and it has the highest mean success rate on four-branch Rune Multi-Corridor with an Invert rune. On pixel-based Rune MiniGrid Memory, it has a higher mean success rate than PPO-LSTM in eight of ten configurations. Project page: https://quartz-admirer.github.io/ALER-Adaptive-Learnable-Experience-Rewriting/.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "169aa2f41de4c61f",
+  "title": "Do Language Models Know Which Constraints Belong Together?",
+  "link": "https://arxiv.org/abs/2611.05726",
+  "description": "arXiv:2611.05726v1 Announce Type: cross \nAbstract: Dantzig-Wolfe reformulation strengthens the linear relaxation of a mixed-integer program by convexifying a chosen set of constraint families, and every candidate costs a column generation run. The choice is hard when families strengthen the bound only together, because a search that adds one family at a time then stops at the linear relaxation. The classical inequalities of lot sizing, network design and facility location rest on such zero-marginal groups. We prove that when each evaluation convexifies at most $s$ of $k$ families, any method that observes only bounds needs a covering number of evaluations, of order $k^w$, to find a hidden group of $w$ families, also on actual Dantzig-Wolfe relaxations. A prediction that misses $e$ members reduces the cost to $\\Theta(k^e)$, through one staged search that does not need to know $e$, so the evaluations a prediction saves measure what the predictor knows. We study two sources of predictions. A one-pass lookahead at an optimal LP dual is provably blind to groups whose families share no variable, and a language model reads the names and text of the model. JointDW verifies the prediction of the language model with the staged search and interleaves it with the lookahead at a bounded loss. Groups that strengthen the bound only jointly appear in a quarter of the MIPLIB-NL models whose bound can be improved. There the strongest language models identify them about as often as the lookahead, their predictions rest on the names for textbook models, and reasoning about doubles the accuracy of the same model. On larger models with distracting families, the lookahead finds the group in one evaluation of three families. Language models given only the text seldom name it, while one reasoning model given every coefficient names it in all but one answer and then needs fewer evaluations than the lookahead for pairs of families.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.DS",
+    "math.OC"
+  ]
+}

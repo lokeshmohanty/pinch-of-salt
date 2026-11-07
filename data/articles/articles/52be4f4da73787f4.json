@@ -1,0 +1,13 @@
+{
+  "id": "52be4f4da73787f4",
+  "title": "Learning Features, Not Layouts: Feature-Axis Attention as a Transfer Prior for Medical Imaging",
+  "link": "https://arxiv.org/abs/2610.13012",
+  "description": "arXiv:2610.13012v1 Announce Type: new \nAbstract: Natural-image-pretrained foundation models are increasingly adapted to medical imaging, yet transfer remains unreliable under domain shift, modality heterogeneity, and label scarcity. We trace part of this fragility to an overlooked design choice. Standard vision transformers place all global modeling on self-attention over spatial tokens, an object-layout prior well suited to natural scenes but not to medical images, where the discriminative signal lies in feature correlations and texture that recur across scanners while layout does not. We ask whether the axis of global attention, spatial versus feature, is itself a lever for transferable medical representations. Existing channel-aware hybrids confound this question, adding channel attention to a spatially-mixed backbone and leaving the axes coupled and the feature axis unmeasurable in isolation. We design FAD-ViT, a backbone that strictly decouples the two axes, making feature-axis attention the primary global operator and the attention axis a controlled variable. Evaluating comprehensively across 23 classification, segmentation, and low-data tasks under matched tokenization, capacity, and protocol, we find that shifting global attention from the spatial to the feature axis leaves from-scratch performance essentially unchanged, yet markedly strengthens transfer. Identical ImageNet pretraining yields up to roughly three times the transfer gain, with consistent improvements on every held-out segmentation task at up to a quarter the parameter count and far lower compute than standard and channel-attention baselines. The advantage is largest where texture rather than geometry is discriminative, tracking greater reuse of pretrained features. The axis of global attention is thus a design lever for medical transfer, and making it channel-primary is a simple, cheap, and principled choice.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

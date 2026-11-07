@@ -1,0 +1,13 @@
+{
+  "id": "bf5bdb700f20017e",
+  "title": "TPCD: Tone-Pressure Contrastive Decoding and the Label-Free Gating Bottleneck in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2607.26536",
+  "description": "arXiv:2607.26536v1 Announce Type: new \nAbstract: High-pressure prompts can push vision-language models (VLMs) into unsupported commitments, such as reading illegible text, reporting indeterminate times, or affirming absent objects. This paper asks whether the pressure-induced distribution itself can serve as a contrastive-decoding negative branch. Tone-pressure contrastive decoding (TPCD) subtracts logits produced under a high-pressure instruction from logits produced under a safe neutral instruction. On the 800-example tone-matters benchmark, LLaVA-1.5-7B under pressure reaches 66.75% attack success rate (ASR); safe neutralization reduces ASR to 9.88%; full TPCD reaches 0.50% but collapses positives to 15.56%. A benchmark-specific task-prior/disagreement gate preserves measured positive accuracy (54.44%) while lowering ASR to 1.63% on LLaVA. Treating this LLaVA analysis as the design split, full $n=800$ negative and $n=780$ matched-positive held-out runs on GLM-4.6V and Llama-3.2-Vision show that simple gates can improve over safe neutralization, with sensitivity analyses bounding the weak time-positive subtask. A category-prior-free answer-disagreement router reduces held-out aggregate ASR to 6.93%, improving over both safe neutralization (10.98%) and branch disagreement (9.67%) while matching branch disagreement's 79.94% positive accuracy, although it remains post-hoc and surface-form based. We conclude that pressure is a useful probe of commitment bias and a viable mitigation signal, but the current gates are not yet independently validated grounding-aware detectors.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

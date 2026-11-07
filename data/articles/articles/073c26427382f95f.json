@@ -1,0 +1,15 @@
+{
+  "id": "073c26427382f95f",
+  "title": "The Geometry of Learning: Read-Write Asymmetry Across Training",
+  "link": "https://arxiv.org/abs/2605.16600",
+  "description": "arXiv:2605.16600v2 Announce Type: replace-cross \nAbstract: Pretraining and alignment update the same transformer weights, and we ask in which directions each stage changes them. The residual stream gives every matrix a shared coordinate system, in which a weight change can be compared with the principal subspace of the activations the matrix reads and with the prediction subspace of the unembedding. In this frame, alignment updates to the query and key matrices are enriched in the principal input subspace, while its updates to the output matrices are close to random relative to the prediction subspace, and the same signature appears in late pretraining and under every objective we apply to one checkpoint, so it is a property of the training stage rather than of the objective. The gradient of a linear map is a sum of outer products $\\delta_t a_t^\\top$, and the residual stream enters this product through the activation $a_t$ for matrices that read from it and through the upstream gradient $\\delta_t$ for matrices that write into it. Read gradients therefore inherit the spectrum of the activations, which is the same under every objective, while write gradients inherit the geometry of the upstream gradients, which point into the prediction subspace only early in pretraining, when the output matrices acquire their prediction geometry. The raw read gradient follows the activation spectrum, the optimiser attenuates the concentration it inherits, and cancellation between tokens sets the scale of the update but not its direction. A write direction derived from the unembedding still changes predictions after alignment, and adaptation restricted to any single group of matrices remains effective, so the signature describes where training places its updates, not which matrices can carry them.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

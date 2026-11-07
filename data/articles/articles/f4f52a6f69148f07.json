@@ -1,0 +1,13 @@
+{
+  "id": "f4f52a6f69148f07",
+  "title": "StreamScout: Learning When to Look Deeper for Streaming Video Understanding",
+  "link": "https://arxiv.org/abs/2609.00291",
+  "description": "arXiv:2609.00291v1 Announce Type: new \nAbstract: Streaming video understanding requires answering questions that arrive at arbitrary moments over an unbounded video stream. Existing systems primarily focus on what to retain in a bounded memory, yet access that memory using the same fixed-cost procedure for every query, despite substantial variation in the evidence required. We argue that deciding how deeply to access memory for each query is as important as deciding what the memory should store. To this end, we introduce StreamScout, an adaptive inference framework that maintains only a lightweight textual timeline in context as the stream unfolds. At query time, StreamScout progressively augments the timeline with up to three increasingly informative visual views: a glance at recent frames, a uniform look-back over the past stream, and query-salient retrieval. At each stage, the model answers immediately if the available evidence is sufficient; otherwise, it escalates to the next view. To improve this stop-or-escalate policy, we probe the cascade on an auxiliary set and distill the model's empirical competence boundary into supervision for a lightweight LoRA adaptation, yielding StreamScout-S. We further refine the policy through reinforcement learning, allowing the model to explore stopping behaviors beyond imitation of the distilled decisions, yielding StreamScout-R. Across three backbones and three streaming benchmarks, StreamScout and its variants consistently outperform prior streaming methods while substantially reducing inference cost and token consumption; on OVO-Bench, for instance, StreamScout-S improves Qwen3-VL-8B by 14.65 points while using 59% fewer tokens than uniform sampling and answering in 1.04 s on average.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

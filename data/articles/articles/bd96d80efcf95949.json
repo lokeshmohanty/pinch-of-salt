@@ -1,0 +1,15 @@
+{
+  "id": "bd96d80efcf95949",
+  "title": "Where Position Matters: Profiling-Guided Layer-Wise RoPE Allocation in Transformers",
+  "link": "https://arxiv.org/abs/2610.39223",
+  "description": "arXiv:2610.39223v1 Announce Type: cross \nAbstract: Rotary Position Embedding (RoPE) typically uses uniform coverage across Transformer layers despite heterogeneous positional requirements. Phase-off interventions reveal non-uniform, model-specific rotary-phase dependence, while coverage interventions relate it to coverage-upgrade benefits. We propose profiling-guided layer-wise RoPE allocation, assigning high/low coverage under a fixed budget using early coverage-benefit profiles. The framework supports fixed-width query/key representations and physical rotary-dimension allocation in Multi-head Latent Attention (MLA). Normalized-depth mapping transfers profiles within model families, enabling small-model measurements to guide larger-model allocations before pretraining. A brief analysis relates selection and transfer to score calibration and inter-layer interactions. From-scratch experiments demonstrate validation-loss improvements over available budget-matched baselines, while analytical resource accounting identifies favorable quality--storage--compute trade-offs for physical MLA. These results connect positional demand to transferable, efficient architecture design.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5f6f9d93a18ad3f0",
+  "title": "The Standardization Trap: Certifying Joint Label Processing in Tabular Foundation Models",
+  "link": "https://arxiv.org/abs/2610.08314",
+  "description": "arXiv:2610.08314v1 Announce Type: new \nAbstract: Linear regression and kernel smoothing offer tractable explanations of in-context learning: in both, the features determine the weight assigned to each context label. However, whether this fixed-weight account describes pretrained tabular foundation models (TFMs) remains unclear. Testing this account using derivatives runs into a standardization trap: public TFM packages standardize the labels before the model sees them, yet ordinary derivatives also reflect behavior outside the set of standardized labels, making a model appear nonlinear even when every prediction it makes agrees with a fixed-weight map. We propose two certificates that depend only on predictions at standardized labels and can reject two distinct explanations: fixed-weight prediction and sums of independent nonlinear label transformations. Across the five public TFMs that we evaluate, our certificates show that changing one context label alters how other labels influence the prediction, a behavior we call joint processing. We further find that joint processing emerges with training and that attention scores carry most of the measured interaction. Together, these findings motivate TFM explanations that account for how context labels change the influence of individual examples.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

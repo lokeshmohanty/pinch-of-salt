@@ -1,0 +1,14 @@
+{
+  "id": "ec2e53180bd152ba",
+  "title": "Better Decomposition, Free Aggregation: A Synthesizer-Folding Framework for Multilingual Multi-Hop Question Answering",
+  "link": "https://arxiv.org/abs/2608.13160",
+  "description": "arXiv:2608.13160v1 Announce Type: cross \nAbstract: Multilingual retrieval-augmented generation (mRAG) equips large language models with access to globally distributed external knowledge for complex multilingual question answering. Recent approaches either translate retrieved documents into English or the query language to bridge the cross-lingual semantic gap, or decompose a complex query into sub-questions and aggregate the intermediate reasoning process. However, both lines of work suffer from two limitations. First, one-size-fits-all translation alignment, blanket translation discards culturally and linguistically native information unique to the target language, introduces translation noise, and inflates system cost. Second, greedy decomposition and aggregation, uncontrolled decomposition produces redundant sub-questions that compound errors during step-wise reasoning, and the final aggregation over reasoning paths further amplifies these errors. We address both with our method Syfer, a synthesizer-folding framework for multilingual multi-hop question answering that defers translation rather than applying it by default. Syfer first invokes a format-constrained decomposer to produce a sub-question graph in the original language, followed by a decomposition-quality check; when the check passes, sub-questions are answered sequentially under a retrieve-then-answer policy in the target language, and the English translation pathway with bilingual sub-question graph alignment is activated only when the check fails. Experiments across multiple languages show that Syfer attains competitive accuracy while striking a favourable balance between performance and computational cost.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

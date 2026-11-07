@@ -1,0 +1,13 @@
+{
+  "id": "9db19cfe9aeffe30",
+  "title": "Beyond Lip Sync: Reference-Grounded Oral Refinement for Audio-Driven Portrait Animation",
+  "link": "https://arxiv.org/abs/2609.38019",
+  "description": "arXiv:2609.38019v1 Announce Type: new \nAbstract: We present RGOR (Reference-Grounded Oral Refinement), an audio-driven lip-sync framework that renders the mouth of the specific person being dubbed rather than a generic one. Existing lip-sync systems follow the audio closely and keep the face recognizable, yet the mouth they render is an average mouth: the shape and texture of the lips, the arrangement of the teeth, and how much of them shows as the mouth opens are not that person's. The problem persists because nothing in current training or evaluation asks for the person's own mouth: perceptual losses accept any plausible mouth, face identity is carried mostly by the skin around it, and the released inference code of inpainting systems uses the unmasked target frame as the reference, which hides the gap. To address this, RGOR conditions every generated frame on frames from separate enrollment recordings of the same person and on HD patches of the mouth that bypass the VAE, and trains the generator against a paired judge that compares each rendered mouth with the person's reference and learns to reject a realistic mouth of someone else. We further build an evaluation protocol and use it to compare open-source and commercial lip-sync systems on held-out identities. Experiments show that RGOR achieves the best or second-best result on most metrics, and preserves the person's own lip and dental detail while keeping synchronization and the rest of the face intact.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

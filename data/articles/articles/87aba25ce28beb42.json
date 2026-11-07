@@ -1,0 +1,13 @@
+{
+  "id": "87aba25ce28beb42",
+  "title": "Readout and Operating-Point Sensitivity in Event-Stream Candidate Selection",
+  "link": "https://arxiv.org/abs/2610.36743",
+  "description": "arXiv:2610.36743v1 Announce Type: new \nAbstract: Event-triggered recording needs a useful combination of target capture and false triggers, yet representation comparisons can change with readout and threshold calibration. We evaluate real event accumulations from 520 DailyDVS-200 clips and 47 participants using participant-disjoint training, validation, and testing. The original study varies frozen encoder scale, accumulation duration, and temporal view count; a post-review extension adds two supervised-pretrained convolutional encoders, a 61,586-parameter trained CNN with three seeds, ten repeated participant partitions, and calibration sensitivity. At 50 ms/eight views under the primary handshake-or-fall policy, DINO-S CLS captures 101/132 targets with 40/388 false triggers, versus 78/132 and 35/388 for patch mean. DINO-B CLS has lower selected-threshold capture but higher fold-wise low-FPR partial AUC (0.746 versus 0.732). MobileNetV3-Small captures 97/132 with 53/388 false triggers, demonstrating why lightweight baselines and actual operating points matter. Across ten dependent repartitions, mean normalized partial AUC is 0.738 for DINO-B CLS and 0.674 for MobileNet. The original LeJEPA S-to-B capture difference is 8.3 points, but its multiplicity-adjusted interval includes zero. Duration and view-count effects remain policy dependent. We find no established JEPA-specific advantage. The evidence concerns offline action-defined candidate selection on previously used development data; it does not establish personal recording value, continuous false alarms per hour, or eyewear energy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

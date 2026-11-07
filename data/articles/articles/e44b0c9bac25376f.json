@@ -1,0 +1,13 @@
+{
+  "id": "e44b0c9bac25376f",
+  "title": "Mitigating Domain Shift in Conditioned Floor Plan Generation: Synthetic Pre-training for Data-Efficient Adaptation",
+  "link": "https://arxiv.org/abs/2607.06483",
+  "description": "arXiv:2607.06483v2 Announce Type: replace \nAbstract: Robustness to domain shift is a key requirement for floor plan generative models to be applicable beyond the single dataset they were trained on, as floor plans vary widely across regions due to distinct architectural cultures, spatial constraints, and construction practices, while acquiring new annotated datasets remains costly and domain-specific. Yet, no prior work has studied this robustness in the context of conditioned floor plan generation. In this paper, we evaluate state-of-the-art models from two fundamentally different generative paradigms across three public datasets (RPLAN, MagicPlan and Swiss Dwellings) and show that they are highly sensitive to domain shift, with up to an order of magnitude performance degradation when transferred across domains. To mitigate this with minimal target-domain supervision, we introduce a procedural method to generate a large-scale synthetic training dataset that enforces strict physical constraints (non-overlapping rooms, valid door placement, graph consistency) while intentionally sacrificing architectural realism through highly irregular spatial arrangements and aggressive geometric perturbation of room shapes. We show that pre-training on this synthetic data considerably improves zero-shot cross-domain performance, outperforming in-domain training on MagicPlan. Furthermore, it provides a highly effective initialization for fine-tuning, accelerating target domain adaptation and outperforming real-world initialization baselines by up to 40% in a low-data regime.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "23f837845b70033c",
+  "title": "Seeing Both the Forest and the Trees: Reusing Holistic 3D Priors for Part-Decomposed Generation",
+  "link": "https://arxiv.org/abs/2610.21850",
+  "description": "arXiv:2610.21850v1 Announce Type: new \nAbstract: Generating 3D assets with explicit parts requires two properties at once: geometric detail inside each part and structural coherence across the whole object. Recent image-conditioned 3D generation models adopt a structured 3D representation that anchors tokens to explicit spatial positions, capturing both properties, but their output remains a single fused mesh. We ask how a part-decomposed generation model can inherit both properties of these holistic priors, and answer with STRUCTPARTS, a framework whose core technical contribution is a dual-frame coordinate interleaving mechanism: each shape latent is interpreted under both a part-local and an object-global reference frame, and processed through a global-local inter-leaved transformer that simultaneously reuses the prior's geometric detail at the part scale and its structural coherence at the whole-object scale. As its structural input, STRUCTPARTS uses a segmented mesh scaffold, a coarse mesh paired with a face-level segmentation mask kept entirely within the prior's native 3D representation. With only lightweight finetuning, both intra-part detail and inter-part coherence emerge from the same pretrained weights. On PartObjaverse-Tiny, STRUCTPARTS matches or surpasses prior part-decomposed models at a fraction of their training cost, while naturally supporting part-mesh refinement and part-level editing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

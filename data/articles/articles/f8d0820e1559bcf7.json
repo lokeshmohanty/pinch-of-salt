@@ -1,0 +1,13 @@
+{
+  "id": "f8d0820e1559bcf7",
+  "title": "Benchmarking Efficient & Effective Camera Pose Estimation Strategies for Novel View Synthesis",
+  "link": "https://arxiv.org/abs/2603.20428",
+  "description": "arXiv:2603.20428v2 Announce Type: replace \nAbstract: Novel view synthesis (NVS) approaches such as NeRFs or 3DGS can produce photo-realistic 3D scene representation from a set of images with known extrinsic and intrinsic parameters. The necessary camera poses and calibrations are typically obtained from the images via Structure-from-Motion (SfM). Classical SfM approaches rely on local feature matches between the images to estimate both the poses and a sparse 3D model of the scene, using bundle adjustment to refine initial pose, intrinsics, and geometry estimates. In order to increase run-time efficiency, recent SfM systems forgo optimization via bundle adjustment. Instead, they train feed-forward (transformer-based) neural networks to directly regress camera parameters and the 3D structure. While orders of magnitude more efficient, such recent works produce significantly less accurate estimates. To stimulate research on developing SfM approaches that are both efficient and effective, this paper develops a benchmark focused on SfM for novel view synthesis. Using existing datasets and two simple strategies for making the reconstruction process more efficient, we show that: (1) simply using fewer features already significantly accelerates classical SfM methods while maintaining high pose accuracy. (2) using feed-forward networks to obtain initial estimates and refining them using classical SfM techniques leads to the best efficiency-effectiveness trade-off. Our benchmark and code are publicly available at https://github.com/jhacsonmeza/sfm-benchmark-nvs.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

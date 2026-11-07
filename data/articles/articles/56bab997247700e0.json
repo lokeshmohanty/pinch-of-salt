@@ -1,0 +1,13 @@
+{
+  "id": "56bab997247700e0",
+  "title": "ScaleBlind: Point Cloud Completion under Unknown Scale",
+  "link": "https://arxiv.org/abs/2609.23404",
+  "description": "arXiv:2609.23404v1 Announce Type: new \nAbstract: Point cloud completion aims to infer a complete 3D shape from a partial point cloud and serves as a fundamental building block for downstream tasks such as reconstruction, editing, and simulation. Despite the recent progress, existing learning-based methods often implicitly rely on access to the ground-truth shape scale (GT-scale) during both training- and testing-time normalization, assuming privileged information that is unavailable in real-world inference. This hidden assumption limits practical deployment and can lead to severe completion artifacts, e.g., over- or under-completion and nested shells, once the oracle GT-scale cue is removed. We observe that the recent foundation image generation models exhibit a strong capability of understanding objects and geometries, and producing multi-view consistent renderings, making them promising priors for GT-scale-free 3D completion. Motivated by this insight, we propose ScaleBlind, a novel framework that leverages foundation-model-based image completion to recover global scale directly from partial inputs and then faithfully produces the 3D completion. Specifically, ScaleBlind dreams out complete multi-view appearances from rendered partial views, lifts the inferred missing regions back into 3D to obtain a geometry-aware coarse completion, and further refines it via a powerful cross-modal fusion network with the original partial point cloud. By harnessing 2D foundation priors, our method eliminates the need for accessing GT-scale information at inference. Moreover, it provides a principled bridge between 2D generative priors and 3D point cloud completion. Extensive experiments demonstrate the superiority of our framework, making ScaleBlind the new state-of-the-art for the point cloud completion task.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

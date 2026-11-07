@@ -1,0 +1,13 @@
+{
+  "id": "4be548a5b8e20a48",
+  "title": "ProgressNet: Sketching and Prompting with a Frozen Text-to-Image Model",
+  "link": "https://arxiv.org/abs/2610.03512",
+  "description": "arXiv:2610.03512v1 Announce Type: new \nAbstract: Humans draw progressively: a few strokes, a look at the result, a stroke erased, a prompt revised. Image generators do not work this way. They typically take a finished sketch and produce the image in a single pass, so every edit starts the picture again, and the models that do keep state across turns are driven by text, cannot take a stroke, and are too slow to draw with. We present ProgressNet, a training-free framework that lets a frozen text-to-image model follow a drawing session as it unfolds: strokes are added and erased, the prompt is revised, and the image keeps up at about a second per turn. It needs no new parameters because the frozen model already has what a progressive generator needs, a pathway through which the previous turn can be remembered, layers that can carry appearance forward without freezing structure, and an internal signal of how far to trust an unfinished sketch; three inference-time mechanisms (Previous-Concept Memory, Layer-Selective K/V Injection and Banded Adaptive Control) use each in turn. As a sketch fills in, every existing method degrades, the FID of the FLUX+ControlNet baseline doubling between 10% and 100% completion on FS-COCO, while ProgressNet's barely moves; it maintains strong fidelity and progressive coherence across three sketch domains and is preferred by users over five competitors, most widely on erasure.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ad2782def1adcb9e",
+  "title": "Paying for Too Many Tokens? Valid and Cost-Efficient Multimodal LLM Annotation with Simple Heuristics",
+  "link": "https://arxiv.org/abs/2610.00809",
+  "description": "arXiv:2610.00809v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) enable video annotation at scale, but costs accumulate quickly: processing a typical 60-second short-form video at one frame per second requires millions of tokens. To reduce costs, researchers rely on heuristics such as sampling a subset of frames, compressing videos into image grids, or using only a single modality. However, it remains unclear which heuristics save cost, and whether they preserve the downstream conclusions these annotations enable. To address this gap, we conduct a systematic evaluation of these heuristics using short-form videos, on two computational social science (CSS) tasks: sentiment and topic classification. We evaluate each configuration along three axes the literature typically treats separately: classification accuracy, validity of downstream inference, and per-video token cost. First, we find that accuracy and validity diverge: the highest-accuracy configuration can produce wrong conclusions. Second, modality value is not guaranteed: text alone can yield strong performance, indicating that adding modalities can add cost without adding signal. Finally, we find that cost can be decoupled from video length when annotating short-form videos: a single $2\\times8$ image grid built via simple shot-transition detection approaches full-video understanding ($\\kappa$ within~.05), at $\\sim 15\\%$ of the token cost. Based on these findings, we derive guidelines that can enable cost-aware VLM annotation in CSS.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL",
+    "cs.SI"
+  ]
+}

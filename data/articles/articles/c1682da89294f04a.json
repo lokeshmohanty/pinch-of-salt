@@ -1,0 +1,13 @@
+{
+  "id": "c1682da89294f04a",
+  "title": "What Remains Normal? Clean Images Miss Useful Near-Defect Normal Patches for Anomaly Detection",
+  "link": "https://arxiv.org/abs/2608.23299",
+  "description": "arXiv:2608.23299v2 Announce Type: replace \nAbstract: Normal-only industrial anomaly detectors use patches from clean training images as normal references or reconstruction targets. This assumes that clean patches are sufficient for the normal regions encountered at test time. We test that assumption directly. On MVTec AD, admitting ground-truth-normal patches from real defect images to a DINOv2 memory candidate pool raises pixel average precision (P-AP) from 73.34 to 76.95 while keeping the encoder, test-time score, and number of stored references fixed. Patches within two patch cells of the annotated defect recover 94.70% of this gain. We then ask whether useful patches of this kind can be exposed using clean training images alone. BoundarySupport inserts a procedural synthetic defect to alter surrounding context, excludes every token intersecting the nominal insertion or a detected RGB change, and learns only from pixel-preserved neighboring patches. Across three paired seeds, the same principle improves P-AP in all six memory and reconstruction settings across MVTec, VisA, and Real-IAD. Matched controls identify the altered-context feature itself as the useful normal evidence: with synthetic input or selected positions fixed, altered-context features outperform their clean-view counterparts as both reconstruction targets and memory references. On MVTec memory, the final score change is also spatially selective, with larger reductions on normal patches next to defects than on mid-distance or far-normal patches in all 15 categories. Code is publicly available at https://github.com/jw-chae/boundary_support.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

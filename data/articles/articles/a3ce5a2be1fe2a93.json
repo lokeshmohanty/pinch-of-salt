@@ -1,0 +1,13 @@
+{
+  "id": "a3ce5a2be1fe2a93",
+  "title": "MED-DSLC: Multi-Expert-Domain Classification via Domain Supervision and Logit Calibration",
+  "link": "https://arxiv.org/abs/2607.10985",
+  "description": "arXiv:2607.10985v1 Announce Type: new \nAbstract: Vision-language models (VLMs) such as CLIP enable zero-shot classification by comparing image features with text prompts in a shared embedding space. A fundamental property underlying this capability is the global comparability of logits across arbitrary candidate classes. However, VLMs are often adapted to fine-grained domains using techniques such as LoRA. While this improves in-domain accuracy, out-of-domain accuracy degrades. This leads to a highly fragmented model ecosystem, with thousands of specialized models. Multi-Expert-Domain classification seeks to address this problem, by merging LoRAs trained independently on specialized domains. However, due to the independent training, the various domain experts no longer produce globally calibrated logits. As a result, when evaluating over the union of multiple domain-specific class sets, heterogeneous logit scales induce cross-domain interference and artificially high confidence for out-of-domain classes, inducing prediction errors. In this work, we identify domain supervision and cross-domain logit miscalibration as the key issue to scalable multi-domain zero-shot recognition. We propose MED-DSLC, combining domain supervised training and domain-wise logit scaling, to explicitly restore global logit comparability. MED-DSLC is a lightweight solution for MED classification, which is shown to preserve within-domain discrimination while reducing cross-domain logit interference with minimal data. Extensive experiments across diverse fine-grained benchmarks demonstrate that it substantially improves mean accuracy (+15\\%), cross-domain robustness, and scalability in the size of MED classification problem. Our results show that restoring output-level calibration is essential under highly data imbalanced settings for achieving a truly zero-shot VLM under multi-domain specialization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

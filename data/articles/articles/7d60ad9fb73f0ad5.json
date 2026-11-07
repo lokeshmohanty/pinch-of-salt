@@ -1,0 +1,15 @@
+{
+  "id": "7d60ad9fb73f0ad5",
+  "title": "When the Judge Acts: Auditing VLM-Guided Image Selection on Culturally Situated Prompts",
+  "link": "https://arxiv.org/abs/2610.01243",
+  "description": "arXiv:2610.01243v1 Announce Type: cross \nAbstract: Vision-language models (VLMs) increasingly act as judges that pick the best of several generated images, so their choices decide what users see. Such judges are usually validated by score agreement with human ratings, not by the images they return. We audit VLM judges as decision-makers: on 300 culturally situated prompts, we compare the returned image with human ratings the judge never sees and with random choice from the same candidates, and repeat every decision with the candidates reordered. A 4B-parameter judge barely beats random and falls short of a CLIP similarity baseline. It picks the first image shown in 49% of calls (chance: 28%), and reordering changes its choice on 60% of prompts. For this judge, agreement across orders is informative: decisions that survive reordering are much better than random, whereas agreement with a weaker second judge keeps the wrong ones. An 8B judge shows almost no position bias and outperforms CLIP, yet for it the same filter mostly discards good decisions. Agreement helps only when it targets the judge's failure mode, so filters must be re-audited whenever the judge changes. The 4B judge's slight rise in stereotype ratings is no longer detectable after aggregating across orders or with the larger judge.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CY"
+  ]
+}

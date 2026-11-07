@@ -1,0 +1,16 @@
+{
+  "id": "1b2c632d4ee14715",
+  "title": "Accuracy and Uncertainty in Machine Deception Detection (Research White Paper)",
+  "link": "https://arxiv.org/abs/2610.15314",
+  "description": "arXiv:2610.15314v1 Announce Type: cross \nAbstract: A deception detector is only as useful as the trust its alarms deserve. Like a polygraph, detectors that read a language model's internal activations can catch deceptive responses that look honest. Yet current detectors depend on which layers they read, weaken on broader tests, and do not state how certain their alarms are. This white paper proposes the Machine Deception Detector, which targets both detection accuracy and the uncertainty of detector scores. The detector reads every layer of the language model, learns which tokens carry evidence of deception using only response labels, and calibrates its alarm threshold so that its false--positive rate stays below a prescribed level. An ensemble of such detectors measures the uncertainty of each score and raises an alarm only when its members agree, with a confidence level that sets how certain each alarm must be. The proposed evaluation trains on instructed honest and deceptive statements, tests on five unseen deceptive tasks of Liars' Bench read by six Qwen3 models from 0.6B to 32B parameters, and is designed to also show which layers carry the deception feature and how this changes with model size.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CR",
+    "stat.ML"
+  ]
+}

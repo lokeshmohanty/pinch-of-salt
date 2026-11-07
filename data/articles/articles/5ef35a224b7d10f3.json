@@ -1,0 +1,13 @@
+{
+  "id": "5ef35a224b7d10f3",
+  "title": "CoRef-DETR: Decoupled Global Context and Selective Boundary-Category Refinement for Underwater Instance Segmentation",
+  "link": "https://arxiv.org/abs/2606.08002",
+  "description": "arXiv:2606.08002v2 Announce Type: replace \nAbstract: Underwater instance segmentation supports marine surveys, aquaculture, and underwater robotics. Haze, colour casts, and low contrast blur object boundaries, and recent benchmarks distinguish up to 158 fine-grained categories. Most of the strongest published methods have 219 to 632 million parameters. This paper proposes CoRef-DETR, a compact detection transformer that targets three error sources of a real-time detector: context, boundaries, and categories. First, a decoupled global context (DGC) detector, with the base detector's 33.4 M parameters, applies global self-attention to a 384-pixel token grid but supervises and decodes masks in a 576-pixel frame. Second, a posterior-conditioned boundary refiner with 47.7 k parameters corrects mask logits on predicted boundaries, and a quality score on the corrected masks re-ranks the detections. Third, a crop-probe category branch on frozen DINOv2 features revises the categories of at most three masks per image, choosing between soft fusion and a confident-disagreement gate with a rule fixed on validation data. On five protocols of UIIS, UIIS10K, USIS10K, and USIS16K, CoRef-DETR achieves state-of-the-art mask average precision (AP), exceeding the strongest published results by 2.3 to 5.2 points. On the same test images, it also outperforms three reproduced recent methods, on USIS16K with its category branch. Running in half precision with TensorRT, CoRef-DETR processes an image in a median of 26 to 37 ms on an NVIDIA T4 GPU, 1.4 to 11 times faster than these methods. Ablations quantify each stage, and an error analysis locates the remaining error in crowds of small objects.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

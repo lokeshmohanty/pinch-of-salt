@@ -1,0 +1,15 @@
+{
+  "id": "e664d55834d98649",
+  "title": "Knowing When to Stop: The Evidence-Action Gap in Coding Agents",
+  "link": "https://arxiv.org/abs/2610.31895",
+  "description": "arXiv:2610.31895v1 Announce Type: cross \nAbstract: Coding agents are trained to complete tasks, and they keep trying even when the environment makes completion impossible. The evidence that only outside help can restore progress usually appears within a few steps, yet agents rarely act on it: they over-persist, attempt undesired workarounds, and claim success the record does not support -- a phenomenon we call evidence-action gap. To measure it, we introduce ImpasseBench, which injects twelve realistic environment blockers into otherwise solvable repair tasks and marks, in each trajectory, the step at which the collected evidence becomes sufficient. Scoring actions relative to that step separates appropriate effort from over-persistence and premature handoff. Across eight frontier models and 19,371 trajectories, we find that nearly every run that needs outside help collects sufficient evidence, yet a third still exhaust their budget, and every unsafe request we detect comes after that point. Fortunately, an escalation tool, or an external monitor for models that ignore the tool, already guards against much of this behavior: the tool cuts budget exhaustion from 34.0% to 6.7%, and the monitor nearly triples task success after environment restoration. Even then, a fired escalation is not yet a useful handoff: tickets reliably name the blocker but often omit the agent's own progress and verification status. Taken together, we argue that knowing when to stop therefore needs explicit support, both in the tool that lets an agent hand off and in the report it leaves behind.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

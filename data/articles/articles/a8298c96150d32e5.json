@@ -1,0 +1,15 @@
+{
+  "id": "a8298c96150d32e5",
+  "title": "Deficit-Driven Stratified Acquisition for Building STRATA-S12: An Open SAR-Optical Corpus for Self-Supervised Learning",
+  "link": "https://arxiv.org/abs/2610.17680",
+  "description": "arXiv:2610.17680v2 Announce Type: replace-cross \nAbstract: Building a co-registered SAR-optical corpus for self-supervised Earth Observation is above all an acquisition problem, yet the main multi-modal datasets are collected opportunistically, with no per-stratum quota control and no mechanism against the geographic dropout that non-uniform cloud cover leaves behind. We present Deficit-Driven Stratified Acquisition (DDSA), an algorithm that treats building a co-registered Sentinel-1/Sentinel-2 corpus as a constrained maximum-coverage problem over a hemisphere-corrected (class x season x region) stratification, enforces strict temporal pairing and a multi-stage quality gate, and closes the loop during acquisition with a human-in-the-loop deficit-repair stage. Measured on its own product, the algorithm yields three results a single-pass acquisition cannot report. Deficit-driven ordering makes a partial run a covering one: it holds every one of the 192 strata populated from the first few percent of the budget, where an abundance-first order leaves most strata empty until the end. Whether a failed attempt can be recovered depends on the temporal persistence of its cause, not the kind of defect: geometric failures such as nodata are among the most repairable (eta = 41.4%) while cloud is among the least (eta = 18.8%), because a cloudy location is cloudy on most dates of its season. The repair loop supplies 39.5% of the released pairs at no measurable quality cost, with 89.8% surviving manual review. The quality guarantee has a price: 2,928,370 acquisition attempts produced 740,746 released pairs. We release the corpus, STRATA-S12, with STAC/PDS4-aligned FAIR sidecars, and a pre-registered linear-probe check confirms it is fit for self-supervised pre-training. A metadata-level coverage comparison against SSL4EO-S12 and SEN12MS situates the corpus over a shared frame; systematic cross-corpus and cross-method comparison is left to follow-up work.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f2cb859a4af91472",
+  "title": "OmniRoute: Mapping Temporal Semantic Evidence to Audio-Visual Token Budgets for Efficient Omnimodal Large Language Models",
+  "link": "https://arxiv.org/abs/2609.37052",
+  "description": "arXiv:2609.37052v1 Announce Type: new \nAbstract: Omnimodal large language models (Omni-LLMs) encode audio and visual streams into temporally interleaved token sequences for multimodal reasoning. However, processing long audio-visual token sequences incurs substantial prefill costs. Existing compression methods have made progress, but often overlook temporal changes in audio-visual semantic relevance. Motivated by temporal variation and local continuity, we propose OmniRoute, a training-free, two-stage compression framework. First, Temporal Evidence-Guided Budgeting (TEGB) derives chunk-wise modality preferences and initial leading-modality budgets from semantic relevance and local content variation. Second, Budget-Constrained Semantic Compression (BCSC) compresses the leading modality and then calibrates the follower's retention target using the actual retained fraction. For video, it combines spatiotemporal grouping with query-guided selection; for audio, it selects tokens based on encoder attention and query relevance, then merges residual tokens into context anchors under visual guidance. Experiments on four representative benchmarks demonstrate a better trade-off between inference efficiency and performance than competitive baselines. The code and interface will be released to facilitate further research.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

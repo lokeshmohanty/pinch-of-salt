@@ -1,0 +1,13 @@
+{
+  "id": "0fb29735189b30ff",
+  "title": "Fix the Match, Not the Solver: STITCH -- a Self-Supervised Compatibility Measure for Eroded Visual Puzzles",
+  "link": "https://arxiv.org/abs/2610.13176",
+  "description": "arXiv:2610.13176v1 Announce Type: new \nAbstract: Unlike the clean and pixel-aligned complete pieces of standard jigsaw benchmarks, real-world puzzle fragments lose their boundary regions to erosion, destroying the signal that classical compatibility measures (CMs) rely on. We first re-establish, via oracle experiments, that the CM, not the solver, is the performance bottleneck: with a perfect CM, even a simple greedy solver achieves perfect reconstruction. This motivates STITCH, a self-supervised CM that sidesteps missing boundaries by comparing frozen ViT patch tokens from piece interiors via a lightweight cross-attention head (~249K trainable parameters), trained without manual annotation. Plugged into unchanged compatibility-based solvers, STITCH reaches .992/.954 Abs/Perf on JPwLEG-5 (+.629 Perf over the best prior method), nearly saturating the benchmark. On a new ImageNet 7x7 benchmark, it outperforms all alternatives, including inpaint-then-match pipelines built on modern generative models. Importantly, performance remains robust across erosion levels and generalizes to puzzles with over 40% missing pieces without retraining. Trained on the recent GAP datasets of irregular, heavily eroded fragments, the same CM recipe enables compatibility-based solvers to surpass recent learning-based solvers on GAP-3 and GAP-5. Since this leap in performance is achieved by a pluggable CM module, the takeaway is clear: fix the match, not the solver.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

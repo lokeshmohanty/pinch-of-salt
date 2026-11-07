@@ -1,0 +1,14 @@
+{
+  "id": "be8a227f1c6bb803",
+  "title": "Learning Implicit Bias in Generative Spaces for Accelerating Protein Dynamics Emulation",
+  "link": "https://arxiv.org/abs/2606.01833",
+  "description": "arXiv:2606.01833v2 Announce Type: replace-cross \nAbstract: Generative emulators of protein dynamics produce plausible trajectories at a fraction of the cost of molecular dynamics, but they inherit their training distribution and tend to revisit known states rather than reach rare ones under long-horizon extrapolation. Inspired by classical enhanced sampling, we introduce an implicit, history-dependent bias in the generative space of a pretrained emulator. Specifically, a history-aware score estimator augments the frozen emulator with a distance-weighted bias that steers reverse-time sampling away from previously generated structures, regularized by an environment-support term. To preserve structural validity at long horizons, a score-based refinement step re-projects drifted samples onto the data manifold using the frozen emulator. Our experiments demonstrate that the method (i) raises diversity by $35\\%$ on DynamicPDB-80; (ii) on $12$ zero-shot Fast-Folding proteins, the learned bias alone reaches the unbiased emulator's coverage up to ${\\sim}15\\times$ faster, and pairing it with refinement reaches the coverage up to ${\\sim}37\\times$ faster while covering ${\\sim}3\\times$ as many low-energy states. Code will be released soon.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

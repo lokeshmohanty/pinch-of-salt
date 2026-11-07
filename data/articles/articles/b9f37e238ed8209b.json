@@ -1,0 +1,14 @@
+{
+  "id": "b9f37e238ed8209b",
+  "title": "Seeing the Options: Typed Decisions over Visual Candidates with Reusable Option Memory",
+  "link": "https://arxiv.org/abs/2610.33702",
+  "description": "arXiv:2610.33702v2 Announce Type: replace \nAbstract: Agents end many steps in a typed decision over a set of candidates: which screen element to click, which product to pick. System One models answer in one forward pass, and Jeva showed that four properties the setting demands - a \"none of the above\" probability, invariance to candidate order, scalability in the number of candidates, and reuse of candidate computation - follow from encoding the request and each candidate separately and letting a request state read a candidate memory. Jeva is text-only, and existing multimodal System One models (OneJev, Jev-Omni) put images in the request while candidates stay text in letter slots. This paper asks what happens to the four properties, and to accuracy, when the candidates themselves are images. Iris admits image, text, or mixed candidates and leaves Jeva's decision module untouched. On a visual-candidate benchmark built from Multimodal-Mind2Web (every candidate is the element's screenshot crop, K=16, three splits), independent encoding reaches 78.4/72.1/74.8% with a flip rate of exactly zero, while joint encoding (OneJev-4B fine-tuned on the same data) reaches 90.6/89.5/91.6% but changes its answer on 8-10% of records when the crops are reordered. Most of the gap is the candidate not seeing the request: a third design that encodes each candidate after the state - but never after another candidate - keeps order invariance exactly, shares the state pass through a forked cache, and reaches 92.1/87.0/90.2% at a third of OneJev's latency with a calibrated null probability (AUROC 0.93-0.97). Letting pooled candidates see each other (set attention, token-level reads, multi-vector memory) buys nothing, because the encoder maps visually distinct elements to vectors within cosine 0.999 of each other. Reusing image candidates across requests cuts latency 37x at K=256 and 191x at K=2048. Code: https://github.com/lllfx/Iris",
+  "source_name": "arXiv AI",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV"
+  ]
+}

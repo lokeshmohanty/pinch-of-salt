@@ -1,0 +1,15 @@
+{
+  "id": "1db991d419f8a735",
+  "title": "Zephon: Elastic Determinism for Online, Stateful Foundation Model Data Loading Pipelines",
+  "link": "https://arxiv.org/abs/2610.03087",
+  "description": "arXiv:2610.03087v1 Announce Type: cross \nAbstract: Deterministic data loading is important for foundation model development: model researchers need confidence that differences they observe across costly ablations are caused by the parameter they changed rather than non-determinism in the training data sequence. The data loader must provide elastic determinism, i.e., a deterministic sequence of global training data batches despite changes to the GPU topology across runs (e.g., due to GPU scarcity), frequent checkpoint-resume cycles, and different data processing execution backends. Achieving this is difficult because modern foundation model data pipelines tokenize, pack, and mix samples online, introducing stateful n-to-m transformations that break sample indexing. Existing data loaders largely assume indexable 1-to-1 pipelines, and the common workaround of offline materialization is expensive and, for some modalities such as video, infeasible.\n  We present Zephon, a data loader for foundation models that supports online, stateful pipelines while providing elastic determinism and efficient resumption from checkpoints. It partitions the global stream into topology-independent lanes, serializes ordering decisions while parallelizing stateless work on interchangeable backends, and checkpoints only bounded in-flight state so recovery cost does not grow with training progress. We evaluate Zephon on text and vision-language workloads and show that it achieves competitive throughput while providing a combination of guarantees that no existing loader offers for online, stateful pipelines.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.DB"
+  ]
+}

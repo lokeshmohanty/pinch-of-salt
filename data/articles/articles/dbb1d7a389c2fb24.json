@@ -1,0 +1,14 @@
+{
+  "id": "dbb1d7a389c2fb24",
+  "title": "Call-Chain-Aware LLM-Based Test Generation for Java Projects",
+  "link": "https://arxiv.org/abs/2604.22046",
+  "description": "arXiv:2604.22046v2 Announce Type: replace-cross \nAbstract: Large language models (LLMs) have recently shown strong potential for generating project-level unit tests. However, existing state-of-the-art approaches primarily rely on execution-path information to guide prompt construction, which is often insufficient for complex software systems with rich inter-class dependencies, deep call chains, and intricate object initialization requirements. In this paper, we present CAT, a novel call-chain-aware LLM-based test generation approach that explicitly incorporates call-chain and dependency contexts into prompts through dedicated static analysis. To construct executable, semantically valid test contexts, CAT systematically models caller--callee relationships, object constructors, and third-party dependencies, and supports iterative test fixing when generation failures occur. We evaluate CAT on the widely used Defects4J benchmark and on four real-world GitHub projects released after the LLM's cut-off date, and compare it with the state-of-the-art LLM-based approach PANTA and the search-based tool EvoSuite. The results show that, across projects in Defects4J, CAT improves line coverage, branch coverage, and mutation score by 12.52, 12.97, and 14.39 percentage points (18.02%, 21.52%, and 26.94% relative), respectively, over PANTA, and by 9.67, 4.17, and 15.70 percentage points (13.37%, 6.04%, and 30.13% relative) over EvoSuite. On the post-cutoff projects, CAT also achieves the highest average line coverage, branch coverage, and mutation score among all compared approaches. An ablation study further demonstrates the importance of call-chain and dependency contexts in CAT.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

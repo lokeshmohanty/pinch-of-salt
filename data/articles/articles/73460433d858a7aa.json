@@ -1,0 +1,14 @@
+{
+  "id": "73460433d858a7aa",
+  "title": "Measuring the Dependency Gap: Diagnosing Inter-Column Fidelity in Tabular Generative Models",
+  "link": "https://arxiv.org/abs/2607.21636",
+  "description": "arXiv:2607.21636v2 Announce Type: replace-cross \nAbstract: Synthetic tabular data is prized for preserving not just each column's marginal distribution but the dependencies between columns - structure that carries much of the discriminative signal for minority classes in imbalanced domains such as fraud detection and clinical risk. Yet the metrics most commonly used to certify such data are largely blind to this structure: a fully-factorized baseline that destroys all inter-column dependency is judged nearly indistinguishable from real data by the logistic-regression C2ST, while the pairwise Trend score is only partially sensitive. We introduce a dependency-aware fidelity diagnostic that decomposes a strong gradient-boosted classifier two-sample test (XGB-C2ST) into marginal, dependency, and numerical-categorical cross components, anchored between a fully-factorized lower bound and a real-data oracle upper bound. Applying it to state-of-the-art flow-matching (TabbyFlow/EF-VFM) and diffusion (TabDiff) generators, we expose a real dependency gap that standard metrics miss and that tracks minority-class utility. The gap is not a structural limitation of mean-field objectives - consistent with recent recovery results, these are asymptotically exact - yet it is stubborn: neither a 16x capacity increase nor post-hoc copula correction closes it, pointing to the absence of direct dependency supervision rather than a capacity or structural limit.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

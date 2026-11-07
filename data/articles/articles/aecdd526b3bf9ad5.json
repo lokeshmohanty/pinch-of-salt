@@ -1,0 +1,15 @@
+{
+  "id": "aecdd526b3bf9ad5",
+  "title": "LeHami: Symplectic Latent Dynamics for World Models",
+  "link": "https://arxiv.org/abs/2610.15267",
+  "description": "arXiv:2610.15267v1 Announce Type: cross \nAbstract: Joint-embedding predictive architectures (JEPAs) learn world models directly in latent space, but unconstrained autoregressive predictors may contract the latent distribution over long rollouts. We introduce Symplectic Hamiltonian JEPA (LeHami), which replaces the standard predictor with an action-conditioned Hamiltonian flow over a structured latent state (q, p) integrated using an exactly symplectic leapfrog step. This construction preserves phase-space volume at every rollout step and rules out uniform contraction, asymptotically stable fixed points, and merging of distinct latent states, independently of the learned parameters or action sequence. We obtain the momentum-like component from temporal derivatives of the learned position-like representation, providing an explicit second-order state for prediction and control. On conservative and actuated visual pendulum environments, LeHami substantially improves long-horizon velocity prediction over an unconstrained JEPA world model and empirically maintains constant latent volume where the baseline contracts. The learned flow also supports accurate integration at unseen sub-frame step sizes and numerical time reversal. These results show how geometric structure can provide inference-time guarantees that are complementary to representation regularization in latent world models.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.RO"
+  ]
+}

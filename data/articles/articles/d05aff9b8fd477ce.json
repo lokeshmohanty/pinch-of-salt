@@ -1,0 +1,13 @@
+{
+  "id": "d05aff9b8fd477ce",
+  "title": "PRISM-RAG: Multimodal Hypergraph Retrieval-Augmented Generation for Tobacco Product and Legislative Policy Reasoning",
+  "link": "https://arxiv.org/abs/2609.23769",
+  "description": "arXiv:2609.23769v1 Announce Type: new \nAbstract: The disambiguation of semantically similar statutory text across jurisdictions is a retrieval problem that existing methods do not solve. This inter-context conflict can steer generative models toward confidently produced answers grounded in topically relevant but jurisdictionally incorrect sources. Tobacco and nicotine regulations vary by US jurisdiction, often sharing similar language, thus, robust reasoning requires identifying which jurisdiction's law governs a given product, not merely retrieving relevant text. Emerging products (e.g., pouches) exploit ambiguous definitions to evade regulation. State-of-the-art (SOTA) document retrieval-augmented generation (RAG) methods struggle to address this inter-context conflict, and thus struggle to connect image attributes (e.g., rich attribute captions) to the set of similar legislation texts. We introduce NicoPRISM (Nicotine Product and Regulation Image-and-Text Surveillance Multimodal), comprising 161,563 images, attribute captions, a knowledge base of product, health, and legislative documents spanning 13 US jurisdictions, and 1,495 validated question-answer pairs across two tasks: policy compliance QA and product knowledge QA. We also propose PRISM-RAG, a multimodal hypergraph RAG framework built over images, captions, and entities without any LLM calls at index time, grounding every query in a product image and routes retrieval through a jurisdiction-aware context assembly mechanism guaranteeing that statutory text from the queried jurisdiction reaches the language model by construction. PRISM-RAG retrieves passages from the correct jurisdiction in 93.9% of policy compliance queries, a 48.6 percentage point advantage over standard RAG (p<0.001), using zero LLM calls at index time and one at query time, and is competitive with or outperforms SOTA RAG frameworks across keyword, semantic, jurisdiction-, and compliance-accuracy metrics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

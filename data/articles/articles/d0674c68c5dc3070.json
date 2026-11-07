@@ -1,0 +1,13 @@
+{
+  "id": "d0674c68c5dc3070",
+  "title": "Persistence Forcing: Exploiting Feature Specialization in Pixel-Space Diffusion",
+  "link": "https://arxiv.org/abs/2609.36014",
+  "description": "arXiv:2609.36014v1 Announce Type: new \nAbstract: Pixel-space diffusion Transformers (DiTs) directly operate on high-dimensional visual data, yet their hidden representations typically undergo uniform refinement across depth. Natural images, however, are inherently organized at different levels of granularity. Global structure can often be represented compactly, whereas local textures and fine details require richer representations. Motivated by this, we introduce heterogeneous refinement in pixel-space DiTs, assigning different feature groups distinct refinement budgets across depth. Consequently, an ordered feature specialization emerges: sparsely refined features predominantly encode global visual structure, whereas more frequently refined features increasingly specialize toward localized, high-frequency details. We refer to these two groups as persistent and active features, respectively. Building on this emergent specialization, we introduce Persistence Forcing (PerF), which explicitly exploits this persistent--active feature organization for pixel-space image generation. This enables persistent features to continuously condition actively refined features, allowing stable global information to guide the ongoing refinement of finer visual details. During generative sampling, this interaction further induces a meaningful guidance direction that promotes coherent global structure and naturally complements classifier-free guidance. On ImageNet $256\\times256$, PerF-L achieves FID of $1.91$, approaching $1.86$ of JiT-H with only half the parameters, while PerF-H further achieves FID of $1.63$ and $1.76$ on ImageNet $256\\times256$ and $512\\times512$, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

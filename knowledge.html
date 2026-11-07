@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge Graph - Pinch of Salt</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <style>
+        /* Lock body scroll when overlay is open */
+        body.overlay-open {
+            overflow: hidden;
+        }
+        #kg-container {
+            width: 100%;
+            height: 75vh;
+            background: rgba(15, 23, 42, 0.6);
+            border-radius: 16px;
+            margin-top: 1rem;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            position: relative;
+        }
+
+        .kg-toolbar {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .kg-toolbar select {
+            padding: 0.5rem 1rem;
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            color: #e2e8f0;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            font-family: inherit;
+        }
+
+        .kg-toolbar select:hover {
+            border-color: rgba(129, 140, 248, 0.5);
+        }
+
+        #kg-stats {
+            font-size: 0.8rem;
+            color: #64748b;
+            margin-left: auto;
+        }
+
+        .kg-legend {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+        }
+
+        .kg-legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.75rem;
+            color: #94a3b8;
+        }
+
+        .kg-legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 3px;
+            border: 1px solid;
+        }
+
+        .kg-hint {
+            font-size: 0.78rem;
+            color: #475569;
+            margin-top: 0.5rem;
+        }
+
+        /* Detail overlay */
+        #kg-detail-overlay {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(4px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem 1rem;
+            overflow: hidden;
+        }
+
+        #kg-detail-overlay.show {
+            display: flex;
+        }
+
+        .kg-detail-panel {
+            background: linear-gradient(135deg, #1e1b4b 0%, #0f172a 100%);
+            border: 1px solid rgba(129, 140, 248, 0.2);
+            border-radius: 16px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            padding: 2rem;
+            position: relative;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            animation: slideUp 0.3s ease-out;
+            overscroll-behavior: contain;
+        }
+
+        @keyframes slideUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .kg-detail-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            color: #94a3b8;
+            width: 32px;
+            height: 32px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s;
+        }
+
+        .kg-detail-close:hover {
+            background: rgba(239, 68, 68, 0.2);
+            color: #fca5a5;
+        }
+
+        #kg-detail-title {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #e2e8f0;
+            margin-bottom: 1rem;
+            padding-right: 2.5rem;
+            line-height: 1.4;
+        }
+
+        .kg-detail-meta {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .kg-badge {
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .kg-badge-category {
+            background: rgba(99, 102, 241, 0.2);
+            color: #a5b4fc;
+            border: 1px solid rgba(99, 102, 241, 0.3);
+        }
+
+        .kg-badge-geo {
+            background: rgba(52, 211, 153, 0.15);
+            color: #6ee7b7;
+            border: 1px solid rgba(52, 211, 153, 0.3);
+        }
+
+        .kg-badge-date {
+            background: rgba(251, 191, 36, 0.15);
+            color: #fcd34d;
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+
+        .kg-badge-source {
+            background: rgba(129, 140, 248, 0.15);
+            color: #c4b5fd;
+            border: 1px solid rgba(129, 140, 248, 0.2);
+        }
+
+        .kg-detail-summary {
+            color: #cbd5e1;
+            line-height: 1.7;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        #kg-detail-body h3 {
+            color: #e2e8f0;
+            font-size: 1rem;
+            margin: 1.5rem 0 0.75rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .kg-facts-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .kg-facts-list li {
+            padding: 0.6rem 0.8rem;
+            background: rgba(52, 211, 153, 0.06);
+            border-left: 3px solid #34d399;
+            margin-bottom: 0.5rem;
+            border-radius: 0 6px 6px 0;
+            color: #cbd5e1;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .kg-source-item {
+            padding: 0.8rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+            transition: background 0.2s;
+        }
+
+        .kg-source-item:hover {
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .kg-clickable {
+            cursor: pointer;
+        }
+
+        .kg-source-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.4rem;
+        }
+
+        .kg-source-title {
+            color: #e2e8f0;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .kg-source-desc {
+            color: #94a3b8;
+            font-size: 0.82rem;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .kg-source-link {
+            color: #818cf8;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+
+        .kg-source-link:hover {
+            color: #a5b4fc;
+        }
+
+        .loading-spinner {
+            width: 32px;
+            height: 32px;
+            border: 3px solid rgba(129, 140, 248, 0.2);
+            border-top: 3px solid #818cf8;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* vis.js navigation button overrides */
+        .vis-button {
+            background: rgba(15, 23, 42, 0.8) !important;
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            border-radius: 6px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                <h1>Pinch of <span>Salt</span></h1>
+            </a>
+            <p>Interactive News Intelligence Graph</p>
+        </header>
+
+        <div class="kg-toolbar">
+            <select id="kg-category-filter" onchange="filterKG()">
+                <option value="all">All Categories</option>
+            </select>
+            <span id="kg-stats" style="color: #64748b; font-size: 0.8rem;"></span>
+        </div>
+
+        <div class="kg-legend">
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #312e81; border-color: #818cf8;"></div>Technical</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #7c2d12; border-color: #fb923c;"></div>Business</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #1e3a5f; border-color: #60a5fa;"></div>Political</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #064e3b; border-color: #34d399;"></div>Science</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #701a75; border-color: #e879f9;"></div>Health</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #78350f; border-color: #fbbf24;"></div>Sports</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #831843; border-color: #f472b6;"></div>Entertainment</div>
+            <div class="kg-legend-item"><div class="kg-legend-dot" style="background: #1e293b; border-color: #94a3b8;"></div>General</div>
+        </div>
+
+        <p class="kg-hint">Click a node to view details · Double-click to zoom in · Scroll to zoom · Drag to pan · Latest events appear at the top</p>
+
+        <div id="kg-container"></div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="index.html" class="filter-btn">Back to News Feed</a>
+        </div>
+    </div>
+
+    <!-- Cluster detail overlay -->
+    <div id="kg-detail-overlay" onclick="if(event.target===this) closeKGDetail()">
+        <div class="kg-detail-panel">
+            <button class="kg-detail-close" onclick="closeKGDetail()">✕</button>
+            <h2 id="kg-detail-title"></h2>
+            <div id="kg-detail-body"></div>
+        </div>
+    </div>
+
+    <script src="kg.js"></script>
+</body>
+
+</html>

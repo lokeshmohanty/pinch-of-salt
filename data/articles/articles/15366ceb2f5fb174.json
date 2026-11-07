@@ -1,0 +1,14 @@
+{
+  "id": "15366ceb2f5fb174",
+  "title": "Channel-Level Mask Guidance for Slimmable Image Compression",
+  "link": "https://arxiv.org/abs/2610.27037",
+  "description": "arXiv:2610.27037v1 Announce Type: cross \nAbstract: Learned image compression (LIC) has achieved promising rate-distortion performance, but most methods lack scalability for diverse platforms with varying computational and storage constraints. Existing slimmable LIC methods achieve flexible complexity via consecutive-channel activation but suffer from two limitations: forced consecutive-channel selection degrades narrow-model performance at low bitrates, and the lack of stable variable-rate control limits adaptability to varying bandwidth. We propose a channel-level mask-guided slimmable image compression method. A learnable channel-wise mask with sparsity-promoting regularization enables non-contiguous top-w channel selection, letting narrow models use the most informative channels. After training, mask merging and channel reordering convert the model into a standard slimmable network via Mask-to-Slimmable (M2S) conversion, enabling efficient inference without architectural changes. For variable-rate control, we combine lambda- and width-conditioned modulation with quantization-step scaling and a progressive training pipeline stabilized by a freeze-then-fine-tune strategy. Experiments on Kodak across E2E, Hyperprior, and Checkerboard backbones show superior rate-distortion performance across widths and bitrates, with large gains for narrow models at low bitrates. At w=48, it achieves up to 19.22%, 24.11%, and 22.76% BD-rate savings over the same-width Slimmable baseline on E2E, Hyperprior, and CKBD, respectively. A single VBR model replaces 40 independent models, reducing storage by 14.8x to 15.9x. Code: https://github.com/sjtu-tcloud/MGSIC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

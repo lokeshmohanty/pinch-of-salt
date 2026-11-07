@@ -1,0 +1,13 @@
+{
+  "id": "89979c2b31586dbb",
+  "title": "MagnifiQ: Patch-aware Text Guided Progressive Upscaling for High-Resolution Image Restoration",
+  "link": "https://arxiv.org/abs/2608.14543",
+  "description": "arXiv:2608.14543v1 Announce Type: new \nAbstract: High-resolution image restoration from degraded inputs is challenging because it must preserve global structural consistency while recovering fine-grained local details, especially at 4K resolution where direct diffusion-based restoration is computationally expensive and prone to repeated or inconsistent textures. In this work, we introduce MagnifiQ, an image restoration framework that progressively upscales and restores images across resolutions, e.g., from 1024x1024 to 4096x4096. Our approach leverages a pre-trained text-to-image diffusion model such as SDXL and adapts it for more scalable high-resolution inference by replacing its original self-attention layers with convolutional operations whose computational cost grows linearly with image resolution. We further propose a progressive upscaling strategy that iteratively restores images over multiple resolution stages, refining each intermediate output rather than directly hallucinating the final 4K image, thereby improving global coherence and reducing high-resolution artifacts. To enhance local details while controlling content drift, MagnifiQ uses patch-specific text prompts that provide spatially localized semantic guidance during restoration. Extensive experiments on synthetic and real-world degraded images show that MagnifiQ outperforms prior diffusion-based restoration methods in perceptual quality and human preference, producing sharper textures and more coherent 4K results while offering practical speed--quality trade-offs through its scalable backbone and progressive design.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

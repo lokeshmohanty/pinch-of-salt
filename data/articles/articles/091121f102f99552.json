@@ -1,0 +1,13 @@
+{
+  "id": "091121f102f99552",
+  "title": "Kandinsky S2V 1.0: Audio-Driven Avatar Video Generation",
+  "link": "https://arxiv.org/abs/2610.19290",
+  "description": "arXiv:2610.19290v1 Announce Type: new \nAbstract: We present Kandinsky S2V 1.0, an open family of speech-to-video models for controllable audio-driven human animation, comprising Kandinsky S2V 1.0 Lite (2B parameters) and Kandinsky S2V 1.0 Pro (21B parameters). From a single reference image, a speech waveform, and a text prompt, the models generate long-form 25 FPS video in which lip motion, expression, pose, and gesture follow the speech. The architecture draws text and audio conditioning from one Qwen2.5-Omni model and adds a reference-aware three-scale visual memory. Training starts from the Kandinsky 5.0 Video foundation models [1] and combines mixed reference-memory layouts with an area-adaptive face loss. The training corpus contains 1.17M single-speaker clips selected by active-speaker detection, with captions generated directly in English and Russian. A side-by-side human evaluation against the strongest open-source baseline and two proprietary commercial models shows that Kandinsky S2V 1.0 Pro performs comparably to or better than these models on average and is also preferred for lip synchronization. On common speech to video benchmarks, Kandinsky S2V 1.0 Lite and Kandinsky S2V 1.0 Pro rank among the top performing models according to mean rank over five reported metrics. Beyond the base models, we provide {\\pi}-Flow distilled variants of both Kandinsky S2V 1.0 Lite and Kandinsky S2V 1.0 Pro. The distilled Kandinsky S2V 1.0 Pro model generates video in 16 sampling steps without classifier-free guidance, achieving a 5.4 times end-to-end speedup over the base model, while matching or exceeding it on nearly all reported benchmark metrics. To accelerate open research and deployment in speech-to-video generation, we release the code, model checkpoints, and diffusers integration under the MIT license.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "6f99a6e1dd9c162f",
+  "title": "One-Shot Localisation of the Global Minimum of a Noisy One-Dimensional Function: An Iterative Neural Minimizer Compared with Set Transformers and Classical Estimators",
+  "link": "https://arxiv.org/abs/2604.03614",
+  "description": "arXiv:2604.03614v4 Announce Type: replace-cross \nAbstract: We study a passive form of global optimisation: from twenty noisy samples of an unknown one-dimensional function, predict where its global minimum lies, with no further queries. We introduce the Neural Function Minimizer (NFM), an iterative model that walks a position across the domain and, at every step, reads the samples near that position and attends to all twenty of them, and we compare it with two Set Transformers of the same size trained on the same data, one that answers with a single point and one that answers with a mixture of candidate locations, and with classical zero-query estimators, over three training seeds per learned model. On held-out cases from the training families the three learned models are tied on location error, and each is more accurate on average than every classical estimator; against the Gaussian-process posterior argmin the NFM's error is lower by 1.3 points of the domain. The NFM has lower regret than the single-point Set Transformer, and its per-case uncertainty has a better likelihood than that model's and orders the cases by error better than the mixture model's. The Gaussian process and the mixture model have lower regret, and on functions outside the training families the Gaussian process is the most accurate estimator. Where two valleys are equally deep, the form of an estimator's answer, not its architecture, decides whether it commits to a valley or answers between them: every estimator that returns one point fitted to distance, learned or spline-based, hedges in a fifth to nearly a third of exact ties, while estimators that name a mode commit, and one Gaussian-process posterior does both, depending on whether it is summarised by its median or its mode. We will release the benchmark and a self-checking harness; its cases are identical on different machines and its results agree to rounding.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

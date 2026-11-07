@@ -1,0 +1,14 @@
+{
+  "id": "9783f91c9b7b3bed",
+  "title": "VendorBench-100: A Unified Cross-Paradigm Benchmark for Deepfake Image Detection",
+  "link": "https://arxiv.org/abs/2607.06254",
+  "description": "arXiv:2607.06254v2 Announce Type: replace \nAbstract: Deepfake image detection is served by three fundamentally different paradigms - commercial APIs, zero-shot vision-language models (LLMs), and open-source detectors - that are rarely evaluated under a common protocol, making direct comparison difficult. We introduce VendorBench-100, a cross-paradigm benchmark that evaluates 36 representative models using a single adversarial 100-image corpus, a unified output schema, and a common evaluation framework. Models are ranked primarily by the Matthews correlation coefficient (MCC), with ROC-AUC reported as a threshold-independent measure of ranking ability. Rather than maximizing size, it emphasizes real-world difficulty through a taxonomy of eight edge-case families such as face swaps, text-to-video stills, AI photo edits, avatar compositing, opaque-provenance images, and compressed research frames. Commercial APIs achieve the strongest median performance, followed by vision LLMs and open-source detectors, though individual open-source models remain competitive with the best LLMs. Across all 36 models, MCC and ROC-AUC are strongly correlated (Pearson r ~ 0.86); the more consequential finding is narrower and one-directional: a subset of otherwise strong rankers are miscalibrated at their shipped default threshold, so a high ROC-AUC can overstate real-world deployability. Separately, raw accuracy and F1 are unreliable on this corpus's imbalanced class split, since a model that predicts \"fake\" indiscriminately scores deceptively well on both while offering no real discriminative skill. No single metric is safe in isolation: MCC and specificity should always accompany ROC-AUC and accuracy. We release the complete evaluation framework and results. Code and data: https://github.com/sharayu-20/vendorbench-100",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

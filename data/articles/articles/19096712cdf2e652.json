@@ -1,0 +1,13 @@
+{
+  "id": "19096712cdf2e652",
+  "title": "SurgStreamer: proactive, request-driven monitoring of surgical video streams with structured state and a reusable reasoning layer",
+  "link": "https://arxiv.org/abs/2610.21895",
+  "description": "arXiv:2610.21895v1 Announce Type: new \nAbstract: Surgical teams could benefit from assistants that watch the video for requested events, such as \"tell me when the clip applier appears during Calot triangle dissection\", and answer questions about what has already happened. We formalise this task as request-driven event detection with exact semantics and causal alert decisions, and present SurgStreamer. It separates procedure-specific perception, which maps the 1-FPS stream to a structured state over tools, actions and phases, from procedure-agnostic reasoning, which evaluates a formal monitoring condition over this state and an event memory, either with exact rules or with a small controller that addresses entities through pointers rather than names. We evaluate this monitoring core with gold conditions. On a pre-registered, sealed test set of 12 laparoscopic cholecystectomies, SurgStreamer reached a macro event-F1 of 0.598 over full procedures. On identical 75-s windows with only the window available to every method, it scored 0.677. The tested configurations of the streaming vision-language model OneStreamer-4B, including ones fine-tuned on SurgStreamer's state or on video with an adapted vision encoder, scored at most 0.540 (Holm-adjusted p <= 0.012). At three external centres, re-training only perception raised performance on held-out procedures from 0.239 to 0.470. On a new procedure, pituitary surgery, controller weights trained on cholecystectomy matched an in-domain controller on oracle state (0.947 vs 0.938). On predicted state they missed the pre-registered non-inferiority margin (-0.024 [-0.040, -0.008]) unless the alert thresholds were re-calibrated. The results support separating perception from reasoning and point to perception under distribution shift as the main limitation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

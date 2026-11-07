@@ -1,0 +1,15 @@
+{
+  "id": "7c6537fba40d900a",
+  "title": "Frequency Is Not Sensitivity Identifying Safety-Sensitive Experts in Sparse MoE LLM",
+  "link": "https://arxiv.org/abs/2610.02910",
+  "description": "arXiv:2610.02910v1 Announce Type: new \nAbstract: Suppressing a small set of routed experts can weaken the safety behavior of a sparse Mixture-of-Experts (MoE) language model without retraining. Which experts to suppress is therefore a security question, and the usual answer is activation frequency, but frequency measures use, not influence. We test an alternative: router-gradient sensitivity, the sensitivity of the sequence loss to the gate weights that select an expert. Across five MoE architectures, we rank experts by each signal on 500 benign and 500 malicious prompts and measure refusal on 100 held-out malicious prompts under two budgets: equal expert counts and equal nominal malicious routing traffic (1%-5%). Under each of the two budgets, router-gradient selection reduces refusals more than activation in 24 of 25 conditions, and more than a ten-trial random mean in all 25. The largest effect is in OLMoE, where refusals fall from 34 to 9 of 100 prompts (73.53% relative) with no degraded outputs, indicating substantive compliance rather than broken generation. After matching expert counts in every layer, gradient selection still produces greater refusal reduction than activation in 23 of 25 conditions, with two ties. An exploratory cross-model analysis links larger malicious-versus-benign concentration gaps to greater peak gradient effects (rho = 0.90; exact two-sided p = 0.083, n = 5). Together, the results support gradient selection under the tested budgets.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CR",
+    "cs.LG"
+  ]
+}

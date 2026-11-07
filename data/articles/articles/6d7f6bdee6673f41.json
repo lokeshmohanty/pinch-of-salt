@@ -1,0 +1,13 @@
+{
+  "id": "6d7f6bdee6673f41",
+  "title": "GDEPO: Group Dual-dynamic and Equal-right Advantage Policy Optimization for Sample-Efficient Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2601.06795",
+  "description": "arXiv:2601.06795v4 Announce Type: replace \nAbstract: Automated Theorem Proving (ATP) is a fundamental AI challenge, requiring machine-verifiable proofs in formal languages like Lean to evaluate reasoning. Reinforcement Learning (RL), especially Group Relative Policy Optimization (GRPO), is a mainstream approach. However, GRPO faces two critical issues in ATP: its relative advantage estimation may conflict with binary verifier feedback under composite rewards, and its static sampling strategy discards batches without valid proofs, causing data waste. Repeated training on mastered problems also wastes computation. To address this, we propose Group Dual-dynamic and Equal-right Advantage Policy Optimization (GDEPO), incorporating three core mechanisms: 1) dynamic additional sampling, resampling ineffective batches until a valid proof is found; 2) equal-right advantage, decoupling the advantage function's sign (correctness) from its magnitude (auxiliary rewards) to ensure stable policy updates while increasing effective computation; and 3) dynamic additional iterations, applying extra gradient steps to initially failed but eventually successful samples to accelerate learning. Experiments on MinF2F-test, MathOlympiadBench, and PutnamBench confirm GDEPO's effectiveness, with ablation studies validating its synergistic components. The method enhances data utilization and optimization efficiency, offering a novel training paradigm for ATP.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

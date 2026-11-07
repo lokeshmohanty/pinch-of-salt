@@ -1,0 +1,14 @@
+{
+  "id": "17e2a72f1e408bd9",
+  "title": "FlowWise: Stateful Fast-Slow Model Serving for Streaming Traffic Intelligence",
+  "link": "https://arxiv.org/abs/2402.03694",
+  "description": "arXiv:2402.03694v3 Announce Type: replace-cross \nAbstract: Network traffic analysis in cloud and internet service provider (ISP) networks increasingly relies on machine learning (ML) models, as encryption and service consolidation make rule-based classification unreliable. At high flow-arrival rates, however, new flows can arrive faster than end-to-end analysis pipelines can process. Unlike typical cloud inference workloads, packets from the same flow arrive over time and require per-flow state. This streaming, stateful setting limits naive scale-out with stateless workers. This paper presents FlowWise, a serving system for streaming, stateful flow intelligence on commodity CPU/GPU servers that jointly selects (i) how many packets to collect and (ii) which model(s) to apply for each flow to balance latency, service rate, and accuracy. Across three representative tasks, inference time across candidate models differs by 1.8x-141.3x, while packet waiting time can exceed feature computation and inference by 6-8 orders of magnitude at the tail. FlowWise exploits these gaps with an uncertainty-driven fast-slow cascade: it issues early predictions from a one-packet model and escalates only uncertain flows to slower models that wait for additional packets and use richer features. A queue-centric runtime maintains per-flow state, performs asynchronous feature joining, and uses brokered, flow-ID-keyed streams to distribute workload across heterogeneous workers. FlowWise serves 76.3% of flows within 16 ms, improving median end-to-end serving latency by 40.5x while increasing service rate and maintaining similar accuracy to always running the slow model. With thousands of packet-header features per flow, our scale-up benchmark sustains over 48.5k new flows per second on a single 16-core commodity CPU server, comparable to reported flow-arrival rates in city-backbone traces. FlowWise is open sourced at https://github.com/noise-lab/FlowWise.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NI",
+    "cs.AI"
+  ]
+}

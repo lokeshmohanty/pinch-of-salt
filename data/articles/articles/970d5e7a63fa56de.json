@@ -1,0 +1,15 @@
+{
+  "id": "970d5e7a63fa56de",
+  "title": "AtomTree: A Hierarchical Framework for State-Aware Embodied Instruction Following with LLMs",
+  "link": "https://arxiv.org/abs/2610.38744",
+  "description": "arXiv:2610.38744v1 Announce Type: cross \nAbstract: Embodied instruction following in interactive environments requires agents to interpret natural language commands and complete long-horizon tasks. Existing planners either rely on large labeled trajectories, or use few-shot and zero-shot LLM prompting that produces a whole plan in a single serial reasoning process. These approaches depend on linguistic common sense, commit to a plan from the initial instruction, and only update after failures, which weakens robustness and state awareness. We present AtomTree, a hierarchical framework for state-aware task planning with LLMs. AtomTree incrementally builds a tree of subgoals and actions, where the LLM decides at each step, from the current symbolic state, whether to further decompose or to output a grounded low-level action. A lightweight memory module summarizes past outcomes for reuse in later decisions. When a low-level action stalls, AtomTree triggers hierarchical backtracking replanning to return to the parent node and regenerate the subtree plan from the latest state, preventing continued drift along an incorrect trajectory. In zero-shot evaluation on the ALFRED benchmark, AtomTree outperforms prior LLM-based planners. Project page: https://zhaihaotian.github.io/atomtree-website/.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

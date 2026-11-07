@@ -1,0 +1,14 @@
+{
+  "id": "4f7b888c4f6314a0",
+  "title": "CogWAM: Aligning Semantic Cognition with World Action Modeling via Event-Driven Interfaces",
+  "link": "https://arxiv.org/abs/2609.37721",
+  "description": "arXiv:2609.37721v1 Announce Type: cross \nAbstract: Robot policies increasingly incorporate semantic reasoning and future-world prediction, yet combining these capabilities does not guarantee that local predictions and actions remain aligned with task progress. We introduce CogWAM, a cognition-guided world-action model that establishes an explicit semantic interface between task reasoning and world-action learning through a persistent Semantic State, which stores completed task events and the active subtask. CogWAM updates this state only when observations indicate semantic transitions, allowing task-level context to persist across multiple action chunks. To bridge semantic context with physical prediction and control, CogWAM employs progress-conditioned WORLD and ACTION queries that selectively extract task-relevant information for future-world prediction and action generation. During training, the Semantic State provides shared task-progress context for both branches, while inference removes the future-prediction branch and directly generates actions from observations and the maintained state. We further introduce semantic training strategies to improve transition learning and closed-loop conditioning. Without additional robot-action pretraining, CogWAM achieves 15.56 / 11.70 % Score/SR on RoboDojo and state-of-the-art performance on BiCoord, while real-world experiments demonstrate closed-loop dual-arm manipulation with 16.4 fewer Semantic State regenerations than step-wise updating.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

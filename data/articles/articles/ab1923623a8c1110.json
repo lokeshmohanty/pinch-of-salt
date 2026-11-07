@@ -1,0 +1,13 @@
+{
+  "id": "ab1923623a8c1110",
+  "title": "CAPTOR: text-encoder-free grounding by counting caption co-occurrence over the visual words of a frozen encoder",
+  "link": "https://arxiv.org/abs/2611.05599",
+  "description": "arXiv:2611.05599v1 Announce Type: new \nAbstract: Grounding a text query in an image needs a matrix scoring every term against every patch. Vision-language models compute it with an aligned text encoder, which many image encoders, such as histopathology-related models trained on slides alone, lack. The Caption-Anchored Patch-Term Occurrence Representation (CAPTOR) estimates the matrix without a text encoder. It clusters a frozen image encoder's patch tokens into visual words and describes each captioned image by its share of patches in each word. A term signature is the standardized difference of those shares between images whose captions mention the term and the rest. The matrix factorizes into a term-by-word table and a query-independent image factor, so an image is encoded once and a new term adds one table row. Against every training-free baseline, CAPTOR leads on Common Objects in Context (COCO), Pascal Visual Object Classes (VOC) and Cityscapes. On COCO, scored on the cells one object owns, it reaches 0.565 mean intersection over union (mIoU) against 0.502. On all three, it is also level with a text alignment trained on the same backbone, which needs gradients, a text encoder and several times the captions. On held-out breast-cancer slides, it exceeds the strongest baseline scoring patches with a pathology text encoder by 0.160 mIoU. Read through CAPTOR, UNI, an encoder trained on slides alone, exceeds such baselines by 0.132 on a common grid. Counting can therefore give a text interface to any image encoder trained without language, wherever captioned images exist.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

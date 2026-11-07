@@ -1,0 +1,13 @@
+{
+  "id": "fb6084b3fea8bf5c",
+  "title": "ProCAP: Probabilistic Cross-Attentive Prompt Learning for Vision-Language Models",
+  "link": "https://arxiv.org/abs/2609.30434",
+  "description": "arXiv:2609.30434v1 Announce Type: new \nAbstract: Pre-trained vision-language models such as CLIP can recognize new categories via prompting, but they often struggle when labeled data are scarce or the test distribution shifts. Prompt learning adapts only a small set of parameters while keeping the backbone frozen, yet many existing multimodal prompt learners couple the visual and textual branches weakly and can be brittle in low-shot regimes. We propose ProCAP, a probabilistic cross-attentive prompt learning framework that improves cross-modal interaction and training stability without updating any CLIP weights: it learns both visual and textual prompt tokens and links them through stacked bidirectional multi-head cross-attention so the two branches refine each other across prompt depth. To reduce overfitting under limited supervision, we parameterize prompt tokens with Gaussian means and variances and regularize them with lightweight KL and L2 penalties, and we further add a compact symmetric InfoNCE head that aligns cross-attended image features with class-level text representations in a shared low-dimensional space. Across few-shot base-to-novel generalization on 11 datasets, cross-dataset transfer, and domain generalization on ImageNet shift benchmarks, ProCAP achieves strong aggregate base-to-novel performance and competitive transfer performance while keeping the CLIP backbone unchanged.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

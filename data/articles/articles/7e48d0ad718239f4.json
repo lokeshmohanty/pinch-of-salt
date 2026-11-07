@@ -1,0 +1,13 @@
+{
+  "id": "7e48d0ad718239f4",
+  "title": "JointMatch: A Unified Heterogeneous Graph Neural Solver for Large-Scale Ride-Sharing Matching",
+  "link": "https://arxiv.org/abs/2609.20200",
+  "description": "arXiv:2609.20200v1 Announce Type: new \nAbstract: Ride-sharing platforms must continuously decide which open requests to bundle into shared trips and which idle vehicles should serve them. The dominant academic approach decomposes this into two sequential matching problems -- request pairing first, then vehicle assignment -- and applies a separate solver to each. This decomposition is convenient computationally but loses revenue and scales poorly because the first stage commits to ride bundles before the available vehicles are known. We propose JointMatch, a learning-based framework that handles request pairing and vehicle assignment together on a single graph. The graph is sparsified by spatial proximity so that its size grows linearly rather than quadratically with the number of vehicles and requests, and a graph neural network scores all candidate decisions in one forward pass. On the New York City Yellow Taxi data, the framework already exceeds both the classical Blossom heuristic and a faithfully-trained two-stage GNN baseline -- often by a wide margin -- and at city scale (fleet 10000) it runs more than $20\\times$ faster per dispatch epoch than either. A supervised training stage closes most of the remaining revenue gap, and a policy-gradient fine-tune aligns the trained model with realised revenue.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

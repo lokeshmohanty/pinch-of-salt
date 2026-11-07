@@ -1,0 +1,15 @@
+{
+  "id": "ef8ea44354ec9262",
+  "title": "Semi-automated reconstruction of indoor geometry from 360-degree video for CFD-based airflow analysis in classrooms",
+  "link": "https://arxiv.org/abs/2609.23425",
+  "description": "arXiv:2609.23425v1 Announce Type: new \nAbstract: Computational Fluid Dynamics (CFD) is widely used to evaluate ventilation and contaminant transport in occupied buildings, but deployment at scale is limited by three bottlenecks: acquiring room geometry without costly scanning hardware or manual CAD modeling, decomposing the scene into individually manipulable objects, and reconfiguring those objects for alternative layouts without re-capturing the room. We present a semi-automated workflow that converts a single 360-degree video of a room into individually editable, simulation-ready geometry assets. A dense point cloud is reconstructed using Neural Radiance Fields (NeRF), and 2D instance masks from text-prompted SAM 3 segmentation are lifted to 3D using multi-view consensus and depth-band filtering. Points are separated into object instances with an octree, and occlusion gaps are healed with a connectivity graph. Chair templates are fitted by Iterative Closest Point (ICP) alignment, and table geometry is generated procedurally. A browser-based editor supports quality assurance and rapid construction of alternative layout configurations. A steady Reynolds-averaged OpenFOAM solution then drives transient passive-scalar transport; the setup is verified using a mesh-sensitivity study and validated against an IEA Annex 20 benchmark. We apply the workflow to two university classrooms and a tiered lecture-hall auditorium. The capture-to-geometry pass takes two to five hours per room on a consumer workstation. In a controlled obstruction sequence in one classroom, the modeled half-clearance time varies non-monotonically as furniture is added, and a cross-room comparison indicates that clearance behavior cannot be reliably extrapolated between rooms, motivating per-room geometry acquisition. By making that acquisition low-cost, the workflow makes geometry-resolved comparative ventilation studies practical for spaces such as classrooms.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CE",
+    "physics.flu-dyn"
+  ]
+}

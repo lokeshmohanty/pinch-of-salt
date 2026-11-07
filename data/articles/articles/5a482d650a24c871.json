@@ -1,0 +1,13 @@
+{
+  "id": "5a482d650a24c871",
+  "title": "Why MLLMs Struggle to Count: Overcoming Individuation and Aggregation Bottlenecks with ConvStack",
+  "link": "https://arxiv.org/abs/2609.37096",
+  "description": "arXiv:2609.37096v1 Announce Type: new \nAbstract: Multimodal Large Language Models (MLLMs) consistently struggle with fine-grained visual counting, yet the underlying causes remain poorly understood. In this work, we present a mechanistic analysis of this failure mode, identifying two critical bottlenecks inherent to the global attention pipeline of MLLMs. First, we reveal an individuation bottleneck stemming from image patchification: because Vision Transformers process patches independently, they struggle to group fragmented geometric features across boundaries into distinct object representations. Second, we identify a collapse in the subsequent counting aggregation process, where representation separation rapidly diminishes as numerosity increases due to attention compression. Identifying and formalizing these twin bottlenecks constitutes our first major contribution. To overcome them, we propose ConvStack, a lightweight architecture that operates directly in the visual token space to explicitly aggregate and inject local spatial structures via zero-initialized residual connections. By explicitly addressing the individuation bottleneck, ConvStack provides unambiguous geometric evidence for downstream aggregation. Remarkably, by fine-tuning exclusively on counting tasks, the model achieves substantial improvements in dense object counting and broader spatial understanding benchmarks, without compromising on general visual capabilities.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

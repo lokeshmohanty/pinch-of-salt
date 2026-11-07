@@ -1,0 +1,13 @@
+{
+  "id": "86bc5d62ccccc662",
+  "title": "Lesion Overlap Ranks PET Segmentation Models but Does Not Certify Patient-Level Tumor Burden",
+  "link": "https://arxiv.org/abs/2611.05564",
+  "description": "arXiv:2611.05564v1 Announce Type: new \nAbstract: Metabolic tumor volume (MTV) summarizes whole-body PET disease burden for prognostic stratification and treatment assessment. Automated MTV is useful only if its estimate is reliable for the individual patient, yet segmentation models are usually evaluated with overlap metrics such as Dice rather than burden error. We examined whether overlap metrics identify unreliable MTV estimates using 1,014 autoPET FDG PET/CT studies. We evaluated LesionTracer predictions held out from fine-tuning, compared five selected released models on 489 tumor-positive patients, and examined the findings in 597 PSMA studies. Across the five FDG models, ranking by higher mean Dice gave the same order as ranking by lower mean relative MTV error ($\\rho=-1.00$, exact $p=0.017$). At the patient level, however, out-of-fold Dice tracked relative MTV error strongly ($\\rho=-0.75$), yet 82 of 489 patients (16.8\\%) fell on opposite sides of the Dice 0.80 and MTV-error 25\\% thresholds. Within the training-exposed released models, correlations ranged from $-0.47$ to $-0.74$ over narrower, high-Dice ranges. Out of fold, opposing false-positive and false-negative volumes cancelled about one third of spatial error in net MTV. In 236 of 489 patients, each of the five models missed at least one lesion, though not necessarily the same lesion. Thus, agreement in average model rankings did not establish the reliability of individual MTV estimates or reveal shared lesion misses. PET segmentation benchmarks should report patient-level MTV error and missed-lesion counts alongside Dice and other overlap metrics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

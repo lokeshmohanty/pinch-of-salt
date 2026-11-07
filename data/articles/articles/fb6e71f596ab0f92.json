@@ -1,0 +1,13 @@
+{
+  "id": "fb6e71f596ab0f92",
+  "title": "TEMPL: A Resource-Efficient and Transparent Model-Free Framework for Pseudo-Label Generation in Material CT Scans",
+  "link": "https://arxiv.org/abs/2610.28974",
+  "description": "arXiv:2610.28974v1 Announce Type: new \nAbstract: The scarcity of large annotated datasets limits deep learning (DL) segmentation in material CT analysis. DL-based pseudo-labeling can help, but it is often computationally expensive and hard to interpret. We introduce a multi-stage, model-free framework that generates pseudo-labels directly from grayscale CT scans. It combines thresholding, morphological dilation, and a custom breadth-first search region-growing algorithm to produce polygonal annotations without pre-trained weights, labeled data, or a GPU. We compare it against the zero-shot Segment Anything Model (SAM), a fully supervised 3D U-Net, and classical baselines. On a dendrite dataset with ground truth, our method reaches 63.19% IoU versus 10.74% for zero-shot SAM, with four times the instance recall at 0.5 IoU (33.3% versus 8.3%). The supervised 3D U-Net serves as a reference ceiling that requires expert labels. On a silica sand specimen, YOLO models trained on our labels performed comparably to models trained on SAM labels in a qualitative comparison. Across 1,053 extracted grains, the median equivalent diameter was 163.8 micrometers, near the specimen's known 106 to 150 micrometers sieve range, compared with 219.5 micrometers for SAM, whose labels merge adjacent particles and add spurious detections. A sensitivity analysis shows a stable operating range for the key threshold and a sharp, predictable failure point linked to phase contrast. Our method needs 15s per image on a standard CPU versus 28s for SAM on a GPU. These results support our transparent approach as a tool for annotation bootstrapping and microstructural quantification in resource-limited settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

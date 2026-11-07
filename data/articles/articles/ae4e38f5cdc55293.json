@@ -1,0 +1,14 @@
+{
+  "id": "ae4e38f5cdc55293",
+  "title": "GraphSVR: q-Space--Aware Graph-Based Slice-to-Volume Registration for Diffusion MRI",
+  "link": "https://arxiv.org/abs/2609.24732",
+  "description": "arXiv:2609.24732v1 Announce Type: new \nAbstract: Diffusion-weighted imaging (DWI) remains highly vulnerable to subject motion, particularly in time-efficient protocols and in motion-prone populations. While slice-to-volume registration (SVR) can mitigate inter-slice and inter-stack misalignment, diffusion MRI introduces additional complexity due to diffusion-direction-dependent contrast and the requirement to align dozens of measurements within a common reference frame, effectively yielding a 4D registration problem. Existing approaches rely primarily on sequential modeling or pairwise similarity and often degrade under sparse gradient sampling or severe motion. We introduce GraphSVR, a q-space-aware graph-based framework for 4D SVR registration in DWI. GraphSVR represents slice groups as nodes in an acquisition-structured graph, with edges encoding temporal proximity, spatial slice geometry and diffusion encoding relationships. A graph neural network predicts globally consistent stack-wise rigid motion, optimized in a self-supervised, zero-shot manner using only an anatomical reference image, without requiring paired ground-truth motion. We evaluate GraphSVR using both fully synthetic diffusion simulations and realistic recombination-based simulations from real acquisitions with controllable motion severity and gradient sparsity. Performance is quantified using grid error (mm) and rotation error relative to known ground-truth transforms. Under severe motion, GraphSVR reduces grid error and rotation error by 73% compared to FSL eddy, the standard DWI motion-correction method, with the largest gains observed in sparse-direction regimes. These results demonstrate that explicitly modeling acquisition structure through graph-based reasoning improves robustness and global consistency in 4D DWI motion estimation. Code is available at https://github.com/nogakertes/GraphSVR.git.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "78f7bc4ce7768a5c",
+  "title": "GRM: Utility-Aware Jailbreak Attacks on Audio LLMs via Gradient-Ratio Masking",
+  "link": "https://arxiv.org/abs/2604.09222",
+  "description": "arXiv:2604.09222v2 Announce Type: replace-cross \nAbstract: Audio Large Language Models (ALLMs) enable spoken interaction but introduce new jailbreak vulnerabilities. Existing perturbation-based jailbreaks do not explicitly control which frequency bands carry the perturbation. Although such perturbations can elicit unsafe responses, repeatedly applying a universal perturbation across diverse inputs may also degrade utility on normal tasks, leaving a conspicuous behavioral footprint that may expose the attack to users or automated monitoring systems and thereby compromise its stealthiness. To determine whether full-band perturbation is necessary, we vary coverage from partial-band to full-band. Jailbreak Success Rate (JSR) varies non-monotonically, while utility degradation grows with coverage. This mismatch shows that selected bands can yield stronger attacks with less utility degradation than full-band perturbations. Based on this observation, we propose GRM, a utility-aware, frequency-selective jailbreak framework that ranks Mel bands by the ratio between jailbreak contribution and transcript sensitivity, confines a universal perturbation to selected bands, and regularizes deviations from the intended request semantics. Experiments on four ALLMs show that GRM achieves an average JSR of 88.46\\% while substantially reducing utility degradation across benign transcription and response tasks relative to baselines. Our code is available at \\href{https://github.com/159753Fetter/GRM}{this repository}. Warning: This paper contains potentially sensitive content.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.AI"
+  ]
+}

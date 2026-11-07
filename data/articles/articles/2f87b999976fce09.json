@@ -1,0 +1,13 @@
+{
+  "id": "2f87b999976fce09",
+  "title": "Explaining AI-Image Detection: What the Heatmap Actually Shows",
+  "link": "https://arxiv.org/abs/2607.29581",
+  "description": "arXiv:2607.29581v1 Announce Type: new \nAbstract: A marketplace review photograph is a document: platforms approve refunds on it, and generative models drove the cost of forging one to zero. We study that detection problem, so we build a detector and attach an attribution map as its evidence, then measure what that pair delivers on 186,527 images under controls designed to change our conclusions when something is wrong. Compression history, not synthesis, drives naive evaluation: our strongest model reaches 0.9999 PR-AUC (area under the precision-recall curve) on a product-disjoint split, yet falls to 0.7254 once we re-encode synthetics into the real class's format, while five public detectors move by at most 0.07. Aligning one class relocates the cue rather than removing it, and the repaired model then assigns native files a median probability of synthesis of 0.0004. One identical final encode for both classes repairs that, and a three-seed factorial credits the encoding change with the whole gain (+0.176 +- 0.009 PR-AUC). That encode equalises the last stage only: forensic features alone still separate the classes at 0.7145 against a base rate of 0.254. For evidence we test maps causally, against controls that never consult the detector. Whether an attribution ranking exists at all depends on whether the detector reacts to the image. On our first-fix detector, which calls 96 of 100 edited frames real, no map beats a random one. On the detector we selected, twelve of seventeen maps clear that control on edited images and eight on generated ones; perturbation leads both axes and no gradient-CAM variant shows a positive advantage. The trivial controls never clear it, and on generated images the centre prior is worse than random. Our ensembled regional map clears both axes and takes the top pixel AP at 12.4 s per map against 44.9 for occlusion. Clearing a detector-blind control is not yet a faithful explanation, and we demonstrate none.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

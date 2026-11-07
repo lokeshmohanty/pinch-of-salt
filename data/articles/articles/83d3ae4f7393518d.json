@@ -1,0 +1,14 @@
+{
+  "id": "83d3ae4f7393518d",
+  "title": "FlowAWR: Online Adaptive Flow Reinforcement via Advantage-Weighted Rectification",
+  "link": "https://arxiv.org/abs/2606.30376",
+  "description": "arXiv:2606.30376v2 Announce Type: replace-cross \nAbstract: Aligning generative flow models on continuous spaces via online reinforcement learning is constrained by intractable trajectory likelihoods. Existing density-approximated policy gradient methods rely on stochastic SDE samplers to construct tractable transition kernels, which introduce training-inference inconsistencies and necessitates Classifier-Free Guidance (CFG).\n  While implicit frameworks such as DiffusionNFT directly optimize forward-process velocity fields, its heuristic fixed-magnitude corrections prevent optimization strength from relative intra-group quality.\n  We propose \\textit{Flow Advantage-Weighted Rectification} (\\textbf{FlowAWR}), a paradigm that recasts continuous generative policy optimization as supervised regression toward a theoretically optimal velocity field.\n  Starting from the optimal policy of a KL-constrained reward maximization, FlowAWR derives the optimal velocity field that admits a magnitude-aware, advantage-weighted rectification form, yielding SDE-free optimization and CFG-free generation.\n  In comparative evaluations on SD3.5-Medium, FlowAWR achieves improved alignment performance alongside a 2$\\times$ to 5$\\times$ convergence acceleration over DiffusionNFT (e.g., reaching a 24.12 PickScore in 1.2k steps, versus 23.82 in 2.0k steps for DiffusionNFT and 23.50 in $>$4k steps for FlowGRPO). Under multi-reward constraints, FlowAWR sustains generation quality, satisfying structural rules while maintaining stable out-of-domain performance. Code at \\href{https://github.com/Fuzm7/FlowAWR}{FlowAWR}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

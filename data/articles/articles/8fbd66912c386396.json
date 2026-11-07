@@ -1,0 +1,13 @@
+{
+  "id": "8fbd66912c386396",
+  "title": "Extending Decoupled Attention to Dense Prediction and Masked Training for Multi-Channel Images",
+  "link": "https://arxiv.org/abs/2609.21629",
+  "description": "arXiv:2609.21629v1 Announce Type: new \nAbstract: Multi-Channel imaging (MCI) data differs fundamentally from natural images, as each channel records a semantically distinct signal rather than a colour band. To adapt vision encoders to MCI data, Multi-Channel Vision Transformers (MC-ViTs) tokenize each channel independently and concatenate the resulting tokens into one sequence, and the channel count is no longer fixed by the architecture. Self-attention is then computed across all channel-patch tokens with no restriction on which channels attend to which, which dilutes the features of individual channels. The Decoupled Vision Transformer (DC-ViT) regulates this by separating updates computed within a channel from updates computed across channels, and by forming a representation per channel before the channels are combined. Its formulation, however, pairs tokens by spatial position, and thus requires the same visible tokens in every channel. Correspondence under independent per-channel masking is recovered by solving a linear assignment between the retained patches of each channel, which allows decoupled attention to be combined with current masked multi-channel training in its standard configuration rather than a restricted one. Across three classification and three segmentation benchmarks spanning fluorescence microscopy, imaging mass cytometry and satellite imaging, including dense prediction at high channel counts, the resulting formulation outperforms the strongest MC-ViT baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

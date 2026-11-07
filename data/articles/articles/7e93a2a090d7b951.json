@@ -1,0 +1,13 @@
+{
+  "id": "7e93a2a090d7b951",
+  "title": "Semantic Feature Analysis: Improving Agents Without Searching Over Rollouts",
+  "link": "https://arxiv.org/abs/2604.10513",
+  "description": "arXiv:2604.10513v2 Announce Type: replace \nAbstract: Ambiguity is an inherent property of natural-language agent specifications. When a system prompt leaves behaviour underdetermined, identical inputs follow divergent execution paths and produce inconsistent outcomes. The standard remedy is prompt optimisation: propose candidate prompts, run the agent to score them, and keep the best. This loop pays for the agent twice: once to generate candidates and again to rank them. On a tool-using agent whose rollouts cost dollars and minutes, the ranking cost dominates and budget-constrained optimisers routinely fail to find improvements.\n  We present Semantic Feature Analysis (SFA), a pipeline that repairs agent specifications without running any search. SFA reads execution traces the agent has already produced, clusters the outputs of each workflow node, decomposes them into semantic feature classes using an extended subject-verb-object schema, ranks those features by their contribution to outcome separation using a decision tree, and injects the surviving features as corrective statements into the affected node's system prompt. Because it never ranks candidate prompts, it never spends a rollout on selection.\n  We evaluate SFA against five prompt optimisers (GEPA, MIPROv2, SIMBA, BootstrapFewShot with random search, InferRules) and a single-reflection control, budget-matched in dollars at three budget levels across four benchmarks (IF-Bench, HotpotQA, HoVer, and GAIA). SFA consistently improves over the unmodified agent across benchmarks and budget levels, with the largest gains where rollouts are most expensive. On GAIA, where budget-constrained optimisers cannot afford to score even one candidate, SFA improves accuracy while other arms return their seed unchanged.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

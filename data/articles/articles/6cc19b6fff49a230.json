@@ -1,0 +1,13 @@
+{
+  "id": "6cc19b6fff49a230",
+  "title": "Co-Evolving Agents: Learning from Failures as Hard Negatives",
+  "link": "https://arxiv.org/abs/2511.22254",
+  "description": "arXiv:2511.22254v5 Announce Type: replace \nAbstract: Self-evolving agents improve their performance on long-horizon tasks by learning from their own interactions with an environment. A common approach uses the resulting failed trajectories as negatives for preference training. However, collecting an agent's own failures does not ensure that they provide informative supervision for further improvement. Obvious failures may be easy to reject without learning to identify errors in more plausible attempts. These plausible but incorrect trajectories can serve as hard negatives, helping agents learn to distinguish successful behavior from failures with less obvious errors. To enable agents to generate and learn from such informative negatives, we propose a co-evolving framework that couples a target agent's self-improvement with a failure agent trained to generate hard negatives. The failure agent learns exclusively from both agents' failed trajectories to generate higher-reward failures, which the target agent uses as negatives for preference training. As the target policy improves, its failures provide new training data for the failure agent. The updated failure agent, in turn, provides new negatives for target training, allowing negative generation to adapt alongside the target policy. Across online shopping, scientific reasoning, and interactive SQL querying, our framework improves average task reward by 5.7 over the baseline. These results demonstrate the value of learning to generate and use informative failures for agent self-improvement. We will make our code publicly available.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

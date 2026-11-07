@@ -1,0 +1,13 @@
+{
+  "id": "a8cb077835641c30",
+  "title": "Real-Time Visual Obstruction Detection in Surgical Augmented Reality",
+  "link": "https://arxiv.org/abs/2608.00232",
+  "description": "arXiv:2608.00232v1 Announce Type: new \nAbstract: Surgical augmented reality (AR) can provide contextual guidance by overlaying virtual annotations, tool cues, and procedural information onto the surgical workspace. However, the virtual content may obstruct task-relevant real-world information, such as surgical instruments, and interfere with users' perception during time-sensitive surgical tasks. In this paper, we investigate visual obstruction detection for surgical AR and present a latency-aware pipeline that combines vision-language model (VLM)-based surgical-object recognition with segmentation-based obstruction reasoning. To reduce inference overhead, the system adopts a cascaded small-to-large VLM architecture with segmentation-guided early exiting and attention-based visual token pruning. The small VLM handles easy frames when its key-object prediction is supported by segmentation consistency, while difficult frames are forwarded to a large VLM with pruned visual tokens. We construct a pseudo-AR surgical obstruction detection benchmark by overlaying virtual content onto surgical-tool images and labeling whether the virtual content obstructs task-relevant instruments. Evaluation results show that the proposed system achieves 87.43% obstruction detection accuracy with an average end-to-end latency of 479 ms, reducing latency by 62.90% compared with a cloud large-model baseline. These results demonstrate the feasibility of latency-aware obstruction detection for surgical AR and motivate future work on dynamic surgical videos, multi-object scenes, and clinically grounded AR guidance content.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

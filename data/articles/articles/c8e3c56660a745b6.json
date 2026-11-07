@@ -1,0 +1,14 @@
+{
+  "id": "c8e3c56660a745b6",
+  "title": "Uncertainty as a Proxy for Semantic Correctness in Diffusion-Based Medical Image Synthesis",
+  "link": "https://arxiv.org/abs/2610.03224",
+  "description": "arXiv:2610.03224v1 Announce Type: cross \nAbstract: Diffusion models can synthesise contrast-enhanced CT (CECT) from non-contrast CT (NCCT), avoiding contrast administration and its environmental and patient-access costs. However, visually realistic images are not necessarily anatomically correct, and the pixel-intensity and feature-space similarity metrics used to assess generation quality do not directly measure anatomical correctness. In this work, we investigate whether uncertainty can serve as a proxy for semantic correctness in diffusion-based medical image synthesis.\n  We study NCCT-to-CECT synthesis using AortaDiff, a multitask diffusion framework that jointly generates CECT images and lumen segmentations. The segmentation output provides an explicit representation of the generated vascular anatomy, enabling segmentation-derived errors to be used as a quantitative measure of generation correctness. Six methods spanning weight (Ensemble, HyperDiff, BayesDiff), architecture-perturbation (MCDropout), generative-stochasticity (RDS) and input-perturbation (TTA) uncertainty are compared at the pixel, region and image levels, and for detection of clinically relevant out-of-distribution (OOD) cases.\n  Uncertainty proves informative at all three spatial scales, remains informative on an external multi-centre dataset under distribution shift, and supports OOD detection. MCDropout stands out among the six: it ranks among the leading methods at every scale, generalizes well on the external dataset, and can be enabled at inference on any model already trained with dropout, so reliable uncertainty comes at no extra training cost. Uncertainty reliably flags severe failures but discriminates poorly among already high-quality images. These findings support uncertainty as a practical and computationally economical signal for quality filtering, reliability assessment and OOD detection in NCCT-to CECT synthesis.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

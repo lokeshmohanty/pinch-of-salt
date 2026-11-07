@@ -1,0 +1,13 @@
+{
+  "id": "2cf4516e0b838263",
+  "title": "CrowdCue: Specialist-Cue Conditioning for Vision-Language Crowd Counting",
+  "link": "https://arxiv.org/abs/2609.23012",
+  "description": "arXiv:2609.23012v1 Announce Type: new \nAbstract: Generative vision-language models (VLMs) offer a counting paradigm in which one model produces both a count and a natural-language account of the scene, yet their raw counting accuracy sits in the range of sub-million-parameter specialist regressors. The open question is whether auxiliary guidance from a pretrained specialist can lift them into useful territory, and through which channel that guidance is best routed. We evaluate Qwen2.5-VL-7B on four widely used crowd counting benchmarks (ShanghaiTech A and B, UCF-QNRF, NWPU-Crowd). Zero-shot prompting rarely produces a parseable count, so LoRA supervised fine-tuning establishes the baseline at overall MAE 81.64. Conditioning on a P2PNet-derived density heatmap as an auxiliary visual signal fails in every encoding we tested, and an adversarial-swap protocol shows the model reads the heatmap but applies it counterproductively. We propose CrowdCue, a family that supplies the same specialist's already-integrated integer count to the VLM as a discrete symbol. The text-channel variant reaches MAE 72.04. The visual-channel variant, which renders the integer as printed digits and supplies it as a second image, reaches MAE 62.65, the strongest result in this paper and well ahead of the cue-supplying specialist alone (84.45 on the same split). In the late-fusion VLM we study, the binding constraint is not the channel but the abstraction level at which the specialist signal is delivered.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

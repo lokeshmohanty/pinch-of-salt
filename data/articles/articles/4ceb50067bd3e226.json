@@ -1,0 +1,14 @@
+{
+  "id": "4ceb50067bd3e226",
+  "title": "First-Order In-Context Shapley: Scalable Data Auditing for LLM Alignment and Evaluation",
+  "link": "https://arxiv.org/abs/2607.22766",
+  "description": "arXiv:2607.22766v2 Announce Type: replace-cross \nAbstract: Post-training alignment of Large Language Models is increasingly bottlenecked by data quality: preference and instruction-tuning corpora accumulate label noise, safety inversions, and inter-annotator contradictions that deduplication misses and full-corpus LLM judging cannot afford. While Data Shapley offers a principled valuation framework, exact computation requires intractable retraining, and embedding surrogates like KNN-Shapley fail to separate high- from low-utility demonstrations ($\\rho = 0.0003$ with generative utility). We introduce an inference-only valuation pipeline that computes the first-order term of an in-context cooperative game over semantic $k$-NN neighborhoods in $O(k)$ forward passes without parameter updates, correlating positively with multi-shot Monte-Carlo in-context Shapley on 100% of targets at 19x less compute. Projecting pairwise log-likelihood shifts onto a directed influence graph characterizes each record via three signals: outgoing Exemplifying Advantage, incoming Exemplified Advantage, and a topological One-of-a-Kind Score protecting rare prompts. Pre-filtering restricts LLM twin arbitration to 1%-5% of records while achieving 4.5x enrichment in confirmed errors on HelpSteer2 and 2.2x on Anthropic HH-RLHF, catching contradictions that zero-shot likelihood and margin filters miss. During DPO training, confirmed contradictions oppose the update far more often than clean records (56.7% vs. 37.0% in LoRA gradients) and stay below chance in reward accuracy. Finally, auditing the HH-RLHF benchmark exposes label errors where aligned models disagree with human labels 73%-83% of the time, and retraining DPO after repairing or filtering flagged records improves reward accuracy by +0.5%-0.6% overall and +3.1%-3.5% on repaired inversions, even without LLM arbitration.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "653f42b79e7fb0b5",
+  "title": "Practical Lossless Volumetric Medical Image Compression via Tri-plane Context Tree Learning",
+  "link": "https://arxiv.org/abs/2608.13897",
+  "description": "arXiv:2608.13897v1 Announce Type: cross \nAbstract: Lossless compression of volumetric medical images is of paramount importance for clinical and research applications where data fidelity is essential. Traditional compression methods are often limited in efficiency due to rigid, handcrafted models. Conversely, deep neural network (DNN)-based compression methods, while effective, demand substantial computational resources, hindering deployment in resource-constrained settings. To address these challenges, we propose a novel tri-plane context tree (TCT)-based method for lossless volumetric medical image compression that delivers high performance without relying on DNNs or external training data. To exploit intra-slice and inter-slice redundancies, we introduce a compact tri-plane context representation that decomposes complex 3D context modeling into efficient 2D modeling on three orthogonal planes. By integrating this representation with a context tree framework, we develop an input-specific TCT model employing an adaptive binary tree structure. At each tree node, the model dynamically selects from a suite of tri-plane based predictors and contextual feature extractors, enabling data-adaptive context modeling tailored to local structural characteristics. Instead of offline training, we sample a subset of the input volume to learn the TCT model by optimizing the minimum description length (MDL) through iterative construction and pruning. With the learned TCT model, each pixel retrieves its corresponding context, computes the prediction residual using the predictor dictated by the context, and performs entropy encoding based on the associated histograms. Experimental results demonstrate that the proposed method achieves compression performance on par with recent DNN-based methods on multiple datasets, while maintaining low computational cost and fast coding speeds, making it highly applicable in practice.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

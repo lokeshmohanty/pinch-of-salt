@@ -1,0 +1,16 @@
+{
+  "id": "e7700b8a0a252a2a",
+  "title": "Decoupling Knowledge Forgetting and Refusal Learning in MLLM Unlearning",
+  "link": "https://arxiv.org/abs/2610.14605",
+  "description": "arXiv:2610.14605v1 Announce Type: new \nAbstract: Current evaluations of multimodal unlearning typically focus on whether a model stops outputting target information. This surface-level criterion, however, masks two critical failure modes. First, knowledge suppression techniques often induce confabulation, leading the model to hallucinate facts about the unlearned subject. Second, refusal training merely alters observable behavior without erasing the underlying knowledge; such models might decline open queries but still identify correct answers under multiple-choice probing. To overcome these limitations, we propose Forget-Aware Self-Distillation (FASD). This method is designed to achieve honest ignorance, a state where the model genuinely loses the target knowledge and learns to acknowledge its absence. FASD separates these goals into two complementary channels. The behavior channel distills appropriate refusals from an ignorance-prompted copy of the model itself. Crucially, target tokens are masked from the teacher distribution to avoid accidentally reteaching the forgotten concepts. Simultaneously, the knowledge channel directly suppresses ground-truth answer spans independently of the model's generated responses. Experiments demonstrate that FASD successfully unlearns target knowledge, prevents information leakage in open-ended tasks, and preserves performance on retained data. The resulting model not only forgets the specified information but accurately recognizes the boundaries of its own knowledge. Code and data will be released upon publication.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.IR",
+    "cs.LG"
+  ]
+}

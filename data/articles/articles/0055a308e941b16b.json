@@ -1,0 +1,13 @@
+{
+  "id": "0055a308e941b16b",
+  "title": "GPEC: Efficient Pre-LLM Gaussian Process Embedding Correction for Cardiac Video Caption Generation",
+  "link": "https://arxiv.org/abs/2610.00196",
+  "description": "arXiv:2610.00196v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) have shown strong potential for video understanding and caption generation, but their performance may decline in specialized medical imaging domains such as echocardiography. This work introduces Gaussian Process Embedding Correction (GPEC), a modular and computationally efficient pre-LLM error-correction method that improves the visual representations used by VideoChat2 for cardiac ultrasound caption generation. GPEC is inserted between the visual projection layer and the language model and learns a residual correction that moves the projected visual representation toward an annotation-guided target. The target is constructed by converting structured video annotations into qualitative attributes, generating a fixed-format reference caption, and mapping it into the language-model embedding space. The correction is modeled using a sparse variational Gaussian Process with inducing points, natural-parameter variational updates, and a block-wise linear kernel, while the original VideoChat2 components remain frozen.The method is evaluated using representation-level, caption-level, content-oriented, and execution-time metrics by comparing the original VideoChat2 with VideoChat2 + GPEC under identical input and reference conditions. Results show improved caption similarity and content alignment after applying the proposed correction. Furthermore, GPEC adds less than 0.05 s of inference-time overhead per video in the evaluated setting. These findings indicate that GPEC can improve caption generation in specialized medical video domains with minimal computational cost, without requiring end-to-end fine-tuning of the pretrained multimodal backbone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

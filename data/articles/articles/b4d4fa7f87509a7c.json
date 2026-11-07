@@ -1,0 +1,15 @@
+{
+  "id": "b4d4fa7f87509a7c",
+  "title": "Platonic Task Arithmetic",
+  "link": "https://arxiv.org/abs/2610.00929",
+  "description": "arXiv:2610.00929v1 Announce Type: cross \nAbstract: Models specialized for the same task converge to similar behavior, yet the parameter updates that produce it share no common coordinate system, so weight-space task arithmetic stays confined to a single model and cannot cross architectures without a structural correspondence. Drawing on Plato's allegory of the cave, we hypothesize that these model-specific updates are shadows of one shared, model-agnostic object, which we call the platonic task vector. To make it operational for models that pair an image or audio encoder with a text encoder, we introduce Universal Task Descriptors: matrices whose shape is independent of architecture and embedding dimension, which record a task's functional effect and support addition and negation as matrix operations. Transferring a descriptor into a target means editing the target until it reproduces the descriptor on the task's unlabeled probe images and class-name prompts, requiring no per-image labels. We realize this edit in two ways. First, the descriptor factorizes into a shift field on image embeddings, so a single least-squares solve yields a linear operator that folds into the target's last layer as a weight edit; by linearity, a bank of such operators admits any composition at any strength as a signed sum. Second, a low-rank adapter trained on the same objective reaches every layer and fits compositions jointly, at the cost of one optimization per edit. Heterogeneous models share this object only partially, with a model-specific residual comparable in norm to the shared component, yet cross-model transfer still retains 74-80 percent of the gain of the target's own descriptors. Experiments across six model families, eight classification tasks, and an audio-text setting show that task knowledge transfers and composes across heterogeneous models under both realizations.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "stat.ML"
+  ]
+}

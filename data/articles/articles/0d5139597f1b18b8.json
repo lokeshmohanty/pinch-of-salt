@@ -1,0 +1,14 @@
+{
+  "id": "0d5139597f1b18b8",
+  "title": "CleanRM: Reward Modeling from Noisy Feedback with a Few Clean Feedback for RLHF",
+  "link": "https://arxiv.org/abs/2610.21138",
+  "description": "arXiv:2610.21138v1 Announce Type: new \nAbstract: Feedback noise is pervasive in preference data, arising from subjective human judgments, annotation mistakes, and imperfect LLM judges. Standard reward modeling trained on such feedback yields a biased estimate of the clean risk. Although classical denoising methods are directly applicable to noisy feedback learning, they generally assume a uniform noise ratio across samples. However, this assumption fails for feedback data, where noise is intrinsically sample-wise. To address this challenge, we propose CleanRM, which uses a few clean feedback to calibrate sample-wise noise ratios via optimal transport. Specifically, CleanRM aligns the joint distribution of preferences reverted from noisy feedback with that of clean feedback and then trains the reward model using a noise-corrected surrogate loss. Theoretically, we prove that the resulting objective is unbiased with respect to the clean risk. Extensive experiments demonstrate that CleanRM outperforms state-of-the-art denoising baselines and yields more effective downstream RLHF alignment.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "stat.ML"
+  ]
+}

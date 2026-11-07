@@ -1,0 +1,15 @@
+{
+  "id": "6bdd63abe7bf0040",
+  "title": "The Lift Spectrum: How Measurement-to-Space Adaptivity Shapes Robustness in Image-Free Single-Pixel Sensing",
+  "link": "https://arxiv.org/abs/2607.22077",
+  "description": "arXiv:2607.22077v1 Announce Type: cross \nAbstract: Single-pixel sensing encodes a scene as a short sequence of coded measurements, and image-free methods infer the task directly from that sequence. Removing reconstruction does not remove the difficulty: it relocates it to the lift, the map from 1D measurements to a 2D representation, which prior work treats as a trivial reshape. We recast the lift as the central design axis of image-free sensing and order methods by how strongly it adapts to its input: a fixed-physics inverse (reconstruct-then-segment), a learned static projection, or a content-adaptive retrieval; position on this lift spectrum predicts behavior as acquisition degrades. The spatiotemporal soft-fusion (STSF) network pairs a probe-selected recurrent encoder with a cross-attention lift chosen by a parameter-matched ablation, ahead of its U-Net++ decoder, and trains under task-prioritized loss scheduling (TPLS), a scheduled reconstruction prior. In simulation, STSF+TPLS surpasses the prior image-free baseline on three datasets at 3.13% sampling (+3.2 to +9.9 pp foreground mIoU) and plateaus down to 0.39%. The strongest clean-trained reconstruct-then-segment baseline wins the noiseless limit, but under calibrated measurement noise image-free inference overtakes it, for a measured reason: the reconstruction pipeline amplifies the identical measurement noise before its segmenter reads it. Each region fails in its own signature: collapse, imprinting, or coarsening. STSF+TPLS transfers without fine-tuning to a real single-pixel bench as a proof of concept, at about 14 ms per mask. Charting the lift turns a scattered design space into a map of which lift to deploy at each operating point. Code and pretrained weights: https://github.com/Hanyuyuan6/STSF-TPLS",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "physics.optics"
+  ]
+}

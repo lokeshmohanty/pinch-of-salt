@@ -1,0 +1,15 @@
+{
+  "id": "c9a227a2adb9aa5c",
+  "title": "AssayRouter: Historical Utility Priors for Frozen Molecular Predictor Routing",
+  "link": "https://arxiv.org/abs/2609.37285",
+  "description": "arXiv:2609.37285v1 Announce Type: new \nAbstract: Laboratories often face a new molecular assay with 16-64 labels and a bank of predictors whose training data and parameters are unavailable. The practical question is which frozen outputs to include in a small local model. AssayRouter treats completed assays as pseudo-targets and labels each candidate by its post-fit utility: the reduction in held-out discovery loss when the candidate is added to the local target predictor. A shared regressor learns to predict this utility from candidate behavior on the support set, without source identity; on a new assay, one frozen ranking selects four sources and separate labels fit a convex combiner. We train only on completed ChEMBL-MT assays and evaluate 24 external regression assays across six frozen interface families. AssayRouter-C lowers strict four-call negative log-likelihood (NLL) by 0.0409 relative to Support-CV@4. Frozen candidate-label permutations confirm that candidate-utility correspondence carries the transferred information, and leave-one-interface-out training shows that the mapping generalizes to unseen predictor families. Completed assays therefore provide transferable supervision for scarce-label routing through frozen prediction interfaces.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "q-bio.BM",
+    "q-bio.QM"
+  ]
+}

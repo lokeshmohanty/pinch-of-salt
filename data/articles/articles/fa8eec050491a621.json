@@ -1,0 +1,14 @@
+{
+  "id": "fa8eec050491a621",
+  "title": "ZOIF: Zeroth-Order Influence Function Estimation for LLM Data Selection Using Only Forward Passes",
+  "link": "https://arxiv.org/abs/2610.15336",
+  "description": "arXiv:2610.15336v1 Announce Type: cross \nAbstract: Influence functions enable principled data selection for large language models (e.g., identifying influential training samples for model editing, debugging, or efficient fine-tuning). However, scaling IFs to LLMs is hindered by the intractability of billion-scale Hessian matrices and the prohibitive memory overhead of backpropagation (BP). While many classical IF approximations reduce Hessian complexity, they still rely on BP for gradient computation, requiring massive storage for intermediate activations that impedes practical data selection at scale. To address this, we propose ZOIF, a zeroth-order framework for influence estimation that operates entirely via forward passes, enabling memory-efficient data selection under resource constraints. ZOIF decomposes influence estimation into three BP-free stages: (1) approximating the average proxy gradient via zeroth-order estimation; (2) reformulating and solving the inverse Hessian-vector product as an auxiliary zeroth-order optimization to bypass explicit inversion; and (3) deriving per-sample influence scores via a forward finite difference along the previously computed parameter update direction. Experiments show that ZOIF selects data subsets with downstream utility competitive with, and in some cases exceeding, the evaluated baselines, yet at substantially lower peak memory cost and with comparable overall computation time.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

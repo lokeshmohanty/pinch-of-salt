@@ -1,0 +1,17 @@
+{
+  "id": "ba1e9ba058562269",
+  "title": "Spherical Cauchy Variational Autoencoders: Heavy Angular Tails and Exact KL Evaluation",
+  "link": "https://arxiv.org/abs/2506.21278",
+  "description": "arXiv:2506.21278v4 Announce Type: replace-cross \nAbstract: Heavy-tailed posteriors are routine in Euclidean variational autoencoders, where the Student family relaxes the Gaussian without new machinery. The sphere has had no comparable option. Von Mises-Fisher distribution needs modified Bessel functions and a rejection sampler, and Power Spherical buys its closed forms by forcing the density to vanish at the antipode. We develop the spherical Cauchy distribution as a hyperspherical posterior that needs neither compromise. Stereographic projection carries it to a multivariate Student law, and a M\\\"obius transformation turns a uniform spherical draw into an exact posterior sample from inner products, norms, and scalar arithmetic. The same transformation settles the regularizer. Evaluating the density along the sampling map reduces the Kullback-Leibler (KL) divergence to the uniform prior to a scalar expectation whose expansion terminates in every even ambient dimension, leaving one logarithm and a polynomial with finitely many correction terms. Odd dimensions admit certified truncation of value and gradient, the KL is increasing and convex in concentration, and the same function gives the pairwise KL. At matched modal curvature it has broader angular tails and a smaller KL penalty than both alternatives, so equal local precision costs less regularization. In dimension 128 the fused evaluator runs 1.5 times faster per latent-layer step than Power Spherical and 4.2 times faster than robust von Mises-Fisher on CPU, with factors of 1.6 and 5.4 on CUDA. Across five paired seeds it attains the lowest MNIST reconstruction loss at every tested dimension and lowers held-out viewpoint-gap negative log-likelihood on smallNORB by 3.6 percent.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ML",
+    "cs.AI",
+    "cs.LG",
+    "math.ST",
+    "stat.TH"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "b01fab26177d15ad",
+  "title": "Continuous Interaction Diffusion: A Diffusion-Native Runtime for Asynchronous Tool-Augmented Reasoning",
+  "link": "https://arxiv.org/abs/2608.10438",
+  "description": "arXiv:2608.10438v1 Announce Type: new \nAbstract: Large language models increasingly rely on external tools to access up-to-date information, perform computation, and interact with the outside world. For autoregressive models, tool use naturally fits the generation process: the model emits a tool call, waits for the result, and then continues generating. Diffusion language models (dLLMs), however, reason by repeatedly refining many parts of their output in parallel, making this stop-and-resume interaction pattern unnecessarily restrictive. It can force tool decisions before the model's reasoning has stabilized, delay useful observations until a discrete call finishes, and introduce redundant refinement and tool execution, potentially hurting both task accuracy and inference efficiency.\n  We introduce Continuous Interaction Diffusion (CID), a diffusion-native model--runtime architecture that integrates tool interaction into iterative denoising. CID separates a model-read-only fact channel, a thought channel represented by a Typed Cognitive Tensor, and a display channel. Information needs can emerge before a textual or JSON call is fully serialized, allowing perceptual bindings to launch external reads while denoising continues. Returned results are projected into the evolving thought state and can revise earlier cognition and display regions. Persistent bindings reuse static results without repeated external execution and refresh changing sources when needed. CID is designed to expose evidence earlier, overlap tool latency with model computation, reduce duplicate external work, and preserve useful computation after new evidence arrives. We formalize the architecture, runtime, and training objectives, and define an evaluation protocol for task quality and end-to-end efficiency. This first paper focuses on read-only tools and makes no empirical performance claims.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

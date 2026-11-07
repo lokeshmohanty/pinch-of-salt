@@ -1,0 +1,15 @@
+{
+  "id": "620af2de68f511d2",
+  "title": "When Should a Failing Robot Ask? Initiating Corrective Human-Robot Dialogue from Audited Sensor Evidence",
+  "link": "https://arxiv.org/abs/2609.21942",
+  "description": "arXiv:2609.21942v1 Announce Type: cross \nAbstract: A robot that fails at a task faces the first decision in corrective dialogue: act on its own diagnosis, consult another onboard sensor, or interrupt a person. Choosing well requires knowing how much the robot's sensors reveal about the cause and how reliable the robot's own diagnosis is. We build a simulated benchmark in which every failure's true cause is known, because we injected it, and measure what each sensor reveals, with explicit checks against data leakage. Some failures are diagnosable from camera images; others only from the robot's force data (0.99 from force data, no image method above 0.55). We then test six open vision-language models. Their behavior tracks the surface of the prompt, not the evidence: moving the refusal option from last to first in the answer list collapses refusal rates from 78-100% to 0-6% in three of the six swept model-and-family pairs. Accuracy from frames stays at or below a majority-class baseline under every prompt variant, with or without worked examples, and stated confidence carries no information about correctness. Handing the same models the force data as ten lines of text produces the first above-baseline diagnoses, in four of the six models: much of the failure reflects missing sensor data, not missing ability. We pose the choice as a three-action decision problem, act, consult your own sensors, or ask a human, whose optimal policy follows from measured accuracy. The models do not follow it, and their ask rates ignore a fourfold change in question cost. One question to a human still lifts them from that baseline to roughly the answerer's own reliability (0.70-0.81 when they ask). The decision to ask should be tied to measured accuracy and stated costs, not to the model's confidence.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.HC"
+  ]
+}

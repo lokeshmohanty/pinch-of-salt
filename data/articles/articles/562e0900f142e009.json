@@ -1,0 +1,13 @@
+{
+  "id": "562e0900f142e009",
+  "title": "STEP: Surgical Point Tracking from Sparse Endpoints and Pseudo-trajectories",
+  "link": "https://arxiv.org/abs/2610.31951",
+  "description": "arXiv:2610.31951v1 Announce Type: new \nAbstract: Surgical point tracking requires persistent correspondence through tissue deformation and occlusion, yet dense trajectory annotations are costly to obtain. We present STEP, a two-stage framework that learns from surgical video and sparse physical endpoints. First, a frozen offline teacher generates candidate trajectories, and temporal reversibility and stereo consistency select dense supervision for a causal student. Second, a robust physical endpoint loss anchors terminal correspondence, while a round-trip loss constrains temporal consistency. A gradient-free prefix exposes training to accumulated drift, while a final differentiable window bounds activation memory. The trained tracker processes a single RGB stream with fixed weights. In STIR-to-VL-SurgPT transfer, temporal-stereo union selection reduces endpoint error by 7.0% relative to unfiltered trajectories. On a post-hoc diagnostic of 29 VL-SurgPT clips excluded from the endpoint-training manifest, STEP reduces endpoint error from 31.52 to 16.80 pixels relative to dense-label fine-tuning. These results support combining curated trajectories with physical observations to train surgical point trackers.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

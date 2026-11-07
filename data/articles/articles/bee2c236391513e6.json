@@ -1,0 +1,13 @@
+{
+  "id": "bee2c236391513e6",
+  "title": "Subspace Learning with Outlier Exposure for Out-of-Distribution Detection",
+  "link": "https://arxiv.org/abs/2611.07580",
+  "description": "arXiv:2611.07580v1 Announce Type: new \nAbstract: Out-of-Distribution (OoD) detection is pivotal for reliable deployments of Deep Neural Networks (DNNs), aiming to distinguish anomalous samples from the In-Distribution (InD) data in training. By introducing outliers as surrogate OoD data to finetune DNNs, Outlier Exposure (OE) has greatly advanced OoD detection in recent years. Existing OE-based research remains predominantly logit-centric, either by generating diverse outliers or by regularizing them with objectives operating at the prediction-output level. Nonetheless, these approaches leave much of the rich information in feature spaces untapped. In this work, we propose an OE-based detection framework, named RecOE, that learns appropriate feature subspaces from InD data and auxiliary outliers, such that the InD-OoD discrepancy can be effectively characterized through the learned feature subspaces. Specifically, the feature subspaces are optimized to capture the dominant variations of InD and outliers by minimizing reconstruction errors therein. Besides, a sample-level objective discourages reconstruction in the opposing subspace, while an orthogonality regularizer reduces subspace overlap, further promoting discriminative subspaces. At inference, the difference in reconstruction errors between the learned subspaces serves as the OoD detection score. Extensive experiments show the superiority of RecOE on multiple benchmarks, in which significant performance gains are achieved over recent strong baselines with only slight extra overhead from two small-size matrices of subspace bases. The source code is available at https://github.com/shenhongxu123/RecOE.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

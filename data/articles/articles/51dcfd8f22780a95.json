@@ -1,0 +1,14 @@
+{
+  "id": "51dcfd8f22780a95",
+  "title": "NeuraLSP: A Neural Spectral Preconditioner for Accelerating PDE Solvers",
+  "link": "https://arxiv.org/abs/2601.20174",
+  "description": "arXiv:2601.20174v3 Announce Type: replace-cross \nAbstract: Solving large-scale sparse linear systems originating from partial differential equations (PDEs) is a fundamental topic in high-performance scientific computing, where preconditioners are crucial. Multigrid methods are among the most effective preconditioners, yet their performance is dictated by the accurate construction of grid transfer operators. Current neural multigrid methods learn such operators with graph neural networks (GNNs), typically by extracting connectivity from discretized system matrices. While effective, these graph-based constructions suffer from rank inflation, resulting in unnecessarily large coarse spaces and slower convergence. To ameliorate, this paper advocates NeuraLSP, a new neural multigrid preconditioner that replaces graph aggregation with a fixed low-rank spectral representation derived from the left singular subspace of near-nullspace components. At the network design level, NeuraLSP is trained with a novel subspace loss function, which preserves the error modes most relevant to multigrid convergence while suppressing rank inflation. This paper's grand innovation hinges upon both theoretical guarantees and empirical robustness to rank inflation, affording up to a 53% speedup over SOTA neural preconditioners across a variety of PDE families.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

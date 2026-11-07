@@ -1,0 +1,13 @@
+{
+  "id": "16f2c09f89ebddcf",
+  "title": "Dual-Manifold Geometry Guided Representation Learning: Adaptive Coupling between Kernel and Data Spaces",
+  "link": "https://arxiv.org/abs/2608.12737",
+  "description": "arXiv:2608.12737v1 Announce Type: new \nAbstract: Deep representation learning has primarily focused on how features evolve across network layers, while largely overlooking the structured geometry embedded in network parameters. We introduce a dual-manifold perspective in which each convolutional layer contains two coupled geometric spaces: a Kernel Manifold induced by convolutional filters and a Data Manifold characterized by intermediate feature representations. Because these manifolds share the same channel space, parameter geometry can provide complementary structural information to guide feature evolution. Based on this insight, we propose Kernel-Guided Feature Transform (KGFT), a lightweight module that derives a geometric guidance matrix from the kernel Gram matrix and uses it to transform the covariance structure of feature representations. Unlike conventional attention mechanisms that reweight feature responses, KGFT explicitly reshapes feature relationships by transferring geometric information from the kernel manifold to the data manifold. To accommodate network hierarchy, we further introduce Exploit and Explore modes with a depth-aware scheduling strategy and a learnable guidance strength that adaptively controls the contribution of geometric transformation. This design promotes geometric alignment in shallow layers while encouraging feature diversity in deeper layers, without imposing excessive constraints on representation learning. Theoretical analysis establishes the validity of the proposed transformation and characterizes its effect on feature covariance. Extensive experiments across CNN- and Transformer-based architectures, including ResNet, ViT, and LLaMA-7B, demonstrate consistent improvements on image classification and arithmetic reasoning tasks, validating the generality and effectiveness of kernel-guided dual-manifold representation learning. Code will be publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

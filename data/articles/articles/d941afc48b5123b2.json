@@ -1,0 +1,14 @@
+{
+  "id": "d941afc48b5123b2",
+  "title": "Rethinking the Tradeoff Between Temporal Encoding and Nonlinear Computation in Spiking Language Models",
+  "link": "https://arxiv.org/abs/2610.10933",
+  "description": "arXiv:2610.10933v1 Announce Type: cross \nAbstract: Spiking language models face a tradeoff between representing continuous semantic features over short temporal windows and retaining costly nonlinear attention operations. We introduce Spora, which jointly designs spike encodings and attention operators. Binary temporal weights let $T$ spikes represent compositional values with up to $T$ bits of capacity, compared with $O(\\log_2 T)$ bits for spike-count readout. Unipolar Binary Spiking (UBS) uses thresholds and spike-triggered residual decay to produce non-negative integer codes; Bipolar Binary Spiking (BBS) separates sign and magnitude and learns a scale for signed activations. These representations support accumulation-and-shift dot products and integer-exponent mappings in attention. With four time steps, Spora achieves 76.6 average GLUE score and 44.1 CoLA MCC, improving over SpikeLM by 1.2 and 6.2 points, respectively. Extending BBS to six steps raises these scores to 78.2 and 47.4. Conditional-decay analysis, matched-budget activation-quantization comparisons, event-workload statistics, and fixed-point evaluation further characterize the connection between encoding fidelity and computational cost.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

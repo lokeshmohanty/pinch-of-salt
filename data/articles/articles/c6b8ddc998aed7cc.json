@@ -1,0 +1,13 @@
+{
+  "id": "c6b8ddc998aed7cc",
+  "title": "Dynamic Execution Commitment of Vision-Language-Action Models",
+  "link": "https://arxiv.org/abs/2605.11567",
+  "description": "arXiv:2605.11567v4 Announce Type: replace \nAbstract: Vision-Language-Action (VLA) models predominantly adopt action chunking, i.e., predicting and committing to a short horizon of consecutive low-level actions in a single forward pass, to amortize the inference cost of large-scale backbones and reduce per-step latency. However, committing these multi-step predictions to real-world execution requires balancing success rate against inference efficiency, a decision typically governed by fixed execution horizons tuned per task. Such heuristics ignore the state-dependent nature of predictive reliability, leading to brittle performance in dynamic or out-of-distribution settings. In this paper, we introduce A3, an Adaptive Action Acceptance mechanism that reframes dynamic execution commitment as a self-speculative prefix verification problem. A3 first computes a trajectory-wise consensus score of actions via group sampling, then selects a representative draft and prioritizes downstream verification. Specifically, it enforces: (1) consensus-ordered conditional invariance, which validates low-consensus actions by judging whether they remain consistent when re-decoded conditioned on high-consensus actions; and (2) prefix-closed sequential consistency, which guarantees physical rollout integrity by accepting only the longest continuous sequence of verified actions starting from the beginning. Consequently, the execution horizon emerges as the longest verifiable prefix satisfying both internal model logic and sequential execution constraints. Experiments across diverse VLA models and benchmarks demonstrate that A3 eliminates the need for manual horizon tuning while achieving a superior trade-off between execution robustness and inference throughput.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

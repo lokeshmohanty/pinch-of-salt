@@ -1,0 +1,14 @@
+{
+  "id": "677bd4ca2cb82724",
+  "title": "TACIT: Optimization Models that Learn from Their Mistakes",
+  "link": "https://arxiv.org/abs/2609.38434",
+  "description": "arXiv:2609.38434v1 Announce Type: cross \nAbstract: Real-world optimization problems are difficult to model accurately because many objectives and constraints reside in domain experts' tacit knowledge, making them hard to formalize. As a result, optimization models often contain miscalibrated objectives, missing constraints, or omitted decision variables, leading to solutions that fail to reflect operational realities. We address this challenge by automatically repairing misspecified formulations using historical data consisting of past solutions and subsequent user overrides. Traditional approaches such as inverse optimization and constraint learning tend to overfit sparse data and produce complex formulations. Our central idea is to combine the reasoning capabilities and prior knowledge of LLMs with the formal grounding provided by optimization. We realize this idea through two complementary paradigms. Top-down, an LLM proposes structural repairs, including new constraints and variables, whose numerical parameters are calibrated and validated through optimization. Bottom-up, optimization infers cuts from observed decisions, which the LLM contextualizes into interpretable, generalizable modeling constraints. We evaluate our approach on 38 misspecification scenarios spanning nine classes of optimization problems, several drawn from real-world applications, and show that TACIT can repair 78.9% of them (vs. 60.5% for the best baseline).",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "math.OC",
+    "cs.AI"
+  ]
+}

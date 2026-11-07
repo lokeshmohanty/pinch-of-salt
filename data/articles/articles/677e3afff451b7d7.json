@@ -1,0 +1,14 @@
+{
+  "id": "677e3afff451b7d7",
+  "title": "CST-WM: A Causally Structured World Model for Embodied Visual Tracking",
+  "link": "https://arxiv.org/abs/2609.06302",
+  "description": "arXiv:2609.06302v2 Announce Type: replace \nAbstract: Embodied visual tracking requires a robot to choose actions that keep a moving target observable at a suitable distance, and to recover it after occlusion, out-of-view drift, or distractor crossings. We cast the task as planning over future target evidence with an action-conditioned world model. In logged tracking data, however, the behavior policy's actions are correlated with where the target is, so a generic predictor can learn a shortcut: it writes the current action directly into its prediction of target evidence, instead of letting the action affect that evidence only by moving the robot and changing what it observes. We call this failure causal hallucination; the resulting rollouts look plausible but rank candidate actions for the wrong reason. We propose CST-WM, a causally structured world model whose state is split into target-evidence, robot, and observation branches. Its transition removes the same-step edge from action to target evidence but keeps the path through robot motion and the resulting views, so candidate actions are still distinguished by their predicted ego-motion. With rollout-based model-predictive control, a single model handles both steady following and re-acquisition after target loss. On EVT-Bench and Habitat 3.0, covering standard tracking, target-loss recovery, and cross-dataset transfer, CST-WM improves following, distance-range control, safety, and re-acquisition over reactive trackers and world-model baselines, and removing the action mask causes the largest drop in re-acquisition among our ablations. Offline, CST-WM has lower multi-step rollout error, and its ranking of candidate actions agrees better with the simulator's. On a Unitree Go2 quadruped, CST-WM succeeds in 20 of 30 real-world trials under occlusion, distractor crossing, and fast motion, against 14 for TrackVLA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

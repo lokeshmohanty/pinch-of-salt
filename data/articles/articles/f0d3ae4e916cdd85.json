@@ -1,0 +1,16 @@
+{
+  "id": "f0d3ae4e916cdd85",
+  "title": "Beyond Blur: A Semantic Tri-view Pipeline for Teledermatology Gradability via Skin Micro-relief",
+  "link": "https://arxiv.org/abs/2609.03095",
+  "description": "arXiv:2609.03095v1 Announce Type: cross \nAbstract: Smartphone skin photographs are indispensable to teledermatology, yet assessing the diagnostic suitability of submitted cases (gradability) remains a critical bottleneck in mobile care workflows. Dermatologists routinely review multiple photographic views (regional, angled, and close-up) to identify consistent textural detail rather than relying on a single image. We present the Semantic Tri-view Pipeline, an interpretable architecture for automated teledermatology gradability screening that formalizes epidermal micro-relief as a computable biomarker of image quality. Using an expert-annotated subset of the public SCIN dataset, we train a lightweight DeepLabV3+ model to segment micro-relief fidelity. These spatial masks are then aggregated across up to three case views with a logistic regression classifier, leveraging viewpoint redundancy to support robustness under uncontrolled smartphone acquisition. This approach learns context-aware, clinically intelligible heuristics, such as penalizing high-fidelity texture in regional distance views. Evaluated at a predefined 90% sensitivity operating point, the system's apparent errors largely reflect subjective clinical variance on borderline cases where clinicians rely on non-visual metadata. On SCIN, performance improves from an AUC of 0.81 (80.6% PPV) on variance-heavy majority-consensus cases to 0.96 (97.7% PPV) on optically unambiguous unanimous cases. Overall, this work delivers an interpretable, privacy-by-design, edge-ready system that can provide real-time feedback during case submission to filter ungradable photo sets before review.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.HC",
+    "cs.LG"
+  ]
+}

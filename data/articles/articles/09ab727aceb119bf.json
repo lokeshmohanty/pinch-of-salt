@@ -1,0 +1,14 @@
+{
+  "id": "09ab727aceb119bf",
+  "title": "Test-Time Scaling in Reasoning LLMs: Inference Regimes, Evaluation, and Reproducibility",
+  "link": "https://arxiv.org/abs/2608.04001",
+  "description": "arXiv:2608.04001v2 Announce Type: replace-cross \nAbstract: Large language models can solve harder reasoning problems with more inference-time compute. The term \"test-time scaling,\" however, covers several inference algorithms: extending deliberation along one trajectory, sampling completed candidates and aggregating them by voting or verification, and searching over partial states. These algorithms differ in statistical structure, compute requirements, and failure modes. Treating them as interchangeable under a scalar \"budget,\" or reporting accuracy without specifying the inference protocol, makes results difficult to compare across studies. We study test-time scaling along three axes. First, we formalize it as budgeted inference over the implicit prefix tree of an autoregressive model and distinguish single-trajectory sequential scaling, leaf-level scaling with terminal reduction, and prefix-level scaling. Second, we treat the full inference system as the evaluated object and separate end-to-end performance from candidate-bank diagnostics. We introduce an evaluation profile whose coordinates and simple functionals recover or bound common repeated-sampling metrics, and require compute accounting and uncertainty estimates that match the protocol. Third, we distinguish exact replay from distributional reproducibility and state the requirements for each. We also organize open-weight reasoning models by model-side and interface mechanisms. Our empirical study covers broad knowledge, symbolic reasoning, and competition mathematics, and we publicly release 1,403,520 sampled model attempts. The project website is available at https://mohsenhariri.github.io/scorio/tts. The released datasets are Trace (https://huggingface.co/datasets/harimo/scorio-trace), Lite (https://huggingface.co/datasets/harimo/scorio-lite), Math (https://huggingface.co/buckets/harimo/scorio-math), and SuperGPQA (https://huggingface.co/buckets/harimo/scorio-gpqa).",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

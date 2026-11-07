@@ -1,0 +1,14 @@
+{
+  "id": "36fc90fcda6a73c5",
+  "title": "Keeping Jerk in Check: Jointly Trained Perception-Gated Experts for Smooth Terrain Transitions",
+  "link": "https://arxiv.org/abs/2606.19633",
+  "description": "arXiv:2606.19633v2 Announce Type: replace-cross \nAbstract: Perceptive legged locomotion across discontinuous terrain requires shared locomotion knowledge, task-specific maneuvers, and smooth transitions between them. Existing approaches train specialized policies independently and either switch among them with a hierarchical selector or distill them into a monolithic policy. Both fix the constituent behaviors before they are composed, and both are assessed through aggregate course outcomes that leave behavior at terrain boundaries uncharacterized. We instead propose CTS-MoE, which formulates multi-terrain locomotion as multi-task reinforcement learning and jointly trains a perception-gated dense mixture-of-experts actor with task-specific critics: soft routing composes expert knowledge into continuously varying behavior, while separated critics isolate heterogeneous objectives so that specialization survives joint optimization. A concurrent teacher-student formulation transfers this composition from privileged terrain information to onboard depth, so that at deployment routing is inferred from perception alone, with no terrain label, selector, or distillation stage. Against hierarchical and DAgger-distilled baselines, the policy raises connected-course success to 93.3% from 73.3% and 53.3%, lowers mean action jerk by about a third across the course, and avoids the switching transient that hard selection introduces at boundaries. On a Unitree Go1, it completes an extended outdoor course in 10/10 trials and transfers to four outdoor terrain types. Project Website: https://cts-moe.github.io/ .",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

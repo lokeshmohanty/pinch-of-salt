@@ -1,0 +1,14 @@
+{
+  "id": "3229f948a143b057",
+  "title": "ITO: Multi-View Alignment and Training-Time Fusion for Image-Text Pretraining",
+  "link": "https://arxiv.org/abs/2603.02767",
+  "description": "arXiv:2603.02767v4 Announce Type: replace-cross \nAbstract: Image--text contrastive pretraining has become a dominant paradigm for visual representation learning, yet existing methods often yield representations that remain partially organized by modality rather than by semantics. We propose ITO, a framework addressing this limitation through two complementary mechanisms with distinct roles. Multimodal multiple alignment enriches supervision by constructing diverse cross-modal correspondences from multi-view image augmentations, providing the primary source of discriminative gain. A lightweight training-time multimodal fusion module then acts as a training-time regularizer, encouraging the encoders to produce features that are compatible under fusion. Crucially, the fusion module is discarded at inference, preserving the efficiency of standard dual-encoder architectures while incurring training-time overhead only. Extensive experiments across pretraining scales from millions to billions of image--text pairs show that ITO outperforms strong contrastive baselines at moderate scale and yields consistent gains over CLIP under identical data, backbone, and compute at the 100M--1B scale, on classification, retrieval, and multimodal benchmarks. Controlled comparisons show that these gains are not explained by additional training compute or image augmentation alone. Our analysis further reveals that the contribution of fusion grows with data scale and that it stabilizes optimization, mitigating the late-stage overfitting commonly observed in aggressive contrastive learning. Code is available at https://github.com/showstarpro/ITO.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

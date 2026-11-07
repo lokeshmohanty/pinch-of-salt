@@ -1,0 +1,15 @@
+{
+  "id": "a3797207c79933ee",
+  "title": "Unlearning at Scale: State-Exact Trace-Preserving Deletion in Billion-Parameter Language Models",
+  "link": "https://arxiv.org/abs/2508.12220",
+  "description": "arXiv:2508.12220v2 Announce Type: replace-cross \nAbstract: Can a prospectively instrumented training continuation reproduce a deletion counterfactual exactly after selected examples leave its replay dataset? We study a trace-preserving counterfactual that fixes recorded execution controls while assigning requested identifiers zero contribution. The guarantee is prospective: the original run must record this execution provenance and retain an eligible uncontaminated checkpoint. Under pinned single-GPU environments, replay from a token store materialized without the requested rows reconstructs a separately executed trace oracle bit-for-bit in model and optimizer state. Pythia 160M is exact across four deletion geometries; Pythia 2.8B matches all 2,775,208,960 model-state elements for a random 5% request; and Llama 3.2 1B is exact after omitting 400 of 4,000 TOFU examples from replay storage. These results establish billion-parameter state exactness. They do not establish cheap deletion, because dispersed requests can force nearly full replay. We release standardized TOFU/OpenUnlearning measurements as descriptive diagnostics only because the frozen campaign lacks the matched controls required for a causal behavioral claim.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CR"
+  ]
+}

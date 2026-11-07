@@ -1,0 +1,15 @@
+{
+  "id": "e30006227c288de7",
+  "title": "Authorization Revocation for Long-Running AI Agents: Root-Scoped Quiescence under Delegation and Asynchronous Execution",
+  "link": "https://arxiv.org/abs/2609.21284",
+  "description": "arXiv:2609.21284v1 Announce Type: cross \nAbstract: Long-running AI agents outlive initiating processes through credentials, delegated tasks, queues, callbacks, reservations, and provider-side operations. Cancellation, process exit, and credential revocation neither close every pre-cut carrier nor distinguish independently authorized shared work. We define root-scoped authorization quiescence: for each manifested sink, a certificate accounts for every cut-relevant acceptance under the retired root-epoch atom that precedes its local fence and excludes protected acceptance under that atom after the fence, while permitting exact rebind to a current, independently sufficient support.\n  The root-scoped quiescence protocol linearizes a root cut, fences old-root expansion and protected sinks, represents alternative and conjunctive authority as antichains of minimal sufficient root sets, and composes provider-frontier certificates into a cutset over registered old-root paths. Exact channel-token accounting reconciles transfers; missing or conflicting evidence remains indeterminate. Under stated assumptions, we prove post-cut issuer non-expansion, support-sound projection, compositional soundness under exact channel conservation, independent-support preservation, merge-order independence, and crash/replay stability.\n  A provider-free late-effect test suite matches 17/17 registered outcomes. Two cancellation-only and one cut-only execution accept the same class of already scheduled late effect; two cut-plus-fence executions, one restart, and one stale-process execution reject it. A separately implemented checker verifies 17/17 traces and rejects 44/44 consistently rehashed semantic regressions. The certificate establishes root-relative authorization quiescence within its bound manifest and configuration, not global idleness, rollback, or business completion.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.PL",
+    "cs.AI",
+    "cs.CR"
+  ]
+}

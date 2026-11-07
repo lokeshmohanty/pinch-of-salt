@@ -1,0 +1,13 @@
+{
+  "id": "85f8416388dcace5",
+  "title": "Can Vision-Language Models Reason about AI Edits in Images?",
+  "link": "https://arxiv.org/abs/2607.28464",
+  "description": "arXiv:2607.28464v1 Announce Type: new \nAbstract: Detection and localization of AI-tampered images are critical for trustworthy AI, yet modern generative models have made such manipulations increasingly difficult to identify. While traditional binary classifiers can detect image tampering, they lack interpretability and generalization. Vision-Language Models (VLMs) offer a promising alternative due to their strong visual understanding and reasoning capabilities; however, existing approaches typically rely on supervised finetuning with curated explanations rather than exploiting their inherent reasoning capabilities. In this work, we investigate whether VLMs can be trained to reason about AI-generated image edits using reinforcement learning (RL) rather than explicit reasoning supervision. Motivated by the success in Group Relative Policy Optimization (GRPO), an RL technique that incentivizes the model to reason by generating thinking traces prior to giving the final answer, we propose a GRPO-based training framework that utilizes simple accuracy and format rewards. Given an input image, the model produces a structured reasoning trace and predicts whether the image has been tampered with. A lightweight segmentation model is then guided by the reasoning output to generate pixel-level localization masks. Experiments across multiple image manipulation datasets demonstrate that our approach achieves competitive detection and localization performance compared to state-of-the-art image forgery detectors, despite requiring substantially weaker supervision. We introduce effective intersection over union (eff-IoU), a unified metric to jointly evaluate detection and localization. These results suggest that reinforcement learning provides an effective and scalable mechanism for teaching VLMs to reason about AI-generated content.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

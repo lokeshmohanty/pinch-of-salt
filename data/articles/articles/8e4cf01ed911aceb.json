@@ -1,0 +1,13 @@
+{
+  "id": "8e4cf01ed911aceb",
+  "title": "Auditing VLM Benchmarks from Existing Evaluation Runs",
+  "link": "https://arxiv.org/abs/2610.13548",
+  "description": "arXiv:2610.13548v1 Announce Type: new \nAbstract: Every evaluation run of a vision-language model (VLM) already produces per-question artifacts (predictions, judged correctness, metadata) that leaderboards reduce to a single score and then discard. We reuse those artifacts to audit the benchmark itself, and add an audit layer to VLMEvalKit: six detectors that run as post-processing over saved outputs, plus one additional text-only rerun with visual inputs removed, emitting a per-question report. The layer reports per-question findings together with aggregate audit statistics; for the headline quantities, it attaches permutation-null excess where applicable, interval estimates for proportions, and sensitivity to the model pool. Auditing MMStar, a benchmark curated specifically so that the image is indispensable, with three models, we find zero aggregate accuracy gain from the image on 20.2% of its questions. An item-matched permutation null accounts for 17.0%, leaving a +3.2 pp excess (corrected permutation p = 0.001). This excess is concentrated in the mathematics and science categories and is absent from coarse perception, a localization consistent with knowledge substituting for visual evidence; confirming that mechanism would require item-level review. A second detector flags 134 questions on which every model that answered in parseable form picked the same non-gold option, and these candidates peak in the perception categories, whereas the zero-gain excess is largest in mathematics and science & technology. Replacing the LLM judge with exact string matching changes no conclusion, and every scoring discrepancy between the two traces to one model whose free-form answers a parser cannot read. On a binary yes/no benchmark the detectors measurably fall out of calibration, a scope boundary that we measure and report. The audit layer, the prediction artifacts and the generated reports accompany this submission.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

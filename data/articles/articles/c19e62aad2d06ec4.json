@@ -1,0 +1,13 @@
+{
+  "id": "c19e62aad2d06ec4",
+  "title": "TIE: Training-free CLIP Embedding Guidance for Compositional Text-to-Image Alignment",
+  "link": "https://arxiv.org/abs/2610.32407",
+  "description": "arXiv:2610.32407v1 Announce Type: new \nAbstract: Text-to-image (T2I) diffusion models have advanced notably, but still fail to satisfy prompt conditions, resulting in attribute mismatches and missing objects. These errors normally fall into two categories: concept loss, when an object or attribute (i.e., concept) goes missing, and concept confusion, when an attribute is assigned to the wrong object or multiple objects blend together. Recent studies suggest that these challenges are caused by the limited capacity of CLIP text encoder to capture fine-grained semantic details. Although several methods have been proposed, concept loss and concept confusion persist in recent T2I models when handling multi-object, multi-attribute prompts. In this paper, we conduct an embedding-level analysis to develop a training-free, inference-time solution for concept loss and concept confusion across CLIP-based T2I models. We find that (1) concepts mentioned later exhibit higher embedding entropy, reflecting less concentrated representations that are more often associated with concept loss, and (2) the first CLIP attention layer captures the strength of binding between each object and its attribute. Guided by our findings, we introduce TIE, a method that improves semantic alignment through a single text-embedding update. TIE addresses concept loss via entropy-aware singular value amplification and resolves concept confusion through interpolation-extrapolation binding based on CLIP attention scores, all in a training-free manner. Extensive experiments demonstrate that TIE enhances semantic fidelity in multi-concept scenarios with minimal sampling overhead. The project page is available at https://hong-sujung.github.io/TIE/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

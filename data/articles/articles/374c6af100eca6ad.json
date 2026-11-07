@@ -1,0 +1,13 @@
+{
+  "id": "374c6af100eca6ad",
+  "title": "CMDiff: Left Atrial Scar Segmentation from 3D LGE MRI Using Conditional Mask Diffusion Model: A Feasibility Study",
+  "link": "https://arxiv.org/abs/2611.07814",
+  "description": "arXiv:2611.07814v1 Announce Type: new \nAbstract: Late gadolinium enhancement (LGE) cardiac MRI enables non-invasive assessment of left atrial (LA) scar, an imaging marker associated with atrial fibrillation ablation outcome. However, automatic scar segmentation is hindered by low contrast, the thin atrial wall, scarce labels, and extreme class imbalance. Conditional diffusion offers iterative mask generation, but its suitability for sparse 3D LA scar segmentation remains unclear. To address this gap, we propose Conditional Mask Diffusion (CMDiff), which predicts clean masks using a dynamic-encoder-conditioned 3D sinusoidal UNet. We compared CMDiff with a deterministic baseline on identical cases in five-fold cross-validation of 60 scar-labelled public LASCARQS subjects, with 48 training and 12 held-out cases per fold. CMDiff achieved a scar DSC of 0.47 $\\pm$ 0.08, HD95 of 12.89 $\\pm$ 6.39 mm, and ASD of 1.91 $\\pm$ 0.96 mm, compared with deterministic baseline values of 0.51 $\\pm$ 0.08, 10.86 $\\pm$ 5.39 mm, and 1.58 $\\pm$ 1.03 mm, respectively. Under the same implementation, clean-mask prediction performed substantially better than the noise-prediction configuration evaluated in this study. Thus, CMDiff was technically feasible but did not improve segmentation performance: DSC was lower, and both HD95 and ASD were higher. Direct mask diffusion therefore provides an analytical alternative, but not a competitive performance advance for this task. The source code is publicly available at https://github.com/jizhang02/CMDiff.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

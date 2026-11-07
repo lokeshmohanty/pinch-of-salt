@@ -1,0 +1,13 @@
+{
+  "id": "b7d81c396675f3ba",
+  "title": "NSFlow: End-to-End Differentiable Neuro-Symbolic Optical Flow for Visual Odometry",
+  "link": "https://arxiv.org/abs/2609.06074",
+  "description": "arXiv:2609.06074v2 Announce Type: replace \nAbstract: Sparse optical flow provides stable inter-frame correspondence, playing a key role in Visual Odometry (VO) and Visual-Inertial Odometry (VIO). Classical optimization-based methods, such as Lucas-Kanade (LK), perform well under small displacements but are sensitive to large motions and illumination changes. Modern regression-based learning methods, while more robust in complex scenes, are often computationally heavy and lack explicit geometric consistency, making them less suitable for efficient VO/VIO front-ends. To bridge this gap, we propose a hybrid neuro-symbolic framework that combines the strengths of both paradigms. Our method uses a Convolutional Neural Network (CNN) to extract robust feature representations, which is fed into a differentiable LK optimizer to estimate optical flow in an end-to-end trainable manner. Through implicit differentiation, gradients are propagated across the iterative solver, enabling joint optimization of feature extraction and flow estimation. The resulting system integrates seamlessly into existing VO/VIO pipelines and runs in real-time on embedded platforms. Experiments show that our method outperforms conventional optimization-based flow in challenging conditions such as dynamic lighting and low texture, while also achieving higher accuracy and lower latency than purely regression-based alternatives. When deployed in a VIO system, our method demonstrates significant performance improvement, achieving an average error reduction of 42\\% on challenging datasets while enhancing tracking stability. The code is publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

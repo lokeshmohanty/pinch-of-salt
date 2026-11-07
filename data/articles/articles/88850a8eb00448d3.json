@@ -1,0 +1,13 @@
+{
+  "id": "88850a8eb00448d3",
+  "title": "SAFe: Segment-guided Aggregation of Feature Densities for Anomaly-aware Segmentation",
+  "link": "https://arxiv.org/abs/2609.24204",
+  "description": "arXiv:2609.24204v1 Announce Type: new \nAbstract: Visual segmentation systems encounter objects outside their training distribution during real-world deployment, hindering reliable autonomous systems that depend on scene parsing in the perception stage. Many recent methods address this by using self-supervised foundation models to train density estimators that yield low likelihood in anomalous image regions. Although promising, these methods suffer from poor feature semantics or they lack spatial consistency, both of which undermine critical downstream decisions. We address this problem with~\\method, a generative method based on class-conditional density estimation over self-supervised representations. SAFe trains lightweight normalizing flows that produce class-conditional normalized likelihood estimates over frozen DINOv3 features. We combine density estimates from transformer features with density scores over multi-scale convolutional features to capture both global semantics and local detail. We introduce a method-agnostic post-processing step based on SAM3 that connects per-location likelihoods into spatially coherent segments while suppressing false positives, and enables instance-level anomaly detection without retraining. The post processing further distinguishes novel categories among anomalous objects by a similarity-based agglomerative clustering scheme. SAFe sets a new state of the art on the PANIC, OoDIS, SMIYC ObstacleTrack with strong performance on the ISSU benchmark.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

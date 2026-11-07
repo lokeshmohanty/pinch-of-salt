@@ -1,0 +1,13 @@
+{
+  "id": "762e73e5b37c702e",
+  "title": "Confidence-Calibrating Regularization for Robust Brain MRI Segmentation Under Domain Shift",
+  "link": "https://arxiv.org/abs/2509.23176",
+  "description": "arXiv:2509.23176v2 Announce Type: replace \nAbstract: The Segment Anything Model (SAM) exhibits strong zero-shot performance on natural images but suffers from domain shift and overconfidence when applied to medical volumes. We propose \\textbf{CalSAM}, a lightweight adaptation framework that (i) reduces encoder sensitivity to domain shift via a \\emph{Feature Fisher Information Penalty} (FIP) computed on 3D feature maps and (ii) penalizes overconfident voxel-wise errors through a \\emph{Confidence Misalignment Penalty} (CMP). The combined loss, \\(\\mathcal{L}_{\\mathrm{CalSAM}}\\) fine-tunes only the mask decoder while keeping SAM's encoders frozen. On cross-center and scanner-shift evaluations, CalSAM substantially improves accuracy and calibration: e.g., on the BraTS scanner split (Siemens$\\to$GE) CalSAM shows a $+7.4\\%$ relative improvement in $\\mathrm{DSC}$ (80.1\\% vs.\\ 74.6\\%), a $-26.9\\%$ reduction in $\\mathrm{HD95}$ (4.6 mm vs.\\ 6.3 mm), and a $-39.5\\%$ reduction in $\\mathrm{ECE}$ (5.2\\% vs.\\ 8.6\\%). On ATLAS-C (motion corruptions), CalSAM achieves a $+5.3\\%$ relative improvement in $\\mathrm{DSC}$ (75.9\\%) and a $-32.6\\%$ reduction in $\\mathrm{ECE}$ (5.8\\%). Ablations show FIP and CMP contribute complementary gains ($p<0.01$), and the Fisher penalty incurs a modest $\\sim$15\\% training-time overhead. CalSAM therefore delivers improved domain generalization and better-calibrated uncertainty estimates for brain MRI segmentation, while retaining the computational benefits of freezing SAM's encoder.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "7505d14f121a7e25",
+  "title": "PRIMFLOW: Learning Trajectory Primitives for Few-Step Distillation",
+  "link": "https://arxiv.org/abs/2610.27146",
+  "description": "arXiv:2610.27146v1 Announce Type: new \nAbstract: Few-step trajectory distillation aims to learn accurate global updates from dense local supervision along a teacher's sampling trajectory. Existing approaches construct within-step dynamics using specific trajectory parameterizations or discrete interval predictions, tying the learned update to a prescribed temporal structure. We propose \\method, which directly learns a continuous trajectory primitive representing cumulative displacement along the teacher trajectory. By supervising finite differences of the primitive with local teacher velocities, \\method learns the accumulated motion directly, while obtaining global updates through endpoint differences. This formulation avoids prescribing a temporal basis or fixed query grid and instead learns the temporal evolution of cumulative displacement from local supervision. We further establish a local-to-global error bound to characterize how local regression errors affect full-interval displacement accuracy, and introduce endpoint absorption to eliminate the auxiliary primitive branch while preserving one-network-evaluation inference. Experiments on large-scale text-to-image generation show that \\method achieves a T-FID of 20.92 and an HPSv2 score of 28.35 at one NFE, improving both metrics over a trajectory-distillation baseline. After endpoint absorption, it retains comparable performance, achieving a T-FID of 20.86 and an HPSv2 score of 28.33.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

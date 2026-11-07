@@ -1,0 +1,13 @@
+{
+  "id": "59929fa574469b4f",
+  "title": "CoDy: Codec Dynamics as Complementary Priors for Unsupervised Temporal Action Localization",
+  "link": "https://arxiv.org/abs/2610.19880",
+  "description": "arXiv:2610.19880v1 Announce Type: new \nAbstract: Unsupervised temporal action localization (UTAL) aims to identify action categories and localize their temporal boundaries without annotation supervision. Existing methods typically derive supervision for both tasks solely from RGB and optical-flow representations, often resulting in noisy category assignments and inaccurate temporal boundaries. In this work, we reveal an overlooked property of video codecs: group-of-pictures quantization patterns preserve category-discriminative dynamics, while motion-vector and residual variations exhibit pronounced responses around action transitions. Based on this insight, we propose CoDy, a codec dynamics-guided framework that exploits the codec as complementary information to the visual view for UTAL. CoDy integrates a codec-enhanced view with RGB and flow through confidence-aware consensus clustering, producing reliable soft pseudo-labels. It further converts codec dynamics into a class-agnostic boundary prior, which supervises visual boundary learning and guides proposal initialization and iterative refinement. The codec branches are only used during the training stage and introduce no extra codec-side computation at inference. Extensive experiments on THUMOS14 and ActivityNet v1.3 demonstrate that CoDy consistently outperforms existing UTAL methods and achieves state-of-the-art localization performance. These results establish codec signals as effective annotation-free priors for jointly inferring which actions occur and when they occur.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

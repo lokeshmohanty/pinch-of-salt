@@ -1,0 +1,13 @@
+{
+  "id": "2e01c8eed59d7193",
+  "title": "Anchored Slice Propagation with Boundary Transport for 3D CT Segmentation from Three Orthogonal Annotated Slices",
+  "link": "https://arxiv.org/abs/2611.05693",
+  "description": "arXiv:2611.05693v1 Announce Type: new \nAbstract: Sli2Vol propagates a binary mask through affinities between adjacent slices, but an error can persist because each prediction becomes the input to the next step. Three orthogonal annotations reduce dependence on any one chain, yet they offer more than three starting masks: where a chain crosses another annotated plane, the correct label is already known. Those labels could correct drift during propagation and indicate how much to trust each chain at fusion. Between annotated planes, the information carried by the chain may matter as well. A binary mask records foreground membership but discards distance to the boundary, a cue that could help follow gradual shape changes between slices.We address these two sources of error with a fixed pretrained affinity backbone. We anchor each chain by correcting its prediction where it crosses another annotated plane, then use its agreement with those labels to weight fusion. We compare this anchored mask with two ways of transporting boundary geometry: a truncated signed-distance field (SDF) propagated by dense affinity averaging, and a contour whose vertices follow motion cues from the same affinity. The contour tracker starts from a hand-crafted rule and learns a motion correction from supervoxel pseudo-objects in 506 CT volumes, without manual organ labels. On 2,091 held-out structure instances from approximately 403 CT scans spanning 17 abdominal structures, anchoring raises mean Dice from 0.737 with orthogonal mask propagation to 0.769 and improves every structure. Beyond the anchored mask, learned contour tracking improves Dice by 5.7\\% for the esophagus and 5.9\\% for the postcava, while SDF transport improves right-adrenal Dice by 2.8\\%. The anchored methods have similar mean Dice (0.769--0.772); contour tracking performs worse on the kidneys, stomach, and hepatic vessel tree.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "f7cda31da4c74115",
+  "title": "From Geometry to Behavior: How Instruction Exposure Unlocks Latent Rhetorical Directions in LLMs",
+  "link": "https://arxiv.org/abs/2610.37685",
+  "description": "arXiv:2610.37685v1 Announce Type: cross \nAbstract: Language models do not merely memorize facts; they absorb rhetorical strategies from pretraining data, including the human tendency to reason by analogy. We ask: is this absorbed capability geometrically accessible before any instruction tuning, and what determines whether it can be activated at inference time?\n  We extract an \"Analogy Vector\" from the residual stream via difference-in-means and show it enables steerable explanation style across seven instruction-tuned models (Gemma-2, Llama-3.1, Qwen-2.5; 2B-32B), improving harmonic mean from 3.22 to 3.94 (+22%) for Gemma-2-9B-IT on 300 held-out test prompts. A small human validation study confirms the LLM judge on Analogy Quality.\n  Our central finding, from seven matched base-instruct pairs, is a gradient of behavioral accessibility: the analogy direction exists in every base model, but its behavioral accessibility under linear intervention scales continuously with instruction exposure during training. Gemma-2 base models (strict pretraining/IT separation) show flat steering landscapes: present but behaviorally inert. Qwen-2.5 base models (instruction data woven into pretraining) are already partially accessible before any explicit fine-tuning; base-instruct cosine similarity of the analogy vector reaches 0.94-0.97 for Qwen versus 0.37-0.66 for Gemma, providing geometric corroboration of the behavioral gradient. This challenges the binary \"base vs instruct\" framing: the relevant variable is how much instruction exposure a model has received across its full training pipeline. We position activation steering as a complementary interpretability tool that reveals how instruction exposure organizes rhetorical knowledge in activation space.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

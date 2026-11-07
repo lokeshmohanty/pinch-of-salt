@@ -1,0 +1,13 @@
+{
+  "id": "d931f8abfe6eb5b6",
+  "title": "Report Supervision",
+  "link": "https://arxiv.org/abs/2608.27668",
+  "description": "arXiv:2608.27668v1 Announce Type: new \nAbstract: Segmentation models can surpass radiologists, classification models, and vision-language models in tumor detection. Importantly, segmentation models outline tumors, allowing radiologists to better verify and trust the AI output. Their main limitation is the scarcity of tumor masks: creating one 3D tumor mask takes up to 30 minutes, so most public CT datasets contain only a few hundred masks, and even the largest private datasets contain only a couple of thousand. Tumor masks are not produced in clinical routine, but radiology reports are. Public datasets contain tens of thousands of CT-Report pairs, and hospitals contain hundreds of thousands. These reports describe tumors in detail, providing large-scale, informative training data. Here, we introduce Report Supervision (R-Super), a training framework that uses reports to directly supervise and improve tumor segmentation. R-Super introduces new loss functions that teach segmentation models to segment tumors that match report descriptions of tumor count, sizes, and locations. Reports are only used for training. We evaluated R-Super on kidney and pancreatic tumor segmentation, exploring diverse training data sizes, up to 41,418 CT-Report plus 3,488 pancreatic tumor CT-Mask pairs. On external validation, R-Super increased tumor detection F1-Score and segmentation DSC by up to +15% with respect to mask-only training. It also surpassed alternative methods such as CLIP and multi-task learning. Leveraging numerous readily available reports to supplement scarce masks, R-Super strongly improves AI performance when very few training masks are available (e.g., 50), and when many masks are available (e.g., 3,488), unlocking scale in tumor segmentation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

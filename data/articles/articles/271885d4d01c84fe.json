@@ -1,0 +1,13 @@
+{
+  "id": "271885d4d01c84fe",
+  "title": "DeferredSeg:A Multi-Expert Deferral Framework for Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2604.12411",
+  "description": "arXiv:2604.12411v2 Announce Type: replace \nAbstract: Segmentation models based on deep neural networks demonstrate strong generalization for medical image segmentation. However, they often exhibit overconfidence or underconfidence, leading to unreliable confidence scores for segmentation masks, especially in ambiguous regions. This undermines the trustworthiness required for clinical deployment. Motivated by the learning-to-defer (L2D) paradigm, we introduce DeferredSeg, a deferral-aware segmentation framework, i.e., a Human--AI collaboration system that determines whether to defer predictions to human experts in specific regions.\n  DeferredSeg extends the base segmentor with an aggregated deferral predictor and additional routing channels that dynamically route each pixel to either the base segmentor or a human expert. To train this routing efficiently, we introduce a pixel-wise surrogate collaboration loss that supervises deferral decisions. In addition, to preserve spatial coherence within deferral regions, we propose a spatial-coherence loss that enforces smooth deferral masks, thereby enhancing reliability.\n  Beyond single-expert deferral, we further extend the framework to a multi-expert setting by introducing multiple discrepancy experts for collaborative decision-making. To prevent overloading or underutilizing individual experts, we further design a load-balancing penalty that evenly distributes workload across expert branches. We evaluate DeferredSeg on three challenging medical datasets using MedSAM and CENet as the base segmentor for fair comparison. Experimental results show that DeferredSeg consistently outperforms the baseline, demonstrating its effectiveness for trustworthy dense medical segmentation. Moreover, the proposed framework is model-agnostic and can be readily applied to other segmentation architectures.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

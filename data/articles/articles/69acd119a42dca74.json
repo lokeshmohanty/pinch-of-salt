@@ -1,0 +1,13 @@
+{
+  "id": "69acd119a42dca74",
+  "title": "Gaussian Material Fields for Volumetric Multi-Energy CT Decomposition",
+  "link": "https://arxiv.org/abs/2610.09492",
+  "description": "arXiv:2610.09492v1 Announce Type: new \nAbstract: Volumetric material decomposition in multi-energy computed tomography requires a representation that organizes multiple three-dimensional material fields in a common spatial domain while retaining differences in composition and local structure. We observe that spatial primitives can be shared across materials without tying their coefficients, but their local capacity must respond to material-specific reconstruction needs. We introduce Gaussian material fields, which represent multiple material distributions with shared anisotropic 3D Gaussian primitives and independent nonnegative material coefficients. The shared geometry defines a continuous spatial basis, while the coefficients determine each primitive's contribution to the individual material fields. To reconstruct this representation from multi-energy projections, a differentiable spectral forward model combines Gaussian material path integrals with a calibrated basis matrix, enabling joint optimization of spatial geometry and material composition. Material-aware adaptive density control retains material-specific refinement evidence before aggregation and adjusts local representation capacity to accommodate both spatially extensive components and sparse details. Experiments use synthesized multi-energy projections generated from pseudo-reference material maps constructed by conventional methods from publicly available CT data. Across 15 cases, our approach improves average PSNR by 4.03 dB and SSIM by 4.96% over the strongest baseline, while reducing NRMSE by 33.45%. Material-wise comparisons and component ablations support improved recovery of localized structures, while runtime and memory measurements show favorable computational scaling. These results establish Gaussian material fields as an explicit, adaptive representation for volumetric multi-material reconstruction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

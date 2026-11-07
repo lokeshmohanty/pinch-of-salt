@@ -1,0 +1,13 @@
+{
+  "id": "86b0e745ba842e62",
+  "title": "Gauss What You Need: Compact Gaussian Splatting Across Scene Scales",
+  "link": "https://arxiv.org/abs/2609.31248",
+  "description": "arXiv:2609.31248v1 Announce Type: new \nAbstract: 3D Gaussian Splatting reconstructs a scene as a collection of Gaussian primitives from a set of posed photographs called the capture. The number of primitives used to represent the scene affects reconstruction quality, storage, and rendering cost. How to select this number automatically across capture scales remains unresolved: configurations effective on standard benchmarks can leave larger captures with too few Gaussians to reconstruct fine details. We observe that the surface to represent, given by the capture's extent and resolution, is known before training, whereas its content complexity becomes apparent during training, through the reconstruction quality on the training views. We introduce TangoGS, which combines capture-derived model sizing with training-based adaptation: the capture determines the scale of the model, and training feedback determines its final size within that scale. Before training, TangoGS derives a learning allowance for model growth from the capture's total pixels after discounting views that re-observe the same scene points. During training, reconstruction quality guides how many Gaussians to add and remove. On 13 standard benchmark scenes, TangoGS matches the mean PSNR of the best-performing evaluated baseline, LeGS, with $48\\%$ fewer Gaussians. On eight large captures, the same configuration automatically scales to larger models when necessary, achieving the highest mean PSNR among evaluated methods: $0.54$ dB above the runner-up with $2.3\\times$ as many Gaussians. Together, capture-derived learning allowances and training-quality guided density control enable a state-of-the-art quality--size compromise across scene scales without retuning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

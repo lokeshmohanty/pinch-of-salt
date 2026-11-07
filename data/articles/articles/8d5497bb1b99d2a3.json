@@ -1,0 +1,13 @@
+{
+  "id": "8d5497bb1b99d2a3",
+  "title": "Semantically Calibrated Evidence Composition for CT Vision-Language Learning",
+  "link": "https://arxiv.org/abs/2608.00239",
+  "description": "arXiv:2608.00239v1 Announce Type: new \nAbstract: Learning transferable representations from CT-report pairs requires combining whole-volume context with anatomy-specific evidence. Existing methods typically emphasize either global CT-report alignment or fine-grained anatomy-level correspondence. Global alignment preserves broad study context but leaves the contribution of localized evidence implicit, whereas anatomy-level alignment explicitly grounds local findings but does not specify how independently represented evidence should interact, acquire study-level meaning, and contribute to a global CT representation. To address this gap, we propose SCOPE (Semantic Calibration Of comPosed Evidence), a framework for semantically calibrated evidence composition in CT vision-language learning. Under organ-specific report supervision, mask-guided queries with fixed anatomical identities extract context-aware organ evidence from shared, uncropped volumetric features, while an unrestricted global query retains access to whole-volume context. The global query then drives Local-Global Coupling to compose the organ evidence into a unified evidence representation. The composed evidence is subsequently calibrated using the diagnostic summary, providing study-level semantic supervision beyond local organ descriptions, and is finally integrated as a controlled residual into a context-preserving whole-volume representation aligned with the complete report. This progressive pathway connects localized evidence with study-level semantics without reducing the CT representation to a predefined set of organs. On CT-RATE and RadChestCT, SCOPE achieves macro AUCs of 85.0 and 72.2, respectively, outperforming the previous SOTA by 7.2 and 4.2, while also yielding substantial gains in linear probing and cross-modal retrieval. These results demonstrate the effectiveness of semantically calibrated evidence composition.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "d3634537e2b2f3e0",
+  "title": "Accelerating Sharded Data Parallelism at Scale with Federated Learning",
+  "link": "https://arxiv.org/abs/2609.20359",
+  "description": "arXiv:2609.20359v1 Announce Type: cross \nAbstract: The symbiotic scaling of artificial intelligence models and high-performance computing systems continually creates algorithmic challenges in their convergence. Foundation models (FMs) are a crucial example, requiring months-long training on thousands of cutting-edge GPUs. Sharded data parallelism (DP) is the dominant strategy to accelerate such computations by splitting data and models across multiple GPUs. However, it incurs prohibitive communication overhead when deployed at scale, particularly on multi-tier interconnects with heterogeneous performance. Inspired by the efficient communication principles of federated learning (FL), this work introduces two hybrid algorithms - FL+FSDP and FL+HSDP - interleaving sharded DP with FedAvg-style aggregations. Such approaches decouple large DP deployments into smaller, loosely-coupled federation groups, requiring minimal inter-group traffic while keeping the global batch size bounded by the groups' size. Formal analysis of communication costs and experimental validation prove their scalability and flexibility. A Llama3.1 8B pre-training on 512 A100 GPUs shows that, under identical hyperparameters, FL+FSDP and FL+HSDP achieve up to 8.04 faster data processing and 4.48 lower evaluation perplexity than their counterparts, demonstrating superior computational efficiency and improved model quality. These properties stem from reduced communication overhead and the bounded growth of the global batch size relative to the federation group size.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI",
+    "cs.PF"
+  ]
+}

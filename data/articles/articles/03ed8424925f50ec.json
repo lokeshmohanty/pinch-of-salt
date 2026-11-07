@@ -1,0 +1,13 @@
+{
+  "id": "03ed8424925f50ec",
+  "title": "Messages, Not Tokens: Grounded Coresets for Faithful VLM Compression",
+  "link": "https://arxiv.org/abs/2608.02134",
+  "description": "arXiv:2608.02134v1 Announce Type: new \nAbstract: Modern vision language models (VLMs) turn high-resolution images into long sequences of visual tokens. Every token traverses the language decoder and persists in its prompt KV cache, inflating inference cost and motivating aggressive visual compression. Existing score-based methods assign each token an independent importance score and retain the Top-K. However, text queries consume collective, signed attention messages from the visual population, not isolated patches. Consequently, equally sized Top-K sets can repeatedly cover one salient region, omit sparse but complementary evidence and discard information carried by the removed population. We therefore formulate faithful visual compression as constructing a compact coreset for decoder messages, and introduce our training-free Grounded Message Coreset Pruning (GMC) which jointly allocates support across query-grounded, appearance, and coordinate-aware evidence, then transports discarded states into selected representatives at their original multimodal positions before physical compaction and native attention resume. This decomposes faithful compression into two coupled components, including selecting carriers that cover the required message modes and realizing the signed population message on those carriers. We further derive bounds connecting their errors to signed-message distortion, visual innovation, and candidate-margin stability. Experiments across multiple VLM families and diverse benchmarks demonstrate strong performance, with GMC-H2 retaining 97.78% Full-relative mean capability on Qwen2.5-VL-7B using 80.2% fewer visual tokens, while GMC-L16 reaches 100.36%. Controlled interventions verify that collective support and population realization jointly drive these gains.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

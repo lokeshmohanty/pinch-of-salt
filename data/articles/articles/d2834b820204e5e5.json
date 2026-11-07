@@ -1,0 +1,13 @@
+{
+  "id": "d2834b820204e5e5",
+  "title": "Tracing the Evidence: Faithful Token Attribution Through Vision-Language Reasoning",
+  "link": "https://arxiv.org/abs/2609.37656",
+  "description": "arXiv:2609.37656v1 Announce Type: new \nAbstract: Large vision-language models (LVLMs) exhibit strong reasoning capabilities, yet the visual and textual evidence supporting the generated responses remains difficult to identify. Faithful token attribution explains an LVLM's response by assigning scores that rank image and prompt tokens by how much the model relies on them, such that removing higher-ranked tokens causes the likelihood of the generated response to drop more rapidly. However, existing token-attribution methods have been developed mainly for text-based language models, and our empirical study reveals two challenges when complex multimodal sources are involved. First, the joint image-text attribution can underrepresent visual evidence relative to text, obscuring the image regions supporting the response. Second, visual evidence may influence the generated response through multiple intermediate reasoning paths, while existing methods trace only a limited subset of these paths, causing important visual contributions to be underestimated. Motivated by these insights, we introduce VTrace, a multimodal token-attribution framework that traces input contributions through intermediate reasoning and calibrates attribution scores across modalities. VTrace constructs pairwise attributions that highlight token-specific contributions and aggregates all forward attribution paths in closed form to account for both direct and indirect contributions. Cross-modal calibration then rescales image and text attribution scores using modality contributions estimated from response-likelihood changes, enabling a unified ranking of input tokens. Evaluations against seven baselines across six visual reasoning benchmarks demonstrate the superior attribution faithfulness. Project page: https://vtrace-attribution.github.io/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

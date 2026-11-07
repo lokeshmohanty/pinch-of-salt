@@ -1,0 +1,13 @@
+{
+  "id": "c4f10d10eda090a6",
+  "title": "Video-Based Palm-Vein Authentication under Challenging Conditions",
+  "link": "https://arxiv.org/abs/2609.02776",
+  "description": "arXiv:2609.02776v1 Announce Type: new \nAbstract: Palm-vein biometrics are increasingly used for secure, contactless authentication. Yet real-world deployment exposes them to surface noise (sweat, dirt), illumination and motion variation, and temperature-driven changes in vascular visibility, which remain underexplored for lack of data captured under such conditions. To study these effects, we introduce the Columbia University Palm-vein (CUP) dataset, to our knowledge the first public video-based palm-vein dataset. CUP records every palm under four surface conditions (a clean baseline, warm, wet, and dirty) and pairs each subject with physiological and demographic metadata. On it we benchmark twenty-one recognizers spanning static, video, and multi-frame aggregation architectures. Models that verify reliably on clean palms lose most of their accuracy on dirty ones, and the mean equal error rate (EER) roughly quadruples. We recover much of that robustness along both axes of the capture. Temporally, a consensus over the few frames the sensor already returns cancels transient corruption; spatially, a test-time matcher that adds no learned parameters fuses the global cosine with a saliency-steered region-level optimal transport that routes the comparison around corrupted regions. The full design leads on every surface of CUP in EER, TAR@FAR=0.01, and Rank-1, at 4.3M parameters and 3.1 GFLOPs, a fraction of the video models' cost. Attached to four frozen state-of-the-art backbones it cuts their mean EER by 29-37% without retraining, and on four public single-image datasets the regional matching alone still helps. A preliminary audit across ten demographic and physiological traits finds two warm-condition gaps, along body water and gender, that survive multiple-comparison correction. CUP will be released for non-commercial research use at https://github.com/MobileX-CU/CUP_v1 upon publication.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1c442b23703e9f3f",
+  "title": "SO3UFormer: Learning Intrinsic Spherical Features for Rotation-Robust Panoramic Dense Prediction",
+  "link": "https://arxiv.org/abs/2602.22867",
+  "description": "arXiv:2602.22867v2 Announce Type: replace \nAbstract: Panoramic dense-prediction models, spanning semantic segmentation and depth estimation, are typically trained under a strict gravity-aligned assumption. Real-world captures, however, routinely violate it: handheld devices jitter and aerial platforms change attitude, so the camera is rarely upright. Under such 3D reorientation, standard spherical Transformers overfit global latitude cues and collapse. We introduce SO3UFormer, an architecture that learns intrinsic spherical features largely decoupled from the underlying coordinate frame, through three geometric components: (1) removing absolute latitude encoding, which breaks the dependence on the gravity axis; (2) quadrature-consistent spherical attention, which corrects for non-uniform sampling density; and (3) a gauge-aware relative positional bias built from local tangent-plane angles rather than global axes. A logit-space \\emph{SO(3)}-consistency regularizer, used only during training, further suppresses residual discretization effects. To benchmark robustness, we introduce Pose35, a variant of Stanford2D3D perturbed by random rotations within $\\pm 35^\\circ$, and evaluate under a full, arbitrary \\emph{SO(3)} stress test. There, the baseline SphereUFormer collapses from 67.53 \\emph{mIoU} on Pose35 to 25.26 under the full \\emph{SO(3)} test, whereas SO3UFormer reaches 72.03 on Pose35 and retains 70.67 under the same test. Similarly, on a second real-world dataset (Matterport3D) for segmentation and on panoramic depth estimation, SO3UFormer remains essentially rotation-invariant while the gravity-anchored baseline again loses most of its accuracy. Code and models are available at https://github.com/zhuqinfeng1999/SO3UFormer.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

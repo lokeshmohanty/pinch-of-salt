@@ -1,0 +1,14 @@
+{
+  "id": "40fe7258984d7c76",
+  "title": "Kairos: Semantics-Aware Orchestration of Planning Engines across Classical, Numeric, Temporal and Hybrid PDDL",
+  "link": "https://arxiv.org/abs/2610.39454",
+  "description": "arXiv:2610.39454v1 Announce Type: new \nAbstract: Planning at run time, as in robots that re-plan while they act, needs a planner that reads the PDDL its users write (durative actions, numeric resources, time windows, continuous change), answers quickly, and delivers only validated plans. Specialised planners are strong on individual fragments of PDDL, but they differ in coverage, latency and in what their failures mean. We study whether selecting heterogeneous engines from the semantics of each task can give broad coverage of PDDL, from STRIPS to PDDL+, while remaining competitive with specialised planners and making explicit what each answer guarantees. Kairos profiles each task to decide which of five engines apply (ground heuristic search, compressed and snap-action temporal search, time steps for hybrid dynamics, lifted search) and schedules them under one budget of time and memory. Every candidate plan is checked by a validator independent of the planner's transformations, and \"unsolvable\" is reported only when a search whose exhaustion is a proof exhausts its space. On 1,756 tasks from nine comparative suites, Kairos solves more tasks at the full limits than the strongest evaluated planner of each suite, with the largest differences on numeric, temporal, PDDL3 and PDDL+ planning, and it also solves the most tasks at 100 ms and 1 s. Resampling over domains, the gain is above zero in six of the nine suites, while on classical planning against LAMA it is within the noise. A further 450 feature-oriented tasks and 26 one-feature probes show that Kairos handles all seventeen features probed, where no other planner evaluated handles more than eight. Ablations identify compressed temporal search and the novelty fallback as major contributors, and a comparison with VAL traces every disagreement to a PDDL+ convention or to a documented VAL defect. Planner and benchmark are open source.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.RO"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "0bb9a42af6931b89",
+  "title": "Video-Browser: Towards Open-web Agentic Video Browsing",
+  "link": "https://arxiv.org/abs/2512.23044",
+  "description": "arXiv:2512.23044v3 Announce Type: replace \nAbstract: Autonomous agents are shifting information seeking from passive retrieval toward proactive, open-ended research, yet this progress has largely bypassed video, one of the web's richest sources of evidence. We formalize Agentic Video Browsing, in which an agent must query video search engines, decide which returned videos to watch, and answer questions grounded in their visual content. To study this setting reproducibly, we introduce Video-BrowseComp, a benchmark and infrastructure suite with 660 human-annotated questions at three difficulty levels, paired online and offline evaluation tracks, and a fixed video search stack of roughly 12,000 videos spanning over 2,000 hours for evaluation and training-data construction. Our analysis reveals that the main bottleneck lies before video understanding: agents often fail to find the answer-bearing video at all. This bottleneck stems from two coupled challenges. Search engines index textual metadata such as titles and tags, whereas questions often target implicit visual or cross-source evidence absent from these surface forms; and exhaustively inspecting the many returned videos is prohibitively expensive. We propose Video-Browser, an evidence-surfacing agent that improves both sides of search. A Translation Memory helps the Planner phrase queries by analogy to past question-to-query transformations that successfully surfaced their target videos, and a Watcher performs sparse visual screening over returned candidates, retaining only videos that plausibly contain answer-bearing evidence for later dense verification. On the offline track, Video-Browser raises overall accuracy from 11.6% to 27.3% with Qwen3-VL-8B and from 39.8% to 45.1% with Gemini-3.1-Pro over the corresponding ReAct search agents, showing that better query formulation and post-search candidate selection improve end-to-end browsing performance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

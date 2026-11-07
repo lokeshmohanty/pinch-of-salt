@@ -1,0 +1,13 @@
+{
+  "id": "8c7b32b6494b31fb",
+  "title": "MRI Super-Resolution with RCDM/WaveMix and Task-Aware Segmentation",
+  "link": "https://arxiv.org/abs/2609.39083",
+  "description": "arXiv:2609.39083v1 Announce Type: new \nAbstract: Super-resolution and quality enhancement of 1.5\\,T brain MRI are normally validated with image-fidelity metrics, although their purpose is to improve downstream analysis. We study whether enhancement improves tissue segmentation, and for which segmenters. We propose an unpaired, physics-guided training pipeline for a lightweight ($\\le$2.5\\,M parameter) recurrent convolutional enhancer: a six-module stochastic 1.5\\,T degradation operator, a residual adversarial network that adds scanner-specific texture without moving anatomy, and a cycle-consistent objective with an anti-identity penalty that rules out the copy solution. We then train U-Net, Swin-UNet and wavelet token-mixing segmenters \\citep{jeevan2023wavemix} from scratch on either raw or enhanced 1.5\\,T images of the same subjects, using identical labels and subject-level splits, for three enhancer variants and two datasets. On ABIDE (41 held-out subjects, FreeSurfer labels) enhancement significantly improves the wavelet segmenter (mean Dice $+0.014$, Wilcoxon $p=3.5\\times10^{-5}$; CSF $+0.018$, grey matter $+0.013$), significantly degrades the U-Net ($-0.008$, $p=5.1\\times10^{-4}$) and leaves Swin-UNet unchanged. On IXI, whose labels come from FSL-FAST, enhancement lowers Dice for all nine pairings, almost entirely through CSF; we trace this to spatially implausible CSF voxels in the labels that penalise smoother predictions. Enhancement of low-field MRI should therefore be validated per downstream model and against reliable labels.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

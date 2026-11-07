@@ -1,0 +1,14 @@
+{
+  "id": "95249e5d72a661c9",
+  "title": "Ambient @ EgoProactive 2026 : Proactive Egocentric Assistance with Visually Grounded Supervision",
+  "link": "https://arxiv.org/abs/2609.07099",
+  "description": "arXiv:2609.07099v2 Announce Type: replace-cross \nAbstract: We present our submission to the EgoProactive track of the ECCV 2026 Wearable AI Challenge, which ranked first in the large-model division and second in the <=2B division. The task requires a wearable assistant to decide after each eight-second segment of egocentric video whether to intervene or remain silent.\n  Our approach has two main components. First, we reformulate intervention timing as single-token classification. Rather than generating either $interrupt$ or $silent$, the model predicts yes or no, and we derive the decision from the renormalised probabilities of these two tokens. This formulation improved macro-F1 by 0.249 and G-mean by 0.30 over free-form generation. Second, because labelled data were limited to the released validation set, we generated additional supervision using a tool-calling video agent that inspects each clip and assigns intervention timestamps. A narration-only alternative was four times larger and ten times cheaper, but transferred worse than supervision from an unrelated real corpus, suggesting that visual grounding is more important than annotation volume for this task.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

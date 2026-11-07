@@ -1,0 +1,13 @@
+{
+  "id": "aa41a6ab1f6859e8",
+  "title": "Watching Synthetic Videos: Aligning Cross-modal Representations with Visual Synthesis for Zero-shot Video Captioning",
+  "link": "https://arxiv.org/abs/2608.11013",
+  "description": "arXiv:2608.11013v1 Announce Type: new \nAbstract: Text-only training is a popular paradigm in zero-shot video captioning, where the video distribution is not available to the model during training, leading to a cross-modal gap between the training (text-only) and the inference (video-only). Previous works attempt to bridge the gap through simple linear transformations. However, the inherent gap between text and video makes cross-modal representation space alignment insufficient, resulting in inaccurate sentences. To address this issue, we propose a novel zero-shot video captioning framework (WSV) consisting of two training stages, which first generates corresponding synthetic video latent representations via a pretrained text-to-video generation model. To strengthen the fidelity of the latent representations, we propose a polisher capable of bridging the gap between real and synthetic video distributions. Subsequently, we design a prompter that conditions GPT-2 on the polished latent representations to generate the captions in the second training stage. During inference, an input video is encoded by a pretrained 3D Causal VAE and then fed directly into the prompter, which in turn guides GPT-2 to produce the final caption. Experimental results conducted on MSVD, MSR-VTT, and VATEX datasets demonstrate that our proposed method achieves scores of 52 and 95.7 on the B@4 and CIDEr metrics, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

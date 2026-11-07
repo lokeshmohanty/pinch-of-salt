@@ -1,0 +1,15 @@
+{
+  "id": "69ca091a7a9db4b0",
+  "title": "SR-TTT Does Not Learn Retrieval: A Correction and Mechanistic Post-Mortem of Surprisal-Aware Residual Test-Time Training",
+  "link": "https://arxiv.org/abs/2603.06642",
+  "description": "arXiv:2603.06642v2 Announce Type: replace-cross \nAbstract: Test-Time Training (TTT) language models replace the KV-cache with fast weights updated during inference, achieving O(1) memory but suffering catastrophic failure on exact-recall tasks. Version 1 of this work proposed SR-TTT, which routes high-surprisal tokens to a sparse exact-attention Residual Cache, and reported large Needle-in-a-Haystack gains. We show those gains were evaluation artifacts: the loss and metric read logits at the answer positions rather than one position earlier, training both models to copy an answer already visible in their input (a model trained on retrieval-impossible data reaches 100% accuracy under the flawed metric); additionally, the cache attended non-causally over future tokens, including the answer itself. We release a corrected implementation with startup causality self-tests, then ask whether the SR-TTT hypothesis survives correction. It does not, and the failure decomposes into two independent, separately measured bottlenecks. Storage: surprisal gating is systematically position-biased - the TTT reconstruction loss requires burn-in before a needle becomes relatively surprising, so early-context needles are stored at near-zero rates (0-1% containment at depth 0.1) exactly where long-context memory matters most. Addressing: with storage solved by an oracle and with new trainable read-time projections, per-slot attention supervision raises addressing mass 2.5x (0.06 -> 0.15) yet token accuracy is statistically unchanged, and retrieval extracts only approx. 0.06 nats of the 2.30-nat needle; position-free content addressing cannot resolve ordered slots whose contents are near-interchangeable. Exact match remains 0% in all 2,250 paired trials across all corrected conditions. We retract the claims of v1 and offer the corrected codebase, diagnostic protocol, and negative results as a cautionary reference for surprise-gated memory architectures.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

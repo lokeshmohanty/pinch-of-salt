@@ -1,0 +1,15 @@
+{
+  "id": "8b78f868e0ed8cc4",
+  "title": "Reinforcement Learning to Accelerate Primal-Dual Hybrid Gradient for Linear Programming",
+  "link": "https://arxiv.org/abs/2610.01546",
+  "description": "arXiv:2610.01546v1 Announce Type: cross \nAbstract: Primal-dual hybrid gradient (PDHG) methods solve large-scale linear programs (LPs) using GPU-friendly matrix-vector products and projections, but their practical performance depends on coordinating algorithm parameters, acceleration, and restarts. We introduce GALLOP, which uses reinforcement learning to jointly learn continuous algorithm parameters and discrete restart decisions without differentiating through the solver. Its generalized accelerated PDHG update combines separate primal and dual extrapolation, history corrections, and restart anchoring with independently adjustable coefficients. We train a dimension-agnostic feedback policy using a groupwise proximal policy optimization objective that clips likelihood ratios separately for different control groups and excludes inactive acceleration controls on restart transitions. We evaluate GALLOP on six LP families and a public item-placement benchmark. On the main evaluation settings across the six families, GALLOP reduces iteration counts by factors of $1.9$-$5.6$ and achieves up to a $16.0\\times$ speedup in algorithm wall-clock time over MPAX. With one policy trained per family, the learned policies generalize without retraining to within-family LPs $3\\times$-$400\\times$ larger than the largest training instances, including Transport LPs with $10.24$ million variables.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "math.OC",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

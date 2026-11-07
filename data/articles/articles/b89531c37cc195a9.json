@@ -1,0 +1,13 @@
+{
+  "id": "b89531c37cc195a9",
+  "title": "Hankel Subspace Self-Supervised Learning for Parallel MRI Reconstruction",
+  "link": "https://arxiv.org/abs/2610.11560",
+  "description": "arXiv:2610.11560v1 Announce Type: new \nAbstract: Parallel magnetic resonance imaging reconstruction is an ill-posed inverse problem under undersampling. Multi-coil acquisition and Hankel lifting expose complementary repeated information: observations of the same anatomy across coils and repeated local k-space neighborhoods in overlapping windows. These dependencies guide recovery of missing k-space data. However, splitting lifted Hankel entries for self-supervision can place the original sample in both input and target, causing data leakage. We propose Hankel Subspace Self-Supervised Reconstruction (HSSRecon), a scan-specific reconstruction framework for parallel magnetic resonance imaging. HSSRecon partitions data by physical acquisition units before Hankel lifting and applies multiplicity normalization to repeated Hankel copies in overlapping windows. Rather than learning a mapping that directly predicts missing data, the network learns a compact complex-valued Hankel subspace operator. Reconstruction is performed over the original k-space variables using a conjugategradient solver with hard data consistency. This design separates structural learning in the Hankel domain from data consistency in the physical domain: the former exploits multi-coil and local Hankel correlations, while the latter solves over unacquired degrees of freedom. We provide theoretical analyses of physicalgroup splitting and multiplicity normalization, and establish positive definiteness, uniqueness, hard data consistency, and a finite-step conjugate-gradient error bound for the system. On fastMRI brain data with three contrasts and three sampling masks, HSSRecon achieves competitive peak signal-to-noise ratio, structural similarity, and normalized mean squared error across six aggregated conditions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

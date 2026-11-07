@@ -1,0 +1,13 @@
+{
+  "id": "6b3a63dd4975705c",
+  "title": "IR275K: A Benchmark for Infrared Multi-Frame Super-Resolution Toward Efficient Remote Sensing",
+  "link": "https://arxiv.org/abs/2607.22380",
+  "description": "arXiv:2607.22380v1 Announce Type: new \nAbstract: Efficient processing is becoming increasingly important in infrared remote sensing, where satellite constellations produce large volumes of observations under constrained detector resolution, power, and downlink bandwidth. Multi-frame super-resolution (MFSR) offers a software-based route to spatial enhancement, but its evaluation in infrared sensing remains fragmented across private datasets and ad-hoc protocols. Existing benchmarks do not explicitly capture the thermal contrast, sensor noise, weak texture, and platform-induced frame-to-frame variation that characterize infrared video. We introduce IR275K, a curated benchmark containing 594 infrared video sequences and 275,196 frames. It provides sequence-level train/validation/test splits and a reproducible X4 evaluation protocol. As an initial architectural probe, we further evaluate CGMamba, a lightweight state-space model with 10.90M parameters and 112.14G FLOPs. CGMamba combines 2D rotary position encoding (2D~RoPE) with center-guided cross-Mamba (CGCM) fusion for implicit multi-frame reconstruction. It achieves 33.19dB PSNR, outperforming infrared single-image super-resolution references by 0.35--0.52~dB at substantially lower computational cost. Ablation results show that removing 2D~RoPE from CGCM causes a 1.53dB drop and severe grid-like artifacts. This indicates that explicit spatial anchoring is critical for stabilizing SSM-based cross-frame gating under infrared conditions. IR275K provides a reproducible foundation for accuracy--efficiency evaluation of infrared MFSR methods, while the architectural analysis offers a concrete starting point for spatially aware SSM design under resource-constrained infrared sensing. Dataset and evaluation resources are available at: https://github.com/InfraRecon7/IR275K.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

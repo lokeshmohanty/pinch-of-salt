@@ -1,0 +1,14 @@
+{
+  "id": "73a98185a8364372",
+  "title": "Probing for Knowledge Attribution in Large Language Models",
+  "link": "https://arxiv.org/abs/2602.22787",
+  "description": "arXiv:2602.22787v3 Announce Type: replace-cross \nAbstract: Large language model (LLM) hallucinations, meaning fluent but factually incorrect generations, fall into two types: faithfulness violations, where the model misuses provided context, and factuality violations, where answers reflect errors in internal knowledge. Proper mitigation depends on knowing which source drives each answer. We study contributive attribution, i.e. the classification of the dominant knowledge source behind each output, and show that a simple linear probe trained on hidden representations can reliably identify it. We introduce AttriWiki, a self-supervised pipeline that automatically generates labelled training data by prompting models to recall withheld entities from memory or read them from context without relying on knowledge conflicts. Probes trained on AttriWiki achieve up to 0.96 Macro-$F_1$ on Llama-3.1-8B, Mistral-7B, and Qwen-7B, transfer to SQuAD and WebQuestions with 0.94-0.99 Macro-$F_1$, and generalise zero-shot to Tighidet et al. (2024)'s benchmark, outperforming their probe on conflicting settings without retraining. Furthermore, attribution mismatches raise error rates by up to 70%, though correct attribution does not guarantee correct answers, pointing to the need for broader detection frameworks.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

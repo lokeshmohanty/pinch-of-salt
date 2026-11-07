@@ -1,0 +1,13 @@
+{
+  "id": "1344415943fcc895",
+  "title": "LLPR: Location-aware learning and physics-based reconstruction for raindrop removal from a single image",
+  "link": "https://arxiv.org/abs/2609.30758",
+  "description": "arXiv:2609.30758v1 Announce Type: new \nAbstract: Raindrops can cause occlusion and distortion in the background scenes due to their adherence to windows or camera lenses. Existing raindrop removal methods concentrate on designing sophisticated CNN or Transformer architectures to recover distorted and missing texture. In this paper, we try to integrate location information and physical model into off-the-shelf CNN or Transformer architectures to help improve their performance. Specifically, we notice that existing methods deploy a preprocessing sub-network to generate a binary or soft mask to indicate the raindrop location, which will increase the network parameters and computational complexity. In contrast, a location-aware learning branch is embedded to teach the encoder in the training phase with the capability of perceiving the position of the raindrops. Note that this location-aware learning branch can be removed during the inference process (achieving performance improvements at no cost). Furthermore, instead of directly reconstructing the raindrop-free image (i.e., background scene), we devise a physics-based reconstruction scheme to first learn the transparency matrix and the raindrop layer. The latent background layer is then reversely derived based on the physical model. By combining the above-mentioned components, we propose our location-aware learning and physics-based reconstruction (LLPR) framework for this challenging ill-posed problem. We also collect a real-world raindrop-degraded image dataset, which is challenging for single-image raindrop removal (SIRR) methods. Extensive experimental results demonstrate the effectiveness and generality of our LLPR framework, achieving superior performance against state-of-the-art SIRR methods. The code will be made available upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

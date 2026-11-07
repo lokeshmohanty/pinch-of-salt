@@ -1,0 +1,13 @@
+{
+  "id": "55e14a56b712d2d5",
+  "title": "SPLIT-RL: Staged Perception-Language Reasoning Training with Claim-Level Advantages",
+  "link": "https://arxiv.org/abs/2610.10889",
+  "description": "arXiv:2610.10889v1 Announce Type: new \nAbstract: Vision-Language (VL) reasoning requires a model to both extract relevant and accurate information from an image (visual reasoning, VR), and to infer the answer from it (language reasoning, LR). Reinforcement learning with verifiable rewards typically trains both through a single chain-of-thought with a final-answer reward. This gives every CoT token the same sequence-level advantage, failing to distinguish capability specific errors. We propose SPLIT-RL, a staged post-training approach that trains VR and LR in disjoint phases. Because a group's rollouts differ along one capability at a time, the group-relative advantage isolates it, and each phase is optimized using phase-specific reward. We further introduce Claim-Level Advantage (CLA-GRPO), which decomposes VR-phase rollouts into atomic visual claims and provides a fine-grained advantage at claim level based on visual-type group formation. Although trained in two phases, trained policy is evaluated like GRPO model, with a single CoT call at inference time. Under this protocol, SPLIT-RL improves average accuracy over GRPO by 1.4-6.1 points across Qwen3-VL models from 2B to 30B-A3B and InternVL3.5-8B. Evaluating each capability using an oracle based diagnostic shows that answer-only GRPO leaves perception unchanged, whereas SPLIT-RL improves both VR and LR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

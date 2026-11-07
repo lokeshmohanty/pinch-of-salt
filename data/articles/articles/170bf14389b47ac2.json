@@ -1,0 +1,14 @@
+{
+  "id": "170bf14389b47ac2",
+  "title": "The Price of Safety: Benign-Case Utility and Token Overhead of Memory-Poisoning Defenses in LLM Agents",
+  "link": "https://arxiv.org/abs/2609.22818",
+  "description": "arXiv:2609.22818v3 Announce Type: replace-cross \nAbstract: Memory-poisoning defenses for LLM agents are usually judged by how well they stop attacks, yet almost all the traffic an agent sees is benign. We measure what these defenses cost when no attack is present. Our harness holds the backbone model, memory backend, retrieval, answer prompt, and judge fixed and changes only the defense. Both LLM-based defenses run on the agent's own backbone, and an integrity check verifies every run. We test four defenses on half of LoCoMo: five long conversations (750 turns and 255 questions per run), with each condition run three times. Sanitization and provenance checking never fired. LLM-based anomaly detection blocked 9 of 2,250 turns (0.4%). A read-time reranker dropped 2.2% of the memories it judged, withholding at least one memory from 14.9% of questions. A blind audit found content-based justification for only 2 of 50 sampled drops. No defense showed a detectable accuracy cost, at 95% intervals of $\\pm$2.4 to $\\pm$4.6 points; the reranker changed accuracy by +0.6 points (95% CI [-2.6, +3.8]). Anomaly detection and the stacked condition gained 4.7 points, but a blocked turn changes the memories extracted after it, so we do not count this as a benefit. Token overhead was 0% for sanitization and provenance, 1.5% for anomaly detection, 3.0% for the reranker, and 4.5% with all four stacked. An earlier version of this study ran the reranker condition on a different model than its baseline. A baseline on that same model shows the swap produced 2.9 of the 4.4 points of accuracy cost we then reported. Attack success rate reveals none of this, so we report benign cost alongside it. We release the harness, labels, and per-run outputs.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

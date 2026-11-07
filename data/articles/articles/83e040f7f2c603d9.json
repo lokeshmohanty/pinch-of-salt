@@ -1,0 +1,13 @@
+{
+  "id": "83e040f7f2c603d9",
+  "title": "FastJEV: Understanding Redundancy for Compact JEV Inference",
+  "link": "https://arxiv.org/abs/2610.11379",
+  "description": "arXiv:2610.11379v1 Announce Type: new \nAbstract: JEV models make multimodal decisions by directly scoring candidates. Although the common context is encoded once, candidate evaluation can still repeat matching token histories, duplicate inference states, and execute the full backbone. In this paper, we study these sources of redundancy and present FastJEV for compact candidate evaluation. We jointly organize history reuse and state storage, since sharing computation requires preserving states for later branches. We first introduce shared context anchoring to reuse recurrent initial states and omit unused final recurrent caches. We extend this reuse through candidate prefix sharing, retaining the intermediate states needed by subsequent branches. To further reduce the depth of these paths, we apply decision guided pruning based on relative score changes measured on a small unlabeled set. Our method retains full context encoding and all candidates without additional training. We evaluate FastJEV across three OmniJev model sizes on five public benchmarks and reconstructed LIBERO-10 offline questions. At the selected pruning budgets, the complete method reduces candidate depth by 43.75% to 45.83%, while retaining 93.66% to 97.52% of the original task scores on average across the six evaluation sets. Through controlled experiments, we show how candidate overlap and branching structure affect the execution cost of history reuse. In our implementation, candidate prefix sharing can reduce repeated computation while increasing latency. These findings motivate designing sharing granularity and execution schedules together for efficient JEV inference.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

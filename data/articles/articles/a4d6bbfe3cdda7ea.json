@@ -1,0 +1,13 @@
+{
+  "id": "a4d6bbfe3cdda7ea",
+  "title": "CLEAR: Cooperative Latent Flow for Visual Counterfactual Explanations with Accurate Region Preservation",
+  "link": "https://arxiv.org/abs/2610.23577",
+  "description": "arXiv:2610.23577v1 Announce Type: new \nAbstract: Visual counterfactual explanations (VCEs) should alter a classifier's prediction while remaining realistic and preserving decision-irrelevant content. Image-space methods provide high-quality counterfactuals but are computationally costly, whereas latent-space methods are more efficient but often less faithful. We identify two sources responsible for this gap. First, latent generation recovers a natural sample from a perturbed representation, whereas classifier guidance pushes it toward a target class, so their update directions may oppose. Second, VAE reconstruction can alter regions that should remain unchanged. We introduce CLEAR, a latent Flow Matching framework for VCEs. CLEAR uses Flow Matching's explicit instantaneous velocity as a reference for the generative direction to decompose classifier guidance into cooperative and conflicting components. It preserves the cooperative component and adaptively attenuates only the conflicting one according to conflict strength. We further analyze conflict frequency and strength throughout generation to reveal how classifier guidance interacts with the generative process. CLEAR also dynamically identifies editable regions, constrains latent modifications, and directly preserves factual content outside them to reduce VAE-induced changes. Across five bidirectional tasks on two datasets, CLEAR retains latent-space efficiency while achieving counterfactual quality comparable to or better than strong image-space baselines, with a 2.5x speedup over the strongest baseline. Project page: https://yan-zen9.github.io/CLEAR/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

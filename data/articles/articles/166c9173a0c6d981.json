@@ -1,0 +1,13 @@
+{
+  "id": "166c9173a0c6d981",
+  "title": "Protective Perturbations Must Survive the Resize: Scale-Robust Image Immunization against Malicious Editing",
+  "link": "https://arxiv.org/abs/2610.07464",
+  "description": "arXiv:2610.07464v2 Announce Type: replace \nAbstract: Protective perturbations aim to stop malicious instruction-guided editing of personal photos, but they are optimized and evaluated at the editor's working resolution, whereas shared photos have 10 megapixels or more and editors first downscale them by an unknown factor. We model this resize as a frequency-selective channel. In this model, a perturbation computed at the native resolution decays with the downscaling factor and is weak even without a resize, and a perturbation computed at a fixed working resolution protects only a window of scales. The best worst-case protection over an unknown range of scales degrades only logarithmically with the width of the range, and averaging over scales does not reach it. Guided by this analysis, we propose SRIM, which samples a grid of anchor scales covering the whole range, with weights that favor the currently weakest scale, at the cost of standard expectation over transformation. On full-resolution photos of 9 to 30 megapixels and downscaling factors from 2 to 8, SRIM raises the worst-case disruption of FLUX.2-klein edits from 0.192 LPIPS, attained by the strongest published protection, to 0.463. At equal visibility, it roughly doubles the protection. The same protected photos also protect against the 9B model and against FLUX.2-dev, with worst cases of 0.450 and 0.386 against at most 0.184 for published protections, and SRIM leads on InstructPix2Pix as well.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

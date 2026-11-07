@@ -1,0 +1,14 @@
+{
+  "id": "d710c7f53afa19fc",
+  "title": "Divide, Consult, Conquer: Capability Laundering Through Aligned LLMs",
+  "link": "https://arxiv.org/abs/2609.15383",
+  "description": "arXiv:2609.15383v2 Announce Type: replace-cross \nAbstract: Language model safety is typically evaluated one interaction at a time. We show that a weaker, unaligned model can split a harmful task into benign-looking subproblems, consult a stronger aligned model independently on each, and combine the answers locally. We call this attack capability laundering. Unlike a jailbreak, no single response is a harmful task. We measure consultation-aided uplift using tasks that a raw frontier model solves, the aligned frontier refuses, and the unassisted orchestrator fails. We evaluate GPT-5.5, Claude Opus 4.8, and Grok-4.3 as consultants to four local orchestrators on CyBench, BountyBench, and harmful CBRN requests. On CyBench, Gemma-4-31B recovers 8/14 candidates with GPT-5.5 and 7/9 with Opus, compared with 2/21 and 4/15 for Gemma-4-12B. On BountyBench, Gemma-4-31B recovers 3/9 and 2/3 candidates, while Muse-Glimmer-30B recovers none of 22 and 13. For CBRN, we measure uplift across eight steps of a hypothetical bioweapon attack chain and find that consultation raises Gemma-4-31B's mean rubric score from 62.3 to 83.1 on a 100-point rubric scale. These results expose a gap in current defenses: refusing a harmful task does not prevent frontier capabilities from being transferred and composed across many individually permitted interactions.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

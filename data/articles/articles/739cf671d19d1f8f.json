@@ -1,0 +1,14 @@
+{
+  "id": "739cf671d19d1f8f",
+  "title": "Direct Translation between Sign Languages",
+  "link": "https://arxiv.org/abs/2605.20588",
+  "description": "arXiv:2605.20588v2 Announce Type: replace-cross \nAbstract: Sign language translation has made substantial progress between sign and spoken languages, while translation across sign languages remains less explored. Translating directly between sign languages could support communication across signing communities without requiring a shared written language. A cascade of sign-to-text, spoken-language translation, and text-to-sign models offers one route, but can propagate intermediate errors and requires three sequential translation stages. We develop direct sign-to-sign translation, whose training is limited by the scarcity of parallel signing across languages. To address this obstacle, we adapt back-translation to construct cross-lingual pairs from existing text-sign corpora: the source signing is synthesized through a text bridge, while the target remains the gold sign from the original corpus. Using these pairs, we jointly train a single Qwen3-based model for text-to-sign and sign-to-sign translation. The latter generates target signing directly from source signing without an intermediate transcript. Experiments cover six directions among American, Chinese, and German Sign Language, using back-translation pairs and existing cross-lingual sign pairs. On synthetic sources, direct translation improves BLEU-4 in five directions and lowers overall motion error relative to the cascade. On existing test pairs, it improves BLEU-4 over the cascade by 1.91-3.87 points across all six directions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.CV"
+  ]
+}

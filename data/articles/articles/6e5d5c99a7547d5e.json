@@ -1,0 +1,14 @@
+{
+  "id": "6e5d5c99a7547d5e",
+  "title": "Aligning LLMs with Biomedical Knowledge using Balanced Fine-Tuning",
+  "link": "https://arxiv.org/abs/2511.21075",
+  "description": "arXiv:2511.21075v4 Announce Type: replace-cross \nAbstract: Engineering LLMs to accelerate life sciences research requires a robust alignment with biomedical knowledge. We observe that biomedical text exhibits a fundamentally different uncertainty structure from general text: dense low-confidence runs encode epistemic knowledge gaps (dense causal chains, rare entities) rather than the sparse aleatoric stylistic variation typical of general text. Based on this discovery, we propose Balanced Fine-Tuning (BFT), a dual-scale post-training method that combines group-normalized token reweighting with sequence-level reallocation toward knowledge-dense samples exhibiting dense epistemic uncertainty. Across medical evaluation, biological reasoning, sparse-reward RL, and biological representation tasks, BFT provides more consistent gains than SFT and DFT under a shared training setup. When replacing the default closed-source backbones in GeneAgent (GPT-4o) and VCWorld (Gemini-2.5-Flash), the BFT-aligned 70B model delivers stronger performance across biological process reasoning and chemical perturbation prediction. Critically, all BFT variants further improve after subsequent GRPO with sparse rewards, while SFT and DFT degrade, suggesting that epistemic-aware post-training provides a more robust policy initialization. Beyond text generation, BFT-aligned LLMs produce more accurate and professional biomedical profile texts; after encoding these profiles with a text embedding model, the resulting representations support gene-level, cell-level, and perturbation-response tasks, suggesting that BFT-enhanced generation can facilitate biological representation and, in turn, broader biomedical downstream tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

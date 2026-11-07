@@ -1,0 +1,13 @@
+{
+  "id": "b52dbe20770f4c05",
+  "title": "Clinically Structured Surrogate Rewards for Post-SFT Medical Image Captioning",
+  "link": "https://arxiv.org/abs/2608.18654",
+  "description": "arXiv:2608.18654v1 Announce Type: new \nAbstract: Medical image captioning requires translating heterogeneous visual evidence into concise clinical descriptions, where errors in findings, assertion states, or anatomical relations can alter clinical meaning despite surface-level fluency. Sequence-level policy optimization can directly optimize complete captions, but common rewards rely on global text similarity, direct image-caption compatibility, or unordered concept overlap, leaving visual neighborhoods and clinical-claim structure implicit. We propose a clinically structured surrogate reward framework for post-SFT medical image captioning. The framework combines biomedical semantic and short-range lexical fidelity with two structured rewards: distributional image-neighborhood alignment, which matches the medical-image-bank distributions induced by reference and generated captions, and clinical graph consistency, which applies maximum-weight one-to-one matching to entities, assertion states, and typed relations. The four rewards are independently normalized within each rollout group, combined with fixed relative weights, and optimized with GDPO. Across organizer-evaluated hidden test sets for the Standard and Synthetical ImageCLEFmedical Caption tracks and three vision-language backbones, the method improves Overall, Relevance, and Factuality over matched SFT baselines in all six backbone-track combinations, with average relative gains of 3.4%, 2.1%, and 5.8%, respectively. Ablations and paired diagnostics indicate that the structured rewards provide complementary signals, reducing image-neighborhood divergence and improving entity-assertion-relation consistency.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

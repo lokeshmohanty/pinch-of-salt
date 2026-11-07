@@ -1,0 +1,15 @@
+{
+  "id": "f2186f4ce4de2a56",
+  "title": "Reuse, Rewrite, or Reject: Evidence-Constrained Trace Reuse for Repeated Mobile GUI Control",
+  "link": "https://arxiv.org/abs/2610.31712",
+  "description": "arXiv:2610.31712v1 Announce Type: cross \nAbstract: Mobile GUI agents frequently perform repetitive tasks with similar interaction procedures. Reusing previous executions can reduce redundant LLM inference and execution overhead, but variations in user instructions and execution environments may invalidate previously successful actions. We systematically characterize these variations into six representative categories and observe that such changes do not necessarily invalidate entire procedures: individual transitions can remain reusable when validated against the current task context and interface state. Based on this insight, we propose graph-text templates for selective execution-trace reuse. The graph captures UI states and action transitions, while the text encodes task intent, procedural structure, and typed slots for variable content. A record-template-replay framework constructs templates from verified executions and leverages the current instruction and live UI state to reuse, adapt, or discard individual transitions. Given an execution trace, our framework reduces LLM inference token consumption by approximately 80% on average across five base agents on AndroidWorld, with most agents achieving at least 1.5-fold execution speedup over LLM-only execution. In real-device evaluations on Android and HarmonyOS, our framework achieves action reuse ratios of 70.7-79.8% while maintaining over 2-fold execution speedup in most evaluated configurations.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

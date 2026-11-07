@@ -1,0 +1,14 @@
+{
+  "id": "2297cf36fe699592",
+  "title": "Test-time Adaptation for Point Cloud Denoising under Unseen Noise",
+  "link": "https://arxiv.org/abs/2610.27410",
+  "description": "arXiv:2610.27410v1 Announce Type: new \nAbstract: Although deep learning-based point cloud denoising methods have demonstrated impressive results in recent years, their effectiveness usually degrades substantially in real-world scenarios where the noise distribution of test point clouds deviates from that of the training set. To address this challenge, we propose a test-time adaptive denoising (TTAD) framework that enables existing denoising approaches to adapt to unknown noise patterns at test time without relying on additional supervision or retraining from source data. Taking a pre-trained denoising model and a test noisy point cloud as input, TTAD first employs a residual-driven noise modeling (RDNM) module to estimate the sample-specific noise distribution through analyzing the deviation between the noisy input and its pseudo-clean version denoised by the initial model. Then, a noise-aware contrastive adaptation (NACA) module is designed to build sample-specific noisy-noisier test-time training pair from the denoised point cloud, and update the model parameters over a few adaptation steps per sample at test time through contrastive learning. Furthermore, TTAD naturally extends to a continual TTAD (CTTAD) setting, facilitating efficient progressive refinement across sequential test samples with consistent noise distributions, while reducing the computational cost per sample. Extensive experiments on both synthetic and real-world datasets demonstrate that our approach significantly improves the generalization ability of existing denoising models under unseen noise, achieving superior performance across multiple evaluation metrics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

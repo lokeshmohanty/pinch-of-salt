@@ -1,0 +1,14 @@
+{
+  "id": "3dd8225aea4a787e",
+  "title": "SRUG: A Fusion-Driven Generator Network for Medical Image Translation",
+  "link": "https://arxiv.org/abs/2601.04785",
+  "description": "arXiv:2601.04785v2 Announce Type: replace-cross \nAbstract: MRI sequence synthesis aims to recover missing image contrast while preserving patient-specific anatomy. The choice of generation mechanism affects both optimization and the way source information reaches the synthesized image. In this study, we propose SRUG, a supervised standalone fusion-driven generator that learns a deterministic source-to-target mapping for paired MRI synthesis. Its direct reconstruction formulation removes generator-discriminator competition and requires neither variational latent sampling nor iterative diffusion denoising. To support structural fidelity within this formulation, SRUG uses a residual encoder adapted for image reconstruction, with a full-resolution convolutional stem, pooling-separated feature stages, and channel recalibration embedded in the residual branches. A nested multi-scale decoder (NMD) repeatedly fuses the resulting spatial features and predicts the target sequence through a single output head. L1 loss and Multi-Scale Structural Loss (MSS loss) jointly supervise the prediction, connecting the direct generation objective to anatomical detail recovery. Experiments on BraTS 2023 show competitive reconstruction fidelity and structural consistency across three MRI translation tasks. Architecture ablations assess the effects of channel recalibration, NMD, and structural supervision within the same generator framework. Additional evaluation on IXI supports applicability to another dataset and modality pair, while zero-shot testing on BraTS 2019 provides preliminary evidence of cross-dataset transferability. These results support direct supervised generation as a practical approach to paired MRI sequence synthesis, with the adapted encoding and reconstruction pathway providing the basis for structural preservation. The SRUG implementation is publicly available at https://github.com/RisingRich/SRUG.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "9ea70f919acf7553",
+  "title": "Where and When to Force: Routed Forcing for Streaming Avatars",
+  "link": "https://arxiv.org/abs/2609.30963",
+  "description": "arXiv:2609.30963v1 Announce Type: new \nAbstract: Audio-driven streaming avatar generation requires real-time synthesis of speech-synchronized videos with dynamic and diverse motion. Self Forcing uses Distribution Matching Distillation (DMD) to distill bidirectional video diffusion models into causal, few-step generators for real-time streaming. However, DMD minimizes a reverse KL divergence, which is inherently mode-seeking: it causes the student to discard high-dynamic modes and collapse onto static outputs, compressing both dynamics and diversity of generated videos. We find that this collapse is region-heterogeneous: person regions involving pose and gesture variations suffer the largest diversity loss, the audio-driven mouth region shows a small loss, and the background remains nearly stable. Based on this observation, we propose Routed Forcing, which routes the distillation objective by semantic region and noise stage to improve dynamics and diversity while preserving visual quality. Specifically, (1) Where to Force: Semantic-Region Routing applies Data-Forcing Distillation (DFD), which supervises the student with real videos, to the person region where diversity collapse is most severe, while retaining DMD for the mouth and background to preserve lip synchronization and scene stability. (2) When to Force: Noise-Stage Routing activates DFD at high noise stages, where real video serves as effective supervision to inject diverse and dynamic motion patterns. At low noise stages, DMD is used to refine details, avoiding blur and artifacts from spatial differences between real video and student-generated video. Experiments show that Routed Forcing improves dynamics by up to 45% and diversity by 7-25% over Self Forcing, while preserving video quality and lip synchronization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

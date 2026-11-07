@@ -1,0 +1,14 @@
+{
+  "id": "721d115566b20c75",
+  "title": "SemLoc: Structured Grounding of Free-Form LLM Reasoning for Fault Localization",
+  "link": "https://arxiv.org/abs/2603.29109",
+  "description": "arXiv:2603.29109v2 Announce Type: replace-cross \nAbstract: Large language models (LLMs) can describe what a piece of code should compute, but they do so in free-form text. Such text cannot be checked against program executions, and it does not reveal whether a statement is correct. We present SemLoc, which turns LLM reasoning into executable, verifiable semantic constraints. With structured semantic grounding, the LLM writes each property as a constraint with a fixed category, attached to an anchor in the code graph, such as a variable definition, branch, loop, or return. SemLoc inserts each constraint as a runtime check and runs the tests, which yields a semantic violation spectrum over passing and failing tests. Counterfactual verification then patches the code at an anchor and reruns the tests; a patch that a constraint suggests counts as verified only if all tests then pass.\n  We study SemLoc on fault localization, where the tests serve as the oracle for verification, with four LLMs on QuixBugs and on SemBugs, a new dataset of 809 real bugs from 750 GitHub projects. The constraints are executable: 99.4% become runtime checks, and on programs where coverage ties the faulty line with at least half of the covered lines, their violations alone rank it first in 40.9% of the cases, compared with 2.2% for spectrum-based fault localization and 7.0% for Daikon invariants. They make the LLM's answers verifiable: 68.4% of SemLoc's top-ranked answers carry a patch that the tests confirm, and 93.6% of these are correct, which the LLM's own confidence cannot match. SemLoc's first-rank accuracy does not differ significantly, for any of the four LLMs, from that of an LLM given the same inputs (81.4% vs. 82.0%), and it far exceeds that of an LLM that sees only the function (50.0%).",
+  "source_name": "arXiv AI",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

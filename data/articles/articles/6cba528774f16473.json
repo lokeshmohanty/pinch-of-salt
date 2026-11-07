@@ -1,0 +1,13 @@
+{
+  "id": "6cba528774f16473",
+  "title": "OV3D-Bench: A Diagnostic Benchmark for Open-Vocabulary Monocular 3D Detection",
+  "link": "https://arxiv.org/abs/2608.17110",
+  "description": "arXiv:2608.17110v1 Announce Type: new \nAbstract: Open-vocabulary monocular 3D detectors report strong in-domain performance, but each evaluates under a different protocol, several rely on per-image category oracles unavailable at deployment, and all collapse geometry and semantics into a single AP metric. To address this, we introduce OV3D-Bench, a diagnostic benchmark that compares open-vocabulary monocular 3D detectors under deployment-realistic conditions across seven indoor and outdoor datasets. Our benchmark replaces the per-image class name oracle with test-time dataset-level class name prompts, and decouples detection accuracy along three axes: localization, semantic robustness, and cross-domain transfer. We evaluate seven representative detectors and find that (i) they localize objects well yet often mislabel a correctly localized box as a semantically adjacent category; (ii) accuracy is highly sensitive to prompt phrasing (e.g. WildDet3D's performance collapses from 18.6 to 5.4 AP when prompted with \"a detailed high-resolution photo of a car\" rather than \"car\"); and (iii) the widely adopted target-aware protocol hides these errors (e.g. inflating DetAny3D's AP by 1.9 $\\times$ on ScanNet). Lastly, we demonstrate that simply remapping a frozen closed-vocabulary detector's predictions using a contrastive vision-language encoder such as SigLIPv2 performs competitively against recent purpose-built open-vocabulary methods. This indicates that geometric localization is more mature, while open-vocabulary semantics remains the primary bottleneck.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

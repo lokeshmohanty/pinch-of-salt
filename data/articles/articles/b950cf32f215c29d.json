@@ -1,0 +1,13 @@
+{
+  "id": "b950cf32f215c29d",
+  "title": "Decoder-Agnostic Token Merging for Vision Transformers: A Systematic Study of G2TM",
+  "link": "https://arxiv.org/abs/2609.18279",
+  "description": "arXiv:2609.18279v1 Announce Type: new \nAbstract: Vision Transformers (ViTs) have achieved state-of-the-art performance across a range of computer vision tasks, mainly thanks to the self-attention mechanism. However, its complexity, increasing quadratically with the number of tokens, remains the major obstacle to ViT efficiency and deployment at scale. Token merging reduces this cost by aggregating redundant tokens. Yet existing methods are typically evaluated within a single architecture, leaving open whether their effectiveness stems from the merging mechanism itself or from the specific decoder they are paired with. We extend Graph-Guided Token Merging (G2TM), a single module inserted early in a ViT-based network, beyond its original Segmenter setting. We evaluate G2TM across three semantic segmentation frameworks (Segmenter, SETR, EoMT) and three decoder families (Linear, Transformer-, convolution-based), as well as standard ViT image classification. Our results show that G2TM's behavior and accuracy-efficiency trade-off are consistent across every tested architecture for a given backbone size, indicating that its effectiveness is a property of the encoder rather than the decoder. G2TM also generalizes well to image classification, achieving an even smaller degradation in accuracy compared to semantic segmentation. We further find that G2TM's optimal hyperparameters, resulting in a consistent drop in GFLOPs of 22-47% and an increase in throughput by up to 74% for segmentation models on ADE20K dataset, depend primarily on the backbone's pre-training recipe and on the target dataset, rather than on the decoder choice.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

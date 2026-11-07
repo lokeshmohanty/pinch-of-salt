@@ -1,0 +1,14 @@
+{
+  "id": "2054ec5e58ed4c1b",
+  "title": "Sensory-Aware Sequential Recommendation via Review-Distilled Representations",
+  "link": "https://arxiv.org/abs/2603.02709",
+  "description": "arXiv:2603.02709v4 Announce Type: replace-cross \nAbstract: Sequential recommenders learn behavioral patterns from item identifiers, while the experiential properties that users describe in reviews, such as how products look, feel, smell, taste, or sound, rarely enter item representations in a controlled, auditable form.\n  We present ASER (Attribute-based Sensory-Enhanced Representation), an offline pipeline that fine-tunes a large language model to extract evidence-grounded sensory attribute-value records, such as color: matte black or scent: vanilla, from review text and distills them into a compact student encoder that produces a frozen five-facet sensory bank for each item catalog.\n  At recommendation time the pretrained backbone stays frozen: a lightweight relational metric between the user history and each candidate is learned over the bank, and its correction is applied within a validation-selected magnitude bound.\n  Across five Amazon domains and four backbones, trained within a common experimental pipeline and evaluated by full-catalog leave-one-out ranking without sampled negatives, this integration improves HR@10 and NDCG@10 in all 20 domain-backbone pairs, with average relative gains of 6.1% and 6.4%.\n  A matched non-sensory control channel, built with the same seed model, schema, and pipeline, separates the sources of the gain: the hit-rate improvement follows from structured, evidence-grounded extraction as such, whereas the sensory vocabulary yields a ranking-quality advantage in eight of nine matched comparisons.\n  An audit of the Beauty evaluation catalog finds that 94.8% of retained records are supported by their cited evidence spans, so the extracted signal remains inspectable against its source text.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

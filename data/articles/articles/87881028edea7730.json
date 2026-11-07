@@ -1,0 +1,14 @@
+{
+  "id": "87881028edea7730",
+  "title": "MAdam: Metric-Aware Multi-Objective Adam",
+  "link": "https://arxiv.org/abs/2606.03904",
+  "description": "arXiv:2606.03904v2 Announce Type: replace-cross \nAbstract: Multi-objective optimization (MOO) underlies many machine learning problems, yet MOO solvers across the loss-balancing, gradient-balancing, and Pareto-based families almost universally hand their reconciled directions to Adam~\\citep{kingma2015adam}. We show this coupling introduces two systematic gaps between the solver's intent and the optimizer's execution. The first is a weighting mismatch: Adam's second-moment denominator entangles the time-varying preference vector with gradient statistics, marginalizing the preference into a history average and collapsing distinct Pareto trade-offs toward a near-uniform mixture. The second is a geometric mismatch: Adam's adaptive metric distorts the Euclidean geometry MOO solvers assume, turning aligned objectives into apparent conflicts. To resolve both jointly, we introduce MAdam (Metric-Aware Multi-Objective Adam), a drop-in wrapper that leaves both solver and optimizer unchanged. MAdam preconditions the reconciled direction by the preference-conditioned curvature of the scalarized objective; on this whitened input, Adam's second moment collapses to identity, so the realized update is governed by the preference-conditioned metric. Across multi-task learning, Pareto-front recovery, physics-informed neural networks, and medical imaging, MAdam improves over Adam in aggregate for every solver family. Our code is available at https://github.com/lfb-1/MAdam.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

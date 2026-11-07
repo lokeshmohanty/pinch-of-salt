@@ -1,0 +1,13 @@
+{
+  "id": "046fa4942e43bb6d",
+  "title": "Vision-language models know more about agriculture than they show and rubric-grounded verifications close the gap",
+  "link": "https://arxiv.org/abs/2609.09417",
+  "description": "arXiv:2609.09417v2 Announce Type: replace \nAbstract: Vision-language models (VLMs) show promise for agricultural classification, but zero-shot performance on disease, pest, damage, quality, and species identification remains poor, and it is unclear whether this reflects weak visual features or a failure to connect them to domain knowledge. We build a benchmark of 116 datasets, 834 classes, and 8,324 images spanning these tasks to isolate where the gap arises. Linear probing shows VLM vision encoders already encode agricultural features nearly as separable as a self-supervised DINOv3 baseline, ruling out weak visual representations as the primary bottleneck. Conditioning each model on an oracle reference description (an upper bound on its parametric knowledge) closes most of the gap left by an unaided lower bound, showing VLMs already know more about agriculture than they show. To close this gap without an oracle description at inference time, we structure test-time reasoning around a fixed, per-task diagnostic rubric: the model generates $K$ candidate responses and a Probabilistic Pivot Tournament (PPT) verifier, scored pairwise against the rubric, selects the best one. This nearly doubles judged F1 over the lower bound and matches or exceeds the upper bound on several tasks, notably pushing Gemma 4 E4B-it's disease F1 to 0.71, above its own upper bound of 0.60. However, the verifier's letter-scale confidence score has the opposite of its intended effect: filtering to its most confident predictions does not improve accuracy and correlates negatively with correctness across every model and pool size tested, so the score cannot serve as a measure of predictive uncertainty, and most of the observed gain likely comes from rubric-grounded generation rather than pairwise verification.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

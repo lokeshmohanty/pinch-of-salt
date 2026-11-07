@@ -1,0 +1,13 @@
+{
+  "id": "0175095938c36456",
+  "title": "DiVid: Diagnosing Dimension-Specific Diversity Collapse in Video Generation Models",
+  "link": "https://arxiv.org/abs/2610.01661",
+  "description": "arXiv:2610.01661v1 Announce Type: new \nAbstract: Despite remarkable progress, video generation models often produce highly similar outputs when repeatedly sampled from the same prompt, limiting their usefulness for creative exploration. Existing diversity evaluations primarily rely on global scalar metrics, which obscure where diversity collapses in the spatiotemporal space of videos. We introduce DiVid, a dimension-level diagnostic framework that decomposes video generation diversity into six interpretable dimensions: Semantic, Style, Subject, Scene, Motion, and Camera. Each dimension is measured through a reproducible computer-vision pipeline and analyzed alongside quality and instruction faithfulness to examine potential trade-offs. Systematic evaluation of representative video generation models reveals that diversity is highly dimension-specific: models with strong global diversity scores still collapse on specific factors, particularly Motion and Camera. These rankings persist after filtering unfaithful generations, indicating genuine capability differences rather than off-prompt outputs. Beyond measurement, controlled prompt interventions identify two fundamental bottlenecks: default mode convergence, where models fall back to dominant patterns under open-ended prompts; and realization gaps, where models fail to faithfully realize diverse, explicitly requested alternatives, particularly for temporal factors. The larger faithfulness losses for temporal factors highlight the difficulty of controlling motion and camera variation through text alone. DiVid thus shifts the study of diversity from measuring whether it exists to diagnosing where and why it collapses, and provides actionable directions for dimension-aware training objectives and control signals. The framework will be released to facilitate future research on diverse and controllable video generation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

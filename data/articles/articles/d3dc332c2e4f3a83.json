@@ -1,0 +1,13 @@
+{
+  "id": "d3dc332c2e4f3a83",
+  "title": "UniSim-SLAM: Feed-Forward SLAM with Unified Sim(3) Optimization",
+  "link": "https://arxiv.org/abs/2608.01706",
+  "description": "arXiv:2608.01706v1 Announce Type: new \nAbstract: Recent geometric foundation models enable feed-forward inference for SLAM, but their predictions are strongly dependent on the input view set, which leads to geometric inconsistencies and trajectory drift when results are chained over long sequences. Online deployment further exposes a trade-off between the low latency of two-view tracking and the constraint richness of multi-view inference. We introduce UniSim-SLAM, an integrated system that runs lightweight two-view keyframe tracking in the frontend and performs periodic multi-view submap refinement in the backend. To combine predictions defined in heterogeneous local coordinates with inconsistent scales, we formulate a unified multi-level factor graph on $Sim(3)$ that jointly optimizes global keyframe poses and submap poses. The graph integrates temporal view-to-view odometry edges, view-to-submap bridge edges with depth-statistics scale anchoring, and submap-to-submap tie and scale constraints to enforce consistent similarity relations across submaps. Experiments on TUM RGB-D and 7-Scenes show that UniSim-SLAM achieves state-of-the-art accuracy in the uncalibrated setting, reducing trajectory error by $38.5\\% $ on TUM RGB-D and $45.9\\%$ on 7-Scenes compared to prior best results. Project page: https://vision3d-lab.github.io/unisim-slam/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

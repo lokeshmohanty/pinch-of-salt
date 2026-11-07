@@ -1,0 +1,13 @@
+{
+  "id": "0056cd14088dec66",
+  "title": "Rethinking Reasoning Paths as Phase-Structured Trajectories",
+  "link": "https://arxiv.org/abs/2609.36461",
+  "description": "arXiv:2609.36461v1 Announce Type: new \nAbstract: Large language models often improve problem-solving performance by generating multi-step reasoning paths, yet how to analyze the hidden states along these paths remains unclear. Existing approaches typically assign each intermediate state the final-answer correctness label and train probes across heterogeneous questions. We argue that this protocol obscures reasoning dynamics in two ways: (1) correctness prediction can exploit question-level variation rather than path quality, and (2) states aligned by absolute step indices may correspond to different functional phases of reasoning. In this work, we propose to view reasoning paths as phase-structured trajectories within fixed questions. We instantiate this view as PAIR, short for Phase-Aligned Intra-question Reasoning. PAIR samples multiple trajectories for each question, maps variable-length paths into shared relative phases based on normalized trajectory progress, and compares successful and unsuccessful trajectories only within the same question and phase. This yields phase-specific path-quality directions that better isolate path-quality signals from question-level variation. Empirically, we find that standard across-question correctness probes lose much of their predictive power under within-question evaluation, suggesting that these probes partly rely on question-level information. PAIR improves within-question trajectory ranking and Best-of-N trajectory selection across models and benchmarks. Phase-wise steering further shows that the learned directions can change generation outcomes, providing causal evidence that they capture trajectory-relevant information.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

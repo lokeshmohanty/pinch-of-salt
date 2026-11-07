@@ -1,0 +1,14 @@
+{
+  "id": "7c640415d82780a7",
+  "title": "PolarScale: A Physics-Grounded Benchmark for Radiometrically Consistent RGB-to-Stokes Estimation",
+  "link": "https://arxiv.org/abs/2610.08346",
+  "description": "arXiv:2610.08346v2 Announce Type: replace \nAbstract: Polarization imaging provides physical cues beyond intensity imaging but typically requires specialized hardware. Recent methods infer polarization from RGB-like inputs, yet predict only normalized Stokes components or relative descriptors, from which the radiometric scale needed for full Stokes reconstruction has been divided out. We introduce PolarScale, a benchmark that makes this scale an explicit prediction and evaluation target. Built on existing trichromatic full-Stokes measurements, PolarScale takes the per-scene normalized total-intensity image $s_0$ (a scene-referred linear image, not a consumer sRGB photograph) and asks models to predict normalized Stokes components, AoLP/DoLP/DoCP, and a per-scene scale. Because the scale is divided out of the input, it is not physically identifiable; PolarScale therefore evaluates dataset-conditioned semantic scale estimation against a constant-scale control, together with angular, self-consistency, and physical-bound metrics. Across seven restoration-based and generative backbones and three prediction strategies, the strongest restoration models estimate the scale with 3.6-4.3% mean relative error versus 5.7% for the constant control and violate physical bounds on fewer than 0.25% of pixels, whereas two generative baselines collapse to a near-zero scale; explicit descriptor supervision improves descriptor accuracy (23.66 vs. 18.88 dB PSNR for MAE). Predicted full-Stokes representations improve diffuse/specular separation, material segmentation, and glare classification, although in diffuse/specular separation the learned scale performs only on par with the constant control.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "physics.optics"
+  ]
+}

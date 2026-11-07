@@ -1,0 +1,14 @@
+{
+  "id": "852799f3c1fc300c",
+  "title": "AI or Real: Detecting Partially Altered Videos Under Resource-Constrained Environments",
+  "link": "https://arxiv.org/abs/2609.20263",
+  "description": "arXiv:2609.20263v1 Announce Type: new \nAbstract: The proliferation of generative video models has shifted the practical detection threat from fully fabricated clips to partially manipulated footages. Although modern detectors achieve strong accuracy using foundation backbones of 400M+ parameters, their resource footprint precludes edge deployment. In this paper, we present a lightweight full-frame detector for partially manipulated AI-generated video, designed for deployment on edge hardware without face-detection preprocessing. The system distills a DINOv2-Base teacher into a frozen MobileNetV3-Small student through a pipeline that combines temperature-annealed soft-label transfer, attention-diversity regularization, frame-level supervision, and a residual feature adapter that conditions ImageNet features for artifact detection. We additionally target two failure modes specific to the partial-manipulation regime: false positives on legitimate scene cuts, addressed through within-video temporal hard negatives; and threshold-level miscalibration on the dominant pure-real class, addressed through calibration-aware sampling. Evaluation on a 55,393-sample spliced test set across fake-frame ratios from 6.2% to 31.2% demonstrates the student model closing 58% of the gap to the DINOv2-Base teacher (AUC 0.766) while running at 3.65 ms per 16-frame clip on RTX A4000 with a 150.4 MB checkpoint compatible with edge-device memory and latency budgets.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.DC"
+  ]
+}

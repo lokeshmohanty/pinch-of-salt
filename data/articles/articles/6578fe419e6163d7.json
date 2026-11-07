@@ -1,0 +1,13 @@
+{
+  "id": "6578fe419e6163d7",
+  "title": "ExploreNet: Learning Where to Explore in Diffusion GRPO",
+  "link": "https://arxiv.org/abs/2609.38329",
+  "description": "arXiv:2609.38329v1 Announce Type: new \nAbstract: Group-relative RL methods such as Flow-GRPO post-train image generators by exploring with isotropic Gaussian noise added at every denoising step. This noise decides which rollouts the model learns from, yet it perturbs every channel and spatial position of the latent equally. In this paper, we instead show that latent elements differ in how much they change the generated image, so exploration should adapt to these differences. We introduce EXPLORENET to learn an adaptive exploration distribution. EXPLORENET is a policy that predicts a noise scale for every latent element from the current latent, the denoising step, and the prompt, before any reward is observed; it is trained on the reward spread of each rollout group and discarded after training, leaving inference unchanged. On Stable Diffusion 3.5 Medium, EXPLORENET improves held-out GenEval2 by 14% over Flow-GRPO, transfers to two independent compositional benchmarks and five preference and image-quality models, and reaches a 67.2% human preference win-rate. Overall, across our group-relative diffusion RL experiments, we find that exploration is learnable, the shape of the exploration distribution outweighs its magnitude, and rollout quality is more effective than rollout quantity.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

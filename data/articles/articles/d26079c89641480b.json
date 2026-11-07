@@ -1,0 +1,14 @@
+{
+  "id": "d26079c89641480b",
+  "title": "MOSAIC: Masked Outsourcing of Secure AI Computations",
+  "link": "https://arxiv.org/abs/2607.29221",
+  "description": "arXiv:2607.29221v1 Announce Type: cross \nAbstract: We address the challenge of securely and efficiently outsourcing AI computations from a trusted but computationally weak client to an untrusted but powerful server, in the setting where the client holds both the input and the model, and the server must learn neither. We present MOSAIC, whose core is a novel matrix-multiplication masking protocol that scales to far larger matrices than prior work, enabling the safe outsourcing of modern workloads such as large transformer inference. By introducing small amounts of noise to the multiplication result and thereby relaxing correctness, MOSAIC achieves optimal asymptotic client overhead and concrete runtimes orders of magnitude faster than prior work. Its security reduces to the decisional LWE and LPN assumptions.\n  Because this noise accumulates across the many layers of a transformer, a key technical challenge is bounding error growth; MOSAIC addresses this with an error-scaling mechanism based on random Hadamard rotations. On large 70B transformer models, MOSAIC's perplexity is comparable to popular quantization approaches and even matches full-precision BF16 inference on HumanEval.\n  Finally, we present an end-to-end implementation showing how ideas like MOSAIC can promise a path towards large-scale confidential AI in modern data centers. Non-confidential inference is already distributed across phase (prefill/decode), layer, and time to maximize utilization of heterogeneous hardware, using RDMA-like networking to move activations, cached KV values, and weights across nodes. MOSAIC enables scaling of confidential compute by keeping the trusted computing base (TCB) small and outsourcing the bulk of the AI computation to untrusted accelerators.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

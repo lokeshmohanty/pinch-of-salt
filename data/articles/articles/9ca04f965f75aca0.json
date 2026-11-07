@@ -1,0 +1,13 @@
+{
+  "id": "9ca04f965f75aca0",
+  "title": "Where Is the Bee? Detecting Tiny Pollinators with a Single Collaborative-Head Transformer",
+  "link": "https://arxiv.org/abs/2608.08580",
+  "description": "arXiv:2608.08580v2 Announce Type: replace \nAbstract: The CVPPA@ECCV 2026 BuzzSpot Challenge asks us to detect bees, bumblebees, hoverflies, and moths in 1920x1080 field keyframes. Its annotations carry 2 difficulties: the median box occupies 0.16% of a frame, and bees account for 80% of the labels. To cope with the small boxes, we compare 10 recorded detector configurations on held-out keyframes; plain Co-DINO with a Swin-L backbone has the highest mAP in this comparison, so we select it. Training then addresses the bee dominance in 2 ways: fine-tuning on a crop-mosaic pool in which the combined annotation share of the 3 rare classes rises from 19.9% to 55.1%, and a class-weighted simplex equiangular tight frame (ETF) loss that pulls the projected states of matched decoder queries toward fixed class directions. The full schedule spans 12+3+2 epochs. Without inference-time ensembling or test-time augmentation, we rank first on FinalTest at 0.5062 mAP@[.5:.95].",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

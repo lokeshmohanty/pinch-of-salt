@@ -1,0 +1,13 @@
+{
+  "id": "de8107c2ec12ceed",
+  "title": "ZIL: Zero-shot Image-to-LiDAR Registration",
+  "link": "https://arxiv.org/abs/2609.22716",
+  "description": "arXiv:2609.22716v1 Announce Type: new \nAbstract: Image-to-LiDAR registration estimates the camera pose of an image with respect to a LiDAR point cloud. It has diverse applications in autonomous driving, robot navigation etc. However, state-of-the-art (SOTA) methods still 1) mostly assume same-frame inputs, struggling with the image and point cloud from distant frames; 2) rely on domain-specific training, failing to generalize to unseen scenarios. We propose ZIL, the first foundation model for zero-shot non-synchronized image-to-LiDAR registration. ZIL encodes the input image and point cloud with the Vision and Point Transformers. In addition to regressing the relative pose, ZIL also learns to predict 3D coordinates, which substantially improves the pose accuracy without additional annotations. Interestingly, naive mix-data training cannot enable zero-shot generalization, which requires normalization on both camera intrinsics and the LiDAR vertical-axis origin. Trained on 7 public datasets with 1.4M LiDAR frames, ZIL consistently and significantly outperforms previous SOTA with a single model across 5 in-domain and zero-shot benchmarks, reducing the translation and rotation errors by up to 87% and 76% (shown in Fig. 1). Code and models are available at https://github.com/ZijunLi7/ZIL.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

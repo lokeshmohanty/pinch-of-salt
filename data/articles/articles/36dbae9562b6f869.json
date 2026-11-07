@@ -1,0 +1,14 @@
+{
+  "id": "36dbae9562b6f869",
+  "title": "Predicting What Answer Engines Cite: Open Decision Models, Rerankers and a Distilled 4B Student on Ten Engines under Controlled Retrieval",
+  "link": "https://arxiv.org/abs/2610.38090",
+  "description": "arXiv:2610.38090v1 Announce Type: cross \nAbstract: Generative engine optimization needs a scorer that ranks candidate pages by the share of an answer they will receive as citations. We measure pretrained rerankers, a hosted typed decision model (Jev), eight open decision models and distilled students on GEO-Bench queries answered by ten engines that receive the same candidate sources in their prompt. Where several engines answer the same query, they agree with one another at a within-group Spearman correlation of 0.704. Jev and two open 27B decision models, used without training, are the strongest scorers at 0.575 to 0.578. A Qwen3-Reranker-4B fine-tuned with low-rank adapters on teacher labels for other GEO-Bench queries, released as GEO Citation Ranker 4B, reaches 0.542 to 0.549 across three seeds, and its differences with the 27B models and with Jev are not distinguishable from zero on 229 queries. Most of the remaining distance between the student and Jev disappears when Jev scores one passage at a time, as the student does. Students trained on teacher labels and on observed engine citations reach the same level, and labels from Jev alone match the two-teacher target at 0.6B. We release the model, the benchmark, the predictions of every reported scorer and the code.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI"
+  ]
+}

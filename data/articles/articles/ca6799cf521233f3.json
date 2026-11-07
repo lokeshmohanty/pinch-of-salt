@@ -1,0 +1,13 @@
+{
+  "id": "ca6799cf521233f3",
+  "title": "Where Do Reported Long-Video QA Gains Come From? A Controlled Audit of Frame Selection, Evidence Injection, and Expert Routing",
+  "link": "https://arxiv.org/abs/2611.07329",
+  "description": "arXiv:2611.07329v1 Announce Type: new \nAbstract: Long-video question answering is usually studied as frame selection: which few frames should a vision-language model see? We introduce VideoRouteAudit, a controlled audit that separates this choice from two alternatives, injecting non-visual evidence and routing to another answering model. It holds the backbone, frame budget, decoding, prompt and grader fixed while varying one decision at a time. On the full Video-MME long bucket (n=900, K=8), no tested selector significantly improves over uniform sampling. The largest selection-only estimate is +1.9 pt (95% CI [-1.2,+5.0]) and our cascade is +1.2 pt [-1.7,+4.1]; all are equivalent to uniform within +/-5 pt. The same contrasts are unstable at the n=200 subset scale commonly used: three of four are up to 3.8x larger, one reverses sign, and resampled 200-item subsets reverse the full-bucket effect's sign in 35.8% of draws. The audit also corrects our own first results. The anomaly-domain \"+ASR\" arms injected no text, so the pooled +4.7 pt gain was selection plus a development prefix. With transcripts, ASR lowers XD-Violence accuracy by 10.0 pt when appended after the question and not at all when placed before it, and lowers UCF-Crime by 13.0 pt either way; on Video-MME, placing it first adds about 4 pt (7 on Qwen2-VL) to uniform sampling and to the cascade alike (post hoc, unadjusted). Swapping the answering model gives the largest contrast (+15.1 pt on MUSIC-AVQA, +33.3 pt on its worst type), but the same audio-visual expert with its soundtrack silenced keeps 92% of the gain (69% with a mismatched soundtrack), so the contrast is mostly a model swap. Code, per-item predictions and scripts that recompute every statistic are available at https://github.com/mikeslin-ir/long-video-qa-audit.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

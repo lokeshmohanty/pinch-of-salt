@@ -1,0 +1,13 @@
+{
+  "id": "906de87a25decdc4",
+  "title": "Same Branches, Different Trees: A Bifurcation Connectedness Metric for Coronary Artery Segmentation and FFR-CT Decision Agreement",
+  "link": "https://arxiv.org/abs/2607.28327",
+  "description": "arXiv:2607.28327v1 Announce Type: new \nAbstract: Fractional flow reserve derived from CT angiography (FFR-CT) simulates flow through a patient-specific vessel model, so its accuracy depends on the connectedness of the segmented tree, not only on volumetric overlap: a segmentation can reach high Dice yet sever a bifurcation, dropping the downstream subtree and reversing the treatment decision. Topology-aware losses such as clDice and Skeleton Recall act on the global centreline and can miss localised breaks. We study the Bifurcation Connectedness Score (BCS), which scores connectedness at each ground-truth bifurcation, and soft-BCS, its differentiable training surrogate. BCS captures a property of segmentation quality the standard metrics miss: it responds strongly to breaks in connectedness while staying largely unchanged under connectedness-preserving narrowing. Higher BCS accompanies closer agreement between the FFR-CT decisions a solver makes on predicted versus ground-truth geometry, most clearly in severe disease (OR 2.16, CI [1.23, 4.18]). Both decisions come from the same solver, so this reflects geometric, not clinical, fidelity. In training, soft-BCS and Skeleton Recall recover the same branches but build different trees. Recovering branches and keeping them connected are separable properties, so we recommend reporting a measure of each.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

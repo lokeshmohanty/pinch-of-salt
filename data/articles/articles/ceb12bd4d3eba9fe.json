@@ -1,0 +1,15 @@
+{
+  "id": "ceb12bd4d3eba9fe",
+  "title": "Parameter-Efficient Fine-Tuning of Transformer Encoders for Audio-Image-Symbolic Music Retrieval",
+  "link": "https://arxiv.org/abs/2610.41512",
+  "description": "arXiv:2610.41512v1 Announce Type: new \nAbstract: Score-based multimodal music retrieval requires representations that are both discriminative within each modality and compatible across audio recordings, sheet music images, and symbolic scores. This paper investigates the effectiveness of parameter-efficient fine-tuning (PEFT) for adapting pretrained music encoders and examines whether modality-specific improvements translate into better multimodal representations. We compare full fine-tuning, LoRA, and QLoRA across nine pretrained audio, image, and symbolic score encoders on TriScore and the Musical Theme Dataset. Encoders are first evaluated and selected through supervised unimodal classification, using frozen-encoder linear probing as a reference. We then introduce a controlled 2x2 design crossing encoder adaptation with task-specific shared projection, comparing frozen and adapted representations before and after projection. LoRA or QLoRA is selected in 14 of 18 modality-target combinations, frequently matching or outperforming full fine-tuning while optimizing substantially fewer parameters. However, these unimodal gains do not transfer uniformly to multimodal classification. Adaptation and projection are complementary for composer classification on TriScore, largely redundant for TriScore instrument and the Musical Theme Dataset instrument and ensemble tasks, and partially interfering for composer classification on the Musical Theme Dataset. The final adapted-and-projected title representation on TriScore supports piece-level retrieval, reaching average Top-5 and Top-10 accuracies of 55.32 and 64.68, respectively. Cross-modal exclusion and neighborhood analyses further reveal strong modality-specific local structure in the projected spaces. Overall, PEFT provides an effective and computationally efficient alternative to full fine-tuning, but improved unimodal discrimination alone does not guarantee better multimodal organization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.SD",
+    "eess.AS"
+  ]
+}

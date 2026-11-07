@@ -1,0 +1,13 @@
+{
+  "id": "01ce84a377929830",
+  "title": "Reliability-Regulated Trajectory Optimization for Progressive COLMAP-Free 3D Gaussian Splatting",
+  "link": "https://arxiv.org/abs/2609.30865",
+  "description": "arXiv:2609.30865v1 Announce Type: new \nAbstract: COLMAP-free 3D Gaussian Splatting (3DGS) bypasses computationally expensive structure-from-motion (SfM) pipelines, yet progressive camera pose tracking remains fundamentally vulnerable to error compounding---early pairwise tracking inaccuracies both corrupt subsequent frame initializations and remain permanently frozen in the scene representation. Rather than relying on heavyweight external neural priors or treating progressive tracking through isolated heuristic fixes, we propose a unified reliability-regulated trajectory optimization framework for progressive COLMAP-free 3DGS. At its core, our framework establishes an intrinsic, self-supervised bidirectional cycle-consistency mechanism that systematically regulates progressive camera trajectory estimation across two complementary temporal horizons: (1) Forward Motion Propagation, where the online reliability signal adaptively gates first-order kinematic warm-starts of rigid motion into upcoming pairwise registrations, supplying informed directional search priors while safely intercepting untrusted transitions; and (2) Retrospective Trajectory Correction, where the same reliability signal dynamically weights relative-pose consistency constraints within a sliding window of neighboring camera poses. By governing both prospective state initialization and retrospective trajectory consolidation through a unified reliability regulator, our self-contained framework resolves progressive drift without external priors or offline preprocessing. Extensive evaluations on Tanks and Temples and CO3D-V2 benchmarks show that our method substantially improves camera trajectory accuracy and novel-view rendering quality, outperforming existing unposed baselines. Code is available at https://github.com/Zijian1026/RRTO-CF3DGS.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

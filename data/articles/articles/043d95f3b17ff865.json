@@ -1,0 +1,14 @@
+{
+  "id": "043d95f3b17ff865",
+  "title": "Scientific Agents: Evaluating Profession-Specific System Prompts on Scientific Tasks",
+  "link": "https://arxiv.org/abs/2610.00084",
+  "description": "arXiv:2610.00084v1 Announce Type: new \nAbstract: Detailed profession-specific system prompts raise token use and estimated cost per response without a consistent accuracy gain. We evaluate Scientific Agents, an open-source corpus of 503 profession-specific AGENTS.md profiles, with Gemini 3.8 Flash via OpenRouter in the Pi agent harness. We compare matched profiles with four controls: a minimal baseline (\"You are a helpful assistant\"), the profile's opening role sentence, a generic scientific rigor guide, and a profile from an unrelated domain. Across nine text-based science benchmarks (4,531 sampled questions, 100 matched profiles), 4,488 items completed all five conditions after API-error retries, scored with automated, rule-based grading. The average profile-baseline accuracy difference is -0.6 percentage points (95% bootstrap interval [-1.5, +0.2] across fixed tasks), and no benchmark shows a statistically clear improvement. Matched profiles produced 1.5-2.3 times as many output tokens and cost 2.2-4.5 times more per successful call. On 60 tool-using BioMysteryBench bioinformatics problems (three runs each for baseline and profile), mean solve rates were 46.7% with the profile and 56.7% at baseline, a difference of -10.0 percentage points (95% interval [-16.7, -3.3]) driven by more frequent token- and time-limit stops under the profile. Longer prompts had one unexpected operational advantage: on SuperGPQA, frequent provider API drops left the short baseline with a correct first-pass answer on only 54.0% of items, against 71.6% with the profile. Generic and mismatched prompts were about as reliable, so this gain comes from prompt length or formatting rather than domain expertise. For the tested model and tasks, loading full profession profiles by default does not improve accuracy and costs considerably more; whether selective retrieval of profile sections or open-ended scientific tasks would change this remains to be tested.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

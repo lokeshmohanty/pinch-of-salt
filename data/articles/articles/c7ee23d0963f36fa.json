@@ -1,0 +1,15 @@
+{
+  "id": "c7ee23d0963f36fa",
+  "title": "SAG-Sep: Sparse Augmented Graphs and Onion-Guided Search for Rounded Capacity Cut Separation",
+  "link": "https://arxiv.org/abs/2610.37952",
+  "description": "arXiv:2610.37952v1 Announce Type: cross \nAbstract: Rounded capacity cuts (RCCs) are among the most effective cuts for capacitated vehicle-routing relaxations, but exact separation is computationally prohibitive at scale. Existing heuristic and neural separators can be fast, but often fail to produce sufficiently many effective cuts within practical separation budgets. We introduce SAG-Sep, a separator that scores node membership in RCC-inducing subsets across vehicle-count levels from a fractional LP solution in a single encoder forward pass, avoiding the iterative predict-and-coarsen inference used by NeuralSEP-style separators. SAG-Sep encodes the LP solution as a Sparse Augmented Graph (SAG), adding flow-informed multi-hop edges that expose long-range routing structure without densifying attention. Beyond LP-aware sparse encoding, we observe that high-value exact RCCs are typically nested, organizing into onion-like subset families, and SAG-Sep's node scores track subset nesting depth. This motivates Onion-Sweep (OS), a training-free decoder that ranks customers by their scores, evaluates the RCC violation of every prefix of the ranking in one vectorized pass, and emits the most violated prefix of each replica together with a cross-replica family of nested proposals, converting independent node scores into structurally coordinated RCC candidates without a tuned threshold or probing band. On the NeuralSEP benchmark with N=1000 customer instances, SAG-Sep with OS reduces the average root gap by 17.7% relative to the strongest NeuralSEP baseline, while the single-pass SAG-Sep separator achieves a roughly 30-fold per-iteration neural separation speedup. Our findings suggest that LP-aware sparse encoding and the nested structure of high-value cuts are structural patterns worth leveraging in neural separation more broadly.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "math.OC"
+  ]
+}

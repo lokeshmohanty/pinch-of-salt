@@ -1,0 +1,13 @@
+{
+  "id": "5ce595a117a2ed1c",
+  "title": "LAS-CLIP: A Lightweight Adapter Steering Approach for CLIP's Visual Encoder",
+  "link": "https://arxiv.org/abs/2610.03370",
+  "description": "arXiv:2610.03370v1 Announce Type: new \nAbstract: CLIP's visual encoder produces only global image representations, limiting its use in region-level tasks. Existing adaptations rely on visual prompting, input masking, or encoder fine-tuning, each compromising pre-trained representations. We propose LAS-CLIP, a Lightweight Adapter Steering approach that keeps every CLIP parameter frozen. A compact MaskAdapter generates per-head, per-layer attention biases from an input mask and injects them into the frozen self-attention layers, steering attention toward the target region. Crucially, because the backbone remains strictly untouched, LAS-CLIP seamlessly reverts to vanilla CLIP when no mask is provided, preserving its foundational zero-shot capabilities. With approximately 116K to 145K trainable parameters and 100K training samples on two T4 GPUs, LAS-CLIP achieves competitive or superior results compared to Alpha-CLIP on ImageNet-S zero-shot classification and RefCOCO referring expression comprehension, despite the latter fine-tuning its entire encoder on millions of samples. Qualitative analysis further confirms stronger representational fidelity under incorrect masks and in downstream generation. Our project page is link to https://github.com/AnhKhoa585/lasclip",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

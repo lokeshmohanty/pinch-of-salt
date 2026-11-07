@@ -1,0 +1,14 @@
+{
+  "id": "81ba393683f08344",
+  "title": "VACE: Learning Geometrically Structured Representations for Time Series Anomaly Detection",
+  "link": "https://arxiv.org/abs/2605.23504",
+  "description": "arXiv:2605.23504v2 Announce Type: replace-cross \nAbstract: Anomaly detection in multivariate time series is a critical task across a wide range of real-world applications, where abnormal behaviour is rare, labels are unavailable, and the cost of a miss is high. The central challenge is learning a characterisation of normality precise enough to flag deviations. Representation self-supervised learning, typically through contrastive approaches, addresses this by embedding temporal patches into a latent space where normality occupies a well-defined region, with anomalies detected by geometric deviation. However, contrastive approaches shape this space indirectly through pair-sampling heuristics, providing no explicit control over the geometric structure on which distance-based scoring operates. That geometry is thus left to chance. We present VACE (Velocity-Aligned Channel Embeddings), a self-supervised anomaly detection method that represents normality as a locally smooth, directionally coherent trajectory in the embedding space. To this end, VACE trains a channel-aware encoder through a velocity-consistency objective, with no negatives and no synthetic anomalies, so that normal trajectories are locally smooth and aligned. At test time, a Mahalanobis positional score and a directional score computed against a bank of normal directions are combined multiplicatively, the directional score acting as a gate that amplifies the positional one where the local dynamics are atypical. Despite its simplicity, VACE achieves state-of-the-art performance on TSB-AD-M under rigorous evaluation, significantly outperforming more complex methods trained on substantially larger budgets.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

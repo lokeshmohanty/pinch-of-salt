@@ -1,0 +1,16 @@
+{
+  "id": "667967cf3cedef2b",
+  "title": "IMAGAgent: Orchestrating Multi-Turn Image Editing via Constraint-Aware Planning and Reflection",
+  "link": "https://arxiv.org/abs/2603.29602",
+  "description": "arXiv:2603.29602v2 Announce Type: replace-cross \nAbstract: Existing multi-turn image editing paradigms are often confined to isolated single-step execution. Due to a lack of context-awareness and closed-loop feedback mechanisms, they are prone to error accumulation and semantic drift during multi-turn interactions, ultimately resulting in severe structural distortion of the generated images. To address this, we propose IMAGAgent, a multi-turn image editing agent framework based on a ``plan--execute--reflect'' closed-loop mechanism that achieves deep synergy among instruction parsing, tool scheduling, and adaptive correction within a unified pipeline. Specifically, we first present a constraint-aware planning module that leverages a vision-language model (VLM) to precisely decompose complex natural language instructions into a series of executable sub-tasks, governed by target singularity, semantic atomicity, and visual perceptibility. Then, the tool-chain orchestration module dynamically constructs execution paths based on the current image, the current sub-task, and the historical context, enabling adaptive scheduling and collaborative operation among heterogeneous operation models covering image retrieval, segmentation, detection, and editing. Finally, we devise a multi-expert collaborative reflection mechanism in which a central large language model (LLM) synthesizes evaluations from multiple vision-language models into holistic feedback, triggering fine-grained self-correction and recording feedback outcomes to optimize future decisions. Extensive experiments on our constructed MTEditBench and the MagicBrush dataset demonstrate that IMAGAgent achieves performance significantly superior to existing methods in terms of instruction consistency, editing precision, and overall quality. The code is available at https://github.com/hackermmzz/IMAGAgent.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.AI",
+    "cs.CV",
+    "cs.MA"
+  ]
+}
