@@ -1,0 +1,14 @@
+{
+  "id": "1b801dd13d74ebe7",
+  "title": "Neural Image Compression with Internal-External Prior Fusion and Alignment",
+  "link": "https://arxiv.org/abs/2611.07644",
+  "description": "arXiv:2611.07644v1 Announce Type: cross \nAbstract: Existing context models for learned image com- pression rely primarily on internal priors from the current image, overlooking common patterns and typical textures shared across natural images. To address this limitation, we propose an Internal-External Prior Fusion-Alignment (IE-PFA) context model built upon quadtree spatial-channel joint modeling, where a learnable dictionary shared by the encoder and decoder serves as an external prior. Specifically, an RWKV-based Spatial- Channel Prior Fusion (RSCPF) module efficiently fuses inter- nal and external priors along spatial and channel dimensions with linear complexity, while a training-only Self-Distilled Prior Alignment (SDPA) mechanism aligns them without inference overhead. Moreover, our model supports variable-rate coding over 64 quality levels within a single network and is accelerated by custom CUDA operators. Experiments on seven benchmarks demonstrate state-of-the-art rate-distortion performance, achiev- ing an average BD-Rate saving of 21.65% over VTM-22.0-Intra, with only 29.9M parameters and the fastest coding speed among advanced neural codecs (61 ms encoding and 52 ms decoding). Code is available at https://github.com/stcnjtech/DCVC-X-Intra.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "f6d2ac708e132e4b",
+  "title": "FedDyMem: Efficient Federated Learning with Dynamic Memory and Memory-Reduce for Unsupervised Image Anomaly Detection",
+  "link": "https://arxiv.org/abs/2502.21012",
+  "description": "arXiv:2502.21012v3 Announce Type: replace-cross \nAbstract: Unsupervised image anomaly detection (UAD) has become a critical process in industrial and medical applications, where models are trained on normal samples without requiring labeled anomalies. However, even normal images may contain sensitive product designs, manufacturing information, or institution-specific population characteristics, making centralized data collection difficult in practical deployments. Federated UAD provides a promising decentralized solution, but it remains challenging because clients use only normal training samples, their feature distributions remain highly heterogeneous within the same task, and communication should be efficient while limiting the exposure of sensitive client information. To address these challenges, we propose FedDyMem, an efficient federated learning method with dynamic memory and memory-reduce for unsupervised image anomaly detection. Instead of exchanging full model parameters, FedDyMem facilitates knowledge sharing between the clients and server through reduced dynamic memory banks. In the local clients, a memory generator and a metric loss are employed to improve the consistency of the feature distribution for normal samples, leveraging the local model to update the memory bank dynamically. For efficient communication and data privacy, a memory-reduce method based on weighted averages is proposed to significantly decrease the scale of memory banks. This representation reduces communication overhead and empirically lowers reconstruction fidelity under inversion attacks. On the server, global memory is constructed and distributed to individual clients through k-means aggregation. Experiments on six federated UAD tasks constructed from eleven public industrial and medical datasets show that FedDyMem consistently improves anomaly detection and localization while reducing communication cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.CV"
+  ]
+}

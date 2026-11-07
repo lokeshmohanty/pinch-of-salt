@@ -1,0 +1,13 @@
+{
+  "id": "3fbd781413b77e2a",
+  "title": "Egocentric Action Recognition with Objects and Vision-Language Affordances",
+  "link": "https://arxiv.org/abs/2611.07673",
+  "description": "arXiv:2611.07673v1 Announce Type: new \nAbstract: Action recognition, and more specifically egocentric action recognition, is a core task in computer vision, with applications such as monitoring the daily life activities of elderly people and task assistance. Recent methods rely on visual modalities such as RGB video or depth. However, in egocentric video, an action is largely defined by its objects, which these methods rarely model. We propose a method that combines a frozen SlowFast video expert with an attention-based object expert by late fusion. Each object is represented with its affordances, that is, what can be done with it, generated zero-shot by a vision-language model. Since datasets such as MECCANO annotate only the objects involved in each action, evaluating with these boxes tells the model which objects are active. We therefore train on annotated boxes and evaluate the method with detections from the official active-object detector, and with annotated boxes as an upper bound. Without affordances, our fusion reaches 68.4% Top-1 with annotated boxes but 49.0% with detections. About half of this drop comes from non-active detections. To remove them, the same vision-language model generates an interaction affordance that decides whether a hand is manipulating each detected object. On MECCANO, objects raise the Top-1 of the video expert from 44.9% to 49.0%, and the two affordances raise it to 49.9%, above SlowFast and object-aware RGB baselines. Code will be released upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

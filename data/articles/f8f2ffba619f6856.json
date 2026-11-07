@@ -1,0 +1,13 @@
+{
+  "id": "f8f2ffba619f6856",
+  "title": "LinAlg-Bench: A Forensic Benchmark Revealing Structural Failure Modes in LLM Mathematical Reasoning",
+  "link": "https://arxiv.org/abs/2605.16675",
+  "description": "arXiv:2605.16675v2 Announce Type: replace \nAbstract: We introduce LinAlg-Bench, a diagnostic benchmark evaluating 10 frontier large language models on structured linear algebra computation across a strict dimensional gradient of 3x3, 4x4, and 5x5 matrices. Spanning 9 task types and 660 SymPy-certified problems, the benchmark exhaustively evaluates 6,600 model outputs. Beyond binary accuracy, LinAlg-Bench introduces a three-stage automated forensic pipeline classifying 1,156 failures into ten primary error tags with fine-grained subtypes, revealing that LLM mathematical failure is not random but structurally constrained by algorithm type and matrix dimension. Our central finding is a sharp behavioral threshold at 4x4 scale: below it, models fail through execution errors -- sign tracking failures, arithmetic drift, and parity errors; above it, failure transitions to computational abandonment, with models fabricating responses through tool roleplay, constraint-consistent confabulation, and structured hallucination rather than attempting computation. This fabrication-to-abandonment transition is near-universal across all model tiers and architectures, suggesting a working memory limit rather than a knowledge gap, supported by three scale-emergent error types absent at 3x3 but present at 4x4 and 5x5. We further show that solution strategy rigidity is a near-perfect predictor of 5x5 determinant accuracy, document constraint-aware confabulation as a novel structured hallucination failure mode, and release all data, model outputs, error labels, and judge pipeline publicly.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

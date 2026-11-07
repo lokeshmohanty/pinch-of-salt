@@ -1,0 +1,13 @@
+{
+  "id": "d07464c2b16f6637",
+  "title": "Gaussians Can Subtract: Neural Dissolve Fields for Hybrid Scene Rendering",
+  "link": "https://arxiv.org/abs/2611.07049",
+  "description": "arXiv:2611.07049v1 Announce Type: new \nAbstract: Hybrid Mesh-Gaussian rendering combines compact textured surfaces with flexible 3D Gaussian primitives, offering an efficient alternative to purely Gaussian scene representations for structured environments. Existing scene-reconstruction hybrids commonly follow an additive formulation, where Gaussian residuals compensate for errors left by the mesh. However, not every Mesh-Gaussian conflict is caused by missing content: residual geometry errors, occlusion mismatch, texture-projection artifacts, and view-dependent appearance can make the same mesh content consistent in one view but inconsistent in another. We therefore formulate hybrid rendering as a multi-view inconsistency problem and present Gaussolve, a subtract-and-refill framework that selectively dissolves inconsistent mesh content before residual Gaussians refill the revealed regions. We introduce a lightweight Neural Dissolve Field, parameterized by scalar spherical-harmonic Gaussians, to learn where and from which viewing directions mesh content should be dissolved. A continuous transmittance fusion rule progressively exposes residual Gaussians behind the dissolved mesh, preserving their reconstruction gradients and avoiding hard visibility discontinuities. Experiments on structured and semi-structured scenes demonstrate higher visual fidelity with fewer Gaussian primitives and faster rendering. Project page: https://ooosn.github.io/gaussians-can-subtract/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

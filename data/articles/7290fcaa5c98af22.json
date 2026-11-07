@@ -1,0 +1,14 @@
+{
+  "id": "7290fcaa5c98af22",
+  "title": "When Attribution Patching Lies: Diagnosis and a Second-Order Correction",
+  "link": "https://arxiv.org/abs/2606.09899",
+  "description": "arXiv:2606.09899v2 Announce Type: replace-cross \nAbstract: A central goal of mechanistic interpretability is to identify which internal components causally drive a language model's behavior. Because these importance estimates serve as the evidence for identifying circuits, systematic errors can lead to the misidentification of the underlying mechanisms. While activation patching provides a gold-standard causal metric, its computational cost is prohibitive at scale. Practitioners instead rely on attribution patching, a gradient-based, first-order approximation whose reliability remains poorly understood. In this work, we characterize the source of this unreliability, demonstrating that the dominant error stems from the non-linearities in the downstream network rather than local curvature at the patched component. This insight yields three practical tools: (i) a reliability score to detect untrustworthy estimates, (ii) error bounds quantifying potential attribution mis-specifications, and (iii) a Hessian-vector-product (HVP) correction that eliminates the leading-order error with only one additional backward pass. In evaluations across five model families (124M--9B parameters) and both random-token and naturalistic (name-swap) perturbations, HVP is the only second-order correction feasible at larger scale, where standard baselines like Integrated Gradients become computationally prohibitive. In comparative experiments, a multi-step HVP variant matches or exceeds the accuracy of Integrated Gradients at significantly lower compute, outperforming prior second-order baselines. These improvements lead to higher-fidelity circuit recovery on standard benchmarks and support a Screen-Flag-Fix workflow that targets computational effort only toward the components flagged as unreliable.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3cf45f06dacdca16",
+  "title": "Taming the Entropy Cliff: Variable Codebook Size Quantization for Autoregressive Visual Generation",
+  "link": "https://arxiv.org/abs/2605.06207",
+  "description": "arXiv:2605.06207v2 Announce Type: replace-cross \nAbstract: Most discrete visual tokenizers rely on a default design: every position in the sequence shares the same codebook. Such a constant-codebook design can consume the finite-data entropy budget very quickly. We observe that the per-position empirical conditional entropy decays so quickly along the sequence that, after a few positions, the conditional distribution becomes essentially deterministic. On ImageNet with $K=16384$, this happens after only about 2 out of 256 positions, when most prefixes already identify individual images in the dataset. We call this phenomenon the Entropy Cliff. Under full conditional utilization, larger codebooks exhaust the finite-data entropy budget in fewer positions. The empirical entropy decreases more gradually in our language comparison, where the effective entropy per position stays below the codebook capacity. To address this, we propose Variable Codebook Size Quantization (VCQ), where the codebook size $K_t$ grows monotonically along the sequence from $K_{\\min}=2$ to $K_{\\max}$, leaving the loss function, parameter count, and AR training procedure unchanged. With a vanilla autoregressive Transformer and standard next-token prediction, VCQ-Base achieves gFID w/o CFG 14.80 on ImageNet $256\\times256$, compared with 27.98 and 18.16 for constant codebooks of size 16384 and 8192, respectively. Scaled up, it reaches gFID 1.71 with 684M autoregressive parameters, without any extra training techniques such as semantic regularization or causal alignment. The extreme information bottleneck at $K_{\\min}=2$ encourages semantic concentration in early encoder features: a linear probe on features from only the first 10 positions reaches 43.8% top-1 accuracy on ImageNet, compared to 27.1% for uniform codebooks. These results show that what matters is not only the total capacity of the codebook, but also how that capacity is distributed and organized.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}
