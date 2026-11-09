@@ -1,0 +1,14 @@
+{
+  "id": "c0921684df112249",
+  "title": "VLD: Visual Learned Distance as an Interface for Reinforcement Learning Navigation",
+  "link": "https://arxiv.org/abs/2512.07976",
+  "description": "arXiv:2512.07976v3 Announce Type: replace-cross \nAbstract: Training end-to-end policies from image data to directly predict navigation actions for robotic systems has proven inherently difficult. Existing approaches often suffer from either the sim-to-real gap during policy transfer or limited action-labeled training data. To address this problem, we introduce Visual Learned Distance (VLD), a scalable framework for image-goal navigation that decouples perception learning from policy learning. We first train a self-supervised distance-to-goal predictor on about 3,000 hours of internet-scale and simulated video, providing a distance signal that a reinforcement learning (RL) policy can minimize. The RL policy is trained separately in simulation using privileged geometric distances perturbed by GeoNoise, a learned noise model that reproduces the viewpoint- and overlap-dependent errors of the trained distance predictor. At deployment, the policy consumes VLD predictions zero-shot, without retraining, inheriting ``where to go'' from large-scale visual training while retaining the robust navigation behaviors learned in simulation. This error modeling is key to the transfer: with VLD inputs, GeoNoise-trained policies reach $58.7\\%$ success on HM3D and $76.2\\%$ on Gibson, whereas policies trained with generic temporally correlated noise collapse to $4.9\\%$ and $11.5\\%$. On a physical robot, the VLD-driven policy succeeds in $88\\%$ of trials, compared with $60\\%$ for a strong end-to-end image-goal baseline that outperforms it in simulation. Our decoupled design thus provides an alternative and scalable path toward reliable navigation policies that transfer from simulation to the real world.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

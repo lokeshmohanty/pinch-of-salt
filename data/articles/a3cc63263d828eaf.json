@@ -1,0 +1,14 @@
+{
+  "id": "a3cc63263d828eaf",
+  "title": "LEF-JEPA: Denoising-Trained Latent Energy Fields for Spatial Representation Learning",
+  "link": "https://arxiv.org/abs/2611.08989",
+  "description": "arXiv:2611.08989v1 Announce Type: new \nAbstract: A joint-embedding predictive architecture (JEPA) that applies prediction supervision only at masked positions struggles to clearly capture object shapes and boundaries in its latent representations. We further observe that some existing methods improve spatial structure while also retaining rich variations in texture and color. However, preserving more low-level visual information does not necessarily make representations better suited to prediction and action. This raises a key question: how can we strengthen the spatial structure in latent representations that supports prediction and action without over-encoding these details? We introduce LEF-JEPA, which learns spatial structure through target-guided latent recovery and transfers this supervision to the visual encoder through a relative-energy constraint; the energy module is used only during pretraining and adds no inference overhead. To reduce the cost of energy optimization during pretraining, we further construct a conditional Ising Hamiltonian that allows low-energy-state search to be performed by specialized Ising solvers. On physical hardware, we validate the feasibility of achieving lower forward latency with fewer local updates. Under a unified CIFAR-10 pretraining and frozen-encoder evaluation protocol, both realizations outperform V-JEPA2.1 in image classification, foreground segmentation, and visual planning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "5b33bb5338ea6948",
+  "title": "RegNC-Mamba3: Shared Structural Feature Learning Using Non-Causal State Space Principles for Multi-Modal Image Registration",
+  "link": "https://arxiv.org/abs/2611.09336",
+  "description": "arXiv:2611.09336v1 Announce Type: new \nAbstract: The main challenge of multi-modal image registration is shared structural feature extraction with higher accuracy and lower computational complexity. Compared with a State Space Model (SSM), the State Space Principles (SSP) formulation of Mamba-3 uses a more accurate discretization with lower truncation error while maintaining linear complexity. However, vanilla SSP is designed for natural language processing (NLP) and is not directly suitable for images. To address this issue, we propose a novel non-causal SSP (NC-SSP) with shared structure awareness and develop a coarse-to-fine registration method named RegNC-Mamba3. First, NC-SSP is designed to eliminate the dependence of the integral computation on the scanning path. By combining relative-weight normalization with aggregation over all circular scan paths, NC-SSP constructs a globally hidden state without long-range decay, which provides a wider receptive field and higher efficiency than the original Mamba-3. Second, NC-SSP is modified to strengthen the extraction of cross-modal structural features. When computing hidden states and feature interactions, we construct complex-valued sequences in NC-SSP by applying learnable Log-Gabor kernels, with different orientations to each head for frequency-domain modulation. This improves the perception of shared structural information across modalities and increases both registration accuracy and quality. Experiments on VIS-SAR and VIS-IR demonstrate that RegNC-Mamba3 outperforms the compared detector-based and semi-dense multi-modal registration methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

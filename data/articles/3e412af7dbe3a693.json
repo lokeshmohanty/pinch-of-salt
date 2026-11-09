@@ -1,0 +1,14 @@
+{
+  "id": "3e412af7dbe3a693",
+  "title": "Beyond Segmentation: Enriching ImageCAS with Coronary Ostia Landmarks, Rooted Centerline Graphs, and Open-Weight Localization Models",
+  "link": "https://arxiv.org/abs/2611.09714",
+  "description": "arXiv:2611.09714v1 Announce Type: cross \nAbstract: Coronary ostia and centerlines are key reference points for automated analysis of coronary computed tomography angiography (CCTA), from surgical planning to intraoperative vessel tracking. However, the only public ostium annotations cover 77 non-gated aortic scans, not CCTA, while CAT08 and ASOCA (32 and 40 CCTA scans) mark the ostia only implicitly, as centerline start points. This work enriches ImageCAS, the largest public dataset for coronary artery segmentation, with ostium annotations for its 1000 patients and centerline graphs rooted at these new ostia, making it, to the authors' knowledge, the largest public dataset for ostium localization and the only one with centerlines following the official ImageCAS masks and starting at annotated ostia. Three annotators marked each ostium in the first 500 volumes; in the next 500, the candidates of a model trained on the first batch were corrected (human-in-the-loop). Six 3D localization models, trained on ImageCAS, CAT08 and ASOCA, were benchmarked on 58 held-out volumes (50 ImageCAS, 4 CAT08, 4 ASOCA). SwinUNETR-V2 and nnResUNet localized all ostia without failure (>5 mm error), with median errors of 0.70-0.87 mm. Trained on CAT08 and ASOCA alone, SwinUNETR-V2 fails on 34% of right and 53% of left ostia, whereas adding 250 ImageCAS volumes removes all failures. The centerlines were extracted by a deterministic, quality-controlled minimal-path procedure; on ASOCA, they cover a median of 99.5% of the reference length, with a median per-patient mean distance of 0.22 mm between matched reference points and centerlines. Annotations, centerlines, code, and weights are available at https://hal9000-lab.github.io/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "9b57ba492f1305be",
+  "title": "From Points to Targets: Online Foreground Affinity and Background Learning for Infrared Small Target Detection",
+  "link": "https://arxiv.org/abs/2605.00722",
+  "description": "arXiv:2605.00722v2 Announce Type: replace \nAbstract: Infrared small-target detection must identify a few faint target pixels in extensive background clutter while keeping false alarms low. Under single-point supervision, each target has only one labeled foreground pixel with unknown spatial extent during training, whereas the detector must recover complete targets from the infrared image without any point guidance at inference. Existing methods typically reconstruct regional pseudo-labels from local cues or intermediate predictions, which can introduce boundary noise around blurry target edges. Instead of turning uncertain boundaries into dense pseudo-masks, we propose Online Foreground Affinity and Background Learning (OABL), a single-stage framework that learns target structure directly from sparse points. First, for online foreground affinity learning, each annotated target point serves as a feature anchor, and local spatial proximity and intensity similarity weight the feature alignment between the point and surrounding pixels, guiding target-related representations without hard boundary labels. Second, for online background learning, we exclude the ambiguous neighborhood around each target point and select high-response false alarms outside this region as active negatives. Averaging the background loss over this active set keeps sparse target-like clutter influential as easy background pixels are suppressed. Jointly optimizing these objectives in a single stage updates the detector directly without generating or refreshing persistent pseudo-masks. Across three public datasets and the combined SIRST3 benchmark, OABL improves detection probability by 1.06--7.82 percentage points over matched PAL training at a false-alarm area rate of $2 \\times 10^{-5}$ and avoids PAL's multi-stage full-pool label updates.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "48e1ad14dc82ea8c",
+  "title": "Sparse All-Layer Connector for Domain Generalised Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2610.15660",
+  "description": "arXiv:2610.15660v2 Announce Type: replace \nAbstract: Domain generalised semantic segmentation (DGSS) has recently benefited from combining multiple foundation models, such as vision-language and vision foundation models, to leverage their diverse representations for generalisation. Existing multi-model approaches share a common design choice: cross-model fusion is restricted to depth-aligned layers, implicitly assuming that mutually beneficial information resides at the same depth across models. However, foundation models pretrained under different objectives may develop distinct representation hierarchies, making the optimality of depth-aligned fusion questionable. Moreover, we observe that the foundation models exhibit different depth-wise domain sensitivity. Motivated by these observations, we propose a Sparse All-Layer Connector (SALC) that enables each layer to access information from preceding layers of another model. As the number of accessible layers grows with depth, dense aggregation may hurt generalisation. SALC therefore learns to adaptively select a sparse subset of informative layers. We further introduce a candidate dropout regularisation that strengthens sparsity and encourages SALC to explore diverse layers, leading to more robust selection. Across four foundation model combinations and three DGSS evaluation settings, the proposed design demonstrates stronger generalisation than conventional depth-aligned fusion. The code is available at https://github.com/RuoyuGuo/SALC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "9128526d57995bc9",
+  "title": "Whispers from the Neighbors: Rethinking Caption Consensus as Inference-Time Evidence for Vision-Language Retrieval",
+  "link": "https://arxiv.org/abs/2610.33798",
+  "description": "arXiv:2610.33798v2 Announce Type: replace \nAbstract: An image is rarely described only once. Retrieval benchmarks and many collections attach several captions to each picture, yet dual encoders still judge every image-caption pair in isolation. We ask what these neighboring captions contribute when a frozen encoder consults them at inference time. Fusing image similarity with similarity to an image's own captions improves text-to-image R@1 by 3.4 to 16.8 points across nine frozen encoders when the captions come from the same annotators as the queries. The gain falls to 1.9 to 7.2 points when an off-the-shelf captioner writes them, and to at most one point when they come from a different annotation source; a paraphrase-trained text encoder strengthens the text side further. A natural refinement, scoring the part of the image that the captions leave unexplained, appears to add much more under a leave-one-out evaluation. We show that this advantage arises because the correct candidate's supports are built differently from those of the negative candidates, with set size and query removal each contributing about half, and that under a fixed support index the residual reduces to a reweighting of what the captions already provide. On compositional benchmarks, the captions help by matching candidates to human descriptions of the image, without improving image-text grounding. The code is available at: https://github.com/nhatkhangcs/clip_consensus",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}
