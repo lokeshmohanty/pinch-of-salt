@@ -1,0 +1,14 @@
+{
+  "id": "719317328366b7e3",
+  "title": "TypedInk: Knowing When Not To Draw",
+  "link": "https://arxiv.org/abs/2611.13027",
+  "description": "arXiv:2611.13027v1 Announce Type: cross \nAbstract: Can a scientific figure generator know when it does not have enough evidence to draw? Complete-source illustrators map a finished methodology section to a schematic, or a table to plotting code, and are never asked this question because their input is assumed complete. The research record is rarely that complete: an outline, a draft paragraph, a table, or a one-sentence intent, in any combination, and painting measured numbers with an image model when the table is missing is a hallucinated result. TypedInk infers a figure type from {diagram, plot, plate} from a possibly incomplete source and dispatches to the renderer that can honor that type's evidence contract, refusing dispatch when the contract cannot be met. On the six gold plots in TypedFigBench (5 views, n=30), TypedInk's code path inks every gold table token when a table is observed (12/12), refuses the 12 hidden-table views instead of inventing numbers, and marks 6 intent-only views illustrative, with no execution failures. An always-draw coder with no such gate inks 30/30 charts, including all 18 with no table, and recovers zero gold numbers on any of them; two vision-language raters (not humans; human replication is future work) still judge those always-draw charts submittable 17/36 times, against TypedInk's refusal 0/36 times. A diagnostic field ablation of the type router (16 illustrations, 5 views each, n=80) locates where this failure would originate if unchecked: an outline alone yields type accuracy 0.31 and sends every gold plot into an integrity violation, and a chat-model planner narrows but does not close the gap (overall accuracy 0.85, still integrity-failing on 25% of outlines). Diagram-label recall is 0.47 on the full record and 0.19 on an outline. Gold plates are typed at dispatch (oracle integrity-fail 0.00) and rendered as stills.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.HC",
+    "cs.CV"
+  ]
+}

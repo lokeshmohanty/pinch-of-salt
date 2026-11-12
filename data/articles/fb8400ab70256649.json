@@ -1,0 +1,13 @@
+{
+  "id": "fb8400ab70256649",
+  "title": "GroundCascade: Selective Second Opinions for GUI Grounding",
+  "link": "https://arxiv.org/abs/2611.13177",
+  "description": "arXiv:2611.13177v1 Announce Type: new \nAbstract: Graphical user interface (GUI) grounding maps a screenshot and a natural-language instruction to the screen location where an agent should act. Zoomed views can reveal small targets but may lose the context needed to identify them. We introduce GroundCascade, a training-free controller that uses agreement between a grounder's full-screen and zoomed predictions to decide when to consult a complementary model. It selects between zoomed predictions while preserving corroborated full-screen locations. An optional Finalizer predicts from an unmarked joint crop when disagreement remains (Full); omitting it yields the two-stage Selective variant. GroundCascade reaches 85.33% on ScreenSpot-Pro with Indeed-UI-32B/8B/32B and 88.43% on the visible-target OSWorld-G-Refined subset with Qwen3.6-27B/3.8-27B/3.8-27B, gains of 2.66 and 2.35 percentage points over the stronger standalone two-pass grounder. On UI-Vision, GroundCascade reaches 72.20% category-balanced accuracy, with Selective slightly higher at 72.28%. Across these three evaluations, GroundCascade in Full mode uses 2.42-2.73 calls per request, 31-39% fewer than unconditionally acquiring both models' two-pass predictions. At matched second-model call budgets, selective acquisition gains 1.52-2.56 points over standalone Two-pass, compared with 0.22-0.69 points from stratified random acquisition. GroundCascade leads the official ScreenSpot-Pro leaderboard and exceeds reported GUI-specialist comparisons on OSWorld-G-Refined and UI-Vision, subject to differences in external evaluation protocols.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "992d7444ce84a88c",
+  "title": "Word-Level Alignment of OCR and Ground Truth under Zoning and Reading-Order Errors",
+  "link": "https://arxiv.org/abs/2611.13752",
+  "description": "arXiv:2611.13752v1 Announce Type: cross \nAbstract: OCR post-processing needs OCR text aligned word by word with its ground truth. Data sets rarely provide that mapping, and a monotone aligner can lose its place when zoning errors permute the reading order. We revisit this problem, the Zoning Problem of our 2019 paper, with a protocol that tests correctness under such permutations. We apply OCR-side reading-order permutations with construction-time word-level gold and score correct-match F1, cascade length and recovery. We compare the 2019 location-aware aligner, a re-anchoring extension of it, a RETAS-style baseline (RETAS-lite), a multi-region aligner that combines unique-word and unique n-gram anchors with chunk-to-window assignment, genalog's RETAS and the original Java RETAS. Experiments use synthetic character noise with block moves, paragraph swaps and column interleaving, historical newspaper reading-order permutations, geometry-derived gold for Tesseract OCR, and a small word-box set. Synthetic tests show where local tracking fails after large displacements and where unique-anchor methods collapse when unique anchors are scarce. On our synthetic boilerplate page the 2019 method had the highest F1 among those tested. Historical newspaper and geometry-derived evaluations carry the limitations of approximate gold and the article-order convention. The first multi-region version has a quadratic scaling cost. Local tracking remains fragile under large reading-order changes; the tested anchor-based methods handle many of those cases but fail when unique anchors are scarce. Approximate gold, the article-order convention, missing residual annotation, and the lack of modern multi-column word-level ground truth remain limitations.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "955f3857f48c386e",
+  "title": "Image Quality and the Reliability of Fabric-Density Measurement: Counting Threads from Smartphone Photos Through a Pick Glass",
+  "link": "https://arxiv.org/abs/2611.13200",
+  "description": "arXiv:2611.13200v1 Announce Type: new \nAbstract: Thread density, the threads per inch along and across a woven fabric, is a basic specification that buyers check whenever fabric is sold. Without laboratory instruments, inspectors count it slowly, by eye, through a pick glass, a folding 10$\\times$ magnifier with a one-inch window. A smartphone photo through that glass could make the check faster and leave a record. We judge such a photo by what it is used for, as in task-based image quality: it is good if the thread count from it is within $\\pm$5% of the true count, a common tolerance in fabric specifications. We introduce PickGlass-TPI: 76 factory scenes of 44 fabric patches, each counted in an open annotation tool by a textile-trained annotator, whose counts are the reference. On it we benchmark frontier and open vision-language models, CNNs, counting specialists and a training-free spectral counter (PG-Lattice). No method agrees with the reference within the tolerance. The best methods are off by about a quarter: a small open model that we tuned only on synthetic images (Molmo2-4B, 25%) is level with the best frontier model, GPT-6.1-sol (27% when asked directly, 25% given four magnified close-ups of the window). Both err less than a non-expert annotator (37%), but only the tuned model also beats, on both error measures, a baseline that guesses each scene's density as the average of the others. PG-Lattice most often repeats its count within 5% across two photos of the same patch, but its misses, like GPT-6.1-sol's errors, are often a factor of two. Even the reference repeats a count across such re-shoots only to a median 9%, so one photo cannot yet be shown to meet $\\pm$5%; the image quality that matters is reliability across re-shoots. Generic no-reference quality scores chosen before labeling do not rank PG-Lattice's error, and generative enhancement raises perceptual scores but does not reliably improve the count.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5bae7dd4df839037",
+  "title": "From Depth to Safe Depth: Uncertainty-Aware Monocular Perception for Mobile Robot Navigation",
+  "link": "https://arxiv.org/abs/2611.13769",
+  "description": "arXiv:2611.13769v1 Announce Type: cross \nAbstract: Monocular depth foundation models make it tempting to replace depth sensors on mobile robots with a single RGB camera. We show that, used off the shelf, this is unsafe: in a simulated indoor navigation benchmark, a standard Nav2 stack driven by Depth Anything V2 (metric) collides in 63\\% of 120 episodes, because the model systematically over-estimates the distance to nearby obstacles. We propose a lightweight plug-in module that turns predicted depth into \\emph{safe depth}. A 0.58\\,M-parameter head on top of the \\emph{frozen} depth model predicts, per pixel, a log-depth correction $\\mu$ and an uncertainty $\\sigma$, trained with a $\\beta$-weighted Gaussian negative log-likelihood. The navigation stack consumes the one-sided bound $\\hat d_{\\text{safe}}=d\\,e^{\\mu-k\\sigma}$, where $k$ is set by conformal calibration on a held-out world, and uncertainty also decides which pixels may be treated as floor. The correction halves the depth error (AbsRel $0.262\\rightarrow0.134$) and reduces near-range over-estimation from 59.8\\% to 12.0\\%. In navigation, safe depth raises the success rate from 37\\% to 70\\% and lowers collisions from 63\\% to 3\\%, close to the 2\\% of ground-truth depth. A constant safety margin calibrated to the same pixel coverage reaches only 30\\% success because it freezes the robot; uncertainty-aware safety wins 52 of 56 discordant paired episodes against it. Gains hold on glass, texture-less walls and dark regions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

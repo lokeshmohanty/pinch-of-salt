@@ -1,0 +1,13 @@
+{
+  "id": "f24a13974ae150e1",
+  "title": "SegDis: Foreground Segmentation Followed by Type Discrimination for Salient and Camouflaged Object Detection",
+  "link": "https://arxiv.org/abs/2611.11378",
+  "description": "arXiv:2611.11378v2 Announce Type: replace \nAbstract: Salient and camouflaged object detection (SOD and COD) both recover foreground support, yet most joint methods output only a binary mask and therefore cannot distinguish the type. USC12K distinguishes the two types, but its baseline USCNet still binds foreground existence to the type within a single normalization, so the failure source cannot be attributed. Our cross-task study shows that foreground localization transfers between SOD and COD, whereas type discrimination does not: a COD-only model recovers foreground on SOD images but its type judgement follows the training distribution rather than the foreground-background relation, so the two decisions require separate mechanisms. SegDis factorizes the output into an explicit foreground probability and a conditional type probability given foreground: FLR provides high-quality task-agnostic support, and RTA refines the SOD/COD assignment from the foreground-background relation without a task identifier. Because support is explicit, each ground-truth foreground pixel is classified as correct-type, type-swapped, or missed, so foreground-recovery and type-assignment errors are diagnosed separately. With PVT-v2-B2, SegDis attains 68.98% FG-mIoU and 78.35% mIoU on USC12K at about one-eighth of USCNet's parameters; CSCS is 5.75.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "2c1ce753568540ab",
+  "title": "Evaluation protocols for historical script classification: the cost of manuscript-level leakage and the role of soft labels",
+  "link": "https://arxiv.org/abs/2611.12969",
+  "description": "arXiv:2611.12969v1 Announce Type: new \nAbstract: A paleographer applies a script type classifier to unseen manuscripts. We measure how much testing on other pages of training manuscripts inflates accuracy. On VML-HP-ext (715 pages, 171 Hebrew manuscripts, 14 script classes) we compare page-level and manuscript-level splits. Page-level accuracy drops from 97% to 54% (59% at manuscript level), and is 39% on the official blind test set. The gap of 40 to 47 percentage points (pp) at patch, page and manuscript level is statistically significant and reproduces with ResNet18; on binarized patches (ink and background only) it is 34 to 42 pp, also significant. On unseen manuscripts the model is overconfident: mean confidence 70% against 54% correct pages; patch-level expected calibration error (ECE, mean gap between confidence and accuracy) rises from 0.065 to 0.444. Binarization leaves patch-level overconfidence but cuts it markedly at page level. Confidence still helps triage: in the more confident half of pages 67% are correct, 41% in the rest. Training on expert soft labels showed no evidence of an accuracy difference, though a small page-level loss cannot be ruled out. The predicted distributions are closer to the expert's assessment. ECE is lower at patch level (0.21 to 0.31) and in most runs at page level, but not significantly at manuscript level. Label smoothing (blurring the label, no expert input) also lowers ECE but comes no closer to the expert. Temperature scaling (post-training confidence correction) helps significantly only at patch level. On 97 pages of 16 manuscripts with mixed expert assessment, soft labels cut divergence from the expert by 22 to 30% (significant in four of five runs); the point estimate of accuracy is 16.5 to 23.7 pp below hard labels, but with 16 manuscripts the loss can neither be confirmed nor ruled out. We propose recommendations for the evaluation protocol; code will be released with the paper",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
