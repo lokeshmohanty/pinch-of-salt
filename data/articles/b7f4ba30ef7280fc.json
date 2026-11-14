@@ -1,0 +1,14 @@
+{
+  "id": "b7f4ba30ef7280fc",
+  "title": "Adversarial Decoys: Misdirecting Attention-Based Defenses in ViT",
+  "link": "https://arxiv.org/abs/2607.07922",
+  "description": "arXiv:2607.07922v2 Announce Type: replace-cross \nAbstract: Vision Transformers (ViTs) remain vulnerable to localized adversarial attacks, e.g., adversarial patches, while recent test-time defenses mitigate them by suppressing image tokens with abnormally high attention scores. These defenses exploit a strong coupling between attention and adversarial effectiveness: adversarial tokens often need to attract substantial attention to influence the prediction. We introduce adversarial decoys, image patches optimized to redirect attention, and therefore related defenses, towards selected target tokens. Rather than jointly optimizing misclassifications and defense evasion, our approach decouples the two objectives: the original adversarial region induces the incorrect prediction, while a separate decoy manipulates the attention ranking used by the defense. A layer-wise objective increases target-token attention and promotes these tokens above competing non-target ones. Since the decoy optimization is not tied to a specific attack formulation, the method can be easily integrated with any existing adversarial patch attack. Experiments on ImageNet across multiple ViT architectures and adversarial patch attacks show that decoys consistently redirect high attention scores away from the true adversarial region while preserving much of the attack effectiveness against attention-ranking defenses. These results reveal a fundamental limitation of using attention alone as an indicator of adversarial relevance.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

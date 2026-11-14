@@ -1,0 +1,14 @@
+{
+  "id": "b2744cb3757349b9",
+  "title": "Learning Where to Simulate: Generative Active Sampling for Online PDE Surrogate Training",
+  "link": "https://arxiv.org/abs/2606.09949",
+  "description": "arXiv:2606.09949v2 Announce Type: replace-cross \nAbstract: Paper published at NeurIPS 2026. For data-driven PDE surrogates, generalizing across a wide range of initial conditions and physical coefficients requires a training set of numerical simulations that consistently covers the resulting dynamics. Yet uniform sampling of these configuration parameters can leave challenging regimes insufficiently covered, leading to high prediction errors and large error variance in the trained surrogate. To address this sampling imbalance, we introduce the Online Generative Active Sampling (OGAS), which continuously adapts configuration sampling during surrogate training, as an alternative to classical round-based active learning. As the surrogate learns from a stream of simulation data generated online, OGAS trains a fast diffusion model in parallel to sample configuration parameters conditioned on a training difficulty signal, such as loss or uncertainty. This conditional sampler enables OGAS to parametrize subsequent simulations to generate challenging training data by prioritizing configurations with high difficulty values. We evaluate OGAS on 2D PDEs with distinct challenging dynamics-Kuramoto--Sivashinsky, Navier--Stokes, and Gray--Scott-using multiple surrogate architectures and up to 308 configuration parameters. Across the tested PDEs and architectures, OGAS consistently reduces the 99th-percentile prediction error and overall error dispersion compared with uniform sampling, while wall-clock overhead is negligible. Code and experiments are available at https://github.com/melissa-sa/ogas.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

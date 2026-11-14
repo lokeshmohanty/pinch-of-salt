@@ -1,0 +1,16 @@
+{
+  "id": "20adfb0ad1251371",
+  "title": "Matrix-Based Ant Colony Search with Batched Decoding for Hierarchical Replenishment Routing: A Stylized Case Study Based on Korean City Data",
+  "link": "https://arxiv.org/abs/2611.15338",
+  "description": "arXiv:2611.15338v1 Announce Type: cross \nAbstract: We study a stylized single-vehicle replenishment-routing problem in which the cities of a national logistics network are both demand points and supply points: a vehicle of limited capacity delivers to every city once, and when its load is insufficient for the next city it must detour to a city already served that can still supply goods. A 100-node benchmark is built from Korean population and geographic data, with the cities divided into 10 levels; the per-visit supply coefficient and the allowed number of stops decrease geometrically with the level. Building on matrix-based ant colony optimization, we keep the states of the whole colony in arrays, couple route construction with a fixed greedy replenishment-decoding policy, and evaluate the candidate moves of a local search in batches. With frozen parameters and 30 runs on seeds never used for tuning, the matrix-based ant colony search with the batch local search (MACO) reaches a mean total distance of 3081.7 km; a genetic algorithm equipped with the same local search at the same frequency reaches 3074.9 km (no significant difference), and a MAX-MIN ant system with the same local search 3142.2 km. Ablation identifies the batch local search as the main contributor to solution quality; a load-aware transition factor gives no significant gain. Within the parameter ranges tested, raising the supply coefficients of the cities below the top level shortens the route more than relaxing the stop limits, which are not binding here.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NE",
+    "cs.AI",
+    "cs.CE",
+    "math.OC"
+  ]
+}

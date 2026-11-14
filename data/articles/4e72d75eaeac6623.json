@@ -1,0 +1,15 @@
+{
+  "id": "4e72d75eaeac6623",
+  "title": "What Roles Do System Prompts Really Assign? Validating and Steering Occupational Role Vectors in LLMs",
+  "link": "https://arxiv.org/abs/2611.15989",
+  "description": "arXiv:2611.15989v1 Announce Type: cross \nAbstract: Applications built on large language models assign the model a role through its system prompt, intending to shape how it responds for their use case. We introduce a validation framework for extracting and injecting occupational role vectors, activation-level directions that capture how someone in a given occupational role would distinctively respond to a task or question. We validate these vectors through two complementary lenses, on Qwen2.5-7B-Instruct and Llama-3.1-8B-Instruct. The interpretability lens asks whether each vector is a stable, separable, domain-consistent representation of its role: extracted vectors are highly reproducible across repeated runs and sampling temperatures, remain separable even for very similar roles, and agree more with themselves across in-domain and out-of-domain questions than with other roles' signal. The control lens asks whether injecting a role vector during generation makes the model express the role, and sustain it over a conversation, as well as a role prompt does. On Qwen, injecting the vector alone makes the model express the intended role substantially more often than unsteered, but at best matches a role prompt; on both models, adding the vector to the prompt strengthens the role in single answers but did not slow the role's decline over 30 turns. Together, the two lenses show why both are needed: out of domain the role is expressed only subtly, yet the activations still encode it; and a vector that is stable and separable can still barely steer the model's behavior.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

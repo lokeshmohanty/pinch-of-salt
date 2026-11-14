@@ -1,0 +1,16 @@
+{
+  "id": "734b2e1350b67d90",
+  "title": "DAISY: Fault-Guided Assertion Inference for Dafny",
+  "link": "https://arxiv.org/abs/2511.00125",
+  "description": "arXiv:2511.00125v2 Announce Type: replace-cross \nAbstract: Formal verification with Dafny provides strong correctness guarantees, but verification failures often require users to determine where helper assertions are needed and to manually write the assertions necessary for verification to succeed. This proof-engineering burden is difficult, time-consuming, and a barrier to the adoption of verification-aware languages.\n  We present DAISY (Dafny Assertion Inference SYstem), a tool for fault-guided assertion inference in Dafny.\n  Given a Dafny program and a target method, DAISY localizes likely assertion sites using verifier diagnostics, LLM-based localization, or their combination. It then annotates the program with assertion placeholders, retrieves relevant in-context examples, generates candidate assertions with an LLM, and validates candidates by running the Dafny verifier.\n  To evaluate DAISY, we extend DafnyBench with verification-failing variants created by removing helper assertions from verified programs. The resulting benchmark distinguishes between programs with one missing assertion, two missing assertions, and all assertions removed, allowing us to evaluate DAISY on increasingly difficult proof failures. On this benchmark, DAISY verifies 86\\% of programs with a single missing assertion and 36\\% of programs with two missing assertions. These results show that fault-guided LLM assertion inference can repair many Dafny verification failures. They also show that successful repairs often differ from the original assertions, reducing proof-engineering effort without reconstructing the original proof.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.LO",
+    "cs.PL"
+  ]
+}

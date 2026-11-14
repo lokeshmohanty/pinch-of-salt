@@ -1,0 +1,14 @@
+{
+  "id": "fa1988976d04f2f5",
+  "title": "Submodular Benchmark Selection",
+  "link": "https://arxiv.org/abs/2605.02209",
+  "description": "arXiv:2605.02209v2 Announce Type: replace \nAbstract: Evaluating a new language model means running it on a large, growing collection of benchmarks, at considerable cost. Much of this cost is redundant: arranged as a matrix of models by benchmarks, scores are strongly correlated and concentrate in a few dimensions, so a few well-chosen benchmarks largely determine the rest. This allows us to run a new model on a few benchmarks and predict the rest with a simple Gaussian model that copes with missing scores. The key question is \\emph{which few to run}. An answer comes from sensor placement, which chooses the observations that carry the most information, measured by entropy or mutual information. We argue that the objective should instead reward a selection for how well it predicts every benchmark. This leads to two coverage objectives: explained variance, the predictions' accuracy if the estimated correlations were exact, and facility location, which credits each benchmark with its best proxy among the selected ones. On eleven score matrices built from public evaluation results, the coverage objectives predict the scores of held-out models best wherever the correlations can be estimated. The information objectives fall behind because they favor benchmarks that the selection predicts poorly (entropy) or that the others predict well (mutual information), not benchmarks that predict the others. By contrast, facility location predicts practically as well as explained variance, holds up on the addition of newer models and under real costs, has classical guarantees (even under a budget), and gives readable selections.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}
