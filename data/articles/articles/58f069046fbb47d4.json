@@ -1,0 +1,13 @@
+{
+  "id": "58f069046fbb47d4",
+  "title": "STATIC: Surface-normal-guided Two-branch Alignment and Temporal Integration for Consistent Video Depth Estimation",
+  "link": "https://arxiv.org/abs/2412.01090",
+  "description": "arXiv:2412.01090v3 Announce Type: replace \nAbstract: Video depth estimation is essential for applications such as autonomous driving, AR/VR, and robotics. Recent transformer-based single-image monocular depth estimation models perform well on a single image but struggle with depth consistency across video frames. Traditional methods aim to improve temporal consistency using multi-frame temporal modules or explicit priors like optical flow and camera parameters. However, these approaches face issues such as high memory use, reduced performance with dynamic or irregular motion, and a heavy reliance on the accuracy of external motion estimators. We propose STATIC, a novel model that independently learns temporal consistency in geometrically stable and unstable regions using only two adjacent frames. By leveraging intrinsic geometric cues rather than external motion priors, STATIC generates a depth-derived geometry-aware difference mask from surface normals to identify regions with inter-frame geometric variation by measuring directional variance. For geometrically stable regions, the Masked Stable (MS) module enhances temporal consistency by focusing on structurally stable regions. For geometrically unstable regions, the Surface Normal Similarity (SNS) module models inter-frame correspondences and ensures temporal consistency by measuring feature similarities between frames. A final refinement integrates the independently learned stable and unstable features, enabling STATIC to improve consistent depth prediction across consecutive frames. Experiments on KITTI, NYUv2, and Sintel demonstrate strong depth accuracy and temporal consistency, as well as stable performance across the tested frame-rate and camera-motion conditions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

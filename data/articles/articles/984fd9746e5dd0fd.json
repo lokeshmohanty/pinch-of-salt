@@ -1,0 +1,14 @@
+{
+  "id": "984fd9746e5dd0fd",
+  "title": "Hard Constraints, Smooth Gradients: Learning Feasible Inventory Policies via Differentiable Projection",
+  "link": "https://arxiv.org/abs/2608.02343",
+  "description": "arXiv:2608.02343v2 Announce Type: replace \nAbstract: Many operational problems are constrained sequential decision processes with combinatorial action spaces and interdependent constraints. Mixed-integer linear programs (MILPs) handle such constraints flexibly but scale poorly in stochastic environments. Deep reinforcement learning (DRL) promises scalable decision rules, but existing methods either penalize constraints rather than enforce them, or rely on feasibility mechanisms that break down once constraints interact. We bridge this gap by embedding a differentiable optimization module inside the policy: a neural network proposes continuous action targets, a quadratic program projects them onto the relaxed feasible set, and a dual-informed integer mapping restores integrality while preserving feasibility. Given a differentiable simulator, the policy trains end-to-end from sampled trajectories using pathwise gradients, while handling hard constraints with similar flexibility to MILPs. We show that our approach has bounded error relative to an exact integer projection and ensures the entire feasible action space is reachable. We apply the method to multi-echelon production-inventory planning under shared resource and material constraints. Our policy attains an average optimality gap of 1% on 3-item instances and consistently outperforms a rolling-horizon multi-stage stochastic program by at least 5.6% in 10-item networks. Compared to state-of-the-art echelon base-stock policies, savings reach 15.3% on 40-item instances. On an industry-scale case study with nonstationary demand from ASML, we reduce average cost by up to 1.8% relative to the best-known benchmark policy. The savings are largest where planning is hardest: in tightly capacitated systems with high demand variability. More broadly, we show that DRL can improve upon state-of-the-art baselines in sequential decision problems with hard constraints, which are widespread in practice.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

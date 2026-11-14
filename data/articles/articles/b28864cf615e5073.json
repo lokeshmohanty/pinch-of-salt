@@ -1,0 +1,14 @@
+{
+  "id": "b28864cf615e5073",
+  "title": "Beyond the Monolithic Scheduler: Lightweight Adaptive Policy Switcher for Process Scheduling Optimization",
+  "link": "https://arxiv.org/abs/2511.11628",
+  "description": "arXiv:2511.11628v2 Announce Type: replace-cross \nAbstract: Modern operating system process schedulers typically enforce a static, ``one-policy-fits-all'' design, which inevitably compromises performance under the highly dynamic and mixed workloads of contemporary edge systems. Transitioning to dynamic adaptation faces two fundamental challenges: scenario specific static policies lack robust runtime adaptability, whereas computationally intensive AI-assisted policies introduce unacceptable execution overhead for resource-constrained devices. To structurally resolve this dilemma, we propose the Lightweight Adaptive Policy Switcher (LAPS), a framework that dynamically switches between predefined expert policies, thus decoupling high frequency context switching from low-frequency policy transitions and amortizing transitional overheads. To eliminate prohibitive online computations, LAPS pre-resolves all heavy dynamic tradeoffs via an offline preparation phase, constructing a strictly overhead-aware Policy Mapping Table. During runtime, it executes an agentic Observe-Infer-Switch cycle that limits machine learning inference strictly to workload classification. Consequently, LAPS executes efficient dynamic adaptation simply by mapping the inferred workload state to optimal expert policies via low-cost table lookups. Experiments show that LAPS achieves an average performance gain of 8.91% and reduces response latency by up to 91.7% in latency-sensitive tasks over the default Linux scheduler EEVDF. Our results demonstrate that LAPS outperforms the baseline in a wide range of test cases, offering a practical path toward more responsive and intelligent operating systems. Our code is publicly available at https://github.com/lvmiao233/LAPS.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI"
+  ]
+}

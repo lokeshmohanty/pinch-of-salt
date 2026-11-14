@@ -1,0 +1,13 @@
+{
+  "id": "bf5703089f50f5cb",
+  "title": "Selective Prediction and Uncertainty-Aware Referral for Pap Smear Classification",
+  "link": "https://arxiv.org/abs/2609.17545",
+  "description": "arXiv:2609.17545v1 Announce Type: new \nAbstract: Deep learning models for cervical cytology are almost always evaluated as if every prediction must be acted upon, yet a screening system deployed alongside a cytopathologist need not classify every slide: it can defer the cases it is least certain about. Evaluating such a system requires asking not only how often it is correct, but whether its confidence ranks its errors to the bottom. This paper studies selective prediction and uncertainty-aware referral on the Herlev Pap smear dataset under a binary Normal-versus-Abnormal formulation. Two lightweight transformer backbones (Swin-Tiny, TinyViT-5M) are fine-tuned on Herlev from ImageNet-pretrained weights with weighted random sampling, calibrated by post-hoc temperature scaling fit on a held-out calibration subset, and compared against a soft-voting ensemble of both models. Discrimination is reported alongside expected calibration error (ECE) and, as the primary endpoint, the area under the risk-coverage curve (AURC). No statistically significant difference was detected between the two configurations in accuracy or macro-F1, yet the ensemble halves AURC (0.0022 vs. 0.0045, a 51.8% reduction, lower in all five folds) and extends the coverage at which zero errors are made from 18.3% to 72.8% of the pooled test predictions. The same ensemble is nonetheless worse calibrated in absolute terms (ECE 0.0339 vs. 0.0247) and produces more false negatives (14 vs. 10). These results separate two properties that are frequently conflated: the ability to rank predictions by trustworthiness, and the accuracy of the confidence values themselves. Ensembling improves the former while degrading the latter, and the former directly governs the observed risk-coverage tradeoff, whereas the latter governs the interpretation of the reported confidence values.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

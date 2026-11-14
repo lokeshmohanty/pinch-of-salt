@@ -1,0 +1,13 @@
+{
+  "id": "eeaad75cf5781539",
+  "title": "TriNetra: Thermal-Reliability-Guided RGB-Thermal Fusion and Tracking for Surveillance",
+  "link": "https://arxiv.org/abs/2611.09725",
+  "description": "arXiv:2611.09725v1 Announce Type: new \nAbstract: Visible cameras fail at night and thermal sensors fail under saturation, blur or loss of contrast, yet most RGB-thermal (RGB-T) detectors mix the two streams with fixed weights and cannot tell when one modality has become unreliable. TriNetra is a reliability-aware surveillance framework built around this problem. The proposed solution computes a frame-level Thermal Reliability Coefficient (TRC) from five label-free image cues, uses it to gate the thermal features of a dual-branch YOLOv8m detector whose visible branch, neck and head are frozen and COCO-pretrained, and passes the same score to a ByteTrack-based tracker that feeds a rule-based behaviour analyser. On the M3FD benchmark (2,940/630/630 split) the detector reaches 87.6% precision, 79.4% recall, 70.0% mAP@50 and 47.8% mAP@50:95 on the test split, with 17.0 M of its 42.9 M parameters trained. TRC stays near 0.78 on clean frames (standard deviation 0.012), decreases with the severity of thermal saturation and blur, reaching 0.53 and 0.69 at full severity, and is insensitive to RGB-thermal misalignment. With identical weights, the adaptive gate matches a fixed gate on clean data (70.0% versus 69.8% mAP@50) but keeps 43.6% mAP@50 when the thermal stream is corrupted, against 38.4%, 29.2% and 25.0% for a fixed gate, full thermal admission and a closed gate; the 5.1-point gain over the fixed gate has a 95% bootstrap confidence interval of +3.6 to +6.5 points. In tracking, the TRC-gated association performs on par with ByteTrack on a synthetic benchmark with exact ground truth and on 14 M3FD clips, and is slightly less stable under thermal saturation, so its measured benefit is confined to the detector. The limitations of the current evaluation are reported together with the results.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

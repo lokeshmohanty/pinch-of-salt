@@ -1,0 +1,15 @@
+{
+  "id": "c922cde0f8751bc8",
+  "title": "Scene2Sound: Auditory-Grounded Soundscape Generation for 3D Gaussian Worlds",
+  "link": "https://arxiv.org/abs/2608.00463",
+  "description": "arXiv:2608.00463v1 Announce Type: new \nAbstract: 3D Gaussian Splatting (3DGS) turns captured or generated imagery into photorealistic 3D world simulations that users can freely explore, yet these worlds remain silent. Because existing audio generation methods condition on a single image or viewpoint, their sound is tied to that observation and cannot stay consistent while a listener moves. We introduce the task of generating a spatially consistent soundscape for a given 3DGS world through auditory grounding, identifying which objects in the world should emit sound and anchoring each to a persistent 3D position, and present Scene2Sound, a training-free framework built on this grounding. From the input world alone, our pipeline selects viewpoints that jointly cover the scene, identifies sound-emitting objects with a vision-language model, and associates the multi-view detections into 3D instances through Gaussian set matching, which measures the overlap between the Gaussian sets that render each detection. Each source then receives generated audio that a standard object-based audio engine spatializes in real time at arbitrary listener poses. We further propose two spatial-consistency metrics, one testing whether rendered audio responds consistently to listener motion and one testing whether the claimed sources are supported by views held out from their placement. On a curated set of generated 3DGS worlds and on 3DGS scenes generated from real-world 360-degree captures, Scene2Sound preserves the audio quality of strong per-viewpoint baselines while remaining spatially consistent where per-viewpoint and single-panorama pipelines do not, and a user study confirms the perceptual benefit. Project page: https://masaki-lmd.github.io/scene2sound/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM",
+    "cs.SD"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "9acc8360f21e64ca",
+  "title": "Generalizing Geometry-Guided Mamba as a Plug-and-Play Context Module for CNN-based Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2606.08866",
+  "description": "arXiv:2606.08866v2 Announce Type: replace \nAbstract: CNN-based semantic segmentation networks usually rely on context heads such as ASPP, PPM, or attention modules to enlarge the receptive field. These heads are effective but may introduce heavy computation, memory cost, or boundary leakage. This paper revisits Directional Geometric Mamba (G-Mamba) from DGM-Net and studies it as a plug-and-play context aggregation module rather than a completely new segmentation architecture. The key idea is to inject geometric guidance into the selective scan process, allowing long-range feature propagation to be modulated by boundary and centripetal-flow cues. We replace the original context heads of six representative CNN segmentation models, including DeepLabV3+, DANet, CCNet, PSPNet, PSANet, and OCRNet, while keeping the ResNet-101 backbone unchanged. On CCNet, we additionally compare serial and parallel combinations of criss-cross attention and the G-Mamba block, with the parallel head performing best. Results on Cityscapes show consistent mIoU gains with only moderate extra GFLOPs at $1024\\times1024$ resolution, suggesting that geometry-guided SSM modules can serve as practical alternatives or enhancements to conventional CNN context heads.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

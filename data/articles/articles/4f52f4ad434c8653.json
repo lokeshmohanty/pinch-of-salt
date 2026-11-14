@@ -1,0 +1,13 @@
+{
+  "id": "4f52f4ad434c8653",
+  "title": "Style over Substance: A Shortcut Audit of Emotion-Description Preference Evaluation",
+  "link": "https://arxiv.org/abs/2607.18508",
+  "description": "arXiv:2607.18508v1 Announce Type: new \nAbstract: Preference over model-generated emotion descriptions is emerging as a standard evaluation metric for multimodal emotion understanding, exemplified by the MER2026 MER-Prefer track on EmoPrefer. Such benchmarks assume that predicting the preferred description requires grounded cross-modal understanding of the video. We conduct a systematic shortcut audit of EmoPrefer using content-blind probes. A simple logistic regression using only description length and generator identity, without processing the text, video, or audio, performs comparably to LoRA-finetuned 7B text and audio-visual judges (65.8 versus 66.8 WAF on EmoPrefer-V2). Generator identity is recoverable from description text with 99.5 percent accuracy, every candidate pair contrasts two distinct generators, and the human preference labels agree with a fold-exclusive per-generator win-rate prior on 66 percent of the evaluated pairs. When the human label conflicts with this prior, trained judges still follow the style prior on 63 to 80 percent of the pairs. On a length-matched subset that neutralizes verbosity bias, the tested media configurations yield no statistically significant improvement, while an ODIN-inspired diagnostic that decouples the style shortcut leaves its content head near chance. These results do not imply that human preferences are inherently stylistic or that the descriptions contain no emotional information. Instead, they show that the current scores can be reached without verifying either description against the video. We recommend source-balanced pairing, strict length control, counter-stereotypical sliced reporting, and multi-annotator consensus for future cross-generator evaluations. Code is available at https://github.com/jiabingyang01/EmoPrefer-Audit.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

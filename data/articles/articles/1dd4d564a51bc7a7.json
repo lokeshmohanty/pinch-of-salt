@@ -1,0 +1,15 @@
+{
+  "id": "1dd4d564a51bc7a7",
+  "title": "Characterize Then Distill: Mechanistic Reasoning in Large Output Spaces",
+  "link": "https://arxiv.org/abs/2606.06840",
+  "description": "arXiv:2606.06840v2 Announce Type: replace-cross \nAbstract: Reasoning-trained language models can perform, zero-shot, multi-label tasks that require selecting a small set of relevant labels from a universe of thousands to hundreds of thousands of candidates. We ask how they do it mechanistically, and whether the mechanism can be distilled. We make the question measurable by treating each decision as a token-level event scored by the model's own decision margin: the token that picks a coarse region of the label space, the tokens that pick a label within it, and the token where the output departs from a close alternative (a near-miss) named earlier in the reasoning. Attribution, exact mean-ablation, knock-in into another example's context, and a null calibration that discounts generic heads then give individual attention heads causal standing. On clinical coding of hospital discharge summaries (MIMIC-IV), with all 5,651 candidate diagnosis codes in context, a small, global, phase-structured set of heads is necessary and sufficient, by ablation and knock-in, on essentially every summary; distinct head families attend to the candidate region and back to the near-miss named earlier; and, for the mentions decided in the reasoning, the region can already be elicited several tokens before the code, from a disjoint mid-layer set that reads the input. We introduce MISTILL: unlike chain-of-thought distillation, which transfers only the teacher's reasoning text, it also supervises the student's pooled attention at exactly these decision events. Read on heads found after training, it nearly doubles the causal recovery of the contrastive decision in a cross-family student and adds a small, seed-stable gain in one that already carries most of it, with no detected task difference when both objectives train bf16 weights and a task cost with fp32 master weights.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

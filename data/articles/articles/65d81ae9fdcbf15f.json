@@ -1,0 +1,14 @@
+{
+  "id": "65d81ae9fdcbf15f",
+  "title": "Partition, Refine, and Detect: Preserving Novel Category Capacity in Open-Vocabulary Object Detection",
+  "link": "https://arxiv.org/abs/2611.12976",
+  "description": "arXiv:2611.12976v1 Announce Type: new \nAbstract: Open-vocabulary object detection (OVD) expects the model trained on base classes to recognize both base and novel classes at inference. Typical methods rely on CLIP-style vision-language embeddings, yet the learned space is often biased toward base categories, with limited effective capacity preserved for novel concepts. Such a base-dominated representation can compress novel semantics, leading to semantic collapse and mis-calibrated confidence at inference. To address this issue, we present PR-OVD, a partition-and-refine framework that explicitly reserves capacity for novel categories and strengthens category separation, while being seamlessly integrated into different detector architectures. Specifically, PR-OVD first performs coarse partitioning to build global divisions for base, novel, and an explicit background partition in both visual and textual modalities, preventing object-irrelevant embeddings from leaking into category-specific representations. It then applies category-level refinement within each partition to sharpen decision boundaries and alleviate the lack of fine-grained region-level pretraining in CLIP. To further provide reliable visual anchors for novel categories, we design a cognitively inspired Structure Prompt (SP) that encodes both egocentric attributes and allocentric context, facilitating stable partition-and-refine learning. Extensive experiments on two OVD benchmarks show that PR-OVD delivers an average 6.5\\% proportional improvement on novel categories over the state-of-the-art methods. Notably, PR-OVD also benefits other open-vocabulary tasks, including segmentation and classification, further confirming its effectiveness and generality.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

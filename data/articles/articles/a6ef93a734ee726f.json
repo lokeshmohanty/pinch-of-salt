@@ -1,0 +1,13 @@
+{
+  "id": "a6ef93a734ee726f",
+  "title": "SRPO: Setwise Relative Policy Optimization for Multi-Agent Systems",
+  "link": "https://arxiv.org/abs/2609.08452",
+  "description": "arXiv:2609.08452v2 Announce Type: replace \nAbstract: Multi-agent systems enable complex reasoning and tool use by coordinating agents that divide roles and refine candidate solutions. Existing methods typically update individual agent responses or treat a complete trajectory as one training example. However, these methods may produce misleading policy updates because they assign the same final outcome to responses or trajectory segments that may play different roles in different team decisions. This is because treating each response as an independent update may separate outputs that jointly determine the next action, while treating an entire trajectory as one update may combine decisions made after different observations. These limitations call for a policy update defined at the level of a team decision, outputs that lead to the same state transition are optimized under a shared objective. In this paper, we propose Setwise Relative Policy Optimization (SRPO) for multi-agent systems. We represent the outputs used together to produce one state transition as an active set. A singleton set covers division of labor, while a larger set covers joint co-evolution, and the set composition can change across decisions. SRPO assigns a shared advantage to each active set, clips the combined policy change, and normalizes its scale according to the set size. This ties each update to the decision that produced the next state. Experiments on mathematical reasoning and multi-turn search demonstrate the effectiveness of SRPO across both tasks. Additional ablation studies analyze the normalization choice and training behavior under changing active-set sizes.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

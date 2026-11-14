@@ -1,0 +1,13 @@
+{
+  "id": "b5f7922960a779ea",
+  "title": "GramLoop: Training-Free Gram-Gated Replay for Robust Dense Prediction",
+  "link": "https://arxiv.org/abs/2608.29113",
+  "description": "arXiv:2608.29113v2 Announce Type: replace \nAbstract: We aim to improve frozen DINOv3 dense-prediction models under distribution shift by adding inference computation inside the visual backbone, without changing model weights, task adapters, or prediction heads. The challenge is that repeated transformer-block computation must refine dense features without disrupting the pairwise patch relations that DINOv3 uses to preserve spatial structure. We introduce GramLoop, a training-free framework that replays a short transformer window and controls each replay through final-layer cosine-Gram consistency. Each proposal is propagated through the frozen suffix, measured against the standard DINOv3 trajectory, and accepted through a patchwise gate at the replay-window endpoint. Across object detection and semantic segmentation under corruptions, perturbations, and natural shifts, GramLoop improves all five shifted benchmarks over the paired DINOv3 baseline. On COCO-O, it improves mAP by +0.252 and Effective Robustness by +0.250, while preserving clean ADE20K performance. Code will be released at https://github.com/cheyan9/GramLoop.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

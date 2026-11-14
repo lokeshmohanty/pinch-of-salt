@@ -1,0 +1,13 @@
+{
+  "id": "1d2379f3a974fbb1",
+  "title": "FANO: Anchored Forward-Noise Optimization for Diffusion Inverse Problems",
+  "link": "https://arxiv.org/abs/2611.08923",
+  "description": "arXiv:2611.08923v1 Announce Type: new \nAbstract: Pre-trained diffusion models have become a widely adopted zero-shot prior for image inverse problems, among which annealed decoupling methods achieve leading reconstruction performance on nonlinear tasks. We find, however, that annealed methods that directly optimize the denoiser input $x_t$ exhibit radial drift in later layers: within-layer optimization drives the noise-component norm of $x_t$ away from its typical value, pushing the denoiser out of its high-performance regime and degrading reconstruction quality. To address this, we propose FANO (Anchored Forward-Noise Optimization). At each annealing layer, FANO fixes the previous denoiser estimate as an anchor and optimizes only the forward noise $e$, whose distribution is known, instead of $x_t$, thereby preserving the forward-diffusion structure of the denoiser input. The standard Gaussian prior on $e$ concentrates its norm near the typical value, and deviations degrade denoiser performance. We accordingly decompose $e$ in polar coordinates into a direction and a radial magnitude, and apply a soft potential to regulate the radius, keeping $x_t$ in the high-density region of the forward distribution. On multiple linear and nonlinear inverse problems, FANO matches the strongest current baselines on linear tasks and achieves consistent improvements on nonlinear tasks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

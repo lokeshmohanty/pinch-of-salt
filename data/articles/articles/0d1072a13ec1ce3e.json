@@ -1,0 +1,13 @@
+{
+  "id": "0d1072a13ec1ce3e",
+  "title": "Training-Free Spectral Transductive Refinement for Cross-Domain Few-Shot Classification",
+  "link": "https://arxiv.org/abs/2609.23758",
+  "description": "arXiv:2609.23758v1 Announce Type: new \nAbstract: Few-shot recognition with frozen visual features is especially fragile under domain shift and one-shot supervision, where a single labelled image is an unreliable estimate of its class. We ask how far this fragility can be reduced purely at test time, without retraining the encoder or augmenting the source domain. We present Spectral Transductive Refinement (STR), a training-free transductive inference rule that exploits the geometry of the complete support-query episode. Given frozen embeddings, STR builds a joint k-nearest-neighbour graph, maps the episode into a normalized-Laplacian spectral coordinate system, initializes class representatives from the labelled support, and iteratively refines them using pseudo-labelled queries. We evaluate STR under two protocols. A controlled component study with frozen ResNet-18 features shows that spectral refinement consistently improves over single-prototype spectral initialization across five shifted domains, with the largest gains in the one-shot regime where support estimates are weakest. We then benchmark STR against recent Cross-Domain Few-Shot Learning (CD-FSL) methods using the standard miniImageNet-pretrained ResNet-10 backbone over eight established target domains. Operating entirely at inference time, STR attains the highest 1-shot average among compared methods and remains competitive at 5-shot, rivalling approaches relying on heavy source-domain meta-training augmentations. Because STR is transductive, we report its setting explicitly. Diagnostics attribute its gains to iterative refinement in spectral coordinates rather than added prototype capacity, which remains inactive in our configuration.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

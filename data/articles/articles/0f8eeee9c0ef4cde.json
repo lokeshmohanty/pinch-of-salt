@@ -1,0 +1,14 @@
+{
+  "id": "0f8eeee9c0ef4cde",
+  "title": "FrameScout: Scouting Query-Relevant Frames for Long Video Understanding",
+  "link": "https://arxiv.org/abs/2610.23975",
+  "description": "arXiv:2610.23975v2 Announce Type: replace \nAbstract: Long video understanding requires VideoLLMs to answer queries about videos spanning tens of minutes to hours, but such long videos produce far more visual tokens than current VideoLLMs can process. To address this issue, keyframe selectors are proposed to select the most query-relevant frames by computing the similarity between frame and query embeddings. Existing selectors either encode frames independently without temporal context or process chunks in isolation with ranking objectives that are difficult to optimize. To alleviate those limitations, we propose FrameScout with two core designs: (i) a streaming selector architecture that leverages a sliding-window KV cache and successor aggregation to produce temporally-contextualized frame embeddings; (ii) a frame-query contrastive objective that aligns frame and query embeddings in a shared space, directly training the selector to distinguish relevant frames from irrelevant ones. Extensive experiments on three long-video benchmarks and six base VideoLLMs demonstrate that FrameScout consistently achieves state-of-the-art performance. Code is available at https://github.com/Hubert-1102/FrameScout.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

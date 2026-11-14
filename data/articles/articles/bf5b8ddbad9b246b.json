@@ -1,0 +1,13 @@
+{
+  "id": "bf5b8ddbad9b246b",
+  "title": "MaskMerge: Structure-aware Token Merging for Efficient Instance Segmentation",
+  "link": "https://arxiv.org/abs/2610.22921",
+  "description": "arXiv:2610.22921v1 Announce Type: new \nAbstract: Token merging improves the efficiency of Vision Transformers by combining redundant tokens, but existing methods largely rely on feature similarity to determine which tokens to merge. This criterion is effective for semantic segmentation, yet can fail in instance segmentation, where adjacent objects of the same class often have highly similar features. We identify this failure mode as cross-instance token fusion. We introduce MaskMerge, an instance-aware token merging method that uses coarse intermediate mask predictions to constrain feature-based merging and preserve instance boundaries. We evaluate MaskMerge on two diverse instance segmentation domains characterized by high inter-instance visual similarity: PanNuke and iSAID. Against the SOTA token merging method ALGM, MaskMerge improves mAP from 30.1 to 32.1 on PanNuke while reducing computation from 229 to 153 GFLOPs and running 1.18x faster, and from 33.1 to 36.2 on iSAID while reducing computation from 198 to 182 GFLOPs and running 1.23x faster. Additionally, we also test it on Cityscapes and match ALGM's performance while using fewer FLOPs. The gains also transfer to an MAE pretrained backbone, demonstrating that instance-aware merging enables more aggressive compression when appearance similarity alone cannot reliably preserve object identity.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

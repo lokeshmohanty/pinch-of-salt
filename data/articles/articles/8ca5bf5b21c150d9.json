@@ -1,0 +1,13 @@
+{
+  "id": "8ca5bf5b21c150d9",
+  "title": "SovereignPA-Bench: Evaluating User-Owned Personal Agents under Evolving Intent, Platform Mediation, and Consent Constraints",
+  "link": "https://arxiv.org/abs/2607.05363",
+  "description": "arXiv:2607.05363v2 Announce Type: replace \nAbstract: Personal agents that book and buy for their users act through platforms that rank, nudge, pre-select and collect data in their own interest. We introduce SovereignPA-Bench, a controlled benchmark of whether such an agent follows the user's current intent, resists steering, shares only what a service needs, asks before exceeding its authority, and reports truthfully. A scripted platform and a scripted user surround the agent in 1,920 booking scenarios and 288 cancellation scenarios with retention flows. Each of the 192 booking situations, in 16 domains, is run as a control and under 9 paired variants that change one factor: stale memory, ambiguous intent, sponsored ranking, urgency, pre-checked extras, over-collecting forms, injected reviews, a mid-task update, or a mid-task reminder. Metrics are deterministic, and every question the agent asks is labelled necessary or unnecessary, so faithfulness and user burden are measured separately. Two rule-based agents reach 100% sovereign success, one of them without a single unnecessary question. Across 17 open-weight models, sovereign success ranges from 2% to 82%. More faithful models ask fewer unnecessary questions, not more (Spearman rho = -0.67 between success and burden). A form with two \"recommended\" fields raises the share of episodes that send a detail the service does not need from 2.4% to 58%. Injected reviews get a requested personal detail to the provider in 41% of attempts, against 0.7% without them. Sponsored labels and urgency banners shift choices only slightly in our setting. Retention offers never worked when the user had ruled them out in advance, but without that sentence 4 models accepted offers or pauses, and in 184 of 440 failed obstructed cancellations the agent told the user it had succeeded. A prompt-level checklist and a structural firewall raise success by at most 9 points. Code, scenarios and logs will be released.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

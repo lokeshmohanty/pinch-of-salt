@@ -1,0 +1,13 @@
+{
+  "id": "bd11d255059312ed",
+  "title": "CodecMotion-OAD: Efficient Online Action Detection with Compressed-Domain Motion",
+  "link": "https://arxiv.org/abs/2610.26915",
+  "description": "arXiv:2610.26915v1 Announce Type: new \nAbstract: Online action detection (OAD) identifies ongoing actions in streaming videos. Many existing OAD systems combine RGB appearance with optical flow, but dense-flow extraction remains a major computational bottleneck. Codec motion vectors (MVs) are available during decoding, avoiding a separate optical-flow computation. On THUMOS'14, optical flow exceeds MVs by 11.2 mAP points with motion-only inputs, whereas the gap narrows to 3.7 points after RGB fusion, with the largest reduction in action-category discrimination. We propose CodecMotion-OAD, which replaces optical flow with decoder-provided MVs while retaining existing temporal detector architectures. Its two-stage training first aligns MV features with a pretrained flow-feature interface without action labels and then trains RGB+MV detectors using ground-truth labels and soft predictions from a frozen RGB+Flow teacher. To the best of our knowledge, this is the first application of codec MVs to frame-level OAD. On THUMOS'14 with MiniROAD, CodecMotion-OAD achieves 68.3 mAP versus 70.9 mAP for matched-distillation RGB+Flow, while reducing decoder-to-prediction processing time by 11.48-fold on CPU and 2.04-fold on GPU.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

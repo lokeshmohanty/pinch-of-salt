@@ -1,0 +1,13 @@
+{
+  "id": "9aa207f10bb9b399",
+  "title": "CrossDistill: Balancing Quality and Diversity via Trajectory-Level Hybrid Few-Step Distillation",
+  "link": "https://arxiv.org/abs/2609.14725",
+  "description": "arXiv:2609.14725v2 Announce Type: replace \nAbstract: Few-step distillation accelerates diffusion models but must balance diversity and fidelity: trajectory-based distillation preserves mode coverage, while distribution matching sharpens samples but can reduce diversity. We show that this tension can be exploited in a noise-regime-dependent way: high-noise steps largely determine global modes, whereas low-noise steps refine local details. We propose CrossDistill, a trajectory-level hybrid distillation framework that splits the sampling trajectory at a crossover point, applies a trajectory-preserving objective on the high-noise interval and a distribution-matching objective on the low-noise interval, and couples the two stages through the crossover state. In contrast to loss-level mixing, and complementarily to training-time two-stage recipes, CrossDistill explicitly assigns complementary objectives along the noise axis, so that global branching is preserved before local statistics are sharpened. CrossDistill is a noise-level scheduling policy: PCM and DMD are plug-in instantiations, while the noise partition, crossover coupling, and objective ordering are the key design elements. Experiments on text-to-video diffusion models and qualitative image-to-video results show that CrossDistill expands the few-step quality-diversity frontier, retaining seed-level variation while achieving competitive visual fidelity.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

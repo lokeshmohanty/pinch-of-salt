@@ -1,0 +1,13 @@
+{
+  "id": "758442a5f4bd27ad",
+  "title": "DS-BiCA-Net: Pair-Preserving Cross-Temporal Modeling for Remote Sensing Change Captioning",
+  "link": "https://arxiv.org/abs/2610.32200",
+  "description": "arXiv:2610.32200v1 Announce Type: new \nAbstract: Remote sensing image change captioning (RSICC) describes in natural language the semantic changes between two images of the same scene captured at different times. Previous methods commonly merge the pair during repeated processing or combine intra-image and cross-image relations in one operation, weakening source identity and leaving the two temporal directions implicit. Without separate modules for intra-image and cross-temporal processing and a separate path for each direction, the contribution of each part cannot be measured on its own, so it remains unclear which part matters most, and the design of later models has no such evidence to build on. To address these issues, we propose DS-BiCA-Net, which assigns the two kinds of processing to separate modules and keeps the two images as separate streams throughout the encoder. A windowed state-space module models context within each image, and a bidirectional cross-attention module compares the two images along two directed paths that share their projections. The two modules use the same pre-normalisation residual architecture and differ only in their mixers, and the two streams are fused only in the aggregation head, so each module and each direction can be removed and its contribution measured on its own. Controlled experiments on LEVIR-CC and Dubai-CC examine operator interaction, temporal direction and module order, showing that intra-image refinement carries no benefit alone and becomes beneficial only when followed by bidirectional cross-attention, an order that outperforms the reverse at matched parameter count and FLOPs. The bidirectional module also outperforms either temporal direction alone. Our method reaches an S_m^* of 82.65 on LEVIR-CC, the highest among the published results compared, and 66.72 on Dubai-CC without geometric augmentation, the second-highest among the published results compared.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

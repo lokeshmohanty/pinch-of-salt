@@ -1,0 +1,15 @@
+{
+  "id": "b626e44e87961c49",
+  "title": "Convex-SKM-Net: Low-Latency Block Halfspace Corrections for Neural Convex Constraint Satisfaction",
+  "link": "https://arxiv.org/abs/2610.38197",
+  "description": "arXiv:2610.38197v1 Announce Type: cross \nAbstract: Fast inference and strict constraint satisfaction are essential for learning-based decision-making. Existing methods often rely on constraint-specific projections or feasible-set parameterizations, while iterative repair can be costly. We introduce Convex-SKM-Net, a convex constraint-satisfaction layer that forms linearization halfspaces from residual and (sub)gradient oracles without constraint-specific inequality projectors. It applies fixed-depth dual projected-gradient descent (dual PGD) to minimum-displacement block problems using GPU-friendly matrix operations. We jointly learn the predictor and a positive-definite mobility, adapting the correction geometry to improve objective quality. We prove convergence of the outer iterates at fixed dual depth and linear convergence in distance under Slater's condition and bounded subgradients. All our test outputs on three second-order-cone model-predictive control (SOC-MPC) horizons and six power-system convex relaxations satisfy a $10^{-3}$ feasibility tolerance. Comparisons with the latest constraint-satisfaction methods show inference speedups of up to $144.3\\times$ on SOC-MPC and $7.7\\times$ on a convex quadratically constrained quadratic programming (QCQP) benchmark with joint training. On QCQP, the mean objective gap is $0.012\\%$, with full test feasibility at $10^{-4}$. Learning mobility reduces the five-seed affine-task mean gap by $22.4\\%$ and improves gaps in matched power-system comparisons.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "math.OC"
+  ]
+}

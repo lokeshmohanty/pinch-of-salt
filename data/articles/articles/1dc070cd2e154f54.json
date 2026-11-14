@@ -1,0 +1,14 @@
+{
+  "id": "1dc070cd2e154f54",
+  "title": "CodeGrep: An RL-Trained Retrieval Agent for LLM Coding Agents",
+  "link": "https://arxiv.org/abs/2608.05886",
+  "description": "arXiv:2608.05886v1 Announce Type: cross \nAbstract: Modern LLM coding agents such as Claude Code and OpenHands share a common inefficiency: they spend much of their token budget finding the file to patch, rather than patching it. On SWE-Bench Verified, a 30B OpenHands agent averages 23 rounds and 631K tokens per resolved issue, with many calls spent on grep, glob, and view_file during repository exploration. We introduce CodeGrep, a 14B retrieval agent trained end-to-end with GRPO to issue multi-turn parallel grep, glob, and read tool calls and return candidate files to a frozen downstream coding agent.\n  On all 500 SWE-Bench Verified instances, CodeGrep preserves resolve rate while substantially improving efficiency: 27.0% versus 25.8% for the no-retrieval baseline, with 15% fewer rounds and 19% fewer tokens on resolved instances. Across retrievers, downstream utility follows a precision threshold: BM25 with precision 0.375 degrades the agent, Jina with precision 0.445 is neutral, and CodeGrep with precision 0.677 crosses the threshold at which retrieval begins to reduce rollout cost. To enable this study, we mine supervision from 67K open-source agent trajectories using CATM and build a Git-worktree environment for multi-turn agent RL. In our setting, applying the efficiency signal at the advantage layer rather than the reward layer reduces KL drift and translates cleanly into downstream efficiency. We will release the model, training pipeline, RL environment, and evaluation harnesses.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

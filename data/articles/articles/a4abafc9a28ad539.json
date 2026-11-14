@@ -1,0 +1,14 @@
+{
+  "id": "a4abafc9a28ad539",
+  "title": "VoxelSage: Tool-Augmented 3D CT Analysis and Simulator-Shielded Sequential Resection Planning for Liver Tumors",
+  "link": "https://arxiv.org/abs/2609.37648",
+  "description": "arXiv:2609.37648v1 Announce Type: new \nAbstract: Preoperative liver-tumor assessment requires segmentation, physical-space measurement, visual evidence, and resection planning from the same three-dimensional CT volume. Existing tools often handle these steps separately, while language models cannot reliably compute physical measurements from CT. To provide an integrated workflow, we present VoxelSage, a multi-modal system for two- and three-dimensional visualization, liver-tumor analysis, and preoperative resection planning. Its dual-port architecture separates language-model orchestration from image computation: Port A interprets requests and selects skills, while Port B applies them to CT volumes and segmentation masks and returns structured results. Keeping physical measurements in Port B prevents the LLM from computing them directly and reduces the risk of fabricated numerical results. Eight built-in skills support quantitative analysis, visual evidence generation, three-dimensional reconstruction, segmentation refinement, and sequential resection planning; user-defined skills can extend these functions. For sequence planning, a behavior-cloned neural ranker orders candidate resection targets, while a simulator-based shield checks them against predefined constraints. Across 256 unseen simulator scenes, this approach reduced mean simulated time from 34.274 to 33.388 min (0.886 min, 2.59%) and mean simulated blood loss from 300.847 to 183.852 mL (116.995 mL, 38.89%) relative to a deterministic baseline. These results demonstrate system integration and simulator-level performance, not clinical efficacy or safety. The public implementation is available at https://github.com/ZJUMAI/VoxelSage.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

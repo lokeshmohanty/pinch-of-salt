@@ -1,0 +1,13 @@
+{
+  "id": "648d73648db6e039",
+  "title": "VideoAWR: Reinforcing Video Flow Models with Decoupled-Timestep Advantage-Weighted Rectification",
+  "link": "https://arxiv.org/abs/2610.13338",
+  "description": "arXiv:2610.13338v1 Announce Type: new \nAbstract: Regression-based RL for flow models mandates sampling \\emph{without} classifier-free guidance (CFG) to align the rectification target with the reference marginal velocity. Extending Advantage-Weighted Rectification (AWR), which dynamically scales this regression target based on reward, to video generation encounters a cold-start pathology: unguided rollouts collapse into low-fidelity regions where intra-group reward gaps remain wide but no longer track perceptual quality, rendering the optimization target arbitrary. Conversely, utilizing guided rollouts to restore fidelity, while keeping the regression target tied to the guided sampling distribution, provably triggers a geometric guidance blow-up under exponential-moving-average (EMA) updates. We propose \\textbf{VideoAWR}, which resolves this tension by untying sampling from the optimization anchor. An EMA reference policy generates \\emph{guided} rollouts to restore reward separability, while the trainable policy is rectified against the \\emph{unguided} conditional anchor. We prove this decoupled objective is mathematically exact: the centered advantage cancels the anchor in expectation, filtering out the reward-neutral guidance offset and retaining only the reward-correlated covariance increment. Consequently, inference runs single-branch and CFG-free, yet inference-time CFG preserves its original semantics. Furthermore, we introduce \\emph{Decoupled Timestep Rectification}, supervising each rollout at an independently sampled timestep without bias to improve sample efficiency. Experiments on Wan2.1-1.3B and 14B demonstrate stable optimization and superior visual and motion quality in \\emph{both} CFG-free and CFG-enabled regimes. Code is available at \\pdfstartlink attr{/Border [0 0 0]} user{/Subtype /Link /A << /S /URI /URI (https://github.com/Fuzm7/FlowAWR) >>}% \\textcolor{pearDark}{VideoAWR}\\pdfendlink.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

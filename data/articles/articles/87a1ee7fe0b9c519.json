@@ -1,0 +1,14 @@
+{
+  "id": "87a1ee7fe0b9c519",
+  "title": "Bake It Till You Make It: Ultrafast Spatial Texture-Atlas Splatting",
+  "link": "https://arxiv.org/abs/2607.13808",
+  "description": "arXiv:2607.13808v2 Announce Type: replace \nAbstract: Neural radiance representations in Gaussian Splatting (GS) deliver high-fidelity color detail but impose substantial rendering overhead from network evaluations. We present a learned sparse scene representation based on 2D surfels, which enables baking the neural component into a hardware-accelerated 2D texture atlas and eliminates runtime network inference. Our 2D surfels carry low-frequency geometry and view-dependent appearance, while view-independent, per-primitive high-frequency texture is encoded with a spatial hash grid and converted into the texture atlas. A novel sparsity objective that penalizes per-primitive kernel falloffs achieves a substantially sparser representation than prior methods. With a compute-optimized ray-surfel intersection shader our approach renders roughly $7$ to $9\\times$ faster than 3DGS on common benchmarks, and over an order of magnitude faster on individual scenes, while surpassing the perceptual quality and speed of the fastest sparsification methods (FastGS and Speedy-Splat) at PSNR parity. A quality-optimized variant matches the perceptual quality of the strongest baseline while still rendering several times faster. Because inference is one texture fetch per fragment, frame rates can be pushed to $2{,}700$--$4{,}400$ FPS with no loss in quality when using the GPU hardware rasterizer.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

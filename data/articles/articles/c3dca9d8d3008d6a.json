@@ -1,0 +1,13 @@
+{
+  "id": "c3dca9d8d3008d6a",
+  "title": "MAMA-FLUX.2: Image-to-Image Synthesis of Post-Contrast Breast DCE-MRI for the MAMA-SYNTH Challenge",
+  "link": "https://arxiv.org/abs/2608.25648",
+  "description": "arXiv:2608.25648v1 Announce Type: new \nAbstract: Dynamic contrast-enhanced breast MRI is central to cancer diagnosis and monitoring, but requires gadolinium-based contrast agents. In this work, we address pre-to-post contrast breast MRI synthesis for the MAMA-SYNTH challenge. We propose MAMA-FLUX.2, a conditional latent flow-matching approach based on FLUX.2-Klein-4B. The pre-contrast image is encoded as spatial conditioning, while the model predicts the flow field associated with the post-contrast target latent. To adapt the pretrained model efficiently, we use LoRA fine-tuning and introduce a regional training objective combining global flow matching, tumor-region supervision, and stable foreground regularization. We further investigate LoRA rank, intensity windowing, and regional loss weights on axial slices, prioritizing clinically relevant tumor-focused metrics. Our ablation study shows that moderate tumor and stable-foreground weighting improves the trade-off between image fidelity and tumor-region accuracy. The final model achieves the best overall balance with LoRA rank/$\\alpha=64/64$, $\\mathrm{MHA}_{\\max}=25$, $\\lambda_{\\mathrm{tumor}}=0.25$, and $\\lambda_{\\mathrm{stable}}=0.1$. These results demonstrate that compact pretrained rectified-flow transformers can be adapted for contrast-enhanced MRI synthesis using parameter-efficient fine-tuning and task-aware regional losses.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

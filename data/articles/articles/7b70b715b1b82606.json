@@ -1,0 +1,15 @@
+{
+  "id": "7b70b715b1b82606",
+  "title": "Dynamic Model Merging Made Slim",
+  "link": "https://arxiv.org/abs/2605.18904",
+  "description": "arXiv:2605.18904v2 Announce Type: replace-cross \nAbstract: Model merging consolidates independently fine-tuned checkpoints without joint training or access to task data. Dynamic methods retain task-specific capacity, but must divide a limited storage budget between shared and expert parameters. We propose DiDi-Merging, which jointly allocates low-rank capacity to these components through differentiable rank selection, followed by data-free parameter-space refinement. On the eight-task ViT-B/32 benchmark, the small configuration reaches 89.3% average accuracy (98.7% normalized retention) at 1.24x the storage of one backbone, including that backbone; the medium configuration reaches 89.8% at 1.4x. Removing refinement reduces the medium configuration by 4.3 percentage points, while static-merge plus uniform-recovery controls are 4.7-8.9 points below the small configuration. Additional evaluations cover language and multimodal models at their separately reported budgets. The main results assume known task identity; practical routing and accuracy under larger task counts at fixed capacity remain distinct evaluation questions. Code is available at https://github.com/WanyuGroup/NeurIPS2026-DiDi-Merging.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

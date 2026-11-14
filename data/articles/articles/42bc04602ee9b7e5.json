@@ -1,0 +1,13 @@
+{
+  "id": "42bc04602ee9b7e5",
+  "title": "MINCE: Shrinking LLM Evaluation Datasets via Few-Model Monte Carlo Calibration",
+  "link": "https://arxiv.org/abs/2606.22826",
+  "description": "arXiv:2606.22826v2 Announce Type: replace \nAbstract: Evaluating LLMs across many model variants---quantized, fine-tuned, or deployment-specific---requires running large benchmarks repeatedly, a process that can take tens of hours per model on edge hardware such as NPUs. Existing subset selection methods reduce this cost but depend on large calibration pools or learned prediction layers. We introduce MINCE (Monte Carlo Informed N-sizing for Compact Evaluation), which uses Monte Carlo simulation over per-item logs from a small set of calibration models to find the minimum subset size that bounds accuracy drift and then fixes a randomly sampled subset at that size, with no prediction layer needed. MINCE reduces IFEVAL by 54\\%, MMLU by 89\\%, GSM8K by 70\\%, and MMLU-Pro by 88\\% with maximum drift $\\leq$2.62\\,pp on BF16 calibration models. The frozen subsets generalize to held-out GPU models with mean drift $\\leq$1.40\\,pp and to INT4 NPU models with mean drift of 0.77--3.59\\,pp, while delivering evaluation speedups of up to 8.1$\\times$ on the GPU models and evaluation speedups of 1.7--3.4$\\times$ on the NPU models. The method is robust to calibration pool size and achieves lower drift than tinyBenchmarks (12$\\times$ lower on MMLU, 3.3$\\times$ on GSM8K) while using 42$\\times$ fewer calibration models.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "73d15259d7e575dc",
+  "title": "Explainable Convolutional Neural Networks for Retinal Fundus Classification and Cutting-Edge Segmentation Models for Retinal Blood Vessels from Fundus Images",
+  "link": "https://arxiv.org/abs/2405.07338",
+  "description": "arXiv:2405.07338v2 Announce Type: replace-cross \nAbstract: Early detection of vision-threatening conditions such as diabetic retinopathy, glaucoma, and age-related macular degeneration depends on retinal fundus image analysis, but manual assessment is slow and expert-dependent. Automated convolutional neural networks classify fundus images accurately yet act as black boxes, and existing retinal vessel segmentation methods lose discriminative power under pathology and seldom exploit attention or transformer backbones. Using the FIVES and DRIVE fundus datasets, we develop a two-pipeline framework that pairs four-class disease classification with attention- and transformer-based vessel segmentation, organised in three stages: (1) FIVES images are augmented by rotation and horizontal and vertical flips and used to fine-tune eight ImageNet-pretrained CNNs: ResNet101, DenseNet169, Xception, InceptionV3, DenseNet121, InceptionResNetV2, ResNet50, and EfficientNetB0. (2) Five gradient-based explanation methods, Grad-CAM, Grad-CAM++, Score-CAM, Faster Score-CAM, and Layer-CAM, are computed on the final convolutional block of each classifier and compared qualitatively across architectures. (3) Ten U-Net variants are benchmarked for vessel segmentation: TransUNet (hybrid CNN--Transformer encoder) and Attention U-Net (gated skip connections), evaluated with ResNet50V2, ResNet101V2, and ResNet152V2 backbones, along with additional Attention U-Net configurations using DenseNet backbones, and the fully transformer-based Swin-UNet. ResNet101 gives the highest classification accuracy: 94.17% (F1 0.942) $>$ 88.33% for EfficientNetB0. For segmentation, the architecture ranking is consistent on both datasets: Attention U-Net $>$ TransUNet $>$ Swin-UNet. The strongest configuration is Attention U-Net with a ResNet101V2 backbone: FIVES IoU 0.722, Dice 0.838; DRIVE IoU 0.648, Dice 0.787, lifting DRIVE IoU 60.80 $\\rightarrow$ 64.83 over a prior custom U-Net.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

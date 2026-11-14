@@ -1,0 +1,15 @@
+{
+  "id": "f51b9c5e92e2fe13",
+  "title": "TOPReward: Token Probabilities as Hidden Zero-Shot Rewards for Robotics",
+  "link": "https://arxiv.org/abs/2602.19313",
+  "description": "arXiv:2602.19313v2 Announce Type: replace-cross \nAbstract: General-purpose robot learning requires dense, instruction-conditioned feedback that can distinguish meaningful task progress from stalled, failed, or partially completed behavior. Yet obtaining such feedback at scale remains difficult, since existing approaches often rely on manual progress annotations, task-specific demonstrations, or reward models trained on curated robot datasets. We introduce TOPReward, a training-free progress reward method that probes pretrained Video-Language Models (VLMs) through their internal token probabilities rather than asking them to generate numerical progress values. Given a video prefix and a language instruction, TOPReward measures the model's likelihood that the instructed task has been completed, converting latent video-language understanding into a dense reward signal without task-specific reward-model training or manually annotated progress labels. We evaluate TOPReward on ManiRewardBench, our real-world manipulation benchmark spanning 130 unique tasks and four robot platforms, as well as on Open X-Embodiment datasets. Across these settings, TOPReward substantially outperforms prior training-free VLM reward methods on open-source models and is competitive with a trained reward-model baseline on progress-estimation metrics, while requiring no reward-model training. Additional analyses show that the reward is sensitive to the specified instruction and is not explained by time index alone. Finally, TOPReward supports downstream applications including success detection and offline reward-weighted behavior cloning.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

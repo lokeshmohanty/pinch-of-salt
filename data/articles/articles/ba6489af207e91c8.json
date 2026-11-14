@@ -1,0 +1,13 @@
+{
+  "id": "ba6489af207e91c8",
+  "title": "Tempo-Zero: Recursive Self-Play in Executable Worlds for Video Reasoning",
+  "link": "https://arxiv.org/abs/2610.32433",
+  "description": "arXiv:2610.32433v1 Announce Type: new \nAbstract: Video reasoning requires understanding how events unfold over time, yet videos with accurate temporal annotations are expensive to collect. Self-play offers an alternative by letting a model generate and solve its own tasks without manual annotation. However, existing video self-play methods train on fixed sets of recorded videos, so they cannot alter the underlying event dynamics and rely on noisy pseudo-labels derived from the model's own outputs, such as majority voting, that risk reinforcing shared model errors. To overcome these limitations, we introduce Tempo-Zero, a self-improvement framework that closes a loop of executable environments, execution-verified self-play, and environment evolution, where executing a program renders a video with the ground-truth option and interval of every question. A single policy plays both Questioner and Solver, proposing questions and answering them with timestamped evidence lines, and is trained on execution-grounded rewards instead of model consensus. The Solver's performance steers a curriculum over tasks and difficulty levels, and the policy selects rule changes that enrich the event dynamics of later rounds. Despite being trained solely on simple programs, without supervised fine-tuning or external video data which prior methods typically require, Tempo-Zero outperforms the base models and recent self-play baselines on average across twelve real-world video benchmarks at different model scales, with particularly strong gains on temporal grounding tasks. Project page: https://alchemist-jo.github.io/tempo-zero/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

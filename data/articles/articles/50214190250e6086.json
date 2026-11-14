@@ -1,0 +1,14 @@
+{
+  "id": "50214190250e6086",
+  "title": "Beyond LoRA vs. Full Fine-Tuning: Gradient-Guided Optimizer Routing for LLM Adaptation",
+  "link": "https://arxiv.org/abs/2605.07111",
+  "description": "arXiv:2605.07111v3 Announce Type: replace-cross \nAbstract: Recent literature on fine-tuning Large Language Models highlights a fundamental debate. While Full Fine-Tuning (FFT) provides greater representational plasticity, Low-Rank Adaptation (LoRA) can match or surpass FFT performance while constraining updates to a low-rank space and potentially benefiting from additional regularization. Through empirical evaluation across diverse tasks (SQL, Medical QA, and Counterfactual Knowledge) and varying language models (Gemma-3-1B, Qwen2.5-1.5B, and Qwen2.5-3B), we observe both trends and find that the better static architecture depends on the task and model. Spectral and truncation analyses further show that endpoint compressibility alone does not explain these task differences, suggesting task-score sensitivity and constrained optimization trajectories as possible explanations. To address this challenge, we propose a Mixture of LoRA and Full (MoLF) Fine-Tuning, a unified framework that enables continuous navigation between both training regimes. MoLF dynamically routes updates between FFT and LoRA at the optimizer level to ensure that exact gradient signals are available to both experts throughout training, while only selected experts update their weights. For memory-constrained environments, we also introduce MoLF-Efficient, which freezes base weights and only routes updates among a pair of LoRA experts of potentially varying rank. Our evaluations show that MoLF either improves on or stays within $1.5$ percentage points of the better of FFT and LoRA across the nine tested settings, while MoLF-Efficient outperforms both AdaLoRA and AdaMix in eight of nine settings, with gains over the stronger baseline of up to $11.70$ percentage points on Fact, $3.13$ on Med, and $2.98$ on SQL.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1a20cb20562ffc8d",
+  "title": "Accelerating Large-scale Bundle Adjustment for LiDAR Mapping via Parallel Computing",
+  "link": "https://arxiv.org/abs/2608.14266",
+  "description": "arXiv:2608.14266v1 Announce Type: cross \nAbstract: LiDAR bundle adjustment is widely utilized in mapping to construct globally consistent point cloud maps. In this paper, we propose the first fully parallel computing framework to accelerate LiDAR bundle adjustment for large-scale mapping, incorporating three key techniques. First, we design an adaptive, asynchronous data loading strategy to efficiently process large-scale point cloud datasets on memory-constrained GPUs. Secondly, we present a novel bottom-up voxelization method for extracting planar features, enabling fully parallelized pre-processing. Thirdly, we build upon a majorization-minimization formulation to accelerate compute-intensive tasks in the optimization via parallel computation, including the computation of residuals, Jacobian and Hessian matrices, and a parallel increment solver. To support our design, we provide both theoretical and experimental analysis of the time complexity of our approach. Extensive benchmarking on large-scale public datasets across various computational platforms validates the robustness and adaptability of our approach, achieving up to a tenfold improvement in computational efficiency while preserving mapping accuracy comparable to state-of-the-art methods. To benefit future research, the implementation code is available on GitHub.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

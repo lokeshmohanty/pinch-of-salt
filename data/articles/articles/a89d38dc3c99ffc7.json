@@ -1,0 +1,13 @@
+{
+  "id": "a89d38dc3c99ffc7",
+  "title": "Causal Attribution via Activation Patching",
+  "link": "https://arxiv.org/abs/2603.13652",
+  "description": "arXiv:2603.13652v3 Announce Type: replace \nAbstract: Attribution methods for Vision Transformers (ViTs) aim to identify image regions that influence model predictions, but producing faithful and well-localized attributions remains challenging. Existing attribution methods face several limitations, with gradient-based, relevance-propagation, and attention-based methods relying on local approximations, while perturbation- or optimization-based methods intervene on inputs, tokens, or surrogates rather than internal patch representations. The key challenge is that class-relevant evidence is formed through interactions between patch tokens across layers; methods that operate only on input changes, attention weights, or backward relevance signals may therefore provide indirect proxies for patch importance rather than directly testing the predictive effect of contextualized patch representations. We propose Causal Attribution via Activation Patching (CAAP), which estimates the contribution of individual image patches to the ViT's prediction by directly intervening on internal activations rather than using learned masks or synthetic perturbation patterns. For each patch, CAAP inserts the corresponding source-image activations into a neutral target context over an intermediate range of layers and uses the resulting target-class score as the attribution signal. The resulting attribution map reflects the causal contribution of patch-associated internal representations on the model's prediction. The causal intervention serves as a principled measure of patch influence by capturing semantic evidence after initial representation formation, while avoiding late-layer global mixing that can reduce spatial specificity. Across multiple ViT backbones and standard metrics, CAAP consistently outperforms existing methods in various settings and produces more faithful and localized attributions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

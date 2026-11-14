@@ -1,0 +1,13 @@
+{
+  "id": "8362d15548ab7634",
+  "title": "Parameter-Dynamic Adaptive Fusion and Calibration Network for RGBT Tracking",
+  "link": "https://arxiv.org/abs/2608.01807",
+  "description": "arXiv:2608.01807v1 Announce Type: new \nAbstract: Existing RGBT trackers typically employ fusion functions with fixed parameters across different targets and scenarios. Although dynamic-architecture methods improve fusion flexibility by selecting among predefined operations, they still cannot adapt the fusion parameters to the evolving target state. To address these issues, we propose a Parameter-Dynamic Adaptive Fusion and Calibration Network (PAFCNet) for RGBT tracking. PAFCNet dynamically generates target-conditioned parameters for multimodal fusion and temporal calibration, enabling the tracking process to adapt to target appearance variations and modality quality fluctuations. Specifically, we introduce a Target-Adaptive Hypernetwork (TA-HyperNet) that leverages template representations, which preserve stable target identity and recent appearance changes with less background interference, to generate target-conditioned parameters for subsequent fusion and calibration. Based on TA-HyperNet, we design a target-aware parameter-dynamic fusion module that uses the generated parameters to modulate the fusion process. This enables the fusion module to adapt to changes in target appearance and complex scene conditions. Furthermore, since spatio-temporal information propagation may accumulate tracking noise, we propose a dynamic spatio-temporal calibration module that employs TA-HyperNet to generate calibration parameters for spatio-temporal tokens. By dynamically calibrating historical information before propagation, the module improves the reliability of temporal representations. Experimental results demonstrate that PAFCNet achieves competitive performance on multiple RGBT tracking benchmarks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "af28e526d3c3a9bd",
+  "title": "Consomm\\'e: Conditioned Token Merging for Split Inference",
+  "link": "https://arxiv.org/abs/2610.32794",
+  "description": "arXiv:2610.32794v1 Announce Type: new \nAbstract: Split inference partitions a Vision Transformer between a resource-constrained edge device and a server. However, transmitting intermediate tokens across the communication channel is costly. Deploying fine-tuned backbones to every endpoint becomes expensive as well. We study token reduction for split inference under a frozen backbone, where only a small adapter is shipped. We observe that the CLS token plays a dual role: it acts as the global summary the receiver needs for classification, and it serves as a signal on which patches to keep. We propose Consomm\\'e, a method utilizing both characteristics. There, an information bottleneck compresses the CLS token into a compact latent which is transmitted in place of the full CLS token and conditions a learned patch gate merging patches into exactly $k$ tokens via soft assignment. It reaches any budget in a single step, thus escaping the per-layer cap of bipartite matching (BPM). On DeiT-S/T, it leads all methods at aggressive token budgets and remains operable at shallow splits where BPM cannot operate, while matching fine-tuned methods at gentle budgets at a fraction of their deployment cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

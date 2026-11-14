@@ -1,0 +1,13 @@
+{
+  "id": "39e2527d5482b798",
+  "title": "Data-Efficient Semantic Segmentation of 3D Point Clouds via Open-Vocabulary Image Segmentation-based Pseudo-Labeling",
+  "link": "https://arxiv.org/abs/2604.11007",
+  "description": "arXiv:2604.11007v2 Announce Type: replace \nAbstract: Semantic segmentation of 3D point cloud scenes is a crucial task for various applications. In real-world scenarios, training segmentation models often faces three concurrent forms of data insufficiency: scarcity of training scenes, scarcity of point-level annotations, and absence of 2D image sequences from which point clouds were reconstructed. Existing data-efficient algorithms typically address only one or two of these challenges, leaving the joint treatment of all three unexplored. This paper proposes a data-efficient training framework specifically designed to address the three forms of data insufficiency. Our proposed algorithm, called Point pseudo-Labeling via Open-Vocabulary Image Segmentation (PLOVIS), leverages an open-vocabulary image segmentation model as a pseudo label generator to compensate for the lack of training data. PLOVIS creates 2D images for pseudo-labeling directly from training 3D point clouds, eliminating the need for 2D image sequences. To mitigate the inherent noise and class imbalance in pseudo labels, we introduce a two-stage filtering of pseudo labels combined with a class-balanced memory bank for effective training. The two-stage filtering mechanism first removes low-confidence pseudo labels, then discards likely incorrect pseudo labels, thereby enhancing the quality of pseudo labels. Experiments on four benchmark datasets, i.e., ScanNet, S3DIS, Toronto3D, and Semantic3D, under realistic data-scarce conditions (a few tens of training 3D scenes, each annotated with only <100 3D points) demonstrate that PLOVIS consistently outperforms existing methods including standard fine-tuning strategies and state-of-the-art weakly supervised learning algorithms. Code will be made publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

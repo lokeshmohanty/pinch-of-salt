@@ -1,0 +1,15 @@
+{
+  "id": "a606124fe2025e5f",
+  "title": "Evaluating Neural Decompilation of Dart AOT Binaries: Fine-Tuning, Metric Validity, Specification Leakage, and Reliability",
+  "link": "https://arxiv.org/abs/2607.06125",
+  "description": "arXiv:2607.06125v2 Announce Type: replace-cross \nAbstract: We present an execution-based evaluation of neural decompilation for Dart ahead-of-time binaries and an audit of what its scores measure. Across six archived adapter-baseline comparisons, paired tests of pass@k at k = 1, 5, and 10, with Holm adjustment over 18 endpoints, identify functional regressions in both Qwen3-8B adapters at every k. The other four comparisons are inconclusive.\n  On 141 reference-certified, contract-valid tasks, three independently trained graph-prefix systems score the same candidates. Best CodeBLEU has modest association with pass@10 ($\\rho$ = .218-.246), compile@10 has weak association ($\\rho$ = .072-.082), and only 21.0-23.3% of compiling candidates pass.\n  A paired single-seed intervention that removes semantic names and related cues, while retaining types, arity, and instruction content, reduces coverage from 42/154 to 7/154 tasks. Matched graph perturbations show no detectable degradation under the semantic contract (six-test Holm p >= .750); instruction-use attribution remains unresolved. Across five decoding seeds on MF-174, the baseline solves 4.8 tasks on average, 15 at least once, and one in every seed. We recommend certifying references, aligning metrics on shared candidates, separating metadata from binary input, repeating sampling, and preserving provenance. The released capsule supports integrity checks and replay of archived outcomes.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.CR"
+  ]
+}

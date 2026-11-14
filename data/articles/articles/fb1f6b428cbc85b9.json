@@ -1,0 +1,14 @@
+{
+  "id": "fb1f6b428cbc85b9",
+  "title": "RaMOD: Moving-Object Detection from Raw mmWave Radar Cubes under Ego Motion",
+  "link": "https://arxiv.org/abs/2611.13271",
+  "description": "arXiv:2611.13271v1 Announce Type: cross \nAbstract: Millimeter-wave (mmWave) radar provides weather-robust sensing and direct Doppler measurements, yet automotive perception pipelines often reduce its output to sparse point clouds or two-dimensional projections, leaving raw range-azimuth-Doppler (RAD) cubes underutilized. Ego motion induces Doppler responses from world-static structures, while Doppler wrapping aliases radial velocities, complicating moving-object detection and velocity estimation. We present RaMOD (Radar-based Moving-Object Detection), a real-time framework for moving-object detection and velocity estimation from raw RAD cubes acquired by a vehicle-mounted single-chip radar. RaMOD explicitly estimates frame-wise ego motion and uses the estimated radar translational velocity to predict the Doppler region of world-static structures and suppress returns within it. It temporally encodes the suppressed cubes into multi-scale features to predict RAD-space boxes with class labels. For each detected object, it predicts radial and forward velocities under raw-Doppler and Doppler-unwrapped hypotheses, together with Doppler-wrapping probabilities. On our BRIDGE-Liv dataset, RaMOD outperforms all compared raw-radar methods across RAD-cube, RA, and RD detection settings, achieving 80.8% cube mAP at IoU 0.30, 15.7 percentage points above the strongest RAD-cube baseline. Velocity MAE is 1.128 m/s, with 99.87% Doppler-wrapping accuracy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "7069ae9a6de240dc",
+  "title": "SuperVoxelGPT: Adaptive and Ordered 3D Tokenization for Autoregressive Shape Generation",
+  "link": "https://arxiv.org/abs/2605.29655",
+  "description": "arXiv:2605.29655v4 Announce Type: replace \nAbstract: Autoregressive multimodal large language models (MLLMs) enable 3D generation but struggle to scale to high-resolution shapes due to inadequate 3D tokenizations. Compact set-based representations discard deterministic spatial ordering, leading to ambiguous sequence prediction, while uniform or octree-based voxel grids preserve ordering at the cost of severe redundancy and excessively long sequences. This structural trade-off limits stable and efficient autoregressive 3D generation. We present SuperVoxelGPT, a representation-first framework that resolves this tension through adaptive and deterministically ordered supervoxel tokenization. Given a prompt, we first predict a coarse geometric saliency distribution and construct a shape-adaptive supervoxel partition using saliency-guided centroidal Voronoi tessellation, allocating fine-grained cells to complex regions and larger cells to smooth regions. Conditioned on this prompt and ordered supervoxel layout, we introduce a SuperVoxelVAE and fine-tune a pretrained MLLM to autoregressively generate supervoxel tokens. Experiments using Trellis-500K data show that SuperVoxelGPT reduces token sequence length to 12.8% of uniform voxel tokenization while achieving state-of-the-art generation quality and an average 10x speedup over prior methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

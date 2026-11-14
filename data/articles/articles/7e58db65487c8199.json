@@ -1,0 +1,14 @@
+{
+  "id": "7e58db65487c8199",
+  "title": "An Elastic Shape Variational Autoencoder for Skeleton Pose Trajectories",
+  "link": "https://arxiv.org/abs/2605.09231",
+  "description": "arXiv:2605.09231v4 Announce Type: replace \nAbstract: Deep generative models provide flexible frameworks for modeling complex, structured data such as images, videos, 3D objects, and texts. However, when applied to sequences of human skeletons, standard variational autoencoders (VAEs) often allocate substantial capacity to nuisance factors-such as camera orientation, subject scale, viewpoint, and execution speed-rather than the intrinsic geometry of shapes and their motion. We propose the Elastic Shape - Variational Autoencoder (ES-VAE), a geometry-aware generative model for skeletal trajectories that leverages the transported square-root velocity field (TSRVF) representation on Kendall's shape manifold. This representation inherently removes rigid translations, rotations, and global scaling of shapes, and temporal rate variability of sequences, isolating the underlying shape dynamics. The ES-VAE encoder maps skeletal sequences to a low-dimensional latent space incorporating the Riemannian logarithm map, while the decoder reconstructs sequences using the corresponding exponential map. We demonstrate the effectiveness of ES-VAE on two datasets. First, we analyze skeletal gait cycles to predict clinical mobility scores and classify subjects into healthy and post-stroke groups. Second, we evaluate action recognition on the NTU RGB+D dataset. Across both settings, ES-VAE consistently outperforms standard VAEs and a range of sequence modeling baselines, including temporal convolutional networks, transformers, and graph convolutional networks. More broadly, ES-VAE provides a principled framework for learning generative models of longitudinal data on pose shape manifolds, offering improved latent representation and downstream performance compared to existing deep learning approaches.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "stat.ML"
+  ]
+}

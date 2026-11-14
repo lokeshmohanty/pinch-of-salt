@@ -1,0 +1,14 @@
+{
+  "id": "58fd93057c88b87a",
+  "title": "Anatomy-Guided Foundation Model Adaptation with Within-Case Prototype Supervision for Standard Plane Detection in Fetal Ultrasound Blind Sweeps",
+  "link": "https://arxiv.org/abs/2608.27051",
+  "description": "arXiv:2608.27051v1 Announce Type: new \nAbstract: Detecting the fetal abdominal circumference standard plane in low-cost obstetric blind sweeps is a highly imbalanced frame-classification problem: positive frames account for under 3% of a sequence, form short contiguous segments, and are poorly handled by off-the-shelf ultrasound and vision foundation models. We propose AnatoProto, a lightweight sequence-level framework that adapts a frozen BiomedCLIP encoder to fetal blind sweeps through four components: (i) anatomy-weighted spatial pooling that uses nnU-Net abdominal-region probabilities as a spatial prior to reweight BiomedCLIP patch tokens, so frozen semantic features are aggregated onto anatomically meaningful regions; (ii) a within-case prototype loss that pulls each frame embedding toward the mean of positive frames of the same sweep, exploiting case-level structure unavailable at the frame level; (iii) a three-stage cascade refinement (frame->segment->case-level rejecter) that lifts the prediction unit from noisy frames to structurally-constrained segments; and (iv) a hybrid prediction head that jointly models per-frame stability and inter-frame boundary transitions to suppress boundary false positives. On the ACOUSLIC-AI benchmark, AnatoProto reaches a test F1 of 67.72, outperforming the strongest foundation-model baseline (FetalCLIP + PRS, F1 = 54.52) by +13.20 F1 and the strongest video temporal-action-detection baseline (TriDet + PRS) by +15.76 F1. A synergy study, backed by embedding geometry and paired-bootstrap confidence intervals, shows that the prototype loss and anatomy-weighted pooling are not additive: applied alone the prototype loss reduces recall by 12 points, but combined with anatomy-weighted pooling it increases recall by 6.5 points -- a sign-flip we trace to the accuracy of the within-case prototype.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

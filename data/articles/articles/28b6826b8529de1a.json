@@ -1,0 +1,13 @@
+{
+  "id": "28b6826b8529de1a",
+  "title": "WeFair: Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in Short-Video Search",
+  "link": "https://arxiv.org/abs/2610.16927",
+  "description": "arXiv:2610.16927v1 Announce Type: new \nAbstract: Short-video search requires compact query rewriters that infer personalized intent from brief, ambiguous queries under strict latency constraints. The challenge is to decide when personalization is warranted and generate a reformulation that preserves the user's immediate information need. A rewriter optimized for fluency or engagement may still introduce unsupported details and redirect the search toward a different intent. Existing methods often underutilize users' actual reformulations and behavioral traces, relying instead on synthetic reasoning and indirect behavioral rewards that may produce more engaging candidates but cause intent drift. To build an effective rewriter that remains faithful to user intent, we propose WeFair, Fidelity-Aware Alignment from Human Feedback for Personalized Query Rewriting in WeChat short-video search. WeFair assigns real user behavioral signals to a progression from demonstration to preference to verification. We first mine actual human reformulations from search sessions, then apply multidimensional LLM screening and contextual verification to filter unsupported transitions without extensive manual annotation. During training, we begin with a supervised curriculum that progressively builds rewriting capabilities from large-scale human personalized query demonstrations, and then use direct preference optimization to align with users' subsequent consumption. In the final on-policy optimization stage, we construct a strict verification reward based on actual human reformulations to further boost performance with group relative policy optimization. Further analysis shows that auxiliary rewards can activate more rollout groups in GRPO but reduce intent fidelity. Online A/B testing in WeChat short-video search shows a 1.576% relative increase in effective clicked-query rate (VV>10s) and a 1.731% relative reduction in query reformulation rate.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

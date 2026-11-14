@@ -1,0 +1,13 @@
+{
+  "id": "df85c623308bf8e7",
+  "title": "Bunraku: Turning a Single Illustration into an Editable Live2D Character",
+  "link": "https://arxiv.org/abs/2607.27348",
+  "description": "arXiv:2607.27348v1 Announce Type: new \nAbstract: Live2D is the dominant 2D character-animation format for anime characters and virtual avatars, representing each character as a stack of RGBA layers driven by per-layer mesh deformation. Despite its wide use in virtual streaming, mobile games, and interactive characters, authoring a Live2D model still demands weeks of manual layer separation, occlusion completion, mesh placement, and keyframing, and no prior generative method produces such a structured asset end-to-end. We present the first system that, from a single illustration, generates all the structured information a Live2D runtime consumes: ordered RGBA layers, a deformation mesh per layer, and the parameter-driven keypose vertex offsets that make the character move. Stage 1 casts layered decomposition as a layered diffusion process under a Live2D-aware organ-level taxonomy, producing an ordered RGBA stack with hidden-region completion. Stage 2 builds a content-conforming triangle mesh for each layer from its alpha channel alone, then predicts the keypose displacement field of all layers jointly: every vertex of every layer is one token, self-attention spans layer boundaries, and each displacement is factorised into a bounded direction and a log-magnitude. Joint rather than independent prediction is what makes the result a coherent character instead of separately plausible parts, and is our largest gain; scaling the network 112x yields none. On 50 held-out characters, under true generation with no teacher forcing, Stage 2 attains a per-vertex direction cosine of 0.768 (median 0.828). Because a layer's mesh derives from its alpha channel, a clothing layer can be re-textured from a natural-language instruction while the mesh and predicted animation are reused byte-for-byte. We further contribute Live2D-Bench, the first standardized benchmark for the task, and an 8,884-model Live2D corpus with layer and animation supervision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

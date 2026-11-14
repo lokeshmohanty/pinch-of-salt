@@ -1,0 +1,15 @@
+{
+  "id": "172beb77fdc2ad83",
+  "title": "REQAP: Resilient Weight Packing and Quantization for Edge DNN Acceleration",
+  "link": "https://arxiv.org/abs/2609.17555",
+  "description": "arXiv:2609.17555v1 Announce Type: cross \nAbstract: Efficient deployment of Deep Neural Networks (DNNs) on edge accelerators requires aggressive model compression while maintaining reliability in fault-prone hardware environments. This paper presents a reliability-aware quantized weight packing methodology for systolic-array-based DNN accelerators. A sensitivity-driven mixed-precision quantization framework assigns layer-wise bit-widths according to accuracy impact while enforcing symmetric precision between weights and activations. A deterministic register-level packing strategy consolidates multiple heterogeneous operand pairs into fixed-width register words, enabling SIMD-within-a-register (SWAR) style parallel execution that reduces both memory footprint and execution cycles. To improve resilience against hardware faults, selective bit-level protection replicates the most significant bits (MSBs) of critical layers into unused register space, achieving TMR-style protection with minimal overhead. A systolic-array simulation framework is developed to evaluate the proposed packing and fault-tolerance mechanisms under realistic execution conditions. Simulations in AlexNet, VGG-11, and ResNet-18 demonstrate up to 62% memory reduction and up to 56% reduction in Multiply-Accumulate (MAC) operations, while significantly improving accuracy resilience under fault injection compared to baseline and fully protected models.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

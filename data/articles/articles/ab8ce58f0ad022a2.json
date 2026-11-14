@@ -1,0 +1,13 @@
+{
+  "id": "ab8ce58f0ad022a2",
+  "title": "MCPHunt: An Evaluation Framework for Cross-Boundary Data Propagation in Multi-Server MCP Agents",
+  "link": "https://arxiv.org/abs/2604.27819",
+  "description": "arXiv:2604.27819v2 Announce Type: replace \nAbstract: Multi-server MCP agents create an information-flow control (IFC) problem: faithful tool composition can turn individually benign read/write permissions into cross-boundary credential propagation -- a structural side effect of workflow topology, not necessarily malicious model behavior. We present MCPHunt, to our knowledge the first controlled benchmark that isolates non-adversarial, exact-match credential propagation across multi-server MCP trust boundaries, with three methodological contributions: (1) canary-based taint tracking that reduces propagation detection to objective string matching; (2) an environment-controlled coverage design with risky, benign, and hard-negative conditions that validates pipeline soundness and adds a matched alternative-value control (same tasks, distinct synthetic credentials); (3) completion-requires-secret (CRS) stratification that disentangles task-mandated propagation (faithful execution of verbatim-transfer instructions) from policy-violating propagation (credentials included despite the option to redact). Across 3,615 main-benchmark traces from 5 models spanning 147 tasks and 9 mechanism families, policy-violating propagation rates of 11.5-41.3% persist across all models. This propagation is pathway-specific (rates from 0.0% to 74.4% across mechanisms for GPT-5.4) and concentrated in browser-mediated data flows; under the matched alternative-value control, propagation persists (25.9% vs. 20.4%; the matched-pair CI spans zero, so the comparison neither distinguishes nor equates the two rates). A prompt-mitigation study across 3 models shows policy-violating propagation rates as low as 0.3% (98% relative reduction from baseline) while preserving 80.5% utility, but effectiveness varies across models, motivating data-flow-aware defenses beyond prompting. Code, traces, and the labeling pipeline are publicly available under MIT and CC BY 4.0.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

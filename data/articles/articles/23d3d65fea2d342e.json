@@ -1,0 +1,13 @@
+{
+  "id": "23d3d65fea2d342e",
+  "title": "Honeycomb: Constant-Size Scene Memory Representation for Video World Models",
+  "link": "https://arxiv.org/abs/2609.37690",
+  "description": "arXiv:2609.37690v1 Announce Type: new \nAbstract: Video world models require persistent scene memory to maintain consistency during long-horizon video generation. Existing spatial memory systems accumulate RGB observations or latent features, causing storage requirements to grow as generation proceeds. We introduce **Honeycomb**, a video world model built on **HexMemory**, a compact low-rank representation that stores scene features in a fixed-size memory comprising six spatial and spatiotemporal planes. A feed-forward writer maps each newly generated video chunk to plane features. As the spatial coverage or temporal range expands, HexMemory warps the existing planes while preserving their dimensions, then integrates new features through confidence-weighted pooling and a learned residual correction. A reader retrieves latent features from HexMemory to condition subsequent video generation. Because the writer processes only observations from the latest chunk, Honeycomb avoids per-scene optimization and repeated processing of the full generation history. Experiments on WorldScore and RealEstate10K demonstrate strong video generation quality and robust consistency when revisiting previously observed regions, while maintaining constant feature-storage requirements throughout generation. Code and additional visualizations are available on our https://jackswl.github.io/honeycomb/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

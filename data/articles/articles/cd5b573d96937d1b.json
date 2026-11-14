@@ -1,0 +1,13 @@
+{
+  "id": "cd5b573d96937d1b",
+  "title": "PISA: A Pseudo-Individual Source-Domain Feature Adaptation Framework for Test-Time Open-Vocabulary Object Detection",
+  "link": "https://arxiv.org/abs/2608.14142",
+  "description": "arXiv:2608.14142v1 Announce Type: new \nAbstract: Open-vocabulary object detection test-time adaptation (OVOD-TTA) aims to address the performance degradation that pre-trained base models suffer when encountering image-domain shifts. Existing source-free OVOD-TTA methods rely either on refined test-time information for re-scoring or on pseudo-labels for self-training, leading to significant accuracy degradation when initial predictions are poor. Meanwhile, most conventional source-domain estimation methods recover abstract, sparse representations suitable for the classification task, but fail to capture the dense, concrete features required for detection. To address these issues, we propose PISA, a novel source-free OVOD-TTA method that can be seamlessly integrated into open-vocabulary visual backbones. The core components of our method are the Corruption-Invariant Feature Extractor (CIFE), the Feature Alignment Module (FAM), and a multi-scale alignment framework (BAA). To capture detection-suitable features, we develop CIFE to exploit the invariance of CLIP's visual features across corrupted images, ensuring robustness against various corruptions. We further develop FAM and BAA for the pre-training and adaptation to transform the corruption-invariant features into pseudo-individual source-domain features that are close to the original source-domain features. In this way, dense and concrete pseudo-individual source-domain features are used for supervision instead of unreliable pseudo-label signals. Experiments on the corrupted VOC-C, COCO-C, and LVIS-C benchmarks across three base models demonstrate that PISA substantially improves both the localization precision and the category recognition accuracy of the original models. Notably, PISA achieves state-of-the-art performance without requiring access to source-domain data, surpassing existing methods by 3.92% in AP@50% on COCO-C.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

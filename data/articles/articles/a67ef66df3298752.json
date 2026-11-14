@@ -1,0 +1,14 @@
+{
+  "id": "a67ef66df3298752",
+  "title": "PhaseAT: Fourier Phase Adversarial Training for Medical Image Domain Generalization",
+  "link": "https://arxiv.org/abs/2610.01807",
+  "description": "arXiv:2610.01807v1 Announce Type: new \nAbstract: Reliable clinical deployment of deep medical image models is hindered by distribution shifts across scanners, sites, and acquisition protocols. Existing domain generalization (DG) methods often focus on style or intensity diversification, but they can still leave networks dependent on domain-specific texture correlations. Inspired by evidence that Fourier phase encodes semantic structure, we introduce PhaseAT, a phase-aware adversarial training framework for medical DG. PhaseAT forms phase-perturbed training views in the Fourier domain by iteratively updating a bounded phase perturbation while keeping the amplitude spectrum unchanged, thereby stressing spatial organization under matched appearance statistics. Perturbations are applied only to the luminance channel in YCbCr color space to avoid chromatic artifacts. Additionally, a simple phase-saliency mask concentrates updates on the most influential frequencies. The model is trained with a weighted combination of losses on clean and phase-perturbed samples, supporting both single-source and multi-source DG. We validate our method on two challenging medical datasets and demonstrate that PhaseAT achieves over 20% improvement in single-source domain generalization, outperforming several state-of-the-art DG methods. The code implementation is available at: https://github.com/ahmed-sharshar/PhaseAT.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "8dc43bf06d27bd02",
+  "title": "FrontierGS: Progressive View-Space Frontier Expansion for Sparse 3D Gaussian Splatting",
+  "link": "https://arxiv.org/abs/2511.16030",
+  "description": "arXiv:2511.16030v3 Announce Type: replace \nAbstract: 3D Gaussian Splatting (3DGS) enables efficient, high-fidelity novel view synthesis, yet its performance degrades severely under sparse-view supervision due to extreme ill-posedness. While existing approaches introduce various geometric priors or heuristic regularizations to mitigate overfitting, they largely overlook the underlying optimization dynamics. In this paper, we identify a distinct training pathology termed view-space generalization collapse: as optimization proceeds, observed-view fitting error continuously decreases, whereas rendering quality at unseen viewpoints initially peaks at an intermediate stage and subsequently deteriorates. This transient peak indicates that early-stage optimization implicitly uncovers valid local 3D structures before overfitting along training rays destroys them. Grounded in this finding, we propose FrontierGS, a progressive view-space expansion framework designed to capture and anchor these transiently reliable states. Operating along an expanding generalization frontier, FrontierGS systematically probes candidate viewpoints around observed cameras, verifies their geometric and perceptual consistency, and progressively incorporates reliable candidates into the supervision set to permanently preserve valid geometry before collapse occurs. Extensive experiments across the LLFF, MipNeRF-360, and DTU benchmarks demonstrate that FrontierGS effectively eliminates view-space collapse, consistently outperforming state-of-the-art baselines in both rendering fidelity and geometric accuracy. Project page: https://github.com/Zijian1026/FrontierGS",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

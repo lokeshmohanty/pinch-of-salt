@@ -1,0 +1,14 @@
+{
+  "id": "46eccdce2ffc93c8",
+  "title": "Spectral Gating via Damped Oscillations for Adaptive Implicit Neural Representations",
+  "link": "https://arxiv.org/abs/2606.23129",
+  "description": "arXiv:2606.23129v3 Announce Type: replace \nAbstract: Implicit Neural Representations (INRs) have been proven successful in encoding continuous signals through coordinate-based networks, yet facing a spectral dilemma: periodic activations capture fine details but act as all-pass filters that memorise noise, while spatially compact activations regularise effectively but suffer from low-frequency bias. Existing attempts to resolve this trade-off introduce computational overhead or tuning frailty. We propose to model each neuron's activation as the steady-state response of a sinusoidally-forced damped harmonic oscillator, whose amplitude naturally governs the network's spectral selectivity during training. By jointly optimising the oscillator parameters alongside the network weights, our method adapts to the target signal's spectral content without explicit regularisation. Initialised in the stopband, the network exhibits a coarse-to-fine learning curriculum that progressively expands its spectral gate, capturing low-frequency structures first and high-frequency details only when justified by the reconstruction objective. Comprehensive experiments show that our approach consistently achieves state-of-the-art or competitive results against established INRs, while requiring no task-specific tuning of any hyperparameters.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

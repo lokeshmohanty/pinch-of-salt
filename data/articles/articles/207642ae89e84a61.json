@@ -1,0 +1,14 @@
+{
+  "id": "207642ae89e84a61",
+  "title": "An Invariant Tangent-Angle Descriptor and a Band U-Net for 2D Fragment Adjacency Prediction",
+  "link": "https://arxiv.org/abs/2610.09459",
+  "description": "arXiv:2610.09459v1 Announce Type: new \nAbstract: This paper addresses the prediction of adjacency between pairs of 2D fragments based on their contours. We improved the two-stage architecture proposed in Beaulac's thesis, in which a rotation-equivariant Siamese convolutional neural network scores pairs of local image windows along the two contours of two fragments. The scores are gathered in an adjacency matrix in which a ResNet detects the partial anti-diagonal band that reveals the adjacency of two fragments. In the current work, we keep the pipeline and replace the local score by a comparison of tangent-angle profiles of contour windows, making it, by construction, invariant to fragment rotation and agnostic to the selected contour-starting point. These adaptations may be either a training-free likelihood ratio or a small one-dimensional convolutional model trained on corresponding points. We also replaced the final classifier by a band U-Net that segments the band and classifies the pair, so that the shared arc is obtained along with the decision. In the synthetic data set of the original thesis, the tangent descriptor performs as well as or better than the image-window approach in all tested configurations. The proposed pipeline reaches an accuracy of 98%, vs 93% to 95% for the original approach once its evaluation is corrected. We tested our pipeline, with models trained only on synthetic data, on the PairingNet benchmark, and obtained an AUC of 0.93. Furthermore, under the PairingNet pair-searching protocol conditions, our learned descriptor obtains a Recall@10 of 0.82 on the real set against 0.56 from the best model of the original paper.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

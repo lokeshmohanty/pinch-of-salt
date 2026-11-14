@@ -1,0 +1,13 @@
+{
+  "id": "0e7711070acc1ec0",
+  "title": "Efficient Concertormer for Image Deblurring and Beyond",
+  "link": "https://arxiv.org/abs/2404.06135",
+  "description": "arXiv:2404.06135v4 Announce Type: replace \nAbstract: The Transformer architecture has achieved remarkable success in natural language processing and high-level vision tasks over the past few years. However, the inherent complexity of self-attention is quadratic to the size of the image, leading to unaffordable computational costs for high-resolution vision tasks. In this paper, we introduce Concertormer, featuring a novel Concerto Self-Attention (CSA) mechanism designed for image deblurring. The proposed CSA divides self-attention into two distinct components: one emphasizes generally global and another concentrates on specifically local correspondence. By retaining partial information in additional dimensions independent from the self-attention calculations, our method effectively captures global contextual representations with complexity linear to the image size. To effectively leverage the additional dimensions, we present a Cross-Dimensional Communication module, which linearly combines attention maps and thus enhances expressiveness. Moreover, we amalgamate the two-staged Transformer design into a single stage using the proposed gated-dconv MLP architecture. While our primary objective is single-image motion deblurring, extensive quantitative and qualitative evaluations demonstrate that our approach performs favorably against the state-of-the-art methods in other tasks, such as deraining and deblurring with JPEG artifacts. The source codes and trained models will be made available to the public.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

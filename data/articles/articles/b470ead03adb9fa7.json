@@ -1,0 +1,13 @@
+{
+  "id": "b470ead03adb9fa7",
+  "title": "Weeding Out Bad Seeds: Initial-Noise-Robust Unlearning for Text-to-Image Diffusion Models",
+  "link": "https://arxiv.org/abs/2609.37537",
+  "description": "arXiv:2609.37537v1 Announce Type: new \nAbstract: Machine unlearning has emerged as a critical post-hoc safety measure to erase sensitive concepts from Text-to-Image (T2I) models without prohibitive retraining. However, we reveal that current state-of-the-art (SOTA) approaches are brittle due to a severe lack of robustness to noise initialization. We call this phenomenon ``probabilistic forgetting'': suppressed concepts re-emerge under specific random initial noise conditions, despite appearing unlearned on other initializations. We trace this failure to the misalignment between standard Gaussian sampling during unlearning and the unlearning objective. Since the target concept manifests only in specific initial noise regions throughout the unlearning phase, uniform random sampling yields sparse, uninformative gradient updates that fail to drive robust erasure. To overcome this issue, we propose an adaptive, concept-conditioned sampling strategy that dynamically concentrates gradient updates on regions where the target concept manifests, down-weighting uninformative areas. We integrate our framework with six distinct SOTA unlearning methods across four diffusion backbones and evaluate it across safety, object, and artistic-style unlearning, as well as under black-box and white-box adversarial attacks. Our method reduces the conditional nudity re-emergence rate across random initializations by 67.2% on average over four baselines and lowers attack success rates across both adversarial evaluations. Across concept domains, Adaptive Noise Sampling strengthens adversarial robustness and non-target retention while preserving competitive generative quality and target-erasure performance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

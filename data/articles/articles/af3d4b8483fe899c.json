@@ -1,0 +1,13 @@
+{
+  "id": "af3d4b8483fe899c",
+  "title": "Continuous Angular Control in Text-to-Image Generation via Geometric Token Encoding",
+  "link": "https://arxiv.org/abs/2611.13172",
+  "description": "arXiv:2611.13172v1 Announce Type: new \nAbstract: Text-to-image diffusion models can render a photorealistic analog clock but cannot control the time it displays. Across four pretrained models, fewer than 1% of generated clocks place both hands within 6 degrees of the requested time; the models instead collapse onto visually dominant configurations such as the canonical 10:10 pose. The same failure appears when a specific fraction of a circular object is requested, where models return complete or conventionally sliced objects. We observe that these two failures share a geometric structure: both target quantities can be parameterized by angular variables.\n  We introduce a geometric token encoding framework that conditions generation directly on these angles. Each angular component is encoded as a periodic sine-cosine feature and projected into a role-specific token embedding that is injected into the prompt before a frozen text encoder. To spatially ground these tokens without requiring localization input at inference, we introduce Stochastic Localization Relaxation (SLR), which stochastically relaxes attention supervision from component-level to object-level to unconstrained localization during training. For clocks, we additionally introduce a hand-swap preference objective that discourages assigning the correct angles to the wrong hand roles. On analog clocks our method reaches 63-78% Acc@6 degrees across evaluation methods, compared with below 1% for the baselines. On circular-fraction generation, it achieves 89.5% Acc@0.10, while maintaining 88.8% on unseen object categories and 84.9% on unseen target values, compared with roughly 20% for pretrained baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

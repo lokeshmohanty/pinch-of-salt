@@ -1,0 +1,13 @@
+{
+  "id": "f003396402e6db90",
+  "title": "Constrained Dynamic Gaussian Splatting",
+  "link": "https://arxiv.org/abs/2602.03538",
+  "description": "arXiv:2602.03538v2 Announce Type: replace \nAbstract: While Dynamic Gaussian Splatting enables high-fidelity 4D reconstruction, its deployment is severely hindered by a fundamental dilemma: unconstrained densification leads to excessive memory consumption incompatible with edge devices, whereas heuristic pruning fails to achieve optimal rendering quality under preset Gaussian budgets. In this work, we propose Constrained Dynamic Gaussian Splatting (CDGS), a novel framework that formulates dynamic scene reconstruction as a budget-constrained optimization problem to enforce a strict, user-defined Gaussian budget during training. Our key insight is to introduce a differentiable budget controller as the core optimization driver. Guided by a multi-modal unified importance score, this controller fuses geometric, motion, and perceptual cues for precise capacity regulation. To maximize the utility of this fixed budget, we further introduce an adaptive static-dynamic allocation strategy that separates the Gaussian representation into static and dynamic branches and distributes the shared global capacity between them according to motion complexity. Furthermore, we implement a three-phase training strategy to seamlessly integrate these constraints, ensuring precise adherence to the target count. After training, a dual-mode hybrid compression scheme further reduces storage overhead. CDGS therefore not only strictly adheres to the specified Gaussian-count budget (error<2%) but also achieves favorable rate-distortion performance. Extensive experiments demonstrate that CDGS delivers optimal rendering quality under varying capacity limits and favorable rate-distortion performance, achieving over 3x model compression compared with the state-of-the-art method Ex4DGS.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

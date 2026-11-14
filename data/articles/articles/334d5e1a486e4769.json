@@ -1,0 +1,13 @@
+{
+  "id": "334d5e1a486e4769",
+  "title": "Improving Semantic Coverage in AI Test & Evaluation through Generative Augmentation",
+  "link": "https://arxiv.org/abs/2610.13697",
+  "description": "arXiv:2610.13697v1 Announce Type: new \nAbstract: In test and evaluation (T&amp;E) of AI models, evaluators typically have access only to a held-out test dataset and no knowledge of the training data or its semantic composition. If critical input conditions---such as time-of-day, weather, or scene location---are underrepresented in this test dataset, T&amp;E results can be misleadingly due to this semantic coverage gap. We propose a three-stage generative AI pipeline to detect and fill such semantic gaps without requiring ground-truth labels of these semantics. First, vision-language models (VLMs) perform zero-shot binary labeling of semantic factors, and an embedding-space clustering step identifies which semantics most affect downstream model behavior. Second, diffusion-based image-to-image models transform existing covered images into the underrepresented semantic domain, preserving scene content while augmenting high-level appearance. Third, statistical analysis of the augmented image embeddings verifies that the synthetic imagery improves dataset coverage before it is incorporated. Crucially, the synthetic data is used only to enrich the test set and no model retraining is performed for T&amp;E. We validate the full pipeline on both image classification and object detection under day/night semantic gaps, showing that the augmented test datasets better distinguish models with and without exposure to the missing semantic, thereby yielding T&amp;E conclusions that more closely match those of an ideal, fully covered dataset. Code available at https://github.com/Hashe037/DEDUCE",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

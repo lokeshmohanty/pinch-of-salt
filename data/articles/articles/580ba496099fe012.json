@@ -1,0 +1,15 @@
+{
+  "id": "580ba496099fe012",
+  "title": "StippleDiffusion: Capacity-Constrained Stippling using Controlled Diffusion",
+  "link": "https://arxiv.org/abs/2605.15816",
+  "description": "arXiv:2605.15816v2 Announce Type: replace-cross \nAbstract: Stipple patterns, point sets whose local density tracks a target image, are traditionally produced by per-density iterative optimizers, which are slow, non-differentiable, and must be re-run from scratch for each new target. Learned alternatives have so far addressed only unconditional point generation; capacity-constrained, image-conditioned stippling has remained out of reach. We present the first diffusion-based sampler that simultaneously satisfies a learned local point-distribution prior and a continuous, image-defined capacity constraint at inference. The method is a ControlNet branch built on top of an optimal-transport-grid point-set diffusion baseline, conditioned on the target density map and a high-resolution image. Two design choices make the combination tractable: training and inference are restricted to the late-stage denoising regime, initialized from a density-weighted rejection sample, and the standard zero-convolution injection is replaced with a sigmoid-gated 1x1 projection that preserves the base model's blue-noise structure under hard density signals. A single trained checkpoint accepts arbitrary target densities at inference, generalizes to point budgets that were not seen during training, and produces stipples in time nearly independent of the output point count. On the Icons-50 benchmark, our learned sampler reaches parity with per-density-optimized baselines on every reported metric while remaining differentiable end-to-end.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

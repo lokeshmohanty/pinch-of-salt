@@ -1,0 +1,13 @@
+{
+  "id": "f303bd23c93cabad",
+  "title": "SFMformer: A Spatial-Frequency Modulation Transformer for Lightweight Image Super-Resolution",
+  "link": "https://arxiv.org/abs/2608.17966",
+  "description": "arXiv:2608.17966v1 Announce Type: new \nAbstract: Sparse attention mechanisms, which score all token pairs but propagate only the strongest, now underpin the most efficient Transformers for lightweight image super-resolution. This paper observes that sparsification changes what it means to improve such a network. A dense attention layer has one place where representation quality matters: the aggregation of attended features. A sparse layer has two, because the top-k operator first decides which tokens survive and only then decides what to do with them, and a token discarded at the selection stage cannot be recovered downstream. Selection quality and aggregation quality are therefore separable targets, addressed by modules placed before and after the attention respectively. We test this by pairing a dual-branch spatial enhancement on the input of a progressive focused attention with a wavelet-domain modulation on its output, forming SFMformer. Measuring each module alone and jointly over all fifteen benchmark-scale pairs, we find their gains are not additive: the joint gain exceeds the sum of the individual gains on nine pairs, and the sign of the discrepancy is predicted by how much the weaker module contributes on its own (r = -0.72), so the two compound when they relieve different constraints and overlap when they relieve the same one. Enabling spectral modulation once per block rather than once per layer retains the effect at roughly one-sixth of its cost, keeping the model below one million parameters at every scale. SFMformer ranks first on 28 of 30 PSNR/SSIM entries across five benchmarks and three upscaling factors. We report the cases where the pairing does not help, and deploy the model on a Raspberry Pi 5 to confirm the design is practical under tight resource budgets.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

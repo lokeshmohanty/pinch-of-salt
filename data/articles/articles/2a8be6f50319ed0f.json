@@ -1,0 +1,13 @@
+{
+  "id": "2a8be6f50319ed0f",
+  "title": "On-Policy Distillation with Best-of-N Teacher Rollout Selection",
+  "link": "https://arxiv.org/abs/2605.09725",
+  "description": "arXiv:2605.09725v3 Announce Type: replace \nAbstract: On-policy distillation (OPD), which supervises a student on its own sampled trajectories, has emerged as a data-efficient post-training method for improving reasoning while avoiding the reward dependence of reinforcement learning and the catastrophic forgetting often observed in standard supervised fine-tuning. However, standard OPD typically computes teacher supervision under noisy student-generated contexts and often relies on a single stochastic teacher rollout per prompt. As a result, the supervision signal can be high-variance: the sampled teacher trajectory can be incorrect, uninformative, or poorly matched to the student's current reasoning behavior. To address this limitation, we propose BRTS, a Best-of-N Rollout Teacher Selection framework for on-policy distillation. BRTS augments standard student-context OPD with a teacher-context supervision branch constructed from the curated teacher trajectory. Rather than distilling from the first sampled teacher rollout, BRTS samples a small pool of teacher trajectories and selects the auxiliary trajectory using a simple priority rule: correctness first, student alignment second. When multiple correct teacher trajectories are available, BRTS chooses the one most aligned with the student's current behavior; when unconditioned teacher samples fail on harder prompts, it invokes a ground-truth-conditioned recovery step to elicit a natural derivation. The selected trajectory is then used to provide reliable teacher-context supervision inside the OPD loop, augmented with an auxiliary loss on the teacher trajectory. Experiments on AIME 2024, AIME 2025, and AMC 2023 show that BRTS improves over standard OPD on challenging reasoning benchmarks, with the largest gains on harder datasets. Our code is available at https://github.com/BWGZK-keke/BRTS.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

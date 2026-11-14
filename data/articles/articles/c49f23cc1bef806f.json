@@ -1,0 +1,15 @@
+{
+  "id": "c49f23cc1bef806f",
+  "title": "Counterfactual Evidence Audits Predict LLM-Agent Susceptibility to Ranked Context",
+  "link": "https://arxiv.org/abs/2606.00914",
+  "description": "arXiv:2606.00914v2 Announce Type: replace \nAbstract: LLM agents increasingly decide from evidence assembled by upstream systems: retrievers choose documents, recommenders choose posts, and memory systems choose prior events. Existing evaluations usually hold this evidence fixed, missing failures in which individually ordinary items form a systematically one-sided context. We introduce a counterfactual evidence audit: expose an agent to two mirrored sets of five documents, measure the difference in six downstream decisions, and use that contrast to predict its response to disjoint 45-document contexts. The protocol was frozen before testing three held-out open-weight model families. Across 18 held-out model-task cells, five-document effects predict full-context effects with Spearman rho=.855 (p<.001), reduce mean absolute prediction error by 62% relative to a zero-effect predictor, and recover the direction of 12 of 13 material effects. A reviewer-requested post-hoc task-mean baseline is also substantially weaker (MAE .369 versus .167). Matched controls show that selecting one-sided ordinary items, rather than merely reordering identical items, causes the shift in a susceptible model. Across seven open-weight families, susceptibility transfers from an interactive feed to a static RAG dossier (rho=.750, exact p=.033), while a provenance warning does not reliably mitigate it. A separate study of three deployed Codex agent tiers finds strong audit-to-full ranking (rho=.951, p<.001) but no individually significant full-context effect after correction. Within this single synthetic remote-work domain, the result supports a domain-specific triage procedure, not a universal steering claim: evidence selection must be evaluated as part of the composed agent system.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.CR"
+  ]
+}

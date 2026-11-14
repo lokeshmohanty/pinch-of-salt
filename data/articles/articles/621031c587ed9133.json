@@ -1,0 +1,14 @@
+{
+  "id": "621031c587ed9133",
+  "title": "Tile-Based Phase Unwrapping with Reliability-Ordered Joining and Residual-Weighted Multipath Averaging",
+  "link": "https://arxiv.org/abs/2609.13409",
+  "description": "arXiv:2609.13409v3 Announce Type: replace-cross \nAbstract: Phase unwrapping recovers a continuous phase map from measurements known only modulo 2{\\pi}, in the presence of noise and discontinuities. We propose a tile-based method that combines local spectral reconstruction, reliability-ordered tile joining, and residual-weighted multipath averaging. Each tile is reconstructed by a discrete cosine transform (DCT) least-squares solve, and robust measurements along tile borders guide their joining along a spanning tree. We repeat this reconstruction on shifted tile grids and on rotated and reflected copies of the image, which changes tile borders and joining paths. A residual-weighted average combines the resulting reconstructions, which are computed in parallel and averaged on the fly without being stored. We also introduce the corrected circular rewrapping error, a congruence measure: after removing a global phase offset, it measures how far the rewrapped reconstruction is from the observed phase. It applies to least-squares and path-based methods, even without an unwrapped reference. Used with reference-based errors, it separates agreement with the measurement from recovery of the correct number of cycles. Experiments on radar-interferometric, magnetic-resonance, holographic, and constructed phase images compare our method with seven reference algorithms. Among the methods that complete every test image, ours has the lowest mean fraction of pixels with an error above {\\pi}. On the images all methods complete, it lies on several speed-accuracy Pareto fronts. Error maps also reveal isolated cycle errors that average scores or congruence alone can hide.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

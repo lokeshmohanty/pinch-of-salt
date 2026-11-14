@@ -1,0 +1,14 @@
+{
+  "id": "643acf68b62394c7",
+  "title": "Equivariant Conditional Diffusion Model for Head and Neck CT Image Synthesis from CBCT",
+  "link": "https://arxiv.org/abs/2509.21913",
+  "description": "arXiv:2509.21913v2 Announce Type: replace-cross \nAbstract: Background: Cone-beam computed tomography CBCT is a commonly used modality for image guided radiotherapy. It offers real time anatomical visualization with low acquisition cost and dose. Nevertheless, photon scattering and beam hindrance lead CBCT images to suffer from several artifacts. These involve inaccurate Hounsfield Unit HU values, which render a lower reliability towards the dose calculations and adaptive planning.\n  Purpose: Computed tomography CT, on the contrary, offers better image quality and accurate HU calibration, yet is typically acquired using offline mode and fails to capture the intra-treatment anatomical changes. This renders a need for developing an accurate CBCT to CT synthesis to mitigate the gap in imaging quality in the adaptive radiotherapy workflow.\n  Methods: We propose a novel diffusion based conditional generative model, coined EqDiff-CT, to synthesize high quality CT images from CBCT. EqDiff-CT employs a denoising diffusion probabilistic model DDPM to iteratively inject noise and learn latent representations that enable reconstruction of anatomically consistent CT images. A group equivariant conditional U-Net backbone, implemented with e2cnn steerable layers, enforces rotational equivariance cyclic C4 symmetry, helping preserve fine structural details while minimizing noise and artifacts.\n  Results: The system was trained and validated on the SynthRAD2025 dataset, comprising CBCT-CT scans across multiple head and neck anatomical sites, and we compared it with advanced methods such as CycleGAN and DDPM. EqDiff-CT provided substantial gains in structural fidelity, HU accuracy and quantitative metrics. Visual findings confirm the improved recovery, sharper soft tissue boundaries, and realistic bone reconstructions.\n  Conclusions: The findings suggest that the diffusion model has offered a robust and generalizable framework for CBCT improvements.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.med-ph",
+    "cs.AI"
+  ]
+}

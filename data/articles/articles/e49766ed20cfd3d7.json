@@ -1,0 +1,13 @@
+{
+  "id": "e49766ed20cfd3d7",
+  "title": "Different Feedback, Different Updates: Selective Self-Learning from User Interactions for Large Language Models",
+  "link": "https://arxiv.org/abs/2608.09109",
+  "description": "arXiv:2608.09109v2 Announce Type: replace \nAbstract: User feedback offers natural supervision for persistent LLM improvement, but a single message may support multiple behavioral changes with different scopes of generalization. We introduce SLIFT, a selective self-learning framework built on a task-relative view of user feedback. SLIFT decomposes each feedback message into atomic components and interprets each component relative to the original task as Fix, Spec, or Null: requirements for task validity, compatible condition-specific refinements, or content with no reliable positive update direction. To incorporate each change at the appropriate scope, SLIFT trains two complementary LoRA adapters on a shared frozen backbone: a Generalist that consolidates Fix requirements into default behavior through feedback-conditioned self-distillation, and a Specialist that observes only the task and Generalist response to supply residual guidance for applicable, unmet Spec refinements. Null components induce no positive update. Across backbones, SLIFT achieves strong performance on both MemoryBench and WildFB, with targeted analyses further examining its underlying mechanisms. We release our code at https://anonymous.4open.science/r/SLIFT.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "a512d4793699cce7",
+  "title": "What Concepts Lie Within? Detecting and Suppressing Risky Content in Diffusion Transformers",
+  "link": "https://arxiv.org/abs/2605.10180",
+  "description": "arXiv:2605.10180v2 Announce Type: replace \nAbstract: The rise of text-to-image~(T2I) models has increasingly raised concerns regarding the generation of risky content, such as sexual, violent, and copyright-protected images, highlighting the need for effective safeguards within the models themselves.Although existing methods have been proposed to eliminate risky concepts from T2I models, they mainly focus on the erasure of risk-associated textual or latent representations, limiting their ability to defend against adversarial prompts without explicit risk words, especially in recent Diffusion-Transformer-based T2I models. To bridge this gap, we investigate how semantic concepts activate the generation process within Diffusion Transformers~(DiTs) and discover that attention heads exhibit concept-specific sensitivity. This property enables both the detection and suppression of risky content. Building on this discovery, we propose a training-free inference-time safeguard for image generation in DiTs. Specifically, our method quantifies each textual token's sensitivity across all attention heads as an Attention Head Vector~(AHV), which serves as a discriminative signature for detecting risky generation tendencies. In the inference stage, we propose a momentum-based strategy to dynamically track token-wise AHVs across denoising steps, and a sensitivity-guided adaptive suppression strategy that suppresses the attention logits of identified risky tokens based on head-specific risk scores. Extensive experiments demonstrate that our method effectively suppresses sexual, copyrighted-style, and various harmful content while preserving visual quality, and further exhibits strong robustness against adversarial prompts and transferability across different DiT-based T2I models. These results establish our method as a practical safeguard for the safe deployment of modern T2I models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR"
+  ]
+}

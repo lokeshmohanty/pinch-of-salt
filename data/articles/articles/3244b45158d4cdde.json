@@ -1,0 +1,14 @@
+{
+  "id": "3244b45158d4cdde",
+  "title": "GLID: Gated Local Intrinsic Dimension Repairs the Blind Spots of Face-Forgery Detectors",
+  "link": "https://arxiv.org/abs/2607.18770",
+  "description": "arXiv:2607.18770v1 Announce Type: cross \nAbstract: Fine-tuned foundation-model detectors dominate face-forgery benchmarks, yet they stay blind to generator families absent from training. We present GLID, a detector that repairs this blind spot with geometry instead of data. GLID treats the patch tokens of a single image as a sample from a manifold and estimates their local intrinsic dimension (LID) at several depths of a frozen vision transformer. This 12-dimensional, training-free signal enters a fine-tuned detector through a confidence gate whose strength is calibrated purely in-distribution. On a 16-axis cross-generator benchmark, GLID reaches 0.805 mean AUC, first among retrained state-of-the-art baselines and never significantly behind the strongest of them on any axis. It lifts the generation axes by +0.084 AUC while moving reenactment by only -0.005. Two empirical laws explain the design. First, forged faces bend the token manifold at family-specific depths: GAN artifacts peak at the last layer, diffusion artifacts peak mid-network, and the pattern survives four backbones, three dimension estimators, and non-face imagery. Second, fine-tuning absorbs auxiliary gains exactly where training data covers: injecting 1% target-family images erases a +0.100 gain, so geometric signals matter precisely where data is unavailable. The deterministic signal also cuts the cross-seed spread of accuracy 5.5x. Code, preregistered analysis gates, and per-image scores accompany the paper.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "793ef4f8101efb1d",
+  "title": "Cue-guided dual-path reconstruction with adaptive multi-scale response refinement for low-light image enhancement",
+  "link": "https://arxiv.org/abs/2603.16482",
+  "description": "arXiv:2603.16482v2 Announce Type: replace-cross \nAbstract: Low-light image enhancement (LLIE) supports optical sensing and scene observation when limited photon capture and sensor noise degrade image quality. However, existing methods can introduce colour deviations or blur local details in the enhanced images. To address this challenge, we propose CueDR-Net, a dual-path network that combines brightness adjustment with local content reconstruction through bidirectional cue interaction and adaptive multi-scale refinement. Specifically, a fixed extractor derives luminance variation, colour, and texture cue maps from the input image. These maps are encoded in a cue stream that exchanges features with the image stream through bidirectional attention. The exchanged features support two paths for brightness adjustment and local content reconstruction. The brightness adjustment path predicts pixel wise adjustment maps that control iterative intensity changes in the input image. In parallel, the residual path uses the exchanged features to predict an additive correction for local content reconstruction. To capture weak structures across scales, Adaptive Multi-Scale Response Refinement Convolution (AMRRConv) refines the features used for both predictions. It fuses learnable local transition responses with multi-scale features from factorized three-plane filtering using pixel wise weights. The adjusted image is added to the correction before being mapped to the enhanced image. Evaluations on LOLv1, LSRW-HUAWEI, and LSRW-NIKON demonstrate competitive enhancement performance, supported by ablation studies. AMRRConv also achieves competitive low-light detection performance with a small neck parameter count when integrated into YOLOv11.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

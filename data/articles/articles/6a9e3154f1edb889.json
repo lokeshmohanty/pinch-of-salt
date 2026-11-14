@@ -1,0 +1,13 @@
+{
+  "id": "6a9e3154f1edb889",
+  "title": "Beyond Discrete Samples: High Information Density Replay for Efficient Lifelong Person Re-Identification",
+  "link": "https://arxiv.org/abs/2508.01587",
+  "description": "arXiv:2508.01587v4 Announce Type: replace \nAbstract: Lifelong Person Re-Identification (LReID) typically resists catastrophic forgetting by replaying historical samples, rehearsing domain distributions, or distilling previous model knowledge. Among these, data replay is favored for its simplicity and efficiency, as it fundamentally relies on storing discrete raw images. Although often claimed to be efficient, repeatedly training on an accumulating replay buffer with complex selection strategies across sequential domains is actually highly inefficient. Furthermore, this discrete selection severely restricts historical data coverage and results in low information density, inevitably leading to poor generalization on evolving domains and causing these methods to gradually fall behind other approaches. In this paper, we rethink LReID replay and shift the paradigm from sample selection to information compression, proposing a High Information Density Replay (HiDeR) framework. Rather than saving sparse instances, we continually consolidate historical data into a compact, fixed-budget memory. Specifically, we introduce a complexity aware allocation mechanism to dynamically assign memory quotas based on intra-class variance, alongside a metric guided condensation objective that directly preserves essential identity topologies. Furthermore, since highly compressed synthetic samples exhibit artifact styles unsuitable for current domain training, we introduce a cross modality adaptation strategy. By bidirectionally translating styles between synthetic and real samples, this strategy bridges the modality gap to mitigate optimization conflicts, while also enriching stylistic diversity for better generalization. Extensive experiments demonstrate that our framework outperforms state-of-the-art methods in retaining historical knowledge and improving overall generalization, while substantially reducing the cumulative replay cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

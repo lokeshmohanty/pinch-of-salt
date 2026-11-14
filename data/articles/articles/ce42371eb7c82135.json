@@ -1,0 +1,13 @@
+{
+  "id": "ce42371eb7c82135",
+  "title": "Dissect and Prune: Enhancing Robustness in AI-Generated Image Detection",
+  "link": "https://arxiv.org/abs/2606.10309",
+  "description": "arXiv:2606.10309v2 Announce Type: replace \nAbstract: While existing AI-generated image detectors report high performance, we identify that this is largely driven by a critical prediction asymmetry: a bias toward the real class that severely limits sensitivity to generated content, especially under standard post-processing operations such as compression and resizing. We hypothesize that this stems from the model's reliance on spurious features, distracting signals that obscure true generative artifacts. To address this, we propose DEAR (Dissect and Prune), which leverages inpainted images to identify and prune these interfering components. Specifically, we find that features strongly aligned to either inpainted or non-inpainted regions are less robust to post-processing. By measuring the alignment between channel activations and inpaint masks, DEAR removes features at both extremes, retaining only those that capture genuine generative artifacts. Experimental results demonstrate that our approach significantly enhances robustness against unseen generators and post-processing, effectively mitigating the prediction asymmetry. Our code is available at https://github.com/dahyedahye/dear.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

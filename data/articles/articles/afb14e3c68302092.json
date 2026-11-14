@@ -1,0 +1,13 @@
+{
+  "id": "afb14e3c68302092",
+  "title": "SATOR: Backpropagation-Free 3D Test-Time Adaptation via Sample-Adaptive Token Routing",
+  "link": "https://arxiv.org/abs/2610.21367",
+  "description": "arXiv:2610.21367v1 Announce Type: new \nAbstract: Test-time adaptation (TTA) mitigates the performance degradation of source-pretrained models on unlabeled test data under distribution shifts. Recent backpropagation-free token-purging methods address 3D point cloud distribution shifts by filtering unreliable tokens. However, their reliance on predefined purge-size candidates requires multiple forward passes per sample and increases inference cost. We propose SATOR (Sample-Adaptive TOken Routing), a source-free and backpropagation-free 3D TTA framework that eliminates this search by deriving both the partitioning threshold and routing decision directly from each sample. SATOR computes token abnormality scores from complementary attention and geometric relation graphs. It then derives a sample-specific partition into retained and pruned tokens via Otsu-based separability, without evaluating candidate sizes. Keep-ratio-calibrated routing then selects the pruned prediction only when its entropy, penalized by the keep ratio, is lower than that of the original prediction. Experiments on ModelNet40-C, ScanObjectNN-C, and ShapeNet-C demonstrate that SATOR achieves state-of-the-art accuracy on three 3D corruption benchmarks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c299940616cae3fd",
+  "title": "No Safe Dose: How Training Data Drives Unsafe Image Generation",
+  "link": "https://arxiv.org/abs/2605.28137",
+  "description": "arXiv:2605.28137v2 Announce Type: replace \nAbstract: Text-to-image models are trained on web-scale data that inevitably contains unsafe images, yet whether this contamination directly drives unsafe generation has not been tested under controlled conditions. We train the same text-to-image model on corpora that differ only in their fraction of unsafe images (0% to 9.6%) and in size (100K to 8M), and evaluate 10,000 generations per model with four independent safety classifiers. Output unsafety rises monotonically and saturates, from 16.6% at 0% to 26.4% at 9.6% contamination, and the effect appears only under adversarial prompts. At a fixed training budget, the level is set by the proportion of unsafe images rather than their absolute count or cumulative exposure, so filtering a fixed fraction is equally effective at 1M and 8M images, at no measurable cost in FID, CLIPScore, or ImageReward. Filtering alone, however, does not eliminate unsafe generation: a floor persists when every image flagged by any of four judges is removed (13.6%) and rises when training on real instead of synthetic images (23.1%). A safety-aligned text encoder lowers the floor to 9.6%, but it is not carried by a removable encoder direction, which implicates the generative backbone. Finally, fine-tuning on entirely safe data erodes the benefit of curation (+8.7pp). Data curation and encoder choice are complementary and effective, but neither makes a model safe on its own.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "4113235efd6b9f4e",
+  "title": "MoMHa: Multi-Objective Optimization of LLM Harnesses over Accuracy, Safety, and Tokens",
+  "link": "https://arxiv.org/abs/2609.30967",
+  "description": "arXiv:2609.30967v1 Announce Type: new \nAbstract: Most work on improving large language models treats accuracy as the sole objective. We argue that the harness, the Python code surrounding the model that constructs prompts, routes calls, and parses outputs, is a first-class design surface whose quality is inherently multi-objective: an accurate harness that refuses no unsafe request, or that consumes an order of magnitude more tokens, is not a good harness. We present Meta-Harness, a system that casts harness design as search over three per-domain objectives (accuracy, behavioural safety, and token cost) solved by an agentic proposer (Claude Code) with full filesystem access to prior harness source, execution traces, and scoring artifacts. Our central finding is that a singlephase joint-reward proposer (MoMHa) outperforms every alternative, including a two-phase \"accuracy then tokens\" ablation, scalar-only feedback, and an accuracy-only baseline. We evaluate on seventeen domains: seven synthetic capability suites, seven real-world public benchmarks (HumanEval, MBPP, Spider, FEVER, MMLU-Pro, LawBench, NuminaMath), and three U-SafeBench-derived user-specific safety domains, using a 12-model fleet spanning four families. On the synthetic track MoMHa achieves a joint mean of 0.482 versus 0.198-0.422 for ten baselines, winning $7 / 10$ per-domain columns; on the real-world track it scores 0.461 versus 0.377 for the strongest baseline (DSPy), winning 5/7 columns, demonstrating that harness strategies transfer to unseen benchmarks without retraining on 8 of 12 target models. MoMHa attains the highest measured behavioral safety composite (U-SafeBench, 0.781) and uses 95 fewer tokens per example than the two-phase alternative. We will release all harness code, evaluation infrastructure, and crossmodel logs.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

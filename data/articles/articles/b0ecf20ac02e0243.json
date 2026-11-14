@@ -1,0 +1,13 @@
+{
+  "id": "b0ecf20ac02e0243",
+  "title": "Track-Free Dense Structure from Motion",
+  "link": "https://arxiv.org/abs/2505.20858",
+  "description": "arXiv:2505.20858v3 Announce Type: replace \nAbstract: Classical Bundle Adjustment (BA) relies on precise metric initialization and known camera intrinsics, and traditional Structure-from-Motion (SfM) pipelines struggle to exploit modern dense matchers because rigid track-building heuristics break down under their inherent noise. We present Track-Free Dense Structure from Motion (TFD-SfM), which jointly optimizes camera extrinsics, focal lengths, and geometry from a strict cold start. Our central idea is to relax the rigidities of classical SfM into soft, probabilistic decisions under Negative Log-Likelihood (NLL) objectives. Instead of forcing matched pixels onto a single shared 3D point, we model each match as a 3D Gaussian whose variance is optimized jointly with the geometry. Unreliable matches take on large variance and contribute little to the loss. This smooths the optimization landscape, so the solver converges even from identity cameras and uniform depths. A kinematic relative-pose parameterization stabilizes the cold start, and a dual-hypothesis mechanism resolves the mirror-symmetry ambiguity on object-centric scenes. Across DTU, Mip-NeRF~360, ETH3D, and IMC2021, TFD-SfM is competitive with both classical and learning-based SfM baselines and leads on ETH3D, recovering accurate camera poses, intrinsics, and dense geometry from unordered, uncalibrated image collections. Project~page: https://cphjsn.github.io/tfd-sfm/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "218a2f2a29cd1cf3",
+  "title": "MultiAttenGastro: Multi-Dimensional Attention Augmentation for Gastrointestinal Endoscopy Classification",
+  "link": "https://arxiv.org/abs/2609.05070",
+  "description": "arXiv:2609.05070v1 Announce Type: new \nAbstract: Automated gastrointestinal (GI) endoscopy classification requires models that generalize across diverse modalities and class distributions, often far from natural-image pretraining. We propose MultiAttenGastro, a plug-and-play attention framework with parallel 1-D channel, 2-D spatial, and 3-D contextual heads, and present the first systematic cross-dataset evaluation across eight CNN and transformer backbones on five public GI datasets (80 backbone--dataset runs). We find that attention effectiveness is not universal but tracks the representational gap between ImageNet features and the target distribution: MultiAttenGastro improves 6 of 8 backbones on Kvasir-Capsule (14-class WCE, large gap; best macro F1 98.33\\%), is uniformly negative on the small-gap Kvasir-v2 benchmark (0/8), and shows mixed outcomes on datasets with intermediate gap. Five-seed ablation on the strongest case (Kvasir-Capsule, ConvNeXt-Tiny) shows this improvement is directionally consistent, but not statistically decisive (paired $t$: $p=0.47$; Wilcoxon: $p=0.63$), and that individual attention heads are not uniformly beneficial in isolation only their combination yields a positive mean effect. Centered Kernel Alignment (CKA) analysis links this pattern to representational redundancy: low inter-head CKA under large domain gaps coincides with the framework's only consistent gains, while high redundancy under small gaps coincides with its losses. We report these results, including the non-significant margins, as evidence for when and why multi-dimensional attention helps GI endoscopy classification, rather than as a claim that MultiAttenGastro is a strictly superior architectural choice.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

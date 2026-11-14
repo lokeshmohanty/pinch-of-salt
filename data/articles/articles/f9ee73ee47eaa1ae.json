@@ -1,0 +1,14 @@
+{
+  "id": "f9ee73ee47eaa1ae",
+  "title": "The Information Shadow: Measuring Structural Limits on What Language Models Can Learn",
+  "link": "https://arxiv.org/abs/2607.18305",
+  "description": "arXiv:2607.18305v1 Announce Type: cross \nAbstract: Some limits on what language models know are not gaps in data coverage but structural properties of learning from text. We introduce the information shadow: the region of phenomena that a text-trained learner cannot acquire regardless of scale, comprising (I) structures language cannot express, (II) functions that are statistically non-identifiable from the training distribution, and (III) functions that are representable but unreachable by gradient-based training. We give each type a probe that is decisive because the premise of the shadow is, in that setting, provable. For Type I, Language Compression Residuals compare a text learner, which sees only a lossy text-like encoding of the signal, against a full-signal learner, which sees the underlying signal directly. The text learner sits at a computable expressibility ceiling while the full-signal learner pulls away by a gap that stays flat across 300x more data, so the deficit is a property of the channel, not of training. For Type II, the Counterfactual Distinction Test trains models on data exactly consistent with two incompatible rules. Across a provable string task and a language-like agreement task, behavior on counterfactuals is set by the model's inductive bias, while 5% disambiguating data steers the learned rule bidirectionally to either target (r = +/-1.0, p < 1e-10). For Type III, Basin Escape Mapping exhibits a function that is representable at 100% (by hand construction) yet reached 0% of the time by standard training and instantly from a nearby initialization, with width scaling providing no help (p = 1.6 x 10^-14). Each effect is isolated by a control that rules out a capacity or modality artifact. We release the probe suite and discuss implications for benchmark design, capability auditing, and shadow-aware uncertainty.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

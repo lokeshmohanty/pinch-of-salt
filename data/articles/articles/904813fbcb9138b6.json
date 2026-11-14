@@ -1,0 +1,13 @@
+{
+  "id": "904813fbcb9138b6",
+  "title": "Not All Layers Are Equal: Dynamic Layer Routing for Reliable CLIP OOD Detection",
+  "link": "https://arxiv.org/abs/2609.20299",
+  "description": "arXiv:2609.20299v1 Announce Type: new \nAbstract: Information aggregation across model layers are revealed to improve OOD detection. In contrast to crafting a method for layer-wise information aggregation in recent work, we investigate if layer selection is a learnable problem. In other words, we transpose the question from how to fuse layers to one asking which layers to trust for an input. Using a generalizable, weak, out of distribution context crafting approach for supervision, shown to be more effective than state of the art methods' mechanisms, we formulate learning a lightweight router to select a sparse, final-layer-anchored expert over CLIP's layer depth for OOD detection.\n  Across three diverse benchmarks we demonstrate our learnable routing method dubbed Voyager improves OOD detection. On ImageNet-1K, Voyager achieves an average FPR@95 of 18.86, outperforming the strongest, comparable, prompt-learning method by 8.8 points. These gains persist across multiple supervision sources, including those used by existing state-of-the-art prompt-learning methods, demonstrating that, whilst our weak OOD supervision context is highly effective, the key advantage is realized from the learnable router component rather than the supervision source. Significantly, Voyager is highly practical; router learning takes approximately two minutes using less than 1 GB of memory, making it approximately 20x more efficient than current prompt-learning approaches.\n  Anonymized Code: https://anonymous.4open.science/r/Voyager/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

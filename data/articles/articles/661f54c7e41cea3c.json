@@ -1,0 +1,13 @@
+{
+  "id": "661f54c7e41cea3c",
+  "title": "Augmentation with Reinforcement Transformation for Low-textured Scientific Sketch Image Retrieval",
+  "link": "https://arxiv.org/abs/2611.05408",
+  "description": "arXiv:2611.05408v1 Announce Type: new \nAbstract: Low-textured sketch images are widely used in scientific applications, including wildlife conservation, archaeological illustration, and forensic composites. Learning from and retrieving such images is challenging because they lack detailed surface textures and visual variations commonly exploited by modern deep learning models. This paper proposes Augmentation with Reinforcement Transformation (ART) to fine-tune pretrained models to learn effective representations for accurate sketch image retrieval. Our key observation is that sketches are particularly sensitive to image transformations, such as rotation, flipping, zooming, and stretching. While some transformations preserve their structural integrity, others may introduce distortions that hinder representation learning. Instead of randomly choosing transformations to construct fine-tuning views, ART formulates augmentation selection as a multi-armed bandit (MAB) problem, where transformations are treated as arms and their effectiveness is continuously evaluated through rewards. This enables ART to adaptively construct reward-guided view banks before self-supervised fine-tuning; the subsequent representation loss does not feed back to ART. On Florida manatee sketches provided by Mote Marine Laboratory, ART achieves 71.40% average Top-1 accuracy for transformed-scar retrieval, compared with 68.83% for random augmentation selection, and 55.84% for location-aware sketch retrieval, compared with 18.18% for frozen CLIP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

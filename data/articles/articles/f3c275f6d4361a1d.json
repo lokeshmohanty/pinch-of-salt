@@ -1,0 +1,13 @@
+{
+  "id": "f3c275f6d4361a1d",
+  "title": "Decision-FLIP: Budget-Free Structured Pruning for Gaussian Occupancy Models",
+  "link": "https://arxiv.org/abs/2610.20917",
+  "description": "arXiv:2610.20917v1 Announce Type: new \nAbstract: Occupancy predictors rely on large persistent banks of Gaussians or learned queries whose size is fixed by hand. Common pruning proxies, such as opacity, activation frequency, or parameter magnitude, do not measure whether removing a row changes the model's voxel decisions. We introduce Decision-FLIP, a budget-free compilation framework whose scoring and structure selection need only unlabeled calibration inputs. Exact Mean-FLIP scores each persistent row by the number of voxel argmax decisions that change when the row is removed from the readout; a guarded Otsu split of the log-score distribution selects the survivor count without a target and abstains when the split is unsupported; and the survivors are physically compiled into a smaller checkpoint, so camera sampling, attention, and aggregation shrink with the bank. For streaming banks, scores are integrated over each row's lifecycle through warp, death, and refill. Across four Gaussian-bank model-dataset settings and one persistent-query transfer, the automatically selected cuts remove 12-79% of eligible rows and cut bank/query-dependent latency by 7-45% across settings with component profiles, with whole-model savings of up to 8.0% on the primary endpoints bounded by fixed-cost image, voxel, and sensor modules and peak-memory savings of up to 16.6%. Under matched one-epoch recovery controls, semantic mIoU changes by at most 0.18 point. Same-$K$ controls show that the ranking, not only the bank size, matters: random removal collapses GaussianFormer-1 and OccFormer, while label-free Mean-FLIP matches or outperforms supervised Taylor ranking on all five settings where that control was run. The method applies when removable primitives keep a stable checkpoint-row identity; it is budget-free in survivor count, not parameter-free.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "fe62a47c8a1219dd",
+  "title": "MetaKE: Meta-Learning for Knowledge Editing Toward a Better Accuracy-Editability Trade-off",
+  "link": "https://arxiv.org/abs/2603.12677",
+  "description": "arXiv:2603.12677v4 Announce Type: replace-cross \nAbstract: Existing locate-then-edit Knowledge Editing (KE) methods typically decompose editing into two stages: upstream target representation optimization and downstream constrained parameter optimization. The optimization across the two stages is disconnected: upstream applies uniform regularization without observing downstream realization of the planned residual, hindering a refined accuracy-editability trade-off. Since this realization is request-specific and depends on downstream constraints, uniform regularization can over-shrink high-association requests, causing insufficient editing, while it can under-regularize low-association requests, producing over-large planned residuals that reduce downstream editability. To bridge this disconnect, we propose MetaKE (Meta-learning for Knowledge Editing), a new framework that unifies upstream and downstream stages into a bi-level optimization problem. The inner level optimizes parameter updates for the target representation, while the outer level optimizes representation using feedback from downstream constraints, achieving a better semantic accuracy-editability trade-off. To avoid costly multi-layer backpropagation, we introduce a Structural Gradient Proxy to approximate and propagate this feedback. Extensive experiments show that MetaKE outperforms strong baselines, offering a new perspective on KE.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

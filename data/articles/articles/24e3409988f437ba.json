@@ -1,0 +1,13 @@
+{
+  "id": "24e3409988f437ba",
+  "title": "Embedding Predictive Adaptation and Refinement for Multi-Modal Industrial Anomaly Detection",
+  "link": "https://arxiv.org/abs/2611.09521",
+  "description": "arXiv:2611.09521v1 Announce Type: new \nAbstract: Industrial Anomaly Detection (IAD) has evolved from 2D image-based approaches to multi-modal methods that leverage the complementary nature of RGB images and 3D point clouds. Among these, memory bank-based methods, which identify anomalies by the discrepancy between each query patch feature and its nearest normal prototype, have proven particularly effective. However, two limitations remain: (i) employing frozen pretrained encoders yields insufficient discrimination between normal and anomalous features due to the domain gap, while existing contrastive learning-based adaptation struggles to capture the spatial relationships required for precise localization; and (ii) pixel-level anomaly maps interpolated from patch-level distance scores remain coarse, lacking fine-grained detail. To address these limitations, we propose EPAR (Embedding Predictive Adaptation and Refinement). We adapt encoders by predicting the embeddings of masked regions to capture spatial relationships, together with patch-level Variance-Invariance-Covariance (VIC) regularization, resolving the poor discriminability between normal and anomalous features caused by the domain gap. We further propose a Noise Suppression Network that refines coarse maps by learning the relational discrepancy between each patch feature and its nearest normal prototype, rather than the anomaly's appearance. This relational signal remains valid for unseen real defects, despite being learned from synthetic anomalies. EPAR demonstrates strong practical applicability, excelling in few-shot settings and improving AUPRO@1% on MVTec 3D-AD and Eyecandies by +1.8% and +1.9%, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

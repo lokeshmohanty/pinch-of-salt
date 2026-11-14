@@ -1,0 +1,13 @@
+{
+  "id": "b9e06bebea5cf5eb",
+  "title": "VISTA: Dense Multi-Label Classroom Coding with Vision-Language Models",
+  "link": "https://arxiv.org/abs/2609.04550",
+  "description": "arXiv:2609.04550v1 Announce Type: new \nAbstract: Video-language benchmarks are usually constructed by the dataset authors without published reliability statistics, leaving the noise floor of the construct unknown. We argue that multimodal benchmarking benefits from methods taken from research communities that have already invested in strategies to ensure reliability. We illustrate the case with the Classroom Observation Protocol for Undergraduate STEM (COPUS): a 24-code multi-label observation instrument with a decade of peer-reviewed reliability literature. We recast COPUS as a video benchmark for multimodal foundation models, where it provides a dense set of structured labels (a 24-dimensional binary vector every 2 minutes across a 50-90 minute lecture), an externally validated vocabulary, and established literature that provides a per-code reliability target based on human evaluators. Annotations in our evaluation corpus are produced by a 5-person human-evaluator panel whose consensus matrix is our reference. We propose VISTA, a baseline that runs MiniCPM-V-4.5 over a dense sliding window, refines its per-window outputs with a lightweight multi-layer perceptron (MLP) head trained on top of the frozen backbone, and max-pools the resulting predictions onto the 2-minute COPUS grid. On three held-out chemistry lectures, VISTA reaches 80.1% restricted macro accuracy versus 74.9% for the zero-shot variant, with the largest residual errors on visually similar instructor codes and on rare audio-dependent codes. We characterize three systematic failure modes (audio-partial observability, fine-grained group-work discrimination, long-tail recall) and release the benchmark tooling, prompts and baseline code at https://github.com/ajfranck/VISTA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

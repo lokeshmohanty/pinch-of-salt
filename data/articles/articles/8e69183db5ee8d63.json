@@ -1,0 +1,14 @@
+{
+  "id": "8e69183db5ee8d63",
+  "title": "Structural Guidance for Unified Joint Demosaicing and Denoising",
+  "link": "https://arxiv.org/abs/2608.09995",
+  "description": "arXiv:2608.09995v1 Announce Type: cross \nAbstract: Joint demosaicing and denoising is a fundamental step in camera image signal processing, yet remains challenging because different Bayer-like color filter arrays (CFAs) and sensor noise jointly corrupt both color sampling and image content. Existing unified restoration networks explicitly model CFA geometry but are still driven primarily by pixel-level supervision, making them prone to structural degradation around edges, repetitive textures, and moir\\'e patterns where local evidence is unreliable. We attribute this limitation partly to the absence of explicit structural guidance beyond pixel-level reconstruction supervision. Motivated by this observation, we propose a structural-guided unified restoration framework that injects pretrained structural knowledge into CFA-aware image restoration. Our model receives a unified five-channel observation consisting of the raw mosaic, CFA masks, and a noise-level map. A SwinIR restoration branch reconstructs pixel details under CFA-conditioned modulation, while a parallel structural reasoning branch extracts complementary structural cues from a sparse pseudo-RGB observation. To bridge the substantial domain gap between sparse noisy sensor data and the natural-image pretraining domain of the structural encoder, we introduce a lightweight trainable adapter before residually fusing structural and restoration features. A shared decoder jointly predicts the restored RGB image and an auxiliary clean mosaic, providing supervision in both image and sensor domains. Extensive experiments across multiple CFA patterns and noise levels demonstrate consistent improvements over state-of-the-art unified and CFA-specific methods, indicating that adapted structural priors can enhance robust camera image restoration. The source codes and dataset are provided in the supplementary material.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

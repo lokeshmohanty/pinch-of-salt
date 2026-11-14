@@ -1,0 +1,13 @@
+{
+  "id": "fd1c203aeed544f4",
+  "title": "GraftOOD: Grafting Out-of-Distribution Exemplars into Advantage-Weighted Rectification for Video Reward Optimization",
+  "link": "https://arxiv.org/abs/2610.13470",
+  "description": "arXiv:2610.13470v1 Announce Type: new \nAbstract: Video reward optimization can increase proxy rewards while reducing video dynamics, a mismatch we identify as \\emph{motion collapse}, including under a video-level motion-quality reward. We propose \\textbf{GraftOOD}, which replaces part of the online rollouts in selected prompt groups with out-of-distribution video exemplars. A shared velocity-regression objective combines group-relative reward rectification with sequence-level exemplar supervision, requiring neither exemplar generation trajectories nor an additional supervised-loss coefficient. We characterize its pointwise optimal field as a source-posterior-weighted combination of the two source-specific target fields. We construct \\textbf{GraftSet-Video}, containing 9,588 format-matched exemplars for 2,397 prompts, to supply external supervision. On Wan2.1-1.3B, GraftOOD raises Dynamic Degree from 4.86 to 44.41 relative to reward-only FlowAWR, while HPSv3 decreases from 8.10 to 7.32 and VisionReward remains close. At the main setting, GraftOOD leads nine of ten metrics among three exemplar-augmented methods. Ablations of exemplar frequency and within-group count reveal dynamics--reward trade-offs rather than uniform gains from increasing exemplar usage. These results support external exemplar supervision as a complement to scalar reward feedback, without equating higher measured dynamics with coherent, visually plausible motion in the generated videos. Code is available at \\href{https://github.com/Fuzm7/FlowAWR}{GraftOOD}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

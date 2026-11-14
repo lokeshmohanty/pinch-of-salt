@@ -1,0 +1,15 @@
+{
+  "id": "5c9225950aee02d2",
+  "title": "Cite Pretrain: Retrieval-Free Knowledge Attribution for Large Language Models",
+  "link": "https://arxiv.org/abs/2506.17585",
+  "description": "arXiv:2506.17585v4 Announce Type: replace \nAbstract: Large language models can answer questions correctly and still hallucinate their citations. Most citation systems address this by retrieving documents at inference time. Retrieval adds latency and depends on external infrastructure. Retrieval noise can also affect the answer. We study whether LLMs can cite documents from their (continual) pretraining without test-time retrieval. We introduce CitePretrainBench to evaluate this setting. It includes Wikipedia, Common Crawl, and arXiv as real-world corpora and also includes novel, unseen documents. The benchmark includes short-form citation tasks for a single fact and long-form tasks for multiple facts. Continual-pretraining first binds factual knowledge to a persistent identifier for each document. Instruction tuning then teaches the model to put these identifiers in its answers as citations. Passive Indexing appends an identifier at the end of each document. Synthetic data used in Active Indexing restate facts in diverse, compositional forms. We train two mappings together. These mappings are source$\\to$fact and fact$\\to$source. The first direction involves the model generating content given a cited source. In the second, it learns to attribute its own answers when facts are paraphrased or combined. On Qwen-2.5-7B and 3B, Active Indexing improves citation precision over Passive Indexing on every evaluated citation task, with gains of up to 30.2 percentage points. In the scaling ablation, citation performance continues to improve as we add augmented data, including at 16 times the original token count. Combining internal and external citations also improves robustness to retrieval noise.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

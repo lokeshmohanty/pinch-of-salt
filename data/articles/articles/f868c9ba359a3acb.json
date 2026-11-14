@@ -1,0 +1,16 @@
+{
+  "id": "f868c9ba359a3acb",
+  "title": "Medical foundation models converge less under label supervision",
+  "link": "https://arxiv.org/abs/2607.20274",
+  "description": "arXiv:2607.20274v3 Announce Type: replace-cross \nAbstract: Diagnostic classifiers and imaging biomarkers are fitted on the embeddings of medical foundation models. These models are replaced as new versions appear. This practice assumes that different models represent images alike. We tested this assumption with more than 750,000 images from 14 datasets in 5 imaging modalities, 18 public models, and 101 models trained on chest radiographs and histopathology that differ in pretraining objective, label type, size, random seed, initialization, training patients, or training recipe. Agreement was measured as the mutual k-nearest-neighbor overlap, the share of an image's nearest neighbors common to two models. Two public models shared on average 0.091 of the 10 nearest neighbors of a chest radiograph. A randomly initialized network shared 0.036 with them. In the four other modalities, they shared at most 0.300. On chest radiographs, agreement depended more on the source dataset and the radiographic view than on the findings. It was not significantly associated with accuracy. A linear mapping between the embeddings of two models, fitted on 4,096 unlabeled radiographs, transferred classifiers for 14 chest findings with 0.987 of their original area under the receiver operating characteristic curve. Convergence depended on the pretraining objective. Label-supervised models converged least at both model sizes in chest radiography and histopathology. On chest radiographs, two label-supervised models that differed only in their random seed shared 0.062 to 0.100 of their nearest neighbors. Two models trained with self-distillation, masked image modeling, or contrastive pretraining shared 0.411 to 0.802. Developers can therefore choose convergence when they choose the pretraining objective. Before replacing a model, users could test on unlabeled images whether its successor returns the same nearest neighbors.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

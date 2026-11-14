@@ -1,0 +1,15 @@
+{
+  "id": "2986efc16a35cc20",
+  "title": "SCAMP: Sparse-anchor Control is One Small Projection",
+  "link": "https://arxiv.org/abs/2605.14716",
+  "description": "arXiv:2605.14716v3 Announce Type: replace-cross \nAbstract: Authoring with a text-to-motion generator needs sparse anchors: chosen joints, at chosen frames, at given positions. Meeting them currently costs\n  a conditioning branch trained for the task, or hundreds of per-clip optimisation steps in the architecture's native variables. In any generator\n  that decodes a continuous state through a frozen differentiable decoder, the anchors ask for little and leave most of the state free: a few\n  hundred numbers against a state of tens of thousands. Every control method is a choice among the states that satisfy them, and the choices differ\n  along the directions the anchors cannot see and the motion can. SCAMP makes the choice that moves none of them: damped Gauss-Newton in the space\n  of the anchors, through the frozen decoder alone, training-free, with one dimensionless damping constant. Every increment is a combination of\n  the rows of the anchors' Jacobian, so the correction is orthogonal to everything the anchors never see, and the system solved is the size of the\n  request rather than of the state. Applied unchanged to seven published generators spanning diffusion, token and latent designs, it matches or\n  exceeds in anchor error every released control method it is measured against, and closes the anchors on hosts that ship none. Confined to those\n  rows, a correction can only take the shapes the decoder admits, so what it costs belongs to the decoder, and holding the solver fixed makes that\n  cost measurable: it divides by decoder family, windowed decoders staying within a small multiple of the unconstrained generator's foot skating\n  where analytic recoveries multiply it several times over. Built to that criterion, our own generator reaches 0.083 m anchor error at FID 0.102 in\n  0.50 s per clip. The decoder's temporal support is a design criterion for controllable motion generation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

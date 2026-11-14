@@ -1,0 +1,13 @@
+{
+  "id": "fc6ea468d63a067b",
+  "title": "State Representation Shapes Long-Horizon Agent Learning and Transfer: An Empirical Study",
+  "link": "https://arxiv.org/abs/2610.15407",
+  "description": "arXiv:2610.15407v1 Announce Type: new \nAbstract: An end-to-end success rate alone cannot distinguish failure to learn an action from failure to apply it as task state changes. We study this distinction in deterministic tool workflows that provide the current artifact state and candidate action recipes. Using 1.7B, 8B, and 27B Qwen models, we compare supervised learning across workflow horizons and cross the state representation used for training with the one used at evaluation. Horizon-matched supervision yields high completion, but an H4-trained 1.7B model transfers poorly to longer workflows under full-state observations. In an H16 crossover, compact-trained 1.7B adapters complete 50/50 held-out tasks in compact view and 0/50 in full view for each of three paired training seeds; full-trained outcomes vary across seeds. A separate 8B adapter pair shows a similar asymmetry. The view dependence also appears in paired-choice tasks where both candidate calls are executable and the correct choice depends on table contents; here, the compact mask does not consult the target action. An explicit relevance cue improves full-view execution but does not close the gap for the tested checkpoint. In a separate 27B ScienceWorld study, compact-state training improves local accuracy under both views, indicating that the transfer pattern depends on the task and observation construction. Together, these experiments identify representation-sensitive transfer as a bottleneck in the controlled workflows, without isolating content reduction from other changes to the observation.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

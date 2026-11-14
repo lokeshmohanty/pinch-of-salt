@@ -1,0 +1,13 @@
+{
+  "id": "589865176d7394ac",
+  "title": "X Marks the Spot: Diffusion for Image Geolocalization with Location Representations",
+  "link": "https://arxiv.org/abs/2611.13180",
+  "description": "arXiv:2611.13180v1 Announce Type: new \nAbstract: Image geolocalization predicts the location at which a photo was taken. Accurate geolocalization requires discriminating between both physically and semantically adjacent areas on Earth. However, prior diffusion-based approaches predict locations by generating coordinates, which are semantically unstable over space. We avoid this limitation by learning geolocalization behavior in the pretrained representation spaces of location encoders, which provide both positional and semantic understanding. To make this space usable for coordinate prediction, we introduce a Location Autoencoder (LAE), which pairs a frozen location encoder with a learned decoder mapping embeddings back to coordinates with kilometer-level accuracy worldwide. In the LAE space, we train DIG, a latent diffusion model that transports noise to location embeddings conditioned on image features. DIG consistently outperforms coordinate-based generative models and sets a new state of the art for parametric geolocalization on three benchmarks: OSV-5M, Im2GPS3k, and YFCC4k. Notably, DIG is the first generative model to outperform retrieval-based methods, and further improves retrieve-and-rerank systems when used as a prior. Code and models will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

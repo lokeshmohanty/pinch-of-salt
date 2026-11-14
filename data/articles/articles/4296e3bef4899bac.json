@@ -1,0 +1,13 @@
+{
+  "id": "4296e3bef4899bac",
+  "title": "MonitorVLM-v2: A Deployed Vision-Language Framework for Real-Time Safety Violation Detection",
+  "link": "https://arxiv.org/abs/2608.00975",
+  "description": "arXiv:2608.00975v1 Announce Type: new \nAbstract: Large vision--language models (VLMs) can reason step by step about complex visual scenes, but this open-ended, autoregressive chain-of-thought (CoT) approach is poorly suited to safety-critical, rule-governed settings such as industrial surveillance, where decisions must be bounded, deterministic, and low-latency. Because CoT inference cost scales jointly with reasoning length and the number of concurrent streams, it creates a throughput bottleneck that precludes the real-time, multistream monitoring required for industrial accountability. Here we present MonitorVLM-v2, a deployment-oriented framework that recasts VLM-based safety assessment as probabilistic inference over a finite regulatory decision space, compressing multimodal reasoning into single-step rule-ID predictions and reducing decoding from a variable-length sequence to a single token. We introduce symbolic policy optimization (SymPO), a novel contrastive policy optimization algorithm that sharpens decision boundaries within this finite symbolic space, together with an entropy-driven triage mechanism that routes uncertain predictions to human reviewers for expert confirmation. In a four-month prospective deployment across 10 concurrent camera feeds in an operational underground mining facility, MonitorVLM-v2 achieved a 19.45-fold increase in inference speed and identified 2.78 times as many confirmed violations as the site's routine manual inspection workflow, demonstrating the practical value of compressed symbolic decision-making for real-time, auditable industrial monitoring.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

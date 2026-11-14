@@ -1,0 +1,17 @@
+{
+  "id": "9273cfd5808f221d",
+  "title": "When Does Compensating Inherited Quantization Error Help? Mean-Square Guarantees for Layer-Wise Quantization and Their Limits",
+  "link": "https://arxiv.org/abs/2610.16020",
+  "description": "arXiv:2610.16020v1 Announce Type: cross \nAbstract: Layer-wise post-training quantization methods let each layer compensate for the quantization error inherited from earlier layers. We ask under what assumptions such compensation guarantees a network output error no larger than without it. For linear networks of any depth, with the required calibration Gram matrices invertible, if the rounding error of each layer has zero conditional mean and a deterministic second-moment map common to both schemes, as under subtractive dither on an unbounded grid, then compensation with strengths in $[0,1]$ fixed in advance gives a mean-square output error no larger than no compensation, each scheme being followed along its own trajectory. The exact gain separates error removed directly from reduced excitation of later rounding noise. Outside this setting the comparison can fail. With rectified linear activations it fails for two independent reasons: noise changes activation states, and, even when no state changes, the correction moves error from samples on which a unit is inactive to samples on which it is active. With stable activations, commutators between the calibration projection and the activation patterns bound the excess. With a bounded codebook, even unique exact layer-wise minimizers with no overload can give a larger output error. For fixed rounding errors it already fails for two scalar linear layers, refuting a published universal guarantee. An exact residual identity gives the necessary and sufficient condition on a common layer input. All these comparisons hold the calibration input fixed. On two 8B models at 4 bits, fixed half-strength compensation beat uncompensated rounding in every model, text and draw tested, yet no rule for choosing the strength beat a layer-wise rule consistently, and lowering the full-network loss on the data used to choose did not reliably lower it on new text.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.IT",
+    "eess.SP",
+    "math.IT"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "a543c69f644fec73",
+  "title": "Evolving Layer-Specific Scalar Functions for Hardware-Aware Transformer Adaptation",
+  "link": "https://arxiv.org/abs/2605.14047",
+  "description": "arXiv:2605.14047v2 Announce Type: replace \nAbstract: Vision Transformers (ViTs) achieve state-of-the-art performance on challenging vision tasks, but their deployment on edge devices is severely hindered by the computational complexity and global reduction bottleneck imposed by layer normalization. Recent methods attempt to bypass this by replacing normalization layers with hardware-friendly scalar approximations. However, these homogeneous replacements do not optimally fit to all layers' behaviour and rely on expensive model retraining. In this work, we propose a highly efficient, hardware-aware framework that utilizes genetic programming (GP) to evolve heterogeneous, layer-specific scalar functions directly from pre-trained weights. Coupled with a novel post-training re-alignment strategy, our approach eliminates the need to retrain models from scratch entirely. Our evolved expressions accurately approximate the target normalization behaviours, capturing $90\\%$ of the variance ($R^2$) compared to only $70.2\\%$ for homogeneous baselines, allowing our modified architecture to recover $84.32\\%$ Top-1 ImageNet-1K accuracy in only 20 epochs. By preserving this performance while eliminating the global reduction bottleneck, our approach achieves a strict reduction in both arithmetic complexity and off-chip memory traffic compared to standard LayerNorm, removing a primary barrier to the efficient deployment of ViTs on edge accelerators.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AR"
+  ]
+}

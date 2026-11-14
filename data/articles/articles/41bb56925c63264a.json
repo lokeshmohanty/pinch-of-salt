@@ -1,0 +1,13 @@
+{
+  "id": "41bb56925c63264a",
+  "title": "Naka-GS: Naka-Guided Chroma Correction and Point-Prior Compaction for Low-Light 3D Gaussian Splatting",
+  "link": "https://arxiv.org/abs/2604.11142",
+  "description": "arXiv:2604.11142v2 Announce Type: replace \nAbstract: Low-light inputs obscure scene content, distort color, and corrupt geometric priors, substantially degrading 3D Gaussian Splatting. Although image enhancement can recover visibility, it often introduces chromatic deviations and fine-scale artifacts that propagate through multi-view reconstruction. Moreover, dense point priors can further amplify these errors and increase optimization cost. To address the coupled challenges, we present Naka-GS, a low-light 3DGS framework that jointly improves observations and Gaussian initialization while retaining the standard 3DGS renderer and training objective. Our Naka-Guided Chroma Correction treats a fixed bionic response as a photometric anchor and learns bounded, frequency-decoupled luminance and chromatic corrections, preserving fine structures while suppressing residual color and boundary artifacts. The corrected views are reconstructed into dense scene priors, which a lightweight, non-learned Point-Prior Compaction Module refines through voxel pooling and distance-adaptive progressive pruning. On eight scene-disjoint RealX3D scenes, Naka-GS achieves 20.735~dB PSNR, 0.7408 SSIM, and 0.3340 LPIPS. PPM reduces initialization from 1.00M to 59.52K points and shortens average 3DGS optimization time by 37.7%.The code is available at https://github.com/RunyuZhu/Naka-GS",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

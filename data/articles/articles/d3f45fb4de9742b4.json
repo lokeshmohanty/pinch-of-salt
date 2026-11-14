@@ -1,0 +1,13 @@
+{
+  "id": "d3f45fb4de9742b4",
+  "title": "FilterFusion: Prior-Guided Adaptive Filter Fusion for Efficient Video Denoising",
+  "link": "https://arxiv.org/abs/2610.21505",
+  "description": "arXiv:2610.21505v1 Announce Type: new \nAbstract: Real-world video denoising for communication systems must handle mixed degradations such as sensor noise, compression artifacts, and motion-induced inconsistency while remaining deployable under tight latency budgets. Purely deep models often achieve high accuracy but come with significant computational cost, whereas classical filters are robust and efficient but insufficiently adaptive. We present FilterFusion, a prior-guided multi-frame denoising framework that combines temporally-aware learned features with an interpretable bank of denoising branches. The model predicts a low-cost guidance signal and uses it to adaptively mix a compact set of denoising responses at the original resolution. The lightweight design uses only 109K parameters and explicitly injects temporal variance and spatial variance cues into the low-resolution controller. On CRVD (real sensor noise), it reaches 34.72 dB PSNR and 0.9330 SSIM with only 0.18 GFLOPs (network-only). Because the filter-bank operations are simple and regular (Gaussian blur, median, weighted sum), a straightforward compiled C implementation of the synthesis path achieves 17.9ms per frame (55.9 FPS) on a single CPU thread at 1080p---exceeding real-time and 122--252 times faster than lightweight CNN baselines that require over 2 seconds per frame. The results demonstrate a strong quality-efficiency-speed trade-off and a practical route to real-time denoising through low-resolution control and explicit filter-based synthesis.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

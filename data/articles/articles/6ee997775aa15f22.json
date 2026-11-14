@@ -1,0 +1,13 @@
+{
+  "id": "6ee997775aa15f22",
+  "title": "When to Retrieve, When to Stay: Uncertainty-Aware Temporal Evidence Allocation for Streaming Video-LLMs",
+  "link": "https://arxiv.org/abs/2609.37345",
+  "description": "arXiv:2609.37345v1 Announce Type: new \nAbstract: Streaming video understanding requires Video Large Language Models (Video-LLMs) to reason over continuous visual streams under causal constraints. As the visual history grows, a bounded visual?processing budget requires evidence selection that balances temporal recency with query relevance. Recent-only selection excludes potentially relevant historical evidence, whereas Semantic-only retrieval can displace useful recent context when relevance scores are ambiguous. We introduce WRWS (When to Retrieve, When to Stay), a training-free framework for uncertainty-adaptive evidence allocation. A lightweight external vision-language encoder scores query relevance across the observed history, while an adaptive allocation module uses the normalized entropy of the similarity distribution as a proxy for retrieval uncertainty. WRWS favors semantic retrieval when relevance cues are reliable and strengthens the recency prior under uncertainty. Following a retrieve-first, encode-later pipeline, WRWS selects evidence before target-model visual encoding, such that only the selected observations are processed by the costly target Video-LLM. Experiments across four Video-LLM families and multiple model scales demonstrate competitive accuracy on StreamingBench and OVO-Bench. In our efficiency evaluation, WRWS reduces average vision-to-answer time to 47.93% of the state-of-the-art method. Code will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

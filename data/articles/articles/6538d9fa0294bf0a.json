@@ -1,0 +1,15 @@
+{
+  "id": "6538d9fa0294bf0a",
+  "title": "PRISM: A Geometric Risk Bound for Decomposing Drift into Scale, Shape, and Head",
+  "link": "https://arxiv.org/abs/2605.11608",
+  "description": "arXiv:2605.11608v2 Announce Type: replace-cross \nAbstract: A single base LLM now comes with dozens of post-training variants, quantized, LoRA-adapted, or distilled, and each has to be checked before release. Existing evaluations provide only a partial picture: benchmark scores and likelihood screens say that a variant has degraded, similarity scores such as CKA and SVCCA say how its features moved, and nothing connects the two. We connect them with one structural fact and one design choice: the prediction head is linear, so feature geometry reaches the loss, and we compare the two feature sets through an orthogonal map, which leaves the geometry being measured unchanged. From these we derive PRISM, a closed-form upper bound on the cross-entropy risk gap between a target model and a proxy variant, and prove that it splits exactly into three measurable axes: scale, shape, and head. Each axis names a failure mode and where to intervene: low-bit quantization distorts shape and, at the lowest bit-widths, also inflates activation scale; quantizing the output embedding inflates the head term, which dominates the bound at high bit-widths. Because the shape term is differentiable, the same geometry becomes a regularizer that curbs catastrophic forgetting more than experience replay. Across two model families and five benchmarks, PRISM ranks quantized and fine-tuned variants from a single forward pass at mean Spearman above 0.8, and eight reference sequences already recover the ranking that the risk gap itself needs over a hundred to reach.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

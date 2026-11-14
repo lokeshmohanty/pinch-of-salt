@@ -1,0 +1,15 @@
+{
+  "id": "5759cc27a532741a",
+  "title": "FILO: A Unified Fisher-Geometric Framework for Low-Rank Adaptation",
+  "link": "https://arxiv.org/abs/2605.08734",
+  "description": "arXiv:2605.08734v2 Announce Type: replace-cross \nAbstract: Low-Rank Adaptation (LoRA) reparameterizes a weight matrix $W$ as a product of two low-rank factors, but the Jacobian $J_G$ of the generator mapping the factors to the weight matrix is rank-deficient, so the factor-space preconditioner $J_G^* F_t J_G$ induced by any $W$-space preconditioner $F_t$ is singular, and consequently the standard chain rule cannot be uniquely inverted to map a preconditioned $W$-space direction back to a factor-space update. Therefore, we introduce FILO, a unified Fisher-geometric framework for low-rank adaptation that enables factor updates without directly inverting this singular operator and casts existing LoRA optimizers by their factor-space inversion strategy and $W$-space preconditioner $F_t$. Existing methods occupy four families along these axes: factor-space adaptive updates, block-diagonal surrogates for $J_G^* J_G$, Frobenius-residual pseudoinverse methods, and Riemannian manifold methods. Within this design space, a gradient-statistics-aware $F_t$ paired with a closed-form factor-space solve at $O((m+n)r)$ memory remains underexplored. We instantiate FILO as FILO-Adafactor by adopting the Adafactor diagonal Kronecker preconditioner $H_t$ on $W$ and selecting from the resulting factor-space solution family the element minimizing an $H_t$-weighted imbalance between the two factor contributions. By construction, the induced weight update is the closest LoRA approximation to the preconditioned $W$-space direction under the $H_t$-weighted norm. Across GPT-2 on E2E, Mistral-7B and Qwen2-7B on GLUE, ARC, and GSM8K, and diffusion-model personalization, FILO-Adafactor and its momentum variant are competitive with or improve over a representative set of LoRA optimizers while keeping peak GPU memory at the LoRA optimizer level.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ed70705d72715eb7",
+  "title": "Attention is All You Need Until You Need Retention",
+  "link": "https://arxiv.org/abs/2501.09166",
+  "description": "arXiv:2501.09166v2 Announce Type: replace-cross \nAbstract: Pretrained Transformers keep what they learned in their weights and lose what they observe once a session ends. The first version of this paper proposed a Retention Layer, a persistent memory that a Transformer block reads with attention and writes during use. Because most of what a deployed model could retain is produced by other agents, this revision treats deciding what to keep as a social learning problem: when to rely on observed behaviour, whom to learn from and how much independent agreement to require. We give a corrected specification of the layer, which reduces exactly to the base Transformer when its memory is empty. We derive the memory's lifecycle from social learning strategies: encoding gated by surprise, observed outcomes and earned credibility; consolidation by a credibility weighted quorum of distinct, recent sources that must also outweigh every rival behaviour; and reconsolidation by the outcomes of reproduction. We prove that raising the quorum lowers the risk of consolidating a coordinated false template exponentially while delaying true templates only linearly, and that relative consolidation protects only while credible honest evidence arrives faster than adversarial evidence. In a simulation with world drift and three memory-poisoning attacks, the lifecycle reached accuracies of 0.989 to 0.996, against 0.62 to 0.63 for the ungated first version design, and kept attack success at or below 0.07 when 30% of the observations about a target were adversarial. As predicted, it amplified attacks once adversarial evidence outpaced honest evidence. Experience with a long running assistant adds two rules: a model's own outputs must not count as support, and a user's testimony should be kept after one mention. We close with an evaluation protocol for language models.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "7a7b1b41ff58aeca",
+  "title": "Enhancing Medical Lesion Segmentation via Several Simple Modules",
+  "link": "https://arxiv.org/abs/2610.41652",
+  "description": "arXiv:2610.41652v1 Announce Type: cross \nAbstract: This work introduces three lightweight enhancement modules for medical lesion segmentation to improve clinical applicability, particularly under data-scarce and computationally constrained environments. Current mainstream methods struggle with the lack of high-quality annotations for rare pathologies, which often leads to severe morphological distortions during inference, despite achieving seemingly ideal DSC scores. Furthermore, the isolated development of individual segmentation tasks restricts cross-domain methodological innovation, underscoring the need for leveraging shared knowledge across different lesions within the same anatomical region. However, constrained access to historical data and annotations hinders efficient knowledge extraction and triggers catastrophic forgetting when adapting to new classes. To address these challenges, we first propose DT-Morph Combined Loss with continuous spatial pooling to optimize differentiable topological structures and boundary continuity. Second, we introduce 3D Group Prompt, which extracts domain-universal knowledge via curated volumetric image-mask alignment prompts together with text prompts built on SAT baseline. Finally, we replace conventional output layers with Many-to-One Conditional Segmentation Head equipped with synonym-resolved routing, which brings negligible computational cost and enables fast incremental learning for new categories without sacrificing performance on old tasks. Ablation studies on abdominal and extra-abdominal datasets covering both organ and lesion segmentation verify the efficacy of our modules.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

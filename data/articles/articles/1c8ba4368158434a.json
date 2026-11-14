@@ -1,0 +1,14 @@
+{
+  "id": "1c8ba4368158434a",
+  "title": "Geometry-Centered 3D Latent World Models for Growing Surfaces",
+  "link": "https://arxiv.org/abs/2506.03173",
+  "description": "arXiv:2506.03173v3 Announce Type: replace \nAbstract: Many physical systems do not merely move or deform; they grow, adding material and changing the geometry that a world model must represent. Existing world models are typically optimized for pixel prediction, reward prediction, or fixed-support physical dynamics, leaving open how to model systems whose underlying physical support expands over time and whose future morphology depends on hidden material response. We introduce FOLIAGE, a geometry-centered latent world model for growing surfaces. Within a fixed state budget, FOLIAGE represents mature regions as a compact scaffold while allocating higher-resolution state to regions predicted to drive near-future growth. This focuses representation and computation where new material and geometric change occur while retaining compact global context. FOLIAGE further separates observation, action, and privileged physics: heterogeneous RGB, point-cloud, and mesh observations are fused into a deployable geometric state; material controls condition the latent dynamics; and hidden physical energies guide training but are not required at deployment. To evaluate this setting, we introduce SURF-GARDEN and SURF-BENCH, providing controlled counterfactual branches, dense cross-modal correspondences, hidden physical signals, and stress tests for growing-geometry state learning. FOLIAGE reduces inverse-material error by $\\approx40\\%$ and 5-step mesh forecasting Chamfer error by $\\approx30\\%$ relative to strong baselines, while improving cross-modal retrieval by +14 mAP points. Stress tests show graceful degradation under sensor loss and correspondence corruption. On temporal 3D plant scans, FOLIAGE also improves passive future-geometry forecasting, while transfer experiments show that the learned geometry-centered state remains useful beyond the simulator.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

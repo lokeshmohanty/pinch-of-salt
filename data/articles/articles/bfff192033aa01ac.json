@@ -1,0 +1,14 @@
+{
+  "id": "bfff192033aa01ac",
+  "title": "SPARK: Adaptive Parametric Knowledge Participation for Faithful Retrieval-Augmented Generation",
+  "link": "https://arxiv.org/abs/2606.27786",
+  "description": "arXiv:2606.27786v2 Announce Type: replace-cross \nAbstract: Retrieval-augmented generation (RAG) enhances the faithfulness of large language models (LLMs) by incorporating external knowledge into the generation process. However, conflicts between retrieved context and parametric knowledge can cause LLMs to rely on inconsistent internal knowledge, hindering their ability to faithfully leverage retrieved evidence. Existing approaches mitigate this issue by editing parametric knowledge to resolve such conflicts. However, locating and modifying knowledge encoded in model parameters is challenging and may inadvertently compromise the backbone LLM's capabilities. In this paper, we introduce SPARK, a novel framework that formulates parametric knowledge control as a latent participation policy learning problem, enabling LLMs to adaptively regulate the contribution of parametric knowledge during generation. Specifically, SPARK introduces a lightweight participation policy that dynamically modulates the contribution of FFN-mediated parametric knowledge while keeping the backbone LLM frozen. The participation policy is optimized with a faithfulness-oriented reward, enabling fine-grained control over parametric knowledge participation during generation. Extensive experiments on six datasets validate the effectiveness of SPARK, which introduces and optimizes only 0.01\\% additional trainable parameters while keeping the backbone LLM fully frozen, thereby preserving its general capabilities and achieving more faithful generation than competitive baselines. All datasets and code are available at https://github.com/OpenBMB/SHIFT.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

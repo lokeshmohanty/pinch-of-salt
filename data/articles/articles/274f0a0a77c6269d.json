@@ -1,0 +1,13 @@
+{
+  "id": "274f0a0a77c6269d",
+  "title": "Video-Mirai: Autoregressive Video Diffusion Models Need Foresight",
+  "link": "https://arxiv.org/abs/2606.03971",
+  "description": "arXiv:2606.03971v2 Announce Type: replace \nAbstract: Causal video generators must predict from the past, but they need not learn only from it. In streaming autoregressive video diffusion, each emitted segment becomes a commitment that future segments must preserve. Standard training, however, does not explicitly supervise causal states with future-informed representation targets. This creates what we call a representation-level planning gap: states that fit the current segment may discard identity, layout, and motion information needed for a consistent future. We introduce Video-Mirai, a training-only method that closes this gap without changing causal inference: the generator rolls out causally, a frozen foresight encoder reads the completed rollout non-causally, and a lightweight predictor distills the resulting stopped-gradient targets into causal states. Future frames supervise representations, never generator inputs. At inference, the encoder and predictor are discarded, leaving the original architecture, per-step FLOPs, and KV-cache behavior unchanged. Video-Mirai improves a strong Causal-Forcing baseline on 5-second VBench from 83.8 to 84.6 in terms of Total Score. On 30-second rollouts beyond the training horizon, subject consistency improves from 84.9 to 88.5 and background consistency from 90.2 to 91.9. Ablations identify future-conditioned targets as a key ingredient, and probes show that future frames become more decodable from current features. Causality should constrain inference, not representation supervision. Our study highlights that visual autoregressive models need foresight. Project Page: https://y0uroy.github.io/Video-Mirai.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

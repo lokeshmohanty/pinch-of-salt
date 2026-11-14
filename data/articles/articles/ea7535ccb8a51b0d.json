@@ -1,0 +1,14 @@
+{
+  "id": "ea7535ccb8a51b0d",
+  "title": "ABRR: Transforming Temporal Sentence Grounding with Wasserstein-Adaptive Refinement and Precision Ranking",
+  "link": "https://arxiv.org/abs/2611.13310",
+  "description": "arXiv:2611.13310v1 Announce Type: new \nAbstract: Temporal Sentence Grounding (TSG) aims to localize temporal segments in untrimmed videos that correspond to natural language queries, a critical task for video understanding with applications in video retrieval, summarization, and human-computer interaction. Despite significant progress driven by transformer-based models, existing TSG methods suffer from two key limitations: quantization errors due to temporal downsampling, which misalign segment boundaries, and suboptimal ranking of predictions based on semantic matching rather than localization precision. To address these challenges, we propose the Adaptive Boundary Refinement and Ranking (ABRR) framework, a novel, model-agnostic post-processing approach that enhances the performance of any TSG model without retraining. ABRR integrates three innovative components: (1) Temporal Distribution Smoothing, which mitigates noise in predicted score distributions using Gaussian kernel convolution; (2) Boundary Refinement via Optimal Transport, which leverages the 2-Wasserstein distance and Sinkhorn iterations to align coarse segment boundaries with true temporal moments, grounded in Monge-Kantorovich optimal transport theory; and (3) Quality-Driven Re-Ranking, which reorders predictions using a composite score balancing localization precision and semantic relevance. By correcting quantization errors and prioritizing accurately localized segments, ABRR achieves substantial improvements over state-of-the-art TSG models. Extensive experiments on benchmark datasets, including Charades-STA, ActivityNet Captions, and QVHighlights, demonstrate consistent gains at stringent IoU thresholds (e.g., IoU=0.7), alongside enhanced ranking performance. The framework's computational efficiency and compatibility with existing models make it a versatile and impactful solution for real-world TSG applications.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM"
+  ]
+}

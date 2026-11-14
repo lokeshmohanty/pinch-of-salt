@@ -1,0 +1,14 @@
+{
+  "id": "c870d533ea3f8399",
+  "title": "Post-Training Large Language Models via Reinforcement Learning from Self-Feedback",
+  "link": "https://arxiv.org/abs/2507.21931",
+  "description": "arXiv:2507.21931v2 Announce Type: replace-cross \nAbstract: Large Language Models (LLMs) often produce plausible but poorly-calibrated answers, limiting their reliability on reasoning-intensive tasks. Recent research suggests that Chain-of-Thought (CoT) reasoning paths are inherent in pre-trained LLMs and can be elicited by simply altering the decoding process, where the presence of a CoT path correlates with higher answer confidence. Building on these insights, we present Reinforcement Learning from Self-Feedback (RLSF), a post-training stage that utilises the model's intrinsic confidence as a self-generated reward. By generating multiple CoT decoding beams from a frozen LLM, we compute the confidence of each final answer span and rank the resulting traces accordingly to create synthetic preferences. These preferences are subsequently utilised to fine-tune the policy through standard preference optimisation, requiring no human labels, gold answers, or externally curated rewards. RLSF simultaneously (i) refines the model's probability estimates--restoring well-behaved calibration--and (ii) strengthens step-by-step reasoning, yielding improved performance on arithmetic reasoning and multiple-choice question answering. By converting a model's own uncertainty into structured self-feedback, RLSF affirms reinforcement learning on intrinsic model behaviour as a principled and data-efficient component of the LLM post-training pipeline. Our results demonstrate that leveraging these inherent reasoning capabilities provides a robust path for enhancing model reliability without manual prompt engineering or external supervision.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

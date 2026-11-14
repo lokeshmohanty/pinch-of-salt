@@ -1,0 +1,13 @@
+{
+  "id": "1c37c4796d5ae108",
+  "title": "QuantDemoire: Quantization with Outlier Aware for Image Demoir\\'eing",
+  "link": "https://arxiv.org/abs/2510.04066",
+  "description": "arXiv:2510.04066v2 Announce Type: replace \nAbstract: Demoir\\'eing aims to remove moir\\'e artifacts that often occur in images. While recent deep learning-based methods have achieved promising results, they typically require substantial computational resources, limiting their deployment on edge devices. Model quantization offers a compelling solution. However, directly applying existing quantization methods to demoir\\'eing models introduces severe performance degradation. The main reasons are distribution outliers and weakened representations in smooth regions. To address these issues, we propose QuantDemoire, a post-training quantization framework tailored to demoir\\'eing. It contains two key components. First, we introduce an outlier-aware quantizer to reduce errors from outliers. It uses sampling-based range estimation to reduce activation outliers and keeps a few extreme weights in FP16 with negligible cost. Second, we design a frequency-aware calibration strategy. It emphasizes low- and mid-frequency components during fine-tuning, which mitigates banding artifacts caused by low-bit quantization. Experiments validate that our QuantDemoire achieves large reductions in parameters and computation while maintaining quality. Meanwhile, it outperforms existing quantization methods by over 4 dB on W4A4. We implement a CUDA kernel for the mixed-precision branch and achieve a 2.3$\\times$ end-to-end speedup on an RTX 4090 GPU. Code is released at: https://github.com/zhengchen1999/QuantDemoire.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

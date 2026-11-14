@@ -1,0 +1,13 @@
+{
+  "id": "28fa7a4a172bcc74",
+  "title": "Beyond the Frame: Redundancy, Not Trajectory, Carries the Privacy Leak in Video Unlearning",
+  "link": "https://arxiv.org/abs/2610.27982",
+  "description": "arXiv:2610.27982v1 Announce Type: new \nAbstract: Class unlearning for video segmentation aims to ensure that a removed category cannot be reconstructed from a deployed model's outputs. Current leakage evaluation algorithms inspect one frame at a time, and we show that this understates leakage by a wide margin: an attacker that averages a model's output field over a two-second clip recovers the forgotten class from every method we evaluate on VSPW and most on Virtual KITTI~2, including models whose per-frame predictions are visually indistinguishable from a retrain oracle (a model trained from scratch without the forgotten class). We attribute the recoverable signal to cross-frame redundancy rather than object trajectory, establish this with a time-shuffled control that leaves leakage intact, and introduce PACE, an unlearning method that suppresses redundancy directly using an exactly permutation-invariant pooled adversarial discriminator and a two-sided temporal consistency objective. Across VSPW and Virtual KITTI~2, PACE lowers pooled attacker AP to $18.79$ (\\texttt{person}) and $12.10$ (\\texttt{car}) on VSPW and $9.11$ (\\texttt{car}) on Virtual KITTI~2, achieving on the latter the strongest suppression among verdict-safe methods retaining usable utility, while retaining $19.8$ mIoU on VSPW \\texttt{car} against at most $8.3$ for any baseline achieving comparable erasure.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

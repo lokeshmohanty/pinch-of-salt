@@ -1,0 +1,13 @@
+{
+  "id": "bc521a0b18333fbe",
+  "title": "CertEx: Exact Visual Retrieval at Scale by Certified Exclusion",
+  "link": "https://arxiv.org/abs/2610.21325",
+  "description": "arXiv:2610.21325v1 Announce Type: new \nAbstract: Exact $k$-nearest-neighbor (kNN) search over image descriptors and embeddings underlies visual retrieval, near-duplicate detection, the evaluation of learned representations, and increasingly the memory of LLM agents. However, exhaustive search computes every distance at full precision, whereas approximate indexes return recall below one. We observe that exact search only needs a proof that each excluded vector cannot be a neighbor. Because such a proof only has to be conservative, it can be checked in low precision, much as the retina examines the whole scene at low resolution. We call this principle certified exclusion and realize it in an exact kNN method for GPUs, which we call \\certex. Specifically, \\certex\\ stores a lower-bounding projection of each vector in half precision and folds a rounding certificate into the same tensor-core dot product, so that only the few vectors that the test keeps need exact distances. We prove that \\certex\\ returns the exact kNN of every query. On sixteen datasets with up to 100M vectors, \\certex\\ is exact for every query at 7.1$\\times$ to 18.0$\\times$ the throughput of the fastest cuVS search on one H100 and outperforms quantized and graph indexes whenever every query must be exact.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

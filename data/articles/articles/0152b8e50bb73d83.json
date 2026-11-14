@@ -1,0 +1,13 @@
+{
+  "id": "0152b8e50bb73d83",
+  "title": "Recursive Vision Language Models for General Symbolic Reasoning",
+  "link": "https://arxiv.org/abs/2608.01534",
+  "description": "arXiv:2608.01534v1 Announce Type: new \nAbstract: Hard symbolic-reasoning tasks such as Sudoku, maze pathfinding, and ARC remain challenging for LLMs due to their fixed-depth autoregressive reasoning, which limits systematic search, refinement, and backtracking. While recursive models such as Hierarchical Reasoning Model (HRM) and Tiny Recursive Model (TRM) address this limitation through iterative latent-state refinement, they are typically task-specific and do not leverage pretrained language priors. We propose R-Qwen, a recursive reasoning framework built upon a pretrained Qwen backbone. R-Qwen repeatedly refines a candidate solution through programmatic self-recursion and deep supervision, combining the structured iterative computation of recursive models with the linguistic and reasoning priors of pretrained LLMs. We further adapt Hierarchical Supervision Weighting (HSW) to autoregressive models by exponentially weighting losses across recursive steps. HSW reduces gradient variance by at least 50\\%, improves the signal-to-noise ratio of stochastic gradients, and accelerates convergence. Across eight challenging benchmarks, R-Qwen consistently outperforms prior recursive reasoning models and substantially larger LLMs while using a comparable number of trainable parameters. Notably, on ARC-AGI dataset, our model achieves a 27.6\\% improvement over the baseline, highlighting the effectiveness of recursive refinement for general symbolic reasoning. These results suggest that recursive reasoning mechanisms and pretrained language model priors are complementary approaches for improving symbolic puzzle-solving. Code and models will be released after acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "e5157a76bbbe11fb",
+  "title": "An Empirical Study of Development-Tuned Representation Sensitivity for Medical QA Data Selection",
+  "link": "https://arxiv.org/abs/2609.09684",
+  "description": "arXiv:2609.09684v2 Announce Type: replace-cross \nAbstract: We study medical question-answering (QA) data selection when a developer already has questions, labels, and auxiliary explanatory texts but can retain only $B$ examples for a final LoRA update. Representation-Sensitivity Prioritization (RSP) first restricts the candidate bank to its top-$4B$ predictive-entropy examples, then combines the frequency of answer flips with non-flipping contraction of the top-two answer margin under hidden-state perturbations. We evaluate this operational score on five medical QA datasets with google/medgemma-4b-it, $B=128$, and three seed branches. After removing four MedExpQA test questions that also occur in its acquisition pool, dataset-specific development-tuned RSP attains the highest observed five-dataset mean accuracy (53.44%) and Macro-F1 (48.21%) among the evaluated selectors. Relative to random selection within the same entropy-restricted pool, the descriptive differences are +1.49 and +2.10 percentage points, respectively; paired 95% bootstrap intervals include zero. The audit mixes benchmarks with different relationships to documented backbone post-training sources, and the same test cohorts had been used in earlier analyses before the expanded tuning grid was designed. Results are therefore exploratory, modest, and dataset-dependent rather than evidence of statistical superiority. RSP point estimates also exceed an archived no-update reference, but unpinned model revisions and incomplete historical input identifiers limit attribution of that difference to fine-tuning. Because every selected training example includes auxiliary text and no matched answer-only control is evaluated, the experiments also do not identify a causal benefit from auxiliary-text conditioning itself.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

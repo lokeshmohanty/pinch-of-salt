@@ -1,0 +1,13 @@
+{
+  "id": "12b85bee347a2c24",
+  "title": "FedLore: Communication and Memory Efficient Federated Learning via Shared Gradient Low-Rank Projection",
+  "link": "https://arxiv.org/abs/2610.01620",
+  "description": "arXiv:2610.01620v1 Announce Type: new \nAbstract: Federated training of foundation models is constrained by client memory and communication costs. LoRA-based methods reduce these costs through low-rank adapters, but their fixed rank budget can limit adaptation. Gradient low-rank optimization offers greater flexibility, yet independently chosen client subspaces create a problem we term \\emph{subspace fragmentation}: local projections interact with data heterogeneity to bias aggregated directions, while aggregation can increase update rank and communication cost. Thus, accurate local gradient compression need not preserve global descent. We propose \\texttt{FedLore}, which shares a low-rank optimization basis within each round and refreshes it across rounds. The shared basis enables exact aggregation in low-rank coordinates and eliminates the identified projection bias. Subspace refresh allows the accumulated model update to exceed the per-round rank budget. We characterize the aggregation bias and establish an $O(T^{-1/2})$ stationarity bound for the projected-SGD variant under a global-gradient coverage condition and standard smoothness and variance assumptions, with bounded gradient heterogeneity. Experiments on vision and language tasks, including federated pre-training, show that \\texttt{FedLore} outperforms the evaluated low-rank adapter baselines and matches or exceeds full-parameter training, while reducing communication and optimizer-state memory.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

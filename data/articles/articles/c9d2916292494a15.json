@@ -1,0 +1,15 @@
+{
+  "id": "c9d2916292494a15",
+  "title": "ARGOS: Who, Where, and When in Agentic Multi-Camera Person Search",
+  "link": "https://arxiv.org/abs/2604.12762",
+  "description": "arXiv:2604.12762v2 Announce Type: replace-cross \nAbstract: Existing person search methods assume access to complete visual queries or exhaustive tracking, yet real-world witness accounts are vague, partial, and spread across cameras and time. We introduce ARGOS (Agentic Retrieval with Grounded Observational Search), a benchmark and agent framework that recasts multi-camera person search from one-shot retrieval on a complete query into interactive reasoning from partial clues. To our knowledge, ARGOS is the first interactive benchmark to couple witness dialogue with camera-network topology, requiring an agent to plan, question, and eliminate under information asymmetry.\n  An ARGOS agent receives a vague witness statement and must decide what to ask, when to invoke spatial or temporal tools, and how to interpret ambiguous natural-language responses, all within a limited turn budget. To ground reasoning in physical constraints, the agent accesses a Spatio-Temporal Topology Graph (STTG) encoding camera connectivity and empirically validated transition times.\n  The benchmark comprises 2{,}691 tasks across 14 real-world scenarios in three progressive tracks: semantic perception (\\emph{Who}, 989 tasks), spatial reasoning (\\emph{Where}, 550 tasks), and temporal reasoning (\\emph{When}, 1{,}152 tasks). We propose Turn-Weighted Success (TWS) as the primary metric, jointly measuring correctness and turn efficiency.\n  Experiments with four LLM backbones show the benchmark is far from solved: the best agent achieves TWS of 0.383 (Track~2) and 0.590 (Track~3). Ablations confirm each component is essential: removing domain-specific tools drops Top-1 accuracy by up to 49.6 percentage points, and removing strategic reasoning halves TWS while barely affecting Top-1.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.MA"
+  ]
+}

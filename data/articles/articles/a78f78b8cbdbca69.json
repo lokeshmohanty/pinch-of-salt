@@ -1,0 +1,14 @@
+{
+  "id": "a78f78b8cbdbca69",
+  "title": "PACT-WAM: Predicting Actions and Visual Foresight with Compact Temporal Encoding for Robot Manipulation",
+  "link": "https://arxiv.org/abs/2602.15882",
+  "description": "arXiv:2602.15882v2 Announce Type: replace-cross \nAbstract: Robot manipulation uses temporal context to select actions and visual foresight to assess their consequences, yet dense representations of past and future observations incur substantial processing costs. We introduce PACT-WAM, a world-action model that jointly generates a 16-step action trajectory and its temporally corresponding visual forecast through conditional flow sampling. Hierarchical history encoding assigns coarse spatial representations to earlier observations and finer representations to recent ones, retaining 16 observations with 256 tokens per view, 75% fewer than dense encoding of the same frames. A shared flow module jointly updates continuous action and visual states through two modality-specific heads under transition-wise causal attention, and a TiTok-VAE decoder reconstructs multi-view future images from the visual latents. Decoded forecasts also support Proposal Review (PR), a vision-language model component for execution-prefix selection and proposal rejection. Without PR, PACT-WAM achieves average success rates of 98.6%, 92.3%, and 78.0% on LIBERO, RoboTwin 2.0, and real-world Piper tasks, respectively. PR provides a test-time enhancement, raising these rates to 99.5%, 93.4%, and 86.7%. Ablations show that hierarchical history allocation and joint action-visual generation improve control success, while analyses of visual capacity and forecast-guided execution characterize the trade-offs between success and proposal-generation cost.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

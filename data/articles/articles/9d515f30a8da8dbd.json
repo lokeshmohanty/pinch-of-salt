@@ -1,0 +1,14 @@
+{
+  "id": "9d515f30a8da8dbd",
+  "title": "FACTS-MAS: A Multi-Agent Architecture for Adaptive Forecasting from Heterogeneous Evidence",
+  "link": "https://arxiv.org/abs/2610.38225",
+  "description": "arXiv:2610.38225v1 Announce Type: new \nAbstract: Real-world forecasting often requires integrating heterogeneous evidence whose predictive value varies across horizons, operating regimes, and domains. We introduce FACTS-MAS, a domain-agnostic multi-agent forecasting framework that decomposes evidence into specialized channels for temporal dynamics, exogenous context, seasonality, structural information, and discrete events. Each agent generates an independently testable forecast through a common interface, while leakage-safe historical validation measures its predictive skill relative to a naive reference. These skill estimates are used to weight and combine agent forecasts, so that uninformative evidence is either removed or downweighted rather than forced to participate. A calibration procedure selects domain-specific constant means based on historical validation folds. We evaluate FACTS-MAS on weekly for-sale housing inventory from Zillow and weekly unemployment insurance claims from FRED, for 15 U.S. metropolitan areas at 4-, 8-, and 13-week forecasting horizons. Our method outperforms both a naive last-value forecast method and the TimesFM foundation model. However, a factor-adjusted exponential smoothing model performs as well as the fused forecast. The evidence therefore supports FACTS-MAS as a systematic protocol for testing, calibrating, and recomposing evidence channels before assembling them into the strongest single model for a specific application domain. Code, data, and results are available at https://github.com/Madumita24/FACTS-MAS.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "stat.AP"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "5fed4f64c516f44d",
+  "title": "Beyond Benchmarks: Continuous Edge Inference for Traffic Sign Recognition on Embedded Vehicular Hardware",
+  "link": "https://arxiv.org/abs/2606.17241",
+  "description": "arXiv:2606.17241v2 Announce Type: replace \nAbstract: Traffic sign recognition (TSR) systems deployed on embedded vehicular hardware face deployment effects that image-based benchmark evaluation does not capture, including frame-to-frame prediction instability in streaming video and load-dependent throughput under sustained operation. We present Edge-TSR, a continuous edge inference system for TSR on the NVIDIA Jetson Orin Nano that combines sparse detection, multi-object tracking, region-level fine-grained classification, and a lightweight track-aware temporal stabilization mechanism adding only 0.07~ms per sampled frame. Evaluating on the source videos of the INTSD benchmark, we find that the state-of-the-art TSR models lose 20-30 percentage points of mAP@50 when moving from image-based to streaming evaluation. Edge-TSR achieves the best streaming classification performance among all evaluated baselines, and temporal stabilization improves accuracy by 10.58 percentage points over per-frame inference. We characterize latency, throughput, and thermal behavior across sampling intervals and four driving conditions, showing that throughput is load-proportional (20 ms per classified region) and that every-frame inference is limited by throughput rather than thermal throttling. A 55-minute, 26 km vehicular deployment demonstrates sustained online operation at 16.18 FPS within safe thermal limits without cloud offload. We also release the annotated 50,732-frame streaming evaluation dataset and full implementation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

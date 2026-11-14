@@ -1,0 +1,13 @@
+{
+  "id": "10a1200dc49999c0",
+  "title": "Calibrated Similarity and Graph Clustering for Open-Set Animal Re-Identification",
+  "link": "https://arxiv.org/abs/2608.02469",
+  "description": "arXiv:2608.02469v1 Announce Type: new \nAbstract: AnimalCLEF26 addresses discovery-oriented animal re-identification, where systems must both attach query images to known individuals and discover unseen individuals by clustering them correctly. We present a similarity-to-clustering pipeline for this setting across Eurasian lynx, fire salamander, loggerhead sea turtle, and Texas horned lizard images. The method first isolates the target specimen using segmentation and then applies lightweight species-specific preprocessing for lynx, sea turtle, and salamander images to enhance identity-relevant visual cues, while Texas horned lizard images are used after segmentation only. Pairwise similarities are then estimated with WildFusion by calibrating and combining a MiewID global descriptor with two local matching branches, ALIKED + LightGlue and DISK + LightGlue. The resulting query-query similarities are refined and converted into identity clusters using graph-based clustering, while query-database similarities are used to attach confident samples to known identities. We evaluate training-free and fine-tuned MiewID variants, including Dynamic ArcFace and SphereFace2-Focal adaptations, and combine them in the final ensemble. Our selected ensemble substantially improves on the WildFusion baseline, achieving the best public ARI of 0.72124 and a private ARI of 0.70393, while a simpler preprocessing-before-calibration variant achieves the best private ARI of 0.71087. These results indicate that calibrated global-local fusion with species-aware preprocessing choices is effective for open-set wildlife re-identification under challenging field conditions and visual variation. The implementation code is available on GitHub.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

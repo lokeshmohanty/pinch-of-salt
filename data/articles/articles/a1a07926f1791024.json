@@ -1,0 +1,14 @@
+{
+  "id": "a1a07926f1791024",
+  "title": "Benchmarking Code LLM-as-a-Judge via Constrained Perturbation and Calibration",
+  "link": "https://arxiv.org/abs/2512.20159",
+  "description": "arXiv:2512.20159v2 Announce Type: replace-cross \nAbstract: Code from LLM-assisted development may contain defects like API hallucinations, motivating the development of code evaluation metrics to assess such code before deployment. As conventional rule-based metrics merely score code based on similarity to reference programs, and execution-based metrics require expensive manual preparation for tests, researchers have developed LLM-as-a-judge metrics for both behavioral and nonbehavioral code evaluation, and curated multiple benchmarks to validate their effectiveness. However, such benchmarks suffer from critical limitations: Some feature coarse-grained binary labels of passing/failing unit tests, unable to distinguish between fundamental and minor flaws; others utilize fine-grained criteria with manually annotated scores as ground-truth, but such criteria are often vaguely defined, introducing subjectivity and unreliability in human scores. Furthermore, they often directly prompt LLMs to generate code for evaluation, which may lead to unbalanced code quality distributions, failing to test the metrics' discriminative capability across varying quality levels.\n  To curate a diverse benchmark with a balanced program quality distribution and streamline manual annotation, we propose AXIOM, a novel perturbation-based framework. It reframes program scores as the refinement effort needed for deployment, with two stages: (1) Quality-constrained semantic perturbation, prompting LLMs to apply sequences of predefined perturbation rules to existing programs, precisely controlling each program's target quality to achieve a balanced distribution. (2) Hybrid quality calibration, selecting semantically distinct programs for benchmark diversity, and performing streamlined manual annotation with multisource context. With AXIOM, we curate AXIOMBENCH, a large-scale multilingual benchmark with 1,962 code evaluation problems in a more balanced score distribution...",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

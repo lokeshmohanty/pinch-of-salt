@@ -1,0 +1,14 @@
+{
+  "id": "98082b1ba8764fd2",
+  "title": "Pixels to Tokens: Token Space Efficient Active Learning for Low-Budget Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2610.20881",
+  "description": "arXiv:2610.20881v1 Announce Type: new \nAbstract: While foundation models and vision transformers (ViTs) have redefined visual representations, current active learning (AL) strategies for these backbones largely operate at the patch or region level, where annotation requirements remain high due to extensive pixel labeling. Extending ViT-based AL to the pixel-level, low-budget regime is uniquely challenging: with as little as one pixel query per image, a method must simultaneously identify the most informative locations and train a reliable decoder head from an extremely sparse signal. We introduce TEAL (Token-space Efficient Active Learning), the first pixel-level AL framework built around ViT representations. TEAL uses a frozen ViT backbone and performs diversity-based selection directly on its native token lattice, avoiding the artifacts introduced by interpolating token embeddings to dense pixel resolutions. Our framework applies a two-level MaxHerding strategy over multi-layer token descriptors to select representative candidates, followed by margin-based uncertainty refinement on a finer decoder grid. Across CamVid, Cityscapes, ADE20K, and Pascal Context, TEAL consistently outperforms previous baselines under extreme label scarcity, improving over the strongest baseline by up to +24.36 mIoU with a single labeled pixel (px) per image, and reaching up to 97% of fully supervised performance with just 10 px. To rigorously establish the source of the gains, we further show that the improvements persist when all baselines are equipped with the same DINOv3 backbone, demonstrating that coupling token-space selection with uncertainty refinement on the decoder grid makes ViT token geometry an effective foundation for extremely low-budget active segmentation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

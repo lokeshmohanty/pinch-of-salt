@@ -1,0 +1,14 @@
+{
+  "id": "db153bf5de4c963c",
+  "title": "FairLens: Benchmarking Fairness in Vision-Language Models for High-Stakes Decision-Making",
+  "link": "https://arxiv.org/abs/2609.01691",
+  "description": "arXiv:2609.01691v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are increasingly used to make decisions from visual inputs. We introduce FAIRLENS, a benchmark and evaluation framework for measuring both the fairness and the validity of VLM responses in three high-stakes domains: hiring, legal, and healthcare. FAIRLENS pairs real face images spanning gender, race, and age groups with closed- and open-ended questions, giving more than 100K image-question pairs per model, and evaluates responses from four complementary views: demographic parity over adverse outcome rates, soundness, demographic association over unsupported roles and statuses, and bias in free-text generation. Soundness is the central validity criterion: a response is sound when it follows the evidence stated in the question and abstains when the image cannot support an answer. Evaluating eight VLMs, we find that the primary failure is unwarranted inference rather than unequal treatment. Models routinely infer qualifications, threat, illness, or professional role from a face instead of abstaining, and the weakest model does so on 99% of the questions its input cannot answer. These failures are most severe in legal and healthcare, where recognizing insufficient evidence matters most, and disparity metrics alone would miss them: parity gaps are small in absolute terms, yet when baseline adverse rates are low the same gap means one demographic group receives adverse labels several times as often as another, and a small gap can equally reflect a model that treats every group unsafely. Bias in free-text responses is only loosely coupled to multiple-choice accuracy, so correct structured answers do not imply safe generation. FAIRLENS shows that fair high-stakes VLM behavior requires similar treatment across groups and refusal to infer high-stakes attributes from appearance, and its question suite transfers to any face corpus with demographic annotations.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

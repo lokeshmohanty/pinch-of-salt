@@ -1,0 +1,15 @@
+{
+  "id": "f2c971dc679db323",
+  "title": "Undertone: Personalizing Frozen VLM Aesthetic Judges from Few Ratings",
+  "link": "https://arxiv.org/abs/2609.27110",
+  "description": "arXiv:2609.27110v2 Announce Type: replace \nAbstract: Image quality assessment predicts a mean opinion score (MOS), but for image aesthetics the mean hides the individual, so personalized assessment must start from the few images a new user rates. Fitting each person from scratch fails with ten ratings; networks fine-tuned per person carry over poorly to new kinds of images. We present Undertone-P, which learns from other raters a Gaussian prior over per-person regression weights on read-outs of frozen vision-language model (VLM) judges: the probability-weighted rating and the hidden state at the score token. Since people differ from the crowd in ways other raters reveal, a few ratings need only choose among those ways: a new user costs one closed-form solve, and no network is trained. On Ryu and Yanaka's PARA benchmark, the prior alone reaches a Spearman correlation of .640, above the best published 10- and 100-rating results (.581 and .620); 10 and 100 of a person's ratings raise it to .648 and .676. These ratings add most where tastes depart from the crowd: with 100 ratings, +.067 for the raters who agree least with it and +.206 on LAPIS artworks, against +.037 overall. Without labels, the judges' expected scores predict PARA's MOS at .835 (best published model we ran: .694). PARA-trained networks still lead under PARA's original protocol, likely through a stronger end-to-end MOS model.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

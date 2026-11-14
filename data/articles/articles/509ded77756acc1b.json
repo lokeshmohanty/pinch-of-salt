@@ -1,0 +1,14 @@
+{
+  "id": "509ded77756acc1b",
+  "title": "Deterministic World Models for Closed-loop Reachability Analysis of End-to-End Vision-based Control",
+  "link": "https://arxiv.org/abs/2512.08991",
+  "description": "arXiv:2512.08991v3 Announce Type: replace \nAbstract: End-to-end image controllers that map raw camera frames directly to control actions are increasingly deployed in safety-critical systems. However, formally verifying their closed-loop behavior remains an open challenge because cameras produce high-dimensional images whose generation cannot easily be described in a closed mathematical form. We propose a Deterministic World Model (DWM), a latent-free neural decoder that maps physical states (e.g., position and velocity) directly to synthetic camera images, enabling closed-loop reachability analysis without the overapproximation caused by stochastic latent variables. The DWM is trained with a novel dual loss combining saliency-map reconstruction and a control-consistent term that preserves behavioral consistency with the real controller. We integrate the DWM into closed-loop reachability analysis and apply conformal prediction to inflate the reachable sets by a distribution-free trajectory-tube deviation bound, transferring the surrogate guarantee to the real system with high probability. Experiments on a CARLA braking system and three Gym benchmarks (CartPole, MountainCar, Pendulum) show that the DWM produces substantially tighter reachable tubes than a cGAN and trajectory predictor baselines while meeting the target coverage after conformal inflation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

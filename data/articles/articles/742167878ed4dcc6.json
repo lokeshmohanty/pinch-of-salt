@@ -1,0 +1,13 @@
+{
+  "id": "742167878ed4dcc6",
+  "title": "Cross-Domain Tracker Adaptation Without Target-Domain Labels via Vision-Language Agents",
+  "link": "https://arxiv.org/abs/2609.05239",
+  "description": "arXiv:2609.05239v1 Announce Type: new \nAbstract: We present a system that uses a Vision-Language Model (VLM) as a diagnostic agent for adapting a detect-to-track pipeline to a new target domain without access to target-domain labels. Rather than optimizing against annotated metrics, the VLM directly inspects rendered tracking outputs, identifies visual failure modes, and recommends parameter updates through an iterative tuning loop. We first demonstrate that ground-truth-supervised hyperparameter transfer can be brittle. On MOT17->MOT20, applying a source-derived oracle configuration reduces mean HOTA by 0.090, from a target-domain ceiling of 0.357, to 0.267. Without using any target-domain labels, our VLM-based tuner recovers 67.8% of this lost headroom, finishing within 0.029 HOTA of the target ceiling; on the highest-density target sequence, it recovers up to 86.7%. We further show that label-free Bayesian optimization with handcrafted proxy objectives struggles under large domain shifts and can degrade configurations that are already strong. In contrast, the VLM tuner acts selectively: when its visual diagnosis reveals no clear failure mode, it declines to modify the configuration, preserving performance on easy transfers while improving hard ones. Finally, we characterize the conditions under which this approach succeeds, namely, when domain shift manifests through exposed detection-level parameters, versus where it is less effective, such as MOT17->DanceTrack, where the source oracle is already near-optimal.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

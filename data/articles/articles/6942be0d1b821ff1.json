@@ -1,0 +1,13 @@
+{
+  "id": "6942be0d1b821ff1",
+  "title": "Rethinking Open-World Video Anomaly Detection: Diagnosing Definition Blindness",
+  "link": "https://arxiv.org/abs/2607.20780",
+  "description": "arXiv:2607.20780v1 Announce Type: new \nAbstract: Open-world video anomaly detection (OWVAD) is expected to detect events that match a user-specified definition of abnormality. This requirement is stronger than generic anomaly localization: in the same video, changing the definition should change which temporal regions are scored as anomalous. We show that current OWVAD evaluation largely fails to isolate this conditional behavior. Standard VAD metrics and the dynamic-definition protocol can be dominated by target-versus-normal separation, allowing models to obtain strong scores while remaining nearly insensitive to the queried definition. We call this failure mode definition blindness. To explain why it is missed, we decompose dynamic-definition evaluation into target-versus-normal detection and target-versus-other-anomaly discrimination, and find that the former receives 7.2-26.8$\\times$ more weight across common VAD benchmarks. Motivated by this diagnosis, we introduce three definition-conditioned evaluation metrics, DC-Disc, DC-Det$\\Delta$, and DC-Sel$\\Delta$, which progressively remove normal-frame, generic-anomaly, and multi-event selection shortcuts. Experiments on UCF-Crime, XD-Violence, and MSAD reveal that several strong VAD, OWVAD, and general vision language model baselines localize anomalous moments but exhibit weak definition following, often with near-zero definition-response margins. To validate that the failure is actionable, we further introduce DeCoS, a definition-contrastive scoring rule that subtracts anomaly evidence shared across definitions. DeCoS improves the strongest baseline by 7.3-16.0 AUROC points on DC-Disc and 15.5-28.3 points on DC-Det$\\Delta$. Overall, our results argue that OWVAD should be evaluated as definition-conditioned anomaly scoring, not as anomaly detection under different prompt labels.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

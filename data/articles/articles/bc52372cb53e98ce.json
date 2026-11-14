@@ -1,0 +1,15 @@
+{
+  "id": "bc52372cb53e98ce",
+  "title": "Leaf Values as Coordinates: Exact Contrastive Explanation for Gradient-Boosted Ensembles",
+  "link": "https://arxiv.org/abs/2608.19127",
+  "description": "arXiv:2608.19127v1 Announce Type: cross \nAbstract: A gradient-boosted ensemble predicts by summing one leaf value per tree. Read\n  those values as coordinates rather than as intermediate results, and every\n  instance becomes a point in R^M on which the model acts linearly: the score is\n  the sum of the coordinates.\n  This small change of view makes contrastive explanation exact. The difference\n  between two instances is a vector that is identically zero wherever they share\n  a leaf, so the gap between a rejected applicant and an accepted one is carried\n  by a handful of coordinates, each traceable to a real split in a real tree.\n  Nothing is fitted, sampled, or assumed additive in features -- the additivity\n  is already there, in the right space.\n  We build a recourse method on this representation and evaluate it on five\n  tabular datasets under repeated cross-validation. Its recommendation\n  reconstructs the model's own decision to 6.2 x 10^-15, so an auditor can\n  re-check the arithmetic without the model. On the credit datasets it is\n  Pareto-non-dominated on effort against realism. And when recommendations are\n  restricted to changes the subject could actually make -- not their age, not a\n  settled delinquency -- it retains 58% of its validity where the strongest\n  baseline retains 41%, a distinction the standard evaluation cannot see because\n  it never asks whether a recommendation can be carried out.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CY"
+  ]
+}

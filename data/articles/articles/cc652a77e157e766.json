@@ -1,0 +1,13 @@
+{
+  "id": "cc652a77e157e766",
+  "title": "FlowEdit: Information-Theoretic Control of LLM Reasoning Flows for Ill-posed Problems Involving Conflicts",
+  "link": "https://arxiv.org/abs/2607.20500",
+  "description": "arXiv:2607.20500v1 Announce Type: new \nAbstract: Large Language Models (LLMs) perform strongly on well-specified reasoning tasks with a feasible answer. However, problems encountered in the open world can become ill-posed due to inconsistent conditions, conflicting statements, or mutually incompatible requirements, admitting no valid responses. We argue that reasoning of such ill-posed problems involving conflicts require novel LLM capabilities to make hidden conflicts explicit, maintain competing hypotheses via multiple reasoning branches, and generate alternative responses in a single pass, all of which are challenging due to the limitation of the next-token prediction mechanism in LLMs. To this end, we propose FlowEdit, a novel framework that leverages information-theoretic principles to quantify and regulate internal reasoning flows of LLMs, for generating a full set of alternative responses under valid hypotheses. FlowEdit can be viewed as enforcing a branch-aware reasoning process using two dual information-theoretic objectives on the model's internal reasoning representations: maximizing the information flow from each selected hypothesis to the branch outcome, while minimizing the overlap and conditional dependence across sibling branches, to provide a diverse, informative set of responses with broad coverage. We show that this is achieved through tractable variational bounds under boundary embeddings being {\\epsilon}-sufficient, optimizing the underlying conditional mutual information in LLM reasoning process. Extensive experiments demonstrate that FlowEdit outperforms leading proprietary models, improving exact-set-match accuracy by 68%, while boosting overall response informativeness by 24%. We further show that flow regulation surfaces in the token stream as a redistribution of next-token entropy that concentrates inside each branch, amplifies at flow boundaries, and scales with the number of flows the problem requires.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

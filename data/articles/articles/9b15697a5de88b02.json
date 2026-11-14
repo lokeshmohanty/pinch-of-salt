@@ -1,0 +1,16 @@
+{
+  "id": "9b15697a5de88b02",
+  "title": "Worst-Case Discovery and Runtime Protection for RL-Based Network Controllers",
+  "link": "https://arxiv.org/abs/2605.04373",
+  "description": "arXiv:2605.04373v2 Announce Type: replace-cross \nAbstract: RL-based controllers achieve strong average-case performance in networking tasks such as congestion control and adaptive bitrate streaming. Yet their performance can degrade severely under network conditions where strong performance is still achievable. Identifying such conditions and quantifying the resulting performance gap is intractable by enumeration, while the sequential and closed-loop nature of RL controllers makes formal verification methods impractical.\n  We present ReGuard, a framework that discovers worst-case scenarios for a given RL controller and protects it against them at inference time without retraining. ReGuard formulates scenario discovery as a bilevel regret-maximization problem, certifying a lower bound on the controller's worst-case performance gap. ReGuard then analyzes the discovered counterfactual trajectories and compiles them into lightweight logic rules that intervene only when a risky state is detected, leaving the controller's behavior unchanged otherwise.\n  We evaluate ReGuard across three RL-based network controllers: Pensieve, Sage, and Park. ReGuard discovers scenarios in which each controller suffers a 43-64% performance loss relative to what is achievable under the same conditions. ReGuard exposes performance gaps 57% to 6 times larger than those found by the strongest baselines and shrinks those gaps by 79-85% in its first iteration via lightweight rule-based protection, iteratively driving the remaining gap toward nominal levels. ReGuard's protection extends beyond the scenarios it discovers, improving performance across a wide range of network conditions.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NI",
+    "cs.AI",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

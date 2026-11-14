@@ -1,0 +1,13 @@
+{
+  "id": "50305f5cb4243bf2",
+  "title": "HIMEC: Directional Change Representation and Fixed-Interface Decoding for Remote Sensing Image Change Captioning",
+  "link": "https://arxiv.org/abs/2608.12502",
+  "description": "arXiv:2608.12502v1 Announce Type: new \nAbstract: Remote sensing image change captioning (RSICC) converts bitemporal imagery into a sentence describing semantic changes. Most RSICC methods condition caption decoders directly on fused visual features, leaving intermediate change structure and decoder-interface consistency less studied. We present HIMEC, combining Directional Change Representation (DCR) with fixed-interface decoding. DCR separates signed differences into appearance-oriented, disappearance-oriented, and shared-context streams before fusion. A learned-query encoder converts the fused representation into visually conditioned change-query tokens that form the scene decoder's only sample-dependent memory. A training-only auxiliary phrase decoder supplies caption-derived supervision. With a fixed zero input, the scene decoder maintains the same interface during training and inference. Separately, we evaluate a local-to-scene cascade conditioned on teacher-forced local states during training and autoregressive states at inference. On changed LEVIR-CC validation pairs, these states have a mean cosine distance of 0.69. Regime-matched conditioning recovers most of the associated deficit, whereas permuting state correspondence causes no detectable penalty. These findings are limited to the evaluated cascade. In a matched three-seed comparison, HIMEC reaches a Consensus-based Image Description Evaluation (CIDEr) score of $142.81\\pm0.60$ on LEVIR-CC, versus $139.51\\pm3.40$ for direct fused-feature memory. On SECOND-CC, fixed-zero and regime-matched diagnostic conditioning reach 75.67 and 76.99 CIDEr, respectively, versus 60.77 for the mismatched cascade. The source code will be made publicly available at https://github.com/ayshaashra/HIMEC upon publication.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

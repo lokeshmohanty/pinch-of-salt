@@ -1,0 +1,13 @@
+{
+  "id": "bcafec43d802dea8",
+  "title": "Video Codec-Guided Training-Free Token Compression for Video Large Language Models",
+  "link": "https://arxiv.org/abs/2610.12959",
+  "description": "arXiv:2610.12959v1 Announce Type: new \nAbstract: Video large language models (VLLMs) rely on long visual token sequences to understand complex temporal content, which makes visual token compression important for efficient inference. Existing training-free compression methods mainly reduce the number of tokens sent to the language model, but the compression process itself can still require many visual feature comparisons, especially for intra-frame token protection and inter-frame temporal token merging. This paper proposes a video codec-guided training-free token compression method for VLLMs that uses coding information already available in compressed video as a low-cost search prior. The method aligns reference-frame dependencies, motion vectors, and residuals with the visual token grid. Residual information forms compact candidate pools for token protection, while motion information is propagated along reference-frame chains to construct localized candidates for temporal token merging between sparsely sampled frames. Local visual feature similarity comparison is then used within these candidates to make the final compression decisions, without modifying the base VLLM. Experiments on three representative VLLMs and four video-understanding benchmarks show that the proposed method achieves performance comparable to the state-of-the-art training-free baseline FlashVID, and in some settings surpasses it, while substantially reducing the feature comparisons required by token protection and temporal matching. These results demonstrate that codec information can effectively improve the accuracy-complexity tradeoff of video token compression.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

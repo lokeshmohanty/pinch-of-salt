@@ -1,0 +1,13 @@
+{
+  "id": "f6a99783cee2bb28",
+  "title": "NP-LoRA: Null Space Projection for Subject-Style LoRA Fusion",
+  "link": "https://arxiv.org/abs/2511.11051",
+  "description": "arXiv:2511.11051v4 Announce Type: replace \nAbstract: Low-Rank Adaptation (LoRA) fusion enables the composition of subject and style representations for controllable generation without retraining. However, existing approaches primarily operate through weight-level merging, without explicitly modeling how independently trained LoRAs interact in the shared parameter space. We adopt a geometric perspective on LoRA fusion, interpreting content and style LoRAs as occupying overlapping, non-orthogonal low-rank subspaces, where such overlap can lead to conflicting parameter updates that affect generation quality. This observation motivates us to reformulate LoRA fusion not merely as parameter combination, but as a problem of controlling how updates from overlapping subspaces are combined. Based on this insight, we propose Null Space Projection LoRA (NP-LoRA), a training-free framework that employs projection as a fusion operator to explicitly modulate cross-LoRA interactions. Specifically, NP-LoRA uses principal directions of the style LoRA to define a projection subspace and projects the content LoRA onto the complementary subspace (i.e., the null space of the style LoRA), suppressing interference along dominant style directions while preserving complementary information. To avoid the overly aggressive suppression of hard projection, we further formulate soft projection as a regularized optimization problem that balances content preservation against style-subspace suppression. This objective admits a closed-form solution, yielding a projection operator controlled by a single parameter that continuously interpolates between linear merging and hard projection. Extensive experiments across multiple pretrained LoRA pairs show that NP-LoRA achieves more balanced content-style composition compared to strong baselines, without requiring retraining. Code is available at https://github.com/blackzebra7/NP-LoRA.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

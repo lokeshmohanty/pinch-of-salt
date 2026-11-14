@@ -1,0 +1,13 @@
+{
+  "id": "c8b39c5494032660",
+  "title": "Beyond Control Points: Arcsecond Relative-Motion Estimation of Vision Measurement Platforms With Incomplete or Absent Control Fields",
+  "link": "https://arxiv.org/abs/2608.13918",
+  "description": "arXiv:2608.13918v1 Announce Type: new \nAbstract: Long-range vision-based deformation monitoring is highly sensitive to motion of the camera platform. Absolute-pose differencing typically relies on dedicated control data and propagates two independent pose errors into the relative-motion estimate. We develop a control-adaptive differential framework that estimates inter-frame platform motion directly from image displacements and known 3D points. With no dedicated control point, the framework recovers platform rotation from measurement-point observations. One surveyed control point enables prior-constrained translation recovery, while two nonparallel control rays recover full 3D translation. The framework requires neither nonlinear optimization nor an initial pose estimate. Excluding control data from the rotation stage makes the rotation estimate exactly immune to contamination confined to the control field. The inherited differential formulation also cancels translational extrinsic errors exactly. We derive the rotation observability condition, a leakage bound for unmodeled translation and nonrigid point motion, and the single-point axial-prior bias law. Under 0.5-pixel image noise, attitude changes of up to 30~arcmin, and 3D point perturbations of up to 2~mm, the multi-camera estimator achieves a rotation RMSE of 2.97~arcsec and an average runtime of 0.46~ms. With one surveyed control point, its prior-constrained translation RMSE is 1.19~mm. In a bridge experiment without a stable control field, the median coordinate-wise displacement RMSE relative to total-station measurements is 0.85~mm. The estimator also maintains zero divergence under the tested 3D coordinate perturbations on public RGB-D and stereo sequences. These results establish state-of-the-art accuracy, calibration robustness, and computational efficiency among the evaluated methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

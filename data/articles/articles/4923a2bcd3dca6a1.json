@@ -1,0 +1,13 @@
+{
+  "id": "4923a2bcd3dca6a1",
+  "title": "PACE-MoE: Adaptive Domain Sampling and Domain-Specific LoRA for Medical Visual Grounding",
+  "link": "https://arxiv.org/abs/2610.27656",
+  "description": "arXiv:2610.27656v1 Announce Type: new \nAbstract: Medical visual grounding requires models to align clinical descriptions with spatial evidence across heterogeneous imaging domains. However, existing multi-domain post-training strategies typically rely on fixed domain sampling and shared parameter updates, overlooking the need to adapt both which domains receive training and where their updates are applied. To address this issue, we propose PACE-MoE, a policy-guided framework that jointly performs adaptive domain sampling and domain-specific adaptation for medical visual grounding. PACE dynamically assesses the training value of each imaging domain from current-policy feedback and progressively adjusts domain coverage through domain admission, replay, and final all-domain balancing. Meanwhile, domain-specific LoRA adapters route updates to the corresponding imaging domains while preserving the pretrained backbone and visual encoder. This coordinated design aligns training-data allocation with parameter adaptation without modifying the original reward formulation or Group Relative Policy Optimization (GRPO) objective. Experiments across seven medical imaging domains show that PACE-MoE consistently improves grounding performance over fixed-domain training, achieving a 3.64% relative improvement in mean box IoU over the Vanilla baseline. Under matched domain-specific adapter architectures, adaptive sampling alone further improves mean box IoU by 2.07%, demonstrating the benefit of policy-guided domain allocation. These results establish coordinated data-parameter routing as an effective strategy for multi-domain medical visual grounding.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

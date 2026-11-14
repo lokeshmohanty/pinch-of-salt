@@ -1,0 +1,15 @@
+{
+  "id": "db00120685d5502a",
+  "title": "Understanding as No-Arbitrage: Bounded Dutch Books as a Definition and Training Objective for Language Models",
+  "link": "https://arxiv.org/abs/2609.39341",
+  "description": "arXiv:2609.39341v1 Announce Type: new \nAbstract: Does a language model merely predict tokens, or does it understand what it says? We make this question measurable by defining \"understanding\" through the lens of no-arbitrage. A model understands a vocabulary to a certain degree if a computationally bounded trader cannot extract guaranteed profit by betting against the model's probabilities on logically related claims (a \"Dutch book\"). We establish three theoretical results: first, because full logical coherence is computationally intractable, understanding is inherently graded, not absolute. Second, we prove that the exact optimum of standard next-token prediction is inherently incoherent across different question formats; the flaw lies in the training objective, not the architecture. Third, we show that uncertainty accumulates predictably along reasoning chains, making unjustified overconfidence an arbitrage opportunity in itself. To address this, we introduce Arbitr, a training framework where an adversarial trader penalizes the model for logical inconsistencies, paired with a calibration anchor to prevent uninformative collapse. Across five pre-registered experiments on Qwen2.5 and Phi-3.5 models, we demonstrate that standard models are highly exploitable across different phrasings. Arbitr reduces this exploitability by orders of magnitude without sacrificing task accuracy, and the effect successfully transfers to unseen logical patterns and new model families. Crucially, we uncover a scaling illusion: at 7B parameters, near-zero measured incoherence often coincides with extreme, unjustified confidence. We conclude that while Arbitr enforces rigorous logical consistency, coherence is a necessary condition for knowledge, but not a sufficient one",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

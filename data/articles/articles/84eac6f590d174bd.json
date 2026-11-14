@@ -1,0 +1,13 @@
+{
+  "id": "84eac6f590d174bd",
+  "title": "Bridging Modalities and Tasks: A Unified Hierarchical ViT for SAR-to-Optical Translation and Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2609.04726",
+  "description": "arXiv:2609.04726v1 Announce Type: new \nAbstract: Synthetic Aperture Radar (SAR) images have all-weather, day-and-night observation capabilities. However, compared with optical images, their speckle noise and non-intuitive scattering mechanism limit the interpretability of the images. Generative models for SAR-to-optical (S2O) conversion can improve visual interpretability, but existing methods often ignore the constraints on semantic structure, which are necessary for downstream tasks, for the sake of visual effects. We propose a unified collaborative dual-task learning framework, termed BMT (Bridging Modalities and Tasks), that jointly optimizes S2O image translation and semantic segmentation through a shared hierarchical Vision Transformer. The framework integrates: (1) a LocalViTBlock that fuses global self-attention with spatial depthwise convolution through a learnable gating mechanism; (2) an enhanced output module combining multi-scale refinement processing, color correction and anti-aliasing, which calibrates channel-level color statistics through feature fusion; (3) a ControlNet-style conditional injection mechanism that encodes SAR wavelet features and segmentation labels into a multi-scale feature pyramid and injects them at each encoder layer through zero-initialized convolution; (4) a bounded Kendall uncertainty weighting scheme that prevents either task from dominating the shared representation. We evaluate the framework under both paired and unpaired translation settings, on the public WHU-OPT-SAR paired dataset and a self-constructed unpaired ship dataset built from HRSID and DIOR, respectively. The experimental results show that the proposed method achieves competitive S2O translation quality and semantic segmentation performance. The dataset and source code have been publicly released at https://github.com/Lewisyuaner/BMT-S2O-main.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

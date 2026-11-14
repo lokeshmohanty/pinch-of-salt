@@ -1,0 +1,13 @@
+{
+  "id": "ecaf7e8fbf79d824",
+  "title": "DroneGround: Open-Vocabulary Drone Payload Characterization Using Synthetic Data and Grounded Vision-Language Models",
+  "link": "https://arxiv.org/abs/2609.07780",
+  "description": "arXiv:2609.07780v2 Announce Type: replace \nAbstract: Automated drone surveillance has become increasingly important for public safety, critical infrastructure protection,and restricted airspace monitoring. While existing vision-based systems achieve strong performance for drone detection and tracking, reliable payload characterization remains highly challenging under long-range imaging conditions due to limited availability of annotated real-world datasets, and substantial distribution shifts encountered during deployment. Existing approaches formulate payload characterization as a closed-set object detection problem, limiting their ability to recognize previously unseen payloads and generalize beyond the training distribution. To address these challenges, we generate a photorealistic synthetic drone-payload dataset using Unreal Engine 5 and Cosys-AirSim and propose DroneGround: Grounded Vision-Language Payload Characterization, a two-stage framework for robust open-vocabulary payload analysis. DroneGround first employs a YOLO26s detector to localize drones and extract drone-centric image crops, followed by a LoRA-fine-tuned PaliGemma vision-language model that generates seman- tic descriptions of the detected drones and their attached payloads, enabling open-vocabulary payload characterization beyond predefined categories. An occlusion-based grounding module further provides interpretable payload localization by identifying image regions responsible for the generated descriptions. Extensive experiments on both synthetic and real-world drone imagery demonstrate that DroneGround substantially improves robustness under synthetic-to-real distribution shifts, outperforming a conventional closed-set payload detector by improving the F1-score from 82.5% to 96.3%, while achieving significantly better generalization to previously unseen payload categories (80.4%versus 42.7% F1). Dataset and code will be released upon request.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

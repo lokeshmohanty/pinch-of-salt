@@ -1,0 +1,14 @@
+{
+  "id": "e47438c2b7b03a0c",
+  "title": "Cross-Modal Attention Acts as a Frequency Filter: Why Verbose Prompts Improve Robustness in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2609.20139",
+  "description": "arXiv:2609.20139v1 Announce Type: cross \nAbstract: Vision-language models (VLMs) are fragile under image corruption. We find that the wording of the question affects VLMs in two opposite ways. Verbose questions make VLMs substantially more robust---e.g., rephrasing \"Is there a cat?\" into \"Please look carefully and answer: is there a cat?\". Conversely, VLMs become more fragile under corruption when the question is semantically complex or finer-grained, e.g., \"what colour is the cup left of the chair?\" instead of \"is there a cup?\". Both effects stem from question-conditioned cross-modal attention, which induces a spectral filter over image patches: verbose questions broaden its frequency support, while fine-grained questions concentrate it onto fewer visual scales. The model's answer drifts most when this filter and the corruption sit on the same spatial frequencies. We test the filter view on Qwen3-VL and LLaVA-OneVision across GQA and CLEVR; verbose paraphrasing reduces drift variance by 70--81% on the 8B models. The practical recipe---pad the prompt---further yields measurable gains in accuracy, even under image corruption.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

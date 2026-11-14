@@ -1,0 +1,13 @@
+{
+  "id": "a78fa7359030880b",
+  "title": "OmniOPSD: Rationale-Privileged On-Policy Self-Distillation for Affective Computing",
+  "link": "https://arxiv.org/abs/2606.15920",
+  "description": "arXiv:2606.15920v3 Announce Type: replace \nAbstract: Multimodal large language models (MLLMs) have advanced affective computing by enabling nuanced reasoning over visual, acoustic, and linguistic evidence. A key approach to improving their generalization is outcome-based reinforcement learning, which converts existing label-level annotations into rewards for final-answer correctness. However, its sparse sequence-level supervision provides limited fine-grained guidance for interpreting multimodal affective cues and may reward correct labels even when those cues are misinterpreted. To address this challenge, we introduce OmniOPSD, the first on-policy self-distillation framework for omni-modal affective reasoning. At its core, OmniOPSD transforms label-level supervision into evidence-rich, teacher-only rationales by leveraging reference affective judgments as semantic priors for offline multimodal evidence elicitation from frontier MLLMs. Through rationale-privileged self-distillation, it couples on-policy student rollouts with dense, evidence-informed token-level supervision from a local self-teacher, allowing the student to learn along its own trajectories rather than imitate fixed reasoning traces. This decoupling of offline evidence acquisition from local policy learning enables training without additional human annotation, frontier-model logits, or online frontier-model calls, while preserving student-only inference from the original task input. At both 3B and 7B scales, OmniOPSD outperforms supervised fine-tuning (SFT) and group relative policy optimization (GRPO) in mean macro-F1 on both in-domain and out-of-domain evaluations. Among the compared models, it ranks first by MER-UniBench mean across all three input-modality settings, reaching 84.13 with audio--video--text input, and achieves the highest MME-Emotion recognition score (Rec-S) of 42.4.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "1f2f6285448e449f",
+  "title": "Reducing Per-Sample Interference in Stochastic Optimization",
+  "link": "https://arxiv.org/abs/2607.16261",
+  "description": "arXiv:2607.16261v2 Announce Type: replace-cross \nAbstract: Modern optimizers combine gradients from the current mini-batch with historical optimization state, such as momentum or adaptive moments. While effective, this standard practice can produce parameter updates that actively increase the loss of individual samples. We term this phenomenon per-sample interference and propose redefining the parameter update as an optimization problem that explicitly minimizes it.\n  Because the exact formulation of the problem is computationally prohibitive, we introduce a highly efficient surrogate. By reducing the problem's dimensionality to the batch size and restricting the optimization to the last linear layer, we overcome memory and speed bottlenecks. This strategy hinges on our unexpected finding that this layer alone can reliably capture core second-order statistics of the full network. The resulting surrogate problem integrates readily into standard optimizers like SGD and AdamW, and can be solved using a small number of GPU-friendly iterations. Crucially, the method exhibits favorable scaling properties, as the relative computational overhead shrinks as the model size or input grows. Experiments on image classification benchmarks confirm reduced per-sample interference and improved generalization.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

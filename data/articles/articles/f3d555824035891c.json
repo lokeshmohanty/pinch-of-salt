@@ -1,0 +1,13 @@
+{
+  "id": "f3d555824035891c",
+  "title": "Proof-of-Use: Mitigating Tool-Call Hacking in Deep Research Agents",
+  "link": "https://arxiv.org/abs/2510.10931",
+  "description": "arXiv:2510.10931v3 Announce Type: replace \nAbstract: While reinforcement learning (RL) enhances their ability to plan and reason across retrieval steps, we identify a critical failure mode in this setting: Tool-Call Hacking. Unlike execution-based tools (e.g., code or math), whose effects are directly observable, the weak observability of causal dependencies between retrieved evidence and reasoning under format- and outcome-level supervision enables agents to maximize surface-level reward signals without genuinely grounding their reasoning in the returned evidence. This leads to distinctive pathologies, including mode collapse via tool overuse and hallucinated tool usage where tool calls are largely decorative.\n  To address this issue, we propose Proof-of-Use (PoU), an evidence grounded RL framework that explicitly optimizes the causal dependency from retrieval to reasoning and final answers. PoU re-fomulate a fine-grained stepwise interaction protocol in which agents must auditably cite normalized evidence identifiers. We operationalize this via a multi-objective reward design consisting of: (1) two progressive process rewards that constrain citation validity at intermediate steps; (2) a global Answer--Support Alignment reward that enforces consistency between final answers and retrieved evidence; and (3) a curriculum-style adaptive reward mixing mechanism that smoothly transitions agents from dense process supervision to sparse outcome-based objectives. Extensive experiments show the strong performance of PoU and demonstrate the effectiveness in mitigating tool-call hacking. Beyond this, PoU exhibits a notable emergent property: adaptive and robust tool-usage patterns naturally arise under domain and tool shifts, even though PoU does not explicitly optimize for tool adaptation.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

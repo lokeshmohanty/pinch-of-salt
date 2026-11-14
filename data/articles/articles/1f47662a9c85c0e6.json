@@ -1,0 +1,14 @@
+{
+  "id": "1f47662a9c85c0e6",
+  "title": "A Straight Line Is Not a Camera Pose: Auditing Short-Clip Pose Benchmarks",
+  "link": "https://arxiv.org/abs/2611.00482",
+  "description": "arXiv:2611.00482v2 Announce Type: replace \nAbstract: The absolute trajectory error (ATE) is the standard measure of camera-motion accuracy, from SLAM to feed-forward 3D reconstruction. On the common Sintel protocol, an image-free constant-velocity line has a lower mean ATE than 10 of 11 recent models re-run with official code and than 85 of 110 published methods. On Lightspeed it beats 5 of 9 models and 10 of 11 published methods, while on TUM, ScanNet, DyCheck and ADT every model beats it. Two properties of ATE's alignment explain this. First, it maps any moving constant-velocity prediction onto the line that best fits the true path, so the line scores the path's regression residual. A residual signal-to-noise ratio (SNR) criterion tells when moving a prediction towards its constant-velocity fit lowers ATE. With the alignment's first-order refit, it accounts for the outcome of all but one of 4010 model-clip evaluations, including all 504 on three benchmarks registered before any model ran. The true path's straightness flags Sintel and Lightspeed. Second, the alignment ignores where cameras look: rotating a trajectory by 30 degrees against its orientations leaves ATE unchanged yet worsens the static-point reprojection of every model on Sintel, TUM and ScanNet, and the line reprojects worst on Sintel by geometric mean. Fitting the alignment's rotation to the predicted orientations gives pose-anchored ATE (PA-ATE), a one-function change at about ATE's cost (37 vs. 34 $\\mu$s per clip, and 61 vs. 66 $\\mu$s with the rotation error). It is never below ATE and, as we prove, equals the translational relative pose error over all frame pairs divided by $\\sqrt{2}$ when the orientations agree. It ranks every image-free reference below every model on Sintel, follows the reprojection error where ATE does not, and largely preserves the models' order. Its rotation error also exposes Lightspeed ground-truth orientations that the images contradict.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

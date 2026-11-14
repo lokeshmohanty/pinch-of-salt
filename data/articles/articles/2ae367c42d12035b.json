@@ -1,0 +1,15 @@
+{
+  "id": "2ae367c42d12035b",
+  "title": "Certified Corruption Budgets: Anytime-Valid Leaderboard Claims under Adaptive Rigging",
+  "link": "https://arxiv.org/abs/2610.10597",
+  "description": "arXiv:2610.10597v1 Announce Type: cross \nAbstract: Public leaderboards for AI models are read continuously, and attackers can see every published standing. Vote rigging, selective disclosure of private variants, and benchmark contamination can each move a ranking. Existing guarantees assume genuine records or bound the corruption per step, which an attacker who corrupts in bursts evades. We introduce the certified corruption budget, a tolerance $\\widehat{B}_t$ computed after $t$ records and published with each pairwise claim. With probability at least $1-\\alpha$, simultaneously at all times, the claim is correct or more than $\\widehat{B}_t$ records were corrupted. It holds against attackers who watch every certificate, with no bound on their budget. Forged records and records altered once seen require different certificates: the certificate for forgeries fails, with probability approaching one, against an attacker who flips votes it has seen, while one that charges roughly twice as much per record remains valid, with constant bets even against attackers who see the future, and no smaller charge is valid at every level. The certified budget grows nearly as fast as any valid method allows: with a win fraction $\\frac{1}{2}+\\delta$, each new record adds close to $2\\delta$ to the number of forged records the claim can withstand ($\\delta$ flipped). Publishing the best of $V$ private variants costs only an amount growing like $\\log V$. In replays on 1.8 million Chatbot Arena votes, a few hundred rigged votes make standard confidence intervals certify false orderings, while ours stays valid. On real votes, our certificate shows that clearly separated models withstand about 2,000 forged votes.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "stat.ME"
+  ]
+}

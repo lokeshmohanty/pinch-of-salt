@@ -1,0 +1,13 @@
+{
+  "id": "c44cec9a615df1d7",
+  "title": "Degree-Equalized View-Graph Selection under Tight Pair Budgets",
+  "link": "https://arxiv.org/abs/2611.07498",
+  "description": "arXiv:2611.07498v1 Announce Type: new \nAbstract: Fully matching all image pairs in Structure-from-Motion is quadratic in the number of images, so practical pipelines pass a budgeted subset to the final matching and reconstruction backend. One-shot selectors score candidates with image retrieval, cheap geometric probes, or a learned prior and finalize B pairs before full matching. Their priorities do not account for the degree already allocated to each image, which can concentrate edges on a few images. Across nine large 1DSfM internet photo collections at B=2N, the coverage top-B selector leaves 54% of covered images with realized degree at most two. Reconstruction can then fail even when the selected graph is nearly connected and almost fully verified. Our training-free greedy rule, Degree-Equalized Allocation (DEAL), exponentially downweights pairs whose endpoints are already well covered. On these collections, DEAL improves the one-shot selector built on the same prior (from 0.776 to 0.929) and matches the mean registered-image ratio of an SfM-supervised edge prior under the shared backend (0.929 vs 0.930), without training. On the largely saturated 38-scene standard benchmark suite, DEAL gives the highest mean among the evaluated training-free selectors (0.875 vs 0.858 one-shot).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

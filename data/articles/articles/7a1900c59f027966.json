@@ -1,0 +1,14 @@
+{
+  "id": "7a1900c59f027966",
+  "title": "Post-Hoc Trajectory-Risk Certification for Modular LLM-Based Security Agents",
+  "link": "https://arxiv.org/abs/2608.05199",
+  "description": "arXiv:2608.05199v1 Announce Type: cross \nAbstract: Autonomous security agents operate as staged pipelines, such as classifying network traffic and then attributing attacks to a specific technique. Split conformal prediction gives each stage finite-sample coverage, but deployment requires a trajectory-level guarantee across the full chain. These guarantees do not compose automatically when stages are independently trained and calibrated. Bonferroni allocation is distribution-free but conservative under correlated errors. We show that a natural pairwise-correlation extension to three or more stages is invalid because it gives a lower rather than an upper bound, and derive a valid spanning-tree alternative. We distinguish whether stages are dependent from whether an audit sample is large enough to certify that dependence, and give matching upper and information-theoretic lower sample-complexity bounds. We also show that coarse-to-fine label selection can create near-perfect measured correlation without learned dependence.\n  On a two-stage intrusion-detection pipeline across 6 open LLMs and 2 datasets, removing this artifact reduces measured correlation from near 1 to 0-0.78. A direct audit of trajectory failure becomes 13.7% tighter than Bonferroni once the audit reaches the required sample size, but is worse when undersized. A modular certificate using per-stage certificates and a pairwise overlap bound yields a positive average gain of 0.6%, quantifying the cost of lacking joint access. Same-model, cross-model, and permuted-pairing tests show that residual dependence reflects shared sample difficulty, not shared model representations. Average trajectory coverage across 12 configurations is 92.7% +/- 2.4% at alpha = 0.10. Under cross-dataset deployment, single-step miscoverage reaches 100% even when accuracy remains 78%, showing that distribution shift destroys calibrated confidence before raw accuracy.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

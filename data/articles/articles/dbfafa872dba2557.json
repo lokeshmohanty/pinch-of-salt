@@ -1,0 +1,15 @@
+{
+  "id": "dbfafa872dba2557",
+  "title": "Compress to Remember: Learning Compact Memory via On-Policy Distillation for Long Video Generation",
+  "link": "https://arxiv.org/abs/2609.36364",
+  "description": "arXiv:2609.36364v1 Announce Type: cross \nAbstract: Standard video generators do not natively compact historical context into reusable memory tokens. As generation continues, the growing history makes it increasingly difficult to retain information from earlier frames due to long-context degradation. Key-frame-based approaches address this challenge by retaining selected past frames, but can discard information needed for future generation. Rather than relying on frame selection alone, we study whether a frozen video generator can supply the supervision needed to learn a compact representation of the history. We propose Prediction-Aligned Context Compaction (PACC), which uses a learned compressor to aggregate information across past frames into compact memory tokens. We train the compressor through on-policy distillation, using the same frozen generator both as a student when conditioned on compressed memory and as a teacher when conditioned on the full history. The student generates continuations, while the teacher provides targets for the same noisy inputs at each denoising step. Only the compressor is updated to align the student's predictions with these targets. We evaluate PACC on MBench, which jointly measures memory-event coverage and consistency. PACC outperforms the strongest baseline by 6.63 points on Causal-rCM and 3.19 points on Causal Forcing. Evaluation on VBench-Long using MovieGen prompts further shows that PACC produces minute-long videos with generation quality competitive with baselines. Together, these results show that learning to compact historical context can improve long-video memory without modifying the underlying generator.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

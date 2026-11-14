@@ -1,0 +1,13 @@
+{
+  "id": "3e2b94430f547438",
+  "title": "AutoLumNet: Monotone Optimal Transport for Single-Shot Exposure Correction",
+  "link": "https://arxiv.org/abs/2608.19860",
+  "description": "arXiv:2608.19860v1 Announce Type: new \nAbstract: Single-shot exposure correction aims to map an arbitrarily degraded image---whether under-exposed, over-exposed, or a spatial mixture of both---to a well-exposed output from a single capture. We present AutoLumNet, a framework that decomposes this task into a global monotone tone curve and a bounded local residual, making the global component the locus of formal guarantees. The tone curve is parameterized as the normalized cumulative integral of a strictly positive density, ensuring strict monotonicity by construction rather than by penalty. We prove that this parameterization (i)~preserves the pairwise luminance ordering of all pixels and all spatial extrema unconditionally, and (ii)~is dense in the space of valid tone corrections, containing the one-dimensional optimal-transport map from the input to any target luminance distribution. A differentiable sorted-sample Wasserstein-2 objective drives the learned curve toward the OT optimum during training. Spatially varying effects that the global map provably cannot address---local shading, chrominance shifts, and clipped-region restoration---are handled by a bounded residual decoder with dual-branch convex fusion, for which we provide an explicit sufficient condition for local order preservation. Experiments on five benchmarks (MSEC, SICE, LCDP, LOL-v1, LOL-v2-real) show that AutoLumNet achieves state-of-the-art PSNR and SSIM across both under- and over-exposure regimes at 11.2\\,ms per frame, and generalizes zero-shot to pure low-light benchmarks without retraining. To our knowledge, AutoLumNet is the first exposure-correction method to unite structural monotonicity, optimal-transport optimality, and bounded local adaptivity within a single trainable architecture. Code is available at https://github.com/kraihan/Autolumnet.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

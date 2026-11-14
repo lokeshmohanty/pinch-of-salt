@@ -1,0 +1,13 @@
+{
+  "id": "2486e3fbdb0d6fbc",
+  "title": "Task-Performance Routing for Multi-Teacher Distillation in CT Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2610.41362",
+  "description": "arXiv:2610.41362v1 Announce Type: new \nAbstract: Pre-trained models offer complementary strengths in CT organ segmentation, but their relative accuracy varies across organs and spatial regions. Multi-teacher knowledge distillation can combine these strengths in a single student, yet global or instance-level teacher weights overlook variation within a 3D volume. We propose Task-Performance Routing (TPR), which uses region-wise segmentation errors to determine teacher weights during training without learned routing parameters. In hard regions, TPR favors teachers with lower prediction errors; in easy regions, it uses uniform weights to combine their knowledge. A hierarchical spatial partition provides fine-grained routing in shallow encoder stages and coarse-grained routing in deep stages. Experiments on BTCV, MSD-Liver, and MSD-Pancreas with two teacher pairs and two backbone architectures show higher Dice scores than the individual teachers, adaptive ensembles, and evaluated multi-teacher distillation baselines. On MSD-Pancreas, TPR achieves Dice scores of 65.40% with SwinUNETR and 68.25% with U-Net, compared with 64.38% and 67.45% for the corresponding adaptive ensembles. Inference uses the student alone, with no routing or teacher overhead. Code is available at https://github.com/EdvinCecilia/TPR_MultiTeacher.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

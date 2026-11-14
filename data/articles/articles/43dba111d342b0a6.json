@@ -1,0 +1,13 @@
+{
+  "id": "43dba111d342b0a6",
+  "title": "Motion Cues from Image-based Point Tracking for LiDAR Scene Flow Estimation",
+  "link": "https://arxiv.org/abs/2605.16922",
+  "description": "arXiv:2605.16922v2 Announce Type: replace \nAbstract: Self-supervised LiDAR scene flow approaches rely on pseudo-labels that distinguish static and dynamic points, providing targeted supervision. These labels are typically derived from LiDAR geometry, making them unreliable in sparse or occluded regions. The resulting noise misguides motion supervision and degrades scene flow learning, yet existing methods remain largely dependent on the same geometric evidence. To address this, we introduce TrackCue, a tracking-guided framework that transfers dense image trajectories into reliable static-dynamic supervision. TrackCue anchors tracking queries to projected LiDAR points, yielding image-space trajectories that provide motion evidence beyond sparse LiDAR geometry. Since image-space displacement also reflects ego-vehicle motion, we present a visually consistent motion compensation strategy that compares each tracked trajectory with the rigid trajectory induced by ego-motion alone. It admits motion evidence only where both trajectories are valid and the deviation persists across frames, isolating true object motion while suppressing transient tracking errors. Finally, we perform visual motion cue lifting, which associates image-space object motion cues with LiDAR points for label refinement. As a result, TrackCue substantially improves the precision of dynamic pseudo-labels, providing more reliable supervision and leading to better self-supervised scene flow estimation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

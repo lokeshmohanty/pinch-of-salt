@@ -1,0 +1,16 @@
+{
+  "id": "e612b6bae245dc0f",
+  "title": "PCM: A Proof-Carrying Message Protocol for Verifiable Multi-Agent Communication",
+  "link": "https://arxiv.org/abs/2610.39109",
+  "description": "arXiv:2610.39109v1 Announce Type: cross \nAbstract: When one AI agent tells another that \"the tests passed\" or \"a person approved this refund\", the receiver has only the sender's word. A2A and MCP authenticate the channel, but the sender is the party in doubt, so a prompt-injected agent can launder fabricated facts and authority through a multi-agent system. We present Proof-Carrying Messages (PCM), a protocol in which each claim carries evidence: records from an append-only Merkle log that the agent cannot write, with inclusion proofs, signed by an attesting signer the agent cannot control. Receivers check messages offline and give each claim a three-valued result: proven, unproven or failed. A claim that rests only on the agent's own report is never proven. Authority travels as grant chains rooted in a recorded human approval, and the chains can only narrow. We specify four claim types, a typed caveat algebra, replay rules that survive restarts, and strict readings that make independent verifiers agree, and we prove the resulting security properties. On a pre-specified benchmark of 926 messages from real runs, 712 of them lies in 16 classes, PCM accepts 10 lies, all of them stale evidence (1.4%, 95% CI 0.8-2.6%). Plain A2A accepts all 712, and models of six deployed protocols (A2A with signed Agent Cards, uAgents, RFC 9421, SCITT, AP2, Verifiable Intent) accept 504-712. Two independent verifiers agree on all 926 verdicts, and verification takes about 1 ms.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CE",
+    "cs.AI",
+    "cs.CR",
+    "cs.MA"
+  ]
+}

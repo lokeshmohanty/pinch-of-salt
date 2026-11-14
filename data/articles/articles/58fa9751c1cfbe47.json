@@ -1,0 +1,14 @@
+{
+  "id": "58fa9751c1cfbe47",
+  "title": "Beyond Leaderboard Scores: A Deployment-Focused Protocol for Interpretable Tracking Evaluation in Pedestrian-Centric Environments",
+  "link": "https://arxiv.org/abs/2610.01682",
+  "description": "arXiv:2610.01682v1 Announce Type: cross \nAbstract: Mobile robots operating among pedestrians need trajectories that become available quickly, remain spatially credible through missed observations, preserve identity, and fit within an embedded computing budget. Aggregate tracking scores provide limited insight into when and how trajectories fail, while varying detector inputs can confound tracker and detector quality. We present a deployment-focused, tracker-only evaluation protocol that uses shared detections to isolate tracker behavior and directly evaluates initialization, detector-gap continuation, identity recovery, close-neighbor association, and load-dependent tracker-step runtime, while Higher Order Tracking Accuracy (HOTA) is retained as a complementary aggregate measure. We apply the protocol to the JackRabbot Dataset and Benchmark (JRDB) using six open-source trackers and our lightweight Pedestrian Reference Tracker (PedRefTrack), together with a GT-assisted variant that estimates the remaining tracker-side gap under idealized association and motion. Under fixed detections, the non-GT trackers span only 24.26%-29.67% HOTA yet exhibit markedly different capability profiles. After 1.0 s without detector support, no tracker without GT assistance maintains spatially correct, same-identity output in more than half of eligible cases, making missing-observation continuation the dominant limitation among the tested properties. Close-neighbor failures are smaller and increase mainly at the shortest separations. Tracker-step runtime on an NVIDIA Jetson Orin is heavy-tailed and load-sensitive, causing several trackers to fall below the 10 Hz real-time target in crowded frames. The protocol provides a reproducible way to characterize tracker behavior and deployment suitability in pedestrian-centric environments. Code and evaluation scripts are released at https://github.com/SCAI-Lab/tracker_eval.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

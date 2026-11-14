@@ -1,0 +1,13 @@
+{
+  "id": "d0daa04df5e7586d",
+  "title": "Domain-Adversarial Adaptation from MURA to In-House Radiographs for Improved Adult Elbow Fracture Classification",
+  "link": "https://arxiv.org/abs/2611.13308",
+  "description": "arXiv:2611.13308v1 Announce Type: new \nAbstract: We studied domain shift in adult elbow fracture classification from radiographs when training on a large public dataset and deploying on a small, institution-specific dataset (UofL). We implemented a domain-adversarial neural network (DANN) to align feature distributions across source (MURA) and target (UofL) domains while optimizing fracture classification. A pretrained convolutional backbone was adapted to grayscale inputs; the task head predicts fracture presence, and a gradient-reversal-based domain head encourages domain-invariant features via adversarial learning. We compared four settings: (1) Source-only, (2) Target-only (limited labels), (3) Naive merge (pooled training), and (4) DANN (MURA to UofL). Evaluation on UofL test data uses AUC-ROC, and accuracy. DANN outperformed Source-only and Naive merge baselines by reducing domain bias without overfitting to the small target set. Ablations showed that progressive adversarial weight, dataset-size-aware domain loss, and domain-balanced sampling improved stability and target performance. Results demonstrated that domain alignment is a practical path to robust clinical generalization from public to local data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

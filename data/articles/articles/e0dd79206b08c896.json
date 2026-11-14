@@ -1,0 +1,13 @@
+{
+  "id": "e0dd79206b08c896",
+  "title": "Loop-Mamba: A Loop Mamba with Degradation-Aware and Shared Memory for Old Photo Restoration",
+  "link": "https://arxiv.org/abs/2608.02346",
+  "description": "arXiv:2608.02346v1 Announce Type: new \nAbstract: Old photographs often suffer from multiple coupled degradations, including scratches, cracks, fading, blur, noise, and missing regions, severely degrading both visual quality and semantic content. We propose Loop-Mamba, a lightweight loop-based state-space framework that formulates old photo restoration as progressive state evolution, where a persis- tent restoration state is continuously propagated and refined through iterative computation. Specifically, we introduce a Semantic-Guided Degradation Estimator (SGDE) to explicitly model heterogeneous degradations by jointly predicting local degradation maps and global degradation scores, providing degradation-aware guidance for state evolution. We further develop a Shared Structural Memory Mamba (S$^2$M- Mamba), which maintains a persistent restoration state across iterations, enabling persistent state evolution through shared structural memory for robust long-range structural reconstruction. Benefiting from first-order state recursion, Loop-Mamba propagates latent restoration states through recurrent tran- sitions instead of repeatedly stacking deep feature transformations, thereby alleviating gradient dilution while avoiding the computational overhead inherent in iterative CNN- and Transformer-based restoration frameworks. A lightweight multi-directional scanning strategy further enhances direc- tional information aggregation and preserves structural continuity. To better evaluate restoration quality, we introduce the task-oriented Old Photo Damage Recovery Score (ODRS), which jointly measures degradation recovery and structural reconstruction fidelity. Experimental results on the public SynOld benchmark demonstrate that Loop-Mamba consistently outperforms previous state-of-the-art methods across both conventional restoration metrics and the proposed ODRS.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

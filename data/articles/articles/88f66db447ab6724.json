@@ -1,0 +1,13 @@
+{
+  "id": "88f66db447ab6724",
+  "title": "Subtoken Vision Transformer for Fine-grained Recognition",
+  "link": "https://arxiv.org/abs/2607.09086",
+  "description": "arXiv:2607.09086v2 Announce Type: replace \nAbstract: We present Subtoken Vision Transformer (SubViT), a selective image tokenization method for fine-grained visual recognition. Standard Vision Transformers compress each fixed-size patch into a single token, although fine-grained distinctions often depend on localized variations within only a few patches. SubViT addresses this mismatch by representing discriminative patches with multiple subtokens while retaining the original token sequence for global context, thereby allocating additional capacity where it is most needed. Since attention heads encode complementary semantics and extracting attention maps at inference requires an extra backbone forward, we adopt a two-stage training strategy. Stage 1 fine-tunes the ViT using subdivision regions sampled from random attention heads, exposing the model to diverse subdivision patterns. Stage 2 identifies informative attention maps through feature-degradation distances and distills them into a lightweight single-map router, which directly predicts deterministic token-importance scores without a separate attention forward. We evaluate SubViT on Generalized Category Discovery (GCD), a challenging task requiring both fine-grained discrimination and generalization to unlabeled novel categories. Across CUB, FGVC-Aircraft, and Stanford-Cars, SubViT improves the average novel-category accuracy of DINOv2 from $81.3\\%$ to $84.7\\%$, with only $0.50$ ms additional latency and $3.4\\%$ more FLOPs, while reducing latency by $73.8\\%$ relative to Retina Patch. Code: \\href{https://github.com/jiezhu23/SubViT_ACCV26}{SubViT}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

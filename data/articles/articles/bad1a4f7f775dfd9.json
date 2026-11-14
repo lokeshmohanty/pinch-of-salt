@@ -1,0 +1,14 @@
+{
+  "id": "bad1a4f7f775dfd9",
+  "title": "Accurate Localization of Road Traffic Objects on the Road Plane Using Surveillance Camera Imagery",
+  "link": "https://arxiv.org/abs/2608.05840",
+  "description": "arXiv:2608.05840v1 Announce Type: new \nAbstract: Accurate vehicle localization from monocular roadside surveillance cameras is important for intelligent transportation systems, traffic monitoring, and traffic conflict analysis. Standard approaches often estimate vehicle position from the center of the detector bounding box, which can produce large errors due to perspective distortion and parallax, especially for elevated cameras and large vehicles.\n  This paper proposes a two-stage geometry-aware localization pipeline that estimates the projection of the vehicle footprint onto the road plane. First, vehicles are detected using a YOLO26-based detector. Second, a dedicated ResNet34 regression network predicts four corner points corresponding to the projected vehicle base. The final position is computed as the geometric center of the predicted quadrilateral.\n  The method was trained on synthetic data generated in CARLA and fine-tuned on real-world roadside imagery from DAIR-V2X. Experiments on synthetic and real data showed clear improvements over naive bounding-box-center localization. On DAIR-V2X, the mean image-space localization error decreased from 31.77 px to 15.30 px, a 51.8% improvement, while the median error decreased to 4.29 px. Median ground-plane error for medium-range vehicles decreased from 5.52 m to 0.90 m, and for far-range vehicles from 8.67 m to 1.84 m.\n  The results also show that contextual information surrounding the detector bounding box is important for geometric localization. The largest gains were observed for distant vehicles and geometrically challenging cases affected by strong perspective distortion and parallax.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

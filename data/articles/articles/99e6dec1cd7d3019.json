@@ -1,0 +1,13 @@
+{
+  "id": "99e6dec1cd7d3019",
+  "title": "Spatial-Spectral Coupling as Attention: Scaling Shape Correspondence to High-Resolution Surfaces",
+  "link": "https://arxiv.org/abs/2611.13870",
+  "description": "arXiv:2611.13870v1 Announce Type: new \nAbstract: Establishing dense correspondence between high-resolution 3D shapes remains challenging due to the spatial--spectral coupling at the core of many functional-map methods, which grows quadratically with mesh resolution. We observe that this coupling is equivalent to a scaled dot-product attention formulation, with learned descriptors serving as queries and keys and spectral basis functions as values. This connection makes efficient attention implementations directly applicable to shape matching and an effective mechanism for scaling spatial-spectral coupling. We show that optimized quadratic attention implementations can scale modern deep functional map pipelines to large mesh sizes, improving both runtime and memory consumption, while sub-quadratic methods introduce errors, particularly for non-isometric shape pairs, where an exact coupling proves most necessary. These insights motivate \\textit{Geo-FlashAttention}, which restricts the exact softmax to geometry-selected surface patches and achieves near-linear empirical scaling while preserving correspondence accuracy of exact implementations. Across six standard benchmarks and three functional-map pipelines, rigorous analysis shows that efficient couplings preserve correspondence accuracy. At $60k$ vertices, these insights reduce peak training memory from 106.08 to 5.67\\,GiB, with Geo-FlashAttention being $1.5\\times$ faster per training step than FlashAttention. This enables end-to-end learning for correspondence problems on large meshes such as cortical surfaces, where high resolution is required to preserve disease-relevant intricacies of the surface geometry. Project page available https://spatial-spectral-attention.github.io/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

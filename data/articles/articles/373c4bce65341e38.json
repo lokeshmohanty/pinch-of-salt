@@ -1,0 +1,14 @@
+{
+  "id": "373c4bce65341e38",
+  "title": "MoLS: SNR-Guided Module-Wise Learning-Rate Calibration for Large Language Models",
+  "link": "https://arxiv.org/abs/2605.05794",
+  "description": "arXiv:2605.05794v2 Announce Type: replace-cross \nAbstract: Large language models (LLMs) contain functionally distinct modules with heterogeneous gradient statistics. Although Adam(W) adapts updates at the parameter level, selecting relative learning rates across modules often relies on costly manual tuning. We study this problem through gradient signal-to-noise ratio (SNR). Our analysis identifies structural sources of module-wise SNR differences and relates SNR to the attenuation of Adam's normalized mean-gradient component. Based on these findings, we propose \\textbf{Module-wise Learning Rate Scaling via SNR (\\name)}, a lightweight method that replaces manual multiplier search with one-shot calibration. MoLS estimates module-level SNRs after an initial adaptation period and uses inverse-square-root scaling to determine relative learning-rate multipliers. The multipliers are introduced smoothly during warmup and then held fixed while the global learning-rate schedule continues. Our theoretical results quantify the effect of calibration and its sensitivity to estimation error and relative SNR drift. Extensive experiments across LLM pre-training and fine-tuning show that MoLS reduces perplexity and improves downstream accuracy with minimal computational overhead. It achieves performance comparable to carefully tuned module-specific learning rates and integrates with memory-efficient optimizers and parameter-efficient fine-tuning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

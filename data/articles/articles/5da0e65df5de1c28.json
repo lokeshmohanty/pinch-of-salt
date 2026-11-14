@@ -1,0 +1,14 @@
+{
+  "id": "5da0e65df5de1c28",
+  "title": "CRM: Retrieval Model with Controllable Condition",
+  "link": "https://arxiv.org/abs/2412.13844",
+  "description": "arXiv:2412.13844v2 Announce Type: replace-cross \nAbstract: Retrieval models for recommendation need to account for outcomes such as watch time while searching large item corpora efficiently. We present the Controllable Retrieval Model (CRM), an outcome-conditioned retrieval framework that adds watch time as an input to the user tower. During training, CRM learns to predict the next item given its observed watch time; at inference, we supply a desired watch time to steer retrieval without retraining. The item tower is independent of the condition, so item embeddings can still be precomputed and indexed for approximate nearest neighbor (ANN) search. We implement CRM as both a DNN-based two-tower model and a Decision Transformer. The Transformer interleaves item tokens with watch-time-to-go condition tokens, using the target watch time as a numerical prompt for next-item prediction. For each online request, we choose between the average and maximum watch times in the user's recent history as the condition. CRM is deployed in Kuaishou's short-video recommendation system, which serves over 400 million users. Online A/B tests show video watch time improvements of 0.372% in Kuaishou and 0.457% in Kuaishou Lite.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "3fc59142eaaa0bf9",
+  "title": "e1: Learning Adaptive Control of Reasoning Effort",
+  "link": "https://arxiv.org/abs/2510.27042",
+  "description": "arXiv:2510.27042v3 Announce Type: replace \nAbstract: Increasing the thinking budget of AI models can significantly improve accuracy, but not all questions warrant the same amount of reasoning. Users may prefer to allocate different amounts of reasoning effort depending on how they value output quality versus latency and cost. To leverage this tradeoff effectively, users need fine-grained control over the amount of thinking used for a particular query, but few approaches enable such control. Existing methods require users to specify the absolute number of desired tokens, but this requires knowing the difficulty of the problem beforehand to appropriately set the token budget for a query. To address these issues, we propose \\textit{Adaptive Effort Control}, a self-adaptive reinforcement learning method that trains models to use a user-specified fraction of tokens relative to the current average chain-of-thought length for each query. This approach eliminates dataset- and phase-specific hyperparameter tuning. Users can dynamically adjust the cost-accuracy trade-off through a continuous effort parameter specified at inference time. We observe that the model automatically learns to allocate resources proportionally to the task difficulty. Across model scales ranging from 1.5B to 32B parameters, our approach reduces chain-of-thought length on math tasks by 1.9-3.7x at matched accuracy relative to the base model used for RL training.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

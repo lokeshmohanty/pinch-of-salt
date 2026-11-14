@@ -1,0 +1,13 @@
+{
+  "id": "0812dee26971b1fa",
+  "title": "ConClick: Element-Wise Contrastive Learning Improves GUI Grounding",
+  "link": "https://arxiv.org/abs/2610.13268",
+  "description": "arXiv:2610.13268v1 Announce Type: new \nAbstract: GUI grounding, the task of locating the interface element specified by a user instruction, is a fundamental capability of GUI agents. However, existing grounding models remain error-prone, often causing downstream task failures. We systematically evaluate 10 grounding models across five datasets and identify a major error pattern: most incorrect clicks hit non-target interface elements rather than the background, with different models repeatedly selecting the same distractors. Motivated by these findings, we propose ConClick, a contrastive learning framework that teaches models to distinguish the target element from plausible distractors. We construct ConClick-Data, a dataset containing 4,292 challenging target-distractor pairs, and train the model using complementary listwise ranking and pairwise margin objectives. ConClick improves the grounding accuracy of Qwen3-VL-8B from 54.71% to 66.03% on ScreenSpot-Pro, from 83.72% to 86.28% on MMBench-GUI L2, and from 63.33% to 70.20% on OSWorld-G, outperforming prior methods built on the same or similarly sized backbones. We further introduce ReClick, an inference-time strategy that revisits promising regions and compares predictions across competing candidates, yielding an additional 2.96 percentage-point improvement in average accuracy across the three benchmarks. Together, our analysis, dataset, and methods provide both empirical insights and practical tools for building more reliable GUI agents. Data and code are available at https://github.com/zhangruotian/ConClick.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

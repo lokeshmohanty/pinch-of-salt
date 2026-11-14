@@ -1,0 +1,13 @@
+{
+  "id": "5f8a3e0d3d01ec0a",
+  "title": "Fine-grained Human Motion Understanding with Language Models",
+  "link": "https://arxiv.org/abs/2606.20888",
+  "description": "arXiv:2606.20888v2 Announce Type: replace \nAbstract: Fine-grained motion understanding requires knowing not only which poses occur, but also when they occur. Existing motion-language models either compress motion clips or concatenate pose features without retaining the timing of each pose, making action duration and temporal scale ambiguous under temporal subsampling. We introduce FiGMo, an LLM-based model that represents motion as timestamp-grounded skeletal poses, supporting reasoning over action order and duration. A unified pose encoder applies this representation to both 2D and 3D skeletons, including poses detected from real videos, while RGB can optionally provide contextual information. To reason over timestamped pose sequences, the model must understand both individual body configurations and how they change over time. As existing data provides limited pose-level grounding, we construct the required pose-to-motion supervision. Controlled experiments show that timestamps improve temporal localization and preserve physical timing under subsampling, while the constructed supervision drives the main performance gains. FiGMo achieves state-of-the-art results across motion question answering, dense motion captioning, and action recognition with detected poses. Our code is available at: https://github.com/Thomas-Markhorst/FiGMo",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

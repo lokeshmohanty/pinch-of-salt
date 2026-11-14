@@ -1,0 +1,14 @@
+{
+  "id": "65dd88d3e0ea4601",
+  "title": "Measuring Harmfulness of Computer-Using Agents",
+  "link": "https://arxiv.org/abs/2508.00935",
+  "description": "arXiv:2508.00935v3 Announce Type: replace-cross \nAbstract: Computer-using agents (CUAs), which can autonomously control computers to perform multi-step actions, might pose significant safety risks if misused. However, existing benchmarks mainly evaluate LMs in chatbots or simple tool use. To more comprehensively evaluate CUAs' misuse risks, we introduce a new benchmark: CUAHarm. CUAHarm consists of 104 expert-written realistic misuse risks, such as disabling firewalls, leaking data, or installing backdoors. We provide a sandbox with rule-based verifiable rewards to measure CUAs' success rates in executing these tasks (e.g., whether the firewall is indeed disabled), beyond refusal rates. We evaluate frontier LMs including GPT-5, Claude 4 Sonnet, Gemini 2.5 Pro, Llama-3.3-70B, and Mistral Large 2. Even without jailbreaking prompts, these frontier LMs comply with executing these malicious tasks at a high success rate (e.g., 90% for Gemini 2.5 Pro). Furthermore, while newer models are safer in previous safety benchmarks, their misuse risks as CUAs become even higher, e.g., Gemini 2.5 Pro is riskier than Gemini 1.5 Pro. Additionally, while these LMs are robust to common malicious prompts (e.g., creating a bomb) when acting as chatbots, they could still act unsafely as CUAs. We further evaluate a leading agentic framework (UI-TARS-1.5) and find that while it improves performance, it also amplifies misuse risks. To mitigate the misuse risks of CUAs, we explore using LMs to monitor CUAs' actions. We find monitoring unsafe computer-using actions is significantly harder than monitoring conventional unsafe chatbot responses. While monitoring chain-of-thoughts leads to modest gains, the average monitoring accuracy is only 77%. A hierarchical summarization strategy improves performance by up to 13%, a promising direction though monitoring remains unreliable. CUAHarm is released at https://github.com/db-ol/CUAHarm to facilitate further research.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

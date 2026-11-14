@@ -1,0 +1,15 @@
+{
+  "id": "2127c4ae5be2e0f9",
+  "title": "Representation by Design in Generation: Cross-View Class-Token Alignment in Diffusion Transformers",
+  "link": "https://arxiv.org/abs/2609.36348",
+  "description": "arXiv:2609.36348v1 Announce Type: cross \nAbstract: Generative and representation learning remain asymmetrically connected: semantic representations are used to improve diffusion generation, whereas the models' own representations are often treated as a by-product of synthesis. We ask whether diffusion models can instead be trained to learn substantially stronger semantic representations without sacrificing generation quality. SelfFlow takes a step in this direction by introducing self-supervised patch alignment into flow matching, but its main gains remain in faster convergence and improved generation. Inspired by DINO and iBOT, we extend this framework with cross-view class-token alignment to further strengthen semantic representations. Specifically, we form two independently noised, dual-timestep observations of each image and align each student class-token representation with the stop-gradient EMA-teacher target from the other observation. This objective is optimized jointly with the inherited flow-matching and local patch objectives. Notably, although the additional objective acts only on the class token, it strengthens both class-token and patch representations. Compared with a matched two-view baseline, ImageNet linear-probing accuracy improves by 9.4\\% using the class token and 10.1\\% using mean-pooled patch tokens, while frozen-backbone VOC2012 segmentation improves by 3.6 mIoU. These representation gains are achieved while maintaining comparable ImageNet generation FID. In text-to-image training, the same objective also improves generation FID, reducing it from 2.52 to 2.37 at matched checkpoints. Our results show that representation need not remain a by-product of generation or merely a tool for improving it: it can be directly optimized as a first-class capability of diffusion pretraining alongside generation.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

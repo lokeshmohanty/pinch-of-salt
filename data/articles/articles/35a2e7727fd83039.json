@@ -1,0 +1,17 @@
+{
+  "id": "35a2e7727fd83039",
+  "title": "LLM-as-an-Investigator: Evidence-First Agentic Reasoning for Robust Interactive Problem Diagnosis",
+  "link": "https://arxiv.org/abs/2606.13220",
+  "description": "arXiv:2606.13220v2 Announce Type: replace \nAbstract: Large language models (LLMs) are used for technical troubleshooting, where problem descriptions are often incomplete and multiple causes can explain the same symptoms. Effective diagnosis requires acquiring discriminative evidence and selecting the explanation best supported by it. Yet reasoning or interaction alone may not prevent premature commitment to an incorrect hypothesis. We introduce LLM-as-an-Investigator, an evidence-first methodology for interactive problem diagnosis that reduces premature commitment while distinguishing competing causes. We implement it through the Solution Investigator Agent (SIA), which orchestrates three complementary reasoning behaviours through a shared investigation state: a Diagnostic Reasoner that conducts and reassesses the diagnostic interview, a Hypothesis Investigator that maintains and updates competing hypotheses, and a Counterfactual Investigator that challenges current explanations and guides discriminative follow-up questions. Final selection uses cited dialogue evidence and a separate verification step, while explicit hypothesis and evidence records make the diagnosis traceable and preserve unresolved alternatives. We construct a structured corpus from 303 technical forum threads across mechanical, electrical, and hydraulic domains. A source-grounded pipeline separates the initial problem, pre-solution clarifications, and reported outcome, while a user simulator answers diagnostic questions without access to the reference solution. We compare SIA with direct, reasoning-based, interactive, and search-based baselines, including adaptations of ReAct and Tree of Thoughts. Evaluation distinguishes final diagnostic quality from hypothesis coverage and oracle potential, while ablations and paired stress tests assess component contributions and robustness to plausible but misleading user hypotheses.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CE",
+    "cs.ET",
+    "cs.LG",
+    "cs.MA"
+  ]
+}

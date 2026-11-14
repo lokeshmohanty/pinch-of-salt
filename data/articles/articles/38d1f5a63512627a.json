@@ -1,0 +1,13 @@
+{
+  "id": "38d1f5a63512627a",
+  "title": "DetM-Tracker: Deterministic and Memory-Efficient VIS for Autonomous Industrial Inspection",
+  "link": "https://arxiv.org/abs/2610.29212",
+  "description": "arXiv:2610.29212v1 Announce Type: new \nAbstract: Autonomous industrial inspection requires strictly deterministic real-time inference under tight memory and computational constraints. However, existing Video Instance Segmentation (VIS) models suffer from prohibitive scaling: dense temporal memory grows with spatial resolution and sequence length, while fixed-capacity decoders fail to exploit the inherent sparsity of industrial scenes, creating a practical memory wall on resource-constrained edge platforms. We present DetM-Tracker, a streamlined VIS framework for autonomous industrial inspection, where target objects often exhibit highly similar appearance under constrained \"micro\" fields of view. DetM-Tracker eliminates architectural redundancy through three synergistic components: (1) Compact Scalar Memory, which condenses high-dimensional instance features into four-scalar descriptors, reducing temporal memory complexity from $O(T \\cdot N \\cdot R)$ to $O(T \\cdot \\hat{N})$. This mechanism effectively compresses frame-level representations into a bank of active instances, where $R$ denotes resolution, $N$ and $\\hat{N}$ represent global and window-specific instance counts, respectively and $T$ the temporal window size; and (2) Dynamic Instance Channels, which adaptively allocate query capacity according to the actual number of visible objects; and (3) Entropy-Gated Skip Connection, which concentrates computational budget on high-uncertainty spatial regions to refine object boundaries in a single forward pass without auxiliary refinement heads. Our approach effectively bridges the gap between modern VIS models and the practical demands of industrial edge deployment, reducing inference latency by approximately 20$\\times$ and VRAM consumption by 6$\\times$ compared to state-of-the-art dense-feature baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

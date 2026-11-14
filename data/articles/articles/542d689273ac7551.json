@@ -1,0 +1,13 @@
+{
+  "id": "542d689273ac7551",
+  "title": "PixGR: Pixel-Space Generative Decoding for Fast Feed-Forward 3D Reconstruction",
+  "link": "https://arxiv.org/abs/2610.31908",
+  "description": "arXiv:2610.31908v1 Announce Type: new \nAbstract: We present PixGR, an efficient framework that integrates lightweight pixel-space generative modeling into feed-forward 3D Gaussian reconstruction to model scene uncertainty. Context observations are encoded once into a scene latent representation, which conditions generative decoding from noisy target views to produce a shared 3D Gaussian representation. We formulate this process using pixel-space flow matching, enabling end-to-end optimization of 3D reconstruction with direct pixel-space generative supervision through differentiable rendering. This avoids VAE-based latent compression and error propagation inherent in previous two-stage pipelines. To preserve feed-forward efficiency, PixGR caches the scene representation and performs iterative inference using a lightweight DiT decoder. Experiments demonstrate that PixGR outperforms regression-based approaches in challenging sparse-view settings, particularly with widely spaced observations and view extrapolation. Meanwhile, it maintains sub-second inference and remains competitive with substantially heavier pretrained generative models. Our project page is available at https://ranrhuang.github.io/pixgr/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

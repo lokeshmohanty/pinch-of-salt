@@ -1,0 +1,13 @@
+{
+  "id": "bf79ddf5f23e3dfc",
+  "title": "AMBER: Multi-View Adaptive Budget Allocation for Listwise Vision-Language Reranking",
+  "link": "https://arxiv.org/abs/2610.02831",
+  "description": "arXiv:2610.02831v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are powerful listwise rerankers for multimodal retrieval, but high inference costs restrict them to evaluating small local candidate views. Existing multi-call strategies rely on fixed schedules, wasting expensive VLM calls on uninformative candidate pairs and easy queries. To address this, we propose Adaptive Multi-view Budgeted Elo Reranking (AMBER), an online, budgeted multi-view reranking framework that dynamically optimizes global resource allocation. AMBER treats fragmented listwise VLM outputs as local tournaments, using continuous Elo updates to maintain a lightweight global ranking state. Building on this, it allocates computation at two levels: dynamically constructing candidate views with high score ambiguity, and scheduling queries to maximize expected information gain. We show that each Elo update corresponds to a stochastic gradient ascent step on the Bradley-Terry log-likelihood, and provide a submodular information-theoretic motivation for the query-level allocation strategy. Experiments on CIRR, CIRCO, and PhotoBench demonstrate that AMBER achieves the strongest overall performance among the compared multi-call VLM reranking methods under comparable VLM-call budgets, while remaining effective in lower-budget settings. Our code is publicly available at https://github.com/wnlfc/AMBER.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}
