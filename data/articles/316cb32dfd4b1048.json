@@ -1,0 +1,13 @@
+{
+  "id": "316cb32dfd4b1048",
+  "title": "Multi-level latent-diffusion adaptation for cross-region point cloud segmentation of ancient terraces",
+  "link": "https://arxiv.org/abs/2611.18033",
+  "description": "arXiv:2611.18033v1 Announce Type: new \nAbstract: Automated lidar feature detection from lidar point clouds can support archaeological surveys, but models trained in one landscape may transfer poorly to another because of differences in terrain, vegetation, acquisition characteristics, and feature morphology. We address this problem for cross-region detection of ancient terraces using transductive unsupervised domain adaptation that exploits an unlabelled target survey. We propose MELD (Multi-level Embedding-space Latent Diffusion), which trains separate diffusion denoisers on target-domain representations at four hierarchical PointNet++ feature levels. These target distribution priors are then used to refine source representations during supervised training and target representations during inference, allowing adaptation to act directly on the multi-scale features consumed by the segmentation decoder. We additionally investigate local geometric descriptors derived from K-nearest-neighbour neighbourhoods, including surface normals, slope, and aspect. MELD is evaluated bidirectionally between the Teyuna and Miraflores lidar surveys in the Sierra Nevada de Santa Marta, Colombia, against a source-only model and nine configurations of established domain adaptation approaches. MELD raises F1 over the source-only model from 0.397 to 0.459 for Teyuna-to-Miraflores transfer and from 0.557 to 0.594 in the reverse direction, achieving the highest F1 among the evaluated adaptation methods in both directions. Adding local geometry further raises F1 to 0.542 and 0.606, respectively. Multi-level ablation shows that refining all four PointNet++ levels provides the strongest performance in both directions. These results show that explicit modelling of target feature distributions in hierarchical point cloud feature space, complemented by local geometry, provides an effective route to cross-region archaeological mapping without target labels.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

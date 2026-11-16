@@ -1,0 +1,13 @@
+{
+  "id": "f1031a6b20113ae0",
+  "title": "AnaDiffusion: Anatomically Compositional Latent Diffusion for Controllable 3D Brain MRI Generation",
+  "link": "https://arxiv.org/abs/2608.23014",
+  "description": "arXiv:2608.23014v4 Announce Type: replace \nAbstract: 3D brain MRI generation has made significant advances in medical imaging, simulation, and controllable anatomical analysis. However, existing generative models typically synthesize 3D volumes monolithically, often overlooking regional anatomical structures and limiting local controllability. To address these limitations, we introduce AnaDiffusion, an anatomically compositional latent diffusion framework that factorizes the generation process into distinct, anatomically meaningful regions, followed by part-to-whole assembly and global refinement. Our approach first trains part diffusion models to capture local structural priors. We then inject an assembled anatomical composite of the parts into the whole-brain latent representation and continue denoising. This mechanism enables the model to resolve global context while preserving the injected anatomy. AnaDiffusion thus produces explicit part assets and a globally coherent volume, enabling controllable part editing without subject-specific dense segmentation maps at inference. On a subject-disjoint ADNI test split, AnaDiffusion attains the lowest mean Fr\\'echet distance (FID) in every evaluated region. In localized editing, it achieves substantially higher target transfer (paired MS-SSIM) than a segmentation-conditioned baseline, with off-target preservation close to the baseline's.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

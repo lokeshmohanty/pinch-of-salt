@@ -1,0 +1,13 @@
+{
+  "id": "92d39da4621e50a8",
+  "title": "QCAP-VQA: Question-Conditioned Capped Prior-Mass Supervision for Medical Visual Question Answering",
+  "link": "https://arxiv.org/abs/2611.17708",
+  "description": "arXiv:2611.17708v1 Announce Type: new \nAbstract: Medical visual question answering models can answer correctly without attending to the anatomy that the question names. Automatic region priors allow spatial supervision without expert masks, but they are noisy, and it is unclear how strongly they should shape attention and how their effect should be verified. We present QCAP-VQA, which supervises a subset of cross-attention heads with a question-conditioned prior built from ranked segmentation proposals. Its capped prior-mass objective penalizes insufficient attention inside the prior only below a threshold. We evaluate attention against SLAKE structure boxes that play no role in training, separating attention on the named anatomy from how attention shifts between questions about the same image. QCAP-VQA matches the accuracy of a baseline without spatial supervision (84.26% vs. 84.23%), and every evaluated prior-supervised model places more attention on the annotated structures. Over a 64-fold range of regularization strength, the capped objective keeps prior mass between 0.67 and 0.77, whereas a pooled region-mass objective drives it to 0.97 and loses accuracy. The cost lies in question conditioning: as the constraint widens or strengthens, attention shifts agree less with the expert-defined contrast. Across 13 configurations, prior-referenced and expert-referenced evaluation rank the models in largely opposite order (Spearman correlation of -0.87), and the capped models it favors track the prior's own errors. Because clinical use of medical visual question answering requires answers grounded in the queried anatomy, supervision from automatic priors should be judged against independent anatomical references.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

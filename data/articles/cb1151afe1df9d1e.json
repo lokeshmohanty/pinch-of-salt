@@ -1,0 +1,15 @@
+{
+  "id": "cb1151afe1df9d1e",
+  "title": "Tracing 3D Anatomy in 2D Strokes: Can Projection-Derived Masks Replace 3D Segmentation for Cervical Spine Fracture Recognition?",
+  "link": "https://arxiv.org/abs/2601.15235",
+  "description": "arXiv:2601.15235v5 Announce Type: replace-cross \nAbstract: Cervical spine fractures require rapid and accurate diagnosis, yet automatic CT interpretation remains challenging as subtle injuries must be assessed across large 3D volumes. We ask whether full 3D vertebra segmentation is necessary for fracture recognition, or whether vertebra masks approximated from 2D projections preserve sufficient diagnostic context. In the proposed multi-stage pipeline, a YOLOv8 detector localizes the cervical spine from multi-view variance projections (3D mean Intersection over Union 94.45%). Multi-label vertebra segmentation is performed with a DenseNet121-Unet on energy-based sagittal and coronal projections (mean Dice 87.86%). The predicted 2D masks are back-projected and fused into approximate 3D masks per vertebra to extract volumes of interest from the original CT, which are analyzed by an ensemble of 2.5D spatio-sequential CNN-Transformer models. On the full RSNA 2022 cohort at native prevalence (2,019 patients, five-fold cross-validation), the pipeline yields vertebra-level and patient-level F1-scores of 68.15% and 82.28%, area under the receiver operating characteristic curve of 91.63% and 90.95%, and area under the precision-recall curve (AUPRC) of 75.64% and 92.00%. With the classifier architecture fixed, replacing 3D-segmentation masks by projection-derived masks changed vertebra-level and patient-level AUPRC by +1.03 and +0.65 points, and the pipeline differed from the reproduced RSNA 2022 winning solution by -0.55 and +0.15 points. No AUPRC difference was statistically significant, and fold-wise 95% confidence intervals excluded vertebra-level losses larger than 1.46 and 2.81 points, respectively. Explainability and interobserver analyses examine reliability. Projection-based mask approximation is therefore a viable proxy for 3D vertebra segmentation in cervical fracture recognition.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

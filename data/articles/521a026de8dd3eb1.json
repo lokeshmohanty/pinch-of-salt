@@ -1,0 +1,13 @@
+{
+  "id": "521a026de8dd3eb1",
+  "title": "Lens: Training-Free Semantic Search for Cross-Tile Object and Scene Retrieval in Satellite Imagery",
+  "link": "https://arxiv.org/abs/2611.18251",
+  "description": "arXiv:2611.18251v1 Announce Type: new \nAbstract: We developed Lens, a training-free system for semantic object and scene search across large satellite mosaics that requires no detector trained for the class of interest. Lens represents each tile with a frozen, self-supervised vision transformer (DINOv3), removes the positional bias in its dense features by projecting them onto the subspace orthogonal to a positional basis estimated once from a constant image, and centers the debiased features on the mean feature computed across the whole area before comparison. Lens forms a query by averaging the centered features of a small neighborhood of patches around a chosen point, or of an entire tile for scene-level search, and matches it against the index by cosine similarity. It stores the centered patch features in a byte-quantized similarity index that supports real-time range search over a mosaic of thousands of patches, and a coarser whole-tile embedding index for scene-level retrieval. A guided upsampling network (AnyUp) runs once per tile to recover pixel-accurate boundaries beyond the native feature grid, and the result is cached so later queries reuse it. We evaluated Lens on the 5,128-tile DFC2020 test set and ran it as an interactive tool on five Sentinel-2 areas spanning agricultural, industrial, and desert terrain; the pipeline is not tied to a specific sensor. On DFC2020 a single click reaches 0.09 to 0.80 pixel F1 across eight land-cover classes at the per-class best threshold, with a mean F1 of 0.39, and it beats a pairwise INSID3 baseline on six of the eight classes at roughly four hundred times lower query cost. Indexing 1.31 million patches takes 169 s on one CPU thread, and a click returns a rendered overlay in 6 to 10 ms.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

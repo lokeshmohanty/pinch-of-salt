@@ -1,0 +1,13 @@
+{
+  "id": "8b828bcbfecda08a",
+  "title": "EdgeZSAD: Value-Range Quantization for Deploying Zero-Shot Anomaly Detection on Edge Neural Processing Units",
+  "link": "https://arxiv.org/abs/2606.16119",
+  "description": "arXiv:2606.16119v2 Announce Type: replace \nAbstract: Quantizing zero-shot industrial anomaly detectors for edge neural processing units can degrade defect detection and localization. We present EdgeZSAD (Edge Zero-Shot Anomaly Detection), a deployment framework whose methodological contribution is Value-Range Quantization (VRQ). We diagnose how attention Value tensors inherit overly wide ranges from fused query-key-value projections and assign independent ranges calibrated on source data, without retraining or changing quantized weights. The engineering application is native deployment of a foundation-model detector for industrial inspection, evaluated on three public benchmarks and Qualcomm edge devices. Under minimum-maximum and mean-squared-error calibration, VRQ improves image-level discrimination and per-region overlap. In the primary calibration set, it recovers 90-98% of the loss in combined image and pixel discrimination relative to half precision, with a small increase in latency over baseline quantization. Matched tensor overrides reproduce the recovery without adding graph nodes, identifying independent Value-range assignment as the effective intervention in the evaluated runtime family.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

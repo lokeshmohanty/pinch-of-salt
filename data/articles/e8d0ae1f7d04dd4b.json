@@ -1,0 +1,13 @@
+{
+  "id": "e8d0ae1f7d04dd4b",
+  "title": "Box-conditional Hypothesis Testing for Out-of-Distribution Object Detection",
+  "link": "https://arxiv.org/abs/2611.18519",
+  "description": "arXiv:2611.18519v1 Announce Type: new \nAbstract: Detecting out-of-distribution (OOD) objects is essential for ensuring the reliability and safety of object detectors in real-world deployment. We treat the decision on a detected box as a hypothesis test with the null hypothesis that the box covers an object of an in-distribution (ID) class. The null distribution changes with the size of the box and its contact with the image border, and the detector observes both. The test can therefore rank a box only against ID boxes of the same size and border contact, which gives a distribution-free bound on the false-alarm rate for each of them and uncovers the separation that one null distribution hides. The power of the test also rests on the layer it reads. Layers built only for the ID classes have no reason to keep what sets an unknown object apart, so the test reads the features before them. We propose \\textbf{PLUM}, a training-free score that pools the last backbone stage inside the box and ranks its distance to the ID classes among ID boxes of the same size and border contact. On the standard benchmark, PLUM reaches the highest AUROC among the compared methods without external models, with 91.5 and 94.5 on PASCAL-VOC and 95.1 and 97.5 on BDD100K. Code: https://github.com/DDOZMI/PLUM",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

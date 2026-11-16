@@ -1,0 +1,13 @@
+{
+  "id": "d7a70575fb796225",
+  "title": "Token2Tile: Token-Wise Sparse Attention with Tile Execution through a Low-Rank Space for Video DiTs",
+  "link": "https://arxiv.org/abs/2611.17930",
+  "description": "arXiv:2611.17930v1 Announce Type: new \nAbstract: Attention is essential for modeling spatio-temporal dependencies in video diffusion transformers, but its quadratic cost makes it a major inference bottleneck. Its high sparsity offers an opportunity to accelerate generation by focusing computation on important interactions. However, accuracy and execution favor different granularities: each query attends to its own key tokens, whereas GPU kernels work on tiles. We present Token2Tile, a training-free sparse attention operator that combines per-query scoring and a per-query residual with tile execution. An online low-rank space, computed directly from queries and keys to preserve attention logits, makes clustering, scoring, and residual approximation efficient. Token2Tile unites query-specific selections to allocate exact work across query clusters, then packs the selected keys into GPU tiles. On MiniMax-H3 and Wan2.1-14B, Token2Tile delivers 1.48-1.54x end-to-end speedup over dense FlashAttention-3 with VBench scores within 0.5 points of dense. At comparable speeds on H3, it improves PSNR over SOL and SubBlock by 5.5-6.8 dB; on Wan, it exceeds SOL by 4.6-4.8 dB while running faster.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

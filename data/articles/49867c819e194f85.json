@@ -1,0 +1,13 @@
+{
+  "id": "49867c819e194f85",
+  "title": "Deep Bundle Adjustment",
+  "link": "https://arxiv.org/abs/2611.18256",
+  "description": "arXiv:2611.18256v1 Announce Type: new \nAbstract: We present \\textbf{DeepBA} (\\textbf{Deep} \\textbf{B}undle \\textbf{A}djustment), a graph neural network (GNN) that recovers camera poses, intrinsics, and scene structure from 2D matches across an arbitrary number of views. Rather than solving a non-linear least-squares problem per scene, DeepBA amortizes bundle adjustment into a learned graph network that iteratively refines its estimate from geometric residuals. Where classical SfM computes its updates analytically and needs careful initialization, DeepBA learns them and converges from a cold start. It is trained with scale-invariant supervision (ground-truth rotation, translation direction, and intrinsics, plus reprojection self-consistency), so datasets with arbitrary metric units can be mixed without per-scene normalization. DeepBA is decoupled from the matcher. At 2.04M parameters, it outperforms prior learned SfM from matches on scene reconstruction and on most pose metrics, is competitive with classical SfM at moderate accuracy thresholds and overtakes it in wall time as the view count grows, and approaches monolithic image-to-geometry transformers such as VGGT ($\\sim$1.2B parameters) with greater modularity. Project~page: https://cphjsn.github.io/deep-ba/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

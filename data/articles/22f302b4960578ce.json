@@ -1,0 +1,14 @@
+{
+  "id": "22f302b4960578ce",
+  "title": "DeltaBox: Millisecond-Scale Sandbox Checkpoint and Rollback for Stateful AI Agents",
+  "link": "https://arxiv.org/abs/2605.22781",
+  "description": "arXiv:2605.22781v3 Announce Type: replace-cross \nAbstract: Emerging LLM-powered AI agent workloads, such as test-time tree search and reinforcement learning (RL), require high-frequency state exploration, relying on rapid checkpoint/restore (C/R) of the complete sandbox state, including files and process state. Existing mechanisms duplicate the entire state, causing hundreds of milliseconds to seconds of latency per C/R, which severely bottlenecks deep search and large-scale fan-outs. We observe that consecutive sandbox states between checkpoints differ only marginally. Therefore, instead of full duplication, a sandbox should only duplicate the changes between consecutive checkpoints (Key Insight), yet the lack of OS support makes this hard to realize. We propose a new OS-level abstraction, DeltaState, that delivers change-based C/R for agents through co-designed OS mechanisms. First, DeltaFS checkpoints file state by freezing the writable layer and inserting a new one, turning updates into copy-on-write and rollback into a layer switch. Second, DeltaCR quickly restores process state by forking from a frozen template process. A coordinator pairs the two so each checkpoint is one consistent (filesystem, memory) state. Building on these mechanisms, we present DeltaBox, an agent sandbox with millisecond-level C/R. On SWE-bench, DeltaBox hides its checkpoint work (10.83 ms) under inference and rolls back in a mean 1.86 ms, with the same warm-template fork driving low-cost RL rollout fan-out. DeltaBox is open-sourced at https://github.com/delta-box.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.OS",
+    "cs.AI"
+  ]
+}
