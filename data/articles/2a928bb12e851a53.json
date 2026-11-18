@@ -1,0 +1,13 @@
+{
+  "id": "2a928bb12e851a53",
+  "title": "Spend the Bits Where the Tiny Objects Are: Rate-Utility Region Coding for Aerial Detection",
+  "link": "https://arxiv.org/abs/2611.01573",
+  "description": "arXiv:2611.01573v2 Announce Type: replace \nAbstract: Bandwidth-limited aerial cameras must compress their images before a remote detector can find the many tiny objects in them. Threshold-based region-of-interest (ROI) coding sends only confidently detected regions, and because tiny objects provide limited visual evidence and often score low, it can discard the regions that contain them. We propose rate-utility region coding (RUO), which sends a region when its expected detection utility justifies its measured byte cost, choosing to drop it or to send it at low or high quality with one multiplier shared across images. RUO trains no model, uses a standard image codec and decodes in a few milliseconds. On all 1,610 VisDrone-DET test-dev images, RUO uses 42.4% fewer bits than a tuned threshold-based ROI coder, averaged over their shared tiny-object average precision (AP) range. RUO also needs fewer bits for tiny objects than the AV1 Image File Format (AVIF), High Efficiency Video Coding (HEVC) and three published learned codecs, and its advantage over threshold-based ROI coding persists when the sender and receiver use different detectors. For AP over all object sizes RUO needs 25.4% more bits than the tuned ROI coder, because its allocation drops large regions first at low rates, so it suits tasks that target tiny objects. We plan to release the code.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

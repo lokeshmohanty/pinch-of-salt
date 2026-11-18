@@ -1,0 +1,13 @@
+{
+  "id": "b160fb1624c8a6d6",
+  "title": "Temporal Pseudo-RGB Encoding for Label-Free Detection of VEEV Infection in Human Brain Endothelial Cells",
+  "link": "https://arxiv.org/abs/2611.21892",
+  "description": "arXiv:2611.21892v1 Announce Type: new \nAbstract: Label-free detection of viral infection is central to antiviral screening and pathogen surveillance. Most deep-learning methods analyze individual frames and do not model temporal progression. We evaluate temporal pseudo-RGB encoding, which stacks three time-offset brightfield frames ($t{-}6$ h, $t{-}3$ h, $t$) as the red, green, and blue channels of a single image so that morphological change becomes color and an ImageNet-pretrained convolutional neural network (CNN) can be trained on infection trajectories without architectural modification. In human brain microvascular endothelial cells (HBMVEC) infected with Venezuelan equine encephalitis virus (VEEV) TC-83, a multi-task network predicts infected-versus-mock status and time post-infection in one forward pass. Across three experimental runs under leave-one-row-out cross-validation, with all 36 wells scored out of fold, the encoding reaches 91.6% accuracy against 87.4% for the single-frame model (paired difference $+4.2$ percentage points, 95% CI $[+2.5, +6.1]$; sign-flip $p = 3\\times10^{-5}$; well-level inference, conditional on three runs). At the late-phase endpoint (40-48 h), where floating cells and debris can make conventional brightfield images difficult to interpret, the advantage widens to $+23.9$ points (95% CI $[+19.2, +28.9]$). Time post-infection is recovered on the fixed row split with MAE = 1.31 h ($R^2 = 0.975$). Among the temporal models tested the encoding has the highest mean accuracy, at a fraction of the cost of the recurrent and 3D convolutional alternatives, though only its margin over the single-frame model is resolved; the tested ViT-B/16 backbone showed no corresponding gain, so the finding is limited to convolutional backbones and this virus-cell system.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

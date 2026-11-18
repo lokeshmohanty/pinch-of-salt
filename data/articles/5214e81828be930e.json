@@ -1,0 +1,16 @@
+{
+  "id": "5214e81828be930e",
+  "title": "QUTCC: Quantile Uncertainty Training and Conformal Calibration for Imaging Inverse Problems",
+  "link": "https://arxiv.org/abs/2507.14760",
+  "description": "arXiv:2507.14760v3 Announce Type: replace-cross \nAbstract: While deep learning offers tremendous promise for scientific and medical imaging, any failures and hallucinations (predictions that do not coincide with reality) are hard to pinpoint and can have serious downstream consequences. Uncertainty estimation techniques, such as conformal prediction, can help by predicting statistically valid error bars for a model's prediction. However, popular conformal prediction methods were not designed for high-dimensional image-valued problems and do not take into account spatial correlations within an image during conformal calibration, resulting in larger-than-necessary uncertainty intervals. We propose a practical simultaneous quantile regression method that enables non-linear, spatially-adaptive scaling during conformal calibration. Our method, QUTCC uses a U-Net architecture with a quantile embedding to learn a full conditional quantile distribution during training, and then leverages this non-linear, learned function for spatially-adaptive conformal calibration. At test time, our method can efficiently estimate uncertainty intervals with pixel-marginal coverage guarantees. In addition, QUTCC can also predict pixel-wise conditional probability density estimates without any built-in distributional assumptions. We evaluate our method on several denoising problems, accelerated magnetic resonance imaging, and quantitative phase microscopy. Our method consistently produces tighter uncertainty intervals than prior conformal methods at the same coverage level, can predict plausible conditional distributions for different tasks, and in some cases, high-uncertainty regions can help us locate hallucinations in a model's prediction.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

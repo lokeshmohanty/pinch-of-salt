@@ -1,0 +1,13 @@
+{
+  "id": "f04212ebb2cb6bd1",
+  "title": "Octree-based Video Representation",
+  "link": "https://arxiv.org/abs/2609.33100",
+  "description": "arXiv:2609.33100v3 Announce Type: replace \nAbstract: Representing videos on uniform spatio-temporal grids produces large token sequences and substantial computational costs. Yet visual complexity is unevenly distributed: smooth regions can be represented compactly, while detailed regions require finer resolution. We introduce OctVideo, an octree-based video representation that adapts cell size to local approximation error. Each leaf stores local RGB values and spatio-temporal gradients, supporting analytic reconstruction of the video. A lightweight learned residual enriches these descriptors for neural processing. For reconstruction, a Conv1D VAE maps the serialized cells to a regular latent grid and selectively refines details during decoding. Our VAE achieves 36.12 dB PSNR with 38.2M parameters and 188.9 GFLOPs per clip on Kinetics-400 (K400). It also generalizes zero-shot to the high-resolution Densely Annotated VIdeo Segmentation (DAVIS) 2016 dataset with reconstruction quality comparable to the best evaluated models. On both datasets, it requires the fewest model FLOPs and achieves the fastest reconstruction among the evaluated models. OctVideo also supports video understanding, achieving competitive recognition performance with few input tokens when trained from scratch. By exploiting the redundancy already present in video signals and efficiently processing sparse structures, OctVideo provides an efficient representation for video.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

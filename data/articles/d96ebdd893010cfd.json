@@ -1,0 +1,14 @@
+{
+  "id": "d96ebdd893010cfd",
+  "title": "SignAligner: Dual-Granularity Span Generation for Sign Language Alignment",
+  "link": "https://arxiv.org/abs/2611.22409",
+  "description": "arXiv:2611.22409v1 Announce Type: new \nAbstract: Large sign-language corpora benefit from temporal labels at two scales: subtitle spans for subtitle alignment and word spans for sign spotting. Sign spottings already locate words in time at corpus scale, but training subtitle alignment jointly on subtitle and word spans remains underexplored. We present SignAligner, a prompt-conditioned visual-language span generator that maps a sign-language video and a subtitle-sentence or target-word query to a textual start/end frame interval. It is first trained jointly on subtitle spans and word spans from sign spottings, then refined with overlap-based rewards while retaining auxiliary word examples. On the subtitle test set of the British Broadcasting Corporation-Oxford British Sign Language (BOBSL) corpus, the refined model reaches 66.68 F1@0.50 (F1 with a temporal intersection-over-union threshold of one half), the best among compared systems without external sign-video resources. This overlap-reward refinement outperforms cross-entropy continuation from the same jointly trained model. Joint training with word spans improves subtitle alignment in a pair of our generators matched in code, labels and maximum update budget. The advantage remains after both models of the pair are refined with overlap rewards. For word queries, the refined model follows the queried word, not a fixed position in the video: when the word's sign lies away from the video centre, it is far more accurate than predictions that use position alone. Together, these findings support one shared span generator refined with overlap rewards, aligning subtitles and producing word spans for human review.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}
