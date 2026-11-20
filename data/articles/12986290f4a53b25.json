@@ -1,0 +1,14 @@
+{
+  "id": "12986290f4a53b25",
+  "title": "VerifyPrompt: Towards Text-to-Image Models Verification Behind Black-Box APIs",
+  "link": "https://arxiv.org/abs/2410.22725",
+  "description": "arXiv:2410.22725v5 Announce Type: replace \nAbstract: With the rise of diverse Text-to-Image (T2I) models such as DALL-E 3, third-party platforms increasingly integrate multiple black-box APIs to deliver cost-effective services. This also raises a new and practical security question: are these third-party platforms truly offering the models they claim? Such model substitution fraud, in which a malicious third-party platform operator acts as the adversary, enables the platform to profit illicitly while undermining user interests and damaging the commercial reputation of legitimate model providers. To address this practical concern, we first define the task of T2I model verification, which determines whether a black-box target model matches a black-box oracle reference model. After that, we propose VerifyPrompt, which performs T2I model verification through a specially designed verify prompt. Intuitively, the verify prompt is an adversarial prompt for the target model, without transferability to other models. It makes the target model generate a specific image while making other models produce entirely different images. Our key idea for generating verify prompts is to enforce strong interactions between adversarial perturbations and the target model, thereby overfitting the target and producing model-specific perturbations. To enable efficient black-box search for verify prompts, we further introduce VerifyPrompt-RL, a reinforcement learning-based strategy that leverages multi-sample exploration and group relative error estimation to stabilize and accelerate the search process. Experiments show that VerifyPrompt achieves over 90\\% accuracy across various T2I platforms, confirming its effectiveness in real-world third-party services.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "4ae8faa1967ca2cc",
+  "title": "Learning What to Degrade: A Recoverability-Aware Curriculum for Reliable Smart-Glasses Super-Resolution",
+  "link": "https://arxiv.org/abs/2611.23674",
+  "description": "arXiv:2611.23674v1 Announce Type: new \nAbstract: Degradations in smart-glasses images obscure small text and fine-grained structures needed by vision-language models (VLMs) for visual assistance. We introduce an high-resolution (HR)-referenced semantic evaluation protocol that compares VLM outputs on restored images with those on corresponding HR references. Our evaluation reveals two failure modes: generative SR can synthesize misleading details, whereas restoration-oriented SR can leave critical evidence blurred or ambiguous. These findings motivate improving faithful detail recovery in restoration-oriented SR, where a key training challenge is to provide sufficiently difficult inputs while retaining recoverable visual information. We propose ReDiC (Recoverability-Difficulty Curriculum), which combines a model-independent recoverability proxy with model-relative restoration difficulty to adapt training degradation severity. ReDiC increases severity when inputs are recoverable and restoration is easy, maintains challenging but recoverable conditions, and reduces severity when estimated recoverability is low. It modifies only training degradation generation, leaving the SR architecture and reconstruction objective unchanged. Across NAFNet, SwinIR, and MambaIR, ReDiC improves average PSNR by approximately 2.5 dB and HR-referenced semantic scores by about 3 points over the corresponding baselines on synthetic benchmarks, with further gains confirmed by LLM-based and human evaluations on 200 real smart-glasses captures.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

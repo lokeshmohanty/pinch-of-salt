@@ -1,0 +1,13 @@
+{
+  "id": "399171696fa164ca",
+  "title": "MobileWeave: Program-First Synthesis of Dependency-Linked Tasks for Training Mobile GUI Agents",
+  "link": "https://arxiv.org/abs/2611.23860",
+  "description": "arXiv:2611.23860v1 Announce Type: new \nAbstract: Native mobile GUI agents require large-scale training trajectories covering both individual app functions and multi-goal workflows within and across apps, which makes automatic task synthesis a promising way to scale training data. Existing synthesis pipelines, however, produce each task as free-form text, leaving implicit how its subgoals depend on one another. This matters because composition is a skill in its own right: a policy may complete each subtask of a workflow on its own, yet fail to chain these subtasks into the complete workflow. We present MobileWeave, which instead synthesizes every task as an executable program derived from the app implementations of a controllable simulator. MobileWeave abstracts each app into a typed capability graph with semantic types shared across apps, composes atomic programs into single- and cross-app composite programs through explicit value and object dependencies, and verifies each program by native execution, deriving both its instruction and its completion check from the same program. Trained on teacher trajectories collected for these tasks and on recovery supervision at the policy's own stalls, MobileWeave-8B improves its base model by 26.7 points on MobileGym and by 8.6, 21.3, and 17.6 points on AndroidWorld, AndroidLab, and MobileWorld, with comparable gains at 4B. Beyond these gains, we find that composition is learnable from task structure: explicit dependencies between subgoals act as a training signal that teaches a policy to compose skills it already masters. We release data, model, and code at https://maxxnotmarx.github.io/MobileWeave/ .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

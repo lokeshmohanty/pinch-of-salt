@@ -1,0 +1,13 @@
+{
+  "id": "62196df4199cacd1",
+  "title": "Edge-Efficient Joint RAW Image Compression and Restoration for Smart Wearable Devices",
+  "link": "https://arxiv.org/abs/2611.24805",
+  "description": "arXiv:2611.24805v1 Announce Type: new \nAbstract: Smart wearable devices, such as augmented reality glasses, increasingly rely on cameras to understand and interact with their surroundings. However, their compact sensors often capture noisy RAW images, while limited compute and power make high-quality on-device restoration difficult. This creates an emerging need to reduce both local computation and transmission cost without sacrificing image quality. Two common solutions are to offload restoration or to compress the raw data before transmission. The first makes RAW transmission costly; the second reduces the payload but can spend bitrate preserving sensor noise. We address this fundamental mismatch with an asymmetric framework for joint RAW compression and restoration that directly optimizes the transmitted representation for clean image reconstruction. A lightweight on-device encoder compresses noisy RAW measurements into a bitstream, while a higher-capacity backend decoder jointly denoises and demosaics the encoded representation. We use knowledge distillation to train a smaller encoder for tighter compute budgets. Experiments on real and synthetic data show improved rate-restoration performance over strong cascaded compression-restoration pipelines and learned compression baselines. On SIDD, our method improves PSNR by more than 1.5 dB over cascaded baselines at approximately 0.25 bits per pixel. We further validate the method on real 12 MP RAW images captured with commercial smart glasses and measure sender-side latency on both smartphone and smart-glasses hardware. The distilled encoder achieves a 27.6$\\times$ NPU inference speedup over on-device NAFNet for 256$\\times$256 output patches. The code is available at https://github.com/coolsyn2000/CRAW",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

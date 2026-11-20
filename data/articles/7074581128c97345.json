@@ -1,0 +1,13 @@
+{
+  "id": "7074581128c97345",
+  "title": "One Shot, Any View: High-Fidelity Video Reshooting with Geometry Guidance and Visual References",
+  "link": "https://arxiv.org/abs/2611.24253",
+  "description": "arXiv:2611.24253v1 Announce Type: new \nAbstract: Filming a scene from an additional angle after production usually requires a costly reshoot. We present One Shot Any View, a system that takes a recorded clip and generates a reshot video of the same performance along a user-specified camera trajectory. As in recent geometry-grounded methods, the system conditions generation on the source video and an explicit 3D prior, namely a point video rendered along the requested trajectory from a feed-forward reconstruction of the source video. We target human-centric cinematic videos, which are often shot with long lenses, shallow depth of field, and low-key lighting, all of which degrade feed-forward reconstruction. Existing geometry-grounded methods tend to inherit the degraded point video, and their output quality drops visibly. Two designs make such point videos usable. First, in addition to rendered videos of 3D assets, we train on real-world multi-camera videos, whose point videos are produced by the same reconstruction pipeline as at inference. This training-inference consistency enables the generator to take only the composition of people and scene elements from the point video, and their appearance from the source video. Second, a geometry-anchored RoPE offset keeps the generated video temporally synchronized with the source while largely preventing the output from copying the degraded appearance of the point video. Meanwhile, since the generator is a pretrained reference-to-video (R2V) model, the system also accepts optional character and scene reference images, which supply the appearance of regions that the source never shows. In both objective and human evaluations, One Shot Any View outperforms existing reshooting methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

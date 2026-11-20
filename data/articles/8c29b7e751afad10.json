@@ -1,0 +1,13 @@
+{
+  "id": "8c29b7e751afad10",
+  "title": "Beyond Family Labels: A Taxonomic Ornstein-Uhlenbeck Prior for Avian 3D Shape Recovery",
+  "link": "https://arxiv.org/abs/2611.21102",
+  "description": "arXiv:2611.21102v2 Announce Type: replace \nAbstract: Recovering 3D pose and shape of birds from single images is bottlenecked by the long tail of avian diversity: out of ~10,000 species, only a few dozen have 3D-labeled training data, and in-the-wild test sets routinely contain species never seen at training. Generalizing across clades is therefore a central problem. The current state of the art, AniMer+, mitigates it with a family-level contrastive loss that conveys only a binary same-family indicator per pair and discards the continuous structure of the species tree. We propose a taxonomic Ornstein-Uhlenbeck prior on the shape code of the AVES parametric bird mesh model: a multivariate Gaussian whose covariance decays exponentially with Linnaean rank distance, with a learnable selection strength and noise scale. The prior generalizes family contrastive into a continuous, generative form, exposing the graded cross- and within-family similarity that a binary indicator cannot, and brings continuous comparative phylogenetics in as a biology-grounded inductive bias for the long tail. Our method improves over AniMer+ on both metrics of the unseen-species CowBird benchmark and on CtrlAVES3D, while remaining comparable on seen-species CUB. A permutation ablation isolates taxonomic structure from generic Gaussian smoothing, and a rank-granularity ablation identifies cross-order distinctions (the structure beyond a family-vs-not indicator) as the dominant source of the unseen-species gain.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "6e3d133a975693fa",
+  "title": "EviScope: Evidence-Conditioned Sampling for Long-Range 3D Detection",
+  "link": "https://arxiv.org/abs/2611.24451",
+  "description": "arXiv:2611.24451v1 Announce Type: new \nAbstract: Query-based camera-radar detectors choose where and over which frames each object query samples from the query's position or feature. We test whether radar evidence around the query should also set these choices at the 150 m range of MAN TruckScenes, where recall differs across object-level radar-return counts within every range band. EviScope is a minimal test: the current frame's returns form a non-learned bird's-eye evidence field, which each query reads at its decoded centre to scale its radial sampling extent and to weight eight frames. It adds 5,450 parameters (0.009%) to RaCFormer, with no latency increase in our timing. Our module-free recipe exceeds the published TruckScenes mAP (25.9 over seven runs against 24.1), so we measure the module only against its own baseline at matched seeds. The evidence a query reads rises with its object's return count (Spearman 0.51) but captures zero-return objects only in part, and the learned radius tracks it ($\\rho\\approx-0.91$ in four runs). Over seven four-epoch pairs the module changes NDS by $+0.31\\pm0.36$ and mAP by $-0.27\\pm0.22$ (mean $\\pm$ SE). Against a geometry-only conditioner with the same parameter count, trained at three matched seeds, it is higher by $+1.25\\pm0.72$ NDS and $+0.87\\pm0.21$ mAP, on mAP in every pair, and the control's mean NDS is near the baseline's. An exploratory far-range gain failed an internally pre-specified held-out test, and large inference-time substitution penalties also occur without query-local evidence: neither learned allocation nor inference-time dependence substitutes for matched end-to-end comparisons.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

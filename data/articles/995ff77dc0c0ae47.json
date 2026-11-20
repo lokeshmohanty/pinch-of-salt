@@ -1,0 +1,13 @@
+{
+  "id": "995ff77dc0c0ae47",
+  "title": "EyeDiT: Anatomy-Grounded Multi-Modal Eye Generation and Simulation",
+  "link": "https://arxiv.org/abs/2611.23670",
+  "description": "arXiv:2611.23670v1 Announce Type: new \nAbstract: Synthetic eye data are critical for rapid development of eye tracking (ET) in AR/VR applications. However, existing synthetic eye generators are largely image-centric and lack a high-quality underlying 3D anatomy of the eye, which limits their control mainly to the gaze and provides no anatomical labels. To address this problem, we propose EyeDiT, an anatomy-grounded, multi-modal 3D eye generation and simulation model trained with optical coherence tomography (OCT), labeled anatomy point clouds and near-eye images. Our pipeline first trains a Multi-Modal Anatomy Variational Autoencoder (VAE), which encodes an anatomy-aware latent representation from all input modalities. Then, our Eye Latent DiT is trained to generate latent samples conditioned on the optical axis, the pupil position and radius, and the subject identity. Together with Gaussian decoders for novel-view simulation, our model enables control over the pupil, subject identity and viewpoint for data synthesis. We show that our model outperforms previous eye image synthesis models in novel-view synthesis (24.9 against 21.8 dB PSNR from a single view), and that a public ET neural network trained on our synthetic data shows a smaller sim-to-real gap than when trained on data from other generators (3.5$^\\circ$ vs. 8.4$^\\circ$ gaze error), approaches a network trained on real data, and further improves ET performance when combined with real data (2.3$^\\circ$ vs. 2.6$^\\circ$). More information is available on the project page: https://lyhan12.github.io/eyedit",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

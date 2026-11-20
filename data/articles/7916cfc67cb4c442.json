@@ -1,0 +1,15 @@
+{
+  "id": "7916cfc67cb4c442",
+  "title": "LIC-Audit: How Comparable Are Reported Gains in Learned Image Compression?",
+  "link": "https://arxiv.org/abs/2611.23419",
+  "description": "arXiv:2611.23419v1 Announce Type: cross \nAbstract: Learned image compression (LIC) papers often report BD-rate improvements of only a few percent. They are measured against VTM reference software whose version keeps changing: the claims we audit name 7 versions, 5 in 2025 papers alone. But how comparable are these numbers across papers, and what evidence should future papers give for such small gains? We introduce LIC-Audit, an analysis of 353 released rate-distortion curves from 36 repositories, and a controlled re-evaluation of eight public codec releases with 28,193 encode-decode records. We identify three problems. First, different VTM reference runs change BD-rates by up to 3.56 percentage points, and on CLIC Pro published numbers order 10 of 55 method pairs differently from a common computation; comparing codecs directly over a fixed quality range removes this dependence. Second, releases use different and mostly undocumented conventions for counting bits, computing PSNR, and padding images. Under consistent measurement, the GLIC method's 1.00% lead over the HPCM method on Tecnick becomes a 1.43% deficit, changing only the padding reverses the comparison of HPCM and CMIC, and most gaps narrow when MS-SSIM replaces PSNR. Third, average curves hide how much results vary from image to image, so whether a small gain is statistically significant depends on the assumed variation. An optimistic assumption calls 12.0% of comparisons between equally good codecs significant on test sets as small as Kodak, instead of 5%; a cautious one leaves 18 of 45 differences between recent codecs undecided, yet per-image results show 12 of them to be significant. Beyond auditing past results, LIC-Audit provides a versioned evaluation protocol, a public leaderboard website with a scoring tool, source-linked benchmark data, per-image measurements, and reporting guidelines, to help future LIC papers make comparable and verifiable claims of progress.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "stat.AP"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "94c1bf4b26a1a94f",
+  "title": "R$^{3}$Sieve: Suppressing Unconditional Information from Attention to Answers for High-Resolution VQA",
+  "link": "https://arxiv.org/abs/2611.24060",
+  "description": "arXiv:2611.24060v1 Announce Type: new \nAbstract: High-resolution visual question answering (VQA) requires models to identify question-relevant small objects in high-resolution images and select the correct answer based on what they recognize, demanding fine-grained perception. Previous methods focus on obtaining better visual evidence (image crops), but obtaining it alone is insufficient, using it effectively is equally crucial. Visual evidence should therefore be utilized as effectively as possible throughout inference. We argue that small-target evidence is obscured by unconditional information that remains observable in subsequent processing even after the condition on which it should depend is removed. Such information hinders the effective use of small-target evidence. We propose R$^{3}$Sieve (Residual-Region-Response Sieve), a training-free framework. We divide inference into three stages---localization, cropping, and answering---and introduce distinct counterfactual references to suppress interference at each stage. During localization, the Shared-Subspace Canceller (SSC) uses a generic image description to construct a counterfactual reference and obtain question-relevant attention maps. During cropping, the Unique-Contribution Spotter (UCS) constructs counterfactual references from visual and non-visual features to identify distinctive, complementary crop regions. During answering, the Content-Aligned Voter (CAV) constructs an image-free branch to calibrate answer responses. Experiments on three high-resolution VQA benchmarks show that R$^{3}$Sieve achieves the highest overall accuracy among compared methods across diverse settings, improving base models by up to 21.5 percentage points.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

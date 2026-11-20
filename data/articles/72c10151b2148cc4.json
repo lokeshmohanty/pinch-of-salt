@@ -1,0 +1,13 @@
+{
+  "id": "72c10151b2148cc4",
+  "title": "Semantic Guidance for Joint Infrared-Visible Video Fusion and Frame Interpolation",
+  "link": "https://arxiv.org/abs/2611.24277",
+  "description": "arXiv:2611.24277v1 Announce Type: new \nAbstract: Infrared and visible video fusion at high frame rates requires recovering missing observations when camera rates differ or fall below the desired output rate. Cascading interpolation and fusion can accumulate errors and cause brightness fluctuations. Motion and occlusion further complicate content selection, particularly when missing visible frames also remove direct semantic guidance. We propose SAFI, which uses semantics at the target time to guide joint interpolation and fusion. When the visible frame rate exceeds the infrared rate, available visible frames provide semantic context directly. At times without visible observations, motion guides local matching, and propagation recovers semantics from neighboring frames. Semantic context complements aligned image features at the target time, while matching confidence helps select reliable infrared and visible information. Reconstruction and fusion share source selection within each scale, allowing supervision on missing frames to guide fusion. To preserve visible appearance and reduce flicker, we bound thermal enhancement and penalize brightness inconsistencies across frames while accounting for changes in thermal contrast. Experiments on three datasets show improved visual quality with less computation than cascaded baselines and consistent temporal gains when input rates differ. SAFI maintains strong downstream tracking performance despite missing frames. The code is available at https://github.com/XylonXu01/SAFI.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
