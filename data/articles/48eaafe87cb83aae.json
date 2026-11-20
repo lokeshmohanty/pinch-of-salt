@@ -1,0 +1,13 @@
+{
+  "id": "48eaafe87cb83aae",
+  "title": "Recurrent Vision Language Models Solve the Shell Game",
+  "link": "https://arxiv.org/abs/2611.25210",
+  "description": "arXiv:2611.25210v1 Announce Type: new \nAbstract: Tracking a hidden object through a video is effortless for humans, yet it remains a bottleneck for vision language models (VLMs). In the shell game, where a ball is hidden under one of several identical cups that are then swapped, VLMs that answer directly stay near chance, thinking models fail on long games, and fine-tuning learns only the lengths it has seen. We argue that the limit is serial computation: each swap must be composed with the last result, and a VLM of fixed depth has only a fixed number of state transitions for it. To address this, we propose RecurrentVLM, which makes every attention layer of a pretrained VLM recur over time by computing the keys and values of finished frame groups from the layer's own output. With a single answer token, RecurrentVLM reaches 100% on VET-Bench and 99.6% on MET-Bench, and 99% on 50-swap games after training on at most 30 swaps. We also observe several interesting phenomena: length generalization emerges suddenly at an aha moment; without recurrence, each swap costs an attention layer; the ball's state forms in the first four attention layers; and recurrence keeps the latest state at the cost of details of earlier moments. These results suggest that recurrent VLMs are a potential solution for tracking the states of unobserved objects in video. Code will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

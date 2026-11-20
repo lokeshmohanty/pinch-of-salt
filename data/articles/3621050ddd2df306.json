@@ -1,0 +1,14 @@
+{
+  "id": "3621050ddd2df306",
+  "title": "Isabelle Pool Server: a pooled verification service for prover training and multi-agent proving",
+  "link": "https://arxiv.org/abs/2611.24788",
+  "description": "arXiv:2611.24788v1 Announce Type: cross \nAbstract: Isabelle Pool Server (IPS), a verification service with a pool of warm headless Isabelle sessions behind an HTTP API, with session leasing and reclamation, memory-aware admission control, and a time budget on every call. Its verification interface spans single-step execution, block-level proof checking and whole-theory builds, with checkpoints for cheap branching and backtracking, and a build from scratch as the final arbiter. The service runs as a single container with monitoring and is accessible via a Python client, two MCP servers and a raw HTTP API. In our measurements IPS is level with PIDE MCP, a PIDE frontend for agents, at one worker and ahead of it at eight, at its commit of October 2026 (the tool is now PIDE AI). Once its sessions are up it scales to 32 concurrent workers on one host at 24 times the single-worker rate, and under memory pressure it refuses new sessions rather than losing existing ones. IPS is free software and publicly available at https://github.com/Deep-LCF/Isabelle-Pool-Server",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LO",
+    "cs.AI"
+  ]
+}

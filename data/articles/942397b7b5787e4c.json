@@ -1,0 +1,14 @@
+{
+  "id": "942397b7b5787e4c",
+  "title": "Repository-Grounded Rubrics for Execution-Free Evaluation of Coding Agents",
+  "link": "https://arxiv.org/abs/2611.23309",
+  "description": "arXiv:2611.23309v1 Announce Type: cross \nAbstract: Coding agents are usually evaluated by running task-specific tests, but tests may be missing or incomplete, and running them requires a working environment for each repository. We adapt agentic rubrics, introduced for selecting among candidate patches, into an execution-free measure of how far a patch satisfies a task's requirements. An agent explores the repository before the change and writes weighted binary criteria, and a judge without tools scores a diff by the weighted share of criteria it satisfies. We validate the ordering this score produces against test outcomes on SWE-bench Verified, using 7,291 labeled patches from fifteen systems. Within the 400 tasks that have both resolved and unresolved patches, the mean per-task AUROC is 0.826 (0.838 on tasks not used to tune the rubric-generation prompt), and ranking systems by their failing patches closely agrees with ranking them by resolve rate (Spearman 0.968). Case analyses trace disagreements to tests that do not match the task, execution-blocking defects that the textual assessment misses, and errors in criteria or verdicts. The validation does not establish absolute score magnitudes or requirement satisfaction beyond agreement with tests, but rubric scores could complement tests where tests or execution environments cannot be assumed.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

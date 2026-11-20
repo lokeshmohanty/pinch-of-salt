@@ -1,0 +1,13 @@
+{
+  "id": "3509a82127bedbbe",
+  "title": "Branch Caching After Step Distillation in Four- and Eight-Step Image Generators",
+  "link": "https://arxiv.org/abs/2611.25248",
+  "description": "arXiv:2611.25248v1 Announce Type: new \nAbstract: Can a distilled image generator save time by reusing features between its few remaining denoising steps? We study a fixed branch cache that replaces selected attention and MLP evaluations while preserving the student's noise schedule. One full trajectory and one raw-cache trajectory from the same initial noise supply a scalar correction for each branch type and reuse position. At $1024^2$, one internal reuse reduces four-step Qwen-Image-Lightning denoising time from 1.279 to 0.977 seconds. Three reuses yield $1.51\\times$ speedup on eight-step Lightning and $1.53\\times$ on eight-step Hyper-FLUX. We evaluate image quality on all 200 DrawBench prompts. With the reuse positions held fixed, correction improves mean same-seed image fidelity over raw reuse by 0.66 and 0.87 dB on the two Lightning students. On Hyper-FLUX the PSNR difference is 0.01 dB, while LPIPS improves from 0.1625 to 0.1546. These results measure the effect of branch caching and correction while retaining each student's original sampling grid.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

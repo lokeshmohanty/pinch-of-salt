@@ -1,0 +1,13 @@
+{
+  "id": "e51777de7bd9956a",
+  "title": "What a Calibrated Probability Hides: Belief-Level Post-Training for Decision Models",
+  "link": "https://arxiv.org/abs/2611.25168",
+  "description": "arXiv:2611.25168v1 Announce Type: new \nAbstract: A calibrated decision model can predict how often each answer is chosen. The same prediction can reflect disagreement among people who are confident in their choices or uncertainty among people who share a belief. Disagreement calls for identifying whose perspective applies, while uncertainty calls for gathering more evidence. Standard post-training scores a single prediction against one observed choice at a time, learning the pooled distribution without distinguishing these two sources of uncertainty. We introduce Belief-Grouped Policy Optimization (BGPO). The policy proposes a list of beliefs, estimates their prevalence, and predicts a choice distribution for each. During training, BGPO uses Bayes' rule to estimate how likely each belief was to generate an observed choice. These estimates weight the choice's contribution to each belief's log-score reward. To discover rare beliefs, the policy also proposes lists after seeing a few observed choices and retains them only if they predict held-out choices well. At inference, the policy uses only the question and combines the belief-specific distributions by prevalence to produce a calibrated aggregate prediction. On benchmarks covering opinions, conversation safety, emotions elicited by artwork, and photo aesthetics, BGPO achieves the lowest conditional, worst-group, and overall Jensen-Shannon divergence across model initializations. It improves conditional divergence on both text and image tasks. On a synthetic image task with known beliefs, BGPO recovers the underlying groups more accurately than baselines trained with belief labels.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
