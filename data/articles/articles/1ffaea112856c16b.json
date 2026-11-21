@@ -1,0 +1,13 @@
+{
+  "id": "1ffaea112856c16b",
+  "title": "BeCARE: Budgeted Cache Refresh for Diffusion Transformer Acceleration",
+  "link": "https://arxiv.org/abs/2605.27075",
+  "description": "arXiv:2605.27075v2 Announce Type: replace \nAbstract: Training-free feature caching accelerates diffusion transformer (DiT) inference by reusing or forecasting intermediate features. However, fixed schedules make compute predictable but ignore prompt- and timestep-dependent risk, whereas hand-tuned error thresholds adapt locally but leave realized compute difficult to control. To address these limitations, we present Budgeted Cache Refresh (BeCARE), a training-free framework that, given a user-specified cap on full computations, adaptively determines when to refresh the cache during accelerated inference. Specifically, we first derive an error-amplification profile from the sampler's noise schedule to characterize the varying impact of approximation errors across denoising timesteps. We then combine this profile with prompt-specific extrapolation residuals and cache age to form an accumulated risk score, triggering a refresh when continued caching becomes harmful. Meanwhile, we use the same profile to construct an analytic spending reference and adjust the refresh threshold through feedback, thereby distributing the limited refresh budget over the sampling trajectory. Finally, structural safeguards (a fixed warmup, a budget-derived late-stage reserve, and a maximum cache-reuse length) prevent unreliable extrapolation and premature budget exhaustion. These designs enable prompt-adaptive refresh placement and allow a single calibration to transfer across budget tiers without per-tier tuning. Experiments on FLUX.1-dev with 200 prompts and measured FLOPs show that our method consistently outperforms representative training-free caching baselines across speedups from 3x to 6x. At the main operating point (3.3x acceleration), it improves paired PSNR by 2.7 dB over the strongest baseline using no more compute. On SD3.5 Large, it also substantially improves the same Taylor cache engine over fixed-interval scheduling at matched compute.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

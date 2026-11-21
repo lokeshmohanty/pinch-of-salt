@@ -1,0 +1,15 @@
+{
+  "id": "f060676563fb30d3",
+  "title": "Adaptive Second-Order Solvers for Fast Stochastic Diffusion Sampling",
+  "link": "https://arxiv.org/abs/2610.03034",
+  "description": "arXiv:2610.03034v1 Announce Type: cross \nAbstract: Diffusion models rely on numerical solvers requiring time-discretization, which has a large influence on the tradeoff between sampling cost and quality. However, the computational difficulty of the reverse process varies along the sampling trajectory and across data distributions, making the choice of discretization important. We adapt proportional-integral (PI) step-size control to diffusion, using our diffusion noise-normalised error estimator. Unlike existing adaptive methods in diffusion that respond only to the current error, the PI solver also incorporates the previous error, yielding smoother step adaptation. We further show that these per-sample trajectories exhibit shared structure and can be aggregated into a fixed schedule that retains much of the benefit of adaptive sampling. We evaluate both approaches on natural-image and language datasets, in terms of quality, measured by FID at a matched number of neural network evaluations (NFE), comparing them with widely used stochastic solvers and schedules. For images, our fixed discretization outperforms the commonly used EDM schedule in terms of sample quality when used with the stochastic Heun sampler, and with the EDM-churn sampler at low NFE. Additionally, our PI adaptive solver obtains better FID than most stochastic and adaptive baselines, although it does not beat the EDM-churn sampler at low NFE. Moreover, we find our solver outperforms both the EDM and the entropy schedule on language diffusion at low-to-medium NFE in terms of perplexity, with the drawback of lower token entropy. Lastly, we find that the benefit of per-sample adaptivity is problem-dependent. It is highly beneficial in 1D toy examples, while only marginal for image and language data, where the average schedule sometimes even outperforms the PI-adaptive solver. Code is available at https://github.com/ellakemperman/adaptive-second-order-diffusion-solvers",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CL",
+    "cs.CV"
+  ]
+}

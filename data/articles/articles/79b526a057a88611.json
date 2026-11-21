@@ -1,0 +1,13 @@
+{
+  "id": "79b526a057a88611",
+  "title": "SAGE-OR: Semi-supervised Adaptive Scene Graph Generation for Operating Rooms",
+  "link": "https://arxiv.org/abs/2608.15336",
+  "description": "arXiv:2608.15336v2 Announce Type: replace \nAbstract: Current surgical scene graph generation methods depend on dense multi-modal supervision and specialized hardware (synchronized RGB-D sensors, calibration rigs), making dataset construction expensive and restricting all existing benchmarks to simulated environments. We propose SAGE-OR, a feature-centric framework that replaces the traditional detect-then-reason paradigm with a decoupled representation-reasoning paradigm in which localization is derived from frozen foundation models, encoded implicitly in pre-computed features, and used without any localization supervision, while a lightweight graph transformer performs relational reasoning over cached features. We employ a semi-supervised formulation with general-purpose segmentation prompts to eliminate localization supervision while enabling unsupervised context augmentation through additional prompt-driven entities, such as hands, which are absent from annotations. General-purpose prompts are used to induce near-perfect recall, while precision is delegated to downstream attention-based reasoning, enabling simple adaptation to new entities via prompt-level modification. This design enables a lightweight 15M-parameter graph transformer that trains in 1.4 hours and runs relational inference at $\\sim$1ms per frame with peak memory under 2GB, suitable for edge hardware used in the operating room; feature extraction runs offline as a separate caching stage (4.27s per frame). On the 4D-OR benchmark, the core model achieves 76% F1, matching the fully supervised 4D-OR baseline while eliminating all localization annotations, and unsupervised hand augmentation raises this to 86%, within 4 points of state-of-the-art (SOTA) methods requiring dense multi-modal supervision, providing a practical pathway for adaptation to new surgical settings without annotation other than relationship and class labels.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

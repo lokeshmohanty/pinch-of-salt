@@ -1,0 +1,14 @@
+{
+  "id": "50f1c7b7490f948e",
+  "title": "Dual-Adaptive Z-Score PPO: Dynamic Clipping Using Action Confidence and Normalized Advantage Magnitude",
+  "link": "https://arxiv.org/abs/2610.32194",
+  "description": "arXiv:2610.32194v1 Announce Type: cross \nAbstract: Proximal Policy Optimization (PPO) remains a popular on-policy reinforcement learning algorithm owing to its stability and ease of implementation. Its clipping threshold, however, is fixed, so every training sample receives the same trust-region width regardless of how reliable the corresponding policy update is. This work examines adaptive-clipping variants of PPO in which the constant clipping parameter is replaced by sample-dependent thresholds computed from policy and return statistics. The central method, Dual-Adaptive Z-Score PPO (PPO-DAZ3), sets the clipping interval for each sample from two signals: action confidence, given by the probability of the selected action under the current policy, and update confidence, given by the normalized advantage magnitude. The rest of the standard PPO training pipeline is left unchanged. Evaluation on three classic control benchmarks (LunarLander-v3, CartPole-v1, and Acrobot-v1) indicates that adaptive clipping improves learning in some settings but not all. PPO-DAZ3 performs best on LunarLander-v3, the smooth advantage-based variant PPO-AZ3S leads on Acrobot-v1, and standard PPO stays competitive on CartPole-v1, suggesting that adaptive clipping is most beneficial on harder control tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

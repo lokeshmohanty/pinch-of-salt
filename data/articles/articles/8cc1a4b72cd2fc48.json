@@ -1,0 +1,13 @@
+{
+  "id": "8cc1a4b72cd2fc48",
+  "title": "GibbsLens: Training-Free Camera Control via Block-Conditional Gibbs Refinement",
+  "link": "https://arxiv.org/abs/2605.11871",
+  "description": "arXiv:2605.11871v4 Announce Type: replace \nAbstract: Training-free camera control for pretrained flow-matching video generators is a partial-observation inverse problem: a depth-warped guidance video supplies noisy evidence on a subset of latent sites, which the sampler must reconcile with the pretrained prior. Existing methods struggle to balance the trade-off between trajectory adherence and visual quality and the heuristic guidance-strength tuning lacks robustness. We propose GibbsLens, which resolves this dilemma through a structural change to the sampler: each outer hard-replacement guidance step is augmented with an inner-loop block-conditional pseudo-Gibbs refinement on the unobserved complement at the same noise level, with provable convergence to the partial-observation conditional data law. To accelerate convergence on high-dimensional video latents, we exploit their conditional locality, partitioning the unobserved complement into 3D patches, each tracked by a custom mixing indicator that adaptively freezes converged patches. On RealEstate10K and DAVIS, GibbsLens attains the best FVD against all seven training-free and training-based competitors, outperforming every training-free baseline on every reported metric. Project page: https://xiye20.github.io/projects/GibbsLens/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

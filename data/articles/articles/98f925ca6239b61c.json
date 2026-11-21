@@ -1,0 +1,13 @@
+{
+  "id": "98f925ca6239b61c",
+  "title": "SpatialQuery: Benchmarking Geometry-Grounded Multi-Instance Spatial Reasoning in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2608.01709",
+  "description": "arXiv:2608.01709v1 Announce Type: new \nAbstract: Vision-language models (VLMs) achieve strong semantic understanding but remain unreliable in metric spatial reasoning, particularly when queries require comparing multiple instances of the same object category. We study this problem through the Closest-Instance Distance Query (CIDQ), where a model must identify the nearest visible candidate to a unique reference object and estimate their gravity-aligned floor-plane distance. We introduce SPATIALQUERY, a training- free framework for CIDQ reasoning from a single RGB image, together with SPATIALQUERY-1M, a benchmark containing over one million RGB-only question-answer pairs from 200 indoor scenes. SPATIALQUERY recovers instance-level metric geometry and transforms it into a canonical Bird's-Eye View through Scene Cubifying, which represents objects as uniformly sized, category-coded blocks to emphasize their relative floor- plane locations. We further propose Uncertainty-Aware Chain-of-Thought (UA-CoT) prompting, which incorporates geometry- derived per-instance uncertainty into the VLM reasoning process. Without task-specific fine-tuning or architectural modification, SPATIALQUERY with Qwen3-VL-8B achieves a Floor-MAE of 0.259 m, an Unc-Acc@0.3 m of 90.5%, and a proximity-decision accuracy of 84.18%, outperforming fine-tuned spatial specialists, general-purpose VLMs, and closed-source frontier models. Code, benchmark resources, and an interactive demo are available at https://namhai1810.github.io/SpatialQuery/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

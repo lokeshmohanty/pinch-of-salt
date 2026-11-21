@@ -1,0 +1,14 @@
+{
+  "id": "61addfce42a2b871",
+  "title": "Probe Before You Edit: Probing-Guided Molecular Optimization for LLM Agents in Structure-Based Drug Design",
+  "link": "https://arxiv.org/abs/2606.00555",
+  "description": "arXiv:2606.00555v3 Announce Type: replace \nAbstract: Structure-based drug design increasingly employs LLM agents to iteratively refine ligands against a target pocket, yet a viable ligand must satisfy two often-conflicting objectives---binding affinity and druggability---which single optimization steps rarely improve together. To quantify this difficulty, we introduce two diagnostic metrics: the first measures how often a single edit improves both objectives, and the second measures how often a gain on one objective comes with a loss on the other. Applying these diagnostics to current LLM-agent pipelines exposes a consistent failure mode: the agent performs molecular editing without knowing how the pocket-ligand complex responds to local modifications, thus rarely achieving joint improvement. Inspired by medicinal chemists, who probe the pocket-ligand complex with controlled analog edits before choosing an optimization direction, we propose \\textbf{PROBE}, an optimization framework built around edit--response probing. PROBE first decomposes the ligand into editable sites and builds a pocket-specific \\textbf{site map} that flags where joint gains are plausible, where the two objectives are likely in tension, and where liability substructures should be changed; it then performs controlled probe edits whose responses are distilled into an \\textbf{EditManual}. Guided by the site map and EditManual, PROBE runs an iterative multi-agent optimization loop. On the CrossDocked2020 benchmark, PROBE achieves state-of-the-art performance and substantially mitigates the failure modes exposed by our diagnostics metrics. Codes are in https://github.com/yzf-code/PROBE/tree/main",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "q-bio.BM"
+  ]
+}

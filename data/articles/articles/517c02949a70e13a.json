@@ -1,0 +1,15 @@
+{
+  "id": "517c02949a70e13a",
+  "title": "Risk-Aware Adaptive Evaluation: Finding High-Impact Failures Under Limited Budgets",
+  "link": "https://arxiv.org/abs/2609.38914",
+  "description": "arXiv:2609.38914v1 Announce Type: new \nAbstract: Evaluating interactive agents is expensive. Agent behavior is stochastic, so reliability must be measured over repeated trials, but failures are rare and differ widely in how much they matter. Standard benchmarks spend this budget uniformly: a read-only lookup is sampled as often as an irreversible payment action. We instead formulate evaluation as a sequential allocation problem. Given a fixed trial budget and a set of scenarios whose failure behavior is unknown, which scenarios should be run, and run again? We propose a risk-aware contextual Thompson Sampling policy that combines a pre-execution scenario context vector and a fixed impact score with the failure outcomes observed during evaluation, and we test it by offline replay over 70 $\\tau$-bench airline scenarios and 824 recorded trials. Our main result is at the smallest budget: with only 50 trials ($6\\%$ of the corpus), the policy recovers $86\\%$ of the impact-weighted failures an oracle could find, compared to $25\\%$ for uniform allocation. It discovers $3.5\\times$ more impact-weighted failures (215.4 vs. 62.2) with the same number of trials, delivers $5\\times$ the discovery per dollar, and cuts the budget wasted on scenarios that never fail from $34\\%$ to $2.8\\%$. The rest of our analysis demonstrates and qualifies this result: a budget sweep shows the advantage shrinks as the budget approaches the corpus size, and paired significance tests show that scenario context helps mainly at small budgets while posterior-based exploration helps at moderate ones. Risk-aware adaptive allocation therefore helps most exactly where evaluation budget is scarcest.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG",
+    "cs.MA"
+  ]
+}

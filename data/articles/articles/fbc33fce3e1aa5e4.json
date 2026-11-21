@@ -1,0 +1,14 @@
+{
+  "id": "fbc33fce3e1aa5e4",
+  "title": "From Review to Authorization: Key-Isolated Threshold Signing for LLM Agents",
+  "link": "https://arxiv.org/abs/2609.05901",
+  "description": "arXiv:2609.05901v2 Announce Type: replace-cross \nAbstract: Autonomous LLM agents can turn semantic judgments into consequential actions such as payments and permission changes. If the same process makes these judgments and controls a reusable signing credential, a mistaken judgment can reach execution without further approval. To make LLM review govern execution, we present KITA, an authorization architecture that keeps the user's personal signing key and every threshold signing-key share outside all LLM processes. Under threshold-signature unforgeability and our system assumptions, an adversary controlling the proposer and fewer than t reviewer-signer domains cannot produce a valid authorization for a new action without signing contributions from t distinct domains. This execution-bound authorization integrity ensures that each accepted authorization includes a share from an uncompromised domain, bound to the canonical action and released only after authenticated reviewer approval. We implement an in-process prototype of KITA with a structured-output LLM adapter and threshold BLS. Six system tests validate quorum gating and message binding, seven controlled baseline scenarios compare authorization outcomes, and cryptographic microbenchmarks measure online signing cost and its scaling behavior.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

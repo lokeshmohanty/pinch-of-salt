@@ -1,0 +1,13 @@
+{
+  "id": "066b3a59aaa7b689",
+  "title": "mmSimPrior: Learning Simulation Priors for Data-Efficient and Generalizable Real-World Radar-based Human Motion Reconstruction",
+  "link": "https://arxiv.org/abs/2607.22973",
+  "description": "arXiv:2607.22973v2 Announce Type: replace \nAbstract: Millimeter-wave (mmWave) radar enables privacy-preserving and illumination-robust human motion reconstruction, but training generalizable models typically requires costly paired radar-motion recordings. Simulation can scale such supervision, yet even physics-based simulators cannot fully reproduce real-world multipath, clutter, hardware-specific response statistics, or distance-dependent resolution degradation, leaving a sim-to-real gap. We present mmSimPrior, a simulation-pretrained framework that factorizes transferable knowledge into signal, motion, and radar-to-motion mapping priors. To learn transferable signal and motion priors, we pretrain a multimodal radar encoder with a physics-informed domain-randomization curriculum designed to mitigate the sim-to-real gap by approximating real-world propagation- and acquisition-level variations, while a joint-temporal tokenizer learns a discrete prior over plausible human motion. A dual-mode mapping module predicts either motion-code distributions for structurally constrained zero-shot reconstruction or continuous motion parameters for flexible adaptation from limited real data. We further construct a 4.2M-frame, 31K-sequence dataset suite and introduce a No-Overlap Setting that prevents any exact subject-environment-location-motion tuple from appearing in both the adaptation and test sets. Experiments on mmSimPrior-Real and RT-Pose demonstrate consistent gains: with only 24 paired real sequences, mmSimPrior-Reg reduces MPJPE by 24.7-39.0% over the strongest baseline across the three environments, while mmSimPrior-Cls reduces zero-shot MPJPE by 8.5% without fine-tuning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

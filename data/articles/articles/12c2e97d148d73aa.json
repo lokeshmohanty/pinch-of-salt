@@ -1,0 +1,17 @@
+{
+  "id": "12c2e97d148d73aa",
+  "title": "Fit-LRP: Fitting Linear Relaxations to Polytopes for Neural Network Verification over Non-Convex Regions",
+  "link": "https://arxiv.org/abs/2611.16003",
+  "description": "arXiv:2611.16003v1 Announce Type: cross \nAbstract: State-of-the-art neural network verifiers evaluate linear relaxations over axis-aligned bounding boxes. However, verification domains in cyber-physical systems are rarely boxes. Reachability specifications, obstacle-avoidance constraints, and neural Lyapunov certificates typically yield oblique or non-convex polyhedral regions, over which box-based bounds become extremely loose. This paper proposes Fit-LRP (Fitting Linear Relaxations to Polytopes), a framework the implements exact optimization of affine bounds over non-convex domains (represented by unions of polytopes) by solving a sequence of small, low-dimensional linear programs. Our approach seamlessly enhances the final optimization step of LiRPA and $\\alpha,\\! \\beta$-CROWN branch-and-bound (BaB) algorithms. In BaB verification, approximating oblique constraints with axis-aligned splits causes severe combinatorial blowup and risks non-termination. By optimizing the final affine bound of a nonlinear function over the exact polyhedral state-space constraints our method eliminates box-induced over-approximations, enabling earlier search-tree pruning. On ARCH-COMP and neural Lyapunov benchmarks, Fit-LRP reduces branching on the hardest region by $47\\times$, cuts worst-case verification time by $15\\times$, and with region-wise partitioning, verifies on a single CPU $6.1\\times$ faster than $\\alpha,\\! \\beta$-CROWN on a GPU.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.SY",
+    "eess.SY",
+    "math.OC"
+  ]
+}

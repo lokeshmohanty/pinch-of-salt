@@ -1,0 +1,15 @@
+{
+  "id": "50b8791d137afb01",
+  "title": "Do Spinning Radar Doppler Velocity Measurements Improve Vehicle Detection and Tracking?",
+  "link": "https://arxiv.org/abs/2609.21000",
+  "description": "arXiv:2609.21000v1 Announce Type: cross \nAbstract: Spinning frequency-modulated continuous-wave (FMCW) radars have been gaining popularity in autonomous vehicle perception on account of their robustness to adverse weather conditions and 360{\\deg} field of view. Recently, scanning radars have also been shown capable of generating per-azimuth Doppler velocity. In this paper, we investigate whether these Doppler velocity measurements improve spinning radar vehicle detection and tracking performance. For detection, we estimate the ego motion and use it to undo the Doppler range distortion of the radar image before passing it to a network. For tracking, we propose a new way to estimate a per-vehicle velocity and use it as a prior for the tracker's motion model. Since Doppler-enabled spinning radar data is not available in any dataset with ground-truth dynamic object labels, our first contribution is an automatic labelling pipeline that uses an ensemble of fine-tuned off-the-shelf lidar detectors to label all 643 km of the Boreas Road Trip dataset. We then transfer detections to radar, and use over 250 km of vehicle-dense sequences as ground-truth training data. By training and evaluating two state-of-the-art detectors, we show that Doppler undistortion can improve detection accuracy by up to $2.37$ points on mean average precision. Furthermore, we show that the Doppler velocity prior can improve tracking accuracy by $13.68$ points on multi-object tracking accuracy (MOTA) versus the zero-velocity initialization baseline, while achieving $99.7\\%$ of the MOTA obtained using ground-truth velocities as the prior.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV",
+    "eess.SP"
+  ]
+}

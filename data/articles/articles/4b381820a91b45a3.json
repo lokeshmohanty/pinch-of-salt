@@ -1,0 +1,13 @@
+{
+  "id": "4b381820a91b45a3",
+  "title": "SuperMotion: Source-Preserving Denoising for Text-Driven Human Motion Editing",
+  "link": "https://arxiv.org/abs/2610.01517",
+  "description": "arXiv:2610.01517v1 Announce Type: new \nAbstract: Text-driven human motion editing aims to realize a requested change while preserving compatible source content. Existing diffusion editors rely largely on learned conditioning for preservation of the unedited part, yet their outputs can lose temporal detail as denoising proceeds. We propose the \\textbf{Source-Preserving Denoising framework (SuperMotion)}, which explicitly reuses the source at each reverse step for source preservation. We first align the source motion to the output timeline and predict a preservation gate that controls reuse across frames and feature dimensions. A clean-space source anchor then utilizes the learned preservation gate to blend the predicted clean motion with the aligned source and passes the corrected estimate directly to the sampling posterior. Because the aligned source is a realized motion rather than a regression output, the anchor injects sample-level temporal detail that a reconstruction-trained denoiser tends to smooth away. To learn effective source reuse, we supervise the anchored estimate against the editing target and match its second temporal differences through a temporal high-frequency loss. These objectives require no explicit edit masks. Extensive experiments show that SuperMotion improves editing accuracy, reaching 33.20\\% full-pool R@1 on MotionFix, while reducing temporal-detail attenuation and preserving motion dynamics as it realizes the requested changes. Ablations confirm that the learned preservation gate is responsible for the gain and that it reuses the source to retain the unedited content properly.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

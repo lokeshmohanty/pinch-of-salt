@@ -1,0 +1,13 @@
+{
+  "id": "6012676ccafed2b3",
+  "title": "When Visual Signals Mislead: A Mechanistic Study of Attribute Hallucination in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2608.11024",
+  "description": "arXiv:2608.11024v1 Announce Type: new \nAbstract: Attribute hallucination---where vision-language models (VLMs) correctly identify an object but mischaracterize its properties---is prevalent yet mechanistically poorly understood. The dominant explanation, language-prior dominance, has motivated prior-suppression methods, but this explanation has not been directly tested at the attribute level. We present VISOR (Visual-Operational Remediation), a unified framework that couples null-image-based diagnosis with routed remediation. Its VSNR diagnostic decomposes each prediction into a visual logit signal and a language-prior signal. Across 10,791 negative-ground-truth samples from three VLM families and three attribute types, the visual signal strongly predicts false positives, whereas the language-prior signal is near chance. VISOR uses this diagnosis to separate two failure modes: low-margin but directionally correct visual signals in color/state attributes, and low-SNR or misaligned visual signals in material attributes. The same diagnosis routes each query to the appropriate operator: calibration for threshold-placement errors, abstention for training-free low-SNR handling, or targeted visual adaptation for material failures that prior suppression cannot correct. Across Qwen, InternVL, and LLaVA, VISOR reduces attribute false positives without relying on the prior-dominance assumption.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

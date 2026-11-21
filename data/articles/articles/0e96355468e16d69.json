@@ -1,0 +1,14 @@
+{
+  "id": "0e96355468e16d69",
+  "title": "Velocity-Space 3D Asset Editing",
+  "link": "https://arxiv.org/abs/2605.07385",
+  "description": "arXiv:2605.07385v2 Announce Type: replace-cross \nAbstract: Local 3D asset editing requires modifying a target region while preserving the rest. Existing methods enforce locality through mechanisms external to the generator, such as manual 3D masks, post-hoc voxel merging, or 2D multi-view lifting. None intervene where the corruption originates: inside the ODE sampler. For faithful local editing, a rectified-flow generator's velocity field should be strong over the target region while vanishing on preserved content. Yet a single velocity field can hardly satisfy both requirements, leading to three problems: (i) identity leakage that keeps the edit signal non-zero on preserved regions; (ii) no dedicated edit-amplification channel, so strengthening the edit perturbs identity; and (iii) identity drag at the geometry and material stages, where a global condition pulls every token toward the target. We propose VS3D (Velocity-Space 3D Asset editing), an inversion-free, training-free, and mask-free framework that derives edit and preserve signals by comparing the frozen model's source- and target-conditioned responses and realizes this principle through three stage-specific modules. Reconstruction-Anchored Source Injection (RASI) absorbs identity leakage by turning the unconditional embedding into a per-step, asset-specific anchor calibrated through source reconstruction. Partial-Mean Guidance (PMG) amplifies the edit signal by contrasting high- and low-quality subsample estimates of the velocity difference, active only where a consistent edit exists. Twin-Agreement Residual Injection (TAR) lets the sampler decide token by token what to preserve at the geometry and material stages. Experiments on diverse 3D assets show that VS3D outperforms state-of-the-art native-3D and 2D-lifted editors, demonstrating the effectiveness of velocity-space editing for training-free 3D asset editing. Code is publicly available at https://github.com/LHaoooo/VS3D.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GR",
+    "cs.CV"
+  ]
+}

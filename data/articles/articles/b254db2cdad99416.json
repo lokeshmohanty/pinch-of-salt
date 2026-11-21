@@ -1,0 +1,13 @@
+{
+  "id": "b254db2cdad99416",
+  "title": "PCRG: Training-Free Pruning and Caching of Reference Tokens for Video Generation",
+  "link": "https://arxiv.org/abs/2611.22717",
+  "description": "arXiv:2611.22717v2 Announce Type: replace \nAbstract: Reference-to-video diffusion transformers pack the variational autoencoder (VAE) latents of all references and the generated tokens into one full-attention sequence, in which reference tokens make up about half. Because attention cost grows quadratically with sequence length, these tokens take up an even larger share of the attention computation, yet most of them are static, smooth or irrelevant to the output. To accelerate reference-conditioned generation, we propose pruning and caching of reference tokens for video generation (PCRG), a training-free, plug-and-play method that uses two signals the model already computes to assign each reference token to one of three tiers, namely pruned, cached or kept. The first is a low-level redundancy r from VAE latents, since a token whose latent barely changes over time or across its neighbors adds little new content. The second is a high-level importance g from the vision-language-model (VLM) conditioner, where the attention that the prompt and any first or last frames pay to a token tells whether the output needs to read it. Tokens that are not redundant are kept, and redundant tokens are cached if important and pruned otherwise. Pruned tokens leave the sequence before the first step with all rotary position embedding positions unchanged. Cached tokens have their keys and values computed once and reused, and kept tokens are processed as usual. On MiniMax-H3, already distilled to 8 timesteps and quantized to int8, PCRG is 1.57x faster end to end on our V2V-Bench and 1.49x faster on the public VACE-Benchmark, while the quality of VBench drops by only 0.24% and 0.17%, respectively. PCRG shortens the sequence rather than changing how attention is computed or which steps are run, so it also stacks on step caching and sparse attention. On V2V-Bench it reaches 1.86x with TeaCache, 1.82x with Spark at nearly unchanged fidelity and 2.15x with Veda.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "50f07f04a757d3f6",
+  "title": "PhysMoE: Fast Spatial Grounding with Single-Token Coordinate Representation in Modality-Decoupled VLMs",
+  "link": "https://arxiv.org/abs/2611.13000",
+  "description": "arXiv:2611.13000v1 Announce Type: cross \nAbstract: Embodied Vision-Language Models (VLMs) are backbones for robotic planning and manipulation. However, for coordinate prediction in grounding tasks, existing architectures suffer from two distinct bottlenecks: discrete tokenization disrupts spatial continuity with high decoding latency, while standard point regression fails on multi-contact affordances and irregularly shaped targets. To resolve these challenges, we propose PhysMoE, introducing three core contributions: (1) sharing lower layers for multimodal context while routing upper layers to specialized spatial (pixel) and linguistic (text) experts by physical modality, eliminating gradient interference; (2) encoding each coordinate as a single token by reusing the visual encoder's learned positional embeddings, injecting 2D spatial priors to natively align coordinates with visual features and ease training; and (3) differentiable Signed Distance Field (SDF) supervision on pointing, accommodating affordances and irregular geometries without costly mask decoders. Compared to the base model, PhysMoE achieves a 15.7% average gain and an 8.31x throughput speedup across 9 coordinate-based grounding benchmarks (trajectory, affordance, and localization), while preserving multimodal understanding and reasoning across 11 text-based embodied benchmarks.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ]
+}

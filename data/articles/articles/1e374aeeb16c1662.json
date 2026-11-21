@@ -1,0 +1,14 @@
+{
+  "id": "1e374aeeb16c1662",
+  "title": "UniMore: Fine-Grained Supervision for Unified Understanding and Generation",
+  "link": "https://arxiv.org/abs/2611.08996",
+  "description": "arXiv:2611.08996v1 Announce Type: cross \nAbstract: Unified multimodal models combine image understanding and generation within one system, creating an opportunity to improve both capabilities through paired image--text supervision. We examine the outputs of a pretrained unified model in both directions and observe a loss of specificity: generated images can contain the requested objects with incorrect attributes, while captions identify a scene without expressing its distinguishing details. These failures call for supervision that specifies both the visual content to realize and the descriptive differences to distinguish. We propose UniMore, a post-training method that derives these complementary learning tasks from the fine-grained content of image--text pairs. The generation route predicts grounded crops from their corresponding phrases, matching the scope of the condition and visual target while using the native visual objective. The understanding route combines positive-caption fitting with ranking against captions that omit or alter details, conditioned on the full image. The two routes are optimized independently, and their learned updates are combined into a single unified model without changing its inference procedure. Experiments show gains across multiple understanding and generation benchmarks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MM",
+    "cs.CV"
+  ]
+}

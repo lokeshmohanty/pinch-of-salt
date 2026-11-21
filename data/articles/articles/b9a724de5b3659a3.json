@@ -1,0 +1,13 @@
+{
+  "id": "b9a724de5b3659a3",
+  "title": "Are Pretrained Image Matchers Good Enough for SAR-Optical Satellite Registration?",
+  "link": "https://arxiv.org/abs/2604.10217",
+  "description": "arXiv:2604.10217v4 Announce Type: replace \nAbstract: Cross-modal optical--SAR (Synthetic Aperture Radar) registration is a bottleneck in remote-sensing disaster response. Modern image matchers are developed and benchmarked almost exclusively on natural-image domains. We evaluate twenty-four pretrained matcher configurations in a zero-shot setting, with no fine-tuning or domain adaptation on satellite or SAR data. The evaluation spans SpaceNet9 and two additional cross-modal benchmarks under a deterministic protocol that uses tiled large-image inference, robust geometric filtering, and tie-point-grounded metrics. Our results show uneven transfer: matchers with explicit cross-modal training do not uniformly outperform those without it. XoFTR (trained for visible--thermal matching) and RoMa achieve the lowest reported mean tie-point error at $3.0$ px on the labeled SpaceNet9 training scenes. RoMa achieves this result \\emph{without any cross-modal training}. MatchAnything-ELoFTR ($3.4$ px), trained on synthetic cross-modal pairs, is close behind. XoFTR also runs roughly an order of magnitude faster than the RoMa family ($0.4$ s vs. $5.0$ s per pair). RoMa's performance is consistent with the hypothesis that frozen DINOv2 features confer robustness to large appearance shifts. Deployment protocol choices (geometry model, tile size, inlier gating) change mean error by up to $33\\times$ for a single matcher. This shift can exceed the effect of swapping matchers within our evaluated protocol ablations. Affine geometry alone reduces mean error from $12.3$ to $9.7$ px.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

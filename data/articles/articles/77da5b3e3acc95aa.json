@@ -1,0 +1,13 @@
+{
+  "id": "77da5b3e3acc95aa",
+  "title": "SlideMix: Enhancing Whole Slide Image Analysis via Multimodal Shuffling",
+  "link": "https://arxiv.org/abs/2609.00396",
+  "description": "arXiv:2609.00396v1 Announce Type: new \nAbstract: Histopathological whole slide images (WSIs) are central to cancer diagnosis, but their gigapixel scale, tissue heterogeneity, weak slide-level supervision, sparse diagnostic regions, and multi-scale evidence make robust automated analysis challenging. Multiple instance learning (MIL) is widely used to aggregate tile-level features into slide-level predictions, yet existing augmentation strategies often perturb tissue regions without preserving diagnostic relevance, slide context, or cross-scale structure. We propose SlideMix, a model-agnostic multimodal augmentation framework for MIL-based WSI analysis. SlideMix uses a retrieval-augmented vision-language model (VLM)-based Visual-Language Adaptive Region selector to identify diagnostically relevant regions and reduce weak-label noise. It then performs In-place Tile Shuffling within meaningful tissue regions to mix feature embeddings while preserving slide-level context. A VLM-based soft-labeling module supervises mixed samples, while a multi-factor, loss-driven online Curriculum-Learning Feedback scheme adaptively controls shuffle granularity, feature similarity, and shuffle ratio to promote cross-scale representation learning. Across 11 WSI datasets comprising 20,523 slides, 8 diagnostic tasks, and 10 WSI backbones, SlideMix improves accuracy and generalization in most settings and compares favorably with established augmentation baselines, providing a simple plug-and-play approach for more robust and scalable digital pathology models. Source code: https://github.com/Xia-Research-Lab/SlideMix",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

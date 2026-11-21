@@ -1,0 +1,15 @@
+{
+  "id": "0ca6bb6f6e757d1e",
+  "title": "Attention Is All You Need (to Avoid Spurious Oscillations)",
+  "link": "https://arxiv.org/abs/2609.13531",
+  "description": "arXiv:2609.13531v2 Announce Type: replace-cross \nAbstract: Can attention move a shock across several cells in one update without breaking it? We develop a conservative, fixed grid finite-volume scheme in which a CFL-conditioned attention flux selects upstream information according to the transport required by the current time step. One-dimensional inviscid Burgers transport is used as the central mechanism test: the same learned flux remains reliable in the conventional small-step regime and, with a time step four times larger, preserves sharp shocks while using one stage per update. A standard fifth-order WENO scheme with third-order strong-stability-preserving Runge-Kutta time integration (WENO-5+SSP-RK3) is included alongside controlled Forward Euler comparisons to separate flux selection from time integration. The learned attention shifts upstream with the local transport reach and becomes more selective near shocks; inference-time interventions and retrained ablations show that transport-scale information and state-dependent selection contribute directly to performance. Directional two-dimensional scalar Burgers transport and the one-dimensional shallow-water system then test whether the conservation-scale-selection principle transfers beyond the original scalar setting. The results support attention as a learnable information stencil for conservative large-step shock transport, while identifying finite candidate reach and problem-dependent robustness as the present limits.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "physics.flu-dyn"
+  ]
+}

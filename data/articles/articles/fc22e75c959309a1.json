@@ -1,0 +1,14 @@
+{
+  "id": "fc22e75c959309a1",
+  "title": "RLGPA: A Reinforcement Learning-Guided Granularity Planning Attack for Decision-Based Sparse Adversarial Examples",
+  "link": "https://arxiv.org/abs/2611.07512",
+  "description": "arXiv:2611.07512v1 Announce Type: cross \nAbstract: Decision-based sparse attacks must reduce perturbation support using only the victim's predicted label. The best restoration strategy varies as support contracts: coarse removal works early, while tail states need finer, history-aware tests. We propose RLGPA, an online reinforcement learning method that schedules support-reduction executors and their granularity under a hard query budget. A masked Dueling Double DQN selects among seven stable policy--scale actions; each action produces support-relative restoration groups that are rebuilt after every macro decision. A feasibility-preserving executor commits only adversarial restorations and feeds support gain and query cost back to the planner. Under the matched top-1-label oracle, RLGPA reaches 61\\% targeted ASR at sparsity 0.01 on CIFAR-10 (vs. 25\\% SparseEvo, 0\\% Pointwise), and 75.5\\%/73.0\\% on ResNet50/ViT at sparsity 0.005 (vs. 29.0\\%/15.5\\%). A fixed-probe test reduces median \\(L_0\\) from 165 to 23 after 40 images without any update. State-blind and state-shuffled controls degrade significantly, confirming that the learned policy uses attack state; the main gains come from state-conditioned executor scheduling and dynamic repartition. The source code is publicly available at https://github.com/Acui001/RLGPA.git.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

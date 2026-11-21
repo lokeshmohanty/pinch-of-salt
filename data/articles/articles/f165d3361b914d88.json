@@ -1,0 +1,13 @@
+{
+  "id": "f165d3361b914d88",
+  "title": "Can BEV Perception Gracefully Degrade under Sensor Failures?",
+  "link": "https://arxiv.org/abs/2605.30983",
+  "description": "arXiv:2605.30983v2 Announce Type: replace \nAbstract: Despite the remarkable success of multi-modal bird's-eye view (BEV) perception in autonomous driving, standard fusion models can be highly brittle to sensor corruptions, causing catastrophic performance degradation. This vulnerability arises when corrupted features contaminate the shared BEV representation and the detector fails to preserve a usable visual fallback. To this end, we present Grace-BEV, a lightweight framework for robust fusion in Lift-Splat-Shoot (LSS)-based detectors. Operating in the aligned BEV space, Grace-BEV complements a LiDAR-guided image-BEV expert with a LiDAR-independent visual expert. A TrustGate Router learns a sample-level mixture of their outputs, while the FailSafe Fusion Block recalibrates the routed image representation together with raw LiDAR features. Furthermore, we devise a Three-Phase Training strategy with Modality Dropout to establish the visual fallback before learning routing and fusion, followed by joint fine-tuning. Extensive experiments on nuScenes-R and nuScenes-C across three LSS-based detectors show that Grace-BEV maintains robust performance across diverse corruption settings. Under complete LiDAR loss, where the corresponding baseline models exhibit a collapse to 0.0 mAP, Grace-BEV restores performance to as high as 34.7 mAP. It also improves clean accuracy by up to 1.4 mAP points with 1.2M additional parameters per detector. Component and training ablations support the complementary roles of visual initialization, expert routing, and adaptive fusion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

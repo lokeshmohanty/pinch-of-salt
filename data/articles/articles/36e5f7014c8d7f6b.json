@@ -1,0 +1,13 @@
+{
+  "id": "36e5f7014c8d7f6b",
+  "title": "UniCycleFlow: Bidirectional Unpaired Image Translation with a Shared Rectified Flow",
+  "link": "https://arxiv.org/abs/2608.06784",
+  "description": "arXiv:2608.06784v1 Announce Type: new \nAbstract: Bidirectional unpaired image translation must preserve source-specific structure while learning coherent transformations in both directions without paired supervision. Existing methods typically employ two direction-specific generators or train separate one-way models. Even when linked by cycle consistency, such models constrain only the round-trip endpoint reconstruction, without requiring the two directions to obey a common local transformation rule. We propose UniCycleFlow, a rectified-flow framework that represents bidirectional translation as forward and reverse integration of a single time-conditioned velocity field. This formulation organizes both directions within the same continuous dynamics, rather than coupling otherwise separate endpoint mappings. A key challenge is that unpaired data provide no meaningful source--target coupling from which rectified-flow trajectories can be constructed. UniCycleFlow addresses this challenge by learning deterministic source-conditioned endpoints whose marginal distributions are adversarially matched to the opposite domains. The resulting paths are regularized by stop-gradient self-flow matching for intermediate velocity supervision, discrete cycle closure for forward--reverse consistency, and representation path-velocity regularization for controlling localized feature changes along the trajectory. Across ten translation directions, UniCycleFlow achieves the lowest FID on 7 of 10 tasks using a single Euler evaluation and obtains the best average FID of 55.1.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

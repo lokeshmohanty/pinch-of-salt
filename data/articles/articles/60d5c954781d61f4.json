@@ -1,0 +1,14 @@
+{
+  "id": "60d5c954781d61f4",
+  "title": "Composition without a Host: Carrying the Spatiotemporal-Composability Guarantee of Plugin-Based Agents across Processes",
+  "link": "https://arxiv.org/abs/2608.28553",
+  "description": "arXiv:2608.28553v4 Announce Type: replace \nAbstract: Plugin-based agents assemble capabilities at runtime, and the spatiotemporal-composability calculus proves a reversibility guarantee for this assembly. However, the guarantee is carried by a single process, which confines all components, sessions, and recovery records to one failure domain, where a fault spreads past the plugin boundary, and process death interrupts every session the process hosts. Resting only on the hypotheses the calculus already states and the stateless interface of the model call, this paper relaxes the single-process restriction of the calculus to an arbitrary assignment of components and records to processes, gives four sufficient conditions, and proves with Theorem 1, derived from the four lemmas, that the reversibility guarantee holds across processes when these conditions are met. Based on Theorem 1, this paper constructs Logos, a cross-process plugin-based agent in the peer-process and name-routed form of ROS, where a plugin is a process, the router holds only a rebuildable routing table, and the session state needed for recovery lives in an append-only transcript owned by no process. Under one fault on two hundred benchmark tasks across three configurations, the single-process reference lost every session and scored 1.5 percent on the official validator, the MCP configuration kept its sessions while spending 1099 calls on a dead endpoint, and Logos kept every session alive, wasted zero calls, and succeeded on 120 tasks against 102 for both configurations combined. At the mechanism level, eighty sessions terminated at four points of the tool-call cycle all resumed with no repeated action, 3,500 concurrent calls paired with zero violations, and one bus hop cost 1 in 823 of the model's first token. The results show that the reversibility guarantee holds across processes and that assembly itself can leave the host process.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.MA"
+  ]
+}

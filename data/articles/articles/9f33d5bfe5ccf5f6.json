@@ -1,0 +1,14 @@
+{
+  "id": "9f33d5bfe5ccf5f6",
+  "title": "GUARD: Geometric Uncertainty-Aware Point Cloud Denoising and Segmentation for Robotic Hard Disk Drive Disassembly",
+  "link": "https://arxiv.org/abs/2610.09068",
+  "description": "arXiv:2610.09068v1 Announce Type: new \nAbstract: Reliable robotic disassembly requires part-level representations that distinguish genuine component geometry from scanning and reconstruction artifacts. In point clouds of hard disk drives (HDDs), structured ghost artifacts can resemble valid components locally while remaining inconsistent with the overall geometry, allowing erroneous measurements to receive plausible semantic labels. This creates an engineering information problem: semantic prediction confidence alone does not establish whether the underlying geometry is reliable. We propose \\textbf{GUARD}, a geometric uncertainty-aware framework that performs point filtering and segmentation within a single forward pass by modeling the reliability of learned geometric representations. GUARD combines a multi-scale geometric transformer with a multi-bandwidth random Fourier feature Gaussian Process to estimate per-point geometric uncertainty, complemented by predictive entropy to suppress unreliable measurements while preserving informative structures. Evaluation on 2,745 real HDD point clouds shows that GUARD improves PointNet++ segmentation mean intersection over union from 0.7739 to 0.8318. Additional experiments on ShapeNetPart and ScanNet examine robustness across corruption types, point-cloud domains, and segmentation backbones. On manually annotated ScanNet samples, geometric uncertainty achieves a corrupted-point detection F1 score of 0.7931, compared with 0.2212 for predictive entropy. The results demonstrate the value of distinguishing geometric reliability from semantic confidence and reveal a tradeoff between artifact suppression and preservation of informative structures. GUARD contributes a reliability-aware approach to interpreting imperfect 3D measurements for component identification and subsequent robotic handling. Project website: https://001-wang.github.io/GUARD_Point_denoiser/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

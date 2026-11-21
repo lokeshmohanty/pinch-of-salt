@@ -1,0 +1,14 @@
+{
+  "id": "fd79955cedb7552a",
+  "title": "MillBill: A Machining Agent with Geometric Feedback",
+  "link": "https://arxiv.org/abs/2611.22565",
+  "description": "arXiv:2611.22565v1 Announce Type: new \nAbstract: Turning a CAD model into a machining program requires both process knowledge and geometric precision. Language models can generate such workflows by writing geometry and toolpath code for each part, but this makes numerical execution part of the model's task. We introduce MillBill, an agent that separates machining decisions from their geometric execution and verification. Given a boundary-representation part, stock, and material, a locally hosted, mid-sized open model proposes operations and cutting parameters for indexed three-axis machining. A geometric harness generates toolpaths, simulates material removal, and returns feedback for plan refinement. Setup planning accounts for what the available cutters can physically reach, rather than visibility alone. We evaluate the resulting programs by the fraction of the target surface area within the specified tolerance after simulated machining. With Qwen3.8-27B, MillBill outperforms frontier-model approaches that construct their own geometry and toolpath workflows on the evaluated machining tasks. Code: https://github.com/kulibinai/millbill",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV"
+  ]
+}

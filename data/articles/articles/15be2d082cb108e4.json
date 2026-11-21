@@ -1,0 +1,18 @@
+{
+  "id": "15be2d082cb108e4",
+  "title": "Calibeating Prediction-Powered Inference",
+  "link": "https://arxiv.org/abs/2604.21260",
+  "description": "arXiv:2604.21260v2 Announce Type: replace-cross \nAbstract: We study semisupervised mean estimation with a small labeled sample, a large unlabeled sample, and a black-box prediction model whose output may be miscalibrated. A standard approach in this setting is augmented inverse-probability weighting (AIPW) [Robins et al., 1994], which protects against prediction-model misspecification but may be inefficient when the prediction score is poorly aligned with the outcome scale. We introduce Calibrated Prediction-Powered Inference, which post-hoc calibrates the prediction score on the labeled sample before using it for semisupervised estimation. This simple step requires no retraining and can calibeat the original score, improving it both as a predictor of the outcome and as a regression adjustment for semisupervised inference. We study both linear and isotonic calibration. For isotonic calibration, we establish first-order optimality guarantees: isotonic post-processing can improve predictive accuracy and estimator efficiency relative to the original score and simpler post-processing rules, while replacing the fitted isotonic score by its conditional-mean oracle yields no additional first-order variance reduction. For linear calibration, we show first-order equivalence to PPI++. We also clarify the relationship between existing estimators, showing that the original PPI estimator is a special case of AIPW and can be inefficient when the prediction model is accurate, while PPI++ is AIPW with empirical efficiency maximization [Rubin and van der Laan, 2008]. In simulations and real-data experiments, our calibrated estimators often outperform PPI and are competitive with, or outperform, AIPW and PPI++. We provide an accompanying Python package, ppi_aipw, at https://larsvanderlaan.github.io/ppi-aipw/.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ML",
+    "cs.AI",
+    "cs.LG",
+    "econ.EM",
+    "q-bio.QM",
+    "stat.ME"
+  ]
+}

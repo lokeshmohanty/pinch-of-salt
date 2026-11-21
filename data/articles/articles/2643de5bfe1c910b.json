@@ -1,0 +1,13 @@
+{
+  "id": "2643de5bfe1c910b",
+  "title": "ShearFuse-UNet: Hadamard, DCT, and Shearlet Transform Fusion for Next-Day Wildfire Spread Prediction",
+  "link": "https://arxiv.org/abs/2606.14071",
+  "description": "arXiv:2606.14071v2 Announce Type: replace \nAbstract: We propose ShearFuse-UNet, a lightweight and computationally efficient deep learning model for next-day wildfire spread prediction from multi-modal satellite data. The model integrates three complementary transform-domain branches inside each encoder block of a U-Net backbone: a 2D Fast Walsh-Hadamard Transform (WHT) branch, a 2D Discrete Cosine Transform (DCT) branch, and a cone-adapted digital Shearlet residual branch. The WHT and DCT branches establish orthogonal latent spaces with learnable spectral scaling and fixed soft-thresholding, while the Shearlet branch provides anisotropic, multi-directional feature decomposition that explicitly encodes the elongated edge structures characteristic of fire fronts. A learned SpectralFusion gate adaptively combines the WHT and DCT responses, and the Shearlet reconstruction is added as a residual. This three-branch design bears a loose structural analogy to transformer self-attention: the WHT and DCT branches provide complementary spectral representations that are adaptively fused, while the Shearlet branch contributes directional content through a residual pathway. Unlike self-attention, the proposed design relies on fixed mathematical transforms rather than learned projection operators, reducing parameter count and computational cost. Evaluated on the WildfireSpreadTS dataset, ShearFuse-UNet achieves an F1 score of 0.596 with only 267k parameters, outperforming a ResNet18-based U-Net (14M parameters, F1 = 0.589) and demonstrating a highly favorable accuracy-efficiency trade-off. Results on the Google Next-Day Wildfire Spread dataset further validate these findings across a different benchmark.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

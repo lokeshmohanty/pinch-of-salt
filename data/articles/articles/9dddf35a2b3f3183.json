@@ -1,0 +1,14 @@
+{
+  "id": "9dddf35a2b3f3183",
+  "title": "Cross-dataset transportability of pediatric chest X-ray deep learning across three countries: discrimination, calibration, operating-point failure, and limited-label recovery",
+  "link": "https://arxiv.org/abs/2609.05140",
+  "description": "arXiv:2609.05140v1 Announce Type: cross \nAbstract: Background and Objective: External evaluation of medical-imaging AI is often collapsed into discrimination. We evaluated a computational protocol that separately tests discrimination, probability calibration, fixed operatingpoint transport, shortcut-associated signal, and limited-label recoverability for pediatric pneumonia classification across datasets from three countries. Methods: After exact-duplicate removal, 5,824 Guangzhou radiographs supported leakage-controlled source development and internal testing. A frozen three-seed DenseNet121 dual-view ensemble was evaluated zero-shot on BDCXR-3257 from Bangladesh (n = 3, 257) and an untouched harmonized VinDr-PCXR/PediCXR test cohort from Vietnam (n = 1, 077). Matched seed-42 variants tested architectural robustness. Secondary BDCXR analyses used a fixed 651-image adaptation pool and 2,606-image hold-out; 163, 326, and 651 labels represented 5%, 10%, and 20% of complete BDCXR. Results: Internal AUROC was 0.976 with 95.1% sensitivity. BDCXR and VinDr-PCXR AUROC were 0.798 and 0.742, while frozen-threshold sensitivity fell to 6.2% and 0%. Source-to-BDCXR AUROC degradation occurred for a full-image baseline (0.961 to 0.749), ungated dual-view model (0.977 to 0.766), and gated MixStyle model (0.966 to 0.789). With 163 BDCXR labels, Platt recalibration preserved AUROC while increasing held-out sensitivity to 88.3%, but specificity was 47.9% and the alert rate was 78.5%. Two hundred repeated 163-label fits confirmed sensitivity recovery but substantial specificity variability. Conclusions: Cross-dataset shifts across countries affected ranking, probability alignment, and source-defined decision behavior differently. Transport studies should evaluate these components separately and quantify the operational burden of apparent recovery.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

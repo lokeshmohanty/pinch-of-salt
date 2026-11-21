@@ -1,0 +1,14 @@
+{
+  "id": "45b45400db3f42ab",
+  "title": "PRISM: Distribution-Gated Flow Matching for Controllable Unpaired Image Translation",
+  "link": "https://arxiv.org/abs/2608.06240",
+  "description": "arXiv:2608.06240v1 Announce Type: cross \nAbstract: Unpaired image-to-image translation must decide, per image, what to change and what to preserve without paired supervision. Many diffusion-based unpaired translators control preservation through a single global noise or guidance value applied across the image, which cannot separate content to keep from appearance to change. We present PRISM, a GAN-free flow-matching framework that replaces this global control with a learned per-feature gate. The gate's spatial prior is derived from each source feature's standardized distance to the target feature distribution, so features far from the target are freed while target-consistent features are preserved. The same gate controls both the initialization, which mixes the real source latent with a task-matched corruption, and the transport timing during Ordinary Differential Equation (ODE) integration. The corruption is matched to the task, content-anchored (AdaIN) for structure-preserving translation and partially anchored for structure-changing translation, and the gate can be overridden locally at inference from text or a detector without retraining, preserving important structures of the original image while still generating realistic results. We evaluate PRISM on five natural and biomedical benchmarks (AFHQ cat->dog, CelebA-HQ appearance translation, day->night relighting, virtual staining, and breast frozen->permanent histopathology). Among the evaluated methods under a shared same-split protocol, PRISM attains the best Inception FID and KID on four benchmarks and a competitive result on the fifth, and on histopathology yields the nuclei-count ratio closest to the ideal, supporting a favorable balance between target realism and structural preservation.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

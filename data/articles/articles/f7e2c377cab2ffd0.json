@@ -1,0 +1,13 @@
+{
+  "id": "f7e2c377cab2ffd0",
+  "title": "LiG-DETR: Local-in-Global Reassembly in Latent Space for Aerial Object Detection",
+  "link": "https://arxiv.org/abs/2610.09511",
+  "description": "arXiv:2610.09511v1 Announce Type: new \nAbstract: Aerial object detection faces substantial scale and density variations. Small objects are easily degraded by downsampling and feature compression, while medium and large objects require sufficient global context. Existing methods mainly follow two paradigms: image slicing provides clearer local evidence but relies on independent crop-level prediction and post-processing, whereas feature- and query-level optimization preserves unified inference but operates on already compressed full-image representations, limiting recovery of fine-grained information. This raises a key question: can aerial detection directly acquire high-fidelity local evidence before feature degradation and integrate it into a unified end-to-end framework? To this end, we propose LiG-DETR, an Efficient Global-Local Reassembly framework that reformulates image slicing as high-fidelity local feature acquisition. A shared encoder extracts global and locally magnified features, which are projected into the detector feature space. The projected local features are reassembled according to their original spatial locations to form a globally aligned local feature level, and a single DETR decoder jointly decodes global and local features. To reduce redundant computation, Context-Preserved Selective Reassembly focuses high-resolution encoding on informative regions while preserving a dense feature layout, and Density-Aware Adaptive Query Allocation adapts the decoder query budget using encoder proposal scores. Experiments show substantial gains on small and medium objects while retaining strong large-object performance, with favorable accuracy--efficiency trade-offs and improved cross-domain generalization. The code will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

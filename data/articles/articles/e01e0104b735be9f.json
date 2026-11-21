@@ -1,0 +1,13 @@
+{
+  "id": "e01e0104b735be9f",
+  "title": "ScoreDial: Precise Control of Visual Attributes in Image Generation via Regressor Guidance from Limited Human Ratings",
+  "link": "https://arxiv.org/abs/2611.05004",
+  "description": "arXiv:2611.05004v2 Announce Type: replace \nAbstract: Requested-value control is stricter than continuous steering: given $c$ on a human-rating scale, the generated image should attain that value from only limited ratings. We present ScoreDial, which fits a differentiable regressor $R$ to 100-479 human-rated images; once $R$ is fixed, a requested value $c$ is defined on its output scale, and learned target conditioning is paired with error-adaptive guidance that repeatedly reduces $|R(\\mathbf{x})-c|$ during sampling. Across tire slip resistance, interior visual complexity, food desire-to-eat, and soap translucency, using one set of sampler settings, ScoreDial reaches requested values and achieves $R$-MAE at most 0.013 over a range of width 0.8 and Spearman $\\rho=0.980$, the maximum attainable under our protocol. Because $R$ also drives sampling, we evaluate agreement with $R$ separately from matched sweeps, an independent auditor fitted to the same ratings on a backbone no deployed regressor uses, and blinded human judgments. MPGD-flow also reaches the requested values under $R$, but ScoreDial has larger auditor displacement on every attribute, the largest among all compared methods, and a stronger MPGD-flow setting gives up target agreement without closing this gap. On every attribute, removing target conditioning leaves low $R$-MAE but more than halves auditor displacement, separating precise score correction from attribute movement. Blinded rating studies with 15 raters per attribute show mean human ratings track $c$ on tire and soap, with linear $R^2=0.665$ and $R^2=0.786$, and in forced-choice comparisons of matched sweeps, raters chose ScoreDial's as the clearer progression in at least 84% of judgments against every baseline. Code: https://github.com/Kamijo-Gen/ScoreDial.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "bafb93b9deedd303",
+  "title": "STRIATUM-CTF: A Protocol-Driven Agentic Framework for Autonomous CTF Solving",
+  "link": "https://arxiv.org/abs/2603.22577",
+  "description": "arXiv:2603.22577v2 Announce Type: replace-cross \nAbstract: Autonomous cyber operations increasingly depend on agents that can chain reconnaissance, exploitation, and analysis across many tools while maintaining state over long task horizons. Large Language Models (LLMs) are promising orchestrators for this workflow, but naive agents that pipe model output directly into a shell are brittle: they emit malformed commands, hallucinate non-existent command-line options or packages, and lose track of earlier findings as the context window fills. We present STRIATUM-CTF, a modular agentic framework for Capture-the-Flag (CTF) solving that mediates between LLM reasoning and tool execution using the Model Context Protocol (MCP). Offensive-security tools are exposed as strictly typed, schema-validated functions; the protocol layer rejects out-of-schema tool calls before execution and returns structured observations that the agent uses to self-correct. We evaluate the system in two ways. In a controlled study of 180 runs across 15 CTF challenges under four levels of attached procedural documentation, the system succeeds on 77.8-86.7% of attempts; notably, a schema-only configuration with no procedural documentation already reaches 77.8%, and no condition differs significantly from another. In a single live, multi-team CTF at Florida State University, the system placed first against a field of more than 30 registered teams -- a single, non-replicated event decided by a 10-point margin over the runner-up, and therefore a demonstration of feasibility rather than of superiority over human experts. Because all four ablation conditions share the same tool layer, our controlled study isolates documentation volume rather than the protocol layer itself; we accordingly present schema-mediated grounding as a design principle with qualitative support rather than as a measured effect.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-03T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.MA"
+  ]
+}

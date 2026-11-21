@@ -1,0 +1,16 @@
+{
+  "id": "db0ca5b8012f5095",
+  "title": "AneumoBench: A Source-Linked Benchmark for Synthetic-Geometry Transfer in Aneurysm CFD",
+  "link": "https://arxiv.org/abs/2505.14717",
+  "description": "arXiv:2505.14717v2 Announce Type: replace-cross \nAbstract: Scientific machine learning uses simulation data to train surrogate models for fast physical-field prediction across geometries. Local shape editing can expand limited geometry collections, but whether its variants improve prediction on unseen geometries, and how to allocate them across sources, require controlled evaluation. We introduce AneumoBench, a dataset and benchmark linking 401 source aneurysm geometries to 9,693 locally edited descendant records, with computational fluid dynamics (CFD) fields computed on both. It contains 80,752 steady velocity-pressure cases across eight inlet conditions and 9,715 transient sequences of velocity, pressure, and wall shear stress (WSS). Each sequence contains 100 frames sampled at 0.01-s intervals from a 1-s cardiac cycle. Mesh, point, and voxel interfaces support steady field prediction and WSS forecasting from four observed frames. With family-disjoint splits, we compare source-only training, descendant training, and descendant pretraining followed by source fine-tuning across nine architectures on 79 held-out sources. Under the reported schedules, two-stage training lowers steady-field and reset-window WSS errors relative to source-only training. With the number of sampled fields and training updates fixed within each comparison, GraphSAGE benefits from descendant training and from distributing a fixed number of descendants across more sources. For WSS, reset-window gains do not consistently persist through 96-step rollout, and lower trajectory error need not improve cycle-level shear metrics or hotspot localization. These data and protocols enable researchers to compare descendant selection and training strategies on the same unseen source geometries.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1bf2de1e585efc3d",
+  "title": "CASCADE: An Agentic Regulatory Network Framework for Patient-Data-Validated Downstream Perturbation Prediction",
+  "link": "https://arxiv.org/abs/2608.05359",
+  "description": "arXiv:2608.05359v1 Announce Type: new \nAbstract: CASCADE is an agentic framework that predicts downstream transcriptional effects of gene perturbation from precomputed\n  ARACNe regulatory networks, exposed via MCP. Prior work validates such tools by checking whether predicted genes are\n  known cancer genes (membership); we instead test whether the predicted direction of change matches reality, using\n  focal-gene copy-number amplification as a dosage-based proxy for the inverse of knockdown against real TCGA patient\n  tumor data.\n  For MYC, CASCADE's predicted knockdown targets show strong concordance with real amplified-vs-non-amplified tumor\n  expression across three cancer types (BRCA: 90.0%, COAD: 72.0%, STAD: 85.7%; all p<0.0013), well above permutation\n  baselines, surviving a PAM50 subtype control and replicating in an independent cohort (METABRIC, 87.2%). Compared\n  against curated MSigDB gene-set baselines via Fisher's exact test, CASCADE's accuracy is not shown to exceed existing\n  public knowledge of MYC- or E2F-driven biology, though its gene-specific direction-calling clearly outperforms a naive\n  uniform guess.\n  Extending to fifteen additional genes, validation proves gene-specific rather than universal: proliferation-machinery\n  regulators mostly replicate, while lineage-identity transcription factors and one cyclin-D paralog (CCND2)\n  consistently fail, a pattern we discuss as a hedged, post-hoc hypothesis.\n  We separately benchmark whether an LLM-based agent correctly grounds natural-language requests into CASCADE's real MCP\n  tool calls. Across 35 queries, a documented local model reaches 71.4% exact match (85.7% for a larger model); schema\n  and gene-alias failures are resolved by scale or server-side correction, but both models confidently default to the\n  wrong perturbation type on ambiguous queries, a failure a targeted fix could not resolve because its trigger condition\n  never occurs.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

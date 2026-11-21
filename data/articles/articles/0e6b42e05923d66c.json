@@ -1,0 +1,13 @@
+{
+  "id": "0e6b42e05923d66c",
+  "title": "MeshOctave generates meshes via cascading resolution transitions",
+  "link": "https://arxiv.org/abs/2609.38985",
+  "description": "arXiv:2609.38985v1 Announce Type: new \nAbstract: Generating compact, artist-style meshes with explicit topology typically relies on autoregressive models which incur prohibitive sequential per-token costs, or continuous flow models that depend on heuristic connectivity decoders. Next-scale generation paradigms offer a compelling alternative by enabling parallel intra-scale token prediction and coarse-to-fine refinement from global structure to local topology; yet, existing methods derive hierarchical scales via progressive mesh simplification and invert them sequentially. This eliminates intra-scale parallelism and scales generation steps linearly with face count. In this paper, we propose MeshOctave, which instead defines scale through dyadic spatial grid resolutions, framing coarsening as a deterministic collapse that merges vertices sharing a voxel cell and inherits connectivity. Its inverse operation, split-and-rewire, determines which octant sub-vertices are instantiated for each coarse face and resolves local connectivity using discrete structural tokens. These per-face operations require no serialization, each scale transition is modeled as an unordered set that adds one bit of coordinate precision, naturally supporting dynamic-length meshes and adaptive resolution refinement. We construct a scale-conditioned masked-uniform discrete diffusion model to learn split-and-rewire operation from resolution collapse hierarchies. MeshOctave outperforms strong baselines in geometric fidelity and topological validity by a non-trivial margin, while supporting adaptive resolution refinement and extending naturally to mesh subdivision tasks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

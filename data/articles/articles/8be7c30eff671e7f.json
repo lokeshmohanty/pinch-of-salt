@@ -1,0 +1,15 @@
+{
+  "id": "8be7c30eff671e7f",
+  "title": "Early Memory Selection for Balanced Adam",
+  "link": "https://arxiv.org/abs/2610.08624",
+  "description": "arXiv:2610.08624v1 Announce Type: cross \nAbstract: We propose a method for choosing the shared memory parameter $\\beta_1=\\beta_2=\\beta$ in Adam from a short pilot training. The selected $\\beta$ remains fixed during the subsequent full training. A local model of Adam's normalized direction balances sampling variability against the delay introduced by averaging past gradients. This balance gives a cubic memory rule, whose two coefficients are estimated from gradient probes at a few pilot checkpoints. The estimator uses the numerator and denominator jointly, preserving their covariance. With a 200-update pilot and sixteen probe gradients at each of four checkpoints, a seed-matched retrospective evaluation on eleven vision and language workloads reduces mean relative validation gap by 40.7% and worst-quarter mean gap by 44.3% against the grid representative of shared $\\beta=0.95$. The mean gap is also 32.3% lower than that of the best constant $\\beta$ chosen across all eleven workloads.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

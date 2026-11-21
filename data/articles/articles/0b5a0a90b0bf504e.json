@@ -1,0 +1,14 @@
+{
+  "id": "0b5a0a90b0bf504e",
+  "title": "DetectViT: Test-time Backdoor Detection for Vision Transformers via Inter-Head Attention Discrepancy",
+  "link": "https://arxiv.org/abs/2611.23770",
+  "description": "arXiv:2611.23770v1 Announce Type: new \nAbstract: Vision Transformers (ViTs) now underpin the visual encoders of most multimodal models, but this success comes at a cost: relying on third-party pretrained checkpoints leaves these systems open to backdoor attacks. Existing test-time detection methods rely on either the predicted label or intermediate embeddings, limiting their applicability across diverse tasks and incurring substantial computational overhead. In this work, we study how backdoor triggers affect the multi-head attention mechanism of ViTs and identify two distinct anomalous patterns: $\\textit{complete attention hijacking}$, causing the attention to exhibit abnormally high inter-head spatial overlap, and $\\textit{partial attention hijacking}$, causing an abnormally large variance in the concentration of the attention distribution. Motivated by these findings, we propose $\\textbf{DetectViT}$, a test-time backdoor detection method that requires neither training data, model outputs, nor any prior knowledge of the trigger. DetectViT quantifies the two hijacking phenomena via an inter-head consistency score and an inter-head entropy variance score, with thresholds estimated from a small out-of-distribution (OOD) calibration set drawn from an arbitrary source. Across four representative attacks, diverse architectures (DeiT, CLIP, and LLaVA), and downstream tasks (image classification and captioning), DetectViT substantially outperforms all baselines with as few as 64--128 OOD calibration samples, achieving a true positive rate of $100\\%$ and a false positive rate of $0.17\\%$ on BadCLIP. Notably, it introduces negligible additional overhead by relying solely on attention weights already computed during inference. Code is available at: https://github.com/siquanhuang/DetectViT.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR"
+  ]
+}

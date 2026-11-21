@@ -1,0 +1,14 @@
+{
+  "id": "919be2659bbfa885",
+  "title": "Multi-Level Evidence Aggregation for Robust Facial Phenotype Retrieval in Rare Genetic Disorder Prioritization",
+  "link": "https://arxiv.org/abs/2608.11037",
+  "description": "arXiv:2608.11037v1 Announce Type: new \nAbstract: AI-assisted facial phenotyping supports rare genetic disorder prioritization by retrieving visually similar diagnosed cases from facial image reference databases such as the GestaltMatcher Database (GMDB). Existing GestaltMatcher-based retrieval frameworks compare each test image with individual gallery images in a facial phenotype embedding space. However, this pointwise formulation does not fully exploit available evidence, because patients may have multiple images and disorders may be represented by multiple diagnosed gallery patients.\n  We propose an inference-time multi-level evidence aggregation framework that improves facial phenotype retrieval without modifying the underlying GestaltMatcher-Arc encoder. The framework combines embedding-level patient aggregation of multiple images from the same individual, patient-weighted disorder centroids, and hybrid individual-centroid scoring to integrate test-patient observations, disorder-level gallery evidence, and local nearest-neighbor evidence.\n  We evaluated the approach on GMDB v1.1.4 across disorders represented during training (GMDB-Freq), unseen disorders (GMDB-Rare), and multi-image patient subsets, using a unified gallery containing both GMDB-Freq and GMDB-Rare disorders. Multi-level evidence aggregation improved mean per-disorder top-$N$ retrieval accuracy across all evaluation subsets. Top-1 accuracy increased from 38.52% to 48.82% on GMDB-Freq and from 19.38% to 23.79% on GMDB-Rare. On multi-image subsets, top-1 accuracy increased from 46.12% to 60.94% on GMDB-Multi-Freq and from 18.54% to 26.71% on GMDB-Multi-Rare.\n  These findings show that inference-time aggregation can improve next-generation facial phenotype retrieval without retraining the encoder, supporting a shift from isolated single-image matching toward multi-level aggregation of patient and disorder evidence for rare-disorder prioritization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.IR"
+  ]
+}

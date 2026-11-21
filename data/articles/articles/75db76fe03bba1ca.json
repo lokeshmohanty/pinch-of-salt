@@ -1,0 +1,13 @@
+{
+  "id": "75db76fe03bba1ca",
+  "title": "POIROT: Agents as their own auditors for failure attribution in large language model multi-agent systems",
+  "link": "https://arxiv.org/abs/2606.02282",
+  "description": "arXiv:2606.02282v2 Announce Type: replace \nAbstract: Large language model (LLM)-based multi-agent systems (LLM-MAS) are kept out of safety-critical domains by emergent failures that are hard to detect and to attribute. Current evaluation relies on a centralised evaluator, human or LLM judge, that must master the domain and hold the whole interaction history in one context. We propose that the agents executing a task can themselves attribute its failures. We introduce POIROT (Phased Oversight via Introspection, Review and Opinion Tallying), a modular protocol in which each agent casts a private vote within a hazard space derived from the system architecture, and the votes are aggregated into a single attribution. Before the vote, phases are added that progressively increase the interaction between agents, from independent self-assessment to sharing the self-assessments and peer interrogation. We build the protocol phase by phase, measure the contribution of each phase through an ablation, and compare every configuration with a single-LLM evaluator. We evaluate one proprietary and two open-weight LLMs on the Who&amp;When benchmark and on BLAME (Benchmark for Localising Agent Malfunctions Effectively), a new benchmark for fault attribution in clinical rehabilitation and algorithmic trading systems. Agent-based attribution outperforms the single-LLM evaluator, but the benefit comes from independent self-assessment, not from interaction: sharing the assessments makes agents converge on the same, often wrong, culprit, and interrogation does not recover the loss. Without sharing and interrogation, the protocol outperforms the evaluator in all nine model-benchmark configurations (up to +50 percentage points). POIROT and BLAME are released as open source.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

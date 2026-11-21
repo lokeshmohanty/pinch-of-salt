@@ -1,0 +1,13 @@
+{
+  "id": "e21c4dc265cbac9f",
+  "title": "DualTopo: Spatio-Temporal Lane Graph Generation with Dual Latent World Models and Parallel Query Supervision",
+  "link": "https://arxiv.org/abs/2507.23325",
+  "description": "arXiv:2507.23325v5 Announce Type: replace \nAbstract: Lane topology reasoning constructs a spatiotemporal road graph G = (V, E) in bird's-eye view (BEV), providing structured road representations for planning-oriented autonomous driving. Stream-based methods propagate temporal cues at both the query and BEV levels, yet suffer from two critical limitations: (1) initialized queries receive insufficient supervision, as temporal queries dominate Hungarian matching and leave them undertrained; and (2) temporal propagation is weakened by BEV boundary information loss during feature warping. Since initialized queries serve as propagation anchors, particularly at the first frame, these deficiencies compound across frames and degrade graph generation quality. We propose DualTopo, a spatio-temporal lane graph generation framework with dual latent world models and dual parallel decoder pathways. The dual-pathway decoder supervises temporal and initialized queries concurrently, ensuring initialized queries are well-trained and serve as reliable anchors. Dual latent world models conditioned on ego-motion propagate latent state representations from past observations to the present, substantially improving spatiotemporal graph generation. Extensive experiments on OpenLane-V2 demonstrate leading lane detection accuracy and competitive topology graph prediction. Code is available at https://github.com/YimingYang23/DualTopo.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "93c216976ca07251",
+  "title": "Stop Early, Stay Simple: Evidence Acquisition for Power System Fault and Attack Diagnosis",
+  "link": "https://arxiv.org/abs/2611.21695",
+  "description": "arXiv:2611.21695v1 Announce Type: cross \nAbstract: Diagnostic models for cyber-physical power systems usually inspect every telemetry source for every event, although some events are clear from one source and others need several. We ask when a learned policy for choosing that evidence is worth its added complexity. To answer this, we present ActiGrid, a benchmark framework for active evidence acquisition that pairs a classifier trained to tolerate missing modalities with a Double Deep Q-Network (DQN), which either requests another source or stops and diagnoses but never operates grid actuators. On the public TU Delft digital substation and MSU/ORNL power system attack benchmarks, we compare the DQN with fixed subsets and orders, calibrated entropy stopping, a greedy value of information rule, and tree ensembles trained per subset. The learned policy does adapt to what it observes, yet it is statistically indistinguishable from entropy stopping on TU Delft and Pareto dominated by simple controls on MSU/ORNL, while compact subset classifiers outperform it while reading fewer sources on both benchmarks. Entropy stopping run over those subset classifiers reaches the highest mean Macro-F1 on TU Delft (0.928 while reading 57% of the sources) but brings no saving over a static three source subset on MSU/ORNL, where no method exceeds 0.45 Macro-F1. Selective acquisition can pay off, but on these benchmarks it does not need a learned policy.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.LG",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

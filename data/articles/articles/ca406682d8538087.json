@@ -1,0 +1,13 @@
+{
+  "id": "ca406682d8538087",
+  "title": "Accurate Motion Estimation with B\\'ezier Control Point for Efficient Frame Interpolation",
+  "link": "https://arxiv.org/abs/2609.23408",
+  "description": "arXiv:2609.23408v1 Announce Type: new \nAbstract: In frame interpolation tasks, motion ambiguity in the training set causes models to generate blurry intermediate frames. Moreover, the assumption of uniform motion between frames during inference further leads to inaccuracies in the generated intermediate frames. To tackle these challenges, we propose an Accurate motion estimation algorithm with B\\'ezier Control point, ABC-Inter, for efficient frame Interpolation. Specifically, ABC-Inter designs an Accurate Flow estimation Module (AFM) by decoupling two-frame features and mapping to corresponding coordinates to better estimate the optical flow between the two frames. Furthermore, ABC-Inter eliminates motion ambiguity in the training set by introducing B\\'ezier control points that are computed using the input frames and the intermediate ground-truth (gt) frames. This allows the model to estimate accurate optical flow between two frames during the training process, thereby solving the blurriness problem in the generated intermediate frames during inference. Benefiting from the more accurate flow estimation between two frames, we can introduce additional frames and directly use multiple flows to calculate B\\'ezier control points for modeling non-uniform motion without retraining the model. Simultaneously, to realize the estimation of non-linear motion using only two frames, we also introduce a new B\\'ezier control point estimation module which achieves better motion estimation between the two frames by performing fine-tuning on the model in the second stage. Experimental results demonstrate that our ABC-Inter achieves state-of-the-art performance on multiple benchmark datasets and exhibits excellent visual perception.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

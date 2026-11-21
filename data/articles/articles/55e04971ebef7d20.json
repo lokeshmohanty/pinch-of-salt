@@ -1,0 +1,13 @@
+{
+  "id": "55e04971ebef7d20",
+  "title": "Model Organisms of Collusion: Corrective Transfer in Untrusted Monitors",
+  "link": "https://arxiv.org/abs/2610.30582",
+  "description": "arXiv:2610.30582v2 Announce Type: replace \nAbstract: AI control protocols aim to get useful work from models that may be misaligned by monitoring their behaviour. One approach uses a second copy of the same model as the monitor. This avoids relying on a weaker reviewer the model could outsmart, but risks collusion: the model, now monitoring itself, may cover up its own misbehaviour. One remedy is to fine-tune the monitor on whatever examples of misbehaviour the control team has caught. We ask whether this training also removes collusion that the control team has not yet found. We fine-tune Llama-3.3-70B and Qwen2.5-72B to install five policy-monitor behaviour pairs, correct the monitor on 300 honest reviews of one caught collusion, and measure collusion on the other four in unseen prompt formats. Averaged over the three seeds of each family, correction reduces held-out collusion from 91% to 14-20% under three of the four methods we compare (individual seeds 10-32%), while a control fine-tuned on the same number of unrelated examples leaves 56-93%. Family-average accuracy on control items changes by at most five points and capability is preserved, apart from a drop in mathematical accuracy on one Llama seed. Under the tested training configuration, methods with similar caught-task accuracy differ in held-out transfer, from 58% to 83% average reduction, so the caught behaviour alone does not reveal how far a correction reaches. Training on a known failure removes it almost entirely (1-2% remaining), yet 14-20% of unknown failures persist, so near-perfect correction of the caught behaviour overstates how much collusion has been removed.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-03T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

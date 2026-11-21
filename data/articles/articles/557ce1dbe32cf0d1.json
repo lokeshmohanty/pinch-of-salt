@@ -1,0 +1,14 @@
+{
+  "id": "557ce1dbe32cf0d1",
+  "title": "On the Few-Shot Adaptation of Vision-Language Models: A Few Gradient Signs Are All You Need",
+  "link": "https://arxiv.org/abs/2611.08800",
+  "description": "arXiv:2611.08800v1 Announce Type: cross \nAbstract: The limited supervision available for the few-shot adaptation of vision-language models makes gradient estimation particularly noisy. We find that the gradient magnitudes are severely miscalibrated, while the signs of a small top-magnitude subset remain informative. This motivates SignSparseSGD and DynSignSparseSGD, two state-free optimizers that use gradient magnitudes only to select where to update and fixed-magnitude signs to decide how to update. The static variant fixes the support after the first minibatch. The dynamic variant refreshes it at every step. Across 11 datasets, three CLIP backbones, and five shot levels, the proposed methods are competitive with or outperform parameter-efficient and optimization-based baselines on average, while exhibiting markedly lower sensitivity to long training schedules. They introduce no task-specific modules, maintain no first- or second-moment optimizer states, and use one shared configuration across datasets, backbones, and shot levels. Our code is included in the supplementary materials and will be released upon publication.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV"
+  ]
+}

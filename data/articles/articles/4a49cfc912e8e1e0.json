@@ -1,0 +1,14 @@
+{
+  "id": "4a49cfc912e8e1e0",
+  "title": "Later Is Better: Token Reduction for ViTs Under Distribution Shift",
+  "link": "https://arxiv.org/abs/2610.07758",
+  "description": "arXiv:2610.07758v1 Announce Type: cross \nAbstract: Training-free token reduction accelerates vision transformers by removing redundant tokens across layers, recovering most of the original accuracy at a fraction of the compute. These methods, however, are designed and evaluated primarily on clean data, and under real-world distribution shift their accuracy gap to the uncompressed model widens with the removal rate. We show that this gap is governed by the reduction schedule, the depth profile of removal, usually left fixed as an implementation detail. Concretely, we introduce a one-parameter late-concentrated power-law schedule that consistently improves out-of-distribution accuracy over flat at no extra inference cost. On ImageNet-C with DeiT-S, the late schedule closes 83% of that gap at a 26% compute reduction (+1.17pp), and 99% of it at a lighter 7% reduction (+0.26pp). The gain cannot be attributed to retaining more tokens or using extra compute: held to flat's compute, the late schedule removes more tokens in total and leaves fewer tokens at the end, yet still wins. Single-layer probes point to a mechanism: earlier reductions perturb features that pass through more remaining layers, front-loading reduction error in depth. The effect is broad, holding across five token-reduction methods (ToMe, EViT, ATS, ATC, PiToMe), nine backbones, all ImageNet-C corruption types, eight further shift suites, and two further modalities, video and vision-language QA. It is also specific to shift, still positive on clean and rising monotonically to ~4x that at the highest severity 5. The schedule keeps its gain under six test-time adaptation methods, and needs no per-input or per-domain tuning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

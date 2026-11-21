@@ -1,0 +1,13 @@
+{
+  "id": "5e2d0451477c5eae",
+  "title": "GRACE: Adaptive Concept Erasure with Geometry-Guided Retention in Diffusion Models",
+  "link": "https://arxiv.org/abs/2609.12731",
+  "description": "arXiv:2609.12731v2 Announce Type: replace \nAbstract: Text-to-image (T2I) diffusion models inevitably internalize sensitive or non-compliant concepts from large-scale pretraining data, necessitating post-hoc concept erasure. However, existing erasure methods often lack explicit constraints on parameter updates, leading to over-intervention and unintended semantic drift. In addition, many methods rely on manually crafted counterfactual supervision, such as surrogate prompts, which incurs substantial data construction costs that limit scalability to new concepts. To address these limitations, we propose GRACE, a structured concept erasure framework designed to enable localized and selective intervention. Specifically, we introduce a semantically weighted sensitive subspace estimation to precisely lock intervention directions, and employ lightweight subspace-constrained adapters to prevent global semantic disturbance. To eliminate the dependency on manual prompt engineering, we design an automatically decoupled safe-anchor mechanism. To mitigate semantic drift induced by excessive intervention, we introduce an energy-driven dynamic gating mechanism that adaptively controls the timing and strength of intervention at inference. Extensive experiments demonstrate that our method achieves a superior balance between erasure effectiveness and generation fidelity. Compared with the average performance of five state-of-the-art (SOTA) concept erasure methods, our method improves the fine-grained NSFW reduction rate by $17.86\\%$, while reducing the macro-averaged target CLIP Score and preservation-oriented Fr\\'echet Inception Distance (FID) by $4.55\\%$ and $52.14\\%$, indicating stronger concept suppression with substantially improved preservation of the original model's generative utility.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

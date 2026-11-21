@@ -1,0 +1,13 @@
+{
+  "id": "f07696a28bf85154",
+  "title": "Mesh-Agnostic Refinement Models for Latent Space Encoding of 3D Human Body Shapes",
+  "link": "https://arxiv.org/abs/2611.03285",
+  "description": "arXiv:2611.03285v2 Announce Type: replace \nAbstract: Parametric human body models such as the Skinned Multi-Person Linear (SMPL) model provide compact representations of human shape and pose, but their reconstructions remain affected by both errors in estimated latent parameters and limitations in the decoder's expressive capacity. We propose a framework for refining these reconstructions by exploiting the geometric discrepancy between an initial decoded surface and a target mesh, without requiring vertex correspondences between them. The framework comprises three complementary approaches. Latent-VaRefine uses varifold distance gradients to correct the estimated latent code while preserving the original parametric representation. Vertex-VaRefine processes multiscale varifold-gradient features with a DiffusionNet backbone to predict vertex displacements in a canonical pose, yielding an approximately pose-equivariant refinement pipeline. ElaOpt directly optimizes surface deformations under elastic regularization and normal direction constraints. On AMASS, Vertex-VaRefine reduces the mean vertex-to-vertex error of OmniFit reconstructions from 1.181 to 0.342 cm, a 71.0 percent reduction, while combining Latent-VaRefine with ElaOpt reduces the asymmetric Chamfer distance of ArtEq reconstructions from 1.681 to 0.717 cm, a 57.3 percent reduction. Evaluations with SMPL-H and SMPL-X demonstrate the framework's adaptability to different body models, while additional experiments on remeshed targets and raw scans assess its robustness to changes in discretization and geometry beyond the parametric model. These results highlight the complementary strengths of latent space correction, learned vertex refinement, and elastic optimization, offering different trade-offs between preserving the model parameterization and improving geometric fidelity.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

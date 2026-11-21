@@ -1,0 +1,13 @@
+{
+  "id": "5547428838d5c6f6",
+  "title": "SimplePro: A Simple Baseline for Proactive Video Understanding",
+  "link": "https://arxiv.org/abs/2611.23954",
+  "description": "arXiv:2611.23954v1 Announce Type: new \nAbstract: Proactive video understanding requires vision-language models (VLMs) to decide not only what to answer as a video unfolds, but also when newly arrived evidence warrants a response and when to remain silent. Although modern VLMs excel at offline long-video understanding, they struggle in proactive streaming settings, leading prior work to introduce task-specific reinforcement learning or auxiliary triggering modules. We find that explicit reporting rules and structured streaming context substantially improve a frozen VLM's proactive response performance. We exploit this observation to build SIMPLEPRO, a training-free baseline for proactive video understanding. At each decision step, the model combines recent high-resolution frames, bounded historical observations, and prior answer records to determine whether new information warrants a response and, when needed, generate a concise answer. The system then filters consecutive duplicate answers while retaining the raw outputs as context for subsequent decisions. Without any parameter updates or auxiliary triggers, SIMPLEPRO with a 4B backbone consistently outperforms specialized proactive systems across OVO-Bench, StreamingBench-PO, and ProactiveVideoQA. SIMPLEPRO shows overall performance gains as backbone size increases from 2B to 32B. We hope this simple yet effective method will serve as a strong baseline for proactive video understanding, and we will release our code and inference pipeline to support future research.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

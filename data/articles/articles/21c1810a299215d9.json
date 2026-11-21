@@ -1,0 +1,14 @@
+{
+  "id": "21c1810a299215d9",
+  "title": "The Reward Model Selection Crisis in Personalized Alignment",
+  "link": "https://arxiv.org/abs/2512.23067",
+  "description": "arXiv:2512.23067v3 Announce Type: replace \nAbstract: Personalized alignment from preference data has focused primarily on improving personal reward model (RM) accuracy, with the implicit assumption that better preference ranking translates to better personalized behavior. However, in deployment, computational constraints necessitate inference-time adaptation such as reward-guided decoding (RGD) rather than per-user policy fine-tuning. This creates a critical but overlooked requirement: reward models must not only rank preferences accurately but also effectively guide generation. We demonstrate that standard RM accuracy fails catastrophically as a selection criterion for deployment-ready personalized rewards. We introduce policy accuracy; a metric quantifying whether RGD-adapted LLMs correctly discriminate between preferred and dispreferred responses and show that upstream RM accuracy correlates only weakly with downstream policy accuracy (Kendall's tau = 0.08--0.31). More critically, we introduce Pref-LaMP the first personalized alignment benchmark with ground-truth user completions, enabling direct behavioural evaluation. On Pref-LaMP, we expose a complete decoupling between discriminative ranking and generation metrics: methods with 20-point RM accuracy differences produce almost identical output quality, and methods with high ranking accuracy can fail to generate behaviorally aligned responses. These findings reveal that the field has been optimizing for proxy metrics that do not predict deployment performance, and that current personalized alignment methods fail to operationalize preferences into behavioral adaptation under realistic deployment constraints. In contrast, we find simple in-context learning (ICL) to be highly effective - dominating all reward-guided methods for models $\\geq$3B parameters, achieving $\\sim$3 point ROUGE-1 gains over the best reward method at 7B scale.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

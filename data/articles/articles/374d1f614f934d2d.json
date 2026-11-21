@@ -1,0 +1,14 @@
+{
+  "id": "374d1f614f934d2d",
+  "title": "BoostLoRA: Growing Effective Rank by Boosting Adapters",
+  "link": "https://arxiv.org/abs/2604.27308",
+  "description": "arXiv:2604.27308v2 Announce Type: replace-cross \nAbstract: Parameter-efficient fine-tuning (PEFT) methods face a tradeoff between adapter size and expressivity: ultra-low-parameter adapters are confined to fixed low-rank subspaces, capping performance even with extended training. We propose BoostLoRA, a gradient-boosting framework that overcomes this limit by iteratively training and merging minimal adapters on the examples the current model gets wrong. A ROTATE SVD basis strategy assigns each round to an orthogonal subspace, so cumulative effective rank grows linearly with the number of rounds while each adapter remains ultra-low-rank. After merging, adapters are discarded, leaving zero inference overhead. On Qwen2.5-3B, BoostLoRA reaches 89.1% on GSM8K and 68.8% on MATH-500, surpassing both the best single-shot ultra-low parameter adapter (TinyLoRA) and full fine-tuning; on code generation it reaches 57.2% on MBPP and 80.4% on HumanEval while full fine-tuning drops below the zero-shot baseline. We also demonstrate cross-architecture transfer on protein binding classification with ESM2-650M and cross-entropy training. BoostLoRA is, to our knowledge, the first PEFT method whose effective rank grows with training, separating per-round parameter cost from total representational capacity.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dca9b10deec06659",
+  "title": "Linearized 2-Simplicial Attention",
+  "link": "https://arxiv.org/abs/2608.09307",
+  "description": "arXiv:2608.09307v2 Announce Type: replace \nAbstract: We present a linearized form of 2-simplicial attention by rewriting the trilinear score as an inner product between a composite query and a key, so that the sum over keys takes the same form as ordinary softmax attention. We then approximate this sum with positive random features and store all previous keys in a fixed-size state, while the sum over second keys stays exact over all previous tokens. This reduces the cost from cubic to quadratic in sequence length, and both keys range over all previous tokens, which windowed 2-simplicial attention does not allow. We implement it with custom Triton kernels and combine it with Kimi Delta Attention to build a model with no softmax attention at all. With 15B equal training tokens on FineWeb-Edu, this model lowers validation loss from 2.35 to 2.32 over a KDA hybrid and lowers LAMBADA perplexity from 40 to 38.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

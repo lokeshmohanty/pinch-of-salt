@@ -1,0 +1,13 @@
+{
+  "id": "931b23655af9905b",
+  "title": "Structure-Guided Masked Autoencoders for Ultra-High Resolution Scientific Image Understanding",
+  "link": "https://arxiv.org/abs/2609.30682",
+  "description": "arXiv:2609.30682v1 Announce Type: new \nAbstract: Self-supervised pre-training with Vision Transformers, including Masked Autoencoders (MAE), is difficult to apply to gigapixel scientific images. Random masking is poorly matched to the structured, multi-scale morphology of scientific data, while uniform tokenization produces prohibitively long sequences that make $O(N^2)$ attention impractical. We propose SGMA, a structure-guided masked autoencoding framework for ultra-high-resolution scientific images. SGMA couples two components: a content-adaptive quadtree tokenizer that compresses gigapixel images into a fixed-length sequence, and a structure-conditioned masking process that biases reconstruction toward spatially informative regions. To stabilize this process across scales, we introduce Damped Accumulation (DA), which aggregates signal-dependent responses across the tree into a structure canvas used to guide masking. The resulting pre-training task preserves fine microstructure while remaining compatible with standard ViT encoders and MAE-style reconstruction. Across electron microscopy, whole-slide optical microscopy, and X-ray CT datasets, SGMA consistently outperforms MAE baselines. It achieves 95.68% Dice on the 8K x 8K x 28K SpringXCT dataset, improving over the same-architecture MAE baseline by +13.00 points, and 83.21% Dice on the 32K^2 WSI PAIP dataset, improving by +16.84 points, while providing up to a 24.8x inference speedup.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

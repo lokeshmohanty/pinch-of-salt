@@ -1,0 +1,14 @@
+{
+  "id": "99e46e8d27e3701a",
+  "title": "LAPLEX: The FFT of Learnable Laplace Kernels",
+  "link": "https://arxiv.org/abs/2605.24584",
+  "description": "arXiv:2605.24584v2 Announce Type: replace-cross \nAbstract: Fast linear algebra in deep learning usually comes with a choice: fixed geometry and exact computation, as in the Fourier transform, or adaptive geometry paid for by dense parameters, random features, or low-rank surrogates. To move beyond this trade-off, we introduce LAPLEX, a class of exact, trainable (phased) Laplace-kernel operators.\n  A LAPLEX layer is a typically full-rank dense matrix, implicitly defined by learnable coordinate anchors, with FFT-like scaling. Consequently, it supports trainable matrix--vector operations at vector dimensions up to $10^9$ on modern GPUs. As a neural layer, it yields compact projections and classification heads interpretable as soft, trainable routing models. The same primitive also serves as an efficient Gram operator, enabling high-dimensional covariance models on flattened images of dimension $3 \\cdot 10^6$ that preserve visible spatial structure without imposing convolutional bias. These applications reflect a single principle: dense geometry can be learned without storing a dense matrix, which enables data-adaptive global interactions in regimes where ordinary dense layers are out of reach. In this sense, LAPLEX separates expressivity from storage cost: it behaves like a dense trainable matrix, but is represented and applied through a small structured set of parameters.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "975006f574e8191e",
+  "title": "Closing the Loop on Contrail Avoidance with Satellite Verification",
+  "link": "https://arxiv.org/abs/2610.09363",
+  "description": "arXiv:2610.09363v1 Announce Type: new \nAbstract: Contrails are the thin ice clouds that aircraft leave behind. They cause a large share of aviation's warming, and rerouting the few flights that produce them could avoid much of it. However, an avoided contrail only counts if a satellite can confirm that it never formed, and this check is hard: contrails are one to two pixels wide, cover only 0.18% of pixels, and look very similar to natural cirrus. We build a small diffusion model (8.4M parameters, trained on one GPU) that detects them, and we run a controlled study to find out which components matter. The model reaches 0.476 PR-AUC, compared with 0.414 for a DeepLabV3+ baseline and 0.119 for an adapted MedSegDiff. Doubling the input resolution of the CNN brings it to parity (0.499, p=0.07). Three lessons apply beyond contrails. First, check the input resolution before designing a new architecture. Second, simple flips and rotations more than double accuracy and matter more than any architectural choice we measured. Third, pretraining the model on contrail shapes is harmful: the model learns that thin strokes appear everywhere and paints them onto empty scenes. Precision collapses to 1% while recall-based metrics still rate the degraded model as excellent, and no threshold or guidance heuristic repairs this failure.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

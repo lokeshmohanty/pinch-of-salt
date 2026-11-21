@@ -1,0 +1,13 @@
+{
+  "id": "d41e963f1d3356cf",
+  "title": "State-Isolated Vision Mamba via Update-Tendency Routing for Underwater Image Enhancement",
+  "link": "https://arxiv.org/abs/2610.13720",
+  "description": "arXiv:2610.13720v1 Announce Type: new \nAbstract: Vision Mamba has recently emerged as an efficient alternative to convolutional and Transformer-based architectures by modeling long-range spatial dependencies through recurrent state evolution. Existing studies primarily improve token serialization, scanning strategies, or expert routing, yet largely overlook a state level question question: how should recurrent states be organized for spatially heterogeneous visual restoration? In this paper, we show that forcing tokens with heterogeneous update behaviors to recurrently modify a shared hidden state leads to persistent cross-content interference, which we term \\textbf{State Contention}. We further argue that effective recurrent modeling should organize state evolution according to token compatibility rather than token ordering. Based on this observation, we introduce \\textbf{State Isolation}, a new recurrent state organization principle for Vision Mamba,tokens with compatible state-update tendencies evolve within independent recurrent state streams. To instantiate this principle, we propose \\textbf{IsoMamba}, a $\\Delta$-guided architecture that constructs model-intrinsic update representations, discovers update-compatible token groups through label-free clustering, and routes them to isolated Mamba experts following a \\textbf{cluster--route--isolate} paradigm. In addition, we develop a dynamic channel-wise reweighting objective to compensate for wavelength-dependent reconstruction difficulty in underwater images. Extensive experiments demonstrate that IsoMamba consistently achieves state-of-the-art performance on multiple underwater image enhancement benchmarks while providing cleaner hidden state responses, validating the effectiveness of state isolated recurrent modeling.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

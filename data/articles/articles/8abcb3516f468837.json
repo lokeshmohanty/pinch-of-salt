@@ -1,0 +1,14 @@
+{
+  "id": "8abcb3516f468837",
+  "title": "TopoHyperClinicalGraph: A Geometry and Topology-Aware Multimodal Framework for Cancer Survival Prediction",
+  "link": "https://arxiv.org/abs/2610.41556",
+  "description": "arXiv:2610.41556v1 Announce Type: cross \nAbstract: We developed TopoHyperClinicalGraph, a multimodal framework combining hyperbolic tissue geometry, persistent topology and clinical graph learning for cancer survival prediction. Pre-extracted UNI2-h features are reduced from 1,536 to 1,024 dimensions using training-fold PCA. A pathology backbone combines hyperbolic neighborhoods with Lorentz-centroid attention pooling. Once frozen, its survival logits are adjusted using persistence descriptors from up to 64 landmarks per slide and sampling controls. A five-node clinical graph then learns a further correction from age, sex, stage, T and N.\n  Five-fold patient-level evaluation covered eight TCGA and CPTAC cohorts with 2,364 patients. Mean validation-selected C-indices for TopoHyperClinicalGraph versus pathology-only spatial PatchGCN were 0.7563 versus 0.7386 in COADREAD, 0.6220 versus 0.5998 in HNSC, 0.6755 versus 0.6535 in BRCA and 0.6409 versus 0.6176 in STAD. CPTAC scores were 0.5984 in HNSC, 0.6060 in PDA, 0.8055 in CCRCC and 0.7192 in LUAD. CPTAC-HNSC used TCGA-initialized adaptation; other CPTAC backbones were trained within their cohorts. Geometry accounted for most pathology-only gains, with smaller persistence effects. Clinical graph fusion exceeded its matched node-wise control in five cohorts, tied in one and scored lower in two; clinical-only prediction exceeded fusion in three CPTAC cohorts.\n  The framework supports separate evaluation of geometric, topological and clinical contributions. All scores were validation-selected; independent testing is needed to establish generalizability.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

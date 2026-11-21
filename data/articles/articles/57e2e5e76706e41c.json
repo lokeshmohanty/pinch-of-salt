@@ -1,0 +1,13 @@
+{
+  "id": "57e2e5e76706e41c",
+  "title": "When Online Adaptation Hurts: Parameter-Frozen Test-Time Ensembling for Continual Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2609.21412",
+  "description": "arXiv:2609.21412v1 Announce Type: new \nAbstract: Medical image segmenters often get worse when sites, scanner vendors, or protocols change. Continual test-time adaptation (CTTA) addresses this problem without target labels, but it can be impossible to update a model on a non-stationary stream and can lead to a lot of errors. We examine a more reasonable and meaningful alternative: parameter-frozen inference enhancement(PIE). We use a source-trained segmenter that learns about anatomy-preserving scale and flip views, maps their predictions back to the native location, and averages the probabilities. We do not modify the weights of the model or the normalization statistics. On a cardiac MRI stream from M\\&amp;Ms, which is trained on vendor A and evaluated sequentially on vendors B, C, and D, PIE has 0.7786 mean Dice, compared to 0.7680 for source-only inference and 0.7388--0.7416 for five other online-adaptation baselines. The controlled ablations show that performance saturates at 28 views, and confidence weighting, class-prior correction, connected-component filtering, morphological refinement, and inter-slice smoothing have no effect or cause negative transfer. Qualitative results on cardiac MRI and fundus images are also consistent with the frozen ensemble keeping thinner and nested anatomical structures. These results provide a strong, stable baseline for medical CTTA and expose an important failure mode: adaptation and handcrafted refinement can be less reliable than carefully designed inference.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

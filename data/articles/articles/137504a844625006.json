@@ -1,0 +1,13 @@
+{
+  "id": "137504a844625006",
+  "title": "Selective Event Evidence and Persistent Temporal Priors for Event-Based Point Tracking",
+  "link": "https://arxiv.org/abs/2611.07713",
+  "description": "arXiv:2611.07713v1 Announce Type: new \nAbstract: Event cameras enable tracking under fast motion and challenging illumination. However, stable long-term point tracking remains challenging: event activity is sparse and varies with scene content and motion, complicating correspondence, while trajectory estimates can drift over long sequences. Together, these challenges motivate a tracker that selectively uses informative event evidence and retains trajectory constraints across temporal windows. We propose Selective Event Evidence and Persistent Temporal Priors (SEPT), an event-only framework for tracking any point (TAP) over long sequences. SEPT introduces two complementary modules: Task-Adaptive Event Evidence Modulation (TEEM) and Persistent Trajectory Prior (PTP). Using only tracking supervision, TEEM learns a bounded reliability field that weights the event tensor across space, time, and channels before feature extraction. PTP carries geometric information across overlapping windows by marginalizing a fixed local quadratic trajectory model with a Schur complement. Its visibility-aware correction refines overlap coordinates, while a clipped terminal velocity initializes coordinates at newly exposed timestamps. SEPT builds on the ETAP architecture. SEPT is trained exclusively on synthetic EventKubric data and evaluated on five datasets across TAP and feature tracking. Results show that SEPT outperforms the retrained ETAP baseline in average Jaccard for TAP and in feature age and expected feature age for feature tracking; it also surpasses several methods combining event and frame inputs on EC and EDS. The source code is publicly available at https://github.com/sssxxxkkkk/SEPT.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

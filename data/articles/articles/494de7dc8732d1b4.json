@@ -1,0 +1,13 @@
+{
+  "id": "494de7dc8732d1b4",
+  "title": "Dataset-Specific Encoding of Image Content Underlies Cross-Dataset Failure in Brain MRI Foundation Models",
+  "link": "https://arxiv.org/abs/2610.13027",
+  "description": "arXiv:2610.13027v1 Announce Type: new \nAbstract: Frozen features of brain MRI foundation models lose accuracy on new datasets, a failure usually blamed on the features encoding where each scan came from. We show that the failure lies elsewhere. Across 17 public datasets and eight frozen representations, every representation recognizes the MRI sequence within each dataset, yet most fail on an unseen one. The cause is neither dataset encoding nor a shift of each dataset: the content itself is encoded along different directions in each dataset. This explains which datasets fail, for the sequence and for sex, and why removing the dataset signal with INLP, LEACE, CORAL or adversarial training never improves sequence transfer. Only the broadly pretrained 3DINO and SAM-Med3D encode the sequence consistently enough to transfer; the brain-specific BrainIAC and BrainFM do no better than an untrained network. Code is available at https://github.com/BrainFM/brainfm-profiler/tree/main/representation_utility.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

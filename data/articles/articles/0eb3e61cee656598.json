@@ -1,0 +1,13 @@
+{
+  "id": "0eb3e61cee656598",
+  "title": "Grasp in Gaussians: Fast Monocular Reconstruction of Dynamic Hand-Object Interactions",
+  "link": "https://arxiv.org/abs/2604.12929",
+  "description": "arXiv:2604.12929v2 Announce Type: replace \nAbstract: We present Grasp in Gaussians (GraG), a fast and robust method for reconstructing dynamic 3D hand-object interactions from a single monocular video. Unlike recent approaches that optimize heavy neural representations, our method focuses on tracking the hand and the object efficiently, once initialized from pretrained large models. Our key insight is that, given strong pretrained object and hand priors, accurate and temporally stable hand-object motion can be recovered using a compact Sum-of-Gaussians (SoG) representation, revived from classical tracking literature and integrated with generative Gaussian-based initializations. We initialize object pose and geometry using a video-adapted SAM3D pipeline, then convert the resulting dense Gaussian representation into a lightweight SoG via subsampling. This compact representation enables efficient and fast tracking while preserving geometric fidelity, with the pretrained priors and simple geometric/contact losses providing accurate hand-object placement. For the hand, we adopt a complementary strategy: starting from off-the-shelf monocular hand pose initialization, we refine hand motion using simple yet effective 2D joint, silhouette, depth, and contact losses, avoiding per-frame refinement of a detailed 3D hand appearance model while maintaining stable articulation. Extensive experiments on public benchmarks demonstrate that GraG reconstructs temporally coherent hand-object interactions on long sequences 4.4x-38.9x faster than prior work while preserving temporally coherent hand-object motion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

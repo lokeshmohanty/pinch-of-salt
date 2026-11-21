@@ -1,0 +1,14 @@
+{
+  "id": "819f3429f56b5daa",
+  "title": "Towards Seconds-level Video Representation: Quadratically Gated Feature Grid with Adaptive, Prediction-free Sampling",
+  "link": "https://arxiv.org/abs/2611.17786",
+  "description": "arXiv:2611.17786v1 Announce Type: cross \nAbstract: Implicit neural video representations are notoriously slow to build, which does not cross the basic practical threshold for most industrial applications. Here, we present Q-GAS, a coordinate-queryable video representation that couples multi-resolution explicit 3D feature grids with a compact SwiGLU-style quadratic-gating (QG) decoder and an error-aware, prediction-free sampler. The explicit grids avoid hash-collision coefficient sharing at the cost of modestly higher storage yet greatly boost the expressive capacity; the QG decoder introduces low-rank local second-order interactions to improve the nonlinear feature response. During fitting, a global error map periodically refreshes a high-error pool, and each batch mixes pool samples with uniform samples, which is free from the auxiliary model to predict difficult samples, thereby further escalating the efficiency. On UVG Beauty/Bosphorus/Jockey, Q-GAS fits and quantizes under 50 s on one RTX PRO 6000, decodes at over 370 FPS with mixed precision and about 146 FPS in FP32. In our PyTorch implementation, Q-GAS trains and quantizes 5.5-7.2 times faster than the evaluated Instant-NGP baseline and 19-28 times faster than RNeRV. Under a 90 s budget, it improves PSNR/MS-SSIM/LPIPS over the evaluated NeRV-family pipelines at comparable BPP over the measured overlap. We have shared our code at https://github.com/MillenRosen/Q-GAS for readers' free use.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

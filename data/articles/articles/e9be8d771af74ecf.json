@@ -1,0 +1,13 @@
+{
+  "id": "e9be8d771af74ecf",
+  "title": "M$^3$-Test: Coverage Gaps in Joint-Perturbation Testing of Visual Question Answering",
+  "link": "https://arxiv.org/abs/2611.22329",
+  "description": "arXiv:2611.22329v1 Announce Type: new \nAbstract: A visual question answering (VQA) model can pass every image-only and question-only test yet fail when the same changes occur together. Standard robustness reports average over conditions and therefore cannot say which accepted requests remain vulnerable. We introduce M3-Test, a coverage audit that aligns each clean input with its single-modality variants and a complete 5x5 family, 4x4 strength joint library, so that any reduced test suite can be replayed on the same requests. Across 2.6 million responses from four vision-language models, joint failures affect 26-29% of the Qwen questions that pass all 40 single-modality tests, although fewer than 0.6% of their joint records fail. Passing the 25 maximum-strength corners does not close this gap: 11-14% of the accepted questions still fail elsewhere in the library. Re-executing the archived failures reproduces about 90% of them, against a 0.3-0.6% flip rate among matched passing controls, and re-checking the most fragile failure records supports 80-89% of them. On the evidence examined, neither execution noise nor grading error can fully account for the gap. The same aligned grids make previous evaluations reusable. On held-out images, a risk order learned from other models discovers about 80% of affected Qwen questions within 25 additional queries, compared with 65-68% for maximum-first and 53-57% for pairwise covering arrays. M3-Test thus turns a passing robustness suite into a request-level account of what remains untested, supporting acceptance, regression review and test allocation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "a4c62bd1d4c81579",
+  "title": "What Pretraining and Midtraining Make Learnable from Rewards?",
+  "link": "https://arxiv.org/abs/2609.38446",
+  "description": "arXiv:2609.38446v1 Announce Type: cross \nAbstract: A reward can identify a correct answer while leaving the computation needed for new inputs undetermined. We study how pretraining and midtraining supply the information and computation that make reward adaptation effective. In sequential state computation and contextual memory, we characterize mechanisms that agree on every training reward yet demand different held-out answers. Task-independent source observations resolve this ambiguity. We construct finite sampled Adam paths from specified random initializations through source prediction and reward adaptation in the same parameters, proving how prediction acquires execution or retrieval and rewards learn their task-specific use. Experiments with pretrained Qwen2.5 checkpoints test this division of labor. Across eight worlds, Sequential models trained with correct source and first-operation supervision reach 82.61% success, versus 44.15% for a private-random source control. Memory replay preserves retrieval during reward adaptation, and an independent eight-world confirmation achieves 75.32% task success versus 49.86% after matched alternative-retrieval training. GSM8K and HotpotQA separate accuracy at reward entry, subsequent gain and final performance. Together, these results connect information acquisition, executable computation and reward-guided task learning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

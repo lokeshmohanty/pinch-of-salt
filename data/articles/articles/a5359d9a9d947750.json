@@ -1,0 +1,14 @@
+{
+  "id": "a5359d9a9d947750",
+  "title": "The Struggle Between Continuation and Refusal: A Mechanistic Analysis of the Continuation-Triggered Jailbreak in LLMs",
+  "link": "https://arxiv.org/abs/2603.08234",
+  "description": "arXiv:2603.08234v2 Announce Type: replace \nAbstract: With the rapid advancement of large language models (LLMs), the safety of LLMs has become a critical concern. Despite significant efforts in safety alignment, current LLMs remain vulnerable to jailbreaking attacks. However, the root causes of such vulnerabilities are still poorly understood, necessitating a rigorous investigation into jailbreak mechanisms across both academic and industrial communities. In this work, we focus on a continuation-triggered jailbreak phenomenon, whereby simply relocating a continuation-triggered instruction suffix can substantially increase jailbreak success rates. To uncover the intrinsic mechanisms of this phenomenon, we conduct a comprehensive mechanistic interpretability analysis at the level of attention heads. Through causal interventions and activation scaling, we show that this jailbreak behavior primarily arises from an inherent competition between the model's intrinsic continuation drive and the safety defenses acquired through alignment training. Furthermore, we perform a detailed behavioral analysis of the identified safety-critical attention heads, revealing notable differences in the behaviors of safety heads across different model architectures. Grounded in these mechanistic findings, we propose Head Competition Steering (HCS), a mechanistically grounded inference-time strategy that explicitly leverages the competition between safety heads and continuation heads to suppress harmful generation, and further distill its behavioral signal into a student model via knowledge distillation, achieving inference-time safety improvements without additional computational overhead.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

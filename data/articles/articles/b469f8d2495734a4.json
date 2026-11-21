@@ -1,0 +1,14 @@
+{
+  "id": "b469f8d2495734a4",
+  "title": "An Empirical Audit of Input Encoders for Multi-Channel Signal Transformers",
+  "link": "https://arxiv.org/abs/2606.04752",
+  "description": "arXiv:2606.04752v3 Announce Type: replace-cross \nAbstract: Transformers consuming multi-channel scalar signals must embed $C$ simultaneous values into one $d_{\\text{model}}$-dimensional vector per time step. We audit eight input encoders -- a shared-scalar baseline, per-channel linear projections, an orthogonality regulariser, a nonlinear MLP, block-partitioned concatenation, channel-independent and channel-as-token architectures, and a projected positional encoding -- on a synthetic benchmark where channel identity is informative and on ETTh1, scored by next-step negative log-likelihood. The headline is practical near-equivalence within a wide \"top tier\": the standard per-channel linear projection matches every alternative up to small, statistically real but practically modest differences. A direct geometric probe attributes this to a spontaneous orthogonalisation of the per-channel projections: with no explicit regulariser they tighten well beyond the near-orthogonality of random initialisation, letting the standard linear recover channel identity from the summed embedding. Two encoders lose decisively: the shared-scalar baseline collapses for information-theoretic reasons we make explicit, and the channel-independent PatchTST-spirit baseline overfits universally on the synthetic benchmark and underperforms on both. Paired tests resolve two small gaps: projecting the sinusoidal positional encoding through a learned linear layer edges the rest at small $C$ by extending this orthogonality to the positional subspace; a nonlinear MLP stem edges them at the largest $C$, with the gap shrinking under more training data. The practical recommendation: use the standard per-channel linear projection by default; reach for something more elaborate only when the task calls for it.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

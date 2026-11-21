@@ -1,0 +1,15 @@
+{
+  "id": "06fe0754897488c8",
+  "title": "Reject and Report: Forgery-Evident Undetectable Watermarks for Generative Image Models",
+  "link": "https://arxiv.org/abs/2611.25226",
+  "description": "arXiv:2611.25226v1 Announce Type: cross \nAbstract: Provenance schemes such as those based on content watermarks let images from a generative model be traced back to it. A practical watermarking scheme must be accurate at a low false-positive rate (FPR), robust under content-preserving processing, and undetectable. In addition, it must resist forgery; otherwise, even from a single watermarked image and a surrogate model, an adversary can imprint the watermark onto an arbitrary image or regenerate new content that carries it, falsely attributing harmful content to a model or making authentic photographs appear AI-generated. We argue that a watermarking scheme should not only reject forgeries but also report them: a forgery rejected as unwatermarked leaves no trace of the attempt. State-of-the-art forgery-resilient undetectable watermarking schemes, such as SemBind, fall short on both counts. External anomaly detectors that do report forgeries either miss most of them or falsely flag genuine images after common processing. We propose Tripwire-WM, the first forgery-evident framework for undetectable watermarks. It commits the semantics of the generated image to the magnitudes of the initial latent noise, which the sign-based watermarks leave unused, through a distribution-preserving embedding; a forged image carries a valid watermark but with a commitment that does not match its content, so the detector both rejects it and reports it as forged. Built on the pseudorandom code (PRC) watermark and Gaussian Shading++, Tripwire-WM provably preserves their undetectability. On MS-COCO, with the owner's own model as the surrogate, it accepts no imprinting forgery, compared with up to 55.0% for SemBind, and reports all of them as forged; it also accepts at most 1.8% of reprompting forgeries, against up to 46.2% for SemBind. Meanwhile, it accepts at least 99% of genuine watermarked images at 10^{-6} FPR and matches the robustness of the base schemes.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

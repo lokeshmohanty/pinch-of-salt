@@ -1,0 +1,13 @@
+{
+  "id": "c0352c85728142b8",
+  "title": "Proteus: A Truncation-Robust Entropy Model for Progressive LiDAR Compression",
+  "link": "https://arxiv.org/abs/2608.00687",
+  "description": "arXiv:2608.00687v1 Announce Type: new \nAbstract: LiDAR point clouds provide explicit, deterministic physical boundaries critical for collaborative safety-critical perception. However, wireless channels inherently impair and corrupt transmitted signals. Existing robust frameworks (such as deep JSCC or MDC) attempt to counter these channel impairments through statistical or parametric estimation, turning exact physical measurements into unverified algorithmic estimates. To address this, we propose Proteus, a learned LiDAR codec operating on 2D range images. By decoupling the frame representation into independent coders for the \\textbf{sig}nificant range bit-planes (SIG) and the \\textbf{ins}ignificant range bit-planes and attributes (INS), Proteus achieves overall stream-level truncation robustness. The non-truncatable SIG block encodes the most significant range bit-planes to establish a necessary, self-contained perceptual lower bound, below which the reconstructed point cloud is severely degraded. Meanwhile, INS employs bit-plane slicing representation and coding, ensuring that range truncation mathematically maps to a deterministic spatial precision degradation. Subordinate attributes are reconstructed via a hybrid lossless-predictive method, leveraging the decoded geometry as a strong structural prior for fine-grained approximation. Furthermore, strategic ordering within INS prioritizes geometry over attributes under bandwidth drops. Experimental results on the Waymo Open Dataset and SemanticKITTI demonstrate that Proteus tolerates up to approximately 70\\% bitstream truncation, while outperforming established standards (G-PCC, Draco, and JPEG XL) and the representative learned compressor Unicorn under ideal channel conditions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

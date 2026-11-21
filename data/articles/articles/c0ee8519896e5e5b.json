@@ -1,0 +1,16 @@
+{
+  "id": "c0ee8519896e5e5b",
+  "title": "FoundCause: A Foundation Model for Causal Discovery with Latent Confounders from Observational Data",
+  "link": "https://arxiv.org/abs/2606.17516",
+  "description": "arXiv:2606.17516v2 Announce Type: replace-cross \nAbstract: Causal discovery from observational data requires recovering directed relations and latent confounding without interventions. We propose FoundCause, an {\\em amortized causal discovery foundation model} trained only on synthetic structural causal models that maps datasets to causal graphs in a single forward pass. A permutation-equivariant transformer alternates attention over samples and variables to model cross-variable dependence and per-variable distributions. Pairwise dependence and asymmetry statistics guide its attention, edge decoder and confounder module. The decoder separates edge existence from direction, while triangular refinement incorporates evidence from chains and colliders. Learnable latent tokens predict which variable pairs share a hidden common cause, and a masked input representation handles missing data. To our knowledge, FoundCause is the first amortized causal discovery approach for i.i.d. observational data to predict latent confounding as a separate, explicit output. On 14 real-world and semi-synthetic datasets, FoundCause leads 11 classical and 7 amortized baselines in average AUROC, $F_1$, skeleton $F_1$, and normalized structural Hamming distance ($\\mathrm{SHD}/d$): clearly in $\\mathrm{SHD}/d$ ($0.875$ vs.\\ $0.956$), narrowly in $F_1$ ($0.531$ vs.\\ $0.516$). It also has the highest accuracy among amortized methods on bivariate cause--effect pairs.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ME",
+    "stat.ML"
+  ]
+}

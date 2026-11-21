@@ -1,0 +1,13 @@
+{
+  "id": "daf363daf74051f7",
+  "title": "Beyond Scalar IoU: Structured Verification from Rollout Groups for Video Temporal Grounding",
+  "link": "https://arxiv.org/abs/2610.07601",
+  "description": "arXiv:2610.07601v1 Announce Type: new \nAbstract: Reinforcement learning with verifiable rewards (RLVR) provides a natural framework for adapting pretrained models to video temporal grounding, where generated temporal intervals can be scored directly against ground truth intervals. Yet existing overlap verifiers typically score each rollout independently, leaving the joint structure of the rollout group unused. We introduce SUTURE, which conditions verification on the rollout group and exploits its structure at two complementary scales: disagreement across rollouts controls how strongly the target is reweighted, while coverage at each position determines where reward mass is redistributed. We show that the resulting verifier admits an exact decomposition into the standard IoU term and a covariance correction determined by the rollout group. A local gradient diagnostic finds a preference for responses covering relatively less supported target regions in the analyzed groups. Across five temporal grounding benchmarks, SUTURE improves grounding performance at every reported IoU threshold. Its trained policy also shows less video-start anchoring in reasoning traces: for later events, the first temporal mention more often overlaps the annotated target. Together, these results show that the joint structure of a rollout group can support a more informative temporal verifier.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

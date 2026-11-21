@@ -1,0 +1,13 @@
+{
+  "id": "980ac25b8fd151f3",
+  "title": "Towards Generalized Image Manipulation Localization via Score-based Model",
+  "link": "https://arxiv.org/abs/2605.16879",
+  "description": "arXiv:2605.16879v2 Announce Type: replace \nAbstract: With the rapid evolution of synthetic media, Image Manipulation Localization (IML) has emerged as a critical component in multimedia forensics for ensuring the integrity of digital content. However, generalization remains a core challenge, as existing discriminative methods typically learn a fixed decision boundary that tends to overfit to specific training artifacts and fails to adapt to unseen manipulation types. To address this, we propose DiffIML, a novel framework that introduces score-based generative modeling to IML. Diverging from the direct estimation of hard boundaries, DiffIML approximates the score function, the gradient of the log-likelihood, to capture the intrinsic geometric topology of mask distributions. This paradigm leverages structural priors to iteratively recover coherent masks from noise, thereby circumventing the brittleness associated with discriminative models. Under this formulation, diffusion models serve as an effective numerical solver for the learned score function.To ensure practicality, we respectively resolve the efficiency and stability bottlenecks of standard diffusion by: (1) utilizing a Lightweight Mask-Specific VAE for fast latent-space process and a decoupled architecture with a lightweight denoising UNet, (2) edge supervision and error prior to mitigate error accumulation during sampling. Extensive experiments of two distinct protocols on eight non-generative and three generative benchmarks demonstrate that DiffIML consistently outperforms state-of-the-art methods, yielding remarkable generalization improvements on diverse unseen datasets. The code is publicly available at https://github.com/scu-zjz/DiffIML.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

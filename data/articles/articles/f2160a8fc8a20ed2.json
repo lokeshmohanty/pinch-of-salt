@@ -1,0 +1,14 @@
+{
+  "id": "f2160a8fc8a20ed2",
+  "title": "Automated Goldsmith's Mark Retrieval in Silverware",
+  "link": "https://arxiv.org/abs/2609.20509",
+  "description": "arXiv:2609.20509v1 Announce Type: new \nAbstract: For art historians, goldsmith marks play a critical role in the identification and dating of artifacts. In practice, experts must manually compare a query mark against hundreds of documented examples, a process that is both tedious and highly dependent on specialist knowledge. To address this, we present an AI-assisted retrieval pipeline that combines mark localization with metric-learning fine-tuning across three backbone architectures: an ImageNet-pretrained ResNet-50, a supervised ViT-S/16, and a self-supervised DINOv2 ViT-S/14. We conduct a systematic evaluation of cropping strategies, where we measure the impact of no cropping, manual ground-truth cropping, and learned detection-based cropping, and assess their interaction with each backbone. Our strongest configuration, DINOv2 ViT-S/14 with manual crop and metric-learning fine-tuning, achieves an mAP of 62.63% and a Top-1 accuracy of 73.74%. Our experiments show that self-supervised pretraining and mark localization are the two most impactful factors, with learned cropping recovering the majority of the gain from manual cropping without requiring ground-truth annotations at inference time. To enable reproducibility and adoption in the digital humanities, we release our manually annotated dataset and codebase, and deploy the system via a public web interface.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.DL"
+  ]
+}

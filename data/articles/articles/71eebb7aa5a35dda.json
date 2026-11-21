@@ -1,0 +1,13 @@
+{
+  "id": "71eebb7aa5a35dda",
+  "title": "Zoom In, Scale Out: Metric Depth Models Mistake Digital Zoom for Moving Closer",
+  "link": "https://arxiv.org/abs/2611.17903",
+  "description": "arXiv:2611.17903v1 Announce Type: new \nAbstract: Many new AI models estimate how far away things are, in metres, from a single photo. To do this they must also work out what camera took the photo. We check whether they really do with a simple test: digital zoom, that is, cropping a photo and enlarging the crop back to full size. Zooming moves nothing in the scene, so a correct model should give the same distance for every point still in the picture. The test is free, exact and needs no labels. Two numbers describe a model's reaction: its depth changes like $s^{-\\alpha}$ (ideal $\\alpha=0$) and its focal-length estimate like $s^{\\beta}$ (ideal $\\beta=1$), for zoom factor $s$. On 800 images from KITTI, NYUv2 and DIODE, the widely used Depth Anything V2 has $\\alpha=0.95$: it treats a zoomed photo almost as if the camera had moved closer, because it judges distance mainly from how large things look. Models that also predict the camera remove only part of this error ($\\alpha\\approx0.31$-$0.36$), because their focal estimate grows too little. Given the true camera, Depth Pro and DA3-Nested keep their depth ($\\alpha\\approx0$), so the error lies in their camera estimate. The reason: a zoomed photo is, pixel for pixel, a normal photo of a scene squashed in depth, so size alone cannot tell the two apart, and a focal estimator trained by regression stays close to the cameras it saw in training. Undoing this needs no labels or training and makes Depth Pro pass the test ($\\alpha=0.04$) at almost no cost on normal photos. Controls, including a real optical zoom lens, rule out blur and resizing artefacts. Finally, label-free fine-tuning for self-consistency lowers $\\alpha$ to 0.05 on KITTI and 0.07 on NYUv2 once a \"blurry means zoomed\" shortcut is removed; we report what this costs on normal and unseen photos.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

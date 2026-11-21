@@ -1,0 +1,13 @@
+{
+  "id": "ef6520fa67e01923",
+  "title": "Kineo: Calibration-Free Metric Motion Capture From Sparse RGB Cameras",
+  "link": "https://arxiv.org/abs/2510.24464",
+  "description": "arXiv:2510.24464v3 Announce Type: replace \nAbstract: Markerless multi-view motion capture is often constrained by the need for precise camera calibration, limiting accessibility for non-experts and in-the-wild captures. Existing calibration-free approaches mitigate this requirement but suffer from high computational cost and reduced reconstruction accuracy. We present Kineo, a fully automatic, calibration-free pipeline for markerless motion capture from videos captured by unsynchronized, uncalibrated, consumer-grade RGB cameras. Kineo leverages 2D keypoints from off-the-shelf detectors to simultaneously calibrate cameras, including Brown-Conrady distortion coefficients, and reconstruct 3D keypoints and dense scene pointmaps at metric scale. A confidence-aware spatio-temporal keypoint subsampling strategy, combined with graph-based global optimization, enables robust calibration at a fixed computational cost independent of sequence length. We further introduce a pairwise reprojection consistency score, a heuristic measure of the agreement between views, which we use to weight bone lengths in metric scale recovery. Evaluations on EgoHumans and Human3.6M demonstrate substantial improvements over prior calibration-free methods. Compared to previous state-of-the-art approaches, Kineo reduces camera translation error by approximately 83-85%, camera angular error by 86-92%, and world mean-per-joint position error (W-MPJPE) by 83-91%. Kineo is also efficient in real-world scenarios, processing multi-view sequences faster than their duration in a specific configuration (e.g., 36 min to process 1 h 23 min of footage). The full pipeline and evaluation code are openly released to promote reproducibility and practical adoption at: https://liris-xr.github.io/kineo/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

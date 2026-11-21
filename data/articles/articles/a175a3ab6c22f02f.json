@@ -1,0 +1,14 @@
+{
+  "id": "a175a3ab6c22f02f",
+  "title": "Evaluating Context Compaction on the Questions That Come Later",
+  "link": "https://arxiv.org/abs/2610.27301",
+  "description": "arXiv:2610.27301v1 Announce Type: cross \nAbstract: Language-model agents compact their context for the question at hand, but the compacted context must also serve questions that come later. We evaluate compaction on these later questions, using four corpora that annotate the evidence of several questions per text and recorded agent trajectories, and compare every method with random deletion at the same budget. On MultiRC, keeping the sentences that gpt-6-luna (through the OpenAI Decisions API) judges necessary for the current question raises its accuracy on that question by 11.4 points at 25% of the tokens. On the later questions, however, no method that selects sentences for the current question does detectably better than deleting sentences at random. Deleting words instead of sentences does better: LLMLingua-2, which ignores the question, beats random sentence deletion at the same token count by 12.5 points on the later MultiRC questions. It keeps about twice random deletion's share of the evidence's content words, and at equal content-word retention its gain shrinks to 7.3 points (exploratory). On FEVER, label accuracy can overstate what the kept text supports: the gain of sentence selection is no longer detected when answers are scored against the kept evidence, and the 21.0-point gain of LLMLingua-2 is not shown to rest on the kept text. The ranking also depends on the setting: on Evidence Inference sentence selection beats LLMLingua-2 at a nominal 25% budget, and on $\\tau$-bench trajectories, whose later tool calls need exact identifiers, it beats random deletion while LLMLingua-2 shows no detected gain. Scores on the question a compaction was made for do not reliably show how it serves later ones.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

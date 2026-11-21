@@ -1,0 +1,13 @@
+{
+  "id": "b3c380b3315cf539",
+  "title": "GAMF-Net: Grouped Availability-Aware Multimodal Fusion for Smartphone Skin Lesion Classification",
+  "link": "https://arxiv.org/abs/2610.28129",
+  "description": "arXiv:2610.28129v1 Announce Type: new \nAbstract: Smartphone clinical images provide a low-cost data source for computer-aided skin lesion classification in resource-constrained settings, but images alone cannot fully capture patients' medical histories and lesion symptoms. To address the lack of structured organization among heterogeneous clinical variables, the ambiguity between observed and imputed values, and the risk that clinical information may interfere with visual evidence, we propose GAMF-Net, a grouped availability-aware multimodal fusion network. Ten clinical variables are divided into three semantic groups---demographics, history-related risk, and lesion presentation---and each group jointly encodes field values and field-level availability masks. The image branch produces the base classification logits, while each clinical group generates image-conditioned class-level residual evidence. Only available groups participate in availability-normalized equal-weight fusion; when all clinical information is unavailable, the model reduces exactly to the image-only pathway. We evaluate the method on PAD-UFES-20 under a patient-disjoint five-fold protocol with separate training, validation, and test partitions. GAMF-Net achieves an Accuracy of $74.17\\pm2.85\\%$, a balanced accuracy (BACC) of $70.11\\pm2.11\\%$, a Macro-F1 of $68.85\\pm0.85\\%$, and a Macro-AUROC of $93.42\\pm1.20\\%$, outperforming all image-only and multimodal baselines reimplemented under a unified protocol. Compared with the strongest baseline, MetaBlock, the corresponding improvements are 2.37, 2.59, 4.14, and 1.02 percentage points, respectively. Ablation results show that clinical information substantially improves class-balanced performance, constrained equal-weight fusion is more effective than dynamic fusion, and the lesion-presentation group provides the most informative clinical complement.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

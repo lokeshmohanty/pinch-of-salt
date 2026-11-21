@@ -1,0 +1,14 @@
+{
+  "id": "95228e7826def659",
+  "title": "An FPGA-Based Spiking Neural Network for Spatiotemporal Pattern Learning and Classification",
+  "link": "https://arxiv.org/abs/2610.17463",
+  "description": "arXiv:2610.17463v1 Announce Type: new \nAbstract: Spiking Neural Networks (SNNs) are promising for energy-efficient spatiotemporal pattern recognition at the edge, but efficient deployment and on-device adaptation require specialized hardware. In this work, we present an FPGA implementation of multilayer SNNs for spatiotemporal pattern classification, in which both inference and training take place on the same hardware. Our design adopts a temporal-forward-only training algorithm that avoids the memory and latency overhead associated with traditional Backpropagation Through Time (BPTT). A mixed-precision scheme balances training stability with resource efficiency, and architectural optimization maximizes hardware and memory utilization. We further identify and resolve hazards that arise when inference and learning share the same memory, including port conflicts between the forward and backward access patterns and read-after-write dependencies in floating-point potential accumulation. Experimental evaluations on MNIST and five multivariate time-series classification datasets demonstrate that, with fully on-chip training, our SNN model achieves accuracy comparable to SNN or LSTM trained with BPTT. Compared to CPU and GPU based implementations, our FPGA design delivers 2.5 to 6 times higher throughput while consuming an order of magnitude less energy per sample.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

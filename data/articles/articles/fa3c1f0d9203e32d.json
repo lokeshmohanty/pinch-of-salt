@@ -1,0 +1,15 @@
+{
+  "id": "fa3c1f0d9203e32d",
+  "title": "Vertical Fusion: Condensing Internal Representations for Robust ViT Classification",
+  "link": "https://arxiv.org/abs/2607.10391",
+  "description": "arXiv:2607.10391v1 Announce Type: new \nAbstract: Despite exposing rich intermediate representations, Vision Transformers (ViTs) are almost exclusively utilized as black-box feature extractors, where only the last layer is considered for downstream tasks. We challenge this convention by introducing the notion of recoverability: the capacity of intermediate representations to correct last-layer failures. By evaluating independent classification probes at every model depth across 16 datasets, we observe that intermediate probes correctly classify 18% to 76% of samples that the last-layer probe misclassifies. We show that these gains are not primarily driven by predictive diversity, but by a redundancy-correctness correspondence, where the internal hierarchy acts as a series of stable, redundant probes of a shared discriminative signal. While established horizontal ensemble strategies (i.e., across multiple models) can improve performance, they incur high computational cost and ignore this vertical signal within a single model. To bridge this gap, we propose VFusion, a principled vertical aggregation strategy employing a learnable mapping into a low-dimensional latent space that synthesizes features across the internal ViT hierarchy. VFusion substantially outperforms established aggregation baselines in both in-distribution and out-of-distribution settings, notably closing 45% of the accuracy gap between the best individual layer and a theoretical oracle performance. Our gains consistently generalize across model sizes and pre-training regimes, confirming that VFusion offers a robust and efficient alternative to horizontal ensemble methods. The code is available at https://github.com/francescodisalvo05/vit-vertical-fusion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG",
+    "eess.IV"
+  ]
+}

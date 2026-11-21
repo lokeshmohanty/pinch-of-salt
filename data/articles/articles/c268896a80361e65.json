@@ -1,0 +1,14 @@
+{
+  "id": "c268896a80361e65",
+  "title": "PRISM: Privileged Probabilistic Latent Supervision for End-to-End Autonomous Driving Motion Planning",
+  "link": "https://arxiv.org/abs/2608.01201",
+  "description": "arXiv:2608.01201v1 Announce Type: cross \nAbstract: End-to-end autonomous driving (E2E AD) systems integrate perception, prediction, and planning into a single differentiable architecture. While these models show great promise, their standard training often relies on output-only supervision, which can lead to weak gradients for the hidden layers of increasingly complex models. Recent works have integrated vision-language model (VLM) supervision for latent features to address this, yielding substantial empirical gains, yet leaving the underlying theoretical mechanisms poorly understood. Our investigation into this methodology reveals that the resulting performance gains stem not from VLM reasoning capabilities, as previously assumed, but rather from the latent connections forged between the E2E AD model and ground-truth (GT) data during training. Building on this insight, we propose a probabilistic deep supervision framework that regularizes intermediate latent representations directly from GT data. By treating model latents as reparameterizable distributions, we optimize the architecture via the Evidence Lower Bound (ELBO). Our evaluations conducted on the nuScenes dataset demonstrate that supervising trajectory-related latents with future GT paths consistently improves planning performance. Using identical training data and E2E architectures, our method achieves an 8% reduction in planning L2 error and a 3% decrease in collision rates compared to competitive vectorized baselines, all while incurring negligible computational overhead.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

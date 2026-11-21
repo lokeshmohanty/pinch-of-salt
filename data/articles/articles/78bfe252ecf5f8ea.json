@@ -1,0 +1,14 @@
+{
+  "id": "78bfe252ecf5f8ea",
+  "title": "LETHE: Defending against Unauthorized Image-to-Video Generation via Value Diversity Collapse",
+  "link": "https://arxiv.org/abs/2610.13333",
+  "description": "arXiv:2610.13333v1 Announce Type: new \nAbstract: Image-to-video (I2V) diffusion models can animate a single reference image into high-quality, subject-consistent videos, posing threats of misuse as anyone can turn personal photos into fabricated videos without consent. A promising solution is to proactively add an adversarial perturbation to the image before release, such that videos generated from it would be unfaithful or visually corrupted. However, due to an insufficient understanding of what governs how subsequent frames read the reference image in modern I2V models, existing protections struggle to offer strong protection under common perturbation budgets. In this paper, we approach the problem by exploring this underlying reading mechanism. Through a convex geometric analysis, we theoretically identify the spread of the reference value vectors as a key factor governing this reading process, and empirically find that even a mild contraction of this spread can severely degrade the generated video, making it an efficient lever for protection. Guided by this insight, we propose LETHE, a novel protection method that directly disrupts this reading process. LETHE pairs two complementary objectives, where a value collapse objective drives the reference value vectors toward uniformity, while an attention attraction objective draws subsequent frames toward these collapsed tokens to amplify corruption. We further construct two human-centric I2V protection benchmarks and conduct extensive experiments with multiple modern I2V models, which demonstrate the state-of-the-art protection performance and versatility of LETHE.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR"
+  ]
+}

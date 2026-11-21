@@ -1,0 +1,13 @@
+{
+  "id": "16968e460382554b",
+  "title": "AgenTeeth: A Model-Agnostic Framework for Suppressing Hallucination in Frozen Vision-Language Models on Dental X-Rays via Tool Evidence Injection",
+  "link": "https://arxiv.org/abs/2609.17800",
+  "description": "arXiv:2609.17800v1 Announce Type: new \nAbstract: Vision-language models (VLMs) remain largely unreliable on panoramic dental radiographs and can rely on learned anatomical priors rather than evidence in the image. This is particularly problematic for tooth localization and spatial reasoning, and fine-tuned dental VLMs can retain the same spatial biases. We present AgenTeeth, a model-agnostic, tool-augmented framework that grounds frozen VLMs using seven specialized dental vision experts. A question-aware orchestrator selects the relevant tools, whose detections are mapped to FDI tooth numbers or anatomical regions and returned as structured findings together with annotated image overlays. A fresh synthesis call then answers the question using this evidence, without fine-tuning the underlying VLM. On MMOral-OPG-Bench, AgenTeeth improves four backbone VLMs by 12.9-23.0 percentage points over their baselines. Our strongest configuration reaches 65.66% on open-ended VQA, compared with 45.35% for OralGPT-Plus. The advantage also holds at matched scale: a frozen Qwen2.5-VL-7B-Instruct with AgenTeeth reaches 48.11%, exceeding OralGPT-Plus built on the same backbone after supervised fine-tuning and reinforcement learning for tool use. We release the framework, all seven expert models, and a dentist-annotated dataset for alveolar bone-loss detection in panoramic radiographs.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

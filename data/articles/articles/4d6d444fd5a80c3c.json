@@ -1,0 +1,14 @@
+{
+  "id": "4d6d444fd5a80c3c",
+  "title": "Which Depth Estimator for Jetson AGX Orin? A 2026 Benchmark of Monocular and Stereo Methods",
+  "link": "https://arxiv.org/abs/2610.27199",
+  "description": "arXiv:2610.27199v1 Announce Type: cross \nAbstract: The Jetson AGX Orin is a common computer for robots and vehicles, yet measured accuracy, speed and energy of current depth estimators on it are hard to find. We benchmark nine model families as of October 2026: the monocular Depth Anything V2 and 3, Depth Pro, MoGe-2, Metric3D v2 and UniDepth V2, and the stereo methods libSGM, NVIDIA ESS and Fast-FoundationStereo. Every method runs on the Orin as a TensorRT FP16 engine or native CUDA code at up to three input sizes, up to the full 5.7 MP, and is scored for metric accuracy against Middlebury 2014 ground truth (non-occluded pixels of the 10 scenes whose disparity stays below 256 px), GPU time, energy and licence. Stereo is far more accurate. At 30 fps, NVIDIA's ESS reaches 0.70% AbsRel in 8.6 ms and libSGM 0.73% in 25 ms; with more compute, Fast-FoundationStereo reaches 0.33%. The best monocular models reach 12% with the true focal length (Depth Anything 3 Metric-L in 33 ms, Depth Pro in 803 ms), and 3.8-4.0% only with an oracle per-image scale (MoGe-2-L, UniDepth V2-B, Metric3D v2-L). Stereo error falls as the input resolution grows; no monocular model improves, and the metric scale of most drifts away from the truth outside their training resolution. At depth discontinuities, which AbsRel barely registers, the monocular models scatter 17-46% of the edge points between foreground and background, learned stereo 2-9% and libSGM at full resolution 1%. We give recommendations per frame-rate budget and release all code, per-scene results and engine build scripts.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

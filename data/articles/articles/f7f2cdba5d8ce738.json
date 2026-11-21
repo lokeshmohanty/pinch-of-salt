@@ -1,0 +1,15 @@
+{
+  "id": "f7f2cdba5d8ce738",
+  "title": "From Architecture to Output: Structural Origins of Hallucination in Large Language Models and the Amplifying Role of Data",
+  "link": "https://arxiv.org/abs/2606.07537",
+  "description": "arXiv:2606.07537v2 Announce Type: replace-cross \nAbstract: Large language models produce fluent, confident, factually wrong output. Existing taxonomies classify these failures by output type -- intrinsic versus extrinsic, faithfulness versus factuality -- but say nothing about which computational component produced a given failure. We ask what would be required to attribute an individual hallucination to a specific component of the decoder-only stack. We treat three components -- self-attention's associative retrieval, the maximum-likelihood pretraining objective, and autoregressive commitment under exposure bias -- as candidate failure surfaces, justify their separability rather than assuming it, and specify an attribution procedure requiring only sampling access: an ordered set of three interventions on prefix, context, and frequency competition, together with a validation design based on independent annotation and a classifier baseline. We state five falsifiable predictions and identify competing accounts each would discriminate against. We analyse how instruction tuning, RLHF, DPO, retrieval augmentation, scale, and calibration bear on the argument. We execute a direct, pre-registered test of the commitment prediction (P3) across three model families: substituting a correct continuation at the point of divergence reduces downstream failing claims by 46.7 percentage points relative to baseline (p<10^-9). However, a wrong-fact substitution reduces errors at a statistically indistinguishable rate, and the model answers correctly in isolation on only 2.2% of items where substitution succeeded -- a genuine partial result rather than a confirmation. Dataset pathologies amplify each component without originating failure independently, supporting an asymmetric-dependence claim: components are necessary intermediaries for data-induced failure, but data defects are not necessary for component-induced failure.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

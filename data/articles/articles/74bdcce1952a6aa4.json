@@ -1,0 +1,16 @@
+{
+  "id": "74bdcce1952a6aa4",
+  "title": "LLM-PowerTrace: A Dataset of Time-Resolved GPU Power Traces for AI Compute",
+  "link": "https://arxiv.org/abs/2610.38315",
+  "description": "arXiv:2610.38315v1 Announce Type: cross \nAbstract: AI compute is becoming large and fast-changing electrical loads. Its impacts on data center infrastructure and power grids depend not only on total energy consumption, but also on how their power draw moves over sub-second to minute timescales, including peaks, ramps, and synchronized fluctuations across accelerators. Existing energy benchmarks for large language models (LLMs) report aggregate quantities such as joules per token and rarely release the underlying time-series measurements, leaving these power dynamics poorly characterized and difficult to model. We introduce LLM-PowerTrace, an open dataset of time-resolved, per-GPU power traces for LLM fine-tuning and inference, sampled every 100\\,ms on varying NVIDIA platforms paired with complete workload and system metadata. For fine-tuning, LLM-PowerTrace profiles open model families spanning a wide range of model sizes and fine-tuning methods, together with controlled sweeps over batch size, sequence length, precision, parallelism, and checkpointing. For inference, it covers variations in concurrency, GPU frequency, KV-cache and weight quantization, prompt and output lengths, and request-arrival patterns. LLM-PowerTrace profiles a set of open model families across a wide range of model sizes, and controlled sweeps over batch size, sequence length, precision, parallelism, and checkpointing for fine-tuning, and it sweeps concurrency, GPU frequency, KV cache and weight quantization, prompt and output lengths, and request arrival patterns for inference. Built upon power traces, we define power-grid-facing metrics as well as AI-compute power\\&amp;energy scaling law for extrapolating beyond the measured settings. Together, LLM-PowerTrace provides a dataset foundation for modeling, forecasting, and managing the fast-changing electrical behavior of AI compute.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.SY",
+    "cs.AI",
+    "cs.OS",
+    "cs.SY"
+  ]
+}

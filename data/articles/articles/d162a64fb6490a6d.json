@@ -1,0 +1,13 @@
+{
+  "id": "d162a64fb6490a6d",
+  "title": "Enhanced Knowledge Distillation for Detection Transformer via Teacher Prediction Refinement",
+  "link": "https://arxiv.org/abs/2609.19964",
+  "description": "arXiv:2609.19964v1 Announce Type: new \nAbstract: Detection Transformers (DETRs) achieve strong performance in object detection but remain challenging to deploy on edge devices due to their high computational cost. Existing DETR distillation methods mainly focus on aligning distillation points, while largely overlooking the quality of the teacher's supervision itself. We observe that due to stage-wise non-monotonic prediction behavior in DETRs, well-localized or correctly classified predictions from earlier stages may degrade in later ones, and some negative predictions become increasingly overconfident. As a result, relying solely on the current stage's predictions yields inaccurate and inconsistent supervision. To address this issue, we propose Teacher Prediction Refinement Distillation (TPRD), a plug-and-play module that refines teacher predictions before distillation by exploiting stage-wise prediction information. TPRD improves supervision quality through Positive Prediction Correction (PPC), which corrects degraded positive predictions by restoring more accurate ones from earlier stages, ensuring reliable localization and classification signals, and Negative Prediction Suppression (NPS) suppresses the influence of overconfident negatives, preventing them from providing misleading supervision to the student. To preserve informative dark knowledge, we further introduce Maximum Dark Knowledge Preservation (MDKP), which selectively refines target-class logits while retaining non-target relations. Extensive experiments on MS COCO and PASCAL VOC demonstrate the effectiveness and robustness of the proposed method. Our code is available at https://github.com/xingyitong1/TPRD.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "dce75a637b4b6200",
+  "title": "A Threshold-Free Visual-Semantic Matching Metric for Evaluating Consistency in Subject-Driven Image Generation",
+  "link": "https://arxiv.org/abs/2611.19780",
+  "description": "arXiv:2611.19780v2 Announce Type: replace \nAbstract: We propose a Threshold-Free Visual-Sematic Matching (TF-VSM) metric, to quantitatively evaluate localized visual consistency across varying poses and environments in subject-driven text-to-image generation. TF-VSM is a fully continuous, threshold-free visual consistency metric paired with an extended feature-disentanglement retraining schedule for dual-branch ResNet feature-aggregation networks. Existing metrics suffer from point-alignment dropouts, threshold sensitivity, and score instability. To address them, our TF-VSM, rather than enforcing rigid binary cutoffs ($T_s$, $T_v$), weights every object point by a non-linear semantic match confidence $w_j = ReLU(\\hat s_j)^2$ to yield a closed-form confidence-weighted score without any hand-tuned hyperparameters. Experimental results show that, TF-VSM attains Pearson 0.638 and Spearman 0.674 oracle correlation, improving over the pretrained VSM baseline (0.454/0.589) by +0.171/ + 0.116 after retraining, and drastically outperforming CLIP (-0.052/ -0.004), DINO (0.087/0.121), and VLMs (0.096/0.003). Six diagnostic ablations confirm that smooth confidence weighting is the right mechanism, that hard semantic gating is brittle (dropping to 0.533 Pearson at $T_s$=0.8), and that the threshold-free metric is essentially invariant to the training time loss balance $\\alpha$. Code is available at: https://github.com/bwshan/TF-VSM.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

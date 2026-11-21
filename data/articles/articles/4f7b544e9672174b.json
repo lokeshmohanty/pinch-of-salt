@@ -1,0 +1,13 @@
+{
+  "id": "4f7b544e9672174b",
+  "title": "Sketch, Don't Paint: Allocating Test-Time Compute in Generative Visual Reasoning",
+  "link": "https://arxiv.org/abs/2611.21812",
+  "description": "arXiv:2611.21812v1 Announce Type: new \nAbstract: Multimodal models increasingly reason by synthesizing pixels, sketching maze paths within interleaved chains of thought or rolling out video solutions frame by frame. Each visual thought runs the full diffusion schedule inherited from photorealistic synthesis, so iterative denoising dominates inference cost. We study how to allocate test-time compute along two axes: when to render visual thoughts rather than thinking in text or answering directly, and how many denoising steps each thought requires. Controlled interventions that vary only how the thought is rendered uncover three regimes. Causal thoughts carry the plan and become legible early: an 8-step sketch nearly matches a 50-step render in accuracy, commits to the same plan as often as two independent full renders agree, and in video models mostly fails by stalling short of the goal, so the rollout abstains. Decorative thoughts can be omitted without loss, whereas harmful thoughts lower accuracy. Because the regime depends on both model and task, always drawing is suboptimal. Across 14 model-benchmark pairs of three interleaved reasoners, answering directly, without any thinking, wins 9 pairs, and choosing among direct, text-only, and visual tiers from ten labeled examples per pair raises mean accuracy from 60.7% (always drawing) to 65.1%. Where drawing pays, we propose sketch-and-vote, which samples 8-step sketches (a step count chosen without labels) from independent noises until one answer reaches three votes. With this one setting, sketch-and-vote beats full rendering with fewer denoising steps on an image reasoner and two video reasoners, by 8.6 points on VSP spatial planning and by 9.6 and 22.1 points on mazes.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

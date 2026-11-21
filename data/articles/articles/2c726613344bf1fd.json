@@ -1,0 +1,13 @@
+{
+  "id": "2c726613344bf1fd",
+  "title": "From Training to Deployment: Post-Hoc Causal Feature Identification via Sensitivity Ratios",
+  "link": "https://arxiv.org/abs/2607.25546",
+  "description": "arXiv:2607.25546v1 Announce Type: new \nAbstract: Given a model that is already trained, which features does it rely on causally versus spuriously? Existing methods require access to the training procedure and cannot answer this post-hoc. We introduce the \\textbf{Normalised Sensitivity Ratio~(NSR)}, a post-hoc, model-agnostic diagnostic for this question under a structured-shift regime: environments differ primarily in the mean of spurious features while the causal mechanism and causal marginals remain stable, as in multi-site clinical data or multi-batch genomics. Within this regime, causal features induce constant model sensitivity across environments while spurious features track shift. NSR formalises this as the squared coefficient of variation of per-environment sensitivity. Under a linear structural causal model (SCM) with $K\\ge3$ non-degenerate environments, NSR achieves exact identification (Theorem~1). We fully characterise failure: weak shifts ($O(\\varepsilon^4)$ collapse), degenerate geometry, and proxy attenuation ($O((1-\\alpha)^4)$), giving practitioners quantitative criteria for assessing whether the regime holds. Finite-sample rates are $O_p(n^{-1})$ under the null and $O_p(n^{-1/2})$ under the alternative. Experiments confirm all theoretical predictions on synthetic data (area under the ROC curve [AUROC] $= 1.000$ under conditions satisfying the regime), show consistent rankings across five model families (Kendall $\\tau\\ge0.529$), and recover six of eight causal features on bike-sharing data (Precision@7 $= 0.75$) without modifying any trained model.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

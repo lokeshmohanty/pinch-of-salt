@@ -1,0 +1,14 @@
+{
+  "id": "26138e325d57425c",
+  "title": "PathJev: Decision-Native Vision-Language Modelling for Histopathology",
+  "link": "https://arxiv.org/abs/2610.32478",
+  "description": "arXiv:2610.32478v1 Announce Type: new \nAbstract: Vision-language models used for decisions in histopathology rarely return calibrated probabilities over the candidates a user cares about. Decision-native models write a question and a candidate set chosen at run time into the input and return a normalised distribution from a small decision head in one forward pass. We build PathJev-P, a decision-native model for histopathology: MedGemma-1.5-4B with LoRA adapters and a decision head, trained on 40,000 patch states from three public collections whose expert labels are turned into typed questions with organ-specific candidate sets and a \"none of these\" option. In a comparison over 3 seeds with an analysis plan fixed before testing, on test sets without documented overlap with the training data of the backbone, PathJev-P is more accurate than a generative model trained with the same backbone, data and selection rule, the zero-shot pathology model CONCH and a general medical decision model (balanced accuracy 0.541 against 0.492, 0.345 and 0.213); its advantage over the generative model comes from two organs absent from training. The calibration advantage depends on how the generative model's probabilities are read out. With the summed candidate log-likelihood used in previous work, PathJev-P has the lower calibration error (ECE 0.204 against 0.279); with a length-normalised read-out of the same generative model, examined post hoc, the two have similar mean calibration error (0.201) and the generative model is better calibrated on the unseen organs, where PathJev-P remains over-confident. A supervised linear probe on a pathology foundation model is better calibrated in every setting. In a qualitative whole-slide demonstration, PathJev-P labels unsupervised tissue clusters with abstention and separates carcinoma from other tissue while running the model on a fraction of the tiles.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "8ec3a8f846f5d8bc",
+  "title": "DirectUV: Image-Conditioned UV Texture Generation with Surface-Aware Positional Encoding",
+  "link": "https://arxiv.org/abs/2609.34651",
+  "description": "arXiv:2609.34651v2 Announce Type: replace \nAbstract: Generating high-quality UV textures for 3D meshes remains challenging. Multi-view projection pipelines suffer from occlusion and view inconsistency, and recent methods that generate textures directly in UV space still rely on auxiliary modules to supply 3D information, leaving the attention mechanism tied to UV-grid positions rather than to the underlying surface geometry. This mismatch limits coherence across seams and disconnected UV islands.\n  We propose DirectUV, an image-conditioned UV texture diffusion framework that operates in the latent UV space of a pretrained image VAE, in which a Diffusion Transformer denoises the UV latent given a single input image and a coarse UV map. At its core, Surface-Aware Positional Encoding (SAPE) replaces the standard 2D-grid positional encoding with encodings derived from per-token 3D surface coordinates obtained via UV-to-surface correspondence. As positional encodings define the distance metric used by attention, SAPE enables tokens to interact according to 3D positional proximity derived from surface correspondence rather than UV-grid distance, restoring coherence across seams and disconnected islands. A multi-level extension further assigns different attention heads to progressively finer subdivisions of the same latent UV patch, allowing the model to reason about surface structure at multiple granularities.\n  Experiments show that DirectUV produces sharper and more globally consistent textures than other baselines, with the largest improvements in occluded and view-unseen regions where projection-based methods leave gaps or stretched textures.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

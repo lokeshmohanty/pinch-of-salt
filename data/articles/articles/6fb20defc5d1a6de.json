@@ -1,0 +1,13 @@
+{
+  "id": "6fb20defc5d1a6de",
+  "title": "Region-aware error triage for medical image segmentation with groupwise conformal risk control",
+  "link": "https://arxiv.org/abs/2611.08962",
+  "description": "arXiv:2611.08962v1 Announce Type: new \nAbstract: Segmentation masks are increasingly reviewed rather than redrawn, which requires knowing where a mask is likely wrong. Learned error maps rank pixels by risk, but the number of pixels to warn is chosen ad hoc, and calibrating one warning threshold over all error pixels may leave errors far from the predicted contour under-flagged. We propose RACE-Triage, a post-hoc error triage framework that leaves the segmentation mask unchanged. A risk network is trained on out-of-fold predictions from backbone-independent inputs. The predicted contour partitions each image into a boundary band and a non-boundary region, and conformal risk control is applied separately in each region to bound the expected fraction of missed errors among cases with errors there. On ISIC 2018 dermoscopy and BUSI breast ultrasound (where patient identifiers are unavailable, so independence across images is assumed), pooled control met its overall target but missed on average 31.8% and 36.4% of non-boundary errors. Regional control reduced these fractions to 19.3% and 20.9% and raised the recall of size-filtered false-negative components from 0.722 to 0.818 and from 0.611 to 0.763. The mean warned area grew by 1.6 and 4.9 percentage points, and its 95th percentile reached 23.5% and 38.5%. The effect held across three seeds and a second backbone, and area-matched heuristics did not reproduce it. On the external PH$^2$ set, frozen thresholds exceeded both targets, whereas recalibration with 100 local images brought the mean over repeated splits below them. Regional calibration improves non-boundary error coverage at a measured increase in warned area.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

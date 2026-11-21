@@ -1,0 +1,13 @@
+{
+  "id": "dce09e7fb05bed9e",
+  "title": "SCAR: Bridging Coarse Retrieval and Fine Localization through Candidate Reranking",
+  "link": "https://arxiv.org/abs/2611.18240",
+  "description": "arXiv:2611.18240v1 Announce Type: new \nAbstract: Natural-language point-cloud localization typically retrieves candidate map cells and then predicts a position inside each candidate, yet the final output is still determined by retrieval order. A retrieval score measures region-description relevance, not whether the coordinates a region yields are accurate: a relevant region may produce a displaced prediction, and a lower-ranked region may contain a successful one. We study the final selection problem after the candidate pool and Fine predictions are fixed---how to choose the coordinate most likely to localize successfully, and under which conditions the gain holds. We propose SCAR (Spatial Consistency-Aware Reranking). SCAR treats each cell--Fine-coordinate pair as a localization hypothesis, interprets directional relations as functions of position, and reads spatial support at the backbone's actual Fine point (Fine-conditioned Evidence Readout). It organizes this readout with center support, semantic presence, retrieval score, and geometric offsets into a 23-D representation, trains a shared scorer with localization-success labels, and at inference reranks existing hypotheses and returns their original coordinates. Experiments cover four public backbones and a corrected Des4Pos reimplementation across five domains. Excluding one protocol-reference configuration, exploratory TEST point estimates on the remaining 24 configurations show Top-1@5\\,m above Original on 23 and Cell R@1 above Original on all 24. On development-set VAL, the Fine readout improves Top-1@5\\,m by 5.77 percentage points (pp) over a center surrogate on corrected Des4Pos*KITTI, and the complete scoring scheme improves it by 13.98\\,pp over FSR on MambaPlace$\\times$nuScenesFull; the latter measures the complete scheme, not learned ranking alone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

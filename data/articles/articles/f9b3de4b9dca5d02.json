@@ -1,0 +1,13 @@
+{
+  "id": "f9b3de4b9dca5d02",
+  "title": "Search-Aware Reinforcement Learning for Multi-Component Query Understanding in Roblox Game Search",
+  "link": "https://arxiv.org/abs/2609.30177",
+  "description": "arXiv:2609.30177v2 Announce Type: replace \nAbstract: Query understanding (QU) in production search systems has typically relied on separate models for each subtask, such as search intent classification, attribute extraction, and query rewriting. Large language models (LLMs) now make it possible to consolidate these subtasks into a single model that emits a unified QU output. This consolidation, however, introduces a new optimization challenge. A single model serves multiple components, each with a distinct downstream role within the search pipeline, and the utility of each depends on how the underlying search engine acts on it rather than on agreement with static labels. We present a search-aware reinforcement learning (RL) framework for multi-component QU based on a distill-then-RL paradigm. Teacher-student supervised fine-tuning (SFT) first yields a schema-compliant small policy. The RL stage then starts from this policy, executes each QU plan on the live production search engine, and optimizes every component with a reward tailored to its operational role, rather than relying on a single reward tied to the final search outcome. On a large-scale user-generated game platform, this component-specific optimization raises NDCG@20 by 8.9 points over the SFT policy and by 3.5 points over a single end-to-end reward. The resulting small, low-latency student models also surpass their much larger teacher, and our final model is being incrementally deployed in production.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

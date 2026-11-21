@@ -1,0 +1,13 @@
+{
+  "id": "37f208f8119a6ccf",
+  "title": "SafeVantage: Vantage-Aware Memory for Reliable Embodied Decisions",
+  "link": "https://arxiv.org/abs/2609.36906",
+  "description": "arXiv:2609.36906v1 Announce Type: new \nAbstract: Reliable embodied decisions under partial observability require informative observations and sufficient supporting evidence. However, semantic scores alone do not reveal which viewpoints justify a claim or where additional evidence should be acquired. We introduce SafeVantage, a vantage-aware semantic memory and active acquisition framework that retains each claim's supporting views, camera poses, and estimated target location, keeping positive support distinct from search coverage. A learned candidate-observability model uses claim-grounded geometry to predict target visibility at reachable viewpoints. These predictions guide view selection through expected reduction in terminal decision loss, accounting for travel cost and geometrically distinct corroboration. A calibrated head then combines support, spatial consistency, and coverage to produce Yes, No, or Abstain decisions. We evaluate SafeVantage on a category-presence benchmark spanning 232 unseen ProcTHOR houses and 7,424 paired episodes per method and action budget. Compared with validation-selected equal-budget baselines, SafeVantage achieves macro-F1 gains of 24.7% and 12.0% at eight and twelve actions, respectively, with lower risk and higher answer rates at both budgets and 31.7% less travel at eight actions. Equal-input HM3D experiments show lower selective risk under fixed observations, while controlled ScanNet interventions show that restoring supporting views improves downstream VLM answers. Ablations further support the contribution of candidate observability to decision quality and acquisition efficiency. Results demonstrate the value of claim-level viewpoint evidence for connecting semantic memory, active acquisition, and reliable decision-making. Code is available at https://safevantage.github.io",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

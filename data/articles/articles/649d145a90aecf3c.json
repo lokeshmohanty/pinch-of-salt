@@ -1,0 +1,13 @@
+{
+  "id": "649d145a90aecf3c",
+  "title": "End-to-End Self-Supervised RGB-T Tracking without Modality Misleading",
+  "link": "https://arxiv.org/abs/2609.37162",
+  "description": "arXiv:2609.37162v1 Announce Type: new \nAbstract: RGB-T object tracking leverages the complementary characteristics of visible and thermal infrared modalities to improve robustness under adverse conditions. Existing supervised methods typically rely on costly modality-aligned bounding box annotations, while most self-supervised approaches follow a two-stage pseudo-labeling paradigm, making tracker training sensitive to pseudo-label quality and preventing joint end-to-end optimization. In this paper, we propose ESMTrack, a fully end-to-end self-supervised RGB-T tracking framework without offline pseudo-label generation or dense frame-level bounding box annotations. Given only the standard initial-frame annotation used in visual tracking, ESMTrack learns discriminative and temporally consistent representations through two complementary objectives: a grounding triplet loss on annotated initial frames and a cross-frame temporal triplet loss on unlabeled search frames, with reliable samples selected by forward-backward consistency. To address modality dominance bias, ESMTrack employs a three-branch architecture consisting of a fusion branch and two unimodal branches for RGB and thermal inputs. We quantify modality contributions using the Average Peak-to-Correlation Energy by measuring response discrepancies between the fusion and unimodal branches. The resulting reliability estimates guide a training-time modality decoupling mechanism that suppresses dominant-modality shortcuts and adaptively weights cross-modal contrastive learning for task-level alignment. Extensive experiments on five RGB-T tracking benchmarks show that ESMTrack achieves competitive state-of-the-art performance, strong cross-dataset generalization, and real-time inference speed. The source code is available at https://github.com/LiShenglana/ESMTrack.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

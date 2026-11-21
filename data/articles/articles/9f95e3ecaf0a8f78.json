@@ -1,0 +1,15 @@
+{
+  "id": "9f95e3ecaf0a8f78",
+  "title": "Lifting 3D Gaussians: A Wavelet Multiresolution Representation for Scalable Gaussian Splatting Streaming",
+  "link": "https://arxiv.org/abs/2606.07179",
+  "description": "arXiv:2606.07179v2 Announce Type: replace \nAbstract: 3D Gaussian Splatting (3DGS) represents a scene as an unstructured set of primitives optimized at a single scale, offering no native support for progressive delivery to heterogeneous devices. Existing scalable approaches organize these primitives into independent quality layers or spatial hierarchies. However, maintaining separate splat representations across scales introduces redundancy, while independent layers have limited ability to correct coarse geometry as finer detail arrives. We present LiftGS, a multiresolution representation that organizes a scene into a coarse Gaussian set and a tree of refinements. Each refinement replaces one coarse Gaussian with two finer children whose attributes are learned relative to their parent. Inspired by wavelet lifting, we encode these changes using a shared detail vector and per-attribute factors that allow the two children to differ asymmetrically from the parent. A client first receives the coarse set, then reconstructs and substitutes children as refinement data arrives. This construction reuses previously transmitted attributes to encode finer detail and removes replaced parents from the active rendering set, reducing both refinement payload and rendering memory. Extensive experiments on four benchmark datasets show LiftGS cuts splat redundancy from over 65% to under 25%, reduces transmission payload and GPU memory by up to 2.4x and 5.5x over state-of-the-art scalable-3DGS baselines, achieves smooth quality transitions in simulated progressive delivery, and compresses a further 8.7x with standard coding at negligible quality loss. Project website: https://yuang-ian.github.io/liftgs/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM",
+    "eess.IV"
+  ]
+}

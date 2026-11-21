@@ -1,0 +1,13 @@
+{
+  "id": "836dedd7f988deaf",
+  "title": "FusionAudit: Pathway-Conditioned Robustness Auditing for Native Multimodal Models",
+  "link": "https://arxiv.org/abs/2610.21667",
+  "description": "arXiv:2610.21667v1 Announce Type: new \nAbstract: As vision-language models (VLMs) transition from frozen-encoder pipelines to native multimodal architectures, the visual channel increasingly serves as both a perceptual input and a carrier of rendered text that competes with user prompts. Current single-attack, pixel-centric evaluations fail to capture this complexity: they collapse distinct visual attack surfaces into a single scalar and ignore how architectural shifts alter vulnerability. We introduce PaRMA, an evidence-based auditing framework that defines pathway-conditioned risk over two primary image-level interventions: pixel perturbation and rendered-text insertion. Instead of arbitrary attack enumeration, PaRMA uses pathway-specific diagnostics to expose architecture-specific blind spots. Notably, we uncover a see-but-not-deceived signature where native VLMs attend heavily to typographic overlays but visually reject them, and we identify an objective mismatch between encoder-level and answer-level attacks in deep-fusion models. To exploit these findings, we instantiate FusionAudit, introducing two diagnostic-motivated attacks: MANTIS (margin-aware pixel perturbation) and Nat-Evid (host-congruent semantic insertion). Evaluating 18 open-weight VLMs across a novel nativeness taxonomy, we demonstrate that legacy single-attack rankings (e.g., PGD) are unstable for native models. Our diagnostic-driven attacks substantially raise the estimated residual risk, showing that PaRMA provides a falsifiable, evidence-driven auditing methodology for uncovering vulnerabilities missed by standard benchmarks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

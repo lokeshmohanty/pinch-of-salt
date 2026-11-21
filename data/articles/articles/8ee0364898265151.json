@@ -1,0 +1,13 @@
+{
+  "id": "8ee0364898265151",
+  "title": "LightCRS: Lightweight Multi-Domain Conversational Recommendation System",
+  "link": "https://arxiv.org/abs/2610.26948",
+  "description": "arXiv:2610.26948v1 Announce Type: new \nAbstract: Conversational recommender systems have recently adopted vision-language models to match user dialogue intents with multimodal product information. However, extending these methods to many product domains faces a dilemma: deploying a separately adapted VLM per domain scales cost linearly with the number of domains and requires routing each dialogue to the right model, while naively merging all domains into a single VLM degrades accuracy because product characteristics vary widely across categories. We propose LightCRS, a lightweight, query-conditioned framework for unified multi-domain multimodal conversational recommendation. LightCRS precomputes multimodal product representations once offline with frozen encoders. Online, a compact 5.3M-parameter module fuses this evidence for each dialogue via query-conditioned cross-attention, whose parameters are shared across all domains, and compares candidates jointly with an inter-candidate Transformer. To enable rigorous evaluation, we construct MM-R2A-25, a 25-domain benchmark pairing natural Reddit recommendation-seeking conversations with Amazon product listings. LightCRS achieves state-of-the-art average HR@1, NDCG@5, and MRR, improving HR@1 by 35.4\\% over the strongest baseline while reducing per-query latency by 266 times. Joint multi-domain training itself improves HR@1 by 15.2\\% over separately trained single-domain models.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

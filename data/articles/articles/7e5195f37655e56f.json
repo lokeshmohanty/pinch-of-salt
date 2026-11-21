@@ -1,0 +1,13 @@
+{
+  "id": "7e5195f37655e56f",
+  "title": "ReACT-CLIP: Response-Aware Test-Time Defense for Vision--Language Models",
+  "link": "https://arxiv.org/abs/2608.01067",
+  "description": "arXiv:2608.01067v1 Announce Type: new \nAbstract: Training-free test-time defenses offer a practical way to improve the adversarial robustness of CLIP-style vision--language models without modifying the pretrained model. However, their correction strength is typically fixed for a narrow range of attack budgets, even though the attack budget is unknown at inference and the required correction varies across samples. We show that this mismatch causes existing defenses to degrade sharply as attacks strengthen. We introduce ReACT-CLIP, a response-conditioned test-time defense that separately determines how strongly each input should be corrected and whether defensive intervention is necessary. Our key observation is that the relative increase in CLIP visual-feature drift between low- and high-noise probes provides a graded, sample-specific proxy for correction demand. ReACT-CLIP maps this relative cross-noise drift to the Gaussian noise scale used to construct a stable, noise-averaged feature anchor, enabling the corrective reach to adapt to each input. To determine whether intervention is necessary, we further observe that clean inputs retain stable class-probability distributions under weak spatial augmentations, whereas adversarial inputs exhibit greater variation. ReACT-CLIP quantifies this variation using a prediction-instability score computed by Jensen--Shannon divergence and combines it with relative cross-noise drift to form the defensive intervention score. ReACT-CLIP requires no model or prompt training, and its correction-strength mapping is calibrated once and fixed across datasets and attack budgets. Across 12 downstream datasets, as well as ImageNet and its distribution-shifted variants, ReACT-CLIP delivers substantial robustness gains across diverse attack types and strengths while largely preserving clean accuracy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

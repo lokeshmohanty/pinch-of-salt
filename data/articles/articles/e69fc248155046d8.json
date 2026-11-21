@@ -1,0 +1,13 @@
+{
+  "id": "e69fc248155046d8",
+  "title": "DeepSTEP: Simultaneous Tracking and Estimation of Pose for Animals and Humans",
+  "link": "https://arxiv.org/abs/2503.13344",
+  "description": "arXiv:2503.13344v3 Announce Type: replace \nAbstract: Maintaining a consistent identity across video frames while estimating pose is crucial for downstream tasks such as behavior analysis and action recognition, yet existing pipelines largely decouple tracking and pose estimation. Top-down methods rely on per-frame detections followed by identity association, leading to increased computational cost and error propagation, whereas bottom-up approaches often struggle to preserve identity reliably in multi-instance settings. To address these limitations, we introduce DeepSTEP (STEP), a Transformer-based framework for joint tracking and pose estimation across diverse animal species and humans. STEP unifies localization, identity maintenance, and keypoint estimation into a single model, eliminating the need for per-frame detections or post hoc matching. Our approach leverages discriminative model weight prediction to propagate target identity across frames while predicting anatomically meaningful keypoints. Discriminative model prediction typically requires predefined target states. In contrast, STEP assumes only an initial bounding box in the first frame, removing the need for explicit keypoint initialization. This is enabled by two components: Gaussian Map Soft Prediction (GMSP) and Offset Map Regression Adapter (OMRA), which allow direct keypoint prediction and simplify inference. Starting from the initial bounding box, STEP tracks the subject and estimates its pose in subsequent frames. We train and evaluate STEP on datasets spanning multiple species, demonstrating strong performance and greater efficiency than existing methods. By jointly modeling tracking and pose, STEP provides an effective and scalable solution.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

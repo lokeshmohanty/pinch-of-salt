@@ -1,0 +1,14 @@
+{
+  "id": "73e1ff0020839f0c",
+  "title": "HERMES: A Hybrid Ensemble for Head-and-Neck Tumor Segmentation, TN Staging, and Recurrence-Free Survival on PET/CT",
+  "link": "https://arxiv.org/abs/2607.26498",
+  "description": "arXiv:2607.26498v1 Announce Type: new \nAbstract: We present HERMES (Hybrid Ensemble for Radiotherapy-target segmentation, Malignancy staging, and Event-free Survival), a single containerized algorithm for the three HECKTOR 2026 subtasks: segmentation of the primary tumor (GTVp) and pathological lymph nodes (GTVn), radiological T/N staging, and recurrence-free survival (RFS), computed from a paired FDG-PET/CT scan and an electronic health record. A 10-fold ensemble of STU-Net Small networks produces the segmentation; the predicted mask then drives two downstream tasks. Rather than pass a generic radiomics vector to the staging models, we derive from the predicted masks a compact set of geometry features aligned with the size and number axes of AJCC/UICC 7th-edition radiological N/T staging. On internal cross-validation these features raise N-stage balanced accuracy from 0.691 to 0.720 (+0.030), our largest single design gain, at lower feature dimensionality. For prognosis we combine complementary deep and clinical risk experts in an equal-weight ensemble, and train one deep expert with a concordance-tracking survival loss of our own, whose value approximates the concordance index during training. Every component was selected on honest out-of-fold predictions under a regularization-oriented protocol, with no tuning on the public validation set, and deployed as two decorrelated submissions. On the HECKTOR 2026 validation leaderboard, HERMES achieved a weighted score of 0.6454 (Mean Dice 0.641, T balanced accuracy 0.580, N balanced accuracy 0.642, RFS C-index 0.679) and qualified for the testing phase. Team: AMC_HNC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "physics.med-ph"
+  ]
+}

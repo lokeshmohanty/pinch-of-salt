@@ -1,0 +1,13 @@
+{
+  "id": "fcce4784f34771ef",
+  "title": "Long-MDR: Long-Context Reinforcement Learning for Multimodal Deep-Research Agents",
+  "link": "https://arxiv.org/abs/2610.05195",
+  "description": "arXiv:2610.05195v3 Announce Type: replace \nAbstract: The next generation of multimodal research agents must reason over long-lived research histories rather than short model completions. During a single task, an agent may repeatedly search the web, inspect visual evidence, revisit earlier hypotheses, and accumulate tens of thousands of tokens of multimodal context. Despite this trend, online RL for multimodal research agents remains largely confined to shorter contexts and interaction horizons. We push online RL training to 128k context and 75+ tool-interaction turns. To our knowledge, this is the first online multimodal deep-research RL study trained at 128k context, and the first trained with a 75 tool-turn horizon. Scaling to this regime exposes several practical limitations of conventional RL training. Early in training, weak policies make poor use of large interaction budgets, causing expensive rollouts with little reward improvement. Later, policy entropy can collapse before performance has saturated, prematurely ending useful learning. We introduce Long-MDR, a three-component training recipe designed specifically for this setting: On-Policy Distillation Warmup, Progressive Horizon Expansion, and Entropy-Triggered Rescue. Together, these techniques improve both the learning efficiency and stability of long-horizon RL, enabling continued gains in a regime where direct training is slow and costly. Code will be available at https://github.com/navileon/Long-MDR",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

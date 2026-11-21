@@ -1,0 +1,14 @@
+{
+  "id": "dcb2bf426fca80ba",
+  "title": "ForeseeDrive: Future-Token Conditioning for Anticipatory Generative Driving",
+  "link": "https://arxiv.org/abs/2611.14286",
+  "description": "arXiv:2611.14286v1 Announce Type: cross \nAbstract: Generative driving planners can represent diverse ego futures, but a downstream scorer can choose only among sampled candidates; it cannot recover an absent maneuver. We present ForeseeDrive, which turns future scene evolution into a deployable interface for shaping candidate generation. Rather than reconstructing dense future states or scoring a fixed menu, ForeseeDrive derives query-indexed tokens from logged actor motion, occupancy evolution, route interactions, and TTC margins, and predicts the same token space from present context at deployment. The tokens condition trajectory geometry before candidates materialize. A zero-token-gated residual path and candidate-preservation loss limit unnecessary drift, while a TTC-margin guard targets brittle safe-to-unsafe boundary crossings. Under their respective benchmark protocols, ForeseeDrive reaches 89.2 PDMS on NAVSIM navtest, 0.41\\,m average L2 and 0.05\\% collision rate on nuScenes validation, and a 76.50 driving score on Bench2Drive. Controlled DiffusionDrive/NAVSIM diagnostics show an exact zero-token no-op, a small aligned-over-shuffled selected-PDM advantage under preservation, mixed oracle-best quality, and localized TTC-boundary failures. Together, the benchmark results and bounded mechanism tests support future-conditioned generation as a practical interface for anticipation. Code is included in the supplementary materials.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

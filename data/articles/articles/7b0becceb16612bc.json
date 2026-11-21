@@ -1,0 +1,14 @@
+{
+  "id": "7b0becceb16612bc",
+  "title": "JaRS: Contrast-Free Localization of Memorized Regions in Diffusion Models via Jacobian Row Sums",
+  "link": "https://arxiv.org/abs/2611.18024",
+  "description": "arXiv:2611.18024v1 Announce Type: new \nAbstract: Diffusion models sometimes memorize and reproduce regions of their training images, raising privacy and copyright concerns. We aim to localize these regions. Existing contrast-based methods use the diagonal of the denoiser Jacobian, which reflects the posterior variance of each pixel. However, a small diagonal entry is ambiguous: it signals either memorization or averaging over many neighboring pixels in smooth or predictable regions. To resolve this ambiguity, these methods subtract a reference map, which requires a second evaluation with a null prompt or an earlier checkpoint. Unconditional models have no null prompt, and earlier checkpoints are unavailable in general. We show that Jacobian row sums (JaRS), unlike the diagonal, separate memorization from local averaging without a reference map. Pairing JaRS with an image-level detection score that uses the same statistic at an early denoising step yields JaRS+. Across Stable Diffusion v1.4 and v2.1, Realistic Vision v5.1, and an unconditional diffusion Transformer (DiT), JaRS+ outperforms contrast-based localization methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

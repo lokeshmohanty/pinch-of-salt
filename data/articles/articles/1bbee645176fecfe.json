@@ -1,0 +1,13 @@
+{
+  "id": "1bbee645176fecfe",
+  "title": "GAAC: Lossless KV Compression for Bandwidth-Efficient LLM Inference on Personal Devices",
+  "link": "https://arxiv.org/abs/2610.38210",
+  "description": "arXiv:2610.38210v1 Announce Type: new \nAbstract: Weight-only, lossy quantization substantially reduces the storage and memory requirements for serving large language models (LLMs), but the growing key-value (KV) cache remains a bottleneck for long-context inference on personal devices. We present Group-Adaptive Additive Codec (GAAC), a lossless KV compression and serving system that exploits exponent redundancy to reduce storage and accelerate attention without introducing KV approximation. GAAC encodes BF16 exponents using calibrated per-channel base-plus-offset codes over contiguous ranges. GAAC adapts code widths across small groups while preserving KV values bit-for-bit. A fused attention kernel reconstructs KV tiles on the fly, avoiding full-cache decompression. Block-wise compression and fixed-capacity slots support incremental cache updates and paged serving. Across five tested models, GAAC achieves 1.405-1.407$\\times$ lossless BF16 KV compression. We also study compression performance on low-precision tensors FP8 E4M3 caches ( 1.09-1.14$\\times$) and E5M2 caches (1.25-1.30$\\times$). On NVIDIA DGX Spark, GAAC accelerates decode attention at a 64K-token context by 1.19-1.27$\\times$ and end-to-end W4A16 decode steps by 1.04-1.15$\\times$. In serving, it reduces resident KV memory by approximately 26% and increases aggregate throughput by 13-29% under comparable KV-memory budgets. On Apple M4, GAAC achieves 1.02-1.25$\\times$ attention speedups, demonstrating portability beyond NVIDIA GPUs.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

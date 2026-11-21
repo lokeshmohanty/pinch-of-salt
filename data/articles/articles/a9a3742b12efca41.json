@@ -1,0 +1,13 @@
+{
+  "id": "a9a3742b12efca41",
+  "title": "PulseBound: Future-Beat State Forecasting Under an Explicit Information Boundary",
+  "link": "https://arxiv.org/abs/2610.12010",
+  "description": "arXiv:2610.12010v1 Announce Type: new \nAbstract: Predictive representation learning from photoplethysmography (PPG) can violate causal information access even with causal attention, as normalization, nonlocal transforms, or companion views may depend on withheld samples. We introduce PulseBound, a PPG representation learner combining physiologically structured future-beat prediction with an explicit stored-window information boundary. A content-independent cutoff separates the visible prefix from the prediction target. Prefix-only normalization, suffix replacement before derived-view construction, and aligned masking ensure that encoder inputs depend only on the visible prefix and cutoff. This yields stored-suffix invariance: with fixed model state, randomness, prefix, and cutoff, changing the stored suffix cannot change the forecast context. A shared horizon-conditioned head predicts nine rhythm and morphology descriptors for up to four extractor-valid future beats, using elementwise validity masks; optional ECG-derived pulse-arrival-time supervision is restricted to training. On MIMIC and VitalDB groups held out from PulseBound backbone pretraining, PulseBound reduces nine-state transformed-space MAE relative to last-visible-beat persistence by 28.06% and 22.22%, respectively, with gains in MAE, MAE-Skill, and Spearman correlation across all 40 source-cutoff-horizon cells. In a separate comparison of seven models on 13 downstream tasks, PulseBound achieves the best mean on nine frozen linear-probe and seven full-fine-tuning tasks. Stored-suffix interventions cause zero recorded changes in forecast contexts or predictions, with zero suffix-input gradients at audited precision under the stored-window interface. These findings separate three testable aspects of predictive physiological representation learning: information access, supervised future structure, and transfer.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

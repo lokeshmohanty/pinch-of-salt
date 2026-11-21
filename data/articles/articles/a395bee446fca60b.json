@@ -1,0 +1,13 @@
+{
+  "id": "a395bee446fca60b",
+  "title": "Fast Training-Free Low-Light Video Enhancement with a Frozen Image Diffusion Prior",
+  "link": "https://arxiv.org/abs/2611.22551",
+  "description": "arXiv:2611.22551v1 Announce Type: new \nAbstract: Pretrained image diffusion models can enhance low-light video without low-light training data and without retraining for a new camera. ZVRD, the only published training-free method for low-light video, is too slow to use: our implementation needs over a minute per $256 \\times 256$ frame. We present a causal, training-free pipeline that adds two temporal components to a frozen MR. Illuminate image prior. Temporal input fusion recursively averages motion-compensated low-light frames before diffusion inversion. Late-start offset propagation runs the full sampling trajectory only on key frames. Each non-key frame inverts the low-noise part of its own trajectory and adds an enhancement offset warped from the latest key frame. At ZVRD's own resolution the pipeline is $261\\times$ faster than ZVRD and scores better on all five metrics we report. On 13 held-out SDSD clips at $1280 \\times 720$, it improves on framewise eight-step processing by 0.55 dB in PSNR and 0.034 in LPIPS and halves the warping error, in 10% less time. Measurements inside the model show why, and a linear-Gaussian model of inversion explains them. Fusion removes frame-to-frame noise before inversion amplifies it. A flow error perturbs the transported offset ten times less than it perturbs a transported state. The perceptual gain does not transfer to low resolution: at $346 \\times 260$, LPIPS is worse by 0.028. At 0.65 frames per second, the pipeline is an offline method.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

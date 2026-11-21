@@ -1,0 +1,14 @@
+{
+  "id": "b02ff23791d3e3f7",
+  "title": "Bandits in Prod: Hyperparameter Optimization at Inference Time",
+  "link": "https://arxiv.org/abs/2609.01335",
+  "description": "arXiv:2609.01335v1 Announce Type: cross \nAbstract: Many production systems can assess a configuration only by using it on live requests and observing noisy feedback. Modern agentic systems are a prominent example, with inference-time choices such as model selection, retrieval depth, prompting strategy, and decoding temperature, yet often with no representative validation data. We formalize this setting as Online Hyperparameter Optimization (OHPO) and cast it as an infinitely many-armed bandit over mixed and conditional search spaces. We introduce IMABO, a general framework that combines any bandit policy for choosing among already sampled configurations with any oracle for proposing new ones. We instantiate it with IMOSS, a restart-free anytime policy whose active set grows as $t^{\\beta}$, and prove an expected cumulative quantile-regret bound of $O(p_\\rho^{-1/\\beta} + T^{(1+\\beta)/2})$, where $\\beta\\in(0,1)$ controls active-set growth and $p_\\rho$ lower-bounds the probability that a proposed configuration falls in the top-$\\rho$ fraction of the search space. We combine IMOSS with three practical oracles: a Tree-structured Parzen Estimator, an incumbent-mutation oracle driven by a per-coordinate bandit, and a pretrained tabular foundation model, all three improving over the uniform random oracle baseline. IMABO obtains the lowest cumulative regret across diverse OHPO settings, from tuning classical machine-learning models to configuring LLM-based agents.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f7271aa4163236af",
+  "title": "Every View Counts: View-Consistent Panoptic Quality for Multi-view Panoptic Segmentation",
+  "link": "https://arxiv.org/abs/2610.05911",
+  "description": "arXiv:2610.05911v2 Announce Type: replace \nAbstract: Multi-view panoptic segmentation assigns a semantic class and a scene-level instance ID to every pixel of an unordered set of images, and recent feed-forward 3D models predict these labels for the input views in a single forward pass. Their predictions, however, have been evaluated with the scene-level PQ (PQ^scene) borrowed from per-scene optimization methods, typically on rendered held-out views. PQ^scene tiles all views of a scene into a single image, so that a missed appearance or a change of ID lowers the score of the matched pair only in proportion to its area. We propose View-Consistent Panoptic Quality (VC-PQ), which extends PQ from a single image to a set of input views, counts equally every view in which an instance is visible, and penalizes a prediction that is not visible in the same views as its ground truth. A decomposition of VC-PQ attributes the score a method loses to mask accuracy, view consistency, and the matching threshold. A single additional parameter recovers the area weighting of tiling for comparison. Under a fixed evaluation protocol on ScanNet++ and ScanNetv2, recent feed-forward methods are evaluated with VC-PQ and PQ^scene, and the decomposition shows where each of them loses its score. Controlled perturbations of the ground truth show that VC-PQ responds to the number of views in which an instance is missed or changes ID, whereas PQ^scene responds to their area. The aim of this work is to make view consistency part of the evaluation of multi-view panoptic segmentation, with VC-PQ reported alongside PQ^scene. The evaluation code and the input sets of the protocol are available at https://github.com/Renem24/vcpq.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

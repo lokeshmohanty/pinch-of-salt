@@ -1,0 +1,15 @@
+{
+  "id": "8f2cea521a4fdd27",
+  "title": "CAF\\'E: Causal Black-Box Testing of Machine Unlearning",
+  "link": "https://arxiv.org/abs/2509.16525",
+  "description": "arXiv:2509.16525v2 Announce Type: replace-cross \nAbstract: Machine learning models are increasingly deployed as software components that must evolve as requirements change. When specific training records or features must no longer influence a deployed model, machine unlearning aims to remove that influence without retraining from scratch. Because unlearning is often approximate, its effectiveness must be tested. Such tests must often treat the model as a black box, without access to its parameters, training history, or unlearning procedure. Features pose a further challenge: even after a feature is removed from a model's inputs, its influence can persist through downstream features. Many existing checks examine only the feature's direct use and can therefore certify a model that still depends on it. We frame unlearning testing as specification-based testing and present CAF\\'E, which, using only a deployed model's predictions, intervenes on the feature, propagates the change to its downstream features, and checks whether the predictions still respond. CAF\\'E measures a target's residual influence through both its direct and indirect causal paths, and its fine-grained diagnostics show which channels and subgroups still carry it. On two causal-network benchmarks with four unlearning methods, CAF\\'E ranks residual influence with 0.92--0.93 pairwise accuracy, against at most 0.71 for existing checks, which fail in both directions: they certify models whose influence persists through downstream features and flag correctly unlearned ones. On real census data, CAF\\'E likewise exposes influence that survives retraining yet goes unnoticed by direct-input checks.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

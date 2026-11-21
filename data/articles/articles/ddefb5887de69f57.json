@@ -1,0 +1,14 @@
+{
+  "id": "ddefb5887de69f57",
+  "title": "ProtoDCS: Towards Robust and Efficient Open-Set Test-Time Adaptation for Vision-Language Models",
+  "link": "https://arxiv.org/abs/2602.23653",
+  "description": "arXiv:2602.23653v3 Announce Type: replace-cross \nAbstract: Large-scale Vision-Language Models (VLMs) exhibit strong zero-shot recognition, yet their real-world deployment is challenged by distribution shifts. While Test-Time Adaptation (TTA) can mitigate this, existing VLM-based TTA methods operate under a closed-set assumption, failing in open-set scenarios where test streams contain both covariate-shifted in-distribution (csID) and out-of-distribution (csOOD) data. This leads to a critical difficulty: the model must discriminate unknown csOOD samples to avoid interference while simultaneously adapting to known csID classes for accuracy. Current open-set TTA (OSTTA) methods rely on hard thresholds for separation and entropy minimization for adaptation. These strategies are brittle, often misclassifying ambiguous csOOD samples and inducing overconfident predictions, and their parameter-update mechanism is computationally prohibitive for VLMs. To address these limitations, we propose Prototype-based Double-Check Separation (ProtoDCS), a robust framework for OSTTA that effectively separates csID and csOOD samples, enabling safe and efficient adaptation of VLMs to csID data. Our main contributions are: (1) a novel double-check separation mechanism employing probabilistic Gaussian Mixture Model (GMM) verification to replace brittle thresholding; and (2) an evidence-driven adaptation strategy utilizing uncertainty-aware loss and efficient prototype-level updates, mitigating overconfidence and reducing computational overhead. Extensive experiments on CIFAR-10/100-C and Tiny-ImageNet-C demonstrate that ProtoDCS achieves state-of-the-art performance, significantly boosting both known-class accuracy and OOD detection metrics. Code will be available at https://github.com/O-YangF/ProtoDCS.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

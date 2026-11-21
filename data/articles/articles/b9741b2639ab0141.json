@@ -1,0 +1,13 @@
+{
+  "id": "b9741b2639ab0141",
+  "title": "RangeRectQuant: Compressing Scientific Fields for Every Future Rectangular Sum",
+  "link": "https://arxiv.org/abs/2610.36873",
+  "description": "arXiv:2610.36873v1 Announce Type: new \nAbstract: Scientific rasters are often stored before the regions to be measured are known. Independent pixel-error bounds can force exact integer reconstruction when one absolute error budget covers every future rectangle. Coordinated changes allow every pixel to change while every rectangular sum remains accurate. A prefix sum accumulates values from the top-left corner. Four such sums determine any rectangular total. RangeRectQuant preserves the pixel range and designated exact samples while controlling errors in prefix sums. At each row position, we characterize exactly which errors let the remaining pixels meet these constraints. These errors form a single integer interval, even when many completions exist. A backward pass finds its endpoints; a forward pass uses them to choose quantized pixels. The resulting field meets the prescribed error budget for every axis-aligned rectangle, with linear work and workspace proportional to one row. Experiments on geographically held-out built-surface and water-occurrence maps show substantial storage savings over alternatives meeting the same requirements. Data producers encode once; later users measure arbitrary rectangles without the source, re-encoding, or query-specific correction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

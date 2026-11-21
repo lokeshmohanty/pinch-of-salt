@@ -1,0 +1,13 @@
+{
+  "id": "0212df69d6790b15",
+  "title": "Fast Preemptive Robustification: High-Frequency Response Anti-Aligns Shared Vulnerability",
+  "link": "https://arxiv.org/abs/2603.25244",
+  "description": "arXiv:2603.25244v2 Announce Type: replace \nAbstract: Adversarial attacks can readily compromise deep neural networks (DNNs). In particular, transferable attacks (TAs) exploit the shared vulnerabilities among DNNs, enabling perturbations crafted on surrogates to transfer to unseen models. Training-time and post-attack defenses have been extensively studied for combating TAs. Orthogonal to these approaches, preemptive robustification (PR) has emerged as a pre-attack defense that enhances the robustness of benign samples by superimposing protective variations before attacks. Despite its promise, PR remains underexplored and faces several important limitations. First, dependence on well-trained surrogate classifiers limits applicability, as surrogates are task-specific and may even be unavailable in some practical settings. Second, the required iterative optimization or dedicated PR generator training incurs substantial costs. Third, the generated variations are opaque to humans. To address these, we seek an efficient PR that is surrogate-free, optimization-free, training-free, and human-interpretable. Intriguingly, we discover a numerical correlation between the shared vulnerabilities of DNNs and Laplacian responses, with their cosine similarity being significantly negative. This indicates that negated high-frequency response constitutes an important component of shared vulnerabilities. Consequently, strengthening Laplacian responses counteracts this component, improving resistance to TAs. Building upon this insight, we propose Fast Preemptive Robustification (FPR), which performs Laplacian sharpening via a single channel-wise convolution with a 3\\times3 kernel. FPR is simple yet effective, as demonstrated by extensive experiments. Specifically, FPR reduces the attack success rate (ASR) of untargeted TAs by 12.7% and that of targeted TAs from 10.7% to 4.1%. Code will be released publicly.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

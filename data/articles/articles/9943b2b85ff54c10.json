@@ -1,0 +1,15 @@
+{
+  "id": "9943b2b85ff54c10",
+  "title": "Calculation and rejection diverge in language models tested at known mechanical limits",
+  "link": "https://arxiv.org/abs/2610.38096",
+  "description": "arXiv:2610.38096v1 Announce Type: cross \nAbstract: When a language model returns engineering quantities with the status \"solved\", software that trusts it passes them on, even when the requested design is physically impossible. Such failures could reflect poor calculation, how the answer is requested, or a failure to judge feasibility. We set beam loads and disk speeds at known percentages above or below plastic collapse or burst, measured each model's limit calculation separately and tested 12 models in 4,860 calls, including follow-up experiments on new designs. We find that a model can recognize an impossible design when asked only whether it is feasible, yet accept the same design, reporting \"solved\", when asked for a full answer. Three models accepted beams 10 to 30% beyond collapse despite precise limit calculations in separate questions, and many accepted replies stated the violation. Asked only about feasibility, Opus 5 and Gemini 3.8 Flash rejected every impossible new design they were given, including those accepted in full answers, without false alarms. Rewording when to decline or changing the answer format raised rejection on the original beams, but not consistently on new designs. Software and benchmarks using a model's status should test feasibility judgment and full-answer rejection separately, and report the exact prompt.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CE",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

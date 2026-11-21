@@ -1,0 +1,13 @@
+{
+  "id": "de02f3331fe0bfea",
+  "title": "How Often Should a Recommender Call an LLM? Value-Weighted Routing, Monitoring, and Seasonal Robustness",
+  "link": "https://arxiv.org/abs/2607.25068",
+  "description": "arXiv:2607.25068v1 Announce Type: new \nAbstract: Routing decisions between a cheap heuristic and an expensive large language model (LLM) are typically framed as a difficulty problem: send the hard cases to the expensive path. We argue this framing is incomplete because difficulty and business value are distinct axes - a difficult cheap item and a difficult costly item do not have the same cost of error. We present Value Router, a fully synthetic simulation of a retail merchandising pipeline that routes items using only estimated difficulty and estimated value, never ground truth. The study has three stages. First, a value-weighted threshold router is compared with a difficulty-only and a random baseline on a synthetic catalog with an inverse correlation between category volume and value. Value-weighting matches the difficulty-only baseline's recall of true high-value items (60%) while achieving substantially higher precision (98.3% vs. 94.3%). Second, a decision logger and monitor expose a failure mode hidden by aggregate metrics showing that the aggregate result is driven almost entirely by between-category differences rather than per-item discrimination. Third, a simulated Black Friday demand surge (2.5 volume with a shift toward higher-value categories) compares a static router, a seasonally tuned router, and two slow-path budget policies. All results are from a controlled synthetic simulation with experimenter-defined ground truth and illustrate design principles for cost-aware routing systems rather than validated real-world claims.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

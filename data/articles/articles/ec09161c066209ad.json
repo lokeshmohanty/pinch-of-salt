@@ -1,0 +1,14 @@
+{
+  "id": "ec09161c066209ad",
+  "title": "PolicyMem: Geometric Policy Memory for LLM Governance",
+  "link": "https://arxiv.org/abs/2609.13734",
+  "description": "arXiv:2609.13734v2 Announce Type: replace-cross \nAbstract: Effective LLM governance extends beyond detecting unsafe responses to guiding their correction through closed-loop assessment, revision, and verification. Learning-based guards provide strong semantic discrimination but often leave policy knowledge implicit in trained parameters, limiting its explicit reuse across stages. Programmable guardrails make policies explicit through prompts and workflows, but rely heavily on manual engineering to operationalize them. This motivates explicit policy representations that are both learnable and reusable across governance operations. To this end, we introduce PolicyMem, a geometric policy memory that compiles natural-language policies into learnable low-rank subspaces for reuse across governance stages. A policy assessor projects query-response representations onto these subspaces, producing evidence that directly mediates safety judgments and policy attribution. A response rewriter uses the implicated policies to revise unsafe responses, with the same assessor re-evaluating the revised responses. Beyond inference, the same memory constructs training data from model-generated candidates to supervise the rewriter without external teacher calls. Across five widely used benchmarks, PolicyMem achieves the best average unsafe-behavior detection performance among representative baselines while supporting effective policy attribution, rewriting, and post-intervention assessment through the shared policy memory.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "b161b851d1ee4b33",
+  "title": "Sim(3)-TurboReg: Robust and Efficient Scale-Aware Registration via Tri-Scale Consistency",
+  "link": "https://arxiv.org/abs/2611.14135",
+  "description": "arXiv:2611.14135v1 Announce Type: new \nAbstract: Feed-forward 3D foundation models recover geometry at high fidelity, yet inference memory constraints keep them from processing long sequences natively. Current streaming systems work around this limit with sliding-window chunking, which introduces severe monocular scale ambiguity. Resolving this ambiguity requires Sim(3) registration that stays accurate and efficient under outlier contamination. We introduce Sim(3)-TurboReg, which reformulates the compatibility graph construction of TurboReg by replacing absolute distance constraints with a strict Tri-Scale Consistency (TSC) criterion. Our analysis shows that TSC suppresses both mismatching and coordinate-distortion outliers. We integrate the resulting solver into existing streaming systems and obtain high-fidelity, kilometer-scale reconstruction for feed-forward models. On controlled unknown-scale registration at 90% outliers, ours matches RANSAC accuracy with 92.5% lower median latency. In DA3-Streaming on KITTI, ours improves mean ATE RMSE by 22.2% and reduces mean end-to-end time by 16.6%. Code: https://github.com/ivan-zzj/Sim3-TurboReg",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

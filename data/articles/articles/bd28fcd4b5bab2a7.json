@@ -1,0 +1,16 @@
+{
+  "id": "bd28fcd4b5bab2a7",
+  "title": "VTAM: Efficient Visuo-Tactile World-Action Models for Contact-Rich Manipulation without Tactile Pretraining",
+  "link": "https://arxiv.org/abs/2603.23481",
+  "description": "arXiv:2603.23481v2 Announce Type: replace-cross \nAbstract: Tactile vision-language-action models (VLAs) and tactile world-action models (WAMs) are a promising new paradigm for contact-rich manipulation, but existing models either underutilize touch, rely on large-scale tactile pretraining, or incur high inference latency due to iterative video generation. We present VTAM, an efficient visuo-tactile world-action model for contact-rich manipulation that requires no tactile or action pretraining. RGB and tactile observations share a frozen video VAE and the pretrained video transformer weights. VTAM first adapts the video backbone to jointly predict future visual and tactile latents, then fine-tunes it end-to-end with a randomly initialized action expert that predicts actions, proprioceptive states, and a light flow-force proxy computed from tactile optical flow. Trained only on task demonstrations, VTAM outperforms all baselines on four real-robot tasks across two platforms with different tactile sensors, outperforms all baselines without tactile pretraining in average success on eight UniVTAC simulation tasks, and is comparable to tactile VLAs and WAMs pretrained on over 30K hours of largely visuo-tactile robot data (83.4% vs. 84.5% for N0-TWAM). Without full video denoising at inference, VTAM is approximately 6x and 16x faster than N0-TWAM and LingBot-VA without compilation, with compiled latency comparable to Fast-WAM. Ablations show that feeding frozen-VAE tactile features directly to the action expert, bypassing tactile world modeling, fails on every tested task, that Stage I visuo-tactile world-model fine-tuning improves UniVTAC success on most tasks, and that flow-force proxy keeps the policy from fully ignoring touch. The tactile encoder transfers zero-shot across GelSight Mini and Xense Photon sensors.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

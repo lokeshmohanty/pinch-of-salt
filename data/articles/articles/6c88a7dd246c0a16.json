@@ -1,0 +1,14 @@
+{
+  "id": "6c88a7dd246c0a16",
+  "title": "AdaptivePnP: Fast Auto-Tuned Plug-and-Play for Deconvolution",
+  "link": "https://arxiv.org/abs/2611.09845",
+  "description": "arXiv:2611.09845v1 Announce Type: cross \nAbstract: Plug-and-play (PnP) methods reconstruct images by alternating a data-fitting step with an image denoiser. Their performance depends on two parameters: the step size $\\gamma$ and the measurement noise level $\\sigma$. In practice, $\\gamma$ is often tuned by grid search over validation images and must be retuned whenever the problem setting changes, and $\\sigma$ is assumed known or estimated separately. We propose AdaptivePnP, a PnP framework that jointly estimates $\\sigma$ and $\\gamma$ at every iteration from the data-fitting residual. To do so, we apply the PnP virtual model to the data-fitting proximal map and show that the residual is zero-mean Gaussian with covariance parameterized by $\\gamma$ and $\\sigma$. However, when one parameter is much larger than the other, the residual carries little information about the smaller one and using the maximum likelihood (ML) estimator can degrade the PnP iterations. We therefore introduce the identifiable maximum likelihood (IML) estimator, which restricts the ML estimator to an identifiable window in which the normalized Cram\\'er--Rao bound of every parameter is bounded by a user-specified tolerance. For the virtual model, this window is an interval of ratios $\\rho = \\gamma/\\sigma$, so computing the IML estimate reduces to a one-dimensional search over $\\rho$. We apply AdaptivePnP to two standard PnP methods, yielding algorithms that require neither a tuned $\\gamma$ nor a known $\\sigma$. On image deblurring and super-resolution, AdaptivePnP matches or outperforms PnP baselines tuned with the true $\\sigma$. Code is available at https://github.com/hdubasullivan/AdaptivePnP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

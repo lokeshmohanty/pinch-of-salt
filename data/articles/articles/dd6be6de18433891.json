@@ -1,0 +1,13 @@
+{
+  "id": "dd6be6de18433891",
+  "title": "Unified Response Geometry for Structured Pruning",
+  "link": "https://arxiv.org/abs/2609.18239",
+  "description": "arXiv:2609.18239v1 Announce Type: new \nAbstract: Structured pruning is commonly formulated as ranking individual channels, although channel responses can be complementary or cancel through downstream mixing. Motivated by these response interactions, we formulate pruning as the selection of a subset with large joint response capacity, followed by a separate functional realization step. Our unified response geometry maps each candidate set to \\(M(D,R)=D^{1/2}RD^{1/2}\\) and uses its determinant together with Schur-greedy residuals to select non-redundant coordinates. The same construction yields two information-conditioned instances: an unlabeled instance based on activation covariance, and a task-conditioned instance that combines activation and gradient variance for response scale with gradient correlation for complementarity. To convert the selected subset into an executable network, we fold predictable removed responses into successor weights through ridge compensation and recalibrate batch-normalization statistics, without fine-tuning the network. On ImageNet ResNet-50, the unlabeled instance reaches \\(65.4\\%\\) and \\(53.9\\%\\) Top-1 accuracy at 30\\% and 40\\% deletion, versus \\(59.8\\%\\) and \\(43.1\\%\\) for strength-only selection; the task-conditioned instance reaches \\(67.7\\%\\) and \\(56.3\\%\\) under the same protocol. A six-family screen shows architecture-dependent behavior, with positive relative contrasts in several convolutional and expansion-layer settings and clear boundary cases in windowed attention. These results support response geometry as a conditional principle for structured pruning, with its benefit determined jointly by the observed response and the architecture in which that response is realized.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

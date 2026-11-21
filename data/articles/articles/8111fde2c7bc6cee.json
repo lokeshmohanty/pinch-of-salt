@@ -1,0 +1,15 @@
+{
+  "id": "8111fde2c7bc6cee",
+  "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+  "link": "https://arxiv.org/abs/2611.14581",
+  "description": "arXiv:2611.14581v1 Announce Type: cross \nAbstract: Agentic workflows, in which a large language model (LLM) calls tools to read and write data, are evaluated in two ways. Benchmarks compare the final state against a gold answer. Deployed services have none; an LLM judge reads the transcript and decides. Practice treats the two as interchangeable. This paper measures whether they are.\n  We ran 2,160 episodes in tau2-bench's airline and retail domains and recorded every database write. We scored each episode four ways: native scoring against gold state, an LLM judge, that judge given the policy document, and the boundary evaluator, a minimal rule-based check of whether a write was expected against whether one occurred in the trace. Two annotators independently labeled 120 episodes for task correctness, policy compliance, and commitment correctness.\n  The judge repeated its verdict 98.2% of the time but agreed with native scoring on 56.2%. In 11 episodes the agent executed a forbidden write. The judge passed 10 to 11, with or without the policy or transcript. A stronger judge still passed 6. The boundary evaluator, with no model call, caught all 11; no judge significantly exceeded it on human labels. Forbidden writes occurred in 11.1% of episodes without gates. Verification, correction, and safe-termination gates did not reduce them significantly. The traces show a candidate cause: the gates' evidence digest dropped the order status and customer authentication, so valid requests were rejected. The choice of evaluator decides the conclusion; the minimal check exposes failures the judges miss. Traces, code, prompts, and labels are released.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI",
+    "cs.CR"
+  ]
+}

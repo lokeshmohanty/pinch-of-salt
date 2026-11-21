@@ -1,0 +1,14 @@
+{
+  "id": "93c50ab99390ca2a",
+  "title": "Which Objects Stay? Learning Hierarchical Persistence Beliefs for Lifelong Open-Vocabulary Object Maps",
+  "link": "https://arxiv.org/abs/2611.07662",
+  "description": "arXiv:2611.07662v1 Announce Type: new \nAbstract: Lifelong object maps must estimate whether an object remains at its previously observed location after it leaves view. Existing persistence filters rely on class-based survival priors, making them difficult to apply reliably in open-vocabulary settings. We introduce HiPer, a hierarchical persistence filter that derives persistence beliefs directly from data rather than semantic categories. For a new object, HiPer retrieves visually and geometrically similar training instances and estimates an initial survival rate from their observed histories, without requiring class labels. This estimate initializes a conjugate Beta belief over the object's survival probability, which is updated in closed form using detections and missed observations under Rosen's persistence-filter framework. When an object is re-identified at a new location, its persistence belief is transferred with the object, enabling the map to learn object-specific mobility over time. Experiments on 120 held-out simulated sequences show that HiPer consistently achieves the best performance among competing methods. Retrieval-based priors outperform CLIP-derived label priors, and object-specific online learning provides further gains. Results on 47 held-out 3RScan environments demonstrate that the proposed retrieval-based prior also outperforms state-of-the-art baselines in real-world settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

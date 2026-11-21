@@ -1,0 +1,16 @@
+{
+  "id": "248e99364ce4e50f",
+  "title": "PixCon: Clean-Positive Contrastive Learning for Foundation-Model Semi-Supervised Segmentation",
+  "link": "https://arxiv.org/abs/2607.03068",
+  "description": "arXiv:2607.03068v2 Announce Type: replace-cross \nAbstract: Can a simple labeled-pixel contrastive branch improve semi-supervised segmentation with a strong pretrained encoder? We study this question with PixCon, which adds a class-wise memory bank to a DINOv2-Base implementation of UniMatch V2. The bank stores ground-truth-labeled features only where the student prediction agrees with the label. A multi-positive contrastive loss uses these features to train the shared encoder-decoder; the head and bank are discarded at inference. This simplifies earlier labeled-pixel banks by removing confidence thresholds and learned ranking. On Pascal VOC with 183 labels, PixCon improves all three paired seeds by 0.20, 0.64 and 1.83 mIoU points, raising the mean from 87.01 to 87.90. With 92 labels the mean gain is 0.40 points; single-seed differences on Cityscapes and ADE20K range from -0.08 to +0.14 points. A predicted-label contrastive control reaches nearly the same Pascal accuracy, so these results support the added branch rather than an accuracy benefit from its correctness filter. An exact gradient decomposition distinguishes mislabeled-positive counts from their similarity-weighted influence. Separate teacher diagnostics find retained-pixel error rates of 1.8% on Pascal and 10.6% on ADE20K. These diagnostics do not measure the training bank or predict final accuracy. PixCon adds 15.3-19.7% iteration time in the measured runs and no inference computation. We report paired seeds, training cost and the limits of the evidence.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "eess.IV"
+  ]
+}

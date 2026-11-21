@@ -1,0 +1,14 @@
+{
+  "id": "e2376476f721a678",
+  "title": "Normative Loss Landscape Navigation: A Trajectory-Based Approach to Mitigating Forgetting in Incremental Learning",
+  "link": "https://arxiv.org/abs/2609.35926",
+  "description": "arXiv:2609.35926v1 Announce Type: cross \nAbstract: Continual learning models suffer from catastrophic forgetting when trained sequentially on non-stationary data distributions. Previously, this has been addressed through weight regularization. While preconditioning gradients offer a promising alternative to mitigate forgetting, current approaches are myopic. Conversely, standard regularization methods apply rigid, scalar Euclidean penalties that entirely ignore the underlying Riemannian geometry of the parameter space. To overcome this gap, we propose TMLN (Trajectory-Modulatory Landscape Navigation), a normative navigation policy that formalizes continual learning as an optimal control problem over a curved loss landscape. TMLN utilizes a memory-efficient diagonal empirical Fisher Information Matrix (FIM) to define a localized Riemannian manifold. To compensate for the spatial limitations of the diagonal approximation, TMLN dynamically modulates a preconditioner using the normalized historical trajectory of the network's parameter values. By integrating this trajectory-based preconditioning directly into the gradient update, we actively shield historically critical parameter directions without relying on additive penalties. Empirical evaluations on class- and domain-incremental benchmarks demonstrate that our method significantly reduces the loss barrier between consecutive tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

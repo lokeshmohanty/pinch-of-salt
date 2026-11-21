@@ -1,0 +1,13 @@
+{
+  "id": "eeb6288f0b0f57dc",
+  "title": "CausalDrive: Causal Decomposition for Data-Efficient End-to-End Autonomous Driving",
+  "link": "https://arxiv.org/abs/2611.24080",
+  "description": "arXiv:2611.24080v1 Announce Type: new \nAbstract: Efficient use of expert demonstrations is essential for end-to-end autonomous driving. However, directly imitating expert trajectories couples nominal intention, which specifies where the vehicle should go, with multimodal driving styles, which determine how that intention is executed. Different combinations of these factors can yield similar expert trajectories, obscuring their respective causal contributions and forcing the policy to learn both from a single entangled target. This ambiguity limits how effectively the policy can exploit expert demonstrations. We propose CausalDrive, a causal decomposition framework for data-efficient driving policy learning that separates deterministic nominal intention prediction from probabilistic driving style modeling. Specifically, we construct counterfactual nominal trajectories from navigation command, map topology, and ego state by removing style dependent effects, providing a Nominal Intention Planner with supervision independent of expert trajectories. Conditioned on the predicted nominal intention and surrounding agents, a diffusion-based Style Execution Policy models diverse driving styles as a multimodal distribution over residuals between nominal and expert trajectories. This causally structured supervision reduces redundant learning of shared nominal behavior in routine scenarios, directing expert supervision toward informative execution variations and improving data utilization. CausalDrive achieves 91.2 PDMS on NAVSIM v1 and 89.5 EPDMS on NAVSIM v2, matching or surpassing state-of-the-art performance. Further experiments demonstrate strong performance with limited expert data and clear advantages in challenging interactive scenarios.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

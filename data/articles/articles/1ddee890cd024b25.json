@@ -1,0 +1,13 @@
+{
+  "id": "1ddee890cd024b25",
+  "title": "RSC-GestureNet: Reliability-Aware Selective Causal Recognition of Chinese Traffic Police Gestures",
+  "link": "https://arxiv.org/abs/2608.02200",
+  "description": "arXiv:2608.02200v1 Announce Type: new \nAbstract: Traffic police gestures are safety-critical perception cues for autonomous driving. A deployable recognizer must infer commands causally from continuous full-frame video, remain stable around transitional arm motion, and avoid over-trusting corrupted pose measurements. This study presents RSC-GestureNet, a reliability-aware selective causal recognizer, for Chinese traffic police gestures. The model treats pose confidence as a first-class signal: unreliable joints are down weighted during graph reasoning, temporal evidence is aggregated causally, and calibrated predictions are selectively emitted through a reliability-aware inference rule. We further introduce CTPGesture-C, a reproducible feature-level corruption benchmark with seven pose/RGB degradation families, and an RGB-level diagnostic in which corrupted frames are reprocessed by MediaPipe before recognition. On the complete official CTPGesture v1 split (134,424 labeled frames and 33,451 causal windows), RSC-GestureNet achieves 93.33+-0.24% accuracy, 91.71+-0.27% macro-F1, 91.69+-0.29% online macro-F1, 98.80+-0.07% Early@10, 0.153+-0.013 s TTC, and the best robust macro-F1 among evaluated methods. Under the same split and causal protocol, it exceeds reproduced traffic-specific MD-GCN and HLP-GCN baselines by 3.23-4.11 macro-F1 points and 2.15-3.07 online-F1 points. These results, together with calibration, selective-risk, statistical, adaptive-branching, and image-level re-extraction analyses, indicate that explicit pose-reliability modeling improves early, stable, and robust traffic-command recognition.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

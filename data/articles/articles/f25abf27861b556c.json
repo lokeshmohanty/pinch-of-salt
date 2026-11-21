@@ -1,0 +1,16 @@
+{
+  "id": "f25abf27861b556c",
+  "title": "Vision-language models for chest radiography do not always need the image",
+  "link": "https://arxiv.org/abs/2606.17710",
+  "description": "arXiv:2606.17710v3 Announce Type: replace-cross \nAbstract: Vision-language models that answer questions about chest radiographs are evaluated by their accuracy on labels derived from radiology reports. High benchmark accuracy is often interpreted as evidence that the model uses the image. A model that answers from the finding named in the question can score as well as a model that uses the radiograph. Keeping the question fixed, we audit eight open-weight systems by swapping in another patient's radiograph with the same or the opposite label, occluding the radiologist-marked region or an equal region elsewhere, and removing the radiograph or replacing it with noise or a photograph. On 2,548 yes-or-no questions from MIMIC-CXR, one multimodal model answers Yes regardless of the image, another multimodal model changes its answers without following the label, and four systems use the image but keep about half of their correct answers when the radiograph is swapped for an opposite-label radiograph. A medical model that receives only the question text scores 55.3% on the pooled questions, higher than two multimodal systems. It scores 91.8% where every finding is present, and answering Yes to every question scores 100% there. Where the image is necessary, the best multimodal system exceeds this model by 10.4% in balanced accuracy. The categories are unchanged on CheXpert. Confidence is not higher when a correct answer depends on the marked region. In a reader study with three radiologists, the two radiologists who read a balanced set of 200 cases score 86.0% and 82.0%, and the systems score 50.0% to 73.0%. Accuracy does not establish image use, but an intervention on the image can test it.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

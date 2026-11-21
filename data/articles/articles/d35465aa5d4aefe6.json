@@ -1,0 +1,14 @@
+{
+  "id": "d35465aa5d4aefe6",
+  "title": "Evolutionary Adaptive Neighborhood Learning: A Genetic Algorithm for Instance-Dependent k Optimization in Nearest Neighbor Classification",
+  "link": "https://arxiv.org/abs/2611.07257",
+  "description": "arXiv:2611.07257v1 Announce Type: cross \nAbstract: The number of neighbours k is the central hyperparameter of the k-nearest neighbour (k-NN) classifier and is usually selected globally through cross-validation or evolutionary search. However, the bias-variance trade-off is inherently local: dense and noise-free regions may favour small neighbourhoods, whereas sparse or noisy regions may require larger ones. Since global-k optimization is one-dimensional, replacing exhaustive search with a genetic algorithm offers little computational advantage. We therefore optimize an instance-dependent neighbourhood policy instead. We propose EANK (Evolutionary Adaptive Neighborhood K), which uses a low-dimensional policy to map local neighbourhood descriptors, including density, label entropy, vote margin, and concentration, to an adaptive number of neighbours k(x). A real-coded elitist genetic algorithm optimizes this policy using leave-one-out accuracy with a neighbourhood-smoothness penalty. Precomputed neighbour votes reduce fitness evaluation costs. We investigate theoretical properties of the method, including dominance over global-k solutions on the training criterion, evolutionary convergence, policy regularity, and generalization guarantees. Experiments on synthetic data with spatially heterogeneous structure and twelve public datasets evaluate predictive performance, robustness, and computational cost. Under nested cross-validation, EANK achieves competitive performance relative to tuned global-k baselines and improves upon the default k=5. We also examine the gap between training and test performance to assess the practical value of adaptive neighbourhood selection.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

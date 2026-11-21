@@ -1,0 +1,13 @@
+{
+  "id": "d5301caeed79d3dd",
+  "title": "When Depth Lies: Benchmarking Vision-Language Models on Mirror-Induced RGB-D Ambiguity",
+  "link": "https://arxiv.org/abs/2610.41651",
+  "description": "arXiv:2610.41651v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have made significant progress in spatial reasoning, particularly by integrating RGB images with depth data, which is often assumed to faithfully reflect physical distances. However, mirrors violate this assumption: they distort depth readings while reproducing object appearances, making reflections difficult to distinguish from real objects. As existing benchmarks rarely consider such reflective scenarios, VLM performance in mirror scenes remains largely unexplored. In this work, we introduce a mirror-centric RGB-D dataset from reflective scenes to evaluate the spatial reasoning capabilities of state-of-the-art VLMs in these scenarios. Specifically, we collect 1,011 RGB-D images from 525 real-world scenes, spanning diverse indoor and outdoor environments, six reflective surface types, and both daytime and nighttime conditions. All images are annotated with reflective surface region masks and mask annotations for both directly observed and mirror-reflected objects. Then, we curate a benchmark named MIRA-Bench (Mirror-Induced Reasoning Ambiguity Benchmark), comprising 14,140 QA pairs across eight sub-tasks organized into three cognitive levels: Reflection-aware Perception, Spatial Reasoning, and Scene-level Decision-making. We evaluate state-of-the-art VLMs on MIRA-Bench and find consistent failures across tasks: models misclassify whether objects are directly observed or reflected, fail to match reflected instances to their real-world counterparts, and produce erroneous spatial inferences. Remarkably, providing depth data actually degrades reasoning performance, implying that VLMs cannot identify incorrect depth in mirror scenes. The code and data are available at https://github.com/EvaYin-cloud/MIRA-Bench",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

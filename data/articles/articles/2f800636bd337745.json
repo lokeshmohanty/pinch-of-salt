@@ -1,0 +1,13 @@
+{
+  "id": "2f800636bd337745",
+  "title": "Synthetic-to-Real Text-Based Person Anomaly Search via Multi-Model Retrieval Fusion and Cross-Encoder Reranking",
+  "link": "https://arxiv.org/abs/2610.31930",
+  "description": "arXiv:2610.31930v1 Announce Type: new \nAbstract: Text-based person anomaly search requires a model to retrieve individuals from a large image gallery using natural-language descriptions of both appearance and behavior. This task is challenging because model training relies on synthetic image-text pairs, whereas evaluation is performed on real surveillance images containing domain differences, near-duplicate frames, and many visually similar distractors. We present a multi-model retrieval and reranking framework designed to improve synthetic-to-real transfer. The framework first adapts Qwen3-VL-Embedding-8B to synthetic person descriptions using bidirectional contrastive learning, explicit negative sampling, false-negative masking, and domain randomization. It then combines the normalized scores of six complementary Qwen3-VL checkpoints with those of a frozen SigLIP2 model using four-view gallery encoding. The fused retrieval scores identify the strongest candidates, which are jointly evaluated with the query using Qwen3-VL-Reranker-8B. The cross-encoder and retrieval scores are subsequently blended to produce the final ranking. We also construct a distractor-matched validation protocol entirely from synthetic data to select checkpoint weights, fusion coefficients, candidate depths, and reranking parameters without accessing the official test images. The final system achieves 94.7815% mAP and 90.8493% R@1 under the official AI City Challenge 2026 Track 4 test setting, with a reported eighth-place finish on the public leaderboard.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

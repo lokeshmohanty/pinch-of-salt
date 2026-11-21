@@ -1,0 +1,13 @@
+{
+  "id": "c762634c1fa4a782",
+  "title": "Refusal Beyond a Single Direction: A Preliminary Comparison of Diff-in-Means and INLP",
+  "link": "https://arxiv.org/abs/2606.13720",
+  "description": "arXiv:2606.13720v2 Announce Type: replace \nAbstract: Arditi et al. (2024) has shown that refusal in safety fine-tuned chat models is mediated by a single linear direction in the residual stream, recoverable by a difference-in-means (DiM) of harmful and harmless activations. We compare DiM-based interventions (activation addition and directional ablation) with two interventions derived from Iterative Nullspace Projection (INLP)-nullspace projection and counterfactual flipping-on five open-weight chat models, asking whether INLP can match DiM at steering refusal and whether its richer parameterisation yields more tweakable interventions. INLP counterfactual flipping is competitive with DiM directional ablation on refusal suppression, while nullspace projection is weaker on most models. Applying each method at the layer selected by the other shows that flipping's competitiveness is robust to this change while directional ablation's is not, suggesting that DiM's apparent edge is partly a property of its own selection procedure. Restricting INLP to the leading directions of the extracted subspace preserves most of the suppression effect at near-baseline perplexity, giving a tunable capability. Geometrically, the two INLP interventions land in qualitatively different regions of activation space: nullspace projection collapses transformed activations between the harmful and harmless clusters, while counterfactual flipping moves them into the opposite cluster, suggesting that the model encodes the absence of a concept differently from its opposit--an intriguing distinction that warrants further investigation in future work.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

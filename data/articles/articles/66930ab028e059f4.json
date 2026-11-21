@@ -1,0 +1,14 @@
+{
+  "id": "66930ab028e059f4",
+  "title": "Few-Shot Concept Prompt Learning for Segmentation Foundation Models via Visual Grounding",
+  "link": "https://arxiv.org/abs/2608.01663",
+  "description": "arXiv:2608.01663v1 Announce Type: new \nAbstract: Promptable segmentation foundation models (FMs) such as SAM3 and Medical SAM3 promise few-shot, interactively-specified segmentation for medical imaging through a natural language interface, yet their performance on clinical tasks falls well short of this promise. We posit that this shortfall is not an artefact of insufficient medical pretraining or imperfect prompt phrasing, but a structural limitation that will persist in any domain where paired image-text supervision is scarce, as it is across most clinical modalities. We further hypothesize that the limitation is specific to natural language as a control signal: a visually grounded prompt, learned directly from the target distribution, should recover the lost performance without additional image-text data or backbone retraining. We propose Few-Shot Concept Prompt Learning (FS-CPL), which learns a continuous concept prompt embedding $\\mathbf{p}^* \\in \\mathbb{R}^{T \\times d}$ from a small support set of $K$ image--mask pairs via mask supervision, with the encoder-decoder backbone frozen. Across four public benchmarks spanning ultrasound and endoscopy (BUSI, HC18, TN3K, CVC-Clinic), FS-CPL delivers absolute Dice improvements of up to $+0.62$ over canonical text prompts and is \\emph{backbone-agnostic}: it lifts both vanilla SAM3 and the domain-specifically pretrained Medical SAM3, showing that visual concept prompting is complementary to in-domain pretraining.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

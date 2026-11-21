@@ -1,0 +1,13 @@
+{
+  "id": "11424e50647c673c",
+  "title": "Trust the Ray, Not the Depth: Ray-Lateral Agreement for Multi-View 3D Human Pose Fusion",
+  "link": "https://arxiv.org/abs/2611.23513",
+  "description": "arXiv:2611.23513v1 Announce Type: new \nAbstract: Put a monocular mesh estimator behind every camera of a calibrated rig, and the reconstructed bodies land a meter or more apart. The cause is geometric: each estimate sits at the depth implied by a focal length the network assumed, not the one the camera has. Its error therefore points almost entirely along its own viewing ray, and the calibration tells us that direction exactly. To address this, we introduce the Ray-Lateral Agreement (RLA), which follows one rule: trust the ray, not the depth. RLA first slides every estimate along its own rays, which removes the depth bias and leaves the shape untouched. It then fuses the views one point at a time, under a Gaussian error whose precision follows each viewing ray. The maximum-likelihood solution is closed-form, interpolates between averaging and midpoint triangulation, and stays well conditioned where triangulation is singular. Robustness is the harder half, because correct views also disagree along their rays. Any weight built on the full residual therefore punishes good views together with bad ones. Ray-lateral agreement instead scores every view, at every point, by its residual across that view's own ray alone. We evaluated RLA on multi-camera public benchmark datasets. Across two, three, and four cameras and three per-view pose estimators, RLA consistently achieves lower worst-case error than all triangulation baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

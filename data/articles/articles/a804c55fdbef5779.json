@@ -1,0 +1,14 @@
+{
+  "id": "a804c55fdbef5779",
+  "title": "When MLLMs miss what humans read: diagnosing and learning to read squint text",
+  "link": "https://arxiv.org/abs/2610.13465",
+  "description": "arXiv:2610.13465v1 Announce Type: cross \nAbstract: Multimodal LLMs can fail to read text embedded in an image's coarse structure (text a human recovers by squinting) and report that no text is present. We name this class Squint Text and study it as a recognition deficiency, motivated by cases from a production moderation pipeline. We introduce SquintBench, comprising 1076 production-derived moderation images, and SquintCtrl, a controlled synthetic suite for mechanism diagnosis. Frozen-weight analysis shows that hidden text leaves a coarse signal while glyph identity is weakly represented; identity becomes substantially more accessible when the correct spatial regions are supplied, implicating spatial selection as a major bottleneck. Suppressing high-frequency content also improves reading at a fixed visual-token budget, while visual token count may also contribute. These findings motivate Squint OPSD: a frozen teacher receives a downscaled view and the ground-truth transcription as privileged context, and its token-level distributions supervise a student along on-policy trajectories. At inference, the student reads the original image alone. Squint OPSD reaches 88.61 ANLS on SquintBench, versus 26.50 for the unadapted backbone, 24.44 for the best general-purpose model on the original view, and 68.60 at best for an off-the-shelf model under a downscaled view. These results substantially narrow the gap between available visual evidence and its generated read-out without auxiliary views at inference.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

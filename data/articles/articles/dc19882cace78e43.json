@@ -1,0 +1,14 @@
+{
+  "id": "dc19882cace78e43",
+  "title": "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration",
+  "link": "https://arxiv.org/abs/2607.29240",
+  "description": "arXiv:2607.29240v1 Announce Type: cross \nAbstract: In vision--language models, commonsense-driven hallucination (CDH) occurs when a model's commonsense prior overrides clear visual evidence of an atypical state. For example, a model may report that a visibly six-fingered hand has five fingers. We show that these errors are systematically directed: when a model answers a question about a counterfactual (CF) image incorrectly, its answer often coincides with the candidate it prefers without access to the image. Suppressing this prior indiscriminately can repair CF errors, but may also disrupt correct answers on matched commonsense (CS) images, where the same prior is helpful. We therefore propose Selective Prior Calibration (SPC), which subtracts candidate-level prior-preference estimates from image-conditioned scores with an instance-dependent strength and revises the original prediction only when the resulting score pattern strongly supports an alternative. Extensive experiments demonstrate that SPC substantially improves accuracy on CF images while largely preserving accuracy on matched CS images. Furthermore, these gains generalize across CDH categories, candidate-answer permutations, and other conflict benchmarks, while SPC rarely alters predictions on benchmarks without such conflicts.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "03a2cdf7d0effd66",
+  "title": "CLIVO: Differentiable Cluster-Based Instruction Mixing with Learned Validation Objectives",
+  "link": "https://arxiv.org/abs/2610.16876",
+  "description": "arXiv:2610.16876v1 Announce Type: new \nAbstract: Target-aware multimodal instruction selection requires useful examples and an appropriate balance of supervision. Sample-level rankings can overrepresent similar content without optimizing this balance; group-level methods face coarse units, predefined set-level validation signals, and costly or inaccurate mixture search. We propose CLIVO, a target-aware framework connecting fine-grained semantic allocation, automatically learned validation objectives, and differentiable mixture search. Specifically, semantic clusters provide independently adjustable shares at the hundred-cluster scale. Correlations between per-example merged-proxy losses and real probe performance identify target-relevant validation examples; learned nonnegative weights combine their losses into an objective. A single backward pass through the merged proxy supplies gradients for all shares, avoiding an additional mixture-response regression model. Selecting 100K instructions from an 8M pool, CLIVO attains 97.2% of the full-data four-target average score with only 1.25% of the data. It improves on the strongest evaluated selection baseline by 1.16 points using random within-cluster sampling; combining learned quotas with sample ranking increases this advantage to 1.55 points. Analyses show that finer units benefit most targets, short-trained experts preserve mixture responses, sample weighting retains useful validation information, and direct search consistently reduces the learned objective. CLIVO also supports interpretable allocation, modular selection, and reuse across targets and granularities.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

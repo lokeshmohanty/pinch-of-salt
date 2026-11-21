@@ -1,0 +1,13 @@
+{
+  "id": "0066ab6dd44239d2",
+  "title": "Automated open-set multi-view seahorse re-identification from underwater photograph sequences",
+  "link": "https://arxiv.org/abs/2610.39857",
+  "description": "arXiv:2610.39857v2 Announce Type: replace \nAbstract: Automated animal re-identification from photograph sequences can facilitate minimally invasive Capture-Mark-Recapture studies at scale. Yet, photographs taken during an observation session can vary greatly in quality, not always providing the necessary information for accurate re-identification. In this paper, we present new methods for open-set re-identification from image sequences. We train and evaluate taxonomic classification, sex determination and reidentification models on a dataset of 35,914 photographs of 474 individual seahorses observed in the wild. Combining the photographs of an observation improves all three tasks. For species and sex, a linear probe on DINOv3 embeddings classifies each photograph, and we average the logits over the photographs of an observation. At the observation level, this model reaches a balanced accuracy of 0.97 for species and 0.90 for sex. For open-set re-identification, a fine-tuned MiewID descriptor retrieves candidate individuals, and a learned relevance score weights each photograph. Local feature matching with ALIKED and LightGlue combined with a geometric check with RANSAC that keeps only the consistent matches then reranks the candidates. A logistic model estimates the probability that the individual is already in the gallery. A maximum a posteriori rule then chooses between the best-matching identity and a new individual. This method reaches a normalized accuracy of 0.90 when the gallery holds every past observation of each individual, and 0.83 when it holds only one.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

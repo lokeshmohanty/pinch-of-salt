@@ -1,0 +1,15 @@
+{
+  "id": "553a31b26debd263",
+  "title": "Information-Geometric Inverse Distillation for Enhancing Adversarial Transferability",
+  "link": "https://arxiv.org/abs/2502.17003",
+  "description": "arXiv:2502.17003v2 Announce Type: replace-cross \nAbstract: Transfer-based adversarial attacks rely on surrogate models to craft perturbations, yet often overfit the surrogate's decision boundary. To address this problem, we propose Inverse Knowledge Distillation (IKD), a simple and attack-agnostic mechanism that maximizes the prediction-distribution discrepancy between benign and adversarial samples on the surrogate model. IKD uses a CE/KL-equivalent soft-label objective to push adversarial predictions away from a fixed benign prediction anchor and enrich the attack with Fisher-sensitive surrogate directions. We prove that, under a matched fixed-anchor implementation, soft-label cross-entropy and KL divergence differ only by a constant entropy term and therefore induce identical gradients, Hessians, and adversarial optimization trajectories. Our information-geometric analysis further derives a quantitative lower bound on dominant Fisher-subspace overlap between surrogate and target models from local same-task stability and a Fisher eigengap, and establishes a sufficient target-margin crossing condition under oriented gradient coherence and target smoothness. This analysis connects IKD's surrogate Fisher sensitivity to cross-model transfer. In contrast, mean squared error uses a different Euclidean pullback in output probability space. IKD integrates seamlessly with standard gradient-based attacks without modifying their optimization pipelines. Extensive ImageNet experiments demonstrate consistent black-box gains across CNN, ViT, and defended models, while ablations confirm CE and KL equivalence and the pronounced disadvantage of MSE. These results establish IKD as an effective and lightweight component for improving adversarial transferability. Code is available at https://github.com/ImmortalTing/IKD.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

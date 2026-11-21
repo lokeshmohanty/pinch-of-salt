@@ -1,0 +1,14 @@
+{
+  "id": "baa5a338622b4946",
+  "title": "Fitting Every Hint Is Not Enough: Premature Floods in Recurrent Algorithmic Reasoners",
+  "link": "https://arxiv.org/abs/2610.14982",
+  "description": "arXiv:2610.14982v1 Announce Type: cross \nAbstract: Recurrent algorithmic reasoners are trained with per-step hints on small graphs and run for many more steps on large ones. On breadth-first search in SALSA-CLRS, we find that a reasoner can reproduce every training hint and still fail on deep graphs: after some exact steps, it declares nodes reached before the search gets there. We call this a premature flood and trace two routes to it. In our GRU processor with a degree input, the flood is carried in the hidden state and set off when that input is in the tail of the training distribution. Setting the input higher at inference brings the flood sooner, and none of the six flooding models counts steps. Without the input, summing the neighbors' states instead of averaging them also breaks the processor. In the benchmark's own GIN and PGN, trained with its code, some seeds instead flood from a fixed step, on sparse and dense graphs alike. Clamping the degree input or adding 200 dense training graphs removes every failure of the GRU processor. Detaching the state between steps avoids the flood in that processor (0 of 23 seeds, against 6 under full backpropagation) but not with sums or a residual update, and two published remedies leave floods. None of the benchmark's test sets is both deep and dense, but its deepest one shows the second route: on its Delaunay graphs at 1,600 nodes, one GIN seed floods from step 18. We therefore recommend auditing the range of every input and aggregate, which catches the first route, and testing on deep graphs, which catches both.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

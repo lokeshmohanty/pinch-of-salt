@@ -1,0 +1,13 @@
+{
+  "id": "00f7d2da457702b4",
+  "title": "MvT: Event-based Multi-view Projection for Multiple Object Tracking",
+  "link": "https://arxiv.org/abs/2610.37309",
+  "description": "arXiv:2610.37309v1 Announce Type: new \nAbstract: Event cameras are increasingly used for Multiple Object Tracking (MOT), but their asynchronous event output often requires specialized methods. Existing processing methods primarily follow two paradigms, pseudo-frames and event-by-event. The former is the prevailing approach since its data format aligns with images, making image-based techniques applicable. However, it suffers from tracking failures when trajectories overlap or are spatially close on pseudo-frames. Facing this challenge, we propose a multi-view pipeline, Multi-view Tracking (MvT), which preserves the 2D data format to leverage image-based techniques directly while introducing additional spatio-temporal views to resolve tracking ambiguities in a single view. MvT comprises a Multi-view Projection (MvP) module and a Multi-view Fusion (MvF) stage. MvP encodes events into three complementary spatio-temporal views while mitigating the pattern discretization. Within MvF, multi-view results are unified into a 3D coordinate system, and tracklets are associated through an optimization model subject to specific criteria combination. Evaluations on four datasets, including our self-collected Small Objects Dataset (SOD), show that MvT seamlessly integrates image-based methods and outperforms existing non-learning and learning trackers in generalized scenarios, and effectively resolves the single-view tracking ambiguities. Being training-free, MvT is applicable when ground-truth annotation is infeasible, thereby highlighting its practical, data-efficient potential. Code is available at https://github.com/zhazhabiu/MvTracking.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

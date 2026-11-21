@@ -1,0 +1,14 @@
+{
+  "id": "12d58456d60283a7",
+  "title": "Intra-Agent Motion and Inter-Agent Relation Learning for Map-Free Trajectory Prediction",
+  "link": "https://arxiv.org/abs/2512.02368",
+  "description": "arXiv:2512.02368v3 Announce Type: replace-cross \nAbstract: Trajectory prediction is essential for safe planning and decision-making in autonomous driving. Map-free prediction improves deployment flexibility by removing the dependence on high-definition maps, but it also loses explicit road-topology and lane-connectivity priors. Consequently, the model must recover stable motion cues from short histories while resolving prospective interaction relations without lane-level guidance. To address these challenges, this paper proposes a map-free trajectory prediction framework centered on a novel Goal-Conditioned Expert-Routed Transformer (GCERT). A lightweight intra-agent front-end first decomposes projected historical motion features into a smooth trend and a local detail residual through a centered moving average. Component-specific residual projections transform the two signals before a causal temporal Transformer summarizes their recombined evolution. GCERT employs dual-level expert routing: edge-level relation experts generate interaction-specific messages, while node-level state experts adapt the transformation after message aggregation. Predicted motion goals update the node representations and construct prospective relative-geometry and orientation edge features before the final interaction layer, thereby conditioning attention, relation-specific message generation, and state transformation. GCERT therefore determines not only which neighboring agents should be attended to, but also what relation-specific information should be transmitted and how the aggregated node state should be transformed. The resulting representations are decoded into multimodal future trajectories and jointly optimized with trajectory-regression, mode-classification, and goal-prediction objectives.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

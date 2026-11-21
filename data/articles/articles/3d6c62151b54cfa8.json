@@ -1,0 +1,15 @@
+{
+  "id": "3d6c62151b54cfa8",
+  "title": "Wrong Input, Wrong Threshold: Re-evaluating Adversarial Facial Privacy",
+  "link": "https://arxiv.org/abs/2611.21923",
+  "description": "arXiv:2611.21923v1 Announce Type: new \nAbstract: Published face-privacy methods report protection above 90% against black-box recognition models. That number comes from an evaluation protocol with two independent defects, reported in a measure that cannot size either one. The input is wrong: methods published since 2022 feed the network the whole photograph, or a detector's box, where deployed systems detect, align to a landmark template and crop. Re-scoring the same files through a realistic front end costs a standard transfer attack 56% of its dodging protection and a budget-allocating attack 7%, with no image regenerated. The measure is wrong: that loss is a difference of success rates, so it saturates, moving by 8.2x over a budget sweep while the effect beneath it moves by 1.34x. We therefore report the paired cosine shift, in which both thresholds cancel algebraically, so the input defect holds without committing to a calibration. Measured that way it is 2.2x and 10.7x larger on three unseen recognizers, and at matched budget it reverses the L-infinity transfer ranking: the one surveyed method that aligns at evaluation gains 0.18 where MI-FGSM loses 0.05. The cause is a resampling mismatch, not perturbation lost outside the crop; optimising through a differentiable alignment operator largely removes it, adding +24 to +58 points on unseen recognizers and a commercial system, with a residual on one of them. The thresholds are wrong: the four constants inherited since 2021 hold the false-accept rate near its nominal 1% on aligned crops but admit 2.3-5.4% on whole images, with an opposite-signed bias across dodging and impersonation, the two tasks reported side by side. Differentiable alignment and gallery scoring are not new: the first generation of this literature used both, and we show what dropping them cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR",
+    "cs.LG"
+  ]
+}

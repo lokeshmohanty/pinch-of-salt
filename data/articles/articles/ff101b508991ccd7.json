@@ -1,0 +1,13 @@
+{
+  "id": "ff101b508991ccd7",
+  "title": "SRED: Sparse Regional Evidence Distillation Across Magnifications in Whole-Slide Imaging",
+  "link": "https://arxiv.org/abs/2611.22189",
+  "description": "arXiv:2611.22189v1 Announce Type: new \nAbstract: In computational pathology, high-magnification whole-slide image analysis preserves tissue detail but requires encoding many patches, whereas lower magnification reduces computation by covering a higher field of view per patch while sacrificing detail. Existing cross-magnification distillation matches features that often encode detail unreachable by low-magnification input, sometimes requiring slide-level labels that limit scalability. To address those issues, we introduce Sparse Regional Evidence Distillation (SRED), which transfers regional event occurrences that encode reachable high-level interactions between details without slide-level labels. We use a sparse autoencoder (SAE) to learn an event dictionary from 20x teacher features. Logical OR pooling records whether each event is detected in any spatially aligned patch, retaining both localized and shared evidence within the corresponding 5x region. A pretrained 5x encoder is fine-tuned to predict these regional targets without slide-level labels. Visual analysis identifies dictionary components responsive to recognizable histological patterns, supporting target interpretation. Compared with native 5x features, SRED improves average macro-F1 by 1.1 points across seven classification and grading cohorts and average C-index by 1.7 points across five survival cohorts. Runtime matches native 5x, with an average 11.58x speedup over 20x.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

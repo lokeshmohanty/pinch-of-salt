@@ -1,0 +1,15 @@
+{
+  "id": "467e0335dedfd3ac",
+  "title": "Deep Learning-Based Tracking and Lineage Reconstruction of Ligament Breakup",
+  "link": "https://arxiv.org/abs/2604.08711",
+  "description": "arXiv:2604.08711v2 Announce Type: replace \nAbstract: The disintegration of liquid sheets into ligaments and droplets involves highly transient, multi-scale dynamics that are complex to quantify from high-speed shadowgraphy images. Identification of droplets, ligaments, and blobs formed by the breakup of a liquid sheet, and their tracking from frame to frame, is an essential part of spray analysis. Analysis of such processes poses a fundamental challenge for conventional multi-object tracking frameworks, which enforce strict one-to-one temporal associations and cannot represent one-to-many fragmentation events. We present a two-stage deep learning framework that detects droplets and ligaments and identifies their temporal relationships across successive frames, modeling ligament deformation, fragmentation, and parent-child lineage. In the first stage, a Faster R-CNN detector with a ResNet-50 backbone and Feature Pyramid Network classifies ligaments and droplets in recordings of two impinging Carbopol gel jets. A morphology-preserving synthetic data generation strategy enriches the training set without physically implausible configurations, achieving a held-out test F1 score of up to 0.872 across fourteen original-to-synthetic data configurations, with robustness tested on different atomization conditions and liquid compositions. In the second stage, a Transformer-augmented multilayer perceptron classifies inter-frame object associations into continuation, fragmentation (one-to-many), and non-association using physics-informed geometric features. Despite severe class imbalance, the model achieves 86.1% accuracy, 93.2% precision, and perfect recall (1.00) for fragmentation events on the held-out test set. Together, the two stages preserve parent-child lineage and enable extraction of breakup statistics, including fragment multiplicity and droplet size distributions, offering an automated analysis of the primary mode of atomization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

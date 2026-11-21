@@ -1,0 +1,13 @@
+{
+  "id": "be0c7720f8c9a8d1",
+  "title": "DefoliationCAM: An Edge-AI System for Real-Time Insect Defoliation Severity Assessment in Grapevines",
+  "link": "https://arxiv.org/abs/2610.20879",
+  "description": "arXiv:2610.20879v1 Announce Type: new \nAbstract: Insect-induced defoliation threatens grapevine health and yield, yet severity assessment relies on subjective manual scouting. We developed DefoliationCAM (D-CAM), a solar-powered edge AI system that estimates canopy defoliation and transmits results via LoRa to a web dashboard. The pipeline uses YOLOX-Nano to localize grapevine cordons in 4K images and a MobileNet-based classifier with lightweight channel attention to classify 320 x 320 pixel patches. The 29,674 field-collected patches were labeled as background or one of four damage levels: no to negligible, mild, moderate, and severe. Merging moderate and severe classes reduced the class imbalance ratio from approximately 40:1 to 8.8:1. Synthetic augmentation increased macro-F1 from 0.768 to 0.838. The classifier outperformed ResNet-50 in macro-F1 with fewer parameters (1.08 M versus 23.52 M). Patch predictions were aggregated into a canopy-level Non-linear Global Defoliation Severity (NGDS) score and validated against an entomologist's ratings of 86 held-out canopy images. Quadratic discriminant analysis identified boundaries of 9% and 29% separating negligible damage, mild damage requiring monitoring, and action-level damage warranting on-site scouting and insecticide treatment consideration. The 29% boundary aligned with the 25%-30% action threshold range for Japanese beetle management in grapevine. Using TensorRT FP16 on an NVIDIA Jetson Orin Nano, the pipeline processed each 4K image in approximately 1.5 s, with a complete operating cycle of 57-60 s. A five-week deployment of two field units demonstrated the feasibility of autonomous solar-powered operation, LoRa communication, and remote defoliation monitoring. D-CAM supports frequent, objective canopy damage assessment for targeted scouting and timely pest-management decisions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

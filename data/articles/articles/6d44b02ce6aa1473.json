@@ -1,0 +1,14 @@
+{
+  "id": "6d44b02ce6aa1473",
+  "title": "What Visual Representations Do World Action Models Need?",
+  "link": "https://arxiv.org/abs/2610.13024",
+  "description": "arXiv:2610.13024v1 Announce Type: new \nAbstract: World Action Models (WAMs) inherit powerful priors from pretrained video generation models, but their variational autoencoder (VAE) representations are optimized for visual reconstruction rather than manipulation. External visual representations can improve manipulation, but existing methods couple representation choices with different integration mechanisms, obscuring their individual effects. We systematically compare visual representations, five integration mechanisms, and feature combinations under controlled settings. Our study yields three main findings. First, strong general-purpose visual representations provide broader robustness gains and can match or outperform representations pretrained for specific visual capabilities. Second, channel-wise joint prediction achieves the highest average success rate; further analyses suggest that future-feature prediction and the action expert's effective use of added visual information contribute to its gains. Third, additional sources should be selected for the task-relevant information they contribute beyond existing representations, as the same source can help one combination but harm another. However, even the best evaluated composition provides a smaller additional gain than the initial improvement from adding a strong general-purpose representation to the VAE-only baseline. We instantiate the resulting Representation Recipe as R$^2$-WAM. It achieves state-of-the-art performance on RoboCasa GR1 Tabletop with an 84.7% success rate and reaches 92.8% on RoboTwin 2.0, improving over the VAE-only baselines by 5.9 and 2.2 percentage points, respectively. Taken together, these findings suggest that future work should prioritize stronger general-purpose visual representations and more effective mechanisms for integrating them into WAMs, with feature composition serving as a supplementary route to improvement.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

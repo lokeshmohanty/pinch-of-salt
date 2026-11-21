@@ -1,0 +1,14 @@
+{
+  "id": "ae041c5fd535b24f",
+  "title": "Evolving Skill Modules under a Fixed Planner: Versioning, Rollback, and Runtime Governance for Long-Lived Robot Systems",
+  "link": "https://arxiv.org/abs/2604.07799",
+  "description": "arXiv:2604.07799v3 Announce Type: replace-cross \nAbstract: Robots deployed for long periods keep improving their skills, and each update changes a released system. We treat this as a software-lifecycle problem: a fixed decision layer dispatches versioned skill modules and a runtime layer was built to screen each action. On six robosuite tasks we report three negative results and two measurements. First, peak task success is unstable across random seeds (within one method it spans 23.3 to 73.3%), so single-run peaks cannot rank these methods. Second, the system's four modules are whole-task policies with different labels, rotated on a clock, not the phase decomposition its documentation describes. At a matched budget one such policy holds the geometry at the final step in 0.734 of episodes reaching it, averaged over seeds, against 0.023 for the rotation, with no seed overlap at four seeds per arm (exact p=0.029). An intervention isolates why: restoring the termination condition the clock replaced raises retention on every seed. Third, our shield cut violations 98 to 100% on five single-arm tasks (34.9% on the sixth) by discarding whole actions, leaving success at zero: its acceptance criterion omitted completions, so a shield that stopped the robot scored perfectly. What survives is release machinery: a promotion gate kept all twelve injected regressions out, a rate its calibration nearly guarantees, at a 22.5% clean-candidate rejection cost; a dip detector caught nine of twelve, missing all three on one seed.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "21060b7548c78cf8",
+  "title": "One Size Does Not Fit All! Dynamic Retriever and Generator Selection for RAG",
+  "link": "https://arxiv.org/abs/2609.17709",
+  "description": "arXiv:2609.17709v1 Announce Type: cross \nAbstract: Retrieval-Augmented Generation (RAG) systems typically employ fixed retriever and generator configurations across queries, despite substantial differences in query complexity and information needs, leading to inefficient allocation of computational resources. While retrieval and generation adaptivity have been studied independently, their joint effect on end-to-end RAG performance remains underexplored. We systematically analyze how retriever and generator complexity interacts across factoid and multi-hop question answering (QA), including bridge and composition reasoning tasks. Our analysis shows that stronger retrieval generally yields larger gains than increased generation effort, but both exhibit diminishing and non-monotonic returns, indicating that higher-complexity configurations are not uniformly better across queries. Motivated by these findings, we introduce DRAG, a query-adaptive framework for selecting retriever-generator configurations. We first propose DRAG$_\\text{QPP}$, a training-free routing approach that uses Query Performance Prediction (QPP) signals to guide retriever selection and perplexity-based measures over retrieved context to guide generator selection. We further introduce DRAG$_\\text{SFT}$, a supervised routing approach that fine-tunes an LLM to jointly predict retriever-generator configurations. Across three LLM families and four QA benchmarks, \\qpprag~achieves performance comparable to strong static RAG baselines while substantially reducing inference latency, whereas DRAG$_\\text{SFT}$ consistently improves effectiveness over static and training-free adaptive baselines. Overall, DRAG demonstrates that jointly adapting retrieval and generation achieves a more favorable effectiveness-efficiency trade-off than static RAG pipelines.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI"
+  ]
+}

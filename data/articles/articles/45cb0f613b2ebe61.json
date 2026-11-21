@@ -1,0 +1,13 @@
+{
+  "id": "45cb0f613b2ebe61",
+  "title": "ArtSeek: Deep artwork understanding via multimodal in-context reasoning and late interaction retrieval",
+  "link": "https://arxiv.org/abs/2507.21917",
+  "description": "arXiv:2507.21917v2 Announce Type: replace \nAbstract: Analyzing digitized artworks requires both visual interpretation and deep artistic, contextual, and historical knowledge. We introduce ArtSeek, a multimodal framework for art analysis that combines multimodal large language models with retrieval-augmented generation. Unlike prior work, our pipeline relies only on image input, so it applies to artworks without links to Wikidata or Wikipedia, common in most digitized collections. ArtSeek integrates three components: a late-interaction multimodal retrieval module, a contrastive multitask network predicting artist, genre, style, media, and tags, and an agentic reasoning strategy enabled through in-context examples. Central to this approach is WikiFragments, a dataset of image-text fragments extracted from the entire English Wikipedia to support knowledge-grounded multimodal reasoning. Our multimodal query encoding raises retrieval NDCG@5 from 33.9 to 44.9 over encoding the full image-text query, and fixed-budget token pooling keeps late-interaction search practical over millions of fragments at under 7% of the cost of full multi-vector retrieval. ArtSeek sets a new state of the art in artwork attribute classification, with +8.4% F1 in style classification over GraphCLIP, and gains +7.1 BLEU@1 on ArtPedia captioning. On five knowledge-grounded question answering benchmarks graded by an LLM judge from a different model family, retrieval helps where the answer is documented in our index or lies inside the classifier's label space (+0.19 mean correctness on two of them) and is neutral where it is not; what separates the two regimes is how much of a benchmark our knowledge base covers. The gain transfers to two non-Qwen backbones (+0.22 to +0.28). A blind human study and a qualitative analysis of successes and failures corroborate this picture and expose where retrieval still misleads. Data and code: https://cilab.di.uniba.it/artseek/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

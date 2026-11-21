@@ -1,0 +1,13 @@
+{
+  "id": "fbd3865b54e0f755",
+  "title": "TRACEMARK: Editor-Aware Watermarking for User Attribution in Text-Guided Image Editing",
+  "link": "https://arxiv.org/abs/2611.07632",
+  "description": "arXiv:2611.07632v1 Announce Type: new \nAbstract: An image editing service records which user requests each edit, but the edited image itself does not contain this account information. Once the image is downloaded and shared, the service cannot identify the requesting user from the image alone. Embedding a user-specific watermark could enable such attribution, but semantic editing may erase the signal. We propose Tracemark, an editor-aware watermarking framework for identifying users from edited images. A shared encoder embeds a user-specific signal before editing, and a shared detector recovers the user by comparing features of the edited image with learned reference vectors. Both components are trained jointly through an editor with fixed parameters. User identification errors encourage the encoder to produce watermarks that survive editing, while fidelity losses limit changes to the input image and intended edit. Each image domain and editing instruction uses a separately trained model shared across registered users. Experiments on three image domains show that editor-aware training improves user recovery with both reference-vector matching and binary watermark decoding. Separately trained models reach 87.5% mean identification accuracy among 500 users. When tested with a different editor without retraining, the watermark modules still recover user information. These results demonstrate that learning watermarks through the editing process enables user attribution without modifying the editor.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

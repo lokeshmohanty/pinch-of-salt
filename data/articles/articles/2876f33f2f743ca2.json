@@ -1,0 +1,13 @@
+{
+  "id": "2876f33f2f743ca2",
+  "title": "COSTA: A Cluster-Centric Paradigm for Annotation-Free Open-Set Semantic Segmentation of Aerial Point Clouds with Domain Shifts",
+  "link": "https://arxiv.org/abs/2608.18479",
+  "description": "arXiv:2608.18479v1 Announce Type: new \nAbstract: Semantic segmentation of aerial point cloud is trapped in a generalization crisis under distinct domain shifts. While test-time adaptation offers a privacy-preserving and computationally efficient way to adapt pre-trained models to unlabeled target-domain data during inference, existing methods, bound to closed-set label assumptions and non-scalable point-wise segmentation pipelines, still struggle with semantic shifts. We ask: can we adapt any given pre-trained aerial point cloud segmentation model to a shifted target domain at the inference phase alone, without additional training, while segmenting target-specific categories beyond the source label space on demand? This paper introduces COSTA, which breaks this limitation by shifting from closed-set point-wise adaptation to cluster-centric open-set semantic propagation. Our core discovery is that, once effectively adapted at test time, the rich feature distribution of aerial point clouds can be distilled into a compact set of well-separated semantic centroids that are transferable across label spaces. COSTA leverages this to reformulate open-set semantic segmentation as a cluster-level propagating process: it first bridges the domain gap through proven test-time adaptation, then groups each batch of target-domain points into a small set of semantic clusters based on the similarity distribution in the adapted feature space, and finally propagates high-confidence pseudo labels obtained from an open-vocabulary vision-language model to all points through cluster-level voting. This cluster-centric paradigm enables test-time adaptation of aerial point clouds under significant domain gaps with mixed semantic shifts. With DALES as the source domain, COSTA enables on-demand segmentation across three aerial point cloud benchmarks with distinct domains and heterogeneous category spaces, achieving up to 70.09% mIoU under this new setting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "aa44387d0797091b",
+  "title": "PointForward V2: Point-Aligned Interaction for Feedforward Driving Reconstruction",
+  "link": "https://arxiv.org/abs/2610.28120",
+  "description": "arXiv:2610.28120v1 Announce Type: new \nAbstract: Feedforward reconstruction of dynamic driving scenes requires integrating observations across multiple views and time steps into a coherent 3D representation. PointForward established state-of-the-art feedforward driving reconstruction by lifting image observations into sparse 3D queries, demonstrating the effectiveness of point-aligned scene representations. However, these queries are largely processed independently, limiting information exchange across space and time, while direct global attention among tens of thousands of point queries is computationally prohibitive. In this work, we present \\textbf{PointForward V2}, which advances point-aligned representation to point-aligned interaction. Our key idea is to mediate query interaction through compact, scene-structured registers. For the static background, frame-wise Static Scene Registers compress point information, communicate across frames, and propagate the aggregated context back to the queries. For each dynamic instance, queries from different frames are aligned in an object-centric canonical space and interact through instance-specific Dynamic Instance Registers. We further employ 4D positional encoding that combines aligned spatial coordinates with original timestamps, enabling spatially aligned yet temporally distinguishable interactions. In this way, PointForward V2 enables scalable spatio-temporal reasoning directly among lifted 3D queries without dense global attention. Experiments on Waymo, nuScenes, and Argoverse 2 demonstrate state-of-the-art performance across large-scale driving benchmarks.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

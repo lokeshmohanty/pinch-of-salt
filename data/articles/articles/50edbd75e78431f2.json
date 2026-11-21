@@ -1,0 +1,13 @@
+{
+  "id": "50edbd75e78431f2",
+  "title": "Aura: Consistent Multi-Subject Video Generation via VLM-Grounded Semantic Alignment",
+  "link": "https://arxiv.org/abs/2607.04311",
+  "description": "arXiv:2607.04311v3 Announce Type: replace \nAbstract: Subject-driven and multi-element video generation are central to controllable video synthesis, but existing methods still struggle to preserve identity consistency and model complex relationships among multiple subjects. In this paper, we propose Aura, a unified framework for high-fidelity and identity-consistent video generation. To better capture scene dynamics and subject interactions, we introduce AI director-level captions that provide dense and structured descriptions of video content. We further leverage a vision-language model (VLM) with learnable queries to extract multimodal semantic features from textual and visual references, covering both global semantics and fine-grained visual cues. To bridge the representational gap between the VLM and the Diffusion Transformer (DiT), we design a two-stage alignment strategy that progressively maps VLM features into the DiT feature space. For visual conditioning, we adopt token concatenation to inject reference information directly into the generation process. To distinguish heterogeneous subject types and reduce common copy-paste artifacts, we develop a subject-aware RoPE-Shift mechanism. To further differentiate reference images of different categories, we introduce subject-aware learnable tokens. In addition, we introduce Memory Tokens to balance the training signal across examples with different numbers of reference subjects. During inference, Progressive-APG (Adaptive Prompt Guidance) further alleviates oversaturation and improves semantic alignment with user prompts. Finally, we build a high-quality video-subject image dataset through a dedicated data construction pipeline. Extensive experiments show that our method achieves state-of-the-art performance on both single-subject generation and more challenging multi-element scenarios.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "c5f240f8da23ea39",
+  "title": "DualHash: Stochastic Primal-Dual Algorithms for W-Type Regularized Deep Hashing",
+  "link": "https://arxiv.org/abs/2510.18218",
+  "description": "arXiv:2510.18218v3 Announce Type: replace-cross \nAbstract: Deep hashing encodes high-dimensional image features into compact binary codes, enabling efficient similarity search in large-scale content-based image retrieval, a problem akin to semantic-preserving lossy compression under extreme bit-rate constraints. A fundamental challenge in deep hashing stems from the discrete nature of quantization in generating the codes. W-type regularizations, such as $z\\mapsto\\||z|-1\\|_1$, are widely adopted and empirically effective at pushing network outputs toward binary values. However, existing methods often directly optimize these regularizations without convergence guarantees. While proximal gradient methods offer a promising solution, the coupling between W-type regularizers and neural network outputs results in composite forms that generally lack closed-form proximal solutions. In this paper, using Fenchel duality, we reformulate the nonconvex W-type regularization term through its convex conjugate, yielding a min-max problem with tractable proximal updates. We show that this min-max problem captures the stationarity of the original deep hashing objective up to the quantization error. Building on this problem, we present a stochastic primal-dual hashing algorithm, referred to as DualHash, with oracle complexity guarantees. We derive two algorithm instances: a momentum-based version with $O(\\varepsilon^{-4})$ oracle complexity and an improved $O(\\varepsilon^{-3})$ version using variance reduction, both for $\\varepsilon$-KKT points of the min-max problem, which yield near-stationarity guarantees for the original objective. Experiments on three standard datasets demonstrate competitive retrieval accuracy and reduced quantization error, validating the practical value of DualHash for image retrieval problems. Our implementation of DualHash is available at https://github.com/RailLee/DualHash.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "math.OC",
+    "cs.CV"
+  ]
+}

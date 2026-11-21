@@ -1,0 +1,13 @@
+{
+  "id": "1b63de4c3c5416df",
+  "title": "IoU-PD: IoU-Aware Privileged Distillation for Visual Grounding with Multimodal Large Language Models",
+  "link": "https://arxiv.org/abs/2607.15732",
+  "description": "arXiv:2607.15732v2 Announce Type: replace \nAbstract: Visual grounding with multimodal large language models is commonly formulated as autoregressive coordinate generation, where a model outputs bounding-box coordinates as text given an image and a referring-expression prompt. While this interface is simple and compatible with instruction following, it introduces a mismatch between training and evaluation: training optimizes token-level likelihood over coordinate strings, whereas grounding quality is measured by geometric overlap. We propose IoU-PD, an IoU-aware privileged distillation method for coordinate-generating multimodal large language models. IoU-PD uses ground-truth boxes not only as coordinate targets, but also as privileged training-time guidance. During training, the student receives the original image and prompt, while a frozen teacher receives a box-marked image and an augmented prompt that indicates the marked region. The student is trained with a supervised fine-tuning anchor and a privileged distillation loss whose token weights reflect both geometric importance and teacher reliability. At inference time, IoU-PD requires no box overlay, privileged hint, teacher branch, or additional prediction module. Experiments on standard referring-expression grounding benchmarks show consistent region-level improvements over strong coordinate-generating baselines, demonstrating that ground-truth boxes can provide useful privileged guidance beyond serving as coordinate labels.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

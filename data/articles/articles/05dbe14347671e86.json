@@ -1,0 +1,13 @@
+{
+  "id": "05dbe14347671e86",
+  "title": "IndusAgent: Agentic Reinforcement Learning for Cross-Category Industrial Anomaly Detection",
+  "link": "https://arxiv.org/abs/2605.20682",
+  "description": "arXiv:2605.20682v3 Announce Type: replace \nAbstract: Small defects in unfamiliar product categories can be difficult to distinguish from benign appearance variations in a global view. Additional reasoning over the same view may leave this ambiguity unresolved. We introduce IndusAgent, a Qwen3-VL-8B inspection policy trained through supervised fine-tuning and tool-augmented reinforcement learning for cross-category industrial anomaly detection. The policy selects among six tools for cropping, enhancement, measurement, within-image comparison, texture analysis, and external visual opinions from Qwen3-VL-Max, then integrates returned observations into a structured diagnosis. Indus-CoT provides 3,000 trajectories from 26 Real-IAD categories, generated with actual tool feedback and screened against annotations after teacher generation. GRPO optimizes an accuracy-gated objective that conditions localization, type, and tool rewards, including call costs, on final diagnostic correctness while retaining an independent format reward. Across five benchmarks, IndusAgent achieves 83.5% mean balanced accuracy, compared with 79.4% for direct Max inference under the common protocol. Across three training seeds, the five-benchmark mean balanced accuracy is 80.5\\% for a weight-matched ungated control and 83.5% for the gated policy. Evaluation uses disjoint product categories and a fixed defect vocabulary.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

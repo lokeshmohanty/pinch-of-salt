@@ -1,0 +1,13 @@
+{
+  "id": "6444ce966e10fa85",
+  "title": "DCR: Counterfactual Attractor Guidance for Rare Compositional Generation",
+  "link": "https://arxiv.org/abs/2605.06512",
+  "description": "arXiv:2605.06512v2 Announce Type: replace \nAbstract: Diffusion models generate realistic visual content, yet often fail to produce rare but plausible compositions. When prompted with combinations that are valid but underrepresented in training data (such as a snowy beach or a rainbow at night), the generation process frequently collapses toward more common alternatives. We identify this failure mode as default completion bias, where denoising trajectories are implicitly attracted toward high-frequency semantic configurations. Existing guidance mechanisms do not explicitly model this competing tendency and therefore struggle to prevent such collapse. We introduce Default Completion Repulsion (DCR), a training-free framework that explicitly models and suppresses default completion behavior. DCR constructs a counterfactual attractor by relaxing the rare compositional factor while preserving surrounding semantics, inducing an alternative denoising trajectory reflecting the model's preferred completion. We define the discrepancy between target and attractor trajectories as a counterfactual drift, and propose a projection-based repulsion mechanism that removes guidance components aligned with this drift direction. This suppresses undesired frequent completions while preserving other semantic components. DCR operates entirely within the standard diffusion sampling process without retraining or architectural modification. Experiments on rare compositional prompts show that DCR improves compositional fidelity while maintaining visual quality. Our analysis further shows that generations from the attractor prompt alone closely match the baseline outputs, confirming that it captures the model's default completion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

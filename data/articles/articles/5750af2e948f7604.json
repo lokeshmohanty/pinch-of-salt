@@ -1,0 +1,15 @@
+{
+  "id": "5750af2e948f7604",
+  "title": "PEARL: Personalized Streaming Video Understanding with Runtime-Defined Concepts",
+  "link": "https://arxiv.org/abs/2603.20422",
+  "description": "arXiv:2603.20422v2 Announce Type: replace \nAbstract: Unlike humans, who learn new concepts from a continuous visual stream, existing personalized vision-language models (VLMs) internalize a predefined concept set during training and operate on static images or offline videos. They cannot register a concept that a user defines in the middle of a stream, nor recall the earlier moments in which it appeared. We formalize this task as Personalized Streaming Video Understanding (PSVU) and introduce PSVU-Bench, the first benchmark for this task, which annotates 132 videos with timestamped questions. Its Concept-Definition, Real-Time and Past-Time QA ask a model to register concepts at arbitrary timestamps, recognize their current state, including user-defined actions, and retrieve their historical evidence. We propose PEARL, a strong plug-and-play baseline that stores user-defined concepts apart from archived video clips and rewrites each query with concept descriptions to retrieve the relevant history. Grounding a named concept in video is a skill shared by all concepts. We therefore construct PSVU-10K, a training set of verified concept questions on public internet videos, and train the retriever and answering VLM of PEARL on it once. Concepts defined at test time still require no training. Applied to three architectures without training, PEARL improves Real-Time QA by 15.05% and Past-Time QA by 12.60% on average over the corresponding offline models, and all three surpass existing online video models on both QA types. Training further improves PEARL on Qwen3-VL-8B by 8.66% on Real-Time QA and 9.39% on Past-Time QA, with gains in every category. Code, data and models are available at https://github.com/Yuanhong-Zheng/PEARL.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.IR"
+  ]
+}

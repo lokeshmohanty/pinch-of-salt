@@ -1,0 +1,13 @@
+{
+  "id": "de9afc6d09c126b7",
+  "title": "BiCG-Net: Target-Specific Image Quality Assessment via Observation Modeling and In-Image Differencing",
+  "link": "https://arxiv.org/abs/2611.06203",
+  "description": "arXiv:2611.06203v1 Announce Type: new \nAbstract: We estimate the quality of a specific target region (e.g., a train body) in an image, rather than the whole image. This differs fundamentally from whole-image No-Reference Image Quality Assessment (NR-IQA): when the target occupies a small fraction of the frame, the whole-image score is dominated by background, and no public benchmark provides target-level human Mean Opinion Score (MOS). We estimate target quality via nested sampling - a sequence of patches expanding outward from the target box - and infer quality from the relative structure of this sequence.\n  This motivates BiCG-Net, a student network that distills an 11-teacher ensemble through a linear observation model and an in-image differencing mechanism, which provably cancels the target term and teacher-specific bias. We train and test the student independently on each dataset, and evaluate zero-shot transfer across benchmarks. On CSIQ and LIVEC, the student reaches PLCCs of 0.9009 and 0.9133 against human MOS, exceeding the best single teacher and the teacher consensus. On a self-built MOS-free railway dataset, the student reaches a PLCC of 0.9855 against a weak label.\n  The student exceeds its teachers because it learns a new mapping from the relative structure of teacher readings to the ground-truth label, rather than mimicking them. Residual analysis on CSIQ and LIVEC shows the prediction residual is significantly correlated with background contamination, teacher dispersion, and label extremity, demonstrating the student extracts information the consensus does not contain. Under CSIQ-to-LIVEC transfer, the frozen student reaches a PLCC of 0.8416, exceeding the consensus by 0.1947. We position BiCG-Net as an offline target-level quality auditing and label-generation engine; its 39,482-parameter student is compact by design, acting as a unifying layer mapping heterogeneous teacher readings onto a common quality scale.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

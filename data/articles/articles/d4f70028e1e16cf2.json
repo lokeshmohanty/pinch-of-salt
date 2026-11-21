@@ -1,0 +1,13 @@
+{
+  "id": "d4f70028e1e16cf2",
+  "title": "MacroGS: Macro-Pixel Shared Gaussian Primitives for Arbitrary-Scale Light Field Super-Resolutio",
+  "link": "https://arxiv.org/abs/2611.17957",
+  "description": "arXiv:2611.17957v1 Announce Type: new \nAbstract: Arbitrary-scale light field spatial super-resolution reconstructs high-resolution views at any requested scale from low-resolution multi-view observations. Gaussian primitives enable continuous reconstruction, but generating separate primitive sets for each view redundantly encodes shared scene structure across views and causes the primitive count grow linearly with the number of views. To avoid such redundancy, we propose MacroGS, a feed-forward decoder that jointly predicts a single shared Gaussian set per macro pixel rather than generating separate sets for each view. Disparity-dependent replacement and angle-conditioned appearance allow each set to be reused across all output views, keeping the predicted primitive count independent of the number of views at each requested scale. The decoder iteratively predicts per-primitive disparities, retrieves the corresponding multi-view features, and updates the primitive states. Gaussian splatting and residual refinement then reconstruct the output light field. Despite being learned without geometric supervision, the predicted disparities strongly correlate with underlying scene geometry. Experiments across five benchmarks demonstrate that MacroGS integrates effectively with diverse light field encoders, improving reconstruction quality at fixed scales while achieving leading performance across most evaluated arbitrary-scale settings. The decoder also achieves speedups of approximately $2$-$10\\times$ over state-of-the-art implicit light field decoders and $10$-$18\\times$ over the view-wise Gaussian baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

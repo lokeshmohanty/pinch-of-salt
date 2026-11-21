@@ -1,0 +1,15 @@
+{
+  "id": "f2ed63645e95bbb3",
+  "title": "Mixture-Greedy for Online Generative Model Selection: Is UCB Necessary in Diversity-Aware Multi-Armed Bandits?",
+  "link": "https://arxiv.org/abs/2603.21716",
+  "description": "arXiv:2603.21716v3 Announce Type: replace-cross \nAbstract: Efficient selection among multiple generative models is increasingly important in modern generative AI, where sampling from suboptimal models is costly. This problem can be viewed as a multi-armed bandit (MAB) task. Under diversity-aware evaluation scores, a non-degenerate mixture of generators can outperform any individual model, distinguishing this MAB setting from classical best-arm identification. Prior approaches incorporate an Upper Confidence Bound (UCB) exploration bonus into the mixture objective. However, across multiple datasets and evaluation metrics, we observe that the UCB term consistently slows convergence and reduces sample efficiency. In contrast, a simple Mixture-Greedy strategy without explicit UCB-type optimism converges faster and achieves even better performance, particularly for widely used metrics such as FID and Vendi where tight confidence bounds are difficult to construct. We provide theoretical insight explaining this behavior: under structural conditions, diversity-aware objectives induce implicit exploration by favoring interior mixtures, leading to sampling of all arms and sublinear regret guarantees for diversity-based objectives. These results suggest that in diversity-aware multi-armed bandits, e.g., for generative model selection, exploration can arise intrinsically from the objective's geometry.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

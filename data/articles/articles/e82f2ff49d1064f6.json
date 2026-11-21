@@ -1,0 +1,14 @@
+{
+  "id": "e82f2ff49d1064f6",
+  "title": "Epipolar-Constrained Graph Representation Learning for Geometric Pose Estimation",
+  "link": "https://arxiv.org/abs/2604.04554",
+  "description": "arXiv:2604.04554v4 Announce Type: replace \nAbstract: We investigate geometry-aware graph representation learning for relative camera pose estimation using epipolar-constrained graph structures. Relative camera pose is commonly estimated from matched image correspondences that satisfy the epipolar constraint; however, identifying geometrically consistent correspondences under varying imaging conditions remains challenging. We employ an existing detector-free transformer architecture to establish correspondences between image pairs and construct a correspondence graph whose topology is guided by epipolar geometry. Initially, each node is connected to its (k) nearest neighbours based on spatial distance. The resulting graph is subsequently pruned using an initial estimate of the Essential Matrix, distinguishing the proposed formulation from conventional graph representations based primarily on heuristic spatial neighbourhoods. The graph learning module aggregates relational information between nodes into a graph-level representation that encodes the geometric context of the correspondences. This representation is passed to a pose regression network to estimate the relative camera rotation and translation. The model is trained across standard and wide baselines using a weighted objective that combines pose regression, scale consistency, heading consistency, and spectral properties of the pose parameters. Experimental graph analyses demonstrate that epipolar-guided edge pruning reduces graph connectivity by more than 90\\% while retaining all correspondence nodes. Further spectral analyses characterize the effects of graph sparsification and injected outliers on learned graph representations.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

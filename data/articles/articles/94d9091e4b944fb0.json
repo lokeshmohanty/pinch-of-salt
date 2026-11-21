@@ -1,0 +1,13 @@
+{
+  "id": "94d9091e4b944fb0",
+  "title": "Decoupled Mode Connectivity for Base-to-Novel Generalization in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2611.09655",
+  "description": "arXiv:2611.09655v1 Announce Type: new \nAbstract: Prompt learning adapts vision-language models such as CLIP by optimizing a short learnable prompt. The cross-entropy objective pulls this prompt toward\n  base-class specialization, whereas generalization to unseen classes benefits from staying close to CLIP's zero-shot feature space. Because both objectives\n  act on the same prompt, their gradients conflict at convergence, and in our experiments no single-prompt loss design clearly improves on the cosine\n  baseline. We propose Decoupled Mode Connectivity (DMC), which gives each objective its own prompt. Starting from a base-trained prompt, DMC trains a\n  specialization prompt and a generalization prompt, and merges their text features with a fixed coefficient at test time, at the inference cost of a single\n  prompt. A linear mode connectivity (LMC) corridor in text-feature space keeps the classification loss low for every classifier interpolated between the two\n  endpoints, and a Visual Anchor KL term preserves CLIP's zero-shot class-similarity distribution of each image during specialization. We further argue that\n  such regularizers should satisfy class-permutation invariance (CPI), and show via Fano's inequality, in an idealized model, that violating CPI\n  lower-bounds the drop in novel accuracy by a term proportional to the mutual information between the prompt and the base-class labels. Across 11 datasets,\n  DMC improves the average harmonic mean of base and novel accuracy over MergeTune for both CoOp and KgCoOp, and its interpolation curves pass beyond the\n  single-prompt operating point, shifting the base-novel frontier rather than trading along it. Code is available at https://github.com/IemProg/DMC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

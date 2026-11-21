@@ -1,0 +1,14 @@
+{
+  "id": "d57c9bd3c9944adf",
+  "title": "Coverage-Driven Adaptive Keyframe Selection for Video Understanding",
+  "link": "https://arxiv.org/abs/2608.00714",
+  "description": "arXiv:2608.00714v1 Announce Type: new \nAbstract: Recent advances in large vision-language models (LVLMs) have enabled long-video understanding and analysis. However, processing the large number of frames in a video incurs substantial computational overhead. Existing methods reduce LVLM inference costs by scoring frame-query relevance before inference and selecting keyframes accordingly. Nevertheless, the distribution of relevant frames varies across queries, and these methods often need to score hundreds or thousands of frames. To address this limitation, we propose CSES, a training-free semantic keyframe selector that adaptively determines the numbers of frames to score and keyframes to select. CSES estimates the prominence of the frame-query relevance profile to guide active acquisition and adapt the temporal coverage of each input. It then formulates keyframe selection as a coverage problem that jointly accounts for semantic relevance, temporal redundancy, and visual redundancy. Active acquisition and keyframe selection terminate based on coverage saturation. The selection objective is monotone and submodular, enabling greedy optimization with a standard approximation guarantee. Experiments with four LVLMs on two benchmarks show that our method preserves accuracy while scoring $4$-$13\\times$ fewer frames and selecting $18.4\\%$-$20.5\\%$ fewer input keyframes than existing baselines. CSES further achieves a $3.1$-$5.4\\times$ speedup in frame selection over baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

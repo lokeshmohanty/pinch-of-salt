@@ -1,0 +1,15 @@
+{
+  "id": "0239de1db2fa442e",
+  "title": "Streaming Generative Video Compression with Embedding Alignment and In-Context Propagation",
+  "link": "https://arxiv.org/abs/2611.23352",
+  "description": "arXiv:2611.23352v1 Announce Type: cross \nAbstract: Video compression at ultra-low bitrates presents substantial challenges in preserving perceptual quality. Although pretrained video diffusion transformers (DiTs) provide powerful generative priors, existing generative video compression (GVC) methods built on them typically rely on computationally expensive VAE decoders to reconstruct video frames. Moreover, jointly refining multiple frames to exploit the inherent spatiotemporal modeling capabilities of video DiTs introduces additional buffering delay. To address these challenges, we propose SGVC, a streaming generative video compression framework that adapts a pretrained latent video DiT into a causal pixel-space refiner. Specifically, SGVC projects decoded features from a contextual pixel codec directly into the DiT input embedding space. To bridge the representation gap between codec-derived embeddings and pretrained DiT embeddings, we introduce Embedding Alignment, which aligns the projected embeddings with input embeddings extracted from the original frames during training. The refined DiT hidden states are then mapped directly to the pixel domain through a lightweight reconstruction path, bypassing the pretrained VAE decoder. To further exploit the spatiotemporal priors of the video DiT while maintaining causal decoding, we introduce In-Context Propagation, which reuses layer-wise K/V states across frames to exploit historical generative context, improving temporal consistency without requiring clip-wise buffering. Extensive experiments demonstrate that SGVC achieves competitive rate-perception performance, with average BD-rate savings of 71.97% over S$^2$VC in terms of DISTS. Project Page: https://chigland.github.io/SGVC/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "cs.MM"
+  ]
+}

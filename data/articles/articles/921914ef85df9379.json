@@ -1,0 +1,14 @@
+{
+  "id": "921914ef85df9379",
+  "title": "Beyond MMSE: Enhancing PnP Restoration with ProxiMAP",
+  "link": "https://arxiv.org/abs/2605.16396",
+  "description": "arXiv:2605.16396v2 Announce Type: replace \nAbstract: Plug-and-Play (PnP) methods for imaging inverse problems replace the proximal operator of the prior, a maximum a posteriori (MAP) denoiser, with a pretrained minimum mean squared error (MMSE) denoiser. MMSE estimates are oversmoothed, motivating recent work to target the MAP with diffusion-model scores. We show that MAP-targeting iterations converge to cartoon-like images with learned scores, but to realistic ones with the exact scores of a Gaussian mixture. The failure thus seems to come from score errors, and it only appears near convergence. We therefore propose ProxiMAP, an iterative MAP approximation that queries the denoiser at the residual noise level of the current iterate. This keeps the denoiser in-distribution and slows the iterations down before they reach the cartoon regime. On deblurring, super-resolution, inpainting, HDR and phase retrieval, replacing the MMSE denoiser with ProxiMAP in DPIR, DiffPIR and DAPS improves perceptual quality in most experiments, sometimes at the expense of PSNR. To make ProxiMAP cheaper, we also propose a one-step distillation and a hybrid schedule that applies it only at the last PnP iteration. In most cases, one or the other retains much of the improvement at a fraction of the cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

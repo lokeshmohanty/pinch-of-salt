@@ -1,0 +1,15 @@
+{
+  "id": "cb73733b2d5e9e9d",
+  "title": "Lost at the End: Primacy Bias in Multimodal Retrieval-Augmented Question Answering",
+  "link": "https://arxiv.org/abs/2606.16494",
+  "description": "arXiv:2606.16494v4 Announce Type: replace-cross \nAbstract: Knowledge-based visual question answering (KB-VQA) lets vision-language systems answer questions that exceed their parametric knowledge by conditioning a reader on passages retrieved from a Wikipedia-derived knowledge base. In pure-text long-context LLMs, retrieved-context use follows the U-shaped lost-in-the-middle effect of Liu et al. (2024): information at the start and end of context is used, the middle is lost. Whether this transfers to deployed multimodal KB-VQA is open. To close this gap, we design the first controlled probe of reader-side position dependence in multimodal KB-VQA: a gold-position protocol in which only the gold passage's prompt slot varies within question. We run it on three open-source 7B/8B VLM readers and two KB-VQA benchmarks with up to 20 retrieved passages. The shape flips from U to primacy: gold-at-first beats gold-at-last by 16 to 26 points on all six combinations of reader and benchmark, an effect we call Lost at the End; the gap holds at every scale we test, 3B to 32B, attenuating at 32B. Three targeted ablations narrow the cause. A text-only control that removes the image and changes nothing else shows the primacy is already present in text mode and does not depend on the image. Image-position and distractor-shuffle ablations trace the effect to prompt slot 0 of the instruction-tuned reader, where a second answer-bearing passage placed later is largely wasted. On a frozen reader, three retrieval-side fixes (MMR, oracle reranking, rank-based reordering) all fail to improve on the deployment default. Our findings indicate that recall@k is the wrong metric for deployed KB-VQA and that the remaining headroom sits on the reader side; we release our protocol as a controlled instrument for evaluating reader-side interventions.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

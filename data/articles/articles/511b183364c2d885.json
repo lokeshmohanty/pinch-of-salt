@@ -1,0 +1,14 @@
+{
+  "id": "511b183364c2d885",
+  "title": "Towards Reliable Local Security Agents: Verifiable Post-Training for Linux Privilege Escalation",
+  "link": "https://arxiv.org/abs/2603.17673",
+  "description": "arXiv:2603.17673v3 Announce Type: replace-cross \nAbstract: LLM agents are increasingly important in security, yet leading systems are typically closed-source and cloud-hosted, limiting reproducibility and their use with sensitive data. This creates a need for small, local models that can perform security tasks under strict resource constraints, though effective methods for developing them remain underexplored. In this paper, we address this gap by proposing a two-stage post-training recipe that turns a small local language model into a security agent. To this end, we focus on Linux privilege escalation as a representative setting to systematically study the training of local models, as the task is automatically verifiable and requires multi-step interactive reasoning. Using an experimental setup that mitigates benchmark leakage, we post-train a small 4B model in two stages: supervised fine-tuning on traces from procedural privilege-escalation environments, followed by reinforcement learning with verifiable rewards. On a held-out benchmark of 12 Linux privilege-escalation scenarios, supervised fine-tuning nearly doubles the baseline success rate under a tight budget of 20 interaction rounds, and subsequent reinforcement learning improves our model, PrivEsc-LLM 4B, to 93.3% success, ahead of all other evaluated models that fit a single consumer GPU. At the same time, its expected inference cost per successful escalation is more than 80x lower than that of Claude Opus 4.7. Our findings show that small local models can be adapted to complex security tasks. We document the challenges involved and offer guidance for transferring this recipe to other settings.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

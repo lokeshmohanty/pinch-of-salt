@@ -1,0 +1,14 @@
+{
+  "id": "9f7c4c6c95e26e70",
+  "title": "torchtest2: One-Call Sanity Checks for PyTorch Models,Evaluated on Real and Unseen Architectures",
+  "link": "https://arxiv.org/abs/2611.23273",
+  "description": "arXiv:2611.23273v1 Announce Type: cross \nAbstract: Many bugs in deep learning code are silent: a layer that is never called, an optimizer created before the classification head was replaced, a recurrent layer that treats the batch as time, or an ignored attention mask. The code runs, the loss decreases somewhat, and the defect surfaces, if ever, after days of GPU time. We present torchtest2, an open-source library that runs 18 sanity checks on a single batch with one call, restores the PyTorch state it touches, and adapts to model families through plugins. We evaluate it by mutation analysis with 17 classes of silent bugs on 103 models from torchvision, timm and Hugging Face transformers, on 600 random architectures and on 20 hand-written realistic bugs, against the checks of the original torchtest, overfitting a single batch, a smoke test and a training monitor in the style of AUTOTRAINER and DeepDiagnosis. Every mutant is compared with its healthy counterpart, and intervals come from a bootstrap over models. After freezing the tool, we ran it on 191 models of architecture families it had never seen: counting, for every tool alike, a failing report where the healthy model's report does not fail, it detected 78% of the injected bugs (95% CI 75-80), against 40% for the original torchtest checks and 48% for the training monitor. On real models its batch-independence check found a bug in timm's GCViT that couples the images of a batch. Real models also exposed false alarms that neither the tool's own test suite nor random architectures had revealed. Two independent collections of real silent bugs mark the limits of the approach: only 3 of 28 reproduced PyTorch bugs from Stack Overflow and 3 of the 18 silent training errors released with TrainCheck are within reach of a pre-training model tester. A median check takes 1.0 s. We release the library, the benchmark and all raw results.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.CV"
+  ]
+}

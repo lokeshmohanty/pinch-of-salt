@@ -1,0 +1,15 @@
+{
+  "id": "0dc9b661f110486c",
+  "title": "Forget Attention: Importance-Aware Attention Is All You Need",
+  "link": "https://arxiv.org/abs/2606.02332",
+  "description": "arXiv:2606.02332v3 Announce Type: replace \nAbstract: Attention retrieves content precisely, but its scores depend only on query--key products, leaving order and recency to positional encodings. Conversely, state-space models (SSMs) such as Mamba-3 track order and recency through input-dependent state transitions that decay and rotate, yet compressing context into a fixed-size state hampers precise retrieval. Hybrids like Samba and Hymba exploit this complementarity only across layers or heads, so SSM transitions never shape attention scores directly. The closest prior work, the Forgetting Transformer (FoX), adds an input-dependent forget gate to the scores but reweights attention by recency alone. We propose SSM-Informed Softmax Attention (SISA), which builds Mamba-3-style state transitions, rotation included, directly into the scores alongside FoX's gate. Each logit receives the weight such an SSM would give that token pair: a decayed match between rotated SSM projections. This rotation already encodes relative position, so SISA drops RoPE; restoring it raises loss. SISA outperforms parameter-matched Transformer and FoX in language modeling and length extrapolation. Among the attention models we compare, hybrids included, only SISA benefits from context beyond the training window. Building SSM transitions into the scores yields stronger attention, and our kernels make it faster and leaner than baselines on their official or standard kernels.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

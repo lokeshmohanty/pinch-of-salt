@@ -1,0 +1,14 @@
+{
+  "id": "e366b0a40c774106",
+  "title": "Rocks, Pebbles and Sand: Modality-aware Scheduling for Multimodal Large Language Model Inference",
+  "link": "https://arxiv.org/abs/2603.26498",
+  "description": "arXiv:2603.26498v3 Announce Type: replace-cross \nAbstract: Multimodal Large Language Models (MLLMs) power platforms like ChatGPT, Gemini, and Copilot, enabling rich interactions across text, images, and videos. Unlike text-only workloads, multimodal requests are inherently heterogeneous, differing by orders of magnitude in latency and memory footprint. Existing LLM serving systems, designed for homogeneous text workloads, struggle under this heterogeneity: large image and video requests monopolize GPU resources, causing severe head-of-line blocking and degrading the responsiveness of lightweight, latency-critical text queries. Recent multimodal serving systems mitigate this interference through disaggregation, isolating encoding and inference stages across GPUs. While effective at large scale, such designs introduce severe GPU underutilization in more practical, moderate-scale deployments. In response, we build RPS-Serve a modality-aware scheduling framework that leverages the extreme heterogeneity in multimodal workloads and introduces a simple abstraction: videos behave like rocks, images like pebbles, and text like sand. Then, it lets sand flow quickly through pebbles and rocks, maximizing GPU utilization while ensuring fast responsiveness for lightweight requests and controlled execution for heavier ones. To achieve this, RPS-Serve estimates the GPU admission cost of each request, classifies requests into rocks, pebbles, and sand using lightweight clustering, and applies priority-based scheduling with aging to balance performance across modalities. Evaluation across state-of-the-art MLLMs shows that RPS-Serve increases GPU utilization by 65% and reduces TTFT by up to 9.3x, on average across models, compared to disaggregation-based multi-modal systems.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI"
+  ]
+}

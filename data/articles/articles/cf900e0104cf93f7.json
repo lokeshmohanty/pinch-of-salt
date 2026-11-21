@@ -1,0 +1,13 @@
+{
+  "id": "cf900e0104cf93f7",
+  "title": "Spatial Action Review: A Visual Analytics Dashboard for Auditing Language-to-Action Hand-offs in Electron Microscopy",
+  "link": "https://arxiv.org/abs/2609.24470",
+  "description": "arXiv:2609.24470v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) are increasingly explored as interfaces for scientific image analysis, where a visual question-answering (VQA) response may be paired with a spatial output that guides a downstream stage. A supervisor reads the language answer, while a downstream workflow such as segmentation or region review consumes the point-set output. We call this transition from inspecting the answer to relying on its point action the language-to-action hand-off. A silent failure occurs when the answer is correct while the paired action misses annotated objects needed downstream, so answer-based oversight clears a region whose action is unreliable. We introduce Spatial Action Review, a visual analytics dashboard for auditing this failure mode in electron microscopy (EM) mitochondria analysis. It links paired answer-action records through an answer-action ledger, a task-by-dataset risk map, and an image-region audit view, connecting aggregate patterns to image evidence while an adjustable action-reliability gate supports re-audit. The review ends in a human-AI hand-off, where a supervisor records whether the action is accepted, escalated, held under a stricter gate, or flagged for model revision. Across 541 image regions from an EM-adapted Qwen3-VL case-study run, point actions fail the gate in 54.4% of records with a correct VQA response, and 27.4% of all records are silent failures. A correct answer is associated with only a 5.8-percentage-point higher probability of a reliable action, with a bootstrap interval spanning zero; the point-biserial correlation between answer correctness and object coverage is 0.061. This weak coupling persists across five model conditions on 753 matched image regions. Spatial Action Review makes answer-action mismatches visible and ties them to image evidence and a recorded decision before MLLM outputs enter autonomous scientific workflows.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "fd890c36b400fcd2",
+  "title": "MedHarness: A Unified Budgeted Runtime for Reliable Medical Imaging Agents",
+  "link": "https://arxiv.org/abs/2611.23501",
+  "description": "arXiv:2611.23501v1 Announce Type: new \nAbstract: Medical imaging agents already return answers on heterogeneous imaging surfaces, yet deployment still faces a limited verification budget where each wrong accept can harm clinical trust. When a thin check and a deeper evidence pass disagree on the same case, deciding when to stop, open more evidence, repair, or reject without a shared controller remains ill-posed. Tool-using workflows often lock a surface-specific evidence order per dataset, or a private always-open full-depth verification path; those pipelines stay costly, leave many wrong accepts, and cannot share one controller across modalities. We present MedHarness, a registered multi-surface runtime reliability layer that reformulates post-answer control as shared decision-object attachment after a proposer's initial prediction. Under Shared Decision Object, Minimum-Sufficient Verification, and Intermediate Repair, one shared policy with surface recipe adapters lets a new imaging surface join the same stop / open-evidence / repair / reject controller by recipe registration. On a 512-case live pool, MedHarness cuts wrong accepts versus a full-verification baseline by about 47% and raises accepted accuracy to 83.2% vs. 72.9% at 86.1% coverage versus full release under that baseline. On a failure-enriched multi-surface stress ranking, the same controller cuts estimated remote service calls per case by about 71% versus that baseline under a matched context-load setting. A held-out three-surface check and an alternate language-model transfer keep the same control ordering. The code is available at https://anonymous.4open.science/r/MedHarness-paper-release-A7F3/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

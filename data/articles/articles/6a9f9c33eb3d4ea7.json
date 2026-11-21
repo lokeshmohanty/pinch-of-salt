@@ -1,0 +1,14 @@
+{
+  "id": "6a9f9c33eb3d4ea7",
+  "title": "Train4Merge: RL or SFT---Which Yields Better Teachers for OPD-Based Model Merging?",
+  "link": "https://arxiv.org/abs/2609.32303",
+  "description": "arXiv:2609.32303v3 Announce Type: replace \nAbstract: Domain experts trained from a shared checkpoint can transfer their specialized capabilities to a single student through on-policy distillation (OPD). Existing research primarily focuses on improving this merging process, while the algorithms used to train the experts have received limited systematic comparison. We investigate which training algorithm produces teachers better suited to OPD through controlled single-teacher comparisons of supervised fine-tuning (SFT) and reinforcement learning (RL) across Agentic, Reasoning, and Perception. We further examine whether this advantage extends to multi-teacher OPD (MOPD). Teachers and students share the same Qwen3.5-9B initialization, and the two teacher types are compared at similar task performance. Our single-teacher experiments show that RL teachers yield stronger students and higher recovery of teacher performance gains across all three domains. In MOPD, the RL teacher group also yields a student with a higher three-domain mean score and higher overall teacher gain recovery than the SFT teacher group. Our further analysis shows that RL teachers undergo smaller parameter displacements from the shared initialization than SFT teachers. Teacher--student Top-K overlap also increases faster early in OPD or remains consistently higher with RL teachers than with SFT teachers. These findings support the hypothesis that RL teachers' smaller departures from the student's starting point facilitate learning through OPD, resulting in stronger students.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "519f7bfd696dbef9",
+  "title": "MIRAGE: Motion Identity Reduction via Autoregressive Generative Encoding for Privacy-Preserving Skeleton-based Motion Data",
+  "link": "https://arxiv.org/abs/2611.22200",
+  "description": "arXiv:2611.22200v1 Announce Type: new \nAbstract: Skeleton motion identifies people through body proportions and movement style, and skeleton streams are increasingly passed to third-party analytics that run action classifiers trained on raw data. A prior adversarial anonymizer adds a per-frame residual in the raw coordinate space but sees one frame at a time; motion retargeting needs a target skeleton and complete sequences, which rules out online use. We present MIRAGE, a target-free, causal anonymizer that adds an identity-reducing residual to each incoming frame in the raw coordinate space, computed by attention over past frames. One causal, optionally windowed mask governs every attention in a rotary-position encoder-decoder, and key/value caches let the trained function run frame by frame; on all 56,578 NTU 60 sequences, batched and streaming outputs differ by at most 7.2e-6 m. Reported results use an unbounded window, so per-stream state grows with stream length. We evaluate against a passive adversary that applies raw-trained identity models and an adaptive adversary that trains on the anonymizer's output, treating the adaptive adversary as the headline, on NTU RGB+D 60 over five generator seeds, alongside the per-frame residual anonymizer of Moon et al. trained identically. When consumers retrain on the released data, MIRAGE keeps 83.9% action recognition (raw 89.1%; Moon et al. 88.7%) while a retrained identity classifier reaches 43.4% re-identification (RI) over 40 subjects, against 69.4% for Moon et al. and 75.4% on raw data. The strongest adaptive attacker still reaches 49.3% (chance 2.5%), so MIRAGE reduces identity leakage; it does not anonymize. Against raw-trained (frozen) classifiers, MIRAGE lowers RI below the strongest retargeting baseline (10.36% vs. 22.09%), but frozen action recognition falls to 37.04% (vs. 75.82%), so at full residual scale it is not a drop-in replacement for raw input to existing frozen models.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

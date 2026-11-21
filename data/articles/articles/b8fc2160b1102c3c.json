@@ -1,0 +1,13 @@
+{
+  "id": "b8fc2160b1102c3c",
+  "title": "Breaking Visual Conventions: Spectrally Coupled Weight Perturbation for Creative Image Generation",
+  "link": "https://arxiv.org/abs/2611.22318",
+  "description": "arXiv:2611.22318v1 Announce Type: new \nAbstract: Text-to-image (T2I) models often produce high-quality images that follow familiar visual conventions, even in response to open-ended prompts such as ``a creative [CLS]''. Existing methods encourage novelty by exploring semantic conditions or modifying features and guidance during denoising. Pretrained weights offer a complementary source of creative variation, but unstructured perturbations can have little visual effect or degrade image quality. We introduce Coupled Spectral Perturbation (CosPert), a training-free method that targets attention projections in layers identified by a one-time sensitivity analysis. For each projection, CosPert uses a shared random transformation and its transpose to couple updates to the singular-vector factors while perturbing the spectral gains. A common relative budget calibrates the magnitude of weight changes across projections, and a sigmoid schedule concentrates their influence in early denoising and gradually attenuates them during refinement. CosPert provides plug-and-play creativity enhancement at inference time. Once the perturbations are prepared, sampling requires no auxiliary networks or additional model evaluations. On both FLUX.1 and Stable Diffusion 3.5, CosPert enhances visual creativity, producing more varied object structures while preserving category identity. Across 50 object categories, CosPert achieves the highest mean CREward among the evaluated methods while maintaining strong prompt alignment.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

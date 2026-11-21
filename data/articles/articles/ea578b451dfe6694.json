@@ -1,0 +1,13 @@
+{
+  "id": "ea578b451dfe6694",
+  "title": "Reliability-Aware Ensemble Classification Under Class Imbalance: A Calibration Study on Liquid-Based Cervical Cytology",
+  "link": "https://arxiv.org/abs/2607.09837",
+  "description": "arXiv:2607.09837v1 Announce Type: new \nAbstract: Cervical cytology classification models are typically evaluated on curated, class-balanced benchmarks, but real-world liquid-based cytology (LBC) collections are often small and class-imbalanced. This paper presents a class-imbalance-aware and calibration-aware ensemble classification study on the Mendeley LBC dataset, using its native four-class Bethesda taxonomy (NILM, LSIL, HSIL, SCC) rather than a collapsed binary formulation. Three lightweight architectures (Swin-Tiny, TinyViT-5M, DenseNet121) are trained directly on Mendeley LBC using weighted random sampling to counteract class imbalance, and compared against two soft-voting ensembles (Hybrid-2, Hybrid-3). Post-hoc temperature scaling is fit on a held-out calibration subset carved out of the training portion of each cross-validation fold, distinct from both the training data used to fit model weights and the evaluation fold used for final metrics, avoiding the optimistic calibration estimates that result when the same data is used for both purposes. Calibration substantially reduces expected calibration error, Brier score, and negative log-likelihood for every model and ensemble configuration tested, while discrimination metrics (accuracy, macro-F1, macro-AUROC) remain essentially unchanged. Ensemble size shows no consistent additional reliability benefit over the best individual model once all configurations are properly calibrated. Confusion matrices show that all classification errors, across every configuration, are confined to the boundary between high-grade lesions (HSIL) and carcinoma (SCC); no errors involve the negative (NILM) or low-grade (LSIL) categories. These results suggest that, for this dataset, calibration is the dominant lever for reliability, not ensemble size, though this conclusion should be read in light of the dataset's modest size.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-14T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "95ea392ecab7d4ed",
+  "title": "ViLFlow: Parallel Vision-Language Generation with Continuous Latent Flows",
+  "link": "https://arxiv.org/abs/2611.24240",
+  "description": "arXiv:2611.24240v1 Announce Type: new \nAbstract: Vision-language generation has predominantly relied on autoregressive and discrete diffusion models. Autoregressive models generate tokens sequentially, while discrete diffusion models typically predict tokens independently within each denoising step. We propose ViLFlow (Vision-Language Flow), a continuous-flow vision-language model that combines joint modeling of output embeddings with parallel token decoding. ViLFlow adapts pretrained continuous language generation to visual question answering and image captioning through learned image guidance and prediction-aware token decoding. A visually adapted teacher provides image-guided predictions as additional denoising supervision. The denoiser learns to reproduce these predictions directly, retaining one image-conditioned prediction per generation step. We train the token decoder on denoiser predictions and paired reference text to improve the conversion of continuous outputs into words. The decoder can be adapted independently, improving answering and captioning without further denoiser training. For captioning, it also supplies text feedback during late denoising, allowing decoded words to inform subsequent refinement. ViLFlow outperforms autoregressive and masked-diffusion baselines by up to 8.46 percentage points on VQAv2 and 4.50 points on GQA without GQA training. On COCO Karpathy test, it improves CIDEr by 16.25 over masked diffusion and 17.81 over sampled autoregression.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

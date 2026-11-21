@@ -1,0 +1,14 @@
+{
+  "id": "aece2401cacc3d02",
+  "title": "TRCM: Topology-Aware Route-Consistency Modeling for Robust Neural Vehicle Routing",
+  "link": "https://arxiv.org/abs/2610.27568",
+  "description": "arXiv:2610.27568v1 Announce Type: cross \nAbstract: Neural combinatorial optimization has enabled fast constructive solvers for the Capacitated Vehicle Routing Problem (CVRP), yet most autoregressive models still construct solutions through sequential node selection and represent route organization only implicitly. We investigate whether route-level customer co-assignment can be modeled explicitly and used to guide this node-level decision process. To this end, we propose TopologyAware RouteConsistency Modeling (TRCM), which reuses node representations from a standard autoregressive construction pipeline to predict pairwise same-route probabilities and injects them into customer selection as a route-consistency signal. Because sameroute supervision is both class-imbalanced and structurally uneven, TRCM combines structure-preserving augmentation with Topological Entropy (TE)- based reweighting to emphasize locally ambiguous customer pairs. Under matched decoding budgets, TRCM reduces the optimality gap from 3.67% to 3.28% on CVRP50 and from 2.11% to 1.99% on CVRP100; under 8-fold augmented inference, it reduces the CVRP100 gap from 1.61% to 1.49%. On XML100, TRCM*8Aug improves the average objective by 0.24%, with larger gains on several structurally informative factors. A controlled demand-reassignment test over 500 variants further shows more concentrated objective fluctuations. These results support explicit route-consistency modeling as an effective structural principle for autoregressive neural routing.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e1929bca9962f85c",
+  "title": "Strong Fused Performance Can Mask Branch Collapse in a Dual-View Heart-Sound Classifier: A Three-Part Diagnostic Protocol",
+  "link": "https://arxiv.org/abs/2611.22556",
+  "description": "arXiv:2611.22556v1 Announce Type: new \nAbstract: Fusion models are usually judged by their fused score, a practice that assumes that every branch has learned something useful. We show that this assumption can fail silently in dual-view heart-sound classification. In AudioFuse, which fuses a spectrogram transformer with a waveform CNN, the spectrogram branch is unused despite strong fused performance when both branches are trained from scratch. We introduce a three-part diagnostic for branch collapse: whether deleting a branch changes the fused score, whether a linear probe on its features beats an untrained copy of the same branch, and whether the branch can learn its view when trained alone. Deleting the branch has negligible effect, and probing its features shows little improvement over an identically initialised, untrained copy. Yet the same architecture trained alone exceeds 0.9 AUC, so its view is learnable, while the jointly trained model is near chance when it must rely on this branch. Update statistics and an initialisation experiment point to an early optimisation imbalance. Moving a strong artificial label cue from one input to the other can switch which branch the model relies on, even though the branch architectures stay the same. We observe branch collapse on PhysioNet, but the full diagnostic is not met on ICBHI or CirCor. Fused performance alone therefore cannot establish that every branch learned a meaningful representation, and we recommend reporting branch deletion and an untrained-control probe alongside it.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

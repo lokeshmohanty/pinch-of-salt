@@ -1,0 +1,14 @@
+{
+  "id": "bc53878cc6ed678e",
+  "title": "Object-independent evaluation of small-data astronomical image classifiers: architecture, representation, and acquisition shortcuts",
+  "link": "https://arxiv.org/abs/2611.06484",
+  "description": "arXiv:2611.06484v1 Announce Type: cross \nAbstract: Reported performance in small astronomical image datasets can reflect object reuse, field-of-view differences, acquisition settings, and catalogue-derived properties as well as astronomical morphology. We designed \\dataset{} to measure these effects in a four-class task comprising galaxies, globular clusters, nebulae, and open clusters. The dataset contains 370 catalogue-supported physical objects, each represented by three Digitised Sky Survey FITS bands, and uses a group-constrained split of 222 training, 75 validation, and 73 test objects. We compared a custom CNN--Transformer trained from scratch with ImageNet-pretrained ResNet-50 and ViT-B/16 under an adaptive full-field representation, a common angular field, and two central-region-masked controls, using three fixed seeds. In the one-pass object-independent test, mean balanced accuracy on the adaptive view was $0.773\\pm0.014$, $0.874\\pm0.054$, and $0.866\\pm0.023$ for the custom model, ResNet-50, and ViT-B/16, respectively. No primary architecture contrast rejected its null after Holm correction; ResNet-50 and ViT-B/16 differed by 0.007 balanced-accuracy points (95\\% cluster-bootstrap interval $[-0.048,0.062]$). Controls based on acquisition and catalogue metadata reached 0.721--0.735, and central-region-masked adaptive views reached 0.731--0.800. These results demonstrate generalisation to unseen physical objects, but also show that image context, acquisition settings, and catalogue-derived object properties carry substantial class information. In this regime, high accuracy cannot be interpreted as evidence that a classifier learned target morphology, and the comparison does not isolate architecture from pretraining.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "astro-ph.IM",
+    "cs.CV"
+  ]
+}

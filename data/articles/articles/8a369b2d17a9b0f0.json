@@ -1,0 +1,13 @@
+{
+  "id": "8a369b2d17a9b0f0",
+  "title": "Training Language Models for Introspective Oversight",
+  "link": "https://arxiv.org/abs/2611.23365",
+  "description": "arXiv:2611.23365v1 Announce Type: new \nAbstract: Language models increasingly exhibit behaviors that are difficult to detect in transcripts, such as reward hacking, deception, and sycophancy. Asking the assistant follow-up questions about its actions is unreliable, since models are generally not trained to report their own misbehavior. As a result, approaches to oversight typically involve querying external models. These face limitations: external transcript monitoring operates only on visible model outputs, and activation decoders lack full context and are prone to confabulation. We introduce introspective oversight, which trains a new role in the model to answer arbitrary questions about the assistant, rewarding answers that are verified against the assistant's actual behavior. We implement this by adding a separate, third-person observer role that answers these queries, which we can train solely for accuracy and separately from the assistant. On five held-out oversight evaluations, an observer trained on Qwen3.6-27B obtains a mean AUROC of 0.907, outperforming honesty training (0.864), transcript monitoring (0.828), and activation oracles (0.796). We further find that training an observer makes the assistant itself easier to monitor, with every baseline method improving on average when applied to the fine-tuned assistant. These results suggest that training models to answer verifiable questions about themselves is a tractable approach to overseeing unintended behavior.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

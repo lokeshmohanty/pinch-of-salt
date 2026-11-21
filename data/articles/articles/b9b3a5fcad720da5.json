@@ -1,0 +1,13 @@
+{
+  "id": "b9b3a5fcad720da5",
+  "title": "Respect Your Zero-Shot Uncertainty: Conservative Calibration for Test-Time-Adapted Vision-Language Models",
+  "link": "https://arxiv.org/abs/2608.05945",
+  "description": "arXiv:2608.05945v1 Announce Type: new \nAbstract: Test-time adaptation (TTA) can improve the recognition accuracy of vision-language models under distribution shift, but often degrades calibration, making predictive confidence unreliable for downstream decision-making. Many existing label-free calibration approaches are either coupled to prompt optimization or rely on logit-range statistics that provide only a coarse characterization of the predictive distribution. We show that TTA can increase confidence and reduce entropy even when the top-1 prediction and its correctness remain unchanged, a failure mode we term prediction-preserving sharpening. Across diverse TTA methods and benchmarks, larger entropy reductions relative to paired zero-shot predictions are associated with greater increases in Expected Calibration Error (ECE). On entropy-reduced samples, confidence gains also tend to exceed accuracy gains. Based on these findings, we propose Zero-Shot-Anchored Entropy Calibration (ZAEC), a label-free post-hoc method that uses zero-shot entropy as a sample-specific uncertainty reference. ZAEC selectively restores the zero-shot entropy of sharpened predictions through minimal temperature scaling while leaving all other predictions unchanged. It requires no labeled calibration data or learned parameters and preserves class rankings and classification accuracy. Across five TTA methods and 15 datasets, ZAEC achieves the lowest post-hoc macro-average ECE on ViT-B/16, with consistent gains on RN50.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "b78fd987a5ded458",
+  "title": "STRIDE: Spatial-Temporal Representation for Interval-conditioned Disease Evolution in Longitudinal Glioblastoma MRI",
+  "link": "https://arxiv.org/abs/2610.08848",
+  "description": "arXiv:2610.08848v1 Announce Type: cross \nAbstract: Glioblastoma (GBM), an aggressive primary brain tumor, is routinely monitored with longitudinal MRI after treatment. Distinguishing stable disease (SD), pseudoprogression (PsP), and true progression (TP) remains challenging because these states can show overlapping MRI appearances despite different temporal trajectories. Existing longitudinal methods still face challenges in modeling scan-specific spatial variability, variable follow-up intervals, and complementary information from the observed follow-up state and its longitudinal change. We propose STRIDE, a framework for spatial-temporal representation of interval-conditioned disease evolution that takes paired post-treatment MRI scans and their inter-scan interval as input and predicts SD, PsP, or TP. The lesion-prior-guided spatial representation combines SoftGate and an Adaptive-window Hierarchical Transformer (AWHT) to emphasize lesion-related regions while preserving surrounding context. The time-conditioned latent transition uses pair-level context and the actual inter-scan interval to estimate interval-dependent representation changes between visits. The observed--transition fusion integrates the transition-estimated follow-up representation with the directly observed follow-up representation to jointly characterize the follow-up state and its longitudinal change. BraTS2024 is used to develop and evaluate the lesion-prior generator, while longitudinal pretraining on LUMIERE supports transfer before downstream adaptation to Burdenko. On the Burdenko three-class task, STRIDE achieves a macro ROC--AUC of 0.816 and a macro F1-score of 0.796. These results support its potential for more reliable longitudinal post-treatment GBM state assessment.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

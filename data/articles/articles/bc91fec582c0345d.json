@@ -1,0 +1,13 @@
+{
+  "id": "bc91fec582c0345d",
+  "title": "ProxySearch: Decoupled Inference-Time Scaling for Diffusion Models via Asymmetric Noise-Rank Transfer",
+  "link": "https://arxiv.org/abs/2611.23929",
+  "description": "arXiv:2611.23929v1 Announce Type: new \nAbstract: Noise search at inference time improves text-to-image diffusion but requires many multi-step teacher rollouts per query. Distilled few-step models are now routinely released, yet their potential as proxies inside noise search is uncharacterized. We measure proxy-teacher rank agreement across three distillation regimes and three backbones (DiT, MMDiT, UNet) and find a sharp asymmetry. On our main pool, closed-form image statistics transfer from the proxy to the teacher (Spearman $\\rho$ up to 0.80), while learned semantic scorers do not ($\\rho \\le$ 0.12). Paired null controls trace this rank to the first denoising step for coarse statistics and to distillation for finer ones. We use the asymmetry for noise search under a joint constraint: a semantic reward specifies content, and a numeric target specifies image statistics. In PROXYSEARCH, the proxy filters candidates by statistical match in 1 step, and the teacher returns the survivor with the highest semantic reward. No weight trades one objective against the other. On FLUX-1024, PROXYSEARCH tightens the statistical target by 21-23% at the same number of teacher trajectories, with no detected loss on the optimized reward.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

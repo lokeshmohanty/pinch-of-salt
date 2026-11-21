@@ -1,0 +1,14 @@
+{
+  "id": "1331f06b08843914",
+  "title": "ReflectScene:MLLM-Guided Closed-Loop Diffusion for 3D Indoor Scene Generation",
+  "link": "https://arxiv.org/abs/2611.23845",
+  "description": "arXiv:2611.23845v1 Announce Type: new \nAbstract: Text-conditioned 3D indoor scene generation requires layouts satisfying geometric, functional, and semantic constraints. However, existing diffusion methods rely primarily on static textual conditions, limiting their ability to assess evolving scenes and translate semantic discrepancies into executable object-level corrections. MLLM-based post-hoc refinement provides semantic feedback but remains decoupled from denoising, potentially disrupting scene coherence.We propose ReflectScene, an MLLM-guided closed-loop diffusion framework. First, we introduce Hierarchical Prior-Grounded Scene Understanding that aligns structured layouts with multi-view visual evidence, to interpret object-specific context and scene global semantics via a frozen multi-modal large language model (MLLM). Second, we propose MLLM-Guided Semantic Reward Evaluation to distill MLLM's diagnoses and assessments on possible candidate corrections into a lightweight Reward Predictor, enabling correction decision making with reduced computation burden. Finally, Decision-Conditioned Trajectory-Consistent Diffusion is proposed to integrate selected corrections through transient conditioning and persistent clean-estimate projection, correcting object layout in the generated scene while preserving non-target arrangements throughout denoising.Experiments on 3D-FRONT demonstrate improved functional consistency and semantic alignment while maintaining competitive generation quality and diversity.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

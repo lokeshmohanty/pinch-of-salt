@@ -1,0 +1,13 @@
+{
+  "id": "9ccb7d5097592fe0",
+  "title": "SUPER Module for Detail-Sensitive and Cost-Efficient U-Net Variant Decoders",
+  "link": "https://arxiv.org/abs/2511.11015",
+  "description": "arXiv:2511.11015v2 Announce Type: replace \nAbstract: Skip-connected U-Net variants are widely used for dense inverse problems, yet their decoders commonly recover resolution through spatial upscaling, which can blur or distort fine structures. Wavelet transforms provide an explicit perfect-reconstruction path, but prior wavelet networks often couple this property to wavelet-specific architectures or fixed output representations. We propose Selectively Suppressed Perfect Reconstruction (SUPER), a wavelet-domain decoder formulation that replaces unstructured spatial refinement with bounded frequency suppression. In its idealized equal-channel form, SUPER reduces to exact reconstruction when the suppression term is zero; in practical U-Net decoders, it provides a projected-subspace reconstruction fallback with learnable task-specific suppression. The resulting SUPER Module is a structurally plug-in decoder block: it replaces the upsampling/refinement stage of an existing U-Net-like decoder, while leaving the encoder and task head unchanged. We evaluate SUPER on monocular depth estimation, thin-crack segmentation, and smartphone image denoising. On iDisc depth estimation, SUPER improves the host model's edge AUC from 26.59% to 34.45% while reducing decoder MACs from 12.69G to 4.36G. On FACS-Net crack segmentation, SUPER improves average IoU and the extreme 0-2px crack regime. On SIDD denoising, where high-frequency enhancement is less directly rewarded, SUPER preserves PSNR/SSIM while reducing decoder MACs by 66.6%. These results support SUPER as a practical wavelet-domain suppression module for improving the observed detail-cost trade-off of U-Net-like decoders.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

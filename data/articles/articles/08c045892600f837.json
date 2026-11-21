@@ -1,0 +1,15 @@
+{
+  "id": "08c045892600f837",
+  "title": "Unified Synthesis of Compositional Speech and Sound from Free-Form Text Prompts",
+  "link": "https://arxiv.org/abs/2605.28063",
+  "description": "arXiv:2605.28063v2 Announce Type: replace-cross \nAbstract: Generating unified audio that naturally integrates speech and sounds from free-form text prompts remains challenging. For example, the prompt ``A fast drum roll ends with a cymbal crash, after which a man shouts: `Come on!'.'' describes several events that should appear in order and form a coherent recording rather than independent tracks that lack coherent temporal and semantic interactions. Current methods broadly follow two paradigms: pipeline methods couple separate text-to-sound and text-to-speech models, while unified models rely on a single generator that still requires structured, multi-field prompt inputs. Both paradigms require upstream prompt decomposition or rewriting, limiting free-form flexibility and risking cascading errors. To enable direct generation from free-form prompts within a single model, we introduce PlanAudio, an end-to-end framework that maps unconstrained free-form text to unified audio without intermediate prompt preprocessing. To address the challenges of direct free-form generation, PlanAudio integrates latent planning into a single autoregressive framework, predicting continuous audio layout before acoustic token synthesis. We construct a large-scale training corpus and introduce Free-Form Unified Audio Generation Benchmark (FUAG) for evaluation, both spanning speech, sound, and joint speech-and-sound generation. Experiments show that a single PlanAudio outperforms existing pipeline and unified baselines on speech-and-sound generation, while remaining competitive with specialist models on speech and sound generation. Further analysis validates the effectiveness of audio layout planning over textual planning, acoustic planning, and direct generation. Sample Available: https://planaudio.github.io/PlanAudio2026/.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.AI",
+    "cs.MM"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "0ab3fd1203e5e62c",
+  "title": "Arbor: How Search Policy Shapes Agent Behavior in System Optimization",
+  "link": "https://arxiv.org/abs/2606.12563",
+  "description": "arXiv:2606.12563v2 Announce Type: replace \nAbstract: Achieving peak performance on modern accelerators requires coordinated optimization across kernels, operator fusion, KV-cache management, quantization, scheduling, and communication overlap, a process that demands weeks of expert effort per model and hardware platform. We present Arbor, a system that gives autonomous agents an explicit optimization tree to reason over, backtrack through, and deepen with experience, with pluggable search policies, scored bandit traversal, parallel agent swarms, and depth-first sweep, sharing a common harness of containerized isolation, automatic rollback, and end-to-end validation. Arbor generalizes across domains: +40% to +193% on six production inference models across two GPU generations, +42.8% on LLM training, and +41% on recommendation training, where agents autonomously wrote kernel-level and framework-level optimizations spanning thousands of lines of code. In controlled ablations where every search policy receives the same agent, tree, and tools, we find that search structure shapes both the magnitude and the nature of the optimizations. The bandit achieves +30.1% through targeted framework fixes, the sweep +26.4% through deep kernel rewrites, and the swarm +33.4% by compounding independent changes. An agent-driven loop that receives the same harness, tools, and information, but selects its own targets reaches +14%, writing 4x more code per percentage point of improvement than Arbor's structured search policies. We additionally introduce an evaluation framework for autonomous loop-based agents spanning efficiency, grounding, robustness, and depth, designed to characterize agent search behavior across long-running optimization campaigns.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

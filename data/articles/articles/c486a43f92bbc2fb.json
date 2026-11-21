@@ -1,0 +1,13 @@
+{
+  "id": "c486a43f92bbc2fb",
+  "title": "ReScene: Incremental Scene Chronology from Sparse Revisits",
+  "link": "https://arxiv.org/abs/2611.20433",
+  "description": "arXiv:2611.20433v2 Announce Type: replace \nAbstract: Scene chronology aims to reconstruct a scene across visits separated by hours or days, during which objects may change in position, presence or shape. Such reconstruction must retain every earlier state, yet each revisit often provides only a few images. Storing a complete model for each visit duplicates the unchanged scene, whereas updating a single shared model alters earlier states. We present ReScene, which stores each visit as an immutable compact update, so that any earlier visit can be recovered exactly by applying the stored updates in order, without retaining past images. To localise each update, ReScene attributes the disagreement between the preceding reconstruction and the new images to individual Gaussians through their compositing weights. This attribution guides the suppression of outdated Gaussians and the refinement of persistent ones, while newly visible surfaces are initialised from learned multi-view depth. We also introduce Multi-State, a benchmark of non-rigid deformation and partial material removal, including synthetic scenes with ground-truth geometry. ReScene achieves quality higher than sequential 3DGS checkpointing with 2.5--4.8$\\times$ less uncompressed history storage. At comparable PSNR, it also reduces foreground depth error by 3.2$\\times$ relative to sequential ChronoGS, showing that accurate rendering does not necessarily imply accurate geometry. Code and benchmark are available at https://waychin-weiqin.github.io/ReScene/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "aefa54f2fe7aa72d",
+  "title": "Scoring, Not Learning: Decomposing Catalog-Consolidation Gains in Web-Scraped Retail Product Recognition",
+  "link": "https://arxiv.org/abs/2611.08655",
+  "description": "arXiv:2611.08655v1 Announce Type: new \nAbstract: Retail product catalogs assembled from web image search are cheap to build and pervasively noisy: queries return packaging shots instead of products, and entries proliferate under names that cannot be distinguished visually. Consolidating such a catalog can look like an alternative to scaling the model. We show this is not a comparison between two ways of improving a recognizer, but between improving a recognizer and changing what counts as correct. We study a public archive of 165,769 cheese images across 1,824 query-named entries. A packaging filter and near-duplicate removal reduce it to a 998-class recognition set on one fixed, group-aware split. Canonicalizing entries to their base type (844 classes) raises top-1 accuracy by 4.0 points. Scoring the unchanged model against the merged label space, by summing its predicted probability within each canonical group, recovers +4.27 points with no retraining (+4.25 over six seeds). Retraining on the consolidated catalog then adds -0.10$\\pm$0.53, +0.08$\\pm$0.65 and -0.10$\\pm$0.65 points at 28, 50 and 88 M parameters, indistinguishable from zero at every capacity ($\\pm$ is the across-seed standard deviation). That component is specific, not mechanical: random merges with the identical size profile yield only +0.68 points, and the three backbones agree to within 0.1 points. But it is overwhelmingly category coarsening, not alias correction: across the 37 merged groups, type coarsenings supply 94% of the gain and alias collapses only 7%. We also detect no interaction between consolidation and backbone size: tripling backbone parameters is worth +1.50$\\pm$0.57 points on the raw catalog and +1.42$\\pm$00.44 on the canonical one, a within-seed interaction of -0.08 [-0.79,+0.63]. On this archive, the reported consolidation gain primarily reflects the evaluation label space, and separating that out costs one evaluation",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

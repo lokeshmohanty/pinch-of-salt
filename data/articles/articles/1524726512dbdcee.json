@@ -1,0 +1,13 @@
+{
+  "id": "1524726512dbdcee",
+  "title": "RAID: Representation Autoencoder for Intrinsic Decomposition",
+  "link": "https://arxiv.org/abs/2611.24521",
+  "description": "arXiv:2611.24521v1 Announce Type: new \nAbstract: Single-image intrinsic decomposition is an inherently ill-posed problem, requiring the disentanglement of strongly coupled appearance factors from a single RGB observation. Recent methods address this ambiguity with diffusion priors, at the cost of large, iterative, and often stochastic models. We show that accurate decomposition does not require a large generative model. Our key idea is to decouple reconstruction from decomposition on top of a strong pretrained representation. First, an $X \\rightarrow X$ teacher learns to reconstruct each intrinsic map from DINOv3 features using a shared decoder, without paired RGB-to-intrinsic supervision. Then, a DINOv3-based student predicts the corresponding teacher representations from RGB through lightweight, modality-specific projections, enabling training on partially annotated datasets and predicting all intrinsics in a single forward pass. \\textbf{RAID}, predicts intrinsic properties in the structured latent space, enabling a compact 165M-parameter model, 100x faster than diffusion-based methods. Despite its compact size, it achieves competitive or superior decomposition quality, with improved robustness to input resolution. Additionally, our learned projections yield interpretable, modality-specific feature spaces.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

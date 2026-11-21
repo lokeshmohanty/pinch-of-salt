@@ -1,0 +1,13 @@
+{
+  "id": "e114c8b6c0a2e727",
+  "title": "EVIDENT: Routing MLLM Adaptation through Entity-Grounded Visual Evidence for Cross-Domain Video Temporal Grounding",
+  "link": "https://arxiv.org/abs/2605.26104",
+  "description": "arXiv:2605.26104v2 Announce Type: replace \nAbstract: Fine-tuning MLLMs for Video Temporal Grounding (VTG) often improves in-domain performance but degrades sharply under domain shift. In this work, we find that this failure is primarily driven not just by unseen query concepts, but by visual domain shift, which prevents the model from coupling its learned temporal localization knowledge with its inherent entity-attention capability. To address this, we introduce EVIDENT, a parameter-efficient adaptation framework that anchors temporal grounding in the inherent entity-attention of pre-trained MLLMs by routing VTG adaptation through explicit visual entity evidence. EVIDENT consists of three components: (i) an Entity Bottleneck Adapter that transforms dense visual tokens into compact entity-level slots, (ii) an Entity-Binding Distillation loss that instills objectness priors into the semantically unstructured MLLM visual space, guiding each slot to bind to a coherent entity, and (iii) an Entity-to-eVidence gating mechanism that leverages the captured entities as evidence, steering the model to localize moments containing query-relevant entities. Together, these components enable VTG fine-tuning to rely on entity-grounded evidence rather than brittle dataset shortcuts. Experiments on cross-domain VTG benchmarks show that EVIDENT consistently improves out-of-domain robustness while preserving competitive in-domain performance with modest parameter overhead. These results suggest that entity-level grounding is an effective inductive bias for generalizable temporal localization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

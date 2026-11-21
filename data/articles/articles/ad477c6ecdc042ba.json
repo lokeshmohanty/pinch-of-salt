@@ -1,0 +1,13 @@
+{
+  "id": "ad477c6ecdc042ba",
+  "title": "Architectural Design, Not Only Model Intelligence, Governs Multi-Agent LLM Performance",
+  "link": "https://arxiv.org/abs/2602.03128",
+  "description": "arXiv:2602.03128v2 Announce Type: replace \nAbstract: Multi-agent LLM frameworks are data-intensive systems that govern how agents orchestrate tasks, manage state, and coordinate decisions. These architectural choices control execution overhead, memory behavior, planning effectiveness, and coordination scalability. Their impact on system performance remains poorly understood. Existing benchmarks evaluate individual agent capabilities in isolation and lack standardized framework-level comparison. We make four contributions. We introduce an architectural taxonomy that decomposes multi-agent LLM frameworks along five dimensions: orchestration, memory, planning interfaces, specialization, and communication topology. We develop MAFBench, a unified evaluation suite that integrates existing benchmarks within a standardized execution pipeline. We conduct a controlled empirical study across nine frameworks, fixing the underlying LLM and varying only architectural design choices. We distill the results into six evidence-based design principles. Architectural design, not only model intelligence, governs performance. Orchestration alone increases latency by over 60x, and a minimal implementation of the same paradigm isolates that cost as implementation rather than paradigm. Schema-constrained planning interfaces reduce accuracy by up to 32 points through formatting failures, not reasoning errors. Communication topology drops coordination success from above 90% to below 30% under mismatched structure. Memory architecture controls recall and scalability independent of context window size, and no evaluated framework natively supports controlled knowledge revision.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-18T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

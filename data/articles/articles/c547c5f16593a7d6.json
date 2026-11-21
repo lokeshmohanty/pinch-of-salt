@@ -1,0 +1,13 @@
+{
+  "id": "c547c5f16593a7d6",
+  "title": "BATMoS: Budget-Aware Guidance Allocation for Efficient Video Diffusion",
+  "link": "https://arxiv.org/abs/2611.22028",
+  "description": "arXiv:2611.22028v1 Announce Type: new \nAbstract: The effectiveness of a video diffusion model's inference budget depends on where computation is spent along the denoising trajectory. Across eight equal-budget inference configurations, VBench total scores span 4.80 points, highlighting the importance of explicit allocation design. Our key insight is that guidance evaluations are not equally valuable across diffusion time: retaining the sampling updates while selectively reusing guidance can preserve generation quality with fewer denoiser evaluations. We introduce BATMoS (Budget Aware Temporal Mixture of Strategies), which routes between fresh classifier-free guidance and cached guidance using a single pretrained denoiser. A magnitude-based temporal rule assigns guidance reuse to low-magnitude blocks and reserves fresh guidance for the remaining blocks, with a single integer controlling the computation budget. The resulting schedule requires no additional router training or per-budget threshold search. Evaluated on CogVideoX-2B with 4,720 videos per configuration across all sixteen official VBench dimensions, BATMoS achieves the highest total score among the eight allocation policies and comes within 0.10 points of full classifier-free guidance using 20\\% fewer branch evaluations. BATMoS also composes with feature reuse, reducing computation from 80 to 62 effective branch evaluations with a 0.11-point decrease in total score. These findings make temporal guidance allocation a practical mechanism for extracting more generation quality from a fixed inference budget.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "1fc7b0bdde2eafcd",
+  "title": "DGCM-SSFA: Dual-Granularity Cross-Modulation and Sparse Strip Frequency Attention for Efficient 3T-to-7T MRI Synthesis",
+  "link": "https://arxiv.org/abs/2610.29141",
+  "description": "arXiv:2610.29141v1 Announce Type: new \nAbstract: Synthesizing high-fidelity 7T MRI from routinely acquired 3T scans offers a practical pathway to enhanced neuroimaging without the prohibitive cost of ultra-high-field scanners. While existing deep learning approaches have achieved promising results, state-of-the-art methods typically rely on either large-scale architectures exceeding 45 million parameters or computationally intensive ensemble strategies, limiting their practicality in resource-constrained clinical environments. In this work, we propose a compact multi-domain attention framework, termed DGCM-SSFA, that achieves competitive synthesis quality with only 11M parameters. The proposed architecture integrates two complementary modules into a U-Net Transformer backbone. First, a Dual-Granularity Cross-Modulated Feature Modulator (DGCM) is embedded at multiple hierarchical levels to enhance local edge and texture details through Sobel-guided spatial attention and depthwise frequency-aware channel attention with cross-branch gating. Second, a Sparse Strip Frequency Attention (SSFA) module at the bottleneck captures global spatial context via strip-pooled attention with near-linear complexity, while simultaneously performing FFT-based spectral modulation in the frequency domain. These two modules operate synergistically with the backbone's native channel attention, forming a triple-granularity feature refinement pipeline. Extensive experiments on the UNC and BNU 3T-to-7T MRI datasets across T1w and T2w modalities demonstrate that DGCM-SSFA achieves strong structural fidelity, attaining an SSIM of 0.8431 on BNU T2w---approaching the best benchmark value of 0.8624---and 0.8100 on BNU T1w, while using substantially fewer parameters than Transformer-based alternatives such as ResViT (123.4M) and FS-RWKV (45.4M).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "12628702f1880fcf",
+  "title": "Industrial Synthetic Segment Pre-training",
+  "link": "https://arxiv.org/abs/2505.13099",
+  "description": "arXiv:2505.13099v3 Announce Type: replace \nAbstract: Vision Foundation Models (VFMs) have made remarkable progress and are increasingly being applied to segmentation tasks in real-world industrial settings. However, VFMs pre-trained on real-image datasets still face several challenges: (1) they do not always perform well on industrial datasets due to significant differences from natural imagery, (2) legal and ethical restrictions, such as limitations on commercial use, constrain extensibility, and (3) building training frameworks under limited computational and data resources remains a critical issue. These challenges raise a fundamental question: can we construct industrial segmentation models without relying on real images or manual annotations? To address this question, we propose the Instance Core Segment Dataset (InsCore), a synthetic data generation framework and the resulting pre-training dataset based on Formula-Driven Supervised Learning (FDSL). InsCore is designed not around the visual appearance or domain of real images, but around the hypothesis that learning to handle complex occlusions during pre-training is a key factor for strong performance in industrial domains. Through experiments across five domains (medical, biomedical, remote sensing, manufacturing, and logistics) we demonstrate that InsCore pre-trained models achieve average mAP scores of 45.2 with the ViTDet backbone and 46.0 with the Swin Transformer backbone, on par with ImageNet-21k supervised pre-training (45.0) while using no real images at all. As a reference point under different input assumptions, prompted SAM with ground-truth bounding boxes attains 45.4 on the same benchmarks. Finally, InsCore consists of only 100k images and 3.2M masks, roughly 1/110 and 1/312 the scale of the SA-1B dataset.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

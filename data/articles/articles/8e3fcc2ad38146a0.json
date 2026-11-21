@@ -1,0 +1,13 @@
+{
+  "id": "8e3fcc2ad38146a0",
+  "title": "TAMF-VTON: Token-Wise Sparse Adaptation for Mask-Free Virtual Try-On",
+  "link": "https://arxiv.org/abs/2607.14807",
+  "description": "arXiv:2607.14807v2 Announce Type: replace \nAbstract: Diffusion-based virtual try-on (VTON) often relies on segmentation-derived masks that become unreliable when the reference garment differs substantially from the target person's clothing. Existing methods may also lose fine details and commonly focus on single-garment transfer. We present TAMF-VTON, an inference-time mask-free framework built on Qwen-Image-Edit-2509. Given a person image, one or more garment images, and a text instruction, it performs single- or multi-garment transfer without masks, parsing maps, pose representations, or spatial controls at inference. Its central component is token-wise sparse Mixture-of-Experts adaptation, which provides input-dependent capacity without predefined expert roles. Timestep-weighted frequency supervision regularizes high-frequency reconstruction, while adaptive offline data construction supplies cross-category and cross-silhouette training tuples; neither is used at inference. TAMF-VTON achieves the best scores on most reported paired and unpaired metrics among evaluated VTON baselines on the standard single-garment VITON-HD and DressCode benchmarks. Selected qualitative results illustrate multi-garment composition, subject-to-subject transfer, diverse scenes, body-shape variation, and illumination changes. With INT4 on an RTX 4090, TAMF-VTON generates 1K-resolution images under 15 seconds and 2K-resolution images under 30 seconds. Our project can be accessed via https://www.style3d.ai/ai-photoshoot/virtual-clothing-try-on.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "7c30f414ce691089",
+  "title": "GradLev: Token-Parallel Test-Time Training Via Costate Prediction",
+  "link": "https://arxiv.org/abs/2609.34174",
+  "description": "arXiv:2609.34174v2 Announce Type: replace-cross \nAbstract: Test-time training (TTT) allows a model to improve its predictions at inference time by updating weights after every observed token. However, sequential gra- dient writes make parallel training difficult. We observe that, given layer inputs and activation gradients (costates), online gradient descent admits exact parallel scans for both forward evaluation and reverse backpropagation. GradLev lever- ages this duality: a causal auxiliary network predicts costates across all tokens in parallel; associative scans compute the adapted weights and forward activations and propagate gradients backward; and the resulting gradient targets supervise the predictor via a consistency loss. Exact consistency guarantees exact recovery of the sequential online learner. At deployment, the auxiliary predictor is discarded, and the model updates natively via token-by-token forward and backward passes.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

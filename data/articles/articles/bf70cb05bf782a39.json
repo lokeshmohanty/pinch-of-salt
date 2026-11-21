@@ -1,0 +1,13 @@
+{
+  "id": "bf70cb05bf782a39",
+  "title": "UINO-FSS: Unifying Representation Learning and Few-shot Segmentation via Hierarchical Distillation and Mamba-HyperCorrelation",
+  "link": "https://arxiv.org/abs/2504.15669",
+  "description": "arXiv:2504.15669v5 Announce Type: replace \nAbstract: Few-shot semantic segmentation has attracted growing interest for its ability to generalize to novel object categories using only a few annotated samples. To address data scarcity, recent methods incorporate multiple foundation models to improve feature transferability and segmentation performance. However, they often rely on dual-branch architectures that combine pre-trained encoders to leverage complementary strengths, a design that limits flexibility and efficiency. This raises a fundamental question: can we build a unified model that integrates knowledge from different foundation architectures? Achieving this is, however, challenging due to the misalignment between class-agnostic segmentation capabilities and fine-grained discriminative representations. To this end, we present UINO-FSS, a novel framework built on the key observation that early-stage DINOv2 features exhibit distribution consistency with SAM's output embeddings. This consistency enables the integration of both models' knowledge into a single-encoder architecture via coarse-to-fine multimodal distillation. In particular, our segmenter consists of three core components: a bottleneck adapter for embedding alignment, a meta-visual prompt generator that leverages dense similarity volumes and semantic embeddings, and a mask decoder. Using hierarchical cross-model distillation, we effectively transfer SAM's knowledge into the segmenter, further enhanced by Mamba-based 4D correlation mining on support-query pairs. Extensive experiments on PASCAL-5$^i$ and COCO-20$^i$ show that UINO-FSS achieves new state-of-the-art results under the 1-shot setting, with mIoU of 80.6 (+3.8%) on PASCAL-5$^i$ and 64.5 (+4.1%) on COCO-20$^i$, demonstrating the effectiveness of our unified approach.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

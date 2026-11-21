@@ -1,0 +1,14 @@
+{
+  "id": "72c795a1954646ab",
+  "title": "DOCK: Dual-Stream-Inspired Self-Supervised Object-Centric Representations Grounded in Robot Kinematics",
+  "link": "https://arxiv.org/abs/2611.23578",
+  "description": "arXiv:2611.23578v1 Announce Type: new \nAbstract: Latent-space planners select actions by comparing the embedding of a predicted future image with that of a goal image. This assumes that distance in the embedding reflects how far the scene is from the goal. We profile this assumption with simulator-executed futures, which removes prediction error. For six frozen DINO and V-JEPA encoders, feature distance barely tracks the object's distance to its goal: the rank correlation is at most 0.11, against 0.87 for object-mask centroids. It is dominated by background and robot patches, and frozen-feature readouts capture the arm far better than the object. Inspired by the ventral (what) and dorsal (where/how) visual streams, we propose DOCK, which learns an object representation whose changes agree with measured physical motion. A grasped object moves with the gripper, so forward kinematics on the joint angles gives a proxy for the object's displacement without annotation. From 9,951 held-object transport trajectories in 21 simulated kitchen scenes, we mine 404K displacement pairs and train three components: an object token pooled from patch features (what), a spatial ruler that makes differences of readout coordinates equal to measured displacements (where), and a dynamics predictor over object tokens (how). Used as a planning cost, the learned representation places the object in 15 of 21 tasks, as many as an oracle that reads the true object position, while mask geometry reaches 10 and frozen feature distance 9. It still solves the most tasks when the unseen robot arm is visible, and its ranking transfers to held-out layouts with unseen object instances and categories without any adaptation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

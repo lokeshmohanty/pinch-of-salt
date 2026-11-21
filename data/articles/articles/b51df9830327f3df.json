@@ -1,0 +1,14 @@
+{
+  "id": "b51df9830327f3df",
+  "title": "BLOOM-WILT: Logit Tilting for Behaviour Elicitation in Automated LLM Auditing",
+  "link": "https://arxiv.org/abs/2608.31105",
+  "description": "arXiv:2608.31105v2 Announce Type: replace \nAbstract: Users of a deployed language model routinely encounter behaviours that have never been observed during testing, since deployment puts the model through orders of magnitude more interactions than any evaluation can simulate. Automated auditors can mitigate this issue as they are flexible enough to discover almost any specified behaviour, yet their random sampling approach makes them inefficient. To address this shortcoming, we introduce BLOOM-WILT, a full auditing pipeline that elicits natural multi-turn instances of rare behaviours, without training cost or access beyond the target's next-token distribution. On the user input side, WILT revises its conversational strategy across rounds, learning from previous scored interactions. On the model output side, WILT generates behaviour-relevant continuations by feeding the model with an elicitation prompt and mixing its next-token distribution with the unprompted model. We evaluate WILT across 4 target models and 8 behaviours, and show that it improves over the baseline in 30 of the 32 settings, thus revealing that a larger number of models exhibit harmful behaviours than previously suggested. Furthermore, WILT is the only method that can raise the mean presence of self-harm encouragement from 51% to 100% in Qwen3.5-4B, without decreasing the output probability of the generated text. Our code is available at https://github.com/AdrSkapars/bloom-wilt.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

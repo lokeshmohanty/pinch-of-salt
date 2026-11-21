@@ -1,0 +1,14 @@
+{
+  "id": "84c586d2e012e42d",
+  "title": "CalibSwitch: Observation-Driven Camera-LiDAR Extrinsic Recovery and Selective Maintenance for Multimodal Perception",
+  "link": "https://arxiv.org/abs/2610.41352",
+  "description": "arXiv:2610.41352v1 Announce Type: cross \nAbstract: Camera--LiDAR perception on mobile robots and intelligent vehicles depends on reliable sensor geometry throughout deployment. Installation variations create uncertainty in the initial extrinsics, while changing observation quality makes frame-wise estimates fluctuate during operation. This paper presents CalibSwitch, an observation-driven framework that separates absolute extrinsic recovery from selective state maintenance. A cross-modal absolute extrinsic generator (CAEG) combines projection-free bidirectional feature interaction with geometry-regularized learning to recover complete SE(3) candidates from image--point observations and coarse view context, without a supplied numerical initial transform. A selective recurrent calibration policy (SRCP) combines observation quality and temporal history to determine when a candidate should replace the working geometry consumed by a frozen multimodal detector. On nuScenes, CAEG achieves mean translation and rotation errors of 0.248 m and 5.884$^\\circ$. Under sustained geometric transitions, SRCP reaches a mean composite error of 1.46 with 9.70\\% candidate commitments, outperforming quality-based and temporal-consistency gating at comparable commitment rates. Relative to unconditional per-frame updating, it improves frozen-detector mAP and NDS by 1.43 and 0.92 points. Paired geometry--observation uncertainty tests, two real-vehicle platforms, and 13.5-FPS single-camera Jetson execution demonstrate the system value of selective geometric-state maintenance for continuous perception.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

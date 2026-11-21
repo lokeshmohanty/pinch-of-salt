@@ -1,0 +1,13 @@
+{
+  "id": "1318262c676348d5",
+  "title": "Perceptual Distortion for Overfitted Video Coding: Sliced Matching in Space, Error Alignment in Time",
+  "link": "https://arxiv.org/abs/2611.07148",
+  "description": "arXiv:2611.07148v1 Announce Type: new \nAbstract: Recent works in neural video coding have increasingly been trading off perceptual quality against reconstruction fidelity at a fixed bitrate. Wasserstein Distortion (WD) offers a principled approach to balancing these objectives by relaxing spatial correspondences in feature matching, enabling lightweight overfitted image codecs to compete with computationally intensive generative decoders. Extending vanilla WD to video, however, presents two challenges: its independent Gaussian approximation limits the expressiveness of feature distribution matching, while unconstrained texture resampling across frames introduces temporal inconsistencies. We address these challenges by distinguishing between the correspondences that can be relaxed and those that must be preserved. Spatially, we introduce a local sliced Wasserstein distortion (SWD) that matches empirical feature distributions through one-dimensional optimal transport, capturing cross-channel dependencies without enforcing exact spatial alignment. Temporally, we employ a novel flow residual that constrains coding errors along motion trajectories, preserving temporal consistency without imposing additional reconstruction fidelity constraints. Evaluated on UVG and HEVC Class B with the overfitted codec COOL-CHIC, our framework achieves BD-rate reductions of 9.2% in DISTS and 3.0% in LPIPS relative to frame-wise WD, averaged over test sequences, while lowering tOF by 10.2% at matched rate.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

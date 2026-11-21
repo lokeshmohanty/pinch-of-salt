@@ -1,0 +1,13 @@
+{
+  "id": "b39cfe3c6aabc3a4",
+  "title": "Direct Cartesian Integration vs. Filtered Back Projection: A Note on Direct Discretization and Variance Preservation",
+  "link": "https://arxiv.org/abs/2605.09020",
+  "description": "arXiv:2605.09020v3 Announce Type: replace \nAbstract: This note compares two reconstruction operators for the parallel-beam inverse Radon problem, each obtained by the most direct discretization of a continuous inversion formula. The first is Filtered Back Projection (FBP), discretized with a sampled ramp filter and no zero-padding or empirical normalization. The second, termed Direct Cartesian Integration (DCI), evaluates the two-dimensional spectrum of the image point-wise on a Cartesian frequency grid by integrating each projection along the corresponding radial direction, using an identity that follows from the Central Slice Theorem and Hermitian symmetry. The comparison is deliberately restricted to these unmodified discretizations: its purpose is to expose properties of the discrete operators themselves, not to rank DCI against engineered FBP implementations. On a set of ten 512 x 512 test images with 800 projections, DCI preserves the standard deviation of the reference image (mean ratio 0.997, mean absolute deviation from unity 0.003) and produces spatially uniform error maps, whereas the direct FBP discretization changes the standard deviation by -38% to +20% depending on the object and exhibits the radially structured \"cupping\" error. The observation is consistent with the fact that DCI never discretizes the polar Jacobian |omega|, which is the source of the scale distortion in a direct ramp-filter discretization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

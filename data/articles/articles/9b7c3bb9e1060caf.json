@@ -1,0 +1,14 @@
+{
+  "id": "9b7c3bb9e1060caf",
+  "title": "Context-Masked Truncated Reasoning Audits for Answer-Key Dependence in LLM Tutors",
+  "link": "https://arxiv.org/abs/2607.04572",
+  "description": "arXiv:2607.04572v2 Announce Type: replace \nAbstract: Large language model (LLM) tutors may have access to teacher notes, answer keys, rubrics, or retrieved solutions while producing student-facing explanations. We study whether truncated reasoning probes can distinguish direct access to such private context from answer information carried by the written explanation. Using Truncated Reasoning AUC Evaluation (TRACE), we evaluate 1000 GSM8K problems under question-only, correct answer-key, and wrong answer-key contexts. When forced-answer probes retain the private key, answer-key TRACE AUC rises from 0.375 to 0.900, and the gold answer is recoverable with no explanation at all in 998 of 1000 cases. We then introduce a context-masked replay: answer-key-generated prefixes are probed under the corresponding question-only prompt. Masking reduces 10\\% prefix accuracy from 0.997 to 0.126 and median AUC from 0.900 to 0.375, nearly matching question-only values of 0.113 and 0.375. On 746 pairs where both explanations end correctly, the masked mean AUC difference is $-0.0086$ with a 95\\% bootstrap interval spanning zero. Wrong keys still account for 272 of 387 incorrect final responses, showing that private artifacts can influence outputs even when early-prefix evidence disappears after masking. These results establish context masking as necessary for attributing early answer availability to an explanation rather than its hidden input.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "6702c0c0c4d2d3b4",
+  "title": "PulseQuant: Propagation-Guided Subspace Correction for 4-Bit Video Diffusion Transformers",
+  "link": "https://arxiv.org/abs/2609.33384",
+  "description": "arXiv:2609.33384v2 Announce Type: replace \nAbstract: Quantization errors in video diffusion transformers can be amplified or attenuated by subsequent denoising updates, making local reconstruction error an incomplete predictor of final impact. We introduce PulseQuant, a 4-bit post-training quantization method that combines trajectory sensitivity with activation geometry to guide offline calibration. Isolated block--step interventions estimate propagation risk, which prioritizes sensitive trajectory states during row-radius selection. With these radii fixed, response-subspace correction uses neighboring-code edits to reduce residual components along dominant activation directions. Both stages preserve the original 4-bit weight representation. Controlled interventions show that short-horizon propagated error predicts final latent error more reliably than immediate block-output error, supporting calibration beyond local reconstruction objectives. Evaluations on Wan models, Self Forcing, and MiniMax-H3 demonstrate improvements in key consistency and dense-reference metrics while remaining competitive on other attributes across model scales and generation paradigms.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

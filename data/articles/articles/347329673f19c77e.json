@@ -1,0 +1,13 @@
+{
+  "id": "347329673f19c77e",
+  "title": "Differential Vector Erasure: Unified Training-Free Concept Erasure for Flow Matching Models",
+  "link": "https://arxiv.org/abs/2602.01089",
+  "description": "arXiv:2602.01089v2 Announce Type: replace \nAbstract: Text-to-image diffusion models have demonstrated remarkable capabilities in generating high-quality images, yet their tendency to reproduce undesirable concepts, such as NSFW content, copyrighted styles, or specific objects, poses growing concerns for safe and controllable deployment. While existing concept erasure approaches primarily focus on DDPM-based diffusion models and rely on costly fine-tuning, the recent emergence of flow matching models introduces a fundamentally different generative paradigm for which prior methods are not directly applicable. In this paper, we propose Differential Vector Erasure (DVE), a training-free concept erasure method specifically designed for flow matching models. Our key insight is that semantic concepts are implicitly encoded in the directional structure of the velocity field governing the generative flow. Leveraging this observation, we construct a differential vector field that characterizes the directional discrepancy between a target concept and a carefully chosen anchor concept. During inference, DVE selectively removes concept-specific components by projecting the velocity field onto the differential direction, enabling precise concept suppression without affecting irrelevant semantics. Extensive experiments on FLUX demonstrate that DVE consistently outperforms existing baselines on a wide range of concept erasure tasks, including NSFW suppression, artistic style removal, and object erasure, while preserving image quality and diversity. Code is available at https://github.com/zhiqizhang23/DVE.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

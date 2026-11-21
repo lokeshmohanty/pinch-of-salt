@@ -1,0 +1,13 @@
+{
+  "id": "d50f802a398f4b44",
+  "title": "Where Demand Meets Supply: Spatial Elastic Consensus for Low-Bandwidth Collaborative Perception",
+  "link": "https://arxiv.org/abs/2611.22439",
+  "description": "arXiv:2611.22439v1 Announce Type: new \nAbstract: Occlusions and limited sensor range make ego-only 3D perception insufficient for safe driving. Collaborative perception addresses this by enabling connected vehicles to share complementary observations, yet it remains constrained by tight vehicular communication budgets. While spatial selection is more flexible than fixed-rate feature compression, existing selectors remain largely sender-driven and waste scarce bandwidth on ego-visible targets. Furthermore, applying convolutions after masking spreads isolated tokens into their neighborhoods, silently violating low-bandwidth constraints. To address this, we propose Spatial Elastic Consensus (SEC), a bandwidth-adaptive framework centered on bilateral demand-supply consensus. Instead of unilateral token selection, the ego vehicle formulates a content-aware demand prior while each collaborator evaluates its local supply. This single-round consensus allocates the token budget to critical ego-missed evidence rather than ego-visible redundancy, without transmitting dense maps. To guarantee exact budget compliance, an anti-dilation refine-before-mask pipeline refines features prior to discrete token selection, preventing receptive-field leakage. A lightweight deformable sampler then aggregates these sparse messages with learned local offsets, compensating for the spatial context lost to token selection and mitigating inter-agent pose drift. Evaluated at a stringent 64KiB budget, SEC consistently achieves the best AP@0.7 on the simulated OPV2V and V2XSet datasets and the real-world DAIR-V2X dataset. These results demonstrate that combining bilateral consensus with budget-exact transmission is key to efficient low-bandwidth collaborative perception.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

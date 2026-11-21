@@ -1,0 +1,13 @@
+{
+  "id": "78d9ff9c70be3e4a",
+  "title": "Projection-Aware End-to-End Learned Video Compression for 360-Degree Video",
+  "link": "https://arxiv.org/abs/2608.28689",
+  "description": "arXiv:2608.28689v2 Announce Type: replace \nAbstract: 360-degree video supports immersive applications such as virtual reality, autonomous driving, and education. Because spherical content cannot be processed directly by conventional video codecs, it must first be mapped to a two-dimensional projection. Projection choice affects spatial continuity, sampling uniformity, motion estimation, and compression efficiency.\n  This thesis investigates how projection format influences end-to-end neural compression of 360-degree video. Seven formats supported by JVET 360Lib are evaluated using the scale-space flow model, JVET test sequences, and common test conditions. Each sequence is converted from its source equirectangular projection to a coding projection, compressed at multiple rate points, reconstructed, and converted back. Performance is assessed using PSNR, spherical PSNR, weighted spherical PSNR, and Bj{\\o}ntegaard delta rate. A differentiable pipeline combining projection conversion, neural compression, and inverse projection is also compared with 360Lib.\n  Results show that equirectangular and padded equirectangular projections provide the highest compression efficiency with the scale-space flow model, while cubemap-based and rhombic dodecahedron projections are less effective. This differs from the conventional HM-16.16 codec, for which cubemap-based formats, particularly equi-angular and adjusted cubemap projections, outperform equirectangular formats. Neural models based on optical flow benefit from the spatial continuity of single-face projections, whereas block-based hybrid codecs better accommodate multi-face layouts. These findings show that projection efficiency is codec-dependent and provide guidance for selecting projections for learning-based 360-degree video compression.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

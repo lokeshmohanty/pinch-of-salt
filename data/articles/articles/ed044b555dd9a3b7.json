@@ -1,0 +1,14 @@
+{
+  "id": "ed044b555dd9a3b7",
+  "title": "Grounded World Model: Latent Planning with Language Goals",
+  "link": "https://arxiv.org/abs/2604.11751",
+  "description": "arXiv:2604.11751v2 Announce Type: replace-cross \nAbstract: World models such as DINO-WM and LeWM specify the goal with an image, which is difficult to obtain in advance for novel tasks. We present the Grounded World Model (GWM), a latent world model that enables zero-shot planning in the real world from language goals alone. Given a candidate action sequence and the current observation, GWM predicts the future in the visual space of a pretrained video-language embedding model. The frozen readout of this embedding model maps this imagined future and the task description into the same embedding space, where their negative cosine similarity serves as the planning cost. Training GWM requires only offline and task-agnostic video-action pairs and no language labels. In simulated experiments on WISER, planning with GWM, which executes the candidate action of lowest cost, solves 87% of 288 tasks with unseen instructions and visual signals, while ten fine-tuned VLAs average 22%. We then scale GWM up with real robot data, and use it for zero-shot planning in realistic simulation and real scenes. In the IsaacSim evaluation, planning with GWM completes all 70 trials across 14 tasks that require reasoning over referring expressions, matching a modular planner grounded by a frontier VLM, while pi0.5 reaches 37/70. Deployed on a real Franka, the same stack completes 55/60 separately evaluated pick-and-place sub-tasks, comparable to the modular planner's 52/60, with the full system running locally on a single consumer GPU. Project website: https://quanyili.github.io/gwm-wiser/.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

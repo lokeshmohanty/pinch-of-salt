@@ -1,0 +1,13 @@
+{
+  "id": "9550ac2207967a94",
+  "title": "DiffPrune: differentiable information throttling for token pruning in vision-language models",
+  "link": "https://arxiv.org/abs/2608.01985",
+  "description": "arXiv:2608.01985v1 Announce Type: new \nAbstract: Visual token pruning reduces the computational cost of Vision-Language Models (VLMs) by removing redundant visual tokens. The key is to learn a score that measures whether a token is useful. Existing methods typically rely on Gumbel-Softmax to approximate discrete selection during training. Such selectors make the score depend on the behavior of a relaxed pruning operator, not directly on the consequence of information loss. In this paper, we propose DiffPrune, which gives token scores a direct meaning. During training, DiffPrune keeps all tokens and weakens each token's information according to its score. If weakening a token hurts the task, the scorer is pushed to protect it; if not, the token can receive a lower score. Because the loss is differentiated through this actual information-throttling path, the scorer avoids the unstable surrogate path of relaxed token selection. DiffPrune implements this idea with an Information Throttler, which injects variance-preserving noise into visual tokens, where high-score tokens remain close to their original representations, while low-score tokens carry less original information. At inference, the throttler is removed, and hard top-K pruning is applied using the learned scores. Across ten VLM benchmarks, DiffPrune retains 96.5% of full-model accuracy while accelerating LLM prefill by 2.85x, with only 0.69 ms inference overhead. Code will be publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

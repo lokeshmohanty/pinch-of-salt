@@ -1,0 +1,13 @@
+{
+  "id": "5b71040acabac08c",
+  "title": "Goal Images Are Control Targets: Spatially-Grounded Goal-Image Synthesis for Robotic Manipulation",
+  "link": "https://arxiv.org/abs/2610.24885",
+  "description": "arXiv:2610.24885v2 Announce Type: replace \nAbstract: Goal-conditioned manipulation policies are steered by a goal image, a picture of the desired post-manipulation scene synthesized from the current observation and a language instruction. The prevailing assumption is that better image-editing quality yields better goals, so goal generators are built and compared using general image-editing metrics. We show this assumption is false. Across two independent goal-conditioned policies on CALVIN, the image editors that top aggregate editing-quality leaderboards (Gemini 3 Pro Image and GPT Image 1.5) produce worse control targets than our proposed far smaller finetuned open models, and the gap widens sharply for the multi-step (long-horizon) tasks robots actually face. A per-dimension analysis explains why. Downstream policy success is governed almost entirely by manipulation adherence (selecting the right object and the right final state; Spearman $\\rho \\approx 0.9$ with success), while photorealism and aesthetic fidelity, precisely where large proprietary editors excel, are uncorrelated with success ($\\rho \\approx 0$). This dissociation holds on both CALVIN and the real-world-aligned SIMPLER-Bridge benchmark. We then present SGE-Goal, a spatially-grounded decomposed editing framework that predicts initial and final 2D edit-region masks before goal-image synthesis. SGE-Goal turns open base models (FLUX.1 Kontext, FLUX.2 klein) into the strongest goal generators we evaluate on CALVIN, and second only to Gemini 3 Pro Image on SIMPLER-Bridge. Base models fine-tuned with SGE-Goal also hold up under chaining far better than the best proprietary editor, sustaining roughly seven times the success rate at the longest (five-step) chains. We release code, datasets, checkpoints, and a human-aligned diagnostic evaluator. Our results argue that goal generators must be selected by downstream utility, not by editing-quality leaderboards.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

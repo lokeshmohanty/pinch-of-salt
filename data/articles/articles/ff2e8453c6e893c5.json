@@ -1,0 +1,13 @@
+{
+  "id": "ff2e8453c6e893c5",
+  "title": "Beyond Global Latents: Chunk-Based Sparse Grid VAE for Scalable 3D Modeling",
+  "link": "https://arxiv.org/abs/2608.02016",
+  "description": "arXiv:2608.02016v1 Announce Type: new \nAbstract: Sparse voxel grids preserve the spatial structure needed for detailed 3D reconstruction, but their memory still grows rapidly with resolution as active surface cells increase. We introduce ChunkVAE, a sparse grid variational autoencoder organized around local chunks rather than a global latent volume. Local learned operators permit independently chosen encoder and decoder partitions and allow inference chunk sizes to differ from training. Two complementary data operators make this flexibility practical: Balanced Binary Object Partitioning distributes active cells while limiting replicated overlap, while S-Curve weighted stitching attenuates unreliable boundary features when assembling a global latent or reconstruction. Across three object benchmarks, ChunkVAE is competitive with or better than strong baselines from $512^3$ to $1536^3$; smaller chunks lower peak allocated memory and shorten per-chunk compute, enabling faster parallel inference. Stable stitched latents and improved image to 3D metrics indicate that local compression can scale geometry while retaining the global interface required downstream.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

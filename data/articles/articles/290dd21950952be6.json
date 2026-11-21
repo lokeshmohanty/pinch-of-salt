@@ -1,0 +1,13 @@
+{
+  "id": "290dd21950952be6",
+  "title": "XDG: Accelerated Visual Disambiguation",
+  "link": "https://arxiv.org/abs/2608.29733",
+  "description": "arXiv:2608.29733v2 Announce Type: replace \nAbstract: Visual aliasing, also known as the doppelganger problem, remains a key challenge for structure-from-motion (SfM): visually similar but physically distinct surfaces can produce incorrect image matches and degrade reconstruction quality. Previous work mitigates this issue with geometry-aware foundation-model features, but places a heavy transformer classifier on top of the backbone, making large-scale disambiguation expensive. We introduce XDG, an efficient visual disambiguation model designed for scalable SfM. Our key observation is that a 3D foundation model already performs the cross-view geometric reasoning necessary for visual disambiguation, so doppelganger classification should adapt the backbone representation directly rather than relearn pair reasoning in a separate heavy decoder. XDG fine-tunes Depth Anything 3 with lightweight LoRA adapters and repurposes its camera tokens as compact pair-level classification tokens. A compact MLP head predicts whether a candidate image pair observes the same 3D surface. Extensive experiments show that XDG provides a favorable accuracy-efficiency tradeoff: it remains competitive with the state-of-the-art disambiguation method across pairwise and reconstruction benchmarks and delivers more than a 3x inference speedup. On individual LaMAR scenes containing thousands of images, XDG saves more than 10 hours of visual disambiguation processing. Code is available at https://github.com/xtcpete/xdg.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

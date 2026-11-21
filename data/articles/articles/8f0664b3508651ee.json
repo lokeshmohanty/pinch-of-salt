@@ -1,0 +1,13 @@
+{
+  "id": "8f0664b3508651ee",
+  "title": "MotionRFT: Unified Reinforcement Fine-Tuning for Text-to-Motion Generation",
+  "link": "https://arxiv.org/abs/2603.27185",
+  "description": "arXiv:2603.27185v2 Announce Type: replace \nAbstract: Text-to-motion generation has advanced with diffusion- and flow-based generative models, yet supervised pre-training remains insufficient to align models with high-level objectives such as semantic consistency, realism, and human preference. Existing post-training methods have key limitations: they (1) target a specific motion representation, such as joints, (2) optimize a particular aspect, such as text-motion alignment, and may compromise other factors; and (3) incur substantial computational overhead, data dependence, and coarse-grained optimization. We present a reinforcement fine-tuning framework that comprises a heterogeneous-representation, multi-dimensional reward model, MotionReward, and an efficient, fine-grained fine-tuning method, EasyTune. To obtain a unified semantics representation, MotionReward maps heterogeneous motions into a shared semantic space anchored by text, enabling multi-dimensional reward learning; Self-refinement Preference Learning further enhances semantics without additional annotations. For efficient and effective fine-tuning, we identify the recursive gradient dependence across denoising steps as the key bottleneck, and propose EasyTune, which optimizes step-wise rather than over the full trajectory, yielding dense, fine-grained, and memory-efficient updates. Extensive experiments validate the effectiveness of our framework, achieving FID 0.132 at 22.10 GB peak memory for MLD model and saving up to 15.22 GB over DRaFT. It reduces FID by 22.9% on joint-based ACMDM, and achieves a 12.1% R-Precision gain and 21.7% FID improvement on rotation-based HY-Motion. Our project page with code is publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

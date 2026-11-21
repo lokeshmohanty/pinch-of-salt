@@ -1,0 +1,14 @@
+{
+  "id": "c171ceaefb79fed0",
+  "title": "Reading Human Preference from Looped Transformer Internal States",
+  "link": "https://arxiv.org/abs/2604.09870",
+  "description": "arXiv:2604.09870v3 Announce Type: replace-cross \nAbstract: Show a frozen language model two replies to the same request, one of which a person preferred. Can a small probe on the model's hidden states tell which? On Ouro-2.6B-Thinking, a model that runs its layers four times per token, and Anthropic's HH-RLHF data, the answer is yes, but only faintly. A linear probe picks the preferred reply 61.5% of the time, a small nonlinear network that scores each reply separately 64.9%, and the evaluator trained for version 1 reaches 64.7% on the test split: clearly better than simple rules such as picking the longer reply, but weak. Whether preference is stored as a comparison between the two replies or as a property of each is still open. A linear probe cannot tell, and a network that reads both replies together has an estimated edge of only 0.7 points (95% CI 0.0 to 1.4) over one that scores each reply separately. These numbers hold under three controls: scoring every pair in both orders, splitting the data by pair, and, for the probes, keeping the end of each conversation, where the two replies differ. Version 1's 95.2% and 84.5% were obtained without the first two and do not hold; version 2's corrected relational-probe accuracy, obtained without the third, was four to five points too low. This version replaces both.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

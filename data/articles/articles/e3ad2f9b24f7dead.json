@@ -1,0 +1,13 @@
+{
+  "id": "e3ad2f9b24f7dead",
+  "title": "Learning Where and How Much to Sample: Volume-Adaptive k-Space Acquisition for Accelerated MRI",
+  "link": "https://arxiv.org/abs/2611.24081",
+  "description": "arXiv:2611.24081v1 Announce Type: new \nAbstract: Magnetic resonance imaging (MRI) is an essential medical imaging technique, but its high costs and long acquisition times can limit accessibility. Accelerated MRI reduces acquisition time through k-space undersampling, yet conventional methods often rely on predefined sampling patterns and uniform slice budgets, overlooking anatomical variations and inter-slice relationships. In this paper, we propose a volume-adaptive k-space acquisition framework that jointly learns where and how much to sample across an entire MRI volume. Using only acquired auto-calibration signal (ACS) measurements, our method exploits volume-wide anatomical information to adaptively allocate sampling budgets across slices while identifying informative k-space lines. A learned joint slice--frequency refinement module coordinates sampling decisions while preserving an exact total volume-level acquisition budget. To reconstruct the acquired measurements, we design a sensitivity-aware synchronous cross-slice reconstruction network that estimates coil sensitivities from ACS measurements and progressively refines neighboring-slice reconstructions while enforcing hard k-space data consistency. Both networks are jointly optimized using reconstruction-based supervision without requiring fully sampled k-space at inference. Experiments on knee and brain MRI across multiple contrasts and acceleration factors demonstrate the adaptive behavior of our acquisition framework and evaluate its reconstruction performance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

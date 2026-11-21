@@ -1,0 +1,13 @@
+{
+  "id": "870f07082261c3c8",
+  "title": "TEA: Text Encoder Alignment for Robust Concept Erasure in Text-to-Image Models",
+  "link": "https://arxiv.org/abs/2608.15341",
+  "description": "arXiv:2608.15341v2 Announce Type: replace \nAbstract: Text-to-image diffusion models can be misused to generate harmful content through adversarial or paraphrased prompts that bypass built-in safety mechanisms. Existing concept erasure methods often suffer from limited robustness against adversarial prompts, degradation of benign generation quality, or reliance on inference-time interventions that introduce persistent computational overhead. To address these limitations, we formulate concept erasure as a domain alignment problem in the text representation space. We propose a lightweight Text Encoder Alignment framework (TEA) that fine-tunes only the text encoder while keeping the generative backbone fully frozen. Given concept-anchor prompt pairs, our method trains a discriminator to distinguish token-level representations of concept-bearing prompts from those of safe anchor prompts, while updating the text encoder to make these representations indistinguishable. TEA introduces zero inference-time overhead and trains in seconds with only a few fine-tuning steps, making it practical for large-scale deployment. Despite this efficiency, TEA achieves state-of-the-art erasure robustness against black-box and white-box adversarial attacks on Stable Diffusion v1.4, while preserving generation quality on benign prompts. Furthermore, TEA is model-agnostic and achieves the lowest attack success rate on Stable Diffusion v3.5, extending concept erasure to Rectified Flow Transformer architectures with T5 conditioning, which remain largely unexplored by prior methods. Code is available at https://github.com/alirezafarashah/TEA",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

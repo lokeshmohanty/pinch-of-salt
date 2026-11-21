@@ -1,0 +1,13 @@
+{
+  "id": "97011b01572e2f00",
+  "title": "zkLLMPoT: Efficient Zero Knowledge Proof of Training for Large Language Models",
+  "link": "https://arxiv.org/abs/2610.08258",
+  "description": "arXiv:2610.08258v1 Announce Type: new \nAbstract: Auditing the claimed outcomes of large language model (LLM) training is challenging when model weights and training data are private, while cryptographically proving the full training process is prohibitively expensive at Transformer scale. We present zkLLMPoT, a zero-knowledge framework that certifies auditor-defined properties of a trained checkpoint through forward evaluation rather than verification of its optimization trajectory. zkLLMPoT includes 2 phases: 1) The trainer fixes the architecture and the model weights are committed. Then the auditor selects challenge sequences, preventing the trainer from modifying the checkpoint in response to the audit data. 2) Then the trainer proves the objective value attained by the committed model on those sequences. This formulation makes the certification cost independent of the number of training iterations, without revealing model weights or requiring access to private training data. We build on sumcheck- and lookup-based arguments to certify Transformer computations, while supporting next-token loss and task-specific audit objectives. Across four model families, operator-level benchmarks yield proving times of 41-59 seconds for 1.1-1.5B-parameter models and 131 seconds at 13B for the covered operators, with verification below half a second at a sequence length of 512.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "cc4ce7c6dc0ff25e",
+  "title": "SpatialMem: Metric-Aligned Long-Horizon Video Memory for Language Grounding and QA",
+  "link": "https://arxiv.org/abs/2601.14895",
+  "description": "arXiv:2601.14895v4 Announce Type: replace-cross \nAbstract: SpatialMem is a memory-based system which integrates 3D geometry, semantics, and language with one another in one combined, queryable representation. Starting with casually recorded egocentric RGB video, SpatialMem recreates metrically scaled interior scenes, recognizes structural 3D anchors (walls, doors, windows) as the first-layer scaffold, and associates open-vocabulary object nodes with evidence patches, visual embeddings, and two-layer descriptions to 3D coordinates, enabling spatial-relation reasoning, language-directed retrieval, and QA without special sensors. We test at scale on public benchmarks. On VSI-Bench ($288$ videos, $5{,}130$ questions) SpatialMem scores $37.5$ overall with RGB alone, and its margin is precisely where a metric memory should earn it (room size $41.4$ vs.\\ $24.4$ with a same-size frame model). On the episodic-memory task of OpenEQA ($953$ questions) the memory serialised to text is lower than the blind control, but as evidence-frame retrieval it recovers frame-level accuracy, matching uniform sampling at an equal eight-frame budget and pulling ahead as the budget tightens, with every answer grounded in linked 3D evidence. On $12$ ScanNet scenes evaluated using instance-level official annotations, the anchor-first hierarchy assigns the retrieved object to the proper structural parent where open-vocabulary 3D scene graphs essentially cannot ($0.24$ compared to $0.01$ with matched input), a capability difference instead of an overall win. The queryable index has a cost of $14$\\,KB per scene without the linked evidence frames, and we make available the suites, memories and code.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

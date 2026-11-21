@@ -1,0 +1,13 @@
+{
+  "id": "cf9c60ed63fd0223",
+  "title": "SpaceCache: Intermediate Feature Reuse for Efficient Semantic Segmentation on Point Cloud Streams",
+  "link": "https://arxiv.org/abs/2610.21207",
+  "description": "arXiv:2610.21207v1 Announce Type: new \nAbstract: Point-cloud streams are central to autonomous driving and robotics, yet existing segmentation networks process every frame from scratch, although consecutive frames largely overlap. We observe that the intermediate features of point-cloud transformers remain semantically consistent across frames for the same spatial region, especially in deep stages. Building on this, we present SpaceCache, a training-free feature cache that reuses these features across frames. Tokens of previously observed regions skip a sequence of transformer blocks and take their cached features, only the remaining tokens are computed, and the full token layout is restored for dense prediction. Lightweight cache management keeps reused features reliable by limiting each entry's age and evicting low-confidence entries. Unlike token merging, SpaceCache selects tokens at negligible cost and runs its cache operations once per encoder stage. On both outdoor and indoor benchmarks, such as nuScenes, Waymo, and ScanNet, with two transformer backbones of Utonia and LitePT-B, SpaceCache achieves up to 1.65x speedup with less than 1-point mIoU drop and consistently outperforms token-merging methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

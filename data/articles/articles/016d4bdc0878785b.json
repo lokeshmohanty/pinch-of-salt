@@ -1,0 +1,15 @@
+{
+  "id": "016d4bdc0878785b",
+  "title": "On the Expressive Power and Limitations of Multi-Layer SSMs",
+  "link": "https://arxiv.org/abs/2604.14501",
+  "description": "arXiv:2604.14501v2 Announce Type: replace-cross \nAbstract: We study how depth, finite precision, state dimension, and chain-of-thought (CoT) affect the expressive power of multi-layer state-space models (SSMs). For the explicit-table $K$-function-composition problem, a canonical benchmark for sequential information propagation, we prove that any $L$-layer SSM solving $(L+3)$-function composition must satisfy $d^2p=\\Omega(N/L^3)$, where $d$ is the state dimension and $p$ is the per-scalar precision. Conversely, $K$-function composition is solved exactly by a $(K+1)$-layer generalized SSM with $d=1$ and $p=\\Theta(\\log N)$. This gives a worst-case depth hierarchy for this formal problem family. We then distinguish post-input reasoning, in which all thought tokens are generated after the input, from input-interleaved reasoning, in which thought tokens may be inserted while the input stream is being read. Post-input reasoning does not circumvent our communication-based lower-bound pipeline, whereas input-interleaved reasoning admits bidirectional simulations with general deterministic one-pass streaming algorithms at the granularity of persistent memory. Finally, width and precision are not interchangeable under exact step-preserving simulation in the base affine-state model, but become interchangeable through the streaming-memory characterization once input-interleaved reasoning is allowed.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CC"
+  ]
+}

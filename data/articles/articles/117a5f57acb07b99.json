@@ -1,0 +1,17 @@
+{
+  "id": "117a5f57acb07b99",
+  "title": "Dynamical low-rank equilibrium computation for stochastic games between advanced persistent threats and moving target defense",
+  "link": "https://arxiv.org/abs/2610.06885",
+  "description": "arXiv:2610.06885v2 Announce Type: cross \nAbstract: Moving target defense (MTD) against advanced persistent threats (APTs) in industrial control systems (ICS) has well-established game-theoretic formulations, but their practical value hinges on equilibrium computation, which faces two gaps: full-rank value iteration is prohibitively expensive at industrial scale, and the resulting defense strategies admit no certified robustness against adversarial perturbations. We first reveal that the attack and defense influence matrices of ICS dynamics are intrinsically low-rank: APTs infiltrate through a handful of entry points and MTD reconfigures only a few components per cycle. Our theory makes four contributions. First, an augmented gradient matrix certifies that the low-rank structure propagates through the non-smooth Bellman operator of the zero-sum stochastic game, so that every Bellman target lies near a low-dimensional subspace and low-rank truncation incurs an explicit error bound (Lemma 1, Theorem 1). Second, we propose the Dynamical Low-Rank Nash Equilibrium algorithm, named DLR-NE, which augments the rank-r search space each iteration, regularizes the core matrix spectrum, and retracts via truncated SVD, and prove that it converges geometrically to a neighborhood whose error decomposes into five physically interpretable sources (Theorem 2). Third, its per-step cost is O(nr^2), a Theta(n/r^2) speedup over full-rank value iteration (Theorem 3). Fourth, a single weight trades accuracy against a certified sensitivity bound of the induced defense strategy under core-matrix perturbations (Corollary 1). Six experiments on a nonlinear power-system testbed confirm each prediction, with 94% parameter compression at 2.3% utility loss. All experimental data and code are publicly available.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.GT",
+    "cs.AI",
+    "cs.CR",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

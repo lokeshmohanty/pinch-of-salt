@@ -1,0 +1,13 @@
+{
+  "id": "3236ab3c2e275f0c",
+  "title": "FlowSim: Rendering-Free Closed-Loop Simulation for Evaluating End-to-End Driving Systems",
+  "link": "https://arxiv.org/abs/2610.18030",
+  "description": "arXiv:2610.18030v2 Announce Type: replace \nAbstract: Closed-loop evaluation of end-to-end (E2E) driving systems typically relies on generating sensor observations and re-processing them through the perception encoder, introducing substantial computational cost and a sim2real gap between simulated and real sensor observations. In this paper, we ask a more fundamental question: is image-space simulation necessary for closed-loop evaluation of E2E driving systems? We propose FlowSim, a rendering-free simulation paradigm that predicts the internal latent representation directly from a previous latent and target-frame symbolic scene conditions. The predicted latent is then processed by the original frozen downstream modules, eliminating image rendering and perception re-encoding. Explicit cross-frame agent association improves latent transition prediction and rollout stability, while variable-horizon simulation enables long-horizon prediction from a common real anchor without accumulating intermediate rollout errors. Experiments on nuScenes and NavSim demonstrate that FlowSim preserves downstream behavior competitively with, and often exceeds image-space simulation in source-to-reference agreement across variable simulation horizons and both dense and sparse latent representations. By predicting the latent directly, both instantiations of FlowSim simulate each step in 0.04--0.06s, substantially faster than the image-space simulation methods they are compared against. These results establish FlowSim as an efficient and practical alternative to conventional image-space simulation methods. Our project page is https://hanfeng-wu.github.io/flowsim_page/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5ce7c30c3eea24e8",
+  "title": "Before the Ticket: Grounding HPC User Support in Documentation and Resolved Tickets with an Agentic LLM Assistant",
+  "link": "https://arxiv.org/abs/2610.31703",
+  "description": "arXiv:2610.31703v1 Announce Type: cross \nAbstract: Most questions that reach an HPC help desk have already been answered in the center's user guides or in a ticket someone else filed last semester; users still file new tickets because the guides are hard to navigate and the ticket history is not theirs to search. We present an assistant that answers from both sources: an orchestrator calls two tools over the Model Context Protocol, retrieval-augmented generation (RAG) over the live documentation and a Llama-3-8B model fine-tuned with QLoRA on 11,244 query-resolution pairs mined from historical tickets, and merges their answers. Every model runs on-premises or on the university's hosted LLM service because ticket data may not leave the institution. On 400 held-out tickets from Purdue's Rosen Center for Advanced Computing, disjoint from training and free of near-duplicates, and evaluated by two judges from model families that generated none of the answers, fine-tuning on resolutions rewritten into self-service guidance is the clear winner in agreement with RCAC's resolutions (BERTScore F1 improves from 0.06 to 0.27 over the base model) and is judged most correct on average. The end-to-end system does not improve on its tools, although they are complementary: choosing the better answer per question would exceed either tool (judged correctness 3.41 versus 3.20, an oracle bound), while the merge follows the documentation tool in 78% of answers. Returning one tool's answer instead recovers the fine-tuned tool's quality (3.19 versus 2.66), but neither a learned selector nor an LLM verifier beats that tool alone.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

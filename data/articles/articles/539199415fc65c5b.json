@@ -1,0 +1,14 @@
+{
+  "id": "539199415fc65c5b",
+  "title": "SOTER: A Generative Time-Series Foundation Model for Wearable Human Physiological Signals",
+  "link": "https://arxiv.org/abs/2609.16804",
+  "description": "arXiv:2609.16804v1 Announce Type: cross \nAbstract: Time-series foundation models have demonstrated strong cross-domain transfer, yet their common architectural assumptions remain poorly aligned with wearable physiological signals, which are multichannel, irregularly sampled, noisy, and governed by coupled continuous-time dynamics spanning distinct spectral scales. We present SOTER, a generative foundation model for wearable physiological time series that unifies cross-channel coupling, spectrum-guided expert specialization, and continuous-time latent evolution within a single pre-training framework. SOTER combines a spatial feature-aware backbone that models inter-signal dependencies, a power spectral density (PSD)-guided mixture-of-experts layer that routes representations to experts associated with fixed spectral bands through an inspectable, non-learned rule, and a neural controlled differential equation decoder that supports prediction and imputation at arbitrary timestamps. We pre-train SOTER on 226 billion time points from five public physiological datasets and evaluate the same pre-trained model across out-of-distribution zero-shot forecasting, frozen-encoder linear-probe classification, and continuous-time imputation on wearable benchmarks. SOTER achieves the best RMSE on 4 of 6 datasets and the best MAE on 5 of 6 in zero-shot forecasting, the highest average Macro-AUROC in classification, and the lowest imputation error on all six datasets at 75% missingness. It further remains robust to additive acquisition noise, matching or surpassing baselines evaluated on clean inputs even under the strongest corruption. These results indicate that domain-specialized foundation models for wearable physiology benefit from jointly modeling channel structure, spectral scale, and continuous-time dynamics.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

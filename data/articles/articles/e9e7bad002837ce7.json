@@ -1,0 +1,14 @@
+{
+  "id": "e9e7bad002837ce7",
+  "title": "AdaMerge: Tuning-Free Patch Compression for Multi-Vector Visual Document Retrieval",
+  "link": "https://arxiv.org/abs/2609.22562",
+  "description": "arXiv:2609.22562v1 Announce Type: new \nAbstract: Multi-vector visual document retrieval (VDR) models such as ColPali and ColNomic achieve strong accuracy by representing each document with hundreds to thousands of patch-level embeddings, at substantial storage and latency cost. Existing compression methods either prune unimportant patches or merge similar ones into clusters; the recent state-of-the-art merging method Prune-then-Merge (PtM) consistently outperforms pruning-only baselines at high compression, but requires a per-dataset cluster budget m to be tuned by grid search. We observe that the merge-cosine sequence produced by hierarchical clustering exhibits a sharp cliff separating mergeable redundancy from salient signal, and that the location of this cliff is concentrated in a narrow band across more than 11,000 documents from 14 datasets. This suggests the merge boundary can be detected per document rather than tuned per dataset. Building on this observation, we propose AdaMerge, a plug-and-play compression method that (i) detects each document's own cliff via gap analysis on the merge-cosine trajectory, and (ii) builds attention-weighted cluster centroids to preserve salient signal. On the long-document benchmark ViDoRe-V2 (4 datasets, two backbones), AdaMerge significantly outperforms tuned PtM across the operating range (p < 10^-4); on the short-document benchmark ViDoRe-V1 (10 datasets, two backbones), where all merging methods are already near-lossless, AdaMerge matches tuned PtM without any per-dataset tuning. AdaMerge adds only about 10 ms per document and exposes a single global hyperparameter shared across all datasets and backbones.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.IR"
+  ]
+}

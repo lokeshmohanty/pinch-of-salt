@@ -1,0 +1,13 @@
+{
+  "id": "0a18cf227f42efaa",
+  "title": "ArtChart: Faithful Artistic Chart Generation with Integrated Text Rendering",
+  "link": "https://arxiv.org/abs/2607.16060",
+  "description": "arXiv:2607.16060v2 Announce Type: replace \nAbstract: Artistic charts combine data visualization with expressive marks, textures, and typography, but they are difficult for image generators: an output is useful only when its stylization preserves chart geometry, exact in-image text, and the semantic binding between labels and marks. We introduce ArtChart, a framework for faithful artistic chart generation with integrated text rendering. Given a structured chart specification and an artistic prompt, ArtChart first renders a text-free grayscale layout that encodes the target chart geometry, then trains a chart-specific control module to preserve mathematical structure. To address the remaining text and layout errors, we further refine the generation policy through GRPO-based reinforcement learning with OCR-based text rewards, VLM-based layout rewards, and aesthetic rewards. A multi-expert distillation stage reconciles these objectives by distilling single-reward experts into one balanced generation policy. We also construct ArtChart-Bench, a bilingual 2K-prompt benchmark covering four chart types, controlled value distributions, diverse label/value formats, and 15 artistic styles, together with ArtChart-Eval, a six-axis evaluation protocol measuring mathematical logic, text accuracy, text layout, aesthetics, instruction following, and readability. Experiments on ArtChart-Bench show that ArtChart consistently outperforms prompt-only, image-editing, and generic ControlNet baselines, with the largest gains on mathematical fidelity and label-layout binding while maintaining competitive visual quality. These results suggest that artistic chart generation should be evaluated as reliable visual communication rather than as generic stylized image synthesis.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

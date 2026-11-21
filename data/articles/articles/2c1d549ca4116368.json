@@ -1,0 +1,14 @@
+{
+  "id": "2c1d549ca4116368",
+  "title": "Simulator-Grounded Large Language Models for Industrial Causal Reasoning: Tool-Use, Structured Injection, and Plant-Portable Retrieval for Wastewater Treatment Decision Support",
+  "link": "https://arxiv.org/abs/2608.05151",
+  "description": "arXiv:2608.05151v1 Announce Type: cross \nAbstract: Wastewater operators need answers grounded in how their plant's variables interact and how fast effects propagate, not in generic pretraining text, when asking causal questions such as \"why is N2O rising?\" or \"what happens if I cut aeration by 20%?\". We compare three concrete ways to ground a frozen Qwen2.5-32B-Instruct model in an architecturally interpretable wastewater simulator (CCSS-IX): a live simulator oracle (Method 1), structured parameter injection (Method 2), and a Decoupled Recall-Reasoning (DRR) retriever (Method 3). On a 198-question causal benchmark the three reach 99.5%, 79%, and 75.8%, forming a deployment ladder above the strongest retrieval-augmented baseline at 48%. The DRR retriever has 110M parameters and trains per plant in ~17 seconds; after cross-plant transfer to a biologically distinct plant it still reaches 88%, while Method 2's static table cannot transfer. On a 60-question counterfactual benchmark only Method 3 handles queries about what happens after an intervention: +16.3 pp over Method 2, paired 95% CI [+7.1, +26.4] pp, with 100% on the timescale and operating-regime categories. On the AI2 Reasoning Challenge (ARC) with an OpenBookQA fact corpus, the same selective-retrieval mechanism reaches 79% versus unconstrained Llama-3.1-8B 76% and full-injection 74%, a +3 pp out-of-domain replication that argues against a result specific to wastewater treatment. We provide the first single-simulator comparison of live tool-use, static parameter injection, and learned numerical-parameter retrieval for industrial causal question answering.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI"
+  ]
+}

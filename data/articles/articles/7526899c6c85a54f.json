@@ -1,0 +1,16 @@
+{
+  "id": "7526899c6c85a54f",
+  "title": "Adaptive Patching Is Harder Than It Looks For Time-Series Forecasting",
+  "link": "https://arxiv.org/abs/2606.04074",
+  "description": "arXiv:2606.04074v2 Announce Type: replace-cross \nAbstract: Adaptive patching has been proposed for time-series forecasting: allocate finer patches where the sequence looks locally informative. We compare three adaptive patching methods with tuned uniform counterparts that use one fixed patch size throughout the input, while preserving each method's backbone family and shared training protocol. Across the evaluated long-horizon benchmarks, we observe mostly small accuracy differences and no consistent advantage for adaptive patching; uniform variants generally train faster and avoid adaptive routing at inference. Motivated by these observations, we develop a theoretical framework for budgeted patch allocation through a common resolution-density representation of uniform, nonuniform, and overlapping layouts, independently of the patching rule. Within a separable shared-loss model, we derive an exact criterion for when nonuniform allocation improves on uniform allocation at the same budget. We characterize modeled gains locally through a quadratic surrogate and bound them globally under strong convexity and a bounded loss derivative. The analysis distinguishes where resolution is placed from how much it is redistributed: even an allocation that correctly ranks regions by their weights can redistribute too much resolution and increase modeled loss. Without coupling across time, positive regional weights preserve the minimizers of the shared loss. When the shared loss has a common minimizing rate, the remaining absolute headroom for improvement tends to zero as the uniform rate approaches it. These results characterize the roles of regional weighting, placement, and redistribution strength under the stated model. The empirical findings support evaluating adaptive patching against a tuned uniform baseline and weighing any accuracy gain against the additional training and inference cost of adaptive routing.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.IT",
+    "math.IT"
+  ]
+}

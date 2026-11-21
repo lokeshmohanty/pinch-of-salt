@@ -1,0 +1,14 @@
+{
+  "id": "017087362ac27b66",
+  "title": "ATS: Anti-Aliased Triangle Splatting with Exact Per-Primitive Integrals",
+  "link": "https://arxiv.org/abs/2611.22512",
+  "description": "arXiv:2611.22512v1 Announce Type: new \nAbstract: Triangle Splatting represents scenes using semi-transparent triangles, but it evaluates each triangle at the pixel center and culls any triangle with an inradius smaller than one pixel. The former causes severe aliasing, while the latter culls most of the scene at lower resolutions. We show that the integral of the Triangle Splatting window over a pixel admits an exact closed-form solution. The angle bisectors split the triangle into three sub-triangles, in each of which the window is a power of the distance to one edge. Each piece therefore has a closed-form antiderivative, and Green's theorem reduces the integral and its gradients to one term per side of the sub-triangle clipped against the pixel. The integral over the whole triangle, which we show has a closed form, then allows conservative culling, removing only triangles that cannot meet the renderer's alpha cutoff at any pixel. This exact formulation anti-aliases existing models without retraining, exhibits less temporal aliasing than 2x2 supersampling, and enables multi-scale training, matching or outperforming supersampled training at reduced resolutions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

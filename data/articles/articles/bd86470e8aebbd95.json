@@ -1,0 +1,14 @@
+{
+  "id": "bd86470e8aebbd95",
+  "title": "Free Everywhere, Exact on Trees: PPO's Dropped Correction Buys Sample Efficiency Under Aggressive Reuse",
+  "link": "https://arxiv.org/abs/2609.39634",
+  "description": "arXiv:2609.39634v1 Announce Type: cross \nAbstract: Common policy improvement methods, including TRPO, PPO, and GRPO, estimate policy improvement under the behavioral policy's state-visitation distribution rather than the improved policy's own. The substitution makes the objective estimable from the behavioral policy's rollouts but adds a bias growing with policy divergence, hence the trust region or clip, and hence no reuse of a batch far off-policy. We show that under history-injective dynamics, where each state is reached by exactly one history, the dropped state-visitation ratio equals the product of per-step policy ratios along the sampled prefix, on every trajectory and not only in expectation. The ratio is therefore restored exactly, from log-probabilities PPO already computes. Autoregressive generation and canonical-order constructive optimization are both history-injective. The exact correction pays importance-sampling variance that grows with the horizon, so we generalize it to a one-parameter family with PPO ($\\alpha{=}0$) and the full correction ($\\alpha{=}1$) as endpoints: a single bias--variance knob. A gradient-level analysis of the unclipped surrogate identifies two channels the correction acts through and three conditions under which it carries signal; an enumerable testbed confirms the conditions' predictions. On hard credit-assignment scheduling tasks, a short corrected warmup with aggressive early sample reuse learns faster than PPO and than the same reuse uncorrected; the marginal gain grows with task difficulty ($+0.02$ to $+0.09$ learning-curve AUC), and the early win over PPO tracks the prefix bias that reuse incurs. A correction held throughout, or applied where clipping already contains the reuse bias, is null to harmful.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

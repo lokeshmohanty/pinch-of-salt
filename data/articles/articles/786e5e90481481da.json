@@ -1,0 +1,13 @@
+{
+  "id": "786e5e90481481da",
+  "title": "STAR++: A Physical-Aware Benchmark and Framework for Astronomical Super-Resolution across Multiple Filters",
+  "link": "https://arxiv.org/abs/2611.24023",
+  "description": "arXiv:2611.24023v1 Announce Type: new \nAbstract: Astronomical super-resolution (ASR) aims to reconstruct high-resolution star fields from low-resolution telescope observations across multiple filters for astrophysical analysis. However, developing a physics-aware ASR framework faces two challenges: 1) Data view: no large-scale benchmark supports field-level ASR, especially on unseen filters. 2) Method view: Existing ASR methods often fail to preserve stellar flux across spatial resolutions. Moreover, ASR requires reconstructing high-frequency components, including accurate star locations and profiles, making it more ill-posed than natural-image SR. To tackle these problems, we introduce STAR++, a large-scale benchmark comprising approximately 1.7 million flux-consistent image pairs across 36 filters, derived from Hubble Space Telescope (HST) observations. STAR++ uses a flux-preserving data generation pipeline to ensure photometric consistency across resolutions and provides the Flux Error (FE) metric to evaluate ASR models from a physical perspective. To address method-level challenges, we propose a Flux-Invariant Super-Resolution Plus (FISR++) model that generalizes to unseen filters while accurately reconstructing flux-consistent high-resolution images. Beyond the flux-preserving modules, FISR++ introduces two novel components. Specifically, a Filter-Aware Adapter (FAA) incorporates filter metadata to adapt image representations to varying spectral and optical conditions. In addition, a Spatial Ambiguity Disentangle Loss (SADL) models spatial ambiguity as pixel-shift uncertainty, mitigating the smoothing of learned conditional mean reconstructions caused by this ambiguity. Extensive experiments demonstrate that FISR++ consistently outperforms existing ASR methods in reconstruction quality and flux accuracy, while generalizing to unseen filters, highlighting its effectiveness for photometrically faithful ASR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

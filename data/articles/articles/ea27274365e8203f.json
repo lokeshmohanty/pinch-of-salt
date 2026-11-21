@@ -1,0 +1,13 @@
+{
+  "id": "ea27274365e8203f",
+  "title": "SWAM: Saliency-Weighted Asymmetric Merging for Efficient Vision Transformers",
+  "link": "https://arxiv.org/abs/2611.18057",
+  "description": "arXiv:2611.18057v1 Announce Type: new \nAbstract: Vision Transformers (ViTs) achieve strong performance on image recognition tasks, yet their quadratic self-attention complexity over input tokens creates prohibitive computational costs for practical deployment. Token reduction methods offer a practical solution by progressively reducing the token sequence during the forward pass. We propose Saliency-Weighted Asymmetric Merging (SWAM), a training-based token merging framework that extends the Bipartite Soft Matching (BSM) with two saliency-aware mechanisms. We introduce a two-step matching formulation in which cosine similarity decides candidate pairs, while a multiplicative maximum saliency penalty regulates their selection for merging. We then further use asymmetric exponential saliency-weighted aggregation, which allows more salient tokens to contribute more strongly to the merged representation. A lightweight MLP-based saliency prediction module (75k parameters per stage, 1% of backbone parameters) supervised via attention rollout is trained end-to-end jointly with a DeiT-Small backbone using a composite cross-entropy, knowledge-distillation, and saliency-alignment objective. On CIFAR-100, TinyImageNet, and ImageNet-100, under a conservative schedule that reduces tokens from 196 to 100 patch tokens, with the CLS token retained throughout, 27.5% FLOPs reduction and 1.35 times speedup, SWAM matches or exceeds baseline across the reported results. Under an aggressive schedule (196 to 70 tokens with the CLS token kept throughout, 33.8% FLOPs reduction, and 1.46 times speedup), accuracy gains are achieved on ImageNet-100 (+0.23%) with minimal losses on CIFAR-100 and TinyImageNet.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

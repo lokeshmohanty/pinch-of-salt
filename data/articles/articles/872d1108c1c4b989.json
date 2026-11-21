@@ -1,0 +1,13 @@
+{
+  "id": "872d1108c1c4b989",
+  "title": "Rethinking Exposure Correction for Spatially Non-uniform Degradation",
+  "link": "https://arxiv.org/abs/2604.04136",
+  "description": "arXiv:2604.04136v2 Announce Type: replace \nAbstract: Real-world exposure correction is fundamentally challenged by spatially non-uniform degradations, where diverse exposure errors frequently coexist within a single image. However, existing exposure correction methods are still largely developed under a predominantly uniform assumption. Architecturally, they typically rely on globally aggregated modulation signals that capture only the overall exposure trend. From the optimization perspective, conventional reconstruction losses are usually derived under a shared global scale, thus overlooking the spatially varying correction demands across regions. To address these limitations, we propose a new exposure correction paradigm explicitly designed for spatial non-uniformity. Specifically, we introduce a Spatial Signal Encoder to predict spatially adaptive modulation weights, which are used to guide multiple look-up tables for image transformation, together with an HSL-based compensation module for improved color fidelity. Beyond the architectural design, we propose an uncertainty-inspired non-uniform loss that dynamically allocates the optimization focus based on local restoration uncertainties, better matching the heterogeneous nature of real-world exposure errors. Extensive experiments demonstrate that our method achieves superior qualitative and quantitative performance compared with state-of-the-art methods. Code is available at https://github.com/FALALAS/rethinkingEC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

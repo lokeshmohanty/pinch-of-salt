@@ -1,0 +1,15 @@
+{
+  "id": "f222082cd4a81456",
+  "title": "Bulkhead: Automated Semantic Detection and Remediation of Container Escape Vulnerabilities",
+  "link": "https://arxiv.org/abs/2607.12723",
+  "description": "arXiv:2607.12723v2 Announce Type: replace-cross \nAbstract: Container filesystem isolation depends on safely resolving container-controlled paths during privileged host-container interactions. As third-party plugins and agent sandboxes introduce more interactions, unsafe path resolution can redirect host operations across isolation boundaries, expanding the attack surface for path traversal vulnerabilities. These logic flaws are difficult to mitigate: kernel defenses require intrusive redesign, static rules miss cross-boundary semantics, and manual auditing cannot scale. Large Language Model (LLM) based methods can detect syntax flaws through stable code patterns and identify logic flaws in domains such as smart contracts by comparing equivalent implementations. Container components, however, provide neither form of regularity: their heterogeneous interfaces operate under trust boundaries, filesystem views and interaction orders, making the security invariant difficult to find.\n  We present Bulkhead, an automated framework for detection and remediation. Bulkhead summarizes historical CVEs into structured semantic patterns, correlates documentation with entry and effect side code evidence, and recovers source-to-sink execution contexts. Grounded patterns guide LLM reasoning, while isolated Proof-of-Concept (PoC) execution validates findings. For remediation, Bulkhead generates repository-specific patches, checks that they build, and iteratively verifies path safety and functionality using pattern derived model checking templates and counterexamples before runtime validation. Across container repositories, Bulkhead discovered 20 zero-day vulnerabilities, accounting for 43% of the total number discovered over the past decade. Among them, 3 have been assigned CVEs and the verified patch suggestions have been submitted to the upstream.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.SE"
+  ]
+}

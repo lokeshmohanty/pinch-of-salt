@@ -1,0 +1,13 @@
+{
+  "id": "2b05d318ccaed039",
+  "title": "Beyond Endpoints: B\\'ezier Paths for Vision Foundation Model Adaptation",
+  "link": "https://arxiv.org/abs/2611.17825",
+  "description": "arXiv:2611.17825v1 Announce Type: new \nAbstract: Frozen vision foundation models can be adapted by learning a few prompt tokens shared across all images. When prompts are updated as data shift or tasks change, the distribution of image features moves from one endpoint to another. Prior theory asks which endpoints prompts can reach; we ask whether they can travel between them along the shortest path. Because shared prompts compete with each image's own content for attention, they often cannot. We quantify this restriction as the extra transport cost that shared attention imposes over the shortest path. In an exactly solvable attention model, the reachable features form a cone; unrolling it into a plane gives the exact minimum action for every pair of endpoints and explicit optimal prompts on short arcs. The analysis reveals a sharp threshold in content normalization, which measures how much attention each image's own tokens absorb: for same-sign endpoints, at most two distinct levels allow prompts to follow the shortest path, whereas three or more force a strictly positive extra cost unless the endpoints differ only by rescaling. This gap persists with more prompts, small content perturbations, and aligned multihead outputs. On ViT-B/16 with VTAB-1k, a quadratic B\\'ezier prompt path that minimizes feature action reduces held-out transport action relative to linear and cross-entropy-trained paths between the same endpoints and improves intermediate and online accuracy under unlabeled distribution shift, while cross-entropy-trained paths retain higher minimum accuracy when labeled calibration data are available. Reachable endpoints do not guarantee a reachable shortest path: how prompts move matters, not only where they end. Project page: https://xixiaouab.github.io/Beyond-Endpoints/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

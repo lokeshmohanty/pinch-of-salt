@@ -1,0 +1,14 @@
+{
+  "id": "2bdf367e1b04b566",
+  "title": "X-Strata: Separating Aneurysms and Overlapping Vessels into Layers from 2D X-ray Angiography",
+  "link": "https://arxiv.org/abs/2611.17743",
+  "description": "arXiv:2611.17743v1 Announce Type: cross \nAbstract: An X-ray angiogram sums every structure along a ray into one pixel. When vessels cross an aneurysm, they obscure part of it and mix their contrast into its filling curve. We present X-Strata, a network that separates a cine angiogram into three layers: the complete aneurysm sac, the vessels in front of it, and the vessels behind it. Contrast timing indicates how much each layer contributes to a pixel, and parallax between two views indicates their order, which a single view cannot determine. X-Strata first estimates the layers and their contrast curves, then uses the second view to assign vessels to the front or back layer, and lifts all layers into 3D. It learns from layer labels projected from same-session 3D rotational angiography, but needs only 2D cine runs and their acquisition geometry at inference. On 220 held-out patients from three centers (122 external), two-view X-Strata ranks first among 14 baselines, including VGGT and C$^2$RV, in recovering the sac where vessels overlap it (Dice 0.693 internal, 0.641 external) and in ordering the layers (balanced accuracy 0.703, 0.659). Its order accuracy exceeds that of all 11 end-to-end baselines by at least 4.1 points internally and 3.3 externally (Holm-adjusted $p < 0.001$) and grows with view separation. Recovered 3D sac surfaces have a median Chamfer distance of 0.34 mm on the internal cohort. X-Strata may therefore provide layered aneurysm and vessel information, including 3D sac shape, for patients who undergo only 2D angiography.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

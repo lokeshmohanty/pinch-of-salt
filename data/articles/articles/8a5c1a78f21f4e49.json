@@ -1,0 +1,14 @@
+{
+  "id": "8a5c1a78f21f4e49",
+  "title": "Learn then Bet: Learning Interpretable Rules for Reliable Agent Intervention",
+  "link": "https://arxiv.org/abs/2611.17662",
+  "description": "arXiv:2611.17662v1 Announce Type: new \nAbstract: Autonomous agents now run for hundreds of steps with little or no human supervision. In practice, practitioners use runtime monitors such as turn limits and keyword filters to decide when a run should be stopped, upgraded, or assisted. However, these heuristics may stop runs that would otherwise succeed or allow failing runs to continue. To address this limitation, we introduce LeBet (Learn then Bet), a statistical learning framework that derives its learning objective from sufficient conditions for valid and powerful intervention. In particular, LeBet learns an interpretable OR-of-AND monitor and accumulates evidence through a fixed betting statistic, intervening when the evidence reaches a prescribed threshold. Under finite within-class exchangeability and leave-one-out stability, we derive finite-sample guarantees for false-positive control (validity) and detection power conditional on the training data, using the same trajectories for learning and calibration without assuming independent and identically distributed trajectories. To address the intractable combinatorial optimization problem in our learning formulation, we use stochastic local search that leverages the monitor's Boolean structure to propose rule edits aimed at improving empirical separation. On SWE-bench Lite with Ministral 3 8B, the learned monitor saves $34.46\\%$ of input-plus-output tokens and increases output precision from $18.33\\%$ to $21.59\\%$. The empirical false-positive rate is $13.64\\%$. Our results show how to formalize the learning problem over interpretable rule sets with statistical conditions and establish training-conditional guarantees for reliable intervention based on partial histories.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

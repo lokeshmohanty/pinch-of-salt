@@ -1,0 +1,13 @@
+{
+  "id": "8fbe45a14e41ca81",
+  "title": "Verifiable Process Rewards for Agentic Reasoning",
+  "link": "https://arxiv.org/abs/2605.10325",
+  "description": "arXiv:2605.10325v3 Announce Type: replace \nAbstract: Reinforcement learning from verifiable rewards (RLVR) has improved the reasoning capabilities of large language models (LLMs), yet existing approaches predominantly rely on sparse outcome-level feedback, posing a substantial credit-assignment challenge in long-horizon agentic tasks. In this work, we study structured agentic reasoning problems that admit symbolic or algorithmic task-solving oracles. We propose Verifiable Process Rewards (VPR), a training framework that repurposes such task oracles as action-level process verifiers, providing dense rewards for intermediate actions and enabling fine-grained credit assignment. We instantiate VPR in three distinct settings: a search-based oracle for Sokoban, a constraint-based oracle for Sudoku, and a posterior-based oracle for Minesweeper. To optimize policies with these rewards, we introduce oracle-guided state-group rollout and locally normalized optimization. Empirically, VPR-trained Qwen3-4B outperforms outcome-reward GRPO and VinePPO across all three training environments. When jointly trained on math data and all three game environments, VPR achieves the highest average general-reasoning performance and strongest agentic results among the compared training configurations. To further assess its applicability to more general agentic tool-use settings, we apply VPR-style action-level supervision to $\\tau^2$-bench using an expert LLM as a reference policy and observe improved performance over outcome-reward GRPO on held-out tasks. Together, these results position VPR as a promising approach for leveraging reliable task oracles to improve agentic reasoning, while highlighting its dependence on the availability and reliability of task oracles and the challenge of extending intermediate verification to less structured, open-ended environments.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "863adca0ab4ca5c8",
+  "title": "Agreement Is Not Accuracy: LiDAR Elevation Errors Hidden in LiDAR-Camera Extrinsics",
+  "link": "https://arxiv.org/abs/2611.23972",
+  "description": "arXiv:2611.23972v1 Announce Type: new \nAbstract: LiDAR and cameras provide complementary measurements for 3D vision, yet agreement between their observations does not establish the accuracy of either sensor's internal geometry. We show that systematic LiDAR elevation biases can be absorbed into the estimated extrinsics. Using synchronized LiDAR intensities and camera-estimated checkerboard poses, we jointly estimate a sensor-specific elevation correction shared across recordings and extrinsics for each recording. Ray-plane intersections locate the checker pattern without using reported ranges, preventing range errors from directly moving the lookup. Under matched intensity and correction models, this lookup gives smaller camera-consistency residuals than measured-point lookup. Across six identically designed rigs using the same sensor models, recording-excluded corrections reduce the mean translation-reference distance from 7.57 to 3.04 mm. On separate structures, they reduce inter-plane angle errors against references from independent dense camera scans and improve image-edge alignment. Rolling the rigs shifts the plane pairs exhibiting the largest angular improvements, as predicted for an elevation-only correction. Within the ray-plane model, calibration-target projections and loop-consistency residuals change little despite these geometric improvements. These findings show why agreement after extrinsic calibration need not establish correct internal LiDAR geometry. Synchronized observations of a familiar checkerboard provide a practical route to estimating and testing elevation corrections without a dedicated large calibration field. We plan to release code and data for reproducing the main results.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

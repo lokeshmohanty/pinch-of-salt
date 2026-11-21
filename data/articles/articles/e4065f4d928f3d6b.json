@@ -1,0 +1,14 @@
+{
+  "id": "e4065f4d928f3d6b",
+  "title": "Visual Jev: Accurate and Efficient Decisions from Shared Visual Context",
+  "link": "https://arxiv.org/abs/2609.25845",
+  "description": "arXiv:2609.25845v2 Announce Type: replace \nAbstract: Applications increasingly ask multiple closed-choice questions about the same image, requiring accurate probabilities and efficient inference. We present Visual Jev, a visual decision model combining LM-head candidate readout, answer-supervised post-training, and independent question branches over a shared visual prefix. On held-out test images from four benchmarks, task SFT raises the 4B model's macro accuracy from 83.4% to 88.5% and error-discrimination AUROC from 0.834 to 0.890. Its macro accuracy exceeds the hosted Jev and OpenAI Decisions APIs by 2.77 and 5.06 percentage points, respectively, with the lowest NLL. We further show that better accuracy and calibration do not ensure reliable decisions. Fixed confidence thresholds exceed target error rates, and simply reordering options changes 17% of the model's accept-or-review decisions on SNLI-VE. At 32 questions per image, shared-prefix inference reduces amortized time per question from 20.5 to 5.6 ms, a 3.7x speedup over batched full sequences on one RTX 5090. Engine-level prefix caching reduces KV memory to 24.3% of that used by our custom shared-prefix path.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

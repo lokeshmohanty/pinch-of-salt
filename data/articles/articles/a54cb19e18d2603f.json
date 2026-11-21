@@ -1,0 +1,15 @@
+{
+  "id": "a54cb19e18d2603f",
+  "title": "2nd Place Solution to the HANDS 2026 Workshop Challenge-Dexterous Grasp Motion Track: Single-Shot Trajectory Warping for Grasp Motion Generation",
+  "link": "https://arxiv.org/abs/2609.21511",
+  "description": "arXiv:2609.21511v1 Announce Type: cross \nAbstract: This report describes our 2nd place solution to the HANDS 2026 workshop challenge (Dexterous Grasp Motion track) in conjunction with ECCV 2026. In this challenge, we address grasp motion generation for the 12-DoF LinkerHand O6, aiming to produce physically plausible reach-and-lift trajectories for unseen objects from randomized initial hand poses in simulation. This task is particularly challenging because each grasp requires a per-step policy to make approximately $70$ twelve-dimensional decisions, with errors accumulating over time, while test objects and physical dynamics may differ from those encountered during training. To address these challenges, we propose editing a single successful GraspM3 demonstration instead of generating the motion step by step: a policy observes the object once and outputs a 12-D warp of the demonstration, which is then replayed open-loop. Moreover, we train the warp policy with one-step PPO over all $4{,}824$ training objects in parallel. As a result, our method achieved success rates of $94.61\\%$ on the easy track, the highest of all submissions, and $57.18\\%$ on the hard track of the private test set.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

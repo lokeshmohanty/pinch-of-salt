@@ -1,0 +1,13 @@
+{
+  "id": "62b80a8ecad71f47",
+  "title": "RankBuffer: Efficient Ranking-Based Rewards for Open-Ended Generation",
+  "link": "https://arxiv.org/abs/2609.36652",
+  "description": "arXiv:2609.36652v1 Announce Type: new \nAbstract: Open-ended generation lacks canonical answers, making pointwise rewards difficult to calibrate for group-based reinforcement learning. Directly ranking same-query rollouts provides a more suitable relative reward signal, but existing ranking-based reward methods can incur substantial judging cost. We introduce RankBuffer, which maintains an ordered, query-specific buffer of previously judged responses as a reusable quality scale. Each rollout is first inserted into an anchor interval through an independent coarse judgment, after which only rollouts assigned to the same interval undergo local fine ranking. The resulting complete order is converted into bounded rank rewards, while boundary expansion, local refinement, and inactive-anchor pruning adapt the buffer as the policy evolves. Across four open-ended benchmarks, RankBuffer consistently outperforms all pointwise baselines. It also achieves nearly on-par performance with the strongest ranking-based reward baseline while substantially reducing judging cost. Ablations demonstrate the importance of both local fine ranking and anchor response content, while buffer analyses show that rollout-derived anchors progressively extend and refine the covered quality scale. These results establish response reuse as an effective approach to efficient relative reward construction.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "18be4ed81b1aa8bd",
+  "title": "FAVE: Foveated Adaptive Visual Encoding for Efficient Fine-Grained Visual Understanding",
+  "link": "https://arxiv.org/abs/2609.04392",
+  "description": "arXiv:2609.04392v1 Announce Type: new \nAbstract: Fine-grained visual understanding depends on local detail, yet visual encoders face a trade-off between costly full-image high-resolution processing and compact global encoding that can weaken such evidence. Inspired by human active vision, we separate where to look from what to encode. We focus on the latter and introduce FAVE (Foveated Adaptive Visual Encoding), a lightweight variable-resolution ViT that encodes externally selected regions at high acuity while preserving native geometry. We first isolate this encoding problem using oracle ground-truth crops in a controlled small-object regime. On ImageNet objects with a native maximum side of 96 pixels, FAVE improves Top-1 by 9.4 points over a fixed-resolution ViT on the same crop window with 12.7 times lower FLOPs. Increasing global resolution or backbone capacity does not recover the same operating point. We then integrate FAVE as a complementary local branch in FastVLM. Its local tokens are combined with FastVLM's global visual tokens, while the original global pathway and language model remain frozen. With at most 16 additional local tokens, FAVE improves TextVQA by 1.60 points and achieves a 3.3 times controlled TTFT speedup over SmolVLM2-2.2B. On GQA attribute questions, it improves FastVLM-1.5B by 1.31 points, extending the benefit beyond text while narrowing the gap to FastVLM-7B. Together, these results show that selectively allocating high-acuity local capacity provides an efficient complement to broader global representations and model scaling for fine-grained understanding of small objects, text, and attributes.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

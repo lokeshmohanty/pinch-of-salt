@@ -1,0 +1,13 @@
+{
+  "id": "a0c963449579cf80",
+  "title": "ScoutCache: Efficient Few-Step Autoregressive Video Diffusion via Conditional Readout and Selective Caching",
+  "link": "https://arxiv.org/abs/2611.21038",
+  "description": "arXiv:2611.21038v2 Announce Type: replace \nAbstract: Few-step autoregressive video diffusion enables efficient long video generation, but inference still incurs substantial computational costs from repeated denoising and KV cache operations. Existing acceleration methods reduce parts of this overhead, while historical KV reading and cache construction remain costly across video chunks. To address these challenges, we propose ScoutCache, a training-free framework that jointly optimizes denoising, historical KV reading, and cache construction. We observe that shallow feature changes provide useful information for estimating clean latent updates, while historical KV dependence varies across Transformer layers and attention heads but remains relatively stable across video chunks. Based on these observations, we develop Conditional Denoising Readout (CDR) to estimate intermediate denoising updates from shallow feature changes and known noise variations. We further introduce Output Risk Guided Historical KV Reading (ORHR) to allocate historical reading budgets based on attention output perturbations, and Content and Coverage Guided Sparse Cache Construction (CCSC) to reduce cache construction costs by selecting informative spatial tokens while maintaining spatial coverage. Extensive experiments on Self-Forcing and LongLive using VBench and MovieGen demonstrate that ScoutCache achieves up to 2.28$\\times$ and 1.86$\\times$ speedups, respectively, while consistently improving generation quality without modifying pretrained model parameters.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

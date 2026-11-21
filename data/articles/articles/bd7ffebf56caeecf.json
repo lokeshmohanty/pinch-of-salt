@@ -1,0 +1,14 @@
+{
+  "id": "bd7ffebf56caeecf",
+  "title": "AWR-Net: Decoupling Anatomy and Appearance for 3D Fetal Brain Ultrasound Synthesis",
+  "link": "https://arxiv.org/abs/2609.22635",
+  "description": "arXiv:2609.22635v1 Announce Type: cross \nAbstract: Three-dimensional fetal brain ultrasound offers non-ionizing, cost-effective imaging with rich spatial information for comprehensive anatomical assessment, yet its development remains limited by scarce data and annotations. In contrast, fetal brain magnetic resonance imaging has advanced further, supported by larger datasets and mature analysis methods. To leverage these resources, anatomical label maps provide a promising modality-invariant bridge for transferring knowledge from fetal brain magnetic resonance imaging to ultrasound. However, generating ultrasound images from label maps remains challenging because anatomy is tightly entangled with ultrasound appearance. To address this challenge, we separate anatomical correspondence learning from ultrasound appearance adaptation at both the data and model levels. Specifically, we propose the anatomy wavelet residual network, a two-stage framework combining wavelet diffusion and residual refinement. The first stage learns to generate volumes from label maps using atlas pairs in the wavelet domain, while the second stage learns bounded residual corrections from real clinical ultrasound in the image domain. This separation enables realistic synthesis with consistent preservation of normal and abnormal anatomy. Experiments on real fetal brain ultrasound show that our method outperforms representative synthesis methods, with normalized cross correlation of 0.518 versus 0.482 and Fr\\'echet Inception Distance of 8.905 versus 13.319 for the strongest baseline. Beyond synthesis quality, volumes generated from fetal brain magnetic resonance imaging label maps also improve downstream segmentation, particularly for severe abnormal cases. Overall, these results highlight the potential of the proposed framework to leverage rich fetal brain magnetic resonance imaging resources for advancing three-dimensional ultrasound analysis.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

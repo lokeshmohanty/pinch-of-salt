@@ -1,0 +1,13 @@
+{
+  "id": "c2168d8962c9e15a",
+  "title": "Local Margin Restoration for Test-Time Adaptation of Vision-Language Models",
+  "link": "https://arxiv.org/abs/2608.02216",
+  "description": "arXiv:2608.02216v1 Announce Type: new \nAbstract: Vision-language models (VLMs) such as CLIP exhibit remarkable zero-shot capabilities, yet their performance frequently degrades sharply under unexpected test-time distribution shifts. While Test-Time Adaptation (TTA) offers a promising solution, continuously adapting VLMs over an unlabeled test stream presents fundamental challenges. Conventional top-1-centric updates often reinforce errors by corrupting the local semantic geometry among related classes, while iterative adaptation exacerbates progressive bias accumulation, ultimately driving the model toward mode collapse. To overcome these coupled vulnerabilities, we propose Local Margin Restoration (LMR), a lightweight, one-step TTA framework. At the sample level, our Protected Margin Restoration (PMR) objective recovers local semantic geometry by shielding plausible near-top candidates from external hard negatives. Concurrently, to combat stream-level degradation, we introduce a dual-stage stabilization mechanism, featuring an Adaptive Margin (AM) controller and Bias Correction (BC), to dynamically disrupt progressive bias accumulation and prevent mode collapse. Extensive experiments on CIFAR-C, ImageNet-C, and ImageNet variants demonstrate that LMR consistently outperforms state-of-the-art TTA baselines, proving exceptionally robust and efficient even in challenging low-batch test-time regimes. Our code is available at https://github.com/DennisHuangYan/LMR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

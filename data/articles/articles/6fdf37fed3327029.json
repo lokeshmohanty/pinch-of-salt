@@ -1,0 +1,14 @@
+{
+  "id": "6fdf37fed3327029",
+  "title": "RIQE: a NIQE-style reference model for Computed Tomography",
+  "link": "https://arxiv.org/abs/2610.00384",
+  "description": "arXiv:2610.00384v1 Announce Type: cross \nAbstract: The Natural Image Quality Evaluator (NIQE) scores an image by its statistical distance from a model fitted on pristine images, and its distributed model is fitted on photographs. We release the Radiology Image Quality Evaluator (RIQE), a NIQE-style model fitted on 3,792 full-dose slices from 158 patients of the public LDCT-and-Projection-data collection, with a declared intensity mapping, a manifest of every slice and a script that reproduces the fit. On 40 held-out patients, RIQE ranks reduced-dose reconstructions, simulated by projection-domain noise insertion, worse than the full-dose reconstruction of the same slice in 240 of 240 chest and 230 of 240 abdominal pairs, and ranks images with 20% more noise worse than their source in 97.5-100% of cases. Its preferences among filtered images, however, do not follow lesion signal. With a 4 mm, +10 HU lesion inserted in noisy abdominal slices, RIQE prefers bilateral filtering to the unfiltered image in every image up to a 32 HU residual, at which 29% of the lesion's matched-filter signal remains and its detectability index falls from 0.51 to 0.33; it never prefers Gaussian smoothing, which at the same 32 HU residual leaves 70% of the signal and a detectability index of 0.48. Fitted on photographs with the parameters published for NIQE, the same code ranks every simulated reduced-dose abdominal image better than its full-dose counterpart. RIQE is suited to ranking a degraded image against its source; under the conditions tested it should not be the sole criterion for selecting, comparing or tuning denoisers.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

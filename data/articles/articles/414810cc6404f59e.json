@@ -1,0 +1,13 @@
+{
+  "id": "414810cc6404f59e",
+  "title": "Adaptive Observation Control for Active Visual Recognition",
+  "link": "https://arxiv.org/abs/2610.19624",
+  "description": "arXiv:2610.19624v1 Announce Type: new \nAbstract: Visual recognition models usually process a fixed view under a fixed computation budget, although images often benefit from different scales and amounts of spatial evidence. Active vision can adapt by observing a coarse scene and then selecting informative fixations, but the public AdaptiveNN-DeiT-S pipeline still fixes both field of view and observation count. We extend this fixed-step recognizer with a controllable observation interface that adapts both the field of view and the number of fixations to the input. Specifically, the model predicts a per-fixation scale that sets its field of view, refines each selected crop with optional scale-gated foveation and a residual high-resolution detail-token branch, and uses label-grounded stop heads for input-dependent early termination. Experiments across fine-grained benchmarks, full ImageNet-1K, and ImageNet-A/R-derived classification splits show that the interface remains competitive with fixed-step references while exposing a controllable observation budget. The same checkpoint enables threshold-controlled accuracy-compute trade-offs without per-threshold retraining. On sequential ImageNet-1K, the learned stop rule outperforms fixed-step truncation of the same checkpoint, sustaining 81.9% top-1 using 2.45 of the four focus steps and exceeding three-step truncation at lower cost. On each benchmark, a variant combining scale control and detail-token fusion achieves the highest accuracy among the tested component-added non-exit variants. Our code is available at https://github.com/GZHU-DVL/LI-Dikai.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

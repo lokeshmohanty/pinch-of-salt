@@ -1,0 +1,13 @@
+{
+  "id": "7c0a40044a6a33ac",
+  "title": "V-Engram: Trigger-Indexed External Memory for Modular Text-to-Image Personalization",
+  "link": "https://arxiv.org/abs/2609.37198",
+  "description": "arXiv:2609.37198v1 Announce Type: new \nAbstract: Pretrained text-to-image models contain broad visual knowledge, yet they cannot reliably acquire or refine a specific visual identity from only a few references while preserving compositional control. Token-embedding methods are compact but often underfit identity, whereas adapter-based methods improve fidelity through persistent weight updates that can be costly to store and interfere when concepts are composed. We introduce V-Engram, a trigger-indexed external memory mechanism for Stable Diffusion 3.5. Each concept is assigned an explicit trigger that retrieves concept-specific memory, whose gated directions enter frozen text-encoder and MMDiT context states as relative residuals. Separating this memory from backbone adaptation enables prompt-selective and multi-concept access without merging model updates. Experiments show that V-Engram broadly matches DreamBooth-LoRA in overall subject fidelity while showing advantages in settings such as contextual subject preservation. Prompt-matched loading retrieves only matched entries, reducing most additional adaptation-state loading for a single-concept query. Qualitative results further demonstrate paired-trigger composition and same-class separation, while prompts without registered entries retain the frozen model's base behavior. Together, these results establish trigger-indexed memory as a modular interface for adding targeted visual evidence without rewriting the generator.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "e4d0e8f08ea43622",
+  "title": "Murmur: Efficient Long-Context ASR Inference with Hierarchical Chunking",
+  "link": "https://arxiv.org/abs/2606.01483",
+  "description": "arXiv:2606.01483v2 Announce Type: replace-cross \nAbstract: Long-form automatic speech recognition (ASR) requires both high accuracy and low inference latency, but existing systems fall short of handling the trade-off between the two. Chunk-based approaches process audio in parallel windows for low latency, but lose cross-chunk context and need brittle heuristics to align speakers and timestamps at boundaries. Long-context ASR models transcribe everything in a single pass for better accuracy, but run several times slower, and a single repetition loop can corrupt the entire output. In this paper, we first analyze how context length affects the accuracy of long-context ASR models and find that an intermediate chunk size of about five minutes matches single-pass accuracy while avoiding repetition loops. Building on this, we propose Murmur, an inference system for long-form ASR based on hierarchical chunking. The long-context model decodes intermediate target chunks in parallel, and a fast short-window ASR on 30 s draft windows accelerates each chunk with lossless, structure-aware speculative decoding. The short-window ASR drafts the transcript, simple format rules draft the timestamps and speaker tags, and the long-context model verifies every token. On two long-context ASR models and four meeting datasets in English and Mandarin, Murmur cuts end-to-end latency per recording by 2.5x on average (1.9-2.9x) relative to single-pass decoding, including diarization, while lowering tcpWER by 1.9 points on average. Our code is available at https://github.com/uw-syfi/Murmur.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "eess.AS"
+  ]
+}

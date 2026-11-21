@@ -1,0 +1,13 @@
+{
+  "id": "71ce974aac97fb63",
+  "title": "LADDER: Landmark-Only Lip-Sync Deepfake Detection Across Generators and Languages",
+  "link": "https://arxiv.org/abs/2604.16808",
+  "description": "arXiv:2604.16808v5 Announce Type: replace \nAbstract: We propose LADDER, a lip-sync deepfake detector that uses only the trajectories of 64 lip landmarks. It needs no pixels and no audio. We find two problems that make such a detector fail across domains. First, frame rate is a confounding factor. On PolyGlotFake, real and fake videos differ in frame rate, and the direction of this difference changes across languages. We remove it by resampling every trajectory to 25 fps. Second, motion amplitude does not transfer across generators: some generators move the mouth more than real speakers, and others move it less. The slope across derivative orders does transfer, because it is higher in fake videos for all five generators we test. LADDER combines a small trained detector (0.31 M parameters) with a prior score that needs no training: the mean of the slope features, standardized on real videos only. Learning this direction from data, or selecting it on the training domain, transfers worse. LADDER runs at 7.2 times real time on one CPU core. It reaches 0.925 AUC on LipSyncTIMIT at CRF=23 and 0.850 on seven languages of PolyGlotFake, comparable to pixel-based and audio-visual detectors. It is also more robust than a retrained Xception and is ahead in all 14 settings with stronger compression or image corruption, for example 0.883 against 0.579 under strong blur. Finally, a decision threshold does not transfer across domains, but 20 unlabeled real videos bring the false positive rate back to at most 3.5%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

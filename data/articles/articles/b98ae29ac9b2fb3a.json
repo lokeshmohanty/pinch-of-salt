@@ -1,0 +1,13 @@
+{
+  "id": "b98ae29ac9b2fb3a",
+  "title": "Verification Mirage: Mapping and Repairing the Reliability Boundary of Self-Verification in Medical VQA",
+  "link": "https://arxiv.org/abs/2605.10850",
+  "description": "arXiv:2605.10850v2 Announce Type: replace \nAbstract: Self-verification is increasingly used to improve the reliability of vision-language models (VLMs) and provide feedback for iterative self-correction, yet it is useful only when checking an answer provides information that discriminates correct from incorrect predictions rather than simply re-solving the same visual problem. We introduce VeriMap, an auditing framework for mapping this reliability boundary in medical visual question answering, where many answers hinge on fine-grained but auditable visual distinctions. Across six VLMs, five datasets, and seven task types, VeriMap reveals a verification mirage: vanilla verifiers accept 71.0% of incorrect candidates on average, and all six models are more likely to accept their own errors than errors from other models. When reused as feedback, these false acceptances can persist across self-correction rounds. We find that stronger access to the correct image or candidate-hidden re-solving is insufficient. Instead, verification becomes more selective when the candidate is reduced to a falsifiable visual distinction and the resulting observation governs the verdict. Guided by this finding, we introduce MirageCheck, which separates test construction, candidate-hidden visual measurement, and evidence-to-verdict binding through CONTRAST, MEASURE, and BIND. Across models and datasets, MirageCheck reduces mean false acceptance by 14.6 percentage relative to the strongest candidate-independent baseline while improving balanced accuracy, and substantially reduces false acceptance during iterative correction. Together, our results show that reliable visual self-verification requires turning acceptance to discriminative evidence from the current image rather than another judgment of the same problem.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

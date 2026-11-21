@@ -1,0 +1,16 @@
+{
+  "id": "d7d104140f965e6d",
+  "title": "Predictive Multi-Tier Memory Management for KV Cache in Large-Scale GPU Inference",
+  "link": "https://arxiv.org/abs/2604.26968",
+  "description": "arXiv:2604.26968v2 Announce Type: replace-cross \nAbstract: Key-value (KV) cache memory management is the primary bottleneck limiting throughput and cost-efficiency in large-scale GPU inference serving. Current systems suffer from three compounding inefficiencies: (1) the absence of unified KV cache sizing across all attention architectures--particularly multi-head latent attention (MLA), which is unsupported in general-purpose frameworks, resulting in up to 57x memory over-provisioning; (2) confinement of KV cache to a single memory tier (GPU HBM) despite the availability of a rich hierarchy spanning CPU DRAM, CXL-attached memory, NVMe via GPUDirect Storage, RDMA fabric, and parallel filesystems; and (3) reactive eviction policies that discard reusable state, forcing redundant recomputation. We present a unified system addressing all three. Our architecture-variant-aware sizing engine computes exact memory requirements per attention type; the resulting batch size gain reaches 7.4x for the one MLA model we evaluate (DeepSeek-V3), while the three GQA models see 1.0x, 1.0x, and 0.7x, so the GQA benefit is fleet-wide unified sizing rather than larger per-model batches. A six-tier memory hierarchy extends effective KV cache capacity from 40 GB to over 38 TB per node while maintaining sub-millisecond time-to-first-token (TTFT) for hot entries. A Bayesian reuse predictor with Beta conjugate priors over 16 (block-type, transition-type) pairs drives EMA-scored head-granular eviction and RoPE-aware prefetching. Component-level validation on trace replay using ShareGPT, LMSYS-Chat-1M, and agentic workloads demonstrates 70-84% cache hit rates. Analytical projections combining validated component behavior with published hardware specifications indicate TTFT reductions of 1.4x to 2.1x, throughput improvements of 1.7x to 2.9x, and 47% cost reduction relative to published baselines; these cluster-scale projections are analytical and carry no error bars.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.AI",
+    "cs.DC",
+    "cs.PF"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "d5b901e8a867dba8",
+  "title": "ECHO: Prune To Act, Trace To Learn With Selective Turn Memory In Agentic RL",
+  "link": "https://arxiv.org/abs/2606.31650",
+  "description": "arXiv:2606.31650v4 Announce Type: replace-cross \nAbstract: Long-horizon language agents must repeatedly interact with tools, accumulate evidence, and make decisions under bounded context windows. Context-management methods make such rollouts feasible by simplifying past interactions through deletion, folding, or memory editing. However, when useful history is collapsed into compressed states, the reconstructed context may no longer reveal which earlier observations support a successful final answer. This creates a mismatch between bounded-context acting and outcome-based reinforcement learning: the policy acts on reconstructed context, while the learner lacks source-level provenance for assigning credit to the evidence that mattered. We propose ECHO, a selective turn-memory framework for traceable context reconstruction in Agentic RL. ECHO compresses each completed environment turn into a compact source-indexed memory record, reconstructs bounded policy contexts by selecting useful records, and reuses the selected source indices to route positive outcome credit to the final trajectory segment, reused evidence turns, memory findings, and memory-selection actions. On BrowseComp-Plus, ECHO reaches 43.4% held-out accuracy, outperforming GRPO at 28.9% and the rolling-summary baseline SUPO at 36.1%, while using fewer turns and lower trajectory volume than SUPO. The trained policy also improves zero-shot generalization across multi-objective QA, code generation, and deep information-seeking benchmarks on both dense and MoE backbones.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

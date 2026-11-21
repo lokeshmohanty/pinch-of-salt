@@ -1,0 +1,14 @@
+{
+  "id": "0fd5c9f2d3fe1219",
+  "title": "DinoLizer: Separating VAE and Diffusion Artifacts in Generative Inpainting Localization",
+  "link": "https://arxiv.org/abs/2511.20722",
+  "description": "arXiv:2511.20722v2 Announce Type: replace \nAbstract: We introduce DinoLizer, a DINOv2-based localizer of manipulated areas in generative inpainting. The model is trained to focus on semantically altered regions by treating reconstructed areas outside the inpainted mask as a separate class, which yields significant improvements w.r.t. the conven- tional approach. We train the model with LORA on the Query and Value of the transformer blocks and simply add 1 linear layer on top of the backbone to predict manipulations on a 14 x 14 patch resolution. Because DINOv2 only accepts fixed- sized images, we use a sliding window approach to aggregate the predictions on larger images. Empirical results show that DinoLizer outperforms state-of-the-art methods on our proposed dataset and SOTA inpainting datasets. Furthermore, it is very robust to JPEG (double) compression. On average, DinoLizer achieves a 20% higher Intersection over Union score compared to the second best model. The code is publicly available here: https://github.com/anonyme610/dinolizer.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

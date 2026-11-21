@@ -1,0 +1,15 @@
+{
+  "id": "0b82500f069d3699",
+  "title": "HFS: Holistic Query-Aware Frame Selection for Efficient Video Understanding",
+  "link": "https://arxiv.org/abs/2512.11534",
+  "description": "arXiv:2512.11534v2 Announce Type: replace \nAbstract: Key frame selection is essentially a set-level optimization problem: the quality of the selected subset depends on the interactions among frames, rather than the score of any single frame. Existing methods generally exhibit three major limitations. Point-wise methods score each frame independently and ignore inter-frame dependencies. Although the training-free set-level methods explicitly model the inter-frame relationships, their selection criteria are fixed and cannot be adapted through downstream task feedback. Learnable methods can leverage data-driven training; however, they lack an explicit, differentiable set-quality objective and rely on offline-generated supervision signals. To address these limitations, we propose an end-to-end trainable and task-adaptive framework for frame selection. A Chain-of-Thought prompt conditions a Small Language Model (SLM) to extract task-specific latent query vectors, which are combined with multimodal features to enable dynamic, query-aware frame scoring. We further formulate a continuous set-level objective function that jointly accounts for relevance, coverage, and redundancy, enabling differentiable set-level optimization via Gumbel-TopK for selecting optimal frame combinations. Finally, we employ a student-teacher mutual learning strategy, in which the student selector (SLM) and teacher reasoner (MLLM) are trained to align their frame-importance distributions via KL divergence. Combined with cross-entropy loss, this design enables fully end-to-end optimization, eliminating reliance on static pseudo-labels. Experiments across multiple benchmarks, including Video-MME, LongVideoBench, MLVU, and NExT-QA, demonstrate that our method significantly outperforms existing frame-selection approaches.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL",
+    "cs.MM"
+  ]
+}

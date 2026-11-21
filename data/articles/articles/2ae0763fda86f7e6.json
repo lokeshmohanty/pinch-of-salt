@@ -1,0 +1,13 @@
+{
+  "id": "2ae0763fda86f7e6",
+  "title": "Composition, Not Conversation: VLMs Lose the Scene, Not the Thread",
+  "link": "https://arxiv.org/abs/2609.38368",
+  "description": "arXiv:2609.38368v1 Announce Type: new \nAbstract: Vision-language models (VLMs) increasingly reason over visual evidence that is cropped, segmented, retrieved, or revealed over time. Yet most VQA benchmarks present the complete image and question at once. We ask what models lose when the same information is fragmented. We introduce Layered-VQA, with 93 scenes and 300 questions. Each image is decomposed into ordered RGBA layers that exactly recompose the original scene, and each question is annotated with supporting, minimal-sufficient, and distractor layers. We evaluate eleven open-weight VLMs from 3B to 32B parameters and two proprietary models with a scale of 187,200 conversations, graded by 1.74M open-model cross-judgments. We find three consistent failures. Loss in Composition: fragmenting the question has a small effect, but fragmenting the scene substantially reduces accuracy; recomposing the same layers largely restores performance. Oracle Inversion: even oracle-selected sufficient evidence can perform worse than the complete scene. Loss in Grounding: as more evidence is required, grounding degrades much faster than answer accuracy. Together, these results show that having the right visual evidence is not enough. How that evidence is composed and presented determines whether models can use and ground it. The right evidence is not enough: VLMs need the scene it came from.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

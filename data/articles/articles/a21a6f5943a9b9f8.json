@@ -1,0 +1,15 @@
+{
+  "id": "a21a6f5943a9b9f8",
+  "title": "SupraTok: Cross-Boundary Tokenization for Enhanced Language Model Performance",
+  "link": "https://arxiv.org/abs/2508.11857",
+  "description": "arXiv:2508.11857v3 Announce Type: replace-cross \nAbstract: Tokenization remains a persistent bottleneck in language modeling, especially when vocabulary learning is limited by whitespace boundaries. We present SupraTok, a tokenizer that crosses whitespace boundaries using three modular components: optional entropy-based data curation, staged curriculum training with PMI-guided candidate search, and multilingual script handling. At 100k vocabulary on the same unfiltered training data, SupraTok improves compression over standard BPE by 17.5% and over the official SuperBPE implementation by 1.8%, while training 2.1x faster than SuperBPE. Across 50k-300k vocabularies in the same matched setting, SupraTok remains ahead of SuperBPE by 1.8%-8.6%. We evaluate entropy filtering separately as a pipeline step: at 100k vocabulary it raises SupraTok from 5.78 to 5.99 C/T, while matched controls show a smaller gain for SuperBPE and almost no change for SP-BPE-CrossBoundary. On FLORES-200 across 14 languages, SupraTok yields a macro-averaged 34.9% relative gain over the BPE baseline. In separate downstream experiments with matched compute and fixed token budgets, using 12L-768d and 24L-1024d GPT-2-style backbones with 256k vocabularies, SupraTok improves HellaSwag and MMLU. Overall, these results show that crossing whitespace boundaries gives consistent compression gains under controlled public-data comparisons, while optional entropy filtering provides a separate pipeline benefit.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

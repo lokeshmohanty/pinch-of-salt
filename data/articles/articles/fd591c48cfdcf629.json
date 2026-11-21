@@ -1,0 +1,14 @@
+{
+  "id": "fd591c48cfdcf629",
+  "title": "Critical Interval MSE: Toward Reliable Offline Validation for Robot Manipulation Policies",
+  "link": "https://arxiv.org/abs/2606.29898",
+  "description": "arXiv:2606.29898v2 Announce Type: replace-cross \nAbstract: Real-world evaluation is the gold standard for robot manipulation policies because it tests them against the physical conditions and deployment challenges they are ultimately designed to handle. However, real-world evaluation is also the bottleneck for iterating on robot imitation learning policies: it is costly, difficult to reproduce, and often too sparse to reliably compare nearby model variants. A straightforward proxy for performance is validation loss on expert demonstrations, but this proxy is often poorly correlated with real-world performance. In this paper, we introduce Critical Interval MSE (CI-MSE), an intuitively simple yet effective offline validation metric. CI-MSE uses a zero-shot agent to localize task-critical segments, restricts error computation to those segments, and applies simple action-alignment procedures that better match rollout-time behavior. Across simulation and real-world experiments, CI-MSE generally yields a stronger correlation between validation error and rollout performance than raw MSE. Across 27 distinct policy checkpoints, CI-MSE achieves a Spearman rank correlation of $-0.87$, closer to the ideal value of $-1$ than raw MSE's $-0.61$, demonstrating a significant improvement. Sensitivity analysis shows that our metric is robust across a wide range of hyperparameter settings. We further study the effectiveness of CI-MSE under evaluation distribution shifts and identify practical boundaries for its use. In summary, this paper provides a simple and reliable offline validation tool for accelerating policy iteration. Project webpage: https://ci-mse.github.io/",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

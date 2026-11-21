@@ -1,0 +1,14 @@
+{
+  "id": "324cc23f948ec60e",
+  "title": "MotionGraphicsBench: Evaluating Motion Graphics Generation with Programmatic Verification",
+  "link": "https://arxiv.org/abs/2611.10592",
+  "description": "arXiv:2611.10592v2 Announce Type: replace \nAbstract: Large language models can generate motion graphics from static images and natural language requests, but it remains difficult to evaluate how well models follow requests that combine spatial, appearance, and temporal requirements. We introduce MotionGraphicsBench, an expert-curated benchmark of 100 instances for animating an input static SVG with a motion edit prompt. By supplying all required visual elements, our editing task reflects a designer-like workflow and isolates motion generation from graphic generation. Derived from real-world Lottie motion designs, our benchmark contains diverse combinations of spatio-temporal animation behaviors. Each benchmark instance pairs its model input with a deterministic, human-readable verification program that accepts different valid implementations and reports which prompt requirements pass or fail, rather than comparing against a reference animation or using a VLM judge. We construct these programs with a multi-agent pipeline using human-labeled animations and synthesized test cases. On a balanced test set of 180 animations, our programs achieve 93.3% raw agreement with human judgments, outperforming frontier VLM judges by 4.4%-12.8% while achieving at least 90% recall for both human approvals and rejections. Across 47 configurations from 32 LLMs and 12 providers, pass@1 ranges from 5.0% to 68.0%. Across 15 models at their highest reasoning effort, additional attempts improve every model, but pass@32 still ranges from 38.0% to 95.0%. Our analysis of verification programs reveals that generated animations often fail to match reference poses, follow requested motion trajectories, or coordinate related events. We fine-tune Qwen3.8-27B with group relative policy optimization (GRPO) using our verification programs as rewards, improving pass@1 from 30.31% to 52.19% on held-out instances. Our project page is at https://motion-graphics-bench.github.io/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

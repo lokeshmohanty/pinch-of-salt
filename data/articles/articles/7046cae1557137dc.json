@@ -1,0 +1,14 @@
+{
+  "id": "7046cae1557137dc",
+  "title": "Learning-Based Interpolation of Detector Gaps in Photon-Counting X-ray Imaging",
+  "link": "https://arxiv.org/abs/2611.15614",
+  "description": "arXiv:2611.15614v1 Announce Type: cross \nAbstract: Image detectors assembled from tiled modules have physical gaps in the field of view that must be filled before downstream processing such as phase retrieval or tomographic reconstruction. Unlike natural-image inpainting, detector-gap interpolation must leave all other pixels unmodified and preserve the intensity statistics of the filled region, since even a small shift in mean intensity can cause ring artifacts after reconstruction. We adapted two generative models, a Wasserstein GAN with gradient penalty (WGAN-GP) and a conditional Pix2Pix model, to this task. We implemented a masking strategy that restricts all changes to the gap pixels and loss terms that constrain the mean intensity and the intensity distribution of the filled region. Both models were trained on nanoCT projections with simulated gaps and compared with linear interpolation, Navier--Stokes inpainting, and the deep image-inpainting network MADF, quantitatively on simulated gaps and visually on real detector gaps. WGAN-GP and Pix2Pix achieved the best perceptual similarity (LPIPS) and histogram distance and, apart from linear interpolation, the shortest inference time. Pix2Pix required about five times fewer training GPU-hours than WGAN-GP. Ablation studies showed that masking the network output contributes by far the most to plausible inpainting results. Applied to sinograms, Pix2Pix produced the most natural gap filling but improved the reconstruction only slightly compared with linear interpolation. The source code and the weights of the final Pix2Pix model are available at https://github.com/J-3TO/detectorGapRemoval_Pix2Pix.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

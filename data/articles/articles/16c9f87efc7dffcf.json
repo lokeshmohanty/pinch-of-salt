@@ -1,0 +1,13 @@
+{
+  "id": "16c9f87efc7dffcf",
+  "title": "Ultra-High-Definition Restoration Transformers with Correlation Matching Transformation",
+  "link": "https://arxiv.org/abs/2608.20263",
+  "description": "arXiv:2608.20263v1 Announce Type: new \nAbstract: We propose UHDformer++, a general Transformer-based framework to solve numerous Ultra-High-Definition (UHD) image restoration tasks. UHDformer++ operates across $4$ coordinated learning spaces: 1) a high-resolution space (HR) for multi-level feature extraction, 2) a low-resolution space (LR) for learning compact, representative features, 3) a super-resolution space (SR) for upsampling low-resolution features from SR, and 4) a low-high fusion and reconstruction space (LHFR) for final image restoration. Specifically, HR extracts multi-scale high-resolution features and fuses them with low-resolution cues to produce residual images, while LR distills complementary representations from HR to improve restoration quality. To supply LHFR with richer features, SR super-resolves LR outputs before fusion. We further introduce two modules to bridge the high- and low-resolution spaces. The Feature-Refined Correlation Matching Transformation (FR-CMT) module selects the top $C/r~(C~\\text{denotes the number of channels;~}r\\geq1~\\text{controls the squeezing level})$, from the fusion between max- and mean-pooled high-resolution features to replace less informative channels in the low-resolution Transformer. The Adaptive Channel Modulator (ACM) adaptively recalibrates multi-scale high-resolution features, ensuring that only task-relevant information propagates to LR. Extensive experiments demonstrate that UHDformer++ reduces model parameters by at least 86\\% compared with recent state-of-the-art methods while achieving substantial performance gains across $5$ UHD restoration tasks, including low-light image enhancement, dehazing, deblurring, deraining, and desnowing. Code will be released at https://github.com/supersupercong/uhdformerplus.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

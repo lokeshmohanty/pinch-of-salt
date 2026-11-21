@@ -1,0 +1,13 @@
+{
+  "id": "d3107daf10628e4c",
+  "title": "SemRAG: Semantic-Guided Sentence-Level Retrieval-Augmented Sign Language Production",
+  "link": "https://arxiv.org/abs/2611.18189",
+  "description": "arXiv:2611.18189v1 Announce Type: new \nAbstract: Sign language production (SLP) aims to generate sign pose sequences that faithfully express spoken-language text while preserving the rhythm and coordination patterns of signing. Common SLP methods learn text-to-pose mappings from training data but often suffer from semantic inaccuracies in long or complex sentences. Retrieval augmentation offers a way to introduce realistic signing priors to provide more explicit guidance for text-to-pose generation. However, existing retrieval-based SLP methods typically operate at the gloss or word level, relying on gloss-pose dictionaries or isolated sign segments that require costly annotations and fail to preserve continuous sentence-level dynamics. To bridge this gap, we propose SemRAG, a semantic-guided sentence-level retrieval-augmented framework that retrieves full-sentence signing templates as priors without constructing gloss/word-level sign dictionaries. While such templates preserve local motion patterns and global rhythm, they also introduce a semantic mismatch problem: irrelevant motions in the retrieved sentence may interfere with the target semantics. To address this issue, we introduce an SLT-guided template semantic localization module that identifies target-relevant temporal regions within the retrieved template while suppressing irrelevant signing content. To adaptively incorporate the template features into the generator, we further introduce layer-specific learnable gates that regulate their contribution across generator layers. Extensive experiments show that SemRAG improves semantic consistency and motion quality over baselines under both back-translation and motion accuracy metrics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

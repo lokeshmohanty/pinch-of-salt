@@ -1,0 +1,13 @@
+{
+  "id": "9a0041a48d21ef3e",
+  "title": "TAQ-MOTR: Tracking-Aware Detection Query Formation for End-to-End Multiple Object Tracking",
+  "link": "https://arxiv.org/abs/2611.05205",
+  "description": "arXiv:2611.05205v2 Announce Type: replace \nAbstract: Tracking-by-propagation (TBP) methods perform end-to-end multi-object tracking by propagating track queries across frames, jointly handling detection and identity association without heuristic post-processing while naturally modeling temporal information. However, as detection and association are tightly coupled, detection queries in TBP are expected to discover currently untracked objects and provide complementary current-frame evidence for challenging tracks whose queries and identities are retained. Existing methods largely inherit detection-query formation from single-frame detection and construct such queries before the decoder with little awareness of trajectory states. Consequently, currently untracked objects may be missed, while challenging tracked objects with reduced visibility under occlusion may lack complementary evidence, causing association failures or duplicate responses. To address these issues, we propose TAQ-MOTR, a tracking-aware detection query formation framework that employs a pre-decoder Hybrid Query Generator (HQG) to fuse current-frame image features, track memory, and learnable memory. By conditioning detection queries on trajectory states, TAQ-MOTR adapts them to \\rev{the discovery of currently untracked objects and tracked-object complementation We further introduce a training-only auxiliary detection branch whose one-to-one label assignment is decoupled from that of the main tracking branch, providing additional detection supervision to strengthen the shared HQG and decoder for the discovery of currently untracked objects. TAQ-MOTR improves performance on DanceTrack, SportsMOT, and BFT, achieving 72.0 HOTA, 63.1 AssA, and 76.6 IDF1 on the DanceTrack test set. Code is available at https://github.com/Magicmiya/TAQ-MOTR",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

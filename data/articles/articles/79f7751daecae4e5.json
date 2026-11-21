@@ -1,0 +1,13 @@
+{
+  "id": "79f7751daecae4e5",
+  "title": "ChartProbe: A Diagnostic Study on Visual Reasoning through Perception, Grounding, and Simple Reasoning",
+  "link": "https://arxiv.org/abs/2608.13766",
+  "description": "arXiv:2608.13766v1 Announce Type: new \nAbstract: Vision-language models (VLMs) remain unreliable on chart questions that require reasoning over visual quantities, and this weakness is usually attributed to a reasoning deficit and addressed with more reasoning supervision. We ask whether the difficulty lies in reasoning itself, or in the simpler skills that reasoning operates on: reading the plotted elements (\\emph{perception}), locating them and binding them to their labels (\\emph{grounding}), and performing single-step computations such as ranking, totals, and differences (\\emph{simple reasoning}). We introduce \\textbf{ChartProbe}, a diagnostic framework whose probes are generated directly from the code that renders each chart, so every gold answer is exact by construction, needs no human annotation, and attributes each failure to a single skill. ChartProbe enables an intervention prior work does not attempt: instead of synthesizing complex-reasoning data, we withhold complex questions and reasoning traces entirely, fine-tune on one simple skill at a time, and measure transfer to held-out complex-reasoning questions. Across three open-weight VLMs, supervising the simpler skills alone produces large gains on complex-reasoning questions the model never trained on: where these skills are weak and the model can be taught to read the image, training them recovers much of complex reasoning at no reasoning-data cost. The gains hold across three out-of-distribution settings: an unseen chart type (pie charts), a human-written benchmark disjoint from our images and templates (ChartQA), and a non-chart visual domain (CLEVR). Complex visual reasoning can therefore improve without complex-reasoning supervision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
