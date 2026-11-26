@@ -1,0 +1,14 @@
+{
+  "id": "a1b48a870a0d4d17",
+  "title": "Within-task hazards of AI agents: unidentified by time-horizon curves, identified by repeated runs",
+  "link": "https://arxiv.org/abs/2611.32415",
+  "description": "arXiv:2611.32415v1 Announce Type: cross \nAbstract: The time horizon of an AI agent is read off a curve: the probability that the agent completes a task, plotted against the time a human needs for it. Several recent analyses fit survival models to this curve and conclude that agents' hazard of failure declines as a task goes on. The curve cannot support that conclusion. Every log-logistic horizon curve with slope $\\beta\\le1$ is a mixture of constant-hazard curves, and in a proportional-hazards frailty model the same curve is produced by every within-task Weibull shape $k\\ge\\beta$. If runs of a task are conditionally independent, repeated runs restore identification within this model: the probability that two runs both succeed is the single-run curve shifted by $1/k$ on the $\\log_2$ time axis. Without the Weibull form, the horizontal distance between these two curves still bears on the direction of the hazard: if the average within-task hazard is non-increasing, the distance is at least one, and so is the population limit of a two-step estimator when the cross-section is log-logistic. We decompose the bias of that estimator into a violation of the shift and a first-step misspecification term, and examine five mechanisms that can break the shift. On METR's public run-level data, under stated assumptions that the data cannot verify, no model's 95% interval for $1/k$ lies entirely above one, and for the five frontier models in the TH1.0 release every interval from runs in different batches lies below one. Under the same assumptions, taken interval by interval and given a log-logistic cross-section, these intervals reject a non-increasing average hazard for the five models, whereas in TH1.1 the result depends on how human times were obtained. Whether $k>1$ reflects a hazard that rises within a task or tasks whose difficulty human time measures only loosely needs experiments that observe the same task at several lengths.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ME",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "4de17409b0850020",
+  "title": "A Few Teacher Steps Go a Long Way: Efficient SFT Data Collection for LLM Agents",
+  "link": "https://arxiv.org/abs/2607.04574",
+  "description": "arXiv:2607.04574v3 Announce Type: replace-cross \nAbstract: DAgger-style supervised finetuning (SFT) combines full teacher demonstrations with teacher continuations of partial student rollouts, providing supervision on contexts the student encounters. We study how to allocate the teacher-inference budget on these on-policy (OP) continuations after initial behavior cloning (BC). One existing collection recipe runs the teacher to termination and retains only successful continuations (OP-Success). Since rejected outputs still incur teacher-inference costs, we compare this recipe with shorter continuations without outcome filtering (OP-Short), and with continuing only failed learner rollouts while retaining successful continuations (OP-Critical). We evaluate these choices against acquiring additional full demonstrations, tracking total teacher-inference cost separately from retained training tokens. Across HotpotQA, ALFWorld, and OpenThoughts-TB-Dev, teacher continuations improve the accuracy-cost tradeoff over scaling full demonstrations. On HotpotQA and OpenThoughts-TB-Dev, OP-Short surpasses the strongest tested BC baseline while reducing estimated teacher-inference cost by 20% and 83%, respectively, and on ALFWorld five-step continuations cut teacher tokens by 22% relative to full continuations with little accuracy loss. Controlled HotpotQA ablations show that by focusing on failed student rollouts, OP-Critical achieves comparable accuracy to OP-Success with 30% lower estimated teacher-inference cost and 36% fewer retained training tokens. Compute-matched comparisons with reinforcement learning and on-policy distillation further support brief teacher continuations as an efficient and lightweight post-training recipe.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

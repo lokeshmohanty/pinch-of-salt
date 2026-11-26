@@ -1,0 +1,15 @@
+{
+  "id": "383816a98e7edcc1",
+  "title": "VITA: Vision-to-Action Flow Matching Policy",
+  "link": "https://arxiv.org/abs/2507.13231",
+  "description": "arXiv:2507.13231v5 Announce Type: replace \nAbstract: Conventional flow matching and diffusion-based policies sample via iterative denoising from standard noise distributions (e.g., Gaussian), and require conditioning modules to repeatedly incorporate visual information during the generative process, incurring substantial time and memory overhead. To reduce the complexity, we develop VITA (Vision-To-Action flow matching policy), a noise-free and conditioning-free flow matching policy learning framework that directly flows from visual representations to latent actions. Since the source of the flow is visually grounded, VITA eliminates the need for visual conditioning during generation. As expected, bridging vision and action is challenging, because actions are lower-dimensional, less structured, and sparser than visual representations; moreover, flow matching requires the source and target to have the same dimensionality. To overcome this, we introduce an action autoencoder that maps raw actions into a structured latent space aligned with visual latents, trained jointly with flow matching. To further prevent latent action space collapse during end-to-end training, we propose flow latent decoding, which anchors the latent generation process by backpropagating the action reconstruction loss through the flow matching ODE (ordinary differential equation) solving steps. We evaluate VITA on 9 simulation and 5 real-world tasks from ALOHA and Robomimic. VITA achieves 1.9x faster inference compared to conventional flow matching with conditioning modules, while outperforming or matching state-of-the-art policies. Project page: https://ucd-dare.github.io/VITA/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.RO"
+  ]
+}

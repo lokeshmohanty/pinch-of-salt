@@ -1,0 +1,13 @@
+{
+  "id": "2fa7bec5c62b92bc",
+  "title": "Searching Ultra-Long Videos with Decision Models",
+  "link": "https://arxiv.org/abs/2611.33368",
+  "description": "arXiv:2611.33368v1 Announce Type: new \nAbstract: Understanding ultra-long videos requires retrieving sparse, query-relevant evidence from extensive video histories. Existing similarity-based retrieval methods are efficient, but they encode the question and the video content independently and thus often miss evidence whose relevance requires reasoning over both. Generative large language models (LLMs) can perform such reasoning, but they typically generate text over multiple rounds of search, which makes each query slow and costly. In this work, we introduce DeLoVi (Decision Models for Long Video), a framework that leverages pretrained decision models to retrieve evidence from ultra-long videos. Like an LLM, a decision model reads the question together with the candidate evidence, so it can reason over both. Unlike an LLM, it directly outputs a relevance score without generating text, which makes it fast and inexpensive. We first present DeLoVi-S, a simple method that generates captions for short video clips and uses a decision model to rank those captions by their relevance to a question. A generative LLM then answers the question using the top-ranked captions. Despite its simplicity, DeLoVi-S achieves state-of-the-art performance on three ultra-long video understanding benchmarks, EgoLifeQA, EgoMemReason, and MM-Lifelong, and generalizes effectively to long-video understanding benchmarks, VideoMME-L and LVBench. However, DeLoVi-S scores every caption for every question, so its cost grows linearly with video length. To reduce this cost, we propose an automated policy evolution framework that iteratively refines the memory construction and retrieval policies around a fixed pretrained decision model. The resulting method, DeLoVi-E, maintains comparable performance while reducing input tokens by 34x on average compared with DeLoVi-S. It also runs over 3x faster than the best prior method on EgoLifeQA while achieving higher accuracy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

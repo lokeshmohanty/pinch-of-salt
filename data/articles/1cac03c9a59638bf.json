@@ -1,0 +1,13 @@
+{
+  "id": "1cac03c9a59638bf",
+  "title": "TWIST: Teacher-Weighted Initial-Noise Spherical Transform for Quality-Preserving Diversity in Distilled Diffusion Models",
+  "link": "https://arxiv.org/abs/2611.33895",
+  "description": "arXiv:2611.33895v1 Announce Type: new \nAbstract: Timestep-distilled diffusion models generate high-quality images in one or a few steps, but often suffer from reduced mode coverage and limited diversity. Recent methods improve diversity by optimizing the initial noise at inference time, requiring costly backpropagation through the denoiser. Moreover, their diversity objectives typically repel generated samples without accounting for how the corresponding teacher model distributes its outputs. We introduce Teacher-Weighted Initial-noise Spherical Transform (TWIST), a lightweight network that transforms the low-frequency components of initial noise to improve diversity without inference-time optimization. TWIST uses a teacher-guided determinantal point process (DPP) objective to align the feature-space diversity of student samples with that of the teacher. By amortizing noise optimization into a single network, TWIST eliminates inference-time backpropagation while preserving the efficiency of few-step generation. On SDXL-Turbo, TWIST matches the diversity of MoNO at less than 25% of its inference cost, while achieving higher recall and better PickScore, ImageReward, and CLIPScore under matched compute budgets. On SDXL-Lightning, it achieves comparable recall at lower cost without the ImageReward degradation observed with MoNO.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

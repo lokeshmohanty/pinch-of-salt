@@ -1,0 +1,15 @@
+{
+  "id": "513e91ca472bddc9",
+  "title": "Unsupervised Detection of Underground Tunnels in Ground-Penetrating Radar Using Depth-Restricted Reconstruction Scoring",
+  "link": "https://arxiv.org/abs/2607.04882",
+  "description": "arXiv:2607.04882v2 Announce Type: replace \nAbstract: Hand-dug tunnels that reach buried pipelines from below are hard to find before they are used, and too rare to train a supervised detector. The engineering application of this work is detecting such tunnels in ground-penetrating radar surveys of a monitored site. The contribution in artificial intelligence is a detection scheme that needs no tunnel examples: a convolutional autoencoder learns the site's normal ground from surveys recorded before any tunnel exists, later survey windows are scored by their largest reconstruction errors within the travel-time band where a tunnel can lie, and evaluation holds out whole survey lines. On field data from a tunnel hand-dug for this study (0.6 m wide, 1 m high, roof 0.9-1.4 m deep) and surveyed repeatedly with a 250-megahertz radar in dry and wet conditions, the detector reaches an area under the receiver operating characteristic curve of 0.994 and an F1 score of 0.972 on 1,600 test windows and flags all 29 tunnel crossings. Restricting the score to the depth band improves all six detectors tested and, with a quarter of the training data, outperforms whole-window scoring trained on all of it; the best rule for the same band without learning misses 9 of the 29 crossings. On two unseen plots, false alarms stay at 1.6% on comparable ground but reach 9.3% on irrigated soil; recalibrating the threshold on a fifth of that plot's lines lowers them to 4.2%, retraining brings no significant further reduction, and models trained there alone still detect the original tunnel.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG",
+    "eess.SP"
+  ]
+}

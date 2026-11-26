@@ -1,0 +1,13 @@
+{
+  "id": "74797b21037cfd67",
+  "title": "EvOrderBench: When do sampled frames establish event order?",
+  "link": "https://arxiv.org/abs/2611.33492",
+  "description": "arXiv:2611.33492v1 Announce Type: new \nAbstract: Vision-language models (VLMs) are often asked which of two actions in a video happened first, given only a few sampled frames. Such frames can show that both actions occurred without showing which came first, so a reliable model should state an order only when the frames establish it. Forced-choice temporal benchmarks treat every input as answerable and reward lucky guesses, while answerability benchmarks do not separate frames that miss an action from frames that show both actions but not their order. We introduce EvOrderBench, a real-video benchmark of 579 event families. Each family fixes an episode and a question and varies only the frames: of two four-frame inputs, only one establishes the order, and two six-frame inputs extend the other one with either the frames that resolve the order or frames that do not. Every input is labeled for whether its frames establish each action and their order. Across sixteen open-weight configurations and three closed-source references, the best open models order nearly as accurately as the references when the frames establish the order, but withhold correctly on at most 83% of the inputs where they do not, against at least 90% for every reference; forced-choice accuracy cannot reveal this gap. Open models withhold mainly when the frames show neither action; once the frames show one or both, most of them commit to an order. Thinking narrows the gap, even when it is switched on within a single checkpoint, mainly by separating sufficient from insufficient evidence rather than by making models more cautious overall. Accurate ordering thus does not imply knowing when the frames fall short, and benchmarks should reward withholding alongside ordering.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

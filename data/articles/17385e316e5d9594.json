@@ -1,0 +1,13 @@
+{
+  "id": "17385e316e5d9594",
+  "title": "LongScape: Advancing Long-Horizon Embodied World Models with Context-Aware MoE",
+  "link": "https://arxiv.org/abs/2509.21790",
+  "description": "arXiv:2509.21790v2 Announce Type: replace \nAbstract: Video-based world models hold significant potential for generating high-quality embodied manipulation data. However, current video generation methods struggle to achieve stable long-horizon generation: classical diffusion-based approaches often suffer from temporal inconsistency and visual drift over multiple rollouts, while autoregressive methods tend to compromise on visual detail. To solve this, we introduce LongScape, a hybrid framework that adaptively combines intra-chunk diffusion denoising with inter-chunk autoregressive causal generation. Our core innovation is an action-guided, variable-length chunking mechanism that partitions video based on the semantic context of robotic actions. This aligns chunk boundaries with robotic interaction events and motion dynamics, enabling the model to flexibly generate diverse dynamics. We further introduce a Context-aware Mixture-of-Experts (CMoE) framework that adaptively activates specialized experts for each chunk during generation to produce high-quality videos with coherent chunk transitions. Extensive experiments on two embodied benchmarks demonstrate that our method achieves state-of-the-art generation performance. Notably, LongScape maintains high generation quality and temporal consistency over 1,000-frame rollouts. When used as synthetic training data, LongScape videos lift the success rate of a downstream VLA policy by 9.8 percentage points over real-only training, outperforming augmentation with other long-video generators. Our code is available at: https://github.com/tsinghua-fib-lab/Longscape.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

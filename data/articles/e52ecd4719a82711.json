@@ -1,0 +1,13 @@
+{
+  "id": "e52ecd4719a82711",
+  "title": "Beyond Random Starts: Amortized Initialization for Adversarial Attacks on Vision-Language Models",
+  "link": "https://arxiv.org/abs/2611.33414",
+  "description": "arXiv:2611.33414v1 Announce Type: new \nAbstract: Gradient-based transferable adversarial attacks achieve state-of-the-art attack success rates against black-box vision-language models (VLMs). However, they require hundreds of costly optimization steps for each image pair. One possible reason is that these attacks typically start from random perturbations that contain no information about the source or target image. In this work, we study whether amortized adversarial generation can provide better initializations for gradient-based attacks. By learning across many image pairs, amortization allows a generator to produce adversarial perturbations for new inputs without optimizing each perturbation from scratch. We introduce SPARK, a lightweight looped perturbation generator conditioned on both the source and target images. SPARK repeatedly applies the same network to refine a perturbation, producing effective adversarial attacks in a few forward passes without requiring gradients through surrogate vision encoders at inference time. We show that these perturbations provide effective warm starts for existing gradient-based attacks, substantially improving attack success rates while reducing the number of optimization steps required. These improvements generalize across different attack methods, VLMs, and unseen image categories. SPARK also produces effective standalone attacks at a fraction of the computational cost of gradient-based optimization. Code and model weights are available at https://github.com/Patchwork53/SPARK.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

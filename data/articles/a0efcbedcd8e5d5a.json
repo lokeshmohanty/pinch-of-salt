@@ -1,0 +1,13 @@
+{
+  "id": "a0efcbedcd8e5d5a",
+  "title": "Teaching Vision-Language Models to Decline: Support Completion Against Mirage",
+  "link": "https://arxiv.org/abs/2610.16465",
+  "description": "arXiv:2610.16465v2 Announce Type: replace \nAbstract: Vision-language models answer questions about images they were never shown. Asadi et al. termed this failure 'mirage', where a plausible answer can be provided without being supported by the visual evidence. We trace the failure to the training objective: cross-entropy separates a model that reads the image from one that ignores it only by the conditional mutual information between answer and image, and training examples are not rewarded for declining. Our proposed method, TIDE (Training with Informative-Divergence Evidence), has two stages. The first contrasts the correct image of a question with incorrect images through an InfoNCE loss. The second completes the support. Each training question is shown with its valid image and with a blank image, an in-domain wrong image and an out-of-domain wrong image, and the target on the three counterfactuals is to decline. We show that a model that ignores the image lies in the optimal set of the standard loss and outside the optimal set of the contrast. We measure mirage with an image-aware judge that scores each response against a caption of the image the model was actually shown, so a response that flags or describes the wrong image is not counted as a mirage. On a frozen held-out test, the two stages lower the invalid-evidence mirage rate on all 15 model-seed configurations, from 0.450-0.882 for the stock models to 0.029-0.181; a text-only judge agrees on every axis. The reduction transfers zero-shot to MMStar (0.380 to 0.052) with answer accuracy within one point of the stock model. The cost is false abstention on valid images, which ranges from 0.035 to 0.250 across four seeds of one model. Ablations indicate that counterfactual images drive the effect, whereas generic refusal supervision and hard negatives do not, on each of three seeds.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "79a54b9d67027130",
+  "title": "Assemble the Puzzle: Cross-Agent Utility-Aware Feature Scheduling for Bandwidth-Limited Cooperative Perception",
+  "link": "https://arxiv.org/abs/2511.17843",
+  "description": "arXiv:2511.17843v3 Announce Type: replace \nAbstract: Cooperative perception (CP) lets connected vehicles and roadside units detect objects beyond the inherent range limitation and occlusion of single-agent systems, yet its practicality is constrained by limited Vehicle-to-Everything (V2X) communication bandwidth. Existing methods improve bandwidth efficiency by letting collaborating agents send only selected feature cells driven by local detection confidence, serving a centralized ego agent's request. They overlook realistic communication scheduling and neglect cross-agent redundancy. We present JigsawComm, a decentralized utility-aware feature scheduling framework that learns to ``assemble the puzzle'' of multi-agent features. Choosing who sends each region requires a utility that measures what each agent's features contribute to the collaboration. JigsawComm incorporates a lightweight feature utility estimator, learned without utility labels from the cooperative model's own leave-one-agent-out counterfactuals, which aligns utilities onto a single comparable scale across agents. From one broadcast of compact utility maps, every agent ranks the observers of each cell and sends the cells it observes best to maximize coverage and, budget permitting, second best for accuracy refinement. Each agent also broadcasts its onboard detector's lightweight bounding box list, enabling an intermediate-late hybrid fusion with our feature-anchored box consensus, which synergistically enhances the final perception results with all available observations. With every transmitted byte counted, JigsawComm at 0.45 KB per vehicle outperforms all baselines on the real-world V2X-Real benchmark, and under measured C-V2X traces on CooperScene it retains 74.5 of its 79.8 AP@0.5, at least 15.5 points above every prior art baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

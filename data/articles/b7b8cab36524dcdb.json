@@ -1,0 +1,13 @@
+{
+  "id": "b7b8cab36524dcdb",
+  "title": "SteerFace: Debiasing Synthetic Face Generation via Adaptive Residue Perturbation",
+  "link": "https://arxiv.org/abs/2605.30894",
+  "description": "arXiv:2605.30894v2 Announce Type: replace \nAbstract: The shortage of legally compliant data for face recognition training has sparked growing interest in using synthetic data as an alternative. While recent diffusion-based methods enable the generation of photorealistic face images with strong identity adherence and data diversity, their downstream recognition performance still exhibits a significant synthetic-real gap. This paper identifies visual tendency as a previously underexplored limitation, whereby synthetic data exhibit an unrealistic prevalence of visual attributes and thus deviate from the real-data distribution. Visual tendency can be attributed to the generator's conditioning on identity embeddings, through which co-occurring residual visual cues are unintentionally absorbed into learned identity semantics. To discourage the generator from exploiting such visual cues, this paper proposes SteerFace, a simple and efficient training framework that perturbs identity embeddings by steering them toward random orthogonal directions on the embedding hypersphere. The perturbation serves as an identity-preserving regularizer that penalizes the generator's reliance on non-identity components, as supported by theoretical analysis. This paper further introduces an adaptive strategy that learns perturbation strengths with both sample-wise preference and favorable overall statistics. Extensive experiments show that SteerFace effectively mitigates visual tendency, outperforms prior methods in downstream face recognition, and generalizes well across different training datasets and generation pipelines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

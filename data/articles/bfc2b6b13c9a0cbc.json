@@ -1,0 +1,15 @@
+{
+  "id": "bfc2b6b13c9a0cbc",
+  "title": "Do Latent World Models Really Select the Right Actions?",
+  "link": "https://arxiv.org/abs/2609.05461",
+  "description": "arXiv:2609.05461v2 Announce Type: replace \nAbstract: This paper shows that the planning success of a latent world model does not reveal how well its score selects actions. Latent world models score candidate action sequences by the distance between their predicted embeddings and the embedding of a goal image, and their strong planning results are naturally read as evidence that this score picks good actions. Our study is simple: we take two released models, JEPA-WM and DINO-WM, execute the action sequences their planners consider, and compare what the score prefers with what actually happens. We make two observations. First, the score is informative but unreliable: it picks better actions than chance, yet it often passes over a successful sequence that the search has already found. Second, planning still succeeds, helped by a wider search and by replanning from new observations. With the released search budget, PointMaze planning succeeds in 91% of episodes, yet the top-scored candidate at the end of a search is no more likely to succeed than a random one. These observations suggest that the score should be measured directly, next to the success rate.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ]
+}

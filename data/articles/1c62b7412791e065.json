@@ -1,0 +1,13 @@
+{
+  "id": "1c62b7412791e065",
+  "title": "LightFuse: Relightable Interactive Gaussian Scene Reconstruction via Multi-Scan Fusion and 2D Gaussian Ray Tracing",
+  "link": "https://arxiv.org/abs/2608.29269",
+  "description": "arXiv:2608.29269v2 Announce Type: replace \nAbstract: Relightable interactive scene reconstruction aims to build an editable 3D model from scans of different object arrangements, so that novel layouts can be rendered under novel illumination. However, Gaussian-splatting-based methods bake illumination into appearance and thus cannot jointly reconstruct scans captured under different lighting, while existing multi-illumination inverse rendering methods struggle to handle scenes whose geometry changes across captures. We present LightFuse, a 2D Gaussian inverse rendering framework that bridges this gap by extending interactive scene reconstruction with explicit material-illumination decomposition and physically based relighting. LightFuse fuses observations across states to reconstruct a shared background and movable objects. Since geometry optimized by splatting alone is ill-suited for ray-tracing-based inverse rendering, it then performs ray-tracing-oriented geometry refinement to obtain more complete and consistent surfaces. Because rearrangement leaves materials unchanged, we jointly optimize a shared set of materials across all scans under varying illumination, with differentiable one-bounce ray tracing disentangling them from the per-scan environment lighting. Experiments on novel-state relighting of synthetic scenes and novel-state synthesis of captured real scenes show that LightFuse outperforms interactive reconstruction and adapted inverse rendering baselines, improving novel-state relighting PSNR by 6.01 dB over the strongest baseline and achieving the highest PSNR on captured scenes. Project page: https://zhn202.github.io/LightFuse/ .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

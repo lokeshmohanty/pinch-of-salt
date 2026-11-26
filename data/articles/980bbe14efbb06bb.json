@@ -1,0 +1,14 @@
+{
+  "id": "980bbe14efbb06bb",
+  "title": "GlassGround: GUI Grounding Beyond Native Screenshots with Egocentric Wearable Vision",
+  "link": "https://arxiv.org/abs/2611.33760",
+  "description": "arXiv:2611.33760v1 Announce Type: new \nAbstract: Wearable assistants must localize interface elements from camera observations when direct screenshot access is unavailable, yet existing GUI grounding benchmarks primarily evaluate native screenshots. We introduce GlassGround, a new benchmark that pairs native screenshots with wearable camera observations while holding GUI states, instructions, and targets fixed. GlassGround contains 3,250 tasks across Android and iOS, captured using four wearable devices under four viewing conditions. Across ten open-source models, mean grounding accuracy drops from 94.8% on screenshots to 48.5% on camera images. Further analysis reveals that changes in target scale, screen geometry, and background cannot fully explain this performance degradation. We then study two ways to narrow this gap. At inference time, local zooming and screen rectification help but leave most of the gap. For training-time adaptation, we build on GlassGround's paired-view design and introduce PairDistill, a baseline that aligns target representations across views alongside coordinate supervision. Trained on independently collected data and using no screenshots at inference, it improves camera-image accuracy by 9.4 and 12.2 points on two backbones and transfers to unseen devices and operating systems. Combined with local zooming, it reaches 69.6% and 64.4%, but does not close the gap. The GlassGround dataset and code are available at https://github.com/yunnw/GlassGround.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.HC"
+  ]
+}

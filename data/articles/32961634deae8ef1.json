@@ -1,0 +1,13 @@
+{
+  "id": "32961634deae8ef1",
+  "title": "DoseSteer: Steering diffusion-based dose prediction models towards clinical targets via Dual-Response Guidance",
+  "link": "https://arxiv.org/abs/2611.33577",
+  "description": "arXiv:2611.33577v1 Announce Type: new \nAbstract: AI dose-prediction models generate patient-specific 3D dose distributions from patient anatomy. Yet these predictions can still miss structure-level clinical dose targets. Once deployed, most existing predictors offer no direct mechanism to correct such deviations, deferring target enforcement to downstream plan optimization. We introduce DoseSteer, an inference-time framework that steers frozen diffusion-based dose prediction models towards specified clinical targets without retraining. To meet clinical targets while preserving overall dose prediction quality, we propose Dual-Response Guidance (DRG), a structure-centric algorithm that probes the model's responses to perturbations in each structure's noisy dose and context and jointly solves for per-structure steering strengths. Across five dataset-model configurations spanning three diffusion architectures and three datasets, DRG outperforms 12 training-free baselines under identical reference-derived target proxies, removing at least 97% of the target error, reducing the official dose error by 7.8% on average, and improving dose fidelity outside the steered structures. DoseSteer reconciles learned anatomical dose priors with explicit structure-level targets at test time, establishing a principled, training-free mechanism to refine AI dose predictions prior to plan optimization. Code is available at https://github.com/csp2002/DoseSteer.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

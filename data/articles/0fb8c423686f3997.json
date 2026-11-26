@@ -1,0 +1,13 @@
+{
+  "id": "0fb8c423686f3997",
+  "title": "EditText: Structure-Aware Generation and Selective Visual Transport for Fine-Grained Text Editing",
+  "link": "https://arxiv.org/abs/2611.32134",
+  "description": "arXiv:2611.32134v2 Announce Type: replace \nAbstract: Fine-grained text editing aims to accurately replace text in a specified region while preserving the source text's font, color, and texture, as well as visual consistency in unedited regions. We present EditText, a unified framework for fine-grained text editing that combines target character generation with visual transport from the source image. The model uses dual-condition Fill inputs: a masked image and a source text style reference, both sharing a spatial reference with the target image. The masked image hides the original text and retains unedited content as a source canvas; the style reference supplies appearance cues that guide new character generation together with the target text. We introduce an Attention Transport framework in which Source Weight describes the attention allocated to a condition and the Spatial Aggregation Kernel describes its internal spatial attention distribution. Accurate transfer of source details depends on attention strength, the retention of details in condition features, and spatially accurate aggregation. For selected non-edit queries, we therefore preserve the total attention weight assigned to the masked image while redistributing its attention toward spatially corresponding neighborhoods, enabling selective visual transport. Multi-stage training, combined with a Glyph-aware Structural Loss on local target character structure, teaches the model to generate accurate text, preserve source text appearance, and retain unedited details. We also introduce TBench, a fine-grained text editing benchmark covering Alphabetic, Logographic, and Arabic numerals, to evaluate character updates, appearance preservation, and the preservation of unedited details. On TBench, EditText achieves state-of-the-art non-edit-region SSIM (0.9769) and full-image LPIPS (0.0460).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

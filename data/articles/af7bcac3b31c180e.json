@@ -1,0 +1,13 @@
+{
+  "id": "af7bcac3b31c180e",
+  "title": "Linear-Time Online Visual Geometry Transformer with Hybrid Architecture",
+  "link": "https://arxiv.org/abs/2611.33650",
+  "description": "arXiv:2611.33650v1 Announce Type: new \nAbstract: Transformer-based 3D reconstruction models such as VGGT and $\\pi^3$ predict cameras, depth and point maps directly from many input views. Causal attention models such as StreamVGGT extend them to online video but cache all past tokens, so their total compute grows quadratically with the stream length. Recurrent models such as CUT3R and TTT3R keep a fixed-size state at constant cost, but they progressively forget early geometry. We present LinearVGGT, a hybrid model distilled from StreamVGGT, which uses Mamba2 layers for efficient sequence modeling in three of every four global layers. The remaining layers use register-guided sparse attention to retrieve a few relevant past frames, compensating for the limited exact long-range recall of Mamba2. Our distillation needs only 9\\% of the GPU hours and 31\\% of the training frames that StreamVGGT uses to learn from VGGT. LinearVGGT keeps an almost constant latency of 27 ms per frame over 1,024 frames and is on average $12 \\times$ faster than StreamVGGT. It outperforms its teacher and is competitive with the state-of-the-art streaming model LingBot-Map, while running $2.5\\times$ faster and using $2.7\\times$ less memory.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

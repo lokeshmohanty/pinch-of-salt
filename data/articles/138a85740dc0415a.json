@@ -1,0 +1,16 @@
+{
+  "id": "138a85740dc0415a",
+  "title": "Large-Scale Gaussian Splatting with a Multi-GPU PyTorch Backend",
+  "link": "https://arxiv.org/abs/2606.11390",
+  "description": "arXiv:2606.11390v2 Announce Type: replace \nAbstract: Gaussian splatting methods have become increasingly popular for neural reconstruction of the real world. However, they are often limited in scale and resolution due to compute and memory constraints. We present a multi-GPU Gaussian splatting approach that scales reconstruction to higher resolutions and larger scenes while abstracting away the code complexity typically associated with distributing a model. We demonstrate city-scale reconstructions with street-level detail consisting of over 1 billion Gaussian splats. To accomplish this, we propose a PyTorch backend that distributes parameters and operators across GPUs via CUDA unified memory, with optional NVLink support. Because distribution occurs at the operator level, the model code requires no explicit cross-device communication. More broadly, the backend exposes multiple GPUs as an aggregate asynchronous PyTorch device and supports a broad set of PyTorch operators enabling the distribution of general PyTorch workloads.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.DC",
+    "cs.GR",
+    "cs.LG"
+  ]
+}

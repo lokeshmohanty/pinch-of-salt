@@ -1,0 +1,14 @@
+{
+  "id": "8c4d2c72f271043d",
+  "title": "Convex-Concave Reinforcement Learning",
+  "link": "https://arxiv.org/abs/2610.09108",
+  "description": "arXiv:2610.09108v2 Announce Type: replace-cross \nAbstract: Policy learning drives many of the most consequential and heavily-invested applications of reinforcement learning today. Yet the core optimization problem it rests on (maximizing expected return) is notoriously non-convex, even under a direct policy parameterization, and the field has largely responded by avoiding it: optimizing convex surrogate approximations of the return under trust-region constraints (NPG, TRPO, PPO, AWR). We show that this seemingly unstructured problem is not actually structureless. In log-density-ratio coordinates $y := \\log[\\pi/\\pi_n]$, the exact per-iteration objective, computable via per-decision importance sampling (PDIS), is a difference-of-convex-constrained difference-of-convex (DC-constrained DC) program. This structure lets us move beyond surrogate approximations: it recovers CPI, NPG, TRPO, and AWR as special cases along interpretable axes, and it opens a multi-step axis $k$ that couples consecutive decisions. We solve the per-iteration program with sequential convex programming (SCP), the standard solver for difference-of-convex problems, and establish inner-loop descent and limit-point stationarity for the theoretical algorithm, together with a conditional outer-loop performance bound. Empirically, multi-step Convex-Concave RL (CCRL) wins on diagnostic MDPs where credit must propagate across a horizon (its advantage growing with the dependency length), is competitive with a tuned PPO on classic control, and on a clinically motivated, stochastic, mid-horizon sepsis simulator converges markedly faster than tuned PPO to the same near-optimal survival, with an 11.3% higher area under the training curve. The code is publicly available at: https://github.com/UMass-SCALAR-Lab/Convex-Concave-RL",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}
