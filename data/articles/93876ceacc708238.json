@@ -1,0 +1,14 @@
+{
+  "id": "93876ceacc708238",
+  "title": "Practice Makes Fluent: Learning to Use Earlier Predictions in Looped Models",
+  "link": "https://arxiv.org/abs/2611.33722",
+  "description": "arXiv:2611.33722v1 Announce Type: cross \nAbstract: People become faster at a task through practice, but models that improve with experience do not necessarily learn to use less computation. We train looped models, whose intermediate predictions allow earlier exits, to perform tasks with fewer iterations through practice. This is difficult because shared-weight updates can degrade the final-loop prediction while improving early ones, and the exit gate must track early predictions as their quality changes. We propose FLUENT, which requires no additional task labels or rewards: it distills the initial model's final-loop prediction into early predictions, anchors the current final-loop prediction to the same frozen teacher, and trains the exit gate to balance disagreement with the current final-loop prediction against computation cost. FLUENT improves performance at shallower depth in new Crafter worlds, raises LIBERO success with fewer action-head iterations, and maintains language-model accuracy at lower selected depth. On a real robot, success rises from 62.3\\% to 74.6\\% while mean time over successful episodes falls from 69\\,s to 31\\,s. The project page is available at https://msseok96-cpu.github.io/FLUENT/.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-27T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "eb3b305dedff1d22",
+  "title": "Angular Interpolation in Sparse-View Low-Dose CT Reconstruction: Placement Effects and Data-Consistency Step-Size Scaling",
+  "link": "https://arxiv.org/abs/2611.34508",
+  "description": "arXiv:2611.34508v1 Announce Type: cross \nAbstract: Dual-domain networks combine projection and image processing for sparse-view low-dose computed tomography (CT). We quantify the contribution of angular interpolation before learning and distinguish its roles in sinogram initialisation and the image residual base. On synthetic parallel-beam data, parameter-free interpolation reduces noise-free missing-view mean absolute error by 99.7% relative to zero filling at 60 views. Full-view filtered back-projection (FBP) of the jointly learned completed sinogram adds 1.27 dB of peak signal-to-noise ratio (PSNR) over interpolated FBP. In a data-consistency dual-domain network (DC-DuNet), a 2x2 configuration ablation controls branch width, depth and training schedule while varying these placements and their associated input channels. After 20 epochs, the PSNR contrasts are +1.98 dB for sinogram initialisation and -2.16 dB for the interpolated image base; the image-base ranking also reverses during training. The sinogram-initialised variant exceeds an image-only U-Net by 0.96 dB at 60 views and 10% dose, and by 1.28 dB on independently generated synthetic data. The U-Net leads at higher view counts and with a shared interpolated image base. Without retraining, the variant retains a 0.12 dB advantage on held-out CHAOS abdominal CT under simulated degradation; the image-base contrast rounds to zero. The implemented projection/backprojection pair has empirical dominant gain of approximately 0.85NK, where N is image-grid width and K acquired view count. These results distinguish interpolation placement from network architecture and support NK normalisation for step calibration.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-27T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

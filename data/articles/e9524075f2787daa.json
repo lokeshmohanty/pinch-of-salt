@@ -1,0 +1,16 @@
+{
+  "id": "e9524075f2787daa",
+  "title": "Predictive Coding Implemented as a Hardware Substrate Computes Gradients faster than Backpropagation",
+  "link": "https://arxiv.org/abs/2603.18066",
+  "description": "arXiv:2603.18066v3 Announce Type: replace-cross \nAbstract: Backpropagation has enabled modern deep learning but is difficult to realize as an online, fully distributed hardware system due to global error propagation, separate phases, and centralized memory. Predictive coding is an alternative learning algorithm with similar dynamics to backpropagation that arises from local prediction error dynamics. This paper shows that predictive coding can be instantiated as a discrete time digital hardware substrate, with local memory and computation, no instruction set architecture, and one physical core for each predictive-coding neuron. Each core stores its own activity and weights, communicates with the cores that it's connected to, and performs local gradient updates. By updating neuron cores concurrently, the architecture computes a network update in O(J+K) clock cycles. For dense layers of width n, this is O(n) cycles per update, compared with O(n^2) connection operations processed serially. This result is retained with scaling to larger predictive coding networks, demonstrating a decisive theoretical advantage for predictive coding instantiated in hardware.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-27T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NE",
+    "cs.AI",
+    "cs.AR",
+    "cs.LG"
+  ]
+}
