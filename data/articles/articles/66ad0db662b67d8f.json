@@ -1,0 +1,14 @@
+{
+  "id": "66ad0db662b67d8f",
+  "title": "CRAFT: Forgetting-Aware Intervention-Based Adaptation for Continual Learning",
+  "link": "https://arxiv.org/abs/2605.05732",
+  "description": "arXiv:2605.05732v3 Announce Type: replace-cross \nAbstract: Large language models (LLMs) can learn new tasks through fine-tuning, but learning tasks sequentially often leads to catastrophic forgetting of earlier ones. This paper proposes CRAFT, a continual learning framework that keeps model weights frozen and instead learns low-rank interventions on hidden representations. Similar tasks share an intervention to help knowledge transfer, with similarity judged by how each task alters the model's output distribution rather than by a learned gating network. Within a shared intervention, a Kullback-Leibler (KL) penalty keeps each new task close to the intervention's existing behavior, which limits forgetting of earlier tasks, while a small, task-private intervention in the deepest layers preserves dedicated capacity that later tasks cannot overwrite. The learned interventions also make it possible to identify the task at test time, so task identity labels are not needed. Across multiple benchmarks and model scales, CRAFT improves overall performance and reduces forgetting compared with strong LoRA-based methods, while remaining robust to task ordering.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

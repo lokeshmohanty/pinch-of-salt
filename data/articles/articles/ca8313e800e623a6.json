@@ -1,0 +1,15 @@
+{
+  "id": "ca8313e800e623a6",
+  "title": "DiffusionSSD: Achieving Extreme Visual Compression with Dual-stage Diffusion and Cross-level Near-Data Processing",
+  "link": "https://arxiv.org/abs/2611.17908",
+  "description": "arXiv:2611.17908v1 Announce Type: cross \nAbstract: Growing visual data overwhelms storage on resource-constrained edge devices, making compression essential. Traditional codecs offer inadequate rate-distortion performance, motivating the exploration of diffusion codecs. Diffusion codecs face two limitations: (1) At the algorithm level, diffusion decoders preserve perceptual quality under extreme compression, but require substantial computation. (2) At the architecture level, in NPU-centered devices, neural codecs occupy the NPU, interfering with other AI applications. Meanwhile, the complex codec pipeline incurs long I/O paths, leading to additional overhead and energy cost.\n  To address these issues, we propose DiffusionSSD, a cross-level near-data processing framework for extreme visual data compression on edge devices, using an algorithm-architecture co-design method. Specifically, (1) at algorithm level, we present Dual-stage Diffusion, a lightweight solution tailored for diffusion codecs that employs patchification and single-step diffusion, reducing computation cost while preserving perceptual quality; (2) at architecture level, we introduce a Cross-level Near Data Processing architecture that integrates the proposed computational universal flash storage (cUFS) and LPDDR-PIM, enabling codecs to be entirely offloaded to data side while reducing visual-data movement and avoiding SoC redesign; (3) at system level, combining both the algorithm and the underlying architecture, we propose a Patch-Workload co-aware scheduling scheme to enable more efficient system-level execution. Experiments show that Dual-stage Diffusion maintains comparable perceptual quality while reducing computation cost by up to 92.7%. Compared with NPU+DRAM and near-data-processing design such as SmartSSD, cUFS+PIM improves coding throughput by 2.32 times and 2.91 times on average, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.CV",
+    "eess.IV"
+  ]
+}

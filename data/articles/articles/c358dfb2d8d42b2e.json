@@ -1,0 +1,13 @@
+{
+  "id": "c358dfb2d8d42b2e",
+  "title": "One Adapter, Every Resolution: Gated Low-Rank Adaptation for Remote Sensing VLMs",
+  "link": "https://arxiv.org/abs/2605.07562",
+  "description": "arXiv:2605.07562v2 Announce Type: replace \nAbstract: Remote sensing imagery spans ground sampling distances (GSDs) from centimeters to tens of meters, so both the visual evidence for a geographic concept and the questions it can support change with physical scale. Existing remote sensing vision-language models (RS-VLMs) either ignore GSD or encode it as a text token, applying one set of scale-agnostic parameters across this spectrum. We show that GSD is decodable from frozen visual features, but exploiting it requires scale-dependent adaptation. We therefore introduce ScaleEarth, which conditions low-rank adaptation on the continuous scalar s = log10(GSD). Its core module, CS-HLoRA, gates the rank dimensions of a single shared LoRA with sigmoid functions of s whose thresholds are initialized at object, structure, and semantic scales; the gates route gradients by scale during training and select the active adaptation subspace at inference, while keeping the backbone frozen. When metadata is unavailable, a heteroscedastic head, SSE-U, estimates s with calibrated uncertainty and falls back to a default scale when uncertain. To align supervision with this mechanism, we build GeoScale-VQA, a dataset of 1.5M QA pairs in which every sample carries a resolved GSD and newly generated questions are conditioned on the same s. With an 8B backbone, ScaleEarth achieves an average score of 59.4 on XLRS-Bench, improving by 5.2 points over the strongest RS specialist. On OmniEarth-Bench, it achieves an average score of 40.71, improving by 7.45 points over the strongest open-source baseline. The largest gains occur on scale-sensitive subtasks. A 4-bit variant can be deployed on a single 40 GB GPU and retains an average score of 57.4 on XLRS-Bench, substantially reducing adaptation and deployment costs.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

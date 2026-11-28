@@ -1,0 +1,13 @@
+{
+  "id": "56a2f315d0fdd12c",
+  "title": "Progressive Decision-Making for Localizing Open-Ended AI-Generated Image Forgeries",
+  "link": "https://arxiv.org/abs/2607.29156",
+  "description": "arXiv:2607.29156v1 Announce Type: new \nAbstract: AI-generated image forgeries are becoming increasingly realistic and difficult to characterize with fixed manipulation patterns. As generative models continue to evolve, it is impractical to expect a localization model to exhaustively learn all possible forgery appearances from large-scale training data alone. Nevertheless, many AI-generated forgeries still leave subtle forensic traces, although these cues are often weak and unevenly reliable across regions. Therefore, robust localization requires not only extracting informative forensic traces, but also making reliable decisions from incomplete and ambiguous evidence. In this paper, we move beyond static one-shot prediction and reformulate final forgery localization as an adaptive sequential decision-updating process, where the localization map is treated as an intermediate state rather than a fixed output. Rather than producing the final mask via one-shot pixel-wise prediction, our method progressively updates the localization state guided by available evidence, uncertainty, and boundary conditions. Specifically, we first transform mesoscopic traces into compact decision evidence via a lightweight decision evidence projector, and then introduce Evidence-Guided Mamba (EG-Mamba) to perform uncertainty- and boundary-aware state updating. This design allows reliable manipulated and background regions to be preserved, while ambiguous regions are cautiously revised according to the available evidence. Extensive experiments on both conventional and AI-generated manipulation benchmarks validate the effectiveness of the proposed method. Notably, even when trained only on conventional manipulation data, our method brings larger gains on unseen AI-generated forgeries, indicating that progressive decision-updating is especially useful for heterogeneous and hard-to-exhaustively-learn manipulation traces.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

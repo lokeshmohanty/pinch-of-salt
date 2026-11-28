@@ -1,0 +1,13 @@
+{
+  "id": "4a486c8fd1b44c7c",
+  "title": "Co-located Mobile AR from Brief Mutual Sightings of Users",
+  "link": "https://arxiv.org/abs/2611.18679",
+  "description": "arXiv:2611.18679v2 Announce Type: replace \nAbstract: Co-located augmented reality requires all devices to express virtual content in a common frame. ARKit and ARCore establish this frame by matching visual features of the room, so every device must first scan the same surfaces. In contrast, we propose a registration method based on brief mutual sightings of the users. Since devices align their vertical axis with gravity, two frames differ only by a yaw angle and a horizontal translation. When device A observes the user of device B at bearing $\\alpha$ while B observes the user of A at bearing $\\beta$, the two lines of sight are antiparallel and the relative yaw is $\\alpha - \\beta + \\pi$, without depth, markers or a commonly observed surface. A sighting is not forced and may last less than a second, which is especially useful in applications where users frequently view each other. Ranged sightings add point correspondences, and a server fits all devices under a Cauchy loss. Devices without depth sensors get dense depth from a point-map network (MoGe-2). In deployment, 85% of 4,613 iOS devices without LiDAR converged in a median of 24 s (81% without ultra-wideband ranging), against 87% of LiDAR devices and 66% of 3,048 Android phones. Depth arrived within 10 s in 84% of iOS sessions, when ARKit had found a wall in 32%. Its scale was within 2% of ARKit's wall planes but varied by 8% between frames, which thickened walls about fourfold; an offline per-frame correction reduced wall thickness from 27 to 17 cm on iOS and from 50 to 22 cm on Android. The converged frame still drifted by a median of 6{\\deg} in yaw. Unlike map sharing, the method needs no scanning step, depth sensor or exchange of images, so a shared session can start on phones as soon as users see each other. The principle also applies to head-worn displays and to robots that observe one another. Future work will run the scale correction on-device and hold the frame once converged.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

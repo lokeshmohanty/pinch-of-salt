@@ -1,0 +1,15 @@
+{
+  "id": "54c8a3e4679dc50c",
+  "title": "Discovering Bandwidth-Efficient Prefetchers to Shrink the Cache Hierarchy",
+  "link": "https://arxiv.org/abs/2611.31983",
+  "description": "arXiv:2611.31983v1 Announce Type: new \nAbstract: Shared last-level caches (LLCs) increasingly dominate server processor die area, forcing architects to trade core counts for cache capacity. While intelligent data prefetching offers a pathway to reclaim this silicon, designing coordinated, multi-level prefetching policies for multi-core systems is bottlenecked by day-long, cycle-level simulations. This simulation wall limits even LLM-based microarchitecture discovery; the state-of-the-art ArchAgent system evolves one cache level at a time on single-core benchmarks, adds multi-core configurations only at the end, and trails the human champion under multi-core shared cache contention. We introduce DuoArchitect, an autonomous agentic framework for multi-fidelity, multi-core co-discovery of prefetchers. Agents jointly evolve evaluation proxies and coordinated prefetching policies across the L1D, L2, and LLC hierarchies, constructing simulation proxies 3-26x faster than cluster evaluation and hardware diagnostic oracles to guide the search. To study how much cache silicon a smarter prefetcher can replace, we evaluate and evolve prefetchers under reduced cache budgets, and find that evolving under our tightest cache constraint (with both the L2 and LLC halved) produced our strongest prefetcher overall at every cache size we tested: DuoArch-Nano. On the Fourth Data Prefetching Championship (DPC4) benchmarks with full-size caches, DuoArch-Nano delivers a 9.2% geomean IPC speedup (+10.5% on four-core mixes) while reducing four-core DRAM traffic by 11.4%, more than doubling the gains of the human champion BertiGO and the agentic ArchAgent v2. When the LLC is halved, DuoArch-Nano erases the baseline's 8.6% overall slowdown and edges out the full-LLC baseline overall (+0.88%), showing that agentic frameworks can generate prefetchers that reclaim megabytes of LLC SRAM per core with zero overall IPC penalty.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.AR",
+    "cs.LG"
+  ]
+}

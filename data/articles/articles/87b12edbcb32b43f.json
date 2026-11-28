@@ -1,0 +1,14 @@
+{
+  "id": "87b12edbcb32b43f",
+  "title": "ElephantAgent: Contextual State Continuity in Agentic Systems",
+  "link": "https://arxiv.org/abs/2607.01919",
+  "description": "arXiv:2607.01919v2 Announce Type: replace \nAbstract: Agentic systems enhance their capabilities by invoking external tools and maintaining persistent memory. However, recent tool and memory poisoning attacks can covertly bias agent behavior. We observe that such attacks mounted out of band share a single enabler: each succeeds only by presenting the agent with a contextual state (e.g., tool state and memory) that is not the latest faithfully evolved one. This observation suggests that a continuity check over the contextual state covers this family of attacks. We present ElephantAgent, a protocol that enforces Contextual State Continuity over the bounded, security-critical subset of the agent's context. Before each planning-and-execution cycle, ElephantAgent recomputes the digest of the local contextual state and verifies it against the latest authorized digest in a linearizable ledger of state transitions, maintained over replicated trusted hardware. The protocol also provides Historical Traceability, a secondary guarantee that keeps state transitions attributable and recoverable. We integrate ElephantAgent into DeepSeek Harness (DSH) and implement ElephantDSH, an agentic system protected by contextual state verification. ElephantDSH withstood all out-of-band attack attempts, from rug pulls and rollbacks to attacks on its own mechanism, and recovered from an in-band prompt injection in all trials. By comparison, existing defenses typically check only what enters the context: of the five we evaluated, all leaked the targeted content under the rollback, and three also under the rug pull. ElephantDSH completed all normal coding tasks with a relative overhead of 1.02-1.07$\\times$ over the original DSH with model latency variation removed.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CR"
+  ]
+}

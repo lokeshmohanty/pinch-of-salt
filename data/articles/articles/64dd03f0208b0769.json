@@ -1,0 +1,15 @@
+{
+  "id": "64dd03f0208b0769",
+  "title": "VideoSTF: Stress-Testing Output Repetition in Video Large Language Models",
+  "link": "https://arxiv.org/abs/2602.10639",
+  "description": "arXiv:2602.10639v2 Announce Type: replace \nAbstract: Video Large Language Models (VideoLLMs) have achieved strong performance on video understanding tasks, yet existing benchmarks evaluate only what models predict, leaving the stability of how they generate largely unexamined. We surface a previously underexplored generation failure of VideoLLMs, defined as output repetition, in which the decoder collapses into self-reinforcing loops of repeated phrases or sentences, and present VideoSTF, a benchmarking framework for systematically measuring, stress-testing, and exploiting this failure mode. VideoSTF formalizes repetition with three complementary $n$-gram-based metrics, ships a standardized testbed of 10,000 diverse videos, and provides a library of controlled temporal stressors. Across 10 advanced VideoLLMs, VideoSTF reveals four key findings: (i) repetition is pervasive on unperturbed videos and stable across commonly used frame counts, with repetition rates up to 91%; (ii) it spans a severity spectrum from mild redundancy to token-cap loops, and is highly amplified by temporal perturbations; (iii) temporal stressors form a practical black-box attack surface, flipping benign videos into repetitive ones with tens of queries and high attack success rates (up to 98%), and (iv) repetition is not explained by visual redundancy, its amplification tracks local temporal disruption, and only repetition penalties reduce it among common mitigations such as top-$k$ sampling, input filtering, and prompt variation, but increasing the penalty weakens visual grounding. VideoSTF reframes generation stability as a useful and complementary evaluation axis for VideoLLMs and provides the tools to study it. The project page is available at https://videostf.github.io/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CR",
+    "cs.MM"
+  ]
+}

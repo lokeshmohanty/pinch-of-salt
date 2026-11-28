@@ -1,0 +1,13 @@
+{
+  "id": "d680d930d3bc76b1",
+  "title": "When Neural Collapse Fails to Route: Routing Drift in Continual Learning",
+  "link": "https://arxiv.org/abs/2611.22429",
+  "description": "arXiv:2611.22429v1 Announce Type: new \nAbstract: Progressive neural-collapse classifiers can learn strong task-local decision boundaries while failing the global Class-IL decision. We identify the failure as routing drift: under an expanding equiangular tight frame (ETF) classifier, a held-out sample can remain separable within its true task block, yet receive its largest global score from another block. This produces high Task-IL accuracy but low Class-IL accuracy, and small replay buffers can mask the problem because stored samples are optimized repeatedly and often remain well routed. We formalize route accuracy directly from the global class argmax and use it to separate within-task discrimination from cross-task score comparability. This decomposition suggests a classifier-level correction: preserve the global ETF frame, but add class-local reliability evidence when transported class measures deviate from the neural-collapse ideal. We develop Reliability-Calibrated Routing (RCR), a lightweight post-hoc classifier that composes standardized ETF alignment with radial plausibility around transported, NC-shrunk class representatives. Across three datasets and two fixed replay-buffer budgets, this NC-consistent correction gives the best Class-IL FAA on five of six settings and reduces Class-IL forgetting on all six. The largest gains occur in harder routing regimes: up to $+6.75$ FAA over the reported reference, and up to $+8.03$ FAA and $+8.62$ final route accuracy in paired evaluations, while preserving Task-IL performance. These results position routing drift as a measurable failure mode of ETF-based continual learning and show that reliability-calibrated class evidence can repair part of the lost global routing without retraining the representation. Code and evaluation artifacts are available at https://towzeur.github.io/RCR/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

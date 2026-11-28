@@ -1,0 +1,13 @@
+{
+  "id": "5fa04c1fa14b724d",
+  "title": "GUI-Q: Task-Sensitive Granularity and Relation-Preserving Quantization for GUI Agents",
+  "link": "https://arxiv.org/abs/2611.30170",
+  "description": "arXiv:2611.30170v2 Announce Type: replace \nAbstract: Graphical user interface (GUI) agents enable automated interactions with mobile, web, and desktop interfaces. However, their large memory footprint and repeated model calls hinder deployment on resource-constrained devices, motivating post-training quantization (PTQ) without full retraining. Quantization can degrade GUI response accuracy and distort the instruction-vision affinities and local spatial relations needed for GUI target selection. Small coordinate errors can cause missed clicks, while early action errors can alter subsequent interface states and disrupt task execution. Local reconstruction error alone does not directly assess whether these responses and relations are preserved. We propose GUI-Q, a PTQ framework that targets response and relation preservation with 4-bit weights and 16-bit activations (W4A16). Task-Sensitive Granularity Allocation (TSGA) allocates finer groups under a scale-byte budget by combining response sensitivity with the measured reduction in activation-weighted distortion. Relation-Preserving Symmetry Selection (RPSS) then selects symmetric or asymmetric grids to preserve instruction-vision affinities and local spatial relations in GUIs. Across three GUI-capable models, GUI-Q improves mean grounding TargetHit by 8.04 to 12.55 points over the strongest evaluated 4-bit configurations, while reducing static peak graphics processing unit (GPU) memory by 49.9% to 56.2% relative to bfloat16 (BF16). Fixed-output replay with packed 4-bit execution provides 1.7 to 2.8 times model-call speedups. The code will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

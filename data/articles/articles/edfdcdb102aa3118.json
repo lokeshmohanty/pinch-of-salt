@@ -1,0 +1,14 @@
+{
+  "id": "edfdcdb102aa3118",
+  "title": "Efficient Passive Acoustic Monitoring of Killer Whales Using a Two-Stage Detection and Ecotype Classification Cascade",
+  "link": "https://arxiv.org/abs/2609.01792",
+  "description": "arXiv:2609.01792v1 Announce Type: cross \nAbstract: Passive acoustic monitoring of killer whales is particularly important for conservation of the endangered Southern Resident killer whale population, but requires accurate models that can operate in real time under severe class imbalance and deployment shift. We propose a lightweight ResNet-based two-stage cascade that first detects killer whale vocalizations and then classifies confident detections into five eastern North Pacific ecotypes, abstaining on ambiguous calls. We train and evaluate the pipeline on the DCLDE 2027 dataset, where the detector achieves 0.960 macro-F1 and the classifier 0.958, outperforming frozen Perch 2.0 embeddings on the five-ecotype benchmark. By separating detection from ecotype recognition, the end-to-end cascade improves seven-class macro-F1 from 0.919 for a single-stage model to 0.933, with the largest gain on the rare OKW ecotype. To assess transfer beyond the benchmark, we use active learning to adapt the Stage 1 to the acoustic environment of Puget Sound, WA, increasing killer whale detection F1 from 0.405 to 0.755 on manually verified detection windows. Finally, each stage processes a 3 s window in approximately 1.4 ms on an NVIDIA H100, enabling faster than real time inference. These results demonstrate that the proposed two-stage cascade pipeline enables reliable killer whale detection and classification, adaptation to new acoustic domains, and real-time monitoring for conservation applications.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.CV"
+  ]
+}

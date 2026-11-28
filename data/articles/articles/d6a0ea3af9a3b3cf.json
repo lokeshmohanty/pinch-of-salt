@@ -1,0 +1,13 @@
+{
+  "id": "d6a0ea3af9a3b3cf",
+  "title": "Accelerated Decoding of Centroid Positional Encoding for Instance Segmentation",
+  "link": "https://arxiv.org/abs/2609.16874",
+  "description": "arXiv:2609.16874v1 Announce Type: new \nAbstract: Beyond model inference, the decoding stage, which converts raw network outputs into task-level representations, constitutes a significant portion of the execution cost. Despite its practical impact, prediction decoding has received comparatively little attention and is often implemented using generic CPU routines or inefficient GPU kernels, limiting the benefits of advances in model efficiency. In this work, we investigate the decoding overhead associated with a recent sinusoidal centroid encoding for Instance Segmentation, in which each pixel regresses a positional embedding of its instance centroid. This approach allows flexible segmentation without predefined proposals, but extracting instance masks from dense embeddings incurs a high computational cost. We present an optimized CUDA-based implementation of the decoding algorithm tailored to this encoding, explicitly addressing challenges related to parallelization, synchronization, and memory access on modern GPUs. Our solution significantly reduces decoding overhead and improves End-to-End inference latency, outperforming both CPU-based approaches and naive GPU implementations. The results demonstrate that efficient decoding is essential to fully exploit the advantages of advanced output representations and highlight the importance of jointly designing encoding schemes and their decoding algorithms for real-time computer vision systems.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

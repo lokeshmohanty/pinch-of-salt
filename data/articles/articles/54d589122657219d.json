@@ -1,0 +1,13 @@
+{
+  "id": "54d589122657219d",
+  "title": "A Lightweight Fiducial-Based Pipeline for 3D Hyperspectral Mapping of ex-vivo Lumpectomy Specimens",
+  "link": "https://arxiv.org/abs/2606.14534",
+  "description": "arXiv:2606.14534v3 Announce Type: replace \nAbstract: Hyperspectral Imaging (HSI) is a promising modality for intraoperative assessment of resection margins in Breast-Conserving Surgery (BCS), but its clinical translation requires aligning the inherently 2D spectral information onto the 3D shape of the excised tissue so that suspicious regions can be precisely localized for targeted follow-up. We present a fully automated, calibration-free pipeline that produces a 3D hyperspectral point cloud of an ex-vivo lumpectomy specimen from a set of consumer-camera RGB images and a single top-down HSI acquisition. The 3D geometry is reconstructed with a deep-learning Structure-from-Motion backbone, stabilized in a metric reference frame by a custom bundle adjustment that enforces consistency on the corners of four ArUco markers placed around the specimen. The HSI cube is then registered to the reconstruction without recovering the HSI camera pose: the markers, visible in both modalities, define 16 corner correspondences that drive a planar homography, and 3D coordinates are recovered by lookup on an orthographically rendered depth map. Evaluated on two ex-vivo lumpectomy specimens, the pipeline achieves a median 3D registration error below 1 mm and a 2D reprojection error below 0.02 mm, with a total per-specimen processing time under 4 minutes on accelerated hardware. These results support the feasibility of integrating HSI-guided spatial localization into intraoperative margin assessment workflows for breast-conserving surgery.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

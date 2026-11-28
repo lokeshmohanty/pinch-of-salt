@@ -1,0 +1,15 @@
+{
+  "id": "6b8033c6001622fc",
+  "title": "Training a Knowledge Base: Supervised Structure Learning for Agent-Curated Document Stores",
+  "link": "https://arxiv.org/abs/2608.21829",
+  "description": "arXiv:2608.21829v2 Announce Type: replace-cross \nAbstract: Retrieval-augmented generation treats the document store as a frozen input, and the offline pipelines that do build structure over it build it unsupervised -- a whole corpus indexed at uniform effort, with no signal about which structure a question will need. We instead treat the knowledge base as a non-parametric model trained on (question, answer) pairs: a curator agent answers a supervised question against the current store, is shown the gold answer, then edits the store. The store carries forward, and we evaluate the curated store with a test set, on two contamination-free benchmarks: KBGym, a fictional-universe generator we release, and PhantomWiki. Generalization is probed with four question groups of decreasing overlap with the training set: the trained questions themselves, and unseen questions sharing both of their keys with training, one key, or neither. The curated store's advantage grows with overlap -- from parity where no key was shared, through +0.176 F1 where both keys were, to 25% fewer actions at +0.294 F1 on the trained questions, the one cell significant on both benchmarks -- while matching HippoRAG's gains with 1,913 links against its 196,112: per point of corpus covered, 1.5x the action saving and 2.1x the accuracy gain. Accuracy rises steadily with the share of the corpus the indexes cover, so training on more questions widens coverage, and with it the generalization.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR"
+  ]
+}

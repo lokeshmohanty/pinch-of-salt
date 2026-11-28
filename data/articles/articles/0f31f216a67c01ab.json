@@ -1,0 +1,15 @@
+{
+  "id": "0f31f216a67c01ab",
+  "title": "Stochastic Sequential Search in Very-High-Dimensional Feature Selection",
+  "link": "https://arxiv.org/abs/2608.01502",
+  "description": "arXiv:2608.01502v1 Announce Type: cross \nAbstract: Sequential subset search -- forward selection with floating backtracking and its descendants -- remains the quality reference in feature selection, but every member of the family sweeps the full pool of remaining candidate features at each step, which excludes it from very-high-dimensional problems; there, only individual-feature ranking remains practical, and it models feature interplay weakly or not at all. We introduce a budgeted sampled step operator pair that replaces the full sweeps by a fixed number of candidate evaluations per step. Candidates are drawn by temperature-controlled softmax sampling from dependency-aware per-feature statistics learned online from every criterion evaluation the search performs, guarded by a uniform exploration floor; per-step cost becomes independent of dimensionality. Substituting the operators turns any sequential method into its stochastic counterpart, defining the Stochastic Sequential Search (SSS) family; we study the stochastic counterpart of floating search, sSFFS. On 500-dimensional madelon, sSFFS retains at least 97% of the full-SFFS criterion value at every subset size at about a quarter of its evaluations, while uniform sampling at the same budget collapses on madelon's synergistic features. On 5,000-dimensional gisette, far beyond full-SFFS reach, sSFFS exceeds the saturated criterion level of DAF and BIF ranking at matched budgets; holdout validation shows that at 500 training samples the binding constraint beyond the sequential frontier becomes the criterion, not the search. On 10,105-dimensional reuters, under a trustworthy multinomial filter criterion, sSFFS dominates BIF and DAF on the search objective and on holdout accuracy at every subset size, in about two minutes of single-core evaluation work. A verified standalone implementation accompanies the paper.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.CV",
+    "stat.ML"
+  ]
+}

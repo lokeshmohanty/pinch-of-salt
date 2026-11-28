@@ -1,0 +1,14 @@
+{
+  "id": "cdf0aa0123deefc0",
+  "title": "Variable-aware representation, not relation typing, explains the performance of an event-graph model for ICU mortality prediction: temporal and external validation",
+  "link": "https://arxiv.org/abs/2608.02663",
+  "description": "arXiv:2608.02663v2 Announce Type: replace-cross \nAbstract: Event-graph neural networks represent intensive care unit (ICU) records as typed entities linked by timestamped observations, and their gains are often attributed to relation-specific message passing. We tested which components matter once leakage is removed and validation is temporal and external. In 31,142 first ICU stays of at least 48 hours in the Medical Information Mart for Intensive Care IV (MIMIC-IV), models predicting post-48-hour in-hospital mortality were developed on 2008-2016 stays, tested on held-out 2008-2016 stays and on 2017-2019 and 2020-2022 stays, and applied without retraining to 54,696 stays from 205 hospitals in the eICU Collaborative Research Database. A leak in a previous version, total ICU length of stay used as an input, was removed. A variable-aware representation (a learned embedding of each node's variable plus per-variable normalisation) raised the mean single-model area under the receiver operating characteristic curve (AUROC) from 0.846 to 0.896 in 2020-2022 and from 0.699 to 0.809 externally. With it, relation-specific and shared (relation-collapsed) message passing differed by less than 0.005 AUROC in every test set, within a +/-0.01 equivalence margin, although relation typing had appeared beneficial without it. The revised model's AUROC was 0.878-0.900 across MIMIC-IV periods, 0.15-0.19 above three severity scores and 0.007-0.011 below gradient boosting. Externally, the five-model average reached AUROC 0.825 versus 0.788 for the Acute Physiology and Chronic Health Evaluation (APACHE) IVa score on the 48,184 stays with an APACHE prediction. In this model, representation mattered more than message-passing architecture.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

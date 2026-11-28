@@ -1,0 +1,14 @@
+{
+  "id": "368ceac3085282fd",
+  "title": "Anchor-and-Harvest Curriculum: A Fully Unmasked Non-LLM Curriculum for Craftax",
+  "link": "https://arxiv.org/abs/2610.15328",
+  "description": "arXiv:2610.15328v1 Announce Type: cross \nAbstract: We introduce Anchor-and-Harvest Curriculum (AHC), a domain-informed, rule-based training system for Craftax-Full. AHC combines achievement-oriented tasks, harvested initial-state progress, difficulty adaptation, bounded selection, and original-task practice. It uses no LLM inference and keeps all 43 actions available. At 2,005,401,600 PPO rollout transitions, three primary AHC runs obtain native-task return $46.70\\pm0.57$ (sample SD), compared with $41.91\\pm1.01$ for fresh native PPO-GTrXL with the same student architecture and evaluation protocol. Evaluation uses ten stochastic rollouts on each of 1024 fixed worlds per model. An additional cohort of three AHC runs reaches $46.08\\pm1.23$. Two single-component ablations retain similar mean returns, while jointly freezing difficulty and removing inherited progress gives $45.14\\pm2.79$. All-67-achievement profiles show that most of the return difference comes from Intermediate achievements, while the deepest-floor achievements remain unsolved. A Skill-Preflight diagnosis with a 14B teacher shows how prerequisite and floor-access constraints restrict practice. AHC and three 14B diagnostic configurations reach aggregate returns near the reported 80B DiCode mean of 45.88 and below the 235B mean of 48.55. These results show that an explicit curriculum without LLM inference can reach returns comparable to those reported for LLM-generated curricula on Craftax-Full, without action masking.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

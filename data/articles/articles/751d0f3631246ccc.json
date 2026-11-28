@@ -1,0 +1,13 @@
+{
+  "id": "751d0f3631246ccc",
+  "title": "SegRAG: Retrieval Augmented Spatial Prompting for Open Vocabulary Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2605.17630",
+  "description": "arXiv:2605.17630v3 Announce Type: replace \nAbstract: Frozen segmentation foundation models often fail when the target class appears in a form that is weakly represented during pretraining. To address this problem, we introduce SegRAG, a retrieval-augmented inference-time spatial prompting pipeline for open-vocabulary semantic segmentation that uses frozen models without updating their weights. SegRAG builds a compact class-indexed memory from annotated references. When multiple references are available, Intra-Class Cohesion Distillation (ICCD) filters DINOv3 patch descriptors by cross-image foreground agreement. With one reference, foreground descriptors are retained directly without ICCD. Topographic Similarity Grounding (TSG) then turns high-similarity query regions into point prompts for SAM 3. In the matched five-shot comparison, SegRAG exceeds recent exemplar- and retrieval-based baselines on ADE20K-150, Cityscapes, and PC-59. It also improves over the SAM 3 text-only baseline by 1.15 to 3.92 mean Intersection over Union (mIoU) points. In the up-to-30-shot AgML agricultural domain-transfer evaluation, SegRAG raises mIoU from 25.27 to 59.24. It also recovers text-only failures, including cauliflower from 0.00 to 95.36 IoU and sugarbeet weed from 0.00 to 80.22 IoU. Controlled ablations show complementary contributions from ICCD, TSG point selection, and joint text-and-point prompting. SegRAG therefore formulates segmentation adaptation as an information organization and retrieval problem by maintaining annotated visual knowledge as an external, class-indexed memory that can guide a frozen segmentation model without weight updates. Code: https://github.com/boudiafA/SegRAG.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

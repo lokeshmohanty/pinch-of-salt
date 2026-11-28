@@ -1,0 +1,14 @@
+{
+  "id": "1159ddc233234fdf",
+  "title": "Towards Disentangled Preference Optimization Dynamics: Suppress the Loser, Preserve the Winner",
+  "link": "https://arxiv.org/abs/2604.18239",
+  "description": "arXiv:2604.18239v4 Announce Type: replace-cross \nAbstract: Preference optimization is widely used to align large language models (LLMs) with human preferences. However, many margin-based methods also suppress the chosen response when they try to suppress the rejected one, and there is no general way to prevent this across different objectives.\n  We address this issue with a unified incentive-score decomposition of preference optimization, revealing that different objectives share the same local update directions and differ only in their scalar weights.\n  This decomposition provides a common framework for analyzing objectives that were previously studied in separate settings.\n  Building on this decomposition, by analyzing the dynamics of the chosen/rejected likelihoods, we identify the disentanglement band (DB), a simple, testable condition that tells us when training can follow the desired path: suppress the loser while preserving the winner, possibly after an early stage.\n  Using the DB, we propose reward calibration (RC), a plug-and-play method that adaptively rebalances the updates for chosen and rejected responses to satisfy the DB, without redesigning the base objective.\n  Empirical results show that RC leads to more disentangled dynamics, with better downstream performance observed across several settings. Our code is available at https://github.com/IceyWuu/DisentangledPreferenceOptimization.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d708086a415a1f5a",
+  "title": "FAR-Drive: Frame-AutoRegressive Video Generation for Autonomous Driving",
+  "link": "https://arxiv.org/abs/2603.14938",
+  "description": "arXiv:2603.14938v2 Announce Type: replace \nAbstract: Despite rapid progress in autonomous driving, interactive simulation remains a fundamental bottleneck. Existing closed-loop simulators generate video in multi-frame chunks to maintain short-term stability, yet this coarse granularity weakens the fine-grained interaction between agent actions and visual dynamics. Directly adopting frame-level autoregressive generation restores this interaction but sharply intensifies two challenges: long-horizon consistency and autoregressive stability under iterative self-conditioning. In this paradigm, each step is a single action-conditioned update, which also imposes strict low-latency demands since every step requires a full inference pass. In this work, we propose FAR-Drive, a Frame-level AutoRegressive video generation framework for autonomous driving, which integrates a multi-view diffusion transformer with fine-grained structured control to produce geometrically consistent multi-camera videos. At the core of our framework, we design a two-stage training strategy: (i) adaptive reference-horizon conditioning, which expands the temporal conditioning window for long-horizon consistency, and (ii) blend-forcing training, which gradually shifts from ground-truth to self-conditioned inputs to improve autoregressive stability. We further integrate system-level inference optimizations to satisfy the low-latency constraint. Experiments on nuScenes show that our method achieves state-of-the-art results among autoregressive driving video generation methods while keeping sub-second latency on a single GPU.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

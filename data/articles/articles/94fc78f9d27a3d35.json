@@ -1,0 +1,14 @@
+{
+  "id": "94fc78f9d27a3d35",
+  "title": "SpecRead: A Benchmark for Measuring Whether Language Models Understand Hardware Specifications",
+  "link": "https://arxiv.org/abs/2609.33699",
+  "description": "arXiv:2609.33699v2 Announce Type: replace \nAbstract: Existing benchmarks for large language models (LLMs) in hardware design evaluate downstream artifacts such as generated RTL, assertions, or testbenches. When a model fails, it may have misread the specification or understood it and failed to write the code. We present SpecRead, a benchmark that isolates specification comprehension from generation ability. SpecRead v2.2 contains 383 questions over 10 open-source OpenTitan IP blocks in four types: exact retrieval, cross-section reasoning, contradiction detection in mutated specifications, and spec-RTL consistency checking, plus 41 distractor controls and 41 consistent-RTL controls. Type-4 items use real RTL mutations retained only when Icarus Verilog simulation shows a behavioral change. A with-spec vs. without-spec ablation suggests the questions require the excerpt rather than training recall alone, though it does not rule out memorization of the unmutated source text helping a model spot mutations. Ministral-3B scores 33.7% overall (129/383). On t3, verdict-plus-location accuracy is 48.0% with a 51.2% distractor false-positive rate. On t4, the violation-vs.-compliant decision is effectively degenerate (MCC -0.06, balanced accuracy 49.5%), flagging all 41 consistent-RTL controls; location accuracy remains measurable at 79.2%. Layered scoring suggests, as a hypothesis, that the fine-grained violation taxonomy is the hard part, though the category labels are not independently validated. A rule-table prompting intervention on a 60-question sample lowers accuracy on every type except t2 (tied). SpecRead is automatically scorable by deterministic checks, with gray-zone cases counted wrong under the conservative main scoring, regenerable for type-3 items via mutation injection, and built exclusively from public sources.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-27T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.SE"
+  ]
+}

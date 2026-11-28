@@ -1,0 +1,13 @@
+{
+  "id": "a5d7a78d8cb12790",
+  "title": "G2D: Generative-to-Discriminative Collaborative Inference for Zero-Shot Image Classification",
+  "link": "https://arxiv.org/abs/2608.26744",
+  "description": "arXiv:2608.26744v1 Announce Type: new \nAbstract: Zero-shot classification needs efficient label retrieval and fine-grained visual reasoning, yet discriminative and generative vision-language models fail in complementary ways.When CLIP's top-1 prediction is wrong, the correct label often remains in its top-$K$ shortlist, making disambiguation rather than recall the key challenge.Standalone generative models, however, are hindered by large label spaces and unconstrained outputs.This complementarity motivates separating broad candidate retrieval from fine-grained, image-grounded verification.We propose G2D, a training-free framework that uses a generative VLM to verify CLIP-retrieved candidates against the image.Candidate names and CLIP probabilities provide a structured prior for resolving visually similar classes.Fixed confidence routing, entropy-adaptive candidate sizing, and trie-constrained decoding focus generative reasoning on uncertain samples and ensure one valid output for each input at test time.Across eight benchmarks, G2D achieves 68.85% average accuracy, versus 59.35% for CLIP and 63.11% for the standalone VLM.Across seven generator configurations, candidate-set verification improves average accuracy by 1.08--27.42 percentage points.G2D also transfers to DCLIP, WaffleCLIP, and CuPL, supporting a practical interface between discriminative proposal and generative visual reasoning. Code: https://github.com/Harzva/G2D",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "d61d68968ae9be78",
+  "title": "MINT: Meeting-time Indicators for Truncation in Multi-Step Off-Policy RL",
+  "link": "https://arxiv.org/abs/2611.24413",
+  "description": "arXiv:2611.24413v1 Announce Type: cross \nAbstract: Many multi-step off-policy temporal-difference methods handle policy mismatch through products of per-step trace coefficients, leading to a trade-off between variance control and long-horizon signal. The maximum trace length consequently becomes a sensitive hyperparameter. We propose MINT (Meeting-time INdicators for Truncation), which replaces these products with a binary stopping indicator: one until coupled behavior and target trajectories first meet, zero thereafter. At the true value function, the indicator's idempotence yields a variance bound governed by meeting-time survival. For practical implementation, a single sampled action provides a model-free surrogate for the stopping rule, requiring no transition model or mixing-time estimate. We derive separate sufficient conditions for contraction of the state-coupled operator and its practical surrogate under fixed-policy evaluation. On MuJoCo and DeepMind Control tasks, MINT outperforms the reported multi-step baselines; the main MuJoCo comparison uses a common cap without per-task cap-length tuning. We also demonstrate the effectiveness of MINT on Atari 100k, RWRL, and OGBench experiments; MINT adapts the backup horizon to reduce target variability relative to long fixed-horizon backups across tasks and dynamics.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

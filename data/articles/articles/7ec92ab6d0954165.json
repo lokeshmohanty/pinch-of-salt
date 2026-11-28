@@ -1,0 +1,13 @@
+{
+  "id": "7ec92ab6d0954165",
+  "title": "DARE to Mitigate Hallucination: Dual-path Auto-Regressive-aware Editing",
+  "link": "https://arxiv.org/abs/2609.36440",
+  "description": "arXiv:2609.36440v1 Announce Type: new \nAbstract: Large vision-language models (LVLMs) have recently achieved remarkable progress across multimodal tasks, yet object hallucination remains a persistent challenge where models generate descriptions inconsistent with the visual input. Recent work mitigates hallucinations through training-free representation editing, typically by constructing hallucination-related directions from teacher-forcing (TF) contrasts between hallucinated and truthful responses. However, LVLMs operate through autoregressive (AR) decoding during generation, raising the question of whether TF-based analysis fully reflects the generation dynamics that lead to hallucinated outputs. In this paper, we analyze the relationship between TF-based editing and AR generation behavior and find that TF-based editing alone may be insufficient to capture both decoding dynamics and multimodal interactions associated with hallucinations. To address this limitation, we propose DARE (Dual-path Auto-Regressive-aware Editing), a hybrid hallucination editing framework that integrates two complementary contrast pathways: textual contrasts and image contrasts, together with autoregressive-aware representation signals. Specifically, DARE constructs hallucination editing directions from (1) TF-based textual contrasts, (2) AR-aware representation transitions during decoding, and (3) controlled visual differences between paired images. Extensive experiments on multiple LVLM hallucination benchmarks demonstrate that DARE consistently reduces object hallucinations while preserving multimodal perception capability and inference efficiency. Our implementation code is available at https://github.com/KU-VGI/DARE.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

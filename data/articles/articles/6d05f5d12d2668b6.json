@@ -1,0 +1,16 @@
+{
+  "id": "6d05f5d12d2668b6",
+  "title": "DBA-Bench: A Production-Fidelity Benchmark for LLM-Based Database Operations Agents",
+  "link": "https://arxiv.org/abs/2607.22165",
+  "description": "arXiv:2607.22165v2 Announce Type: replace-cross \nAbstract: LLM-based database agents show promise, but differences in task scope, testbeds, and success criteria hinder direct comparison. A shared benchmark must also preserve the operational conditions that determine whether diagnosis and remediation succeed in practice. We present DBA-Bench, guided by operational realism, outcome-first evaluation, and controlled scenario reproducibility. It evaluates agents in live PostgreSQL and distributed TiDB deployments with active workloads, stateful behavior, and multi-source observations. Success requires satisfying scenario-specific operational objectives without violating safety constraints. The primary evaluation covers 231 bounded scenarios across five operational domains, while 10 persistent scenarios extend evaluation to continued operation across interacting events. We evaluate eight automated baselines, including four frontier foundation models, two open-weight models, and two GPT-5.5-backed database agents. Our evaluation exposes gaps between diagnosis, effective remediation, and safe execution across both database systems. Agents can identify root causes yet fail to restore operational objectives. Even when objectives are restored, the executed actions can violate safety constraints. Persistent scenarios expose a gap between clearing individual blockers and sustaining business service: agents leave competing workloads uncoordinated and previously completed repairs unchecked after subsequent changes.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DB",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

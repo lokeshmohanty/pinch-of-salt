@@ -1,0 +1,14 @@
+{
+  "id": "cffa1772451740c8",
+  "title": "WM-VS: Progress-Aligned World Models for Closed-Loop Visual Servoing",
+  "link": "https://arxiv.org/abs/2609.20892",
+  "description": "arXiv:2609.20892v1 Announce Type: cross \nAbstract: Closed-loop visual servoing requires predictions that indicate whether an action reduces task error, not only whether the action is plausible. We call this gap the prediction-control mismatch and introduce WM-VS, a target-centric progress-aligned world-model framework for closed-loop visual servoing. Offline target-region DINOv2 correspondences define a signed four-dimensional servo coordinate for translation, scale, and in-plane rotation. Stage 1 aligns action-conditioned latent transitions with this coordinate; Stage 2 freezes the world model and trains a reactive joint-velocity policy with action imitation, consequence supervision, and short imagined rollouts that favor error contraction. Deployment is RGB-only and reactive, without online trajectory optimization. On a real 7-DoF eye-to-hand system, WM-VS reaches a corner RMSE no larger than 10 percent of its initial value in 30/30 trials and retains this criterion at the final valid frame in 25/30 (83.33 percent). Removing future-error alignment reduces retention to 26.67 percent. The learned progress signal agrees with an external AprilTag corner error not used for training or control (mean Spearman rho = 0.8778). Without retraining, two unseen 3D targets achieve translation-error reductions of 86.48 percent and 90.27 percent and rotation-error reductions of 70.01 percent and 65.70 percent. These results link progress-aligned action consequences to repeated closed-loop correction and transfer. Code and data will be released as open source.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

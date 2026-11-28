@@ -1,0 +1,13 @@
+{
+  "id": "a42315f50e2d32c9",
+  "title": "ScaleDiag: Diagnosing the Limits of Test-Time Scaling in GUI Grounding",
+  "link": "https://arxiv.org/abs/2611.25297",
+  "description": "arXiv:2611.25297v1 Announce Type: new \nAbstract: GUI grounding maps a screenshot and a natural language instruction to the coordinates of the intended interface element. Existing approaches improve grounding through visual scaling, instruction scaling, and sampling scaling, yet it remains unclear which grounding bottlenecks these strategies address and where their gains saturate. To address this gap, we introduce ScaleDiag, a controlled diagnostic framework that isolates the effects of visual input, instruction information, and prediction sampling on GUI grounding by independently varying target scale and surrounding context, target-specific information and auxiliary descriptions, and candidate coverage and selection, respectively. We evaluate ScaleDiag across five benchmarks and up to eight vision-language models and find that each scaling strategy operates within a much narrower regime than commonly assumed. (1) Visual scaling is governed by target occupancy rather than a fixed crop ratio, with full-screen errors typically rescued once the target occupies only 0.32% of the cropped view, while further zooming eventually becomes harmful. (2) Instruction scaling is driven by information that identifies the target rather than description richness itself, as even ground-truth-derived attributes such as color, size, and shape are often neutral or harmful, while appearance and spatial descriptions account for over 90% of the achievable gain. (3) Repeated sampling exposes a different limitation, as correct coordinates are frequently generated but remain difficult to select, leaving 5.1--11.0 points of oracle headroom while geometric consensus provides almost no improvement. Together, these results show that test-time scaling is constrained by distinct operating regimes rather than benefiting monotonically from more visual focus, richer instructions, or additional samples. Our code is available at https://github.com/YenanLiu/ScaleDiag.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

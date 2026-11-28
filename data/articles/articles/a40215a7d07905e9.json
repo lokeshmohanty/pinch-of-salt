@@ -1,0 +1,14 @@
+{
+  "id": "a40215a7d07905e9",
+  "title": "BIND: Binding 3D Robot Actions to 2D Image Features",
+  "link": "https://arxiv.org/abs/2609.38443",
+  "description": "arXiv:2609.38443v1 Announce Type: cross \nAbstract: We introduce BIND, a new action representation for visuomotor robot policies that binds 3D robot actions to their corresponding 2D image features, yielding strong data efficiency gains and robustness to out-of-distribution object positions and camera viewpoints. The action heads of current robot policies are typically formulated as an MLP regression from a single global feature vector produced by a pre-trained vision encoder. This global formulation requires the policy network to discover, from demonstrations alone, the relationship between target robot actions and the image features they project onto. The consequence is that although modern image features are semantically descriptive, spatially robust, and even multiview-consistent, the policies built on them are brittle to subtle changes in camera viewpoint and object placement--and surprisingly data-inefficient. BIND closes this gap by supplying the action-feature relationship through camera geometry rather than learning: it discretizes a volume of candidate end effector positions, attaches each candidate to the pre-trained features at its projection in each camera view, and selects actions by scoring each candidate's position and image-bound feature combination. On a real robot, we study data efficiency and out-of-distribution robustness to unseen object positions and camera viewpoints, as well as general long-horizon task execution and dexterity. We find BIND to be highly data-efficient and robust: it achieves near-perfect success on tasks with as few as 5 demonstrations, and degrades gracefully under steep camera-viewpoint shifts and held-out object positions where coordinate-regression baselines completely fail.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "8bf8c9f01b259613",
+  "title": "Subgroup performance analysis of adaptation strategies for chest X-ray foundation models",
+  "link": "https://arxiv.org/abs/2608.19078",
+  "description": "arXiv:2608.19078v1 Announce Type: new \nAbstract: Foundation models are increasingly adapted for downstream medical imaging tasks, yet the influence of the chosen adaptation strategy on subgroup fairness remains poorly understood. We investigate how three parameter-efficient adaptation techniques, including linear heads on the raw CLS token, an MLP, and an attention-pooling module over multi-layer patch features, affect both pathology classification performance and subgroup disparities when applied to the frozen Rad-DINO chest X-ray encoder. Using MIMIC-CXR, we evaluate eight pathologies across race, sex, and imaging-view subgroups on a prevalence-preserving, demographically balanced test set, and additionally probe how strongly each adapter encodes protected attributes. We find that attention pooling achieves the strongest overall discriminative performance and encodes attributes, particularly race, most strongly, but that improved overall performance does not consistently reduce subgroup disparities. Notably, stronger attribute encoding did not correspond to larger disparities: early network layers encoded race most weakly yet produced the largest subgroup performance gaps. Exploring different attention-pooling layer combinations further revealed no consistent relationship between the layers pooled, attribute encoding strength, and subgroup fairness. Our results indicate that richer, more expressive representations can improve accuracy while leaving fairness implications task-dependent and unpredictable, which must be assessed directly and per-task rather than inferred from encoding strength or overall performance alone.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "70eb9d251409a318",
+  "title": "PrintAnything: Learning an Intermediate Representation for 3D printing G-code Generation",
+  "link": "https://arxiv.org/abs/2607.27729",
+  "description": "arXiv:2607.27729v1 Announce Type: new \nAbstract: Point clouds are one of the most fundamental and widely used 3D representations, serving as the most basic geometric representation of 3D shapes. Nevertheless, most existing 3D printing pipelines require a watertight mesh as input, preventing the direct use of point clouds for fabrication. A common workaround is to reconstruct meshes from point clouds; however, the resulting meshes often contain geometric artifacts, such as incorrect faces or topological inconsistencies, that are difficult to repair and may lead to printing failures. To overcome these limitations, we propose PrintAnything, a novel framework that learns to produce executable 3D printing G-code directly from 3D point clouds without requiring mesh reconstruction. To enable point clouds to serve as direct input for slice-wise toolpath generation, we introduce a slice-wise point projection strategy that transforms unstructured 3D point clouds into slice-aligned 2D representations consistent with layer-by-layer nature of fused deposition modeling in 3D printing. To eliminate mesh dependency and provide a unified representation that bridges point clouds and G-code, we propose Geometric plan (G-plan) map, a compact 2D representation composed of occupancy, region, and flow maps that encode the geometric and extrusion properties required for toolpath synthesis in 3D printing. As a result, our proposed method accurately generates printable G-code directly from point clouds, enabling a practical and fully mesh-free pipeline for 3D printing. The code is publicly available at \\href{https://github.com/Sangminhong/PrintAnything}{https://github.com/Sangminhong/PrintAnything}.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "8faaba45d811c5e5",
+  "title": "SpurCon: Weighted Supervised Contrastive Learning for Mitigating Spurious Cues in Medical Imaging",
+  "link": "https://arxiv.org/abs/2608.17598",
+  "description": "arXiv:2608.17598v1 Announce Type: new \nAbstract: Despite the rapid progress of deep neural networks in visual recognition, their adoption in high-risk medical applications remains limited due to reliability and robustness concerns. Models may exploit spurious correlations, particularly in medical imaging, where devices or treatment artifacts often co-occur with pathology. In small or imbalanced datasets, such cues further reduce worst-group performance and undermine clinical trust. To solve these issues, two major challenges should be addressed: identifying dataset-specific spurious cues, which typically require domain knowledge, and mitigating reliance on them. To tackle both, we propose SpurCon, a lightweight framework based on a novel supervised contrastive loss formulation that leverages available metadata and predicted spurious labels to enhance robustness. We introduce a fast few-shot procedure, without network training, to estimate spurious labels using a small number of expert-annotated samples. We then propose a weighted supervised contrastive objective, WtSupCon, that reshapes the representation geometry by assigning sample-specific weights that depend on the [pathology, spurious, metadata] combination. For example, the highest weight is assigned to samples that differ only in their spurious label. This yields highly similar representations for images with the same metadata and pathology, differing only in the predicted spurious label. Our method operates on pretrained image encoders (such as BiomedCLIP) and trains only a lightweight projection head. We evaluate SpurCon on a synthetic setting and on Waterbirds, CheXpert, a chest X-ray classification dataset, and ISIC 2020, a skin cancer classification dataset. Our approach delivers the best spurious-mitigation performance, balancing well worst-group and overall accuracy on multiple datasets.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

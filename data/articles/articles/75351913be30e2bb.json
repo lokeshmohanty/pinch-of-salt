@@ -1,0 +1,13 @@
+{
+  "id": "75351913be30e2bb",
+  "title": "Localized Anomaly Detection via Differentiable D-vine Copulas",
+  "link": "https://arxiv.org/abs/2607.25020",
+  "description": "arXiv:2607.25020v1 Announce Type: new \nAbstract: Vine copulas provide a flexible framework for modeling complex multivariate distributions through a hierarchical decomposition into bivariate pair-copulas. Fitting a D-vine requires selecting a copula family and parameter configuration for each pair-copula from a set of candidates encoding different dependence patterns. As the number of variables and candidate families increases, the number of possible configurations grows combinatorially. Existing fitting procedures address this challenge through sequential greedy decisions, committing to a single locally optimal family at each step and potentially discarding configurations that would yield a better global fit. To overcome this limitation, we propose a novel estimation framework that combines gradient-based maximum likelihood estimation, enabled by our fully differentiable implementation, with a beam-search strategy that maintains multiple competing D-vine configurations throughout the fitting process. This allows a broader exploration of the configuration space while remaining computationally tractable. Building on the fitted D-vine, we introduce a localized anomaly detection framework that exploits the hierarchical decomposition to produce both global anomaly scores and edge-level explanations. Statistical guarantees are provided through Mondrian conformal prediction, while the pair-copula structure enables the localization of anomalies to specific variable relationships. We evaluate the proposed framework on both benchmark and real-world datasets, demonstrating its effectiveness for interpretable anomaly detection with uncertainty quantification.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

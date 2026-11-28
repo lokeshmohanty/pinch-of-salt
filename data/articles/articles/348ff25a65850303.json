@@ -1,0 +1,13 @@
+{
+  "id": "348ff25a65850303",
+  "title": "Forget the Data, Keep the Capability: Switchable Unlearning for Retrieval",
+  "link": "https://arxiv.org/abs/2610.36858",
+  "description": "arXiv:2610.36858v1 Announce Type: new \nAbstract: Privacy compliance requires re-identification models to selectively forget individuals while preserving their ability to recognize others. For this, we present MoME, a switchable framework that can adapt pre-trained backbones for privacy compliance, allowing the same model to switch between Full mode for standard inference and Core mode for unlearned inference. MoME splits one backbone into core parameters that preserve retrieval and zero-initialized parasitic parameters that carry the full-data knowledge, and training them under gradient isolation so the core never receives a forget-set gradient. Disabling the branch yields Core, which satisfies a request to delete a person's training data, and enabling it yields Full, which retains what the deleted data taught, so honoring the request is a flag flip rather than a retraining run. We prove Core independent of the forget set up to an audited set of coupling channels and introduce the rank-based Forgetting-Rank statistic to audit that independence in a trained model. On Market-1501, VeRi-776 and RegDB, Core reads at a retrained reference under three membership attacks while retrieving above it, and the retrieval advantage carries to ResNet and CLIP backbones. Code and weights are available at https://github.com/Jingong-Chen/MoME.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

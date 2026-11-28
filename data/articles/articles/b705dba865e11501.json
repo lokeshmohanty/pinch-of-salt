@@ -1,0 +1,14 @@
+{
+  "id": "b705dba865e11501",
+  "title": "Sub-Meter Canopy Height Synthesis from Sentinel-2 via Anchored Residual Flow",
+  "link": "https://arxiv.org/abs/2611.22636",
+  "description": "arXiv:2611.22636v1 Announce Type: new \nAbstract: Canopy height models (CHMs) - per-pixel maps of vegetation top height - are essential for forest carbon accounting, wildfire fuel mapping, and tree-level ecology, yet sub-meter CHMs require airborne LiDAR refreshed on multi-year national cycles. We produce 0.5 m CHMs from free 10 m Sentinel-2 imagery, a 20$\\times$ cross-modal super-resolution task where optical reflectance must predict geometric height it does not directly observe. Motivated by the perception-distortion trade-off, we derive two operating points with shared conditioning. A deterministic regressor (Anchor) targets low distortion; a conditional flow matching model, trained on the Anchor's residual in a learned CHM latent space (AR-flow), targets perceptual fidelity. Trained on 197k LiDAR-paired tiles spanning 69 ecoregions across the contiguous United States and evaluated on 2,530 held-out tiles against eight baselines, the Anchor achieves 2.83 m MAE using only free satellite input. The AR-flow reduces sliced Wasserstein distance from the Anchor's 1.13 to 0.208, at a higher MAE of 3.68 m. Crown-scale statistics improve, but strict individual-tree detection remains weak: generated sub-pixel detail represents plausible structure rather than measured individual trees. Quarterly continental refresh becomes tractable, letting satellite monitoring inform timing and extent for more expensive data acquisitions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "781bbe32678c7336",
+  "title": "Infra-Bayesian Reinforcement Learning Agents Outperform Classical RL For Worst-Case Robustness",
+  "link": "https://arxiv.org/abs/2605.23146",
+  "description": "arXiv:2605.23146v3 Announce Type: replace-cross \nAbstract: Classical reinforcement learning assumes the agent interacts with a fixed environment whose behavior does not depend on the agent's policy. This assumption breaks down in non-realizable settings where other actors might anticipate the agent's behavior, including environments crucial to AI safety, where the agent interacts with predictors, humans, other AI agents, and institutions. In such settings, the agent's model class fails to capture the world in which it operates. Under such misspecification, classical Bayesian methods can produce confidently wrong posteriors, unreliable decisions, and unbounded regret, as realizability fails to obtain. Infra-Bayesianism is a decision-theoretic framework that addresses these failures by distinguishing ordinary probabilistic uncertainty, where priors can be reasonably chosen, from Knightian uncertainty, where no grounds exist for the construction of such a prior. It does so by evaluating actions on their worst-case outcomes, rather than from posterior expectations or weighted averaging. We present the first proof-of-concept implementation of an infra-Bayesian reinforcement learning architecture for finite-outcome stateless decision problems. Our agent maintains a set of imprecise hypotheses, updates them using infra-Bayesian conditioning, and selects actions by maximizing worst-case expected value. We apply this implementation of the infra-Bayesian maximin decision process to an environment with Knightian uncertainty, and demonstrate a lower worst-case regret as compared to classical reinforcement learning agents. We also investigate Newcomb's problem and show that the infra-Bayesian agent picks the optimal strategy, outperforming classical decision theory agents. Our results provide a step towards reinforcement learning agents that remain robust under model misspecification and policy-dependent uncertainty.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

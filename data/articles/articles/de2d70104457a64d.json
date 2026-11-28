@@ -1,0 +1,13 @@
+{
+  "id": "de2d70104457a64d",
+  "title": "Modeling Shared and Individual Structure for Cross-Subject Continuous Affect Regression from EEG-fNIRS",
+  "link": "https://arxiv.org/abs/2610.02796",
+  "description": "arXiv:2610.02796v1 Announce Type: new \nAbstract: Continuous, second-by-second valence-arousal estimation from physiological signals is typically studied in a subject-dependent setting, where the model sees labeled data from the same person it is later evaluated on. We study the harder zero-shot cross-subject variant on a synchronized EEG-fNIRS dataset: predict raw-scale ([1, 255]) valence and arousal trajectories for subjects whose labels the model never observes, given only their unlabeled EEG/fNIRS recordings while watching the same video stimuli as a disjoint set of training subjects. We decompose the affect trajectory into a structure shared across subjects who watch the same stimuli and an individual structure estimated for each test subject from a label-free EEG marker (alpha-band cross-channel synchrony), which rescales the shared trajectory around the scale midpoint. We validate the per-subject calibration mechanism on four independent axes: leave-one-subject-out correlation between the marker and each subject's true optimal gain, a functional-form comparison against non-linear alternatives, a repeated leave-4-out component ablation isolating each part of the pipeline's contribution, and a ceiling analysis bounding the remaining headroom for per-subject scaling. On held-out subjects, the model reaches an overall MAE of 25.96 / 22.80 across two evaluation batches (valence 21.94 / 19.6, arousal 29.98 / 26.0), well below EEGNet and ASAC-Net baselines reported for the same subject-independent split (raw scale score 60.6 and 55.0 respectively). We further report a systematic negative-result search across model architectures, feature representations, and prediction targets that found no signal able to improve on the single alpha-synchrony marker.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

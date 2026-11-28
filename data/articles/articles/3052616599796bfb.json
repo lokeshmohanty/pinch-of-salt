@@ -1,0 +1,14 @@
+{
+  "id": "3052616599796bfb",
+  "title": "PRISM: Perceptual Rate-Controllable Extreme Image Compression with Visual State-Space Models",
+  "link": "https://arxiv.org/abs/2611.33839",
+  "description": "arXiv:2611.33839v1 Announce Type: cross \nAbstract: Generative codecs built on pretrained diffusion priors achieve high perceptual quality at ultra-low bitrates (below 0.05 bpp). However, most methods still require a separate model for each bitrate, and offer no control over the amount of detail synthesized. Their rate efficiency also depends on the entropy model, where Mamba-based state-space models (SSMs) have recently improved autoregressive context modeling. However, conventional SSM scans are not aligned with the decoding order, and each decoding pass restarts from an empty state, discarding context accumulated in previous passes. We propose PRISM, an extreme image compression method that addresses these limitations. A single model provides two continuous controls: a rate knob that traverses the rate-distortion curve and a realism knob that adjusts the level of detail synthesized. Its visual state-space (VSS) context model introduces a decode-order-aligned (DOA) scan, which predicts each latent from a state that summarizes all decoded context, and cross-tap state carry, which initializes each tap with a summary of the previous one. Experiments show that PRISM outperforms both variable-rate and fixed-rate codecs, requiring on average 22% less bitrate than the strongest baseline at equal FID while also achieving higher PSNR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

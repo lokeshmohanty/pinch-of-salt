@@ -1,0 +1,14 @@
+{
+  "id": "f07c4c4cf1a0b781",
+  "title": "Learning Visual Spatial Planning from Symbolic State via Modality-Gap-Aware Self-Distillation",
+  "link": "https://arxiv.org/abs/2606.06076",
+  "description": "arXiv:2606.06076v3 Announce Type: replace \nAbstract: While Vision-Language Models excel at general multimodal understanding, they still struggle with visual spatial planning. We attribute this limitation to a perception--reasoning modality gap. Visual planning requires models to infer latent state structures from pixels and then reason over the recovered structure to produce valid actions, whereas symbolic planning directly leverages explicit representation. This discrepancy introduces two sequential bottlenecks: visual state recovery at the perception stage and multi-step planning at the reasoning stage. To address this, we propose MGSD, a two-stage modality-gap-aware self-distillation framework. First, a cold-start grounding stage establishes reliable visual state recovery before on-policy training. Second, a symbol-guided on-policy self-distillation stage transfers the privileged teacher's planning behavior to the student through token-level supervision on student-generated prefixes. Crucially, symbolic information is used only during training, while inference relies exclusively on visual inputs. Experiments on visual planning benchmarks show that MGSD consistently improves performance across different model scales, raising the macro average by 19.3% and 18.4%, respectively. The resulting models substantially reduce the gap to the upper bounds obtained with symbolic inputs. Ablation studies and diagnostic analyses further confirm that the gains arise from improvements in both visual state recovery and optimal-path reasoning. These results demonstrate that MGSD strengthens not only the recovery of actionable states from visual observations but also the ability to plan over the inferred structures. Code is available at https://github.com/Oranger-l/MGSD.",
+  "source_name": "arXiv AI",
+  "published": "2026-08-10T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV"
+  ]
+}

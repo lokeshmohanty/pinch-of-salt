@@ -1,0 +1,15 @@
+{
+  "id": "50e14845a5bd5d93",
+  "title": "UnSAMv2: Self-Supervised Learning Enables Segment Anything at Any Granularity",
+  "link": "https://arxiv.org/abs/2511.13714",
+  "description": "arXiv:2511.13714v2 Announce Type: replace-cross \nAbstract: The Segment Anything Model (SAM) family has become a widely adopted vision foundation model, but its ability to control segmentation granularity remains limited. Users often need to refine results manually - by adding more prompts or selecting from pre-generated masks - to achieve the desired level of detail. This process can be ambiguous, as the same prompt may correspond to several plausible masks, and collecting dense annotations across all granularities is prohibitively expensive, making supervised solutions infeasible. To address this limitation, we introduce UnSAMv2, which can segment anything at any granularity without using any human annotations. UnSAMv2 extends the divide-and-conquer strategy of UnSAM by discovering abundant mask-granularity pairs and introducing a novel granularity control embedding that enables precise, continuous control over segmentation scale. Remarkably, with only $6$K unlabeled images and $0.02\\%$ additional parameters, UnSAMv2 substantially enhances SAM-2, enabling segmentation of anything at any granularity across interactive, whole-image, and video segmentation tasks. Furthermore, we introduce a language-guided segmentation pipeline that treats granularity as a predictable variable by grounding it in text semantics via an external vision-language model, improving upon the previous state of the art in 1-IoU (40.4 $\\rightarrow$ 47.3). Across 11+ benchmarks, UnSAMv2 achieves consistent gains over SAM/SAM-2 baselines, improving $\\text{NoC}_{90}$ (5.69 $\\rightarrow$ 4.75), 1-IoU (58.0 $\\rightarrow$ 73.1), and $\\text{AR}_{1000}$ (49.6 $\\rightarrow$ 68.3) by a large margin. Our work demonstrates that a small amount of unlabeled data can deliver large, practical improvements to strong supervised baselines. Our code, dataset, and demo are available at https://github.com/yujunwei04/UnSAMv2.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

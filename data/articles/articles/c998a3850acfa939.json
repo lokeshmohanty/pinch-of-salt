@@ -1,0 +1,14 @@
+{
+  "id": "c998a3850acfa939",
+  "title": "OnCue: Generating Safety-Critical Driving Scenarios under Occlusion with Temporal Control",
+  "link": "https://arxiv.org/abs/2611.33439",
+  "description": "arXiv:2611.33439v1 Announce Type: cross \nAbstract: Occluded hazards challenge autonomous driving because visibility timing determines available avoidance actions. Existing scenario generators control hazard motion without jointly specifying exposure and reference-contact times. We propose OnCue, a framework that generates safety-critical encounters in real driving logs with these temporal conditions. Scene geometry provides hidden starts and timed waypoints for pedestrian, cyclist, and vehicle trajectory generation. An offline response oracle labels encounters as Reactive (avoidable after exposure) or Anticipatory (avoidable only with earlier visibility) and stores safe maneuvers as training demonstrations. On the Waymo Open Motion Dataset, 90.1-96.6% of valid trajectories meet both requested times within +/-0.2 s. OnCue matches the requested reaction window between them in 92.8% of shared vehicle requests versus at most 42.1% for adapted adversarial generators. Across matched cyclist encounters, longer windows lower PDM-Closed collision from 59.1% to 5.5%, while the learned planner LatentDriver shows the opposite trend. OnCue demonstrations reduce LatentDriver target collision by 54.8 points on held-out Reactive tests, but reduce overall no-target progress by 12.7 m. These results highlight the value of temporal control for evaluating and improving planners under occlusion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

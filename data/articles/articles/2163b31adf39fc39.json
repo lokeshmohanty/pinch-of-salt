@@ -1,0 +1,13 @@
+{
+  "id": "2163b31adf39fc39",
+  "title": "FAST: Flow Any Scene Transformer",
+  "link": "https://arxiv.org/abs/2609.39748",
+  "description": "arXiv:2609.39748v1 Announce Type: new \nAbstract: Scaling has become a primary driver of progress in language and vision foundation models, yet its role in precise correspondence matching remains underexplored. In this work, we present Flow Any Scene Transformer (FAST), a scalable correspondence model driven by two key insights. First, we reveal that the query-key projections inside single-view vision foundation models encode a coarse yet reusable prior for cross-view matching. Second, reusing these pretrained projections in cross-attention form yields a highly effective initialization for a ViT-based matcher built from a single-view encoder. Guided by these insights, we build FAST upon a vanilla single-view foundation model, utilizing a zero-parameter rewiring strategy to convert selected self-attention layers into cross-attention for cross-view interaction. This design allows ViT-based matchers to scale with advances in single-view foundation models, bypassing the need for a dedicated pair-centric pretraining stage. To fully unlock the scaling potential of this formulation, we assemble a 6-million-pair training corpus for general-purpose dense 2D displacement estimation across diverse co-visible image pairs. Extensive experiments demonstrate that FAST achieves state-of-the-art performance across a wide range of benchmarks, while scaling favorably with both backbone size and training data.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

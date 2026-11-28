@@ -1,0 +1,14 @@
+{
+  "id": "cec30eb70925d2eb",
+  "title": "Aligned Delta-Triplane Transformers as Occupancy World Models",
+  "link": "https://arxiv.org/abs/2503.07338",
+  "description": "arXiv:2503.07338v5 Announce Type: replace-cross \nAbstract: Occupancy World Models (OWMs) aim to predict future 3D occupancy scenes from historical observations and future ego motions, providing a useful world simulation tool for autonomous driving. Existing methods usually rely on large networks to implicitly align multi-frame historical states and predict future occupancy in a full-state manner, which is costly and redundant because most scene regions remain unchanged over short time intervals. In this paper, we propose Aligned Delta-Triplane Transformer (ADTT), a compact 4D OWM that explicitly aligns historical triplanes with ego-motion compensation and predicts only future scene changes. Based on the aligned triplane prior, a query-conditioned Transformer predicts residual changes, where ego-motion queries guide controllable future motion and learnable external queries capture scene changes beyond ego motion. The predicted changes are added to the aligned prior and decoded into future occupancy scenes. Experiments on Occ3D-nus show that ADTT achieves state-of-the-art forecasting performance with fewer parameters and higher FPS. Our code is publicly available online: https://github.com/kyoran/ADTT.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

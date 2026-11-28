@@ -1,0 +1,15 @@
+{
+  "id": "90af7f2c119e8dc0",
+  "title": "TamilEOT: A Dataset and Model for Semantic End-of-Turn Detection in Tamil Telephone Speech",
+  "link": "https://arxiv.org/abs/2609.05631",
+  "description": "arXiv:2609.05631v2 Announce Type: replace-cross \nAbstract: A voice agent must decide, at each pause, whether the speaker has finished or is still thinking. Without a model of the language, systems fall back to a fixed silence timeout: too short, and the agent interrupts; too long, and every turn pays the full wait. We release TamilEOT, to our knowledge the first open dataset and detector for semantic end-of-turn detection in a South Indian language: 18,485 labelled turn boundaries from 116 real Tamil telephone conversations, two audio-only detectors built on Smart Turn v3's architecture, and a turn-level companion set of 4,774 whole turns with their pause structure. On a held-out split of 4,168 clips from 30 unseen calls, accuracy rises from 70.30% zero-shot to 83.71% (8.7 MB) and 86.13% (21 MB); ROC-AUC rises from 0.751 to 0.921. Both run in under 150 ms single-threaded on a laptop CPU. We also report what building it cost. Our rule-derived negative-class labels scored 44.4% against a blind human pass, below chance, because the rule answered a different question than the model is asked; an audio-LLM labeller at 97.5% agreement replaced them for US$5.69. Of six training levers, only encoder capacity moved the result: three identical runs spanned 0.87 accuracy points, the floor below which nothing else here is a finding. Replaying labelled boundaries through the production VAD and streaming adapter costs a further 2.60 points, and 7.8% of boundaries never reach the model at all. Data, weights, code and every negative result are public.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-03T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.SD"
+  ]
+}

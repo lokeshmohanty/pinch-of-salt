@@ -1,0 +1,13 @@
+{
+  "id": "4ecd4ce42f1949f0",
+  "title": "Improving Flexible Image Tokenizers for Autoregressive Image Generation",
+  "link": "https://arxiv.org/abs/2601.01535",
+  "description": "arXiv:2601.01535v2 Announce Type: replace \nAbstract: Flexible image tokenizers aim to represent an image using an ordered 1D variable-length token sequence. This flexible tokenization is typically achieved through nested dropout, where a portion of trailing tokens is randomly truncated during training, and the image is reconstructed using the remaining preceding sequence. However, this tail-truncation strategy inherently concentrates the image information in the early tokens, limiting the effectiveness of downstream AutoRegressive (AR) image generation as the token length increases. To overcome these limitations, we propose \\textbf{ReToK}, a flexible tokenizer with \\underline{Re}dundant \\underline{Tok}en Padding and Hierarchical Semantic Regularization, designed to fully exploit all tokens for enhanced latent modeling. Specifically, we introduce \\textbf{Redundant Token Padding} to activate tail tokens more frequently, thereby alleviating information over-concentration in the early tokens. In addition, we apply \\textbf{Hierarchical Semantic Regularization} to align the decoding features of earlier tokens with those from a pre-trained vision foundation model, while progressively reducing the regularization strength toward the tail to allow finer low-level detail reconstruction. Extensive experiments demonstrate the effectiveness of ReTok: on ImageNet 256$\\times$256, our method achieves superior generation performance compared with both flexible and fixed-length tokenizers. Code will be available at: \\href{https://github.com/zfu006/ReTok}{https://github.com/zfu006/ReTok}",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

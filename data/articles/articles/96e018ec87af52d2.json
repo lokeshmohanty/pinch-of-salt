@@ -1,0 +1,13 @@
+{
+  "id": "96e018ec87af52d2",
+  "title": "Spectral Colorimetry Based on GMoE for Temperature Measurement in Explosion Fields",
+  "link": "https://arxiv.org/abs/2611.33750",
+  "description": "arXiv:2611.33750v1 Announce Type: new \nAbstract: Spectroscopic thermometry in explosion fields has attracted considerable attention in related engineering domains, primarily because it can mitigate the interference of traditional contact methods with temperature distributions and address the limitations of high-temperature measurement scenarios. However, existing physics-model-driven methods typically rely on regressing a single radiance-ratio pair, which limits their adaptability to wide-range temperature estimation. This limitation arises from notable variations in the mapping between grayscale ratios and radiance ratios at different temperatures. In contrast, existing data-driven methods often suffer from limited performance due to the scarcity of training data, a challenge exacerbated by the sensitivity of explosion fields. In this work, we propose a gated mixture of experts (GMoE) framework that integrates a divide-and-conquer strategy in deep learning with physical prior knowledge for temperature estimation, thereby decomposing the complex task into multiple expert-specific subtasks. Specifically, each expert is developed using physically calibrated polynomial functions to model the relationship between grayscale ratios and radiance ratios for a given pair of spectral bands, with temperature then estimated using a physical model incorporating the corresponding parameters. Additionally, a gating network is designed to adaptively weight the outputs of different experts and generate the final temperature estimate. Experimental results demonstrate that the proposed framework achieves the best performance when implemented with the Transformer-based gating network, yielding a mean RMSE of $12.70 \\pm 1.32$ K and a mean MAE of $7.96 \\pm 0.86$ K. Compared with conventional spectral colorimetry, the proposed framework reduces the mean RMSE and MAE by 63.4\\% and 70.8\\%, respectively.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

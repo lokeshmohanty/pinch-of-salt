@@ -1,0 +1,13 @@
+{
+  "id": "ed8182f819ec6759",
+  "title": "FN-Prune: Training-Free Expert Pruning with Finite RMSNorm Perturbations",
+  "link": "https://arxiv.org/abs/2611.31747",
+  "description": "arXiv:2611.31747v1 Announce Type: new \nAbstract: Expert pruning reduces the memory footprint of mixture-of-experts language models, but retaining model quality depends on which experts are removed. Frequency- and magnitude-based scores measure the expert in isolation and overlook how normalization consumes its contribution: subtracting one expert changes both the direction of the residual stream and the scale applied to what remains. We propose FN-Prune, a training-free criterion that compares the next RMSNorm outputs before and after subtracting each router-weighted expert contribution, holding original routes and weights fixed. Squared differences are averaged over all calibration tokens in one pass; low-scoring experts are physically deleted at uniform per-layer ratios, and inference reroutes among survivors. At 50% expert removal, FN-Prune achieves lower WikiText-2 perplexity than the best published methods on Qwen3, ERNIE, and OLMoE, including a 32% reduction on OLMoE. At the same budget, GSM8K accuracy improves over the best published methods by 7.5 and 7.0 percentage points on Qwen3 and ERNIE, respectively, while multiple-choice gains remain task-dependent.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

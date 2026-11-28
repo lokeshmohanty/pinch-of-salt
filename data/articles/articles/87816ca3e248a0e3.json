@@ -1,0 +1,13 @@
+{
+  "id": "87816ca3e248a0e3",
+  "title": "FasterGRN: Reducing the Refinement Redundancy for Accelerating Generative Refinement Networks",
+  "link": "https://arxiv.org/abs/2611.33982",
+  "description": "arXiv:2611.33982v1 Announce Type: new \nAbstract: Departing from the paradigm of diffusion and autoregressive models, Generative Refinement Networks (GRN) enables high-quality image generation through iterative refinements. However, this repeated processing over the entire visual representations results in substantial computation overhead. Furthermore, the binary representations and global refinement mechanism in GRN disable the direct application of acceleration strategies developed for other generative models. To accelerate GRN model, we first observe several key properties by analyzing the entire generative process. That includes the stage characteristic, dual branch similarity and more importantly, the $\\textbf{refinement redundancy}$. Motivated by the observations, we present $\\textbf{FasterGRN}$, a training-free acceleration method for the Generative Refinement Network. $\\textbf{FasterGRN}$ first divides the GRN into the semantic establishment stage and detail refinement stage according to its semantic establishment. For alleviating the refinement redundancy mainly resulting from the detail refinement stage, we propose Adaptive Retention Expansion ($\\textbf{ARE}$) and Selective Token Freezing ($\\textbf{STF}$) to shrink refinement steps and reduce token computations, respectively. In the experiments on GenEval and DPG-Bench benchmarks, our method $\\textbf{FasterGRN}$ achieves a $2.03\\times$ sampling speedup while largely preserving image generation performance. Our evaluation on COCO datasets additionally demonstrates that $\\textbf{FasterGRN}$ even outperforms the original GRN in image fidelity.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

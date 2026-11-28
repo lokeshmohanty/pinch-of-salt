@@ -1,0 +1,14 @@
+{
+  "id": "3946f5814ea71553",
+  "title": "Rethinking Streaming Video Diffusion Model: Context, Execution, and Training",
+  "link": "https://arxiv.org/abs/2609.22283",
+  "description": "arXiv:2609.22283v1 Announce Type: new \nAbstract: Understanding the design space of streaming video diffusion is essential to exploring its potential for generation quality and computational efficiency. We develop a unified analytical framework that relates model and sampler choices, historical conditioning, execution scheduling, and training strategies. The framework accommodates a broad family of causal context-selection policies and makes their computational dependencies and training-inference alignment explicit. Within this design space, we study three representative policies: clean, same-level, and progressive history. On the full VBench prompt set, same-level and progressive history achieve aggregate scores of 85.24 and 85.60, respectively, compared with 84.45 for the clean-history reference. Long-video comparisons further show improved subject consistency and more coherent motion with progressive history. By allowing multiple denoising nodes to be processed together, progressive-history pipelining achieves $1.57$-$2.83\\times$ steady-state DiT speedups under our evaluated conditions. We additionally find that LoRA adaptation of the DMD fake-score network improves generation quality using only 2.15% as many trainable fake-score parameters as full-parameter adaptation. Together, these findings show that fully denoised history is not a prerequisite for high-quality streaming generation and motivate the joint design of historical conditioning, execution, and training.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

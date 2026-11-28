@@ -1,0 +1,13 @@
+{
+  "id": "77a5fcc040c447c1",
+  "title": "Delta-SVD: Efficient Compression for Personalized Text-to-Image Models",
+  "link": "https://arxiv.org/abs/2508.16863",
+  "description": "arXiv:2508.16863v2 Announce Type: replace \nAbstract: Personalizing a text-to-image diffusion model by full fine-tuning gives the strongest subject fidelity but produces a full copy of the model per subject: a thousand personalized Stable Diffusion checkpoints approach five terabytes, so storage, not compute, is what fails to scale. We present Delta-SVD, which compresses the weight change that personalization makes rather than the model. Given only a finished checkpoint and its base, it takes a truncated SVD of each layer's weight delta and keeps the few components that carry its spectral energy, selected by a per-layer energy threshold or by a global byte budget filled by water-filling, optimal for the continuous relaxation and empirically near-optimal for discrete rank allocation. Nothing is trained and no subject image is read, so the method applies to legacy and third-party checkpoints for which training-time adapters such as LoRA were never produced. The factors merge back into dense weights at load time, so serving runs at the uncompressed model's exact latency, whereas whole-model 8-bit and 4-bit quantization slow inference by 1.5-3.4 times. On the 30-subject DreamBooth benchmark, Delta-SVD matches the uncompressed model to within 0.01 DINO at 7-fold compression and keeps 98% of its fidelity at 33-fold compression. Among post-hoc baselines, only dense-delta quantization at 411 MiB matches it; below that size Delta-SVD dominates pruning, random-rank selection, and both whole-model and dense-delta quantization on the storage-quality frontier. The same holds on 84 diverse CustomConcept101 subjects, where a 9 MiB adapter reproduces the uncompressed outputs at paired DINO 0.77, and on a fully fine-tuned SD3.5-medium MMDiT, where a 531 MB adapter matches the uncompressed model to within 0.01 DINO.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

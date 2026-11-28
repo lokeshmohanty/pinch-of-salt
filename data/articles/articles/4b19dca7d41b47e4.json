@@ -1,0 +1,14 @@
+{
+  "id": "4b19dca7d41b47e4",
+  "title": "Quicksviewer: An LMM with Early Video Compression using Annealed Gumbel-Softmax",
+  "link": "https://arxiv.org/abs/2504.15270",
+  "description": "arXiv:2504.15270v2 Announce Type: replace \nAbstract: Large Multimodal Models (LMMs) uniformly perceive video frames, creating computational inefficiency for videos with inherently varying temporal redundancy. This paper present **Quicksviewer**, an LMM with new perceiving paradigm that partitions a nonuniform redundant video into varying cubes using Gumbel Softmax, followed by a unified resampling for each cube to achieve efficient video understanding. We further propose a Gumbel-noise annealing strategy that enables stable end-to-end LMM training with the discrete cubing network. This simple and intuitive approach dynamically compress video online based on the momentum of frame differences, significantly reducing spatiotemporal complexity (overall 45$\\times$ compression rate), while enabling efficient training with large receptive field. We train the model from a language backbone through three progressive stages, each incorporating lengthy videos on average of 420s/1fps thanks to the perceiving efficiency. With only 0.8M total video samples, our model outperforms contemporary LMMs with the same backbone and comparable parameters amount. An experiment in A/B pretraining with same backbone and training data shows that, w/ cubing achieves lower training loss and higher benchmark accuracy (+2.1) than the fixed partitioning baseline, strictly validating the benefits. Moreover, the front-loaded compression in encoding substantially reduces latency in the computationally expensive prefill and decoding, making it suited to mainstream EPD disaggregated inference deployment. Code: https://quicksviewer.github.io.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}

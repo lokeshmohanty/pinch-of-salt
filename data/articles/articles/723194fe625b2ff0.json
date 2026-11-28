@@ -1,0 +1,14 @@
+{
+  "id": "723194fe625b2ff0",
+  "title": "TMAL: Topology-preserving Multi-offset Affinity Learning for Curvilinear Structure Segmentation",
+  "link": "https://arxiv.org/abs/2611.13511",
+  "description": "arXiv:2611.13511v1 Announce Type: new \nAbstract: Curvilinear structures such as retinal vessels and surface cracks need both pixel-level accuracy and structural continuity. Pixel-wise supervision does not model the connections between pixels, and topology-based losses still produce ordinary masks. Connectivity-based methods predict these connections directly, but they use binary connectivity targets over a fixed local range. Such labels give the same value to thin segments and to thick regions, and they cannot describe connections at larger offsets. To address these limitations, we propose Topology-preserving Multi-offset Affinity Learning (TMAL). TMAL uses soft affinities that emphasize thin regions near the boundary, and it predicts directional affinities at several offsets to reach further. It then combines these affinities with weights that come from the decoder features, so local continuity and wider context are used together. An auxiliary segmentation branch adds region-level supervision and keeps the overlap accuracy high. On the retinal vessel dataset DRIVE and the crack inspection dataset DeepCrack, TMAL reaches the highest Dice, IoU, and clDice scores, and it greatly reduces the connected-component error $\\Delta\\beta_0$. Code is available at https://github.com/suho-han/TMAL.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "physics.med-ph"
+  ]
+}

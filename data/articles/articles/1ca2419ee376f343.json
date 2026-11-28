@@ -1,0 +1,15 @@
+{
+  "id": "1ca2419ee376f343",
+  "title": "TSBPO: Tree-Structured Branching for Policy Optimization in Interactive Language Agents",
+  "link": "https://arxiv.org/abs/2610.41697",
+  "description": "arXiv:2610.41697v2 Announce Type: replace \nAbstract: Terminal feedback in multi-turn agent training leaves both rollout allocation and local credit underdetermined. Dynamics-Predictive Sampling (DPS) [9] provides a task-level predictive sampling reference, but interactive agents also need to choose which visited states merit further continuations. We introduce TSBPO with two method components. A lightweight, fine-grained Root/Branch budget allocator distributes factual rollouts across tasks and additional suffixes across replayable states using likelihood-fitted estimates of terminal-outcome contrast. On the resulting physical rollout trees, a tree-aware step-level credit assignment algorithm compares immediate sibling segments and assigns their local outcome contrasts to the turns they contain. Exact task/observation groups provide a complementary step term. The allocator selects what to sample; observed outcomes determine the subsequent credit. With a Qwen2.5-1.5B actor, fixed checkpoints attain 97.79% seen and 96.64% unseen stochastic success on ALFWorld, and an 81.07% per-episode success rate over six stochastic episodes for each of the 500 WebShop test goals. At the WebShop update-100 checkpoint, removing the observation-group step term yields 75.93% under the same evaluation. These results describe the evaluated training configurations on two interactive benchmarks.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

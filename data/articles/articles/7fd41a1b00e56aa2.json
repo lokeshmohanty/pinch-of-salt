@@ -1,0 +1,13 @@
+{
+  "id": "7fd41a1b00e56aa2",
+  "title": "ACUS: An Angular Calibrated Uncertainty Score for Incomplete-View CT",
+  "link": "https://arxiv.org/abs/2611.23752",
+  "description": "arXiv:2611.23752v1 Announce Type: new \nAbstract: Sparse-view and limited-arc computed tomography (CT) are commonly treated as projection completion: a network fills an unmeasured view, and the result is ranked by similarity to one ground-truth image. That score can be high even when the query angle is far from every acquired measurement, because a learned prior may invent anatomy the scan never constrained. Existing protocols therefore leave a basic question unanswered: how does predictive reliability change with distance from the acquired views? We propose the Angular Calibrated Uncertainty Score (ACUS) to answer that question. ACUS is the Winkler interval score of a nominal 90% predictive interval on held-out projections, binned by distance to the nearest acquired view. It charges interval width and adds a large miss penalty when a held-out pixel falls outside the interval, so a narrow band helps only when coverage holds. We use collapse on acquired angles as a necessary consistency check on the predictor. On chest and dental cone-beam orbits, interval width grows with the angular gap. Empirical coverage ranges from 77% to 92%, and the peak signal-to-noise ratio (PSNR) of the point estimate falls as the width rises. Nearest-neighbor, interpolation, and point completion, each given one residual scale, have zero reported far coverage and incur outside-distance penalties. ACUS exposes gap-dependent overconfidence that a point-estimate PSNR alone does not measure.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

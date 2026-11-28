@@ -1,0 +1,13 @@
+{
+  "id": "d37c9db8942118be",
+  "title": "Engine-Native Editable 3D World Reconstruction with Objects and Lighting",
+  "link": "https://arxiv.org/abs/2607.20889",
+  "description": "arXiv:2607.20889v1 Announce Type: new \nAbstract: Editable 3D scene creation requires object instances and lights that can be inspected, moved, and imported into standard engines, yet existing single-image methods largely stop at room-scale geometry, baked/global illumination, or text-driven generation. We introduce Lumera (Light-aware Unified Engine-native Reconstruction and Assembly), a benchmark and reference pipeline for engine-native, light-aware 3D scene parsing from a single image. Lumera-2K is built from 2,513 UE5 projects and provides 3.73M components, 63M object instances, 102.6K engine-native parametric lights, and 95.1K camera views. On this data, Lumera-Box and Lumera-Light adapt VLM to parse object boxes and parametric light tuples (x,y,z,r,g,b,I), which are assembled with per-object mesh reconstruction, HDR environment estimation, and a bounded agentic refinement loop. In a sanitized box benchmark against DetAny3D, SpatialLM, N3D-VLM, and WildDet3D, Lumera-Box obtains the strongest overall detection, geometry, semantic, and layout scores (merged mAP 0.1141, IoU-B 0.2472, F-score 0.2762), while WildDet3D remains stronger on anchor recall. For lights, Lumera-Light recovers almost all non-empty scenes (recall 0.998) but remains limited at individual-light localization (F1 0.209 at 0.5 m); matched lights have median position error 0.261 m, median {\\Delta}E2000 4.59, and intensity Pearson r=0.628. These results establish parametric lights as a measurable editable-scene target and expose remaining bottlenecks in relation structure, light recall/intensity, and cross-engine generalization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

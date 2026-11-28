@@ -1,0 +1,13 @@
+{
+  "id": "47d8d2c168862c29",
+  "title": "DECODE: Tackling Representation and Decision Degradation in Continual AI-Generated Image Detection",
+  "link": "https://arxiv.org/abs/2607.27882",
+  "description": "arXiv:2607.27882v1 Announce Type: new \nAbstract: As generative models continue to evolve, AI-generated image detectors must incrementally adapt to emerging generative domains while preserving knowledge acquired from previous ones. This continual learning setting is particularly challenging because forensic traces are often subtle and generator-specific, making detectors highly vulnerable to catastrophic forgetting. Existing methods primarily address this problem by stabilizing feature representations, implicitly treating forgetting as a representation-level issue. In this paper, we show that this perspective is incomplete. We demonstrate that even when feature representations remain discriminative, the decision boundary can progressively drift as the classification head is continually optimized on new domains. These two effects jointly give rise to a compound failure mode, termed Dual Degradation. To overcome this challenge, we propose DECODE, a decoupled continual detection framework that jointly mitigates representation- and decision-level forgetting. Specifically, we introduce Subspace Diversity Regularization (SDR) to preserve diverse forensic representations and Closed-Form Decision Alignment (CDA) to recalibrate the shared classification head after each adapter merge without manual hyperparameter tuning. Extensive experiments on 19 generative domains show that DECODE achieves an average accuracy of 99.36% with only 0.39% forgetting, while further generalizing to 11 unseen generators with 95.36% accuracy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

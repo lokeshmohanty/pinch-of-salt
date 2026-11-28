@@ -1,0 +1,13 @@
+{
+  "id": "106770599ede2904",
+  "title": "Where Does Generative Difficulty Reside? An Empirical Study of Target Representations",
+  "link": "https://arxiv.org/abs/2608.00626",
+  "description": "arXiv:2608.00626v1 Announce Type: new \nAbstract: The target representation defines the distribution an image generator must learn, yet it is often treated as an interchangeable interface. This assumption is particularly questionable for continuous masked generators, which combine contextual inference from visible tokens with conditional modeling of each missing token. We study raw pixels, SD-VAE latents and DINOv2 as well as MAE representation-autoencoder features within a unified masked autoregressive rectified-flow model. Under a shared ImageNet training budget, these spaces exhibit distinct optimization and inference regimes. DINOv2 converges fastest in both iterations and computation but benefits strongly from a wider local denoiser and direct context fusion. Pixels optimize substantially more slowly and require a different prediction, masking, and guidance configuration. MAE reconstructs images more faithfully and exhibits clear semantic clustering, yet produces generations substantially worse than DINOv2. The representations also respond differently to classifier-free guidance and occupy distinct precision-recall trade-offs. Together, our results show that compression, reconstruction fidelity, token dimensionality, and visible semantic clustering do not individually predict generative behavior. Instead, target representations redistribute difficulty across contextual modeling, per-token denoising, and inference-time distributional control.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

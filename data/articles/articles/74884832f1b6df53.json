@@ -1,0 +1,14 @@
+{
+  "id": "74884832f1b6df53",
+  "title": "Slots Are Not Speakers: Training-Free Speaker Linking for Frozen Streaming Diarizers",
+  "link": "https://arxiv.org/abs/2610.28053",
+  "description": "arXiv:2610.28053v1 Announce Type: cross \nAbstract: This paper presents a causal, training-free linker that allows a frozen streaming diarizer to track more speakers than it has output slots. Streaming end-to-end diarizers such as Streaming Sortformer emit a fixed number N of concurrent speaker slots. Above N speakers, they keep detecting speech but reuse slots across people, because N bounds how many speakers the model can express at once, not how many it will meet. The linker uses only the host's slot posteriors and the audio. It keeps the frames where one slot is active, splits each slot where the speaker changes, embeds each piece with an off-the-shelf speaker encoder, and matches it against a bank of speakers seen so far. It only relabels, so missed speech and false alarm are identical to the host's and every gain is a reduction in speaker confusion. On 1418 sessions from eight corpora, it reduces the 4-slot host's DER above its cap from 36.8% to 22.6%, and barely moves it below the cap. The same constants transfer to the host's 8-slot successor and to two streaming EEND hosts from a different model family. On courtroom hearings with up to 23 speakers it reduces cpWER from 82.7% to 24.4%.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.AI"
+  ]
+}

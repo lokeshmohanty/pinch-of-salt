@@ -1,0 +1,13 @@
+{
+  "id": "bedcae75d3afafc9",
+  "title": "SCoPE: Sightline-Coordinate Positional Encoding for Video Diffusion Transformers",
+  "link": "https://arxiv.org/abs/2606.27345",
+  "description": "arXiv:2606.27345v3 Announce Type: replace \nAbstract: Video diffusion transformers address their tokens by position on the pixel-time grid: an address in the tensor, not in the world. The address we would want, the world point a token depicts, lies on a surface not yet generated, while its camera ray is fixed once the user specifies a trajectory. SCoPE therefore treats the ray as a second positional coordinate, and camera control becomes a property of the coordinate system, not an added module. The ray is added to the pretrained attention's queries and keys, and the score gains a term that reads the two rays alone. Its canonical form, the reciprocal product of line geometry, measures how nearly two lines of sight meet. Normalize-Gate-Inject makes a single encoding trainable across metric and up-to-scale pose sources. The retrofit keeps RoPE bit-exact, starts from the unchanged pretrained DiT, and adds under 0.1/% new parameters. On Wan2.2 at 5B and 14B under matched data and budget, SCoPE improves every camera-controllability and fidelity metric, leads all closed-loop revisit metrics, and shows widening margins with model size. At 14B, rotation error falls 29/% and FVD 43/% below the strongest baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-13T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

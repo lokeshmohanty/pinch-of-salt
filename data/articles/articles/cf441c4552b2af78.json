@@ -1,0 +1,14 @@
+{
+  "id": "cf441c4552b2af78",
+  "title": "MedTokenBudget: Lesion-Preserving Token Routing for Dermoscopic Image Classification",
+  "link": "https://arxiv.org/abs/2609.30613",
+  "description": "arXiv:2609.30613v1 Announce Type: cross \nAbstract: Dermoscopy classifiers built on Vision Transformers process all image patches uniformly, although diagnostic evidence is concentrated in the lesion region. Existing token pruning methods reduce tokens using generic saliency or similarity signals, but rarely ask whether the retained subset still contains the lesion. This paper introduces MedTokenBudget, a supervised post-backbone token routing framework that learns to construct compact lesion-enriched representations when auxiliary lesion masks are available. Its Lesion-Aware Token Scoring (LATS) module fuses attention entropy, feature norm, and local feature contrast through a learned scorer, then routes the top-$K$ patches under a target budget. LATS is trained with budget curriculum learning, diversity regularization, attention distillation, and lesion-mask supervision. The trained router is evaluated with a lesion retention rate that directly measures how much ground-truth lesion evidence survives the token budget. On ISIC 2019, mask-supervised LATS consistently outperforms Random and ToMe at headline budgets while retaining substantially more lesion patches. Code is provided for reproducibility, and complete tabulated results are included in the supplementary material.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

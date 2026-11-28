@@ -1,0 +1,14 @@
+{
+  "id": "0e67d0da39142744",
+  "title": "SpanCalib-VLM: Calibrated Hallucination Span Detection in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2608.29974",
+  "description": "arXiv:2608.29974v2 Announce Type: replace \nAbstract: Detecting hallucinations in Large Vision-Language Models (LVLMs) requires both accurate span localization and well-calibrated confidence scores. Fine-tuned generative VLMs excel at identifying hallucinated text spans but suffer from overconfidence and high inference latency. Discriminative sequence taggers offer deterministic speed and superior calibration but exhibit conservative span recall. We present SpanCalib-VLM, a hybrid dual-system for the SHROOM-Visions Shared Task that combines a multimodal sequence tagger, consisting of XLM-RoBERTa-Large fused with a SigLIP vision encoder via cross-attention, with our fine-tuned generative VLM (Qwen3.5-4B-SHROOM-SFT). Through a Union-Calibrated Fusion strategy, candidate spans from the generative model are re-scored with calibrated probabilities from the sequence tagger. On the SHROOM-Visions English validation split, our ensemble achieves a Pearson calibration correlation of 0.41 and an overall IoU of 0.39 (with a clean-response IoU of 0.91 and overall detection accuracy of 70.7%). On the official blind test set, SpanCalib-VLM achieves a Pearson correlation of 0.32 and an IoU of 0.25 on English, substantially outperforming the shared task baseline (0.15 on both metrics) and demonstrating consistent gains across all four languages. We make our model weights and code publicly available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}

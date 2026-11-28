@@ -1,0 +1,13 @@
+{
+  "id": "59df452fc09039b2",
+  "title": "Evaluating Risks in Weak-to-Strong Alignment: A Bias-Variance Perspective",
+  "link": "https://arxiv.org/abs/2604.25077",
+  "description": "arXiv:2604.25077v2 Announce Type: replace \nAbstract: Weak-to-strong alignment offers a promising route to scalable supervision, but it can fail when a strong model becomes confidently wrong on examples that lie in the weak model's blind spots. Understanding such failures requires going beyond aggregate accuracy, since weak-to-strong errors depend not only on whether the strong model disagrees with the weak model, but also on how confidence and uncertainty are distributed across examples. In this work, we analyze weak-to-strong alignment through a bias--variance--covariance lens that connects misfit theory to practical post-training pipelines. We derive a misfit-based upper bound on weak-to-strong population risk and study its empirical components using continuous confidence scores. We evaluate four weak-to-strong pipelines spanning supervised fine-tuning (SFT), reinforcement learning from human feedback (RLHF), and reinforcement learning from AI feedback (RLAIF) on the PKU-SafeRLHF and HH-RLHF datasets. Using a blind-spot deception metric that isolates cases where the strong model is confidently wrong while the weak model is uncertain, we find that strong-model variance is the quantity most strongly associated with blind-spot deception among the BVC quantities we study. Covariance provides additional but weaker information, indicating that weak--strong dependence matters, but does not by itself explain the observed failures. These results suggest that strong-model variance can serve as an early-warning signal for weak-to-strong deception, while blind-spot evaluation helps distinguish whether failures are inherited from weak supervision or arise in regions of weak-model uncertainty.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

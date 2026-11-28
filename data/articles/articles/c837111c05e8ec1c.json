@@ -1,0 +1,14 @@
+{
+  "id": "c837111c05e8ec1c",
+  "title": "Scalable Heterogeneous Graph Foundation Models for Data-Driven Optimal Power Flow in Smart Grids",
+  "link": "https://arxiv.org/abs/2605.23194",
+  "description": "arXiv:2605.23194v2 Announce Type: replace-cross \nAbstract: Fast and reliable optimal power flow (OPF) approximation is important for power system operation, yet heterogeneous OPF graph models are often evaluated either with architecture-specific implementations or on limited training corpora. This paper presents a large-scale heterogeneous graph-learning workflow, built on HydraGNN, for data-driven OPF surrogate modeling and graph foundation-model (GFM) development. The workflow preserves buses, generators, loads, shunts, alternating-current (AC) lines, transformers, and device-to-bus relations and provides a common implementation for distributed preprocessing, multi-graphics-processing-unit (GPU) training, hyperparameter optimization (HPO), and downstream adaptation. Using approximately three million heterogeneous graphs from ten Power Grid Library for Benchmarking AC Optimal Power Flow Algorithms (PGLib-OPF) cases spanning 14 to 13,659 buses, we compare six heterogeneous graph neural network (GNN) families under a common HPO campaign on Frontier, resulting in two compact HeteroSAGE and HeteroHEAT models (~1.6-1.7 million parameters) that achieve the lowest observed validation MSE. Strong and weak scaling using up to 1,024 Frontier nodes show that 256 nodes (corresponding to 1,024 AMD MI250X GPUs) provides the best time-to-solution balance for the measured workload. Two downstream tasks evaluate task adaptation on the IEEE 118-bus case: a classification task to distinguish nominal operating conditions from artificially generated extreme-overload conditions and N-1 single-component-outage regression to predict bus voltage magnitude and phase angle. Partial fine-tuning provides the strongest balance between predictive performance and computational requirements.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

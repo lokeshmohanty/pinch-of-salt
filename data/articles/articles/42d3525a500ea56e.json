@@ -1,0 +1,14 @@
+{
+  "id": "42d3525a500ea56e",
+  "title": "When Connectivity Misleads: Guiding Agentic Search with Contrastive Evidence Paths",
+  "link": "https://arxiv.org/abs/2610.36134",
+  "description": "arXiv:2610.36134v1 Announce Type: cross \nAbstract: Search agents can use cross-document graphs to discover sources through multi-hop connections and choose subsequent actions based on candidate rankings and relationships within a limited observation window. However, documents may rank highly because their numerous connections make them easier to reach, without necessarily providing more valuable evidence. Graph diffusion methods such as Personalized PageRank (PPR) aggregate propagation contributions from multiple sources, allowing highly connected distractor nodes to crowd the observation window. Flat node scores also obscure cross-document evidence trails, limiting continued exploration. We propose Contrastive Evidence Paths (CEP), which scores candidates by their strongest individual paths on a query-conditioned document graph and calibrates these scores against the same graph's background visitation distribution to mitigate structural bias. CEP ranks candidates by the calibrated scores and retains the corresponding source paths. Building on CEP, we develop Structured Corpus Interaction (SCI), which organizes candidates and their connecting paths into a structured Map, enabling agents to verify source documents and pursue missing information through expansion from anchor documents. Experiments on BrowseComp-Plus and TREC-COVID show that SCI achieves state-of-the-art answer accuracy and nDCG@10 with the lowest generation cost. Compared with the strongest baselines by task performance, maximum reductions in tool calls and total generation costs exceed 50% and 40%, respectively. Further analysis confirms that SCI with CEP suppresses ranking inflation induced by structural connections and improves gold recall and exploration efficiency.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.AI"
+  ]
+}

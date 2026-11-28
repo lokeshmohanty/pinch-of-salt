@@ -1,0 +1,13 @@
+{
+  "id": "0e44277623f7cfc5",
+  "title": "One Step Is Optimal: Unconditional Rectified Flows as Noise2Noise Denoisers for Low-Dose CT",
+  "link": "https://arxiv.org/abs/2609.31670",
+  "description": "arXiv:2609.31670v2 Announce Type: replace \nAbstract: We study rectified flows for denoising without clean training targets. For an unconditional rectified flow trained on Noise2Noise pairs, the optimal velocity field yields the minimum mean squared error (MMSE) denoiser in one step. In a jointly Gaussian model, we show that integrating the flow before applying its denoising readout increases error with integration time. The flow transports between noisy distributions, so its endpoint is not a clean-image estimate. Experiments on low-dose CT and Gaussian-corrupted natural images follow this pattern: one-step flow performs similarly to direct regression on the same pairs, whereas additional Euler steps reduce PSNR. A direct regressor using spatially separated, similar patches gives our best label-free CT result, a $1.99$\\,dB gain over the noisy input. We report these results in CTDenoiser, a benchmark covering five architectures, supervised and self-supervised training, and two per-image methods. Supervised CNNs gain about $4$\\,dB, while label-free performance depends strongly on how training pairs account for correlated CT noise. A channelized Hotelling observer also shows that fidelity gains need not improve lesion detectability: detectability falls at $160$\\,HU despite higher PSNR and SSIM, while changes at $40$--$80$\\,HU are small. Code, model definitions, and data-loading utilities will be released publicly; the repository link is withheld for anonymous review.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

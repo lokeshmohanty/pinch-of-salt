@@ -1,0 +1,13 @@
+{
+  "id": "13cd017a78a53ca0",
+  "title": "WISE: A Lightweight, Weakly-Supervised Model for Onboard Fire Smoke Detection and Localization",
+  "link": "https://arxiv.org/abs/2609.18227",
+  "description": "arXiv:2609.18227v1 Announce Type: new \nAbstract: Wildfire smoke detection from satellite imagery is critical for early warning and rapid response. For onboard satellite deployment, detection systems must operate under strict memory and latency constraints while providing spatially informative outputs for downstream decision-making. Existing tile-level classification methods are computationally efficient but lack spatial localization, whereas pixel-level segmentation approaches provide detailed masks yet are typically too computationally demanding for real-time onboard execution. To address this gap, we propose WISE (Weakly-supervised Inference-efficient Smoke Extraction), a deployment-oriented framework for onboard fire smoke detection and localization. WISE leverages only tile-level annotations through a teacher-student distillation strategy, where an offline teacher provides soft spatial supervision to a lightweight WISE-Student optimized for efficient onboard inference. The student jointly predicts tile-level smoke presence and smoke probability maps within a single forward pass, enabling spatially informative detection under strict computational constraints. WISE was evaluated through in-orbit execution aboard the ISS-mounted IMAGIN-e payload. Three model variants achieve average inference times of 0.10 s, 0.14 s, and 0.26 s per tile, indicating near-real-time per-tile inference within onboard resource limits. Ground-based experiments on Landsat 5 and Landsat 8 imagery further indicate effective detection and spatially informative localization. The best-performing variant achieves a mean tile-level F1 score of 0.964 and a mean pixel-level F1 score of 0.750 across 10 runs, while containing only 0.12M parameters and requiring approximately 3 GFLOPs. Together, these results indicate that WISE is a practical candidate for low-latency wildfire smoke monitoring from space under onboard resource constraints.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

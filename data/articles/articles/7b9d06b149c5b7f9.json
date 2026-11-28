@@ -1,0 +1,13 @@
+{
+  "id": "7b9d06b149c5b7f9",
+  "title": "Linguistically-Aligned and Visually-Grounded Preference Optimization for Clinically-Augmented Medical Report Generation",
+  "link": "https://arxiv.org/abs/2608.08494",
+  "description": "arXiv:2608.08494v2 Announce Type: replace \nAbstract: Despite significant advances in Medical Report Generation (MRG), the reliability remains constrained by the prevalence of factual errors. While Direct Preference Optimization (DPO) has emerged as a promising post-training paradigm to enhance the performance of Supervised Fine-Tuned (SFT) MRG models, existing DPO-based MRG methods typically adopt a naive preference construction that directly pairs model-generated reports with ground truth reports. This strategy inadvertently entangles critical clinical findings with clinically irrelevant linguistic characteristics, and fundamentally lacks explicit vision-language alignment. To address these challenges, we propose DPO-Clin, a novel post-training framework that focuses preference optimization on clinical findings and cross-modal alignment. First, we introduce the Entity-level Clinical Diagnostic (ECD) module to perform a precise entity-level factual diagnosis. ECD guides the generation of linguistically-aligned report preference pairs, isolating clinical discrepancies from linguistic variations. Second, to achieve fine-grained cross-modal alignment, we develop M2DPO, a retrieval-augmented multi-modal DPO variant that enforces textual preference inversion triggered by visual context switches. Third, we locate correct yet highly uncertain predicted entities and apply counterfactual modifications to construct targeted preference data for latent risk mitigation, thereby further enhancing the model reliability. Extensive experiments on two public chest X-ray datasets (MIMIC-CXR and IU X-Ray) and an in-house endoscopy dataset demonstrate that DPO-Clin significantly improves the SFT baselines on clinical-aware metrics. Furthermore, it achieves superior performance over existing DPO-based MRG methods, exhibiting robust generalizability across distinct baseline architectures and diverse medical imaging modalities.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "f4c9accbbdb40bcf",
+  "title": "CuraEval: Evaluating Demonstration Curation on Mixed-Skill Robot Data",
+  "link": "https://arxiv.org/abs/2610.38221",
+  "description": "arXiv:2610.38221v1 Announce Type: cross \nAbstract: Robot imitation learning uses demonstrations from operators of varying skill, but selecting training data remains challenging. Existing methods score demonstrations using smoothness, diversity, or estimated influence on policy performance, but differences in selection and evaluation protocols make it difficult to determine whether they outperform simple baselines. We introduce \\textbf{CuraEval}, a framework combining mathematical analysis of demonstration scores with controlled comparisons against fixed size-matched random subsets and full-data training on mixed-skill robomimic data using Diffusion Policy and BC-RNN. We show that the evaluated PSD score depends only on episode length and squared position magnitudes, and produces nearly the same ranking as episode length on \\textit{square} ($\\rho=0.999$). With Diffusion Policy, selecting the shortest 50\\% of demonstrations improves \\textit{square} success from 70.7\\% under random selection to 76.5\\%. Compared with random selection, our adapted geometric-entropy LOO selector reduces success at 25\\% retention from 94.7\\% to 74.0\\% on \\textit{can} and achieves 41.7\\% on \\textit{square}, below the mean success rates of all three independently sampled random subsets (59.8--62.5\\%). On the same 3 \\textit{square} Diffusion Policy training seeds, length-based selection at 75\\% retention improves success over full-data training from 76.7\\% to 86.7\\% under the original protocol, but lowers it from 80.5\\% to 79.5\\% after checkpoint reporting, rollout count, and evaluation seed change jointly. No evaluated curated condition significantly outperforms full-data training after Holm correction, although confidence intervals still permit useful gains. Code is available at https://github.com/jiuyixu25/CuraEval.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI"
+  ]
+}

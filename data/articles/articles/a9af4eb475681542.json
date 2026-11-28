@@ -1,0 +1,15 @@
+{
+  "id": "a9af4eb475681542",
+  "title": "A Temporal Algebraic Framework for Data Stream Evaluation Under Delayed Labels and Distribution Shifts",
+  "link": "https://arxiv.org/abs/2611.21914",
+  "description": "arXiv:2611.21914v1 Announce Type: cross \nAbstract: In data streams, labels often arrive late or only for some instances, class prevalence drifts, and rare classes vanish from short windows. Standard evaluation then confuses a degraded decision boundary with a change in prevalence, and is biased when labels are delayed or selected by the model. We extend an algebraic framework that obtains pooled (micro) and per-class (macro) measures from one confusion matrix to streams, weighting the counts in time by exponential fading or a sliding window; the update costs O(m^2) per step, whatever the stream length, and each pooled measure stays a weighted combination of the per-class ones. Delayed and selective feedback enter as an observation mask: until its label arrives, an instance is counted with the model's calibrated class probabilities, and the bias of this interim estimate is driven by their calibration error. Audited conventions report no value for a class without verified instances. We separate prior shift from concept drift by monitoring prior-free coordinates (recall and specificity) and attribute a change in a measure to the two sources with a first-order Jacobian decomposition. On synthetic streams and four real datasets, a detector on these coordinates with a memory per class raises no excess false alarms under label shift, unlike the Jacobian alarm and error-rate detectors. The correction for delayed labels recovers recall in some real settings and is only partial for precision, specificity and F1. Twenty-five statements are checked in Lean 4, and the code is in the aggmetrics package.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.DB"
+  ]
+}

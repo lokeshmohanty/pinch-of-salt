@@ -1,0 +1,14 @@
+{
+  "id": "e7d290e35f16c4a7",
+  "title": "Kronecker Product Attention: Memory-Efficient KV Compression via Structured Factorization",
+  "link": "https://arxiv.org/abs/2610.12657",
+  "description": "arXiv:2610.12657v1 Announce Type: cross \nAbstract: Efficient autoregressive generation is increasingly limited by the memory footprint of the key-value (KV) cache, which grows linearly with sequence length, batch size, and model depth. Existing approaches such as Multi-Query Attention (MQA), Grouped-Query Attention (GQA), Multi-Head Latent Attention (MLA), and Tensor Product Attention (TPA) reduce this cost through different trade-offs, but often sacrifice expressivity, require additional positional-encoding machinery, or impose restrictive low-rank structure. We propose Kronecker Product Attention (KPA), which represents key and value activations as sums of Kronecker products of compact, token-dependent matrix factors. KPA strictly generalizes TPA: rank-one vector-outer-product factorization arises as a degenerate Kronecker split, while non-degenerate matrix factors can represent richer block-structured patterns. We further show that a structured rotary embedding operator matched to the Kronecker representation preserves the relative-position property of RoPE while rotating only the compact factors, removing the need for a decoupled RoPE branch as in MLA. Empirically, KPA matches or exceeds TPA, MHA, MQA, GQA, and MLA across four model scales and nine downstream benchmarks under identical training conditions, while achieving up to 10x KV cache compression. The Kronecker head split is a tuneable hyperparameter that allows practitioners to navigate the compression-accuracy trade-off at design time without architectural changes.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

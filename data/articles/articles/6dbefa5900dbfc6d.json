@@ -1,0 +1,14 @@
+{
+  "id": "6dbefa5900dbfc6d",
+  "title": "Discarded or Unreachable? Diagnosing and Repairing Spatial Relation Failure in Vision--Language Similarity",
+  "link": "https://arxiv.org/abs/2611.05565",
+  "description": "arXiv:2611.05565v1 Announce Type: cross \nAbstract: Contrastive vision-language models score left/right relations near chance, but the symptom has two causes that call for opposite repairs: the relation may survive in the pooled embedding yet be unreachable by native image-text similarity, or pooling may discard it while the dense features retain it. On clean two object photographs, across ten encoders, the lateral polarity is linearly decodable from the flip odd component of the pooled vector at 0.77-0.99, yet a search over a million captions leaves nine of the ten at chance under native scoring: an access failure. On controlled C4 orbits, where the relation is the only thing that varies, pooling keeps the arrangement axis at 0.998-1.000 and loses its polarity, which the patch grid retains: a pooling failure. Both sit downstream of the dense features, so one readout covers both. Our zero parameter, query conditioned spatial moment recomputes the geometry from the patch grid and stores it as a vector beside the native embedding. On a 118,287 image index it raises left/right pairwise accuracy against reversed geometry negatives from 0.51-0.53 to 0.81-0.96 and conditional R@1 among 21 category matched candidates from 0.05 to 0.37-0.75, at under a millisecond per batched query, while reproducing the native ranking exactly for queries that name no relation.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

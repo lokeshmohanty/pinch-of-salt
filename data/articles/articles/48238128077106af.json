@@ -1,0 +1,19 @@
+{
+  "id": "48238128077106af",
+  "title": "Anytime-Valid Runtime Monitoring of Learned Barrier Certificates",
+  "link": "https://arxiv.org/abs/2610.27726",
+  "description": "arXiv:2610.27726v1 Announce Type: cross \nAbstract: Learned barrier certificates provide a principled mechanism for establishing safety of stochastic systems, but their validity may deteriorate during deployment when the underlying dynamics differ from those used for training. We propose an anytime-valid runtime monitor that audits a learned barrier certificate using observed closed-loop trajectories. The monitor is intended to detect loss of statistical support for the deployed barrier condition; it does not by itself guarantee detection before unsafe entry or safety of a subsequent intervention. Specifically, the conditional barrier-drift condition is formulated as an episode-wise sequential hypothesis test, and observed barrier increments are transformed into a nonnegative test supermartingale, yielding finite-sample false-alarm control under arbitrary stopping times. Inspired by finite-horizon safety verification, we further introduce a deterministic temporal shaping of the monitoring boundary, making the monitor more conservative early in a prescribed deployment horizon while preserving anytime-validity. The monitor is designed to detect statistical evidence that the safety certificate is no longer consistent with the observed dynamics, rather than to predict unsafe entry. To assess the monitor empirically, we evaluate empirical alarm behavior under valid and invalid certificates. Code and data are available at https://github.com/FormalCert-AI/runtime-barrier-monitor.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.SY",
+    "cs.AI",
+    "cs.LG",
+    "cs.SY",
+    "math.OC",
+    "math.ST",
+    "stat.TH"
+  ]
+}

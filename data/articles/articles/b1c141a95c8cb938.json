@@ -1,0 +1,13 @@
+{
+  "id": "b1c141a95c8cb938",
+  "title": "Depth-to-RGB: Repurposing a Frozen Depth Estimator for Geometry-Guided Compositing",
+  "link": "https://arxiv.org/abs/2610.09125",
+  "description": "arXiv:2610.09125v1 Announce Type: new \nAbstract: Reference-based object compositing inserts or replaces an object using a background image, a reference image, and a 2D compositing mask. These inputs guide appearance and placement but leave the completed scene's geometry implicit, which can distort object structure or alter the surroundings. Our Depth-to-RGB (D2R) framework predicts composite depth for a scene not yet observed in the RGB inputs. It learns reference-conditioned corrections to a frozen depth estimator using encoder features of paired completed scenes as targets. The unchanged decoder maps the corrected representation to the intended scene's depth, which a separately trained renderer holds fixed during RGB synthesis. Under matched architecture and training, encoder-feature supervision reduces OOD Stage-1 AbsRel by 31.4% relative to decoded-depth supervision. We also introduce AnyInsertion++ with paired in-distribution and category-disjoint splits to evaluate generalization beyond compositing training categories. The complete D2R system leads 12 open-source and 3 closed-source baselines in estimator-derived geometry and photometric quality on both paired splits. On category-disjoint data, D2R reduces AbsRel by 43.7% and improves PSNR by 2.4 dB over the matched RGB baseline. Across three unpaired benchmarks, D2R leads both identity metrics and reduces mean CLIP reference cosine distance by 55% relative to the strongest baseline. Project page: https://shjo-april.github.io/Depth2RGB/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

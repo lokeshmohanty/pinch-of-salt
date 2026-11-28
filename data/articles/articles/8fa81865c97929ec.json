@@ -1,0 +1,14 @@
+{
+  "id": "8fa81865c97929ec",
+  "title": "NeuroRefine: Six-Head MLP Content Conditioning and Qwen Refinement for Faithful fMRI Decoding",
+  "link": "https://arxiv.org/abs/2611.33309",
+  "description": "arXiv:2611.33309v1 Announce Type: cross \nAbstract: Reconstructing seen images from fMRI has advanced through diffusion models, but the current state-of-the-art Brain-IT pipeline still has a lossy bottleneck: its low-level branch outlines the figure well, yet the diffusion model that follows frequently mispaints colour, object identity and layout. We move one step backward and condition the refiner directly on the fMRI-derived low-level image, using six one-hidden-layer MLP heads (scene, main-subject category, count, colour, object, layout) to predict the content prompt that guides a frozen Qwen-Image-Edit-2511 model. On the 930 shared NSD concepts, scored with Brain-IT's own metric code on the same ground truth, NeuroRefine reaches a CLIP image cosine of 0.755 against 0.735 for Brain-IT enhanced and produces markedly sharper images, while the saturated 2-way identification is unchanged. The low-level image supplies an explicit spatial prior rather than a lossless layout: refinement trades some layout agreement (0.541 against 0.638) for semantic fidelity and texture. We then show that the standard panel is multi-factor: a high PixCorr can coexist with completely different content, so we read the low-level and semantic factors separately and quantify where they disagree. Finally, we trace the cortical sources of the prompt heads across subjects and report their causal lesion profile and the fMRI noise ceiling. Direction errors are left to future work.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

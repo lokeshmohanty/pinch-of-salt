@@ -1,0 +1,15 @@
+{
+  "id": "6c0671fff4351286",
+  "title": "When Iterative RAG Beats Ideal Evidence: A Diagnostic Study in Scientific Multi-hop Question Answering",
+  "link": "https://arxiv.org/abs/2601.19827",
+  "description": "arXiv:2601.19827v5 Announce Type: replace-cross \nAbstract: Retrieval-Augmented Generation (RAG) extends large language models (LLMs) beyond parametric knowledge, yet it is unclear when iterative retrieval-reasoning loops meaningfully outperform static RAG, particularly in scientific domains requiring multi-hop reasoning over sparse, heterogeneous evidence. We provide the first controlled, mechanism-level diagnostic evaluation of whether synchronized iterative retrieval and reasoning can surpass even an idealized static upper bound (Gold Context) RAG. We benchmark eleven state-of-the-art LLMs under three regimes: (i) No Context, measuring reliance on parametric memory; (ii) Gold Context, where all oracle evidence is supplied at once; and (iii) Iterative RAG, a training-free controller that alternates retrieval, hypothesis refinement, and evidence-aware stopping. Using the chemistry-focused ChemKGMultiHopQA dataset, we isolate questions requiring genuine retrieval and analyze retrieval coverage gaps, anchor carry drop, query quality, composition fidelity, and control calibration. Iterative RAG consistently outperforms Gold Context, with gains up to 25.6 percentage points, especially for non-reasoning fine-tuned models. Staged retrieval reduces late-hop failures, mitigates context overload, and enables dynamic correction of early hypothesis drift, but failure modes remain, including incomplete hop coverage, distractor latch trajectories, early stopping miscalibration, and high composition failure rates even with perfect retrieval. Overall, the process of staged retrieval is often more influential than the mere presence of ideal evidence. We provide practical guidance for deploying and diagnosing RAG in specialized scientific settings. Code and evaluation results are available at https://github.com/Matroid1998/Iterative-rag",
+  "source_name": "arXiv AI",
+  "published": "2026-08-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.IR"
+  ]
+}

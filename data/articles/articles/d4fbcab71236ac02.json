@@ -1,0 +1,14 @@
+{
+  "id": "d4fbcab71236ac02",
+  "title": "PyDoseRT Proton: A GPU Pencil-Beam Engine with a Convolutional Residual-Correction Network for Fast Proton Dose Calculation",
+  "link": "https://arxiv.org/abs/2609.01018",
+  "description": "arXiv:2609.01018v1 Announce Type: cross \nAbstract: Architecture category. Hybrid method: a physics-based analytical pencil-beam (PB) dose engine followed by a 3-D convolutional residual-correction network (RepVGG-U-Net). We addressed the DoseRAD2026 proton dose-prediction task with PyDoseRT Proton, a GPU-accelerated engine implemented in PyTorch and augmented by a learned residual toward Monte Carlo (MC) accuracy. A double-Gaussian PB kernel was calibrated to GATE/Geant4 integrated depth doses in water in two stages: a classical per-energy curve fit, then a gradient-based fit of the full 3-D dose through the PyTorch physics engine as it retains a differentiable execution path for gradient-based optimization of dose-dependent objectives. The engine computes each beamlet on a beam's-eye-view (BEV) lattice with variance-preserving Gaussian splitting, an analytic nuclear halo, and a Fermi-Eyges heterogeneity term, then rotates the result into the patient frame. Additionally, a compact residual U-Net predicts an additive correction in BEV space. It is conditioned on voxelwise material-label embeddings, a discrete energy embedding and spot size. The same model was used for all anatomical sites (thoracic and abdominal). It was trained with a patient-space L1 objective emphasizing the scored high-dose region and multi-scale BEV deep supervision. The submitted CT configuration obtained preliminary-test beamlet MAE 0.0066, image-z IDD distance 0.0025, plan MAE 0.0049, 98.30\\% gamma pass rate (1\\%/1 mm), and DVH error 0.460.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.med-ph",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "d9351907bc3a9ee8",
+  "title": "CRF Loss is How Networks Should Learn Boundaries in Weakly Supervised Segmentation",
+  "link": "https://arxiv.org/abs/2609.34183",
+  "description": "arXiv:2609.34183v3 Announce Type: replace \nAbstract: Weakly Supervised Semantic Segmentation (WSSS) learns pixel-level predictions from image-level tags. Recent work focuses on improving coarse CAMs extracted from large vision-language models (commonly CLIP), but does little to improve their accuracy along segment boundaries. That job is instead delegated to a post-processing method like DenseCRF. However, because DenseCRF relies on low-level colour cues, it can flip correct labels to incorrect ones when neighbouring pixels share similar colours. SAM has recently been adopted as a natural alternative, yet it simply takes on DenseCRF's role as an intermediate \"refinement\" step that outputs one-hot pseudo-labels in prior work. By discarding the valuable uncertainty in CAMs, these one-hot pseudo-labels turn borderline errors into confidently wrong targets. Our key insight is that CAMs should supervise training alongside SAM boundaries, each through its own loss, rather than being fused together into a single hard target. Inspired by CRF potentials, we propose a framework that disentangles soft pseudo-labels as unary supervision and binary edge maps as pairwise supervision. We realize our framework in a single-stage model, DS-CRF, using CAMs from dino.txt and boundaries from SAM. DS-CRF sets a new state-of-the-art of 56.5% mIoU on MS COCO among single-stage methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

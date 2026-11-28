@@ -1,0 +1,13 @@
+{
+  "id": "025406e0e552b0b6",
+  "title": "PatchAdaNet: Unsupervised class incremental learning using local patches and global adapters",
+  "link": "https://arxiv.org/abs/2611.24137",
+  "description": "arXiv:2611.24137v1 Announce Type: new \nAbstract: Biological learning systems acquire knowledge incrementally through broad, reusable representations established early and kept largely stable, while integrating new experience with minimal interference with previously learned knowledge. Replay-based methods approximate this by storing samples or features from previous tasks and mixing them into the current task. However, memory buffers grow with the number of tasks and may retain task-specific noise that reduces generalization. To address these limitations, we propose PatchAdaNet (Patch Adapter Network), an unsupervised class-incremental learning method for image classification that continually updates feature representations using autoencoders. Since images share structural features such as edges, corners, and shapes, we first divide each image into patches and train independent autoencoders on external data to reconstruct each patch. The layers of all patch encoders are aggregated into global frozen layers that generalize across tasks and remain fixed throughout learning. Learnable adapters then build global image representations from these features to reconstruct the entire image. To prevent feature drift without storing data, we introduce the Global Feature Centroid (GFC), a fixed-size running average of adapter outputs updated after each task to penalizes representation drift. Elastic Weight Consolidation (EWC) is applied to the learnable layers to preserve previously learned features by constraining important weights. Finally, a linear classifier is trained on the frozen latent representation and GFC for class-incremental evaluation. We evaluate PatchAdaNet in both CNN and Vision Transformer settings on CIFAR-10, CIFAR-100, miniImageNet and 5-Datasets, providing a comparative study of the two architectures under identical class-incremental settings. Code is available.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

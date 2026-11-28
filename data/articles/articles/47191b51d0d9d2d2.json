@@ -1,0 +1,16 @@
+{
+  "id": "47191b51d0d9d2d2",
+  "title": "Backdoor in the Loop: Compromising Agentic Search via Malicious Retrievers",
+  "link": "https://arxiv.org/abs/2609.37468",
+  "description": "arXiv:2609.37468v1 Announce Type: cross \nAbstract: Agentic retrieval-augmented generation (RAG) interleaves reasoning with repeated retrieval, giving the retriever influence over both the evidence an agent observes and its subsequent search decisions. We study retriever backdoors that exploit this feedback loop and repurpose weak backdoor purification to conceal their presence. An attacker supplies a compromised retriever checkpoint while leaving the search agent and deployment corpus unchanged. Without corpus write access, the attacker can still suppress useful evidence, persistently retrieve a selected existing document, or steer the agent toward prolonged search, inflating retrieval, context, and latency cost. To conceal these behaviors from detection, we propose leveraging a controlled inject-and-remove cycle: deliberately inject a weaker backdoor and then unlearn it. This process weakens detector-visible signatures and fools the backdoor detectors with an illusion of purification while preserving the malicious retrieval behavior. These findings expose a systematic vulnerability in RAG systems in which a weak defense becomes an attacker's concealment tool for a backdoored retriever, even when the underlying corpus remains trustworthy.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.IR",
+    "cs.LG"
+  ]
+}

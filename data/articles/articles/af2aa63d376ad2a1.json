@@ -1,0 +1,13 @@
+{
+  "id": "af2aa63d376ad2a1",
+  "title": "LM-CartSeg: Automated Segmentation of Lateral and Medial Cartilage and Subchondral Bone for Radiomics Analysis",
+  "link": "https://arxiv.org/abs/2512.03449",
+  "description": "arXiv:2512.03449v4 Announce Type: replace \nAbstract: Background and Objective: Radiomics of knee MRI requires robust, anatomically meaningful regions of interest (ROIs) that jointly capture cartilage and subchondral bone. Most existing work relies on manual ROIs and rarely reports quality control (QC). We present LM-CartSeg, a fully automatic pipeline for cartilage/bone segmentation, geometric lateral/medial (L/M) compartmentalization and radiomics analysis. Methods:Two 3D nnU-Net models were trained on SKM-TEA (138 knees) and OAIZIB-CM (404 knees). At test time, zero-shot predictions were fused and refined by simple geometric rules: connected-component cleaning,construction of 10mm subchondral bone bands in physical space, and a data-driven tibial L/M split based on PCA and $k$-means. Segmentation was evaluated on an OAIZIB-CM test set (103 knees) and on SKI-10 (100 knees). QC used volume and thickness signatures. From 10 ROIs we extracted 4,650 non-shape radiomic features to study inter-compartment similarity, dependence on ROI size, and OA vs. non-OA classification on OAIZIB-CM and a clinical Po-OA cohort (185 knees). Results: Post-processing improved macro ASSD on OAIZIB-CM from 2.63 to 0.36mm and HD95 from 25.2 to 3.35mm, with DSC approx 0.91; zero-shot DSC on SKI-10 was approx 0.80. The geometric L/M rule produced stable compartments across datasets, whereas a direct L/M nnU-Net showed domain-dependent side swaps. Only 6-12% of features per ROI were strongly correlated with volume or thickness. Radiomics-based models achieved AUC up to 0.91 (OAIZIB-CM) and 0.83 (Po-OA), clearly exceeding models restricted to size-linked features. Conclusions: LM-CartSeg yields automatic, QC'd ROIs and radiomic features that carry discriminative information beyond simple morphometry, providing a practical foundation for multi-centre knee OA radiomics studies. Code is available at https://github.com/jukieCheung/LM-CartSeg.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

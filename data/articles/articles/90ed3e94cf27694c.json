@@ -1,0 +1,13 @@
+{
+  "id": "90ed3e94cf27694c",
+  "title": "Semantic-aware Contrasting with Explicitly Disentangled Representations for AI-Generated Video Detection",
+  "link": "https://arxiv.org/abs/2611.24038",
+  "description": "arXiv:2611.24038v1 Announce Type: new \nAbstract: The rapid proliferation of AI-generated videos (AIGVs) has raised critical concerns about content authenticity. Existing benchmarks suffer from a fundamental limitation: real and fake videos are often collected or generated from different semantic distributions. As a result, detectors may rely on spurious correlations involving objects, scenes, or actions rather than intrinsic artifacts introduced by generative models. To this end, we introduce SAVGE, a large-scale semantically aligned AIGV detection dataset comprising 2,369,822 videos, including 424,115 real videos and 1,945,707 generated videos. SAVGE organizes samples into real-fake semantic groups by using captions paired with real videos as prompts for text-to-video generation, thereby providing both group-level correspondence and textual semantic anchors. Based on SAVGE, we further propose Explicit Disentangling and Semantic-aware Contrasting (EDSC), a model-agnostic training framework for learning artifact-focused representations with reduced semantic interference. EDSC first extracts and aligns visual semantic features with textual representations, and then explicitly suppresses semantic information in the artifact branch while contrasting real and fake samples within each semantic group. By integrating caption-guided semantic supervision with intra-group contrastive learning in a two-phase optimization strategy, EDSC encourages detectors to capture generation-related cues under matched semantic conditions. Extensive experiments on SAVGE and GenVideo demonstrate that EDSC improves most evaluated backbone-metric combinations, enhances robustness under challenging evaluation settings, and strengthens cross-dataset generalization. These results highlight the importance of semantic alignment in AIGV detection and validate explicit semantic-artifact disentanglement as an effective strategy for robust detector learning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "5096e48bc8044b1a",
+  "title": "PanoDent-KD: From Generalist Knowledge Distillation to Cross-Dataset Specialist Detection and Embedded Deployment in Panoramic Radiographs",
+  "link": "https://arxiv.org/abs/2610.25256",
+  "description": "arXiv:2610.25256v2 Announce Type: replace \nAbstract: Reliable panoramic-radiograph detection requires consistency across datasets with different class definitions and deployment software. We present PanoDent-KD, an auditable 1280-pixel YOLO26m pipeline linking a 12-class source generalist, feature-level knowledge distillation (KD), exact classifier-row transfer, teacher-free five-class specialization, and embedded deployment. A common training and evaluation pipeline compares three source-training arms across three seeds: a supervised baseline (B1), single-teacher KD (STKD), and multi-teacher KD (MTKD). Five shared classifier rows initialize nine OralXrays-9 specialists, while the backbone, FPN-PAN neck, and dual-detection-head topology are retained unchanged. On the 2,686-image test subset, all three arms achieve macro box F1 near 0.82. B1 achieves the highest three-seed arm-level mean macro box F1 (0.8239$\\pm$0.0027) and $mAP_{50:95}$ (0.6130$\\pm$0.0067). STKD seed 1, selected after development but before final testing, was used for deployment. Its Jetson Orin Nano Super FP16 TensorRT engine achieves 77.03-ms median and 80.86-ms P95 prediction-call latency, throughput of 12.90 images/s, and gross total-module energy of 1.39 J/image, with high numerical agreement between within-device PyTorch and TensorRT FP16 inference. These findings demonstrate the feasibility of an auditable, device-specific deployment workflow, but do not establish clinical validity or improved target-domain accuracy from KD.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.PF"
+  ]
+}

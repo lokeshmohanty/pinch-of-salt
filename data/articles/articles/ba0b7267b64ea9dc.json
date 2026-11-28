@@ -1,0 +1,15 @@
+{
+  "id": "ba0b7267b64ea9dc",
+  "title": "SIFR: Stable Signed Flow Reinforcement",
+  "link": "https://arxiv.org/abs/2611.09175",
+  "description": "arXiv:2611.09175v1 Announce Type: cross \nAbstract: Reward-based fine-tuning of flow models requires effectively promoting high-reward and suppressing low-reward samples, while maintaining training stability over many rounds of iterative updates. Iterative reward fine-tuning provides a simple starting point, but the positive reward weights give no explicit unfitting signal, and repeated reweighting concentrates the distribution and causes collapse. We propose Stable Signed Flow Reinforcement (SIFR), which replaces the reward weights by signed advantages to supply the missing unfitting signal, and constrains the velocity drift from a reference model to stabilize the updates, with a Lagrange multiplier that adapts the regularization strength to a prescribed drift budget. We further show that existing flow RL methods fall within this framework: they implicitly minimize the signed loss, differing in their regularization choices. We validate SIFR on SD3.5 Medium (2.5B) and FLUX.2 Klein (9B) and scale it to Cosmos 3 Super Text2Image (64B): across all 12 backbone--reward pairs with preference and rule-based rewards, it matches or exceeds existing methods, reaches their peak rewards much faster, and keeps improving over long training where they plateau or collapse.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

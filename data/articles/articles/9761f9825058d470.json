@@ -1,0 +1,13 @@
+{
+  "id": "9761f9825058d470",
+  "title": "LoC-Path: Learning to Compress for Pathology Multimodal Large Language Models",
+  "link": "https://arxiv.org/abs/2512.05391",
+  "description": "arXiv:2512.05391v4 Announce Type: replace \nAbstract: Whole Slide Image (WSI) multimodal large language models (MLLMs) are difficult to build and deploy because gigapixel slides induce thousands of highly redundant visual tokens that must be learned from sparse slide-level language supervision. Existing slide-level pathology MLLMs typically combine heavy slide-level encoders with long visual prefixes, making development and deployment expensive under limited computational resources. We revisit this regime and show that WSI tile features are highly redundant at both global and local scales, while task-relevant evidence is sparse and query-dependent. We therefore introduce LoC-Path, a resource-efficient slide-level MLLM that compresses before fusion. LoC-Path uses a sparse token merger and a masked-autoencoder (MAE)-pretrained resampler to replace expensive slide-level encoding with a compact latent interface. A token importance scorer selects the most relevant latents and cross-attention routing adapters fuse them into a few LLM decoder layers. This design lowers both multimodal tuning cost and inference-time latency/memory by avoiding heavy slide-level encoding and long visual prefixes. Extensive experiments show that the inference TFLOPs of LoC-Path are 97% lower and inference memory is also 39% lower. LoC-Path enables efficient end-to-end development and deployment under limited computational resources while remaining competitive with prior slide-level MLLMs. Code is available at https://github.com/WinstonHuTiger/loc_path.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

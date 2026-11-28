@@ -1,0 +1,13 @@
+{
+  "id": "ceda30e395fd6030",
+  "title": "Mapping the Design Space of Feature Sampling for Optical Flow",
+  "link": "https://arxiv.org/abs/2611.23822",
+  "description": "arXiv:2611.23822v1 Announce Type: new \nAbstract: The computation of correlation features is crucial for optical flow estimation. Existing methods (e.g., RAFT) perform fixed-radius lookups on a cost volume, yielding a set of correlation features for each position; alternatively, WAFT performs single-point feature indexing, yielding one correlation feature vector per position. None of them designs a suitable correlation feature sampling scheme for each position according to regional characteristics. Our insight is that not every position requires the same sampling scheme. Applying an identical sampling scheme to every position is either redundant or insufficient and ignores the specific characteristics of the corresponding region. This paper rethinks the design of feature sampling and investigates the following question: should the support of feature sampling---i.e., the extent and directions over which evidence is aggregated---be learned separately for each query position? To study this question, we propose SAGE (Sampling with Anisotropic Gaussian Expectation). This method replaces single-point sampling with a per-pixel anisotropic Gaussian expectation on a fixed candidate grid centered on the current optical flow estimate. A positive-definite precision matrix controls the scale, anisotropy, and orientation of the sampling support, with single-point sampling included as its limiting case. Consequently, the sampling support becomes an explicit and analyzable design variable and provides a principled way to analyze how directional feature aggregation affects correspondence learning. Extensive experiments show that SAGE, while adding only 1.5% multiply-accumulate operations (MACs), effectively improves zero-shot cross-dataset generalization. When trained only on FlyingChairs and FlyingThings, SAGE reduces the end-point error (EPE) by 24.2% and 16.4% on Sintel clean and final, and reduces KITTI F1-epe and F1-all by 7.2% and 11.6%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

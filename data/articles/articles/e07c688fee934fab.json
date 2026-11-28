@@ -1,0 +1,15 @@
+{
+  "id": "e07c688fee934fab",
+  "title": "Benchmarking Open-Ended Multi-Agent Coordination in Language Agents",
+  "link": "https://arxiv.org/abs/2606.08340",
+  "description": "arXiv:2606.08340v2 Announce Type: replace \nAbstract: As language models are increasingly deployed as autonomous agents, they must coordinate with others over long horizons in open-ended interactive tasks. Yet existing evaluations rarely test these demands together, focusing instead on single-agent tasks, short interactions, or highly structured multi-agent settings. We introduce $alem$, a JAX-based benchmark for open-ended multi-agent coordination built on Craftax-like dynamics. Alem embeds procedurally generated coordination tasks, soft specialisation, communication, and controllable coordination difficulty into a long-horizon survival world with exploration, crafting, trading, and combat. We evaluate $13$ LLMs zero-shot within homogeneous teams, with trained MARL agents as reference points. Current LLM agents remain far from solving alem, averaging only ~6% normalised return, but their failures are not uniform. On the hardest coordination setting, zero-shot Gemini-3.1-Pro-High approaches MARL agents trained for one billion steps, while GPT-5.4-High achieves strong base-task reward but much lower coordination reward. This contrast shows that individual task competence does not imply coordination competence. Further experiments reveal that communication is the largest contributor to coordination, while memory and reasoning help when used to maintain multi-step plans. In heterogeneous teams, however, combining different models improves base-task progress but lowers coordination reward relative to their homogeneous counterparts. Overall, our results identify coordination as a distinct bottleneck for frontier LLM agents, separate from single-agent capabilities. Alem makes this bottleneck measurable and provides a controlled testbed for developing agents that communicate, allocate roles, and execute shared plans. Code is available at https://github.com/alem-world/alem-env, with LLM traces and a leaderboard at https://alem-world.github.io.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG",
+    "cs.MA"
+  ]
+}

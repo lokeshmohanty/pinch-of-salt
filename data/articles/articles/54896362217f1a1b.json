@@ -1,0 +1,13 @@
+{
+  "id": "54896362217f1a1b",
+  "title": "Physics-Driven Independent Pair Generation for Iterative Self-Supervised Low-Dose CT Denoising",
+  "link": "https://arxiv.org/abs/2609.02654",
+  "description": "arXiv:2609.02654v1 Announce Type: new \nAbstract: Low-dose computed tomography (LDCT) measurements contain mixed Poisson-Gaussian noise. However, most self-supervised methods rely on generic image statistics and do not explicitly model this noise, which may limit their ability to effectively suppress realistic LDCT noise. To address this issue, we propose a physics-driven framework with cross-domain iteration for self-supervised LDCT denoising. The proposed framework proceeds in three main steps. First, a learned sinogram prior and the LDCT noise model guide posterior inference of photon counts, enabling separation of the Poisson and Gaussian components. Second, the separated Poisson and Gaussian components are respectively processed by binomial thinning and Gaussian data thinning to construct two branches, and residual scaling matches each branch's noise level to that of the observation, yielding a training pair with approximately independent noise realizations from one low-dose measurement. Finally, the pair is used to train an image-domain network whose forward-projected outputs update the prior. Through cross-domain iteration, the prior and the training pair are progressively refined while maintaining consistency with CT acquisition physics. Experiments on simulated data from AAPM, LIDC-IDRI, and LoDoPaB-CT and on real LDCT data show consistent gains over the evaluated self-supervised baselines across dose levels, with performance comparable to the evaluated supervised baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-03T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

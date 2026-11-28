@@ -1,0 +1,13 @@
+{
+  "id": "caa5bf3c5eec7787",
+  "title": "PointNDF: Cascaded Neural Displacement Fields for Point Cloud Denoising",
+  "link": "https://arxiv.org/abs/2611.05411",
+  "description": "arXiv:2611.05411v1 Announce Type: new \nAbstract: Point cloud denoising aims to recover clean geometry from noisy 3D observations while preserving both fine surface details and the underlying spatial distribution of the points. Many learning-based methods adopt a two-stage pipeline that first extracts point-wise features from the noisy input and subsequently predicts point-wise displacements via simple regressions. However, these approaches often lack robust feature guidance and distribution-aware geometric refinement, causing them to fail at maintaining optimal point uniformity and geometric quality. To address these limitations, we propose PointNDF, a denoising framework that combines patch-level geometric context with local displacement prediction. Specifically, a Point Transformer V3 (PTv3) encoder aggregates multiscale geometric information into a global patch descriptor. Rather than directly regressing an unconstrained displacement vector, a Neural Displacement Field (NDF) fuses this global patch descriptor with per-point neighborhood features. It then predicts each displacement through bounded-vector and scale factor branches, thereby achieving a superior, more uniform point distribution. Three cascaded NDF stages propagate local features and progressively refine the point positions. Experiments on PU-Net and ModelNet10 demonstrate competitive denoising accuracy and favorable inference efficiency. The source code is publicly available at https://github.com/peridous/PointNDF.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

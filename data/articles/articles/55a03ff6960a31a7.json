@@ -1,0 +1,15 @@
+{
+  "id": "55a03ff6960a31a7",
+  "title": "The Speedup Paradox: Rethinking Inference Speed-Quality Trade-off in Embodied Tasks",
+  "link": "https://arxiv.org/abs/2606.28529",
+  "description": "arXiv:2606.28529v3 Announce Type: replace-cross \nAbstract: Embodied foundation models have recently been widely used to improve robot generalization and task success rates. Previous works apply lossy efficient-inference techniques such as quantization, pruning, and asynchronous inference, accepting small action quality degradation in exchange for lower per-inference computation cost and inter-action latency. However, unlike traditional static ML tasks, embodied tasks involve repeated interaction with the environment, and task-level performance is determined not only by inference cost, but also by closed-loop effects unique to embodied execution, which remain insufficiently characterized in current efficient-inference studies. In this work, we propose TISED (\\underline{T}ask-level \\underline{I}nference \\underline{S}peedup \\underline{E}ffect \\underline{D}ecomposition), an analytical framework that unifies diverse lossy lightweighting inference optimization techniques and decomposes their effects on static and dynamic tasks; using it, we uncover several paradoxical effects: (1) on \\textit{static tasks}, optimization can sometimes lengthen end-to-end per-task completion time even as per-chunk time drops; (2) on \\textit{dynamic tasks}, moderate lossy lightweighting optimization can raise task success rate even above the baseline; and (3) the monotonicity and sweet-spot location of both effects can shift with hardware configuration. Together, our findings provide a new perspective on adapting inference optimization techniques to embodied tasks. Source code: https://github.com/thu-ee-acts-lab/robotics-the-speedup-paradox.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.AI",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "9e3ca7468913b13b",
+  "title": "Resolve, Clear, or Defer: Training-Free Active Prototype Triage for Ecological Detection Pipelines",
+  "link": "https://arxiv.org/abs/2611.01466",
+  "description": "arXiv:2611.01466v2 Announce Type: replace \nAbstract: Ecological monitoring increasingly relies on camera traps and aerial surveys that generate large image collections. High-recall animal detectors can localize candidate animals at scale. However, they also produce many detections that still require expert review, including false positives, ambiguous cases, and animals difficult to identify at the species level. Since exhaustive review requires substantial effort, we propose training-free active prototype triage, where reviewed detections become reusable evidence to (1) Resolve supported foreground classes, (2) Clear likely background false positives, or (3) Defer insufficiently supported cases for expert review. Across camera-trap and aerial datasets, foreground recognition and false-positive rejection benefit from different pretrained representations: BioCLIP2 provides foreground evidence while DINOv3 provides background evidence, reducing erroneous foreground clearing while improving automatic foreground recovery. Deferring unsupported cases avoids the higher error rates caused by forced decisions. Compared with confidence-thresholded multiclass k-NN and uncertainty-sampling logistic regression, prototype triage improves foreground recovery while maintaining competitive or lower review burden. Acquisition goes beyond class discovery: even after classes are represented, prototype choice determines how reliably evidence propagates through the remaining detections. Our results suggest that once animal localization reaches high recall, the challenge shifts from finding animals to deciding which examples to review, how to reuse them, and when evidence does not support an automatic decision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

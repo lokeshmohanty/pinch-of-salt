@@ -1,0 +1,14 @@
+{
+  "id": "1a3309d053b19e2c",
+  "title": "Evolutionary AI Control: Population-Level Safety Under Reproduction, Heredity, and Selection",
+  "link": "https://arxiv.org/abs/2611.31312",
+  "description": "arXiv:2611.31312v1 Announce Type: cross \nAbstract: An AI agent can satisfy every individual safety check and still give rise to a population that violates a collective safety limit. This risk arises in open multi-agent systems, where agents copy themselves, modify their successors, and change system membership during a run. Selection then shifts the population toward traits outside the developers' optimization targets. We prove conditions under which safety guarantees persist through reproduction, inheritance, and selection, and we characterize how they fail.\n  Four counterexamples illustrate these failures. Unauthorized copies, which violate a specified reproductive restriction, can each leave fewer than one successor on average while their expected number grows without bound under continued production from an expanding authorized population. Two lineages can each decline in isolation yet grow exponentially when they interact. Alternating between reproductive rules can drive growth even when each rule, applied alone, suppresses it. Selection can raise the population's average rate of unauthorized reproduction above a certified limit even though every agent's rate remains fixed.\n  Whereas existing verification methods assume fixed or registered membership, we prove safety certificates, under stated assumptions, for populations whose agents create successors during a run. The main result bounds the expected cumulative harm over a run, including when a scheduler adapts the reproductive rules to the observed history. Further conditions cover every population state reachable through evolution and preserve reproductive restrictions as descendants inherit modifications. Drawing on the mechanisms by which multicellular organisms control cell reproduction, the framework enables developers to specify and verify these controls before deployment.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.MA",
+    "cs.AI"
+  ]
+}

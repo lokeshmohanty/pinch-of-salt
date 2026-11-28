@@ -1,0 +1,14 @@
+{
+  "id": "92ea3263f083ef2c",
+  "title": "Where to Focus: Query-Modulated Multimodal Keyframe Selection for Long Video Understanding",
+  "link": "https://arxiv.org/abs/2604.17422",
+  "description": "arXiv:2604.17422v2 Announce Type: replace \nAbstract: Long video understanding remains a formidable challenge for Multimodal Large Language Models (MLLMs) due to the prohibitive cost of processing dense frame sequences. Prevailing keyframe-selection methods rely on either a single visual-centric metric (e.g., CLIP similarity) or a static fusion of heuristic scores. This \"one-size-fits-all\" paradigm frequently fails: visual-only metrics are ineffective for plot-driven narrative queries, while indiscriminately adding textual scores introduces severe \"modal noise\" for purely visual tasks. To break this bottleneck, we propose Q-Gate, a plug-and-play, training-free framework that treats keyframe selection as a dynamic modality routing problem. We decouple retrieval into three lightweight expert streams: Visual Grounding for local details, Global Matching for scene semantics, and Contextual Alignment for subtitle-driven narratives. Crucially, Q-Gate introduces a Query-Modulated Gating Mechanism that uses the in-context reasoning of an LLM to assess query intent and dynamically allocate weights across the experts, activating necessary modalities while \"muting\" irrelevant ones to maximize the signal-to-noise ratio. Extensive experiments on LongVideoBench and Video-MME across multiple MLLM backbones show that Q-Gate outperforms representative keyframe-selection baselines in most settings, with particularly strong gains on long and medium videos, providing a robust and interpretable solution for scalable video reasoning.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM"
+  ]
+}

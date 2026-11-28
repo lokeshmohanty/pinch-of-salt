@@ -1,0 +1,13 @@
+{
+  "id": "ac7b994056e3f5d7",
+  "title": "W-ISA: Transactional Execution of Weight-Space Intervention Programs",
+  "link": "https://arxiv.org/abs/2611.13232",
+  "description": "arXiv:2611.13232v1 Announce Type: new \nAbstract: We present W-ISA, a software instruction set and transactional runtime for executing weight-space intervention programs on pretrained language models. Shape-checked instructions express parameter updates, projections, ablations, and rank-one transformations. The runtime applies these programs within request-scoped execution contexts and restores saved parameters after completion or interruption. Activation-based match-action rules connect measured model states to intervention selection. We evaluate restoration and replay on SmolLM-135M-Instruct and Qwen2.5-1.5B-Instruct, and compare materialized rank-one updates with equivalent PyTorch hooks on the latter. In 45 timed requests, both intervention implementations produce identical greedy sequences at 32, 128, and 512 tokens; their maximum prompt-logit difference is 0.000184. On the complete WikiText-2 raw test split, the combined SmolLM attention-head ablation and MLP projection changes perplexity from 22.2353 to 22.3188, a relative increase of 0.3754%. W-ISA separates intervention specification, execution, and measurement, making parameter-level experiments reproducible and composable.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

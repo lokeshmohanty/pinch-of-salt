@@ -1,0 +1,14 @@
+{
+  "id": "8e6c83758214141a",
+  "title": "Signs of Wear: Evaluating Intelligent Speed Assistance Under Synthetic Adverse Conditions",
+  "link": "https://arxiv.org/abs/2611.20382",
+  "description": "arXiv:2611.20382v2 Announce Type: replace \nAbstract: Intelligent Speed Assistance (ISA) systems rely on cameras to recognize speed-limit signs, yet existing benchmarks underrepresent the weathered, dirty, and overgrown signs commonly encountered on rural roads. We use generative image editing to introduce different forms of wear into real street-level images of speed-limit signs. The resulting ISA-Wear dataset contains paired original and edited images. Guided by text instructions, a multimodal image-editing model adds snow, rust, vegetation, faded paint, or mud to the speed-limit sign in a street-level frame at three severity levels. Where appropriate, the surrounding scene is adapted as well, and the viewpoint is kept. Every edited frame has an unedited counterpart, and we only evaluate frames whose original is recognized correctly, so any failure can be attributed to the wear. Since the model alters the sign's geometry in 21\\% of the edits, all edits are filtered by a geometric check and a manual review. Severity is measured as the LPIPS distance between the original and the edited sign plate. On 716 worn frames, we find that in detect-then-read pipelines, wear breaks detection before it breaks reading. The detector finds only 62\\% of the worn signs, even though it finds every one of them in the original frames. Missed detections account for 78--87\\% of failed reads, a pattern that a zero-shot detector shares. Given the annotated sign box, as in the crop-based benchmarks, a classifier still reads 78\\% of the worn signs, but only 56\\% when it has to rely on the detector",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

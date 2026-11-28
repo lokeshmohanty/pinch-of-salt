@@ -1,0 +1,14 @@
+{
+  "id": "c8f86368532ccb69",
+  "title": "RegimeVGGT: Layer-Wise Spatially Preserving Redundancy Removal for Visual Geometry Grounded Transformer",
+  "link": "https://arxiv.org/abs/2606.18439",
+  "description": "arXiv:2606.18439v2 Announce Type: replace \nAbstract: Visual Geometry Grounded Transformer (VGGT) recovers dense 3D scene structure from multi-view images in one forward pass, but quadratic cross-frame attention limits its scalability. Existing training-free accelerators exploit token, frame, or attention redundancy; we investigate how layer-wise functional roles can guide compression. Our spectral, probing, and causal analyses reveal three regimes: shallow layers lack cross-view structure, middle layers drive cross-view alignment, and deep layers are redundant for dense geometry yet their cross-frame attention remains essential for pose. RegimeVGGT applies layer-wise U-shaped compression along two axes: Saliency-Guided Banded Merging protects geometry- and edge-salient tokens, while Selectively Protected K/V Downsampling preserves cross-frame spatial coverage and the pose-critical path through a phase-shifted spatial grid, a reference-frame anchor, and uncompressed camera/register tokens. Without any training, RegimeVGGT achieves a 6.7x speedup over the memory-optimized VGGT* at matched reconstruction quality. Project page: https://tracyou07.github.io/regimevggt/",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.RO"
+  ]
+}

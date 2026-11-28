@@ -1,0 +1,13 @@
+{
+  "id": "bc7163bdef0840ca",
+  "title": "Disagree to Prune: Reallocating Visual Tokens Where a Small VLM Dissents",
+  "link": "https://arxiv.org/abs/2611.22472",
+  "description": "arXiv:2611.22472v1 Announce Type: new \nAbstract: Visual token pruning speeds up large vision-language models (VLMs) by keeping only a part of their visual tokens. Most existing methods improve the ranking of the tokens and then answer every question once with the same budget. With strong rankings, pruning hurts only a few questions, and signals computed on the kept tokens see little of what it removed. We find that, on most of these questions, a small VLM given the full image disagrees with the pruned answer, since it still sees the missing evidence. We propose PRUDENT, which first answers with about half the budget and spends the saved tokens on re-answering the disagreeing questions at twice the budget. We show when such re-answering pays and why the small VLM should read the full image. On 18 benchmarks, PRUDENT outperforms eight existing pruning methods at the same average budget of visual tokens. Its lead widens as the budget tightens, and holds across five InternVL sizes. PRUDENT also has the highest average in two more model families. The disagreement of the small VLM flags most pruning failures of all eight methods, and re-answering on it also improves the two strongest with their own rankings. Other checkers give similar gains, and the extra tokens go where the first pass hurts the answer. These results suggest that identifying which pruned answers are trustworthy provides an additional lever for visual token pruning beyond the ranking of tokens. Code and data are available at https://github.com/LiZaiyuan0619/PRUDENT.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

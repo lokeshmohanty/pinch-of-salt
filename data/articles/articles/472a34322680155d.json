@@ -1,0 +1,14 @@
+{
+  "id": "472a34322680155d",
+  "title": "A First Guess Is Rarely the Final Answer: Learned Local Search That Generalizes to Larger Routing Problems",
+  "link": "https://arxiv.org/abs/2604.06940",
+  "description": "arXiv:2604.06940v3 Announce Type: replace-cross \nAbstract: Neural routing solvers rarely stop at their first solution: constructed tours are usually refined by search, such as sampling or local search. Neural improvement methods learn this search as a policy that repeatedly applies local moves, but existing policies degrade sharply beyond their training size. We argue that size generalization depends on whether the information that determines the value of a move reaches the policy in a size-independent form, and identify three places where existing policies fall short: the representation of the incumbent solution, the scale of the input features, and the computation of move gains. We address all three in NICO, a learned 2-opt policy for routing that represents the incumbent by its solution edges, one token per edge without positional encodings, describes them with scale-free features, and adds the exact gain of each move to its logit, so that the network learns a correction to greedy selection. A controlled factorial study shows that edge tokens outperform node tokens with positional encodings, that the exact gains are necessary for transfer in the tested configuration, and that scale-free features help only together with them. Trained on instances with at most 100 nodes, NICO reaches a 1.1% gap on the Euclidean TSP with 1000 nodes, against 10.7% for greedy 2-opt and 36% for the best prior learned policy. It also improves the tours of constructive and diffusion-based solvers, is the best improvement method on road-network costs, and on the CVRP outperforms every classical control.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

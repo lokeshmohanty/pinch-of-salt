@@ -1,0 +1,15 @@
+{
+  "id": "42b4fdb26fb6b220",
+  "title": "KL for a KL: On-Policy Distillation with Control Variate Baseline",
+  "link": "https://arxiv.org/abs/2605.07865",
+  "description": "arXiv:2605.07865v2 Announce Type: replace-cross \nAbstract: On-Policy Distillation (OPD) has emerged as a dominant post-training paradigm for Large Language Models, especially in reasoning domains. However, OPD remains unstable in practice due to the high gradient variance of its single-sample Monte Carlo estimator, and recipes for stable training are still immature. We propose vOPD (On-Policy Distillation with a control variate baseline), which casts OPD as policy-gradient RL and stabilizes it by introducing a control variate baseline---canonically a value function---from the RL literature. We show that the OPD value function admits a closed form: the per-token negative reverse KL divergence between student and teacher, available directly from the existing forward pass with no additional critic or inference. Existing stabilization methods either compute the full token-level reverse KL over the entire vocabulary, adding significant overhead, or restrict it to a top-k support, biasing the objective. vOPD instead preserves the lightweight single-sample estimator and subtracts the value function as a detached baseline to keep the gradient unbiased while reducing variance. Moreover, we show that a top-k approximation of the baseline further lowers cost without compromising performance. Across mathematics, science, and instruction-following benchmarks, vOPD consistently outperforms base OPD and matches the most expensive full-vocabulary method, offering an efficient stabilization of OPD through principled RL variance reduction.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "90df0e33be2f2339",
+  "title": "Optimal Planning in a Dynamic World",
+  "link": "https://arxiv.org/abs/2610.03312",
+  "description": "arXiv:2610.03312v1 Announce Type: new \nAbstract: Background: We address the problem of planning when the set of feasible states or actions changes over time. For example, in the problem of path planning among moving obstacles (sometimes known as SIPP), the feasibility of being at a particular location can change as the obstacles move. Or, the action of boarding a particular train is feasible only while it is stopped at the station. This dynamism means that the optimal plan and its duration can change depending on when execution begins. In practice, execution start time is often unknown until planning has completed or another agent gives the go-ahead. However, most prior planning work either ignores dynamism or assumes a known start time. This makes it straightforward to assess state and action feasibility but is impractical for some applications. Objectives: In this paper, we relax the assumption of a known start time. We define the setting of {\\em any-start-time planning} and provide algorithms for it. Methods: We present a data structure called a compound arrival time function (cATF) that compactly encodes the optimal plan as a function of start time. We provide general-purpose planning algorithms, based on heuristic graph search, that assemble cATFs by propagating functions along edges instead of scalar costs. Results: We prove that the size of a cATF is at most linear in the problem size. An experimental evaluation of an implementation for the specific problem of SIPP shows that, on difficult problems, agents that rely on replanning often fail, while any-start-time algorithms using cATFs can quickly look up the optimal plan once the execution start time is known. Conclusions: By enabling efficient representations and reasoning for time-dependent plans, this work provides a foundation for planning in dynamic worlds.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-05T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

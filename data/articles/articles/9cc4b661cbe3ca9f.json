@@ -1,0 +1,13 @@
+{
+  "id": "9cc4b661cbe3ca9f",
+  "title": "MV-JEPA: Post-Training Video Encoders for Cross-View Understanding",
+  "link": "https://arxiv.org/abs/2611.25172",
+  "description": "arXiv:2611.25172v1 Announce Type: new \nAbstract: JEPA-based video encoders learn strong representations for video and image understanding through prediction in latent space. However, their standard pretraining predicts features within individual images or video clips, without explicitly exploiting paired camera views of the same object or moment. Consequently, the learned representations may not reliably support matching across different camera viewpoints. To solve this problem, we introduce multi-view predictive post-training to strengthen cross-view instance and temporal correspondence while retaining independent single-view inference. A shared encoder processes masked context views independently, and a training-time predictor jointly predicts latent tokens for masked context regions and a fully held-out view. We alternate cross-view prediction with single-view masked prediction on general image and video data to help retain the encoder's pretrained capabilities. After only 9,000 post-training updates on a single GPU, MV-JEPA improves cross-view instance retrieval and coarse cross-camera moment retrieval on various datasets, with further gains in zero-shot action-phase retrieval and frozen-feature classification on AE2. Frozen-probe evaluations further indicate that post-training largely preserves motion recognition, image recognition, and dense semantic segmentation performance on the evaluated benchmarks. Together, these results demonstrate that multi-view predictive post-training can strengthen instance and coarse temporal correspondence in JEPA video encoders without modifying the encoder architecture or single-view inference interface.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

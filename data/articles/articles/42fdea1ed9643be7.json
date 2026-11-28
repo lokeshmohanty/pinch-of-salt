@@ -1,0 +1,13 @@
+{
+  "id": "42fdea1ed9643be7",
+  "title": "Uncovering the Blind Spots of OKS-mAP: A Unified Protocol for Occlusion, Joint-Angle, and Temporal Evaluation of 2D Pose Estimators",
+  "link": "https://arxiv.org/abs/2611.12911",
+  "description": "arXiv:2611.12911v1 Announce Type: new \nAbstract: The dominant metric for 2D human pose estimation, OKS-mAP, has three blind spots: it does not distinguish visible from occluded keypoints, does not measure joint-angle error, and is silent on the temporal stability of tracking-free per-frame inference. We propose a supplementary protocol with three modules: (M1) OKS-mAP stratified by ground-truth visibility, with Delta_occ = mAP(v=1) - mAP(full), quantifying how much the aggregate metric masks occlusion-specific differences; (M2) joint-angle error (RMSE/MAE/P95) plus knee-valgus detection consistency; (M3) frame-to-frame displacement, median-filter residual jitter, and jump rate, before and after OneEuro smoothing. We ran it on four datasets (COCO val2017, CrowdPose, OCHuman, PoseTrack18) and four models from two architecture families (YOLO11s-pose, an occlusion-domain fine-tuned variant, ViTPose-B/L), under a common detector-free oracle protocol and an open-source harness. Delta_occ is negative in every combination (-0.19 to -0.47): aggregate mAP overestimates occluded-scene performance in every tested combination. Joint-angle error is amplified in occluded layers; angle metrics reveal differences mAP cannot localize, e.g., the smaller occlusion-trained model significantly outperforming a larger transformer in occluded elbows. On PoseTrack18 val, raw jitter matched between the two YOLO models; pixel-domain OneEuro smoothing cut jump rates 9-10% at no matched-scope AP cost; residual jitter persists after detector removal; the transformer pair's jump rate is significantly lower; smoothing benefits replicate across architectures. Stratified mAP tracks full mAP closely (sign-consistency 1.0, 12/12), serving magnitude diagnosis rather than re-ranking; angle-metric difference vectors (especially knee) partially diverge, suggesting independent information. The protocol and harness are open-sourced, complementing rather than replacing OKS-mAP.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

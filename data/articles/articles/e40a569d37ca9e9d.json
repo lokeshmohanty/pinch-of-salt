@@ -1,0 +1,14 @@
+{
+  "id": "e40a569d37ca9e9d",
+  "title": "Cross-Epoch Bias in SGD-based Leave-One-Out Influence: Analysis and Accumulative Correction",
+  "link": "https://arxiv.org/abs/2510.26185",
+  "description": "arXiv:2510.26185v2 Announce Type: replace-cross \nAbstract: Training-data influence estimates support data selection and cleansing by predicting the effects of removing individual examples. The standard multi-epoch SGD-Influence Estimator (SGD-IE) aggregates contributions from a sample's repeated appearances along the recorded trajectory. When used to approximate finite deletion, it omits an interaction: later removals act on the parameter displacement accumulated from earlier removals. We introduce the Accumulative SGD-Influence Estimator (ACC-SGD-IE) to account for how earlier removals change the effect of removing the same sample again. It uses the sample's Hessian at subsequent appearances to correct the estimated parameter change. Our non-convex analysis shows that this correction removes SGD-IE's additional interaction contribution from the finite-horizon error bound: the omitted interaction produces a local error linear in the accumulated parameter change, while the remaining Taylor remainder is bounded quadratically under Lipschitz-Hessian assumptions. The bounds characterize how training propagates the remaining error. In non-convex experiments across clean and noisy tabular, text, and vision datasets, ACC-SGD-IE reduces validation-loss-change RMSE by 10.8% and improves Jaccard@10% by 15.2% on average relative to SGD-IE. These gains also translate into lower test misclassification rates after data cleansing on MNIST and CIFAR10 at the evaluated removal budgets. On noisy industrial datasets, it reduces aggregate parameter RMS error with a mean relative reduction of 53.4%. We further discuss computational tradeoffs, provide complementary theoretical analysis and experimental evaluation for strongly convex objectives, and explore potential extensions of the accumulative correction mechanism to other influence estimators.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

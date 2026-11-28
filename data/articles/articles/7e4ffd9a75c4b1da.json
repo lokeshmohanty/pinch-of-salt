@@ -1,0 +1,15 @@
+{
+  "id": "7e4ffd9a75c4b1da",
+  "title": "Rethinking Langevin Thompson Sampling from A Stochastic Approximation Perspective",
+  "link": "https://arxiv.org/abs/2510.05023",
+  "description": "arXiv:2510.05023v2 Announce Type: replace-cross \nAbstract: Langevin-based Thompson Sampling (TS) methods for multi-armed bandits use likelihood gradients to approximate posterior samples when exact sampling is intractable. As new rewards arrive, the posterior changes, and these methods run an inner Markov chain to approximate the updated target. To simplify this repeated sampling procedure, we introduce TS-SA, which incorporates stochastic approximation (SA) within the TS framework. In each round, TS-SA takes one Langevin step using the newly observed reward and applies an SA update to combine the noisy proposal with the current parameter estimate. By retaining this estimate across rounds, TS-SA maintains one continuing Markov chain for each arm, preserving the influence of past observations without storing or sampling them again. Within this recursion, the proposal step size remains fixed across rounds, while the SA weights decrease as observations accumulate to control the effect of noise on the estimate. This continuing-chain formulation simplifies the theoretical analysis, allowing us to establish a near-optimal worst-case regret bound of $\\widetilde{\\mathcal O}(\\sqrt{KT})$ under log-concavity and smoothness assumptions with one update per new reward. Our experiments further demonstrate that TS-SA, using a single-step Langevin update after an initial warm-up, achieves strong performance against standard baselines.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "stat.ML"
+  ]
+}

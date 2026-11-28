@@ -1,0 +1,14 @@
+{
+  "id": "b404745ee94412a2",
+  "title": "A Leakage-Aware Comparative Benchmark of Machine Learning, Deep Learning, and Transformer Models for Reliable Leukemia Detection",
+  "link": "https://arxiv.org/abs/2606.24944",
+  "description": "arXiv:2606.24944v2 Announce Type: replace-cross \nAbstract: Automated classification of acute lymphoblastic leukemia (ALL) from peripheral blood smear images has often reported near-perfect performance on the C-NMC 2019 dataset. We show that such results can be inflated by patient-level data leakage caused by random image-level partitioning, where cells from the same subject may appear in both training and test folds. We establish a leakage-aware benchmark under a strict subject-disjoint protocol, comparing LightGBM, RBF-SVM, EfficientNet-B0, EfficientNet-B1, and ViT-Tiny. Models are developed using three subject-disjoint folds from 73 subjects and evaluated on an external preliminary-phase test set of 1,867 images from 28 unseen subjects with zero patient overlap. Beyond discrimination, we assess calibration using expected calibration error, Brier score, and temperature scaling. Under honest evaluation, EfficientNet-B1 achieves the best performance, with AUROC 0.913, sensitivity 0.87, specificity 0.80, and calibrated ECE 0.024. Frozen-feature classifiers and ViT-Tiny show high sensitivity but poor specificity, indicating a tendency to over-predict the malignant class. A random-versus-subject-disjoint ablation shows that random splitting inflates AUROC by about 0.04 even in the conservative frozen-feature setting. These findings caution against image-level evaluation on C-NMC 2019 and provide a reproducible, calibration-aware benchmark for future work.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

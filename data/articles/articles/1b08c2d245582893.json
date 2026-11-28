@@ -1,0 +1,13 @@
+{
+  "id": "1b08c2d245582893",
+  "title": "DM3D: Dynamic Mamba via Offset-Guided Feature Resampling for Point Cloud Understanding",
+  "link": "https://arxiv.org/abs/2512.03424",
+  "description": "arXiv:2512.03424v4 Announce Type: replace \nAbstract: State Space Models (SSMs) model long token sequences of point cloud with linear complexity, but require an unordered point cloud to be serialized. Existing methods mainly address this requirement by designing or learning a better token order. Even a well-constructed order, however, cannot preserve every local relation on an irregular 3D surface: a fixed sequence may still mix points that are close in index but distant in 3D or belong to different object parts. We propose DM3D, a dynamic Mamba architecture that preserves the base token order while adapting local feature support and state propagation. First, according to local feature context, DM3D learns spatial and sequence offsets without constructing a global permutation. Then, spatial offsets adjust the sampling anchors in 3D space, whereas sequence offsets guide feature resampling within a local sequence window, which lets different slots draw from overlapping local supports while retaining their identities. This design preserves the global prior of the original traversal, allowing each token to aggregate a more suitable local context. Second, the state update is modulated by the 3D distance between points at adjacent sequence positions, thereby reducing information propagation when these points are spatially far apart. DM3D reaches 95.2\\% accuracy on the ModelNet40, 93.3\\% accuracy on the PB\\_T50\\_RS split of ScanObjectNN, and 84.8\\% class mIoU on ShapeNetPart. Extensive experiments on benchmark datasets show that DM3D achieves strong and competitive performance, validating the effectiveness of local feature adaptation for point cloud understanding.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-07-27T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

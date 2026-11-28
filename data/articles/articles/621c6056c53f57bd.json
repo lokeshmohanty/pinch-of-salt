@@ -1,0 +1,15 @@
+{
+  "id": "621c6056c53f57bd",
+  "title": "StrideDiffusion: Accelerating Diffusion Models for Time-series Generation",
+  "link": "https://arxiv.org/abs/2607.20545",
+  "description": "arXiv:2607.20545v1 Announce Type: new \nAbstract: Diffusion models have become competitive generators for time series, but their practical use is limited by the large number of sequential denoising steps required at inference time. Existing fast samplers typically use fixed or generic timestep schedules, overlooking a distinctive property of time-series diffusion: different spectral bands evolve at different rates during the reverse process. We introduce StrideDiffusion, a training-free spectral-aware sampler that adaptively selects the denoising stride from band-level activity. At each step, StrideDiffusion monitors relative band energy, log-power drift, and phase velocity to identify whether high- frequency dynamics remain active or whether the trajectory is dominated by stable low-frequency structure. It then takes fine steps when rapidly varying bands are active and larger jumps once only coarse components remain. A bandwise stability analysis shows that inactive frequency bands change only linearly with the jump size under deterministic affine reverse updates, providing a local justification for spectral activity as a step-size indicator. Across six unconditional time-series generation benchmarks, StrideDiffusion uses only 14-66 function evaluations instead of 500/1000 denoising steps, achieving up to 18.9x wall-clock speedup while preserving or improving generation quality. On conditional imputation and forecasting, it further delivers 5-14x average acceleration with comparable predictive accuracy. These results show that spectral evolution provides a practical and principled signal for fast time-series diffusion sampling. Our code is available at https://anonymous.4open.science/r/stridediff-ts.",
+  "source_name": "arXiv AI",
+  "published": "2026-07-24T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV",
+    "cs.SE"
+  ]
+}

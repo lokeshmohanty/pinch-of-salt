@@ -1,0 +1,15 @@
+{
+  "id": "5cb6b05d59641a5f",
+  "title": "Spend Where It Matters: Particle Search with MH Refinement for Budget-Constrained Audio-Visual Alignment",
+  "link": "https://arxiv.org/abs/2610.12811",
+  "description": "arXiv:2610.12811v1 Announce Type: new \nAbstract: Reward-guided inference-time alignment can improve joint audio-visual generation, but optimizing multiple alignment objectives requires many expensive model evaluations, making existing methods costly under limited compute. Particle-based search enables global exploration but incurs estimation error with a finite population, while Metropolis-Hastings (MH) can refine candidates locally but benefits from a strong initialization. We introduce \\textbf{S}pend \\textbf{W}here \\textbf{I}t \\textbf{M}atters (\\modelname), a two-stage, training-free, reward-agnostic framework that combines particle search with MH refinement under a fixed compute budget. In the first stage, we adaptively allocate particles across denoising checkpoints using online variance estimates, minimizing estimation variance while concentrating compute where it is most useful. This search provides a promising candidate for MH refinement, which uses local noise-and-denoise proposals on completed outputs to further improve reward. By starting from a strong candidate, MH can recover additional reward without requiring a larger particle population or costly global exploration. We show that, at matched compute, combining particle search with MH refinement achieves higher rewards than either approach alone. On \\textsc{JavisBench-Mini}, at closely matched compute, \\modelname achieves mean relative gains across seven metrics of $30.7\\%$ over BoN and $14.1\\%$ over EvoSearch with JavisDiT++, and $9.2\\%$ over BoN and $17.0\\%$ over EvoSearch with LTX-2. Beyond joint audio-visual generation, we also demonstrate the benefits of adaptive particle allocation on SD1.5 image generation, improving AestheticScore by $2.2\\%$ and ImageReward by $6.0\\%$ over uniform allocation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.SD",
+    "eess.AS"
+  ]
+}

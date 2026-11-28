@@ -1,0 +1,13 @@
+{
+  "id": "e8c2d8a7be65064a",
+  "title": "On-Policy Self-Distillation in Diffusion Models",
+  "link": "https://arxiv.org/abs/2608.24646",
+  "description": "arXiv:2608.24646v2 Announce Type: replace \nAbstract: Reinforcement learning aligns diffusion and flow models with human preferences and task objectives, yet endpoint rewards do not specify how an intermediate denoising prediction should change. We introduce DiffusionOPSD, an on-policy self-distillation framework that converts image-level reward guidance into explicit self-teachers for clean-output predictions at sampled on-policy queries. At each outer iteration, a frozen exponential moving average self-teacher rolls out trajectories to supply low-noise query states and clean-output anchors. Normalized local reward gradients then synthesize bounded positive and negative self-teachers around each anchor. The student policy distills these detached self-teachers under a finite update budget before an online update refreshes the self-teacher, admitting an exact single-branch variant DiffusionOPSD*. Separating self-teacher synthesis from student backpropagation removes the decoder and reward model from student backward passes and makes synthesis and realized gains separately measurable. On SD3.5-M and step-distilled Z-Image-Turbo, DiffusionOPSD and DiffusionOPSD* achieve the best held-out score across all 20 target-reward settings, winning 19 of 20 individually with gains up to 44.0% over the strongest baseline. They also deliver up to 2.57% the base-anchored gain of ReFL and up to 90% single-reward human win rates, while joint multi-reward training transfers zero-shot with up to 81% human win rates. Separately, comprehensive profiling experiments show that DiffusionOPSD and DiffusionOPSD* use up to 63% and 74% fewer GPU-hours per 100 updates than DiffusionNFT and reach baseline terminal quality up to 13.1% faster. Overall, DiffusionOPSD provides a teacher-free paradigm converting rewards into stable intermediate supervision for diffusion post-training.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

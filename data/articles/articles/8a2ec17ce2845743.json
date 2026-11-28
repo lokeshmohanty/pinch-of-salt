@@ -1,0 +1,15 @@
+{
+  "id": "8a2ec17ce2845743",
+  "title": "Lightfoot: Graph Retrieval-Augmented Generation with Exact, Model-Free Document Deletion",
+  "link": "https://arxiv.org/abs/2611.11010",
+  "description": "arXiv:2611.11010v2 Announce Type: replace \nAbstract: Graph-based retrieval-augmented generation (GraphRAG) improves multi-hop question answering, but deployed systems pay costs that research comparisons rarely measure: model calls at query time, building the graph, and removing documents correctly. We present Lightfoot, a GraphRAG system in which every entity, link, fact and synonym edge is a deterministic function of per-passage extractions that carry chunk-level provenance. Retrieval makes no language-model call, indexing makes one per passage, and deleting a document is a database transaction with no model calls: 14 seconds for 10% of an 11,402-passage corpus, after which the graph is identical to a fresh index of the surviving documents. On a corpus of near-duplicate names, HippoRAG 2's capped synonym lists leave 565 fewer edges than a rebuild, while Lightfoot remains exact. Under identical extraction, embedding and answer models on held-out questions of MuSiQue, 2WikiMultiHopQA and HotpotQA, Lightfoot is competitive with HippoRAG 2: with Holm-corrected paired tests it is better on MuSiQue at recall@5 and recall@10 (+4.8 and +5.5 points) and on 2WikiMultiHopQA at recall@10 (+3.4), and tied on HotpotQA, while HippoRAG 2 keeps a non-significant 3.0-point edge at 2WikiMultiHopQA recall@2. Seeding the walk from entities named in the question accounts for most of the 2WikiMultiHopQA gain. Answers tie on all three datasets, and the retrieval pattern holds with three larger embedders, up to Qwen3-Embedding-8B. The gain is not the reranker's: with the same cross-encoder, dense retrieval trails Lightfoot by 9.3 and 17.8 points recall@5 on the two multi-hop sets. Lightfoot also builds the cheapest index, 26-31% below HippoRAG 2; LightRAG needed 2,187 model calls and 3.7 hours for the same deletion, and fast-graphrag cannot delete.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.IR"
+  ]
+}

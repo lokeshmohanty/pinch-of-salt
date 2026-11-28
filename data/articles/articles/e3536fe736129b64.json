@@ -1,0 +1,15 @@
+{
+  "id": "e3536fe736129b64",
+  "title": "CodecSight: Leveraging Video Codec Signals for Efficient Streaming VLM Inference",
+  "link": "https://arxiv.org/abs/2604.06036",
+  "description": "arXiv:2604.06036v4 Announce Type: replace-cross \nAbstract: Continuous inference over concurrent video streams imposes substantial compute and memory demands on vision-language model (VLM) serving. Streaming inference uses sliding windows to maintain a bounded context of recent video, but processing each window independently repeats visual encoding and large language model (LLM) prefilling for similar and overlapping content. Existing optimizations provide limited coordination across these stages and often rely on model-specific training, profiling, or model-generated signals.\n  We present CodecSight, a streaming VLM serving system that uses codec metadata as shared runtime guidance across visual encoding and LLM prefilling, without model-specific training or offline profiling. Codec-derived change signals guide patch pruning before visual encoding, reducing both visual computation and the number of downstream visual tokens. Codec-defined frame types guide selective key-value (KV) refresh across windows, while positional correction enables reuse of the remaining cached keys. Across three VLMs and four video workloads, our vLLM-based implementation supports up to $3.3\\times$ as many concurrent streams and achieves up to a $5.3\\times$ speedup in average time-to-first-token relative to the state-of-the-art baselines. It also reduces executed FLOPs by up to 93%, with a maximum task-quality decrease of 4.64 percentage points.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.CV",
+    "cs.LG"
+  ]
+}

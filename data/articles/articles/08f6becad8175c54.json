@@ -1,0 +1,14 @@
+{
+  "id": "08f6becad8175c54",
+  "title": "Incorporating synthetic data from diffusion models supports echocardiography downstream tasks",
+  "link": "https://arxiv.org/abs/2403.19880",
+  "description": "arXiv:2403.19880v2 Announce Type: replace-cross \nAbstract: Purpose: Large labeled echocardiography datasets are costly to collect. We use diffusion models to generate synthetic training data for segmentation and cardiac phase classification.\n  Approach: We study three generation approaches on CAMUS: an unconditional image space model, a latent model conditioned on plain English prompts or abstract tokens, and a ControlNet model conditioned on an abstract token and segmentation mask. We evaluate synthesis with Fr\\'echet Inception Distance (FID) and augmentation using segmentation and classification of end diastole and end systole. We also evaluate segmentation within CardiacUDC and directly from CAMUS to CardiacUDC.\n  Results: Conditioning on an abstract token and segmentation mask gives the lowest mean FID, 1.5 compared with 3.2 for the Semantic Diffusion Model. Abstract token augmentation gives the highest classification accuracy, improving ResNet-18 from 83.8% to 87.2% and VGG-16 from 74.5% to 78.7%. Synthetic augmentation gives the highest mean Dice of 87.6% for the CAMUS 2D U-Net and 84.6% for the CardiacUDC nnU-Net. When nnU-Net models are trained on CAMUS and evaluated directly on CardiacUDC, augmentation raises mean Dice from 74.6% to 75.2%.\n  Conclusions: Incorporating synthetic images into training gives modest gains in CAMUS phase classification, segmentation within CAMUS and CardiacUDC, and direct segmentation from CAMUS to CardiacUDC.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "e0dc73937cf093b6",
+  "title": "Effect-Level Validation for Causal Discovery in Interactive Telemetry",
+  "link": "https://arxiv.org/abs/2602.08340",
+  "description": "arXiv:2602.08340v2 Announce Type: replace \nAbstract: Causal discovery is increasingly used to analyze telemetry from interactive systems, but a plausible graph does not guarantee an identifiable or reliable product decision. We study this problem for one query: whether early competitive gameplay increases Day-1 retention in a deployed Role-playing game (RPG). We propose an admissibility-first framework that treats discovered graphs as structural hypotheses, keeps only graphs that identify the target effect and have adequate treatment-control overlap, and validates admissible effects through cross-algorithm stability, placebo, subsampling, and E-value diagnostics. On real telemetry, under minimal constraints the admissible runs that return Directed Acyclic Graphs (DAGs) are those whose graphs leave player-versus-player (PvP) with no parents, so they estimate the confounded raw difference; under the full constraint set all are admissible. Runs returning Partial Ancestral Graphs (PAGs) are not evaluated by the DAG gate and are reported separately. The admissible DAGs agree on one adjustment set and return a positive, cohort-conditional risk-difference average treatment effect (ATE), down from a raw retention gap; the estimate keeps its sign under placebo and subsampling checks, but its magnitude changes with the adjustment set and the constraint specification. A known-truth simulation shows that the checks screen identification and stability given the measured variables and cannot certify the absence of unmeasured confounding, and a second game-telemetry dataset shows that identifiability rates do not transfer. Graph-level recovery is therefore a weak proxy for causal reliability; discovery pipelines for decision support should be evaluated at the query and effect level.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

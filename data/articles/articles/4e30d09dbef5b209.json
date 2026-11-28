@@ -1,0 +1,15 @@
+{
+  "id": "4e30d09dbef5b209",
+  "title": "A Posterior-Dynamics Framework for Imaging Inverse Problems with Pretrained Diffusion Priors",
+  "link": "https://arxiv.org/abs/2608.15144",
+  "description": "arXiv:2608.15144v2 Announce Type: replace-cross \nAbstract: Pretrained diffusion models represent image distributions through a continuum of progressively smoothed distributions. This multiscale structure organizes generation from global structure to fine detail and supports high-quality, diverse samples. We exploit the same multiscale diffusion prior for linear imaging inverse problems. Rather than using the pretrained model only as a denoiser in an outer iteration, we define a surrogate likelihood whose center is aligned with the clean-image coordinate and whose covariance accounts for residual diffusion uncertainty. This construction defines an explicit surrogate posterior path, from which we derive continuous posterior dynamics. A tunable Langevin component supports target tracking and allows the amount of posterior exploration to be adapted to the application. We prove endpoint consistency and a finite-horizon tracking bound and, in the exact-score setting, first-order weak accuracy. For computation, we derive the Posterior-Dynamics Implicit--Explicit sampler (PD-IMEX), a stable method using one score evaluation per diffusion scale and an implicit data-consistency update. Experiments on deblurring, super-resolution, and inpainting show strong reconstruction quality at 100 score evaluations, coarse-grid stability, and controllable fidelity--diversity behavior.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "stat.ML",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

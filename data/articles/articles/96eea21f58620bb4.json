@@ -1,0 +1,13 @@
+{
+  "id": "96eea21f58620bb4",
+  "title": "Taming CoT Obfuscation in VLMs: From Mechanistic Evidence to Activation-Level Enforcement",
+  "link": "https://arxiv.org/abs/2609.24243",
+  "description": "arXiv:2609.24243v3 Announce Type: replace \nAbstract: Reinforcement learning (RL) has substantially improved the reasoning capabilities of vision-language models (VLMs), yet it can induce chain-of-thought (CoT) obfuscation, an operational, non-intentional regime where models achieve high accuracy while producing reasoning traces that are less grounded and harder to monitor. While prior work documents this decay at the behavioral level, the underlying representational correlates of such drift remain poorly understood. In this work, we find that obfuscation is accompanied by a representational shift, where RL-induced optimization makes task-agnostic template features less separable from visually grounded content in the model's activation space. Based on this insight, we propose TAME, an activation-level intervention framework that leverages Sparse Autoencoders (SAEs) to regularize VLM internal features during RL training. Specifically, TAME utilizes an anti-obfuscation feedback loop to reduce behavioral obfuscation and applies an asymmetric SAE constraint to specific internal directions, penalizing template activations while preserving visual evidence. By directly intervening on the features associated with obfuscation, our method improves the transparency and visual grounding of reasoning traces. Experiments on the VIRL-39k and SPA-VL benchmarks across two model families show that TAME improves CoT monitorability (by up to +30.9 points on VIRL and +16.7 points on SPA-VL over GRPO), while largely preserving task accuracy and general-capability performance across four standard VLM benchmarks, with task-specific trade-offs. Our code is available at https://github.com/henrymao2004/TAME.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

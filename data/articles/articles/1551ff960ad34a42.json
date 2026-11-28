@@ -1,0 +1,16 @@
+{
+  "id": "1551ff960ad34a42",
+  "title": "Beyond Final Answers: CRYSTAL Benchmark for Transparent Multimodal Reasoning Evaluation",
+  "link": "https://arxiv.org/abs/2603.13099",
+  "description": "arXiv:2603.13099v3 Announce Type: replace \nAbstract: We introduce CRYSTAL (Clear Reasoning via Yielded Steps, Traceability, and Logic), a diagnostic benchmark with 6,372 instances that evaluates multimodal reasoning through verifiable intermediate steps. We propose two complementary metrics: Match F1, which scores step-level precision and recall via semantic similarity matching, and Ordered Match F1, which further penalizes disordered reasoning chains. References are constructed through a Delphi-inspired pipeline in which four independent MLLMs generate trajectories, which are then aggregated via semantic clustering and validated through human quality gates. Evaluation of 20 MLLMs, including commercial frontier systems not used during benchmark construction, reveals systematic failures that are invisible to answer accuracy: universal cherry-picking (precision far exceeds recall), non-monotonic scaling trade-offs, and disordered reasoning in which no competitive model preserves more than 60% of matched steps in the correct order. Beyond evaluation, we propose the Causal Process Reward (CPR), a multiplicative reward that couples answer correctness with step-level alignment, and CPR-Curriculum, which progressively increases reasoning difficulty during training. CPR-Curriculum achieves a 32% improvement in Match F1 via GRPO where additive reward strategies fail, improving reasoning without manual step annotation.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CV",
+    "cs.IR",
+    "cs.MM"
+  ]
+}

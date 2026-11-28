@@ -1,0 +1,13 @@
+{
+  "id": "c240ab3711bca186",
+  "title": "Solv3R: 3D Looped Transformer as a Multi-view Solver",
+  "link": "https://arxiv.org/abs/2611.02857",
+  "description": "arXiv:2611.02857v2 Announce Type: replace \nAbstract: Classical structure-from-motion reconstruction proceeds iteratively, refining camera poses and scene geometry from a current estimate. This allows maps to easily expand without recomputing solved views, or geometry estimates to improve as more observations are provided. Most geometric foundation models, however, predict entire geometry in a single forward pass or update a recurrent state as frames arrive sequentially, making this expansion and refinement non-trivial. We introduce Solv3R, a looped transformer that learns to continue solving multi-view geometry from its current state. Importantly, its update operator is independent of the iteration count, allowing previously refined and newly introduced views to be updated jointly or selectively, regardless of how ``solved'' they are. We train the operator to preserve accurate reconstructions under continued iteration and correct inaccurate states, enabling refinement of fixed image collections and integration of new observations. Representations of solved views can also be cached once and reused as geometric context across iterations, enabling compact and efficient key-value caching. We analyze the solver dynamics and compare it with the state-of-the-art, showing that a single learned solver supports offline and incremental reconstruction, relocalization, and streaming without task-specific training or learned modules. The code and model are available at https://github.com/ubc-vision/solv3r.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

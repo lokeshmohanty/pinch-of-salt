@@ -1,0 +1,13 @@
+{
+  "id": "b4c26a46c77b83ab",
+  "title": "Where to Approximate: Understanding and Accelerating Looped Multi-View Reconstruction",
+  "link": "https://arxiv.org/abs/2611.33948",
+  "description": "arXiv:2611.33948v1 Announce Type: new \nAbstract: Looped multi-view reconstruction refines scene features by repeatedly applying a shared transformer block. Making these updates cheaper requires knowing how an approximation at one step affects the rest of the refinement. We study this with paired interventions in D\\'ej\\`a View and stacked reconstruction transformers, separating the error an approximation injects, how that error propagates, and how it affects the output. In D\\'ej\\`a View, approximation errors are attenuated more strongly than matched random perturbations under a scale-adjusted state-error measure, and a local Jacobian decomposition separates the contribution of channel gating from the response to spatial error structure. Spatial approximations made early benefit from subsequent refinement, whereas cross-step reuse depends on which quantity is cached and how reuse steps are spaced. At equal final norm, approximation errors change the predicted rotations 1.55 times as much as random errors. These findings guide our proposed method, which reduces spatial resolution and pools keys and values early in refinement, then interleaves attention-output reuse with full attention, and is adapted through lightweight self-distillation. Across five reconstruction benchmarks, the balanced configuration runs $1.63\\times$ faster than the official 16-step D\\'ej\\`a View model with a 1.86-point reduction in average pose AUC@$3^\\circ$. At matched latency, it exceeds the interpolated curve of a trained baseline using full refinement blocks by 4.73 points in AUC@$3^\\circ$ and improves the corresponding geometry metrics.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

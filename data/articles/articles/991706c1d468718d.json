@@ -1,0 +1,15 @@
+{
+  "id": "991706c1d468718d",
+  "title": "Constrained Online Learning with Noisy Constraint Values",
+  "link": "https://arxiv.org/abs/2609.06921",
+  "description": "arXiv:2609.06921v3 Announce Type: replace-cross \nAbstract: We study online convex optimization with time-varying constraints when the constraint values are observed only through noise. In each round the learner picks an action, pays a convex loss, and incurs a convex constraint value that should be nonpositive; it then receives unbiased estimates of the loss and constraint gradients, and an unbiased observation of the constraint value whose error has bounded variance. Performance is measured against the best fixed action in hindsight among those that satisfy every constraint, and violation by the largest total overspend over any interval of consecutive rounds, which we call budget violation. Our algorithm, LEDGER, has $O(\\sqrt T)$ expected regret and $O(\\sqrt{T\\log T})$ expected budget violation over $T$ rounds, uses one projection per round, and needs no strictly feasible action. The logarithm cannot be removed: with Gaussian noise of fixed positive variance, every algorithm with $O(\\sqrt T)$ worst-case regret has worst-case budget violation of order at least $\\sqrt{T\\log T}$, even if only the final total overspend is counted, and budget violation $O(\\sqrt T)$ forces linear regret. When violation is instead the sum of the positive parts of the per-round constraint values (hard violation), no algorithm keeps both expected regret and expected hard violation sublinear if the noise distribution is not fixed, even for affine constraints. With a fixed and known Gaussian noise law of standard deviation $\\sigma$, a worst-case lower bound of order $\\min\\{\\sigma,1\\}T(\\log\\log T/\\log T)^2$ shows that regret and hard violation cannot both be made polynomially sublinear. Noisy constraint values therefore still allow a signed budget to be controlled, at the cost of a logarithmic factor, but not the hard violation.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "math.OC"
+  ]
+}

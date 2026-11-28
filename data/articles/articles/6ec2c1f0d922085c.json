@@ -1,0 +1,14 @@
+{
+  "id": "6ec2c1f0d922085c",
+  "title": "Silent Failures in Agent-Tool Interaction: An Audit of ToolUniverse",
+  "link": "https://arxiv.org/abs/2609.26836",
+  "description": "arXiv:2609.26836v2 Announce Type: replace \nAbstract: Agentic AI systems are increasingly adopting automated pipelines that integrate multiple tools. While prior research have studied task success and task completion of such agentic systems, research on agent to tool interaction chain via a wrapper and API, specifically in biological agentic workflows, remains limited. This study investigates specific failures in agent to tool interaction where a tool invocation appears successful but some or all of the information or functionality from the tool via its API / wrapper is incomplete or missing and there are no communications to the user or the agent regarding the missing information. We call these 'silent failures' because the user or the agents are not aware that such a failure has occurred. For the purpose of this study, we developed an audit mechanism to identify such silent failures in agent to tool interaction chains, by examining 15 scientific tools (and their associated API documentation and tool documentations) integrated within the ToolUniverse environment (ToolUniverse serves as our experimental environment rather than the object of the study itself). We structure our study around 7 failure locus, characterising where the failure occurs in the chain. We observed 91 failures (manually validated post LLM based candidate discovery and automated testing), most frequent of them being missing data or fields and inconsistencies in search, filtering or ranking criteria. Most of the 91 failures occurred in API layer (52) or wrapper layer (25), with a potential of silent failure amplification downstream. The results show that silent failures originate upstream of the event and propagate downstream into apparently valid scientific outputs. We propose a concept of contextual reliability to handle such failures and suggest mechanisms for testing, disclosing, monitoring, and measuring such failures across the agent-tool interaction pipeline.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.SE"
+  ]
+}

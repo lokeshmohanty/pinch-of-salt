@@ -1,0 +1,13 @@
+{
+  "id": "61f238ef1ef14d01",
+  "title": "Attention-Scoped Guidance: Training-Free Spatial Control for Image Editing",
+  "link": "https://arxiv.org/abs/2609.37492",
+  "description": "arXiv:2609.37492v1 Announce Type: new \nAbstract: Instruction-guided image editing should change what the instruction names and leave the rest of the image untouched. In dual classifier-free guidance (CFG), an editor combines two directions at every denoising step, one that pushes toward the instructed edit and one that pulls back toward the source image, using global weights. We introduce Attention-Scoped Guidance (ASG), a sampler wrapper that makes these weights spatial. It reads a soft support map from the instruction attention that the editor already computes, then weakens text guidance where support is low and strengthens image anchoring where support is high. The wrapper requires no training, no external mask, and no additional network evaluation. On the full MagicBrush and PIE-Bench++ splits, ASG improves preservation-oriented metrics, leading three of four MagicBrush metrics and PIE-Bench++ background PSNR. A dose-matched control that removes the spatial placement loses up to 0.73 CLIP on PIE-Bench++, confirming that the spatial allocation itself carries the gain.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

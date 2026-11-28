@@ -1,0 +1,14 @@
+{
+  "id": "5ba3c52a30856118",
+  "title": "A Structure-Agnostic Multi-Objective Evolutionary Weight-Sharing Compression Framework for Deep Neural Networks",
+  "link": "https://arxiv.org/abs/2501.03095",
+  "description": "arXiv:2501.03095v2 Announce Type: replace \nAbstract: Deep neural networks (DNNs) have large parameter sets that are costly to store and to deploy on resource-constrained devices. Weight-sharing compression replaces the many distinct weight values of a network with a small codebook of shared values, called codewords. Prior methods build the codebook by clustering, typically with K-means, which is expensive on models with millions of parameters and must be refit for every codebook size. To stay tractable, clustering is often applied per layer, which requires the network's layer boundaries, tensor shapes, and channel counts. We propose Uniform-Binned Entropy-Constrained Scalar Quantization (UB-ECSQ) with NSGA-II, a retraining- and gradient-free, structure-agnostic, multi-objective compression framework that treats the network as a closed-box. It flattens all parameters into a single vector that shares one codebook. Uniform Binning Quantization (UBQ) maps the vector onto equal-width uniform bins in linear time and represents each occupied bin by its centroid. Entropy-Constrained Scalar Quantization (ECSQ) then merges neighboring bins, trading the added distortion against the entropy of bin occupancy. Dynamic programming finds the optimal merge from bin statistics alone, without any forward or backward pass. NSGA-II searches over only two variables, the number of bins and the merge ratio, and returns a Pareto front of compressed models that trade accuracy against compression ratio (CR). Within a 1% drop in accuracy, and averaged over five seeds, our Pareto fronts reach CRs of 20.8 and 12.9 for ResNet-18 on CIFAR-10 and CIFAR-100, 10.4 to 12.3 for ResNet-18/34/50/101 on ImageNet-1K, 18.4 for VGG16-BN, and 9.0 for ViT-B/16. At this budget, our framework attains a higher CR than every baseline evaluated in each setting. Over the whole objective space, our final Pareto front also achieves the highest hypervolume in all eight settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.NE"
+  ]
+}

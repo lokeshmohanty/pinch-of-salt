@@ -1,0 +1,13 @@
+{
+  "id": "0753076d15d66c40",
+  "title": "Reliability-Driven Feature Correction for Hyperspectral and LiDAR Classification",
+  "link": "https://arxiv.org/abs/2611.22508",
+  "description": "arXiv:2611.22508v1 Announce Type: new \nAbstract: Hyperspectral image (HSI) and LiDAR data provide complementary spectral and elevation information for land-cover classification. However, the spatially varying class-discriminative reliability of modality features is rarely modeled explicitly, allowing weak or ambiguous features to adversely affect cross-modal interaction and fusion. To address this issue, we propose ReDF, a reliability-driven framework that quantifies the reliability of each modality's features at each spatial location through the strength of class-related evidence they provide, and uses it to guide feature correction and fusion. Specifically, a Reliability-Guided Feature Correction module introduces a class prototype bank for each modality and converts feature-prototype similarities into class evidence for reliability estimation. The estimated reliabilities are used to construct a reliability-weighted shared representation and to guide bidirectional cross-modal feature correction based on neighborhood agreement, refining modality features with weak class evidence through information from the other modality. Building on these outputs, a Reliability-Guided Feature Reweighting module conditions a low-rank modulation on the estimated reliabilities and the cross-modal disagreement, and applies it to the corrected modality-specific descriptors to adaptively rescale each modality's contribution to the fused representation used for final classification. Experiments on three public HSI-LiDAR datasets show higher mean overall accuracy and Kappa than the compared methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

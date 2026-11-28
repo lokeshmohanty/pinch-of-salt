@@ -1,0 +1,13 @@
+{
+  "id": "f43cf53743cf901e",
+  "title": "IFC-SSL-Bench: Benchmarking Self-Supervised Learning for Annotation-Efficient Multispectral Imaging Flow Cytometry",
+  "link": "https://arxiv.org/abs/2610.31848",
+  "description": "arXiv:2610.31848v1 Announce Type: new \nAbstract: Imaging Flow Cytometry (IFC) generates large multispectral datasets, yet the need for expert annotations bottlenecks the development of supervised deep learning models. While Self-Supervised Learning (SSL) offers a solution, its application to IFC remains fragmented and lacks systematic benchmarking. To address this, we present IFC-SSL-Bench, a modular framework for evaluating SSL in IFC. We benchmark six SSL approaches across four backbones on two heterogeneous datasets. By assessing downstream classification performance across annotation regimes of the training sets (1%-100%), we quantify annotation efficiency and identify optimal configurations for high-dimensional biological imaging. SSL matches the performance of fully supervised baselines trained on 100% of annotated data while using as little as 5% of annotations for morphological classification, with advantages in low-data regimes below 5%. Across both datasets, the contrastive approach MoCo-v2 paired with ConvNeXt backbones emerged as the top-performing configuration, with ConvNeXtV1-T best for immunological synapse classification and ConvNeXtV2-T for morphological classification. We identify a clear pattern in transfer dynamics: ImageNet initialization benefits morphological classification, consistent with its visual similarity to natural images, whereas random initialization better captures the more domain-specific immunological synapse classification. SSL elevates class-specific F1-scores by over 35 percentage points for structurally complex classes at 1% of annotated data. We synthesize these insights into a unified set of guidelines for deploying self-supervised workflows in high-throughput IFC, and release the benchmark as a resource for future work.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

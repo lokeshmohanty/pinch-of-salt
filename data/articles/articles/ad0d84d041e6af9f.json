@@ -1,0 +1,13 @@
+{
+  "id": "ad0d84d041e6af9f",
+  "title": "RA-CFGCache: From Branch-Level Criteria to Guided-Risk Control under Classifier-Free Guidance",
+  "link": "https://arxiv.org/abs/2609.36433",
+  "description": "arXiv:2609.36433v1 Announce Type: new \nAbstract: Diffusion models enable high-quality visual generation, but iterative denoising remains computationally expensive, especially under classifier-free guidance (CFG), which requires both conditional and unconditional evaluations. Training-free caching reduces this cost by reuse of previously computed features or predictions. However, existing branch-local reuse criteria do not explicitly account for how cache errors combine under CFG or how local perturbations affect the final output. We identify two misalignments in cache control: a branch-guided mismatch, where guided error depends on both the magnitudes and alignment of branch errors, and a local-final mismatch, where the downstream impact of a local error varies across timesteps. We propose RA-CFGCache, a Risk-Aligned Caching framework under CFG that incorporates both factors while keeping the sampling schedule and guidance rule fixed. CFG-aware Guided-Risk Composition combines existing branch-wise proxies using CFG coefficients and offline-calibrated cross-branch alignment. Propagation-Aware Rescaling further weights the resulting guided-risk estimate with a timestep-dependent propagation prior calibrated from isolated reuse perturbations. An online threshold controller then determines when to jointly refresh or reuse both branches. Experiments on FLUX.1-dev, Wan2.1-T2V-1.3B, and CogVideoX-2B demonstrate improved efficiency--fidelity trade-offs over evaluated training-free caching baselines. Moreover, RA-CFGCache is compatible with diverse base proxy families, including TeaCache-, DiCache-, and MagCache-style estimators, and consistently improves fidelity at nearly unchanged latency. Code is available at https://github.com/yiming-l21/RA-CFGCache.git.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

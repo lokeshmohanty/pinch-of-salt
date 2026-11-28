@@ -1,0 +1,14 @@
+{
+  "id": "2c2ba72dc3302b74",
+  "title": "Autoregressive Retriever: Improving Query Understanding from Item Feedback for Universal Multimodal Retrieval",
+  "link": "https://arxiv.org/abs/2610.11666",
+  "description": "arXiv:2610.11666v1 Announce Type: cross \nAbstract: Universal multimodal retrieval typically encodes a query once and ranks independently indexed items by embedding similarity. This design supports efficient search, but leaves the query representation unchanged even when retrieved items could help clarify the information need. We introduce the AutoRegressive Retriever (ARR), a multimodal retrieval model that learns both to select informative items and to use their content to refine subsequent retrieval. ARR alternates between retrieving an item and updating the query embedding, then uses the final embedding to rank the collection. Supervised fine-tuning teaches the encoder to use feedback through stepwise contrastive supervision. Reinforcement learning treats feedback items as actions and optimizes their selection using the final reciprocal rank of a relevant item. A query-side adapter enables this optimization against a fixed item index. ARR demonstrates strong retrieval performance on both in-domain and zero-shot benchmarks, outperforming the compared baselines on average. Further analyses show that feedback improves retrieval at inference time and that training with feedback also improves the initial query embedding, before any item is observed.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.CV"
+  ]
+}

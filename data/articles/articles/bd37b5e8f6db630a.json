@@ -1,0 +1,13 @@
+{
+  "id": "bd37b5e8f6db630a",
+  "title": "From Pixel Generation to Topological Inference: Structural Dual Super-Resolution for Trustworthy Cross-Physical-Domain Trabecular Morphology Learning",
+  "link": "https://arxiv.org/abs/2609.34716",
+  "description": "arXiv:2609.34716v2 Announce Type: replace \nAbstract: Clinical CT and UHRCT cannot resolve individual trabeculae, whereas synchrotron radiation microCT (SRuCT) provides high-resolution references but is not applicable for in vivo imaging. The two domains differ by a 32x resolution gap, are only coarsely paired, and exhibit severe physical differences including partial volume effects, noise, and artifacts. Existing super-resolution networks and pretrained-prior methods (GLEAN/StyleGAN2, Stable SR/LDM) underperform because they target pixel generation---diverse details and SSIM/PSNR---and do not model these physical differences. Pixel generation for a 32x resolution gap is intrinsically ill-posed. We propose a paradigm shift from pixel generation to topological inference: deterministically predicting invariant microstructures from macro-scale low-resolution inputs, evaluated by morphological parameters. The core of our 2D morphology learning lies in training on 2D slices while evaluating on 3D morphological parameters, ensuring that the learned representations capture true three-dimensional trabecular topology rather than 2D pixel statistics. We realize this paradigm via structural dual super-resolution, coupling forward physical degradation (micro-to-macro) with inverse structural inference (macro-to-micro) through structural duality constraints. The method is an end-to-end, few-shot, compact structural dual network (SDN), comprising a bidirectional modeling network, a multi-scale structural consistency discriminator, and four structural duality constraints. On the test set, SDN achieves morphological parameters largely consistent with SRuCT across six metrics, with SSIM reaching 0.8. Trained on 3.2 um SSRF data, the model generalizes well to 3.25 um isotropic BSRF data from an independent source, validating cross-source generalization and confirming trustworthy structural inference rather than pixel generation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

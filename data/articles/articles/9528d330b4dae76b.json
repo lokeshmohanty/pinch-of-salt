@@ -1,0 +1,13 @@
+{
+  "id": "9528d330b4dae76b",
+  "title": "Domain Adaptation of SAM 2.1 for Building-Component Segmentation in Image-Based 3D Reconstruction",
+  "link": "https://arxiv.org/abs/2610.12786",
+  "description": "arXiv:2610.12786v1 Announce Type: new \nAbstract: 3D reconstruction of building components using image-based scanning requires appropriate segmentation of the objects in the 2D building images. In order to benefit from consistent grouping of the 2D masks in 3D environments, vision foundation models such as the Segment Anything Model have been utilized by Group Anything with Radiance Fields (GARField) to perform 3D segmentation. This study fine-tuned SAM 2.1 on the HBD dataset, consisting of 2,679 annotated images from 42 buildings, to enhance multi-class segmentation of 2D building images, covering 11 classes (Wall, Window, Ceiling, Door, Column, Beam, Floor, Opening, Curtain Wall, Roof, and Lift). The model was evaluated using per-class IoU, Dice, and mIoU metrics, and the results show an improvement in mIoU from 49.9% to 69.6%, indicating a meaningful improvement in class segmentation and providing a more accurate model for distilling the masks in 3D. SegFormer was then used as a baseline, generating per-class masks for comparison with SAM 2.1, which indicates improvement in some object classes with larger surface area. The masks in the building images were grouped in the neural radiance field, and the pretrained SAM 2.1 was compared with the fine-tuned SAM 2.1 in the newly rendered images. This comparison shows that fine-tuning improves the grouping of building components at a user-selected grouping scale. This advances the application of Group Anything with Radiance Fields (GARField) in 3D, enabling better segmentation of building structures for 3D auto-reconstruction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

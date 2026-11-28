@@ -1,0 +1,14 @@
+{
+  "id": "955f5a81c5cb4065",
+  "title": "The Surface You Test Is Not the Surface That Breaks",
+  "link": "https://arxiv.org/abs/2605.30454",
+  "description": "arXiv:2605.30454v2 Announce Type: replace-cross \nAbstract: Prompt-injection benchmarks for LLM agents typically test attacks through a single injection surface and report the resulting attack success rate as a property of the model. We ask whether those robustness conclusions remain stable when the same adversarial content enters through a different part of the agent interface. Using AgentDojo, we evaluate 13 LLMs across four task suites and place a byte-identical payload either in a tool output or in the tool description. This small change produces large differences in comparative robustness: 44.9% of all model pairs change their relative ordering across the two surfaces, with substantial ranking instability in every suite. The effect is especially pronounced for a small number of models, showing that a benchmark can substantially underestimate vulnerability when it tests only one surface. We further find that this behavior has predictive structure. Using three suites to identify the riskier surface for each model predicts the more vulnerable surface on an unseen suite with 76.9% accuracy. Defense results show the same dependence, as mitigations effective against tool-output attacks can leave substantial exposure through tool descriptions. Our results show that prompt-injection robustness is not surface-invariant and that agent evaluations should test the surfaces on which their security conclusions depend.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

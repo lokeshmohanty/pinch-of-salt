@@ -1,0 +1,13 @@
+{
+  "id": "f16d5e420ef97cee",
+  "title": "An Error Budget for Shuffled Multimodal Windows in the 3rd WEAR Challenge: Stacking, Count Constraints and Seam Matching",
+  "link": "https://arxiv.org/abs/2610.32398",
+  "description": "arXiv:2610.32398v1 Announce Type: new \nAbstract: The 3rd WEAR Dataset Challenge asks for an activity label for every one-second window of four unseen participants. Each window has 15 VideoMAEv2 frame embeddings, the accelerometer signal of one random limb, and the windows are shuffled. This report is an empirical analysis of one system built after the challenge deadline. Window classifiers are stacked with features averaged over per-participant graphs of video neighbours and scored successor candidates, and a mean-field style decoder with a soft count constraint per activity labels all windows of a participant together. The setting is offline and transductive, and the count constraint relies on each activity being performed once. In a participant-wise simulation with participant-level bootstrap intervals, stacking added 0.051 macro F1 over stage-1 fusion and the count constraint 0.011 (95% interval 0.006 to 0.017). A quadratic seam distance ranks the true same-limb successor first among about 720 candidates in 83.9% of cases, but adding it to the link model changed macro F1 by -0.0001 (-0.0006 to 0.0005). With the decoder settings and the mixing weight chosen inside the folds and the mislabelled spans left out of training, the system scores 0.936 in simulation (0.940 for participants who performed each activity once); the submitted configuration scores 0.938 (0.943). Per-participant scores range from 0.80 to 0.97. These results come from a non-nested stacking protocol that uses unlabelled features transductively, so they are not a fully inductive estimate. An oracle that averages the final unary scores over the true segments reaches 0.973, and 79% of the remaining errors involve the null class. On the private leaderboard, which no choice used, the selected Kaggle submission scored 0.9231 (public 0.9254, with bounds partly tuned there), and a later one with bounds chosen in simulation scored 0.9247 (public 0.9253).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

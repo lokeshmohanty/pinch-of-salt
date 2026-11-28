@@ -1,0 +1,14 @@
+{
+  "id": "eab750a529cca4fb",
+  "title": "Revision-Aware Independent Agent Graphs for Dynamic Reasoning",
+  "link": "https://arxiv.org/abs/2610.01249",
+  "description": "arXiv:2610.01249v1 Announce Type: new \nAbstract: Conventional reasoning protocols present a fixed, preselected task, so they cannot test whether an agent propagates relevant updates, preserves unaffected work, or reconstructs a historical task binding. We therefore study \\emph{dynamic task routing}, in which an event stream revises task bindings and a system must select the document version valid at each query time before solving it. To study this problem, we repurpose six widely used benchmarks: MMLU, MMLU-Pro, MedMCQA, MATH, GPQA, and HumanEval into 31{,}119 dynamic episodes comprising 373{,}428 temporally categorized queries. This setting exposes a central trade-off: recomputing after every event wastes work, whereas unguarded reuse returns stale conclusions. We introduce the Revision-Aware Independent Agent Graph (RIAG), a bounded multi-agent policy that separates deterministic temporal resolution from task reasoning. RIAG caches solutions by immutable document identity, starts each fresh task with two unexposed attempts, and conditionally invokes audit and repair, using at most four calls per document version. On this collection, homogeneous RIAG achieves 54.24\\% joint routing-and-answer accuracy at 0.62 calls/query, compared with 32.22\\% at 18.00 calls/query for the strongest comparison method; heterogeneous RIAG reaches 49.78\\% at 0.63 calls/query.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL"
+  ]
+}

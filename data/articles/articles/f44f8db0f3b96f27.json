@@ -1,0 +1,13 @@
+{
+  "id": "f44f8db0f3b96f27",
+  "title": "ReCoSplat: Online Feed-Forward Gaussian Splatting via Render-and-Compare",
+  "link": "https://arxiv.org/abs/2603.09968",
+  "description": "arXiv:2603.09968v2 Announce Type: replace \nAbstract: Online novel view synthesis requires a model to reconstruct a scene causally from a stream of observations while keeping it renderable at every moment. We present ReCoSplat, an online feed-forward Gaussian Splatting model supporting both posed and unposed inputs, with or without camera intrinsics. While assembling local Gaussians with camera poses scales better than canonical-space prediction, stable training requires ground-truth poses, creating a distribution mismatch when predicted poses are used at inference. To address this, we introduce a Render-and-Compare (ReCo) module. ReCo renders the accumulated scene from the viewpoint of the incoming observation, comparing the render with the observation to produce a stable conditioning signal that helps bridge the mismatch. To support long sequences, we propose a hybrid KV-cache compression strategy combining early-layer truncation with chunk-level selective retention, reducing the KV cache size by over 90% for 100 or more frames. ReCoSplat achieves state-of-the-art performance among online methods while processing 256-view streams at an average input throughput of 45.1 FPS, with an end-of-stream throughput of 41.1 FPS on an RTX 6000 Ada GPU. Code and pretrained models are released at https://freemancheng.com/ReCoSplat .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

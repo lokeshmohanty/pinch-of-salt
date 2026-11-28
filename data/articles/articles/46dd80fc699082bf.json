@@ -1,0 +1,13 @@
+{
+  "id": "46dd80fc699082bf",
+  "title": "VeriFuse: Bounded Vision-Language Arbitration and Reason-Guided Refinement for Cooperative 3D Perception",
+  "link": "https://arxiv.org/abs/2609.21323",
+  "description": "arXiv:2609.21323v1 Announce Type: new \nAbstract: Vision-language models (VLMs) have demonstrated strong scene understanding and semantic judgment across diverse tasks, but their appropriate role in cooperative perception remains unclear. Directly asking a VLM to regress 3D detections is unreliable and computationally expensive, whereas using it to select the output of a single source discards useful information from other agents. We introduce VeriFuse, a bounded arbitration framework for vehicle-infrastructure cooperative 3D detection. Each agent first produces detections independently. Around each vehicle and roadside proposal, VeriFuse generates source-conditioned geometric candidates and combines the original detections, their perturbations, and cross-source hypotheses into a unified candidate pool. A frozen VLM then chooses among three admissible actions: SELECT an adequate candidate; REFINE an existing anchor when an object is supported but all candidates are geometrically inadequate; or REJECT an unsupported infrastructure-only proposal. Experiments on the DAIR-V2X dataset show that VeriFuse achieves 0.494/0.357 cooperative 3D AP50/AP70 and limits the relative vehicle-side BEV AP50 drop under a 300 ms delay to 1.7%. Overall, VeriFuse assigns the VLM a clear and constrained role in cooperative perception: semantic reasoning resolves ambiguity among cross-agent hypotheses, while deterministic constraints determine the final 3D geometry.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

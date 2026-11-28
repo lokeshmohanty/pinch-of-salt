@@ -1,0 +1,14 @@
+{
+  "id": "7b997affb385806c",
+  "title": "DOA-SORT: Directional Occlusion-Aware Multi-Object Tracking with Distributional Observations",
+  "link": "https://arxiv.org/abs/2609.22706",
+  "description": "arXiv:2609.22706v1 Announce Type: new \nAbstract: Identity association in multi-object tracking (MOT) is vulnerable to partial occlusion, truncated detections, and fluctuating confidence scores. Existing motion-dominant trackers commonly represent occlusion as a scalar penalty. This treatment misses the directional observation bias caused by occlusion: left, right, top, and bottom occlusions distort the location and shape of a detection in different ways. We propose \\ours{} (Directional Occlusion-Aware SORT), an online and training-free tracker that models these biases explicitly. First, it infers a soft front--back ordering from box overlap and relative bottom positions, and estimates directional occlusion coverage and depth. It then constructs a mixture of one clean and four directional occlusion observation components. The model uses a five-dimensional observation comprising box center, area, confidence, and aspect ratio, and adapts observation noise to predicted occlusion and detection confidence. The directional mixture likelihood is used in high-confidence association, low-confidence association, and track recovery; ambiguity penalties and local order-consistency swaps further reduce identity errors among nearby objects. On the DanceTrack validation split, \\ours{} improves HOTA from 63.00 to 66.34, AssA from 45.10 to 49.57, and IDF1 from 62.19 to 65.28 over OA-SORT with the same detector and evaluation protocol. The gains are concentrated in association quality while detection accuracy remains stable. Additional local evaluations on MOT17 and MOT20 train splits characterize cross-dataset behavior under the same no-ReID tracking protocol.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.IR"
+  ]
+}

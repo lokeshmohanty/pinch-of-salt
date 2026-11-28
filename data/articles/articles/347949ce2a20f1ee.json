@@ -1,0 +1,14 @@
+{
+  "id": "347949ce2a20f1ee",
+  "title": "Words Speak Louder? Exploring the Language Shortcut of LLM-Driven Incomplete Multimodal Learning",
+  "link": "https://arxiv.org/abs/2611.20349",
+  "description": "arXiv:2611.20349v2 Announce Type: replace \nAbstract: Is a face or a voice still heard once the words are known? Incomplete multimodal learning increasingly uses large language models (LLMs) as fusion engines: modality features enter as token blocks and missing modalities become placeholders. We find that LLM-driven fusion can override non-verbal evidence it can read. Contrasting its full-input prediction with counterfactual views, the same model shown one modality or no content, we identify language shortcuts. We build MR-Bench: MR-Bench-A types every test sample of four sentiment benchmarks; MR-Bench-H contains 900 human-validated clips (620 language-shortcut, LS; 280 non-verbal-shortcut, NS) from seven sources, and every model is scored on all of them. Zero-shot MLLMs solve at most 32.7% of the LS clips; adding the transcript to the muted video lowers vision-language accuracy by 46.1-53.1 points. Yet inverting a text-only model's answers solves 94.4%, so LS accuracy alone cannot establish use of non-verbal evidence. Inside the fusion LLM, fused states align increasingly with the text view late in the decoder. Counterfactual-View Reliability learning (CoVeR) trains views as unimodal judges and withholds fused supervision where they disagree. It achieves state-of-the-art results on five benchmarks without extra inference cost in accuracy mode. On MR-Bench-H, it reaches 61.7% LS and 93.6% NS accuracy; robust mode raises LS accuracy to 63.0% while lowering NS accuracy to 84.8%. Among LS clips solved without text, adding text causes errors on 30.1% with CoVeR versus 32.2% with LLM-Fusion. Project page: https://peacelwh.github.io/CoVeR/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.MM"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "3b31786efacb1682",
+  "title": "ClawMMU: Protection-Coherent Virtual Memory for Stateful LLM Agents",
+  "link": "https://arxiv.org/abs/2610.28093",
+  "description": "arXiv:2610.28093v1 Announce Type: cross \nAbstract: AI agents keep long-term memory, much of which comes from web pages and tool results. Agent harnesses, the software that runs the model, do not record who may act on this memory, so an instruction hidden in a fetched page can be treated as the user's own instruction. We propose ClawMMU, a protection layer that labels every piece of memory with its owner, scope, origins, and authority. ClawMMU checks these labels whenever content enters the model's context, is written to storage, returns from storage, or drives a tool call. Its central rule is that information may rise in authority, but authority never lifts itself. Because the checks depend on where content came from, not on what it says, memory attacks become classical protection faults that the harness stops even when the model is fooled.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI",
+    "cs.OS"
+  ]
+}

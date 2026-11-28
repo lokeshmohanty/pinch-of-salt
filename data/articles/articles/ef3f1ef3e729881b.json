@@ -1,0 +1,14 @@
+{
+  "id": "ef3f1ef3e729881b",
+  "title": "Learning from All-Failed Groups via First-Visit Coverage in Long-Horizon Agentic Tasks",
+  "link": "https://arxiv.org/abs/2607.22724",
+  "description": "arXiv:2607.22724v2 Announce Type: replace-cross \nAbstract: Group-based policy optimization has been increasingly used to train large language model (LLM) agents from sparse outcome rewards by comparing trajectories or steps within a group. However, on difficult long-horizon agentic tasks, we found this comparison suffers from a sampling imbalance: repeated or low-effect actions dominate the high-probability region of the policy, leaving useful state-changing actions under-sampled. This imbalance produces many all-failed rollout groups, where the relative advantages within such a group provide no direction for updating the policy. Consequently, the sampling imbalance and the all-failed groups collapse into a self-perpetuating credit trap: failure-dominated sampling yields no learning signal, allowing repeated low-effect actions to persist. To break this trap, we propose Coverage-conditioned Group Policy Optimization (CovGPO), which uses first-visit observation coverage only when all samples in a group receive zero outcome reward. Specifically, within such groups, CovGPO assigns higher relative advantages to state-exploring actions without corrupting the original reward signal, as reaching new observations is a prerequisite for task success. Experiments on two challenging agentic benchmarks, ALFWorld and WebShop, show that CovGPO consistently improves over group-based baselines, with particularly large gains on hard tasks.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

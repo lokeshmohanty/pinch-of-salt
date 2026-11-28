@@ -1,0 +1,13 @@
+{
+  "id": "8b94a87e2159c37a",
+  "title": "Rethinking Evaluation for Video Capsule Endoscopy: Validation Protocol, Source-Video Diversity, and Cross-Dataset Shift",
+  "link": "https://arxiv.org/abs/2611.13245",
+  "description": "arXiv:2611.13245v1 Announce Type: new \nAbstract: Automated video capsule endoscopy (VCE) classification remains challenging due to severe class imbalance, limited source-video diversity, and variations in image appearance across datasets. Although deep learning models have demonstrated promising performance on established benchmarks, their reliability under different validation protocols and external dataset shift remains insufficiently understood. In this work, we introduce DMSNet, a deformable adaptive multi-scale edge-guided attention network integrating adaptive multi-scale feature fusion, deformable lesion refinement, edge-guided attention, and sparse feature selection. We benchmark DMSNet against 18 representative convolutional, transformer-based, and pretrained vision architectures on Kvasir-Capsule under random frame-level and source-video-disjoint validation protocols. We further identify source-video overlap between the original training and test splits and evaluate model performance on both the complete test set and a source-video-disjoint subset. Under random frame-level validation, DMSNet achieves an MCC of 0.442 $\\pm$ 0.020 on complete test set and 0.456 $\\pm$ 0.037 on the source-video-disjoint subset. On the external CV2024 dataset, ConvNeXt-Tiny achieves the highest MCC of 0.207, while performance degrades substantially across architectures relative to in-domain evaluation. We further investigate source-video diversity using a per-class cap of 200 training frames. With the total training-set size held fixed, increasing the maximum source-video coverage from four to eight improves MCC for 17 of 19 evaluated architectures. Overall, these findings demonstrate that model rankings and classification performance depend substantially on evaluation protocol, training-source diversity, and cross-dataset shift, emphasizing the need for source-aware validation and rigorous external evaluation of VCE classification systems.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

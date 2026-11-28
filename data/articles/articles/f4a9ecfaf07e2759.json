@@ -1,0 +1,13 @@
+{
+  "id": "f4a9ecfaf07e2759",
+  "title": "Flow matching for Sentinel-2 super-resolution: implementation, application, and implications",
+  "link": "https://arxiv.org/abs/2605.00367",
+  "description": "arXiv:2605.00367v2 Announce Type: replace \nAbstract: Developing robust techniques for super-resolution of satellite imagery involves navigating commonly observed trade-offs between spectral fidelity and perceptual quality. In this work, we introduce a flow matching model for 4x super-resolution of 10-m Sentinel-2 visible and near-infrared bands over the conterminous United States (CONUS) using a dataset of 120,851 10-m Sentinel-2 and 2.5-m resampled NAIP imagery pairs acquired on the same day. Our results showed that the flow matching model outperformed diffusion and Real-ESRGAN models in pixel-wise accuracy in a single sampling step using the Euler method, closely approaching the performance of a dedicated supervised regression baseline. When evaluated with a second-order Midpoint solver, our model generated perceptually realistic super-resolved imagery in only 20 sampling steps, effectively navigating the perception-distortion trade-off at inference time without retraining. We used this model to produce a super-resolved 2.5-m 4-band CONUS imagery product derived from 2025 10-m Sentinel-2 annual composites, consisting of over 1.58 trillion pixels. We further evaluated the use of super-resolved data on a land cover classification task using semantic segmentation models. Finally, we generated a yearly 2.5-m land cover product for the Chesapeake Bay watershed for 2020-2025. An accuracy assessment against 25,000 ground truth points revealed an overall accuracy of 89.11% for the 2021 and 2022 land cover data. We conclude that flow matching is an effective generative modeling approach for super-resolution of Sentinel-2 imagery compared to diffusion and Generative Adversarial Network-based methods, and has strong implications for expanding access to high-resolution imagery for geospatial applications that demand fine spatial detail.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

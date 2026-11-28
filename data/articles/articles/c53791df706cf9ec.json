@@ -1,0 +1,14 @@
+{
+  "id": "c53791df706cf9ec",
+  "title": "A Sign Law for Entropy Drift under Sampler Mismatch in RLVR",
+  "link": "https://arxiv.org/abs/2610.34044",
+  "description": "arXiv:2610.34044v2 Announce Type: replace-cross \nAbstract: In reinforcement learning with verifiable rewards (RLVR), whether entropy rises or falls can depend on choices that matter little under exact sampling, such as whether over-length responses are masked or counted as failures. We trace this to sampler mismatch: rollouts are drawn with top-k/top-p truncation or at a temperature the learner does not apply. We prove that a constant advantage shift then changes the entropy of a softmax policy, at first order and in expectation, with a sign fixed by the sampler. Positive shifts sharpen the policy under any sampler whose likelihood ratio to the policy increases with token probability, including top-k, top-p, min-p, and temperatures below one, and flatten it under flatter samplers. In group-based RLVR with token-level losses, the baseline-dependent part of this drift is set by the token-weighted net advantage, which masking and failing can push to opposite signs. The rest comes from a covariance between advantages and the sampler's sharpness gap and feeds back on itself: in a two-level model, a push away from a sharper sampler takes off in finite time, while a pull toward it saturates. On a 2B model, the entropy slope is linear in shifts of the net advantage under truncated sampling and indistinguishable from flat under exact sampling. Token-level importance ratios leave 98% of the drift, and four clipped minibatch updates per batch amplify it sevenfold. In 100-step runs, a net-zero baseline only delays an entropy explosion, and entropy raised at the start keeps rising only under truncation; cancelling the first-order drift at every step keeps entropy bounded without changing the learner. On a 9B reasoning model forked from an uncorrected run, zeroing the net advantage or renormalizing the learner raises held-out accuracy after ten steps by 8.2 and 8.8 points over the uncorrected rule, with no difference under exact sampling.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

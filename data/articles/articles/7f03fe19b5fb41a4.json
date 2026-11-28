@@ -1,0 +1,13 @@
+{
+  "id": "7f03fe19b5fb41a4",
+  "title": "Restoring without Forgetting: Filter-Level Continual Image Restoration via Parameter-Space Integrated Gradients",
+  "link": "https://arxiv.org/abs/2609.38591",
+  "description": "arXiv:2609.38591v1 Announce Type: new \nAbstract: Adapting image restoration models to a stream of new tasks without revisiting past data remains challenging due to catastrophic forgetting. In this work, we propose Restoring without Forgetting (RwF), a filter-level continual adaptation framework for image restoration built upon a critical observation: task-specific knowledge is centered in a small subset of filters and can be separated from those reconstructing general content. RwF first performs parameter-space integrated gradients attribution to localize degradation-critical filters in a coarse-to-fine manner. It then adapts to new tasks by generating task-specific filters from a filter bank using compact factorized low-rank transformations, further augmented with cross-task attention and prototypical contrastive learning, and lastly assembles them back only at localized positions. Experiments on six restoration tasks show that RwF effectively avoids forgetting and achieves competitive restoration quality against all-in-one methods that have full data access, and outperforms LoRA-style adaptation with $\\sim$10$\\times$ fewer additional parameters. Code is available at https://github.com/funkdub/Restoring-without-Forgetting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d962f4b961ca070a",
+  "title": "Invariant Discovery for Networked Systems",
+  "link": "https://arxiv.org/abs/2607.22944",
+  "description": "arXiv:2607.22944v2 Announce Type: replace-cross \nAbstract: Invariants, the relations expected to hold among measured signals of a network, underpin applications from verification to traffic generation, telemetry imputation, and input validation. Yet, writing them by hand demands rare expertise in both formal logic and networking. Testing all possible combinations of telemetry variables statistically is intractable at network scale, while existing automatic tools still require a human-authored grammar of admissible invariants and learn only exact, \"hard\" rules that break under real-world noise. Our key idea is to use an LLM to inspect variable metadata, classify counter data types, and predict candidate syntactic relationships that form a compact grammar, followed by a deterministic statistical search within that grammar. If the initial grammar fails to recover trusted known invariants on held-out telemetry, Autogram instructs the LLM to iteratively widen the grammar until recovery succeeds. By confining the LLM to grammar induction and re-induction while delegating candidate verification to logical and statistical checks, Autogram turns non-deterministic AI proposals into auditable invariants with formal guarantees within the induced grammar. We design and prototype Autogram and evaluate it on both public and production WAN telemetry, recovering expert-derived invariants with full recall and low false positives. We close with a discussion of open problems on the path toward fully open-ended invariant discovery.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NI",
+    "cs.AI",
+    "cs.LG",
+    "cs.SC"
+  ]
+}

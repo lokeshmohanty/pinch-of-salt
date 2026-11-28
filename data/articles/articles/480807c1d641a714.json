@@ -1,0 +1,13 @@
+{
+  "id": "480807c1d641a714",
+  "title": "PTQ4SAM3: Semantics-Preserving Post-Training Quantization for Segment Anything Model 3",
+  "link": "https://arxiv.org/abs/2611.06143",
+  "description": "arXiv:2611.06143v1 Announce Type: new \nAbstract: Segment Anything Model 3 (SAM 3) can segment objects from text prompts and track them across video, but its memory and computation costs make deployment difficult. Post-training quantization (PTQ) reduces these costs by using fewer bits. However, a quantized model can select the wrong object or lose track of its target across frames. We call this prompt-alignment drift. Controlled tests show that perturbing low-variance feature directions strongly affects target selection. We propose Semantics-Preserving Quantization (SPQ), which gives more calibration weight to concept-sensitive parameters, preserves residual features, and corrects the mean error in video memory. Fixed text concepts guide calibration without task annotations. All three components operate offline and add no inference operators. With a W4A8 image encoder, SPQ improves RefCOCO Pr@0.5 from 42.1 to 72.5 over PTQ4SAM while retaining 54.8 COCO mask AP. Experiments on LVIS, RefCOCO variants, and SA-V show consistent gains. A CLIP study also shows improved image-text retrieval.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

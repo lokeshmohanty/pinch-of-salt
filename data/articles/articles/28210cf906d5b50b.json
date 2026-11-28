@@ -1,0 +1,14 @@
+{
+  "id": "28210cf906d5b50b",
+  "title": "SnapFlow: One-Step Action Generation for Flow-Matching VLAs via Progressive Self-Distillation",
+  "link": "https://arxiv.org/abs/2604.05656",
+  "description": "arXiv:2604.05656v2 Announce Type: replace \nAbstract: Vision-language-action (VLA) models with flow-matching action heads, such as {\\pi}0 and {\\pi}0.5, have become a standard recipe for generalist robot manipulation, but every action chunk is produced by integrating a learned velocity field over about ten sequential action-expert evaluations, so action generation dominates model latency and caps the achievable control frequency. Existing remedies either shrink each evaluation through layer distillation or pruning while leaving the sequential solver in place, or import one-step objectives from image generation that were designed for training from scratch, rely on an exponential-moving-average teacher or an external critic, and regress finite-span targets onto the conditional velocity, whose variance around the marginal field biases the learned map. We introduce SnapFlow, a self-distillation method that adapts a pretrained flow-matching VLA to one-step action generation. SnapFlow mixes local flow-matching supervision with shortcut samples whose target is the model's own two-step Euler endpoint under stop-gradient, and adds a single zero-initialized destination-time projection so that one action expert serves both objectives while the pretrained predictor is preserved at initialization; no separate teacher network or critic is required. On {\\pi}0.5, whose 10-NFE teacher operates near ceiling, the archived one-NFE SnapFlow checkpoint reaches 98.75% LIBERO success versus 97.75% for the teacher; under a separate paired evaluation of {\\pi}0, the one-NFE model surpasses its teacher by 10.5 percentage points. SnapFlow also lowers mean and tail action error on held-out data, cuts batch-one model latency by about 3.3x, and transfers to shelf retrieval on a dual-arm humanoid.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

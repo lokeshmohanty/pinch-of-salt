@@ -1,0 +1,14 @@
+{
+  "id": "55334d882a01d0c9",
+  "title": "The Telephone Game: Evaluating Semantic Drift in Unified Models",
+  "link": "https://arxiv.org/abs/2509.04438",
+  "description": "arXiv:2509.04438v3 Announce Type: replace \nAbstract: Unified models (UMs) combine visual understanding (I2T) and generation (T2I) in a single framework. We focus on T2I and I2T, where cross-consistency---what a model understands, it should be able to generate---is a promise of unification and a necessity when composing both capabilities. Yet, existing benchmarks evaluate them in isolation: FID/GenEval for T2I; MME/MMBench for I2T. We show this gap is consequential: models scoring competitively on these benchmarks can fail severely when understanding and generation are composed, losing entities, attributes, spatial relations, and counts, resulting in semantic drift. To quantify drift, we introduce the Semantic Drift Protocol (SDP), inspired by the Telephone Game: starting from a caption or image, we alternate I2T and T2I over multiple generations and measure semantic preservation. We propose Mean Cumulative Drift (MCD), an embedding-based measure of content retention across three representation spaces, and Multi-Generation GenEval (MGG), extending GenEval's object-level compliance scoring across generations. To stress-test models beyond COCO-style data, we create a benchmark of 400 image-text pairs sampled from NoCaps and DOCCI, emphasizing novel objects and fine-grained descriptions. Applying SDP to seven models reveals that drift varies dramatically and is not predicted by single-pass scores: BAGEL retains high semantic fidelity over multiple generations, while VILA-U and Janus variants collapse within five generations, despite comparable isolated metrics. We identify six recurring failure modes and find degradation is typically catastrophic rather than gradual: once a critical error occurs, subsequent generations compound it. SDP exposes failure modes that single-pass benchmarks miss, enabling a more faithful assessment of unified model reliability. Code and benchmark: https://github.com/mollahsabbir/telephone-game-semantic-drift",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.CL"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "d90f47270a62f2c8",
+  "title": "Detect Before You Leap: Mirage Detection in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2606.00435",
+  "description": "arXiv:2606.00435v4 Announce Type: replace-cross \nAbstract: Vision-language models (VLMs) can produce confident answers without relevant visual evidence, a failure mode known as mirage reasoning (Asadi et al., 2026). To that end, we study pre-release mirage detection: deciding whether a VLM answer should be released or withheld. Our model-agnostic method, Text-Conditioned Layer-wise Internal Alignment (TC-LIA), tracks question-image alignment across the layers of a frozen CLIP ViT-H/14 encoder, summarizing patch-text alignment by final similarity, late-layer top-k alignment, early-to-late gain, and slope. TC-LIA is purely unsupervised (fixed projections, fixed scoring weights, no labels, no training) and already delivers strong detection independently. Additionally, when combined with blank/noise detection, domain routing, and VLM self-assessment, it forms an ensemble whose supervised training improves performance but is an optional add-on. On 19,004 samples spanning ten VQA domains, fourteen state-of-the-art VLMs exhibit 57.3-75.0% base mirage rates. Our proposed TC-LIA alone cuts this to 7.5% with 83.5% Related/Unrelated/Blank-Noise classification accuracy, and the ensemble reaches 84.3-88.4% accuracy with 5.9-7.2% mirage rates (best joint result: 88.4% accuracy, 6.4% mirage rate). Notably, an ensemble trained on a single backbone transfers well to unseen backbones, with the best-transferring source staying within 1.2% accuracy points of per-backbone training across thirteen held-out VLMs.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

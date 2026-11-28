@@ -1,0 +1,13 @@
+{
+  "id": "6b6d9fa18c26c5dc",
+  "title": "Not All Patches Are Equally Forgettable: Spatially Localized Domain Unlearning in Vision-Language Models",
+  "link": "https://arxiv.org/abs/2609.17790",
+  "description": "arXiv:2609.17790v1 Announce Type: new \nAbstract: Pre-trained vision-language models (VLMs) exhibit strong cross-domain recognition performance even without additional training. However, this robustness can also preserve undesirable domain-specific behavior, as domain-related and semantic information often remain entangled within the learned representation space, making selective domain unlearning challenging. Existing approaches typically address this problem through latent-space disentanglement and prompt- or feature-level interventions, without directly attributing and attenuating individual patch-token contributions. However, here we suggest that rather than uniformly suppressing the full representation, it may be more effective to exploit the spatial structure of vision transformers to localize and suppress patch regions that contribute disproportionately to forget-domain prediction. Patches that strongly influence forget-domain prediction may not be equally important for semantic recognition, suggesting that forgetting should be guided according to the domain contribution of different visual regions. Specifically, we propose a two-stage patch-selective framework that first estimates patch-level domain sensitivity and then selectively attenuates patches whose contribution to forget-domain prediction is stronger than their semantic utility. We evaluate our framework on Office-Home, Mini DomainNet, and DomainNet. Experimental results demonstrate improved forgetting-retention tradeoffs compared to prior methods while improving retained-domain recognition by up to 3.8\\%. Additional evaluations under visually overlapping and unseen-domain settings further demonstrate improved robustness under distribution shift.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

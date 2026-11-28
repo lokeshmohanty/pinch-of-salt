@@ -1,0 +1,13 @@
+{
+  "id": "1142170ff0f6c1dc",
+  "title": "Cracks in Embeddings: Robustness and Stability of JEPA-Based Chest X-Ray Representations",
+  "link": "https://arxiv.org/abs/2611.17905",
+  "description": "arXiv:2611.17905v1 Announce Type: new \nAbstract: Self-supervised Joint Embedding Predictive Architecture (JEPA) models are increasingly used for medical imaging, however there is a limited understanding about robustness of these models toward real-world image changes. We test four JEPA-based chest X-ray encoders, trained on 78,468 NIH ChestX-ray14 images, under six tests: two black-box adversarial attacks (SPSA, Boundary Attack), three image corruptions (Gaussian noise, brightness shift, contrast shift), and a label-scarcity test, measuring embedding change and classification AUROC. These perturbations cause severe, model-dependent damage: encoder-level Cosine Similarity drops as low as 0.33, and AUROC falls by as much as 0.12 in the worst case (I-JEPA under the Boundary Test). We test two ways of training the small predictor on top of each frozen encoder to address this. Adversarial fine-tuning, trained on clean and perturbed images together, raises embedding consistency above 0.97 in nearly every case and improves AUROC, relative to the same perturbed baseline, for most models, with the largest gain of $+0.10$ on I-JEPA. A Vector-Quantized codebook method, trained only on clean images and evaluated on perturbed test images for the first time, instead degrades under distortion for all four models, most noticeably for I-JEPA ($-0.15$ AUROC on average), showing that its discrete bottleneck alone does not provide the robustness that comes from training on perturbed data directly.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

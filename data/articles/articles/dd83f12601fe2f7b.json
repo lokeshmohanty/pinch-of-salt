@@ -1,0 +1,13 @@
+{
+  "id": "dd83f12601fe2f7b",
+  "title": "CAG-VLM: Fine-Tuning of a Large-Scale Model to Recognize Angiographic Images for Next-Generation Diagnostic Systems",
+  "link": "https://arxiv.org/abs/2505.04964",
+  "description": "arXiv:2505.04964v3 Announce Type: replace \nAbstract: Coronary angiography (CAG) is the gold-standard imaging modality for evaluating coronary artery disease, but its interpretation and subsequent treatment planning rely heavily on expert cardiologists. To enable AI-based decision support, we introduce a two-stage, physician-curated pipeline and a bilingual (Japanese/English) CAG image-report dataset. First, we sample 14,686 frames from 539 exams and annotate them for key-frame detection and left/right laterality; a ConvNeXt-Base CNN trained on this data achieves 0.96 F1 on laterality classification, even on low-contrast frames. Second, we apply the CNN to 243 independent exams, extract 1,114 key frames, and pair each with its pre-procedure report and expert-validated diagnostic and treatment summary, yielding a parallel corpus. We then fine-tune three open-source VLMs (PaliGemma2, Gemma3, and ConceptCLIP-enhanced Gemma3) via LoRA and evaluate them using VLScore and cardiologist review. Although PaliGemma2 w/LoRA attains the highest VLScore, Gemma3 w/LoRA achieves the top clinician rating (mean 7.20/10); we designate this best-performing model as CAG-VLM. These results demonstrate that specialized, fine-tuned VLMs can effectively assist cardiologists in generating clinical reports and treatment recommendations from CAG images.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

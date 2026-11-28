@@ -1,0 +1,15 @@
+{
+  "id": "79c61a9409df6430",
+  "title": "HYPER: Hypothesis-Guided Planning for Evidence-Seeking Retrieval",
+  "link": "https://arxiv.org/abs/2603.19008",
+  "description": "arXiv:2603.19008v2 Announce Type: replace-cross \nAbstract: Retrieval-Augmented Generation (RAG) improves Large Language Models (LLMs) by grounding generation in external, non-parametric knowledge. However, when a task requires choosing among competing possibilities, such as a diagnosis among plausible alternatives, topically relevant context is often insufficient to drive the final decision. To address this issue, we propose HYPER: Hypothesis-Guided Planning for Evidence-Seeking Retrieval, a training-free pre-retrieval planning framework that reorients RAG from topic-oriented retrieval to evidence-oriented retrieval. HYPER uses a provisional answer hypothesis as a planning anchor. It then decomposes retrieval into three evidence roles. Support seeks evidence for the provisional answer. Distinction retrieves criteria that separate competing alternatives. Feature grounds salient question features needed for the decision. This planning step steers retrieval toward evidence near the decision boundary, enabling the generator to answer from context that is more directly aligned with the required choice. On MedQA and MMLU-Med, where single-query retrieval falls below no-retrieval chain-of-thought prompting, HYPER achieves the best average accuracy among ten baselines, improving over Simple RAG by 5.9 and 3.6 points, respectively. Its gains transfer to the 14 subjects of MMLU-Pro, at the cost of two additional LLM calls per question. Code is available at https://github.com/hangeol/HypothesisRAG.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CL",
+    "cs.AI",
+    "cs.LG"
+  ]
+}

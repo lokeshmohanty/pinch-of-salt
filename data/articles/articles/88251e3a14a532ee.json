@@ -1,0 +1,14 @@
+{
+  "id": "88251e3a14a532ee",
+  "title": "Echo: Learning-based Matching Decompilation using Trusted Back Translation",
+  "link": "https://arxiv.org/abs/2609.18706",
+  "description": "arXiv:2609.18706v1 Announce Type: cross \nAbstract: Neural decompilers can recover readable and recompilable source code from binaries, but their predictions remain difficult to trust. Matching decompilation addresses this problem by searching for source code whose recompiled assembly exactly matches the target, providing stronger evidence of correctness. However, exact matching remains challenging for optimized binaries under unknown compilation configurations.\n  We present Echo, a matching decompilation system based on trusted back-translation. Our key insight is to use compilation not only for verification, but also as trusted feedback to guide iterative search. Echo first uses a domain-specific model to generate candidate programs and compilation configurations. It recompiles these candidates, measures assembly-level similarity, and synthesizes promising code-configuration pairs. Remaining mismatches are then progressively repaired using rule-based rewriting, neural refinement, and reasoning-based refinement.\n  We evaluate Echo on function-level benchmarks and the Mirai malware binary. Compared with the strongest baseline, Echo produces 2.43x more exact matches on average and achieves the highest structural similarity to ground-truth source code. On Mirai, Echo matches 2.75x and 7.4x as many functions as GPT-5.6 and Codex, respectively.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CR",
+    "cs.AI"
+  ]
+}

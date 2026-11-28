@@ -1,0 +1,15 @@
+{
+  "id": "05d6dae582d875de",
+  "title": "AAC: Admissible-by-Architecture Differentiable Landmark Compression for ALT",
+  "link": "https://arxiv.org/abs/2604.20744",
+  "description": "arXiv:2604.20744v2 Announce Type: replace \nAbstract: We introduce the Architecturally Admissible Compressor (AAC), which adapts landmark-based A* heuristics to query demand under a fixed label-memory budget. AAC provides two continuous relaxations of ALT (A*, Landmarks, and Triangle inequality) selection. With exact landmark distances, every parameter value defines a lower bound on shortest-path distance. Both relaxations deploy ALT using only the selected labels. The row-stochastic relaxation takes convex combinations of landmark distances. We characterize the maximal admissibility-preserving linear classes and prove that the relaxed and discrete optima coincide. The fractional relaxation mixes subset heuristics and supports continuous greedy (AAC-CG) with exact gradients and an entropy-regularized oracle for differentiable selection. For expected heuristic value, we prove an approximation guarantee with finite-step, oracle-error, and finite-sample terms. The limiting $1-1/e$ factor is optimal for arbitrary supplied pools and query distributions unless P${=}$NP. At matched label memory, AAC-CG reduces A* expansions by $1.9$-$22.7$% relative to farthest-point ALT (FPS-ALT) in all $19$ tested combinations of graph and memory budget across six road networks and two synthetic graphs. Each combination uses one $500$-query test split; all methods share distance tables when distances are symmetric. Canonical greedy also expands fewer nodes than FPS-ALT in all $19$ graph-budget pairs. AAC-CG achieves $99.6$% of canonical greedy's mean heuristic value on test queries, averaged over these pairs. AAC makes admissibility independent of training success, while its analysis and experiments distinguish selection quality from search efficiency.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG",
+    "cs.RO"
+  ]
+}

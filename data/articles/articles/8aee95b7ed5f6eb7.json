@@ -1,0 +1,14 @@
+{
+  "id": "8aee95b7ed5f6eb7",
+  "title": "Structure-Aware Multimodal Retrieval Under Data Scarcity, Privacy Constraints and Out-of-Domain Content",
+  "link": "https://arxiv.org/abs/2611.33649",
+  "description": "arXiv:2611.33649v1 Announce Type: cross \nAbstract: Purpose: Figure retrieval from reference atlases in expert domains like forensic pathology, dentistry and geology must work without labels or training pairs, on content that often cannot leave local hardware, and on images outside the training data of image-text encoders. This work proposes a structure-aware pipeline that satisfies all three, retrieving figures through the page structure recovered by layout geometry and a local open-weight 8B VLM. Methods: A geometry-based pairing method is introduced, in which the model receives a schematic of the detected boxes and selects each picture's caption without access to pixels or text. Caption retrieval is evaluated on three private corpora (29 books, 10,421 figures, 218 queries) with blind human grading, against a lexical baseline, generated descriptions and five image-text encoders. Results: Geometric pairing was correct for 96%, 92% and 77% of pictures in the three domains, against 76%, 45% and 53% for the better of two document parsers. A hosted model given the schematic was equally accurate, while coordinates as text lost 22 points. Caption retrieval obtained an nDCG@5 of 0.85, 0.87 and 0.76, against 0.54, 0.51 and 0.27 for the best cross-modal encoder and 0.41, 0.28 and 0.30 for generated descriptions. Pairing errors carried over to retrieval. Conclusion: The proposed pipeline achieves accurate figure retrieval with small local models and no in-domain training, where general and biomedical image-text encoders fall far behind. Its geometry-only pairing is the most accurate of five methods and exposes no content, even to a hosted model. Code and prompts are released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.IR",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "419ae100947c617e",
+  "title": "Data-Aware Model Merging in the Essential Subspace for Multi-Task Knowledge Aggregation",
+  "link": "https://arxiv.org/abs/2606.19164",
+  "description": "arXiv:2606.19164v4 Announce Type: replace-cross \nAbstract: Model merging enables training-free multi-task learning by aggregating knowledge from models fine-tuned from a shared checkpoint, but their task updates can interfere. Using proxy data, we find that task updates induce output shifts whose energy concentrates in a few dominant directions, while many low-energy directions can accumulate across tasks and impair performance. We call the span of the dominant directions the essential subspace. This observation motivates a data-aware framework to preserve essential task knowledge while reducing interference. Essential Subspace Decomposition (ESD) identifies each task's essential subspace from activation shifts measured on proxy data and represents its update compactly while preserving functional behavior. Essential Subspace Merging (ESM) weights each task-update direction by its corresponding output-shift eigenvalue, thereby prioritizing core task knowledge; it then orthogonalizes the weighted directions across tasks to reduce interference. ESM++ extends this merged model by dynamically integrating low-rank task-specific residual experts for adaptive knowledge aggregation. Experiments across diverse task sets and model scales show that ESM and ESM++ effectively aggregate task knowledge while mitigating inter-task interference. Code is available at https://github.com/kiddo127/ESM.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

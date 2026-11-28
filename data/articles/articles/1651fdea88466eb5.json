@@ -1,0 +1,14 @@
+{
+  "id": "1651fdea88466eb5",
+  "title": "STEPS: Selective On-Policy Self-Distillation for Reasoning",
+  "link": "https://arxiv.org/abs/2605.10194",
+  "description": "arXiv:2605.10194v2 Announce Type: replace \nAbstract: On-policy self-distillation (OPSD) uses a model as its own teacher under privileged context, providing token-level supervision on the model's own reasoning trajectories. However, persistent all-token guidance can degrade training in our math RL setting. Such guidance may unnecessarily constrain non-critical tokens and reinforce biases induced by privileged information unavailable at inference. Motivated by these risks, we propose STEPS, a selective OPSD framework that controls the location, direction, and duration of distillation. STEPS identifies critical spans in student rollouts, applies forward KL to key spans or reverse KL to error spans, and gradually transitions to pure GRPO after a short distillation phase. Across four models from three families, STEPS improves mean accuracy over GRPO. On Qwen3-8B, it raises average accuracy across four math benchmarks and GPQA-Diamond by an absolute 2.76% with a strong annotator. Using the training policy as its own annotator yields an absolute mean gain of 1.90%, with an estimated 2.7% training-time overhead amortized over 300 steps. Controlled ablations support semantic span selection, class-specific KL directions, and the hand-off to GRPO. Together, these results support brief, targeted self-distillation as an efficient complement to reward-driven reasoning training.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.LG"
+  ]
+}

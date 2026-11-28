@@ -1,0 +1,14 @@
+{
+  "id": "d89f052e6b77008a",
+  "title": "Deep Meets Classical: A CPU-Efficient Decision-Fusion Model for Automatic Modulation Classification",
+  "link": "https://arxiv.org/abs/2611.05937",
+  "description": "arXiv:2611.05937v1 Announce Type: cross \nAbstract: Automatic modulation classification (AMC) underpins spectrum sensing and non-cooperative signal identification in cognitive radio, yet the two standard CPU-feasible approaches to it, a compact convolutional neural network (CNN) on raw in-phase and quadrature (I/Q) samples and a classical higher-order-cumulant feature classifier, are rarely compared against each other conditioned on signal-to-noise ratio (SNR). We show that they are, in fact, complementary: the CNN is markedly more robust at low SNR, where hand-crafted statistics collapse toward chance, while the cumulant classifier is more accurate at high SNR, where higher-order statistics cleanly separate dense constellations. We exploit this complementarity with FuseAMC, a lightweight decision-fusion model that trains a logistic-regression meta-combiner over the concatenated class-posteriors of an approximately 198k-parameter residual CNN and a gradient-boosted-tree cumulant classifier, on a validation split disjoint from test. On RadioML 2016.10a (5 seeds, 44k-frame held-out test set), FuseAMC reaches 55.8% overall accuracy, improving on the best cumulant-feature baseline by 5.1 points and on the CNN alone by 3.2 points (paired-bootstrap 95% confidence-interval lower bounds of 5.0 and 3.1 points, both positive), while matching the best classical baseline in its own strong high-SNR regime and the CNN in its strong low-SNR regime. With about 0.2 million parameters, a model footprint of a few megabytes, and roughly 3 MFLOPs per frame, the whole pipeline trains and runs on one CPU core, targeting general-purpose and embedded processors without hardware acceleration.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

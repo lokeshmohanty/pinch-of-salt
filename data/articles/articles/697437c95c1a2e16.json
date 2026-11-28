@@ -1,0 +1,13 @@
+{
+  "id": "697437c95c1a2e16",
+  "title": "Distilling Metacognitive Behaviors through Agentic Editing",
+  "link": "https://arxiv.org/abs/2602.22508",
+  "description": "arXiv:2602.22508v3 Announce Type: replace \nAbstract: Distilling long reasoning traces from a teacher model into a smaller student also passes on the teacher's reasoning habits. Prior work and our annotation of teacher traces show that current reasoning models often start without a plan, verify superficially, abandon promising solution paths, and take unchecked shortcuts. We propose Metacognitive Behavioral Tuning (MBT), which inserts seven metacognitive behaviors into teacher traces at the points where the reasoning lacks them and then trains the student on the edited traces. Because teacher traces are long, how the edits are made matters. Rewriting a whole trace at once summarizes long traces, and choosing all insertion points at once crowds them at the start and end. Our agentic method, MBT-A, edits the trace file line by line and records each edit as a git commit, which avoids summarizing long traces and spreads the insertions. On competition math, a Qwen3.5-4B-Base student trained on MBT-A traces scores 85.4 against 83.1 for SFT on the unedited traces and also outperforms a token-matched control and five prior methods. MBT-A improves two other students as well, and the inserted behaviors clearly transfer to the students' reasoning, with rare ones several times more frequent.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-28T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

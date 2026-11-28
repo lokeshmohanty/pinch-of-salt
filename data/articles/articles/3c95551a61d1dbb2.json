@@ -1,0 +1,14 @@
+{
+  "id": "3c95551a61d1dbb2",
+  "title": "BEAVER: An Efficient Deterministic LLM Verifier",
+  "link": "https://arxiv.org/abs/2512.05439",
+  "description": "arXiv:2512.05439v3 Announce Type: replace \nAbstract: As large language models (LLMs) transition from research prototypes to production systems, practitioners need reliable ways to verify model outputs before they are deployed. While sampling-based estimates provide an ad-hoc intuition of model behavior, they offer no sound guarantees. We present BEAVER, the first practical framework for computing deterministic, sound bounds on the probability that an LLM's response to a prompt satisfies a property. Given a prompt and an oracle, BEAVER systematically explores the model's output distribution using a *token trie* and a *frontier*, maintaining provably sound bounds at every iteration. We formalize the LLM verification problem, prove that BEAVER's bounds are sound and that its selection strategy Max-$\\mu$ is optimal for verification upto any tolerance. On 3 important safety tasks across 5 popular LLMs, BEAVER certifies up to $7.6\\times$ more prompts as risky than a sampling-based verifier while using fewer forward passes, and its per-prompt bounds extend to statistical certificates over distributions of prompts.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.FL"
+  ]
+}

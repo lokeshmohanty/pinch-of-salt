@@ -1,0 +1,13 @@
+{
+  "id": "83999f756425d350",
+  "title": "Rethinking the State Update Gate for Long-Sequence Recurrent 3D Reconstruction",
+  "link": "https://arxiv.org/abs/2605.16981",
+  "description": "arXiv:2605.16981v3 Announce Type: replace \nAbstract: Streaming 3D reconstruction under a strict constant-memory budget hinges on how the recurrent state is updated as the stream evolves. We profile TTT3R-style per-token gates across five benchmarks and discover a structural bottleneck: the gate is intrinsically bounded in magnitude (median $0.31$; never exceeding $0.6$) and nearly frame-invariant, yielding an effective memory horizon of only $\\sim$3 frames per state token, which serves as the structural origin of long-sequence drift. We trace this to a missing axis: existing inference-time methods modulate updates only at the per-token, intra-frame level, while the orthogonal frame-level question of \\emph{how strongly each frame should contribute to the state} has been treated as content-independent. We close this gap with a scalar frame-level gate $\\alpha_t \\in (0, 1]$ derived in closed form from frame-to-frame changes of internal features---a graded write weight, inspired by classical Simultaneous Localization and Mapping (SLAM) keyframe selection, that never discards a frame and requires no parameters, no training, and no extra forward pass. Across six benchmarks spanning camera pose, video depth, and 3D reconstruction at sequence lengths up to $4,661$ frames, our gate cuts ATE by $51\\%$ on long TUM-RGBD pose sequences, reduces AbsRel by $13.0\\%$ on Bonn video depth, and on KITTI long-sequence pose estimation surpasses both LongStream and Keyframe-VO in average ATE, while retaining strictly constant memory at zero training cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

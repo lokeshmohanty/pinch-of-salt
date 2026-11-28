@@ -1,0 +1,13 @@
+{
+  "id": "bbc671c70800de16",
+  "title": "DiT-Garment: Garment Dynamics with Diffusion Transformers",
+  "link": "https://arxiv.org/abs/2609.18510",
+  "description": "arXiv:2609.18510v1 Announce Type: new \nAbstract: We present DiT-Garment to model dynamic 3D clothing over human body models in arbitrary motion. Unlike existing methods, DiT-Garment can animate garments with unseen designs and physical materials, while allowing for direct inference of deformations for any target pose. To achieve this, we leverage a 2D diffusion transformer architecture to learn 3D deformations in a 2D UV-space. As the result is non-deterministic, our generative model learns the distribution of possible outcomes. The template garment is represented as a 3D triangle mesh spatially aligned with a 3D human body model in a standardized pose. To work with different garment designs without the need of a common template or complex graph convolution operations, the diffusion transformer is conditioned on a 3D position map of the template, represented in UV-space, which allows to implicitly learn a deformation of the 3D space around the body in standard pose. Further conditioning on body motion and physical parameters allows to physically ground the model. We quantitatively and qualitatively evaluate DiT-Garment on both synthetic and real data. While only trained on synthetic simulations of automatically generated cloth designs, our method generalizes to captured and artist-made garment designs. Code and data are available for research purposes at https://dumoulina.github.io/dit-garment/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

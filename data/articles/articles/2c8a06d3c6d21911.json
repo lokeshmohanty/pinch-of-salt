@@ -1,0 +1,14 @@
+{
+  "id": "2c8a06d3c6d21911",
+  "title": "CoMNO: Commutator Memory Neural Operators for Long-Horizon PDE Prediction",
+  "link": "https://arxiv.org/abs/2611.32274",
+  "description": "arXiv:2611.32274v1 Announce Type: cross \nAbstract: Solving nonlinear partial differential equations (PDEs) over long time horizons is computationally expensive using traditional numerical methods. While neural operators provide an efficient alternative, they suffer from the accumulation of approximation errors along the predicted trajectory, typically caused by the failure to capture fine-scale details. In this work, we design a Commutator Memory Neural Operator that identifies fine-scale dynamical details by commuting two operations and leverages these details to enhance the neural operator's capability in capturing fine-scale features over long time horizons. Specifically, we identify a performance gap between two operations: downsampling the high-resolution field before rollout prediction versus performing rollout prediction before downsampling. We observe that fine-scale dynamical details are often encoded in this gap. By commuting these two operations, the fine-scale details removed during downsampling can be captured. Furthermore, we employ a memory module to store these fine-scale features along the trajectory and retrieve them during rollout, generating spatially adaptive corrections that enhance long-horizon fidelity. Empirical results across five systems demonstrate that CoMNO improves prediction accuracy and long-horizon rollout stability.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

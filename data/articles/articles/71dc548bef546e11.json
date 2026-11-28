@@ -1,0 +1,13 @@
+{
+  "id": "71dc548bef546e11",
+  "title": "TransFIRA+: Transfer Learning for Biometric Recognizability Assessment",
+  "link": "https://arxiv.org/abs/2611.23442",
+  "description": "arXiv:2611.23442v1 Announce Type: new \nAbstract: Biometric recognition in surveillance, video, and web imagery must contend with extreme variation in pose, blur, illumination, occlusion, and distance, where visual quality metrics fail to predict whether inputs are recognizable to the deployed encoder. Existing face image quality assessment methods rely on visual heuristics, curated annotations, or costly generative pipelines, leaving their predictions detached from the encoder's decision geometry. We introduce TransFIRA, a lightweight framework that grounds recognizability directly in embedding space. TransFIRA derives class-center similarity (CCS) and class-center angular separation (CCAS) from a pretrained encoder's embeddings and learns to predict them from images without quality annotations. Using predicted CCS for template weighting and CCAS>0 as a natural filtering threshold yields state-of-the-art face verification performance on BRIAR, raising TAR at $10^{-6}$ FMR from 0.085 with uniform averaging to 0.598. The predicted scores also reveal how image degradations affect encoder-specific recognizability. TransFIRA+ extends this framework to cross-camera multimodal person identification in untrimmed surveillance video. In this setting, body recognizability scores saturate within a narrow range, making direct weighting effectively uniform. We introduce a post-hoc sigmoid calibration that transforms these saturated scores into informative weights without retraining. After calibration, the BRIAR-trained TransFIRA predictor improves fused face and body identification on two unseen multi-camera datasets, outperforming detector-confidence weighting and uncalibrated CCS-rank weighting. Together, TransFIRA and TransFIRA+ demonstrate that encoder-grounded recognizability generalizes across biometric modalities and recognition settings.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

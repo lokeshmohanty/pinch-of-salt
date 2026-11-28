@@ -1,0 +1,14 @@
+{
+  "id": "253b5bc33e980011",
+  "title": "VGG16-MCA UNet: Whole-Tumor Segmentation in 2D FLAIR MRI with Decoder-Side Channel Attention",
+  "link": "https://arxiv.org/abs/2609.23919",
+  "description": "arXiv:2609.23919v1 Announce Type: cross \nAbstract: Automated brain tumor segmentation supports diagnosis, treatment planning, and monitoring of disease progression, but building models that generalize across heterogeneous tumors and limited annotated data remains difficult. We present VGG16-MCA UNet, a hybrid architecture pairing an ImageNet-pretrained VGG16 encoder with a decoder in which a Multi-Channel Attention (MCA) module recalibrates features after each skip-connection fusion, trained with the Focal Tversky loss to counter severe foreground-background imbalance. We evaluate the model as a 2D, FLAIR-only, whole-tumor segmenter on tumor-positive slices from two public datasets: the BraTS 2020 benchmark and the LGG MRI Segmentation dataset. Using 5-fold cross-validation and a single network formed by averaging the weights of the five fold models, the method attains an aggregate pixel-level Dice (F1) of 95.10% on our held-out BraTS 2020 split and 88.32% on LGG. These scores are computed over all test pixels pooled into a single confusion matrix rather than averaged per case, and are therefore not directly comparable to the per-case mean Dice used in the BraTS challenge protocol. All partitions were drawn over individual slices rather than over patients, so every patient contributes slices to both training and test; the figures above therefore measure interpolation within known patients and should be read as an upper bound rather than as generalization to new ones. The model segments a 256x256 slice in 66.32 ms on a single 6 GB NVIDIA RTX 2060, approximately 8 ms more than an equivalent VGG16-UNet without MCA. We release the split records and report the protocol in full, with the aim of providing a precisely specified and reproducible 2D FLAIR baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "7f40e5d247e9687c",
+  "title": "Saliency-Aware Multi-Route Thinking: Grounding and Reasoning on Vision-Language Agents",
+  "link": "https://arxiv.org/abs/2602.16702",
+  "description": "arXiv:2602.16702v2 Announce Type: replace \nAbstract: Vision-language (VL) agents increasingly combine extended reasoning with ex ternal visual tools. Yet long traces can drift from the image as generated text accumulates, while directly inserting tool outputs can turn one incorrect detection into a persistent premise. We ask how inference-time computation can improve reasoning without surrendering control to the tool. We propose Saliency-Aware Principle Selection (SAP), a training-free method that evolves compact reason ing principles rather than lengthening a single token trajectory. Each principle generates independent routes from the original image and prompt. A frozen ground ing tool scores whether objects cited along these routes are visually supported; agreement, diversity, and uncertainty further control drift, collapse, and overcon fidence. The tool supplies selection evidence but never writes the reasoning or answer. Across object-hallucination benchmarks, SAP consistently improves vi sually grounded prediction under a unified model and decoding budget. Broader evaluations spanning reasoning, knowledge, OCR, documents, diagrams, and real world imagery show that this gain does not come at the expense of general VL capability. Cross-architecture and model-scale experiments further demonstrate that the principle-selection mechanism transfers beyond a single backbone, while controlled ablations confirm that both multi-route exploration and evolutionary se lection are necessary. Because routes run in parallel, SAP also reduces serial latency relative to an equally long chain. Together, these results show that scaling over governed reasoning behaviors can preserve visual evidence more effectively than simply extending the chain.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

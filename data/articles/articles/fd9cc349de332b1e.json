@@ -1,0 +1,13 @@
+{
+  "id": "fd9cc349de332b1e",
+  "title": "Vision-Language Enhanced Foundation Model for Semi-Supervised Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2511.19759",
+  "description": "arXiv:2511.19759v3 Announce Type: replace \nAbstract: Semi-supervised learning (SSL) has emerged as an efficient paradigm for medical image segmentation, reducing the reliance on extensive expert annotations. Vision-language models (VLMs) have demonstrated strong generalization and few-shot capabilities across diverse visual domains. In this work, we integrate a VLM into a semi-supervised medical image segmentation model by adding a Vision-Language Enhanced Semi-supervised Segmentation Assistant (VESSA) that incorporates foundation-level visual-semantic understanding into SSL frameworks. Our approach consists of two stages. In Stage 1, the VLM-enhanced segmentation foundation model VESSA is trained as a reference-guided segmentation assistant using a template bank containing gold-standard exemplars, simulating learning from limited labeled data. Given an input-template pair, VESSA performs visual feature matching to extract representative semantic and spatial cues from exemplar segmentations, generating structured prompts for a Segment Anything Model (SAM)-inspired mask decoder to produce segmentation masks. In Stage 2, VESSA is integrated into an SSL framework as a plug-and-play teacher, providing template-guided pseudo-labels that complement the task-specific student model and strengthen supervision under scarce annotations. Extensive experiments across multiple segmentation datasets and domains show that VESSA-augmented SSL significantly enhances segmentation accuracy, outperforming state-of-the-art baselines under extremely limited annotation conditions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

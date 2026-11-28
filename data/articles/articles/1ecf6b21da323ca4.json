@@ -1,0 +1,13 @@
+{
+  "id": "1ecf6b21da323ca4",
+  "title": "What Does Attention Transfer Transfer? Attention Structure and Robustness in Vision Transformers",
+  "link": "https://arxiv.org/abs/2608.18399",
+  "description": "arXiv:2608.18399v1 Announce Type: new \nAbstract: Vision transformers (ViTs) trained to copy a pretrained teacher's attention maps recover most of fine-tuning's in-distribution accuracy yet fall measurably short of it under distribution shift, as recent work has shown. What the copy delivers has never been measured directly in the attention structure and tied to robustness. We build that instrumentation for ViT-S students of a self-supervised teacher on ImageNet-100, and report three findings that triangulate one conclusion. First, the transfer is essentially perfect and permanently so: the distilled student's attention ends up roughly two orders of magnitude closer to the teacher's than fine-tuning does, and does not drift with additional training. Second, the gap is real at 14$\\times$ fewer parameters and 10$\\times$ less data than previously studied, but it has a time axis. It tracks training maturity, and completing the schedules that the stopping rule interrupted closes it below our pre-registered threshold in two of three seeds, with comparisons at equal accuracy giving the same result. The endpoint gap at this scale is substantially a training-maturity artifact: robustness matures later than accuracy, and stopping rules tuned to accuracy undersample it. Third, forcing cross-row redundancy down by half the structural separation between the distilled and fine-tuned conditions produces no detectable robustness response under two registered ways of matching accuracy. Verified transfer, a gap that closes while the structure never moves, and a null under direct intervention are together consistent with the deficit residing in features, not in the visible attention structure. This is elimination plus intervention, and its scope is the regime we measured. In this regime, attention overlays show where a model looks, not what it knows.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-20T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

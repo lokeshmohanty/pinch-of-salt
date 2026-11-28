@@ -1,0 +1,13 @@
+{
+  "id": "22dd35e67a6b3136",
+  "title": "Anatomy-Aware Pseudo-Labels and Homotopy-Annealed Hausdorff Supervision for Semi-Supervised Pancreas Segmentation",
+  "link": "https://arxiv.org/abs/2611.33425",
+  "description": "arXiv:2611.33425v1 Announce Type: new \nAbstract: Confidence-gated co-training assumes that pseudo-label errors are uncertain and concentrated at organ boundaries. We argue that for pancreas CT, where the target organ is a single connected structure and detached fragments are anatomically implausible, the dominant failures arise at three levels: where the organ is, what its boundary should look like, and how a correct boundary is penalized. Anatomical Rectification relabels implausible fragments of a teacher prediction as confident background, without adding any loss or parameter; an audit confirms that its rejections are overwhelmingly detached hallucinations and that thin, tail-like slices are not eroded. Boundary Grafting transplants labelled surface regions with their annotation into unlabeled volumes, replacing unreliable boundary pseudo-labels with ground truth. The residual error is coherent surface displacement, weakly penalized by permutation-invariant Dice and cross-entropy losses. Homotopy-Annealed Hausdorff (HAH) supervision anneals a distance-weighted penalty from an annotation-anchored objective that is convex in the prediction to a Hausdorff surrogate, admitting the prediction-dependent distance term only after the predicted surface becomes reliable. On NIH pancreas CT, under the standard semi-supervised split, the full method reaches 84.60% Dice and 4.97 voxels 95HD, improving all four metrics over compared methods; on MSD Task07, 78.90% Dice and 4.19 voxels 95HD. We further contribute PanTS-SSL, a semi-supervised evaluation protocol derived from the public 9,901-case PanTS corpus, with a curated 1,015-volume main pool, labelled tiers of 50, 100 and 250 volumes, an 80-case tumor track, shift probes for acquisition and anatomy change, and a fixed 901-volume test set. On it, the method exceeds the co-training baseline at 100 labels, scales to 85.29% Dice at 250 labels, and reaches 85.50% Dice at 100 labels with HAH.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

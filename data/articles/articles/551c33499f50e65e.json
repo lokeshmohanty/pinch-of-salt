@@ -1,0 +1,13 @@
+{
+  "id": "551c33499f50e65e",
+  "title": "Volume Rendering with Metric--Phase Fields for Thin Structures and Sign-Ambiguous Geometry",
+  "link": "https://arxiv.org/abs/2610.13088",
+  "description": "arXiv:2610.13088v1 Announce Type: new \nAbstract: Neural implicit surface methods that couple volume rendering with signed distance functions (SDFs), such as VolSDF and NeuS, achieve high-quality multi-view reconstruction for watertight objects. However, these approaches rely on a globally consistent inside-outside partition of space. This assumption becomes fragile for thin structures (e.g., sheets, tubes, and thin walls) and can break down for sign-ambiguous geometry (e.g., surfaces with boundary, non-manifold junctions, and closely spaced surface components), often resulting in spurious closures or loss of fine structures. Unsigned distance field (UDF) formulations relax the global sign requirement and better support non-watertight geometry, but are substantially harder to optimize. We propose PhaseSurf, a neural volume rendering framework built on Metric-Phase Fields (MPFs). MPFs decompose geometry into a nonnegative metric field capturing unsigned proximity and a continuous phase field providing a soft sign cue. By coupling the two through residual phase injection, MPFs yield a signed composite implicit function with stable near-surface gradients while retaining UDF-like robustness in sign-ambiguous regions. This design enables direct iso-surface extraction using standard Marching Cubes and avoids the failure modes of both pure SDF- and UDF-based formulations. We further introduce MPF-specific training losses that enforce metric consistency, stabilize phase transitions near the interface, and suppress spurious geometry in free space. Experiments on multi-view datasets with thin structures and sign-ambiguous geometry show that PhaseSurf produces more stable reconstructions and higher-quality geometry than UDF-based methods and recent 3DGS pipelines, while avoiding artifacts typical of SDF-based approaches.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

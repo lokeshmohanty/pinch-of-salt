@@ -1,0 +1,13 @@
+{
+  "id": "f44ca92052c31507",
+  "title": "Adaptive Slicing-Assisted Hyper Inference for Enhanced Small Object Detection in High-Resolution Imagery",
+  "link": "https://arxiv.org/abs/2604.19233",
+  "description": "arXiv:2604.19233v2 Announce Type: replace \nAbstract: Deep learning-based object detectors have achieved remarkable success across numerous computer vision applications, yet they continue to struggle with small object detection in high-resolution aerial and satellite imagery, where dense object distributions, variable shooting angles, diminutive target sizes, and substantial inter-class variability pose formidable challenges. Existing slicing strategies that partition high-resolution images into manageable patches have demonstrated promising results for enlarging the effective receptive field of small targets; however, their reliance on fixed slice dimensions introduces significant redundant computation, inflating inference cost and undermining detection speed. In this paper, we propose \\textbf{Adaptive Slicing-Assisted Hyper Inference (ASAHI)}, a novel slicing framework that shifts the paradigm from prescribing a fixed slice size to adaptively determining the optimal number of slices according to image resolution, thereby substantially mitigating redundant computation while preserving beneficial overlap between adjacent patches. ASAHI integrates three synergistic components: (1)an adaptive resolution-aware slicing algorithm that dynamically generates 6 or 12 overlapping patches based on a learned threshold, (2)a slicing-assisted fine-tuning (SAF) strategy that constructs augmented training data comprising both full-resolution and sliced image patches, and (3)a Cluster-DIoU-NMS (CDN) post-processing module that combines the geometric merging efficiency of Cluster-NMS with the center-distance-aware suppression of DIoU-NMS to achieve robust duplicate elimination in crowded scenes. Extensive experiments on VisDrone2019 and xView, demonstrate that ASAHI achieves state-of-the-art performance with 56.8% on VisDrone2019-DET-val and 22.7% on xView-test, while reducing inference time by 20-25% compared to the baseline SAHI method.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

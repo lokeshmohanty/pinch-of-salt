@@ -1,0 +1,13 @@
+{
+  "id": "5bda8383557c3de3",
+  "title": "Player Disjoint Multi-Task Tennis Stroke Analysis from Monocular Pose Sequences",
+  "link": "https://arxiv.org/abs/2606.15992",
+  "description": "arXiv:2606.15992v2 Announce Type: replace \nAbstract: Analyzing tennis technique from monocular RGB video could make coaching more accessible, but prior methods usually rely on hand-trimmed strokes, test on random splits that leak player identity, or fail on players with different body proportions. We present an end-to-end, player-disjoint framework with an autonomous kinetic stroke event detector, a 78-dimensional causal velocity representation ([X, V]), a 569,095-parameter multi-task Transformer Encoder (E7), exploratory 9-dimensional kinematic deviation profiling, and a heuristic feedback prototype. All models are evaluated with Clean LOPO v2: Leave-One-Player-Out cross-validation over 7 players and 3 seeds, giving 21 outer evaluations and 147 training runs per configuration, with nested inner cross-validation. Against 206 frozen consensus impact events, the detector reaches an F1-score of 85.65% (+3.24% over baseline thresholding) with a mean absolute timing error of 80.6 ms. Under heavy class imbalance, Stroke Type reaches 74.27% accuracy, 65.37% balanced accuracy, and Macro-F1 = 0.6453. Direction reaches 43.90% accuracy, 37.75% balanced accuracy, and Macro-F1 = 0.3141, a 17.9% relative Macro-F1 gain over the static baseline E0, though balanced accuracy is only a little above the 33.3% chance level. Posture Quality reaches 52.13% accuracy, 50.56% balanced accuracy (essentially chance), and Macro-F1 = 0.4232. Single-task specialists did not differ significantly from the joint model on Stroke Type (p = 0.4062) or Posture Quality (p = 0.1406). On Direction the joint model did somewhat better (exact permutation p = 0.0469), but this is suggestive only and does not pass a Bonferroni threshold. Deviation profiling shows a nominal, unadjusted separation between good and bad posture (|d| = 0.341, p = 4.07 x 10^-8), which drives the feedback prototype. We report negative ablations, seeds, and limits as a baseline for pose-based coaching.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

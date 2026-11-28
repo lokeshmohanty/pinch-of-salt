@@ -1,0 +1,13 @@
+{
+  "id": "49081c914f985953",
+  "title": "Test-time Scaling over Perception: Resolving the Grounding Paradox in Thinking with Images",
+  "link": "https://arxiv.org/abs/2604.11025",
+  "description": "arXiv:2604.11025v2 Announce Type: replace \nAbstract: Recent multimodal large language models (MLLMs) support Thinking with Images, invoking visual tools such as zooming and cropping to inspect image regions during inference. Yet these systems remain brittle in fine-grained reasoning: to acquire a decisive detail, a model must ground its attention on the correct region, but knowing which region is correct presupposes having already observed that detail. We identify this circular dependency as the grounding paradox, show that grounding errors are rarely self-corrected within a single trajectory---once a misleading region is inspected, all subsequent reasoning conditions on that observation and the error propagates to the final answer---and observe that because each trajectory constructs its own evidence, answer-level aggregation discards the very information that distinguishes trajectories. We propose Test-Time Scaling over Perception (TTSP), a closed-loop framework that treats perception as the unit of scalable inference and allocates compute along two axes: Entropy-Gated Perceptual Exploration samples diverse trajectories and uses critical-token entropy to withhold evidence the model cannot commit to, while Evidence-Guided Iterative Refinement distills validated observations into a correctable Evidence Ledger that steers later rounds to re-inspect unresolved regions. Across high-resolution and general multimodal benchmarks, TTSP consistently outperforms strong test-time scaling baselines, while improving grounding quality with favorable token efficiency.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

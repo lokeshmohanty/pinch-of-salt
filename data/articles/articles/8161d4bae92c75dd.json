@@ -1,0 +1,14 @@
+{
+  "id": "8161d4bae92c75dd",
+  "title": "Atlas: Optimizing Deployment of Compound AI Workflows on Heterogeneous Clusters",
+  "link": "https://arxiv.org/abs/2609.04513",
+  "description": "arXiv:2609.04513v1 Announce Type: cross \nAbstract: Compound AI workflows are increasingly used to serve complex AI tasks by coordinating multiple AI models and software components. This approach enables deployment flexibility, as each workflow stage can expose different model variants and resource requirements, but it also expands the deployment choices. A deployment must choose an execution plan that selects AI models for each compound AI workflow stage and places them on a heterogeneous cluster in order to satisfy SLOs. Deployment optimizers therefore need estimates to compare many candidate plans and identify feasible ones. System metrics can often be profiled per stage and composed according to workflow topology, but accuracy cannot, as errors and information loss at upstream stages affect the accuracy of downstream stages. Existing approaches either profile complete configurations end to end, which scales poorly, or use product-based accuracy surrogates that treat stages as independent and can misrank candidate plans. We introduce Atlas, a framework for optimizing compound AI deployments under SLO constraints. Atlas uses MAP, a Markovian Accuracy Predictor, to estimate configuration accuracy from local conditional accuracy transitions between adjacent workflow stages. MAP discretizes intermediate outputs into accuracy buckets and composes transition profiles according to workflow topology, giving the optimizer an accuracy estimate without exhaustive end-to-end profiling. Atlas formulates execution-plan selection as a mixed-integer linear program that maximizes predicted accuracy subject to SLOs. Across four compound AI workflows, MAP achieves Spearman correlation up to 0.947 while reducing profiling cost by up to 2.6x relative to exhaustive end-to-end profiling. Guided by MAP, the Atlas optimizer selects execution plans within 0.03 of oracle accuracy while reducing deployment cost by up to 42% through heterogeneous placement.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.DC",
+    "cs.AI"
+  ]
+}

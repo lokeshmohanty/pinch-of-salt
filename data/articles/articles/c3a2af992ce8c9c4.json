@@ -1,0 +1,14 @@
+{
+  "id": "c3a2af992ce8c9c4",
+  "title": "FrameSeg3D: Learned Local Frames for Segmenting Small Parts on High-Resolution 3D Scans",
+  "link": "https://arxiv.org/abs/2611.22124",
+  "description": "arXiv:2611.22124v1 Announce Type: new \nAbstract: Segmenting small parts on high-resolution 3D scans, such as nails on hand scans and teeth on intraoral scans, poses three challenges: 1) each part covers a tiny fraction of the scan, 2) its boundary is only a subtle change of height and curvature, and 3) it faces its own direction. Existing methods fall into two groups, and both fall short. The first group processes the whole scan at once and sees each part too coarsely. Point and mesh networks must shrink the scan to fit in memory, so a small part keeps only a few of its points. Multi-view methods render images of the whole object, so each part fills only a few pixels and a tilted part is seen from the side. The second group first finds each part and then segments it up close. But these methods find the parts with knowledge about one kind of part, for example the shape of the dental arch for teeth. Such knowledge does not carry over to other kinds of parts. We find that accuracy is limited by how a part is seen, from which direction and at what scale, not by how many points land on it. We therefore present FrameSeg3D. It first predicts a local frame for every part, its center and the direction it faces, from a low-resolution view of the whole scan. It then segments the part in views around its frame normal at the scanner's resolution, so covering the whole scan no longer costs resolution. Because every part arrives centered, facing the camera, and at a fixed scale, one segmentation network can serve different kinds of parts and learn from few labeled masks. We test FrameSeg3D on two kinds of parts, nails and teeth. It outperforms state-of-the-art methods on hand scans (mean Dice 0.970 on nails) and on the Teeth3DS+ test fold (per-tooth IoU 96.5), with the most accurate tooth boundaries (boundary IoU 70.5).",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.GR"
+  ]
+}

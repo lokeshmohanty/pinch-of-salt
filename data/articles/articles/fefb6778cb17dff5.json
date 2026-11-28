@@ -1,0 +1,13 @@
+{
+  "id": "fefb6778cb17dff5",
+  "title": "WorldCraft: From Camera Navigation to Object Manipulation in Interactive Video World Models",
+  "link": "https://arxiv.org/abs/2605.25077",
+  "description": "arXiv:2605.25077v2 Announce Type: replace \nAbstract: Recent video world models enable interactive camera navigation but provide limited control over individual objects. We study persistent object-state control in autoregressive video world models, where an object-trajectory action must remain effective across viewpoint changes, generation chunks, and intervals of temporary invisibility. This setting introduces an action-memory conflict because autoregressive memory records the last observed object state, whereas an intervening action may update that state off-screen. We present WorldCraft, the first camera-navigable autoregressive video world model to jointly compose camera navigation and object-trajectory control. Given a user-selected object and a 2D motion path, Normalized World Trajectory (NWT) anchors the path in a normalized world coordinate system and projects it into each camera view, producing a consistent object-action signal throughout the autoregressive rollout. Trajectory-Anchored State Persistence (TASP) combines persistent NWT guidance with selective memory refresh to maintain action-updated object states through off-screen intervals and re-entry. A pathway-selective LoRA introduces object control while retaining the pretrained camera controller. WorldCraft achieves accurate composable camera-object control and preserves camera fidelity. We further find that it maintains action-updated object states across extended intervals of complete target invisibility without off-screen trajectory supervision.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-09T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

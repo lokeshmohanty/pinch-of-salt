@@ -1,0 +1,13 @@
+{
+  "id": "1e7018a6a7946358",
+  "title": "Gimbal360: Canonicalizing Planar Diffusion for Spherical Panorama Completion",
+  "link": "https://arxiv.org/abs/2603.23179",
+  "description": "arXiv:2603.23179v2 Announce Type: replace \nAbstract: Diffusion models provide powerful priors for 2D image completion, but these priors are learned on bounded planar images and do not transfer directly to $360^\\circ$ panoramas. Perspective observations and spherical panoramas differ in both projective geometry and topology: viewpoint-dependent distortion complicates spatial correspondence, while Equirectangular Projection (ERP) panoramas exhibit intrinsic $S^1$ periodicity that standard Euclidean architectures do not preserve. We present Gimbal360, a unified framework that adapts planar diffusion priors to spherical panoramic completion by standardizing these geometric and topological structures. Our Canonical Viewing Space expresses projective distortion as a fixed function of latitude, providing a consistent interface between perspective inputs and spherical panoramas. To map unposed in-the-wild images into this space, Differentiable Projective Canonicalization projects a dense correspondence field onto a 3-DoF rigid projection manifold without requiring camera parameters at inference. We further introduce Topologically Equivariant Generation, which enforces latent shift equivariance to preserve continuity across the periodic ERP boundary. Together, these designs allow diffusion to operate in a representation whose geometry and topology are explicitly aligned with the spherical domain. We also introduce Horizon360, a curated large-scale dataset of gravity-aligned panoramic environments. Extensive experiments show that Gimbal360 achieves state-of-the-art visual fidelity and seam continuity in $360^\\circ$ scene completion.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

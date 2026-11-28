@@ -1,0 +1,13 @@
+{
+  "id": "b95815fdfa1656a0",
+  "title": "Continuous Foundation-Guided Pseudo-Label Weighting for Breast Ultrasound Domain Adaptation",
+  "link": "https://arxiv.org/abs/2611.33843",
+  "description": "arXiv:2611.33843v1 Announce Type: new \nAbstract: Breast ultrasound segmentation models often generalize poorly across scanners, institutions, and patient populations. We investigate continuous foundation-guided pseudo-label weighting for unsupervised domain adaptation (UDA). An exponential-moving-average (EMA) teacher generates target-domain pseudo-labels, while a frozen ultrasound segmentation model (AutoSAMUS) modulates their contribution using a bounded weight that combines the prior's certainty with its probabilistic agreement with the teacher. In contrast to our earlier selective BiRP rule, the proposed formulation supervises every target pixel with a weight in [0.5, 1] and requires no foundation-model inference at test time. We evaluate the method on five public breast ultrasound datasets, spanning three source domains and eleven source-target directions. Under the TransUNet protocol, continuous weighting outperforms both all-pixel EMA and original BiRP on all four BUSI-source targets, and achieves the highest mean Dice and lowest HD95 among the compared methods on all four BUS-BRA-source targets. Results with BrEaST as the source are mixed: continuous weighting performs best on BUSI and comparably to original BiRP on OASBUD, whereas none of the adaptation methods surpasses source-only training on BUS-UCLM. In a separate U-Net pipeline, agreement-only weighting performs comparably to the full formulation, leaving the incremental value of prior certainty unresolved. Because the weighting rule was developed after some target-test results had been examined, we treat the study as exploratory and report adverse as well as favorable outcomes.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

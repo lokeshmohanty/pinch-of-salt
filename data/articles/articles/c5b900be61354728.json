@@ -1,0 +1,13 @@
+{
+  "id": "c5b900be61354728",
+  "title": "FTerViT: Fully Ternary Vision Transformer",
+  "link": "https://arxiv.org/abs/2605.21171",
+  "description": "arXiv:2605.21171v3 Announce Type: replace \nAbstract: Ternary Vision Transformers offer substantial model compression, however state-of-the-art methods only ternarize the encoder layers, leaving patch embeddings, LayerNorm parameters, and classifier heads in full precision. In compact models targeting resource-constrained processors, such as microcontrollers, these remaining full-precision components determine the total memory footprint, severely limiting deployment efficiency and on-device feasibility. In this work, we introduce a fully ternarized Vision Transformer in which all weight matrices and normalization parameters are ternarized, while activations remain 8-bit (FTerViT). To this end, we introduce two novel operators: TernaryBitConv2d with per-channel scaling for patch embedding and TernaryLayerNorm. FTerViT is trained using knowledge distillation, followed by a lightweight quantization-aware recovery phase. On a matched DeiT-S backbone, FTerViT reaches 77.47% ImageNet-1K top-1 at 5.81 MB, +3.27 pp over TerViT. With the stronger DeiT-III-S backbone at 384x384 resolution, our ternary W2A8 model achieves 82.43% at 6.09 MB (~15x compression, -2.42 pp vs. FP32). This backbone- and resolution-advantaged result exceeds prior ternary ViTs by up to 8 pp. Finally, we demonstrate the first implementation of ternary vision transformers on a dual-core Xtensa LX7 microcontroller inside the ESP32-S3 system-on-chip. By deploying FTerViT-Small (based on DeiT-III-Small at 224x224 resolution, 5.81 MB), we achieve 79.64% ImageNet-1K top-1 accuracy.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

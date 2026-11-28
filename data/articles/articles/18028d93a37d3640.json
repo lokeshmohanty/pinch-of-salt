@@ -1,0 +1,13 @@
+{
+  "id": "18028d93a37d3640",
+  "title": "Measuring the Stability Assumption Behind Action Chunking",
+  "link": "https://arxiv.org/abs/2610.01626",
+  "description": "arXiv:2610.01626v1 Announce Type: new \nAbstract: Action chunking improves the performance of policies learned by behavioural cloning, and several mechanisms have been proposed to explain why, including temporal consistency, horizon reduction, representation learning, and reduced error compounding. We instead study what happens to an action error once it enters the system. At each state, we inject a small action error and measure how fast it grows or shrinks under two execution regimes: open-loop, where the rest of the chunk is replayed without replanning, and closed-loop, where the policy replans after the perturbation. The fitted rate labels each state as contracting, expanding, or unresolved. Across twelve manipulation tasks from three benchmark suites, we find that confidently stable states are rare, while error amplification is common among states whose propagation rate can be resolved. We further find that the measured propagation rate depends strongly on the fitting horizon: amplification is typically front-loaded, so short windows can overestimate longer-horizon propagation. Finally, we train predictors on these labels and find that a state's open-loop regime can be recovered from camera frames and proprioception alone, while its closed-loop propagation is only partially recoverable because it also depends on how the policy acts after the perturbation. These results suggest that error-compounding arguments alone do not provide a complete account of action chunking: neither passive open-loop dynamics nor policy replanning consistently contracts an injected error, and replanning rarely turns open-loop amplification into confident contraction. This suggests that closed-loop reactivity should be trained explicitly, using perturbation- and tree-coverage-oriented training to expose policies to deviations they must recover from, rather than expected to emerge reliably from standard imitation learning.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

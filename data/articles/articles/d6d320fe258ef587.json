@@ -1,0 +1,13 @@
+{
+  "id": "d6d320fe258ef587",
+  "title": "Beckmann World Models: Direct Terminal-Map Learning for One-Step Action-Conditioned Prediction",
+  "link": "https://arxiv.org/abs/2610.26903",
+  "description": "arXiv:2610.26903v1 Announce Type: new \nAbstract: Action-conditioned world models support planning and policy evaluation by predicting future states. However, learning an accurate one-step predictor can require substantial training computation. We introduce Beckmann World Models (BWM), which learn a direct map from noise, visual history, and actions to future frames without a pretrained generative teacher. We adapt the terminal-map conservation law of Beckmann Transport Models to action-conditioned video prediction, training directly from noise-data pairs without conditional populations of generated samples required by DriftWorld. However, transport consistency on interpolated inputs does not ensure accurate prediction from the pure noise used at inference. We address this gap with endpoint-aligned training that directly supervises the source prediction, emphasizes motion and spatial structure, and teaches recovery from generated histories. All components train the same map and retain one network call per future chunk. On PushT and Robomimic Can, the final model reduces 64-frame prediction MSE by 68% and 57%, respectively, relative to same-backbone regression baseline. For policy evaluation, BWM achieves the lowest mean IoU error among the evaluated models, 0.0100, at 24.8 ms per four-frame PushT prediction. On Robomimic Can, the BWM stage trained with motion supervision and generated histories achieves 3.3 times higher throughput and 78% lower peak memory than local one-step DriftWorld. In a latent-space extension to RT-1 and Bridge-V2, equal-update controls show that feature supervision under generated histories improves perceptual prediction. These findings show how terminal-map learning can combine efficient training with accurate one-step visual prediction.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-21T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "2eece03ca16e8add",
+  "title": "Structured Noise Diffusion for Echocardiography Haze Removal",
+  "link": "https://arxiv.org/abs/2611.33860",
+  "description": "arXiv:2611.33860v1 Announce Type: new \nAbstract: Echocardiographic images are frequently degraded by spatially structured haze artifacts that obscure anatomical boundaries and hinder clinical analysis. Conventional diffusion models typically employ pixel-independent Gaussian noise, limiting their ability to represent localized ultrasound haze. In this study, we propose a structure-informed diffusion framework that explicitly models ultrasound haze as an accumulation of localized Gaussian components constrained by the ultrasound fan geometry. The forward process generates spatially correlated corruption by sampling component locations and scales, providing a formulation that better reflects the spatial characteristics of real echo artifacts. During reverse restoration, a dual-head network predicts an anchor probability map and Gaussian scale parameters to progressively remove structured artifacts while reducing the center bias associated with direct coordinate regression. We evaluated the framework on the public DehazingEcho2025 benchmark and two private clinical datasets, without retraining or fine-tuning on either private cohort. Our method achieved the highest mean generalized contrast-to-noise ratio across all three datasets, reaching $0.715 \\pm 0.090$ on the public benchmark while preserving tissue edges.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

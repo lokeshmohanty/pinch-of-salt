@@ -1,0 +1,13 @@
+{
+  "id": "54ecd7622964d58a",
+  "title": "Evolving Error States: Failure-Aware Progressive Repair for Ultrasound Lesion Segmentation",
+  "link": "https://arxiv.org/abs/2609.18256",
+  "description": "arXiv:2609.18256v1 Announce Type: new \nAbstract: Reliability under sparse and heterogeneous failures remains a fundamental challenge for medical image segmentation. High average accuracy can conceal a small set of structurally distinct and clinically consequential errors. Existing post-hoc correction methods alleviate this problem, but typically estimate false-positive and false-negative corrections from the same fixed prediction. This ignores the dynamic evolution of error states and limits the correction of complex cases. Inspired by iterative error feedback in structured prediction, we propose Failure-Aware Progressive Repair (FAPR). FAPR represents the current segmentation mask as a dynamic failure state and models each repair operation as a state-transition operator. Each accepted correction forms a new prediction state for subsequent error diagnosis and repair, enabling later operations to adapt to preceding changes. Conditional routing selectively activates necessary state transitions, while failure replay exposes the model to rare error states. By keeping the base segmentor frozen, FAPR preserves its established segmentation capability while improving difficult cases. Across three public ultrasound lesion segmentation benchmarks, FAPR improves mean DSC by 1.52%. On the very-hard subsets of BUSI and TN3K, the average gain reaches 13.77%.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-17T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

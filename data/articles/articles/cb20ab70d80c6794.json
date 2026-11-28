@@ -1,0 +1,13 @@
+{
+  "id": "cb20ab70d80c6794",
+  "title": "Not Every Correction Helps: Gain-Guided Continual Test-Time Adaptation",
+  "link": "https://arxiv.org/abs/2609.36655",
+  "description": "arXiv:2609.36655v1 Announce Type: new \nAbstract: Continual test-time adaptation (CTTA) adapts a source model to an unlabeled test stream whose distribution may change over time. Existing TTA methods often assess prediction reliability using confidence or entropy, which primarily reflect the model's self-certainty for the current sample. In CTTA, accumulated target observations can provide complementary evidence for correcting the source prediction, but this history may become misaligned as the target distribution changes. The key question is therefore not how much the correction differs from the source prediction, but whether and how strongly it should be applied. This paper proposes Gain-Aware INtervention (GAIN), a backpropagation-free CTTA framework guided by a simple principle: history proposes, gain decides. GAIN maintains compact target statistics to form a correction proposal and a posterior-predictive evaluator that accounts for estimation uncertainty. The resulting source-relative gain estimates the proposal's benefit and determines a sample-specific intervention strength along a continuous path through efficient one-dimensional optimization. Gain-controlled predictions then update the target statistics online, limiting the propagation of unreliable corrections, all without backpropagation, sample storage, or replay. Across five benchmarks, our method achieves strong predictive performance, with favorable accuracy--calibration--efficiency trade-offs in continual adaptation. On ImageNet-C, for example, GAIN achieves 61.9% accuracy with near-source calibration. It remains stable under diverse and challenging continual shifts while running 15.9x faster than a representative optimization-based CTTA baseline.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

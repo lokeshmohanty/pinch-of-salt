@@ -1,0 +1,13 @@
+{
+  "id": "e3e77900ab004963",
+  "title": "Data-driven Circuit Discovery for Interpretability of Language Models",
+  "link": "https://arxiv.org/abs/2605.09129",
+  "description": "arXiv:2605.09129v2 Announce Type: replace \nAbstract: Circuit study aims to explain how language models (LMs) implement a task by localizing and interpreting a circuit: a computational subgraph responsible for a specific model's behavior. Existing methods for circuit localization are largely hypothesis-driven: they define a task through a dataset, assume that all examples in the task are implemented by the same mechanism, and apply circuit discovery to obtain a single circuit. This workflow does not account for mechanistic diversity within a task, where different examples may rely on different mechanisms. We first show that when a dataset mixes tasks processed through distinct mechanisms, current circuit discovery can combine these mechanisms into a single circuit while retaining faithfulness comparable to circuits discovered on each task separately. Across four tasks and three models, we further provide evidence for such mechanistic diversity within individual tasks. To account for this diversity, we propose Data-driven Circuit Discovery (DCD), which modifies the circuit-discovery workflow by adding a grouping step before the discovery. The grouping step aims to partition the dataset into subsets of examples that rely on similar mechanisms. We instantiate this step with clustering over per-example attribution patterns (DCD-Cluster). Across four tasks and three models, DCD-Cluster decomposes the dataset into multiple subsets whose circuits exhibit distinct faithfulness patterns, providing useful hypotheses about mechanistic differences among examples.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

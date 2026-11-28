@@ -1,0 +1,13 @@
+{
+  "id": "db09a14dd2ffbd71",
+  "title": "How Should Reasoning Be Organized in a Transformer's Latent Space?",
+  "link": "https://arxiv.org/abs/2609.13747",
+  "description": "arXiv:2609.13747v2 Announce Type: replace \nAbstract: Continuous reasoning has emerged as a promising way to improve reasoning in large language models (LLMs). Yet we still lack a clear principle for deciding what a latent state should preserve. Reasoning by superposition shows that a single latent state can encode several search alternatives and expand them in parallel. We ask how those states should be weighted as reasoning proceeds. A natural choice is to preserve only the states active at the frontier step, since keeping every reached state appears to spread a limited hidden width too thin. We show that the opposite can hold. When later computation draws on several reached states, a cumulative state can guide attention correctly at a smaller hidden width than a frontier state that stores fewer states. At the same width, the cumulative state therefore keeps more intermediate states available for later reasoning. More generally, equal cumulative weights are optimal when future queries are unknown and remain close to the best task-specific weights when those queries are known. Experiments with two-layer and GPT-2 Transformers reproduce the predicted width advantage and show that unequal weights fail first on the states that receive the least weight. This suggests a important principle: keep reached states equally weighted, and restore equal weights as computation proceeds.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-30T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

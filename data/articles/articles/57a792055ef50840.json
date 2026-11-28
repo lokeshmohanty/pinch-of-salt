@@ -1,0 +1,15 @@
+{
+  "id": "57a792055ef50840",
+  "title": "QVal: Evaluating Dense Supervision Signals for Long-Horizon LLM Agents",
+  "link": "https://arxiv.org/abs/2606.32034",
+  "description": "arXiv:2606.32034v2 Announce Type: replace-cross \nAbstract: LLM agents increasingly act over long horizons, where outcome-only rewards say little about which intermediate actions were good. Dense supervision methods address this by scoring intermediate steps, but they are usually evaluated through the downstream performance of a full training pipeline. This is expensive, confounds signal quality with other training choices, and means that methods are rarely compared on common ground. We introduce QVal, a training-free testbed that measures the $Q$-alignment of a dense signal: whether it orders the candidate actions in each state the same way as their returns under a reference policy do. We benchmark 21 methods from seven families with six open-weight backbones in four environments. Simple prompting baselines are the most $Q$-aligned on average, and performance clusters strongly by family. Code-generated signals do well only in small state and action spaces; embedding-based signals are weak; self-distillation signals are anti-aligned; and no method is $Q$-aligned in open-ended environments. When five of these signals guide an actor at test time by choosing among four proposed actions, $Q$-alignment strongly correlates with the gain in task success. QVal is designed to be easily extensible to new environments and methods, enabling researchers to compare new signals cheaply before committing to a training run.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI",
+    "cs.CL"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "b6b85a7b84b84054",
+  "title": "Where the Real Clips Came From: Corpus Identity in AI-Generated Video Detection",
+  "link": "https://arxiv.org/abs/2606.31004",
+  "description": "arXiv:2606.31004v2 Announce Type: replace \nAbstract: Benchmarks for detecting AI-generated video take their real clips from a few curated collections, so a clip's label is collinear with where it came from. We call a score's dependence on this origin corpus identity, and we measure it on four benchmarks and six real collections. Three probes read a file's declared frame types, the motion vectors its codec stores, and the frames' appearance. Frame-type counts alone separate real from generated at AUC 0.999 on GenVidBench, and re-encoding every clip with one setting at a fixed length still leaves 0.61 to 0.63 on three benchmarks. We introduce a fixed frame-type pattern that removes this leak from every clip of at least 2 s. The same re-encode lowers the ReStraV detector on GenVidBench from 0.85 to 0.60, just above the 0.59 its features reach between two real collections, because its 8 fps repeats frames in real clips. Motion vectors alone separate real collections from one another at AUC 0.51 to 0.98, and only one benchmark ships the two labeled real sources needed to measure this separation within it. In deployment, with each threshold set to flag 5% of its training benchmark's real clips, the motion-vector and appearance probes and linear readouts on ReStraV and WaveRep features each flag 15% or more of another real collection. Choosing the threshold on real videos from the target collection brings the rate back to about 5%, at the cost of catching fewer generated clips. Clearing the real-vs-real level does not guarantee replication: of the six feature sets whose GenVidBench score clears it by 0.15 or more, only WaveRep's two keep their score on AIGVDBench. A benchmark score is therefore best read together with that level, a score on a second benchmark, and false-positive rates on other real collections. The toolkit and the clip lists of every evaluation set are at https://github.com/KurbanIntelligenceLab/vidaudit.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

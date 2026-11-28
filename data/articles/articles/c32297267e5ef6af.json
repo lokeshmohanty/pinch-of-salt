@@ -1,0 +1,13 @@
+{
+  "id": "c32297267e5ef6af",
+  "title": "GlanceWAM: Sparse Test-Time Imagination for World-Action Models",
+  "link": "https://arxiv.org/abs/2608.23927",
+  "description": "arXiv:2608.23927v2 Announce Type: replace \nAbstract: Video generative models provide rich physical priors for robot learning, yet existing world-action models (WAMs) face a fundamental trade-off: synchronous video generation at control rate is latency-prohibitive, while abandoning test-time visual imagination sacrifices task success. We show that visual imagination achieves both real-time inference and superior success rates when generated asynchronously off the critical path and consumed directly in latent space. We introduce GlanceWAM, which decouples imagination from control on a single shared video DiT backbone: an asynchronous proposer glances ahead on a slow clock to imagine a single lookahead frame seconds into the future in the background, while an action head decodes action chunks at control rate (48 ms) purely in latent space without blocking. Enabled by a non-interfering attention mask that isolates video representations and staleness-robust horizon training that accommodates asynchronous lookahead aging, GlanceWAM breaks the speed-success dilemma. Trained purely on demonstrations, it attains 72.2% on the 24-task RoboCasa kitchen benchmark (vs. 67.1% for synchronous Cosmos Policy) and 99.0% on LIBERO while cutting per-chunk control latency $24\\times$ relative to synchronous world-action models (48 ms on one A100). In single-arm and bimanual real-robot manipulation, it achieves higher average success than $\\pi_{0.5}$ without any robot-data pretraining. Code is available at https://github.com/linhanwang/GlanceWAM.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-01T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

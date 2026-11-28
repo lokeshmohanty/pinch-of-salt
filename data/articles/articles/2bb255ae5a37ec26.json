@@ -1,0 +1,13 @@
+{
+  "id": "2bb255ae5a37ec26",
+  "title": "RTime-QA: A Benchmark for Atomic Temporal Event Understanding in Multimodal Large Language Models",
+  "link": "https://arxiv.org/abs/2505.19125",
+  "description": "arXiv:2505.19125v2 Announce Type: replace \nAbstract: Multimodal large language models (MLLMs) perform well on video benchmarks, yet many video questions can be answered from a single frame or from language priors, which leaves open whether these models perceive how an event unfolds in time. We introduce \\rtqa, a benchmark for atomic temporal event understanding built on time-reversed question pairs: each video is accompanied by its reversal, and each question is asked on both videos with identical text and options but different correct answers, so that a deterministic model that ignores the order of the frames cannot answer both. \\rtqa{} comprises 8,420 questions of five types on 1,278 videos, 639 videos and their reversals. The questions are derived from event annotations that a proposer model writes, a reviewer model checks and human annotators verify, and three subsets target fast evaluation (\\rtqatiny), questions that are hard to answer from the first and last frames (\\rtqacore) and two consecutive events (\\rtqacomp). All 20 evaluated models are less accurate on reversed videos. On \\rtqafull, proprietary models answer both questions of 90.6--94.4\\% of the pairs and the strongest open-source model of 66.8\\%; on \\rtqacore, the proprietary models drop to 55.6--64.5\\%, and shuffling the frames reduces the paired accuracy of the tested open-source models to 3.4--7.4\\%. We further build \\rtqatrain{} with the same pipeline, without human verification, and train three open-source MLLMs on it with supervised fine-tuning (SFT) and reinforcement learning (DAPO) under matched settings: both raise paired accuracy on \\rtqafull, SFT by 20.7--27.4 points and DAPO by 5.9--22.9 points. For Qwen3.5-9B-Thinking, the training data also help on two other temporal benchmarks: SFT and DAPO raise the Vinoground text score by 5.8 and 3.8 points, respectively, and DAPO raises the TVBench macro accuracy by 4.6 points.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

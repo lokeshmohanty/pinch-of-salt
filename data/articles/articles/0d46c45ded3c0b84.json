@@ -1,0 +1,13 @@
+{
+  "id": "0d46c45ded3c0b84",
+  "title": "ReGround: Restoring Visual Grounding in Multi-Step Reasoning through Self-Diagnosis and Visual Re-Examination",
+  "link": "https://arxiv.org/abs/2608.04385",
+  "description": "arXiv:2608.04385v1 Announce Type: new \nAbstract: Vision-Language Models (VLMs) often lose visual grounding during multi-step reasoning: as reasoning chains grow longer, later inference steps rely increasingly on language priors rather than image evidence. We identify a consistent benchmark-level signature associated with this degradation: across 2,510 re-examined samples from four benchmarks, attention entropy over image tokens typically decreases during Round 1 and rises again after image re-injection.\n  However, we find that effective visual re-examination requires two complementary ingredients: image re-injection and targeted self-diagnosis. Without targeted diagnosis, re-examination can even hurt performance, whereas accurate self-diagnosis yields substantial gains -- a swing of several points on key benchmarks, indicating that diagnostic quality is a key factor in whether re-examination helps or hurts in our setting. We present ReGround, a two-stage framework that teaches VLMs to self-diagnose grounding failures and selectively re-examine visual evidence, without architectural modifications or external tools. Through capability bootstrapping, a stronger variant from the same model family provides diagnostic scaffolding only during data construction, while the policy model learns to diagnose autonomously at inference time and retains most of the assisted gains.\n  Experiments on eight benchmarks across two VLM backbones demonstrate consistent gains, especially on visually intensive multi-step reasoning tasks, while incurring only modest inference overhead relative to tool-augmented baselines. Project page: https://sespoir.github.io/reground-page/ . Code: https://github.com/sespoir/ReGround .",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-06T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

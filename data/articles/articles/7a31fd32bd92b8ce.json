@@ -1,0 +1,15 @@
+{
+  "id": "7a31fd32bd92b8ce",
+  "title": "Clear-Weighted Bit Allocation for Satellite Downlinks",
+  "link": "https://arxiv.org/abs/2608.01457",
+  "description": "arXiv:2608.01457v1 Announce Type: cross \nAbstract: Earth-observation satellites capture more imagery than intermittent ground contacts can transmit. Onboard systems threshold a cloud detector, discard frames or tiles, and compress the survivors with a fixed codec. On expert-labeled imagery, these rules remove more than one-fifth of clear pixels, primarily through detector false positives. We train a neural codec with a clear-probability-weighted reconstruction loss, reallocating coded bytes from clouds to clear ground without requiring or transmitting a cloud map onboard. Each capture is encoded into a resumable base layer and a dependent refinement layer, while clear content is estimated from features produced by the encoder. At each contact, we causally rank arrived layers using estimated clear content, unfinished bytes, deadline slack, and aggregate deadline pressure. The scheduler serves base and computational deadlines, bounds stored residual bytes, and resumes interrupted packets. We evaluate the onboard-to-downlink pipeline using real entropy-coded bytes, orbit-derived interruptible contact capacities, and measured service time and energy on resource-constrained embedded accelerators. Clear-weighted codecs require up to 47.8\\% fewer bytes than learned-compression baselines at matched clear-region quality. The optimized encoder consumes less time and energy than one pass of the cloud detector used by the frame-discard rules. Relative to fixed two-stage service on the same streams, our scheduler more than doubles deadline-full clear-content delivery for the interrupted combined cohort, reaches 83.6\\% of a certified clairvoyant upper bound, and exceeds replayed reference orders in deadline-usable delivery.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-04T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.NI",
+    "cs.CV",
+    "eess.IV"
+  ]
+}

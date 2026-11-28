@@ -1,0 +1,15 @@
+{
+  "id": "6ab9aae1d47f4cc7",
+  "title": "Explore, Map, Remember, Decide: A Benchmark for VLM Readiness in Safety-Critical Scenarios",
+  "link": "https://arxiv.org/abs/2608.08077",
+  "description": "arXiv:2608.08077v2 Announce Type: replace \nAbstract: Vision-Language Models (VLMs) are often deployed as embodied controllers for robotics, yet it remains unclear how well they can explore an environment, maintain an internal map, and ground safety-critical decisions in long-horizon sequential trajectories. In this work, we introduce EMRD, an evaluation framework that decouples spatial reasoning into four stages: Explore (what the agent observes), Map (what it records and where), Remember (what it retains), and Decide (whether its final choice is justified), scored across 18 stage-specific metrics. We use EMRD to evaluate eleven open- and closed-weight VLMs across 16 buildings under nominal conditions and three environmental stresses (darkness, smoke, and motion noise), where an embodied VLM explores unknown rooms, maps observed objects, and selects the safest gathering place. Open-weight models leave rooms unvisited in 95% of episodes and detect at most 51% of objects; closed-weight models explore more, though with an external memory (notepad), two of the three stop prematurely. Without external memory, most VLMs keep fewer of the objects they saw, especially in larger buildings. The start limits which rooms are explored, and open-weight models started in different rooms agree on the final room not significantly more often than chance. Moreover, these choices are biased by semantic priors: swapping a room's label is often enough to change the final choice. Finally, motion noise increases object position error (by 12-60% for closed-weight models), strong darkness lowers map recall by 28-31 percentage points, and dense smoke reduces seen objects by 25-39 points, while the choice among the rooms entered does not change significantly.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-18T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.MA",
+    "cs.RO"
+  ]
+}

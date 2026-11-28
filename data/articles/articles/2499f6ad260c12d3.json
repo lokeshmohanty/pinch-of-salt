@@ -1,0 +1,14 @@
+{
+  "id": "2499f6ad260c12d3",
+  "title": "DuoMI: Dual Mutual Information Regularization for Expert Reuse in Looped Transformers",
+  "link": "https://arxiv.org/abs/2611.33952",
+  "description": "arXiv:2611.33952v1 Announce Type: cross \nAbstract: We introduce Dual Mutual Information Regularization (DuoMI), a method for regulating expert routing across rounds in looped mixture-of-experts (MoE) Transformers. When two rounds of computation share an expert pool, their routers may favor different expert subsets, limiting the reuse of individual expert parameters across rounds. Even when aggregate expert usage is identical across rounds, we would still prefer each token to retain some experts while switching to others. DuoMI addresses both aspects of routing: it uses round-level marginal mutual information to limit the dependence of aggregate expert usage on the round, and token-level conditional mutual information to penalize average cross-round routing changes that fall outside a target interval. During training, DuoMI computes differentiable penalties from soft routing distributions over all experts. It adds no model parameters and leaves sparse Top-$k$ routing strategy unchanged at inference. On a looped OLMoE backbone in which paired adjacent layers share experts, DuoMI improves the average score across $15$ downstream tasks from $50.08\\%$ to $51.82\\%$, a gain of $1.74$ percentage points over the looped baseline.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-27T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

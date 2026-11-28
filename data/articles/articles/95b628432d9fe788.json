@@ -1,0 +1,15 @@
+{
+  "id": "95b628432d9fe788",
+  "title": "Distortion-Corrected Diffusion MRI Using Rotated-View EPI and Joint Field-Map/Image Estimation with Gaussian Primitives",
+  "link": "https://arxiv.org/abs/2606.31521",
+  "description": "arXiv:2606.31521v2 Announce Type: replace-cross \nAbstract: Echo planar imaging (EPI) is the standard acquisition technique for diffusion and functional neuroimaging, enabling rapid imaging but suffering from geometric distortions caused by B0 field inhomogeneities. Existing correction methods first reconstruct distorted images using parallel imaging, then estimate the B0 field and correct the distortion in the image domain. In this sequential process, reconstruction artifacts at high acceleration factors and low SNR at high diffusion b-values degrade B0 estimation and limit the overall correction quality. We propose a physics-informed framework that jointly estimates the B0 field, the distortion-free image, and the shot-to-shot phase directly from k-space data, without depending on an intermediate parallel-imaging reconstruction. All three are represented as superpositions of Gaussian primitives embedded within an EPI forward model; the explicit, continuous parameterization captures both smooth regions and tissue boundaries and is evaluated on rotated sampling grids without resampling. The diffusion-weighted image is modeled as real and non-negative, with the image phase absorbed into a per-shot phase factor. Acquiring the blip-up/blip-down data at several phase-encoding orientations, the rotated-view principle of PROPELLER applied to full-FOV single-shot EPI, distributes distortions across orientations, improving point spread function isotropy and providing stronger constraints for B0 estimation. On in vivo brain diffusion EPI at R=4 and 5, the proposed method attains the closest brain-boundary agreement with a distortion-free structural reference, with the largest improvement over sequential methods at high b-value.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "eess.SP"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "42716e32fe82745e",
+  "title": "Learning Fine-Grained Visual Classification with Text as Privileged Information via Multimodal Distillation",
+  "link": "https://arxiv.org/abs/2610.32442",
+  "description": "arXiv:2610.32442v1 Announce Type: new \nAbstract: Fine-grained visual classification (FGVC) requires distinguishing between highly similar categories by focusing on subtle, localized visual differences. Recent multimodal methods have demonstrated that textual attribute descriptions can provide valuable semantic supervision by explicitly describing discriminative object characteristics. However, these descriptions are typically unavailable at test time, limiting their direct use in deployment. We propose FG-LUPI, a Learning Using Privileged Information (LUPI)-based framework that leverages attribute descriptions during training. We train a multimodal teacher that integrates image patches and textual attributes via gated cross-attention, allowing semantic attributes to condition visual representations. We distill this knowledge into an image-only student using multi-level distillation at the prediction, patch, and attention levels, aligning global predictions, patch representations, and attention patterns with the teacher. This encourages the student to inherit attention structure learned from multimodal supervision while maintaining image-only inference. Experiments on multiple FGVC benchmarks show consistent improvements in classification accuracy over strong ViT-based baselines. Furthermore, evaluation using Expected Calibration Error (ECE) shows that FG-LUPI also produces better-calibrated predictions across all six benchmarks. These results suggest that textual attribute supervision can benefit not only fine-grained recognition performance but also the reliability of model confidence, while preserving the efficiency and practicality of image-only inference.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

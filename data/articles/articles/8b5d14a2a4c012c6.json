@@ -1,0 +1,14 @@
+{
+  "id": "8b5d14a2a4c012c6",
+  "title": "StackTok: Accelerating VLMs Inference with Budget-Adaptive Visual Token Selection",
+  "link": "https://arxiv.org/abs/2609.16841",
+  "description": "arXiv:2609.16841v1 Announce Type: cross \nAbstract: Increasing image resolution produces ever-longer visual-token sequences in vision-language models (VLMs), substantially raising their inference cost. To reduce this overhead without retraining, existing methods select compact token subsets that prioritize query relevance, visual coverage, or a fixed trade-off between them. The appropriate balance, however, varies across queries and token budgets: localized questions favor relevance, whereas holistic questions demand broader visual coverage. We introduce StackTok, a training-free selector that treats query relevance as the objective and visual coverage as budget-calibrated support. StackTok builds a size-indexed coverage reference from a coverage-only greedy sequence and adjusts its support target using query--vision affinity entropy. A reference-gated interleaved selection policy then switches between relevance- and coverage-oriented additions according to the current subset's support deficit. For high-resolution inputs, StackTok allocates one shared token budget across crops according to the combined marginal gain of locally nominated tokens. Evaluated with five VLMs over ten distinct image-understanding benchmarks, StackTok ranks first among training-free selectors in every tested model--budget setting. On high-resolution LLaVA-NeXT-7B, it retains 95.26% of full-token performance with only 160 of 2{,}880 (5.6%) visual tokens.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

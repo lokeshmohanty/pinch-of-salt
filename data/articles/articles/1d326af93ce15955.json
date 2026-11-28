@@ -1,0 +1,14 @@
+{
+  "id": "1d326af93ce15955",
+  "title": "Do Language Models Need Music Supervision? Verifiable Rewards for Multi-Constraint Symbolic Music Generation",
+  "link": "https://arxiv.org/abs/2609.23665",
+  "description": "arXiv:2609.23665v3 Announce Type: replace-cross \nAbstract: Language models can now generate symbolic music from natural-language instructions. However, existing models still struggle to satisfy multiple explicit musical constraints simultaneously. To systematically evaluate this capability, we introduce MusicConstraintBench, a benchmark of 2180 items spanning eight families of programmatically verifiable constraints. On this benchmark, Llama-3.1-70B satisfies 0.630 of single-constraint items but only 0.044 of four-constraint ones. To address this challenge, we propose MusicRLVR, which trains a language model with group relative policy optimisation (GRPO) on verifier rewards alone, needing no human annotation, reward model or music-domain supervised fine-tuning. MusicRLVR incorporates (1) a hard validation gate that rejects malformed scores, (2) graded per-family credit that, unlike a binary reward, separates partially correct outputs, and (3) an all-satisfied bonus for meeting every constraint at once. Extensive experiments show that, after 300 GRPO updates, MusicRLVR raises Qwen3-4B-Instruct-2507 from 0.160 to 0.807 on mixed constraints, outperforming Llama-3.1-70B, and generalises to unseen property combinations, out-of-range parameters and more constraints than any training prompt. The recipe transfers to Qwen3-8B, and neither trained model loses significant accuracy on general benchmarks.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SD",
+    "cs.AI"
+  ]
+}

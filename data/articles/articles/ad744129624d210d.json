@@ -1,0 +1,13 @@
+{
+  "id": "ad744129624d210d",
+  "title": "GeoMetric: Injecting Metric Geographic Structure into Worldwide Image Geo-Localization",
+  "link": "https://arxiv.org/abs/2606.08918",
+  "description": "arXiv:2606.08918v4 Announce Type: replace \nAbstract: Worldwide image geo-localization estimates where a photograph was taken on Earth. Existing methods infer location from visual appearance alone, an unreliable cue for geography: near-identical scenes occur on different continents. We present GeoMetric, a three-phase retrieval framework that encodes geographic distance directly in the representation. Phase I trains image, text, and location encoders into a unit hypersphere. The location encoder combines ScaleFusion and GeoAnchorAttention. ScaleFusion projects a coordinate onto an equal-area chart and encodes it with three Fourier bands, fusing them by attention into one multi-scale embedding. GeoAnchorAttention adds a global prior from fixed spherical anchors without mixing samples, so each coordinate embedding is batch-independent. A trimodal contrastive objective aligns images, reverse-geocoded texts, and coordinates, masking semantic and geographic false negatives. Phase II retrieves candidates, each carrying a GPS coordinate and granularity-aware geographic text. Phase III lets a frozen open-source 8B-parameter large multimodal model (LMM) choose the coordinate from those candidates. On four benchmarks, GeoMetric is best in 15 of 20 threshold cells, and ablations show that the components act at different scales: the text encoder carries coarse geographic context, while the location encoder resolves fine-grained distinctions.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "c9aa696067b5ced4",
+  "title": "OracleZoom: Reference-Constrained Recursive Image Super-Resolution Beyond Ground Truth",
+  "link": "https://arxiv.org/abs/2609.06490",
+  "description": "arXiv:2609.06490v2 Announce Type: replace \nAbstract: Recursive image Super-Resolution (SR) reaches extreme magnification by feeding each prediction back into the same model, like zooming into an image again and again. Real ground truth for deep zooms is impractical to capture (a full $256\\times$ target would be a 52 GB image), so predictions at deeper zooms have no supervision. Yet the last ground-truth image still contains the region that every deeper zoom magnifies. OracleZoom turns this region into a training signal. Inspired by on-policy self-distillation, the model trains on its own prediction for one recursive step ($4\\times \\rightarrow 16\\times$), and a cross-scale loss projects each $16\\times$ prediction back to the last ground truth at $4\\times$. This projection can verify only coarse content, so a no-reference quality objective guides the remaining fine detail, and a latent prior stops this objective from adding hallucinated artifacts. On seven datasets, OracleZoom achieves the highest CLIPIQA at every zoom depth (mean 0.713 vs. 0.621 for Chain-of-Zoom), with the largest gains at the deepest zooms, even though training stops at $16\\times$ and optimizes a different quality metric. Pooled over two ground-truth-anchored judges, this added detail comes at the same hallucination rate as Chain-of-Zoom at $16\\times$ and a lower rate at $4\\times$, and removing the cross-scale loss raises hallucination at $16\\times$.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.CL",
+    "cs.LG"
+  ]
+}

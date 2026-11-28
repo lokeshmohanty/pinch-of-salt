@@ -1,0 +1,14 @@
+{
+  "id": "52716d2b4197f430",
+  "title": "Depth-progressive 3D seismic velocity model building via 2D generative diffusion models",
+  "link": "https://arxiv.org/abs/2610.14812",
+  "description": "arXiv:2610.14812v1 Announce Type: cross \nAbstract: Three-dimensional (3D) velocity model building (VMB) remains computationally challenging with conventional approaches and native 3D neural networks, largely due to the prohibitive memory and training cost of full 3D formulations. Therefore, we introduce a depth-progressive framework that achieves 3D VMB using 2D generative diffusion models through a depth-as-channel formulation, in which the depth dimension of each 3D velocity patch is mapped to the channel dimension of a 2D U-Net. This allows the model to synthesize overlapping depth patches sequentially from shallow to deep while conditioning the prediction of the deeper patch on the shallower one, as well as on any available geophysical constraints, including well logs and structural attributes. During training, paired shallow-deep patch pairs with randomized overlaps are used to teach the network how deeper velocity structures relate to shallower information, and a classifier-free guidance strategy enables the model to handle missing constraints gracefully. At inference, starting from a shallow velocity prior, the model recursively generates deeper patches in a top-down manner, and a depth-attenuated Gaussian blending scheme merges overlapping predictions into spatially coherent 3D volumes while accounting for the progressive accumulation of uncertainty at greater depths. Numerical experiments on both in-distribution benchmark models, including Overthrust, SEAM Arid, and SEG/EAGE, and the out-of-distribution Marmousi model demonstrate that the method effectively propagates shallow velocity priors downward and produces high-quality 3D velocity volumes across a range of geological settings and conditioning scenarios. Compared to a 3D benchmark of equivalent architecture, the proposed method significantly reduces parameter count, training cost, and inference cost, while maintaining superior VMB accuracy.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "physics.geo-ph",
+    "cs.AI"
+  ]
+}

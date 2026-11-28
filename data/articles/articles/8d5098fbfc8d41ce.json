@@ -1,0 +1,13 @@
+{
+  "id": "8d5098fbfc8d41ce",
+  "title": "A Calibration-Referenced Protocol for Measuring Decision Stability under Reference Bank Compression",
+  "link": "https://arxiv.org/abs/2611.34134",
+  "description": "arXiv:2611.34134v1 Announce Type: new \nAbstract: Reference banks used for industrial image inspection can be compressed to fit a deployment budget, but the resulting anomaly decisions depend on both the compressed scores and the operating threshold. We present a four-step protocol that compares compression methods at matched deployment sizes, establishes a reference distribution from 200 recalibrations, evaluates disagreement against two calibration benchmarks, and measures changes by distance from the full-bank threshold. With WideResNet-50, budget-matched product quantization (PQ) at the 10% budget has the lowest decision disagreement among five matched methods, including int8 scalar quantization, on VisA and MVTec AD at both operating levels. Int8 scalar quantization gives lower disagreement than PQ at the other four budgets. On MVTec AD at the lower operating level, PQ meets the calibration median in 34/39 cells and the upper quantile in 39/39 cells. Category-equally weighted image-level AUROC loss at this budget ranges from 0.0003 to 0.0037 across the evaluated configurations. On VisA at the 1% budget and a 1% operating level, disagreement reaches 28.12% (95% CI 23.25--33.58%) among near-threshold anomalies and 1.30% (0.79--2.14%) across the normal holdout. The 10% budget-matched PQ setting retains the lowest disagreement among four compared methods with ResNet-18, with clean reference banks, and when thresholds are estimated from normal-directory probes. The protocol connects deployment size to a calibration-referenced decision measure and identifies the evaluation populations most informative for inspection.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f87533494aad39cf",
+  "title": "Synthetic Leprosy Image Generation Using Mask-Conditioned Latent Diffusion and Transfer Learning from Large Chronic Wound Datasets",
+  "link": "https://arxiv.org/abs/2609.13226",
+  "description": "arXiv:2609.13226v2 Announce Type: replace \nAbstract: Machine learning for neglected tropical diseases is limited by data, not algorithms: public annotated image sets for leprosy (Hansen's disease) number in the hundreds. We ask whether a model trained on abundant chronic wound photography transfers to this low-data regime. We build a three-stage pipeline: a DeepLabV3-ResNet50 segmenter supplies lesion masks for two wound datasets that ship without them; a mask-conditioned latent diffusion model built from Stable Diffusion 1.5 components is trained on 3,280 wound crops; and the model is fine-tuned on leprosy image-mask pairs from CO2Wounds-V2 (764 images of 96 patients). We evaluate on 136 held-out leprosy lesions using LPIPS anchored by a real-versus-real baseline, kernel inception distance (KID), and a paired design that runs both models on the same input. Fine-tuning moved the generated distribution toward real held-out leprosy images: KID fell from 0.167 to 0.089, and LPIPS distance to real images from 0.806 to 0.765, with non-overlapping 95% confidence intervals. Giving the base model the leprosy prompt alone did not reproduce the gain (KID 0.250). For a fixed input, fine-tuning changes the output less than a new random seed does (paired LPIPS 0.544 versus 0.728): it keeps layout and alters tissue color and texture. The generated set shows no mode collapse (internal diversity 0.734 versus 0.667 for real images). A dataset audit shows that a majority of training images carry synthetic flat regions from preprocessing, which the fine-tuned model partly reproduces. Chronic wound photography is a viable donor domain for leprosy lesion synthesis; the remaining barrier is semantic control rather than image quality.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

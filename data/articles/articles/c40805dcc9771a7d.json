@@ -1,0 +1,14 @@
+{
+  "id": "c40805dcc9771a7d",
+  "title": "Catch-Only-One: Non-Transferable Examples for Model-Specific Authorization",
+  "link": "https://arxiv.org/abs/2510.10982",
+  "description": "arXiv:2510.10982v3 Announce Type: replace-cross \nAbstract: Recent AI regulations increasingly emphasize the need for mechanisms that preserve the utility of data for AI innovation while preventing misuse, particularly by enforcing purpose limitation in downstream AI applications. In practice, enforcing this principle remains challenging, as released data can be trivially fed into arbitrary models beyond its declared intent. Existing approaches attempt to mitigate this risk by either perturbing data or retraining models to limit unintended use. These strategies, however, offer no protection against inference by unknown or externally trained models, or fundamentally rely on control over the training or deployment. In this work, we introduce non-transferable examples (NTEs), recoded data that act as a task-level \"ciphertext\" decodable only by a designated model. Whereas adversarial examples exploit directions of high model sensitivity, NTEs leverage the complementary insensitive subspace. We propose a training-free, data-agnostic method that recodes data within a model-specific low-sensitivity subspace, preserving outputs for the authorized model while degrading unauthorized ones through subspace misalignment. We establish formal bounds certifying authorized-model fidelity and showing that unauthorized degradation scales with measurable spectral misalignment between models. Empirically, NTEs preserve performance across diverse vision backbones and state-of-the-art vision-language models under common preprocessing, while unauthorized models collapse even under adaptive reconstruction attacks. These results establish NTEs as a practical means to preserve intended data utility while preventing unauthorized exploitation. Our project is available at https://trusted-system-lab.github.io/model-specificity.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

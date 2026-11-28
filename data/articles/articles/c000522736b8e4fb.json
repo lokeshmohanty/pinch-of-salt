@@ -1,0 +1,13 @@
+{
+  "id": "c000522736b8e4fb",
+  "title": "Low-Dose CT for Stroke Diagnosis: A Dual-Pipeline Deep Learning Framework for Portable Neuroimaging",
+  "link": "https://arxiv.org/abs/2603.26764",
+  "description": "arXiv:2603.26764v2 Announce Type: replace \nAbstract: Portable CT scanners may support earlier stroke assessment, but reduced photon counts introduce noise that affects image quality and may alter automated classification. We compared direct classification of simulated low-dose slices with residual U-Net denoising followed by the same fixed classifier. Poisson noise was generated at photon-count scaling factors of 1, 5, 10, 20, and 40 using three deterministic seeds. The held-out set contained 809 slices, including 242 positive and 567 negative slices. Direct classification reached its highest mean ROC-AUC at a scaling factor of 20 (0.937 +/- 0.002). Denoising followed by classification reached 0.842 +/- 0.005 at a scaling factor of 1 and declined to 0.655 +/- 0.002 at a scaling factor of 40. Meanwhile, reconstruction quality rose steadily from 21.92 to 40.91 dB PSNR and from 0.761 to 0.987 SSIM. Both pathways had poor sensitivity at a fixed 0.5 cutoff because their classification scores were concentrated near zero. Patient-level analysis was limited by the test-set composition: all 10 patients were positive under the mask-derived patient label, preventing estimation of patient-level AUC and specificity. Overall, higher reconstruction fidelity did not translate into better discrimination by the fixed classifier except at the lowest photon-count setting.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-19T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

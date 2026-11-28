@@ -1,0 +1,15 @@
+{
+  "id": "9b577325e10be82f",
+  "title": "Stochastic Finite-Transition Learning and Exploration for Accelerated MRI Reconstruction",
+  "link": "https://arxiv.org/abs/2610.13095",
+  "description": "arXiv:2610.13095v1 Announce Type: cross \nAbstract: Generative MRI reconstruction maps an initial source distribution to the target image distribution along a learned recovery trajectory. Common generative methods, such as diffusion and flow, typically learn fine-grained local dynamics whose integration defines this global mapping, hence requiring many network evaluations at inference. Existing few-step sampling approaches can lower computational burden by approximating large transformations from local dynamics, albeit at the expense of reconstruction fidelity. FLEX-MRI instead partitions recovery into a small number of finite intervals between retained states defined by progressive changes in k-space support, and directly learns the reconstruction change across each interval. Because such finite transitions can admit multiple plausible outcomes, FLEX-MRI combines support-relaxed finite-transition learning with stochastic exploration. During training, randomized k-space sampling masks define finite-transition targets with varying support, while the prediction loss remains unrestricted by each individual mask. At inference, FLEX-MRI perturbs a random subset of currently estimated k-space coefficients, allowing the learned predictor to stochastically explore alternative transition paths. Each predicted state is then reconciled with the acquired measurements through data consistency. We theoretically show that this stochastic exploration induces nonzero transition-level variation through the learned recovery map and data consistency without requiring an auxiliary generative sampler. Experiments on multi-coil MRI datasets show that FLEX-MRI outperforms competing methods while maintaining computational efficiency comparable to few-step baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV",
+    "eess.SP"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "f01d232393e7da30",
+  "title": "Spatial Atlas-Informed Loss Ensembles for Whole-Body PSMA PET/CT Metastasis Segmentation",
+  "link": "https://arxiv.org/abs/2610.40834",
+  "description": "arXiv:2610.40834v1 Announce Type: new \nAbstract: Existing whole-body PSMA PET/CT prostate metastasis segmentation methods generally rely on images alone, without explicitly incorporating where metastases tend to occur. We investigate whether a population metastasis atlas can improve lesion detection when integrated into model training. We constructed voxel-wise mean and standard deviation maps from 375 expert-annotated training scans and used them to weight the cross-entropy loss of an nnU-Net. The additional penalties for missed lesions and false positives depend on spatial atlas statistics and diminish as predictions become confidently correct. Seven configurations were compared on validation data; three were combined by majority voting into SAILS (Spatial Atlas-Informed Loss enSemble). We compared SAILS with a baseline nnU-Net and inference-time atlas fusion on AutoPET~III (110 disease-positive cases) and Deep-PSMA (100 external cases). No atlas or registration is needed at inference. Results: On AutoPET~III, SAILS improved whole-body Dice (0.531 vs. 0.520; p=0.006), reduced missed-lesion volume (9.5 vs. 12.1 cc/case; p<0.01), and increased pooled lesion sensitivity (0.857 vs. 0.843; p=0.004). On Deep-PSMA, SAILS detected 126 additional reference lesions (sensitivity 0.769 vs. 0.751; p<0.001), without a significant whole-body Dice change (-0.009; p=0.36). High-risk bone Dice improved in both cohorts (0.576 vs. 0.552 and 0.667 vs. 0.653; both p<0.01). False-positive volume increased by 2.3 and 18.2 cc/case, respectively (p<0.001). Atlas-weighted training improves lesion detection, especially in high-risk bone, without test-time atlas registration, but increases false positives.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

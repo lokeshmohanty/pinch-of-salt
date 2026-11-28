@@ -1,0 +1,14 @@
+{
+  "id": "a67e63cf26a44724",
+  "title": "AI Alignment via Incentives and Correction",
+  "link": "https://arxiv.org/abs/2605.01643",
+  "description": "arXiv:2605.01643v4 Announce Type: replace-cross \nAbstract: We study AI alignment through the lens of law-and-economics models of deterrence and enforcement. In these models, misconduct is not treated as an external failure, but as a strategic response to incentives: an actor weighs the gain from violation against the probability of detection and the severity of punishment. We argue that the same logic arises naturally in agentic AI pipelines. A solver may benefit from producing a persuasive but incorrect answer, hiding uncertainty, or exploiting spurious shortcuts, while an auditor or verifier must decide whether costly monitoring is worthwhile. Alignment is therefore a fixed-point problem: stronger penalties may deter solver misbehavior, but they can also reduce the auditor's incentive to inspect, since auditing then mainly incurs cost on a population that appears increasingly aligned.\n  This perspective also changes what should count as a post-training signal. Standard feedback often attaches reward to the final answer alone, but a solver-auditor pipeline exposes the full correction event: whether the solver erred, whether the auditor inspected, whether the error was caught, and whether oversight incentives remained active. We formalize this interaction in a two-agent model in which a principal chooses rewards over joint correction outcomes, inducing both solver behavior and auditor monitoring. Reward design is therefore a bilevel optimization problem: rewards are judged not by their immediate semantic meaning, but by the behavioral equilibrium they induce. We propose a bandit-based outer-loop procedure for searching over reward profiles using noisy interaction feedback. Experiments on an LLM coding pipeline show that adaptive reward profiles can maintain useful oversight pressure and improve principal-aligned outcomes relative to static hand-designed rewards, including a substantial reduction in hallucinated incorrect attempts.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

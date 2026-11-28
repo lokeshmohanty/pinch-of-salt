@@ -1,0 +1,13 @@
+{
+  "id": "81be1b0a84a2b599",
+  "title": "Localize, Don't Beautify: Client-Side Control of Image-Editing APIs for Cosmetic Surgery Previews",
+  "link": "https://arxiv.org/abs/2608.02841",
+  "description": "arXiv:2608.02841v2 Announce Type: replace \nAbstract: Ask a commercial image editor to preview a cosmetic procedure and it will often change more of the face than the request names: a jawline edit can also smooth the forehead or alter the eyes. Existing methods for confining an edit to one region require access to the model's internals, which a public editing API does not expose. We ask how much control is possible from the client side alone. In a pilot benchmark, five current commercial editing configurations perform facelift-style jaw-neck and rhinoplasty edits on synthetic faces under two levels of client-side control: the prompt alone, and a masked composite that cuts the edited region out of the response and pastes it back onto the original photograph through a landmark-derived mask. Of 162 attempted edits, 151 could be scored. ArcFace cosine measures identity preservation; a CIELAB pixel-change ratio measures how much change lands inside the requested region rather than a protected facial zone. On 15 faces, the masked composite improved localization over the paired prompt-only output by a median of 0.315 (95% face-clustered bootstrap interval 0.279-0.366) while retaining most of the target-region change. Editors differed in edit strength and identity retention, and one returned near-copies for the facelift request. This is a study of control, not clinical accuracy: the faces are synthetic, no surgeons rated the outputs, and each condition was generated once. Within that scope, keeping a surgical preview inside its intended region needs no access to the model; a mask and composite on the client enforce it across every editor tested, at low provider cost.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

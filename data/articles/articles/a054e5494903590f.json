@@ -1,0 +1,14 @@
+{
+  "id": "a054e5494903590f",
+  "title": "Pareto DNN Verification: Fast for Most Queries",
+  "link": "https://arxiv.org/abs/2512.20755",
+  "description": "arXiv:2512.20755v2 Announce Type: replace-cross \nAbstract: Formal verification of deep neural networks (DNNs) faces a fundamental scalability challenge: verifying robustness is NP-hard and state-of-the-art tools often time out on modern architectures. We propose PAreto VErification, or PAVE: by augmenting DNNs with early exits (EEs) and verifying exit-by-exit, we solve a large fraction of robustness queries---roughly 80% in our evaluation---in a small fraction of the time required for direct verification. The key insight is that many inputs in a robustness neighborhood exit at an early layer. Verifying this early-exit behavior is often a tractable problem,allowing verification to terminate long before the full network is analyzed. EEs can be added without modifying the base network, and incur at most a 0.3% accuracy change across our tested architectures. We formalize the novel robustness property for EE networks, prove it is Fixed-Parameter Tractable under a trace stability condition (which commonly holds in practice), and present a sound and complete verification algorithm. Two sound optimizations --- break (early termination when the winner dominates) and continue (skipping the inner loop when no runner-up can win) --- reduce SAFE-case verification time by up to 10x. Experiments on MNIST, CIFAR-10, and CIFAR-100 with networks from 600K to 33M parameters demonstrate that PAVE enables solving queries that were not solved otherwise, including formal verification of ResNet-18 on CIFAR-100.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-06T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

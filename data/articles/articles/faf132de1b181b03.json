@@ -1,0 +1,14 @@
+{
+  "id": "faf132de1b181b03",
+  "title": "Multi-encoder ConvNeXt Network with Smooth Attentional Feature Fusion for Multispectral Semantic Segmentation",
+  "link": "https://arxiv.org/abs/2602.10137",
+  "description": "arXiv:2602.10137v2 Announce Type: replace \nAbstract: This work proposes MeCSAFNet, a multi-branch encoder-decoder architecture for land cover segmentation in multispectral imagery. The model separately processes visible and non-visible channels through dual ConvNeXt encoders, followed by individual decoders that reconstruct spatial information. A dedicated fusion decoder integrates intermediate features at multiple scales, combining fine spatial cues with high-level spectral representations. The feature fusion is further enhanced with CBAM attention, and the ASAU activation function contributes to stable and efficient optimization. The model is designed to process different spectral configurations, including a 4-channel (4c) input combining RGB and NIR bands, as well as a 6-channel (6c) input incorporating NDVI and NDWI indices. Experiments on the Five-Billion-Pixels (FBP) and Potsdam datasets demonstrate significant performance gains. On FBP, MeCSAFNet-base (6c) surpasses U-Net (4c) by +19.21%, U-Net (6c) by +14.72%, SegFormer (4c) by +19.62%, and SegFormer (6c) by +14.74% in mIoU. On Potsdam, MeCSAFNet-large (4c) improves over DeepLabV3+ (4c) by +6.48%, DeepLabV3+ (6c) by +5.85%, SegFormer (4c) by +9.11%, and SegFormer (6c) by +4.80% in mIoU. The model also achieves consistent gains over several recent state-of-the-art approaches. Moreover, compact variants of MeCSAFNet deliver notable performance with lower training time and reduced inference cost, supporting their deployment in resource-constrained environments. Model code is available at: https://github.com/Leo-Thomas/mecsafnet",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-08T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

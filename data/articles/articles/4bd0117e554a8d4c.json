@@ -1,0 +1,14 @@
+{
+  "id": "4bd0117e554a8d4c",
+  "title": "DenseScout: Algorithm-System Co-design for Budgeted Tiny Object Selection on Edge Platforms",
+  "link": "https://arxiv.org/abs/2604.25300",
+  "description": "arXiv:2604.25300v2 Announce Type: replace \nAbstract: Deploying high-resolution tiny-object perception on edge platforms requires not only accurate localization, but also selecting a small set of informative patches under compute, transport, and latency constraints. We study budgeted tiny-object selection, where a frontend ranks patch centers from a lightweight proxy and a downstream detector processes only the selected regions. DenseScout is a 1.01M-parameter deployment-oriented dense-response selector that removes detector-style box regression and directly optimizes ranked patch-center prioritization. Its contribution lies in the task-specific selector formulation, the alignment among output representation, supervision, and decoding, and its joint design with transport-aware execution and QoS-oriented evaluation. Under unified protocols on VisDrone and DOTA, DenseScout provides stronger low-budget recall than the evaluated detector-derived selectors; controlled fixed-K inspection experiments further demonstrate advantages over selection-style proxy baselines. Cross-platform profiling on Jetson Orin NX and RK3588 shows that deployable utility depends jointly on selector quality, memory movement, and heterogeneous runtime realization. These results support treating edge tiny-object perception as a selection-and-deployment co-design problem rather than evaluating model accuracy and runtime in isolation.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-07T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "eess.IV"
+  ]
+}

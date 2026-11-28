@@ -1,0 +1,13 @@
+{
+  "id": "a0ef2d3f761086fc",
+  "title": "MemQ: Integrating Q-Learning into Self-Evolving Memory Agents over Provenance DAGs",
+  "link": "https://arxiv.org/abs/2605.08374",
+  "description": "arXiv:2605.08374v4 Announce Type: replace \nAbstract: Episodic memory allows LLM agents to accumulate and retrieve experience, but current methods treat each memory independently, i.e., evaluating retrieval quality in isolation without accounting for the dependency chains through which memories enable the creation of future memories. We introduce MemQ, which applies TD($\\lambda$) eligibility traces to memory Q-values, propagating credit backward through a provenance DAG that records which memories were retrieved when each new memory was created. Credit weight decays as $(\\gamma\\lambda)^d$ with DAG depth $d$, replacing temporal distance with structural proximity. We formalize this setting as an Exogenous-Context MDP, separating externally supplied tasks from the evolving memory store, and represent retrieval-set values by a first-order mean of per-memory values plus an explicit approximation residual. Across five interaction, code-generation, and agentic benchmarks, MemQ improves average held-out, final runtime, and cumulative success rates over the baseline with the highest average for each metric by 2.53, 4.23, and 2.13 percentage points, respectively. Ablations on LiveCodeBench, BFCL, and DSBench support the benefit of bootstrapping and multi-depth credit propagation. Analyses of Q-values and runtime learning show that learned memory values are associated with subsequent success and that MemQ retains more of its historical task coverage. We also explore the limits of MemQ's benefits using multiple-choice reasoning tasks, where limited interaction offers fewer opportunities to reuse procedural experience. Code is available at https://github.com/jwliao-ai/MemQ.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

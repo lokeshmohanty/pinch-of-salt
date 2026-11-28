@@ -1,0 +1,16 @@
+{
+  "id": "980080d3a50bbb9c",
+  "title": "Probability-Conserving Flow Guidance",
+  "link": "https://arxiv.org/abs/2605.20079",
+  "description": "arXiv:2605.20079v2 Announce Type: replace \nAbstract: Diffusion and flow-based generative models dominate visual synthesis, with guidance aligning samples to user input and improving perceptual quality. However, Classifier-Free Guidance (CFG) and extrapolation-based methods are heuristic linear combinations of velocities/scores that ignore the generative manifold geometry, breaking probability conservation and driving samples off the learned manifold under strong guidance. We analyse guidance through the continuity equation and show its effect decomposes into a divergence term and a score-parallel term defined invariantly across parameterizations. We prove the divergence term blows up structurally as sampling approaches the data manifold, motivating a time-dependent schedule alongside score-parallel attenuation. The resulting plug-and-play rule, Adaptive Manifold Guidance (AdaMaG), targets both terms at no additional inference cost. Finally, we show that several existing saturation and manifold preserving heuristics can be read as acting on one of these two terms. On image generation benchmarks, AdaMaG improves realism, reduces visible artefacts, and induces controlled desaturation under strong guidance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-09T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI",
+    "cs.LG",
+    "eess.IV"
+  ]
+}

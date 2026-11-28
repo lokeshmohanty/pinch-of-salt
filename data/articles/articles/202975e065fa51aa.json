@@ -1,0 +1,13 @@
+{
+  "id": "202975e065fa51aa",
+  "title": "Mind the RefGAP: Correcting Reference Attention in Diffusion-Based Visual Editing",
+  "link": "https://arxiv.org/abs/2609.35708",
+  "description": "arXiv:2609.35708v2 Announce Type: replace \nAbstract: Reference-guided diffusion editors struggle to faithfully reproduce user-provided references. We observe that many diffusion editors allocate limited attention to the reference. For example, in LoomVideo, edit-region queries assign less than 1% of their attention mass to the reference. We introduce RefGAP, a training-free correction that determines logit-offset magnitudes online at each layer from the reference-attention mass measured during the forward pass. Positive offsets to reference logits strengthen reference usage by edit-region queries, while negative offsets for keep-region queries limit reference-induced changes outside the edit. Two global coefficients control the correction; they are selected once on validation data from four development diffusion editors and held fixed. Across seven diffusion-based image/video editors, RefGAP improves identity fidelity in head swapping and face swapping, where identity takes priority; on some editors this raises pose error, which delaying the correction reduces. RefGAP achieves a fidelity-preservation trade-off comparable to separately tuned constant edit-side biases, without per-approach strength sweeps. Additional experiments on virtual try-on and background replacement evaluate transfer beyond identity editing.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

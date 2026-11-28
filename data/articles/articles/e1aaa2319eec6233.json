@@ -1,0 +1,13 @@
+{
+  "id": "e1aaa2319eec6233",
+  "title": "PosEviLoc: Position-Conditioned Spatial Evidence for Language-Based 3D Localization",
+  "link": "https://arxiv.org/abs/2609.23534",
+  "description": "arXiv:2609.23534v1 Announce Type: new \nAbstract: Language-based 3D localization retrieves the point-cloud submap containing a target position from descriptions of nearby objects and their spatial relations. Existing methods typically compress queries and submaps into global descriptors, potentially obscuring object-level semantics and cross-description spatial coherence. We propose Position-Conditioned Evidence Localization (PosEviLoc), a query-position-aware framework for coarse text-to-point-cloud localization. Instead of relying on global matching, PosEviLoc evaluates each candidate submap using explicit semantic and spatial evidence. It models direction as a relation jointly determined by an object position and a hypothetical query position. The resulting Query-Position Spatial Evidence Field (QSEF) measures the fraction of query descriptions supported at each hypothetical position, explicitly capturing their agreement without using the ground-truth query pose to construct the evidence field. A Multi-Level Evidence Readout (MER) summarizes this evidence in a compact representation, which a lightweight MLP converts into a retrieval score. Across five benchmarks, PosEviLoc outperforms MNCL by an average of 17 percentage points in Recall@1. When used as a plug-and-play reranker, it improves MNCL by an average of 16 percentage points. Moreover, PosEviLoc introduces substantially fewer parameters and achieves faster inference speed than existing methods.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

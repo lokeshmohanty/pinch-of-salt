@@ -1,0 +1,14 @@
+{
+  "id": "b0f257c949309705",
+  "title": "$\\pi$-StepNFT: Wider Space Needs Finer Steps in Online RL for Flow-based VLAs",
+  "link": "https://arxiv.org/abs/2603.02083",
+  "description": "arXiv:2603.02083v3 Announce Type: replace-cross \nAbstract: Flow-based vision-language-action (VLA) models have emerged as a powerful paradigm for embodied control, but multi-step denoising makes policy-gradient online reinforcement learning (RL) difficult because the final-action likelihood induced by the sampler is not directly tractable. We identify an exploration--supervision mismatch within the denoising trajectory, where stochastic differential equation (SDE) sampling explores a wider local stochastic transition space while supervision derived from the final denoised output does not directly use the adjacent transitions observed during sampling. We propose $\\pi$-StepNFT (Step-wise Negative-aware Fine-Tuning), a flow-native online RL framework that couples wider stochastic exploration with finer step-wise supervision without computing the final-action likelihood. $\\pi$-StepNFT treats observed SDE transitions as supervision units, using variance-normalized transition errors to rank mirrored positive and negative velocity branches and map rollout feedback to local velocity updates. On LIBERO, starting from shared few-shot SFT initializations, $\\pi$-StepNFT raises average success from 57.6\\% to 92.0\\% for $\\pi_0$ and from 77.1\\% to 94.0\\% for $\\pi_{0.5}$. On ManiSkill, it achieves the highest reported mean success among the evaluated RL baselines on five test-only visual perturbations. Our project homepage is available at https://wangst0181.github.io/pi-StepNFT/.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-02T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

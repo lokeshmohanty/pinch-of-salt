@@ -1,0 +1,13 @@
+{
+  "id": "7ef68bc016b8bcbc",
+  "title": "HAWK: Rethinking Multimodal Drafting for Speculative Decoding",
+  "link": "https://arxiv.org/abs/2610.00623",
+  "description": "arXiv:2610.00623v1 Announce Type: new \nAbstract: Speculative decoding has achieved substantial lossless speedups for LLMs, but remains less effective for large vision-language models (LVLMs), where lightweight drafters struggle to use rich multimodal information. A second limitation is that standard distillation supervises the drafter only along the original training trajectory, without modeling how target predictions shift after the drafter's own proposals. As drafting moves away from this trajectory, the drafter can increasingly disagree with the target, reducing acceptance in later steps. We propose HAWK to address both limitations. HAWK uses representation similarity to select informative target layers and learns how to combine their hidden states. For visual information, it directly provides the drafter with compressed visual hidden states from the target model instead of raw visual tokens, making the visual information easier for a shallow drafter to use. HAWK also trains the drafter to capture how target predictions change after its own proposals, improving its agreement with the target during multi-step drafting. On SmolVLM-256M across ten multimodal benchmarks, HAWK raises average acceptance length from 3.32 to 4.08 and speedup from 2.19x to 2.60x over EAGLE-3 under greedy decoding, and from 2.89 to 3.41 and 1.92x to 2.19x under sampling.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

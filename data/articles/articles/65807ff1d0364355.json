@@ -1,0 +1,13 @@
+{
+  "id": "65807ff1d0364355",
+  "title": "Diffusion Plug-in Priors for Self-Supervised Ultrasound Video Restoration",
+  "link": "https://arxiv.org/abs/2611.05206",
+  "description": "arXiv:2611.05206v2 Announce Type: replace \nAbstract: Ultrasound videos are limited by hardware-constrained spatial resolution and signal-dependent speckle, while paired low- and high-resolution acquisitions for supervised restoration are rarely available. We aim to jointly super-resolve and despeckle ultrasound videos without paired training data or network retraining. We propose UltraDiff, which uses a frozen pre-trained diffusion model (DM) as a plug-in prior and restores each frame by optimizing the latent seed of the DM sampler under a range-constrained maximum a posteriori formulation. We derive a speckle-aware data-fidelity term from a Rayleigh scale-family model and characterize its relative-residual and variance-adaptive weighting properties. We further introduce a stabilized fidelity that is bounded below and strictly convex in log intensity for positive observations in its unclamped form. A total-variation regularizer complements the DM prior, and a temporal seed update warm-starts each frame from the optimized seed of its predecessor. On EchoNet-LVH videos with simulated speckle and additive noise, UltraDiff with a natural-image prior improves PSNR by 1.24\\,dB over the strongest baseline, and ultrasound-related priors improve it further. On real clinical echocardiography videos, UltraDiff reduces the mean absolute error of zero-shot ejection fraction (EF) prediction from 7.31 to 6.37 EF points relative to DUP, the strongest baseline. Combining a speckle-aware fidelity with frozen diffusion priors enables ground-truth-free ultrasound video restoration that benefits downstream measurement. UltraDiff needs neither paired data nor retraining and is not tied to a specific diffusion checkpoint. Code associated with this work will be made publicly available upon acceptance.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-05T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

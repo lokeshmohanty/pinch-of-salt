@@ -1,0 +1,13 @@
+{
+  "id": "338cf9e23b963ab0",
+  "title": "DoseBridge: Denoising Diffusion Bridge Model for Dose Prediction in Lung Intensity-Modulated Proton Therapy",
+  "link": "https://arxiv.org/abs/2608.10173",
+  "description": "arXiv:2608.10173v1 Announce Type: new \nAbstract: Most radiotherapy dose-prediction models use only CT images and anatomical structures, although intensity-modulated proton therapy (IMPT) dose also depends strongly on beam geometry and available clinical datasets are often small. We present DoseBridge, a denoising diffusion bridge model that uses the patient CT as a structured bridge endpoint and encodes plan-specific beam geometry in a spatially aligned beam mask. Multiscale fusion combines CT, target, organ-at-risk, and beam-mask representations with 1.95% additional parameters. DoseBridge was retrospectively evaluated on single-institution CT images and treatment plans from 52 patients with advanced-stage lung cancer treated with 60 Gy in 30 fractions; 42 cases were used for training and 10 for testing. Performance was assessed using image-similarity, dose-volume, and Lyman-Kutcher-Burman normal-tissue complication probability (NTCP) metrics and compared with two deep-learning models. On the test cohort, DoseBridge achieved a mean absolute error of 4.170 Gy, peak signal-to-noise ratio of 23.06 dB, and structural similarity index of 0.798, outperforming both comparison models on these metrics. Clinical target volume D95 differed from the reference dose by 0.62 +/- 1.6 Gy; signed organ-at-risk mean-dose differences ranged from -0.32 to 0.24 Gy, and NTCP differences were -0.40 +/- 2.2 and 0.52 +/- 3.4 percentage points for acute esophagitis and radiation pneumonitis, respectively. Changing only the beam mask redirected predicted low-dose entrance regions while preserving the high-dose target region. To our knowledge, DoseBridge is the first denoising diffusion bridge model for radiotherapy dose prediction. These results support its feasibility as a beam-aware planning prior for lung IMPT, pending evaluation in larger external cohorts.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-08-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

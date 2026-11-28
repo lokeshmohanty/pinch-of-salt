@@ -1,0 +1,13 @@
+{
+  "id": "747c2c00bcba54df",
+  "title": "A Decision-Aware Evaluation Protocol for Uncertainty in Medical Image Segmentation",
+  "link": "https://arxiv.org/abs/2610.21616",
+  "description": "arXiv:2610.21616v1 Announce Type: new \nAbstract: Medical segmentation uncertainty is often evaluated with calibration error or pixel-level error-detection scores, but these metrics do not show whether uncertainty improves downstream review decisions. We propose a decision-aware evaluation protocol that separates uncertainty estimation from deferral policy and evaluates their combination under fixed review budgets: which pixels, regions, or images should be accepted, and which should be reviewed. The protocol reports fixed-budget error reduction, risk-coverage behaviour, region-level review proxies, structural failure modes, probability-derived baselines, and sensitivity to review assumptions. We instantiate it across retinal vessel, skin lesion, and polyp segmentation with multiple backbones and uncertainty estimators. Under matched inference budgets and canonical multi-layer MC Dropout, test-time augmentation (TTA) gives a stronger error-detection signal across matched MC--TTA comparisons, including architecture and dropout-placement checks. However, estimator rankings are not universal. For example, probability-derived scores remain competitive, deep ensembles can outperform TTA, learned deferral helps mainly when the base estimator is weak, and rankings can change with review unit, uncertainty target, correction assumptions, and cost model. Structural and second-observer analyses further show that boundary and thin-structure failures are partly tied to annotation ambiguity. These findings support evaluating uncertainty as an estimator-policy-review configuration, not as a standalone score map. Code: https://anonymous.4open.science/r/Uncertainity-in-Medical-Image-Segmentation/README.md",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-16T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

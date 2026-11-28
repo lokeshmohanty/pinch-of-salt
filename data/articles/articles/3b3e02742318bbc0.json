@@ -1,0 +1,14 @@
+{
+  "id": "3b3e02742318bbc0",
+  "title": "FactoryNet: A Large-Scale Dataset toward Industrial Time-Series Foundation Models",
+  "link": "https://arxiv.org/abs/2605.09081",
+  "description": "arXiv:2605.09081v5 Announce Type: replace-cross \nAbstract: Industrial machines are actuated systems, yet most open time-series corpora record sensor outcomes alone; the few that do log commanded signals expose them in vendor-specific forms that differ from machine to machine, so commanded intent and measured response cannot be compared across embodiments. We introduce FactoryNet, a pretraining corpus for industrial time-series: 113M datapoints across 57k end-to-end task executions (15k real, 42k synthetic) on seven embodiments and four tasks, with 27 annotated anomaly types alongside healthy baselines and counterfactual pairs. Every signal in every source is mapped into a single control-theoretic schema, Setpoint, Effort, Feedback, Context (S-E-F-C), which expresses any actuated system in a common representational frame and makes commanded-versus-realized dynamics readable as explicit prediction residuals. Using the corpus, we find that a task-phase model trained on simulation, with no real phase labels, recovers roughly two thirds of the real-data ceiling on both robots, and that transfer holds within a robot family but rarely across manufacturers. Fault signatures behave differently: an uncalibrated simulator gives no detectable fault signal on either robot, and aligning the feature distributions does not repair it. What separation there is comes from Effort: motor current distinguishes faults where measured tool motion is close to chance, and calibrating the simulator to reproduce that one channel recovers a payload fault on the real robot. We read this as simulation capturing the stable structure of a task while fault behaviour stays diverse and fault-type specific. We release FactoryNet as a growing, multi-embodiment substrate for industrial foundation models.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-12T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

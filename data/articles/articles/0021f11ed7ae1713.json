@@ -1,0 +1,13 @@
+{
+  "id": "0021f11ed7ae1713",
+  "title": "ReForge: Keeping ABR Algorithms Never Finished with Verified Large Language Model Revisions",
+  "link": "https://arxiv.org/abs/2608.15138",
+  "description": "arXiv:2608.15138v2 Announce Type: replace \nAbstract: Designing an ABR algorithm for a network scenario takes an engineer months, and large language models (LLMs) now do this work in hours. But either way, the algorithm is fixed once it is deployed. It fits the networks seen during its design and falls behind on the networks that arrive afterwards. We ask whether an ABR algorithm can keep being designed after deployment, revised as each new network arrives, without becoming worse on any network it already serves. We propose ReForge, which keeps a pool of existing ABR policies unchanged and lets an LLM revise only the rules that decide which policy chooses the next bitrate. When a new network arrives, the LLM reads how the current rules and every policy perform on the networks served so far and rewrites the rules. The rewrite is deployed only if a replay in simulation shows that it improves the served networks as a whole and makes none of them worse. A fast GPU simulator that replays every episode exactly makes this acceptance test cheap enough to run for every revision. We evaluate ReForge on nine real-world network datasets, with new networks arriving one at a time. The revisions raise the mean QoE from 1.43 to 1.79, past the best single policy at 1.66 and close to the 1.86 of selecting the best policy for each dataset, while the QoE on the networks served first does not drop. The gain also holds in a real video player. All code, data, and records will be available.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

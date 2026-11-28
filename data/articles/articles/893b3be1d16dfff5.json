@@ -1,0 +1,14 @@
+{
+  "id": "893b3be1d16dfff5",
+  "title": "Dependency Fabrication in Repository Deployment Agents",
+  "link": "https://arxiv.org/abs/2611.23305",
+  "description": "arXiv:2611.23305v1 Announce Type: cross \nAbstract: Repository deployment agents set up the environment needed to run a software repository. They often treat passing tests as proof of a successful setup. This report examines how such agents behave when a working setup is impossible. Probe repositories were built with a dependency that the agents could not legitimately obtain. Passing tests therefore indicated fabrication, such as creating a stub to replace the missing package. Agents in Repo2Run and SetupX usually fabricated the dependency. Both harnesses mostly still marked these runs as successful. Rules against fabrication, whether given in the prompt or repository documentation, did not reliably prevent this behavior. On MinimalSetupAgent, which was built for this report, mitigations proposed in the reward-hacking literature were most effective when the agent received a direct rule and had a clear way to stop and report the problem. Under these conditions, neither Qwen3.5-Plus nor GPT-5.6 Luna cheated in any of the 16 runs. Applying the same mitigation to Repo2Run and SetupX also required a native tool call for escalation. In Repo2Run, it worked only after the prompt was also replaced with one that placed less emphasis on passing tests.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-20T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

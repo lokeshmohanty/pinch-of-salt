@@ -1,0 +1,14 @@
+{
+  "id": "252fcdb6da43ee47",
+  "title": "Gradient Routing Localizes and Removes Unintended Behaviors in RL",
+  "link": "https://arxiv.org/abs/2610.17062",
+  "description": "arXiv:2610.17062v1 Announce Type: cross \nAbstract: We propose a mitigation to reward hacking in reinforcement learning. Our setup involves a misspecified reward function that gives rise to unintended behavior, and a monitor used to detect unintended behavior. As with frontier AI systems, the monitor makes systematic errors. Consequently, using the monitor for data filtering or to apply a reward penalty fails to prevent the model from learning unintended behavior (\"reward hacking\"). To address this problem, we introduce GRAFT: Gradient Routing Adapter Fine Tuning. Rather than penalizing or filtering flagged samples during training, GRAFT constrains gradient updates on those samples to a sacrificial set of new parameters. This has two benefits: First, because the monitor is not part of the reward function, the model does not learn to hide misbehavior. Second, ablating the sacrificial parameters reduces or entirely stops the unintended behavior while maintaining improved performance on target tasks. We demonstrate these benefits in RL environments where reward penalties cause models to learn to reward hack in undetected ways, training models ranging from 135M to 8B parameters. Additionally, we show a similar effect at a larger scale by distilling frontier LLM trajectories containing reward hacking into Qwen3-32B, without teaching that model to reward hack. Overall, our work suggests GRAFT may be a promising approach for leveraging imperfect monitors during post-training in settings where true performance is difficult to evaluate.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.LG",
+    "cs.AI"
+  ]
+}

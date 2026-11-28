@@ -1,0 +1,14 @@
+{
+  "id": "bbc8caf73294b8ca",
+  "title": "Beyond Rigid Hands: Deforming Skin into Contact-Consistent Hand Meshes",
+  "link": "https://arxiv.org/abs/2611.31950",
+  "description": "arXiv:2611.31950v1 Announce Type: cross \nAbstract: Hands grasp objects with soft skin. A fingertip flattens against a mug, and a palm curves around a bottle. Yet hand-object datasets and estimators represent the hand as a rigid articulated mesh, which hovers above or penetrates the object where skin would press against it. Existing refiners keep the mesh rigid and adjust only the pose, trading pose accuracy for physical plausibility. We ask whether a rigid hand can instead touch the object as skin does while staying close to its original pose. We lift annotated or estimated rigid hands to contact-consistent meshes through an optimization that (i) slightly adjusts the joints and wrist to bring the fingers onto the object, (ii) deforms the skin so that penetrating regions settle onto the surface, and (iii) keeps this deformation consistent over time. Since deformation reaches only skin already near the object, we further train a lightweight head on the lifted annotations to predict where an estimated hand should touch and steer the deformation there. Unlike existing refiners, the lift more than doubles the skin lying on the object surface for three published estimators while barely changing the pose. Guidance from the learned head further improves grasp stability by closing contact gaps that the estimate leaves open. Existing hand-object datasets and estimators can thus adopt contact-consistent hands without changing the hand model or retraining the estimators.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.AI"
+  ]
+}

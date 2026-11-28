@@ -1,0 +1,14 @@
+{
+  "id": "53b7bda5e826e3aa",
+  "title": "Resolution-Flexible Decoding for Hybrid Neural Video Representations",
+  "link": "https://arxiv.org/abs/2609.23555",
+  "description": "arXiv:2609.23555v1 Announce Type: cross \nAbstract: Neural video representations (NVRs) represent videos using neural network parameters and, in hybrid formulations, frame-wise latent embeddings. Although hybrid NVRs can improve reconstruction quality by using content-adaptive latent embeddings, their latent spatial sizes and decoder upsampling schedules are tied to the target frame resolution. For high-resolution videos, this dependency may require large and non-uniform upsampling factors and can affect the parameter allocation between the latent embeddings and the decoder. In this paper, we propose a resolution-flexible decoder framework for hybrid NVRs. The decoder is constructed from uniform \\(2\\times\\) upsampling stages, whose target feature sizes are obtained by tracing the spatial resolution backward from the final output resolution. After each upsampling stage, the feature map is aligned with the target size by minimal padding or cropping when necessary. To support this progressive decoding process, we further use intermediate reconstruction supervision and a reconstruction-difficulty-aware frame sampling strategy based on recent frame-wise losses. The framework preserves the basic representation format of hybrid NVRs and can therefore be applied to different backbones. Experiments on the UVG dataset show that the proposed approach improves reconstruction quality over the corresponding NVR baselines.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-09-22T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "eess.IV",
+    "cs.CV"
+  ]
+}

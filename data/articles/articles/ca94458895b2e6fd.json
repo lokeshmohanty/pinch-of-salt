@@ -1,0 +1,13 @@
+{
+  "id": "ca94458895b2e6fd",
+  "title": "The Answer Knows Where to Look: Zooming before MLLMs Answer under Visual-Token Budgets",
+  "link": "https://arxiv.org/abs/2610.32664",
+  "description": "arXiv:2610.32664v1 Announce Type: new \nAbstract: Multimodal large language models (MLLMs) read images through visual tokens, and under the small per-image budgets that efficient deployment requires, the fine text of documents, charts and infographics becomes illegible. Zooming in recovers the evidence, but the region must be chosen before the model answers. We find that MLLMs know where the evidence is, but not in a form that can be read before they answer: the answer tokens localize it from the middle layers on, whereas the attention available before answering does so only in the top layers, at a depth that varies across models, and diffusely. Supervising the pre-answer attention to point degrades reading, and the benefit of zooming is governed by each image's information gap. Building on these findings, we introduce ours, which lets an MLLM look where its answer would. A dedicated look token, processed in a single prefill and kept out of the answering pass, learns in hindsight to attend as the model's own correct answers do, extracting this knowledge into a concentrated pointer before any answer exists. Its hidden state then selects how to look, from no zoom to crops, square windows, windows that adapt to the pointer and foveated warps, supervised by the counterfactual outcome of every view. ours needs no box annotations, per-model layer search, external localizers or generation before the answer. On Qwen3-VL at three scales and five text-rich benchmarks, it surpasses the strongest baseline by 4.8-9.1 points at 98 visual tokens per view and attention-guided zooming by 11.1-17.0 points, while running faster than attention-guided and grounding-based zooming.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-10-26T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

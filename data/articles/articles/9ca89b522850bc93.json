@@ -1,0 +1,13 @@
+{
+  "id": "9ca89b522850bc93",
+  "title": "Drift-Aware LLM Routing with Sparse Contexts and Shared Budgets",
+  "link": "https://arxiv.org/abs/2609.00662",
+  "description": "arXiv:2609.00662v1 Announce Type: new \nAbstract: A multi-model language service must route each request while preserving workload-level budgets for compute, latency, memory, or monetary cost. Two features make this problem materially harder than static model selection. Prompt representations are high dimensional, so only a small subset of embedding directions may predict the incremental value of a model, and both the request mix and the model frontier drift after launches, fine-tunes, quantization changes, and system updates. We formulate nonstationary sparse contextual routing with multiple knapsack constraints and an optional shadow-audit stream that evaluates a small fraction of prompts on several models.\n  We propose Drift-Aware Sparse Routing (DRS). The policy estimates reward and resource use from a rolling audit window, routes using pessimistic reward and optimistic cost estimates, updates resource shadow prices online, and applies a hard meter before commitment. The analysis separates control from statistics. On any event with uniform prediction radii $\\{\\beta_t\\}$, regret against a paced dynamic fluid benchmark is bounded by the sum of the radii, a capacity-buffer term, and an $O(\\sqrt{T})$ pacing term. Under a sparse linear model and bounded drift $V_T$, rolling estimation gives \\[ \\widetilde O\\left( T\\sqrt{\\frac{s}{\\rho W}}+WV_T+\\sqrt{T} \\right), \\] where $s$ is sparsity, $\\rho$ is the audit rate, and $W$ is the window length. Optimizing $W$ yields the usual stationary $O(\\sqrt{sT/\\rho})$ rate when $V_T=0$ and a $O(T^{2/3}(s/\\rho)^{1/3}V_T^{1/3})$ adaptation term under drift.",
+  "source_name": "arXiv AI",
+  "published": "2026-09-02T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

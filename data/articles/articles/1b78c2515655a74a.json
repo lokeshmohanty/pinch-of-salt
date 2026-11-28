@@ -1,0 +1,13 @@
+{
+  "id": "1b78c2515655a74a",
+  "title": "Difficulty-Aware Statistical Matching for Dataset Distillation",
+  "link": "https://arxiv.org/abs/2609.34299",
+  "description": "arXiv:2609.34299v2 Announce Type: replace \nAbstract: Dataset distillation (DD) condenses a large original set into a small distilled set with high training utility. Decoupled statistical matching methods substantially reduce distillation time and memory overhead while achieving strong performance. However, they typically supervise all distilled data with running statistics estimated from the entire original set. These statistics mainly capture the average feature distribution while ignoring the difficulty differences among original data, making them insufficient for characterizing the difficulty structure of the original data. To address this issue, we propose Difficulty-aware Statistical Matching (DSM) for Dataset Distillation. After pretraining, DSM uses the Global Difficulty Score (GDS) to evaluate image difficulty, sorts the original data according to the scores, and then partitions it into IPC (Images per Class of distilled data) difficulty groups. During distillation, Statistics Updated Again (SUA) updates the teacher's BN running statistics using original data from each group via forward passes, providing difficulty-specific supervision for each corresponding distilled batch. Meanwhile, Initial Sample Screening (ISS) initializes distilled data with original images from the corresponding group, providing an effective starting point for precise matching. Experiments across multiple datasets and model architectures demonstrate the effectiveness of DSM, showing that it broadens the difficulty range of distilled samples and further improves the final performance. Code will be released.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "24adf7a16d0ad2d7",
+  "title": "When LLM Agents See a Conflict but Still Proceed: Cross-Domain Dependencies in Network Slicing",
+  "link": "https://arxiv.org/abs/2610.17118",
+  "description": "arXiv:2610.17118v1 Announce Type: new \nAbstract: Future AI-native networks are being designed to apply autonomous agents built on large language models (LLMs) in network management through intents. When intents from different domains meet on the same resource, an agent must recognize the cross-domain dependency before taking an irreversible action. We investigate this problem through a smart-grid use case, in which a power utility holds an active intent on a backup slice for protection traffic. This slice appears idle by design, which is precisely the profile targeted by a cost-reduction intent. We built a tool-based environment in which the dependency must be either queried by the agent or read from an inventory annotation, together with a negative control, and evaluated ten models from four different providers in 600 runs. Most models acted against the dependency they had observed: seven of the ten models removed the protection slice at least once after receiving the cross-domain dependency, and in the high-harm tier the slice was removed in 76% of the exposed runs, while four models practically never did. Only one of ten models never removed the slice. We identify two failure modes, not querying the dependency and querying it but proceeding anyway, and show that agents often reported no conflict after observing it. These results indicate that, in AI-native networks, visibility of cross-domain dependencies is not a sufficient safeguard, and that dependency verification should be enforced by the management architecture before irreversible actions rather than delegated to the LLM's judgment.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI",
+    "cs.CL",
+    "cs.LG",
+    "cs.SY",
+    "eess.SY"
+  ]
+}

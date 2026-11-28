@@ -1,0 +1,13 @@
+{
+  "id": "bd5e848382fcd33d",
+  "title": "When 1+1 Backfires: Rethinking Relevance-Diversity Balancing for Sample-Aware Visual Token Reduction",
+  "link": "https://arxiv.org/abs/2610.16615",
+  "description": "arXiv:2610.16615v1 Announce Type: new \nAbstract: Visual token compression has emerged as a critical technique for reducing the inference cost of Vision-Language Models. Existing methods select tokens based on text relevance, visual diversity, or a fixed combination of both---treating the relevance-diversity balance as a universal constant independent of the input. We conduct a systematic analysis to challenge this assumption. At the dataset level, grid-searching the optimal relevance-diversity weight per benchmark reveals substantial cross-task variation. More critically, we further maximize per-sample answer likelihood to recover sample-level oracle weights, finding that their distributions not only differ markedly across benchmarks but also exhibit high within-benchmark variance. Based on these observations, we propose SAVER, a framework for Sample-Aware relevance-diversity balanced Visual tokEn Reduction. We first derive a Geometric Intent Prior (GIP) from the spatial concentration of text-relevant tokens to infer a sample-specific relevance-diversity weight, and then apply this weight to jointly select tokens via a Weighted Text Centroid (WTC) for relevance scoring and a Visual Marginal Coverage Gain (VMCG) for diversity. SAVER requires no additional training and achieves sample-aware balancing entirely at inference time. Extensive experiments demonstrate that SAVER consistently outperforms state-of-the-art baselines across diverse benchmarks, retaining 96.5% of full-model performance on LLaVA-1.5-7B with only 11.1% of the original visual tokens, and further generalizing to LLaVA-NeXT and Mini-Gemini.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-15T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

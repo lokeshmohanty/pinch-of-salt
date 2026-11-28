@@ -1,0 +1,14 @@
+{
+  "id": "505a1362b90f1a4c",
+  "title": "EdgeCIM: A Hardware-Software Co-Design for CIM-Based Acceleration of Small Language Models",
+  "link": "https://arxiv.org/abs/2604.11512",
+  "description": "arXiv:2604.11512v2 Announce Type: replace-cross \nAbstract: The growing demand for deploying Small Language Models (SLMs) on edge devices, including laptops, smartphones, automotive and robotic computing platforms, and high-performance embedded systems, has exposed fundamental inefficiencies in existing accelerators. While GPUs handle prefill workloads efficiently, the autoregressive decoding phase is dominated by GEMV operations that are inherently memory-bound, resulting in poor utilization and prohibitive energy costs at the edge. In this work, we present EdgeCIM, a hardware-software co-design framework for accelerating autoregressive decoding of SLMs on edge devices in latency-critical applications. At its core is a CIM macro, implemented in 65 nm, coupled with a tile-based mapping strategy that balances pipeline stages, maximizing parallelism while alleviating DRAM bandwidth bottlenecks. Our simulator enables design space exploration of SLMs up to 4B parameters, identifying hardware configurations that optimize latency and energy according to a configurable objective function. On LLaMA3.2 3B (INT4), EdgeCIM achieves 1.76x and 3.21x higher throughput than NVIDIA Jetson AGX Orin and Orin Nano Super operating in MAXN mode, respectively, and 7.07x higher throughput than Qualcomm's Snapdragon-X Elite. Extensive benchmarks on TinyLLaMA 1.1B, LLaMA3.2 (1B, 3B), Phi 3.5 mini 3.8B, Qwen2.5 (0.5B, 1.5B, 3B), SmolLM2 1.7B, SmolLM3 3B, and Qwen3 (0.6B, 1.7B, 4B) reveal that our accelerator, at INT4 precision, achieves on average 336.4 tokens/s and 173 tokens/J. These results establish EdgeCIM as a compelling solution towards real-time, energy-efficient, latency-critical SLM inference at the edge.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AR",
+    "cs.AI"
+  ]
+}

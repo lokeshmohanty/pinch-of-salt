@@ -1,0 +1,13 @@
+{
+  "id": "8474c452155b8dd8",
+  "title": "Selective Surgical Action-Center Localization:Retaining Localization Gains through Supervised Scoring",
+  "link": "https://arxiv.org/abs/2611.12977",
+  "description": "arXiv:2611.12977v1 Announce Type: new \nAbstract: Surgical action-center localization requires both an accurate reference point and a decision about whether to report it. When frames with and without a reportable center are mixed, the benefit of improved localization depends on which correct candidates survive selection. We present a selective localization pipeline combining heatmap and coordinate supervision with a logistic-regression scorer. The scorer learns to identify predictions with a reportable center and a localization error within a specified tolerance. The internal evaluation uses 5,000 frames from 50 surgical sources, five source-grouped folds and two random seeds. Matched locator and scoring comparisons track correct candidates and their rejection. At an 80% acceptance quota per source and a tolerance of 0.10 times the image diagonal, our method retains 46.08 correct outputs per 100 inputs. The baseline locator with the same scoring approach retains 44.20. The gain is 1.88 (descriptive 95% source-paired bootstrap interval, 0.94 to 2.79). Under entropy-based selection, increased rejection of correct predictions offsets the higher supply of correct predictions on average. For the coordinate-supervised locator, supervised scoring reduces these rejections from 6.15 to 2.99 per 100 inputs. Evaluating retained correct outputs reveals whether a selection rule preserves or erodes an improvement in localization.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-11T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}

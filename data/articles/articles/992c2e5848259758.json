@@ -1,0 +1,14 @@
+{
+  "id": "992c2e5848259758",
+  "title": "FeatLens: Feature-Guided Dependency Retrieval for Repository-Level Code Generation",
+  "link": "https://arxiv.org/abs/2609.26480",
+  "description": "arXiv:2609.26480v2 Announce Type: replace-cross \nAbstract: Retrieving task-relevant code dependencies is critical for repository-level code generation. Existing approaches obtain dependency context through similarity-based retrieval, repository graphs, or LLM-driven exploration. A central challenge is to identify the dispersed dependencies needed to implement a functional requirement, rather than merely retrieve broadly related code. This paper presents FeatLens, a feature-guided dependency retrieval approach for repository-level code generation. FeatLens first builds an offline index linking natural-language feature descriptions to function-level code entities. Given a task requirement and target function location, it selects relevant features and constructs dependency seeds. It then expands the seed graph and applies semantic and structural heuristics to select dependencies for inclusion in the generation context. Experiments on DevEval and EvoCodeBench show that FeatLens achieves the highest dependency recall among the evaluated baselines at each fixed retrieval budget, reaching DR@15 values of 0.527 and 0.529, respectively. On DevEval, the retrieved context supports the highest non-oracle Pass@1 with both DeepSeek-V3.2 and GPT-5-mini. These results are obtained without LLM calls in the online dependency retrieval stage.",
+  "source_name": "arXiv AI",
+  "published": "2026-10-31T04:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.SE",
+    "cs.AI"
+  ]
+}

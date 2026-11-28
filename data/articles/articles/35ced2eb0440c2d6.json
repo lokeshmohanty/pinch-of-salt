@@ -1,0 +1,14 @@
+{
+  "id": "35ced2eb0440c2d6",
+  "title": "GRAFT: Graph-Regularized Prototype Fields for Realistic Test-Time Adaptation of VLMs",
+  "link": "https://arxiv.org/abs/2611.23591",
+  "description": "arXiv:2611.23591v1 Announce Type: new \nAbstract: Unlabeled test data can improve the zero-shot classifier of a vision-language model, yet transductive and test-time adaptation methods often fall below the zero-shot baseline when only a few vocabulary classes are present in a batch or when streams are correlated. We trace this failure to a shared design: every class owns independent parameters estimated from its own samples, so absent or rare classes are left at biased text anchors or fitted to foreign samples. We propose Graph-Regularized Anchor-displacement Field Transduction (GRAFT), which models the adapted prototypes as text anchors plus a displacement field that is partially pooled over a semantic class graph through a Gaussian Markov random field prior, together with an explicit class-presence model. Inference is closed-form and gradient-free on cached features. Anchor-only shrinkage and a single global shift are the two extreme settings of the prior; absent classes are provably harmonic extensions of the present ones, and the pooling strength can be chosen by empirical Bayes. Under the realistic batch and online protocols on eleven benchmarks and four ImageNet shifts, GRAFT improves over the zero-shot model in every setting and over anchor-based transduction where few classes are present.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-19T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV",
+    "cs.LG"
+  ]
+}

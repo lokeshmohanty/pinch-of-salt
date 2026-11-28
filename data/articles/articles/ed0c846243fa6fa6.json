@@ -1,0 +1,14 @@
+{
+  "id": "ed0c846243fa6fa6",
+  "title": "Greedy Decoding Hides Good Plans: Sample-and-Verify Planning for Vision-Language Driving Models",
+  "link": "https://arxiv.org/abs/2611.33621",
+  "description": "arXiv:2611.33621v1 Announce Type: cross \nAbstract: Vision-language models (VLMs) are increasingly adopted for end-to-end driving planning, yet their performance is typically evaluated based on a single greedily decoded trajectory. However, greedy decoding may overlook better trajectories within the model's output distribution. Experiments on WOD-E2E and NAVSIM reveal a consistent performance gap between greedily decoded trajectories and the best sampled candidates, showing that planning errors can arise from trajectory selection, rather than trajectory generation alone. On WOD-E2E, when the ego vehicle should start moving, the model often assigns probability to different possible start times, causing greedy decoding to repeatedly favor waiting and produce a stationary plan even though moving trajectories are available. Motivated by these findings, we propose Sample-and-Verify (SaV), which keeps the VLM planner frozen and samples multiple candidate trajectories. A lightweight verifier is trained from ground-truth futures to estimate the relative quality of these candidates. It uses trajectory kinematics, candidate-set agreement and likelihood, and ego-motion features to select the final trajectory. On WOD-E2E, SaV reduces ADE and FDE by approximately 15% across three VLM planners on the validation set. Changes in RFS are smaller: two planners show slight decreases on val-456, while Alpamayo-1.5 improves from 7.74 to 7.81 RFS on the official test set as ADE@5s decreases by 11%. On NAVSIM, SaV reduces ADE@4s by 10-24% across three VLM planners, while PDMS changes are less consistent. These results show that trajectory selection can substantially improve displacement accuracy without additional planner training. The code is publicly available at https://github.com/hzxbzp/sample-and-verify.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-26T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.RO",
+    "cs.CV"
+  ]
+}

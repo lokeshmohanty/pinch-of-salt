@@ -1,0 +1,13 @@
+{
+  "id": "bf06f77a669a6f09",
+  "title": "Anchoring Clinical Events in Time: UID-Preserving Multimodal Reconstruction and Source-Grounded Adjudication",
+  "link": "https://arxiv.org/abs/2609.13062",
+  "description": "arXiv:2609.13062v2 Announce Type: replace \nAbstract: Interpreting a patient's hospital course depends on when symptoms developed, tests were performed, and treatments began. Discharge summaries often leave this chronology unclear, while structured electronic health record (EHR) tables timestamp only some of these events. We reconstruct clinical timelines by retrieving structured evidence for narrative events and jointly revising their estimated times. Each extracted occurrence carries a persistent unique identifier (UID) linked to its source span, keeping repeated mentions distinct throughout reconstruction. We also introduce GAVEL, a large language model (LLM) judge that checks disagreements between two timelines against the note and structured record and cites evidence for its verdicts. We evaluated six open-weight models on 40 clinician-annotated discharge summaries. Our pipeline recovered more reference events than LLM-Timeline and TKW2 when each comparison used the same backbone. For GLM-5.2, adding structured evidence improved timestamp agreement with essentially unchanged event recovery; ablations showed that links to timestamped source rows contributed to this improvement. Results varied across the other models, with some timing gains accompanied by fewer recovered events. Both GAVEL judges, GLM-5.2 and MiMo-V2.6-Pro-RL, favored multimodal over text-only GLM-5.2 timelines, while neither clearly distinguished the DeepSeek V3.2 variants. Manual review upheld most sampled GAVEL findings. The source links allow reconstructed times to be checked, and GAVEL identifies disagreements for human review.",
+  "source_name": "arXiv AI",
+  "published": "2026-11-14T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.AI"
+  ]
+}

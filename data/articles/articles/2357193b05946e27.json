@@ -1,0 +1,13 @@
+{
+  "id": "2357193b05946e27",
+  "title": "Decoupling Direction and Magnitude: Language-Steered Flow Matching for Super-Resolution in the Dark",
+  "link": "https://arxiv.org/abs/2611.10485",
+  "description": "arXiv:2611.10485v2 Announce Type: replace \nAbstract: Image super-resolution in the dark is fundamentally challenged by extreme spatial heterogeneity: severely underexposed and noisy regions demand aggressive generative enhancement to reconstruct missing details, while relatively well-exposed areas require conservative updates to prevent hallucinated textures. Standard diffusion and flow-matching models, however, rely on globally uniform integration trajectories, making them sub-optimal for such spatially varying degradations. In this paper, we propose DeLang-SR (Degradation-Language steered Super-Resolution), a one-step flow-matching framework that explicitly decouples the restoration direction and magnitude. Rather than treating low-light corruption as arbitrary latent features, DeLang-SR translates measurable physical statistics into structured degradation language, harnessing the semantic prior of pretrained text-to-image models. The degradation-language intent, complemented by image-specific visual tokens, steers the velocity field (direction) toward restoration-relevant manifolds. Simultaneously, a continuous spatial update-strength field acts as a locally varying Euler step-size field (magnitude), applying stronger integration steps in heavily degraded shadows while enforcing conservative updates in reliable regions. Experiments on paired and real dark images, together with ablations and diagnostic analyses, show that DeLang-SR provides an effective and interpretable one-step route to super-resolution in the dark. Code and pretrained models are available at https://github.com/moriyaya/DeLang-SR.",
+  "source_name": "arXiv Computer Vision",
+  "published": "2026-11-16T05:00:00",
+  "geography": "Global",
+  "category": "General",
+  "tags": [
+    "cs.CV"
+  ]
+}
